@@ -88,7 +88,7 @@ function App() {
 
   const audioUrl = useMemo(() => {
     if (!activeSentence) return '';
-    return `/tts/${voice}/${activeSentence.id}.mp3`;
+    return `tts/${voice}/${activeSentence.id}.mp3`;
   }, [activeSentence, voice]);
 
   useAudio({
