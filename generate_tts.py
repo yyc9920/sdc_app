@@ -3,6 +3,24 @@ import os
 import asyncio
 import edge_tts
 import argparse
+import csv
+
+def read_custom_csv(file_path):
+    data = []
+    with open(file_path, "r", encoding="utf-8") as f:
+        reader = csv.reader(f)
+        headers = next(reader)
+        for row in reader:
+            if not row:
+                continue
+            if len(row) > 4:
+                row[3] = ",".join(row[3:])
+                row = row[:4]
+            elif len(row) < 4:
+                row.extend([""] * (4 - len(row)))
+
+            data.append(row[0])
+    return data
 
 async def generate_tts(input_csv, output_key):
     voices = {
@@ -14,13 +32,13 @@ async def generate_tts(input_csv, output_key):
         output_dir = f'public/tts/{output_key}/{gender}'
         os.makedirs(output_dir, exist_ok=True)
         
-        df = pd.read_csv(input_csv)
+        sentences = read_custom_csv(input_csv)
         
-        for index, row in df.iterrows():
-            sentence = str(row['English Sentence'])
+        for index, sentence in enumerate(sentences):
             output_file = f"{output_dir}/{index}.mp3"
             
-            if not os.path.exists(output_file):
+            # Don't skip if file is 0 bytes
+            if not os.path.exists(output_file) or os.path.getsize(output_file) == 0:
                 print(f"Generating for {output_key}: {gender} {index}.mp3...")
                 try:
                     communicate = edge_tts.Communicate(sentence, voice)
