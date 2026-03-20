@@ -1,0 +1,938 @@
+[
+  {
+    "setId": "travel_travel_phrases_part_1_level2_set1",
+    "theme": "Travel Phrases Part 1",
+    "level": 2,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Can I help you check in?",
+        "korean": "체크인 도와드릴까요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I'm here to check in.",
+        "korean": "체크인하러 왔습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Where are you flying to?",
+        "korean": "어디로 가시나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "I'm going to LA.",
+        "korean": "LA로 갑니다.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Any bags to check?",
+        "korean": "부치실 짐이 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "This is my carry-on.",
+        "korean": "이건 기내 수하물입니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this conversation?",
+      "options": [
+        "Travel Phrases Part 1",
+        "Weather",
+        "Food",
+        "Sports"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "travel_travel_phrases_part_1_level1_set2",
+    "theme": "Travel Phrases Part 1",
+    "level": 1,
+    "sentences": [
+      {
+        "id": 2,
+        "english": "Your passport please.",
+        "korean": "여권 보여주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Here's my passport.",
+        "korean": "제 여권 여기 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Yes one bag.",
+        "korean": "네 가방 하나입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Window or aisle?",
+        "korean": "창가 쪽인가요 통로 쪽인가요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this conversation?",
+      "options": [
+        "Travel Phrases Part 1",
+        "Weather",
+        "Food",
+        "Sports"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "travel_travel_phrases_part_2_level2_set3",
+    "theme": "Travel Phrases Part 2",
+    "level": 2,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "Could I get a window seat?",
+        "korean": "창가 좌석으로 주시겠어요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 11,
+        "english": "Could I get an aisle seat?",
+        "korean": "통로 좌석으로 주시겠어요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 12,
+        "english": "Sure let me check.",
+        "korean": "물론이죠 확인해 보겠습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
+        "english": "Where is security?",
+        "korean": "보안 검색대가 어디인가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "Please line up here.",
+        "korean": "여기에 줄을 서 주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 15,
+        "english": "Please take out your laptop.",
+        "korean": "노트북을 꺼내 주세요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this conversation?",
+      "options": [
+        "Travel Phrases Part 2",
+        "Weather",
+        "Food",
+        "Sports"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "travel_travel_phrases_part_2_level2_set4",
+    "theme": "Travel Phrases Part 2",
+    "level": 2,
+    "sentences": [
+      {
+        "id": 16,
+        "english": "Take off your jacket.",
+        "korean": "재킷을 벗어 주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "Please remove your shoes.",
+        "korean": "신발을 벗어 주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
+        "english": "Hold still.",
+        "korean": "가만히 계세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 19,
+        "english": "Arms up please.",
+        "korean": "팔을 들어 주세요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this conversation?",
+      "options": [
+        "Travel Phrases Part 2",
+        "Weather",
+        "Food",
+        "Sports"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "travel_travel_phrases_part_3_level2_set5",
+    "theme": "Travel Phrases Part 3",
+    "level": 2,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "Step through please.",
+        "korean": "안으로 지나가 주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 21,
+        "english": "Where is my gate?",
+        "korean": "제 게이트가 어디인가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 22,
+        "english": "What time do we board?",
+        "korean": "몇 시에 탑승하나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 23,
+        "english": "Did the gate change?",
+        "korean": "게이트가 바뀌었나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 24,
+        "english": "Is the flight delayed?",
+        "korean": "비행기가 지연됐나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 25,
+        "english": "Is there a place to charge my phone?",
+        "korean": "휴대폰 충전할 곳이 있나요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this conversation?",
+      "options": [
+        "Travel Phrases Part 3",
+        "Weather",
+        "Food",
+        "Sports"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "travel_travel_phrases_part_3_level2_set6",
+    "theme": "Travel Phrases Part 3",
+    "level": 2,
+    "sentences": [
+      {
+        "id": 26,
+        "english": "Boarding pass please.",
+        "korean": "탑승권 보여주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 27,
+        "english": "Here you go.",
+        "korean": "여기 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 28,
+        "english": "Excuse me can I get by?",
+        "korean": "실례합니다 좀 지나가도 될까요?",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 29,
+        "english": "Where is my seat?",
+        "korean": "제 자리가 어디인가요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this conversation?",
+      "options": [
+        "Travel Phrases Part 3",
+        "Weather",
+        "Food",
+        "Sports"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "travel_travel_phrases_part_4_level3_set7",
+    "theme": "Travel Phrases Part 4",
+    "level": 3,
+    "sentences": [
+      {
+        "id": 30,
+        "english": "Am I in the right seat?",
+        "korean": "제가 맞는 자리에 앉았나요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 31,
+        "english": "Where do I put my bag?",
+        "korean": "제 가방을 어디에 둘까요?",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 32,
+        "english": "Please place it under the seat.",
+        "korean": "좌석 아래에 놓아 주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 33,
+        "english": "Can I use the overhead bin?",
+        "korean": "선반을 사용해도 될까요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 34,
+        "english": "Please fasten your seat belt.",
+        "korean": "안전벨트를 매 주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 35,
+        "english": "Can I recline my seat?",
+        "korean": "좌석을 뒤로 젖혀도 될까요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 36,
+        "english": "Could I switch to a window seat?",
+        "korean": "창가 자리로 바꿀 수 있을까요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 37,
+        "english": "Is there an aisle seat available?",
+        "korean": "이용 가능한 통로 좌석이 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 38,
+        "english": "Is this seat taken?",
+        "korean": "이 자리 주인 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 39,
+        "english": "Would you like something to drink?",
+        "korean": "마실 것 좀 드릴까요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this conversation?",
+      "options": [
+        "Travel Phrases Part 4",
+        "Weather",
+        "Food",
+        "Sports"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "travel_travel_phrases_part_5_level2_set8",
+    "theme": "Travel Phrases Part 5",
+    "level": 2,
+    "sentences": [
+      {
+        "id": 40,
+        "english": "Coffee please.",
+        "korean": "커피 주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 41,
+        "english": "Could I get some water?",
+        "korean": "물 좀 주시겠어요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 42,
+        "english": "Could I have a blanket please?",
+        "korean": "담요 좀 주시겠어요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 43,
+        "english": "Do you have a pillow?",
+        "korean": "베개 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 44,
+        "english": "Can I get headphones?",
+        "korean": "헤드폰 좀 주시겠어요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 45,
+        "english": "May I use the restroom?",
+        "korean": "화장실 좀 써도 될까요?",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this conversation?",
+      "options": [
+        "Travel Phrases Part 5",
+        "Weather",
+        "Food",
+        "Sports"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "travel_travel_phrases_part_5_level2_set9",
+    "theme": "Travel Phrases Part 5",
+    "level": 2,
+    "sentences": [
+      {
+        "id": 46,
+        "english": "Chicken or beef?",
+        "korean": "치킨 드릴까요 소고기 드릴까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 47,
+        "english": "Beef please.",
+        "korean": "소고기로 주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 48,
+        "english": "Can I have my meal later?",
+        "korean": "식사를 나중에 해도 될까요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 49,
+        "english": "I feel air sick.",
+        "korean": "멀미가 나요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this conversation?",
+      "options": [
+        "Travel Phrases Part 5",
+        "Weather",
+        "Food",
+        "Sports"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "travel_travel_phrases_part_6_level2_set10",
+    "theme": "Travel Phrases Part 6",
+    "level": 2,
+    "sentences": [
+      {
+        "id": 50,
+        "english": "We'll be taking off soon.",
+        "korean": "곧 이륙하겠습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 51,
+        "english": "We'll be landing soon.",
+        "korean": "곧 착륙하겠습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 52,
+        "english": "Where is baggage claim?",
+        "korean": "수하물 찾는 곳이 어디인가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 53,
+        "english": "It's on the first floor.",
+        "korean": "1층에 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 54,
+        "english": "Which belt is it?",
+        "korean": "어느 벨트인가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 55,
+        "english": "I can't find my bag.",
+        "korean": "제 가방을 찾을 수 없어요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this conversation?",
+      "options": [
+        "Travel Phrases Part 6",
+        "Weather",
+        "Food",
+        "Sports"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "travel_travel_phrases_part_6_level2_set11",
+    "theme": "Travel Phrases Part 6",
+    "level": 2,
+    "sentences": [
+      {
+        "id": 56,
+        "english": "My bag didn't arrive.",
+        "korean": "제 가방이 도착하지 않았어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 57,
+        "english": "My bag is damaged.",
+        "korean": "제 가방이 파손됐어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 58,
+        "english": "Here's my baggage tag.",
+        "korean": "제 짐표 여기 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 59,
+        "english": "Where is the lost and found?",
+        "korean": "분실물 센터가 어디인가요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this conversation?",
+      "options": [
+        "Travel Phrases Part 6",
+        "Weather",
+        "Food",
+        "Sports"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "travel_travel_phrases_part_7_level2_set12",
+    "theme": "Travel Phrases Part 7",
+    "level": 2,
+    "sentences": [
+      {
+        "id": 60,
+        "english": "What's the reason for your trip?",
+        "korean": "방문 목적이 무엇인가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 61,
+        "english": "I'm here on vacation.",
+        "korean": "휴가 왔습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 62,
+        "english": "How long are you staying?",
+        "korean": "얼마나 머무실 건가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 63,
+        "english": "For 5 days.",
+        "korean": "5일 동안요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 64,
+        "english": "Where are you staying?",
+        "korean": "어디에 머무시나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 65,
+        "english": "I'm staying at the ABC hotel.",
+        "korean": "ABC 호텔에 머뭅니다.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 66,
+        "english": "Do you have a return ticket?",
+        "korean": "귀국 티켓이 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 67,
+        "english": "How much cash do you have?",
+        "korean": "현금을 얼마나 가지고 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 68,
+        "english": "About $200.",
+        "korean": "약 200달러요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 69,
+        "english": "Do you have anything to declare?",
+        "korean": "신고할 것이 있나요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this conversation?",
+      "options": [
+        "Travel Phrases Part 7",
+        "Weather",
+        "Food",
+        "Sports"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "travel_travel_phrases_part_8_level2_set13",
+    "theme": "Travel Phrases Part 8",
+    "level": 2,
+    "sentences": [
+      {
+        "id": 70,
+        "english": "Nothing to declare.",
+        "korean": "신고할 게 없습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 71,
+        "english": "Please open your bag.",
+        "korean": "가방 좀 열어 주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 72,
+        "english": "Do you have receipts?",
+        "korean": "영수증 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 73,
+        "english": "I bought it at dutyfree.",
+        "korean": "면세점에서 샀어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 74,
+        "english": "Where can I catch a taxi?",
+        "korean": "택시 어디서 타나요?",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 75,
+        "english": "Where to?",
+        "korean": "어디로 가세요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this conversation?",
+      "options": [
+        "Travel Phrases Part 8",
+        "Weather",
+        "Food",
+        "Sports"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "travel_travel_phrases_part_8_level2_set14",
+    "theme": "Travel Phrases Part 8",
+    "level": 2,
+    "sentences": [
+      {
+        "id": 76,
+        "english": "To this address please.",
+        "korean": "이 주소로 가주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 77,
+        "english": "How much is the fare?",
+        "korean": "요금이 얼마인가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 78,
+        "english": "Can you drop me off here?",
+        "korean": "여기서 내려주시겠어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 79,
+        "english": "Where's the subway station?",
+        "korean": "지하철역이 어디인가요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this conversation?",
+      "options": [
+        "Travel Phrases Part 8",
+        "Weather",
+        "Food",
+        "Sports"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "travel_travel_phrases_part_9_level2_set15",
+    "theme": "Travel Phrases Part 9",
+    "level": 2,
+    "sentences": [
+      {
+        "id": 80,
+        "english": "Where is the bus stop?",
+        "korean": "버스 정류장이 어디인가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 81,
+        "english": "How can I help you?",
+        "korean": "무엇을 도와드릴까요?",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 82,
+        "english": "I'd like to check in.",
+        "korean": "체크인하고 싶습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 83,
+        "english": "Do you have a reservation?",
+        "korean": "예약하셨나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 84,
+        "english": "Yes I do.",
+        "korean": "네 예약했습니다.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 85,
+        "english": "May I see your ID?",
+        "korean": "신분증 좀 볼 수 있을까요?",
+        "properNounIndices": [
+          1,
+          4
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this conversation?",
+      "options": [
+        "Travel Phrases Part 9",
+        "Weather",
+        "Food",
+        "Sports"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "travel_travel_phrases_part_9_level2_set16",
+    "theme": "Travel Phrases Part 9",
+    "level": 2,
+    "sentences": [
+      {
+        "id": 86,
+        "english": "Can I check in early?",
+        "korean": "얼리 체크인 가능한가요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 87,
+        "english": "A quiet room please.",
+        "korean": "조용한 방으로 주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 88,
+        "english": "A higher floor please.",
+        "korean": "높은 층으로 주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 89,
+        "english": "What's the Wi-Fi password?",
+        "korean": "와이파이 비밀번호가 뭔가요?",
+        "properNounIndices": [
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this conversation?",
+      "options": [
+        "Travel Phrases Part 9",
+        "Weather",
+        "Food",
+        "Sports"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "travel_travel_phrases_part_10_level2_set17",
+    "theme": "Travel Phrases Part 10",
+    "level": 2,
+    "sentences": [
+      {
+        "id": 90,
+        "english": "What time is checkout?",
+        "korean": "체크아웃이 몇 시인가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 91,
+        "english": "Can you hold my bags?",
+        "korean": "제 짐 좀 맡아주실 수 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 92,
+        "english": "Here are your key cards.",
+        "korean": "여기 키 카드 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 93,
+        "english": "I left my key inside.",
+        "korean": "방에 키를 두고 나왔어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 94,
+        "english": "Tea or coffee?",
+        "korean": "차 드릴까요 커피 드릴까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 95,
+        "english": "How would you like your eggs?",
+        "korean": "달걀은 어떻게 해드릴까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 96,
+        "english": "Sunny side up please.",
+        "korean": "써니 사이드 업으로 해주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 97,
+        "english": "Scrambled please.",
+        "korean": "스크램블로 해주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 98,
+        "english": "Could you take this plate?",
+        "korean": "이 접시 좀 치워주시겠어요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this conversation?",
+      "options": [
+        "Travel Phrases Part 10",
+        "Weather",
+        "Food",
+        "Sports"
+      ],
+      "answer": 0
+    }
+  }
+]

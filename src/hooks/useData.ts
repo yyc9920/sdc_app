@@ -20,7 +20,7 @@ export const useData = (filename: string | undefined) => {
       return;
     }
 
-    fetch(filename)
+    fetch(import.meta.env.BASE_URL + filename)
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch data');

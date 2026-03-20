@@ -26,3 +26,25 @@ export interface AppState {
   isRandom: boolean;
   isNightMode: boolean;
 }
+
+export interface SpeedListeningSentence {
+  id: number;
+  english: string;
+  korean: string;
+  properNounIndices: number[];
+}
+
+export interface Quiz {
+  question: string;
+  options: string[];
+  answer: number;
+}
+
+export interface SpeedListeningSet {
+  setId: string;
+  theme: string;
+  level: number;
+  sentences: SpeedListeningSentence[];
+  quiz: Quiz;
+}
+
