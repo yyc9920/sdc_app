@@ -171,8 +171,8 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
             onChange={(e) => setBlanks(prev => ({ ...prev, [blankKey]: e.target.value }))}
             disabled={isSubmitted}
             maxLength={actualWord.length}
-            style={{ width: inputWidth, boxSizing: 'content-box' }}
-            className={`px-1 py-0.5 border rounded text-center focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors ${inputColor}`}
+            style={{ width: inputWidth, boxSizing: 'content-box', minWidth: '40px' }}
+            className={`px-1 py-0.5 border rounded text-center focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors ${inputColor} text-sm sm:text-base`}
           />
           {isSubmitted && !isCorrect && (
             <span className="text-xs text-green-600">{actualWord}</span>
@@ -184,14 +184,14 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
   };
 
   return (
-    <div className="max-w-3xl mx-auto p-4">
-      <div className="mb-6">
-        <h2 className="text-2xl font-bold text-gray-800">Theme: {set.theme}</h2>
-        <div className="text-sm text-gray-500">Level: {set.level}</div>
+    <div className="max-w-3xl mx-auto p-4 sm:p-6">
+      <div className="mb-4 sm:mb-6">
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-800 leading-tight">{set.theme}</h2>
+        <div className="text-sm text-gray-500 mt-1">Level {set.level}</div>
       </div>
 
-      <div className="flex items-center justify-between bg-white p-4 rounded-lg shadow mb-6 border border-gray-200">
-        <div className="flex items-center space-x-4">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between bg-white p-4 rounded-xl shadow-sm mb-6 border border-gray-200 gap-4">
+        <div className="flex flex-1 items-center justify-between sm:justify-start sm:space-x-4">
           <button 
             onClick={() => {
               if (isSubmitted && !isPlaying) {
@@ -210,18 +210,18 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
           >
             {isPlaying ? 'Pause' : isSubmitted ? 'Replay (1x)' : (audioFinished ? 'Finished' : 'Play Audio')}
           </button>
-          <div className="text-lg font-semibold text-gray-700">
+          <div className="text-base sm:text-lg font-semibold text-gray-700">
             Speed: <span className="text-blue-600">{SPEEDS[currentSpeedIndex]}x</span>
           </div>
         </div>
       </div>
 
-      <div className="space-y-6 bg-gray-50 p-6 rounded-xl border border-gray-200">
+      <div className="space-y-4 sm:space-y-6 bg-gray-50/50 p-4 sm:p-6 rounded-2xl border border-gray-100">
         {set.sentences.map((sentence, index) => {
           const isEven = index % 2 === 0;
           return (
             <div key={sentence.id} className={`flex ${isEven ? 'justify-start' : 'justify-end'}`}>
-              <div className={`max-w-[85%] p-4 rounded-2xl shadow-sm ${
+              <div className={`w-[90%] sm:max-w-[85%] p-4 sm:p-5 rounded-2xl shadow-sm ${
                 isEven 
                   ? 'bg-white border border-gray-200 rounded-bl-none' 
                   : 'bg-blue-50 border border-blue-100 rounded-br-none'

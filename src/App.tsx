@@ -279,26 +279,26 @@ function App() {
           animate={{ opacity: showSplash ? 0 : 1 }}
           transition={{ duration: 0.5 }}
         >
-          <header className="w-full max-w-4xl mx-auto flex justify-between items-center p-6 bg-transparent">
-            <div className="flex items-center gap-3">
+          <header className="w-full max-w-4xl mx-auto flex justify-between items-center p-4 sm:p-6 bg-transparent gap-3">
+            <div className="flex items-center gap-2 sm:gap-3 flex-1 min-w-0">
               {(learningMode || selectedDataSet) && (
                 <button 
                   onClick={() => {
                     if (selectedDataSet) setSelectedDataSet(null);
                     else if (learningMode) setLearningMode(null);
                   }}
-                  className="p-2 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors active:scale-90"
+                  className="p-2 -ml-2 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors active:scale-90 shrink-0"
                 >
                   <ChevronLeft className="w-6 h-6 text-gray-600 dark:text-gray-400" />
                 </button>
               )}
-              <h1 className="text-3xl font-extrabold text-blue-600 dark:text-blue-400 tracking-tight">
+              <h1 className="text-xl sm:text-3xl font-extrabold text-blue-600 dark:text-blue-400 tracking-tight truncate">
                 SDC English Study
               </h1>
             </div>
             <button
               onClick={() => setIsNightMode(!isNightMode)}
-              className="p-3 rounded-xl bg-white dark:bg-gray-800 shadow-sm border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all active:scale-95"
+              className="p-2 sm:p-3 shrink-0 rounded-xl bg-white dark:bg-gray-800 shadow-sm border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all active:scale-95"
             >
               {isNightMode ? <Sun className="w-5 h-5 text-yellow-400" /> : <Moon className="w-5 h-5 text-gray-600" />}
             </button>
@@ -430,22 +430,22 @@ function App() {
   if (learningMode === 'speed_listening' && selectedDataSet && selectedSpeedListeningSet) {
     return (
       <div className={`min-h-screen ${isNightMode ? 'dark bg-gray-900' : 'bg-gray-50'} transition-colors duration-300`}>
-        <header className="w-full max-w-4xl mx-auto flex justify-between items-center p-4 sticky top-0 bg-gray-50/90 dark:bg-gray-900/90 backdrop-blur z-40 border-b border-gray-200 dark:border-gray-700">
-          <div className="flex items-center gap-3">
+        <header className="w-full max-w-4xl mx-auto flex justify-between items-center p-3 sm:p-4 sticky top-0 bg-gray-50/90 dark:bg-gray-900/90 backdrop-blur z-40 border-b border-gray-200 dark:border-gray-700 gap-3">
+          <div className="flex items-center gap-1 sm:gap-3 flex-1 min-w-0">
             <button 
               onClick={backToLobby}
-              className="p-2 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors active:scale-90"
+              className="p-2 -ml-2 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors active:scale-90 shrink-0"
               title="Back"
             >
               <ChevronLeft className="w-6 h-6 text-gray-600 dark:text-gray-400" />
             </button>
-            <h1 className="text-lg font-bold text-gray-800 dark:text-white truncate max-w-[200px] md:max-w-none">
-              {selectedDataSet.name} - Level {selectedSpeedListeningSet.level} {formatSetTitle(selectedSpeedListeningSet.setId)}
+            <h1 className="text-base sm:text-lg font-bold text-gray-800 dark:text-white truncate">
+              {selectedDataSet.name} <span className="text-gray-400 mx-1 font-normal">|</span> Lv.{selectedSpeedListeningSet.level} {formatSetTitle(selectedSpeedListeningSet.setId)}
             </h1>
           </div>
           <button
             onClick={() => setIsNightMode(!isNightMode)}
-            className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+            className="p-2 shrink-0 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
           >
             {isNightMode ? <Sun className="w-5 h-5 text-yellow-400" /> : <Moon className="w-5 h-5 text-gray-600" />}
           </button>
@@ -478,22 +478,22 @@ function App() {
           onPrev={hasPrevCheck ? handlePrevCheck : undefined}
         />
       )}
-      <header className="w-full max-w-4xl mx-auto flex justify-between items-center p-4 sticky top-0 bg-gray-50/90 dark:bg-gray-900/90 backdrop-blur z-40 border-b border-gray-200 dark:border-gray-700">
-        <div className="flex items-center gap-3">
+      <header className="w-full max-w-4xl mx-auto flex justify-between items-center p-3 sm:p-4 sticky top-0 bg-gray-50/90 dark:bg-gray-900/90 backdrop-blur z-40 border-b border-gray-200 dark:border-gray-700 gap-3">
+        <div className="flex items-center gap-1 sm:gap-3 flex-1 min-w-0">
           <button 
             onClick={backToLobby}
-            className="p-2 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors active:scale-90"
+            className="p-2 -ml-2 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors active:scale-90 shrink-0"
             title="Lobby"
           >
             <ChevronLeft className="w-6 h-6 text-gray-600 dark:text-gray-400" />
           </button>
-          <h1 className="text-lg font-bold text-gray-800 dark:text-white truncate max-w-[200px] md:max-w-none">
+          <h1 className="text-base sm:text-lg font-bold text-gray-800 dark:text-white truncate">
             {selectedDataSet?.name}
           </h1>
         </div>
         <button
           onClick={() => setIsNightMode(!isNightMode)}
-          className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+          className="p-2 shrink-0 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
         >
           {isNightMode ? <Sun className="w-5 h-5 text-yellow-400" /> : <Moon className="w-5 h-5 text-gray-600" />}
         </button>
