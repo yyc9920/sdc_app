@@ -65,7 +65,7 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
       audioRef.current.playbackRate = SPEEDS[currentSpeedIndex];
       audioRef.current.play().catch(e => {
         console.error("Audio play failed", e);
-        setIsPlaying(false);
+        handleAudioEnded();
       });
     }
   }, [isPlaying, currentSentenceIndex, currentSpeedIndex, datasetId, set.sentences]);
