@@ -9,7 +9,7 @@ interface Props {
 
 const SPEEDS = [1, 1.2, 1.5, 2];
 
-const AVAILABLE_VOICES = ['female', 'male', 'child_female', 'child_male', 'elderly_female', 'elderly_male'];
+const AVAILABLE_VOICES = ['female', 'male', 'child_female', 'child_male'];
 
 const cleanWord = (word: string) => word.replace(/[.,?!;:"']/g, '').toLowerCase();
 

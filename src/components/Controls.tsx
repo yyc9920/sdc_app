@@ -93,8 +93,6 @@ export const Controls = ({
               <option value="male">남성</option>
               <option value="child_female">여자아이</option>
               <option value="child_male">남자아이</option>
-              <option value="elderly_female">할머니</option>
-              <option value="elderly_male">할아버지</option>
             </select>
           </div>
 
