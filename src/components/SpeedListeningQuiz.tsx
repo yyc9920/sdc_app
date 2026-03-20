@@ -120,6 +120,7 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
             value={userInput}
             onChange={(e) => setBlanks(prev => ({ ...prev, [blankKey]: e.target.value }))}
             disabled={isSubmitted}
+            maxLength={actualWord.length}
             style={{ width: inputWidth, boxSizing: 'content-box' }}
             className={`px-1 py-0.5 border rounded text-center focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors ${inputColor}`}
           />
@@ -161,9 +162,6 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
           <div className="text-lg font-semibold text-gray-700">
             Speed: <span className="text-blue-600">{SPEEDS[currentSpeedIndex]}x</span>
           </div>
-        </div>
-        <div className="text-sm font-medium text-gray-500">
-          Playing: {currentSentenceIndex + 1} / {set.sentences.length}
         </div>
       </div>
 
