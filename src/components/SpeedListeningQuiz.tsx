@@ -9,6 +9,8 @@ interface Props {
 
 const SPEEDS = [1, 1.2, 1.5, 2];
 
+const AVAILABLE_VOICES = ['female', 'male', 'child_female', 'child_male', 'elderly_female', 'elderly_male'];
+
 const cleanWord = (word: string) => word.replace(/[.,?!;:"']/g, '').toLowerCase();
 
 export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) => {
@@ -52,6 +54,27 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
     }
     currentAudioSrcRef.current = '';
     window.scrollTo(0, 0);
+  }, [set]);
+
+
+  const sentenceVoices = useMemo(() => {
+    const map: Record<number, string> = {};
+    // eslint-disable-next-line react-hooks/purity
+    const v1Index = Math.floor(Math.random() * AVAILABLE_VOICES.length);
+    // eslint-disable-next-line react-hooks/purity
+    let v2Index = Math.floor(Math.random() * AVAILABLE_VOICES.length);
+    while (v2Index === v1Index) {
+      // eslint-disable-next-line react-hooks/purity
+      v2Index = Math.floor(Math.random() * AVAILABLE_VOICES.length);
+    }
+    const v1 = AVAILABLE_VOICES[v1Index];
+    const v2 = AVAILABLE_VOICES[v2Index];
+
+    set.sentences.forEach((sentence, index) => {
+      const isEven = index % 2 === 0;
+      map[sentence.id] = isEven ? v1 : v2;
+    });
+    return map;
   }, [set]);
 
   const blankIndicesMap = useMemo(() => {
@@ -116,7 +139,8 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
         targetRate = 1.0;
       } else {
         const sentence = set.sentences[currentSentenceIndex];
-        targetSrc = `${import.meta.env.BASE_URL}tts/${datasetId}/female/${sentence.id}.mp3`;
+                const voice = sentenceVoices[sentence.id] || 'female';
+        targetSrc = `${import.meta.env.BASE_URL}tts/${datasetId}/${voice}/${sentence.id}.mp3`;
         targetRate = SPEEDS[currentSpeedIndex];
       }
       
@@ -134,7 +158,7 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
     } else if (!isPlaying && audioRef.current) {
       audioRef.current.pause();
     }
-  }, [isPlaying, isAnnouncementPlaying, isTransitionChimePlaying, currentSentenceIndex, currentSpeedIndex, datasetId, set.sentences, handleAudioEnded]);
+  }, [isPlaying, isAnnouncementPlaying, isTransitionChimePlaying, currentSentenceIndex, currentSpeedIndex, datasetId, set.sentences, handleAudioEnded, sentenceVoices]);
 
   const renderWord = (word: string, sentenceId: number, wordIndex: number) => {
     const isBlank = blankIndicesMap[sentenceId]?.has(wordIndex);
@@ -184,7 +208,7 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
   };
 
   return (
-    <div className="max-w-3xl mx-auto p-4 sm:p-6">
+    <div className="w-full max-w-3xl mx-auto p-4 sm:p-6">
       <div className="mb-4 sm:mb-6">
         <h2 className="text-xl sm:text-2xl font-bold text-gray-800 dark:text-gray-100 leading-tight">{set.theme}</h2>
         <div className="text-sm text-gray-500 dark:text-gray-400 mt-1">Level {set.level}</div>
@@ -216,15 +240,15 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
         </div>
       </div>
 
-      <div className="space-y-4 sm:space-y-6 bg-gray-100 dark:bg-gray-800/80 p-4 sm:p-6 rounded-2xl border border-gray-200 dark:border-gray-700">
+      <div className="space-y-4 sm:space-y-6 bg-white dark:bg-gray-800 p-4 sm:p-6 rounded-2xl border border-gray-200 dark:border-gray-700">
         {set.sentences.map((sentence, index) => {
           const isEven = index % 2 === 0;
           return (
             <div key={sentence.id} className={`flex ${isEven ? 'justify-start' : 'justify-end'}`}>
-              <div className={`w-[90%] md:w-[85%] p-4 sm:p-5 rounded-2xl shadow-sm ${
+              <div className={`w-fit max-w-[90%] md:max-w-[85%] p-4 sm:p-5 rounded-2xl shadow-sm bg-white dark:bg-gray-800 ${
                 isEven 
-                  ? 'bg-pink-50 dark:bg-pink-900/20 border border-pink-200 dark:border-pink-800/50 rounded-bl-none' 
-                  : 'bg-sky-50 dark:bg-sky-900/20 border border-sky-200 dark:border-sky-800/50 rounded-br-none'
+                  ? 'border border-pink-200 dark:border-pink-800/50 rounded-bl-none' 
+                  : 'border border-sky-200 dark:border-sky-800/50 rounded-br-none'
               }`}>
                 <div className="text-lg leading-relaxed text-gray-800 dark:text-gray-100 font-medium">
                   {sentence.english.split(' ').map((word, wIndex) => renderWord(word, sentence.id, wIndex))}

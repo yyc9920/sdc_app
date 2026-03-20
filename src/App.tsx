@@ -47,7 +47,7 @@ function App() {
   const [rangeEnd, setRangeEnd] = useState(100);
   const [repeatCount, setRepeatCount] = useState(3);
   const [isRandom, setIsRandom] = useState(false);
-  const [voice, setVoice] = useState<'male' | 'female'>('female');
+  const [voice, setVoice] = useState<string>('female');
   const [displayMode, setDisplayMode] = useState<'all' | 'english' | 'korean'>('all');
   
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -174,6 +174,7 @@ function App() {
   };
   
   const handleCheckPronunciation = (sentence: SentenceData) => {
+    setIsPlaying(false);
     setCheckingSentence(sentence);
   };
   
@@ -540,25 +541,27 @@ function App() {
         )}
       </main>
 
-      <Controls
-        rangeStart={rangeStart}
-        rangeEnd={rangeEnd}
-        repeatCount={repeatCount}
-        isRandom={isRandom}
-        voice={voice}
-        totalItems={data.length}
-        onRangeStartChange={setRangeStart}
-        onRangeEndChange={setRangeEnd}
-        onRepeatCountChange={setRepeatCount}
-        onRandomChange={setIsRandom}
-        onVoiceChange={setVoice}
-        displayMode={displayMode}
-        onDisplayModeChange={setDisplayMode}
-        isPlaying={isPlaying}
-        onPlayPause={togglePlayPause}
-        onNext={handleNext}
-        onPrev={handlePrev}
-      />
+      {!checkingSentence && (
+        <Controls
+          rangeStart={rangeStart}
+          rangeEnd={rangeEnd}
+          repeatCount={repeatCount}
+          isRandom={isRandom}
+          voice={voice}
+          totalItems={data.length}
+          onRangeStartChange={setRangeStart}
+          onRangeEndChange={setRangeEnd}
+          onRepeatCountChange={setRepeatCount}
+          onRandomChange={setIsRandom}
+          onVoiceChange={setVoice}
+          displayMode={displayMode}
+          onDisplayModeChange={setDisplayMode}
+          isPlaying={isPlaying}
+          onPlayPause={togglePlayPause}
+          onNext={handleNext}
+          onPrev={handlePrev}
+        />
+      )}
     </div>
   );
 }

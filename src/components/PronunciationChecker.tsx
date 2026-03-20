@@ -1,4 +1,4 @@
-import { Mic, MicOff, Volume2, RotateCcw, Award, ChevronLeft, ChevronRight, X } from 'lucide-react';
+import { Mic, MicOff, Volume2, RotateCcw, Award, ChevronLeft, ChevronRight, X, Play } from 'lucide-react';
 import { usePronunciationCheck } from '../hooks/usePronunciationCheck';
 import type { SentenceData } from '../types';
 import { useEffect, useMemo } from 'react';
@@ -17,13 +17,25 @@ export const PronunciationChecker = ({ sentence, onClose, onNext, onPrev }: Pron
     isFinished,
     score,
     supportError,
+    audioUrl,
     toggleRecording,
     startRecording,
+    playRecording,
     speakSentence,
     resetState,
   } = usePronunciationCheck(sentence.english);
 
   const targetWords = useMemo(() => sentence.english.split(' '), [sentence.english]);
+
+  useEffect(() => {
+    if (isFinished && score > 70) {
+      const applause = new Audio('https://actions.google.com/sounds/v1/crowd/applause.ogg');
+      applause.play().catch((e) => {
+        console.warn("Applause sound failed to play:", e);
+      });
+    }
+  }, [isFinished, score]);
+
 
   useEffect(() => {
     if (isFinished) {
@@ -45,7 +57,7 @@ export const PronunciationChecker = ({ sentence, onClose, onNext, onPrev }: Pron
   if (supportError) {
     return (
       <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
-        <div className="bg-white p-8 rounded-xl shadow-xl">
+        <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-xl">
           <p className="text-red-500 font-bold">{supportError}</p>
           <button onClick={onClose} className="mt-4 px-4 py-2 bg-blue-600 text-white rounded">Close</button>
         </div>
@@ -55,7 +67,7 @@ export const PronunciationChecker = ({ sentence, onClose, onNext, onPrev }: Pron
 
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50" onClick={onClose}>
-      <div className="max-w-xl w-full bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100 relative" onClick={e => e.stopPropagation()}>
+      <div className="max-w-xl w-full bg-white dark:bg-gray-800 rounded-3xl shadow-xl overflow-hidden border border-gray-100 dark:border-gray-700 relative" onClick={e => e.stopPropagation()}>
         <div className="bg-blue-600 p-6 text-white flex justify-between items-center">
           <h1 className="text-xl font-bold flex items-center gap-2">
             <Award className="w-6 h-6 text-yellow-300" />
@@ -73,7 +85,7 @@ export const PronunciationChecker = ({ sentence, onClose, onNext, onPrev }: Pron
               </p>
               <button
                 onClick={speakSentence}
-                className="p-2 bg-slate-100 hover:bg-slate-200 rounded-full text-slate-600 transition-colors"
+                className="p-2 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-full text-gray-600 dark:text-gray-300 transition-colors"
                 title="원어민 발음 듣기"
               >
                 <Volume2 className="w-5 h-5" />
@@ -82,7 +94,7 @@ export const PronunciationChecker = ({ sentence, onClose, onNext, onPrev }: Pron
 
             <div className="text-3xl font-bold leading-tight flex flex-wrap gap-x-2 gap-y-3 mb-6">
               {targetWords.map((word, i) => {
-                let colorClass = "text-slate-300";
+                let colorClass = "text-gray-300 dark:text-gray-600";
                 if (wordStatuses[i] === 'correct') colorClass = "text-green-500";
                 else if (wordStatuses[i] === 'incorrect') colorClass = "text-red-500 underline";
 
@@ -94,8 +106,8 @@ export const PronunciationChecker = ({ sentence, onClose, onNext, onPrev }: Pron
               })}
             </div>
 
-            <div className="bg-slate-50 p-4 rounded-xl border border-slate-100">
-              <p className="text-slate-700 font-medium text-lg mb-1">{sentence.koreanPronounce}</p>
+            <div className="bg-gray-50 dark:bg-gray-700/50 p-4 rounded-xl border border-gray-100 dark:border-gray-600">
+              <p className="text-gray-700 dark:text-gray-300 font-medium text-lg mb-1">{sentence.koreanPronounce}</p>
             </div>
           </div>
 
@@ -119,7 +131,7 @@ export const PronunciationChecker = ({ sentence, onClose, onNext, onPrev }: Pron
                     <Mic className="w-8 h-8" />
                   )}
                 </button>
-                <p className={`text-sm font-medium ${isRecording ? 'text-red-500 animate-pulse' : 'text-slate-500'}`}>
+                <p className={`text-sm font-medium ${isRecording ? 'text-red-500 animate-pulse' : 'text-gray-500 dark:text-gray-400'}`}>
                   {isRecording ? '듣고 있습니다... 탭하여 완료' : '마이크를 눌러 시작하세요'}
                 </p>
               </div>
@@ -131,49 +143,58 @@ export const PronunciationChecker = ({ sentence, onClose, onNext, onPrev }: Pron
                       {score}%
                     </span>
                   </div>
-                  <p className="text-slate-600 font-medium">
+                  <p className="text-gray-600 dark:text-gray-300 font-medium">
                     {score === 100 ? '완벽한 발음입니다! 🎉' :
                      score > 70 ? '잘하셨어요! 조금만 더 다듬어볼까요?' :
                      '좀 더 연습해봅시다! 크게 말해보세요. 💪'}
                   </p>
                 </div>
 
-                <div className="flex w-full gap-3">
-                  <button
-                    onClick={resetState}
-                    className="flex-1 py-4 flex items-center justify-center gap-2 rounded-xl font-bold text-slate-600 bg-slate-100 hover:bg-slate-200 transition-colors"
-                  >
-                    <RotateCcw className="w-5 h-5" /> 다시 시도
-                  </button>
-                  <button
-                    onClick={onClose}
-                    className="flex-[2] py-4 flex items-center justify-center gap-2 rounded-xl font-bold text-white bg-blue-600 hover:bg-blue-700 shadow-md"
-                  >
-                    닫기
-                  </button>
-                </div>
+          <div className="flex w-full gap-3">
+            {audioUrl && (
+              <button
+                onClick={playRecording}
+                className="py-4 px-4 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-xl text-gray-600 dark:text-gray-300 transition-colors"
+                title="내 발음 듣기"
+              >
+                <Play className="w-5 h-5" />
+              </button>
+            )}
+            <button
+              onClick={resetState}
+              className="flex-1 py-4 flex items-center justify-center gap-2 rounded-xl font-bold text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+            >
+              <RotateCcw className="w-5 h-5" /> 다시 시도
+            </button>
+            <button
+              onClick={onClose}
+              className="flex-[2] py-4 flex items-center justify-center gap-2 rounded-xl font-bold text-white bg-blue-600 hover:bg-blue-700 shadow-md"
+            >
+              닫기
+            </button>
+          </div>
               </div>
             )}
           </div>
         </div>
         
         {/* Navigation Buttons */}
-        <div className="flex border-t border-slate-100 bg-slate-50/50">
+        <div className="flex border-t border-gray-100 dark:border-gray-700 bg-gray-50/50 dark:bg-gray-800/50">
           <button
             onClick={onPrev}
             disabled={!onPrev}
             className={`flex-1 py-4 flex items-center justify-center gap-2 font-bold transition-colors ${
-              onPrev ? 'text-blue-600 hover:bg-blue-50' : 'text-slate-300 cursor-not-allowed'
+              onPrev ? 'text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-900/30' : 'text-gray-300 dark:text-gray-600 cursor-not-allowed'
             }`}
           >
             <ChevronLeft className="w-5 h-5" /> 이전
           </button>
-          <div className="w-px bg-slate-100"></div>
+          <div className="w-px bg-gray-100 dark:bg-gray-700"></div>
           <button
             onClick={onNext}
             disabled={!onNext}
             className={`flex-1 py-4 flex items-center justify-center gap-2 font-bold transition-colors ${
-              onNext ? 'text-blue-600 hover:bg-blue-50' : 'text-slate-300 cursor-not-allowed'
+              onNext ? 'text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-900/30' : 'text-gray-300 dark:text-gray-600 cursor-not-allowed'
             }`}
           >
             다음 <ChevronRight className="w-5 h-5" />

@@ -48,8 +48,11 @@ export const usePronunciationCheck = (targetSentence: string) => {
   const [isFinished, setIsFinished] = useState(false);
   const [score, setScore] = useState(0);
   const [supportError, setSupportError] = useState('');
+  const [audioUrl, setAudioUrl] = useState<string | null>(null);
 
   const recognitionRef = useRef<SpeechRecognition | null>(null);
+  const mediaRecorderRef = useRef<MediaRecorder | null>(null);
+  const audioChunksRef = useRef<Blob[]>([]);
   
   const targetWords = useMemo(() => targetSentence.split(' '), [targetSentence]);
 
@@ -58,6 +61,8 @@ export const usePronunciationCheck = (targetSentence: string) => {
     setWordStatuses([]);
     setIsFinished(false);
     setScore(0);
+    setAudioUrl(null);
+    audioChunksRef.current = [];
   }, []);
 
   const evaluatePronunciation = useCallback((spokenText: string, markFinished: boolean = true) => {
@@ -154,26 +159,62 @@ export const usePronunciationCheck = (targetSentence: string) => {
     };
   }, [evaluatePronunciation]);
 
-  const startRecording = useCallback(() => {
+  const startRecording = useCallback(async () => {
     if (isRecording) return;
     setWordStatuses(new Array(targetWords.length).fill('pending'));
     setIsFinished(false);
     setTranscript('');
+    setAudioUrl(null);
+    audioChunksRef.current = [];
+    
     try {
       recognitionRef.current?.start();
+      
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      const mediaRecorder = new MediaRecorder(stream);
+      mediaRecorderRef.current = mediaRecorder;
+      
+      mediaRecorder.ondataavailable = (event) => {
+        if (event.data.size > 0) {
+          audioChunksRef.current.push(event.data);
+        }
+      };
+      
+      mediaRecorder.onstop = () => {
+        const audioBlob = new Blob(audioChunksRef.current, { type: 'audio/webm' });
+        const url = URL.createObjectURL(audioBlob);
+        setAudioUrl(url);
+        stream.getTracks().forEach(track => track.stop());
+      };
+      
+      mediaRecorder.start();
     } catch (e) {
-      console.error('Failed to start recognition', e);
+      console.error('Failed to start recording', e);
     }
   }, [isRecording, targetWords]);
 
+  const stopRecording = useCallback(() => {
+    recognitionRef.current?.stop();
+    if (mediaRecorderRef.current && mediaRecorderRef.current.state !== 'inactive') {
+      mediaRecorderRef.current.stop();
+    }
+  }, []);
+
   const toggleRecording = () => {
     if (isRecording) {
-      recognitionRef.current?.stop();
+      stopRecording();
     } else {
       startRecording();
     }
   };
   
+  const playRecording = useCallback(() => {
+    if (audioUrl) {
+      const audio = new Audio(audioUrl);
+      audio.play().catch(console.error);
+    }
+  }, [audioUrl]);
+
   useEffect(() => {
     if (!isRecording && transcript && !isFinished) {
       // eslint-disable-next-line react-hooks/set-state-in-effect
@@ -198,8 +239,11 @@ export const usePronunciationCheck = (targetSentence: string) => {
     isFinished,
     score,
     supportError,
+    audioUrl,
     toggleRecording,
     startRecording,
+    stopRecording,
+    playRecording,
     speakSentence,
     resetState,
   };
