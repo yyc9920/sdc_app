@@ -86,9 +86,14 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(({
         )}
 
         {(displayMode === 'all' || displayMode === 'korean') && (
-          <p className="text-lg text-gray-600 dark:text-gray-300 font-medium border-l-4 border-gray-100 dark:border-gray-700 pl-4">
-            {sentence.directComprehension}
-          </p>
+          <div className="space-y-2">
+            <p className="text-lg text-gray-600 dark:text-gray-300 font-medium border-l-4 border-gray-100 dark:border-gray-700 pl-4">
+              {sentence.directComprehension}
+            </p>
+            <p className="text-lg text-gray-900 dark:text-gray-100 font-bold border-l-4 border-blue-500 pl-4">
+              {sentence.comprehension}
+            </p>
+          </div>
         )}
       </div>
 

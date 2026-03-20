@@ -13,7 +13,6 @@ dist-ssr
 *.local
 .ruff_cache
 *.xlsx
-*.mp3
 
 # Editor directories and files
 .vscode/*

@@ -2,13 +2,25 @@ import { useState, useEffect } from 'react';
 import Papa from 'papaparse';
 import type { SentenceData } from '../types';
 
-export const useData = () => {
+export const useData = (filename: string | undefined) => {
   const [data, setData] = useState<SentenceData[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
+  const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
+  const [prevFilename, setPrevFilename] = useState(filename);
+
+  if (filename !== prevFilename) {
+    setPrevFilename(filename);
+    setData([]);
+    setLoading(!!filename);
+    setError(null);
+  }
 
   useEffect(() => {
-    fetch('data.csv')
+    if (!filename) {
+      return;
+    }
+
+    fetch(filename)
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch data');
@@ -24,7 +36,8 @@ export const useData = () => {
               id: index,
               english: row['English Sentence'] || '',
               koreanPronounce: row['Korean Pronounce'] || '',
-              directComprehension: row['Direct Comprehension'] || ''
+              directComprehension: row['Direct Comprehension'] || '',
+              comprehension: row['Comprehension'] || '',
             }));
             setData(parsedData);
             setLoading(false);
@@ -35,11 +48,11 @@ export const useData = () => {
           }
         });
       })
-      .catch(err => {
-        setError(err.message);
+      .catch(error => {
+        setError(error.message);
         setLoading(false);
       });
-  }, []);
+  }, [filename]);
 
   return { data, loading, error };
 };

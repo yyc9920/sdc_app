@@ -4,11 +4,28 @@ import { Card } from './components/Card';
 import { Controls } from './components/Controls';
 import { useAudio } from './hooks/useAudio';
 import './App.css';
-import type { SentenceData } from './types';
+import type { SentenceData, DataSet } from './types';
 import { PronunciationChecker } from './components/PronunciationChecker';
+import { BookOpen, Map, ChevronLeft, Moon, Sun } from 'lucide-react';
+
+const DATA_SETS: DataSet[] = [
+  {
+    id: 'ultimate_speaking_beginner_1_1050',
+    name: '끝장스피킹 초급-1 1050문장',
+    filename: 'ultimate_speaking_beginner_1_1050.csv'
+  },
+  {
+    id: 'essential_travel_english_phrases_100',
+    name: '필수 여행영어 100문장',
+    filename: 'essential_travel_english_phrases_100.csv'
+  }
+];
 
 function App() {
-  const { data, loading, error } = useData();
+  const [isLobby, setIsLobby] = useState(true);
+  const [selectedDataSet, setSelectedDataSet] = useState<DataSet | null>(null);
+  const { data, loading, error } = useData(selectedDataSet?.filename);
+  
   const [isNightMode, setIsNightMode] = useState(false);
   const [rangeStart, setRangeStart] = useState(1);
   const [rangeEnd, setRangeEnd] = useState(100);
@@ -38,6 +55,20 @@ function App() {
     }
   }, [isNightMode]);
 
+  // Reset settings when dataset changes
+  useEffect(() => {
+    if (data.length > 0) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setRangeStart(1);
+       
+      setRangeEnd(Math.min(data.length, 100));
+       
+      setCurrentIndex(0);
+       
+      setIsPlaying(false);
+    }
+  }, [data]);
+
   const activeRangeData = useMemo(() => {
     if (!data.length) return [];
     const start = Math.max(0, rangeStart - 1);
@@ -58,9 +89,10 @@ function App() {
         // eslint-disable-next-line react-hooks/set-state-in-effect
         setShuffledIndices(indices);
       } else {
-        // eslint-disable-next-line react-hooks/set-state-in-effect
+         
         setShuffledIndices(Array.from({ length: activeRangeData.length }, (_, i) => i));
       }
+       
       setCurrentIndex(0);
     }
   }, [activeRangeData, isRandom]);
@@ -87,9 +119,12 @@ function App() {
   }, [handleNext]);
 
   const audioUrl = useMemo(() => {
-    if (!activeSentence) return '';
-    return `tts/${voice}/${activeSentence.id}.mp3`;
-  }, [activeSentence, voice]);
+    if (!activeSentence || !selectedDataSet) return '';
+    // Handle different TTS structures if necessary
+    // For now, assuming same structure
+    const url = `tts/${selectedDataSet.id}/${voice}/${activeSentence.id}.mp3`;
+    return url;
+  }, [activeSentence, voice, selectedDataSet]);
 
   useAudio({
     audioUrl,
@@ -127,8 +162,59 @@ function App() {
     }
   }, [hasPrevCheck, currentCheckIndex, data]);
 
-  if (loading) return <div className="flex h-screen items-center justify-center text-xl dark:text-white">Loading data...</div>;
-  if (error) return <div className="flex h-screen items-center justify-center text-xl text-red-500">Error: {error}</div>;
+  const selectDataSet = (dataSet: DataSet) => {
+    setSelectedDataSet(dataSet);
+    setIsLobby(false);
+  };
+
+  const backToLobby = () => {
+    setIsLobby(true);
+    setIsPlaying(false);
+  };
+
+  if (isLobby) {
+    return (
+      <div className={`min-h-screen ${isNightMode ? 'dark bg-gray-900' : 'bg-gray-50'} transition-colors duration-300`}>
+        <header className="w-full max-w-4xl mx-auto flex justify-between items-center p-6 bg-transparent">
+          <h1 className="text-3xl font-extrabold text-blue-600 dark:text-blue-400 tracking-tight">SDC Study</h1>
+          <button
+            onClick={() => setIsNightMode(!isNightMode)}
+            className="p-3 rounded-xl bg-white dark:bg-gray-800 shadow-sm border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all active:scale-95"
+          >
+            {isNightMode ? <Sun className="w-5 h-5 text-yellow-400" /> : <Moon className="w-5 h-5 text-gray-600" />}
+          </button>
+        </header>
+
+        <main className="max-w-4xl mx-auto p-6 flex flex-col gap-8">
+          <section className="text-center space-y-2">
+            <h2 className="text-2xl font-bold text-gray-800 dark:text-white">학습 세트 선택</h2>
+            <p className="text-gray-500 dark:text-gray-400">공부하고 싶은 문장 세트를 선택하세요.</p>
+          </section>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {DATA_SETS.map((set) => (
+              <button
+                key={set.id}
+                onClick={() => selectDataSet(set)}
+                className="group relative flex flex-col items-start p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-sm border-2 border-transparent hover:border-blue-500 dark:hover:border-blue-400 transition-all hover:shadow-xl active:scale-[0.98]"
+              >
+                <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-2xl mb-4 group-hover:scale-110 transition-transform">
+                  {set.id.includes('travel') ? <Map className="w-8 h-8 text-blue-500" /> : <BookOpen className="w-8 h-8 text-blue-500" />}
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{set.name}</h3>
+                <span className="text-sm font-medium text-gray-400 dark:text-gray-500">
+                  {set.id === 'beginner-1050' ? '1050 문장' : '100 문장'}
+                </span>
+              </button>
+            ))}
+          </div>
+        </main>
+      </div>
+    );
+  }
+
+  if (loading) return <div className="flex h-screen items-center justify-center text-xl dark:text-white bg-gray-50 dark:bg-gray-900">데이터를 불러오는 중...</div>;
+  if (error) return <div className="flex h-screen items-center justify-center text-xl text-red-500 bg-gray-50 dark:bg-gray-900">에러: {error}</div>;
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300 flex flex-col items-center">
@@ -141,20 +227,27 @@ function App() {
         />
       )}
       <header className="w-full max-w-4xl mx-auto flex justify-between items-center p-4 sticky top-0 bg-gray-50/90 dark:bg-gray-900/90 backdrop-blur z-40 border-b border-gray-200 dark:border-gray-700">
-        <h1 className="text-xl font-bold text-gray-800 dark:text-white">SDC App</h1>
+        <div className="flex items-center gap-3">
+          <button 
+            onClick={backToLobby}
+            className="p-2 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors active:scale-90"
+            title="Lobby"
+          >
+            <ChevronLeft className="w-6 h-6 text-gray-600 dark:text-gray-400" />
+          </button>
+          <h1 className="text-lg font-bold text-gray-800 dark:text-white truncate max-w-[200px] md:max-w-none">
+            {selectedDataSet?.name}
+          </h1>
+        </div>
         <button
           onClick={() => setIsNightMode(!isNightMode)}
           className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
         >
-          {isNightMode ? (
-            <svg className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd" /></svg>
-          ) : (
-            <svg className="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" /></svg>
-          )}
+          {isNightMode ? <Sun className="w-5 h-5 text-yellow-400" /> : <Moon className="w-5 h-5 text-gray-600" />}
         </button>
       </header>
 
-      <main className="w-full max-w-4xl mx-auto flex flex-col flex-1 p-4 gap-4 pb-32">
+      <main className="w-full max-w-4xl mx-auto flex flex-col flex-1 p-4 gap-4 pb-48">
         {data.length > 0 ? (
           <div className="grid grid-cols-1 gap-4">
             {data.map((sentence) => {
@@ -191,7 +284,7 @@ function App() {
             })}
           </div>
         ) : (
-          <div className="text-gray-500 dark:text-gray-400 mt-10 text-center">No sentences available.</div>
+          <div className="text-gray-500 dark:text-gray-400 mt-10 text-center">문장이 없습니다.</div>
         )}
       </main>
 
