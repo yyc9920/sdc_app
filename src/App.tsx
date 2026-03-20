@@ -202,9 +202,6 @@ function App() {
                   {set.id.includes('travel') ? <Map className="w-8 h-8 text-blue-500" /> : <BookOpen className="w-8 h-8 text-blue-500" />}
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{set.name}</h3>
-                <span className="text-sm font-medium text-gray-400 dark:text-gray-500">
-                  {set.id === 'beginner-1050' ? '1050 문장' : '100 문장'}
-                </span>
               </button>
             ))}
           </div>
