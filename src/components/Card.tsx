@@ -55,10 +55,7 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(({
         ${!isInRange ? 'opacity-40 grayscale-[0.5]' : 'opacity-100'}
       `}
     >
-      <div className="flex justify-between items-start mb-4">
-        <span className="text-xs font-bold text-gray-400 uppercase tracking-wider">
-          Sentence #{sentence.id + 1}
-        </span>
+      <div className="flex justify-end items-start mb-4">
         <div className="flex gap-2">
           {score !== null && (
             <div className="flex items-center gap-1 bg-green-50 text-green-600 px-2 py-1 rounded-lg text-xs font-bold">
@@ -75,26 +72,52 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(({
         </div>
       </div>
 
-      <div className="space-y-4">
+      <div className="flex flex-col gap-5">
         {(displayMode === 'all' || displayMode === 'english') && (
-          <div>
-            <p className={`text-xl font-bold leading-tight ${isPlaying ? 'text-blue-700' : 'text-gray-900 dark:text-white'}`}>
+          <div className="flex items-start gap-4">
+            <div className={`text-3xl font-bold shrink-0 min-w-[3rem] text-right ${isPlaying ? 'text-blue-700' : 'text-gray-300 dark:text-gray-600'}`}>
+              {sentence.id + 1}.
+            </div>
+            <p className={`text-3xl font-bold leading-tight flex-1 ${isPlaying ? 'text-blue-700' : 'text-gray-900 dark:text-white'}`}>
               {sentence.english}
             </p>
-            <p className="text-sm text-blue-500 mt-1 font-medium">{sentence.koreanPronounce}</p>
           </div>
         )}
 
-        {(displayMode === 'all' || displayMode === 'korean') && (
-          <div className="space-y-2">
-            <p className="text-lg text-gray-600 dark:text-gray-300 font-medium border-l-4 border-gray-100 dark:border-gray-700 pl-4">
-              {sentence.directComprehension}
-            </p>
-            <p className="text-lg text-gray-900 dark:text-gray-100 font-bold border-l-4 border-blue-500 pl-4">
-              {sentence.comprehension}
-            </p>
-          </div>
-        )}
+        <div className="flex flex-col gap-3">
+          {(displayMode === 'all' || displayMode === 'korean') && (
+            <div className="flex items-start gap-4">
+              <div className="shrink-0 min-w-[3rem] text-right mt-0.5">
+                <span className="inline-block text-sm font-bold text-gray-500 bg-gray-100 dark:bg-gray-800 px-2.5 py-1 rounded">의미</span>
+              </div>
+              <p className="text-xl text-gray-900 dark:text-gray-100 font-bold leading-relaxed flex-1">
+                {sentence.comprehension}
+              </p>
+            </div>
+          )}
+
+          {(displayMode === 'all' || displayMode === 'english') && (
+            <div className="flex items-start gap-4">
+              <div className="shrink-0 min-w-[3rem] text-right mt-0.5">
+                <span className="inline-block text-sm font-bold text-blue-500 bg-blue-50 dark:bg-blue-900/30 px-2.5 py-1 rounded">발음</span>
+              </div>
+              <p className="text-xl text-blue-500 font-medium leading-relaxed flex-1">
+                {sentence.koreanPronounce}
+              </p>
+            </div>
+          )}
+
+          {(displayMode === 'all' || displayMode === 'korean') && (
+            <div className="flex items-start gap-4">
+              <div className="shrink-0 min-w-[3rem] text-right mt-0.5">
+                <span className="inline-block text-sm font-bold text-gray-400 bg-gray-50 dark:bg-gray-800/50 px-2.5 py-1 rounded">직독</span>
+              </div>
+              <p className="text-xl text-gray-600 dark:text-gray-300 font-medium leading-relaxed flex-1">
+                {sentence.directComprehension}
+              </p>
+            </div>
+          )}
+        </div>
       </div>
 
       <div className="mt-6 pt-4 border-t border-gray-50 dark:border-gray-700 flex justify-end gap-3">

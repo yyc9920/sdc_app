@@ -6,7 +6,7 @@ import { useAudio } from './hooks/useAudio';
 import './App.css';
 import type { SentenceData, DataSet } from './types';
 import { PronunciationChecker } from './components/PronunciationChecker';
-import { BookOpen, Map, ChevronLeft, Moon, Sun } from 'lucide-react';
+import { BookOpen, Plane, ChevronLeft, Moon, Sun } from 'lucide-react';
 
 const DATA_SETS: DataSet[] = [
   {
@@ -176,7 +176,7 @@ function App() {
     return (
       <div className={`min-h-screen ${isNightMode ? 'dark bg-gray-900' : 'bg-gray-50'} transition-colors duration-300`}>
         <header className="w-full max-w-4xl mx-auto flex justify-between items-center p-6 bg-transparent">
-          <h1 className="text-3xl font-extrabold text-blue-600 dark:text-blue-400 tracking-tight">SDC Study</h1>
+          <h1 className="text-3xl font-extrabold text-blue-600 dark:text-blue-400 tracking-tight">SDC 성인반 English Study</h1>
           <button
             onClick={() => setIsNightMode(!isNightMode)}
             className="p-3 rounded-xl bg-white dark:bg-gray-800 shadow-sm border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all active:scale-95"
@@ -196,12 +196,12 @@ function App() {
               <button
                 key={set.id}
                 onClick={() => selectDataSet(set)}
-                className="group relative flex flex-col items-start p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-sm border-2 border-transparent hover:border-blue-500 dark:hover:border-blue-400 transition-all hover:shadow-xl active:scale-[0.98]"
+                className="group relative flex items-center p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-sm border-2 border-transparent hover:border-blue-500 dark:hover:border-blue-400 transition-all hover:shadow-xl active:scale-[0.98]"
               >
-                <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-2xl mb-4 group-hover:scale-110 transition-transform">
-                  {set.id.includes('travel') ? <Map className="w-8 h-8 text-blue-500" /> : <BookOpen className="w-8 h-8 text-blue-500" />}
+                <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-2xl mr-4 group-hover:scale-110 transition-transform shrink-0">
+                  {set.id.includes('travel') ? <Plane className="w-8 h-8 text-blue-500" /> : <BookOpen className="w-8 h-8 text-blue-500" />}
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{set.name}</h3>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white text-left">{set.name}</h3>
               </button>
             ))}
           </div>
