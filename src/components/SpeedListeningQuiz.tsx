@@ -35,6 +35,7 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
       audioRef.current.pause();
       audioRef.current.src = '';
     }
+    window.scrollTo(0, 0);
   }, [set]);
 
   const blankIndicesMap = useMemo(() => {
