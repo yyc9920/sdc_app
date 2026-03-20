@@ -94,7 +94,6 @@ function App() {
   // Reset settings when dataset changes
   useEffect(() => {
     if (data.length > 0) {
-      // eslint-disable-next-line react-hooks/set-state-in-effect
       setRangeStart(1);
        
       setRangeEnd(Math.min(data.length, 100));
@@ -122,7 +121,6 @@ function App() {
           const j = Math.floor(Math.random() * (i + 1));
           [indices[i], indices[j]] = [indices[j], indices[i]];
         }
-        // eslint-disable-next-line react-hooks/set-state-in-effect
         setShuffledIndices(indices);
       } else {
          

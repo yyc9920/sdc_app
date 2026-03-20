@@ -46,6 +46,7 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
         .filter(i => !sentence.properNounIndices.includes(i));
       
       for (let i = eligibleIndices.length - 1; i > 0; i--) {
+        // eslint-disable-next-line react-hooks/purity
         const j = Math.floor(Math.random() * (i + 1));
         [eligibleIndices[i], eligibleIndices[j]] = [eligibleIndices[j], eligibleIndices[i]];
       }
