@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useMemo } from 'react';
+import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import type { SpeedListeningSet } from '../types';
 
 interface Props {
@@ -58,19 +58,7 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
     return map;
   }, [set]);
 
-  useEffect(() => {
-    if (isPlaying && audioRef.current) {
-      const sentence = set.sentences[currentSentenceIndex];
-      audioRef.current.src = `${import.meta.env.BASE_URL}tts/${datasetId}/female/${sentence.id}.mp3`;
-      audioRef.current.playbackRate = SPEEDS[currentSpeedIndex];
-      audioRef.current.play().catch(e => {
-        console.error("Audio play failed", e);
-        handleAudioEnded();
-      });
-    }
-  }, [isPlaying, currentSentenceIndex, currentSpeedIndex, datasetId, set.sentences]);
-
-  const handleAudioEnded = () => {
+  const handleAudioEnded = useCallback(() => {
     if (currentSentenceIndex < set.sentences.length - 1) {
       setCurrentSentenceIndex(prev => prev + 1);
     } else {
@@ -85,7 +73,19 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
         setIsPlaying(false);
       }
     }
-  };
+  }, [currentSentenceIndex, set.sentences.length, isReviewMode, currentSpeedIndex]);
+
+  useEffect(() => {
+    if (isPlaying && audioRef.current) {
+      const sentence = set.sentences[currentSentenceIndex];
+      audioRef.current.src = `${import.meta.env.BASE_URL}tts/${datasetId}/female/${sentence.id}.mp3`;
+      audioRef.current.playbackRate = SPEEDS[currentSpeedIndex];
+      audioRef.current.play().catch(e => {
+        console.error("Audio play failed", e);
+        handleAudioEnded();
+      });
+    }
+  }, [isPlaying, currentSentenceIndex, currentSpeedIndex, datasetId, set.sentences, handleAudioEnded]);
 
   const renderWord = (word: string, sentenceId: number, wordIndex: number) => {
     const isBlank = blankIndicesMap[sentenceId]?.has(wordIndex);
