@@ -17,24 +17,38 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
   
   const [currentSpeedIndex, setCurrentSpeedIndex] = useState(0);
   const [currentSentenceIndex, setCurrentSentenceIndex] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
+  const [isAnnouncementPlaying, setIsAnnouncementPlaying] = useState(true);
   const [audioFinished, setAudioFinished] = useState(false);
   const [isReviewMode, setIsReviewMode] = useState(false);
   
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const currentAudioSrcRef = useRef<string>('');
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    return () => {
+      if (audio) {
+        audio.pause();
+        audio.src = '';
+      }
+    };
+  }, []);
 
   useEffect(() => {
     setBlanks({});
     setIsSubmitted(false);
     setCurrentSpeedIndex(0);
     setCurrentSentenceIndex(0);
-    setIsPlaying(false);
+    setIsPlaying(true);
+    setIsAnnouncementPlaying(true);
     setAudioFinished(false);
     setIsReviewMode(false);
     if (audioRef.current) {
       audioRef.current.pause();
       audioRef.current.src = '';
     }
+    currentAudioSrcRef.current = '';
     window.scrollTo(0, 0);
   }, [set]);
 
@@ -60,6 +74,11 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
   }, [set]);
 
   const handleAudioEnded = useCallback(() => {
+    if (isAnnouncementPlaying) {
+      setIsAnnouncementPlaying(false);
+      return;
+    }
+
     if (currentSentenceIndex < set.sentences.length - 1) {
       setCurrentSentenceIndex(prev => prev + 1);
     } else {
@@ -74,19 +93,37 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
         setIsPlaying(false);
       }
     }
-  }, [currentSentenceIndex, set.sentences.length, isReviewMode, currentSpeedIndex]);
+  }, [isAnnouncementPlaying, currentSentenceIndex, set.sentences.length, isReviewMode, currentSpeedIndex]);
 
   useEffect(() => {
     if (isPlaying && audioRef.current) {
-      const sentence = set.sentences[currentSentenceIndex];
-      audioRef.current.src = `${import.meta.env.BASE_URL}tts/${datasetId}/female/${sentence.id}.mp3`;
-      audioRef.current.playbackRate = SPEEDS[currentSpeedIndex];
+      let targetSrc = '';
+      let targetRate = 1.0;
+      
+      if (isAnnouncementPlaying) {
+        targetSrc = `${import.meta.env.BASE_URL}tts/announcement.mp3`;
+        targetRate = 1.0;
+      } else {
+        const sentence = set.sentences[currentSentenceIndex];
+        targetSrc = `${import.meta.env.BASE_URL}tts/${datasetId}/female/${sentence.id}.mp3`;
+        targetRate = SPEEDS[currentSpeedIndex];
+      }
+      
+      if (currentAudioSrcRef.current !== targetSrc) {
+        audioRef.current.src = targetSrc;
+        currentAudioSrcRef.current = targetSrc;
+      }
+      
+      audioRef.current.playbackRate = targetRate;
+      
       audioRef.current.play().catch(e => {
         console.error("Audio play failed", e);
         handleAudioEnded();
       });
+    } else if (!isPlaying && audioRef.current) {
+      audioRef.current.pause();
     }
-  }, [isPlaying, currentSentenceIndex, currentSpeedIndex, datasetId, set.sentences, handleAudioEnded]);
+  }, [isPlaying, isAnnouncementPlaying, currentSentenceIndex, currentSpeedIndex, datasetId, set.sentences, handleAudioEnded]);
 
   const renderWord = (word: string, sentenceId: number, wordIndex: number) => {
     const isBlank = blankIndicesMap[sentenceId]?.has(wordIndex);
@@ -152,6 +189,7 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
                 setAudioFinished(false);
                 setIsReviewMode(true);
                 setIsPlaying(true);
+                currentAudioSrcRef.current = '';
               } else {
                 setIsPlaying(!isPlaying);
               }
