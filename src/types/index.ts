@@ -1,6 +1,7 @@
 export interface DataSet {
   id: string;
   name: string;
+  description?: string;
   filename: string;
 }
 

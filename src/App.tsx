@@ -13,12 +13,14 @@ import { SpeedListeningQuiz } from './components/SpeedListeningQuiz';
 const DATA_SETS: DataSet[] = [
   {
     id: 'ultimate_speaking_beginner_1_1050',
-    name: '끝장스피킹 초급-1 1050문장',
+    name: '끝장스피킹 초급 1',
+    description: '1050문장',
     filename: 'ultimate_speaking_beginner_1_1050.csv'
   },
   {
     id: 'essential_travel_english_phrases_100',
-    name: '필수 여행영어 100문장',
+    name: '필수 여행영어',
+    description: '100문장',
     filename: 'essential_travel_english_phrases_100.csv'
   }
 ];
@@ -352,7 +354,12 @@ function App() {
                       <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-2xl mr-4 group-hover:scale-110 transition-transform shrink-0">
                         {set.id.includes('travel') ? <Plane className="w-8 h-8 text-blue-500" /> : <BookOpen className="w-8 h-8 text-blue-500" />}
                       </div>
-                      <h3 className="text-xl font-bold text-gray-900 dark:text-white text-left">{set.name}</h3>
+                      <div className="text-left flex-1">
+                        <h3 className="text-xl font-bold text-gray-900 dark:text-white">{set.name}</h3>
+                        {set.description && (
+                          <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">{set.description}</p>
+                        )}
+                      </div>
                     </button>
                   ))}
                 </div>
