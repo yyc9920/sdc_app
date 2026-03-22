@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 export const AdminCodeGenerator: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [generatedCode, setGeneratedCode] = useState<string | null>(null);
-  const [role, setRole] = useState<'student' | 'admin'>('student');
+  const [role, setRole] = useState<'student' | 'teacher' | 'admin'>('student');
   const [error, setError] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
 
@@ -52,28 +52,39 @@ export const AdminCodeGenerator: React.FC = () => {
           <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
             권한 선택
           </label>
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-3 gap-3">
             <button
               type="button"
               onClick={() => setRole('student')}
-              className={`py-3 px-4 rounded-xl border-2 font-medium transition-all ${
+              className={`py-3 px-2 rounded-xl border-2 font-medium transition-all text-sm ${
                 role === 'student' 
                   ? 'border-blue-500 bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300' 
                   : 'border-gray-200 bg-transparent text-gray-600 hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700'
               }`}
             >
-              학생용 (30일 만료)
+              학생 (30일)
+            </button>
+            <button
+              type="button"
+              onClick={() => setRole('teacher')}
+              className={`py-3 px-2 rounded-xl border-2 font-medium transition-all text-sm ${
+                role === 'teacher' 
+                  ? 'border-green-500 bg-green-50 text-green-700 dark:bg-green-900/30 dark:text-green-300' 
+                  : 'border-gray-200 bg-transparent text-gray-600 hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700'
+              }`}
+            >
+              선생님 (무제한)
             </button>
             <button
               type="button"
               onClick={() => setRole('admin')}
-              className={`py-3 px-4 rounded-xl border-2 font-medium transition-all ${
+              className={`py-3 px-2 rounded-xl border-2 font-medium transition-all text-sm ${
                 role === 'admin' 
                   ? 'border-purple-500 bg-purple-50 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300' 
                   : 'border-gray-200 bg-transparent text-gray-600 hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700'
               }`}
             >
-              관리자용 (무제한)
+              관리자 (무제한)
             </button>
           </div>
         </div>
