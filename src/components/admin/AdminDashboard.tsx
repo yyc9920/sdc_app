@@ -1,6 +1,7 @@
 import React from 'react';
 import { AdminCodeGenerator } from './AdminCodeGenerator';
 import { CodeExpirationManager } from './CodeExpirationManager';
+import { UserManager } from './UserManager';
 import { LogOut } from 'lucide-react';
 import { useAuth } from '../../hooks/useAuth';
 
@@ -16,7 +17,7 @@ export const AdminDashboard: React.FC = () => {
               관리자 대시보드
             </h1>
             <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-              접속 코드 발급 및 관리
+              사용자 및 권한 관리
             </p>
           </div>
           <button 
@@ -37,8 +38,8 @@ export const AdminDashboard: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <AdminCodeGenerator />
-          
           <CodeExpirationManager />
+          <UserManager />
         </div>
       </main>
     </div>

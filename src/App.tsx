@@ -2,11 +2,14 @@ import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useData } from './hooks/useData';
 import { useAuth } from './hooks/useAuth';
+import { useUserProfile } from './hooks/useUserProfile';
 import { Card } from './components/Card';
 import { Controls } from './components/Controls';
 import { LoginOverlay } from './components/auth/LoginOverlay';
+import { OnboardingForm } from './components/auth/OnboardingForm';
 import { BottomNavigation } from './components/layout/BottomNavigation';
 import { AdminDashboard } from './components/admin/AdminDashboard';
+import { TeacherDashboard } from './components/teacher/TeacherDashboard';
 import { ProfilePage } from './components/dashboard/ProfilePage';
 import { useAudio } from './hooks/useAudio';
 import './App.css';
@@ -45,8 +48,9 @@ function App() {
   const [showSplash, setShowSplash] = useState(true);
 
   const [isLobby, setIsLobby] = useState(true);
-  const [activeTab, setActiveTab] = useState<'home' | 'admin' | 'profile'>('home');
+  const [activeTab, setActiveTab] = useState<'home' | 'admin' | 'teacher' | 'profile'>('home');
   const { user, role, loading: authLoading, error: authError, loginWithCode } = useAuth();
+  const { profile, loading: profileLoading } = useUserProfile(user?.uid);
   const [learningMode, setLearningMode] = useState<'repetition' | 'speed_listening' | null>(null);
   const [selectedDataSet, setSelectedDataSet] = useState<DataSet | null>(null);
   const [selectedSpeedListeningSet, setSelectedSpeedListeningSet] = useState<SpeedListeningSet | null>(null);
@@ -252,14 +256,27 @@ function App() {
     return <LoginOverlay onLogin={loginWithCode} loading={authLoading} error={authError} />;
   }
 
-  if (authLoading) {
+  if (authLoading || (user && profileLoading)) {
     return <div className="flex h-screen items-center justify-center bg-gray-50 dark:bg-gray-900 text-blue-500">Loading...</div>;
+  }
+
+  if (user && profile && !profile.profileCompleted) {
+    return <OnboardingForm />;
   }
 
   if (activeTab === 'admin' && role === 'admin') {
     return (
       <>
         <AdminDashboard />
+        <BottomNavigation activeTab={activeTab} onTabChange={setActiveTab} role={role} />
+      </>
+    );
+  }
+
+  if (activeTab === 'teacher' && role === 'teacher') {
+    return (
+      <>
+        <TeacherDashboard />
         <BottomNavigation activeTab={activeTab} onTabChange={setActiveTab} role={role} />
       </>
     );

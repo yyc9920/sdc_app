@@ -6,7 +6,7 @@ import app from '../firebase';
 
 interface AuthState {
   user: User | null;
-  role: 'admin' | 'student' | null;
+  role: 'admin' | 'teacher' | 'student' | null;
   loading: boolean;
   error: string | null;
 }
@@ -27,7 +27,7 @@ export const useAuth = () => {
           const token = await user.getIdTokenResult();
           setState({
             user,
-            role: token.claims.role as 'admin' | 'student',
+            role: token.claims.role as 'admin' | 'teacher' | 'student',
             loading: false,
             error: null,
           });

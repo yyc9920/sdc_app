@@ -55,9 +55,11 @@ export const validateCode = onCall(async (request) => {
     
     await db.collection('users').doc(uid).set({
       uid,
-      profile: { name: '', goal: '', createdAt: FieldValue.serverTimestamp() },
+      profile: { name: '', goal: '', phone: '', email: '', age: null, createdAt: FieldValue.serverTimestamp() },
+      profileCompleted: false,
       role: codeData.role,
       accessCode: code,
+      teacherId: null,
       stats: {
         totalStudyTimeSeconds: 0,
         totalMasteredCount: 0,

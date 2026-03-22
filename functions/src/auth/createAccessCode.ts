@@ -9,8 +9,8 @@ export const createAccessCode = onCall(async (request) => {
   
   const { role } = request.data;
   
-  if (!role || !['admin', 'student'].includes(role)) {
-    throw new HttpsError('invalid-argument', 'Valid role required (admin or student)');
+  if (!role || !['admin', 'teacher', 'student'].includes(role)) {
+    throw new HttpsError('invalid-argument', 'Valid role required (admin, teacher, or student)');
   }
   
   const db = getFirestore();
@@ -28,7 +28,7 @@ export const createAccessCode = onCall(async (request) => {
   
   const code = generateCode();
   
-  const expiresAt = role === 'admin' 
+  const expiresAt = ['admin', 'teacher'].includes(role)
     ? null  
     : new Date(Date.now() + 30 * 24 * 60 * 60 * 1000); 
   

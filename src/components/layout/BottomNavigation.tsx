@@ -3,9 +3,9 @@ import { Home, Settings, User } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 interface Props {
-  activeTab: 'home' | 'admin' | 'profile';
-  onTabChange: (tab: 'home' | 'admin' | 'profile') => void;
-  role: 'admin' | 'student' | null;
+  activeTab: 'home' | 'admin' | 'teacher' | 'profile';
+  onTabChange: (tab: 'home' | 'admin' | 'teacher' | 'profile') => void;
+  role: 'admin' | 'teacher' | 'student' | null;
 }
 
 export const BottomNavigation: React.FC<Props> = ({ activeTab, onTabChange, role }) => {
@@ -14,9 +14,12 @@ export const BottomNavigation: React.FC<Props> = ({ activeTab, onTabChange, role
     { id: 'profile', icon: User, label: '내 정보' },
   ] as const;
 
-  const activeTabs = role === 'admin' 
-    ? [...tabs, { id: 'admin', icon: Settings, label: '관리자' } as const]
-    : tabs;
+  let activeTabs: Array<{id: string, icon: React.ElementType, label: string}> = [...tabs];
+  if (role === 'admin') {
+    activeTabs = [...tabs, { id: 'admin', icon: Settings, label: '관리자' } as const];
+  } else if (role === 'teacher') {
+    activeTabs = [...tabs, { id: 'teacher', icon: Settings, label: '선생님' } as const];
+  }
 
   return (
     <nav className="fixed bottom-0 left-0 right-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-lg border-t border-gray-200 dark:border-gray-800 pb-safe">
@@ -28,7 +31,7 @@ export const BottomNavigation: React.FC<Props> = ({ activeTab, onTabChange, role
           return (
             <button
               key={tab.id}
-              onClick={() => onTabChange(tab.id as 'home' | 'admin' | 'profile')}
+              onClick={() => onTabChange(tab.id as 'home' | 'admin' | 'teacher' | 'profile')}
               className="relative flex flex-col items-center justify-center w-16 h-14 select-none focus:outline-none group"
             >
               {isActive && (

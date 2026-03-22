@@ -50,7 +50,7 @@ firestore-root/
 ```typescript
 interface AccessCode {
   code: string;              // "ABCD-1234" (unique index)
-  role: 'admin' | 'student';
+  role: 'admin' | 'teacher' | 'student';
   status: 'available' | 'used' | 'revoked';
   assignedTo: string | null; // uid
   createdAt: Timestamp;
@@ -72,10 +72,15 @@ interface User {
   profile: {
     name: string;
     goal: string;
+    phone?: string;
+    email?: string;
+    age?: number;
     createdAt: Timestamp;
   };
-  role: 'admin' | 'student';
+  profileCompleted: boolean;
+  role: 'admin' | 'teacher' | 'student';
   accessCode: string;  // 사용한 코드 (역참조)
+  teacherId: string | null; // 학생용: 배정된 선생님의 UID
   
   // 집계 통계 (Cloud Function으로 주기적 계산 또는 트리거 업데이트)
   stats: {
