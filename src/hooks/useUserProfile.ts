@@ -45,8 +45,10 @@ export const useUserProfile = (uid: string | undefined) => {
         setLoading(false);
       });
     } else {
-      setProfile(null);
-      setLoading(false);
+      setTimeout(() => {
+        setProfile(null);
+        setLoading(false);
+      }, 0);
     }
 
     return () => unsubscribe();
