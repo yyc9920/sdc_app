@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useData } from './hooks/useData';
+import { useSpeedListeningData } from './hooks/useSpeedListeningData';
 import { useAuth } from './hooks/useAuth';
 import { useUserProfile } from './hooks/useUserProfile';
 import { Card } from './components/Card';
@@ -88,40 +89,34 @@ function App() {
     }
   }, [isNightMode]);
 
+  const { data: speedListeningData, loading: slLoading } = useSpeedListeningData(selectedDataSet?.id || null);
+  
   useEffect(() => {
-    if (learningMode === 'speed_listening' && selectedDataSet) {
-      setSelectedLevel('all');
-      const fetchSpeedListeningData = async () => {
-        setLoadingSpeedListening(true);
-        try {
-          const filename = selectedDataSet.id === 'ultimate_speaking_beginner_1_1050' 
-            ? 'speed_listening_beginner.json' 
-            : selectedDataSet.id === 'native_30_patterns'
-            ? 'speed_listening_patterns.json'
-            : 'speed_listening_travel.json';
-          const response = await fetch(import.meta.env.BASE_URL + filename);
-          const data = await response.json();
-          setSpeedListeningSets(data);
-        } catch (error) {
-          console.error('Failed to fetch speed listening data:', error);
-        } finally {
-          setLoadingSpeedListening(false);
-        }
-      };
-      fetchSpeedListeningData();
-    }
-  }, [learningMode, selectedDataSet]);
+    setTimeout(() => {
+      setSpeedListeningSets(speedListeningData);
+      setLoadingSpeedListening(slLoading);
+    }, 0);
+  }, [speedListeningData, slLoading]);
 
+  const availableLevels = useMemo(() => {
+    return Array.from(new Set(speedListeningSets.map(s => s.level))).sort((a, b) => a - b);
+  }, [speedListeningSets]);
+
+  const filteredSets = useMemo(() => {
+    return selectedLevel === 'all' 
+      ? speedListeningSets 
+      : speedListeningSets.filter(s => s.level === selectedLevel);
+  }, [speedListeningSets, selectedLevel]);
+  
   // Reset settings when dataset changes
   useEffect(() => {
     if (data.length > 0) {
-      setRangeStart(1);
-       
-      setRangeEnd(Math.min(data.length, 100));
-       
-      setCurrentIndex(0);
-       
-      setIsPlaying(false);
+      setTimeout(() => {
+        setRangeStart(1);
+        setRangeEnd(Math.min(data.length, 100));
+        setCurrentIndex(0);
+        setIsPlaying(false);
+      }, 0);
     }
   }, [data]);
 
@@ -136,19 +131,19 @@ function App() {
 
   useEffect(() => {
     if (activeRangeData.length > 0) {
-      if (isRandom) {
-        const indices = Array.from({ length: activeRangeData.length }, (_, i) => i);
-        for (let i = indices.length - 1; i > 0; i--) {
-          const j = Math.floor(Math.random() * (i + 1));
-          [indices[i], indices[j]] = [indices[j], indices[i]];
+      setTimeout(() => {
+        if (isRandom) {
+          const indices = Array.from({ length: activeRangeData.length }, (_, i) => i);
+          for (let i = indices.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [indices[i], indices[j]] = [indices[j], indices[i]];
+          }
+          setShuffledIndices(indices);
+        } else {
+          setShuffledIndices(Array.from({ length: activeRangeData.length }, (_, i) => i));
         }
-        setShuffledIndices(indices);
-      } else {
-         
-        setShuffledIndices(Array.from({ length: activeRangeData.length }, (_, i) => i));
-      }
-       
-      setCurrentIndex(0);
+        setCurrentIndex(0);
+      }, 0);
     }
   }, [activeRangeData, isRandom]);
 
@@ -218,15 +213,7 @@ function App() {
     }
   }, [hasPrevCheck, currentCheckIndex, data]);
 
-  const availableLevels = useMemo(() => {
-    return Array.from(new Set(speedListeningSets.map(s => s.level))).sort((a, b) => a - b);
-  }, [speedListeningSets]);
 
-  const filteredSets = useMemo(() => {
-    return selectedLevel === 'all' 
-      ? speedListeningSets 
-      : speedListeningSets.filter(s => s.level === selectedLevel);
-  }, [speedListeningSets, selectedLevel]);
 
   const selectDataSet = (dataSet: DataSet) => {
     setSelectedDataSet(dataSet);
