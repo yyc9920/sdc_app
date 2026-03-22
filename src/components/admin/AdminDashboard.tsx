@@ -4,9 +4,11 @@ import { CodeExpirationManager } from './CodeExpirationManager';
 import { UserManager } from './UserManager';
 import { LogOut } from 'lucide-react';
 import { useAuth } from '../../hooks/useAuth';
+import { useUserProfile } from '../../hooks/useUserProfile';
 
 export const AdminDashboard: React.FC = () => {
   const { user, logout } = useAuth();
+  const { profile } = useUserProfile(user?.uid);
 
   return (
     <div className="w-full max-w-4xl mx-auto flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900 pb-24">
@@ -34,7 +36,7 @@ export const AdminDashboard: React.FC = () => {
         <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl p-6 text-white shadow-lg flex justify-between items-center">
           <div>
             <h2 className="text-blue-100 font-medium mb-1">현재 로그인된 관리자</h2>
-            <p className="text-xl font-bold truncate">{user?.email || 'Admin'}</p>
+            <p className="text-xl font-bold truncate">{profile?.profile?.name || '관리자'}</p>
           </div>
         </div>
 
