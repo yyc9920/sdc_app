@@ -1,8 +1,10 @@
 import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useData } from './hooks/useData';
+import { useAuth } from './hooks/useAuth';
 import { Card } from './components/Card';
 import { Controls } from './components/Controls';
+import { LoginOverlay } from './components/auth/LoginOverlay';
 import { useAudio } from './hooks/useAudio';
 import './App.css';
 import type { SentenceData, DataSet, SpeedListeningSet } from './types';
@@ -40,6 +42,7 @@ function App() {
   const [showSplash, setShowSplash] = useState(true);
 
   const [isLobby, setIsLobby] = useState(true);
+  const { user, loading: authLoading, error: authError, loginWithCode } = useAuth();
   const [learningMode, setLearningMode] = useState<'repetition' | 'speed_listening' | null>(null);
   const [selectedDataSet, setSelectedDataSet] = useState<DataSet | null>(null);
   const [selectedSpeedListeningSet, setSelectedSpeedListeningSet] = useState<SpeedListeningSet | null>(null);
@@ -240,6 +243,14 @@ function App() {
       setLearningMode(null);
     }
   };
+
+  if (!user && !authLoading) {
+    return <LoginOverlay onLogin={loginWithCode} loading={authLoading} error={authError} />;
+  }
+
+  if (authLoading) {
+    return <div className="flex h-screen items-center justify-center bg-gray-50 dark:bg-gray-900 text-blue-500">Loading...</div>;
+  }
 
   if (isLobby) {
     return (
