@@ -5,6 +5,9 @@ import { useAuth } from './hooks/useAuth';
 import { Card } from './components/Card';
 import { Controls } from './components/Controls';
 import { LoginOverlay } from './components/auth/LoginOverlay';
+import { BottomNavigation } from './components/layout/BottomNavigation';
+import { AdminDashboard } from './components/admin/AdminDashboard';
+import { ProfilePage } from './components/dashboard/ProfilePage';
 import { useAudio } from './hooks/useAudio';
 import './App.css';
 import type { SentenceData, DataSet, SpeedListeningSet } from './types';
@@ -42,7 +45,8 @@ function App() {
   const [showSplash, setShowSplash] = useState(true);
 
   const [isLobby, setIsLobby] = useState(true);
-  const { user, loading: authLoading, error: authError, loginWithCode } = useAuth();
+  const [activeTab, setActiveTab] = useState<'home' | 'admin' | 'profile'>('home');
+  const { user, role, loading: authLoading, error: authError, loginWithCode } = useAuth();
   const [learningMode, setLearningMode] = useState<'repetition' | 'speed_listening' | null>(null);
   const [selectedDataSet, setSelectedDataSet] = useState<DataSet | null>(null);
   const [selectedSpeedListeningSet, setSelectedSpeedListeningSet] = useState<SpeedListeningSet | null>(null);
@@ -252,9 +256,28 @@ function App() {
     return <div className="flex h-screen items-center justify-center bg-gray-50 dark:bg-gray-900 text-blue-500">Loading...</div>;
   }
 
+  if (activeTab === 'admin' && role === 'admin') {
+    return (
+      <>
+        <AdminDashboard />
+        <BottomNavigation activeTab={activeTab} onTabChange={setActiveTab} role={role} />
+      </>
+    );
+  }
+
+  if (activeTab === 'profile') {
+    return (
+      <>
+        <ProfilePage />
+        <BottomNavigation activeTab={activeTab} onTabChange={setActiveTab} role={role} />
+      </>
+    );
+  }
+
   if (isLobby) {
     return (
-      <div className={`min-h-screen ${isNightMode ? 'dark bg-gray-900' : 'bg-gray-50'} transition-colors duration-300 relative overflow-hidden`}>
+      <>
+        <div className={`min-h-screen ${isNightMode ? 'dark bg-gray-900' : 'bg-gray-50'} transition-colors duration-300 relative overflow-hidden`}>
         <AnimatePresence>
           {showSplash && (
             <motion.div 
@@ -440,10 +463,12 @@ function App() {
                   </>
                 )}
               </>
-            ) : null}
-          </main>
-        </motion.div>
-      </div>
+              ) : null}
+            </main>
+          </motion.div>
+        </div>
+        <BottomNavigation activeTab={activeTab} onTabChange={setActiveTab} role={role} />
+      </>
     );
   }
 
