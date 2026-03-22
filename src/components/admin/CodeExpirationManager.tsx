@@ -13,10 +13,7 @@ export const CodeExpirationManager: React.FC = () => {
   const handleExtend = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    const formattedCodeId = codeId.toUpperCase().replace(/[^A-Z0-9]/g, '');
-    const finalCodeId = formattedCodeId.length > 5 
-        ? `${formattedCodeId.slice(0, 5)}-${formattedCodeId.slice(5)}`
-        : formattedCodeId;
+    const finalCodeId = codeId.trim().toUpperCase();
     
     if (finalCodeId.length < 8) {
       setMessage({ text: '올바른 코드 형식을 입력해주세요.', type: 'error' });

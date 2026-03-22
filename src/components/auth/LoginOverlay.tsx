@@ -13,12 +13,7 @@ export const LoginOverlay: React.FC<Props> = ({ onLogin, loading, error }) => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (code.trim() && !loading) {
-      // Format uppercase and add dash if missing, then call API
-      const formattedCode = code.toUpperCase().replace(/[^A-Z0-9]/g, '');
-      const finalCode = formattedCode.length > 5 
-        ? `${formattedCode.slice(0, 5)}-${formattedCode.slice(5)}`
-        : formattedCode;
-      
+      const finalCode = code.trim().toUpperCase();
       await onLogin(finalCode);
     }
   };
