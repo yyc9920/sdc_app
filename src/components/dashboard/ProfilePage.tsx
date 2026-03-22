@@ -91,9 +91,6 @@ export const ProfilePage: React.FC = () => {
                 {roleLabel}
               </span>
             </div>
-            <p className="text-sm text-gray-400 font-mono">
-              UID: {user?.uid.substring(0, 10)}...
-            </p>
           </div>
 
           <div className="space-y-6 max-w-sm mx-auto">

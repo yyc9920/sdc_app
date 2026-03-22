@@ -31,9 +31,11 @@ export const AdminDashboard: React.FC = () => {
       </header>
 
       <main className="flex-1 p-4 sm:p-6 space-y-6">
-        <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl p-6 text-white shadow-lg">
-          <h2 className="text-blue-100 font-medium mb-1">현재 로그인된 관리자</h2>
-          <p className="text-xl font-bold truncate">UID: <span className="font-mono">{user?.uid.substring(0, 12)}...</span></p>
+        <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl p-6 text-white shadow-lg flex justify-between items-center">
+          <div>
+            <h2 className="text-blue-100 font-medium mb-1">현재 로그인된 관리자</h2>
+            <p className="text-xl font-bold truncate">{user?.email || 'Admin'}</p>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
