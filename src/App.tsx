@@ -22,6 +22,12 @@ const DATA_SETS: DataSet[] = [
     name: '필수 여행영어',
     description: '100문장',
     filename: 'essential_travel_english_phrases_100.csv'
+  },
+  {
+    id: 'native_30_patterns',
+    name: '원어민 핵심 패턴',
+    description: '30문장',
+    filename: 'frequent_30_patterns.csv'
   }
 ];
 
@@ -79,6 +85,8 @@ function App() {
         try {
           const filename = selectedDataSet.id === 'ultimate_speaking_beginner_1_1050' 
             ? 'speed_listening_beginner.json' 
+            : selectedDataSet.id === 'native_30_patterns'
+            ? 'speed_listening_patterns.json'
             : 'speed_listening_travel.json';
           const response = await fetch(import.meta.env.BASE_URL + filename);
           const data = await response.json();

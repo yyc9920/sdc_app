@@ -1,0 +1,310 @@
+[
+  {
+    "setId": "native_patterns_원어민_핵심_패턴_part_1_level2_set1",
+    "theme": "원어민 핵심 패턴 Part 1",
+    "level": 2,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'm trying to sleep",
+        "korean": "나 자려고 하고 있어",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I'm here to help you",
+        "korean": "너 도와주러 왔어",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I've been waiting for you",
+        "korean": "계속 널 기다리고 있었어",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Let me check",
+        "korean": "내가 확인해 볼게",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Can I get a coffee",
+        "korean": "커피 한 잔 주실래요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Can you help me",
+        "korean": "나 좀 도와줄 수 있어?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this conversation?",
+      "options": [
+        "원어민 핵심 패턴 Part 1",
+        "Weather",
+        "Food",
+        "Sports"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "native_patterns_원어민_핵심_패턴_part_1_level3_set2",
+    "theme": "원어민 핵심 패턴 Part 1",
+    "level": 3,
+    "sentences": [
+      {
+        "id": 1,
+        "english": "I'm supposed to be there now",
+        "korean": "나 지금 거기 가 있어야 돼",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I was about to call you",
+        "korean": "너한테 막 전화하려던 참이었어",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Do you mind opening the window",
+        "korean": "창문 좀 여는 거 괜찮을까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "I'm not sure if it works",
+        "korean": "이게 되는지 잘 모르겠어",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this conversation?",
+      "options": [
+        "원어민 핵심 패턴 Part 1",
+        "Weather",
+        "Food",
+        "Sports"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "native_patterns_원어민_핵심_패턴_part_2_level2_set3",
+    "theme": "원어민 핵심 패턴 Part 2",
+    "level": 2,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "I don't think that's true",
+        "korean": "그건 사실이 아닌 것 같아",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 11,
+        "english": "I think you should try it",
+        "korean": "그거 한번 해보는 게 좋을 것 같아",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 12,
+        "english": "It feels like summer",
+        "korean": "여름처럼 느껴져",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
+        "english": "It looks like rain",
+        "korean": "비 올 것 같아",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "It sounds like a plan",
+        "korean": "그거 좋은 생각이네",
+        "properNounIndices": []
+      },
+      {
+        "id": 15,
+        "english": "There is a problem",
+        "korean": "문제가 하나 있어",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this conversation?",
+      "options": [
+        "원어민 핵심 패턴 Part 2",
+        "Weather",
+        "Food",
+        "Sports"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "native_patterns_원어민_핵심_패턴_part_2_level3_set4",
+    "theme": "원어민 핵심 패턴 Part 2",
+    "level": 3,
+    "sentences": [
+      {
+        "id": 16,
+        "english": "I'd like to order now",
+        "korean": "지금 주문하고 싶어요",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "I need you to wait",
+        "korean": "조금만 기다려 줬으면 해",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 18,
+        "english": "I just wanted to say thank you",
+        "korean": "그냥 고맙다고 말하고 싶었어",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 19,
+        "english": "I was wondering if you could help",
+        "korean": "혹시 도와줄 수 있나 해서요",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this conversation?",
+      "options": [
+        "원어민 핵심 패턴 Part 2",
+        "Weather",
+        "Food",
+        "Sports"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "native_patterns_원어민_핵심_패턴_part_3_level3_set5",
+    "theme": "원어민 핵심 패턴 Part 3",
+    "level": 3,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "The thing is I'm busy today",
+        "korean": "문제는 내가 오늘 바쁘다는 거야",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 21,
+        "english": "As far as I know he left",
+        "korean": "내가 알기론 그는 떠났어",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 23,
+        "english": "You might want to check again",
+        "korean": "다시 확인해 보는 게 좋을 것 같아",
+        "properNounIndices": []
+      },
+      {
+        "id": 26,
+        "english": "I didn't mean to hurt you",
+        "korean": "널 다치게 하려던 건 아니었어",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 27,
+        "english": "I can't wait to see you",
+        "korean": "널 만나는 게 너무 기대돼",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this conversation?",
+      "options": [
+        "원어민 핵심 패턴 Part 3",
+        "Weather",
+        "Food",
+        "Sports"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "native_patterns_원어민_핵심_패턴_part_3_level2_set6",
+    "theme": "원어민 핵심 패턴 Part 3",
+    "level": 2,
+    "sentences": [
+      {
+        "id": 22,
+        "english": "You don't have to worry",
+        "korean": "걱정할 필요 없어",
+        "properNounIndices": []
+      },
+      {
+        "id": 24,
+        "english": "It depends on the situation",
+        "korean": "그건 상황에 따라 달라",
+        "properNounIndices": []
+      },
+      {
+        "id": 25,
+        "english": "I'll let you know later",
+        "korean": "나중에 알려줄게",
+        "properNounIndices": []
+      },
+      {
+        "id": 28,
+        "english": "That's why I left early",
+        "korean": "그래서 내가 일찍 나간 거야",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 29,
+        "english": "That's what I mean",
+        "korean": "그게 바로 내 말이야",
+        "properNounIndices": [
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this conversation?",
+      "options": [
+        "원어민 핵심 패턴 Part 3",
+        "Weather",
+        "Food",
+        "Sports"
+      ],
+      "answer": 0
+    }
+  }
+]

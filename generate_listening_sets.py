@@ -65,6 +65,7 @@ def process_csv(input_file, output_file, prefix):
     df = read_custom_csv(input_file)
 
     is_1050 = "1050" in input_file
+    is_patterns = "frequent_30_patterns" in input_file
 
     themes = []
     if is_1050:
@@ -81,6 +82,9 @@ def process_csv(input_file, output_file, prefix):
                 themes.append("Health")
             else:
                 themes.append(f"General Part {i // 50 + 1}")
+    elif is_patterns:
+        for i in range(len(df)):
+            themes.append(f"원어민 핵심 패턴 Part {i // 10 + 1}")
     else:
         for i in range(len(df)):
             themes.append(f"Travel Phrases Part {i // 10 + 1}")
@@ -214,4 +218,9 @@ if __name__ == "__main__":
         "public/ultimate_speaking_beginner_1_1050.csv",
         "public/speed_listening_beginner.json",
         "beginner",
+    )
+    process_csv(
+        "public/frequent_30_patterns.csv",
+        "public/speed_listening_patterns.json",
+        "native_patterns",
     )
