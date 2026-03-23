@@ -18,6 +18,7 @@ import type { SentenceData, DataSet, SpeedListeningSet } from './types';
 import { PronunciationChecker } from './components/PronunciationChecker';
 import { BookOpen, Plane, ChevronLeft, Moon, Sun, Headphones, Repeat } from 'lucide-react';
 import { SpeedListeningQuiz } from './components/SpeedListeningQuiz';
+import { LoadingSpinner } from './components/LoadingSpinner';
 
 const DATA_SETS: DataSet[] = [
   {
@@ -244,7 +245,7 @@ function App() {
   }
 
   if (authLoading || (user && profileLoading)) {
-    return <div className="flex h-screen items-center justify-center bg-gray-50 dark:bg-gray-900 text-blue-500">Loading...</div>;
+    return <LoadingSpinner fullScreen />;
   }
 
   if (user && profile && !profile.profileCompleted) {
@@ -418,7 +419,7 @@ function App() {
                   <p className="text-gray-500 dark:text-gray-400">도전할 세트를 선택하세요.</p>
                 </section>
                 {loadingSpeedListening ? (
-                  <div className="text-center py-10 text-gray-500 dark:text-gray-400">데이터를 불러오는 중...</div>
+                  <LoadingSpinner />
                 ) : (
                   <>
                     <div className="flex gap-2 mb-4 overflow-x-auto pb-2">
@@ -514,7 +515,7 @@ function App() {
     );
   }
 
-  if (loading) return <div className="flex h-screen items-center justify-center text-xl dark:text-white bg-gray-50 dark:bg-gray-900">데이터를 불러오는 중...</div>;
+  if (loading) return <LoadingSpinner fullScreen />;
   if (error) return <div className="flex h-screen items-center justify-center text-xl text-red-500 bg-gray-50 dark:bg-gray-900">에러: {error}</div>;
 
   return (
