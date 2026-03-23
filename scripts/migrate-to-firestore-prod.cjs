@@ -148,6 +148,7 @@ async function migrateSpeedListening() {
       const setRef = db.collection('speed_listening_sets').doc(setData.setId);
       
       batch.set(setRef, {
+        setNumber: setData.setNumber,
         setId: setData.setId,
         theme: setData.theme,
         level: setData.level,
@@ -188,7 +189,7 @@ async function run() {
   console.log('🚀 Starting Production Migration');
   console.log('================================\n');
   
-  await migrateCSV();
+  // await migrateCSV();
   await migrateSpeedListening();
   
   console.log('\n================================');

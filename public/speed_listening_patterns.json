@@ -52,7 +52,8 @@
         "Sports"
       ],
       "answer": 0
-    }
+    },
+    "setNumber": 1
   },
   {
     "setId": "native_patterns_원어민_핵심_패턴_part_1_level3_set2",
@@ -95,7 +96,8 @@
         "Sports"
       ],
       "answer": 0
-    }
+    },
+    "setNumber": 2
   },
   {
     "setId": "native_patterns_원어민_핵심_패턴_part_2_level2_set3",
@@ -152,7 +154,8 @@
         "Sports"
       ],
       "answer": 0
-    }
+    },
+    "setNumber": 3
   },
   {
     "setId": "native_patterns_원어민_핵심_패턴_part_2_level3_set4",
@@ -199,7 +202,8 @@
         "Sports"
       ],
       "answer": 0
-    }
+    },
+    "setNumber": 4
   },
   {
     "setId": "native_patterns_원어민_핵심_패턴_part_3_level3_set5",
@@ -254,7 +258,8 @@
         "Sports"
       ],
       "answer": 0
-    }
+    },
+    "setNumber": 5
   },
   {
     "setId": "native_patterns_원어민_핵심_패턴_part_3_level2_set6",
@@ -305,6 +310,7 @@
         "Sports"
       ],
       "answer": 0
-    }
+    },
+    "setNumber": 6
   }
 ]

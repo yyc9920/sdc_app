@@ -40,17 +40,17 @@ export const useSpeedListeningData = (learningSetId: string | null) => {
 
         const setsQuery = query(
           collection(db, 'speed_listening_sets'),
-          orderBy('level', 'asc')
+          orderBy('setNumber', 'asc')
         );
         const setsSnapshot = await getDocs(setsQuery);
-        
+
         console.log('Fetched all sets, prefix:', prefix);
         const matchingSets = setsSnapshot.docs.filter(doc => {
           const isMatch = doc.id.startsWith(prefix);
           if (isMatch) console.log('Match found:', doc.id);
           return isMatch;
         });
-        
+
         console.log('Matching sets count:', matchingSets.length);
         
         if (matchingSets.length === 0) {
