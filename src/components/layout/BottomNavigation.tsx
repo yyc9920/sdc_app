@@ -1,16 +1,17 @@
 import React from 'react';
-import { Home, Settings, User } from 'lucide-react';
+import { Home, Settings, User, BarChart3 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 interface Props {
-  activeTab: 'home' | 'admin' | 'teacher' | 'profile';
-  onTabChange: (tab: 'home' | 'admin' | 'teacher' | 'profile') => void;
+  activeTab: 'home' | 'dashboard' | 'admin' | 'teacher' | 'profile';
+  onTabChange: (tab: 'home' | 'dashboard' | 'admin' | 'teacher' | 'profile') => void;
   role: 'admin' | 'teacher' | 'student' | null;
 }
 
 export const BottomNavigation: React.FC<Props> = ({ activeTab, onTabChange, role }) => {
   const tabs = [
     { id: 'home', icon: Home, label: '학습' },
+    { id: 'dashboard', icon: BarChart3, label: '현황' },
     { id: 'profile', icon: User, label: '내 정보' },
   ] as const;
 
@@ -31,7 +32,7 @@ export const BottomNavigation: React.FC<Props> = ({ activeTab, onTabChange, role
           return (
             <button
               key={tab.id}
-              onClick={() => onTabChange(tab.id as 'home' | 'admin' | 'teacher' | 'profile')}
+              onClick={() => onTabChange(tab.id as 'home' | 'dashboard' | 'admin' | 'teacher' | 'profile')}
               className="relative flex flex-col items-center justify-center w-16 h-14 select-none focus:outline-none group"
             >
               {isActive && (

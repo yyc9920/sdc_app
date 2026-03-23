@@ -189,7 +189,7 @@ async function run() {
   console.log('🚀 Starting Production Migration');
   console.log('================================\n');
   
-  // await migrateCSV();
+  await migrateCSV();
   await migrateSpeedListening();
   
   console.log('\n================================');

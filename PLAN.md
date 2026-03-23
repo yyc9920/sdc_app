@@ -1366,32 +1366,32 @@ service firebase.storage {
 - [x] Admin 코드 연장 UI (`CodeExpirationManager`)
 - [x] Firestore/Storage 보안 규칙 배포
 
-### Phase 2: 데이터 레이어 전환 (Week 3) 🔄 80% 완료
+### Phase 2: 데이터 레이어 전환 (Week 3) ✅ 완료
 
 - [x] `useData` 훅 구현 (learning_sets 읽기)
 - [x] `useSpeedListeningData` 훅 구현
-- [ ] Service Worker 설정 (TTS 캐싱)
+- [x] Service Worker 설정 (TTS 캐싱) - vite-plugin-pwa + Workbox
 - [x] Firestore persistence 설정 (오프라인 지원)
 - [x] 병행 운영 테스트
 
-### Phase 3: 학습 진행 트래킹 (Week 4) ❌ 미완료
+### Phase 3: 학습 진행 트래킹 (Week 4) ✅ 완료
 
-- [ ] `useStudySession` 훅 구현 (시간 트래킹)
-- [ ] `progress` subcollection 쓰기 로직
-- [ ] `daily_stats` 자동 업데이트
-- [ ] Cloud Function: `checkMastery` (마스터 판정)
-- [ ] Cloud Function: `updateStreaks` (streak 계산)
+- [x] `useStudySession` 훅 구현 (시간 트래킹)
+- [x] `progress` subcollection 쓰기 로직
+- [x] `daily_stats` 자동 업데이트
+- [x] Cloud Function: `checkMastery` (마스터 판정)
+- [x] Cloud Function: `updateStreaks` (streak 계산)
 
-### Phase 4: 대시보드 UI (Week 5) 🔄 10% 완료
+### Phase 4: 대시보드 UI (Week 5) ✅ 완료
 
 - [x] `ProfilePage` 컴포넌트 (부분)
-- [ ] `DashboardPage` 레이아웃
-- [ ] `StatsOverview` 컴포넌트 (오늘 학습시간, 마스터 수)
-- [ ] `ProgressRing` 컴포넌트 (진행률 차트)
-- [ ] `LearningHeatmap` 컴포넌트 (GitHub 스타일)
-- [ ] `QuizHistory` 컴포넌트 (스피드리스닝 기록)
-- [ ] `useLevelRecommendation` 훅 구현 (스피드리스닝 추천)
-- [ ] `LevelRecommendationBadge` 컴포넌트
+- [x] `DashboardPage` 레이아웃
+- [x] `StatsOverview` 컴포넌트 (오늘 학습시간, 마스터 수)
+- [x] `ProgressRing` 컴포넌트 (진행률 차트)
+- [x] `LearningHeatmap` 컴포넌트 (GitHub 스타일)
+- [x] `QuizHistory` 컴포넌트 (스피드리스닝 기록)
+- [x] `useLevelRecommendation` 훅 구현 (스피드리스닝 추천)
+- [x] `LevelRecommendationBadge` 컴포넌트
 
 ### Phase 5: 관리자 기능 (Week 6) 🔄 40% 완료
 

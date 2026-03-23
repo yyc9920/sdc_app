@@ -12,12 +12,15 @@ import { BottomNavigation } from './components/layout/BottomNavigation';
 import { AdminDashboard } from './components/admin/AdminDashboard';
 import { TeacherDashboard } from './components/teacher/TeacherDashboard';
 import { ProfilePage } from './components/dashboard/ProfilePage';
+import { DashboardPage } from './components/dashboard/DashboardPage';
 import { useAudio } from './hooks/useAudio';
+import { useStudySession } from './hooks/useStudySession';
 import './App.css';
 import type { SentenceData, DataSet, SpeedListeningSet } from './types';
 import { PronunciationChecker } from './components/PronunciationChecker';
 import { BookOpen, Plane, ChevronLeft, Moon, Sun, Headphones, Repeat } from 'lucide-react';
 import { SpeedListeningQuiz } from './components/SpeedListeningQuiz';
+import { LevelRecommendationBadge } from './components/speed-listening/LevelRecommendationBadge';
 import { LoadingSpinner } from './components/LoadingSpinner';
 
 const DATA_SETS: DataSet[] = [
@@ -50,7 +53,7 @@ function App() {
   const [showSplash, setShowSplash] = useState(true);
 
   const [isLobby, setIsLobby] = useState(true);
-  const [activeTab, setActiveTab] = useState<'home' | 'admin' | 'teacher' | 'profile'>('home');
+  const [activeTab, setActiveTab] = useState<'home' | 'dashboard' | 'admin' | 'teacher' | 'profile'>('home');
   const { user, role, loading: authLoading, error: authError, loginWithCode } = useAuth();
   const { profile, loading: profileLoading } = useUserProfile(user?.uid);
   const [learningMode, setLearningMode] = useState<'repetition' | 'speed_listening' | null>(null);
@@ -152,6 +155,25 @@ function App() {
     activeRangeData.length > 0 && shuffledIndices.length > 0
       ? activeRangeData[shuffledIndices[currentIndex]]
       : undefined;
+
+  const { startSession, pauseSession, endSession } = useStudySession({
+    sentenceId: activeSentence?.id ?? 0,
+    setId: selectedDataSet?.id ?? '',
+  });
+
+  useEffect(() => {
+    if (isPlaying && activeSentence && selectedDataSet) {
+      startSession();
+    } else {
+      pauseSession();
+    }
+  }, [isPlaying, activeSentence, selectedDataSet, startSession, pauseSession]);
+
+  useEffect(() => {
+    return () => {
+      endSession();
+    };
+  }, [activeSentence?.id, endSession]);
 
   const handleNext = useCallback(() => {
     if (activeRangeData.length > 0) {
@@ -270,6 +292,15 @@ function App() {
     );
   }
 
+  if (activeTab === 'dashboard') {
+    return (
+      <>
+        <DashboardPage />
+        <BottomNavigation activeTab={activeTab} onTabChange={setActiveTab} role={role} />
+      </>
+    );
+  }
+
   if (activeTab === 'profile') {
     return (
       <>
@@ -352,7 +383,7 @@ function App() {
             </button>
           </header>
 
-          <main className="max-w-4xl mx-auto p-6 flex flex-col gap-8">
+          <main className="max-w-4xl mx-auto p-6 flex pb-20 flex-col gap-8">
             {!learningMode ? (
               <>
                 <section className="text-center space-y-2">
@@ -447,6 +478,12 @@ function App() {
                         </button>
                       ))}
                     </div>
+                    
+                    <LevelRecommendationBadge
+                      uid={user?.uid}
+                      currentLevel={selectedLevel}
+                      onSelectLevel={(level) => setSelectedLevel(level)}
+                    />                    
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       {filteredSets.map((set) => (
                         <button

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import type { SpeedListeningSet } from '../types';
+import { useSaveQuizResult } from '../hooks/useStudySession';
 
 interface Props {
   datasetId: string;
@@ -27,6 +28,9 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
   
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const currentAudioSrcRef = useRef<string>('');
+  const startTimeRef = useRef<number>(Date.now());
+  
+  const { saveQuizResult } = useSaveQuizResult();
 
   useEffect(() => {
     const audio = audioRef.current;
@@ -48,6 +52,7 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
     setIsTransitionChimePlaying(false);
     setAudioFinished(false);
     setIsReviewMode(false);
+    startTimeRef.current = Date.now();
     if (audioRef.current) {
       audioRef.current.pause();
       audioRef.current.src = '';
@@ -267,6 +272,30 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
             if (audioRef.current) {
               audioRef.current.pause();
             }
+            
+            let blanksTotal = 0;
+            let blanksCorrect = 0;
+            
+            set.sentences.forEach(sentence => {
+              const words = sentence.english.split(' ');
+              words.forEach((word, wIndex) => {
+                if (blankIndicesMap[sentence.id]?.has(wIndex)) {
+                  blanksTotal++;
+                  const blankKey = `${sentence.id}-${wIndex}`;
+                  const userInput = blanks[blankKey] || '';
+                  const match = word.match(/^[.,?!;:"']*(.+?)[.,?!;:"']*$/);
+                  const actualWord = match ? match[1] : word;
+                  if (cleanWord(userInput) === cleanWord(actualWord)) {
+                    blanksCorrect++;
+                  }
+                }
+              });
+            });
+            
+            const score = blanksTotal > 0 ? Math.round((blanksCorrect / blanksTotal) * 100) : 0;
+            const timeSpentSeconds = Math.floor((Date.now() - startTimeRef.current) / 1000);
+            
+            saveQuizResult(set.setId, set.level, score, blanksTotal, blanksCorrect, timeSpentSeconds);
           }}
           disabled={isSubmitted}
           className="w-full py-3.5 bg-green-600 text-white font-bold rounded-lg hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors shadow-sm"

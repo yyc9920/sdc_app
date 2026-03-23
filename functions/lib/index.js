@@ -21,4 +21,6 @@ const v2_1 = require("firebase-functions/v2");
 __exportStar(require("./auth/validateCode"), exports);
 __exportStar(require("./auth/createAccessCode"), exports);
 __exportStar(require("./auth/extendCodeExpiration"), exports);
+__exportStar(require("./progress/checkMastery"), exports);
+__exportStar(require("./stats/updateStreaks"), exports);
 //# sourceMappingURL=index.js.map

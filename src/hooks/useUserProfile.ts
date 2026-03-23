@@ -7,6 +7,7 @@ export interface UserProfile {
   role: 'admin' | 'teacher' | 'student';
   profileCompleted: boolean;
   teacherId: string | null;
+  accessCode?: string;
   profile: {
     name: string;
     goal: string;
@@ -18,7 +19,9 @@ export interface UserProfile {
   stats?: {
     totalStudyTimeSeconds?: number;
     currentStreak?: number;
+    longestStreak?: number;
     totalMasteredCount?: number;
+    lastActiveDate?: string;
   };
 }
 
