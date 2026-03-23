@@ -2,7 +2,14 @@ import { onCall, HttpsError } from 'firebase-functions/v2/https';
 import { getAuth } from 'firebase-admin/auth';
 import { getFirestore, FieldValue } from 'firebase-admin/firestore';
 
-export const validateCode = onCall(async (request) => {
+export const validateCode = onCall({ 
+  cors: [
+    'https://sdc-app-1d02c.web.app',
+    'https://sdc-app-1d02c.firebaseapp.com',
+    'http://localhost:5173',
+    'http://127.0.0.1:5173'
+  ] 
+}, async (request) => {
   const { code } = request.data;
   
   console.log(`[validateCode] Received code from client: '${code}'`); 

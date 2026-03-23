@@ -4,14 +4,21 @@ exports.createAccessCode = void 0;
 const https_1 = require("firebase-functions/v2/https");
 const firestore_1 = require("firebase-admin/firestore");
 const crypto_1 = require("crypto");
-exports.createAccessCode = (0, https_1.onCall)(async (request) => {
+exports.createAccessCode = (0, https_1.onCall)({
+    cors: [
+        'https://sdc-app-1d02c.web.app',
+        'https://sdc-app-1d02c.firebaseapp.com',
+        'http://localhost:5173',
+        'http://127.0.0.1:5173'
+    ]
+}, async (request) => {
     var _a;
     if (((_a = request.auth) === null || _a === void 0 ? void 0 : _a.token.role) !== 'admin') {
         throw new https_1.HttpsError('permission-denied', 'Admin access required');
     }
     const { role } = request.data;
-    if (!role || !['admin', 'student'].includes(role)) {
-        throw new https_1.HttpsError('invalid-argument', 'Valid role required (admin or student)');
+    if (!role || !['admin', 'teacher', 'student'].includes(role)) {
+        throw new https_1.HttpsError('invalid-argument', 'Valid role required (admin, teacher, or student)');
     }
     const db = (0, firestore_1.getFirestore)();
     const generateCode = () => {
@@ -26,7 +33,7 @@ exports.createAccessCode = (0, https_1.onCall)(async (request) => {
         return code;
     };
     const code = generateCode();
-    const expiresAt = role === 'admin'
+    const expiresAt = ['admin', 'teacher'].includes(role)
         ? null
         : new Date(Date.now() + 30 * 24 * 60 * 60 * 1000);
     const codeDoc = await db.collection('access_codes').add({

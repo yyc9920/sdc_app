@@ -3,7 +3,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.extendCodeExpiration = void 0;
 const https_1 = require("firebase-functions/v2/https");
 const firestore_1 = require("firebase-admin/firestore");
-exports.extendCodeExpiration = (0, https_1.onCall)(async (request) => {
+exports.extendCodeExpiration = (0, https_1.onCall)({
+    cors: [
+        'https://sdc-app-1d02c.web.app',
+        'https://sdc-app-1d02c.firebaseapp.com',
+        'http://localhost:5173',
+        'http://127.0.0.1:5173'
+    ]
+}, async (request) => {
     var _a, _b;
     if (((_a = request.auth) === null || _a === void 0 ? void 0 : _a.token.role) !== 'admin') {
         throw new https_1.HttpsError('permission-denied', 'Admin access required');

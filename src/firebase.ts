@@ -24,12 +24,21 @@ export const db = initializeFirestore(app, {
 export const functions = getFunctions(app, 'asia-northeast3');
 export const storage = getStorage(app);
 
-// Use Emulators if running locally (e.g. Vite dev server)
-if (import.meta.env.DEV) {
-  connectAuthEmulator(auth, 'http://127.0.0.1:9099');
-  connectFirestoreEmulator(db, '127.0.0.1', 8080);
-  connectFunctionsEmulator(functions, '127.0.0.1', 5001);
-  connectStorageEmulator(storage, '127.0.0.1', 9199);
+// Use Emulators only in DEV mode AND when VITE_USE_EMULATOR is not 'false'
+// Set VITE_USE_EMULATOR=false in .env.local to test against production from dev server
+const useEmulator = import.meta.env.DEV && import.meta.env.VITE_USE_EMULATOR !== 'false';
+
+if (useEmulator) {
+  const hostname = typeof window !== 'undefined' ? window.location.hostname : '127.0.0.1';
+  
+  connectAuthEmulator(auth, `http://${hostname}:9099`);
+  connectFirestoreEmulator(db, hostname, 8080);
+  connectFunctionsEmulator(functions, hostname, 5001);
+  connectStorageEmulator(storage, hostname, 9199);
+  
+  console.log('🔧 Using Firebase Emulators');
+} else if (import.meta.env.DEV) {
+  console.log('🔥 DEV mode using PRODUCTION Firebase');
 }
 
 export default app;

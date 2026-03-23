@@ -28,3 +28,6 @@ dist-ssr
 __pycache__/
 .venv/
 *.pyc
+
+# Firebase service account keys (NEVER commit)
+**/service-account*.json

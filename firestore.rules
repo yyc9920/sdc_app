@@ -1,0 +1,67 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    function isAdmin() {
+      return isAuthenticated() && request.auth.token.role == 'admin';
+    }
+    
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+    
+    // Access codes: Admin only
+    match /access_codes/{codeId} {
+      allow read: if isAdmin();
+      allow write: if isAdmin();
+    }
+    
+    // Users: Owner only (except admin can read all)
+    match /users/{userId} {
+      allow read: if isOwner(userId) || isAdmin();
+      allow write: if isOwner(userId);
+      
+      // Progress subcollection
+      match /progress/{sentenceId} {
+        allow read, write: if isOwner(userId);
+      }
+      
+      // Daily stats subcollection
+      match /daily_stats/{date} {
+        allow read, write: if isOwner(userId);
+      }
+      
+      // Quiz results subcollection
+      match /quiz_results/{resultId} {
+        allow read, write: if isOwner(userId);
+      }
+    }
+    
+    // Learning sets: Public read, admin write
+    match /learning_sets/{setId} {
+      allow read: if isAuthenticated();
+      allow write: if isAdmin();
+      
+      match /sentences/{sentenceId} {
+        allow read: if isAuthenticated();
+        allow write: if isAdmin();
+      }
+    }
+    
+    // Speed listening sets: Same as learning sets
+    match /speed_listening_sets/{setId} {
+      allow read: if isAuthenticated();
+      allow write: if isAdmin();
+      
+      match /sentences/{sentenceId} {
+        allow read: if isAuthenticated();
+        allow write: if isAdmin();
+      }
+    }
+  }
+}

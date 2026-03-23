@@ -1347,34 +1347,34 @@ service firebase.storage {
 
 ## 11. 단계별 구현 로드맵 (Roadmap)
 
-### Phase 0: 마이그레이션 준비 (Week 1)
+### Phase 0: 마이그레이션 준비 (Week 1) ✅ 완료
 
-- [ ] Firebase 프로젝트 생성 및 초기 설정
-- [ ] 마이그레이션 스크립트 작성 (`scripts/migrate-to-firebase.js`)
-- [ ] Feature flag 시스템 구현 (`VITE_USE_FIREBASE`)
-- [ ] 기존 데이터를 Firebase로 복사 (CSV → Firestore, TTS → Storage)
-- [ ] 데이터 무결성 검증 스크립트 실행
+- [x] Firebase 프로젝트 생성 및 초기 설정
+- [x] 마이그레이션 스크립트 작성 (`scripts/migrate-to-firestore-prod.cjs`)
+- [x] Feature flag 시스템 구현 (`VITE_USE_FIREBASE`, `VITE_USE_EMULATOR`)
+- [x] 기존 데이터를 Firebase로 복사 (CSV → Firestore, TTS → Storage)
+- [x] 데이터 무결성 검증 (운영 테스트 완료)
 
-### Phase 1: 인증 시스템 (Week 2)
+### Phase 1: 인증 시스템 (Week 2) ✅ 완료
 
-- [ ] Cloud Function: `validateCode` 구현
-- [ ] Cloud Function: `createAccessCode` 구현
-- [ ] Cloud Function: `extendCodeExpiration` 구현
-- [ ] `useAuth` 훅 구현
-- [ ] `LoginOverlay` 컴포넌트 구현
-- [ ] Admin 코드 생성 UI (`AdminCodeGenerator`)
-- [ ] Admin 코드 연장 UI (`CodeExpirationManager`)
-- [ ] Firestore/Storage 보안 규칙 배포
+- [x] Cloud Function: `validateCode` 구현
+- [x] Cloud Function: `createAccessCode` 구현
+- [x] Cloud Function: `extendCodeExpiration` 구현
+- [x] `useAuth` 훅 구현
+- [x] `LoginOverlay` 컴포넌트 구현
+- [x] Admin 코드 생성 UI (`AdminCodeGenerator`)
+- [x] Admin 코드 연장 UI (`CodeExpirationManager`)
+- [x] Firestore/Storage 보안 규칙 배포
 
-### Phase 2: 데이터 레이어 전환 (Week 3)
+### Phase 2: 데이터 레이어 전환 (Week 3) 🔄 80% 완료
 
-- [ ] `useFirestoreData` 훅 구현 (learning_sets 읽기)
-- [ ] `useSpeedListeningData` 훅 구현
+- [x] `useData` 훅 구현 (learning_sets 읽기)
+- [x] `useSpeedListeningData` 훅 구현
 - [ ] Service Worker 설정 (TTS 캐싱)
-- [ ] Firestore persistence 설정 (오프라인 지원)
-- [ ] 병행 운영 테스트
+- [x] Firestore persistence 설정 (오프라인 지원)
+- [x] 병행 운영 테스트
 
-### Phase 3: 학습 진행 트래킹 (Week 4)
+### Phase 3: 학습 진행 트래킹 (Week 4) ❌ 미완료
 
 - [ ] `useStudySession` 훅 구현 (시간 트래킹)
 - [ ] `progress` subcollection 쓰기 로직
@@ -1382,8 +1382,9 @@ service firebase.storage {
 - [ ] Cloud Function: `checkMastery` (마스터 판정)
 - [ ] Cloud Function: `updateStreaks` (streak 계산)
 
-### Phase 4: 대시보드 UI (Week 5)
+### Phase 4: 대시보드 UI (Week 5) 🔄 10% 완료
 
+- [x] `ProfilePage` 컴포넌트 (부분)
 - [ ] `DashboardPage` 레이아웃
 - [ ] `StatsOverview` 컴포넌트 (오늘 학습시간, 마스터 수)
 - [ ] `ProgressRing` 컴포넌트 (진행률 차트)
@@ -1392,20 +1393,21 @@ service firebase.storage {
 - [ ] `useLevelRecommendation` 훅 구현 (스피드리스닝 추천)
 - [ ] `LevelRecommendationBadge` 컴포넌트
 
-### Phase 5: 관리자 기능 (Week 6)
+### Phase 5: 관리자 기능 (Week 6) 🔄 40% 완료
 
-- [ ] Admin 대시보드 페이지
+- [x] Admin 대시보드 페이지 (`AdminDashboard`)
+- [x] 사용자 관리 UI (`UserManager`)
 - [ ] CSV 업로드 UI
 - [ ] Cloud Function: `processCSV` (자동 TTS 생성)
 - [ ] 처리 상태 실시간 표시
 - [ ] 완료 알림 (FCM/이메일)
 
-### Phase 6: 최적화 및 정리 (Week 7)
+### Phase 6: 최적화 및 정리 (Week 7) ❌ 미완료
 
 - [ ] 성능 테스트 및 최적화
 - [ ] Legacy 코드 제거
 - [ ] 문서 최종 업데이트
-- [ ] 프로덕션 배포
+- [x] 프로덕션 배포 (2026-03-22)
 
 ---
 
