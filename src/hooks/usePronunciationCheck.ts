@@ -41,6 +41,13 @@ interface WindowWithSpeechRecognition extends Window {
   webkitSpeechRecognition?: new () => SpeechRecognition;
 }
 
+/**
+ * Custom hook for real-time pronunciation checking using the Web Speech API.
+ * Handles speech recognition, audio recording, and scoring based on a target sentence.
+ * 
+ * @param {string} targetSentence - The English sentence the user is expected to say.
+ * @returns {Object} State and functions for managing recording and evaluation.
+ */
 export const usePronunciationCheck = (targetSentence: string) => {
   const [isRecording, setIsRecording] = useState(false);
   const [transcript, setTranscript] = useState('');
@@ -56,6 +63,9 @@ export const usePronunciationCheck = (targetSentence: string) => {
   
   const targetWords = useMemo(() => targetSentence.split(' '), [targetSentence]);
 
+  /**
+   * Resets all internal states for a fresh recording session.
+   */
   const resetState = useCallback(() => {
     setTranscript('');
     setWordStatuses([]);
@@ -65,6 +75,13 @@ export const usePronunciationCheck = (targetSentence: string) => {
     audioChunksRef.current = [];
   }, []);
 
+  /**
+   * Compares spoken text against the target sentence and updates word statuses.
+   * 
+   * @param {string} spokenText - The transcript from the speech recognition.
+   * @param {boolean} [markFinished=true] - Whether to finalize the evaluation.
+   * @returns {number} The calculated accuracy score (0-100).
+   */
   const evaluatePronunciation = useCallback((spokenText: string, markFinished: boolean = true) => {
     const spokenClean = spokenText.toLowerCase().replace(/[.,!?]/g, '').split(/\s+/);
     let lastFoundIdx = -1;
@@ -159,6 +176,9 @@ export const usePronunciationCheck = (targetSentence: string) => {
     };
   }, [evaluatePronunciation]);
 
+  /**
+   * Initiates both speech recognition and raw audio recording.
+   */
   const startRecording = useCallback(async () => {
     if (isRecording) return;
     setWordStatuses(new Array(targetWords.length).fill('pending'));
@@ -193,6 +213,9 @@ export const usePronunciationCheck = (targetSentence: string) => {
     }
   }, [isRecording, targetWords]);
 
+  /**
+   * Stops recognition and audio recording.
+   */
   const stopRecording = useCallback(() => {
     recognitionRef.current?.stop();
     if (mediaRecorderRef.current && mediaRecorderRef.current.state !== 'inactive') {
@@ -200,6 +223,9 @@ export const usePronunciationCheck = (targetSentence: string) => {
     }
   }, []);
 
+  /**
+   * Toggles the recording state.
+   */
   const toggleRecording = () => {
     if (isRecording) {
       stopRecording();
@@ -208,6 +234,9 @@ export const usePronunciationCheck = (targetSentence: string) => {
     }
   };
   
+  /**
+   * Plays back the captured user audio.
+   */
   const playRecording = useCallback(() => {
     if (audioUrl) {
       const audio = new Audio(audioUrl);
@@ -222,6 +251,9 @@ export const usePronunciationCheck = (targetSentence: string) => {
     }
   }, [isRecording, transcript, isFinished, evaluatePronunciation]);
 
+  /**
+   * Triggers the native browser Text-to-Speech to read the target sentence.
+   */
   const speakSentence = () => {
     if ('speechSynthesis' in window) {
       window.speechSynthesis.cancel();

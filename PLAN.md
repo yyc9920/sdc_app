@@ -1409,9 +1409,17 @@ service firebase.storage {
 - [ ] 문서 최종 업데이트
 - [x] 프로덕션 배포 (2026-03-22)
 
+### Phase 7: 랭킹 시스템 (Week 8) ❌ 미완료
+
+- [ ] 랭킹 데이터 집계 로직 설계 (Study Time, Mastered Count, Streaks)
+- [ ] `RankingPage` 및 `RankingList` 컴포넌트 구현
+- [ ] 주간/월간 랭킹 자동 초기화 및 아카이빙 (Cloud Functions)
+- [ ] 사용자 프로필에 랭킹 및 뱃지 표시 기능 추가
+
 ---
 
 ## 12. 결정 사항 (Decisions Made)
+
 
 ### [DECISION-1] 액세스 코드 만료 기능 - **결정 완료**
 
@@ -1493,6 +1501,56 @@ interface LevelRecommendation {
 
 ---
 
+### [DECISION-6] 랭킹 시스템 지표 - **결정 완료**
+
+**선택: B (다중 지표 제공)**
+
+| 지표 | 기간 | 초기화 주기 |
+|-----|-----|----------|
+| **학습 시간** | 주간 / 전체 | 매주 월요일 00:00 (KST) |
+| **마스터 문장 수** | 전체 | - |
+| **연속 학습일 (Streak)** | 현재 / 최고 | - |
+
+**데이터 처리 방식**:
+- 소규모(100명 미만)인 경우 Firestore 직접 쿼리 (`orderBy`, `limit`) 사용
+- 대규모 확장 시 Cloud Functions로 집계된 `rankings` 컬렉션 활용
+
+---
+
+## 13. 랭킹 시스템 설계 (Ranking System)
+
+학생들 간의 건강한 경쟁을 유도하기 위해 학습 지표를 기반으로 한 실시간 랭킹 시스템을 구현합니다.
+
+### 13.1 주요 기능
+
+- **실시간 순위**: 학습 시간 및 마스터 문장 수 기준 TOP 50 표시
+- **주간 챌린지**: 매주 월요일 초기화되는 주간 학습 시간 랭킹
+- **명예의 전당**: 역대 최장 스트릭 및 최다 마스터 사용자 기록
+
+### 13.2 데이터 모델 (Firestore)
+
+```typescript
+// rankings/{rankingId}
+interface GlobalRanking {
+  type: 'weekly_study_time' | 'total_mastered' | 'longest_streak';
+  lastUpdatedAt: Timestamp;
+  entries: {
+    uid: string;
+    name: string;
+    value: number;
+    rank: number;
+  }[];
+}
+```
+
+### 13.3 UI 컴포넌트
+
+- `RankingPage`: 랭킹 메인 대시보드
+- `RankingTable`: 순위 목록 표시
+- `UserRankBadge`: 사용자 프로필 옆에 현재 순위 표시 (TOP 3는 특별 아이콘)
+
+---
+
 ## Appendix A: 폴더 구조 (최종)
 
 ```
@@ -1526,7 +1584,8 @@ sdc_app/
 │   │   │   ├── StatsOverview.tsx
 │   │   │   ├── ProgressRing.tsx
 │   │   │   ├── LearningHeatmap.tsx
-│   │   │   └── QuizHistory.tsx
+│   │   │   ├── QuizHistory.tsx
+│   │   │   └── RankingPage.tsx
 │   │   ├── speed-listening/
 │   │   │   ├── SpeedListeningQuiz.tsx
 │   │   │   ├── LevelRecommendation.tsx

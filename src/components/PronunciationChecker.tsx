@@ -4,12 +4,22 @@ import type { SentenceData } from '../types';
 import { useEffect, useMemo } from 'react';
 
 interface PronunciationCheckerProps {
+  /** The specific sentence data to check pronunciation for */
   sentence: SentenceData;
+  /** Function to close the modal */
   onClose: () => void;
+  /** Optional function to move to the next sentence */
   onNext?: () => void;
+  /** Optional function to move to the previous sentence */
   onPrev?: () => void;
 }
 
+/**
+ * A modal component for checking English pronunciation in real-time.
+ * Uses the Web Speech API via usePronunciationCheck to provide scoring and word-level feedback.
+ * 
+ * @component
+ */
 export const PronunciationChecker = ({ sentence, onClose, onNext, onPrev }: PronunciationCheckerProps) => {
   const {
     isRecording,

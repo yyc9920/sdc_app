@@ -4,8 +4,11 @@ import { useSaveQuizResult } from '../hooks/useStudySession';
 import { getStorageUrl } from '../firebase';
 
 interface Props {
+  /** The ID of the dataset these sentences belong to (for TTS path resolution) */
   datasetId: string;
+  /** The full speed listening set data including sentences and level */
   set: SpeedListeningSet;
+  /** Callback to trigger when the user navigates to the next set */
   onNext?: () => void;
 }
 
@@ -15,6 +18,12 @@ const AVAILABLE_VOICES = ['female', 'male', 'child_female', 'child_male', 'elder
 
 const cleanWord = (word: string) => word.replace(/[.,?!;:"']/g, '').toLowerCase();
 
+/**
+ * Interactive quiz component for the Speed Listening mode.
+ * Plays sentences at increasing speeds and requires users to fill in blanks.
+ * 
+ * @component
+ */
 export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) => {
   const [blanks, setBlanks] = useState<Record<string, string>>({});
   const [isSubmitted, setIsSubmitted] = useState(false);

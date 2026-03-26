@@ -3,6 +3,13 @@ import { collection, getDocs, query, orderBy, where } from 'firebase/firestore';
 import { db } from '../firebase';
 import type { SpeedListeningSet, Quiz } from '../types';
 
+/**
+ * Custom hook to fetch speed listening sets from Firestore.
+ * Fetches the parent set metadata and all associated sentences for a given learning set.
+ * 
+ * @param {string | null} learningSetId - The ID of the parent learning set.
+ * @returns {Object} An object containing the sets data, loading state, and any errors.
+ */
 export const useSpeedListeningData = (learningSetId: string | null) => {
   const [data, setData] = useState<SpeedListeningSet[]>([]);
   const [loading, setLoading] = useState<boolean>(false);

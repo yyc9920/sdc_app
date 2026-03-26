@@ -72,6 +72,13 @@ interface UseStudySessionOptions {
   onProgressSaved?: () => void;
 }
 
+/**
+ * Custom hook to track active study time for a specific sentence.
+ * Automatically handles tab visibility changes and cleanup for unsaved progress.
+ * 
+ * @param {UseStudySessionOptions} options - Sentence ID, Set ID, and optional callback.
+ * @returns {Object} Methods to start, pause, and end the study session.
+ */
 export const useStudySession = ({ sentenceId, setId, onProgressSaved }: UseStudySessionOptions) => {
   const [isActive, setIsActive] = useState(false);
   const startTimeRef = useRef<number | null>(null);
@@ -82,6 +89,9 @@ export const useStudySession = ({ sentenceId, setId, onProgressSaved }: UseStudy
     currentSentenceRef.current = { sentenceId, setId };
   }, [sentenceId, setId]);
 
+  /**
+   * Pauses the timer and adds elapsed time to the internal accumulator.
+   */
   const pauseSession = useCallback(() => {
     if (startTimeRef.current) {
       accumulatedRef.current += (Date.now() - startTimeRef.current) / 1000;
@@ -100,11 +110,19 @@ export const useStudySession = ({ sentenceId, setId, onProgressSaved }: UseStudy
     return () => document.removeEventListener('visibilitychange', handleVisibility);
   }, [isActive, pauseSession]);
 
+  /**
+   * Starts the study timer.
+   */
   const startSession = useCallback(() => {
     startTimeRef.current = Date.now();
     setIsActive(true);
   }, []);
 
+  /**
+   * Core function to persist accumulated time and streak updates to Firestore.
+   * 
+   * @param {number} seconds - Total time in seconds to save.
+   */
   const saveProgress = useCallback(async (seconds: number) => {
     const uid = auth.currentUser?.uid;
     if (!uid || seconds <= 0) return;
@@ -148,6 +166,9 @@ export const useStudySession = ({ sentenceId, setId, onProgressSaved }: UseStudy
     }
   }, [onProgressSaved]);
 
+  /**
+   * Pauses the timer and saves all accumulated time to the database.
+   */
   const endSession = useCallback(async () => {
     pauseSession();
     const totalSeconds = Math.floor(accumulatedRef.current);
@@ -158,6 +179,9 @@ export const useStudySession = ({ sentenceId, setId, onProgressSaved }: UseStudy
     }
   }, [pauseSession, saveProgress]);
 
+  /**
+   * Resets the accumulated session time to zero.
+   */
   const resetAccumulated = useCallback(() => {
     accumulatedRef.current = 0;
   }, []);
@@ -182,7 +206,18 @@ export const useStudySession = ({ sentenceId, setId, onProgressSaved }: UseStudy
   };
 };
 
+/**
+ * Custom hook providing a function to manually record that a sentence has been studied.
+ * Useful for one-off progress updates (e.g., after a quick check).
+ */
 export const useMarkSentenceStudied = () => {
+  /**
+   * Records a single study occurrence for a sentence.
+   * 
+   * @param {number} sentenceId - ID of the sentence studied.
+   * @param {string} setId - ID of the learning set.
+   * @param {number} studyTimeSeconds - Time spent in seconds.
+   */
   const markStudied = useCallback(async (sentenceId: number, setId: string, studyTimeSeconds: number) => {
     const uid = auth.currentUser?.uid;
     if (!uid) return;
@@ -225,7 +260,20 @@ export const useMarkSentenceStudied = () => {
   return { markStudied };
 };
 
+/**
+ * Custom hook to persist speed listening quiz results and update daily activity totals.
+ */
 export const useSaveQuizResult = () => {
+  /**
+   * Saves quiz results including score, accuracy, and time spent.
+   * 
+   * @param {string} setId - ID of the quiz set.
+   * @param {number} level - Level of the quiz.
+   * @param {number} score - Overall score percentage.
+   * @param {number} blanksTotal - Total number of blanks in the quiz.
+   * @param {number} blanksCorrect - Number of blanks correctly filled.
+   * @param {number} timeSpentSeconds - Duration of the quiz session.
+   */
   const saveQuizResult = useCallback(async (
     setId: string,
     level: number,

@@ -11,6 +11,13 @@ export interface DailyStatsData {
   quizzesCompleted?: number;
 }
 
+/**
+ * Custom hook for fetching and managing user's daily study statistics from Firestore.
+ * 
+ * @param {string | undefined} uid - The unique ID of the user.
+ * @param {number} [days=365] - The number of past days of stats to fetch.
+ * @returns {Object} An object containing stats, loading state, error, and helper functions.
+ */
 export const useDailyStats = (uid: string | undefined, days: number = 365) => {
   const [stats, setStats] = useState<DailyStatsData[]>([]);
   const [loading, setLoading] = useState(true);
@@ -52,6 +59,11 @@ export const useDailyStats = (uid: string | undefined, days: number = 365) => {
     fetchStats();
   }, [uid, days]);
 
+  /**
+   * Returns the study statistics for the current day.
+   * 
+   * @returns {DailyStatsData | null} Statistics for today or null if not found.
+   */
   const getTodayStats = (): DailyStatsData | null => {
     // 로컬 시간 기준으로 오늘 날짜를 계산 (useStudySession의 getTodayString과 동일한 방식)
     const now = new Date();
@@ -59,12 +71,22 @@ export const useDailyStats = (uid: string | undefined, days: number = 365) => {
     return stats.find(s => s.date === today) || null;
   };
 
+  /**
+   * Converts the statistics array into a Map keyed by date string.
+   * 
+   * @returns {Map<string, DailyStatsData>} A map for quick lookup by date.
+   */
   const getStatsMap = (): Map<string, DailyStatsData> => {
     const map = new Map<string, DailyStatsData>();
     stats.forEach(s => map.set(s.date, s));
     return map;
   };
 
+  /**
+   * Calculates the cumulative study time across all fetched statistics.
+   * 
+   * @returns {number} Total study time in seconds.
+   */
   const getTotalStudyTime = (): number => {
     return stats.reduce((sum, s) => sum + s.studyTimeSeconds, 0);
   };

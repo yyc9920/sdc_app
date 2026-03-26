@@ -11,6 +11,12 @@ interface AuthState {
   error: string | null;
 }
 
+/**
+ * Custom hook for managing Firebase authentication state and user roles.
+ * Provides functions for logging in with an access code and logging out.
+ * 
+ * @returns {AuthState & { loginWithCode: (code: string) => Promise<void>, logout: () => Promise<void> }}
+ */
 export const useAuth = () => {
   const [state, setState] = useState<AuthState>({
     user: null,
@@ -41,6 +47,12 @@ export const useAuth = () => {
     });
   }, []);
 
+  /**
+   * Logs in a user using a unique access code.
+   * Calls a Firebase Function to validate the code and returns a custom token for sign-in.
+   * 
+   * @param {string} code - The access code provided by the user.
+   */
   const loginWithCode = async (code: string) => {
     setState(s => ({ ...s, loading: true, error: null }));
 
@@ -71,6 +83,9 @@ export const useAuth = () => {
     }
   };
 
+  /**
+   * Signs the current user out of the application.
+   */
   const logout = async () => {
     try {
       const auth = getAuth(app);

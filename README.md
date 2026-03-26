@@ -1,73 +1,76 @@
-# React + TypeScript + Vite
+# SDC English Learning App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, full-stack application for English language learning, featuring speed listening, pronunciation verification, and progress tracking with role-based access control.
 
-Currently, two official plugins are available:
+## 🚀 Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Multi-Level Learning:** Topics ranging from daily greetings to specialized travel scenarios.
+- **Speed Listening Mode:** Interactive exercises with variable playback speeds (1.0x to 2.0x) and gap-filling tasks.
+- **Pronunciation Checker:** Real-time feedback on speaking accuracy.
+- **Progress Tracking:** Learning heatmaps, mastery streaks, and detailed quiz history.
+- **Role-Based Access:** Specialized dashboards for Students, Teachers, and Administrators.
+- **Offline Support:** Built as a Progressive Web App (PWA) with Firebase local caching.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend:** React 19 (Vite), TypeScript, Tailwind CSS, Framer Motion (animations).
+- **Backend:** Firebase (Firestore, Auth, Storage, Cloud Functions, Hosting).
+- **Tooling:** ESLint, Prettier, Python (for data generation).
 
-## Expanding the ESLint configuration
+## 📂 Directory Structure
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- `src/components/`: Presentational components grouped by domain (auth, dashboard, admin, etc.).
+- `src/hooks/`: Business logic, state management, and Firebase interactions.
+- `src/types/`: Centralized TypeScript interfaces and types.
+- `functions/`: Node.js Firebase Cloud Functions (TypeScript).
+- `public/`: Static assets, CSV data sets, and PWA manifest.
+- `scripts/`: Utility scripts for data migration and administrative tasks.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ⚙️ Setup & Installation
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Prerequisites
+- Node.js (v18+)
+- Firebase CLI (`npm install -g firebase-tools`)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1. Clone & Install
+```bash
+git clone <repository-url>
+cd sdc-app
+npm install
+cd functions && npm install && cd ..
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 2. Environment Variables
+Create a `.env` file in the root directory:
+```env
+VITE_FIREBASE_API_KEY=your_api_key
+VITE_FIREBASE_AUTH_DOMAIN=sdc-app-1d02c.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=sdc-app-1d02c
+VITE_FIREBASE_STORAGE_BUCKET=sdc-app-1d02c.firebasestorage.app
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+VITE_FIREBASE_APP_ID=your_app_id
+VITE_USE_EMULATOR=true
 ```
+
+### 3. Local Development (Emulators)
+The project is configured to use Firebase Emulators for safe local testing.
+```bash
+# Start the emulators in one terminal
+firebase emulators:start
+
+# Start the React dev server in another
+npm run dev
+```
+
+## 🏗️ Architecture Guidelines
+
+- **UI vs Logic:** Components should be presentational. All state and DB logic must reside in custom hooks (`src/hooks/`).
+- **Styling:** Use Tailwind CSS utility classes. Avoid complex custom CSS where possible.
+- **Typing:** Strict TypeScript is required. Avoid `any`. Refer to `src/types/index.ts` for shared interfaces.
+- **Security:** Firestore security rules and Cloud Functions enforce role-based permissions. Always verify roles for administrative UI elements.
+
+## 📄 Documentation
+For deeper technical insights, refer to:
+- `AGENT.md`: Detailed architecture and database schema.
+- `docs/ISE.md`: Technical specification for the Speed Listening engine.
+- `PLAN.md`: Implementation roadmap.
