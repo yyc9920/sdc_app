@@ -24,6 +24,13 @@ exports.checkMastery = (0, firestore_1.onDocumentWritten)('users/{uid}/progress/
         await db.doc(`users/${uid}`).update({
             'stats.totalMasteredCount': firestore_2.FieldValue.increment(1),
         });
+        // Today's stats update (using simple YYYY-MM-DD for Asia/Seoul)
+        const now = new Date();
+        const kst = new Date(now.getTime() + (9 * 60 * 60 * 1000));
+        const today = kst.toISOString().split('T')[0];
+        await db.doc(`users/${uid}/daily_stats/${today}`).set({
+            sentencesMastered: firestore_2.FieldValue.increment(1),
+        }, { merge: true });
         console.log(`User ${uid} mastered sentence ${event.params.progressId}`);
     }
 });

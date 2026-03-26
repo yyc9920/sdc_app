@@ -33,7 +33,7 @@ const TTS_DIR = path.join(__dirname, '../public/tts');
 
 // Map TTS folder names to Firestore document IDs
 const FOLDER_TO_FIRESTORE_ID = {
-  'native_30_patterns': 'frequent_30_patterns',
+  'frequent_30_patterns': 'frequent_30_patterns', // Local folder name matches Firestore ID
   'essential_travel_english_phrases_100': 'essential_travel_english_phrases_100',
   'ultimate_speaking_beginner_1_1050': 'ultimate_speaking_beginner_1_1050'
 };

@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { CheckCircle, XCircle, Clock } from 'lucide-react';
 import type { QuizResult } from '../../hooks/useQuizHistory';
+import { useSetTitles } from '../../hooks/useSetTitles';
 
 interface QuizHistoryProps {
   results: QuizResult[];
@@ -9,7 +10,9 @@ interface QuizHistoryProps {
 
 const formatDate = (date: Date): string => {
   const now = new Date();
-  const diff = now.getTime() - date.getTime();
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const targetDate = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+  const diff = today.getTime() - targetDate.getTime();
   const days = Math.floor(diff / (1000 * 60 * 60 * 24));
   
   if (days === 0) return '오늘';
@@ -32,12 +35,12 @@ const getScoreColor = (score: number): string => {
   return 'text-red-600 dark:text-red-400';
 };
 
-const formatSetTitle = (setId: string): string => {
-  const match = setId.match(/set(\d+)$/i);
-  return match ? `Set ${match[1]}` : setId;
-};
+
 
 export const QuizHistory: React.FC<QuizHistoryProps> = ({ results, loading }) => {
+  const setIds = useMemo(() => [...new Set(results.map(r => r.setId))], [results]);
+  const { getTitle } = useSetTitles(setIds);
+
   if (loading) {
     return (
       <div className="bg-white dark:bg-gray-800 rounded-2xl p-4 sm:p-6 border border-gray-100 dark:border-gray-700">
@@ -89,7 +92,7 @@ export const QuizHistory: React.FC<QuizHistoryProps> = ({ results, loading }) =>
               
               <div>
                 <div className="font-medium text-gray-900 dark:text-white">
-                  {formatSetTitle(result.setId)}
+                  {getTitle(result.setId)}
                 </div>
                 <div className="text-xs text-gray-500 dark:text-gray-400 flex items-center gap-2">
                   <span>Lv.{result.level}</span>

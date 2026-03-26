@@ -10,6 +10,10 @@ service cloud.firestore {
     function isAdmin() {
       return isAuthenticated() && request.auth.token.role == 'admin';
     }
+
+    function isTeacher() {
+      return isAuthenticated() && request.auth.token.role == 'teacher';
+    }
     
     function isOwner(userId) {
       return isAuthenticated() && request.auth.uid == userId;
@@ -21,24 +25,27 @@ service cloud.firestore {
       allow write: if isAdmin();
     }
     
-    // Users: Owner only (except admin can read all)
+    // Users: Owner only (except admin and teacher can read)
     match /users/{userId} {
-      allow read: if isOwner(userId) || isAdmin();
-      allow write: if isOwner(userId);
+      allow read: if isOwner(userId) || isAdmin() || isTeacher();
+      allow write: if isOwner(userId) || isTeacher();
       
       // Progress subcollection
       match /progress/{sentenceId} {
-        allow read, write: if isOwner(userId);
+        allow read: if isOwner(userId) || isTeacher() || isAdmin();
+        allow write: if isOwner(userId);
       }
       
       // Daily stats subcollection
       match /daily_stats/{date} {
-        allow read, write: if isOwner(userId);
+        allow read: if isOwner(userId) || isTeacher() || isAdmin();
+        allow write: if isOwner(userId);
       }
       
       // Quiz results subcollection
       match /quiz_results/{resultId} {
-        allow read, write: if isOwner(userId);
+        allow read: if isOwner(userId) || isTeacher() || isAdmin();
+        allow write: if isOwner(userId);
       }
     }
     

@@ -30,6 +30,15 @@ export const checkMastery = onDocumentWritten(
         'stats.totalMasteredCount': FieldValue.increment(1),
       });
 
+      // Today's stats update (using simple YYYY-MM-DD for Asia/Seoul)
+      const now = new Date();
+      const kst = new Date(now.getTime() + (9 * 60 * 60 * 1000));
+      const today = kst.toISOString().split('T')[0];
+      
+      await db.doc(`users/${uid}/daily_stats/${today}`).set({
+        sentencesMastered: FieldValue.increment(1),
+      }, { merge: true });
+
       console.log(`User ${uid} mastered sentence ${event.params.progressId}`);
     }
   }

@@ -4,7 +4,8 @@ import { db } from '../../firebase';
 import app from '../../firebase';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import type { UserProfile } from '../../hooks/useUserProfile';
-import { Users, UserX, Clock, CheckSquare } from 'lucide-react';
+import { Users, UserX, Clock, CheckSquare, Eye } from 'lucide-react';
+import { StudentDetailModal } from '../shared/StudentDetailModal';
 
 export const UserManager: React.FC = () => {
   const [users, setUsers] = useState<UserProfile[]>([]);
@@ -13,6 +14,10 @@ export const UserManager: React.FC = () => {
   const [selectedUsers, setSelectedUsers] = useState<string[]>([]);
   const [extensionDays, setExtensionDays] = useState<number>(30);
   const [isExtending, setIsExtending] = useState(false);
+
+  // For StudentDetailModal
+  const [selectedStudentId, setSelectedStudentId] = useState<string | null>(null);
+  const [selectedStudentName, setSelectedStudentName] = useState<string>('');
 
   const fetchUsersAndCodes = async () => {
     setLoading(true);
@@ -123,6 +128,16 @@ export const UserManager: React.FC = () => {
     } finally {
       setIsExtending(false);
     }
+  };
+
+  const openStudentDetail = (uid: string, name: string) => {
+    setSelectedStudentId(uid);
+    setSelectedStudentName(name);
+  };
+
+  const closeStudentDetail = () => {
+    setSelectedStudentId(null);
+    setSelectedStudentName('');
   };
 
   const isAllSelected = users.filter(u => u.role === 'student' && u.accessCode && accessCodes[u.accessCode]).length > 0 && 
@@ -244,7 +259,16 @@ export const UserManager: React.FC = () => {
                         <span className="text-gray-400">-</span>
                       )}
                     </td>
-                    <td className="px-4 py-3 text-right flex justify-end gap-2">
+                    <td className="px-4 py-3 text-right flex justify-end items-center gap-2">
+                      {isStudent && (
+                        <button
+                          onClick={() => openStudentDetail(user.uid, user.profile?.name || '학생')}
+                          className="p-1.5 text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-lg transition-colors"
+                          title="상세 학습 현황 보기"
+                        >
+                          <Eye className="w-4 h-4" />
+                        </button>
+                      )}
                       <select 
                         value={user.role} 
                         onChange={(e) => handleChangeRole(user.uid, e.target.value)}
@@ -269,6 +293,13 @@ export const UserManager: React.FC = () => {
           </table>
         </div>
       )}
+
+      <StudentDetailModal 
+        uid={selectedStudentId} 
+        isOpen={!!selectedStudentId} 
+        onClose={closeStudentDetail}
+        studentName={selectedStudentName}
+      />
     </div>
   );
 };

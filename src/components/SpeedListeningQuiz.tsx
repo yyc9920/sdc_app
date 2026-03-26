@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import type { SpeedListeningSet } from '../types';
 import { useSaveQuizResult } from '../hooks/useStudySession';
+import { getStorageUrl } from '../firebase';
 
 interface Props {
   datasetId: string;
@@ -132,37 +133,53 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
   }, [isAnnouncementPlaying, isTransitionChimePlaying, currentSentenceIndex, set.sentences.length, isReviewMode, currentSpeedIndex]);
 
   useEffect(() => {
-    if (isPlaying && audioRef.current) {
-      let targetSrc = '';
-      let targetRate = 1.0;
-      
-      if (isAnnouncementPlaying) {
-        targetSrc = `${import.meta.env.BASE_URL}tts/announcement.mp3`;
-        targetRate = 1.0;
-      } else if (isTransitionChimePlaying) {
-        targetSrc = `${import.meta.env.BASE_URL}tts/dingdong.wav`;
-        targetRate = 1.0;
-      } else {
-        const sentence = set.sentences[currentSentenceIndex];
-                const voice = sentenceVoices[sentence.id] || 'female';
-        targetSrc = `${import.meta.env.BASE_URL}tts/${datasetId}/${voice}/${sentence.id}.mp3`;
-        targetRate = SPEEDS[currentSpeedIndex];
+    let isCancelled = false;
+
+    const updateAudio = async () => {
+      if (isPlaying && audioRef.current) {
+        let targetPath = '';
+        let targetRate = 1.0;
+
+        if (isAnnouncementPlaying) {
+          targetPath = 'tts/announcement.mp3';
+          targetRate = 1.0;
+        } else if (isTransitionChimePlaying) {
+          targetPath = 'tts/dingdong.wav';
+          targetRate = 1.0;
+        } else {
+          const sentence = set.sentences[currentSentenceIndex];
+          const voice = sentenceVoices[sentence.id] || 'female';
+          targetPath = `tts/${datasetId}/${voice}/${sentence.id}.mp3`;
+          targetRate = SPEEDS[currentSpeedIndex];
+        }
+
+        const targetSrc = await getStorageUrl(targetPath);
+
+        if (isCancelled || !audioRef.current) return;
+
+        if (currentAudioSrcRef.current !== targetSrc) {
+          audioRef.current.src = targetSrc;
+          currentAudioSrcRef.current = targetSrc;
+        }
+
+        audioRef.current.playbackRate = targetRate;
+
+        audioRef.current.play().catch(e => {
+          if (e.name !== 'AbortError') {
+            console.error("Audio play failed", e);
+            handleAudioEnded();
+          }
+        });
+      } else if (!isPlaying && audioRef.current) {
+        audioRef.current.pause();
       }
-      
-      if (currentAudioSrcRef.current !== targetSrc) {
-        audioRef.current.src = targetSrc;
-        currentAudioSrcRef.current = targetSrc;
-      }
-      
-      audioRef.current.playbackRate = targetRate;
-      
-      audioRef.current.play().catch(e => {
-        console.error("Audio play failed", e);
-        handleAudioEnded();
-      });
-    } else if (!isPlaying && audioRef.current) {
-      audioRef.current.pause();
-    }
+    };
+
+    updateAudio();
+
+    return () => {
+      isCancelled = true;
+    };
   }, [isPlaying, isAnnouncementPlaying, isTransitionChimePlaying, currentSentenceIndex, currentSpeedIndex, datasetId, set.sentences, handleAudioEnded, sentenceVoices]);
 
   const renderWord = (word: string, sentenceId: number, wordIndex: number) => {

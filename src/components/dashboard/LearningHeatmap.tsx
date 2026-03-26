@@ -66,7 +66,7 @@ export const LearningHeatmap: React.FC<LearningHeatmapProps> = ({ stats, weeks =
         const currentDate = new Date(startDate);
         currentDate.setDate(startDate.getDate() + week * 7 + day);
         
-        const dateStr = currentDate.toISOString().split('T')[0];
+        const dateStr = `${currentDate.getFullYear()}-${String(currentDate.getMonth() + 1).padStart(2, '0')}-${String(currentDate.getDate()).padStart(2, '0')}`;
         const stat = statsMap.get(dateStr);
         const seconds = stat?.studyTimeSeconds || 0;
         

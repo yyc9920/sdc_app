@@ -124,9 +124,9 @@ async function migrateSpeedListening() {
   console.log('\n--- Starting Speed Listening Migration to Production Firestore ---');
   
   const speedFiles = [
-    { file: 'speed_listening_beginner.json', collectionId: 'speed_listening_beginner' },
-    { file: 'speed_listening_travel.json', collectionId: 'speed_listening_travel' },
-    { file: 'speed_listening_patterns.json', collectionId: 'speed_listening_patterns' }
+    { file: 'speed_listening_beginner.json', parentSetId: 'ultimate_speaking_beginner_1_1050' },
+    { file: 'speed_listening_travel.json', parentSetId: 'essential_travel_english_phrases_100' },
+    { file: 'speed_listening_patterns.json', parentSetId: 'frequent_30_patterns' }
   ];
 
   for (const speedFile of speedFiles) {
@@ -150,12 +150,13 @@ async function migrateSpeedListening() {
       batch.set(setRef, {
         setNumber: setData.setNumber,
         setId: setData.setId,
+        parentSetId: speedFile.parentSetId,
         theme: setData.theme,
         level: setData.level,
         sentenceCount: setData.sentences.length,
         quiz: setData.quiz,
         createdAt: FieldValue.serverTimestamp()
-      });
+      }, { merge: true });
       
       count++;
       
@@ -167,7 +168,7 @@ async function migrateSpeedListening() {
           english: sentence.english,
           korean: sentence.korean,
           properNounIndices: sentence.properNounIndices || []
-        });
+        }, { merge: true });
         
         count++;
         if (count >= 400) {
@@ -175,6 +176,12 @@ async function migrateSpeedListening() {
           batch = db.batch();
           count = 0;
         }
+      }
+      
+      if (count > 0) {
+        await batch.commit();
+        batch = db.batch();
+        count = 0;
       }
     }
     

@@ -1,13 +1,7 @@
 import { useState, useEffect } from 'react';
-import { collection, getDocs, query, orderBy } from 'firebase/firestore';
+import { collection, getDocs, query, orderBy, where } from 'firebase/firestore';
 import { db } from '../firebase';
 import type { SpeedListeningSet, Quiz } from '../types';
-
-const LEARNING_SET_TO_SPEED_PREFIX: Record<string, string> = {
-  'ultimate_speaking_beginner_1_1050': 'beginner_',
-  'essential_travel_english_phrases_100': 'travel_',
-  'native_30_patterns': 'native_patterns_',
-};
 
 export const useSpeedListeningData = (learningSetId: string | null) => {
   const [data, setData] = useState<SpeedListeningSet[]>([]);
@@ -29,35 +23,16 @@ export const useSpeedListeningData = (learningSetId: string | null) => {
       setError(null);
       
       try {
-        const prefix = LEARNING_SET_TO_SPEED_PREFIX[learningSetId];
-        if (!prefix) {
-          if (mounted) {
-            setData([]);
-            setLoading(false);
-          }
-          return;
-        }
-
         const setsQuery = query(
           collection(db, 'speed_listening_sets'),
+          where('parentSetId', '==', learningSetId),
           orderBy('setNumber', 'asc')
         );
         const setsSnapshot = await getDocs(setsQuery);
 
-        console.log('Fetched all sets, prefix:', prefix);
-        const matchingSets = setsSnapshot.docs.filter(doc => {
-          const isMatch = doc.id.startsWith(prefix);
-          if (isMatch) console.log('Match found:', doc.id);
-          return isMatch;
-        });
-
-        console.log('Matching sets count:', matchingSets.length);
+        console.log(`Fetched ${setsSnapshot.docs.length} sets for learningSetId:`, learningSetId);
         
-        if (matchingSets.length === 0) {
-          console.warn('No sets found for prefix:', prefix);
-        }
-
-        const results = await Promise.all(matchingSets.map(async (setDoc) => {
+        const results = await Promise.all(setsSnapshot.docs.map(async (setDoc) => {
           const setData = setDoc.data();
           
           const sentencesQuery = query(
@@ -78,8 +53,10 @@ export const useSpeedListeningData = (learningSetId: string | null) => {
           
           return {
             setId: setDoc.id,
+            parentSetId: setData.parentSetId,
             theme: setData.theme || 'Speed Listening',
             level: setData.level || 1,
+            setNumber: setData.setNumber || 0,
             sentences,
             quiz: setData.quiz as Quiz
           };

@@ -95,55 +95,49 @@ async function migrateSpeedListening() {
   console.log('\n--- Starting Speed Listening Migration to Firestore ---');
   
   const speedSets = [
-    { id: 'speed_listening_beginner', file: 'speed_listening_beginner.json', parentSetId: 'ultimate_speaking_beginner_1_1050', theme: '왕초보 1050문장' },
-    { id: 'speed_listening_travel', file: 'speed_listening_travel.json', parentSetId: 'essential_travel_english_phrases_100', theme: '여행 필수 100문장' },
-    { id: 'speed_listening_patterns', file: 'speed_listening_patterns.json', parentSetId: 'frequent_30_patterns', theme: '자주 쓰이는 30패턴' }
+    { id: 'speed_listening_beginner', file: 'speed_listening_beginner.json', parentSetId: 'ultimate_speaking_beginner_1_1050' },
+    { id: 'speed_listening_travel', file: 'speed_listening_travel.json', parentSetId: 'essential_travel_english_phrases_100' },
+    { id: 'speed_listening_patterns', file: 'speed_listening_patterns.json', parentSetId: 'frequent_30_patterns' }
   ];
 
-  for (const set of speedSets) {
-    const filePath = path.join(PUBLIC_DIR, set.file);
+  for (const setInfo of speedSets) {
+    const filePath = path.join(PUBLIC_DIR, setInfo.file);
     if (!fs.existsSync(filePath)) {
-      console.log(`Skipping ${set.file} (File not found)`);
+      console.log(`Skipping ${setInfo.file} (File not found)`);
       continue;
     }
     
     const jsonData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-    // jsonData format: { level_1: [ {id, ...}, ... ], level_2: [...] }
+    // jsonData format: Array of SpeedListeningSet objects
     
-    const setRef = db.collection('speed_listening_sets').doc(set.id);
-    let totalSentenceCount = 0;
-    for (const level of Object.keys(jsonData)) {
-       totalSentenceCount += jsonData[level].length;
-    }
+    console.log(`Migrating ${jsonData.length} sets for ${setInfo.id}`);
 
-    await setRef.set({
-      setId: set.id,
-      theme: set.theme,
-      parentSetId: set.parentSetId,
-      sentenceCount: totalSentenceCount,
-      levelsAvailable: Object.keys(jsonData).length,
-      createdAt: FieldValue.serverTimestamp()
-    });
-    
-    console.log(`Created speed listening set: ${set.id} with ${totalSentenceCount} sentences across levels`);
-
-    // We store all sentences in a single subcollection, adding 'level' property
-    let batch = db.batch();
-    let count = 0;
-    
-    for (const [levelKey, sentences] of Object.entries(jsonData)) {
-      const levelNum = parseInt(levelKey.replace('level_', ''), 10);
+    for (const setData of jsonData) {
+      const setRef = db.collection('speed_listening_sets').doc(setData.setId);
       
-      for (const item of sentences) {
-        // Doc ID format: level_id (e.g. 1_0, 1_1)
-        const docId = `${levelNum}_${item.id}`;
-        const itemRef = setRef.collection('sentences').doc(docId);
+      await setRef.set({
+        setId: setData.setId,
+        parentSetId: setInfo.parentSetId,
+        theme: setData.theme,
+        level: setData.level,
+        setNumber: setData.setNumber,
+        quiz: setData.quiz,
+        sentenceCount: setData.sentences.length,
+        createdAt: FieldValue.serverTimestamp()
+      });
+
+      // Add sentences in subcollection
+      let batch = db.batch();
+      let count = 0;
+      
+      for (const item of setData.sentences) {
+        const sentenceRef = setRef.collection('sentences').doc(String(item.id));
         
-        batch.set(itemRef, {
-          level: levelNum,
-          originalId: item.id,
-          quiz: item.quiz, // contains question, options, answerIndex
-          ttsOptions: item.ttsOptions // contains url, voice
+        batch.set(sentenceRef, {
+          id: item.id,
+          english: item.english,
+          korean: item.korean,
+          properNounIndices: item.properNounIndices || []
         });
         
         count++;
@@ -153,12 +147,13 @@ async function migrateSpeedListening() {
           count = 0;
         }
       }
+      
+      if (count > 0) {
+        await batch.commit();
+      }
     }
     
-    if (count > 0) {
-      await batch.commit();
-    }
-    console.log(`Finished migrating speed listening sentences for ${set.id}`);
+    console.log(`Finished migrating speed listening sets for ${setInfo.id}`);
   }
 }
 

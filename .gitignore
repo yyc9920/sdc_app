@@ -32,3 +32,5 @@ __pycache__/
 # Firebase service account keys (NEVER commit)
 **/service-account*.json
 .firebase/
+.firebase/hosting.*.cache
+public/tts/

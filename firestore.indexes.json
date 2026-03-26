@@ -1,1 +1,19 @@
-{}
+{
+  "indexes": [
+    {
+      "collectionGroup": "speed_listening_sets",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "parentSetId",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "setNumber",
+          "order": "ASCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

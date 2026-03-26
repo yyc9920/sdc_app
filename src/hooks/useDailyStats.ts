@@ -53,7 +53,9 @@ export const useDailyStats = (uid: string | undefined, days: number = 365) => {
   }, [uid, days]);
 
   const getTodayStats = (): DailyStatsData | null => {
-    const today = new Date().toISOString().split('T')[0];
+    // 로컬 시간 기준으로 오늘 날짜를 계산 (useStudySession의 getTodayString과 동일한 방식)
+    const now = new Date();
+    const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
     return stats.find(s => s.date === today) || null;
   };
 

@@ -36,8 +36,8 @@ export default defineConfig({
         // Runtime caching for TTS audio files
         runtimeCaching: [
           {
-            // TTS MP3 files: Cache-first (immutable by sentenceId)
-            urlPattern: /\/tts\/.*\.mp3$/i,
+            // TTS MP3 files (Local and Firebase): Cache-first
+            urlPattern: /.*tts.*\.mp3$/i,
             handler: 'CacheFirst',
             options: {
               cacheName: 'tts-audio-cache',
@@ -51,8 +51,8 @@ export default defineConfig({
             },
           },
           {
-            // TTS WAV files (dingdong.wav etc): Cache-first
-            urlPattern: /\/tts\/.*\.wav$/i,
+            // TTS WAV files (Local and Firebase): Cache-first
+            urlPattern: /.*tts.*\.wav$/i,
             handler: 'CacheFirst',
             options: {
               cacheName: 'tts-audio-cache',
@@ -65,21 +65,7 @@ export default defineConfig({
               },
             },
           },
-          {
-            // Firebase Storage TTS (future): Cache-first
-            urlPattern: /firebasestorage\.googleapis\.com\/.*\/tts\//i,
-            handler: 'CacheFirst',
-            options: {
-              cacheName: 'firebase-tts-cache',
-              expiration: {
-                maxEntries: 2000,
-                maxAgeSeconds: 30 * 24 * 60 * 60,
-              },
-              cacheableResponse: {
-                statuses: [0, 200],
-              },
-            },
-          },
+
           {
             // Google Fonts: Cache-first
             urlPattern: /^https:\/\/fonts\.googleapis\.com/,

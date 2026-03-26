@@ -15,6 +15,7 @@ import { ProfilePage } from './components/dashboard/ProfilePage';
 import { DashboardPage } from './components/dashboard/DashboardPage';
 import { useAudio } from './hooks/useAudio';
 import { useStudySession } from './hooks/useStudySession';
+import { getStorageUrl } from './firebase';
 import './App.css';
 import type { SentenceData, DataSet, SpeedListeningSet } from './types';
 import { PronunciationChecker } from './components/PronunciationChecker';
@@ -22,27 +23,7 @@ import { BookOpen, Plane, ChevronLeft, Moon, Sun, Headphones, Repeat } from 'luc
 import { SpeedListeningQuiz } from './components/SpeedListeningQuiz';
 import { LevelRecommendationBadge } from './components/speed-listening/LevelRecommendationBadge';
 import { LoadingSpinner } from './components/LoadingSpinner';
-
-const DATA_SETS: DataSet[] = [
-  {
-    id: 'ultimate_speaking_beginner_1_1050',
-    name: '끝장스피킹 초급 1',
-    description: '1050문장',
-    filename: 'ultimate_speaking_beginner_1_1050.csv'
-  },
-  {
-    id: 'essential_travel_english_phrases_100',
-    name: '필수 여행영어',
-    description: '100문장',
-    filename: 'essential_travel_english_phrases_100.csv'
-  },
-  {
-    id: 'native_30_patterns',
-    name: '원어민 핵심 패턴',
-    description: '30문장',
-    filename: 'frequent_30_patterns.csv'
-  }
-];
+import { DATA_SETS } from './constants/dataSets';
 
 const formatSetTitle = (setId: string) => {
   const match = setId.match(/set(\d+)$/i);
@@ -191,16 +172,33 @@ function App() {
     handleNext();
   }, [handleNext]);
 
-  const audioUrl = useMemo(() => {
-    if (!activeSentence || !selectedDataSet) return '';
-    // Handle different TTS structures if necessary
-    // For now, assuming same structure
-    const url = `${import.meta.env.BASE_URL}tts/${selectedDataSet.id}/${voice}/${activeSentence.id}.mp3`;
-    return url;
+  const [resolvedAudioUrl, setResolvedAudioUrl] = useState<string>('');
+
+  useEffect(() => {
+    let isCancelled = false;
+    const updateUrl = async () => {
+      if (!activeSentence || !selectedDataSet) {
+        setResolvedAudioUrl('');
+        return;
+      }
+      
+      const path = `tts/${selectedDataSet.id}/${voice}/${activeSentence.id}.mp3`;
+      const url = await getStorageUrl(path);
+      
+      if (!isCancelled) {
+        setResolvedAudioUrl(url);
+      }
+    };
+    
+    updateUrl();
+    
+    return () => {
+      isCancelled = true;
+    };
   }, [activeSentence, voice, selectedDataSet]);
 
   useAudio({
-    audioUrl,
+    audioUrl: resolvedAudioUrl,
     repeatCount,
     isPlaying,
     onComplete: handleAudioComplete
