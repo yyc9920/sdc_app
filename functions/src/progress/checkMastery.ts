@@ -20,26 +20,42 @@ export const checkMastery = onDocumentWritten(
     if (shouldBeMastered && !wasMastered) {
       const db = getFirestore();
       const { uid } = event.params;
+      const userRef = db.doc(`users/${uid}`);
+      const progressRef = event.data?.after.ref;
 
-      await event.data?.after.ref.update({
-        status: 'mastered',
-        masteredAt: FieldValue.serverTimestamp(),
-      });
+      if (!progressRef) return;
 
-      await db.doc(`users/${uid}`).update({
-        'stats.totalMasteredCount': FieldValue.increment(1),
-      });
+      try {
+        await db.runTransaction(async (transaction) => {
+          const progressDoc = await transaction.get(progressRef);
+          const currentStatus = progressDoc.data()?.status;
 
-      // Today's stats update (using simple YYYY-MM-DD for Asia/Seoul)
-      const now = new Date();
-      const kst = new Date(now.getTime() + (9 * 60 * 60 * 1000));
-      const today = kst.toISOString().split('T')[0];
-      
-      await db.doc(`users/${uid}/daily_stats/${today}`).set({
-        sentencesMastered: FieldValue.increment(1),
-      }, { merge: true });
+          // Double check status in transaction
+          if (currentStatus === 'mastered') return;
 
-      console.log(`User ${uid} mastered sentence ${event.params.progressId}`);
+          transaction.update(progressRef, {
+            status: 'mastered',
+            masteredAt: FieldValue.serverTimestamp(),
+          });
+
+          transaction.update(userRef, {
+            'stats.totalMasteredCount': FieldValue.increment(1),
+          });
+        });
+
+        // Today's stats update (non-transactional is fine for daily stats)
+        const now = new Date();
+        const kst = new Date(now.getTime() + (9 * 60 * 60 * 1000));
+        const today = kst.toISOString().split('T')[0];
+        
+        await db.doc(`users/${uid}/daily_stats/${today}`).set({
+          sentencesMastered: FieldValue.increment(1),
+        }, { merge: true });
+
+        console.log(`User ${uid} mastered sentence ${event.params.progressId}`);
+      } catch (error) {
+        console.error('Transaction failed: ', error);
+      }
     }
   }
 );

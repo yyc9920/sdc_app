@@ -5,12 +5,7 @@ const https_1 = require("firebase-functions/v2/https");
 const auth_1 = require("firebase-admin/auth");
 const firestore_1 = require("firebase-admin/firestore");
 exports.validateCode = (0, https_1.onCall)({
-    cors: [
-        'https://sdc-app-1d02c.web.app',
-        'https://sdc-app-1d02c.firebaseapp.com',
-        'http://localhost:5173',
-        'http://127.0.0.1:5173'
-    ]
+    cors: true
 }, async (request) => {
     const { code } = request.data;
     console.log(`[validateCode] Received code from client: '${code}'`);
@@ -63,6 +58,7 @@ exports.validateCode = (0, https_1.onCall)({
             lastPosition: null,
         });
     }
+    await auth.setCustomUserClaims(uid, { role: codeData.role });
     const customToken = await auth.createCustomToken(uid, {
         role: codeData.role,
     });

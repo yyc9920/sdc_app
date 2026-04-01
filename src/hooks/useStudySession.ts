@@ -153,6 +153,7 @@ export const useStudySession = ({ sentenceId, setId, onProgressSaved }: UseStudy
     const streakUpdates = await getStreakUpdates(uid);
     batch.update(userRef, {
       'stats.totalStudyTimeSeconds': increment(seconds),
+      'stats.weeklyStudyTimeSeconds': increment(seconds),
       'stats.currentStreak': streakUpdates.stats.currentStreak,
       'stats.longestStreak': streakUpdates.stats.longestStreak,
       'stats.lastActiveDate': streakUpdates.stats.lastActiveDate,
@@ -310,6 +311,7 @@ export const useSaveQuizResult = () => {
       const streakUpdates = await getStreakUpdates(uid);
       batch.update(userRef, {
         'stats.totalStudyTimeSeconds': increment(timeSpentSeconds),
+        'stats.weeklyStudyTimeSeconds': increment(timeSpentSeconds),
         'stats.currentStreak': streakUpdates.stats.currentStreak,
         'stats.longestStreak': streakUpdates.stats.longestStreak,
         'stats.lastActiveDate': streakUpdates.stats.lastActiveDate,

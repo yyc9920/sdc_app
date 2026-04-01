@@ -9,3 +9,6 @@ export * from './auth/createAccessCode';
 export * from './auth/extendCodeExpiration';
 export * from './progress/checkMastery';
 export * from './stats/updateStreaks';
+export * from './stats/resetWeeklyRankings';
+export * from './stats/getRankings';
+export * from './admin/processCSV';

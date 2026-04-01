@@ -1,29 +1,53 @@
-import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import type { SpeedListeningSet } from '../types';
 import { useSaveQuizResult } from '../hooks/useStudySession';
 import { getStorageUrl } from '../firebase';
+import { SPEEDS, AVAILABLE_VOICES, AUDIO_PATHS, getTTSPath, BLANK_MULTIPLIER } from '../constants';
+import type { Voice } from '../constants';
 
 interface Props {
-  /** The ID of the dataset these sentences belong to (for TTS path resolution) */
   datasetId: string;
-  /** The full speed listening set data including sentences and level */
   set: SpeedListeningSet;
-  /** Callback to trigger when the user navigates to the next set */
   onNext?: () => void;
 }
 
-const SPEEDS = [1, 1.2, 1.5, 2];
-
-const AVAILABLE_VOICES = ['female', 'male', 'child_female', 'child_male', 'elderly_female', 'elderly_male'];
-
 const cleanWord = (word: string) => word.replace(/[.,?!;:"']/g, '').toLowerCase();
 
-/**
- * Interactive quiz component for the Speed Listening mode.
- * Plays sentences at increasing speeds and requires users to fill in blanks.
- * 
- * @component
- */
+const generateSentenceVoices = (sentences: SpeedListeningSet['sentences']): Record<number, Voice> => {
+  const v1Index = Math.floor(Math.random() * AVAILABLE_VOICES.length);
+  let v2Index = Math.floor(Math.random() * AVAILABLE_VOICES.length);
+  while (v2Index === v1Index) {
+    v2Index = Math.floor(Math.random() * AVAILABLE_VOICES.length);
+  }
+  const v1 = AVAILABLE_VOICES[v1Index];
+  const v2 = AVAILABLE_VOICES[v2Index];
+
+  const map: Record<number, Voice> = {};
+  sentences.forEach((sentence, index) => {
+    map[sentence.id] = index % 2 === 0 ? v1 : v2;
+  });
+  return map;
+};
+
+const generateBlankIndices = (sentences: SpeedListeningSet['sentences'], level: number): Record<number, Set<number>> => {
+  const map: Record<number, Set<number>> = {};
+  sentences.forEach(sentence => {
+    const words = sentence.english.split(' ');
+    const eligibleIndices = words
+      .map((_, i) => i)
+      .filter(i => !sentence.properNounIndices.includes(i));
+    
+    for (let i = eligibleIndices.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [eligibleIndices[i], eligibleIndices[j]] = [eligibleIndices[j], eligibleIndices[i]];
+    }
+    
+    const numBlanks = Math.max(1, Math.floor(words.length * (level * BLANK_MULTIPLIER)));
+    map[sentence.id] = new Set(eligibleIndices.slice(0, numBlanks));
+  });
+  return map;
+};
+
 export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) => {
   const [blanks, setBlanks] = useState<Record<string, string>>({});
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -52,6 +76,13 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
     };
   }, []);
 
+const [sentenceVoices, setSentenceVoices] = useState<Record<number, Voice>>(() => 
+    generateSentenceVoices(set.sentences)
+  );
+  const [blankIndicesMap, setBlankIndicesMap] = useState<Record<number, Set<number>>>(() => 
+    generateBlankIndices(set.sentences, set.level)
+  );
+
   useEffect(() => {
     setBlanks({});
     setIsSubmitted(false);
@@ -62,6 +93,8 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
     setIsTransitionChimePlaying(false);
     setAudioFinished(false);
     setIsReviewMode(false);
+    setSentenceVoices(generateSentenceVoices(set.sentences));
+    setBlankIndicesMap(generateBlankIndices(set.sentences, set.level));
     startTimeRef.current = Date.now();
     if (audioRef.current) {
       audioRef.current.pause();
@@ -69,48 +102,6 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
     }
     currentAudioSrcRef.current = '';
     window.scrollTo(0, 0);
-  }, [set]);
-
-
-  const sentenceVoices = useMemo(() => {
-    const map: Record<number, string> = {};
-    // eslint-disable-next-line react-hooks/purity
-    const v1Index = Math.floor(Math.random() * AVAILABLE_VOICES.length);
-    // eslint-disable-next-line react-hooks/purity
-    let v2Index = Math.floor(Math.random() * AVAILABLE_VOICES.length);
-    while (v2Index === v1Index) {
-      // eslint-disable-next-line react-hooks/purity
-      v2Index = Math.floor(Math.random() * AVAILABLE_VOICES.length);
-    }
-    const v1 = AVAILABLE_VOICES[v1Index];
-    const v2 = AVAILABLE_VOICES[v2Index];
-
-    set.sentences.forEach((sentence, index) => {
-      const isEven = index % 2 === 0;
-      map[sentence.id] = isEven ? v1 : v2;
-    });
-    return map;
-  }, [set]);
-
-  const blankIndicesMap = useMemo(() => {
-    const map: Record<number, Set<number>> = {};
-    set.sentences.forEach(sentence => {
-      const words = sentence.english.split(' ');
-      const eligibleIndices = words
-        .map((_, i) => i)
-        .filter(i => !sentence.properNounIndices.includes(i));
-      
-      for (let i = eligibleIndices.length - 1; i > 0; i--) {
-        // eslint-disable-next-line react-hooks/purity
-        const j = Math.floor(Math.random() * (i + 1));
-        [eligibleIndices[i], eligibleIndices[j]] = [eligibleIndices[j], eligibleIndices[i]];
-      }
-      
-      const numBlanks = Math.max(1, Math.floor(words.length * (set.level * 0.15)));
-      const selectedIndices = new Set(eligibleIndices.slice(0, numBlanks));
-      map[sentence.id] = selectedIndices;
-    });
-    return map;
   }, [set]);
 
   const handleAudioEnded = useCallback(() => {
@@ -150,15 +141,15 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
         let targetRate = 1.0;
 
         if (isAnnouncementPlaying) {
-          targetPath = 'tts/announcement.mp3';
+          targetPath = AUDIO_PATHS.ANNOUNCEMENT;
           targetRate = 1.0;
         } else if (isTransitionChimePlaying) {
-          targetPath = 'tts/dingdong.wav';
+          targetPath = AUDIO_PATHS.TRANSITION_CHIME;
           targetRate = 1.0;
         } else {
           const sentence = set.sentences[currentSentenceIndex];
-          const voice = sentenceVoices[sentence.id] || 'female';
-          targetPath = `tts/${datasetId}/${voice}/${sentence.id}.mp3`;
+          const voice = sentenceVoices[sentence.id] || AVAILABLE_VOICES[0];
+          targetPath = getTTSPath(datasetId, voice, sentence.id);
           targetRate = SPEEDS[currentSpeedIndex];
         }
 

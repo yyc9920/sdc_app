@@ -23,4 +23,7 @@ __exportStar(require("./auth/createAccessCode"), exports);
 __exportStar(require("./auth/extendCodeExpiration"), exports);
 __exportStar(require("./progress/checkMastery"), exports);
 __exportStar(require("./stats/updateStreaks"), exports);
+__exportStar(require("./stats/resetWeeklyRankings"), exports);
+__exportStar(require("./stats/getRankings"), exports);
+__exportStar(require("./admin/processCSV"), exports);
 //# sourceMappingURL=index.js.map

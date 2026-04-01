@@ -3,6 +3,7 @@ import { getAuth, signInWithCustomToken, onAuthStateChanged, signOut } from 'fir
 import type { User } from 'firebase/auth';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import app from '../firebase';
+import { FIREBASE_REGION, getAuthErrorMessage } from '../constants';
 
 interface AuthState {
   user: User | null;
@@ -11,12 +12,6 @@ interface AuthState {
   error: string | null;
 }
 
-/**
- * Custom hook for managing Firebase authentication state and user roles.
- * Provides functions for logging in with an access code and logging out.
- * 
- * @returns {AuthState & { loginWithCode: (code: string) => Promise<void>, logout: () => Promise<void> }}
- */
 export const useAuth = () => {
   const [state, setState] = useState<AuthState>({
     user: null,
@@ -38,7 +33,7 @@ export const useAuth = () => {
             error: null,
           });
         } catch (err) {
-          console.error("Error getting custom claims:", err);
+          console.error('Error getting custom claims:', err);
           setState({ user, role: null, loading: false, error: null });
         }
       } else {
@@ -47,17 +42,11 @@ export const useAuth = () => {
     });
   }, []);
 
-  /**
-   * Logs in a user using a unique access code.
-   * Calls a Firebase Function to validate the code and returns a custom token for sign-in.
-   * 
-   * @param {string} code - The access code provided by the user.
-   */
   const loginWithCode = async (code: string) => {
     setState(s => ({ ...s, loading: true, error: null }));
 
     try {
-      const functions = getFunctions(app, 'asia-northeast3');
+      const functions = getFunctions(app, FIREBASE_REGION);
       const validateCodeFn = httpsCallable<{code: string}, {customToken: string, role: string}>(functions, 'validateCode');
       const result = await validateCodeFn({ code });
       
@@ -67,31 +56,21 @@ export const useAuth = () => {
       await signInWithCustomToken(auth, customToken);
       
     } catch (error: unknown) {
-      console.error("Login Error:", error);
-      let errorMessage = 'Login failed. Please check your code and try again.';
-      
-      if (error instanceof Error && error.message) {
-        if (error.message.includes('not-found')) errorMessage = 'Invalid access code.';
-        if (error.message.includes('permission-denied')) errorMessage = error.message;
-      }
-      
+      console.error('Login Error:', error);
       setState(s => ({
         ...s,
         loading: false,
-        error: errorMessage,
+        error: getAuthErrorMessage(error),
       }));
     }
   };
 
-  /**
-   * Signs the current user out of the application.
-   */
   const logout = async () => {
     try {
       const auth = getAuth(app);
       await signOut(auth);
     } catch (error) {
-      console.error("Logout Error:", error);
+      console.error('Logout Error:', error);
     }
   };
 

@@ -93,4 +93,28 @@ export default defineConfig({
     }),
   ],
   base: '/',
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            if (id.includes('firebase')) {
+              return 'vendor-firebase';
+            }
+            if (id.includes('react') || id.includes('scheduler')) {
+              return 'vendor-react';
+            }
+            if (id.includes('lucide-react')) {
+              return 'vendor-lucide';
+            }
+            if (id.includes('framer-motion')) {
+              return 'vendor-framer-motion';
+            }
+            return 'vendor'; // all other node_modules
+          }
+        },
+      },
+    },
+    chunkSizeWarningLimit: 600, // Optional: slightly increase the limit if needed
+  },
 })

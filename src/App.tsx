@@ -13,6 +13,7 @@ import { AdminDashboard } from './components/admin/AdminDashboard';
 import { TeacherDashboard } from './components/teacher/TeacherDashboard';
 import { ProfilePage } from './components/dashboard/ProfilePage';
 import { DashboardPage } from './components/dashboard/DashboardPage';
+import { RankingPage } from './components/dashboard/RankingPage';
 import { useAudio } from './hooks/useAudio';
 import { useStudySession } from './hooks/useStudySession';
 import { getStorageUrl } from './firebase';
@@ -34,7 +35,7 @@ function App() {
   const [showSplash, setShowSplash] = useState(true);
 
   const [isLobby, setIsLobby] = useState(true);
-  const [activeTab, setActiveTab] = useState<'home' | 'dashboard' | 'admin' | 'teacher' | 'profile'>('home');
+  const [activeTab, setActiveTab] = useState<'home' | 'dashboard' | 'ranking' | 'admin' | 'teacher' | 'profile'>('home');
   const { user, role, loading: authLoading, error: authError, loginWithCode } = useAuth();
   const { profile, loading: profileLoading } = useUserProfile(user?.uid);
   const [learningMode, setLearningMode] = useState<'repetition' | 'speed_listening' | null>(null);
@@ -294,6 +295,15 @@ function App() {
     return (
       <>
         <DashboardPage />
+        <BottomNavigation activeTab={activeTab} onTabChange={setActiveTab} role={role} />
+      </>
+    );
+  }
+
+  if (activeTab === 'ranking') {
+    return (
+      <>
+        <RankingPage />
         <BottomNavigation activeTab={activeTab} onTabChange={setActiveTab} role={role} />
       </>
     );

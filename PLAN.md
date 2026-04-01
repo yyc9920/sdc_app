@@ -1397,10 +1397,10 @@ service firebase.storage {
 
 - [x] Admin 대시보드 페이지 (`AdminDashboard`)
 - [x] 사용자 관리 UI (`UserManager`)
-- [ ] CSV 업로드 UI
-- [ ] Cloud Function: `processCSV` (자동 TTS 생성)
-- [ ] 처리 상태 실시간 표시
-- [ ] 완료 알림 (FCM/이메일)
+- [x] CSV 업로드 UI
+- [x] Cloud Function: `processCSV` (자동 TTS 생성)
+- [x] 처리 상태 실시간 표시
+- [x] 완료 알림 (FCM/이메일)
 
 ### Phase 6: 최적화 및 정리 (Week 7) ❌ 미완료
 

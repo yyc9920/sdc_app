@@ -3,6 +3,7 @@ import { collection, query, getDocs, doc, updateDoc, deleteDoc } from 'firebase/
 import { db } from '../../firebase';
 import app from '../../firebase';
 import { getFunctions, httpsCallable } from 'firebase/functions';
+import { FIREBASE_REGION } from '../../constants';
 import type { UserProfile } from '../../hooks/useUserProfile';
 import { Users, UserX, Clock, CheckSquare, Eye } from 'lucide-react';
 import { StudentDetailModal } from '../shared/StudentDetailModal';
@@ -101,7 +102,7 @@ export const UserManager: React.FC = () => {
     let successCount = 0;
     
     try {
-      const functions = getFunctions(app, 'asia-northeast3');
+      const functions = getFunctions(app, FIREBASE_REGION);
       const extendCodeFn = httpsCallable<{codeId: string, extensionDays: number}, {success: boolean, message: string, newExpiresAt: string}>(functions, 'extendCodeExpiration');
       
       for (const uid of selectedUsers) {

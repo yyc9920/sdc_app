@@ -1,5 +1,12 @@
 import React, { useMemo, useState } from 'react';
 import type { DailyStatsData } from '../../hooks/useDailyStats';
+import {
+  DAYS_OF_WEEK,
+  MONTHS,
+  INTENSITY_COLORS,
+  getIntensity,
+  getMotivationalMessage,
+} from '../../constants';
 
 interface LearningHeatmapProps {
   stats: DailyStatsData[];
@@ -11,34 +18,6 @@ interface TooltipData {
   x: number;
   y: number;
 }
-
-const DAYS_OF_WEEK = ['일', '월', '화', '수', '목', '금', '토'];
-const MONTHS = ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'];
-
-const getIntensity = (seconds: number): number => {
-  if (seconds === 0) return 0;
-  if (seconds < 300) return 1;
-  if (seconds < 900) return 2;
-  if (seconds < 1800) return 3;
-  return 4;
-};
-
-const getMotivationalMessage = (seconds: number): string => {
-  if (seconds === 0) return "학습 기록이 없어요. 오늘부터 시작해볼까요?";
-  if (seconds < 300) return "첫걸음을 떼셨네요! 꾸준함이 중요해요.";
-  if (seconds < 900) return "잘하고 있어요! 집중하는 모습이 멋져요.";
-  if (seconds < 1800) return "엄청난 노력이에요! 오늘도 성장하고 있네요.";
-  return "정말 대단해요! 오늘의 열정이 내일의 실력이 될 거예요.";
-};
-
-
-const intensityColors = [
-  'bg-gray-100 dark:bg-gray-800',
-  'bg-green-200 dark:bg-green-900',
-  'bg-green-400 dark:bg-green-700',
-  'bg-green-500 dark:bg-green-600',
-  'bg-green-600 dark:bg-green-500',
-];
 
 export const LearningHeatmap: React.FC<LearningHeatmapProps> = ({ stats, weeks = 12 }) => {
   const [tooltip, setTooltip] = useState<TooltipData | null>(null);
@@ -147,7 +126,7 @@ export const LearningHeatmap: React.FC<LearningHeatmapProps> = ({ stats, weeks =
                   {week.map((day, dayIdx) => (
                     <div
                       key={`${weekIdx}-${dayIdx}`}
-                      className={`w-3 h-3 rounded-sm ${intensityColors[day.intensity]} cursor-pointer transition-transform hover:scale-125`}
+                      className={`w-3 h-3 rounded-sm ${INTENSITY_COLORS[day.intensity]} cursor-pointer transition-transform hover:scale-125`}
                       onMouseEnter={(e) => handleMouseEnter(e, day)}
                       onMouseLeave={() => setTooltip(null)}
                       onMouseMove={(e) => setTooltip(prev => prev ? { ...prev, x: e.clientX, y: e.clientY } : null)}
@@ -171,7 +150,7 @@ export const LearningHeatmap: React.FC<LearningHeatmapProps> = ({ stats, weeks =
       <div className="flex items-center justify-end gap-2 mt-4 text-xs text-gray-500 dark:text-gray-400">
         <span>적음</span>
         <div className="flex gap-1">
-          {intensityColors.map((color, i) => (
+          {INTENSITY_COLORS.map((color, i) => (
             <div key={i} className={`w-3 h-3 rounded-sm ${color}`} />
           ))}
         </div>
