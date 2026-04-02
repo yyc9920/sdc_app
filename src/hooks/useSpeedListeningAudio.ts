@@ -1,7 +1,7 @@
 import { useState, useRef, useCallback, useEffect } from 'react';
-import { getStorageUrl } from '../firebase';
-import { SPEEDS, AUDIO_PATHS, getTTSPath } from '../constants';
+import { SPEEDS } from '../constants';
 import type { Voice } from '../constants';
+import { getTTSAudioUrl, getStaticAudioUrl } from '../services/ttsService';
 
 export type AudioState = 
   | 'IDLE'
@@ -13,7 +13,7 @@ export type AudioState =
 
 interface UseSpeedListeningAudioProps {
   datasetId: string;
-  sentences: Array<{ id: number }>;
+  sentences: Array<{ id: number; english: string }>;
   sentenceVoices: Record<number, Voice>;
   onFinished?: () => void;
 }
@@ -93,43 +93,41 @@ export const useSpeedListeningAudio = ({
         return;
       }
 
-      let targetPath = '';
       let targetRate = 1.0;
+      let targetSrc = '';
 
       switch (audioState) {
         case 'ANNOUNCEMENT':
-          targetPath = AUDIO_PATHS.ANNOUNCEMENT;
+          targetSrc = await getStaticAudioUrl('ANNOUNCEMENT');
           targetRate = 1.0;
           break;
-        
+
         case 'TRANSITION':
-          targetPath = AUDIO_PATHS.TRANSITION_CHIME;
+          targetSrc = await getStaticAudioUrl('TRANSITION_CHIME');
           targetRate = 1.0;
           break;
-        
+
         case 'PLAYING_SENTENCE': {
           const sentence = sentences[currentSentenceIndex];
           if (!sentence) return;
           const voice = sentenceVoices[sentence.id] || 'female';
-          targetPath = getTTSPath(datasetId, voice as Voice, sentence.id);
+          targetSrc = await getTTSAudioUrl(sentence.english, voice);
           targetRate = SPEEDS[currentSpeedIndex];
           break;
         }
-        
+
         case 'REVIEW': {
           const sentence = sentences[currentSentenceIndex];
           if (!sentence) return;
           const voice = sentenceVoices[sentence.id] || 'female';
-          targetPath = getTTSPath(datasetId, voice as Voice, sentence.id);
+          targetSrc = await getTTSAudioUrl(sentence.english, voice);
           targetRate = 1.0;
           break;
         }
-        
+
         default:
           return;
       }
-
-      const targetSrc = await getStorageUrl(targetPath);
       if (isCancelled || !audioRef.current) return;
 
       if (currentAudioSrcRef.current !== targetSrc) {

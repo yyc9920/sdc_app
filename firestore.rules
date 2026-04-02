@@ -47,6 +47,12 @@ service cloud.firestore {
         allow read: if isOwner(userId) || isTeacher() || isAdmin();
         allow write: if isOwner(userId);
       }
+
+      // Speaking results subcollection
+      match /speaking_results/{resultId} {
+        allow read: if isOwner(userId) || isTeacher() || isAdmin();
+        allow write: if isOwner(userId);
+      }
     }
     
     // Learning sets: Public read, admin write
@@ -69,6 +75,24 @@ service cloud.firestore {
         allow read: if isAuthenticated();
         allow write: if isAdmin();
       }
+    }
+
+    // Agent collected data: Admin only
+    match /collected_data/{dataId} {
+      allow read: if isAdmin();
+      allow write: if isAdmin();
+    }
+
+    // Agent processed sources tracker: Admin only
+    match /processed_sources/{sourceId} {
+      allow read: if isAdmin();
+      allow write: if isAdmin();
+    }
+
+    // Agent run history: Admin only
+    match /agent_runs/{runId} {
+      allow read: if isAdmin();
+      allow write: if isAdmin();
     }
   }
 }

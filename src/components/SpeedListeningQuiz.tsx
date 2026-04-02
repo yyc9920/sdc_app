@@ -1,12 +1,11 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import type { SpeedListeningSet } from '../types';
 import { useSaveQuizResult } from '../hooks/useStudySession';
-import { getStorageUrl } from '../firebase';
-import { SPEEDS, AVAILABLE_VOICES, AUDIO_PATHS, getTTSPath, BLANK_MULTIPLIER } from '../constants';
+import { SPEEDS, AVAILABLE_VOICES, BLANK_MULTIPLIER } from '../constants';
 import type { Voice } from '../constants';
+import { getTTSAudioUrl, getStaticAudioUrl, prefetchTTS } from '../services/ttsService';
 
 interface Props {
-  datasetId: string;
   set: SpeedListeningSet;
   onNext?: () => void;
 }
@@ -48,7 +47,7 @@ const generateBlankIndices = (sentences: SpeedListeningSet['sentences'], level: 
   return map;
 };
 
-export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) => {
+export const SpeedListeningQuiz: React.FC<Props> = ({ set, onNext }) => {
   const [blanks, setBlanks] = useState<Record<string, string>>({});
   const [isSubmitted, setIsSubmitted] = useState(false);
   
@@ -132,28 +131,39 @@ const [sentenceVoices, setSentenceVoices] = useState<Record<number, Voice>>(() =
     }
   }, [isAnnouncementPlaying, isTransitionChimePlaying, currentSentenceIndex, set.sentences.length, isReviewMode, currentSpeedIndex]);
 
+  // Prefetch upcoming sentence audio
+  useEffect(() => {
+    if (isAnnouncementPlaying || isTransitionChimePlaying) return;
+    const nextIndices = [1, 2, 3].map(offset => currentSentenceIndex + offset);
+    for (const idx of nextIndices) {
+      const sentence = set.sentences[idx];
+      if (sentence) {
+        const voice = sentenceVoices[sentence.id] || AVAILABLE_VOICES[0];
+        prefetchTTS(sentence.english, voice);
+      }
+    }
+  }, [currentSentenceIndex, set.sentences, sentenceVoices, isAnnouncementPlaying, isTransitionChimePlaying]);
+
   useEffect(() => {
     let isCancelled = false;
 
     const updateAudio = async () => {
       if (isPlaying && audioRef.current) {
-        let targetPath = '';
+        let targetSrc = '';
         let targetRate = 1.0;
 
         if (isAnnouncementPlaying) {
-          targetPath = AUDIO_PATHS.ANNOUNCEMENT;
+          targetSrc = await getStaticAudioUrl('ANNOUNCEMENT');
           targetRate = 1.0;
         } else if (isTransitionChimePlaying) {
-          targetPath = AUDIO_PATHS.TRANSITION_CHIME;
+          targetSrc = await getStaticAudioUrl('TRANSITION_CHIME');
           targetRate = 1.0;
         } else {
           const sentence = set.sentences[currentSentenceIndex];
           const voice = sentenceVoices[sentence.id] || AVAILABLE_VOICES[0];
-          targetPath = getTTSPath(datasetId, voice, sentence.id);
+          targetSrc = await getTTSAudioUrl(sentence.english, voice);
           targetRate = SPEEDS[currentSpeedIndex];
         }
-
-        const targetSrc = await getStorageUrl(targetPath);
 
         if (isCancelled || !audioRef.current) return;
 
@@ -180,7 +190,7 @@ const [sentenceVoices, setSentenceVoices] = useState<Record<number, Voice>>(() =
     return () => {
       isCancelled = true;
     };
-  }, [isPlaying, isAnnouncementPlaying, isTransitionChimePlaying, currentSentenceIndex, currentSpeedIndex, datasetId, set.sentences, handleAudioEnded, sentenceVoices]);
+  }, [isPlaying, isAnnouncementPlaying, isTransitionChimePlaying, currentSentenceIndex, currentSpeedIndex, set.sentences, handleAudioEnded, sentenceVoices]);
 
   const renderWord = (word: string, sentenceId: number, wordIndex: number) => {
     const isBlank = blankIndicesMap[sentenceId]?.has(wordIndex);

@@ -325,3 +325,54 @@ export const useSaveQuizResult = () => {
 
   return { saveQuizResult };
 };
+
+/**
+ * Custom hook to persist infinite speaking session results and update daily activity totals.
+ */
+export const useSaveSpeakingResult = () => {
+  const saveSpeakingResult = useCallback(async (
+    setId: string,
+    sentenceCount: number,
+    roundsCompleted: number,
+    timeSpentSeconds: number
+  ) => {
+    const uid = auth.currentUser?.uid;
+    if (!uid || timeSpentSeconds <= 0) return;
+
+    const resultRef = doc(db, `users/${uid}/speaking_results/${setId}_${Date.now()}`);
+    const dailyRef = doc(db, `users/${uid}/daily_stats/${getTodayString()}`);
+    const userRef = doc(db, `users/${uid}`);
+
+    try {
+      await setDoc(resultRef, {
+        setId,
+        sentenceCount,
+        roundsCompleted,
+        completedAt: serverTimestamp(),
+        timeSpentSeconds,
+      });
+
+      const batch = writeBatch(db);
+      batch.set(dailyRef, {
+        date: getTodayString(),
+        studyTimeSeconds: increment(timeSpentSeconds),
+        speakingSessionsCompleted: increment(1),
+      }, { merge: true });
+
+      const streakUpdates = await getStreakUpdates(uid);
+      batch.update(userRef, {
+        'stats.totalStudyTimeSeconds': increment(timeSpentSeconds),
+        'stats.weeklyStudyTimeSeconds': increment(timeSpentSeconds),
+        'stats.currentStreak': streakUpdates.stats.currentStreak,
+        'stats.longestStreak': streakUpdates.stats.longestStreak,
+        'stats.lastActiveDate': streakUpdates.stats.lastActiveDate,
+      });
+
+      await batch.commit();
+    } catch (error) {
+      console.error('Failed to save speaking result:', error);
+    }
+  }, []);
+
+  return { saveSpeakingResult };
+};

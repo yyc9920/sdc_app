@@ -12,3 +12,4 @@ export * from './stats/updateStreaks';
 export * from './stats/resetWeeklyRankings';
 export * from './stats/getRankings';
 export * from './admin/processCSV';
+export * from './tts/textToSpeech';

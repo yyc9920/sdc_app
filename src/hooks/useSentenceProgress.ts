@@ -53,6 +53,10 @@ export const useSentenceProgress = (uid: string | undefined, maxResults: number 
 
         // Fetch English text for each sentence
         const dataWithEnglish = await Promise.all(data.map(async (item) => {
+          if (!item.setId || item.sentenceId == null) {
+            return item;
+          }
+
           const cacheKey = `${item.setId}_${item.sentenceId}`;
           if (sentenceCache.has(cacheKey)) {
             return { ...item, english: sentenceCache.get(cacheKey) };

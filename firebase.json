@@ -3,10 +3,9 @@
     "rules": "firestore.rules",
     "indexes": "firestore.indexes.json"
   },
-  "storage": [{
-    "rules": "storage.rules",
-    "bucket": "sdc-app-1d02c.firebasestorage.app"
-  }],
+  "storage": {
+    "rules": "storage.rules"
+  },
   "functions": [
     {
       "source": "functions",
@@ -20,6 +19,18 @@
       ],
       "predeploy": [
         "npm --prefix \"$RESOURCE_DIR\" run build"
+      ]
+    },
+    {
+      "source": "agent",
+      "codebase": "agent",
+      "runtime": "python311",
+      "ignore": [
+        "__pycache__",
+        ".git",
+        "*.pyc",
+        "venv",
+        ".venv"
       ]
     }
   ],

@@ -76,7 +76,7 @@ export const PronunciationChecker = ({ sentence, onClose, onNext, onPrev }: Pron
   }
 
   return (
-    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50" onClick={onClose}>
+    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-[100]" onClick={onClose}>
       <div className="max-w-xl w-full bg-white dark:bg-gray-800 rounded-3xl shadow-xl overflow-hidden border border-gray-100 dark:border-gray-700 relative" onClick={e => e.stopPropagation()}>
         <div className="bg-blue-600 p-6 text-white flex justify-between items-center">
           <h1 className="text-xl font-bold flex items-center gap-2">

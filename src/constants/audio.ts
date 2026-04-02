@@ -22,3 +22,8 @@ export const getTTSPath = (datasetId: string, voice: Voice, sentenceId: number):
   `tts/${datasetId}/${voice}/${sentenceId}.mp3`;
 
 export const BLANK_MULTIPLIER = 0.15;
+
+/** Korean voice keys for TTS service */
+export const KOREAN_VOICES = ['korean_female', 'korean_male'] as const;
+export type KoreanVoice = (typeof KOREAN_VOICES)[number];
+export const DEFAULT_KOREAN_VOICE: KoreanVoice = 'korean_female';

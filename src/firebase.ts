@@ -3,6 +3,7 @@ import { getAuth, connectAuthEmulator } from 'firebase/auth';
 import { initializeFirestore, persistentLocalCache, persistentMultipleTabManager, connectFirestoreEmulator } from 'firebase/firestore';
 import { getFunctions, connectFunctionsEmulator } from 'firebase/functions';
 import { getStorage, connectStorageEmulator, ref, getDownloadURL } from 'firebase/storage';
+import { Capacitor } from '@capacitor/core';
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
@@ -40,8 +41,10 @@ export const getStorageUrl = async (path: string): Promise<string> => {
 };
 
 // Use Emulators only in DEV mode AND when VITE_USE_EMULATOR is not 'false'
-// Set VITE_USE_EMULATOR=false in .env.local to test against production from dev server
-const useEmulator = import.meta.env.DEV && import.meta.env.VITE_USE_EMULATOR !== 'false';
+// Never use emulators in native app builds
+const useEmulator = import.meta.env.DEV
+  && import.meta.env.VITE_USE_EMULATOR !== 'false'
+  && !Capacitor.isNativePlatform();
 
 if (useEmulator) {
   const hostname = typeof window !== 'undefined' ? window.location.hostname : '127.0.0.1';

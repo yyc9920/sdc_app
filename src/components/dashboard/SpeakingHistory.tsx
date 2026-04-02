@@ -1,0 +1,96 @@
+import React from 'react';
+import { Mic2, Clock } from 'lucide-react';
+import type { SpeakingResult } from '../../hooks/useSpeakingHistory';
+
+interface SpeakingHistoryProps {
+  results: SpeakingResult[];
+  loading?: boolean;
+}
+
+const formatDate = (date: Date): string => {
+  const now = new Date();
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const targetDate = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+  const diff = today.getTime() - targetDate.getTime();
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+  if (days === 0) return '오늘';
+  if (days === 1) return '어제';
+  if (days < 7) return `${days}일 전`;
+
+  return `${date.getMonth() + 1}월 ${date.getDate()}일`;
+};
+
+const formatTime = (seconds: number): string => {
+  const mins = Math.floor(seconds / 60);
+  const secs = seconds % 60;
+  if (mins > 0) return `${mins}분 ${secs}초`;
+  return `${secs}초`;
+};
+
+export const SpeakingHistory: React.FC<SpeakingHistoryProps> = ({ results, loading }) => {
+  if (loading) {
+    return (
+      <div className="bg-white dark:bg-gray-800 rounded-2xl p-4 sm:p-6 border border-gray-100 dark:border-gray-700">
+        <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">무한 스피킹 기록</h3>
+        <div className="animate-pulse space-y-3">
+          {[1, 2, 3].map(i => (
+            <div key={i} className="h-16 bg-gray-100 dark:bg-gray-700 rounded-xl" />
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  if (results.length === 0) {
+    return (
+      <div className="bg-white dark:bg-gray-800 rounded-2xl p-4 sm:p-6 border border-gray-100 dark:border-gray-700">
+        <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">무한 스피킹 기록</h3>
+        <div className="text-center py-8 text-gray-500 dark:text-gray-400">
+          아직 스피킹 기록이 없습니다.
+          <br />
+          <span className="text-sm">무한 스피킹에 도전해보세요!</span>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="bg-white dark:bg-gray-800 rounded-2xl p-4 sm:p-6 border border-gray-100 dark:border-gray-700">
+      <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">무한 스피킹 기록</h3>
+
+      <div className="space-y-3">
+        {results.slice(0, 5).map((result) => (
+          <div
+            key={result.id}
+            className="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700/50 rounded-xl"
+          >
+            <div className="flex items-center gap-3">
+              <div className="p-2 rounded-lg bg-purple-100 dark:bg-purple-900/30">
+                <Mic2 className="w-5 h-5 text-purple-600 dark:text-purple-400" />
+              </div>
+
+              <div>
+                <div className="font-medium text-gray-900 dark:text-white">
+                  {result.sentenceCount}문장 · Round {result.roundsCompleted}
+                </div>
+                <div className="text-xs text-gray-500 dark:text-gray-400 flex items-center gap-2">
+                  <span>{formatDate(result.completedAt)}</span>
+                  <span>·</span>
+                  <Clock className="w-3 h-3" />
+                  <span>{formatTime(result.timeSpentSeconds)}</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-right">
+              <div className="text-lg font-bold text-purple-600 dark:text-purple-400">
+                {formatTime(result.timeSpentSeconds)}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};

@@ -2,11 +2,13 @@ import React from 'react';
 import { useUserProfile } from '../../hooks/useUserProfile';
 import { useDailyStats } from '../../hooks/useDailyStats';
 import { useQuizHistory } from '../../hooks/useQuizHistory';
+import { useSpeakingHistory } from '../../hooks/useSpeakingHistory';
 import { useSentenceProgress } from '../../hooks/useSentenceProgress';
 import { StatsOverview } from './StatsOverview';
 import { ProgressRing } from './ProgressRing';
 import { LearningHeatmap } from './LearningHeatmap';
 import { QuizHistory } from './QuizHistory';
+import { SpeakingHistory } from './SpeakingHistory';
 import { SentenceHistory } from './SentenceHistory';
 import { LoadingSpinner } from '../LoadingSpinner';
 
@@ -20,6 +22,7 @@ export const DashboardContent: React.FC<DashboardContentProps> = ({ uid }) => {
   const { profile, loading: profileLoading } = useUserProfile(uid);
   const { stats: dailyStats, loading: statsLoading, getTodayStats } = useDailyStats(uid);
   const { results: quizResults, loading: quizLoading } = useQuizHistory(uid);
+  const { results: speakingResults, loading: speakingLoading } = useSpeakingHistory(uid);
   const { progressData: sentenceProgress, loading: progressLoading } = useSentenceProgress(uid, 50);
 
   if (profileLoading || statsLoading) {
@@ -60,6 +63,7 @@ export const DashboardContent: React.FC<DashboardContentProps> = ({ uid }) => {
         <div className="grid grid-cols-1 gap-6">
           <SentenceHistory progressData={sentenceProgress} loading={progressLoading} />
           <QuizHistory results={quizResults} loading={quizLoading} />
+          <SpeakingHistory results={speakingResults} loading={speakingLoading} />
         </div>
       </div>
     </div>

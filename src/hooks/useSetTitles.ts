@@ -18,6 +18,9 @@ export const useSetTitles = (setIds: string[]) => {
     const fetchTitles = async () => {
       const result: Record<string, string> = {};
       const uncachedIds = setIds.filter(id => {
+        if (!id) {
+          return false;
+        }
         if (titleCache.has(id)) {
           result[id] = titleCache.get(id)!;
           return false;
