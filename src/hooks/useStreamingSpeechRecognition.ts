@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
+import { Capacitor } from '@capacitor/core';
 import { createSpeechService } from '../services/speechService';
 
 interface UseStreamingSpeechRecognitionOptions {
@@ -87,27 +88,33 @@ export const useStreamingSpeechRecognition = (options: UseStreamingSpeechRecogni
       speechService.startListening(lang);
       setIsRecording(true);
 
-      // Start audio recording for playback (MediaRecorder works in WebView too)
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      streamRef.current = stream;
-      const mediaRecorder = new MediaRecorder(stream);
-      mediaRecorderRef.current = mediaRecorder;
+      // Start audio recording for playback (skip on native - getUserMedia unavailable in WKWebView)
+      if (!Capacitor.isNativePlatform() && navigator.mediaDevices?.getUserMedia) {
+        try {
+          const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+          streamRef.current = stream;
+          const mediaRecorder = new MediaRecorder(stream);
+          mediaRecorderRef.current = mediaRecorder;
 
-      mediaRecorder.ondataavailable = (event) => {
-        if (event.data.size > 0) {
-          audioChunksRef.current.push(event.data);
+          mediaRecorder.ondataavailable = (event) => {
+            if (event.data.size > 0) {
+              audioChunksRef.current.push(event.data);
+            }
+          };
+
+          mediaRecorder.onstop = () => {
+            const audioBlob = new Blob(audioChunksRef.current, { type: 'audio/webm' });
+            const url = URL.createObjectURL(audioBlob);
+            setAudioUrl(url);
+            stream.getTracks().forEach(track => track.stop());
+            streamRef.current = null;
+          };
+
+          mediaRecorder.start();
+        } catch (e) {
+          console.warn('Audio recording not available:', e);
         }
-      };
-
-      mediaRecorder.onstop = () => {
-        const audioBlob = new Blob(audioChunksRef.current, { type: 'audio/webm' });
-        const url = URL.createObjectURL(audioBlob);
-        setAudioUrl(url);
-        stream.getTracks().forEach(track => track.stop());
-        streamRef.current = null;
-      };
-
-      mediaRecorder.start();
+      }
     } catch (e) {
       console.error('Failed to start recording:', e);
       setMicError('마이크에 접근할 수 없습니다. 권한을 확인해주세요.');

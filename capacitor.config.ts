@@ -6,6 +6,7 @@ const config: CapacitorConfig = {
   webDir: 'dist',
   ios: {
     contentInset: 'automatic',
+    packageManager: 'cocoapods',
   },
   android: {
     allowMixedContent: true,

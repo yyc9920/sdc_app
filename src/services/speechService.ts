@@ -29,8 +29,10 @@ function createNativeService(): SpeechService {
     async isAvailable() {
       try {
         const { available } = await SpeechRecognition.available();
+        console.log('[SpeechService] Native available:', available);
         return available;
-      } catch {
+      } catch (e) {
+        console.error('[SpeechService] Native available check failed:', e);
         return false;
       }
     },
@@ -38,8 +40,10 @@ function createNativeService(): SpeechService {
     async requestPermission() {
       try {
         const status = await SpeechRecognition.requestPermissions();
+        console.log('[SpeechService] Permission status:', status);
         return status.speechRecognition === 'granted';
-      } catch {
+      } catch (e) {
+        console.error('[SpeechService] Permission request failed:', e);
         return false;
       }
     },
@@ -205,7 +209,9 @@ function createWebService(): SpeechService {
 // ─── Factory ─────────────────────────────────────────────────────────────────
 
 export function createSpeechService(): SpeechService {
-  if (Capacitor.isNativePlatform()) {
+  const isNative = Capacitor.isNativePlatform();
+  console.log('[SpeechService] Platform:', Capacitor.getPlatform(), 'isNative:', isNative);
+  if (isNative) {
     return createNativeService();
   }
   return createWebService();

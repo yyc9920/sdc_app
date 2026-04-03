@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import { getAuth, signInWithCustomToken, onAuthStateChanged, signOut } from 'firebase/auth';
+import { signInWithCustomToken, onAuthStateChanged, signOut } from 'firebase/auth';
 import type { User } from 'firebase/auth';
 import { getFunctions, httpsCallable } from 'firebase/functions';
-import app from '../firebase';
+import app, { auth } from '../firebase';
 import { FIREBASE_REGION, getAuthErrorMessage } from '../constants';
 
 interface AuthState {
@@ -21,7 +21,6 @@ export const useAuth = () => {
   });
 
   useEffect(() => {
-    const auth = getAuth(app);
     return onAuthStateChanged(auth, async (user) => {
       if (user) {
         try {
@@ -51,8 +50,6 @@ export const useAuth = () => {
       const result = await validateCodeFn({ code });
       
       const { customToken } = result.data;
-      const auth = getAuth(app);
-      
       await signInWithCustomToken(auth, customToken);
       
     } catch (error: unknown) {
@@ -67,7 +64,6 @@ export const useAuth = () => {
 
   const logout = async () => {
     try {
-      const auth = getAuth(app);
       await signOut(auth);
     } catch (error) {
       console.error('Logout Error:', error);

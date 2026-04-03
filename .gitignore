@@ -13,6 +13,8 @@ dist-ssr
 *.local
 .ruff_cache
 *.xlsx
+.env
+.env.local
 
 # Editor directories and files
 .vscode/*

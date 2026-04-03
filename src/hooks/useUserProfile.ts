@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { doc, onSnapshot, Timestamp } from 'firebase/firestore';
-import { getAuth } from 'firebase/auth';
-import { db } from '../firebase';
+import { db, auth } from '../firebase';
 
 export interface UserProfile {
   uid: string;
@@ -43,6 +42,9 @@ export const useUserProfile = (uid: string | undefined) => {
       return;
     }
 
+    let retryCount = 0;
+    const MAX_RETRIES = 3;
+
     const startListener = () => {
       if (cancelled) return;
       const docRef = doc(db, 'users', uid);
@@ -56,9 +58,9 @@ export const useUserProfile = (uid: string | undefined) => {
         },
         (err) => {
           if (cancelled) return;
-          if (err.code === 'permission-denied') {
+          if (err.code === 'permission-denied' && retryCount < MAX_RETRIES) {
+            retryCount++;
             unsubscribe();
-            const auth = getAuth();
             auth.currentUser
               ?.getIdToken(true)
               .then(() => startListener())
