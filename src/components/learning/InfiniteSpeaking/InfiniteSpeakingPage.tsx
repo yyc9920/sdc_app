@@ -246,12 +246,12 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
   if (error) return <div className="flex h-screen items-center justify-center text-xl text-red-500">에러: {error}</div>;
 
   return (
-    <div className={`min-h-screen ${isNightMode ? 'dark bg-gray-900' : 'bg-gray-50'} transition-colors duration-300`}>
+    <div className={`h-full ${isNightMode ? 'dark bg-gray-900' : 'bg-gray-50'} flex flex-col transition-colors duration-300 overflow-hidden`}>
       {/* Streaming Hints Overlay */}
       <StreamingHints hints={state.hints} />
 
       {/* Header */}
-      <header className="w-full max-w-4xl mx-auto flex justify-between items-center p-3 sm:p-4 sticky top-0 bg-gray-50/90 dark:bg-gray-900/90 backdrop-blur z-40 border-b border-gray-200 dark:border-gray-700 gap-3">
+      <header className="shrink-0 w-full max-w-4xl mx-auto flex justify-between items-center p-3 sm:p-4 bg-gray-50/90 dark:bg-gray-900/90 backdrop-blur z-40 border-b border-gray-200 dark:border-gray-700 gap-3">
         <div className="flex items-center gap-1 sm:gap-3 flex-1 min-w-0">
           <button
             onClick={() => { engine.reset(); onBack(); }}
@@ -288,7 +288,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
 
       {/* Progress bar */}
       {state.phase !== 'SETUP' && state.phase !== 'SESSION_COMPLETE' && (
-        <div className="max-w-4xl mx-auto px-4 pt-3">
+        <div className="shrink-0 max-w-4xl mx-auto px-4 pt-3 w-full">
           <div className="flex items-center gap-3 text-xs text-gray-500 dark:text-gray-400 mb-2">
             <span className="font-bold text-purple-600 dark:text-purple-400">Round {state.currentRound}/4</span>
             <span>문장 {state.currentSentenceIndex + 1}/{state.sentences.length}</span>
@@ -305,7 +305,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
       )}
 
       {/* Main content */}
-      <main className="max-w-4xl mx-auto p-4 sm:p-6 pb-40">
+      <main className="flex-1 overflow-y-auto max-w-4xl mx-auto p-4 sm:p-6 w-full pb-6">
         <AnimatePresence mode="wait">
           {/* SETUP */}
           {state.phase === 'SETUP' && (

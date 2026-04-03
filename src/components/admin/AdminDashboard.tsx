@@ -13,8 +13,8 @@ export const AdminDashboard: React.FC = () => {
   const { profile } = useUserProfile(user?.uid);
 
   return (
-    <div className="w-full max-w-4xl mx-auto flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900 pb-24">
-      <header className="sticky top-0 z-40 bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800 px-6 py-4">
+    <div className="w-full max-w-4xl mx-auto flex flex-col h-full bg-gray-50 dark:bg-gray-900 overflow-hidden">
+      <header className="shrink-0 z-40 bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800 px-6 py-4">
         <div className="flex justify-between items-center">
           <div>
             <h1 className="text-2xl font-extrabold text-gray-900 dark:text-white tracking-tight">
@@ -34,7 +34,7 @@ export const AdminDashboard: React.FC = () => {
         </div>
       </header>
 
-      <main className="flex-1 p-4 sm:p-6 space-y-6">
+      <main className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-6">
         <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl p-6 text-white shadow-lg flex justify-between items-center">
           <div>
             <h2 className="text-blue-100 font-medium mb-1">현재 로그인된 관리자</h2>

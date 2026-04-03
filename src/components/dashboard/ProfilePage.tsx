@@ -64,14 +64,14 @@ export const ProfilePage: React.FC = () => {
     role === 'teacher' ? '선생님' : '학생';
 
   return (
-    <div className="w-full max-w-4xl mx-auto flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900 pb-32">
-      <header className="sticky top-0 z-40 bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800 px-6 py-4">
+    <div className="w-full max-w-4xl mx-auto flex flex-col h-full bg-gray-50 dark:bg-gray-900 overflow-hidden">
+      <header className="shrink-0 z-40 bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800 px-6 py-4">
         <h1 className="text-2xl font-extrabold text-gray-900 dark:text-white tracking-tight">
           내 정보
         </h1>
       </header>
 
-      <main className="flex-1 p-4 sm:p-6 space-y-6">
+      <main className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-6">
         <div className="bg-white dark:bg-gray-800 rounded-3xl p-6 sm:p-8 shadow-sm border border-gray-100 dark:border-gray-700">
           
           <div className="flex flex-col items-center border-b border-gray-100 dark:border-gray-700 pb-8 mb-8">

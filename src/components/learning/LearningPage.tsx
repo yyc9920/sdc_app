@@ -74,8 +74,8 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
   // Speed Listening Quiz active
   if (mode === 'speed_listening' && selectedDataSet && selectedSpeedListeningSet) {
     return (
-      <div className={`min-h-screen ${isNightMode ? 'dark bg-gray-900' : 'bg-gray-50'} transition-colors duration-300`}>
-        <header className="w-full max-w-4xl mx-auto flex justify-between items-center p-3 sm:p-4 sticky top-0 bg-gray-50/90 dark:bg-gray-900/90 backdrop-blur z-40 border-b border-gray-200 dark:border-gray-700 gap-3">
+      <div className={`h-full ${isNightMode ? 'dark bg-gray-900' : 'bg-gray-50'} flex flex-col transition-colors duration-300 overflow-hidden`}>
+        <header className="shrink-0 w-full max-w-4xl mx-auto flex justify-between items-center p-3 sm:p-4 bg-gray-50/90 dark:bg-gray-900/90 backdrop-blur z-40 border-b border-gray-200 dark:border-gray-700 gap-3">
           <div className="flex items-center gap-1 sm:gap-3 flex-1 min-w-0">
             <button
               onClick={handleBack}
@@ -95,7 +95,7 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
             {isNightMode ? <Sun className="w-5 h-5 text-yellow-400" /> : <Moon className="w-5 h-5 text-gray-600" />}
           </button>
         </header>
-        <main className="w-full max-w-4xl mx-auto flex flex-col flex-1 p-4 gap-4 pb-24">
+        <main className="flex-1 overflow-y-auto w-full max-w-4xl mx-auto flex flex-col p-4 gap-4 pb-6">
           <SpeedListeningQuiz
             set={selectedSpeedListeningSet}
             onNext={(() => {
@@ -111,8 +111,8 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
 
   // Lobby screens
   return (
-    <div className={`min-h-screen ${isNightMode ? 'dark bg-gray-900' : 'bg-gray-50'} transition-colors duration-300`}>
-      <header className="w-full max-w-4xl mx-auto flex justify-between items-center p-4 sm:p-6 bg-transparent gap-3">
+    <div className={`h-full ${isNightMode ? 'dark bg-gray-900' : 'bg-gray-50'} flex flex-col transition-colors duration-300 overflow-hidden`}>
+      <header className="shrink-0 w-full max-w-4xl mx-auto flex justify-between items-center p-4 sm:p-6 bg-transparent gap-3">
         <div className="flex items-center gap-2 sm:gap-3 flex-1 min-w-0">
           {(mode || selectedDataSet) && (
             <button
@@ -134,7 +134,7 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
         </button>
       </header>
 
-      <main className="max-w-4xl mx-auto p-6 flex pb-32 flex-col gap-8">
+      <main className="flex-1 overflow-y-auto max-w-4xl mx-auto p-6 flex flex-col gap-8 w-full pb-6">
         {/* Step 1: Mode selection */}
         {!mode && (
           <>

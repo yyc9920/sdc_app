@@ -74,8 +74,8 @@ export const TeacherDashboard: React.FC = () => {
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900 pb-24">
-      <header className="sticky top-0 z-40 bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800 px-6 py-4">
+    <div className="w-full max-w-4xl mx-auto flex flex-col h-full bg-gray-50 dark:bg-gray-900 overflow-hidden">
+      <header className="shrink-0 z-40 bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800 px-6 py-4">
         <h1 className="text-2xl font-extrabold text-gray-900 dark:text-white tracking-tight">
           선생님 대시보드
         </h1>
@@ -84,7 +84,7 @@ export const TeacherDashboard: React.FC = () => {
         </p>
       </header>
 
-      <main className="flex-1 p-4 sm:p-6 space-y-6">
+      <main className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-6">
         <div className="bg-white dark:bg-gray-800 rounded-3xl p-6 shadow-sm border border-gray-100 dark:border-gray-700">
           <h2 className="text-lg font-bold mb-4 flex items-center gap-2">
             <Search className="w-5 h-5 text-blue-500" />

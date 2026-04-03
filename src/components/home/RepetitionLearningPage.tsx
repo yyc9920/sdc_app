@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useData, usePrefetchData } from '../../hooks/useData';
 import { useAudio } from '../../hooks/useAudio';
 import { useStudySession } from '../../hooks/useStudySession';
@@ -18,7 +18,6 @@ interface RepetitionLearningPageProps {
 }
 
 export const RepetitionLearningPage = ({ isNightMode, onToggleNight }: RepetitionLearningPageProps) => {
-  const [showSplash, setShowSplash] = useState(true);
   const [selectedDataSet, setSelectedDataSet] = useState<DataSet | null>(null);
   const { prefetch } = usePrefetchData();
 
@@ -191,51 +190,14 @@ export const RepetitionLearningPage = ({ isNightMode, onToggleNight }: Repetitio
   // Lobby: dataset selection
   if (!selectedDataSet) {
     return (
-      <div className={`min-h-screen ${isNightMode ? 'dark bg-gray-900' : 'bg-gray-50'} transition-colors duration-300 relative overflow-hidden`}>
-        <AnimatePresence>
-          {showSplash && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.5 }}
-              onClick={() => setShowSplash(false)}
-              className="absolute inset-0 z-50 flex flex-col items-center justify-center bg-gray-50 dark:bg-gray-900 cursor-pointer"
-            >
-              <motion.h1
-                initial={{ scale: 0.8, filter: 'blur(10px)', opacity: 0 }}
-                animate={{
-                  scale: 1,
-                  filter: 'blur(0px)',
-                  opacity: 1,
-                  textShadow: ['0px 0px 0px rgba(59,130,246,0)', '0px 0px 20px rgba(59,130,246,0.8)', '0px 0px 0px rgba(59,130,246,0)'],
-                }}
-                transition={{
-                  duration: 1.5,
-                  textShadow: { duration: 2, repeat: Infinity, ease: 'easeInOut' },
-                }}
-                className="text-5xl md:text-7xl font-extrabold text-blue-600 dark:text-blue-400 tracking-tight text-center px-4"
-              >
-                SDC English Study
-              </motion.h1>
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: [0.3, 1, 0.3] }}
-                transition={{ duration: 2, repeat: Infinity, delay: 1 }}
-                className="absolute bottom-20 text-gray-500 dark:text-gray-400 font-medium tracking-widest text-sm uppercase"
-              >
-                Touch anywhere to start
-              </motion.p>
-            </motion.div>
-          )}
-        </AnimatePresence>
-
+      <div className={`h-full ${isNightMode ? 'dark bg-gray-900' : 'bg-gray-50'} flex flex-col transition-colors duration-300 relative overflow-hidden`}>
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: showSplash ? 0 : 1 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
+          className="flex flex-col h-full overflow-hidden"
         >
-          <header className="w-full max-w-4xl mx-auto flex justify-between items-center p-4 sm:p-6 bg-transparent gap-3">
+          <header className="shrink-0 w-full max-w-4xl mx-auto flex justify-between items-center p-4 sm:p-6 bg-transparent gap-3">
             <h1 className="text-xl sm:text-3xl font-extrabold text-blue-600 dark:text-blue-400 tracking-tight truncate">
               SDC English Study
             </h1>
@@ -247,12 +209,12 @@ export const RepetitionLearningPage = ({ isNightMode, onToggleNight }: Repetitio
             </button>
           </header>
 
-          <main className="max-w-4xl mx-auto p-6 flex pb-20 flex-col gap-8">
+          <main className="flex-1 overflow-y-auto max-w-4xl mx-auto p-6 flex flex-col gap-8 w-full">
             <section className="text-center space-y-2">
               <h2 className="text-2xl font-bold text-gray-800 dark:text-white">반복 학습</h2>
               <p className="text-gray-500 dark:text-gray-400">공부하고 싶은 문장 세트를 선택하세요.</p>
             </section>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pb-6">
               {DATA_SETS.map((set) => (
                 <button
                   key={set.id}
@@ -283,7 +245,7 @@ export const RepetitionLearningPage = ({ isNightMode, onToggleNight }: Repetitio
 
   // Learning view
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300 flex flex-col items-center">
+    <div className={`h-full ${isNightMode ? 'dark bg-gray-900' : 'bg-gray-50'} transition-colors duration-300 flex flex-col overflow-hidden`}>
       {checkingSentence && (
         <PronunciationChecker
           sentence={checkingSentence}
@@ -292,7 +254,7 @@ export const RepetitionLearningPage = ({ isNightMode, onToggleNight }: Repetitio
           onPrev={hasPrevCheck ? handlePrevCheck : undefined}
         />
       )}
-      <header className="w-full max-w-4xl mx-auto flex justify-between items-center p-3 sm:p-4 sticky top-0 bg-gray-50/90 dark:bg-gray-900/90 backdrop-blur z-40 border-b border-gray-200 dark:border-gray-700 gap-3">
+      <header className="shrink-0 w-full max-w-4xl mx-auto flex justify-between items-center p-3 sm:p-4 bg-gray-50/90 dark:bg-gray-900/90 backdrop-blur z-40 border-b border-gray-200 dark:border-gray-700 gap-3">
         <div className="flex items-center gap-1 sm:gap-3 flex-1 min-w-0">
           <button
             onClick={() => { setSelectedDataSet(null); setIsPlaying(false); }}
@@ -313,9 +275,9 @@ export const RepetitionLearningPage = ({ isNightMode, onToggleNight }: Repetitio
         </button>
       </header>
 
-      <main className="w-full max-w-4xl mx-auto flex flex-col flex-1 p-4 gap-4 pb-80">
+      <main className="flex-1 overflow-y-auto w-full max-w-4xl mx-auto p-4 flex flex-col gap-4">
         {data.length > 0 ? (
-          <div className="grid grid-cols-1 gap-4">
+          <div className="grid grid-cols-1 gap-4 pb-6">
             {data.map((sentence) => {
               const isInRange = sentence.id >= rangeStart - 1 && sentence.id < rangeEnd;
               const isPlayingCard = isPlaying && activeSentence?.id === sentence.id;

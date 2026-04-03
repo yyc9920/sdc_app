@@ -5,7 +5,7 @@ const config: CapacitorConfig = {
   appName: 'SDC English Study',
   webDir: 'dist',
   ios: {
-    contentInset: 'automatic',
+    contentInset: 'never',
     packageManager: 'cocoapods',
   },
   android: {
