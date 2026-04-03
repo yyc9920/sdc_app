@@ -33,6 +33,7 @@ export interface InfiniteSpeakingState {
   wordStatuses: string[];
   transcript: string;
   score: number;
+  retryCount: number;
   hints: Hint[];
   hintIdCounter: number;
   sessionStartTime: number | null;
@@ -45,6 +46,7 @@ type Action =
   | { type: 'START_SPEAKING' }
   | { type: 'UPDATE_SPEECH'; transcript: string; wordStatuses: string[]; score: number }
   | { type: 'FINISH_SPEAKING' }
+  | { type: 'RETRY_SPEAKING' }
   | { type: 'NEXT_SENTENCE' }
   | { type: 'COMPLETE_ROUND' }
   | { type: 'NEXT_ROUND' }
@@ -86,6 +88,7 @@ const initialState: InfiniteSpeakingState = {
   wordStatuses: [],
   transcript: '',
   score: 0,
+  retryCount: 0,
   hints: [],
   hintIdCounter: 0,
   sessionStartTime: null,
@@ -125,6 +128,7 @@ function reducer(state: InfiniteSpeakingState, action: Action): InfiniteSpeaking
         wordStatuses: [],
         transcript: '',
         score: 0,
+        retryCount: 0,
         hints: [],
       };
 
@@ -153,6 +157,19 @@ function reducer(state: InfiniteSpeakingState, action: Action): InfiniteSpeaking
         phase: 'COMPARISON',
       };
 
+    case 'RETRY_SPEAKING':
+      return {
+        ...state,
+        phase: 'SPEAKING',
+        wordStatuses: new Array(
+          state.sentences[state.shuffledOrder[state.currentSentenceIndex]]?.english.split(' ').length ?? 0
+        ).fill('pending'),
+        transcript: '',
+        score: 0,
+        retryCount: state.retryCount + 1,
+        hints: [],
+      };
+
     case 'NEXT_SENTENCE': {
       const nextIndex = state.currentSentenceIndex + 1;
       if (nextIndex >= state.sentences.length) {
@@ -165,6 +182,7 @@ function reducer(state: InfiniteSpeakingState, action: Action): InfiniteSpeaking
         wordStatuses: [],
         transcript: '',
         score: 0,
+        retryCount: 0,
         hints: [],
       };
     }
@@ -265,6 +283,10 @@ export const useInfiniteSpeaking = () => {
     dispatch({ type: 'FINISH_SPEAKING' });
   }, []);
 
+  const retrySpeaking = useCallback(() => {
+    dispatch({ type: 'RETRY_SPEAKING' });
+  }, []);
+
   const nextSentence = useCallback(() => {
     dispatch({ type: 'NEXT_SENTENCE' });
   }, []);
@@ -295,8 +317,13 @@ export const useInfiniteSpeaking = () => {
     if (!state.handsFree) return;
 
     if (state.phase === 'COMPARISON') {
+      const canRetry = state.score < 100 && state.retryCount < 3;
       autoAdvanceTimerRef.current = window.setTimeout(() => {
-        nextSentence();
+        if (canRetry) {
+          retrySpeaking();
+        } else {
+          nextSentence();
+        }
       }, TIMEOUTS.AUTO_ADVANCE_MS);
       return () => {
         if (autoAdvanceTimerRef.current) clearTimeout(autoAdvanceTimerRef.current);
@@ -311,7 +338,7 @@ export const useInfiniteSpeaking = () => {
         if (autoAdvanceTimerRef.current) clearTimeout(autoAdvanceTimerRef.current);
       };
     }
-  }, [state.phase, state.handsFree, nextSentence, nextRound]);
+  }, [state.phase, state.handsFree, state.score, state.retryCount, nextSentence, nextRound, retrySpeaking]);
 
   // Auto-dismiss hints
   useEffect(() => {
@@ -368,6 +395,7 @@ export const useInfiniteSpeaking = () => {
     startSpeaking,
     updateSpeech,
     finishSpeaking,
+    retrySpeaking,
     nextSentence,
     nextRound,
     toggleHandsFree,

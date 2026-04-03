@@ -17,6 +17,7 @@ import { StreamingHints } from './StreamingHints';
 import { ComparisonView } from './ComparisonView';
 import { RoundComplete } from './RoundComplete';
 import { SessionComplete } from './SessionComplete';
+import { isMobileBrowser } from '../../../utils/platform';
 import type { DataSet, SentenceData } from '../../../types';
 
 interface InfiniteSpeakingPageProps {
@@ -37,6 +38,8 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
   const speakingTimeoutRef = useRef<number | null>(null);
   const hintDebounceRef = useRef<number | null>(null);
   const modelAudioRef = useRef<HTMLAudioElement | null>(null);
+  const isMobileBrowserRef = useRef(isMobileBrowser());
+  const [needsMicGesture, setNeedsMicGesture] = useState(false);
 
   const handleTranscriptUpdate = useCallback((transcript: string, isFinal: boolean) => {
     if (state.phase !== 'SPEAKING' || !currentSentence) return;
@@ -160,9 +163,19 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
   }, [state.phase, state.currentRound, currentSentence, playModelAudio, playKoreanTTS]);
 
   // Handle SPEAKING phase: auto-start recording + timeout
+  // On mobile browsers, require user tap to start (getUserMedia needs user gesture)
   useEffect(() => {
-    if (state.phase !== 'SPEAKING') return;
+    if (state.phase !== 'SPEAKING') {
+      setNeedsMicGesture(false);
+      return;
+    }
 
+    if (isMobileBrowserRef.current) {
+      setNeedsMicGesture(true);
+      return;
+    }
+
+    // Desktop / native: auto-start as before
     speech.startRecording();
 
     speakingTimeoutRef.current = window.setTimeout(() => {
@@ -174,6 +187,16 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
       if (speakingTimeoutRef.current) clearTimeout(speakingTimeoutRef.current);
     };
   }, [state.phase]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const handleMobileMicStart = useCallback(() => {
+    setNeedsMicGesture(false);
+    speech.startRecording();
+
+    speakingTimeoutRef.current = window.setTimeout(() => {
+      speech.stopRecording();
+      engine.finishSpeaking();
+    }, TIMEOUTS.SPEAKING_TIMEOUT_MS);
+  }, [speech, engine]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Save speaking result when session completes
   useEffect(() => {
@@ -339,19 +362,30 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
                 keyIndices={currentKeyIndices}
                 wordStatuses={state.wordStatuses}
                 isListening={false}
-                isSpeaking={true}
+                isSpeaking={!needsMicGesture}
               />
 
-              {/* Manual stop button */}
-              <div className="flex justify-center">
-                <button
-                  onClick={handleManualStopSpeaking}
-                  className="flex items-center gap-2 px-6 py-3 bg-red-500 hover:bg-red-600 text-white font-bold rounded-2xl shadow-lg transition-all active:scale-95"
-                >
-                  <Square className="w-5 h-5" />
-                  말하기 완료
-                </button>
-              </div>
+              {needsMicGesture ? (
+                <div className="flex justify-center">
+                  <button
+                    onClick={handleMobileMicStart}
+                    className="flex items-center gap-2 px-8 py-4 bg-purple-500 hover:bg-purple-600 text-white font-bold rounded-2xl shadow-lg transition-all active:scale-95 animate-pulse"
+                  >
+                    <Mic className="w-6 h-6" />
+                    마이크 켜기
+                  </button>
+                </div>
+              ) : (
+                <div className="flex justify-center">
+                  <button
+                    onClick={handleManualStopSpeaking}
+                    className="flex items-center gap-2 px-6 py-3 bg-red-500 hover:bg-red-600 text-white font-bold rounded-2xl shadow-lg transition-all active:scale-95"
+                  >
+                    <Square className="w-5 h-5" />
+                    말하기 완료
+                  </button>
+                </div>
+              )}
 
               {speech.supportError && (
                 <p className="text-center text-red-500 text-sm">{speech.supportError}</p>
@@ -384,6 +418,8 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
               onPlayMine={speech.playRecording}
               hasRecording={!!speech.audioUrl}
               onNext={engine.nextSentence}
+              onRetry={engine.retrySpeaking}
+              retryCount={state.retryCount}
               handsFree={state.handsFree}
             />
           )}

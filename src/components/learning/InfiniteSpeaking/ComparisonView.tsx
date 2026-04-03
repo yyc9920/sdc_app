@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Volume2, Mic, ChevronRight } from 'lucide-react';
+import { Volume2, Mic, ChevronRight, RotateCcw } from 'lucide-react';
+
+const MAX_RETRIES = 3;
 
 interface ComparisonViewProps {
   score: number;
@@ -10,6 +12,8 @@ interface ComparisonViewProps {
   onPlayMine: () => void;
   hasRecording: boolean;
   onNext: () => void;
+  onRetry: () => void;
+  retryCount: number;
   handsFree: boolean;
 }
 
@@ -21,6 +25,8 @@ export const ComparisonView = ({
   onPlayMine,
   hasRecording,
   onNext,
+  onRetry,
+  retryCount,
   handsFree,
 }: ComparisonViewProps) => {
   const [playingModel, setPlayingModel] = useState(false);
@@ -98,19 +104,49 @@ export const ComparisonView = ({
         )}
       </div>
 
-      {/* Next button (hidden in hands-free mode since it auto-advances) */}
-      {!handsFree && (
-        <button
-          onClick={onNext}
-          className="w-full flex items-center justify-center gap-2 py-4 bg-purple-600 hover:bg-purple-700 text-white text-lg font-bold rounded-2xl shadow-lg transition-all active:scale-[0.98]"
-        >
-          다음 <ChevronRight className="w-5 h-5" />
-        </button>
-      )}
+      {/* Retry / Next buttons */}
+      {(() => {
+        const isPerfect = score === 100;
+        const canRetry = !isPerfect && retryCount < MAX_RETRIES;
 
-      {handsFree && (
-        <p className="text-center text-sm text-gray-400 animate-pulse">자동으로 넘어갑니다...</p>
-      )}
+        if (handsFree) {
+          return (
+            <p className="text-center text-sm text-gray-400 animate-pulse">
+              {canRetry ? '자동으로 다시 시도합니다...' : '자동으로 넘어갑니다...'}
+            </p>
+          );
+        }
+
+        return (
+          <div className="space-y-3">
+            {canRetry && (
+              <>
+                <button
+                  onClick={onRetry}
+                  className="w-full flex items-center justify-center gap-2 py-4 bg-orange-500 hover:bg-orange-600 text-white text-lg font-bold rounded-2xl shadow-lg transition-all active:scale-[0.98]"
+                >
+                  <RotateCcw className="w-5 h-5" />
+                  다시 시도 ({retryCount}/{MAX_RETRIES})
+                </button>
+                <button
+                  onClick={onNext}
+                  className="w-full flex items-center justify-center gap-2 py-3 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 text-sm font-medium rounded-2xl transition-all"
+                >
+                  건너뛰기 <ChevronRight className="w-4 h-4" />
+                </button>
+              </>
+            )}
+            {!canRetry && (
+              <button
+                onClick={onNext}
+                className="w-full flex items-center justify-center gap-2 py-4 bg-purple-600 hover:bg-purple-700 text-white text-lg font-bold rounded-2xl shadow-lg transition-all active:scale-[0.98]"
+              >
+                다음 <ChevronRight className="w-5 h-5" />
+              </button>
+            )}
+          </div>
+        );
+      })()}
     </motion.div>
   );
 };
