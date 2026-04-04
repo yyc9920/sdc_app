@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Trophy, Clock, Target, Flame } from 'lucide-react';
+import { Clock, Target, Flame } from 'lucide-react';
 import { useAuth } from '../../hooks/useAuth';
 import { useRankings, type RankingType } from '../../hooks/useRankings';
 import { RankingTable } from './RankingTable';
@@ -44,17 +44,12 @@ export const RankingPage: React.FC = () => {
   return (
     <div className="w-full max-w-4xl mx-auto flex flex-col h-full bg-gray-50 dark:bg-gray-900 overflow-hidden">
       <header className="shrink-0 z-40 bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800 px-6 py-4">
-        <div className="flex items-center gap-3">
-          <Trophy className="w-7 h-7 text-yellow-500" />
-          <div>
-            <h1 className="text-2xl font-extrabold text-gray-900 dark:text-white tracking-tight">
-              랭킹
-            </h1>
-            <p className="text-sm text-gray-500 dark:text-gray-400">
-              학습자들과 경쟁하며 성장하세요
-            </p>
-          </div>
-        </div>
+        <h1 className="text-2xl font-extrabold text-gray-900 dark:text-white tracking-tight">
+          랭킹
+        </h1>
+        <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+          학습자들과 경쟁하며 성장하세요
+        </p>
       </header>
 
       <main className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-6">

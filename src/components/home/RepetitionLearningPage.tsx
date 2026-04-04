@@ -197,24 +197,27 @@ export const RepetitionLearningPage = ({ isNightMode, onToggleNight }: Repetitio
           transition={{ duration: 0.5 }}
           className="flex flex-col h-full overflow-hidden"
         >
-          <header className="shrink-0 w-full max-w-4xl mx-auto flex justify-between items-center p-4 sm:p-6 bg-transparent gap-3">
-            <h1 className="text-xl sm:text-3xl font-extrabold text-blue-600 dark:text-blue-400 tracking-tight truncate">
-              SDC English Study
-            </h1>
-            <button
-              onClick={onToggleNight}
-              className="p-2 sm:p-3 shrink-0 rounded-xl bg-white dark:bg-gray-800 shadow-sm border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all active:scale-95"
-            >
-              {isNightMode ? <Sun className="w-5 h-5 text-yellow-400" /> : <Moon className="w-5 h-5 text-gray-600" />}
-            </button>
+          <header className="shrink-0 z-40 bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800 px-6 py-4">
+            <div className="flex justify-between items-center">
+              <div>
+                <h1 className="text-2xl font-extrabold text-gray-900 dark:text-white tracking-tight">
+                  반복 학습
+                </h1>
+                <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                  문장 세트를 선택하세요
+                </p>
+              </div>
+              <button
+                onClick={onToggleNight}
+                className="p-2 shrink-0 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+              >
+                {isNightMode ? <Sun className="w-5 h-5 text-yellow-400" /> : <Moon className="w-5 h-5 text-gray-600" />}
+              </button>
+            </div>
           </header>
 
-          <main className="flex-1 overflow-y-auto max-w-4xl mx-auto p-6 flex flex-col gap-8 w-full">
-            <section className="text-center space-y-2">
-              <h2 className="text-2xl font-bold text-gray-800 dark:text-white">반복 학습</h2>
-              <p className="text-gray-500 dark:text-gray-400">공부하고 싶은 문장 세트를 선택하세요.</p>
-            </section>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pb-6">
+          <main className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {DATA_SETS.map((set) => (
                 <button
                   key={set.id}

@@ -69,6 +69,9 @@ export const ProfilePage: React.FC = () => {
         <h1 className="text-2xl font-extrabold text-gray-900 dark:text-white tracking-tight">
           내 정보
         </h1>
+        <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+          프로필 및 계정 관리
+        </p>
       </header>
 
       <main className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-6">

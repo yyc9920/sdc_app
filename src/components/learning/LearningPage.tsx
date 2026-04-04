@@ -112,26 +112,35 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
   // Lobby screens
   return (
     <div className={`h-full ${isNightMode ? 'dark bg-gray-900' : 'bg-gray-50'} flex flex-col transition-colors duration-300 overflow-hidden`}>
-      <header className="shrink-0 w-full max-w-4xl mx-auto flex justify-between items-center p-4 sm:p-6 bg-transparent gap-3">
-        <div className="flex items-center gap-2 sm:gap-3 flex-1 min-w-0">
-          {(mode || selectedDataSet) && (
-            <button
-              onClick={handleBack}
-              className="p-2 -ml-2 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors active:scale-90 shrink-0"
-            >
-              <ChevronLeft className="w-6 h-6 text-gray-600 dark:text-gray-400" />
-            </button>
-          )}
-          <h1 className="text-xl sm:text-3xl font-extrabold text-blue-600 dark:text-blue-400 tracking-tight truncate">
-            학습
-          </h1>
+      <header className="shrink-0 z-40 bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800 px-6 py-4">
+        <div className="flex justify-between items-center">
+          <div className="flex items-center gap-2 flex-1 min-w-0">
+            {(mode || selectedDataSet) && (
+              <button
+                onClick={handleBack}
+                className="p-2 -ml-2 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors active:scale-90 shrink-0"
+              >
+                <ChevronLeft className="w-6 h-6 text-gray-600 dark:text-gray-400" />
+              </button>
+            )}
+            <div>
+              <h1 className="text-2xl font-extrabold text-gray-900 dark:text-white tracking-tight">
+                학습
+              </h1>
+              {!mode && !selectedDataSet && (
+                <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                  학습 모드를 선택하세요
+                </p>
+              )}
+            </div>
+          </div>
+          <button
+            onClick={onToggleNight}
+            className="p-2 shrink-0 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+          >
+            {isNightMode ? <Sun className="w-5 h-5 text-yellow-400" /> : <Moon className="w-5 h-5 text-gray-600" />}
+          </button>
         </div>
-        <button
-          onClick={onToggleNight}
-          className="p-2 sm:p-3 shrink-0 rounded-xl bg-white dark:bg-gray-800 shadow-sm border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all active:scale-95"
-        >
-          {isNightMode ? <Sun className="w-5 h-5 text-yellow-400" /> : <Moon className="w-5 h-5 text-gray-600" />}
-        </button>
       </header>
 
       <main className="flex-1 overflow-y-auto max-w-4xl mx-auto p-6 flex flex-col gap-8 w-full pb-6">
