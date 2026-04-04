@@ -40,7 +40,7 @@ Factory pattern creating platform-specific implementations:
 - **Mobile browsers**: `getUserMedia` requires user gesture context. Use `isMobileBrowser()` from `src/utils/platform.ts` to gate auto-start behavior.
 
 ### Cloud Functions (`functions/src/`)
-Firebase Cloud Functions v2, domain-grouped: `auth/` (validateCode, createAccessCode, extendCodeExpiration), `progress/` (checkMastery), `stats/` (getRankings, resetWeeklyRankings, updateStreaks), `tts/` (textToSpeech), `admin/` (processCSV). Region: `asia-northeast3`.
+Firebase Cloud Functions v2, domain-grouped: `auth/` (validateCode, createAccessCode, extendCodeExpiration), `progress/` (checkMastery), `stats/` (getRankings, resetWeeklyRankings, updateStreaks), `tts/` (textToSpeech). Region: `asia-northeast3`.
 
 ### Roles & Security
 Three roles verified via Firebase Custom Claims: Admin, Teacher, Student. Firestore security rules (`firestore.rules`) enforce role-based access using helper functions: `isAuthenticated()`, `isAdmin()`, `isTeacher()`, `isOwner()`.

@@ -2,8 +2,6 @@ import React from 'react';
 import { AdminCodeGenerator } from './AdminCodeGenerator';
 import { CodeExpirationManager } from './CodeExpirationManager';
 import { UserManager } from './UserManager';
-import { CSVUploadManager } from './CSVUploadManager';
-import { YouTubePromptGenerator } from './YouTubePromptGenerator';
 import { LogOut } from 'lucide-react';
 import { useAuth } from '../../hooks/useAuth';
 import { useUserProfile } from '../../hooks/useUserProfile';
@@ -43,10 +41,6 @@ export const AdminDashboard: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="md:col-span-2">
-            <YouTubePromptGenerator />
-          </div>
-          <CSVUploadManager />
           <AdminCodeGenerator />
           <CodeExpirationManager />
           <UserManager />

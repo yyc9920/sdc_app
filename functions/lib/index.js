@@ -25,6 +25,5 @@ __exportStar(require("./progress/checkMastery"), exports);
 __exportStar(require("./stats/updateStreaks"), exports);
 __exportStar(require("./stats/resetWeeklyRankings"), exports);
 __exportStar(require("./stats/getRankings"), exports);
-__exportStar(require("./admin/processCSV"), exports);
 __exportStar(require("./tts/textToSpeech"), exports);
 //# sourceMappingURL=index.js.map
