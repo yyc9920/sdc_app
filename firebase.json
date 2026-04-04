@@ -20,18 +20,6 @@
       "predeploy": [
         "npm --prefix \"$RESOURCE_DIR\" run build"
       ]
-    },
-    {
-      "source": "agent",
-      "codebase": "agent",
-      "runtime": "python311",
-      "ignore": [
-        "__pycache__",
-        ".git",
-        "*.pyc",
-        "venv",
-        ".venv"
-      ]
     }
   ],
   "hosting": {
