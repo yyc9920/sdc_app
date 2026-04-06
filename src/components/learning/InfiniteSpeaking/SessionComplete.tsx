@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Trophy } from 'lucide-react';
 
@@ -8,7 +9,7 @@ interface SessionCompleteProps {
 }
 
 export const SessionComplete = ({ totalSentences, sessionStartTime, onFinish }: SessionCompleteProps) => {
-  const elapsed = sessionStartTime ? Math.floor((Date.now() - sessionStartTime) / 1000) : 0;
+  const [elapsed] = useState(() => sessionStartTime ? Math.floor((Date.now() - sessionStartTime) / 1000) : 0);
   const minutes = Math.floor(elapsed / 60);
   const seconds = elapsed % 60;
 

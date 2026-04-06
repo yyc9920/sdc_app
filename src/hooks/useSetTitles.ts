@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 
@@ -6,15 +6,14 @@ const titleCache = new Map<string, string>();
 
 export const useSetTitles = (setIds: string[]) => {
   const [titles, setTitles] = useState<Record<string, string>>({});
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(setIds.length > 0);
+
+  const setIdsKey = useMemo(() => setIds.join(','), [setIds]);
 
   useEffect(() => {
-    if (setIds.length === 0) {
-      setTitles({});
-      setLoading(false);
-      return;
-    }
+    if (setIds.length === 0) return;
 
+    setLoading(true);
     const fetchTitles = async () => {
       const result: Record<string, string> = {};
       const uncachedIds = setIds.filter(id => {
@@ -35,7 +34,7 @@ export const useSetTitles = (setIds: string[]) => {
               // Try speed_listening_sets first
               let docRef = doc(db, 'speed_listening_sets', setId);
               let docSnap = await getDoc(docRef);
-              
+
               if (docSnap.exists()) {
                 const data = docSnap.data();
                 const title = data.theme || setId;
@@ -47,7 +46,7 @@ export const useSetTitles = (setIds: string[]) => {
               // Try learning_sets next
               docRef = doc(db, 'learning_sets', setId);
               docSnap = await getDoc(docRef);
-              
+
               if (docSnap.exists()) {
                 const data = docSnap.data();
                 const title = data.title || setId;
@@ -72,12 +71,13 @@ export const useSetTitles = (setIds: string[]) => {
     };
 
     fetchTitles();
-  }, [setIds.join(',')]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [setIdsKey]);
 
-  const getTitle = (setId: string): string => {
+  const getTitle = useCallback((setId: string): string => {
     if (!setId) return '알 수 없음';
     return titles[setId] || titleCache.get(setId) || setId;
-  };
+  }, [titles]);
 
   return { titles, loading, getTitle };
 };

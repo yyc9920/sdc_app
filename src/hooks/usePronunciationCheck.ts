@@ -18,6 +18,16 @@ export const usePronunciationCheck = (targetSentence: string) => {
 
   const targetWords = useMemo(() => targetSentence.split(' '), [targetSentence]);
 
+  const [prevSentence, setPrevSentence] = useState(targetSentence);
+  if (prevSentence !== targetSentence) {
+    setPrevSentence(targetSentence);
+    setTranscript('');
+    setWordStatuses([]);
+    setIsFinished(false);
+    setScore(0);
+    setAudioUrl(null);
+  }
+
   const resetState = useCallback(() => {
     setTranscript('');
     setWordStatuses([]);
@@ -54,10 +64,6 @@ export const usePronunciationCheck = (targetSentence: string) => {
 
     return newScore;
   }, [targetWords]);
-
-  useEffect(() => {
-    resetState();
-  }, [targetSentence, resetState]);
 
   // Check availability on mount
   useEffect(() => {

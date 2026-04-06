@@ -23,7 +23,7 @@ const getStreakUpdates = async (uid: string) => {
   const sortedDates = [...new Set(dates)].sort((a, b) => b.localeCompare(a));
   
   let currentStreak = 0;
-  let d = new Date();
+  const d = new Date();
   while (true) {
     const dStr = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
     if (sortedDates.includes(dStr)) {

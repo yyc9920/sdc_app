@@ -41,6 +41,8 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
   const isMobileBrowserRef = useRef(isMobileBrowser());
   const [needsMicGesture, setNeedsMicGesture] = useState(false);
 
+  const speechRef = useRef<ReturnType<typeof useStreamingSpeechRecognition> | null>(null);
+
   const handleTranscriptUpdate = useCallback((transcript: string, isFinal: boolean) => {
     if (state.phase !== 'SPEAKING' || !currentSentence) return;
 
@@ -49,7 +51,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
 
     // Auto-finish on 100%
     if (result.score === 100) {
-      speech.stopRecording();
+      speechRef.current?.stopRecording();
       engine.finishSpeaking();
       return;
     }
@@ -68,6 +70,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
   }, [state.phase, currentSentence, currentKeyIndices, engine]);
 
   const speech = useStreamingSpeechRecognition({ onTranscriptUpdate: handleTranscriptUpdate });
+  useEffect(() => { speechRef.current = speech; }, [speech]);
 
   // Prefetch upcoming sentence audio
   useEffect(() => {
@@ -149,7 +152,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
     if (state.phase !== 'LISTENING' || !currentSentence) return;
 
     if (state.currentRound <= 2) {
-      playModelAudio();
+      playModelAudio(); // eslint-disable-line react-hooks/set-state-in-effect -- async audio playback may set error state
     } else {
       playKoreanTTS();
     }
@@ -166,7 +169,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
   // On mobile browsers, require user tap to start (getUserMedia needs user gesture)
   useEffect(() => {
     if (state.phase !== 'SPEAKING') {
-      setNeedsMicGesture(false);
+      setNeedsMicGesture(false); // eslint-disable-line react-hooks/set-state-in-effect -- sync with phase
       return;
     }
 
@@ -196,7 +199,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
       speech.stopRecording();
       engine.finishSpeaking();
     }, TIMEOUTS.SPEAKING_TIMEOUT_MS);
-  }, [speech, engine]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [speech, engine]);
 
   // Save speaking result when session completes
   useEffect(() => {

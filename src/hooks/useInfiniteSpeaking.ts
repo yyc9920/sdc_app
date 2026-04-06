@@ -246,9 +246,10 @@ export const useInfiniteSpeaking = () => {
 
   // Cleanup timers on unmount
   useEffect(() => {
+    const hintTimers = hintTimersRef.current;
     return () => {
       if (autoAdvanceTimerRef.current) clearTimeout(autoAdvanceTimerRef.current);
-      hintTimersRef.current.forEach(t => clearTimeout(t));
+      hintTimers.forEach(t => clearTimeout(t));
     };
   }, []);
 
