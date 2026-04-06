@@ -13,7 +13,7 @@ export interface LevelRecommendation {
 
 const BASELINE_SECONDS_PER_BLANK = 8;
 
-const calculateSpeedBonus = (secondsPerBlank: number): number => {
+export const calculateSpeedBonus = (secondsPerBlank: number): number => {
   if (secondsPerBlank <= 4) return 15;
   if (secondsPerBlank <= 6) return 10;
   if (secondsPerBlank <= 8) return 5;
@@ -22,7 +22,7 @@ const calculateSpeedBonus = (secondsPerBlank: number): number => {
   return -10;
 };
 
-const getSpeedRating = (secondsPerBlank: number): 'fast' | 'normal' | 'slow' => {
+export const getSpeedRating = (secondsPerBlank: number): 'fast' | 'normal' | 'slow' => {
   if (secondsPerBlank <= 6) return 'fast';
   if (secondsPerBlank <= 12) return 'normal';
   return 'slow';

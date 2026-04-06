@@ -56,9 +56,9 @@ type Action =
   | { type: 'DISMISS_HINT'; id: number }
   | { type: 'RESET' };
 
-// --- Helpers ---
+// --- Helpers (exported for testing) ---
 
-function shuffleArray(length: number): number[] {
+export function shuffleArray(length: number): number[] {
   const indices = Array.from({ length }, (_, i) => i);
   for (let i = indices.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -67,7 +67,7 @@ function shuffleArray(length: number): number[] {
   return indices;
 }
 
-function buildKeyIndicesMap(sentences: SentenceData[]): Record<number, number[]> {
+export function buildKeyIndicesMap(sentences: SentenceData[]): Record<number, number[]> {
   const map: Record<number, number[]> = {};
   for (const s of sentences) {
     map[s.id] = getKeyExpressionIndices(s.english);
@@ -237,6 +237,40 @@ export function reducer(state: InfiniteSpeakingState, action: Action): InfiniteS
   }
 }
 
+/**
+ * Evaluates the spoken transcript against the target sentence.
+ * Uses a flexible matching algorithm: each target word can be matched
+ * by any occurrence in the spoken words, allowing mid-sentence corrections.
+ */
+export function evaluateSpeechLogic(
+  spokenText: string,
+  targetSentence: string,
+  markFinal: boolean = false
+): { wordStatuses: string[]; score: number } {
+  const targetWords = targetSentence.split(' ');
+  const spokenClean = spokenText.toLowerCase().replace(/[.,!?;:'"()]/g, '').split(/\s+/).filter(Boolean);
+
+  const spokenWordCounts = new Map<string, number>();
+  for (const w of spokenClean) {
+    spokenWordCounts.set(w, (spokenWordCounts.get(w) ?? 0) + 1);
+  }
+
+  const newStatuses = targetWords.map((tWord) => {
+    const tClean = tWord.toLowerCase().replace(/[.,!?;:'"()]/g, '');
+    const remaining = spokenWordCounts.get(tClean) ?? 0;
+    if (remaining > 0) {
+      spokenWordCounts.set(tClean, remaining - 1);
+      return 'correct';
+    }
+    return markFinal ? 'incorrect' : 'pending';
+  });
+
+  const correctCount = newStatuses.filter(s => s === 'correct').length;
+  const newScore = Math.round((correctCount / targetWords.length) * 100);
+
+  return { wordStatuses: newStatuses, score: newScore };
+}
+
 // --- Hook ---
 
 export const useInfiniteSpeaking = () => {
@@ -354,38 +388,11 @@ export const useInfiniteSpeaking = () => {
     }
   }, [state.hints, dismissHint]);
 
-  /**
-   * Evaluates the spoken transcript against the target sentence.
-   * Uses a flexible matching algorithm: each target word can be matched
-   * by any occurrence in the spoken words, allowing mid-sentence corrections.
-   * Words are consumed greedily left-to-right but unmatched target words
-   * can still be matched by later spoken words.
-   */
-  const evaluateSpeech = useCallback((spokenText: string, targetSentence: string, markFinal: boolean = false) => {
-    const targetWords = targetSentence.split(' ');
-    const spokenClean = spokenText.toLowerCase().replace(/[.,!?;:'"()]/g, '').split(/\s+/).filter(Boolean);
-
-    // Build a set of all spoken words with their positions for flexible matching
-    const spokenWordCounts = new Map<string, number>();
-    for (const w of spokenClean) {
-      spokenWordCounts.set(w, (spokenWordCounts.get(w) ?? 0) + 1);
-    }
-
-    const newStatuses = targetWords.map((tWord) => {
-      const tClean = tWord.toLowerCase().replace(/[.,!?;:'"()]/g, '');
-      const remaining = spokenWordCounts.get(tClean) ?? 0;
-      if (remaining > 0) {
-        spokenWordCounts.set(tClean, remaining - 1);
-        return 'correct';
-      }
-      return markFinal ? 'incorrect' : 'pending';
-    });
-
-    const correctCount = newStatuses.filter(s => s === 'correct').length;
-    const newScore = Math.round((correctCount / targetWords.length) * 100);
-
-    return { wordStatuses: newStatuses, score: newScore };
-  }, []);
+  const evaluateSpeech = useCallback(
+    (spokenText: string, targetSentence: string, markFinal: boolean = false) =>
+      evaluateSpeechLogic(spokenText, targetSentence, markFinal),
+    []
+  );
 
   return {
     state,

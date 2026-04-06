@@ -3,9 +3,9 @@ import type { SpeedListeningSet } from '../types';
 import { AVAILABLE_VOICES, BLANK_MULTIPLIER } from '../constants';
 import type { Voice } from '../constants';
 
-const cleanWord = (word: string) => word.replace(/[.,?!;:"']/g, '').toLowerCase();
+export const cleanWord = (word: string) => word.replace(/[.,?!;:"']/g, '').toLowerCase();
 
-const generateSentenceVoices = (sentences: SpeedListeningSet['sentences']): Record<number, Voice> => {
+export const generateSentenceVoices = (sentences: SpeedListeningSet['sentences']): Record<number, Voice> => {
   const v1Index = Math.floor(Math.random() * AVAILABLE_VOICES.length);
   let v2Index = Math.floor(Math.random() * AVAILABLE_VOICES.length);
   while (v2Index === v1Index) {
@@ -21,7 +21,7 @@ const generateSentenceVoices = (sentences: SpeedListeningSet['sentences']): Reco
   return map;
 };
 
-const generateBlankIndices = (
+export const generateBlankIndices = (
   sentences: SpeedListeningSet['sentences'],
   level: number
 ): Record<number, Set<number>> => {
