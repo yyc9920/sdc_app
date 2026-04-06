@@ -4,8 +4,10 @@ import { collection, query, orderBy, getDocs } from 'firebase/firestore';
 import { db } from '../firebase';
 import type { SentenceData } from '../types';
 
-const fetchLearningSetData = async (filename: string): Promise<SentenceData[]> => {
-  const setId = filename.replace('.csv', '');
+const fetchLearningSetData = async (setIdOrFilename: string): Promise<SentenceData[]> => {
+  const setId = setIdOrFilename.endsWith('.csv')
+    ? setIdOrFilename.replace('.csv', '')
+    : setIdOrFilename;
 
   const q = query(
     collection(db, `learning_sets/${setId}/sentences`),

@@ -1,6 +1,20 @@
 {
   "indexes": [
     {
+      "collectionGroup": "learning_sets",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "level",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "category",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
       "collectionGroup": "speed_listening_sets",
       "queryScope": "COLLECTION",
       "fields": [

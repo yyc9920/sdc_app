@@ -78,9 +78,16 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(({
             <div className={`text-3xl font-bold shrink-0 min-w-[3rem] text-right ${isPlaying ? 'text-blue-700' : 'text-gray-300 dark:text-gray-600'}`}>
               {sentence.id + 1}.
             </div>
-            <p className={`text-3xl font-bold leading-tight flex-1 ${isPlaying ? 'text-blue-700' : 'text-gray-900 dark:text-white'}`}>
-              {sentence.english}
-            </p>
+            <div className="flex-1">
+              {sentence.speaker && (
+                <span className="inline-block text-xs font-bold text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-900/30 px-2 py-0.5 rounded mb-1">
+                  {sentence.speaker}
+                </span>
+              )}
+              <p className={`text-3xl font-bold leading-tight ${isPlaying ? 'text-blue-700' : 'text-gray-900 dark:text-white'}`}>
+                {sentence.english}
+              </p>
+            </div>
           </div>
         )}
 

@@ -40,3 +40,4 @@ public/tts/
 
 swiftpm/
 .mcp.json
+.playwright-mcp/

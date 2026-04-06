@@ -28,7 +28,7 @@ interface InfiniteSpeakingPageProps {
 }
 
 export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBack }: InfiniteSpeakingPageProps) => {
-  const { data: allSentences, loading, error } = useData(dataSet.filename);
+  const { data: allSentences, loading, error } = useData(dataSet.id);
   const engine = useInfiniteSpeaking();
   const { state, currentSentence, currentKeyIndices } = engine;
   const { saveSpeakingResult } = useSaveSpeakingResult();
