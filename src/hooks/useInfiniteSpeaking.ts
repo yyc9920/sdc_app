@@ -77,7 +77,7 @@ function buildKeyIndicesMap(sentences: SentenceData[]): Record<number, number[]>
 
 // --- Reducer ---
 
-const initialState: InfiniteSpeakingState = {
+export const initialState: InfiniteSpeakingState = {
   phase: 'SETUP',
   currentRound: 1,
   currentSentenceIndex: 0,
@@ -94,7 +94,7 @@ const initialState: InfiniteSpeakingState = {
   sessionStartTime: null,
 };
 
-function reducer(state: InfiniteSpeakingState, action: Action): InfiniteSpeakingState {
+export function reducer(state: InfiniteSpeakingState, action: Action): InfiniteSpeakingState {
   switch (action.type) {
     case 'START_SESSION': {
       const keyMap = buildKeyIndicesMap(action.sentences);

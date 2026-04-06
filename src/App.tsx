@@ -13,6 +13,7 @@ import { RankingPage } from './components/dashboard/RankingPage';
 import { RepetitionLearningPage } from './components/home/RepetitionLearningPage';
 import { LearningPage } from './components/learning/LearningPage';
 import { LoadingSpinner } from './components/LoadingSpinner';
+import { ErrorBoundary } from './components/shared/ErrorBoundary';
 import './App.css';
 
 type TabId = 'home' | 'learning' | 'dashboard' | 'ranking' | 'admin' | 'teacher' | 'profile';
@@ -104,9 +105,11 @@ function App() {
 
   return (
     <div className="flex flex-col h-full w-full overflow-hidden pt-safe">
-      <div className="flex-1 relative overflow-hidden">
-        {renderTab()}
-      </div>
+      <ErrorBoundary>
+        <div className="flex-1 relative overflow-hidden">
+          {renderTab()}
+        </div>
+      </ErrorBoundary>
       <BottomNavigation activeTab={activeTab} onTabChange={setActiveTab} role={role} />
     </div>
   );
