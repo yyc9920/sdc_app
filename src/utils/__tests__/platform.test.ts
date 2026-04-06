@@ -55,7 +55,7 @@ describe('isMobileBrowser', () => {
       configurable: true,
     });
     Object.defineProperty(navigator, 'maxTouchPoints', { value: 0, configurable: true });
-    delete (window as Record<string, unknown>).ontouchstart;
+    delete (window as unknown as Record<string, unknown>).ontouchstart;
     expect(isMobileBrowser()).toBe(false);
   });
 });

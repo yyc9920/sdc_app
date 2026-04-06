@@ -10,7 +10,7 @@ export default defineConfig({
     tailwindcss(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'icons.svg'],
+      includeAssets: ['sdc_logo.png', 'icons.svg'],
       manifest: {
         name: 'SDC English Study',
         short_name: 'SDC Study',
@@ -22,16 +22,16 @@ export default defineConfig({
         start_url: '/',
         icons: [
           {
-            src: '/favicon.svg',
-            sizes: 'any',
-            type: 'image/svg+xml',
-            purpose: 'any',
+            src: '/sdc_logo.png',
+            sizes: '500x500',
+            type: 'image/png',
+            purpose: 'any maskable',
           },
         ],
       },
       workbox: {
         // Pre-cache app shell
-        globPatterns: ['**/*.{js,css,html,svg,woff,woff2}'],
+        globPatterns: ['**/*.{js,css,html,svg,png,woff,woff2}'],
         
         // Runtime caching for TTS audio files
         runtimeCaching: [

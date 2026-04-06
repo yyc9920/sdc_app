@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach } from 'vitest';
+import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { mockCapacitor } from '../../test/mocks/capacitor';
 
 // Mock the Capacitor speech recognition plugin
@@ -42,11 +42,11 @@ describe('createSpeechService', () => {
   it('web service: isAvailable returns true when SpeechRecognition exists', async () => {
     mockCapacitor.setNative(false);
     // Simulate Chrome's SpeechRecognition
-    (window as Record<string, unknown>).webkitSpeechRecognition = class {};
+    (window as unknown as Record<string, unknown>).webkitSpeechRecognition = class {};
     const service = createSpeechService();
     const available = await service.isAvailable();
     expect(available).toBe(true);
-    delete (window as Record<string, unknown>).webkitSpeechRecognition;
+    delete (window as unknown as Record<string, unknown>).webkitSpeechRecognition;
   });
 
   it('native service: delegates to Capacitor plugin', async () => {

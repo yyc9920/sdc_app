@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import sdcLogo from './assets/sdc_logo.png';
+import sdcLogoLong from './assets/sdc_logo_long.png';
 import { useAuth } from './hooks/useAuth';
 import { useUserProfile } from './hooks/useUserProfile';
 import { LoginOverlay } from './components/auth/LoginOverlay';
@@ -41,22 +43,23 @@ function App() {
         className={`fixed inset-0 z-[100] flex flex-col items-center justify-center ${isNightMode ? 'bg-gray-900' : 'bg-gray-50'} cursor-pointer overflow-hidden`}
         onClick={() => setShowSplash(false)}
       >
-        <motion.h1
+        {/* Mobile: square logo, PC: wide logo */}
+        <motion.img
+          src={sdcLogo}
+          alt="SDC Academy"
           initial={{ scale: 0.8, filter: 'blur(10px)', opacity: 0 }}
-          animate={{
-            scale: 1,
-            filter: 'blur(0px)',
-            opacity: 1,
-            textShadow: ['0px 0px 0px rgba(59,130,246,0)', '0px 0px 20px rgba(59,130,246,0.8)', '0px 0px 0px rgba(59,130,246,0)'],
-          }}
-          transition={{
-            duration: 1.5,
-            textShadow: { duration: 2, repeat: Infinity, ease: 'easeInOut' },
-          }}
-          className="text-5xl md:text-7xl font-extrabold text-blue-600 dark:text-blue-400 tracking-tight text-center px-4"
-        >
-          SDC English Study
-        </motion.h1>
+          animate={{ scale: 1, filter: 'blur(0px)', opacity: 1 }}
+          transition={{ duration: 1.5 }}
+          className="w-40 h-40 object-contain block md:hidden"
+        />
+        <motion.img
+          src={sdcLogoLong}
+          alt="SDC Academy"
+          initial={{ scale: 0.8, filter: 'blur(10px)', opacity: 0 }}
+          animate={{ scale: 1, filter: 'blur(0px)', opacity: 1 }}
+          transition={{ duration: 1.5 }}
+          className="h-24 object-contain hidden md:block px-8"
+        />
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: [0.3, 1, 0.3] }}

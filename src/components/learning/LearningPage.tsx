@@ -84,6 +84,7 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
             >
               <ChevronLeft className="w-6 h-6 text-gray-600 dark:text-gray-400" />
             </button>
+            <img src="/sdc_logo.png" alt="SDC" className="w-7 h-7 object-contain shrink-0" />
             <h1 className="text-base sm:text-lg font-bold text-gray-800 dark:text-white truncate">
               {selectedDataSet.name} <span className="text-gray-400 mx-1 font-normal">|</span> Lv.{selectedSpeedListeningSet.level} {formatSetTitle(selectedSpeedListeningSet.setId)}
             </h1>
@@ -124,9 +125,12 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
               </button>
             )}
             <div>
-              <h1 className="text-2xl font-extrabold text-gray-900 dark:text-white tracking-tight">
-                학습
-              </h1>
+              <div className="flex items-center gap-3">
+                <img src="/sdc_logo.png" alt="SDC" className="w-8 h-8 object-contain" />
+                <h1 className="text-2xl font-extrabold text-gray-900 dark:text-white tracking-tight">
+                  학습
+                </h1>
+              </div>
               {!mode && !selectedDataSet && (
                 <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
                   학습 모드를 선택하세요

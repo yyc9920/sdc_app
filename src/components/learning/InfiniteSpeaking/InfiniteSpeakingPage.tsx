@@ -262,6 +262,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
           >
             <ChevronLeft className="w-6 h-6 text-gray-600 dark:text-gray-400" />
           </button>
+          <img src="/sdc_logo.png" alt="SDC" className="w-7 h-7 object-contain shrink-0" />
           <h1 className="text-base sm:text-lg font-bold text-gray-800 dark:text-white truncate">
             무한 스피킹 — {dataSet.name}
           </h1>

@@ -10,8 +10,8 @@ const textToSpeechFn = httpsCallable<
 
 export async function withRetry<T>(
   fn: () => Promise<T>,
-  maxAttempts = TIMEOUTS.TTS_MAX_RETRIES,
-  baseDelayMs = TIMEOUTS.TTS_BASE_DELAY_MS,
+  maxAttempts: number = TIMEOUTS.TTS_MAX_RETRIES,
+  baseDelayMs: number = TIMEOUTS.TTS_BASE_DELAY_MS,
 ): Promise<T> {
   for (let attempt = 1; attempt <= maxAttempts; attempt++) {
     try {

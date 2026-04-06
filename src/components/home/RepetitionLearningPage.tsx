@@ -200,9 +200,12 @@ export const RepetitionLearningPage = ({ isNightMode, onToggleNight }: Repetitio
           <header className="shrink-0 z-40 bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800 px-6 py-4">
             <div className="flex justify-between items-center">
               <div>
-                <h1 className="text-2xl font-extrabold text-gray-900 dark:text-white tracking-tight">
-                  반복 학습
-                </h1>
+                <div className="flex items-center gap-3">
+                  <img src="/sdc_logo.png" alt="SDC" className="w-8 h-8 object-contain" />
+                  <h1 className="text-2xl font-extrabold text-gray-900 dark:text-white tracking-tight">
+                    반복 학습
+                  </h1>
+                </div>
                 <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
                   문장 세트를 선택하세요
                 </p>
@@ -266,6 +269,7 @@ export const RepetitionLearningPage = ({ isNightMode, onToggleNight }: Repetitio
           >
             <ChevronLeft className="w-6 h-6 text-gray-600 dark:text-gray-400" />
           </button>
+          <img src="/sdc_logo.png" alt="SDC" className="w-7 h-7 object-contain shrink-0" />
           <h1 className="text-base sm:text-lg font-bold text-gray-800 dark:text-white truncate">
             {selectedDataSet.name}
           </h1>

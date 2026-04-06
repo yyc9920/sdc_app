@@ -22,6 +22,9 @@ npm run open:ios         # Open Xcode
 npm run open:android     # Open Android Studio
 ```
 
+## Workflow
+- Pre-commit: 성공적인 배포를 위해 커밋 전 반드시 `npx eslint .`와 `npx tsc --noEmit`을 실행하여 린트 및 타입 체크를 완료해야 합니다.
+
 ## Architecture
 
 ### Frontend Pattern
