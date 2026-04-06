@@ -36,35 +36,37 @@ describe('createAccessCode', () => {
     mockAdd.mockResolvedValue({ id: 'generated-doc-id' });
   });
 
+  const adminAuth = { uid: 'admin1', token: { role: 'admin' } } as any;
+
   it('should throw permission-denied for non-admin caller', async () => {
     await expect(
-      wrapped({ data: { role: 'student' }, auth: { uid: 'user1', token: { role: 'student' } } })
+      wrapped({ data: { role: 'student' }, auth: { uid: 'user1', token: { role: 'student' } } } as any)
     ).rejects.toThrow('Admin access required');
   });
 
   it('should throw permission-denied when auth is missing', async () => {
     await expect(
-      wrapped({ data: { role: 'student' } })
+      wrapped({ data: { role: 'student' } } as any)
     ).rejects.toThrow('Admin access required');
   });
 
   it('should throw invalid-argument when role is missing', async () => {
     await expect(
-      wrapped({ data: {}, auth: { uid: 'admin1', token: { role: 'admin' } } })
+      wrapped({ data: {}, auth: adminAuth } as any)
     ).rejects.toThrow('Valid role required');
   });
 
   it('should throw invalid-argument for invalid role value', async () => {
     await expect(
-      wrapped({ data: { role: 'superuser' }, auth: { uid: 'admin1', token: { role: 'admin' } } })
+      wrapped({ data: { role: 'superuser' }, auth: adminAuth } as any)
     ).rejects.toThrow('Valid role required');
   });
 
   it('should return code in XXXX-XXXX format for student role', async () => {
     const result = await wrapped({
       data: { role: 'student' },
-      auth: { uid: 'admin1', token: { role: 'admin' } },
-    });
+      auth: adminAuth,
+    } as any);
 
     expect(result.success).toBe(true);
     expect(result.code).toMatch(/^[A-Z0-9]{4}-[A-Z0-9]{4}$/);
@@ -77,12 +79,12 @@ describe('createAccessCode', () => {
     const before = Date.now();
     const result = await wrapped({
       data: { role: 'student' },
-      auth: { uid: 'admin1', token: { role: 'admin' } },
-    });
+      auth: adminAuth,
+    } as any);
     const after = Date.now();
 
     expect(result.expiresAt).not.toBeNull();
-    const expiresMs = new Date(result.expiresAt).getTime();
+    const expiresMs = new Date(result.expiresAt!).getTime();
     const thirtyDaysMs = 30 * 24 * 60 * 60 * 1000;
     expect(expiresMs).toBeGreaterThanOrEqual(before + thirtyDaysMs);
     expect(expiresMs).toBeLessThanOrEqual(after + thirtyDaysMs);
@@ -91,8 +93,8 @@ describe('createAccessCode', () => {
   it('should set null expiration for admin code', async () => {
     const result = await wrapped({
       data: { role: 'admin' },
-      auth: { uid: 'admin1', token: { role: 'admin' } },
-    });
+      auth: adminAuth,
+    } as any);
 
     expect(result.expiresAt).toBeNull();
   });
@@ -100,8 +102,8 @@ describe('createAccessCode', () => {
   it('should set null expiration for teacher code', async () => {
     const result = await wrapped({
       data: { role: 'teacher' },
-      auth: { uid: 'admin1', token: { role: 'admin' } },
-    });
+      auth: adminAuth,
+    } as any);
 
     expect(result.expiresAt).toBeNull();
   });
@@ -113,8 +115,8 @@ describe('createAccessCode', () => {
     for (let i = 0; i < 10; i++) {
       const result = await wrapped({
         data: { role: 'student' },
-        auth: { uid: 'admin1', token: { role: 'admin' } },
-      });
+        auth: adminAuth,
+      } as any);
       const codeChars = result.code.replace('-', '');
       expect(codeChars).not.toMatch(disallowed);
     }

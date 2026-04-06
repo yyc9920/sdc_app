@@ -32,7 +32,7 @@ const testEnv = functionsTest();
 
 describe('extendCodeExpiration', () => {
   const wrapped = testEnv.wrap(extendCodeExpiration);
-  const adminAuth = { uid: 'admin1', token: { role: 'admin' } };
+  const adminAuth = { uid: 'admin1', token: { role: 'admin' } } as any;
 
   beforeEach(() => {
     vi.clearAllMocks();
@@ -40,26 +40,26 @@ describe('extendCodeExpiration', () => {
 
   it('throws permission-denied for non-admin', async () => {
     await expect(
-      wrapped({ data: { codeId: 'c1', extensionDays: 30 }, auth: { uid: 'u1', token: { role: 'student' } } })
+      wrapped({ data: { codeId: 'c1', extensionDays: 30 }, auth: { uid: 'u1', token: { role: 'student' } } } as any)
     ).rejects.toThrow(/Admin access required/);
   });
 
   it('throws invalid-argument for missing codeId', async () => {
     await expect(
-      wrapped({ data: { extensionDays: 30 }, auth: adminAuth })
+      wrapped({ data: { extensionDays: 30 }, auth: adminAuth } as any)
     ).rejects.toThrow(/Valid codeId and extensionDays required/);
   });
 
   it('throws invalid-argument for invalid extensionDays', async () => {
     await expect(
-      wrapped({ data: { codeId: 'c1', extensionDays: 0 }, auth: adminAuth })
+      wrapped({ data: { codeId: 'c1', extensionDays: 0 }, auth: adminAuth } as any)
     ).rejects.toThrow(/Valid codeId and extensionDays required/);
   });
 
   it('throws not-found for non-existent code', async () => {
     mockDb._mockGet.mockResolvedValue({ exists: false });
     await expect(
-      wrapped({ data: { codeId: 'c1', extensionDays: 30 }, auth: adminAuth })
+      wrapped({ data: { codeId: 'c1', extensionDays: 30 }, auth: adminAuth } as any)
     ).rejects.toThrow(/Code not found/);
   });
 
@@ -69,7 +69,7 @@ describe('extendCodeExpiration', () => {
       data: () => ({ role: 'admin', expiresAt: null }),
     });
     await expect(
-      wrapped({ data: { codeId: 'c1', extensionDays: 30 }, auth: adminAuth })
+      wrapped({ data: { codeId: 'c1', extensionDays: 30 }, auth: adminAuth } as any)
     ).rejects.toThrow(/Admin codes do not expire/);
   });
 
@@ -83,7 +83,7 @@ describe('extendCodeExpiration', () => {
     const result = await wrapped({
       data: { codeId: 'c1', extensionDays: 15 },
       auth: adminAuth,
-    });
+    } as any);
 
     expect(result.success).toBe(true);
     const newExpiry = new Date(result.newExpiresAt);
@@ -105,7 +105,7 @@ describe('extendCodeExpiration', () => {
     const result = await wrapped({
       data: { codeId: 'c1', extensionDays: 30 },
       auth: adminAuth,
-    });
+    } as any);
 
     const newExpiry = new Date(result.newExpiresAt);
     // Should extend from today (~30 days from now), not from past

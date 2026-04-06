@@ -41,32 +41,32 @@ describe('textToSpeech', () => {
 
   it('throws unauthenticated when no auth', async () => {
     await expect(
-      wrapped({ data: { text: 'hello', voiceKey: 'female' } })
+      wrapped({ data: { text: 'hello', voiceKey: 'female' } } as any)
     ).rejects.toThrow(/Authentication required/);
   });
 
   it('throws invalid-argument for missing text', async () => {
     await expect(
-      wrapped({ data: { voiceKey: 'female' }, auth: { uid: 'u1' } })
+      wrapped({ data: { voiceKey: 'female' }, auth: { uid: 'u1' } } as any)
     ).rejects.toThrow(/Missing or invalid text/);
   });
 
   it('throws invalid-argument for empty text', async () => {
     await expect(
-      wrapped({ data: { text: '', voiceKey: 'female' }, auth: { uid: 'u1' } })
+      wrapped({ data: { text: '', voiceKey: 'female' }, auth: { uid: 'u1' } } as any)
     ).rejects.toThrow(/Missing or invalid text/);
   });
 
   it('throws invalid-argument for text > 500 characters', async () => {
     const longText = 'a'.repeat(501);
     await expect(
-      wrapped({ data: { text: longText, voiceKey: 'female' }, auth: { uid: 'u1' } })
+      wrapped({ data: { text: longText, voiceKey: 'female' }, auth: { uid: 'u1' } } as any)
     ).rejects.toThrow(/Text too long/);
   });
 
   it('throws invalid-argument for invalid voiceKey', async () => {
     await expect(
-      wrapped({ data: { text: 'hello', voiceKey: 'robot' }, auth: { uid: 'u1' } })
+      wrapped({ data: { text: 'hello', voiceKey: 'robot' }, auth: { uid: 'u1' } } as any)
     ).rejects.toThrow(/Invalid voiceKey/);
   });
 
@@ -74,7 +74,7 @@ describe('textToSpeech', () => {
     const result = await wrapped({
       data: { text: 'Hello world', voiceKey: 'female' },
       auth: { uid: 'u1' },
-    });
+    } as any);
 
     expect(result).toHaveProperty('audio');
     expect(typeof result.audio).toBe('string');
@@ -88,7 +88,7 @@ describe('textToSpeech', () => {
       const result = await wrapped({
         data: { text: 'test', voiceKey },
         auth: { uid: 'u1' },
-      });
+      } as any);
       expect(result).toHaveProperty('audio');
     }
   });

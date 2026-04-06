@@ -60,16 +60,16 @@ describe('validateCode', () => {
   });
 
   it('throws invalid-argument for missing code', async () => {
-    await expect(wrapped({ data: {} })).rejects.toThrow(/Code is required/);
+    await expect(wrapped({ data: {} } as any)).rejects.toThrow(/Code is required/);
   });
 
   it('throws invalid-argument for non-string code', async () => {
-    await expect(wrapped({ data: { code: 123 } })).rejects.toThrow(/Code is required/);
+    await expect(wrapped({ data: { code: 123 } } as any)).rejects.toThrow(/Code is required/);
   });
 
   it('throws not-found for non-existent code', async () => {
     mockDb._mockGet.mockResolvedValue({ empty: true, docs: [] });
-    await expect(wrapped({ data: { code: 'ABCD-EFGH' } })).rejects.toThrow(/Invalid code/);
+    await expect(wrapped({ data: { code: 'ABCD-EFGH' } } as any)).rejects.toThrow(/Invalid code/);
   });
 
   it('throws permission-denied for revoked code', async () => {
@@ -80,7 +80,7 @@ describe('validateCode', () => {
         ref: { update: mockDb._mockUpdate },
       }],
     });
-    await expect(wrapped({ data: { code: 'ABCD-EFGH' } })).rejects.toThrow(/revoked/);
+    await expect(wrapped({ data: { code: 'ABCD-EFGH' } } as any)).rejects.toThrow(/revoked/);
   });
 
   it('throws permission-denied for expired code', async () => {
@@ -95,7 +95,7 @@ describe('validateCode', () => {
         ref: { update: mockDb._mockUpdate },
       }],
     });
-    await expect(wrapped({ data: { code: 'ABCD-EFGH' } })).rejects.toThrow(/expired/);
+    await expect(wrapped({ data: { code: 'ABCD-EFGH' } } as any)).rejects.toThrow(/expired/);
   });
 
   it('creates new user for unused code', async () => {
@@ -111,7 +111,7 @@ describe('validateCode', () => {
       }],
     });
 
-    const result = await wrapped({ data: { code: 'ABCD-EFGH' } });
+    const result = await wrapped({ data: { code: 'ABCD-EFGH' } } as any);
     expect(mockAuth.createUser).toHaveBeenCalled();
     expect(mockAuth.setCustomUserClaims).toHaveBeenCalledWith('new-uid-123', { role: 'student' });
     expect(result).toHaveProperty('customToken', 'mock-custom-token');
@@ -132,7 +132,7 @@ describe('validateCode', () => {
       }],
     });
 
-    const result = await wrapped({ data: { code: 'ABCD-EFGH' } });
+    const result = await wrapped({ data: { code: 'ABCD-EFGH' } } as any);
     expect(mockAuth.createUser).not.toHaveBeenCalled();
     expect(mockAuth.createCustomToken).toHaveBeenCalledWith('existing-uid', { role: 'teacher' });
     expect(result.role).toBe('teacher');
@@ -151,7 +151,7 @@ describe('validateCode', () => {
       }],
     });
 
-    await wrapped({ data: { code: 'ABCD-EFGH' } });
+    await wrapped({ data: { code: 'ABCD-EFGH' } } as any);
     expect(mockAuth.setCustomUserClaims).toHaveBeenCalledWith('new-uid-123', { role: 'teacher' });
   });
 });
