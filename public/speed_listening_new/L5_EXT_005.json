@@ -1,0 +1,235 @@
+[
+  {
+    "setId": "L5_EXT_005_set1",
+    "parentSetId": "L5_EXT_005",
+    "theme": "Long-Form Journalism — The Ethics of Gene Editing",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "In November 2018, a Chinese scientist named He Jiankui announced that he had edited the genes of twin girls using CRISPR-Cas9, making them the first genetically modified humans in history.",
+        "korean": "2018년 11월, 허지안쿠이라는 중국 과학자가 크리스퍼를 사용해 쌍둥이 소녀의 유전자를 편집했다고 발표했습니다.",
+        "properNounIndices": [
+          1,
+          4,
+          7,
+          8,
+          20
+        ]
+      },
+      {
+        "id": 1,
+        "english": "The scientific community reacted not with celebration, but with nearly universal condemnation. He Jiankui was eventually sentenced to three years in prison.",
+        "korean": "과학계는 축하가 아니라 거의 보편적인 비난으로 반응했습니다.",
+        "properNounIndices": [
+          12,
+          13
+        ]
+      },
+      {
+        "id": 2,
+        "english": "But here's the thing: the technology he used didn't disappear. CRISPR is now more powerful, more precise, and more accessible than ever.",
+        "korean": "하지만 핵심은 그가 사용한 기술이 사라지지 않았다는 거예요. 크리스퍼는 이제 더 강력하고 정밀하고 접근하기 쉬워졌습니다.",
+        "properNounIndices": [
+          10
+        ]
+      },
+      {
+        "id": 3,
+        "english": "And the ethical questions it raises have only grown more urgent.",
+        "korean": "그리고 이것이 제기하는 윤리적 질문은 더 시급해졌을 뿐입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "At its core, CRISPR-Cas9 is a molecular tool that allows scientists to cut DNA at a specific location and either delete, replace, or insert genetic material.",
+        "korean": "핵심적으로, 크리스퍼-Cas9는 과학자들이 특정 위치에서 DNA를 자를 수 있게 하는 분자 도구입니다.",
+        "properNounIndices": [
+          3,
+          13
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '인류의 궤적/방향' mean in English?",
+      "options": [
+        "hereditary diseases",
+        "somatic editing",
+        "trajectory of our species",
+        "designer baby"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L5_EXT_005_set2",
+    "parentSetId": "L5_EXT_005",
+    "theme": "Long-Form Journalism — The Ethics of Gene Editing",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "In the context of medicine, the potential applications are staggering.",
+        "korean": "의학적 맥락에서 잠재적 활용은 놀라울 정도입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Genetic diseases like sickle cell anemia, cystic fibrosis, and Huntington's disease could theoretically be cured by correcting the faulty gene before symptoms even appear.",
+        "korean": "겸상 적혈구 빈혈, 낭포성 섬유증, 헌팅턴병 같은 유전 질환이 이론적으로 치료될 수 있습니다.",
+        "properNounIndices": [
+          9
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Clinical trials for CRISPR-based therapies are already underway, and the results have been encouraging.",
+        "korean": "크리스퍼 기반 치료의 임상시험이 이미 진행 중이며, 결과가 고무적입니다.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Few people object to using gene editing to treat serious diseases in living patients — what scientists call somatic editing.",
+        "korean": "살아있는 환자의 심각한 질병 치료를 위한 유전자 편집 — 과학자들이 체세포 편집이라 부르는 것 — 에 반대하는 사람은 적습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "The controversy begins with germline editing: modifications made to eggs, sperm, or embryos that would be passed down to future generations.",
+        "korean": "논쟁은 생식세포 편집에서 시작됩니다: 난자, 정자, 배아에 대한 변형으로 미래 세대에 전달되는 거예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '크리스퍼-캐스9 (유전자 가위)' mean in English?",
+      "options": [
+        "designer baby",
+        "CRISPR-Cas9",
+        "somatic editing",
+        "germline editing"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L5_EXT_005_set3",
+    "parentSetId": "L5_EXT_005",
+    "theme": "Long-Form Journalism — The Ethics of Gene Editing",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "Germline editing doesn't just affect one patient; it permanently alters the human gene pool.",
+        "korean": "생식세포 편집은 한 환자에만 영향을 주는 게 아닙니다. 인류의 유전자 풀을 영구적으로 바꿉니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "Proponents argue that germline editing could eliminate hereditary diseases entirely, sparing countless future generations from suffering.",
+        "korean": "지지자들은 생식세포 편집이 유전 질환을 완전히 제거할 수 있다고 주장합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "If we have the power to prevent a child from being born with a fatal genetic condition, don't we have a moral obligation to do so? Critics raise several objections.",
+        "korean": "치명적 유전 질환을 가진 아이가 태어나는 걸 막을 힘이 있다면, 그렇게 해야 할 도덕적 의무가 있지 않을까요?",
+        "properNounIndices": [
+          26
+        ]
+      },
+      {
+        "id": 13,
+        "english": "First, there's the problem of unintended consequences. Our understanding of the genome is still incomplete.",
+        "korean": "첫째, 의도치 않은 결과의 문제가 있습니다. 유전체에 대한 우리의 이해가 아직 불완전하거든요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 14,
+        "english": "Editing one gene to fix a known problem could inadvertently create new problems that we can't predict — and those problems would be inherited by every subsequent generation.",
+        "korean": "알려진 문제를 고치려고 하나의 유전자를 편집하면 예측할 수 없는 새로운 문제를 의도치 않게 만들 수 있습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '의도하지 않은 결과' mean in English?",
+      "options": [
+        "unintended consequences",
+        "hereditary diseases",
+        "gene pool",
+        "CRISPR-Cas9"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_EXT_005_set4",
+    "parentSetId": "L5_EXT_005",
+    "theme": "Long-Form Journalism — The Ethics of Gene Editing",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "Second, there's the slippery slope concern. If we allow germline editing for disease prevention, what stops us from using it for enhancement?",
+        "korean": "둘째, 미끄러운 경사면 우려가 있습니다.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 16,
+        "english": "Selecting for higher intelligence, particular physical traits, or even personality characteristics?",
+        "korean": "더 높은 지능, 특정 신체적 특성, 심지어 성격 특성까지 선택하는 것은요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "This leads directly to what bioethicists call the \"designer baby\" problem — a future in which genetic privilege becomes the ultimate form of inequality. Third, there's the question of consent.",
+        "korean": "이것은 생명윤리학자들이 '맞춤 아기' 문제라고 부르는 것으로 직접 이어집니다.",
+        "properNounIndices": [
+          24
+        ]
+      },
+      {
+        "id": 18,
+        "english": "A future person who inherits an edited genome never had the opportunity to agree to that modification.",
+        "korean": "편집된 유전체를 물려받는 미래의 사람은 그 변형에 동의할 기회가 없었습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 19,
+        "english": "We are, in effect, making irreversible decisions about someone else's biological identity without their input. These are not hypothetical questions.",
+        "korean": "사실상 다른 사람의 생물학적 정체성에 대해 그들의 의견 없이 되돌릴 수 없는 결정을 내리는 겁니다.",
+        "properNounIndices": [
+          15
+        ]
+      },
+      {
+        "id": 20,
+        "english": "As CRISPR technology continues to advance, the pressure to use it will intensify. And the choices we make in the next decade will shape not just individual lives, but the trajectory of our species.",
+        "korean": "크리스퍼 기술이 계속 발전하면서 사용 압력이 강해질 것입니다.",
+        "properNounIndices": [
+          1,
+          13
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '미끄러운 경사면 (논리적 연쇄 확대 우려)' mean in English?",
+      "options": [
+        "germline editing",
+        "gene pool",
+        "somatic editing",
+        "slippery slope"
+      ],
+      "answer": 3
+    }
+  }
+]

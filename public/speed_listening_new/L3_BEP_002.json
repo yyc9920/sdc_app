@@ -1,0 +1,55 @@
+[
+  {
+    "setId": "L3_BEP_002_set1",
+    "parentSetId": "L3_BEP_002",
+    "theme": "Clarifying What Was Meant",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Could you clarify what you mean?",
+        "korean": "",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "When you say..., do you mean...?",
+        "korean": "",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I'm not sure I follow you",
+        "korean": "",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Let me see if I understand correctly...",
+        "korean": "",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 4,
+        "english": "In other words...",
+        "korean": "",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Clarifying What Was Said",
+        "Health and Medicine",
+        "Clarifying What Was Meant",
+        "Weather and Seasons"
+      ],
+      "answer": 2
+    }
+  }
+]

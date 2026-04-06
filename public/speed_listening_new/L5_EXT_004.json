@@ -1,0 +1,194 @@
+[
+  {
+    "setId": "L5_EXT_004_set1",
+    "parentSetId": "L5_EXT_004",
+    "theme": "Economic Analysis — The Paradox of Thrift",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Today I want to discuss a concept that illustrates one of the central tensions in macroeconomic thinking: the paradox of thrift. The idea is deceptively simple.",
+        "korean": "오늘은 거시경제 사고의 핵심 긴장 중 하나를 보여주는 개념인 절약의 역설을 논의하겠습니다.",
+        "properNounIndices": [
+          1,
+          21
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Saving money is, at the individual level, unambiguously virtuous. It provides financial security, enables future investment, and protects against unforeseen shocks.",
+        "korean": "개인 차원에서 저축은 명백히 미덕입니다.",
+        "properNounIndices": [
+          9
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Every personal finance advisor in the world will tell you to save more. And they're right — for you, individually. But here's where things get interesting.",
+        "korean": "전 세계 모든 재정 어드바이저가 더 저축하라고 할 거예요. 개인적으로는 맞는 말이고요.",
+        "properNounIndices": [
+          13,
+          20
+        ]
+      },
+      {
+        "id": 3,
+        "english": "What happens when everyone saves more simultaneously? In a consumer-driven economy — and most advanced economies are precisely that — aggregate demand is the engine of growth.",
+        "korean": "모두가 동시에 더 저축하면 어떻게 될까요?",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 4,
+        "english": "When consumers spend, businesses earn revenue, which allows them to hire workers, pay wages, and invest in expansion. That spending becomes someone else's income.",
+        "korean": "소비자가 지출하면 기업이 수익을 올리고, 근로자를 고용하고, 임금을 지급하고, 확장에 투자할 수 있습니다.",
+        "properNounIndices": [
+          18
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '경기 역행적 재정 정책' mean in English?",
+      "options": [
+        "artificially stimulating demand",
+        "contractionary spiral",
+        "savings rate",
+        "counter-cyclical fiscal policy"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L5_EXT_004_set2",
+    "parentSetId": "L5_EXT_004",
+    "theme": "Economic Analysis — The Paradox of Thrift",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Now imagine a scenario where, in response to economic uncertainty, households across the country decide to cut their spending and increase their savings rate.",
+        "korean": "경제적 불확실성에 대응하여 전국의 가구들이 지출을 줄이기로 결정하는 시나리오를 상상해보세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Each household is making a perfectly rational decision. But collectively, the reduction in spending leads to a fall in aggregate demand. Businesses see their revenues decline.",
+        "korean": "각 가구는 완벽히 합리적인 결정을 합니다. 하지만 집단적으로 지출 감소가 총수요 하락으로 이어집니다.",
+        "properNounIndices": [
+          8,
+          21
+        ]
+      },
+      {
+        "id": 7,
+        "english": "They respond by cutting costs — which often means laying off workers. Unemployment rises.",
+        "korean": "기업은 비용 절감으로 대응하는데, 이는 종종 해고를 의미합니다. 실업이 증가합니다.",
+        "properNounIndices": [
+          12
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Those newly unemployed workers are forced to reduce their spending even further, which causes another round of revenue declines and layoffs. The economy enters a contractionary spiral.",
+        "korean": "새로 실업자가 된 근로자들은 지출을 더 줄일 수밖에 없습니다.",
+        "properNounIndices": [
+          21
+        ]
+      },
+      {
+        "id": 9,
+        "english": "And here's the truly paradoxical part: in the end, total savings in the economy may actually decrease.",
+        "korean": "진정으로 역설적인 부분은 이겁니다: 결국 경제 전체의 총저축이 오히려 감소할 수 있어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '수축의 악순환' mean in English?",
+      "options": [
+        "unsustainable debt",
+        "contractionary spiral",
+        "counter-cyclical fiscal policy",
+        "aggregate demand"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L5_EXT_004_set3",
+    "parentSetId": "L5_EXT_004",
+    "theme": "Economic Analysis — The Paradox of Thrift",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "Because national income has fallen, even though each individual is trying to save a larger share of their income, the absolute amount of savings drops.",
+        "korean": "국민소득이 하락했기 때문에, 각 개인이 소득의 더 큰 비율을 저축하려 해도 저축하는 절대 금액은 더 적습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "The attempt to save more collectively results in less saving overall.",
+        "korean": "집단적으로 더 저축하려는 시도가 결과적으로 전체 저축의 감소를 가져옵니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "This paradox was first articulated by John Maynard Keynes during the Great Depression, and it remains one of the strongest arguments for counter-cyclical fiscal policy — the idea that when private spending contracts, government spending should expand to fill the gap.",
+        "korean": "이 역설은 대공황 시기에 존 메이너드 케인즈가 처음 제시했습니다.",
+        "properNounIndices": [
+          6,
+          7,
+          8,
+          11,
+          12
+        ]
+      },
+      {
+        "id": 13,
+        "english": "Critics of this view, particularly those in the Austrian and monetarist traditions, argue that the paradox overstates the problem.",
+        "korean": "이 견해의 비판자들, 특히 오스트리아학파와 통화주의 전통에서는 역설이 문제를 과대평가한다고 주장합니다.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 14,
+        "english": "They contend that increased savings will eventually flow into investment through the banking system, and that artificially stimulating demand through government spending merely delays necessary economic adjustments.",
+        "korean": "증가한 저축이 결국 은행 시스템을 통해 투자로 흘러갈 거라고 주장합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 15,
+        "english": "The debate is far from settled, and it has direct relevance to policy decisions being made right now.",
+        "korean": "논쟁은 해결과 거리가 멀며, 지금 내려지고 있는 정책 결정에 직접적인 관련이 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 16,
+        "english": "When central banks lower interest rates to discourage saving and encourage spending, they are implicitly accepting the logic of the paradox of thrift.",
+        "korean": "중앙은행이 금리를 낮춰 저축을 억제하고 소비를 장려할 때, 암묵적으로 이 논리를 수용하는 것입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "When governments resist stimulus spending on the grounds that it creates unsustainable debt, they are implicitly rejecting it.",
+        "korean": "정부가 지속 불가능한 부채를 만든다는 이유로 경기부양 지출에 반대할 때, 암묵적으로 이를 거부하는 것입니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '경기 역행적 재정 정책' mean in English?",
+      "options": [
+        "aggregate demand",
+        "unsustainable debt",
+        "counter-cyclical fiscal policy",
+        "Austrian / monetarist traditions"
+      ],
+      "answer": 2
+    }
+  }
+]

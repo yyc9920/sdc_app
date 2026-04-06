@@ -1,0 +1,148 @@
+[
+  {
+    "setId": "L1_ELLO_004_set1",
+    "parentSetId": "L1_ELLO_004",
+    "theme": "Mixer #10 — Favorite Country",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My favorite country is Australia. I've been there and I absolutely loved it. The people are so friendly and welcoming.",
+        "korean": "가장 좋아하는 나라는 호주예요. 가봤는데 정말 좋았어요. 사람들이 아주 친절하고 환대해줘요.",
+        "properNounIndices": [
+          4,
+          5,
+          9,
+          13
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I stayed in Melbourne, which is a vibrant city with lots of culture, good food, and great weather. The beaches are beautiful too. I could live there.",
+        "korean": "멜번에 머물렀는데, 문화가 풍부하고 음식이 맛있고 날씨 좋은 활기찬 도시예요. 해변도 아름다워요.",
+        "properNounIndices": [
+          0,
+          3,
+          18,
+          23
+        ]
+      },
+      {
+        "id": 2,
+        "english": "New Zealand is my favorite country. I went there for a vacation and I was blown away by the natural beauty. The mountains, the fjords, the forests — everything is stunning.",
+        "korean": "뉴질랜드가 가장 좋아하는 나라예요. 휴가로 갔는데 자연의 아름다움에 감탄했어요. 산이 정말 멋져요.",
+        "properNounIndices": [
+          1,
+          6,
+          13,
+          21
+        ]
+      },
+      {
+        "id": 3,
+        "english": "The people are really nice too. Very laid-back and friendly. I would definitely go back.",
+        "korean": "사람들도 정말 좋아요. 아주 여유롭고 친절해요. 꼭 다시 가고 싶어요.",
+        "properNounIndices": [
+          6,
+          10
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I'd say Hungary. I went to Budapest and had an amazing time. The architecture is beautiful, the food is delicious, and it's very affordable. The thermal baths are incredible — you can relax in these ancient hot springs while enjoying the city views.",
+        "korean": "헝가리요. 부다페스트에 갔는데 정말 놀라운 시간을 보냈어요. 건축이 아름답고, 음식이 맛있고, 물가도 정말 저렴해요.",
+        "properNounIndices": [
+          2,
+          3,
+          6,
+          12,
+          24
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '온천' mean in English?",
+      "options": [
+        "thermal baths",
+        "fjord",
+        "standoffish",
+        "stunning"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L1_ELLO_004_set2",
+    "parentSetId": "L1_ELLO_004",
+    "theme": "Mixer #10 — Favorite Country",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Thailand is my favorite. I went there a few years ago and had the best time. The culture is fascinating, the food is phenomenal, and it's very affordable. The people are incredibly kind and welcoming.",
+        "korean": "태국이 가장 좋아하는 나라예요. 몇 년 전에 갔는데 최고의 시간을 보냈어요. 문화가 매력적이고 음식이 경이로워요.",
+        "properNounIndices": [
+          4,
+          16,
+          28
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Bangkok is chaotic but exciting, and then you have these quiet, peaceful islands.",
+        "korean": "방콕은 혼란스럽지만 흥미롭고, 조용하고 평화로운 섬들도 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Lebanon is my favorite country because it's my home country. But if I'm talking about another country, I really love Lebanon because of the food, the culture, and the hospitality of the people.",
+        "korean": "레바논이 가장 좋아하는 나라예요, 고국이니까요. 다른 나라를 말한다면, 정말 좋아해요.",
+        "properNounIndices": [
+          10,
+          12,
+          17,
+          20
+        ]
+      },
+      {
+        "id": 8,
+        "english": "I encourage everyone to visit because it's a beautiful place.",
+        "korean": "모두에게 방문을 권해요, 아름다운 곳이거든요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 9,
+        "english": "My favorite country is France. I love the culture, the food, the wine. Paris is beautiful, but I also love the countryside — the vineyards, the lavender fields.",
+        "korean": "가장 좋아하는 나라는 프랑스예요. 문화, 음식, 와인을 좋아하고요. 파리가 아름답지만 시골도 좋아해요.",
+        "properNounIndices": [
+          4,
+          5,
+          13,
+          17
+        ]
+      },
+      {
+        "id": 10,
+        "english": "The French people can be a bit standoffish, but once you get to know them, they're wonderful.",
+        "korean": "프랑스 사람들은 좀 쌀쌀할 수 있지만, 알고 나면 훌륭해요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '멋진, 놀라운' mean in English?",
+      "options": [
+        "stunning",
+        "thermal baths",
+        "standoffish",
+        "hospitality"
+      ],
+      "answer": 0
+    }
+  }
+]

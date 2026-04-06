@@ -74,6 +74,6 @@ export interface SpeedListeningSet {
   level: number;
   setNumber: number;
   sentences: SpeedListeningSentence[];
-  quiz: Quiz;
+  quiz?: Quiz;
 }
 

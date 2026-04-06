@@ -50,6 +50,8 @@ const generateBlankIndices = (sentences: SpeedListeningSet['sentences'], level: 
 export const SpeedListeningQuiz: React.FC<Props> = ({ set, onNext }) => {
   const [blanks, setBlanks] = useState<Record<string, string>>({});
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [quizAnswer, setQuizAnswer] = useState<number | null>(null);
+  const [quizSubmitted, setQuizSubmitted] = useState(false);
   
   const [currentSpeedIndex, setCurrentSpeedIndex] = useState(0);
   const [currentSentenceIndex, setCurrentSentenceIndex] = useState(0);
@@ -85,6 +87,8 @@ const [sentenceVoices, setSentenceVoices] = useState<Record<number, Voice>>(() =
   useEffect(() => {
     setBlanks({});
     setIsSubmitted(false);
+    setQuizAnswer(null);
+    setQuizSubmitted(false);
     setCurrentSpeedIndex(0);
     setCurrentSentenceIndex(0);
     setIsPlaying(true);
@@ -329,6 +333,60 @@ const [sentenceVoices, setSentenceVoices] = useState<Record<number, Voice>>(() =
         >
           {isSubmitted ? '제출 완료' : '정답 제출'}
         </button>
+        {isSubmitted && set.quiz && (
+          <div className="bg-white dark:bg-gray-800 p-5 sm:p-6 rounded-2xl border border-gray-200 dark:border-gray-700 space-y-4">
+            <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100">Comprehension Quiz</h3>
+            <p className="text-gray-700 dark:text-gray-300 font-medium">{set.quiz.question}</p>
+            <div className="space-y-2">
+              {set.quiz.options.map((option, idx) => {
+                const isSelected = quizAnswer === idx;
+                const isCorrectOption = idx === set.quiz!.answerIndex;
+                let optionStyle = 'border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500';
+
+                if (quizSubmitted) {
+                  if (isCorrectOption) {
+                    optionStyle = 'border-green-500 bg-green-50 dark:bg-green-900/30 dark:border-green-400';
+                  } else if (isSelected && !isCorrectOption) {
+                    optionStyle = 'border-red-500 bg-red-50 dark:bg-red-900/30 dark:border-red-400';
+                  }
+                } else if (isSelected) {
+                  optionStyle = 'border-blue-500 bg-blue-50 dark:bg-blue-900/30 dark:border-blue-400';
+                }
+
+                return (
+                  <button
+                    key={idx}
+                    onClick={() => !quizSubmitted && setQuizAnswer(idx)}
+                    disabled={quizSubmitted}
+                    className={`w-full text-left p-3 rounded-lg border-2 transition-colors ${optionStyle} ${
+                      quizSubmitted ? 'cursor-default' : 'cursor-pointer'
+                    }`}
+                  >
+                    <span className="text-gray-800 dark:text-gray-200">{option}</span>
+                  </button>
+                );
+              })}
+            </div>
+            {!quizSubmitted && (
+              <button
+                onClick={() => setQuizSubmitted(true)}
+                disabled={quizAnswer === null}
+                className="w-full py-3 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+              >
+                퀴즈 정답 확인
+              </button>
+            )}
+            {quizSubmitted && (
+              <p className={`text-sm font-semibold ${
+                quizAnswer === set.quiz.answerIndex
+                  ? 'text-green-600 dark:text-green-400'
+                  : 'text-red-600 dark:text-red-400'
+              }`}>
+                {quizAnswer === set.quiz.answerIndex ? '정답입니다!' : '오답입니다. 정답을 확인하세요.'}
+              </p>
+            )}
+          </div>
+        )}
         {isSubmitted && (
           <button
             onClick={() => onNext?.()}

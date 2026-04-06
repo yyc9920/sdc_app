@@ -1,0 +1,126 @@
+[
+  {
+    "setId": "L1_EXT_008_set1",
+    "parentSetId": "L1_EXT_008",
+    "theme": "Ordering Food Delivery",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Thank you for calling Tony's Pizza. What can I get for you?",
+        "korean": "토니즈 피자에 전화 주셔서 감사합니다. 뭘 드릴까요?",
+        "properNounIndices": [
+          4,
+          5,
+          6,
+          8
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Hi, I'd like to order a large pepperoni pizza, please.",
+        "korean": "안녕하세요, 라지 페퍼로니 피자 하나 주문할게요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Large pepperoni. Would you like any extra toppings?",
+        "korean": "라지 페퍼로니요. 추가 토핑 원하시나요?",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Can I add mushrooms and olives?",
+        "korean": "버섯과 올리브를 추가할 수 있나요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Sure thing. Anything else? Drinks or sides?",
+        "korean": "물론이죠. 다른 건요? 음료나 사이드는요?",
+        "properNounIndices": [
+          2,
+          4
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Ordering Food Delivery",
+        "Radio Interview — Small Business Owner",
+        "Making a Doctor's Appointment",
+        "Job Interview — Small Talk"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L1_EXT_008_set2",
+    "parentSetId": "L1_EXT_008",
+    "theme": "Ordering Food Delivery",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I'll add a bottle of Coke and an order of garlic bread.",
+        "korean": "콜라 한 병과 갈릭 브레드 하나 추가할게요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Got it. That's a large pepperoni with mushrooms and olives, a Coke, and garlic bread. Your total comes to seventeen ninety-five. Is this for delivery or pickup?",
+        "korean": "알겠습니다. 라지 페퍼로니에 버섯과 올리브, 콜라, 갈릭 브레드요. 총 17달러 95센트입니다. 배달인가요, 픽업인가요?",
+        "properNounIndices": [
+          2,
+          11,
+          15,
+          21
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Delivery, please. My address is 42 Oak Street, Apartment 3B.",
+        "korean": "배달이요. 주소는 오크 스트릿 42번지, 아파트 3B예요.",
+        "properNounIndices": [
+          2,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Okay, that'll be about thirty to forty minutes.",
+        "korean": "네, 약 30~40분 걸릴 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Great, thanks!",
+        "korean": "좋아요, 감사합니다!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "At the Post Office",
+        "Making a Doctor's Appointment",
+        "Ordering Food Delivery",
+        "At the Coffee Shop"
+      ],
+      "answer": 2
+    }
+  }
+]

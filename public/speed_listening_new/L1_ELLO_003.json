@@ -1,0 +1,129 @@
+[
+  {
+    "setId": "L1_ELLO_003_set1",
+    "parentSetId": "L1_ELLO_003",
+    "theme": "Mixer #8 — Dream Job",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My dream job would be to work for Bill Gates. I really admire him because of his work in philanthropy, particularly his foundation's work in developing countries.",
+        "korean": "꿈의 직업은 빌 게이츠를 위해 일하는 거예요. 자선 활동, 특히 교육과 세계 보건 분야에서의 노력 때문에 정말 존경해요.",
+        "properNounIndices": [
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": 1,
+        "english": "He's helped millions of people get access to education and healthcare. If I could work with someone like that, it would be very meaningful work.",
+        "korean": "수백만 명이 교육과 의료를 접할 수 있도록 도왔어요. 그런 분과 함께 일할 수 있다면 정말 놀라울 거예요.",
+        "properNounIndices": [
+          11,
+          12
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I would love to work for the United Nations. I'm interested in international development and helping people around the world.",
+        "korean": "유엔에서 일하고 싶어요. 국제 개발과 전 세계 사람들을 돕는 것에 관심이 있어요.",
+        "properNounIndices": [
+          0,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "id": 3,
+        "english": "The UN is an organization that has the ability to make real impact on global issues. It would be incredible to be part of that.",
+        "korean": "유엔은 글로벌 이슈에 진정한 영향을 줄 수 있는 조직이에요. 그 일원이 될 수 있다면 정말 놀라울 거예요.",
+        "properNounIndices": [
+          1,
+          16
+        ]
+      },
+      {
+        "id": 4,
+        "english": "My dream job? Professional hockey player, NHL — National Hockey League. I love hockey, and being able to play at that level and make a good living doing it would be amazing. Plus the fame and travel that comes with it.",
+        "korean": "꿈의 직업? 프로 하키 선수, NHL이요. 하키를 정말 좋아하고, 그 수준에서 뛸 수 있다면 정말 놀라울 거예요.",
+        "properNounIndices": [
+          3,
+          6,
+          8,
+          9,
+          10,
+          11,
+          32
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '영향' mean in English?",
+      "options": [
+        "passionate",
+        "impact",
+        "incredible",
+        "foundation"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L1_ELLO_003_set2",
+    "parentSetId": "L1_ELLO_003",
+    "theme": "Mixer #8 — Dream Job",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I would like to work for a large mass-communication company. I'm interested in media and journalism. I think it would be fascinating to work in an environment where we create content that reaches millions of people. That's my dream job.",
+        "korean": "대형 매스컴 회사에서 일하고 싶어요. 미디어와 저널리즘에 관심이 있고, 그 분야에서 일하면 흥미로울 것 같아요.",
+        "properNounIndices": [
+          0,
+          10,
+          16,
+          36
+        ]
+      },
+      {
+        "id": 6,
+        "english": "I want a job with a high salary and short working hours. Honestly, that's the main thing for me. I want to be able to earn good money but also have plenty of free time to do the things I enjoy outside of work.",
+        "korean": "높은 연봉에 근무시간이 짧은 직업을 원해요. 솔직히 그게 가장 중요해요. 좋은 돈을 벌면서 자유 시간도 갖고 싶거든요.",
+        "properNounIndices": [
+          0,
+          12,
+          19,
+          39
+        ]
+      },
+      {
+        "id": 7,
+        "english": "My dream job would be to work for a company related to snowboarding or winter sports. I'm passionate about snowboarding, so it would be perfect to combine my passion with my work.",
+        "korean": "꿈의 직업은 빌 게이츠를 위해 일하는 거예요. 자선 활동, 특히 교육과 세계 보건 분야에서의 노력 때문에 정말 존경해요.",
+        "properNounIndices": [
+          16
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Whether that's designing snowboards, managing a snowboard company, or leading snowboarding tours.",
+        "korean": "스노보드를 디자인하든, 스노보드 회사를 관리하든, 스노보딩 투어를 이끌든요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '놀라운' mean in English?",
+      "options": [
+        "incredible",
+        "foundation",
+        "salary",
+        "fascinating"
+      ],
+      "answer": 0
+    }
+  }
+]

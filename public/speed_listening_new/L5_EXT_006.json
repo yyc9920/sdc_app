@@ -1,0 +1,210 @@
+[
+  {
+    "setId": "L5_EXT_006_set1",
+    "parentSetId": "L5_EXT_006",
+    "theme": "Geopolitics Analysis — The Thucydides Trap",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The concept we're examining today comes from the ancient Greek historian Thucydides, who wrote in his account of the Peloponnesian War that \"it was the rise of Athens and the fear that this instilled in Sparta that made war inevitable.\" This observation has been adapted by political scientist Graham Allison into what he calls the Thucydides Trap: the structural tension that arises when a rising power threatens to displace an established one.",
+        "korean": "오늘 살펴볼 개념은 고대 그리스 역사가 투키디데스에게서 나왔습니다.",
+        "properNounIndices": [
+          9,
+          11,
+          19,
+          20,
+          27,
+          35,
+          40,
+          48,
+          49,
+          55,
+          56
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Allison's research team examined sixteen cases over the past five hundred years in which a major rising power challenged a ruling power.",
+        "korean": "앨리슨의 연구팀은 지난 500년간 16개 사례를 조사했습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "In twelve of those sixteen cases — seventy-five percent — the result was war.",
+        "korean": "그 16개 사례 중 12개에서 — 75% — 결과는 전쟁이었습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "The wars include the conflict between England and the Dutch Republic in the seventeenth century, the rivalry between Germany and Britain that contributed to World War One, and the geopolitical competition between the United States and the Soviet Union that produced the Cold War.",
+        "korean": "전쟁에는 17세기 영국과 네덜란드 공화국 사이의 충돌이 포함됩니다.",
+        "properNounIndices": [
+          6,
+          9,
+          10,
+          18,
+          20,
+          24,
+          25,
+          26,
+          33,
+          34,
+          37,
+          38,
+          42,
+          43
+        ]
+      },
+      {
+        "id": 4,
+        "english": "The mechanism is not simply about military capability. It's about perception, status, and the architecture of international order.",
+        "korean": "메커니즘은 단순히 군사력에 관한 것이 아닙니다. 인식, 지위, 국제 질서의 구조에 관한 것입니다.",
+        "properNounIndices": [
+          8
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '국제 질서' mean in English?",
+      "options": [
+        "international order",
+        "Belt and Road Initiative",
+        "Thucydides Trap",
+        "structural tension"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_EXT_006_set2",
+    "parentSetId": "L5_EXT_006",
+    "theme": "Geopolitics Analysis — The Thucydides Trap",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "The established power perceives the rising power as a threat not just to its security, but to the rules, norms, and institutions that underpin its dominant position.",
+        "korean": "기존 강대국은 신흥국을 안보뿐 아니라 규칙과 규범에 대한 위협으로 인식합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "The rising power, meanwhile, chafes under a system that was designed before it arrived at the table and demands revision of that system to reflect its new status.",
+        "korean": "한편 신흥국은 자기가 등장하기 전에 만들어진 시스템에 불만을 느끼며 개편을 요구합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "The application to US-China relations is obvious and has been the subject of intense debate. China's economic output has grown from roughly ten percent of US GDP in 2000 to over seventy percent today.",
+        "korean": "미중 관계에 대한 적용은 분명하며, 격렬한 논쟁의 대상이 되어왔습니다.",
+        "properNounIndices": [
+          3,
+          15,
+          25,
+          26
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Its military modernization program is the most ambitious in a generation.",
+        "korean": "중국의 군사 현대화 프로그램은 한 세대 만에 가장 야심 찹니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "And its Belt and Road Initiative represents a deliberate effort to reshape the infrastructure — and by extension the political alignment — of much of the developing world.",
+        "korean": "일대일로 구상은 인프라를 — 나아가 정치적 영향력을 — 재편하려는 의도적 노력입니다.",
+        "properNounIndices": [
+          2,
+          4,
+          5
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '정치적 편향/연합' mean in English?",
+      "options": [
+        "Belt and Road Initiative",
+        "structural tension",
+        "political alignment",
+        "bipartisan"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L5_EXT_006_set3",
+    "parentSetId": "L5_EXT_006",
+    "theme": "Geopolitics Analysis — The Thucydides Trap",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "Does this mean war between the US and China is inevitable? Allison himself says no — he points to the four cases in his study where the trap was avoided.",
+        "korean": "미중 전쟁이 불가피하다는 뜻일까요? 앨리슨 본인은 아니라고 말합니다.",
+        "properNounIndices": [
+          6,
+          8,
+          11
+        ]
+      },
+      {
+        "id": 11,
+        "english": "But avoidance required extraordinary statesmanship, creative diplomacy, and a willingness on both sides to make painful concessions.",
+        "korean": "하지만 회피에는 탁월한 국정 운영, 창의적 외교, 양측의 고통스러운 양보 의지가 필요했습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "What concerns me most is not the structural dynamics, which are manageable. It's the domestic politics on both sides.",
+        "korean": "가장 우려되는 건 관리 가능한 구조적 역학이 아니라 양측의 국내 정치입니다.",
+        "properNounIndices": [
+          12
+        ]
+      },
+      {
+        "id": 13,
+        "english": "In the United States, competition with China has become one of the few genuinely bipartisan issues, which creates political incentives to escalate rather than accommodate.",
+        "korean": "미국에서는 중국과의 경쟁이 몇 안 되는 진정한 초당파 이슈 중 하나가 됐습니다.",
+        "properNounIndices": [
+          2,
+          3,
+          6
+        ]
+      },
+      {
+        "id": 14,
+        "english": "In China, nationalist sentiment has been deliberately cultivated as a source of regime legitimacy, making compromise politically costly. The Thucydides Trap is not a law of nature.",
+        "korean": "중국에서는 민족주의 정서가 정권 정당성의 원천으로 의도적으로 육성되어왔습니다.",
+        "properNounIndices": [
+          1,
+          18,
+          19,
+          20
+        ]
+      },
+      {
+        "id": 15,
+        "english": "But neither is it merely an academic abstraction. It describes a pattern that has repeated itself throughout history, and the forces that drive that pattern are very much at work today.",
+        "korean": "하지만 단순한 학문적 추상도 아닙니다. 역사를 통해 반복되어온 패턴을 설명하거든요.",
+        "properNounIndices": [
+          8
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '정치적 편향/연합' mean in English?",
+      "options": [
+        "Belt and Road Initiative",
+        "bipartisan",
+        "political alignment",
+        "regime legitimacy"
+      ],
+      "answer": 2
+    }
+  }
+]

@@ -1,0 +1,138 @@
+[
+  {
+    "setId": "L4_EXT_004_set1",
+    "parentSetId": "L4_EXT_004",
+    "theme": "Documentary Narration — The Deep Ocean",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Beneath the surface of the world's oceans lies a realm that we know less about than the surface of Mars.",
+        "korean": "세계 해양의 표면 아래에 우리가 화성 표면보다도 덜 알고 있는 영역이 있습니다.",
+        "properNounIndices": [
+          19
+        ]
+      },
+      {
+        "id": 1,
+        "english": "The deep ocean — defined as everything below two hundred meters — covers more than sixty percent of the Earth's surface, yet less than five percent of it has been explored.",
+        "korean": "심해 — 200미터 이하로 정의되는 — 는 지구 표면의 60% 이상을 차지하지만 탐사된 건 5% 미만입니다.",
+        "properNounIndices": [
+          19
+        ]
+      },
+      {
+        "id": 2,
+        "english": "For centuries, scientists assumed that the deep sea was a barren wasteland — too dark, too cold, and under too much pressure to support life.",
+        "korean": "수 세기 동안 과학자들은 심해가 불모의 황무지라고 가정했습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "That assumption was shattered in 1977, when researchers aboard the submersible Alvin discovered hydrothermal vents on the ocean floor near the Galápagos Islands.",
+        "korean": "그 가정은 1977년, 잠수정 앨빈에 탄 연구진이 해저에서 열수 분출구를 발견하면서 깨졌습니다.",
+        "properNounIndices": [
+          11,
+          21,
+          22
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Surrounding these vents were thriving communities of organisms that had never been seen before: giant tube worms, ghostly white crabs, and dense clusters of mussels.",
+        "korean": "이 분출구 주위에 이전에 한 번도 본 적 없는 생물 군집이 번성하고 있었습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '생물 발광의' mean in English?",
+      "options": [
+        "perpetual darkness",
+        "bioluminescent",
+        "subsurface oceans",
+        "barren wasteland"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L4_EXT_004_set2",
+    "parentSetId": "L4_EXT_004",
+    "theme": "Documentary Narration — The Deep Ocean",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "What made this discovery revolutionary was not just the existence of life, but how that life sustained itself. These organisms didn't rely on sunlight.",
+        "korean": "이 발견이 혁명적인 건 생명의 존재 자체뿐 아니라 그 생명이 어떻게 유지됐는지였습니다.",
+        "properNounIndices": [
+          18
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Instead, they drew energy from chemicals — particularly hydrogen sulfide — released by the vents.",
+        "korean": "대신 분출구에서 방출되는 화학물질, 특히 황화수소에서 에너지를 얻었습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "This process, known as chemosynthesis, fundamentally changed our understanding of where life can exist. Since then, deep-sea exploration has continued to reveal surprises.",
+        "korean": "화학합성이라 알려진 이 과정은 생명이 존재할 수 있는 곳에 대한 우리의 이해를 근본적으로 바꿨습니다.",
+        "properNounIndices": [
+          14
+        ]
+      },
+      {
+        "id": 8,
+        "english": "In the Mariana Trench, the deepest point on Earth at nearly eleven thousand meters, researchers have found shrimp-like amphipods thriving under pressures that would crush a submarine.",
+        "korean": "지구에서 가장 깊은 곳인 거의 11,000미터의 마리아나 해구에서 연구진이 새우와 비슷한 단각류를 발견했습니다.",
+        "properNounIndices": [
+          2,
+          3,
+          8
+        ]
+      },
+      {
+        "id": 9,
+        "english": "In the abyssal plains, bioluminescent creatures produce their own light in a world of perpetual darkness. These discoveries carry implications far beyond marine biology.",
+        "korean": "심해 평원에서는 생물 발광 생물이 영원한 어둠 속에서 스스로 빛을 만들어냅니다.",
+        "properNounIndices": [
+          16
+        ]
+      },
+      {
+        "id": 10,
+        "english": "If life can flourish in such extreme conditions on Earth, it raises a compelling question: could similar ecosystems exist on other worlds?",
+        "korean": "지구에서 이런 극한 환경에서 생명이 번성할 수 있다면, 다른 세계에도 비슷한 생태계가 존재할 수 있을까 하는 설득력 있는 질문이 생깁니다.",
+        "properNounIndices": [
+          9
+        ]
+      },
+      {
+        "id": 11,
+        "english": "Jupiter's moon Europa and Saturn's moon Enceladus both have subsurface oceans. The search for life beyond Earth may well begin in the deep.",
+        "korean": "목성의 달 유로파와 토성의 달 엔셀라두스 모두 지하 해양이 있습니다. 지구 밖 생명 탐색은 심해에서 시작될 수 있어요.",
+        "properNounIndices": [
+          2,
+          4,
+          6,
+          11,
+          16
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '화학합성 (빛 없이 화학 에너지로 유기물 합성)' mean in English?",
+      "options": [
+        "chemosynthesis",
+        "perpetual darkness",
+        "subsurface oceans",
+        "barren wasteland"
+      ],
+      "answer": 0
+    }
+  }
+]

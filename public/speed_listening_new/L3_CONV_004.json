@@ -1,0 +1,240 @@
+[
+  {
+    "setId": "L3_CONV_004_set1",
+    "parentSetId": "L3_CONV_004",
+    "theme": "Internship Credit",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Listen to a conversation between a student and a faculty member.",
+        "korean": "학생과 교수 사이의 대화를 들어보세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Hi, Professor Okafor. I got an internship offer from a marketing firm downtown and I was wondering if I can get academic credit for it.",
+        "korean": "안녕하세요, 오카포 교수님. 시내 마케팅 회사에서 인턴십 제안을 받았는데, 학점을 받을 수 있는지 궁금해서요.",
+        "properNounIndices": [
+          1,
+          2,
+          3,
+          14,
+          18
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Congratulations! That's exciting news. What kind of work would you be doing?",
+        "korean": "축하해! 흥미로운 소식이구나. 어떤 일을 하게 되니?",
+        "properNounIndices": [
+          1,
+          4
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Market research mainly — running surveys, analyzing consumer data, helping with campaign strategy. It's 20 hours a week for the summer.",
+        "korean": "주로 시장 조사요 — 설문 진행, 소비자 데이터 분석, 캠페인 전략 지원. 여름 동안 주 20시간이에요.",
+        "properNounIndices": [
+          13
+        ]
+      },
+      {
+        "id": 4,
+        "english": "That sounds like very relevant work for your major. Yes, in principle, you can earn credit.",
+        "korean": "전공에 매우 관련된 일 같구나. 네, 원칙적으로 학점을 받을 수 있어.",
+        "properNounIndices": [
+          9
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Student Visits Professor About Research Paper",
+        "Internship Credit",
+        "Grade Appeal Process",
+        "Late Drop Policy"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L3_CONV_004_set2",
+    "parentSetId": "L3_CONV_004",
+    "theme": "Internship Credit",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "But there are a few conditions. Let me walk you through them.",
+        "korean": "하지만 몇 가지 조건이 있어. 하나씩 설명해줄게.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 6,
+        "english": "First, the internship has to be approved in advance by the department.",
+        "korean": "먼저, 인턴십은 학과로부터 사전 승인을 받아야 해.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Second, you'd need to enroll in our Internship Practicum course — that's Marketing 490.",
+        "korean": "둘째, 인턴십 실습 과목에 등록해야 해 — 마케팅 490이야.",
+        "properNounIndices": [
+          7,
+          8,
+          12
+        ]
+      },
+      {
+        "id": 8,
+        "english": "At 20 hours a week for a full summer, you'd probably qualify for the full three credits.",
+        "korean": "여름 내내 주 20시간이면 아마 3학점 전부 자격이 될 거야.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "And what does that course require? Is there coursework on top of the internship?",
+        "korean": "그 과목은 뭘 요구하나요? 인턴십 외에 과제도 있나요?",
+        "properNounIndices": [
+          6
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Internship Credit",
+        "Student Visits Professor About Research Paper",
+        "Late Drop Policy",
+        "Grade Appeal Process"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L3_CONV_004_set3",
+    "parentSetId": "L3_CONV_004",
+    "theme": "Internship Credit",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "There is some reflection work. You'd submit biweekly journal entries describing what you're learning and how it connects to your coursework.",
+        "korean": "성찰 과제가 좀 있어. 배우고 있는 것과 수업 내용의 연결을 기술한 격주 일지를 제출해야 해.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 11,
+        "english": "At the end of the summer, you'd write a 10-page capstone reflection paper.",
+        "korean": "여름 끝에 10페이지 종합 성찰 논문을 써야 해.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "What grade system does it use? Is it pass/fail?",
+        "korean": "어떤 성적 체계를 사용하나요? 합격/불합격인가요?",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 13,
+        "english": "You can choose either pass/fail or a letter grade.",
+        "korean": "합격/불합격이나 등급 성적 중 선택할 수 있어.",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "Most students choose pass/fail to reduce pressure, but if you're doing a strong internship with solid reflections, a letter grade could boost your GPA.",
+        "korean": "대부분 학생들은 부담을 줄이려고 합격/불합격을 선택해. 하지만 좋은 인턴십에 충실한 성찰이면, 등급 성적이 GPA를 올릴 수 있어.",
+        "properNounIndices": [
+          23
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Grade Appeal Process",
+        "Internship Credit",
+        "Late Drop Policy",
+        "Student Visits Professor About Research Paper"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L3_CONV_004_set4",
+    "parentSetId": "L3_CONV_004",
+    "theme": "Internship Credit",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "Is there anything I need to do right now to get the process started?",
+        "korean": "과정을 시작하려면 지금 뭘 해야 하나요?",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 16,
+        "english": "Bring me the internship offer letter and I'll sign off on the approval form.",
+        "korean": "인턴십 제안서를 가져오면 승인서에 서명해줄게.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 17,
+        "english": "Then go to the Registrar's Office to officially enroll in Marketing 490. Do that before the add/drop deadline — it's in two weeks.",
+        "korean": "그 다음 학적과에 가서 마케팅 490에 공식 등록해. 수강 추가/취소 마감 전에 — 2주 안이야.",
+        "properNounIndices": [
+          4,
+          5,
+          10,
+          12
+        ]
+      },
+      {
+        "id": 18,
+        "english": "Great. I'll bring the letter tomorrow. Thank you so much!",
+        "korean": "좋아요. 내일 편지 가져올게요. 정말 감사합니다!",
+        "properNounIndices": [
+          1,
+          6
+        ]
+      },
+      {
+        "id": 19,
+        "english": "My pleasure. It sounds like a wonderful opportunity. Make the most of it.",
+        "korean": "천만에. 멋진 기회 같구나. 최대한 활용해.",
+        "properNounIndices": [
+          2,
+          8
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Internship Credit",
+        "Late Drop Policy",
+        "Student Visits Professor About Research Paper",
+        "Grade Appeal Process"
+      ],
+      "answer": 0
+    }
+  }
+]

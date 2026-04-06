@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { collection, getDocs, query, orderBy, where } from 'firebase/firestore';
 import { db } from '../firebase';
-import type { SpeedListeningSet, Quiz } from '../types';
+import type { SpeedListeningSet } from '../types';
 
 /**
  * Custom hook to fetch speed listening sets from Firestore.
@@ -65,7 +65,11 @@ export const useSpeedListeningData = (learningSetId: string | null) => {
             level: setData.level || 1,
             setNumber: setData.setNumber || 0,
             sentences,
-            quiz: setData.quiz as Quiz
+            quiz: setData.quiz ? {
+              question: setData.quiz.question || '',
+              options: setData.quiz.options || [],
+              answerIndex: setData.quiz.answerIndex ?? setData.quiz.answer ?? 0
+            } : undefined
           };
         }));
         

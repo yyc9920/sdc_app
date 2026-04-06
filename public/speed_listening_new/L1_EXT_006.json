@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L1_EXT_006_set1",
+    "parentSetId": "L1_EXT_006",
+    "theme": "Weather Forecast",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Good morning, everyone. Here's your weather update for today, Tuesday, April 4th. This morning, expect cloudy skies with temperatures around twelve degrees Celsius.",
+        "korean": "좋은 아침입니다. 오늘 화요일 4월 4일 날씨 안내입니다. 오늘 아침은 흐린 하늘에 기온은 약 12도입니다.",
+        "properNounIndices": [
+          3,
+          9,
+          10,
+          12,
+          22
+        ]
+      },
+      {
+        "id": 1,
+        "english": "By noon, the clouds should clear, and we'll see some sunshine with a high of eighteen degrees. However, a cold front is moving in from the west.",
+        "korean": "정오쯤이면 구름이 걷히고 햇빛이 나면서 최고 18도까지 오를 거예요. 하지만 서쪽에서 한랭 전선이 다가오고 있습니다.",
+        "properNounIndices": [
+          17
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Starting around 6 p.m., there's a seventy percent chance of rain. Temperatures will drop to about ten degrees overnight. If you're heading out this evening, don't forget to bring an umbrella.",
+        "korean": "오후 6시쯤부터 비 올 확률이 70%입니다. 기온은 밤새 약 10도로 떨어질 거예요. 오늘 저녁 외출하시면 우산 꼭 챙기세요.",
+        "properNounIndices": [
+          11,
+          19
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Tomorrow looks much better — sunny skies and a comfortable twenty degrees. That's your forecast. Have a wonderful day!",
+        "korean": "내일은 훨씬 좋아요 — 맑은 하늘에 쾌적한 20도입니다. 날씨 예보였습니다. 좋은 하루 보내세요!",
+        "properNounIndices": [
+          12,
+          15
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '한랭 전선' mean in English?",
+      "options": [
+        "cold front",
+        "a high of ~",
+        "overnight",
+        "cloudy skies"
+      ],
+      "answer": 0
+    }
+  }
+]

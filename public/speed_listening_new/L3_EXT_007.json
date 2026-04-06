@@ -1,0 +1,145 @@
+[
+  {
+    "setId": "L3_EXT_007_set1",
+    "parentSetId": "L3_EXT_007",
+    "theme": "Medical Consultation",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "So, Mr. Park, your chart says you've been experiencing frequent headaches. Tell me more about that.",
+        "korean": "박 씨, 차트에 잦은 두통이 있다고 나와 있네요. 좀 더 자세히 말씀해주세요.",
+        "properNounIndices": [
+          1,
+          2,
+          11
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Yes, it's been going on for about six weeks now. I get these headaches almost every day, usually in the afternoon. They start at the back of my head and kind of spread to my temples.",
+        "korean": "네, 약 6주 정도 됐어요. 거의 매일 두통이 오는데, 보통 오후에요.",
+        "properNounIndices": [
+          10,
+          21
+        ]
+      },
+      {
+        "id": 2,
+        "english": "On a scale of one to ten, how would you rate the pain?",
+        "korean": "1에서 10 사이로 통증이 어느 정도인가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Usually around a six or seven. It's not unbearable, but it definitely affects my concentration at work.",
+        "korean": "보통 6이나 7 정도요. 참을 수 없는 건 아니지만, 확실히 직장에서 집중력에 영향을 줘요.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I see. Have you noticed anything that makes the headaches worse or better?",
+        "korean": "그렇군요. 두통을 악화시키거나 나아지게 하는 것이 있나요?",
+        "properNounIndices": [
+          0,
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Introducing Your Family",
+        "Asking for Directions",
+        "Medical Consultation",
+        "Weather Forecast"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L3_EXT_007_set2",
+    "parentSetId": "L3_EXT_007",
+    "theme": "Medical Consultation",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "They seem worse when I've been staring at my computer screen for a long time. And they get a little better when I lie down in a dark room.",
+        "korean": "컴퓨터 화면을 오래 보면 더 심해지는 것 같고, 어두운 방에서 누우면 좀 나아져요.",
+        "properNounIndices": [
+          4,
+          15,
+          22
+        ]
+      },
+      {
+        "id": 6,
+        "english": "That's helpful information. How much screen time would you say you get per day?",
+        "korean": "유용한 정보네요. 하루에 스크린 타임이 얼마나 되나요?",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Easily ten to twelve hours, between work and personal use.",
+        "korean": "쉽게 10~12시간은 돼요, 업무와 개인 사용 합쳐서.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "And how's your sleep been?",
+        "korean": "수면은 어떠세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Not great, honestly. I usually go to bed around midnight and wake up at six. And I don't sleep very deeply — I wake up a lot during the night.",
+        "korean": "솔직히 별로예요. 보통 자정쯤 자고 6시에 일어나요.",
+        "properNounIndices": [
+          3,
+          15,
+          16,
+          22
+        ]
+      },
+      {
+        "id": 10,
+        "english": "Based on what you're describing, this sounds like it could be tension-type headaches, possibly aggravated by eye strain and poor sleep. I'd like to run a few tests just to rule out anything else.",
+        "korean": "말씀하신 것을 바탕으로, 긴장성 두통인 것 같은데 눈의 피로와 수면 부족이 악화시킬 수 있어요.",
+        "properNounIndices": [
+          21
+        ]
+      },
+      {
+        "id": 11,
+        "english": "In the meantime, I'm going to recommend reducing your screen time where possible, taking regular breaks using the 20-20-20 rule — every twenty minutes, look at something twenty feet away for twenty seconds — and improving your sleep hygiene.",
+        "korean": "그동안 가능한 한 스크린 타임을 줄이시고, 20-20-20 규칙으로 규칙적으로 휴식을 취하시길 권합니다.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 12,
+        "english": "What's the 20-20-20 rule again?",
+        "korean": "20-20-20 규칙이 뭐였죠?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Medical Consultation",
+        "History Lecture — The Fall of the Berlin Wall",
+        "Podcast Discussion — Work-Life Balance",
+        "Calling in Sick"
+      ],
+      "answer": 0
+    }
+  }
+]

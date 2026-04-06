@@ -1,0 +1,68 @@
+[
+  {
+    "setId": "L1_EXT_007_set1",
+    "parentSetId": "L1_EXT_007",
+    "theme": "Introducing Your Family",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Let me tell you about my family. There are four people in my family — my parents, my older sister, and me. My dad works as an engineer at a car company.",
+        "korean": "제 가족을 소개할게요. 가족이 네 명인데 — 부모님, 언니, 저예요. 아빠는 자동차 회사에서 엔지니어로 일하세요.",
+        "properNounIndices": [
+          7,
+          22
+        ]
+      },
+      {
+        "id": 1,
+        "english": "He's really good with machines and he loves fixing things around the house. My mom is a kindergarten teacher. She's very patient and creative.",
+        "korean": "기계를 정말 잘 다루시고 집안 수리하는 걸 좋아하세요. 엄마는 유치원 선생님인데, 아주 인내심 있고 창의적이세요.",
+        "properNounIndices": [
+          13,
+          19
+        ]
+      },
+      {
+        "id": 2,
+        "english": "She always makes beautiful art projects with her students. My older sister's name is Jina. She's twenty-five and works at a marketing company in Seoul.",
+        "korean": "항상 학생들과 아름다운 미술 작품을 만드세요. 언니 이름은 지나인데, 25살이고 서울의 마케팅 회사에서 일해요.",
+        "properNounIndices": [
+          9,
+          14,
+          15,
+          24
+        ]
+      },
+      {
+        "id": 3,
+        "english": "We're very close even though she doesn't live at home anymore. We video-call each other almost every day. I'm the youngest in the family.",
+        "korean": "언니가 더 이상 집에 살지 않지만 아주 가까워요. 거의 매일 영상통화해요. 저는 집에서 막내예요.",
+        "properNounIndices": [
+          11,
+          18
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Everyone says I look like my dad, but I have my mom's personality — warm and a little bit talkative.",
+        "korean": "모두 아빠를 닮았다고 하는데, 성격은 엄마를 닮았어요 — 따뜻하고 약간 수다스러운 편이에요.",
+        "properNounIndices": [
+          2,
+          8
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '영상통화하다' mean in English?",
+      "options": [
+        "good with ~",
+        "talkative",
+        "video-call",
+        "we're very close"
+      ],
+      "answer": 2
+    }
+  }
+]

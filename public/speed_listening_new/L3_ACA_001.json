@@ -1,0 +1,120 @@
+[
+  {
+    "setId": "L3_ACA_001_set1",
+    "parentSetId": "L3_ACA_001",
+    "theme": "Classical Conditioning",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Today I want to briefly talk about classical conditioning — one of the most fundamental concepts in behavioral psychology.",
+        "korean": "오늘은 행동심리학의 가장 기본적 개념 중 하나인 고전적 조건형성에 대해 간략히 이야기하겠습니다.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Classical conditioning is a learning process in which an organism learns to associate two stimuli, so that a response originally triggered by one stimulus can eventually be triggered by the other.",
+        "korean": "고전적 조건형성은 유기체가 두 자극을 연결하는 법을 배우는 학습 과정으로, 원래 한 자극에 의해 유발된 반응이 결국 다른 자극에 의해 유발될 수 있게 됩니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The classic example, of course, is Pavlov's experiment with dogs.",
+        "korean": "대표적인 예는 물론 파블로프의 개 실험입니다.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Pavlov noticed that dogs naturally salivate when they see food. That's an unconditioned response — it happens automatically without any learning.",
+        "korean": "파블로프는 개들이 음식을 보면 자연스럽게 침을 흘린다는 것을 알아챘습니다. 이것은 무조건 반응 — 학습 없이 자동으로 일어납니다.",
+        "properNounIndices": [
+          10
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Now, Pavlov began ringing a bell every time he presented food to the dogs.",
+        "korean": "파블로프는 개들에게 음식을 줄 때마다 종을 울리기 시작했습니다.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Confirmation Bias",
+        "Opportunity Cost",
+        "Travel and Tourism",
+        "Classical Conditioning"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L3_ACA_001_set2",
+    "parentSetId": "L3_ACA_001",
+    "theme": "Classical Conditioning",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "After repeating this many times, the dogs began to salivate just from hearing the bell — even when no food was present.",
+        "korean": "이것을 여러 번 반복한 후, 개들은 종소리만 듣고도 침을 흘리기 시작했습니다 — 음식이 없을 때도요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "The bell had become a conditioned stimulus, and the salivation in response to the bell was now a conditioned response.",
+        "korean": "종은 조건 자극이 되었고, 종에 대한 침 분비는 이제 조건 반응이 되었습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "This principle applies to humans in everyday life too.",
+        "korean": "이 원리는 인간의 일상생활에도 적용됩니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Think about how a particular song can suddenly bring back strong emotions from the past.",
+        "korean": "특정 노래가 어떻게 갑자기 과거의 강한 감정을 되살릴 수 있는지 생각해보세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Maybe you associate a certain piece of music with a happy vacation, and every time you hear it, you feel that same happiness.",
+        "korean": "특정 음악을 행복한 휴가와 연결짓고, 들을 때마다 같은 행복을 느끼는 것처럼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 10,
+        "english": "The song acts as a conditioned stimulus — it triggers an emotional response that was originally tied to the vacation itself.",
+        "korean": "그 노래는 조건 자극으로 작용합니다 — 원래 휴가 자체에 연결된 감정적 반응을 유발하는 거죠.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "Using the example from the lecture, explain the concept of classical conditioning.",
+        "korean": "강의의 예를 사용하여 고전적 조건형성의 개념을 설명하세요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Confirmation Bias",
+        "Classical Conditioning",
+        "Opportunity Cost",
+        "Business and Finance"
+      ],
+      "answer": 1
+    }
+  }
+]

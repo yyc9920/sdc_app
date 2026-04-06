@@ -1,0 +1,73 @@
+[
+  {
+    "setId": "L2_EXT_009_set1",
+    "parentSetId": "L2_EXT_009",
+    "theme": "Tour Guide Speech",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Alright everyone, if you look to your right, you'll see one of the most photographed buildings in the city — the Old Custom House.",
+        "korean": "자 여러분, 오른쪽을 보시면 도시에서 가장 많이 촬영되는 건물 중 하나인 옛 세관 건물이 보일 거예요.",
+        "properNounIndices": [
+          21,
+          22,
+          23
+        ]
+      },
+      {
+        "id": 1,
+        "english": "It was built in 1887 and served as the main customs office for nearly a hundred years. All imported goods that came into the harbor had to be processed here. Notice the columns at the front entrance.",
+        "korean": "1887년에 지어져서 거의 100년 동안 주요 세관 사무소로 사용됐습니다.",
+        "properNounIndices": [
+          17,
+          30
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Those are in the neoclassical style, which was very popular in government buildings during that period.",
+        "korean": "신고전주의 양식으로 되어 있는데, 그 시기 정부 건물에서 매우 인기 있었던 양식이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "If you look closely, you can see small carvings of ships and anchors in the stonework — a nod to the city's maritime heritage.",
+        "korean": "자세히 보시면 석조에 작은 배와 닻 조각이 보이는데, 이 도시의 해양 유산에 대한 경의예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "The building stopped functioning as a customs office in 1983 and sat empty for about a decade.",
+        "korean": "이 건물은 1983년에 세관 사무소 기능을 중단하고 약 10년간 비어 있었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "There was actually a movement to demolish it and build a shopping center, but local residents protested and eventually got it designated as a historical landmark.",
+        "korean": "실제로 철거하고 쇼핑센터를 짓자는 움직임이 있었지만, 지역 주민들이 반대 시위를 했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "It was restored in the late nineties and now serves as a community arts center. We'll head inside for a quick look in about five minutes. Feel free to take photos — no flash, please.",
+        "korean": "90년대 후반에 복원되어 지금은 지역 예술 센터로 사용되고 있습니다.",
+        "properNounIndices": [
+          15,
+          26
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '수입품' mean in English?",
+      "options": [
+        "restored",
+        "imported goods",
+        "neoclassical style",
+        "customs office"
+      ],
+      "answer": 1
+    }
+  }
+]

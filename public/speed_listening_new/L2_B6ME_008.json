@@ -1,0 +1,389 @@
+[
+  {
+    "setId": "L2_B6ME_008_set1",
+    "parentSetId": "L2_B6ME_008",
+    "theme": "Having acne",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hello. This is 6 Minute English from BBC Learning English. I'm Neil.",
+        "korean": "안녕하세요. 6 Minute English입니다. 저는 닐이에요.",
+        "properNounIndices": [
+          1,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "id": 1,
+        "english": "And I'm Beth. As a society, we're obsessed with our skin. But the pursuit of perfect skin can make life difficult for people who struggle with skin conditions.",
+        "korean": "저는 베스예요. 사회적으로 우리는 피부에 집착하죠.",
+        "properNounIndices": [
+          1,
+          2,
+          3,
+          11
+        ]
+      },
+      {
+        "id": 2,
+        "english": "'Spots', 'zits' or 'pimples' - there are many names for the red, inflamed marks which appear on the face and neck, but the medical term is acne. Acne is a skin condition which can affect anyone.",
+        "korean": "'반점', '여드름', '뾰루지' — 붉고 염증이 생긴 자국을 여러 이름으로 불러요.",
+        "properNounIndices": [
+          27
+        ]
+      },
+      {
+        "id": 3,
+        "english": "It often happens between the ages of 14 and 19, but can continue into adulthood. There are many types of acne from blackheads and whiteheads to more severe forms of cysts and scarring.",
+        "korean": "보통 14~19세 사이에 생기지만 성인이 되어서도 계속될 수 있어요.",
+        "properNounIndices": [
+          15
+        ]
+      },
+      {
+        "id": 4,
+        "english": "But whatever the type of acne, looking different from others can be emotionally damaging, especially during the teenage years when our self-image and physical appearance are changing.",
+        "korean": "어떤 유형의 여드름이든, 다른 사람과 달라 보이는 것은 감정적으로 해로울 수 있습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '감정적으로 취약한' mean in English?",
+      "options": [
+        "emotionally vulnerable",
+        "puberty",
+        "bane of my life",
+        "acne"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_B6ME_008_set2",
+    "parentSetId": "L2_B6ME_008",
+    "theme": "Having acne",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "In this programme, we'll be hearing from a skin doctor, or dermatologist, who suffered acne herself. And, as usual, we'll be learning some useful new vocabulary too.",
+        "korean": "이 프로그램에서 직접 여드름을 겪은 피부과 의사의 이야기를 들어볼 거예요.",
+        "properNounIndices": [
+          16
+        ]
+      },
+      {
+        "id": 6,
+        "english": "But first, here's a question. Acne is one of the most common skin conditions in the world. So Beth, what proportion of 11 to 30 year-olds get acne to some extent? Is it: a) 80%, b) 95%, or c) 99%?",
+        "korean": "먼저 질문이 있어요. 여드름은 세계에서 가장 흔한 피부 질환 중 하나인데요.",
+        "properNounIndices": [
+          5,
+          17,
+          18,
+          31
+        ]
+      },
+      {
+        "id": 7,
+        "english": "I'll say 95%.",
+        "korean": "95%라고 할게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "OK, Beth, we'll find out the answer later in the programme. Now, Doctor Alia Ahmed is a consultant dermatologist who has suffered with acne since she was a teenager.",
+        "korean": "프로그램 후반에 답을 알아볼게요.",
+        "properNounIndices": [
+          1,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "id": 9,
+        "english": "She knows first-hand how it can affect people's physical and mental health. Here she explains to BBC World Service programme, 'Deeply Human':",
+        "korean": "직접 경험해서 사람들의 신체적·정신적 건강에 어떤 영향을 미칠 수 있는지 잘 압니다.",
+        "properNounIndices": [
+          12,
+          16,
+          17,
+          18,
+          20,
+          21
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '여드름' mean in English?",
+      "options": [
+        "get through it",
+        "acne",
+        "bane of my life",
+        "puberty"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L2_B6ME_008_set3",
+    "parentSetId": "L2_B6ME_008",
+    "theme": "Having acne",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "Acne is actually a condition where you have an overproduction of oil because your oil glands become active in puberty.",
+        "korean": "여드름은 사실 사춘기에 피지선이 활성화되면서 피지가 과잉 생산되는 상태입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "Excess oil is deposited on the skin's surface, it then clogs the pores, and bacteria gets trapped underneath causing breakouts.",
+        "korean": "과잉 피지가 피부 표면에 쌓이고, 모공을 막고, 박테리아가 갇히면서 트러블이 생깁니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "For a huge number of patients, particularly adolescents, the psychological impact so even mild to moderate acne, because it affects teenagers who are quite emotionally vulnerable, it affects their friendships, their peer groups and so it should never really be trivialised.",
+        "korean": "많은 환자, 특히 청소년에게 심리적 영향이 심합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
+        "english": "Acne tends to start during puberty, the stage in people's lives when they develop from a child into an adult because of changes in their body. Hormones such as testosterone which are released into the body during puberty often cause acne to appear.",
+        "korean": "여드름은 아이에서 어른으로 발달하는 시기인 사춘기에 시작되는 경향이 있습니다.",
+        "properNounIndices": [
+          26
+        ]
+      },
+      {
+        "id": 14,
+        "english": "Of course, puberty involves emotional, as well as physical, changes. Acne can be harder to live with for someone who is emotionally vulnerable, meaning someone who gets their feelings hurt easily.",
+        "korean": "물론 사춘기에는 신체적 변화뿐 아니라 감정적 변화도 있습니다.",
+        "properNounIndices": [
+          10
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '여드름' mean in English?",
+      "options": [
+        "acne",
+        "emotionally vulnerable",
+        "puberty",
+        "get through it"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_B6ME_008_set4",
+    "parentSetId": "L2_B6ME_008",
+    "theme": "Having acne",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "Acne affects your confidence and how you interact with the world, so it shouldn't be trivialised, or made to seem less important than it really is.",
+        "korean": "여드름은 자신감과 세상과 상호작용하는 방식에 영향을 미칩니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 16,
+        "english": "At times, most teenagers are self-conscious about their looks, and having acne adds to social pressure.",
+        "korean": "때때로 대부분의 십대는 외모에 자의식적이고, 여드름이 사회적 압박을 더합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "Acne is largely genetic, and the buildup of oil and bacteria in the pores of the skin is not something that can simply be fixed by keeping the skin clean, although this helps.",
+        "korean": "여드름은 대부분 유전적이고, 모공에 피지와 박테리아가 쌓이는 건 통제할 수 없는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
+        "english": "Here's Dr Alia Ahmed again, speaking to BBC World Service programme, 'Deeply Human':",
+        "korean": "알리아 아메드 박사의 이야기를 다시 들어봅시다.",
+        "properNounIndices": [
+          1,
+          2,
+          3,
+          7,
+          8,
+          9,
+          11,
+          12
+        ]
+      },
+      {
+        "id": 19,
+        "english": "As a teenager, it was the bane of my life, and you just felt so alone and you just didn't know when it was going to go, when it was going to get better, could you do something, are you doing something wrong?",
+        "korean": "십대 때 그건 제 인생의 골칫거리였고, 정말 외로웠어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '감정적으로 취약한' mean in English?",
+      "options": [
+        "acne",
+        "bane of my life",
+        "emotionally vulnerable",
+        "over the counter"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_B6ME_008_set5",
+    "parentSetId": "L2_B6ME_008",
+    "theme": "Having acne",
+    "level": 6,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "But when I came to the UK, and my skin was gradually getting better, one of the things I knew about my patients and experiences, I really could empathise with them because I had experienced the shame, I had experienced the embarrassment.",
+        "korean": "영국에 와서 피부가 점점 나아지고 있을 때요.",
+        "properNounIndices": [
+          2,
+          6,
+          18,
+          25,
+          32,
+          37
+        ]
+      },
+      {
+        "id": 21,
+        "english": "So many people just feel so alone and for patients that I see now, I just say to them, 'You will get through it.'",
+        "korean": "많은 사람이 너무 외로워해요. 지금 제가 보는 환자들에게 '이겨낼 거예요'라고 말합니다.",
+        "properNounIndices": [
+          11,
+          14,
+          19
+        ]
+      },
+      {
+        "id": 22,
+        "english": "Dr Ahmed experienced acne herself during her teenage years, and her skin condition eventually improved with the help of medicines bought without a doctor's prescription - known as over the counter medicines - from her local pharmacy.",
+        "korean": "아메드 박사는 십대 때 직접 여드름을 겪었습니다.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 23,
+        "english": "Dr Crichlow calls acne, the bane of my life, an idiom meaning the cause of unhappiness or misfortune. But as she grew older and her acne improved, she used her experience to support her patients in the UK.",
+        "korean": "크리칠로우 박사는 여드름을 'the bane of my life' — 불행의 원인이라는 뜻의 관용구 — 로 불렀습니다.",
+        "properNounIndices": [
+          1,
+          18,
+          37
+        ]
+      },
+      {
+        "id": 24,
+        "english": "For most people acne stops as they grow older, but remember it's completely natural and you're not alone.",
+        "korean": "대부분의 사람에게 나이가 들면 여드름이 멈춥니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '내 인생의 골칫거리' mean in English?",
+      "options": [
+        "bane of my life",
+        "acne",
+        "get through it",
+        "emotionally vulnerable"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_B6ME_008_set6",
+    "parentSetId": "L2_B6ME_008",
+    "theme": "Having acne",
+    "level": 6,
+    "setNumber": 6,
+    "sentences": [
+      {
+        "id": 25,
+        "english": "Which reminds me of my question, Beth – what proportion of 11 to 30 year-olds get acne to some extent? You said it was 95%, which was… the correct answer!",
+        "korean": "제 질문이 생각나네요 — 11~30세 중 몇 퍼센트가 여드름을 겪을까요?",
+        "properNounIndices": [
+          6,
+          20
+        ]
+      },
+      {
+        "id": 26,
+        "english": "OK, let's recap the vocabulary we've learned, starting with puberty, the stage of life when a person changes from a child to an adult.",
+        "korean": "어휘를 복습합시다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 27,
+        "english": "Someone who is emotionally vulnerable has their feelings and emotions easily hurt.",
+        "korean": "감정적으로 취약한 사람은 감정이 쉽게 상합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 28,
+        "english": "The verb to trivialise means to make something seem less important than it really is.",
+        "korean": "'trivialise' 동사는 뭔가를 실제보다 덜 중요하게 보이게 하다는 뜻입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 29,
+        "english": "If you get through it, you manage to survive a difficult experience or period of life.",
+        "korean": "'get through it'은 어려운 경험이나 시기를 이겨낸다는 뜻입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 30,
+        "english": "Over the counter medicines are ones you can buy from a pharmacy without a doctor's prescription.",
+        "korean": "처방전 없이 약국에서 살 수 있는 일반 의약품입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 31,
+        "english": "And finally, the bane of your life is the cause of unhappiness or misfortune. Once again, our six minutes are up, but remember to check out our website for more learning English content. Bye for now!",
+        "korean": "마지막으로, 'the bane of your life'는 불행의 원인입니다.",
+        "properNounIndices": [
+          14,
+          31,
+          33
+        ]
+      },
+      {
+        "id": 32,
+        "english": "Bye!",
+        "korean": "안녕!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '처방전 없이 살 수 있는' mean in English?",
+      "options": [
+        "bane of my life",
+        "over the counter",
+        "trivialise",
+        "emotionally vulnerable"
+      ],
+      "answer": 1
+    }
+  }
+]

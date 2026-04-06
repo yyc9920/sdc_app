@@ -1,0 +1,134 @@
+[
+  {
+    "setId": "L1_BTEW_006_set1",
+    "parentSetId": "L1_BTEW_006",
+    "theme": "On the fly",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hello and welcome to The English We Speak, where we explain phrases used by fluent English speakers so that you can use them too. I'm Feifei, and I'm here with Phil.",
+        "korean": "레시피를 어디서 얻으셨나요?",
+        "properNounIndices": [
+          4,
+          5,
+          6,
+          7,
+          15,
+          24,
+          25,
+          27,
+          30
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Now, I should be telling you that you shouldn't eat in the studio - but that looks delicious! Where did you get the recipe for that, Phil?",
+        "korean": "레시피를 어디서 얻으셨나요?",
+        "properNounIndices": [
+          1,
+          18,
+          26
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I didn't - I just made it up on the fly. I started cooking and then looked to see what was in the fridge. It's a bit random, but it turned out alright. Do you want to try some?",
+        "korean": "즉흥적으로 만들었습니다.",
+        "properNounIndices": [
+          0,
+          3,
+          11,
+          24,
+          33
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Oh thanks! And also, thank you for giving us a phrase to learn in this episode - 'on the fly'. It means that you decide what to do, as you are doing it. So, you do something quickly, without any preparation, improvising as you go along.",
+        "korean": "준비 없이 빠르게 하는 것입니다.",
+        "properNounIndices": [
+          2,
+          20,
+          33
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Yes, I was talking about making food - but it could be anything. If we didn't have a script for this programme we could just come in and make it up on the fly.",
+        "korean": "즉흥적으로 할 수 있습니다.",
+        "properNounIndices": [
+          1,
+          13
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '같은 시간에 일어나는' mean in English?",
+      "options": [
+        "on the fly",
+        "improvise",
+        "preparation",
+        "simultaneous"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L1_BTEW_006_set2",
+    "parentSetId": "L1_BTEW_006",
+    "theme": "On the fly",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "If you are very good at something, then you can do it on the fly. For example, a simultaneous interpreter can come up with translations of what people are saying on the fly.",
+        "korean": "숙련된 사람들이 즉흥적으로 할 수 있습니다.",
+        "properNounIndices": [
+          15
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Let's hear some more examples of people using 'on the fly'.",
+        "korean": "더 많은 예를 들어봅시다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "'On the fly' also has some specific uses when talking about computers or cars. In these cases, it refers to things that can be done without interrupting the car or the computer programme.",
+        "korean": "컴퓨터나 자동차에서 사용됩니다.",
+        "properNounIndices": [
+          14
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Interesting, well I can't think of anything more to say on the fly, so let's end there! Bye!",
+        "korean": "여기서 끝냅시다.",
+        "properNounIndices": [
+          2,
+          17
+        ]
+      },
+      {
+        "id": 9,
+        "english": "Goodbye!",
+        "korean": "안녕!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '같은 시간에 일어나는' mean in English?",
+      "options": [
+        "recipe",
+        "simultaneous",
+        "random",
+        "preparation"
+      ],
+      "answer": 1
+    }
+  }
+]

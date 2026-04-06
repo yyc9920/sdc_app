@@ -1,0 +1,150 @@
+[
+  {
+    "setId": "L2_EXT_007_set1",
+    "parentSetId": "L2_EXT_007",
+    "theme": "Planning a Trip",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "So I was thinking — we should plan our summer trip soon. Flights get expensive if we wait too long.",
+        "korean": "생각했는데 — 여름 여행 계획을 곧 세워야 해. 너무 늦으면 항공권이 비싸지거든.",
+        "properNounIndices": [
+          1,
+          12
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Good idea. Where did you have in mind?",
+        "korean": "좋은 생각이야. 어디를 생각하고 있었어?",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I've always wanted to go to Barcelona. Great food, beautiful architecture, and the beach is right there.",
+        "korean": "항상 바르셀로나에 가고 싶었어. 맛있는 음식, 아름다운 건축, 해변도 바로 있잖아.",
+        "properNounIndices": [
+          6,
+          7
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Barcelona sounds amazing, but isn't August super crowded there?",
+        "korean": "바르셀로나 좋겠다. 근데 8월에 엄청 붐비지 않아?",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 4,
+        "english": "It can be. We could go in early July instead. The weather's still great and it's a little less packed.",
+        "korean": "그럴 수 있어. 대신 7월 초에 가면 날씨도 좋고 좀 덜 붐비거든.",
+        "properNounIndices": [
+          3,
+          8,
+          10
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Planning a Trip",
+        "Returning a Product",
+        "Tech Support Call",
+        "Describing a Movie"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_EXT_007_set2",
+    "parentSetId": "L2_EXT_007",
+    "theme": "Planning a Trip",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "That works for me. How many days were you thinking?",
+        "korean": "나한테 괜찮아. 며칠 생각하고 있었어?",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Five or six days? That gives us enough time to explore without rushing.",
+        "korean": "5~6일? 서두르지 않고 둘러보기에 충분한 시간이야.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 7,
+        "english": "And for accommodation — hotel or Airbnb?",
+        "korean": "숙소는 — 호텔이야, 에어비앤비야?",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 8,
+        "english": "I'd prefer an Airbnb. It's usually cheaper and you get a kitchen, which means we don't have to eat out for every meal.",
+        "korean": "에어비앤비가 좋겠어. 보통 더 싸고 주방이 있으니까 매 끼니 외식 안 해도 되거든.",
+        "properNounIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "id": 9,
+        "english": "True. Plus it feels more like living there than visiting. What about the budget? I don't want to go crazy.",
+        "korean": "맞아. 게다가 방문하는 것보다 사는 느낌이 들지. 예산은 어때? 너무 많이 쓰고 싶진 않은데.",
+        "properNounIndices": [
+          1,
+          10,
+          14
+        ]
+      },
+      {
+        "id": 10,
+        "english": "Let's say around a thousand dollars each for flights and accommodation, and then maybe five hundred for food, activities, and transportation?",
+        "korean": "항공과 숙소에 각자 약 1000달러, 음식이랑 활동에 500달러 정도면 어떨까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "Fifteen hundred total. That's doable. Should we start looking at flights tonight?",
+        "korean": "총 1500달러. 할 만하네. 오늘 밤에 항공편 찾아볼까?",
+        "properNounIndices": [
+          3,
+          5
+        ]
+      },
+      {
+        "id": 12,
+        "english": "Let's do it. I'll bring my laptop and we can compare prices.",
+        "korean": "그러자. 노트북 가져올게, 가격 비교하자.",
+        "properNounIndices": [
+          3
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Radio Interview — Small Business Owner",
+        "Podcast — Learning a Second Language",
+        "Medical Consultation",
+        "Planning a Trip"
+      ],
+      "answer": 3
+    }
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "setId": "L1_EXT_002_set1",
+    "parentSetId": "L1_EXT_002",
+    "theme": "Asking for Directions",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Excuse me, could you help me? I'm looking for the nearest subway station.",
+        "korean": "실례합니다, 도와주실 수 있나요? 가장 가까운 지하철역을 찾고 있어요.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Of course! It's not far from here. Go straight down this street for about two blocks.",
+        "korean": "물론이죠! 여기서 멀지 않아요. 이 길을 따라 두 블록 정도 직진하세요.",
+        "properNounIndices": [
+          2,
+          7
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Two blocks straight?",
+        "korean": "두 블록 직진이요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Yes, and then turn left at the big intersection — you'll see a bank on the corner.",
+        "korean": "네, 그리고 큰 교차로에서 좌회전하세요 — 모퉁이에 은행이 보일 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Left at the bank. Got it.",
+        "korean": "은행에서 좌회전이요. 알겠습니다.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 5,
+        "english": "After you turn left, walk for maybe one minute, and you'll see the station entrance on your right. There's a big blue sign. You can't miss it.",
+        "korean": "좌회전한 후 1분 정도 걸으면 오른쪽에 역 입구가 보일 거예요. 큰 파란 표지판이 있어서 못 지나칠 거예요.",
+        "properNounIndices": [
+          18,
+          23
+        ]
+      },
+      {
+        "id": 6,
+        "english": "That sounds easy enough. Thank you so much!",
+        "korean": "쉬운 것 같네요. 정말 감사합니다!",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 7,
+        "english": "No problem. Have a good day!",
+        "korean": "별말씀을요. 좋은 하루 보내세요!",
+        "properNounIndices": [
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Asking for Directions",
+        "Panel Discussion — AI and the Future of Work",
+        "Academic Lecture — The Philosophy of Language",
+        "Emergency Broadcast"
+      ],
+      "answer": 0
+    }
+  }
+]

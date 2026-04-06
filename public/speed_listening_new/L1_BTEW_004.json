@@ -1,0 +1,150 @@
+[
+  {
+    "setId": "L1_BTEW_004_set1",
+    "parentSetId": "L1_BTEW_004",
+    "theme": "In my travel era",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hello and welcome to The English We Speak, where we explain phrases used by fluent English speakers so that you can use them as well. I'm Feifei, and I'm joined by Beth.",
+        "korean": "안녕하세요.",
+        "properNounIndices": [
+          4,
+          5,
+          6,
+          7,
+          15,
+          25,
+          26,
+          28,
+          31
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Hi Feifei, how are you?",
+        "korean": "안녕하세요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I'm very well, thank you, Beth. So, I saw an interesting expression online the other day. It's 'in my travel era'. It's a very creative expression, isn't it?",
+        "korean": "온라인에서 흥미로운 표현을 봤습니다.",
+        "properNounIndices": [
+          5,
+          6,
+          7,
+          16,
+          21
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I've also seen 'in my gothic literature era', 'in my sporty era', things like that. Beth, what does it mean?",
+        "korean": "온라인에서 흥미로운 표현을 봤습니다.",
+        "properNounIndices": [
+          15
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Well, people use it to describe the main thing that they are focussed on at the moment.",
+        "korean": "현재 초점을 맞추고 있는 주요 것을 설명합니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '사진이나 비디오에 곁에 붙이는 짧은 텍스트' mean in English?",
+      "options": [
+        "social media",
+        "caption",
+        "in my … era",
+        "upload"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L1_BTEW_004_set2",
+    "parentSetId": "L1_BTEW_004",
+    "theme": "In my travel era",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "So, for example, if you saw 'in my travel era', well, if you're travelling for a few months and upload pictures as you travel, then you might write this caption – 'I'm in my travel era'.",
+        "korean": "현재 초점을 맞추고 있는 주요 것을 설명합니다.",
+        "properNounIndices": [
+          31
+        ]
+      },
+      {
+        "id": 6,
+        "english": "It's really common to see it online, but people do say it as well.",
+        "korean": "현재 초점을 맞추고 있는 주요 것을 설명합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "So it's a fun and creative way of saying you're really into something in a particular period of life. It could be for a short time, or a longer time. Let's hear some examples.",
+        "korean": "재미있고 창의적인 표현입니다.",
+        "properNounIndices": [
+          19,
+          30
+        ]
+      },
+      {
+        "id": 8,
+        "english": "So, it's a way of saying, 'This is what I'm really into right now.' It's become very popular, especially on social media.",
+        "korean": "소셜 미디어에서 매우 인기입니다.",
+        "properNounIndices": [
+          6,
+          9,
+          14
+        ]
+      },
+      {
+        "id": 9,
+        "english": "It's one of those expressions that started online and has now become part of everyday English. And, Beth, I think I'm in my podcast era — I've been listening to so many recently!",
+        "korean": "팟캐스트 시대에 있습니다.",
+        "properNounIndices": [
+          15,
+          16,
+          17,
+          18,
+          20,
+          26
+        ]
+      },
+      {
+        "id": 10,
+        "english": "That's great! Well, bye everyone!",
+        "korean": "안녕하세요!",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 11,
+        "english": "Bye!",
+        "korean": "안녕!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '무언가에 깊은 관심을 가지다' mean in English?",
+      "options": [
+        "in my … era",
+        "be into something",
+        "upload",
+        "caption"
+      ],
+      "answer": 1
+    }
+  }
+]

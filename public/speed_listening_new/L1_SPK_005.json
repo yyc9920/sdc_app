@@ -1,0 +1,103 @@
+[
+  {
+    "setId": "L1_SPK_005_set1",
+    "parentSetId": "L1_SPK_005",
+    "theme": "Technology in Education",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think technology has had a positive or negative effect on education? Use specific reasons and examples to support your answer.",
+        "korean": "기술이 교육에 긍정적 또는 부정적 영향을 미쳤다고 생각하나요? 구체적인 이유와 예시로 답변을 뒷받침하세요.",
+        "properNounIndices": [
+          13
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I believe technology has had an overall positive effect on education, though it comes with some challenges.",
+        "korean": "기술이 교육에 전반적으로 긍정적인 영향을 미쳤다고 생각하지만, 몇 가지 도전이 따르긴 해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "The biggest benefit is access to information.",
+        "korean": "가장 큰 장점은 정보에 대한 접근성이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Before the internet, students had to rely on textbooks and library books, which were sometimes outdated.",
+        "korean": "인터넷 이전에는, 학생들이 때로는 구식인 교과서와 도서관 책에 의존해야 했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Now, anyone with a smartphone can access current research, video lectures, and interactive tools instantly.",
+        "korean": "지금은 스마트폰만 있으면 누구나 최신 연구, 영상 강의, 대화형 도구에 즉시 접근할 수 있어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Technology in Education",
+        "City Living vs. Rural Living",
+        "A Person Who Has Influenced You",
+        "Important Quality in a Friend"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L1_SPK_005_set2",
+    "parentSetId": "L1_SPK_005",
+    "theme": "Technology in Education",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "For example, platforms like Khan Academy allow students to learn at their own pace, which is especially helpful for those who struggle in traditional classroom settings.",
+        "korean": "예를 들어, 칸 아카데미 같은 플랫폼은 학생들이 자기 속도로 배울 수 있게 해주는데, 전통적인 교실 환경에서 힘들어하는 학생들에게 특히 도움이 돼요.",
+        "properNounIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "id": 6,
+        "english": "On the downside, technology can also be a major source of distraction — social media and gaming compete for students' attention.",
+        "korean": "반면에, 기술은 산만함의 주요 원인이 될 수도 있어요 — 소셜 미디어와 게임이 학생들의 관심을 두고 경쟁하거든요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "But I think with proper guidance and self-discipline, the benefits far outweigh the negatives.",
+        "korean": "하지만 적절한 지도와 자기 규율이 있다면, 이점이 부정적 측면을 훨씬 능가한다고 생각해요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Technology, used wisely, is a powerful educational tool.",
+        "korean": "기술은 현명하게 사용되면 강력한 교육 도구예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Favorite Place",
+        "Important Quality in a Friend",
+        "Technology in Education",
+        "Studying Alone vs. Studying in a Group"
+      ],
+      "answer": 2
+    }
+  }
+]

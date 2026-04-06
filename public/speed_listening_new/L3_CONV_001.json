@@ -1,0 +1,351 @@
+[
+  {
+    "setId": "L3_CONV_001_set1",
+    "parentSetId": "L3_CONV_001",
+    "theme": "Student Visits Professor About Research Paper",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Listen to a conversation between a student and a professor.",
+        "korean": "학생과 교수 사이의 대화를 들어보세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Professor Hayes? Do you have a few minutes? I wanted to talk about my research paper.",
+        "korean": "헤이즈 교수님? 잠깐 시간 되세요? 제 연구 논문에 대해 이야기하고 싶었어요.",
+        "properNounIndices": [
+          1,
+          2,
+          8
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Of course, come in. How's it going?",
+        "korean": "물론이지, 들어와. 어떻게 되어가고 있어?",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Well, that's sort of the issue. I started out writing about the economic causes of World War I, but the more I research, the more I feel like I'm being pulled toward the political causes instead.",
+        "korean": "음, 그게 좀 문제예요. 처음에는 1차 세계대전의 경제적 원인에 대해 쓰기 시작했는데, 연구할수록 정치적 원인 쪽으로 끌리는 느낌이에요.",
+        "properNounIndices": [
+          6,
+          15,
+          16,
+          17,
+          21,
+          25,
+          28
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Is it okay to change my focus this late?",
+        "korean": "이렇게 늦게 초점을 바꿔도 될까요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Internship Credit",
+        "Late Drop Policy",
+        "Student Visits Professor About Research Paper",
+        "Grade Appeal Process"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L3_CONV_001_set2",
+    "parentSetId": "L3_CONV_001",
+    "theme": "Student Visits Professor About Research Paper",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "How late are we talking? When is your draft due?",
+        "korean": "얼마나 늦은 거지? 초안 마감이 언제야?",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Two weeks from Friday.",
+        "korean": "금요일로부터 2주 후요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 7,
+        "english": "That's actually not as tight as I feared.",
+        "korean": "사실 내가 걱정한 것만큼 빠듯하지는 않네.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Look — changing your focus partway through is more common than students think.",
+        "korean": "봐 — 중간에 초점을 바꾸는 건 학생들이 생각하는 것보다 더 흔해.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "The question is how much of your existing work you can salvage. Have you done substantial research on the political side already?",
+        "korean": "문제는 기존 작업을 얼마나 살릴 수 있느냐야. 정치적 측면 연구를 이미 상당히 했어?",
+        "properNounIndices": [
+          12
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Student Visits Professor About Research Paper",
+        "Internship Credit",
+        "Late Drop Policy",
+        "Grade Appeal Process"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L3_CONV_001_set3",
+    "parentSetId": "L3_CONV_001",
+    "theme": "Student Visits Professor About Research Paper",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "Yes, actually. I've read a lot about the alliance systems and the role of nationalism.",
+        "korean": "네, 사실 동맹 체제와 민족주의의 역할에 대해 많이 읽었어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 11,
+        "english": "I got kind of pulled into it when I was reading about the July Crisis.",
+        "korean": "7월 위기에 대해 읽다가 빠져들게 됐어요.",
+        "properNounIndices": [
+          0,
+          8,
+          13,
+          14
+        ]
+      },
+      {
+        "id": 12,
+        "english": "That's a very rich area. The July Crisis alone could be a paper by itself.",
+        "korean": "아주 풍부한 분야야. 7월 위기만으로도 논문 하나가 될 수 있어.",
+        "properNounIndices": [
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "id": 13,
+        "english": "What specifically interests you?",
+        "korean": "구체적으로 무엇에 관심이 있어?",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "I'm most interested in how quickly the decisions escalated — how each country felt trapped by its commitments to allies, even when their leaders seemed to want to avoid war.",
+        "korean": "가장 관심 있는 건 결정이 얼마나 빠르게 격화됐는지예요 — 지도자들이 전쟁을 피하고 싶어 하는 것 같았는데도 각국이 동맹 의무에 갇혀 있다고 느꼈다는 거요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Late Drop Policy",
+        "Student Visits Professor About Research Paper",
+        "Grade Appeal Process",
+        "Internship Credit"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L3_CONV_001_set4",
+    "parentSetId": "L3_CONV_001",
+    "theme": "Student Visits Professor About Research Paper",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "That's actually a well-developed historiographical debate.",
+        "korean": "그건 사실 잘 발전된 역사학적 논쟁이야.",
+        "properNounIndices": []
+      },
+      {
+        "id": 16,
+        "english": "You might want to look at Christopher Clark's work — he wrote about how the leaders sleepwalked into the war without fully understanding the consequences.",
+        "korean": "크리스토퍼 클라크의 연구를 살펴봐 — 지도자들이 결과를 제대로 이해하지 못한 채 전쟁에 몽유병처럼 빠져들었다고 썼어.",
+        "properNounIndices": [
+          6,
+          7
+        ]
+      },
+      {
+        "id": 17,
+        "english": "But there are historians who strongly disagree with that thesis.",
+        "korean": "하지만 그 주장에 강하게 반대하는 역사학자들도 있어.",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
+        "english": "Oh, that's interesting. So I could frame it as a comparison between different historical interpretations?",
+        "korean": "오, 흥미롭네요. 그러면 여러 역사적 해석의 비교로 구성할 수 있겠네요?",
+        "properNounIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "id": 19,
+        "english": "Exactly. Instead of just stating what happened, you'd be engaging with the historiography — which is more sophisticated for a paper at this level.",
+        "korean": "맞아. 무슨 일이 있었는지 단순히 서술하는 대신 역사서술학을 다루는 거야 — 이 수준 논문으로는 더 정교하지.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Grade Appeal Process",
+        "Late Drop Policy",
+        "Student Visits Professor About Research Paper",
+        "Internship Credit"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L3_CONV_001_set5",
+    "parentSetId": "L3_CONV_001",
+    "theme": "Student Visits Professor About Research Paper",
+    "level": 5,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "That would actually impress me more than a straightforward narrative.",
+        "korean": "그게 사실 단순한 서사보다 더 인상적일 거야.",
+        "properNounIndices": []
+      },
+      {
+        "id": 21,
+        "english": "Okay. That feels more exciting to write, honestly.",
+        "korean": "좋아요. 솔직히 그게 쓰기에 더 흥미로울 것 같아요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 22,
+        "english": "Good. The best papers come from genuine curiosity.",
+        "korean": "좋아. 최고의 논문은 진정한 호기심에서 나오거든.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 23,
+        "english": "My advice: outline the two or three key historiographical positions first, then build your argument for which interpretation you find most convincing and why.",
+        "korean": "내 조언은 먼저 2~3개의 핵심 역사학적 입장을 개요로 잡고, 어떤 해석이 가장 설득력 있는지 그 이유와 함께 논증을 구축하는 거야.",
+        "properNounIndices": []
+      },
+      {
+        "id": 24,
+        "english": "Use primary sources wherever possible to support your view.",
+        "korean": "가능한 한 1차 자료를 사용해서 네 관점을 뒷받침해.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Student Visits Professor About Research Paper",
+        "Internship Credit",
+        "Grade Appeal Process",
+        "Late Drop Policy"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L3_CONV_001_set6",
+    "parentSetId": "L3_CONV_001",
+    "theme": "Student Visits Professor About Research Paper",
+    "level": 6,
+    "setNumber": 6,
+    "sentences": [
+      {
+        "id": 25,
+        "english": "Should I change my thesis statement before I do the outline?",
+        "korean": "개요 잡기 전에 논지를 바꿔야 할까요?",
+        "properNounIndices": [
+          1,
+          7
+        ]
+      },
+      {
+        "id": 26,
+        "english": "Write a tentative thesis — something flexible — and let it develop as you outline.",
+        "korean": "잠정적인 논지를 써봐 — 유연한 것으로 — 그리고 개요를 잡으면서 발전시켜.",
+        "properNounIndices": []
+      },
+      {
+        "id": 27,
+        "english": "Don't lock yourself in too early. The thesis should come from your argument, not the other way around.",
+        "korean": "너무 일찍 정하지 마. 논지는 네 논증에서 나와야 하지, 그 반대가 아니야.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 28,
+        "english": "That makes sense. Thank you — this actually made me feel a lot better about the paper.",
+        "korean": "이해됐어요. 감사합니다 — 이 대화 덕분에 논문에 대해 한결 나은 기분이 들어요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 29,
+        "english": "Good luck. And send me your outline when it's ready. I'll give you some quick feedback before you dive into the full draft.",
+        "korean": "행운을 빌어. 그리고 개요가 되면 보내줘. 전체 초안 작성 전에 빠른 피드백 줄게.",
+        "properNounIndices": [
+          2,
+          10
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Student Visits Professor About Research Paper",
+        "Internship Credit",
+        "Grade Appeal Process",
+        "Late Drop Policy"
+      ],
+      "answer": 0
+    }
+  }
+]

@@ -1,0 +1,145 @@
+[
+  {
+    "setId": "L3_EXT_008_set1",
+    "parentSetId": "L3_EXT_008",
+    "theme": "Real Estate Tour",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "So this is unit 12B. As you can see, we're looking at an open-concept layout with the living room, dining area, and kitchen all in one space.",
+        "korean": "여기가 12B호입니다. 보시다시피 오픈 컨셉 구조예요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 1,
+        "english": "It feels a lot more spacious than I expected from the listing photos.",
+        "korean": "매물 사진에서 예상했던 것보다 훨씬 넓게 느껴져요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 2,
+        "english": "That's partly because of the natural light. You've got floor-to-ceiling windows on the south side, which really opens things up. And the ceilings are nine feet, which is pretty generous for a building this size.",
+        "korean": "부분적으로 자연광 때문이에요. 남쪽에 바닥부터 천장까지 창문이 있거든요.",
+        "properNounIndices": [
+          7,
+          20
+        ]
+      },
+      {
+        "id": 3,
+        "english": "What about storage? That's always my concern with apartments.",
+        "korean": "수납 공간은요? 아파트에서 항상 걱정되는 부분인데요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Good question. You've got a walk-in closet in the master bedroom — I'll show you in a moment — and there's also a storage unit in the basement that comes with the apartment. No extra charge.",
+        "korean": "좋은 질문이에요. 안방에 워크인 클로젯이 있고 — 곧 보여드릴게요 — 지하에 수납 공간도 있어요.",
+        "properNounIndices": [
+          2,
+          12,
+          33
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Medical Consultation",
+        "Checking Into a Hotel",
+        "Economic Analysis — The Paradox of Thrift",
+        "Real Estate Tour"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L3_EXT_008_set2",
+    "parentSetId": "L3_EXT_008",
+    "theme": "Real Estate Tour",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Nice. What floor are we on?",
+        "korean": "좋네요. 지금 몇 층이에요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Seventh floor. High enough that you don't get street noise, but low enough that the elevator isn't a hassle. Let me show you the kitchen. The appliances are all stainless steel and brand new — dishwasher, gas range, and a French door refrigerator.",
+        "korean": "7층이에요. 도로 소음이 안 들릴 만큼 높으면서 엘리베이터가 번거롭지 않을 만큼 낮아요.",
+        "properNounIndices": [
+          2,
+          19,
+          25,
+          40
+        ]
+      },
+      {
+        "id": 7,
+        "english": "I like the countertops. Is that quartz?",
+        "korean": "조리대가 마음에 드네요. 쿼츠인가요?",
+        "properNounIndices": [
+          0,
+          4
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Yes, quartz countertops throughout. Very durable and easy to maintain. Now, the rent is two thousand two hundred a month, and that includes water and trash. Electric and internet are separate.",
+        "korean": "네, 전체 쿼츠 조리대예요. 매우 내구성이 좋고 관리가 쉬워요. 월세는 2200달러입니다.",
+        "properNounIndices": [
+          4,
+          10,
+          26
+        ]
+      },
+      {
+        "id": 9,
+        "english": "There's a one-month security deposit, and the lease is for twelve months.",
+        "korean": "보증금은 1개월분이고, 임대 기간은 12개월입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 10,
+        "english": "Can I think about it over the weekend?",
+        "korean": "주말 동안 생각해봐도 될까요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 11,
+        "english": "Of course. But I should mention — we've had four showings today, and there's a lot of interest. I'd recommend deciding sooner rather than later.",
+        "korean": "물론이죠. 하지만 말씀드릴 게 있는데 — 오늘 4번의 관람이 있었고 관심이 많습니다.",
+        "properNounIndices": [
+          2,
+          3,
+          18
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Museum Audio Guide",
+        "Airport Announcement",
+        "Literary Criticism — Unreliable Narrators",
+        "Real Estate Tour"
+      ],
+      "answer": 3
+    }
+  }
+]

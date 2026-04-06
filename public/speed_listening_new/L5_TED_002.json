@@ -1,0 +1,667 @@
+[
+  {
+    "setId": "L5_TED_002_set1",
+    "parentSetId": "L5_TED_002",
+    "theme": "Do Schools Kill Creativity?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I was asked recently to think about what it means to prepare children for the future.",
+        "korean": "최근에 나는 미래를 위해 아이들을 준비한다는 것이 무엇을 의미하는지 생각해보도록 요청받았다.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "And the more I thought about it, the more unsettled I became — because I don't think that's what most of our educational systems are actually designed to do.",
+        "korean": "생각할수록 나는 더 불안해졌다. 왜냐하면 대부분의 우리 교육 시스템이 실제로 그렇게 설계된 것은 아니라고 생각하기 때문이다.",
+        "properNounIndices": [
+          3,
+          10,
+          14
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Let me start with something I consider fairly uncontroversial: every education system in the world has the same basic hierarchy of subjects.",
+        "korean": "나는 상당히 논란이 없는 것으로 시작하겠다. 세계의 모든 교육 시스템은 과목의 기본 계층 구조가 동일하다.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 3,
+        "english": "At the top are mathematics and language.",
+        "korean": "상단에는 수학과 언어가 있다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Then the humanities.",
+        "korean": "그 다음 인문학이 온다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '무언가를 완전히 새로운 방식으로 생각하거나 다시 개념화하다.' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_002_set2",
+    "parentSetId": "L5_TED_002",
+    "theme": "Do Schools Kill Creativity?",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "And at the bottom — treated as peripheral, optional, even frivolous — are the arts.",
+        "korean": "그리고 밑바닥에는 주변적이고, 선택적이며, 심지어 하찮은 것으로 취급되는 예술이 있다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Why?",
+        "korean": "왜일까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Because they were designed that way.",
+        "korean": "왜냐하면 그렇게 설계되었기 때문이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Modern public education systems were designed in the nineteenth century, in the intellectual context of the Enlightenment and the economic context of industrialization.",
+        "korean": "현대의 공교육 시스템들은 19세기에 계몽주의의 지적 맥락과 산업화의 경제적 맥락에서 설계되었다.",
+        "properNounIndices": [
+          16
+        ]
+      },
+      {
+        "id": 9,
+        "english": "They were designed to produce the kinds of people the industrial economy needed: workers who could follow instructions, maintain consistency, and perform well on standardized tasks.",
+        "korean": "산업 경제가 필요로 했던 종류의 사람들을 생산하도록 설계되었다. 지침을 따를 수 있는 노동자들, 일관성을 유지하고 표준화된 작업에서 잘 수행할 수 있는 노동자들.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '의도적으로 발전시키고 성장하게 하다, 특히 능력이나 자질에 관해.' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_002_set3",
+    "parentSetId": "L5_TED_002",
+    "theme": "Do Schools Kill Creativity?",
+    "level": 5,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "I'm not being cynical.",
+        "korean": "나는 냉소적이지 않다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "That was a rational response to the world as it existed then.",
+        "korean": "그것은 당시의 세계에 대한 합리적인 반응이었다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "The problem is that the world has changed.",
+        "korean": "문제는 세계가 변했다는 것이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
+        "english": "And the educational model, in most essential respects, has not.",
+        "korean": "그리고 교육 모델은 가장 본질적인 측면에서 변하지 않았다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "What we know about intelligence, creativity, and human potential has expanded enormously over the past century.",
+        "korean": "우리가 지능, 창의성, 그리고 인간의 잠재력에 대해 아는 것이 지난 세기에 엄청나게 확장되었다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '의도적으로 발전시키고 성장하게 하다, 특히 능력이나 자질에 관해.' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_002_set4",
+    "parentSetId": "L5_TED_002",
+    "theme": "Do Schools Kill Creativity?",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "We now know that intelligence is extraordinarily diverse — it is not reducible to academic ability, as measured by standardized tests.",
+        "korean": "우리는 지금 지능이 비상하게 다양하며 표준화된 시험으로 측정되는 학문적 능력으로 축약될 수 없다는 것을 안다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 16,
+        "english": "We know that intelligence is interactive — the ways we think are influenced by the media we use, the questions we ask, the environments we inhabit.",
+        "korean": "우리는 우리의 사고 방식이 우리가 사용하는 미디어, 우리가 묻는 질문, 우리가 거주하는 환경의 영향을 받는다는 것을 안다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "And we know that intelligence is dynamic — the human brain is far more flexible and cross-disciplinary than our educational categories suggest.",
+        "korean": "우리는 인간의 뇌가 우리의 교육 범주들이 제안하는 것보다 훨씬 더 유연하고 학제간이라는 것을 안다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
+        "english": "And yet.",
+        "korean": "그럼에도 불구하고.",
+        "properNounIndices": []
+      },
+      {
+        "id": 19,
+        "english": "We continue to build educational systems that evaluate children through a narrow set of standardized assessments, that reward certain kinds of thinking and penalize others, and that systematically marginalize the arts, physical education, and any subject that doesn't appear on the university entrance exam.",
+        "korean": "우리는 좁은 표준화된 평가 세트를 통해 아이들을 평가하고 특정 종류의 사고를 보상하며 다른 것들을 처벌하고 예술, 체육, 대학 입학시험에 나타나지 않는 모든 과목을 체계적으로 주변화하는 교육 시스템을 계속 구축하고 있다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '성장하고 발전하며 성공적으로 번영하다.' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_002_set5",
+    "parentSetId": "L5_TED_002",
+    "theme": "Do Schools Kill Creativity?",
+    "level": 4,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "Here's something that troubles me deeply.",
+        "korean": "여기 내를 깊이 있게 괴롭히는 것이 있다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 21,
+        "english": "All children have tremendous creative capacities.",
+        "korean": "모든 아이들은 엄청난 창의적 능력을 가지고 있다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 22,
+        "english": "If you observe young children, they are fearless in their creativity.",
+        "korean": "어린 아이들을 관찰하면 그들은 창의성에 대해 두려움이 없다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 23,
+        "english": "They will try anything.",
+        "korean": "그들은 무엇이든 시도할 것이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 24,
+        "english": "They will dance without worrying whether they're good dancers.",
+        "korean": "좋은 댄서인지 걱정하지 않고 춤을 출 것이다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '누군가나 무언가를 중요하지 않은 것으로 밀어내거나 제외하다.' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_002_set6",
+    "parentSetId": "L5_TED_002",
+    "theme": "Do Schools Kill Creativity?",
+    "level": 6,
+    "setNumber": 6,
+    "sentences": [
+      {
+        "id": 25,
+        "english": "They will paint without worrying whether they're good painters.",
+        "korean": "좋은 화가인지 걱정하지 않고 그림을 그릴 것이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 26,
+        "english": "They will make up stories, sing songs, build things, invent entire worlds from almost nothing — and they do this with tremendous energy and engagement.",
+        "korean": "그들은 이야기를 만들고, 노래를 부르고, 것들을 짓고, 거의 아무것도 아닌 것에서 전체 세계를 발명할 것이다 — 그리고 그들은 엄청난 에너지와 참여로 이것을 한다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 27,
+        "english": "By the time those children are adults, most of them have lost that fearlessness.",
+        "korean": "저 아이들이 어른이 되었을 때 그들 대부분은 그 두려움 없음을 잃어버렸다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 28,
+        "english": "They've learned to be afraid of being wrong.",
+        "korean": "그들은 틀리는 것을 두려워하도록 배웠다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 29,
+        "english": "They've learned that being wrong — even in small ways, even in low-stakes contexts — is something to be ashamed of.",
+        "korean": "그들은 틀리는 것 — 아무리 작은 방식이든, 아무리 낮은 위험 맥락이든 — 부끄러워할 무언가라고 배웠다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '어떤 물체의 원래 용도에만 얽매여 다른 용도로 사용하지 못하는 인지적 편향. 여기서는 창의성을 방해하는 사고의 경직성을 의미한다.' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_002_set7",
+    "parentSetId": "L5_TED_002",
+    "theme": "Do Schools Kill Creativity?",
+    "level": 5,
+    "setNumber": 7,
+    "sentences": [
+      {
+        "id": 30,
+        "english": "And I'd argue that the primary mechanism through which children learn to be afraid of being wrong is school.",
+        "korean": "그리고 나는 아이들이 틀리는 것을 두려워하도록 배우는 주요 메커니즘이 학교라고 주장할 것이다.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 31,
+        "english": "In school, being wrong is one of the worst things that can happen to you.",
+        "korean": "학교에서 틀리는 것은 너에게 일어날 수 있는 최악의 것 중 하나이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 32,
+        "english": "You lose marks.",
+        "korean": "너는 점수를 잃는다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 33,
+        "english": "You are corrected in front of your peers.",
+        "korean": "너는 너의 또래들 앞에서 정정된다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 34,
+        "english": "The entire system is structured around identifying and rewarding right answers, and penalizing wrong ones.",
+        "korean": "전체 시스템은 올바른 답들을 확인하고 보상하고 틀린 것들을 처벌하는 것 주위에 구조화되어 있다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '사회, 조직 등에서 상하 관계로 이루어진 구조.' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_002_set8",
+    "parentSetId": "L5_TED_002",
+    "theme": "Do Schools Kill Creativity?",
+    "level": 5,
+    "setNumber": 8,
+    "sentences": [
+      {
+        "id": 35,
+        "english": "Over time, this shapes not just academic behavior but the fundamental way children relate to uncertainty, risk, and creative exploration.",
+        "korean": "시간이 지나면서 이것은 단지 학문적 행동뿐 아니라 아이들이 불확실성, 위험, 그리고 창의적 탐험과 관련을 맺는 기본적인 방식을 형성한다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 36,
+        "english": "Creativity, by definition, requires a tolerance for error.",
+        "korean": "창의성은 정의상 오류에 대한 관용이 필요하다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 37,
+        "english": "You cannot invent something without making many failed attempts.",
+        "korean": "너는 많은 실패한 시도 없이 뭔가를 발명할 수 없다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 38,
+        "english": "You cannot write a great story without many bad drafts.",
+        "korean": "너는 많은 나쁜 초안 없이 훌륭한 이야기를 쓸 수 없다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 39,
+        "english": "You cannot compose music without playing wrong notes.",
+        "korean": "너는 틀린 음표를 연주하지 않고 음악을 작곡할 수 없다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '일정한 기준이나 규칙에 따라 통일된.' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_002_set9",
+    "parentSetId": "L5_TED_002",
+    "theme": "Do Schools Kill Creativity?",
+    "level": 5,
+    "setNumber": 9,
+    "sentences": [
+      {
+        "id": 40,
+        "english": "If you're afraid of being wrong — if error is associated with shame and failure rather than with learning — you will not create.",
+        "korean": "만약 너가 틀리는 것을 두려워한다면 — 만약 오류가 배우는 것과 관련되기보다는 부끄러움과 실패와 관련된다면 — 너는 창조하지 않을 것이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 41,
+        "english": "You will not risk.",
+        "korean": "너는 위험을 감수하지 않을 것이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 42,
+        "english": "You will default to what is safe and correct and known.",
+        "korean": "너는 안전하고 올바르고 알려진 것으로 기본값을 설정할 것이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 43,
+        "english": "We are educating children out of their creativity.",
+        "korean": "우리는 아이들을 그들의 창의성에서 떠나도록 교육하고 있다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 44,
+        "english": "Now, I'm not arguing that academic knowledge is unimportant.",
+        "korean": "이제 나는 학문적 지식이 중요하지 않다고 주장하지 않는다.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '중심에서 멀리 떨어진 위치에 있는 또는 중요도가 낮은.' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_002_set10",
+    "parentSetId": "L5_TED_002",
+    "theme": "Do Schools Kill Creativity?",
+    "level": 6,
+    "setNumber": 10,
+    "sentences": [
+      {
+        "id": 45,
+        "english": "Of course it isn't.",
+        "korean": "물론 그렇지 않다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 46,
+        "english": "Mathematics and literacy are genuinely foundational, and I don't wish to minimize them.",
+        "korean": "수학과 문해력은 진정으로 기초적이고 나는 그것들을 최소화하기를 원하지 않는다.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 47,
+        "english": "What I'm arguing is that the extraordinary emphasis we place on academic ability — to the exclusion of other forms of intelligence — is not serving children or society well.",
+        "korean": "내가 주장하는 것은 우리가 학문적 능력에 놓는 비상한 강조 — 다른 형태의 지능의 제외로 — 이 아이들이나 사회에 잘 봉사하지 않는다는 것이다.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 48,
+        "english": "The economic argument alone should be compelling.",
+        "korean": "경제적 주장만으로도 설득력이 있어야 한다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 49,
+        "english": "The jobs that will define the economy of the next generation are largely jobs that don't yet exist.",
+        "korean": "다음 세대의 경제를 정의할 작업들은 대체로 아직 존재하지 않는 작업들이다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '누군가나 무언가를 중요하지 않은 것으로 밀어내거나 제외하다.' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_002_set11",
+    "parentSetId": "L5_TED_002",
+    "theme": "Do Schools Kill Creativity?",
+    "level": 6,
+    "setNumber": 11,
+    "sentences": [
+      {
+        "id": 50,
+        "english": "We cannot know precisely what skills they will require.",
+        "korean": "우리는 정확히 어떤 기술들이 필요한지 알 수 없다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 51,
+        "english": "What we can say with confidence is that they will require flexibility, creativity, adaptability, the ability to work across disciplinary boundaries, and the capacity to engage with ambiguity.",
+        "korean": "우리가 확신을 가지고 말할 수 있는 것은 그들이 유연성, 창의성, 적응력, 학제간 경계를 넘어 일할 수 있는 능력, 그리고 모호함에 참여할 수 있는 역량을 필요로 할 것이라는 것이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 52,
+        "english": "These are not skills that are primarily developed by drilling children on multiple-choice tests.",
+        "korean": "이것들은 아이들에게 객관식 시험으로 훈련하여 주로 발전된 기술들이 아니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 53,
+        "english": "What I'm advocating for is a fundamental reimagining — not a reform — of education.",
+        "korean": "내가 주장하는 것은 교육의 근본적인 재상상 — 개혁이 아니라 — 이다.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 54,
+        "english": "Reform implies fixing what we have.",
+        "korean": "개혁은 우리가 가진 것을 고치는 것을 함축한다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '의도적으로 발전시키고 성장하게 하다, 특히 능력이나 자질에 관해.' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_002_set12",
+    "parentSetId": "L5_TED_002",
+    "theme": "Do Schools Kill Creativity?",
+    "level": 6,
+    "setNumber": 12,
+    "sentences": [
+      {
+        "id": 55,
+        "english": "I think we need something more radical than that.",
+        "korean": "나는 우리가 그것보다 더 근진적인 무언가를 필요로 한다고 생각한다.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 56,
+        "english": "I think we need to recognize that human flourishing is not a mechanical process.",
+        "korean": "나는 우리가 인간의 번영이 기계적 과정이 아니라는 것을 인식할 필요가 있다고 생각한다.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 57,
+        "english": "It's an organic one.",
+        "korean": "그것은 유기적인 것이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 58,
+        "english": "And the conditions that enable it are much richer, much stranger, much more diverse than our current systems acknowledge.",
+        "korean": "그것을 가능하게 하는 조건들은 우리의 현재 시스템들이 인정하는 것보다 훨씬 더 풍부하고, 훨씬 더 낯설고, 훨씬 더 다양하다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 59,
+        "english": "Education, at its best, is not about delivering content from one generation to the next.",
+        "korean": "교육은 최선의 경우 한 세대에서 다음 세대로 내용을 제공하는 것에 관한 것이 아니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '어떤 물체의 원래 용도에만 얽매여 다른 용도로 사용하지 못하는 인지적 편향. 여기서는 창의성을 방해하는 사고의 경직성을 의미한다.' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_002_set13",
+    "parentSetId": "L5_TED_002",
+    "theme": "Do Schools Kill Creativity?",
+    "level": 6,
+    "setNumber": 13,
+    "sentences": [
+      {
+        "id": 60,
+        "english": "It's about cultivating the conditions in which human beings can discover what they're capable of — and develop the courage to pursue it.",
+        "korean": "그것은 인간이 자신이 할 수 있는 것을 발견할 수 있는 조건들을 배양하고 그것을 추구할 용기를 발전시키는 것에 관한 것이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 61,
+        "english": "The children who are entering school today will be retiring in the year 2070.",
+        "korean": "오늘 학교에 들어가는 아이들은 2070년에 은퇴할 것이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 62,
+        "english": "None of us has any real idea what the world will look like by then.",
+        "korean": "우리 중 누구도 그때쯤 세계가 어떻게 보일지에 대한 실제의 생각을 가지고 있지 않다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 63,
+        "english": "But I'm reasonably confident of one thing: the children who will thrive in that world will be those who have learned to think for themselves, to tolerate uncertainty, to collaborate creatively, and to keep asking questions that don't have easy answers.",
+        "korean": "그러나 나는 한 가지에 대해 합리적으로 확신한다: 그 세계에서 번영할 아이들은 스스로 생각하고, 불확실성을 용인하고, 창의적으로 협력하고, 쉬운 답변이 없는 질문을 계속 묻도록 배운 아이들이 될 것이다.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 64,
+        "english": "Whether our schools will teach them how to do that — that, I think, is the most important question of our time.",
+        "korean": "우리의 학교들이 그것을 하는 방법을 가르칠지 여부 — 그것이 나는 생각한다, 우리 시대의 가장 중요한 질문이다.",
+        "properNounIndices": [
+          12
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '누군가나 무언가를 중요하지 않은 것으로 밀어내거나 제외하다.' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  }
+]

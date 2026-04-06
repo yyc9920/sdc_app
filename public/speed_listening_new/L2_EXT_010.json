@@ -1,0 +1,95 @@
+[
+  {
+    "setId": "L2_EXT_010_set1",
+    "parentSetId": "L2_EXT_010",
+    "theme": "Podcast — Learning a Second Language",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Welcome back to \"Daily Growth,\" the podcast where we talk about small habits that make a big difference. Today's topic: learning a second language.",
+        "korean": "'데일리 그로쓰'에 돌아오신 것을 환영합니다. 작은 습관이 큰 차이를 만드는 팟캐스트죠. 오늘 주제는 제2외국어 학습입니다.",
+        "properNounIndices": [
+          3,
+          4,
+          18
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Now, I know what some of you are thinking — \"I tried learning Spanish in high school and I was terrible at it.\" But here's the thing: the way languages are taught in most schools is not the way our brains actually learn languages.",
+        "korean": "여러분 중 일부가 생각하시는 거 알아요 — '고등학교 때 스페인어 배우려 했는데 정말 못했어.'",
+        "properNounIndices": [
+          1,
+          10,
+          13,
+          18,
+          23
+        ]
+      },
+      {
+        "id": 2,
+        "english": "The biggest mistake people make is focusing too much on grammar rules and vocabulary lists. That's like trying to learn to swim by reading a textbook about swimming. You have to get in the water.",
+        "korean": "사람들이 가장 많이 하는 실수는 문법 규칙과 단어 목록에 너무 집중하는 거예요.",
+        "properNounIndices": [
+          15,
+          28
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Research in language acquisition shows that the single most important factor in learning a language is comprehensible input — that means listening to and reading content that you can mostly understand, with just a few new words mixed in.",
+        "korean": "언어 습득 연구에 따르면 언어를 배우는 데 가장 중요한 요소는 이해 가능한 입력이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Not too easy, not too hard. Think of it as the Goldilocks zone of language learning. So my advice?",
+        "korean": "너무 쉽지도 어렵지도 않은 거죠. 언어 학습의 골디락스 존이라고 생각하세요. 제 조언이요?",
+        "properNounIndices": [
+          6,
+          11,
+          16
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Start by finding content you actually enjoy — podcasts, YouTube channels, TV shows — in your target language. Use subtitles at first, then gradually remove them.",
+        "korean": "실제로 즐기는 콘텐츠를 찾는 것부터 시작하세요 — 배우려는 언어로 된 팟캐스트, 유튜브, TV쇼요.",
+        "properNounIndices": [
+          9,
+          11,
+          18
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Don't worry about understanding every word. Your brain is doing the work even when you feel lost. Consistency matters more than intensity.",
+        "korean": "모든 단어를 이해하려고 하지 마세요. 길을 잃은 것 같을 때도 뇌는 일하고 있어요.",
+        "properNounIndices": [
+          6,
+          17
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Fifteen minutes a day, every day, will beat a three-hour cramming session once a week. Every single time.",
+        "korean": "매일 15분이 주 1회 3시간 벼락치기를 항상 이겨요. 매번요.",
+        "properNounIndices": [
+          15
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '이해 가능한 입력 (언어 습득 이론)' mean in English?",
+      "options": [
+        "language acquisition",
+        "subtitles",
+        "comprehensible input",
+        "Goldilocks zone"
+      ],
+      "answer": 2
+    }
+  }
+]

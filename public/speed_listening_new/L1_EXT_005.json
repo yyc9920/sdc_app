@@ -1,0 +1,128 @@
+[
+  {
+    "setId": "L1_EXT_005_set1",
+    "parentSetId": "L1_EXT_005",
+    "theme": "Checking Into a Hotel",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Good evening. Welcome to the Grand Stay Hotel. Do you have a reservation?",
+        "korean": "좋은 저녁입니다. 그랜드 스테이 호텔에 오신 것을 환영합니다. 예약하셨나요?",
+        "properNounIndices": [
+          2,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Yes, I do. It should be under the name James Kim.",
+        "korean": "네, 했습니다. 제임스 킴 이름으로 되어 있을 거예요.",
+        "properNounIndices": [
+          1,
+          3,
+          9,
+          10
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Let me look that up... Yes, I see it here. A standard double room for two nights, checking out on Sunday. Is that correct?",
+        "korean": "확인해볼게요... 네, 여기 있네요. 스탠다드 더블룸 2박, 일요일 체크아웃이요. 맞나요?",
+        "properNounIndices": [
+          5,
+          6,
+          10,
+          20,
+          21
+        ]
+      },
+      {
+        "id": 3,
+        "english": "That's right.",
+        "korean": "맞습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Wonderful. I'll need a credit card for the deposit and a photo ID, please.",
+        "korean": "좋습니다. 보증금용 신용카드와 사진이 있는 신분증이 필요합니다.",
+        "properNounIndices": [
+          1,
+          12
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Checking Into a Hotel",
+        "Supreme Court Oral Arguments",
+        "Academic Lecture — The Philosophy of Language",
+        "Panel Discussion — AI and the Future of Work"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L1_EXT_005_set2",
+    "parentSetId": "L1_EXT_005",
+    "theme": "Checking Into a Hotel",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Here you go.",
+        "korean": "여기 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Thank you. Your room is 415 on the fourth floor. Elevators are to your left. Breakfast is served in the lobby restaurant from 7 to 10 a.m.",
+        "korean": "감사합니다. 방은 4층 415호입니다. 엘리베이터는 왼쪽에 있어요. 아침 식사는 로비 레스토랑에서 7시부터 10시까지 제공됩니다.",
+        "properNounIndices": [
+          2,
+          10,
+          15
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Is Wi-Fi included?",
+        "korean": "와이파이 포함인가요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Yes, it's complimentary. The network name and password are on the card inside your key packet.",
+        "korean": "네, 무료입니다. 네트워크 이름과 비밀번호는 키 봉투 안의 카드에 있습니다.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 9,
+        "english": "Great, thank you.",
+        "korean": "좋아요, 감사합니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Tech Support Call",
+        "Checking Into a Hotel",
+        "At the Coffee Shop",
+        "Job Interview — Small Talk"
+      ],
+      "answer": 1
+    }
+  }
+]

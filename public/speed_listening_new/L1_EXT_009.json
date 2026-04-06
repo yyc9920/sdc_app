@@ -1,0 +1,121 @@
+[
+  {
+    "setId": "L1_EXT_009_set1",
+    "parentSetId": "L1_EXT_009",
+    "theme": "At the Post Office",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Next, please. How can I help you?",
+        "korean": "다음 분이요. 어떻게 도와드릴까요?",
+        "properNounIndices": [
+          2,
+          4
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Hi, I'd like to send this package to Japan.",
+        "korean": "안녕하세요, 이 소포를 일본으로 보내고 싶습니다.",
+        "properNounIndices": [
+          1,
+          8
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Sure. Let me weigh it first... It's one point two kilograms. Would you like standard shipping or express?",
+        "korean": "물론이죠. 먼저 무게를 재볼게요... 1.2킬로그램이네요. 일반 배송으로 하시겠어요, 빠른 배송으로 하시겠어요?",
+        "properNounIndices": [
+          1,
+          6,
+          11
+        ]
+      },
+      {
+        "id": 3,
+        "english": "How long does each one take?",
+        "korean": "각각 얼마나 걸리나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Standard is seven to ten business days. Express is three to five business days.",
+        "korean": "일반은 영업일 7~10일이고, 빠른 배송은 영업일 3~5일입니다.",
+        "properNounIndices": [
+          7
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Economic Analysis — The Paradox of Thrift",
+        "At the Post Office",
+        "Radio Interview — Small Business Owner",
+        "Supreme Court Oral Arguments"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L1_EXT_009_set2",
+    "parentSetId": "L1_EXT_009",
+    "theme": "At the Post Office",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I'll go with express. It's a birthday gift, so I want it to arrive on time.",
+        "korean": "빠른 배송으로 할게요. 생일 선물이라 제때 도착했으면 해서요.",
+        "properNounIndices": [
+          4,
+          9
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Understood. That'll be twenty-three fifty. Would you like tracking on that?",
+        "korean": "알겠습니다. 23달러 50센트입니다. 추적 서비스 추가하시겠어요?",
+        "properNounIndices": [
+          1,
+          5
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Yes, please.",
+        "korean": "네, 부탁합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Alright. Here's your receipt and tracking number. You can check the status online.",
+        "korean": "알겠습니다. 여기 영수증과 추적번호입니다. 온라인에서 상태를 확인할 수 있어요.",
+        "properNounIndices": [
+          1,
+          7
+        ]
+      },
+      {
+        "id": 9,
+        "english": "Thank you!",
+        "korean": "감사합니다!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "At the Post Office",
+        "University Lecture — Behavioral Economics",
+        "Job Interview — Small Talk",
+        "Calling in Sick"
+      ],
+      "answer": 0
+    }
+  }
+]

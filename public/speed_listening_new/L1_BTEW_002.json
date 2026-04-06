@@ -1,0 +1,140 @@
+[
+  {
+    "setId": "L1_BTEW_002_set1",
+    "parentSetId": "L1_BTEW_002",
+    "theme": "You can't go wrong with",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hello, and welcome to The English We Speak, where we explain phrases used by fluent English speakers so that you can use them too. I'm Feifei, and I'm with Phil. What have you been doing, Phil?",
+        "korean": "안녕하세요. 필, 무엇을 해 왔나요?",
+        "properNounIndices": [
+          4,
+          5,
+          6,
+          7,
+          15,
+          24,
+          25,
+          27,
+          29,
+          30,
+          35
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I've just been doing my Christmas shopping. It's so hard to find things for everyone. I don't really know what people are going to like.",
+        "korean": "크리스마스 선물을 찾기가 어렵습니다.",
+        "properNounIndices": [
+          5,
+          7,
+          15
+        ]
+      },
+      {
+        "id": 2,
+        "english": "You know what? You can't go wrong with gift vouchers. Let people decide what they want as a present for themselves.",
+        "korean": "선물 쿠폰을 선택하면 좋습니다.",
+        "properNounIndices": [
+          3,
+          10
+        ]
+      },
+      {
+        "id": 3,
+        "english": "That might be a good idea! And actually, there's a good expression for this episode, 'you can't go wrong with'.",
+        "korean": "좋은 표현이 있습니다.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Yes, if you want to make a suggestion, and say that it's guaranteed to succeed, or at least very likely to succeed, you can say 'you can't go wrong with'.",
+        "korean": "성공이 보장되는 제안을 할 수 있습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '아이디어나 의견을 제시하는 것' mean in English?",
+      "options": [
+        "formal event",
+        "you can't go wrong with",
+        "suggestion",
+        "gift voucher"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L1_BTEW_002_set2",
+    "parentSetId": "L1_BTEW_002",
+    "theme": "You can't go wrong with",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "So, if you were looking for the perfect Christmas party idea, would you agree that you can't go wrong with karaoke?",
+        "korean": "노래방을 선택하면 좋습니다.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 6,
+        "english": "I'm not sure about that, Phil. I've heard you singing! I reckon you can't go wrong with a good meal, though. Let's hear some more examples.",
+        "korean": "좋은 식사를 선택하면 좋습니다.",
+        "properNounIndices": [
+          5,
+          6,
+          10,
+          21
+        ]
+      },
+      {
+        "id": 7,
+        "english": "So, the expression is 'you can't go wrong with', and it's used when you suggest something that's likely to be a good choice.",
+        "korean": "좋은 선택을 제안할 때 사용합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "That's right. And, Phil, if you're still looking for a Christmas present for me, you can't go wrong with chocolate!",
+        "korean": "초콜릿을 선택하면 틀릴 수 없습니다.",
+        "properNounIndices": [
+          2,
+          3,
+          10
+        ]
+      },
+      {
+        "id": 9,
+        "english": "Noted! Bye everyone!",
+        "korean": "안녕하세요!",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 10,
+        "english": "Bye!",
+        "korean": "안녕!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '좋은 선택이 되는 제안을 할 때 사용' mean in English?",
+      "options": [
+        "you can't go wrong with",
+        "guaranteed to succeed",
+        "Christmas party",
+        "suggestion"
+      ],
+      "answer": 0
+    }
+  }
+]

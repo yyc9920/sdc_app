@@ -1,0 +1,490 @@
+[
+  {
+    "setId": "L2_B6ME_001_set1",
+    "parentSetId": "L2_B6ME_001",
+    "theme": "Embarrassed to go to the doctor?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hello. This is 6 Minute English from BBC Learning English. I'm Neil.",
+        "korean": "안녕하세요. BBC Learning English의 6 Minute English입니다. 저는 닐이에요.",
+        "properNounIndices": [
+          1,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "id": 1,
+        "english": "And I'm Beth.",
+        "korean": "저는 베스입니다.",
+        "properNounIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Lots of things can make us feel embarrassed – that self-conscious, uncomfortable feeling when your face blushes red and you wish you could just disappear.",
+        "korean": "많은 것들이 우리를 부끄럽게 할 수 있어요 — 얼굴이 빨개지는 자의식적이고 불편한 그 느낌이요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Have you had any embarrassing moments, Neil?",
+        "korean": "창피했던 순간 있었어요, 닐?",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Yes, many. Once I met my parents in a car park and I saw them arriving in their car and I waved my hands around in a very silly way. But unfortunately, I soon discovered that it wasn't my parents. It was another couple.",
+        "korean": "네, 많아요. 한번은 주차장에서 부모님을 만났는데 차에서 도착하시는 걸 보고 크게 손을 흔들었어요.",
+        "properNounIndices": [
+          2,
+          3,
+          12,
+          20,
+          30,
+          32,
+          40
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '기밀의, 비밀의' mean in English?",
+      "options": [
+        "non-verbal cues",
+        "confidential",
+        "delay",
+        "diagnose"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L2_B6ME_001_set2",
+    "parentSetId": "L2_B6ME_001",
+    "theme": "Embarrassed to go to the doctor?",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Oh no, that's really embarrassing. I remember answering the phone, I thought it was my best friend and I said \"hello\" in a very silly voice, and then they asked to speak to my dad, and it wasn't my friend.",
+        "korean": "오 안 돼, 정말 창피하네. 전화 받았던 거 기억나는데, 절친인 줄 알고 정말 바보같은 목소리로 '안녕'이라고 했거든.",
+        "properNounIndices": [
+          5,
+          10,
+          18
+        ]
+      },
+      {
+        "id": 6,
+        "english": "What was the voice?",
+        "korean": "어떤 목소리였어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Hello?",
+        "korean": "안녕~?",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Oh dear. But embarrassment is more than just shyness and blushing. When it comes to our health, there's no end of things to be embarrassed about.",
+        "korean": "맙소사. 하지만 당혹감은 단순한 수줍음과 얼굴 빨개짐 이상이에요. 건강에 관해서는 부끄러워할 게 끝도 없거든요.",
+        "properNounIndices": [
+          2,
+          11
+        ]
+      },
+      {
+        "id": 9,
+        "english": "Yes, and some people feel so embarrassed that they don't go to see a doctor when they should, sometimes with serious consequences.",
+        "korean": "네, 일부 사람들은 너무 부끄러워서 가야 할 때 의사를 만나러 가지 않고, 때로는 심각한 결과를 초래해요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '편하게 하다, 안심시키다' mean in English?",
+      "options": [
+        "confidential",
+        "suffer in silence",
+        "put at ease",
+        "embarrassed"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_B6ME_001_set3",
+    "parentSetId": "L2_B6ME_001",
+    "theme": "Embarrassed to go to the doctor?",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "In this programme, we'll be discussing the issue of medical embarrassment, and as usual, we'll be learning some useful new words and phrases.",
+        "korean": "이 프로그램에서 의료 당혹감 문제를 논의하고, 평소처럼 유용한 새 어휘도 배울 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "So, I have a question.",
+        "korean": "자, 질문이 있어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 12,
+        "english": "Neil, according to the UK's Nursing Times newspaper, what percentage of people surveyed said they had delayed visiting their doctor out of embarrassment, and then later been diagnosed with a health condition?",
+        "korean": "닐, 영국 너싱 타임즈에 따르면 설문조사에서 부끄러워서 의사 방문을 미뤘다고 한 비율이 몇 퍼센트였을까요?",
+        "properNounIndices": [
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": 13,
+        "english": "Was it: a) 21% ? b) 41% ? or, c) 61% ?",
+        "korean": "a) 21%? b) 41%? 아니면 c) 61%?",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "So I think it's probably a lot. So c) 61%.",
+        "korean": "아마 꽤 많을 것 같아요. c) 61%로 할게요.",
+        "properNounIndices": [
+          1,
+          7
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '진단하다' mean in English?",
+      "options": [
+        "put at ease",
+        "diagnose",
+        "suffer in silence",
+        "self-conscious"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L2_B6ME_001_set4",
+    "parentSetId": "L2_B6ME_001",
+    "theme": "Embarrassed to go to the doctor?",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "OK. We will find out if that's correct at the end of the programme. As humans we get embarrassed if we feel different from others, especially if the difference is physical.",
+        "korean": "네, 프로그램 끝에서 확인해볼게요. 인간은 다른 사람과 다르다고 느끼면 당혹감을 느끼죠.",
+        "properNounIndices": [
+          1,
+          14
+        ]
+      },
+      {
+        "id": 16,
+        "english": "But how does feeling embarrassed about a medical condition impact our relationship with the doctor?",
+        "korean": "하지만 의료 상태에 대해 부끄러워하면 의사와의 관계에 어떤 영향을 미칠까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "Here's Dr Vanessa Apea, consultant in sexual health at Barts Hospital in London, explaining more to BBC Radio 4 programme, Inside Health:",
+        "korean": "런던 바츠 병원의 성건강 전문의인 버네사 아피아 박사의 설명입니다.",
+        "properNounIndices": [
+          1,
+          2,
+          3,
+          9,
+          10,
+          12,
+          16,
+          17,
+          20,
+          21
+        ]
+      },
+      {
+        "id": 18,
+        "english": "So they'll delay accessing the clinic, and also seeking treatment, and so then you'll often see people that could have been diagnosed with what's happening much earlier, and could have had earlier intervention, but it's delayed quite significantly.",
+        "korean": "병원 방문을 미루고 치료도 미뤄서, 더 일찍 진단받을 수 있었던 사람들을 자주 보게 됩니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 19,
+        "english": "And so I then feel that we see a lot of people kind of suffering in silence really.",
+        "korean": "그래서 많은 사람들이 조용히 고통받고 있다고 느낍니다.",
+        "properNounIndices": [
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '편하게 하다, 안심시키다' mean in English?",
+      "options": [
+        "blush",
+        "put at ease",
+        "self-conscious",
+        "intimate examination"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L2_B6ME_001_set5",
+    "parentSetId": "L2_B6ME_001",
+    "theme": "Embarrassed to go to the doctor?",
+    "level": 6,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "Many people delay going to the doctor – they postpone going or put it off until a later time. As a result, their problem isn't diagnosed. To diagnose means to identify a disease or health problem through medical examination.",
+        "korean": "많은 사람이 의사 가는 걸 미룹니다 — 나중으로 연기하거나 뒤로 미루죠.",
+        "properNounIndices": [
+          19,
+          26
+        ]
+      },
+      {
+        "id": 21,
+        "english": "For some, feelings of embarrassment are so strong they prefer to suffer in silence – to struggle with pain without seeking help - rather than visit the doctor.",
+        "korean": "일부에게는 당혹감이 너무 강해서 도움을 구하지 않고 조용히 고통받는 쪽을 택합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 22,
+        "english": "But fortunately, there are things you can do to help. Writing your problem down, going with a friend, and visiting a doctor you trust are some ideas Dr Apea recommends.",
+        "korean": "하지만 다행히 도움이 될 수 있는 것들이 있어요.",
+        "properNounIndices": [
+          10,
+          27,
+          28
+        ]
+      },
+      {
+        "id": 23,
+        "english": "There are ways that doctors can help as well, as Dr Vanessa Apea explains here to James Gallagher, presenter of BBC Radio 4 programme, Inside Health:",
+        "korean": "의사도 도울 수 있는 방법이 있습니다.",
+        "properNounIndices": [
+          10,
+          11,
+          12,
+          16,
+          17,
+          20,
+          21,
+          24,
+          25
+        ]
+      },
+      {
+        "id": 24,
+        "english": "Can you tell us what techniques you use to put people at ease?",
+        "korean": "환자를 편안하게 하기 위해 어떤 기법을 사용하시나요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '신체 검사' mean in English?",
+      "options": [
+        "embarrassed",
+        "intimate examination",
+        "put at ease",
+        "blush"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L2_B6ME_001_set6",
+    "parentSetId": "L2_B6ME_001",
+    "theme": "Embarrassed to go to the doctor?",
+    "level": 6,
+    "setNumber": 6,
+    "sentences": [
+      {
+        "id": 25,
+        "english": "I bring transparency to the conversation, and own it, and say that I'm going to be asking you some quite personal questions, and there may be also intimate examination… I want to assure you that this is confidential, that this is a safe, non-judgmental space… So really, I often name the words to create that space as well.",
+        "korean": "대화에 투명성을 가져와서, 꽤 개인적인 질문을 할 거라고 미리 솔직하게 말합니다.",
+        "properNounIndices": [
+          0,
+          12,
+          29,
+          45,
+          47
+        ]
+      },
+      {
+        "id": 26,
+        "english": "Also in my manner, I would hope, and in my non-verbal cues.",
+        "korean": "또한 제 태도와 비언어적 신호에서도요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 27,
+        "english": "James asks what doctors can do to put people at ease – to make them feel calm and relaxed - and Dr Apea describes her ideal conversation: it's a safe space, it's non-judgmental and what is said is confidential, kept private and not shared with anyone.",
+        "korean": "제임즈가 환자를 편안하게 — 침착하고 여유롭게 느끼도록 의사가 무엇을 할 수 있는지 물어봅니다.",
+        "properNounIndices": [
+          21,
+          22
+        ]
+      },
+      {
+        "id": 28,
+        "english": "As well as discussing embarrassing problems sensitively, Dr Apea also uses non-verbal cues - the expression on her face, her hand movements, and the tone of her voice, rather than words, to communicate and relax the patient.",
+        "korean": "민감한 문제를 세심하게 논의하는 것 외에도, 아피아 박사는 비언어적 신호도 사용합니다.",
+        "properNounIndices": [
+          7,
+          8
+        ]
+      },
+      {
+        "id": 29,
+        "english": "Embarrassment is normal, and with support hopefully more of us will feel safe to visit the doctor despite it. OK, Beth, isn't it time to reveal the answer to your question?",
+        "korean": "당혹감은 정상이고, 지원이 있으면 더 많은 사람이 그럼에도 안심하고 의사를 방문할 수 있길 바랍니다.",
+        "properNounIndices": [
+          19,
+          20
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '기밀의, 비밀의' mean in English?",
+      "options": [
+        "confidential",
+        "delay",
+        "blush",
+        "embarrassed"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_B6ME_001_set7",
+    "parentSetId": "L2_B6ME_001",
+    "theme": "Embarrassed to go to the doctor?",
+    "level": 6,
+    "setNumber": 7,
+    "sentences": [
+      {
+        "id": 30,
+        "english": "It is. I asked you: What percentage of people said they had delayed visiting the doctor because they were embarrassed, but then had later been diagnosed with a health condition? Do you remember what you said, Neil?",
+        "korean": "맞아요. 부끄러워서 의사 방문을 미뤘다고 한 비율이 몇 퍼센트인지 물었었죠.",
+        "properNounIndices": [
+          2,
+          5,
+          30,
+          36
+        ]
+      },
+      {
+        "id": 31,
+        "english": "Yes, I think I said c) 61%.",
+        "korean": "네, c) 61%라고 한 것 같아요.",
+        "properNounIndices": [
+          1,
+          3
+        ]
+      },
+      {
+        "id": 32,
+        "english": "I'm afraid that is not the correct answer! It was, in fact a) 21% or just over a fifth. OK, let's recap the new vocabulary we've used, starting with delay, to postpone or put off until a later time.",
+        "korean": "유감이지만 정답이 아니에요! 사실 a) 21%, 5분의 1 약간 넘는 수준이었습니다.",
+        "properNounIndices": [
+          8,
+          19
+        ]
+      },
+      {
+        "id": 33,
+        "english": "To diagnose a disease or medical condition means to identify it by recognising the symptoms and examining the patient.",
+        "korean": "질병이나 의료 상태를 진단한다는 것은 증상을 인식하고 환자를 검사하여 식별하는 것입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 34,
+        "english": "If you suffer in silence, you endure and struggle with painful feelings without asking someone for help.",
+        "korean": "조용히 고통받는다는 것은 도움을 요청하지 않고 고통스러운 감정을 견디며 싸우는 것입니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '침묵 속에서 고생하다' mean in English?",
+      "options": [
+        "suffer in silence",
+        "self-conscious",
+        "non-verbal cues",
+        "delay"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_B6ME_001_set8",
+    "parentSetId": "L2_B6ME_001",
+    "theme": "Embarrassed to go to the doctor?",
+    "level": 6,
+    "setNumber": 8,
+    "sentences": [
+      {
+        "id": 35,
+        "english": "The phrasal verb put someone at ease means to make them feel calm and relaxed.",
+        "korean": "'put someone at ease'라는 구동사는 침착하고 편안하게 만든다는 뜻입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 36,
+        "english": "Something which is confidential is kept private and not shared.",
+        "korean": "비밀인 것은 사적으로 유지되고 공유되지 않는 것입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 37,
+        "english": "And finally, non-verbal cues are the expression on your face, gestures, and tone of voice to show how you feel about something without using words. Once again, we've run out of time. Bye for now!",
+        "korean": "마지막으로, 비언어적 신호는 표정, 제스처, 목소리 톤입니다.",
+        "properNounIndices": [
+          25,
+          32
+        ]
+      },
+      {
+        "id": 38,
+        "english": "Bye!",
+        "korean": "안녕!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '비언어적 신호' mean in English?",
+      "options": [
+        "non-verbal cues",
+        "blush",
+        "embarrassed",
+        "confidential"
+      ],
+      "answer": 0
+    }
+  }
+]

@@ -1,0 +1,410 @@
+[
+  {
+    "setId": "L2_B6ME_013_set1",
+    "parentSetId": "L2_B6ME_013",
+    "theme": "What decides our taste?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hello. This is 6 Minute English from BBC Learning English. I'm Phil.",
+        "korean": "안녕하세요. 6 Minute English입니다. 저는 필이에요.",
+        "properNounIndices": [
+          1,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "id": 1,
+        "english": "And I'm Beth. Now, let's talk about food.",
+        "korean": "저는 베스입니다. 음식에 대해 이야기해봐요.",
+        "properNounIndices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "english": "OK. What food do you love? What food do you hate? If you ask around, you'll soon see there's no right or wrong answer – it's all a question of taste.",
+        "korean": "좋아하는 음식은요? 싫어하는 음식은요?",
+        "properNounIndices": [
+          1,
+          6,
+          11
+        ]
+      },
+      {
+        "id": 3,
+        "english": "But our taste, it turns out, isn't simply a matter of opinion. Rather, scientists have discovered that taste is influenced by our genes and DNA. So, in this programme we'll be asking, what is taste?",
+        "korean": "하지만 알고 보면, 미각은 단순한 의견의 문제가 아닙니다.",
+        "properNounIndices": [
+          12,
+          24,
+          25
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Why can't we agree on it? And is it worth listening to experts whose job is to tell us what to eat and drink? And, as usual, we'll be learning some useful new vocabulary as well.",
+        "korean": "왜 맛에 대해 동의할 수 없을까요? 전문가 말을 들을 가치가 있을까요?",
+        "properNounIndices": [
+          6,
+          24
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '주관적인' mean in English?",
+      "options": [
+        "broaden your horizons",
+        "subjective",
+        "pointless",
+        "I would say that, wouldn't I?"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L2_B6ME_013_set2",
+    "parentSetId": "L2_B6ME_013",
+    "theme": "What decides our taste?",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Great, but first I have a question for you, Beth. A good way of finding out about British tastes is with the nation's best-loved snack, crisps.",
+        "korean": "좋아요, 먼저 질문이 있어요, 베스.",
+        "properNounIndices": [
+          3,
+          9,
+          10,
+          17
+        ]
+      },
+      {
+        "id": 6,
+        "english": "So, what is the most popular flavour of crisps in the UK? Is it: a) salt and vinegar? b) cheese and onion? or c) ready salted?",
+        "korean": "영국에서 가장 인기 있는 과자 맛은 뭘까요?",
+        "properNounIndices": [
+          11,
+          12
+        ]
+      },
+      {
+        "id": 7,
+        "english": "What a great question! Hmm, I'm going to say b) cheese and onion.",
+        "korean": "좋은 질문이네요! 음, b) 치즈 앤 어니언이라고 할게요.",
+        "properNounIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "id": 8,
+        "english": "OK, we'll find out the answer at the end of the programme. Now, the modern study of taste goes back over 100 years, to a German scientist called Arthur Fox who was studying a chemical called PTC.",
+        "korean": "프로그램 끝에서 답을 알아볼게요.",
+        "properNounIndices": [
+          12,
+          25,
+          28,
+          29,
+          36
+        ]
+      },
+      {
+        "id": 9,
+        "english": "Here, Danielle Reed, a geneticist at the Monell Chemical Senses Center in Philadelphia, tells BBC World Service programme, The Food Chain, what happened next:",
+        "korean": "필라델피아 모넬 화학감각센터의 유전학자 대니엘 리드가 설명합니다.",
+        "properNounIndices": [
+          1,
+          2,
+          7,
+          8,
+          9,
+          10,
+          12,
+          14,
+          15,
+          16,
+          18,
+          19,
+          20
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '무의미한, 쓸데없는' mean in English?",
+      "options": [
+        "chastise",
+        "broaden your horizons",
+        "colour-blind",
+        "pointless"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L2_B6ME_013_set3",
+    "parentSetId": "L2_B6ME_013",
+    "theme": "What decides our taste?",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "Fox was working with PTC and it flew up into the air.",
+        "korean": "폭스가 PTC로 작업하고 있었는데 그게 공중으로 날아갔습니다.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 11,
+        "english": "And his colleague said, 'Wow, that's really bitter.' And Fox said, 'I can't taste anything.' And then they started to go around the whole lab and test everyone, and about 30% of people in the lab couldn't taste it.",
+        "korean": "동료가 '와, 정말 쓰다'고 했고, 폭스는 '아무 맛도 안 나는데'라고 했어요.",
+        "properNounIndices": [
+          4,
+          8,
+          9,
+          11,
+          15
+        ]
+      },
+      {
+        "id": 12,
+        "english": "When scientists started looking outside Europe, so broadening their horizons, they found some populations where almost everyone was a taster and some populations where almost nobody was, and then scientists came to realise that this was much more diverse than we ever realised…",
+        "korean": "과학자들이 유럽 밖으로 시야를 넓혔을 때, 거의 모든 사람이 맛을 느끼는 인구 집단을 발견했습니다.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 13,
+        "english": "And what you're saying is, \"No, taste isn't a matter of opinion, it's a matter of biology\".",
+        "korean": "당신이 말하는 건, '미각은 의견의 문제가 아니라 생물학의 문제'라는 거죠.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 14,
+        "english": "Exactly and we wouldn't... you know, for our friends who are colour-blind, we wouldn't chastise them for not being able to see red or for dressing in colours we don't appreciate, but we feel very free to criticise our friends' sense of taste.",
+        "korean": "맞아요. 색맹인 친구들을 꾸짖지 않잖아요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '무의미한, 쓸데없는' mean in English?",
+      "options": [
+        "colour-blind",
+        "subjective",
+        "pointless",
+        "broaden your horizons"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_B6ME_013_set4",
+    "parentSetId": "L2_B6ME_013",
+    "theme": "What decides our taste?",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "It was only when scientists looked outside Europe to the rest of the world that they realised the diversity of human taste.",
+        "korean": "과학자들이 유럽 밖 세계를 살펴봤을 때 비로소 인간 미각의 다양성을 깨달았습니다.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 16,
+        "english": "Danielle says they broadened their horizons, they investigated something in a new way to increase their knowledge and understanding of it.",
+        "korean": "대니엘은 그들이 시야를 넓혔다고 말합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "Danielle compares taste to another genetically controlled condition, being colour-blind or unable to see the difference between certain colours like green and red.",
+        "korean": "대니엘은 미각을 또 다른 유전적으로 결정되는 상태인 색맹과 비교합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
+        "english": "You wouldn't chastise – criticise or punish - someone for being colour-blind, so why criticise someone's taste?",
+        "korean": "색맹인 사람을 꾸짖거나 — 비판하거나 벌하지 — 않잖아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 19,
+        "english": "But, if scientists are telling us taste is largely genetic, it might seem pointless for wine experts or food critics to tell us what tastes good.",
+        "korean": "하지만 과학자들이 미각이 대체로 유전적이라고 한다면요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '무의미한, 쓸데없는' mean in English?",
+      "options": [
+        "subjective",
+        "pointless",
+        "broaden your horizons",
+        "chastise"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L2_B6ME_013_set5",
+    "parentSetId": "L2_B6ME_013",
+    "theme": "What decides our taste?",
+    "level": 6,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "Pointless means something that has no use, purpose or meaning. Well, TV food critic David Myers wouldn't agree. Here he speaks about the value of what he does:",
+        "korean": "'pointless'는 용도, 목적, 의미가 없다는 뜻입니다.",
+        "properNounIndices": [
+          10,
+          11,
+          14,
+          15,
+          18
+        ]
+      },
+      {
+        "id": 21,
+        "english": "I think there is clearly a case for that, but taste is subjective. Food speaks to us in different ways. My job is never to tell you what to eat, that would be pointless. I would say that, wouldn't I?",
+        "korean": "분명히 그런 면이 있지만, 미각은 주관적입니다.",
+        "properNounIndices": [
+          0,
+          13,
+          20,
+          34,
+          39
+        ]
+      },
+      {
+        "id": 22,
+        "english": "This phrase means something like, 'of course I would say that'. It implies there's some reason that what the speaker is saying is obviously biased towards them.",
+        "korean": "이 표현은 '물론 저는 그렇게 말하겠죠' 같은 뜻입니다.",
+        "properNounIndices": [
+          7,
+          11
+        ]
+      },
+      {
+        "id": 23,
+        "english": "David admits that taste is subjective, based on personal opinions and feelings rather than on facts.",
+        "korean": "데이빗은 미각이 개인 의견과 감정에 기반한 주관적인 것이라고 인정합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 24,
+        "english": "I think it's time to reveal the answer to your question, Phil.",
+        "korean": "필, 질문의 답을 공개할 시간입니다.",
+        "properNounIndices": [
+          0,
+          11
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '무의미한, 쓸데없는' mean in English?",
+      "options": [
+        "chastise",
+        "pointless",
+        "broaden your horizons",
+        "colour-blind"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L2_B6ME_013_set6",
+    "parentSetId": "L2_B6ME_013",
+    "theme": "What decides our taste?",
+    "level": 6,
+    "setNumber": 6,
+    "sentences": [
+      {
+        "id": 25,
+        "english": "Right. I asked for Britain's most popular flavour of crisp, and you said, cheese and onion which was… the correct answer!",
+        "korean": "네, 영국에서 가장 인기 있는 과자 맛을 물었었고, 치즈 앤 어니언이 정답이었습니다!",
+        "properNounIndices": [
+          1,
+          4
+        ]
+      },
+      {
+        "id": 26,
+        "english": "OK, let's recap the vocabulary we've learned in this programme starting with the phrase to broaden or expand your horizons meaning 'to explore something in a new way which increases your knowledge and understanding of it'.",
+        "korean": "어휘를 정리해볼게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 27,
+        "english": "To chastise means to strongly punish or criticise.",
+        "korean": "'chastise'는 강하게 벌하거나 비판하는 것입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 28,
+        "english": "A colour-blind person is unable to distinguish certain colours especially greens and reds.",
+        "korean": "색맹인 사람은 특정 색상을 구분하지 못합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 29,
+        "english": "Something which is pointless, has no purpose or meaning and is a waste of time.",
+        "korean": "'pointless'한 것은 목적이나 의미가 없고 시간 낭비입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 30,
+        "english": "The phrase 'I would say that, wouldn't I?' is a tag question meaning the speaker might be biased about what they're saying.",
+        "korean": "'I would say that, wouldn't I?'는 화자가 편향될 수 있다는 의미의 부가 의문문입니다.",
+        "properNounIndices": [
+          2,
+          7
+        ]
+      },
+      {
+        "id": 31,
+        "english": "And finally, subjective means based on personal opinions and feelings rather than facts. Once again, our six minutes are up. Bye for now!",
+        "korean": "마지막으로, 'subjective'는 사실이 아닌 개인적 의견과 감정에 기반한다는 뜻입니다.",
+        "properNounIndices": [
+          13,
+          20
+        ]
+      },
+      {
+        "id": 32,
+        "english": "Bye!",
+        "korean": "안녕!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '시야를 넓히다' mean in English?",
+      "options": [
+        "pointless",
+        "broaden your horizons",
+        "I would say that, wouldn't I?",
+        "colour-blind"
+      ],
+      "answer": 1
+    }
+  }
+]

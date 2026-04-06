@@ -1,0 +1,111 @@
+[
+  {
+    "setId": "L1_SPK_007_set1",
+    "parentSetId": "L1_SPK_007",
+    "theme": "A Skill You Want to Learn",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "If you could learn any new skill, what would it be? Why would you want to learn that skill?",
+        "korean": "어떤 새로운 기술이든 배울 수 있다면, 무엇을 배우겠나요? 왜 그 기술을 배우고 싶나요?",
+        "properNounIndices": [
+          11
+        ]
+      },
+      {
+        "id": 1,
+        "english": "If I could learn any new skill, I would choose to learn how to play the piano.",
+        "korean": "어떤 새로운 기술이든 배울 수 있다면, 저는 피아노 치는 법을 배우겠어요.",
+        "properNounIndices": [
+          1,
+          7
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Music has always been important to me — I listen to it every day and it strongly affects my mood.",
+        "korean": "음악은 항상 저에게 중요했어요 — 매일 듣고, 기분에 강하게 영향을 미쳐요.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 3,
+        "english": "However, I've never learned to create it myself, and I feel like I'm only experiencing half of what music can offer.",
+        "korean": "하지만, 직접 만드는 법은 배운 적이 없고, 음악이 줄 수 있는 것의 절반만 경험하고 있는 것 같아요.",
+        "properNounIndices": [
+          1,
+          9,
+          12
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Learning the piano would allow me to express emotions that are sometimes hard to put into words.",
+        "korean": "피아노를 배우면 때로 말로 표현하기 어려운 감정들을 표현할 수 있을 거예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "City Living vs. Rural Living",
+        "A Skill You Want to Learn",
+        "Studying Alone vs. Studying in a Group",
+        "A Person Who Has Influenced You"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L1_SPK_007_set2",
+    "parentSetId": "L1_SPK_007",
+    "theme": "A Skill You Want to Learn",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I also think it would be a great stress-relief activity.",
+        "korean": "또한 훌륭한 스트레스 해소 활동이 될 거라고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Studies show that playing a musical instrument reduces anxiety and improves cognitive function.",
+        "korean": "연구에 따르면 악기를 연주하면 불안이 줄고 인지 기능이 향상된대요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Even if I never perform for an audience, playing for myself at the end of a long day sounds incredibly satisfying.",
+        "korean": "관객 앞에서 연주하지 않더라도, 긴 하루 끝에 혼자 연주하는 것은 엄청나게 만족스러울 것 같아요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 8,
+        "english": "It's a skill I've always admired in others and regretted not pursuing earlier.",
+        "korean": "다른 사람들에게서 항상 감탄해왔고, 더 일찍 시작하지 않은 것을 후회하는 기술이에요.",
+        "properNounIndices": [
+          3
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "A Skill You Want to Learn",
+        "Important Quality in a Friend",
+        "A Person Who Has Influenced You",
+        "Technology in Education"
+      ],
+      "answer": 0
+    }
+  }
+]

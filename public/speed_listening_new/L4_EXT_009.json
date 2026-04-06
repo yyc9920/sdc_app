@@ -1,0 +1,162 @@
+[
+  {
+    "setId": "L4_EXT_009_set1",
+    "parentSetId": "L4_EXT_009",
+    "theme": "Sociology Seminar — Social Capital",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Let's turn to a concept that has become central to discussions of community wellbeing: social capital.",
+        "korean": "공동체 웰빙 논의에서 핵심이 된 개념인 사회적 자본으로 넘어가봅시다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "The term was popularized by political scientist Robert Putnam in his influential 2000 book, *Bowling Alone*, in which he argued that American civic life was in decline.",
+        "korean": "이 용어는 정치학자 로버트 퍼트남이 영향력 있는 2000년 저서 '나홀로 볼링'에서 대중화했습니다.",
+        "properNounIndices": [
+          7,
+          8,
+          14,
+          15,
+          21
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Social capital refers to the networks of relationships among people who live and work in a particular society, enabling that society to function effectively.",
+        "korean": "사회적 자본은 특정 사회에서 살고 일하는 사람들 간의 관계 네트워크를 말합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Think of it as the glue that holds communities together.",
+        "korean": "공동체를 하나로 묶는 접착제라고 생각하면 됩니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "It includes things like trust between neighbors, participation in local organizations, voter turnout, and the general willingness of people to cooperate for mutual benefit.",
+        "korean": "이웃 간의 신뢰, 지역 단체 참여, 투표율 같은 것들이 포함됩니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '사회적 자본' mean in English?",
+      "options": [
+        "generational change",
+        "suburban sprawl",
+        "social capital",
+        "bonding social capital"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L4_EXT_009_set2",
+    "parentSetId": "L4_EXT_009",
+    "theme": "Sociology Seminar — Social Capital",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Putnam distinguished between two types of social capital. Bonding social capital refers to the strong ties within homogeneous groups — your family, your close friends, your ethnic community.",
+        "korean": "퍼트남은 두 유형의 사회적 자본을 구분했습니다. 결속형 사회적 자본은 동질적 집단 내의 강한 유대를 말합니다.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 6,
+        "english": "These bonds provide emotional support, a sense of belonging, and concrete assistance in times of need. But bonding capital can also be exclusive and insular.",
+        "korean": "이런 유대는 감정적 지지, 소속감, 위기 시 구체적 도움을 제공합니다.",
+        "properNounIndices": [
+          16
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Bridging social capital, by contrast, refers to the weaker but broader ties that connect people across social divides — different ages, races, classes, and backgrounds.",
+        "korean": "반면 가교형 사회적 자본은 사회적 분열을 넘어 사람들을 연결하는 약하지만 넓은 유대를 말합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "These connections are less emotionally intense, but they're incredibly valuable for accessing new information, opportunities, and perspectives.",
+        "korean": "이런 연결은 감정적으로 덜 강렬하지만, 새로운 정보와 기회에 접근하는 데 매우 가치 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Putnam's central thesis was that both forms of social capital had been declining in the United States since the 1960s.",
+        "korean": "퍼트남의 핵심 논지는 두 형태의 사회적 자본이 1960년대 이후 미국에서 감소해왔다는 것이었습니다.",
+        "properNounIndices": [
+          15,
+          16
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '폐쇄적인, 고립된' mean in English?",
+      "options": [
+        "bonding social capital",
+        "generational change",
+        "bridging social capital",
+        "insular"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L4_EXT_009_set3",
+    "parentSetId": "L4_EXT_009",
+    "theme": "Sociology Seminar — Social Capital",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "Fewer Americans were joining community organizations, attending church, participating in local politics, or even having dinner with their neighbors.",
+        "korean": "더 적은 미국인이 지역 단체에 가입하고, 교회에 다니고, 지역 정치에 참여하고 있었습니다.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 11,
+        "english": "He famously noted that while more Americans were bowling than ever before, they were bowling alone — without the organized leagues that had once served as a source of social connection.",
+        "korean": "유명하게도 그는 미국인들이 그 어느 때보다 더 많이 볼링을 치지만 혼자서 치고 있다고 지적했습니다.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 12,
+        "english": "The causes of this decline are debated. Putnam pointed to suburban sprawl, television, generational change, and the increasing demands of work.",
+        "korean": "이 쇠퇴의 원인에 대해서는 논쟁이 있습니다. 퍼트남은 교외 확산, 텔레비전, 세대 변화를 지적했어요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 13,
+        "english": "More recent scholars have added social media to that list — arguing that online connections may create an illusion of community without providing the real benefits of face-to-face interaction.",
+        "korean": "최근 학자들은 소셜 미디어를 그 목록에 추가했습니다 — 온라인 연결이 공동체의 환상을 만들 수 있다고 주장하면서요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '사회적 자본' mean in English?",
+      "options": [
+        "illusion of community",
+        "generational change",
+        "social capital",
+        "insular"
+      ],
+      "answer": 2
+    }
+  }
+]

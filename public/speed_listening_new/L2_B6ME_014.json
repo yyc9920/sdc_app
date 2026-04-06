@@ -1,0 +1,414 @@
+[
+  {
+    "setId": "L2_B6ME_014_set1",
+    "parentSetId": "L2_B6ME_014",
+    "theme": "Learning a new food culture",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hello. This is 6 Minute English from BBC Learning English. I'm Neil.",
+        "korean": "안녕하세요. 6 Minute English입니다. 저는 닐이에요.",
+        "properNounIndices": [
+          1,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "id": 1,
+        "english": "And I'm Beth.",
+        "korean": "저는 베스입니다.",
+        "properNounIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Every country has its own favourite foods. So, when people leave home and move to a different country, getting used to the new food there can be a surprise.",
+        "korean": "모든 나라에 고유한 음식이 있어요. 집을 떠나 다른 나라로 이사하면, 새 음식에 적응하는 거죠.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Food can have strange-sounding names. If you know what a toad is, it's an animal, very similar to a frog, you might be surprised to hear that a famous English meal is 'toad-in-the-hole'. Don't worry though, it's made with sausages, not toads!",
+        "korean": "음식에는 이상하게 들리는 이름이 있을 수 있습니다.",
+        "properNounIndices": [
+          5,
+          29,
+          33
+        ]
+      },
+      {
+        "id": 4,
+        "english": "In this programme, we're exploring people's first impressions of a new culture through its food.",
+        "korean": "이 프로그램에서 새로운 문화에 대한 첫인상을 음식을 통해 탐구합니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '처음부터, 맨 밑바닥부터' mean in English?",
+      "options": [
+        "from scratch",
+        "staple",
+        "trial and error",
+        "haven't the faintest idea"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_B6ME_014_set2",
+    "parentSetId": "L2_B6ME_014",
+    "theme": "Learning a new food culture",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "We'll be hearing how two women, one a refugee, the other a dietitian, adapted to the food of their new home. And, as usual, we'll be learning some useful new vocabulary too.",
+        "korean": "두 여성이 새 고향의 음식에 어떻게 적응했는지 들어볼 거예요. 한 명은 난민이고 다른 한 명은 영양사예요.",
+        "properNounIndices": [
+          21
+        ]
+      },
+      {
+        "id": 6,
+        "english": "But first, I have a question for you, Neil. A British summer wouldn't be complete without a traditional 'cream tea' – scones served with cream and jam. But why are cream teas controversial?",
+        "korean": "먼저 닐에게 질문이 있어요.",
+        "properNounIndices": [
+          2,
+          8,
+          9,
+          10,
+          27
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Is it because: a) they're incredibly expensive? b) people disagree about whether cream or jam goes on first? or c) the recipe was originally stolen from the French?",
+        "korean": "a) 엄청 비싸서? b) 크림이 먼저인지 잼이 먼저인지 의견이 다르기 때문?",
+        "properNounIndices": [
+          27
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Hmm, I think it's b) people disagree about whether cream or jam goes on first.",
+        "korean": "음, b) 크림이 먼저인지 잼이 먼저인지 의견이 다르기 때문이라고 생각해요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 9,
+        "english": "OK, we'll find out later. Now, our first story involves Natalia, a Ukrainian refugee who arrived in the Netherlands.",
+        "korean": "나중에 알아볼게요.",
+        "properNounIndices": [
+          5,
+          10,
+          12,
+          18
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '전혀 모르다' mean in English?",
+      "options": [
+        "comfort zone",
+        "staple",
+        "haven't the faintest idea",
+        "adapt"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_B6ME_014_set3",
+    "parentSetId": "L2_B6ME_014",
+    "theme": "Learning a new food culture",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "After struggling to find the Ukrainian ingredients she used at home, Natalia started a cooking business using Dutch ingredients. Here she explains to BBC World Service programme, The Food Chain:",
+        "korean": "집에서 쓰던 우크라이나 재료를 찾느라 고생한 후에요.",
+        "properNounIndices": [
+          5,
+          11,
+          17,
+          19,
+          23,
+          24,
+          25,
+          27,
+          28,
+          29
+        ]
+      },
+      {
+        "id": 11,
+        "english": "It was a comfort zone that I left behind. So, in the beginning it was difficult to adapt. I needed to adapt to local foods.",
+        "korean": "제가 두고 온 안락한 영역이었어요. 처음에는 적응하기 어려웠습니다.",
+        "properNounIndices": [
+          6,
+          9,
+          18
+        ]
+      },
+      {
+        "id": 12,
+        "english": "Here, they don't have some of the staples we had in Ukraine, ingredients are different, and so you start working with local foods, find replacements, cook with what you have.",
+        "korean": "여기에는 우크라이나에서 먹던 기본 식재료 중 일부가 없어요.",
+        "properNounIndices": [
+          11
+        ]
+      },
+      {
+        "id": 13,
+        "english": "At first, Natalia felt out of her comfort zone, a familiar situation in which someone feels secure and in control. She had to adapt to her new life in the Netherlands, she had to change in order to succeed in her new situation.",
+        "korean": "처음에 나탈리아는 안락한 영역을 벗어났다고 느꼈습니다.",
+        "properNounIndices": [
+          2,
+          20,
+          30
+        ]
+      },
+      {
+        "id": 14,
+        "english": "Some of the staple ingredients Natalia used in Ukraine weren't available in the Netherlands.",
+        "korean": "나탈리아가 우크라이나에서 쓰던 기본 재료 중 일부가 네덜란드에서는 없었습니다.",
+        "properNounIndices": [
+          5,
+          8,
+          13
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '적응하다' mean in English?",
+      "options": [
+        "adapt",
+        "staple",
+        "comfort zone",
+        "from scratch"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_B6ME_014_set4",
+    "parentSetId": "L2_B6ME_014",
+    "theme": "Learning a new food culture",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "A staple is a basic and important type of food that is regularly eaten by a large portion of the population.",
+        "korean": "'staple'은 기본적이고 중요한 음식으로, 정기적으로 먹는 것입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 16,
+        "english": "So, Natalia adapted her recipes, replacing Ukrainian with Dutch ingredients to create a new kind of cooking which her customers loved.",
+        "korean": "나탈리아는 우크라이나 재료를 네덜란드 재료로 대체하며 레시피를 적응시켰습니다.",
+        "properNounIndices": [
+          1,
+          6,
+          8
+        ]
+      },
+      {
+        "id": 17,
+        "english": "Our second story involves Rachel Winter-Roach, who left her home in England to work on the sunny island of Tobago, in the southern Caribbean. Here, Rachel explains some of the food challenges she faced to BBC World Service programme, The Food Chain:",
+        "korean": "두 번째 이야기는 영국을 떠나 카리브해 토바고 섬에서 일하러 간 레이첼 윈터로치입니다.",
+        "properNounIndices": [
+          4,
+          5,
+          11,
+          19,
+          23,
+          24,
+          25,
+          35,
+          36,
+          37,
+          39,
+          40,
+          41
+        ]
+      },
+      {
+        "id": 18,
+        "english": "When I came here, I hadn't the faintest idea what to do with a dasheen, for example, or what to do with all these amazing fruits. So, I literally had to learn from scratch. But that was trial and error.",
+        "korean": "여기 왔을 때, 예를 들어 다신을 어떻게 하는지 전혀 몰랐어요.",
+        "properNounIndices": [
+          1,
+          4,
+          26,
+          27,
+          34
+        ]
+      },
+      {
+        "id": 19,
+        "english": "Rachel says she hadn't the faintest idea about Tobagan food, meaning she knew nothing about it. She had to learn from scratch, meaning to start from the very beginning with no previous experience.",
+        "korean": "레이첼은 토바고 음식에 대해 전혀 몰랐다고 합니다. 처음부터 배워야 했어요.",
+        "properNounIndices": [
+          8,
+          16
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '적응하다' mean in English?",
+      "options": [
+        "adapt",
+        "haven't the faintest idea",
+        "staple",
+        "trial and error"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_B6ME_014_set5",
+    "parentSetId": "L2_B6ME_014",
+    "theme": "Learning a new food culture",
+    "level": 6,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "Rachel adapted by adding Caribbean spices and herbs, or seasoning, to food she already knew.",
+        "korean": "레이첼은 이미 아는 음식에 카리브해 향신료와 허브, 즉 시즈닝을 추가하며 적응했습니다.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 21,
+        "english": "It took time for Rachel to develop her seasoning skills, mainly through trial and error - a way of solving problems by trying a number of different methods and learning from the mistakes you make along the way.",
+        "korean": "레이첼이 양념 기술을 발전시키는 데 시간이 걸렸고, 주로 시행착오를 통해서였습니다.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 22,
+        "english": "Whether you're fleeing war, starting a new job, or enjoying a cream tea, it seems there's lots to learn about a place from its food, including Britain.",
+        "korean": "전쟁을 피해 떠나든, 새 직장을 시작하든, 크림 티를 즐기든요.",
+        "properNounIndices": [
+          26
+        ]
+      },
+      {
+        "id": 23,
+        "english": "So, I think it's time to reveal the answer to her question, Beth. Why is the traditional British cream tea controversial?",
+        "korean": "답을 공개할 시간입니다.",
+        "properNounIndices": [
+          1,
+          12,
+          13,
+          17
+        ]
+      },
+      {
+        "id": 24,
+        "english": "Well, I guessed it was because people disagree about whether cream or jam should go on the scone first.",
+        "korean": "크림이 먼저인지 잼이 먼저인지 의견이 다르기 때문이라고 추측했어요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '주식, 기본 식품' mean in English?",
+      "options": [
+        "comfort zone",
+        "from scratch",
+        "trial and error",
+        "staple"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L2_B6ME_014_set6",
+    "parentSetId": "L2_B6ME_014",
+    "theme": "Learning a new food culture",
+    "level": 6,
+    "setNumber": 6,
+    "sentences": [
+      {
+        "id": 25,
+        "english": "Which was the correct answer. And anyone who says it's jam first is just wrong! OK, let's recap the vocabulary we've learned in this programme, starting with comfort zone, a situation in which you feel comfortable and in control.",
+        "korean": "정답이었습니다.",
+        "properNounIndices": [
+          5,
+          15
+        ]
+      },
+      {
+        "id": 26,
+        "english": "To adapt means to change so as to successfully fit in with a new situation.",
+        "korean": "'adapt'는 새로운 상황에 성공적으로 적응하도록 변하는 것입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 27,
+        "english": "A staple is a basic and important type of food that is regularly eaten.",
+        "korean": "'staple'은 기본적이고 중요한 음식으로, 정기적으로 먹는 것입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 28,
+        "english": "Haven't the faintest idea means to know nothing about something.",
+        "korean": "'haven't the faintest idea'는 뭔가에 대해 전혀 모른다는 뜻입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 29,
+        "english": "From scratch means from the very beginning with no previous experience.",
+        "korean": "'from scratch'는 이전 경험 없이 맨 처음부터라는 뜻입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 30,
+        "english": "And finally, trial and error is a way of solving problems by trying different methods and learning from mistakes. Once again, our six minutes are up. Bye for now!",
+        "korean": "마지막으로, '시행착오'는 다양한 방법을 시도하고 실수에서 배우며 문제를 해결하는 방법입니다.",
+        "properNounIndices": [
+          19,
+          26
+        ]
+      },
+      {
+        "id": 31,
+        "english": "Bye!",
+        "korean": "안녕!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '처음부터, 맨 밑바닥부터' mean in English?",
+      "options": [
+        "haven't the faintest idea",
+        "trial and error",
+        "from scratch",
+        "adapt"
+      ],
+      "answer": 2
+    }
+  }
+]

@@ -1,0 +1,226 @@
+[
+  {
+    "setId": "L2_INT_001_set1",
+    "parentSetId": "L2_INT_001",
+    "theme": "Library Hours Change",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Effective next semester, the Hartwell University Main Library will extend its operating hours on weekdays.",
+        "korean": "다음 학기부터, 하트웰 대학교 메인 도서관이 평일 운영 시간을 연장합니다.",
+        "properNounIndices": [
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "id": 1,
+        "english": "The library will now remain open until midnight, two hours later than the current closing time of 10:00 p.m.",
+        "korean": "도서관은 이제 현재 폐관 시간인 밤 10시보다 2시간 늦은 자정까지 열립니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "This change was made in response to student requests for more study time during final examination periods.",
+        "korean": "이 변경은 기말 시험 기간 동안 더 많은 공부 시간을 원하는 학생들의 요청에 응답하여 이루어졌습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "The extended hours will apply Monday through Thursday.",
+        "korean": "연장된 시간은 월요일부터 목요일까지 적용됩니다.",
+        "properNounIndices": [
+          5,
+          7
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Friday and weekend hours will remain unchanged.",
+        "korean": "금요일과 주말 시간은 변경 없이 유지됩니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Library Hours Change",
+        "Mandatory Advising Sessions",
+        "Student Parking Fee Increase",
+        "Campus Café Relocation"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_INT_001_set2",
+    "parentSetId": "L2_INT_001",
+    "theme": "Library Hours Change",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Students are encouraged to use the library's quiet study rooms, which will be available during all operating hours.",
+        "korean": "학생들은 모든 운영 시간 동안 이용 가능한 도서관 조용한 학습실을 이용하시기 바랍니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Did you see the notice about the library hours?",
+        "korean": "도서관 시간에 대한 공지 봤어?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Yeah, I just read it. Honestly, I'm pretty happy about it.",
+        "korean": "응, 방금 읽었어. 솔직히, 꽤 기뻐.",
+        "properNounIndices": [
+          1,
+          5,
+          6
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Really? Why?",
+        "korean": "정말? 왜?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 9,
+        "english": "Well, I always study late, and the 10 o'clock closing time always felt too early.",
+        "korean": "음, 나는 항상 늦게까지 공부하는데, 10시 폐관은 항상 너무 이르게 느껴졌어.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Library Hours Change",
+        "Mandatory Advising Sessions",
+        "Campus Café Relocation",
+        "Student Parking Fee Increase"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_INT_001_set3",
+    "parentSetId": "L2_INT_001",
+    "theme": "Library Hours Change",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "I'd just be getting into a good focus zone and then have to pack up.",
+        "korean": "막 집중이 잘 되려는데 짐을 싸야 했거든.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "Two more hours is going to make a huge difference for me.",
+        "korean": "2시간 더 늘어나면 나한테는 엄청난 차이가 될 거야.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "I guess that makes sense. I usually finish before 10, but I know a lot of people who struggle with that.",
+        "korean": "그게 맞는 말인 것 같아. 나는 보통 10시 전에 끝나지만, 그것 때문에 힘들어하는 사람들을 많이 알아.",
+        "properNounIndices": [
+          0,
+          5,
+          11
+        ]
+      },
+      {
+        "id": 13,
+        "english": "Exactly. And they're keeping the quiet rooms open the whole time, which is great.",
+        "korean": "맞아. 그리고 조용한 방도 내내 열어둔대, 그건 좋다.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 14,
+        "english": "The dorms get so noisy at night — there's no way I can concentrate there.",
+        "korean": "기숙사는 밤에 너무 시끄러워져서 — 거기서는 도저히 집중할 수가 없어.",
+        "properNounIndices": [
+          11
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Student Parking Fee Increase",
+        "Library Hours Change",
+        "Campus Café Relocation",
+        "Mandatory Advising Sessions"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L2_INT_001_set4",
+    "parentSetId": "L2_INT_001",
+    "theme": "Library Hours Change",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "That's a good point. I live off campus, so the commute is my issue.",
+        "korean": "좋은 지적이야. 나는 캠퍼스 밖에 살아서, 통학이 문제야.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 16,
+        "english": "But I guess if the library is open later, I might be able to stay after my night class instead of driving home and coming back.",
+        "korean": "하지만 도서관이 더 늦게까지 열면, 집에 갔다 다시 오는 대신 야간 수업 후에 머무를 수 있을 것 같아.",
+        "properNounIndices": [
+          1,
+          9
+        ]
+      },
+      {
+        "id": 17,
+        "english": "See? It works for more people than you'd think. I'm glad the university actually listened to the feedback.",
+        "korean": "봐? 생각보다 더 많은 사람들에게 도움이 돼. 대학이 실제로 피드백을 들어줘서 기쁘다.",
+        "properNounIndices": [
+          1,
+          9
+        ]
+      },
+      {
+        "id": 18,
+        "english": "The man expresses his opinion about the change announced in the notice. State his opinion and explain the reasons he gives for holding that opinion.",
+        "korean": "남자가 공지에서 발표된 변경에 대한 의견을 표현합니다. 그의 의견을 진술하고 그 의견을 갖는 이유를 설명하세요.",
+        "properNounIndices": [
+          12
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Library Hours Change",
+        "Campus Café Relocation",
+        "Student Parking Fee Increase",
+        "Mandatory Advising Sessions"
+      ],
+      "answer": 0
+    }
+  }
+]

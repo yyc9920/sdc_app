@@ -1,0 +1,319 @@
+[
+  {
+    "setId": "L4_LEC_003_set1",
+    "parentSetId": "L4_LEC_003",
+    "theme": "History — The Columbian Exchange",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Listen to part of a lecture in a world history class.",
+        "korean": "세계사 수업 강의의 일부를 들으세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "One of the most significant events in modern history — and one that often doesn't receive the attention it deserves in standard history courses — is something historians call the Columbian Exchange.",
+        "korean": "근대 역사에서 가장 중요한 사건 중 하나 — 그리고 표준 역사 과정에서 마땅한 관심을 종종 받지 못하는 것 — 는 역사학자들이 콜럼버스의 교환이라 부르는 것입니다.",
+        "properNounIndices": [
+          30,
+          31
+        ]
+      },
+      {
+        "id": 2,
+        "english": "This refers to the widespread transfer of plants, animals, culture, human populations, technology, and diseases between the Americas and the Old World — Europe, Africa, and Asia — following Columbus's voyage in 1492.",
+        "korean": "이것은 1492년 콜럼버스의 항해 이후 아메리카 대륙과 구세계 — 유럽, 아프리카, 아시아 — 사이의 식물, 동물, 문화, 인구, 기술, 질병의 광범위한 이동을 가리킵니다.",
+        "properNounIndices": [
+          17,
+          20,
+          21,
+          23,
+          24,
+          26,
+          29
+        ]
+      },
+      {
+        "id": 3,
+        "english": "The scale of this exchange was unprecedented.",
+        "korean": "이 교환의 규모는 전례 없는 것이었습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "On one side, the Americas gave the Old World crops that would fundamentally transform global agriculture and population patterns.",
+        "korean": "한쪽에서, 아메리카 대륙은 구세계에 세계 농업과 인구 패턴을 근본적으로 변혁할 작물을 주었습니다.",
+        "properNounIndices": [
+          4,
+          7,
+          8
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '정복 또는 지배하에 놓이는 것' mean in English?",
+      "options": [
+        "immunity",
+        "blight",
+        "subjugation",
+        "unprecedented"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L4_LEC_003_set2",
+    "parentSetId": "L4_LEC_003",
+    "theme": "History — The Columbian Exchange",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Maize, or corn, became a staple crop across Africa and parts of Europe and Asia.",
+        "korean": "옥수수는 아프리카 전역과 유럽 및 아시아 일부에서 주요 작물이 되었습니다.",
+        "properNounIndices": [
+          8,
+          12,
+          14
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Potatoes became so central to the diet of Ireland that a potato blight in the 1840s caused a catastrophic famine that killed a million people and caused another million to emigrate.",
+        "korean": "감자는 아일랜드 식단에 매우 핵심적이 되어서 1840년대 감자 역병이 백만 명이 죽고 또 백만 명이 이민을 떠난 참혹한 기근을 일으켰습니다.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Tomatoes, which are now inseparable from Italian cuisine, came from the Americas.",
+        "korean": "현재 이탈리아 요리에서 빼놓을 수 없는 토마토는 아메리카 대륙에서 왔습니다.",
+        "properNounIndices": [
+          6,
+          11
+        ]
+      },
+      {
+        "id": 8,
+        "english": "So did cacao — chocolate.",
+        "korean": "카카오 — 초콜릿도 마찬가지입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Peppers, sweet potatoes, squash, and tobacco were all New World crops that changed Old World economies and cultures.",
+        "korean": "고추, 고구마, 호박, 담배는 모두 구세계의 경제와 문화를 변화시킨 신세계 작물이었습니다.",
+        "properNounIndices": [
+          8,
+          9,
+          13,
+          14
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '식물을 급속히 죽이는 질병' mean in English?",
+      "options": [
+        "blight",
+        "demographic collapse",
+        "subjugation",
+        "immunity"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L4_LEC_003_set3",
+    "parentSetId": "L4_LEC_003",
+    "theme": "History — The Columbian Exchange",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "In the other direction, Europeans brought to the Americas crops like wheat, rice, sugarcane, and coffee.",
+        "korean": "반대 방향에서, 유럽인들은 밀, 쌀, 사탕수수, 커피와 같은 작물을 아메리카에 가져왔습니다.",
+        "properNounIndices": [
+          4,
+          8
+        ]
+      },
+      {
+        "id": 11,
+        "english": "They also brought horses, cattle, pigs, and sheep — none of which existed in the Western Hemisphere before contact.",
+        "korean": "그들은 또한 말, 소, 돼지, 양을 가져왔는데 — 이 중 어느 것도 접촉 이전 서반구에 존재하지 않았습니다.",
+        "properNounIndices": [
+          15,
+          16
+        ]
+      },
+      {
+        "id": 12,
+        "english": "The introduction of the horse, in particular, had a massive impact on the cultures of Native peoples on the Great Plains, completely transforming their patterns of hunting and warfare.",
+        "korean": "특히 말의 도입은 대평원 원주민 문화에 거대한 영향을 미쳐, 그들의 수렵과 전쟁 방식을 완전히 변혁시켰습니다.",
+        "properNounIndices": [
+          15,
+          19,
+          20
+        ]
+      },
+      {
+        "id": 13,
+        "english": "But the most devastating component of the Columbian Exchange was the transfer of disease — and this flow was almost entirely one-directional.",
+        "korean": "하지만 콜럼버스의 교환에서 가장 파괴적인 요소는 질병의 이동이었으며 — 이 흐름은 거의 완전히 일방적이었습니다.",
+        "properNounIndices": [
+          7,
+          8
+        ]
+      },
+      {
+        "id": 14,
+        "english": "European diseases like smallpox, measles, and influenza were brought to populations in the Americas that had no prior exposure and therefore no immunity.",
+        "korean": "천연두, 홍역, 독감과 같은 유럽의 질병들이 이전 노출이 없었고 따라서 면역력이 없었던 아메리카 인구에게 전파되었습니다.",
+        "properNounIndices": [
+          13
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '기본 식량이 되는 핵심 작물' mean in English?",
+      "options": [
+        "Columbian Exchange",
+        "subjugation",
+        "unprecedented",
+        "staple crop"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L4_LEC_003_set4",
+    "parentSetId": "L4_LEC_003",
+    "theme": "History — The Columbian Exchange",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "The results were catastrophic.",
+        "korean": "그 결과는 참혹했습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 16,
+        "english": "Historians estimate that between 50% and 90% of the indigenous population of the Americas died from disease within the first century of European contact.",
+        "korean": "역사학자들은 유럽인 접촉 첫 세기 이내에 아메리카 원주민 인구의 50%에서 90%가 질병으로 사망한 것으로 추정합니다.",
+        "properNounIndices": [
+          13,
+          22
+        ]
+      },
+      {
+        "id": 17,
+        "english": "Some regions lost nearly their entire populations.",
+        "korean": "일부 지역은 거의 전체 인구를 잃었습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
+        "english": "This demographic collapse had enormous consequences.",
+        "korean": "이 인구학적 붕괴는 엄청난 결과를 낳았습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 19,
+        "english": "It created labor shortages that European colonizers addressed by establishing the Atlantic slave trade, forcibly relocating millions of Africans to work plantations in the Americas.",
+        "korean": "이것은 유럽 식민자들이 대서양 노예 무역을 설립하여 수백만 명의 아프리카인을 아메리카의 농장에서 일하도록 강제 이주시킴으로써 해결한 노동력 부족을 만들었습니다.",
+        "properNounIndices": [
+          5,
+          11,
+          18,
+          24
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '1492년 이후 신세계와 구세계 간의 대규모 생물학적·문화적 교류' mean in English?",
+      "options": [
+        "immunity",
+        "Columbian Exchange",
+        "subjugation",
+        "blight"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L4_LEC_003_set5",
+    "parentSetId": "L4_LEC_003",
+    "theme": "History — The Columbian Exchange",
+    "level": 6,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "So the Columbian Exchange didn't just reshape agriculture and biology — it set in motion a chain of events that determined the structure of the modern world.",
+        "korean": "그래서 콜럼버스의 교환은 단지 농업과 생물학을 재편한 것이 아니라 — 현대 세계의 구조를 결정한 일련의 사건들을 촉발시켰습니다.",
+        "properNounIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "id": 21,
+        "english": "Now, the term 'exchange' can sound neutral — balanced, even mutually beneficial.",
+        "korean": "자, '교환'이라는 용어는 중립적으로 — 균형 잡힌, 심지어 상호 유익한 것처럼 들릴 수 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 22,
+        "english": "But historians debate whether that framing is accurate.",
+        "korean": "하지만 역사학자들은 그 프레이밍이 정확한지 논쟁합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 23,
+        "english": "The benefits of the exchange were distributed very unequally.",
+        "korean": "교환의 혜택은 매우 불균등하게 분배되었습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 24,
+        "english": "European nations gained enormously in terms of food, wealth, and global power.",
+        "korean": "유럽 국가들은 식량, 부, 세계적인 힘의 면에서 엄청나게 얻었습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 25,
+        "english": "Indigenous Americans suffered massive population loss and political subjugation.",
+        "korean": "원주민 아메리카인들은 거대한 인구 손실과 정치적 복속을 겪었습니다.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 26,
+        "english": "The Columbian Exchange, more than almost any other single event, explains the shape of the world we live in today.",
+        "korean": "콜럼버스의 교환은 거의 다른 어떤 단일 사건보다도 오늘날 우리가 살고 있는 세계의 모습을 설명합니다.",
+        "properNounIndices": [
+          1,
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '1492년 이후 신세계와 구세계 간의 대규모 생물학적·문화적 교류' mean in English?",
+      "options": [
+        "demographic collapse",
+        "staple crop",
+        "Columbian Exchange",
+        "immunity"
+      ],
+      "answer": 2
+    }
+  }
+]

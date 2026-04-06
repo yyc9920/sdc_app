@@ -1,0 +1,119 @@
+[
+  {
+    "setId": "L2_ELLO_011_set1",
+    "parentSetId": "L2_ELLO_011",
+    "theme": "Mixer #25 — Morning Routine",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I wake up when my alarm goes off, which is usually around 6 AM. The first thing I do is check the news on my phone. Then I take a shower to wake up.",
+        "korean": "알람이 울리면 일어나는데 보통 아침 6시쯤이에요. 가장 먼저 폰으로 뉴스를 확인하고, 잠을 깨려고 샤워해요.",
+        "properNounIndices": [
+          0,
+          13,
+          14,
+          17,
+          26,
+          27
+        ]
+      },
+      {
+        "id": 1,
+        "english": "After that, I'll make toast with cheese and a cup of tea. I'm not a big breakfast person, but toast and tea gets me going.",
+        "korean": "그 다음 치즈 토스트와 차 한 잔을 만들어요. 아침을 많이 먹는 편은 아니지만, 토스트와 차가 하루를 시작하게 해줘요.",
+        "properNounIndices": [
+          2,
+          12
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I usually check the news and weather on my computer first thing. Then I take a shower and get dressed. After that, I do a quick workout — maybe 20 minutes of exercise.",
+        "korean": "보통 가장 먼저 컴퓨터로 뉴스와 날씨를 확인해요. 그리고 샤워하고 옷을 입어요. 그 다음 20분 정도 간단한 운동을 해요.",
+        "properNounIndices": [
+          0,
+          12,
+          13,
+          20,
+          22
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Then I shower again and have some coffee and yogurt. It's a productive morning routine.",
+        "korean": "다시 샤워하고 커피와 요거트를 먹어요. 생산적인 아침 루틴이에요.",
+        "properNounIndices": [
+          1,
+          10
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I wake up around 7:30 AM. The first thing I do is put the kettle on to make tea. Then I'll have some toast with Vegemite — that's very Australian. I take my time in the morning because I like to start my day slowly and not rush.",
+        "korean": "7시 30분쯤 일어나요. 가장 먼저 차를 끓이려고 주전자를 올려요. 그리고 베지마이트 토스트를 먹어요 — 아주 호주적이죠.",
+        "properNounIndices": [
+          0,
+          5,
+          6,
+          9,
+          19,
+          20,
+          25,
+          29,
+          30,
+          38
+        ]
+      },
+      {
+        "id": 5,
+        "english": "I wake up around 7 AM. The first thing I do is open my window to get fresh air in my room. Then I go to the bathroom and take a shower. The shower really helps me wake up and feel ready for the day ahead.",
+        "korean": "아침 7시쯤 일어나요. 가장 먼저 창문을 열어 방에 신선한 공기를 넣어요. 그리고 화장실에 가서 샤워해요.",
+        "properNounIndices": [
+          0,
+          5,
+          6,
+          9,
+          22,
+          23,
+          32
+        ]
+      },
+      {
+        "id": 6,
+        "english": "My morning routine is simple. I take a shower, get dressed, and have a quick breakfast — maybe cereal or toast. I'm not a morning person, so I try to keep things simple and quick. I don't like to rush, but I also don't have much time.",
+        "korean": "아침 루틴은 간단해요. 샤워하고 옷 입고 간단한 아침 — 시리얼이나 토스트 — 을 먹어요. 아침형 인간은 아니에요.",
+        "properNounIndices": [
+          5,
+          21,
+          27,
+          35,
+          41
+        ]
+      },
+      {
+        "id": 7,
+        "english": "My mornings are quite hectic. I have a lot of things to do before I leave the house. I wake up, shower, get dressed, and then I'm rushing to get my kids ready for school. It's always chaotic, but that's just how mornings are for me.",
+        "korean": "아침이 꽤 정신없어요. 집을 나서기 전에 할 일이 많거든요.",
+        "properNounIndices": [
+          5,
+          14,
+          18,
+          26,
+          35
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '알람이 울리다' mean in English?",
+      "options": [
+        "morning person",
+        "workout",
+        "alarm goes off",
+        "gets me going"
+      ],
+      "answer": 2
+    }
+  }
+]

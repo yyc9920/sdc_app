@@ -1,0 +1,135 @@
+[
+  {
+    "setId": "L3_EXT_003_set1",
+    "parentSetId": "L3_EXT_003",
+    "theme": "Podcast Discussion — Work-Life Balance",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "How so?",
+        "korean": "어떻게요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Well, the word \"balance\" implies that work and life are two equal sides of a scale, and you just need to find the middle point. But that's not how it works in practice.",
+        "korean": "'밸런스'라는 단어는 일과 삶이 저울의 동일한 양쪽이고 중간점만 찾으면 된다고 암시하잖아.",
+        "properNounIndices": [
+          25
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Some weeks, work demands eighty percent of your time and energy. Other weeks, your personal life takes priority. It's more like a rhythm than a balance.",
+        "korean": "어떤 주에는 일이 시간과 에너지의 80%를 차지하고, 다른 주에는 개인 생활이 우선이 돼. 균형보다 리듬에 가까워.",
+        "properNounIndices": [
+          11,
+          18
+        ]
+      },
+      {
+        "id": 3,
+        "english": "That's a really good point. I used to beat myself up about not exercising or seeing friends enough during busy work periods. But then I realized — sometimes it's okay to just focus on one thing. The problem comes when the busy period never ends.",
+        "korean": "정말 좋은 지적이야. 예전에는 바쁜 시기에 운동이나 친구를 충분히 못 만나면 스스로를 자책했거든.",
+        "properNounIndices": [
+          5,
+          22,
+          24,
+          36
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Exactly. And I think the other issue is that people feel guilty no matter what they choose. If you leave work early to attend your kid's soccer game, you feel guilty about work.",
+        "korean": "맞아. 또 다른 문제는 사람들이 뭘 선택해도 죄책감을 느낀다는 거야.",
+        "properNounIndices": [
+          1,
+          2,
+          17
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Documentary Narration — The Deep Ocean",
+        "Podcast — Learning a Second Language",
+        "Podcast Discussion — Work-Life Balance",
+        "Geopolitics Analysis — The Thucydides Trap"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L3_EXT_003_set2",
+    "parentSetId": "L3_EXT_003",
+    "theme": "Podcast Discussion — Work-Life Balance",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "If you skip the game to meet a deadline, you feel guilty about your family. It's a lose-lose situation if you think about it that way.",
+        "korean": "아이 경기에 빠지고 마감을 지키면 가족에 대해 죄책감을 느끼지. 어떻게 봐도 지는 상황이야.",
+        "properNounIndices": [
+          15
+        ]
+      },
+      {
+        "id": 6,
+        "english": "So what's the alternative?",
+        "korean": "그럼 대안이 뭐야?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "For me, it's been about setting non-negotiable boundaries. I don't check email after 8 p.m. I block off Sunday mornings for family. And I stopped apologizing for taking my vacation days.",
+        "korean": "나한테는 타협 불가능한 경계를 정하는 거였어. 밤 8시 이후엔 이메일을 안 보고, 일요일 아침은 가족을 위해 비워둬.",
+        "properNounIndices": [
+          8,
+          15,
+          18,
+          22,
+          23
+        ]
+      },
+      {
+        "id": 8,
+        "english": "That last one is so important. People act like using their vacation time is some kind of weakness.",
+        "korean": "그 마지막 것 정말 중요해. 사람들은 휴가를 쓰는 게 마치 약점인 것처럼 행동하잖아.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 9,
+        "english": "Right? It's literally part of your compensation. Use it.",
+        "korean": "맞지? 말 그대로 보상의 일부잖아. 쓰라고.",
+        "properNounIndices": [
+          1,
+          7
+        ]
+      },
+      {
+        "id": 10,
+        "english": "We should put that on a T-shirt.",
+        "korean": "티셔츠에 써야겠다.",
+        "properNounIndices": [
+          6
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Economic Analysis — The Paradox of Thrift",
+        "Podcast — Learning a Second Language",
+        "Podcast Discussion — Work-Life Balance",
+        "Science Documentary — Neuroplasticity"
+      ],
+      "answer": 2
+    }
+  }
+]

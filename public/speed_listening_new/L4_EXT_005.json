@@ -1,0 +1,187 @@
+[
+  {
+    "setId": "L4_EXT_005_set1",
+    "parentSetId": "L4_EXT_005",
+    "theme": "Psychology Lecture — The Bystander Effect",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Let's continue our discussion of social psychology by examining one of the most unsettling findings in the field: the bystander effect. The research on this topic was sparked by a real event.",
+        "korean": "사회심리학 논의를 이어서, 가장 불안한 발견 중 하나인 방관자 효과를 살펴보겠습니다.",
+        "properNounIndices": [
+          21
+        ]
+      },
+      {
+        "id": 1,
+        "english": "In 1964, a young woman named Kitty Genovese was attacked outside her apartment building in New York City.",
+        "korean": "1964년, 키티 제노비즈라는 젊은 여성이 뉴욕의 아파트 건물 밖에서 공격당했습니다.",
+        "properNounIndices": [
+          6,
+          7,
+          15,
+          16,
+          17
+        ]
+      },
+      {
+        "id": 2,
+        "english": "According to initial reports, thirty-eight of her neighbors witnessed the attack, but none of them called the police.",
+        "korean": "초기 보도에 따르면, 이웃 38명이 공격을 목격했지만 아무도 경찰에 신고하지 않았습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Although later investigations revealed that the original account was somewhat exaggerated, the case nonetheless prompted psychologists John Darley and Bibb Latané to investigate why people fail to help in emergencies.",
+        "korean": "후속 조사에서 원래 설명이 다소 과장됐다고 밝혀졌지만, 이 사건은 심리학자들의 연구를 촉발했습니다.",
+        "properNounIndices": [
+          16,
+          17,
+          19,
+          20
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Their findings were counterintuitive. You might expect that the more people who witness an emergency, the more likely someone is to help. But Darley and Latané found the opposite.",
+        "korean": "그들의 발견은 직관에 반했어요. 더 많은 사람이 긴급상황을 목격할수록 누군가 도울 가능성이 높다고 예상하겠지만요.",
+        "properNounIndices": [
+          4,
+          22,
+          23,
+          25
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '피드백 루프, 순환 고리' mean in English?",
+      "options": [
+        "emergency response training",
+        "pluralistic ignorance",
+        "bystander effect",
+        "feedback loop"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L4_EXT_005_set2",
+    "parentSetId": "L4_EXT_005",
+    "theme": "Psychology Lecture — The Bystander Effect",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "As the number of bystanders increases, the probability that any single individual will intervene actually decreases. They called this the bystander effect. Why does this happen?",
+        "korean": "방관자 수가 증가하면, 어떤 한 사람이 개입할 확률이 오히려 줄어듭니다.",
+        "properNounIndices": [
+          16,
+          22
+        ]
+      },
+      {
+        "id": 6,
+        "english": "The researchers identified two key mechanisms. The first is diffusion of responsibility. When multiple people are present, each individual feels less personally responsible for taking action.",
+        "korean": "연구진은 두 가지 핵심 메커니즘을 확인했습니다. 첫 번째는 책임의 분산이에요.",
+        "properNounIndices": [
+          6,
+          12
+        ]
+      },
+      {
+        "id": 7,
+        "english": "The reasoning goes something like: \"Someone else will probably call for help, so I don't need to.\" The second mechanism is pluralistic ignorance.",
+        "korean": "논리는 이런 식이에요: '다른 사람이 아마 도움을 요청할 테니 내가 할 필요 없어.'",
+        "properNounIndices": [
+          5,
+          13,
+          17
+        ]
+      },
+      {
+        "id": 8,
+        "english": "In ambiguous situations, people look to others for cues about how to react.",
+        "korean": "모호한 상황에서 사람들은 다른 사람들에게서 어떻게 반응할지 단서를 찾습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "If everyone else appears calm and unconcerned, each individual interprets the situation as non-threatening — even if it actually is an emergency. These two factors create a dangerous feedback loop.",
+        "korean": "다른 모든 사람이 차분하고 걱정 없어 보이면, 각 개인은 상황을 위협적이지 않다고 해석합니다.",
+        "properNounIndices": [
+          22
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '직관에 반하는' mean in English?",
+      "options": [
+        "feedback loop",
+        "diffusion of responsibility",
+        "confederates",
+        "counterintuitive"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L4_EXT_005_set3",
+    "parentSetId": "L4_EXT_005",
+    "theme": "Psychology Lecture — The Bystander Effect",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "Everyone is waiting for someone else to act, and everyone is interpreting everyone else's inaction as evidence that action isn't needed.",
+        "korean": "모두가 다른 사람이 행동하길 기다리고, 모두의 무행동을 행동이 필요 없다는 증거로 해석합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "Darley and Latané tested this in a series of now-classic experiments. In one study, participants were placed in a room that gradually filled with smoke.",
+        "korean": "달리와 라타네는 현재 고전이 된 일련의 실험으로 이를 검증했습니다.",
+        "properNounIndices": [
+          2,
+          11
+        ]
+      },
+      {
+        "id": 12,
+        "english": "When alone, seventy-five percent of participants reported the smoke within two minutes.",
+        "korean": "혼자 있을 때 75%의 참가자가 2분 이내에 연기를 신고했습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
+        "english": "But when placed with two confederates who deliberately ignored the smoke, only ten percent of participants reported it. The practical implications are significant.",
+        "korean": "하지만 의도적으로 연기를 무시하는 2명의 협조자와 함께 있을 때, 10%만이 신고했습니다.",
+        "properNounIndices": [
+          18
+        ]
+      },
+      {
+        "id": 14,
+        "english": "Emergency response training now commonly teaches people to break the bystander effect by pointing directly at a specific individual and giving a clear instruction — \"You, in the red jacket, call 911.\" This eliminates the diffusion of responsibility by assigning the task to a specific person.",
+        "korean": "응급 대응 훈련에서는 이제 특정 개인을 직접 지목하여 방관자 효과를 깨는 법을 가르칩니다.",
+        "properNounIndices": [
+          25,
+          32
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '(실험에서) 공모자, 협력자' mean in English?",
+      "options": [
+        "feedback loop",
+        "confederates",
+        "counterintuitive",
+        "intervene"
+      ],
+      "answer": 1
+    }
+  }
+]

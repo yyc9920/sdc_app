@@ -1,0 +1,99 @@
+[
+  {
+    "setId": "L2_ELLO_008_set1",
+    "parentSetId": "L2_ELLO_008",
+    "theme": "Mixer #18 — Junk Food",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I like potato chips. I really love the salty and crispy taste. I also like chocolates and candy bars. I'm not very disciplined about eating healthy. I eat what I want, and junk food is definitely my weakness.",
+        "korean": "감자칩을 좋아해요. 짭짤하고 바삭한 맛을 정말 좋아하고요. 초콜릿과 캔디바도 좋아해요.",
+        "properNounIndices": [
+          0,
+          4,
+          12,
+          19,
+          26,
+          29
+        ]
+      },
+      {
+        "id": 1,
+        "english": "My favorite junk food has to be gummy bears, Starbursts, and Skittles. I just love candy. I like the way they taste and the texture. I eat too much of it, but it makes me happy. Sweets are my weakness.",
+        "korean": "가장 좋아하는 정크푸드는 구미 베어, 스타버스트, 스키틀즈예요. 사탕을 정말 좋아해요.",
+        "properNounIndices": [
+          9,
+          11,
+          12,
+          16,
+          25,
+          36
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I love crisps — that's what we call potato chips in England. I also love chocolate and cakes. I enjoy baking too, which probably means I eat too many cakes. But it's all part of enjoying life, right?",
+        "korean": "감자칩을 좋아해요 — 영국에서는 'crisps'라고 불러요. 초콜릿과 케이크도 좋아해요.",
+        "properNounIndices": [
+          0,
+          11,
+          12,
+          18,
+          25,
+          30
+        ]
+      },
+      {
+        "id": 3,
+        "english": "My favorite junk food is McDonald's breakfast. I love their sausage and egg McMuffin and their hash browns. When I have time, I'll stop there on my way to work. It's not the healthiest, but it tastes so good.",
+        "korean": "가장 좋아하는 정크푸드는 맥도날드 아침이에요. 소시지 에그 맥머핀과 해시브라운을 좋아해요. 시간이 있으면 출근길에 들러요.",
+        "properNounIndices": [
+          5,
+          7,
+          13,
+          18,
+          19,
+          22,
+          30
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I'm a huge junk food fanatic. I love chips and chocolate. I could eat these all day. I try to have some restraint, but it's difficult. My weakness is definitely salty and sweet combinations. Chips with chocolate is the ultimate treat.",
+        "korean": "정크푸드 광이에요. 칩과 초콜릿을 좋아하고 하루 종일 먹을 수 있어요.",
+        "properNounIndices": [
+          6,
+          11,
+          17,
+          26,
+          34
+        ]
+      },
+      {
+        "id": 5,
+        "english": "I try to stay healthy, but I do have my moments. I'll occasionally indulge in fast food or sweets. But I try not to make it a habit. I prefer to eat a balanced diet with occasional treats rather than eating junk food regularly.",
+        "korean": "건강하게 먹으려 하지만, 가끔은 빠질 때가 있어요. 때때로 패스트푸드나 과자를 즐기기도 해요.",
+        "properNounIndices": [
+          0,
+          6,
+          11,
+          19,
+          20,
+          28
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '광팬, 열성가' mean in English?",
+      "options": [
+        "treat",
+        "fanatic",
+        "restraint",
+        "baking"
+      ],
+      "answer": 1
+    }
+  }
+]

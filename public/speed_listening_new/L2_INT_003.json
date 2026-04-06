@@ -1,0 +1,212 @@
+[
+  {
+    "setId": "L2_INT_003_set1",
+    "parentSetId": "L2_INT_003",
+    "theme": "Mandatory Advising Sessions",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Beginning in the fall semester, all undergraduate students will be required to meet with their academic advisor at least once per semester before they are permitted to register for the following term's courses.",
+        "korean": "가을 학기부터 모든 학부생은 다음 학기 수강 신청 전에 학기당 최소 한 번 학업 지도교수를 만나야 합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "These mandatory advising sessions are designed to ensure that students are making appropriate academic progress and are meeting all graduation requirements.",
+        "korean": "이 필수 상담 세션은 학생들이 적절한 학업 진전을 이루고 모든 졸업 요건을 충족하고 있는지 확인하기 위한 것입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Students who do not complete an advising session by the registration deadline will have a hold placed on their account.",
+        "korean": "수강 신청 마감까지 상담을 완료하지 않는 학생은 계정에 정지가 걸립니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Appointments can be scheduled through the university portal.",
+        "korean": "예약은 대학 포털을 통해 잡을 수 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Did you read the new advising policy?",
+        "korean": "새 상담 정책 읽었어?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mandatory Advising Sessions",
+        "Student Parking Fee Increase",
+        "Campus Café Relocation",
+        "Library Hours Change"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_INT_003_set2",
+    "parentSetId": "L2_INT_003",
+    "theme": "Mandatory Advising Sessions",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Yeah. I'm not a fan, honestly.",
+        "korean": "응. 솔직히 별로야.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Really? I actually think it's a good idea.",
+        "korean": "정말? 나는 사실 좋은 생각이라고 봐.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Why? I've been handling my own course registration fine for two years. I don't really need someone to check my choices.",
+        "korean": "왜? 나는 2년간 내 수강 신청을 잘 처리해왔어. 누가 내 선택을 확인할 필요 없어.",
+        "properNounIndices": [
+          1,
+          12
+        ]
+      },
+      {
+        "id": 8,
+        "english": "But not everyone is like you. I know people who signed up for the wrong courses and didn't realize they were missing requirements until junior year.",
+        "korean": "하지만 모두가 너 같지는 않아. 잘못된 과목을 신청하고 3학년이 돼서야 요건을 빠뜨렸다는 걸 깨달은 사람들을 알아.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 9,
+        "english": "It cost them an entire extra semester.",
+        "korean": "한 학기를 통째로 더 다녀야 했어.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Student Parking Fee Increase",
+        "Library Hours Change",
+        "Campus Café Relocation",
+        "Mandatory Advising Sessions"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L2_INT_003_set3",
+    "parentSetId": "L2_INT_003",
+    "theme": "Mandatory Advising Sessions",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "I guess, but forcing everyone to go just because some people make mistakes seems inefficient.",
+        "korean": "그렇긴 한데, 일부가 실수한다고 모두를 강제하는 건 비효율적인 것 같아.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 11,
+        "english": "I'd rather see it be optional.",
+        "korean": "차라리 선택 사항이었으면 좋겠어.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "I think making it optional is the problem — the students who most need guidance are exactly the ones who won't voluntarily make an appointment.",
+        "korean": "선택 사항으로 만드는 게 문제라고 생각해 — 안내가 가장 필요한 학생들이 바로 자발적으로 예약하지 않을 사람들이거든.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 13,
+        "english": "If it's mandatory, everyone gets the support.",
+        "korean": "필수이면, 모두가 지원을 받게 돼.",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "That's a fair point. I just don't want to sit through a meeting where they tell me things I already know.",
+        "korean": "일리 있어. 나는 그냥 이미 아는 것들을 말해주는 미팅에 앉아 있고 싶지 않아.",
+        "properNounIndices": [
+          4,
+          18
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Student Parking Fee Increase",
+        "Campus Café Relocation",
+        "Library Hours Change",
+        "Mandatory Advising Sessions"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L2_INT_003_set4",
+    "parentSetId": "L2_INT_003",
+    "theme": "Mandatory Advising Sessions",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "Maybe you could use it to ask about graduate school requirements or internships?",
+        "korean": "그 시간을 활용해서 대학원 요건이나 인턴십에 대해 물어볼 수도 있잖아?",
+        "properNounIndices": []
+      },
+      {
+        "id": 16,
+        "english": "It doesn't have to just be about your current schedule.",
+        "korean": "현재 시간표에 대한 것만일 필요는 없잖아.",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "Hm. I hadn't thought of it that way.",
+        "korean": "흠. 그런 식으로는 생각 못 했네.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 18,
+        "english": "The woman expresses her opinion about the new advising policy. State her opinion and explain the reasons she gives for holding that opinion.",
+        "korean": "여자가 새 상담 정책에 대한 의견을 표현합니다. 그녀의 의견과 이유를 설명하세요.",
+        "properNounIndices": [
+          10
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Campus Café Relocation",
+        "Student Parking Fee Increase",
+        "Library Hours Change",
+        "Mandatory Advising Sessions"
+      ],
+      "answer": 3
+    }
+  }
+]

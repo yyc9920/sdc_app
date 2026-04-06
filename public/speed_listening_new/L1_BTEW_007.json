@@ -1,0 +1,193 @@
+[
+  {
+    "setId": "L1_BTEW_007_set1",
+    "parentSetId": "L1_BTEW_007",
+    "theme": "Shoehorn something in",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hello and welcome to The English We Speak, where we explain phrases used by fluent English speakers so that you can use them, too! I'm Feifei, and I'm joined by Georgie.",
+        "korean": "안녕하세요.",
+        "properNounIndices": [
+          4,
+          5,
+          6,
+          7,
+          15,
+          24,
+          25,
+          27,
+          30
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Hi Feifei! How are you?",
+        "korean": "안녕하세요.",
+        "properNounIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Very well, thank you. How are you, Georgie?",
+        "korean": "잘 지내세요.",
+        "properNounIndices": [
+          4,
+          7
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I'm pretty good thank you, too.",
+        "korean": "억지로 끼워 넣었습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Feifei, I've actually been reading a book lately and I was really enjoying it, but towards the end, the author just shoehorned in a random side plot that didn't really make sense with the rest of the story - it was quite disappointing.",
+        "korean": "억지로 끼워 넣었습니다.",
+        "properNounIndices": [
+          1,
+          9
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '기대보다 좋지 않은' mean in English?",
+      "options": [
+        "metaphorically",
+        "complicated",
+        "disappointing",
+        "squeeze"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L1_BTEW_007_set2",
+    "parentSetId": "L1_BTEW_007",
+    "theme": "Shoehorn something in",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Oh no, what a shame! Now, you just used the phrase 'shoehorn something in', and that's what we're learning in this programme.",
+        "korean": "그 표현을 사용했습니다.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 6,
+        "english": "It's a verb with a couple of meanings, but I think it'll help our listeners if we explain what the noun 'shoehorn' means first.",
+        "korean": "그 표현을 사용했습니다.",
+        "properNounIndices": [
+          9
+        ]
+      },
+      {
+        "id": 7,
+        "english": "OK, I can do that. A shoehorn is a piece of curved material like plastic or metal that we put in the back of a shoe to help our foot slide into the shoe more easily.",
+        "korean": "신발주걱의 설명입니다.",
+        "properNounIndices": [
+          1,
+          5
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Right. So you could say that it helps to squeeze your foot into a small or tight space. So the verb 'shoehorn something in' means you force something to be included somewhere it doesn't quite fit.",
+        "korean": "작은 공간에 쥐어짜다는 뜻입니다.",
+        "properNounIndices": [
+          1,
+          18
+        ]
+      },
+      {
+        "id": 9,
+        "english": "Yes, so Feifei, if you remember my example at the beginning about the author shoehorning a random plot into the story… That's about forcing ideas and concepts somewhere they don't belong. Let's hear more examples.",
+        "korean": "강제로 끼워 넣는 것입니다.",
+        "properNounIndices": [
+          2,
+          21,
+          31
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '기대보다 좋지 않은' mean in English?",
+      "options": [
+        "disappointing",
+        "shoehorn something in",
+        "squeeze",
+        "complicated"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L1_BTEW_007_set3",
+    "parentSetId": "L1_BTEW_007",
+    "theme": "Shoehorn something in",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "So, metaphorically speaking, it can be about including ideas in places they don't belong. But, it can also be about physical space - fitting larger things in a smaller space. A bit like shoehorning your foot into a shoe.",
+        "korean": "비유적으로 의미합니다.",
+        "properNounIndices": [
+          14,
+          30
+        ]
+      },
+      {
+        "id": 11,
+        "english": "That's right. So, for example, last night I was really surprised that the restaurant was able to shoehorn so many customers in such a small space. OK, let's recap.",
+        "korean": "많은 고객들을 끼워 넣었습니다.",
+        "properNounIndices": [
+          2,
+          7,
+          26
+        ]
+      },
+      {
+        "id": 12,
+        "english": "We learned 'shoehorn something in' which means to force something to be included somewhere it doesn't quite fit or belong.",
+        "korean": "억지로 끼워 넣다는 뜻입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
+        "english": "Remember to check out our website: bbclearningenglish.com for more resources to help you improve your English. Thanks for joining us. Bye!",
+        "korean": "웹사이트를 확인해주세요.",
+        "properNounIndices": [
+          15,
+          16,
+          20
+        ]
+      },
+      {
+        "id": 14,
+        "english": "Bye!",
+        "korean": "안녕!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '신발을 신을 때 사용하는 도구' mean in English?",
+      "options": [
+        "shoehorn something in",
+        "metaphorically",
+        "shoehorn (noun)",
+        "squeeze"
+      ],
+      "answer": 2
+    }
+  }
+]

@@ -1,0 +1,85 @@
+[
+  {
+    "setId": "L4_TAL_001_set1",
+    "parentSetId": "L4_TAL_001",
+    "theme": "It's Not the Product, It's the Person",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I don't know. You think these look better?",
+        "korean": "모르겠어. 이게 더 나아 보여?",
+        "properNounIndices": [
+          0,
+          3
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Not sure they look better.",
+        "korean": "더 나아 보이는지 잘 모르겠어.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I think these look like nursing shoes.",
+        "korean": "이건 간호사 신발 같아 보여.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "To play tennis in. **[Both laugh]**",
+        "korean": "테니스 칠 때 신으면 되겠네. [둘 다 웃음]",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Oh, they're like actual tennis shoes.",
+        "korean": "아, 이건 진짜 테니스화 같네.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Oh, OK. Then, yeah, wear the other ones. *진행자 해설:* \"Like a lot of conversations between married people, what we're talking about is not actually what we're talking about.",
+        "korean": "아, 그래. 그러면 다른 거 신어.",
+        "properNounIndices": [
+          1,
+          2,
+          10
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Here's what we're actually talking about. We have a two-year-old and a four-year-old. My wife has a demanding job where she works till 11 o'clock most nights a week.",
+        "korean": "사실 우리가 진짜 얘기하는 건 이거야. 2살짜리와 4살짜리가 있어. 아내는 일주일 대부분 밤 11시까지 일하는 빡센 직장이 있어.",
+        "properNounIndices": [
+          6,
+          13
+        ]
+      },
+      {
+        "id": 7,
+        "english": "I'm leaving a full-time job with a good salary and benefits for an uncertain future. Our plan, if you can call it that, is to spend down our meager savings, go into debt, and hope it works out.\"",
+        "korean": "안정적인 연봉과 복리후생이 있는 정규직을 떠나 불확실한 미래로 가려고 해. 우리의 계획이라 할 것도 없는 건, 빈약한 저축을 쓰고 빚을 지면서 잘 되길 바라는 거야.",
+        "properNounIndices": [
+          15
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Art and Culture",
+        "It's Not the Product, It's the Person",
+        "This American Life — Episode Guide",
+        "Sports and Exercise"
+      ],
+      "answer": 1
+    }
+  }
+]

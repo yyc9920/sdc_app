@@ -1,0 +1,365 @@
+[
+  {
+    "setId": "L4_LEC_002_set1",
+    "parentSetId": "L4_LEC_002",
+    "theme": "Psychology — The Bystander Effect",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Listen to part of a lecture in a social psychology class.",
+        "korean": "사회심리학 수업 강의의 일부를 들으세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I want to start today with a question.",
+        "korean": "오늘은 질문으로 시작하고 싶습니다.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "If someone collapsed on a crowded city street, do you think someone would help them?",
+        "korean": "만약 누군가 붐비는 도시 거리에서 쓰러지면, 누군가 그들을 도울 거라고 생각하시나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Most people say yes — instinctively.",
+        "korean": "대부분의 사람들은 본능적으로 '예'라고 말합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "But decades of research suggest that the more bystanders there are, the less likely any one of them is to help.",
+        "korean": "하지만 수십 년간의 연구는 구경꾼이 많을수록 그들 중 어떤 한 명이 도울 가능성이 더 낮다는 것을 시사합니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '상식이나 직감과 다른' mean in English?",
+      "options": [
+        "pluralistic ignorance",
+        "counterintuitive",
+        "intervention",
+        "diffusion of responsibility"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L4_LEC_002_set2",
+    "parentSetId": "L4_LEC_002",
+    "theme": "Psychology — The Bystander Effect",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "This is called the bystander effect, and it's one of the most counterintuitive findings in social psychology.",
+        "korean": "이것은 방관자 효과라 불리며, 사회심리학에서 가장 직관에 반하는 발견 중 하나입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "The research on this goes back to the 1960s.",
+        "korean": "이에 대한 연구는 1960년대로 거슬러 올라갑니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "In 1964, a young woman named Kitty Genovese was attacked near her apartment building in New York City.",
+        "korean": "1964년에, 키티 제노비스라는 젊은 여성이 뉴욕시에서 자신의 아파트 건물 근처에서 공격당했습니다.",
+        "properNounIndices": [
+          6,
+          7,
+          15,
+          16,
+          17
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Reports at the time claimed that 38 neighbors witnessed the attack and did nothing.",
+        "korean": "당시 보도는 38명의 이웃이 그 공격을 목격하고 아무것도 하지 않았다고 주장했습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Those reports turned out to be somewhat exaggerated — the real story is more complicated.",
+        "korean": "그 보도들은 다소 과장된 것으로 밝혀졌습니다 — 실제 이야기는 더 복잡합니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '둘 이상의 해석이 가능한' mean in English?",
+      "options": [
+        "diffusion of responsibility",
+        "ambiguous",
+        "intervention",
+        "counterintuitive"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L4_LEC_002_set3",
+    "parentSetId": "L4_LEC_002",
+    "theme": "Psychology — The Bystander Effect",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "But the public outrage over the incident prompted two social psychologists, John Darley and Bibb Latané, to study why people fail to help in emergencies.",
+        "korean": "하지만 이 사건에 대한 공분은 두 사회심리학자, 존 달리와 빕 라타네가 사람들이 왜 긴급 상황에서 도움을 주지 못하는지 연구하도록 자극했습니다.",
+        "properNounIndices": [
+          11,
+          12,
+          14,
+          15
+        ]
+      },
+      {
+        "id": 11,
+        "english": "They ran a series of experiments.",
+        "korean": "그들은 일련의 실험들을 진행했습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "In one, they placed participants in a room alone or with others and then staged an emergency — they pumped smoke under the door.",
+        "korean": "하나의 실험에서, 참가자들을 혼자 또는 다른 사람들과 함께 방에 배치하고 긴급 상황을 연출했습니다 — 문 아래로 연기를 넣은 것이죠.",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
+        "english": "Participants who were alone almost always reported the smoke within a few minutes.",
+        "korean": "혼자였던 참가자들은 거의 항상 몇 분 이내에 연기를 보고했습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "But participants in groups were much less likely to report it — and they waited much longer before doing so.",
+        "korean": "하지만 집단의 참가자들은 보고할 가능성이 훨씬 낮았고 — 그렇게 하기까지 훨씬 더 오래 기다렸습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '많은 사람이 있을 때 개인 책임감이 줄어드는 현상' mean in English?",
+      "options": [
+        "bystander effect",
+        "ambiguous",
+        "counterintuitive",
+        "diffusion of responsibility"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L4_LEC_002_set4",
+    "parentSetId": "L4_LEC_002",
+    "theme": "Psychology — The Bystander Effect",
+    "level": 5,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "Why does this happen?",
+        "korean": "왜 이런 일이 일어날까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 16,
+        "english": "Darley and Latané identified two key mechanisms.",
+        "korean": "달리와 라타네는 두 가지 핵심 메커니즘을 식별했습니다.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 17,
+        "english": "The first is diffusion of responsibility.",
+        "korean": "첫 번째는 책임의 분산입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
+        "english": "When there are many people present, each individual feels less personally responsible for taking action.",
+        "korean": "많은 사람이 있으면, 각 개인은 행동을 취하는 것에 대해 개인적으로 덜 책임감을 느낍니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 19,
+        "english": "If anything goes wrong, the blame — and the responsibility — is shared across the group.",
+        "korean": "만약 무엇이 잘못되더라도, 비난 — 그리고 책임은 — 집단 전체에 공유됩니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '도움을 주기 위해 행동에 나서는 것' mean in English?",
+      "options": [
+        "counterintuitive",
+        "ambiguous",
+        "intervention",
+        "diffusion of responsibility"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L4_LEC_002_set5",
+    "parentSetId": "L4_LEC_002",
+    "theme": "Psychology — The Bystander Effect",
+    "level": 6,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "No single person feels as compelled to act.",
+        "korean": "어떤 한 사람도 행동해야 한다는 강박감을 느끼지 않게 됩니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 21,
+        "english": "The second mechanism is pluralistic ignorance.",
+        "korean": "두 번째 메커니즘은 다원적 무지입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 22,
+        "english": "In an ambiguous situation, people look to others for cues about how to respond.",
+        "korean": "모호한 상황에서, 사람들은 어떻게 반응할지에 대한 단서를 얻기 위해 다른 사람들을 바라봅니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 23,
+        "english": "If no one else seems alarmed, individuals tend to interpret the situation as less serious.",
+        "korean": "만약 다른 아무도 놀라지 않는 것 같으면, 개인들은 상황을 덜 심각한 것으로 해석하는 경향이 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 24,
+        "english": "So everyone in a group looks at everyone else's calm reaction and concludes: 'Well, no one else seems worried, so it must not be that bad.'",
+        "korean": "그래서 집단의 모든 사람이 다른 사람들의 차분한 반응을 보고 결론 내립니다: '음, 다른 아무도 걱정하지 않으니, 그렇게 나쁜 게 아닐 거야.'",
+        "properNounIndices": [
+          13
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '모두가 다른 사람의 반응을 보고 상황을 오판하는 현상' mean in English?",
+      "options": [
+        "pluralistic ignorance",
+        "intervention",
+        "ambiguous",
+        "bystander effect"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L4_LEC_002_set6",
+    "parentSetId": "L4_LEC_002",
+    "theme": "Psychology — The Bystander Effect",
+    "level": 6,
+    "setNumber": 6,
+    "sentences": [
+      {
+        "id": 25,
+        "english": "Meanwhile, everyone else is doing the same thing.",
+        "korean": "한편, 다른 모든 사람도 같은 것을 하고 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 26,
+        "english": "The group ends up being collectively passive even though individually, each person might have been willing to help.",
+        "korean": "개별적으로는 각 사람이 기꺼이 도왔을 수도 있는데도, 집단은 결국 집단적으로 수동적이 됩니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 27,
+        "english": "These findings have important real-world implications.",
+        "korean": "이 발견들은 중요한 현실 세계의 함의를 가지고 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 28,
+        "english": "Emergency responders are trained to counteract the bystander effect by addressing specific individuals in a crowd.",
+        "korean": "긴급 대응자들은 군중에서 특정 개인들을 지목함으로써 방관자 효과에 대응하도록 훈련받습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 29,
+        "english": "Instead of shouting 'Someone call 911!' — which diffuses responsibility across everyone — a trained responder will make direct eye contact and say 'You, in the red jacket — call 911 right now.'",
+        "korean": "'누군가 911에 전화해!'라고 외치는 대신 — 그것은 모두에게 책임을 분산시키므로 — 훈련된 대응자는 직접 눈을 마주치며 '빨간 재킷 입은 분 — 지금 당장 911에 전화하세요'라고 말합니다.",
+        "properNounIndices": [
+          3,
+          23
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '도움을 주기 위해 행동에 나서는 것' mean in English?",
+      "options": [
+        "bystander effect",
+        "ambiguous",
+        "intervention",
+        "counterintuitive"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L4_LEC_002_set7",
+    "parentSetId": "L4_LEC_002",
+    "theme": "Psychology — The Bystander Effect",
+    "level": 6,
+    "setNumber": 7,
+    "sentences": [
+      {
+        "id": 30,
+        "english": "That specificity eliminates the ambiguity and forces an individual to take action.",
+        "korean": "그 구체성은 모호함을 제거하고 개인이 행동을 취하도록 강제합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 31,
+        "english": "It's also worth noting that the bystander effect is not universal.",
+        "korean": "방관자 효과가 보편적이지 않다는 것도 주목할 가치가 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 32,
+        "english": "Research shows it's weaker in communities where people know each other and in situations where the emergency is clearly dangerous rather than ambiguous.",
+        "korean": "연구에 따르면 사람들이 서로를 아는 공동체와 긴급 상황이 모호하기보다 분명히 위험한 상황에서 더 약합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 33,
+        "english": "Cultural factors matter too — studies in different countries have found varying levels of bystander intervention.",
+        "korean": "문화적 요인도 중요합니다 — 다른 나라들에서의 연구들은 다양한 수준의 방관자 개입을 발견했습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 34,
+        "english": "So the effect is real, but it's not fixed or inevitable.",
+        "korean": "그래서 이 효과는 실재하지만, 고정되거나 불가피한 것은 아닙니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '목격자가 많을수록 개인이 도울 가능성이 낮아지는 현상' mean in English?",
+      "options": [
+        "diffusion of responsibility",
+        "pluralistic ignorance",
+        "bystander effect",
+        "intervention"
+      ],
+      "answer": 2
+    }
+  }
+]

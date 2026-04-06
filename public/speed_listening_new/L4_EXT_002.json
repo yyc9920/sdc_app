@@ -1,0 +1,137 @@
+[
+  {
+    "setId": "L4_EXT_002_set1",
+    "parentSetId": "L4_EXT_002",
+    "theme": "TED-Style Talk — The Science of Habits",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Every morning, you wake up and, without thinking, you reach for your phone. You scroll through notifications, check the weather, maybe open social media. You don't decide to do this. It just happens.",
+        "korean": "매일 아침, 일어나서 생각 없이 폰을 집어 들죠.",
+        "properNounIndices": [
+          13,
+          24,
+          30
+        ]
+      },
+      {
+        "id": 1,
+        "english": "That's because it's a habit, and habits are one of the most powerful forces shaping human behavior. Neuroscientists have identified a loop at the core of every habit.",
+        "korean": "그건 습관이기 때문이에요. 습관은 인간 행동을 형성하는 가장 강력한 힘 중 하나입니다.",
+        "properNounIndices": [
+          17
+        ]
+      },
+      {
+        "id": 2,
+        "english": "It has three components: a cue, a routine, and a reward. The cue is the trigger — something that tells your brain to go into automatic mode. The routine is the behavior itself.",
+        "korean": "세 가지 요소가 있어요: 단서, 루틴, 보상이에요. 단서는 방아쇠입니다.",
+        "properNounIndices": [
+          11,
+          27
+        ]
+      },
+      {
+        "id": 3,
+        "english": "And the reward is the benefit your brain receives, which helps it decide whether this particular loop is worth remembering. Here's what makes habits so resilient.",
+        "korean": "보상은 뇌가 받는 이점으로, 이 특정 루프가 기억할 가치가 있는지 결정하는 데 도움을 줍니다.",
+        "properNounIndices": [
+          20
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Once a habit loop is formed, your brain actually reduces its activity during the routine phase. It's essentially on autopilot. This is incredibly efficient — it frees up mental energy for other tasks.",
+        "korean": "습관 루프가 형성되면, 뇌는 루틴 단계에서 실제로 활동을 줄입니다. 본질적으로 자동 조종 모드인 거죠.",
+        "properNounIndices": [
+          16,
+          20
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '중독 회복' mean in English?",
+      "options": [
+        "addiction recovery",
+        "cue, routine, reward",
+        "conscious awareness",
+        "here's the catch"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L4_EXT_002_set2",
+    "parentSetId": "L4_EXT_002",
+    "theme": "TED-Style Talk — The Science of Habits",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "But it also means that habits, once formed, are extremely difficult to break. They're encoded in a part of the brain called the basal ganglia, which operates largely outside of conscious awareness.",
+        "korean": "하지만 한번 형성된 습관이 극도로 깨기 어렵다는 뜻이기도 합니다. 기저핵이라는 뇌 부위에 저장되거든요.",
+        "properNounIndices": [
+          13
+        ]
+      },
+      {
+        "id": 6,
+        "english": "So if habits are so hard to break, how do we change them?",
+        "korean": "습관을 깨기가 그렇게 어렵다면, 어떻게 바꿀 수 있을까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Research suggests that the most effective strategy is not to eliminate the habit, but to replace the routine while keeping the same cue and reward.",
+        "korean": "연구에 따르면, 가장 효과적인 전략은 습관을 없애는 게 아니라 같은 단서와 보상을 유지하면서 루틴을 대체하는 것입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "For example, if stress — the cue — causes you to eat junk food — the routine — for comfort — the reward — you could replace the eating with a five-minute walk, which also provides stress relief.",
+        "korean": "예를 들어 스트레스(단서)로 위안(보상)을 위해 정크푸드를 먹는다면(루틴), 먹는 것을 빠른 산책으로 대체할 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "This might sound simple, but here's the catch: replacement only works consistently when it's paired with belief — the belief that change is possible.",
+        "korean": "간단하게 들릴 수 있지만 함정이 있어요. 대체는 변화가 가능하다는 믿음이 동반될 때만 일관되게 작동합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 10,
+        "english": "Studies on addiction recovery have shown that people who successfully change their habits almost always do so within a supportive community.",
+        "korean": "중독 회복 연구에 따르면, 습관을 성공적으로 바꾼 사람들은 거의 항상 지지하는 공동체 안에서 그렇게 했습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "They need other people to believe in them until they can believe in themselves. So the next time you reach for your phone first thing in the morning, don't judge yourself. Just notice it.",
+        "korean": "스스로를 믿을 수 있을 때까지 다른 사람들이 그들을 믿어줘야 합니다.",
+        "properNounIndices": [
+          14,
+          31
+        ]
+      },
+      {
+        "id": 12,
+        "english": "Awareness is the first step toward change.",
+        "korean": "인식이 변화의 첫 걸음입니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '자동 모드' mean in English?",
+      "options": [
+        "basal ganglia",
+        "autopilot",
+        "cue, routine, reward",
+        "addiction recovery"
+      ],
+      "answer": 1
+    }
+  }
+]

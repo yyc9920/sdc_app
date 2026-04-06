@@ -1,0 +1,56 @@
+[
+  {
+    "setId": "L3_TRES_002_set1",
+    "parentSetId": "L3_TRES_002",
+    "theme": "Daily Life Conversation",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Did the repair shop call you back about your laptop?",
+        "korean": "수리점에서 노트북 건으로 다시 전화 왔어?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Not yet. They said the replacement keyboard would arrive this afternoon.",
+        "korean": "아직이야. 교체 키보드가 오늘 오후에 도착할 거래.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "english": "How are you managing without a laptop?",
+        "korean": "노트북 없이 어떻게 하고 있어?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "The shop lent me one of theirs, so I can keep working. They'll text me when mine's ready.",
+        "korean": "수리점에서 하나 빌려줬어, 그래서 계속 일할 수 있어. 내 거 준비되면 문자 준대.",
+        "properNounIndices": [
+          8,
+          12
+        ]
+      },
+      {
+        "id": 4,
+        "english": "That sounds really convenient.",
+        "korean": "정말 편리하겠다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Campus Announcement",
+        "Academic Talk — Pluralistic Ignorance",
+        "Choose a Response",
+        "Daily Life Conversation"
+      ],
+      "answer": 3
+    }
+  }
+]

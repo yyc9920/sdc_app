@@ -1,0 +1,341 @@
+[
+  {
+    "setId": "L4_LEC_001_set1",
+    "parentSetId": "L4_LEC_001",
+    "theme": "Biology — Bioluminescence",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Listen to part of a lecture in a biology class.",
+        "korean": "생물학 수업 강의의 일부를 들으세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Today I want to discuss bioluminescence — the ability of living organisms to produce and emit light through chemical reactions.",
+        "korean": "오늘 저는 생물발광에 대해 이야기하고자 합니다 — 살아있는 유기체가 화학반응을 통해 빛을 생산하고 방출하는 능력이죠.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
+        "english": "It's a phenomenon most people associate with fireflies or deep-sea creatures, but it's actually far more widespread in nature than most people realize.",
+        "korean": "대부분의 사람들이 반딧불이나 심해 생물과 연관짓는 현상이지만, 실제로는 사람들이 생각하는 것보다 자연에서 훨씬 더 널리 퍼져 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "So, how does it work?",
+        "korean": "그럼, 이것은 어떻게 작동할까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "The basic chemistry involves a molecule called luciferin.",
+        "korean": "기본적인 화학작용은 루시페린이라 불리는 분자를 포함합니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '생물이 화학반응을 통해 빛을 내는 현상' mean in English?",
+      "options": [
+        "colonizing",
+        "bioluminescence",
+        "luciferase",
+        "incandescent"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L4_LEC_001_set2",
+    "parentSetId": "L4_LEC_001",
+    "theme": "Biology — Bioluminescence",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "When luciferin reacts with oxygen, catalyzed by an enzyme called luciferase, it produces light.",
+        "korean": "루시페린이 산소와 반응할 때, 루시퍼레이스라는 효소에 의해 촉매작용을 받아 빛을 생산합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "This reaction is remarkably efficient — almost all of the energy released becomes light, with very little wasted as heat.",
+        "korean": "이 반응은 놀라울 정도로 효율적입니다 — 방출된 에너지의 거의 전부가 빛이 되며, 열로 낭비되는 것은 아주 적습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "For comparison, a regular incandescent light bulb converts only about 5% of its energy to light; the rest becomes heat.",
+        "korean": "비교하자면, 일반 백열전구는 에너지의 약 5%만을 빛으로 변환하고 나머지는 열이 됩니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Bioluminescence is much closer to 100% efficient.",
+        "korean": "생물발광은 100% 효율에 훨씬 더 가깝습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "This is why biologists sometimes call it 'cold light.'",
+        "korean": "이것이 생물학자들이 이것을 때때로 '차가운 빛'이라고 부르는 이유입니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '생물이 화학반응을 통해 빛을 내는 현상' mean in English?",
+      "options": [
+        "anglerfish",
+        "bioluminescence",
+        "luciferase",
+        "luciferin"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L4_LEC_001_set3",
+    "parentSetId": "L4_LEC_001",
+    "theme": "Biology — Bioluminescence",
+    "level": 5,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "Now, why do organisms produce light?",
+        "korean": "자, 유기체들은 왜 빛을 생산할까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "The functions vary widely depending on the species.",
+        "korean": "그 기능은 종에 따라 매우 다양합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "In fireflies, bioluminescence is used for mate attraction.",
+        "korean": "반딧불이의 경우, 생물발광은 짝짓기 유인에 사용됩니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
+        "english": "Each species of firefly has a unique flash pattern — males flash in a specific rhythm, and females respond.",
+        "korean": "반딧불이의 각 종은 고유한 발광 패턴을 가지고 있습니다 — 수컷은 특정 리듬으로 빛을 내고, 암컷이 반응합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "This allows them to find mates of the same species in the dark.",
+        "korean": "이것은 어둠 속에서 같은 종의 짝을 찾을 수 있게 해줍니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '열에 의해 빛을 내는' mean in English?",
+      "options": [
+        "incandescent",
+        "colonizing",
+        "luciferase",
+        "luciferin"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L4_LEC_001_set4",
+    "parentSetId": "L4_LEC_001",
+    "theme": "Biology — Bioluminescence",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "In the deep ocean, where sunlight cannot penetrate, bioluminescence serves several different purposes.",
+        "korean": "태양빛이 도달하지 못하는 심해에서, 생물발광은 여러 다른 목적을 수행합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 16,
+        "english": "Some organisms use it as a defense mechanism.",
+        "korean": "일부 유기체들은 이것을 방어 메커니즘으로 사용합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "When threatened, certain species of squid eject a cloud of bioluminescent fluid, similar to the way other squid eject ink.",
+        "korean": "위협을 받으면, 특정 종의 오징어는 생물발광 액체의 구름을 분출하는데, 이는 다른 오징어가 잉크를 분출하는 것과 유사합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
+        "english": "The flash of light startles predators and allows the squid to escape.",
+        "korean": "빛의 번쩍임은 포식자를 놀라게 하고 오징어가 탈출할 수 있게 해줍니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 19,
+        "english": "Other deep-sea predators use bioluminescence offensively — as a lure.",
+        "korean": "다른 심해 포식자들은 생물발광을 공격적으로 — 미끼로 사용합니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '루시페린의 산화 반응을 촉매하는 효소' mean in English?",
+      "options": [
+        "lure",
+        "anglerfish",
+        "counterillumination",
+        "luciferase"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L4_LEC_001_set5",
+    "parentSetId": "L4_LEC_001",
+    "theme": "Biology — Bioluminescence",
+    "level": 6,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "The anglerfish is perhaps the most famous example.",
+        "korean": "아귀는 아마도 가장 유명한 예일 것입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 21,
+        "english": "The female anglerfish has a modified spine on its head that glows at the tip.",
+        "korean": "암컷 아귀는 머리 위에 끝이 빛나는 변형된 가시를 가지고 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 22,
+        "english": "Smaller fish, attracted to the light in the total darkness of the deep ocean, swim toward it — and directly into the anglerfish's mouth.",
+        "korean": "작은 물고기들은 심해의 완전한 어둠 속에서 빛에 끌려 그것을 향해 헤엄쳐 가다가 — 아귀의 입 안으로 직접 들어갑니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 23,
+        "english": "There's also a fascinating phenomenon called counterillumination.",
+        "korean": "역조명이라 불리는 매혹적인 현상도 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 24,
+        "english": "Some ocean animals produce light on their undersides to match the faint light filtering down from above.",
+        "korean": "일부 바다 동물들은 위에서 아래로 여과되는 희미한 빛에 맞추기 위해 배 아래쪽에 빛을 생산합니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '발광 화학반응에 관여하는 분자' mean in English?",
+      "options": [
+        "counterillumination",
+        "luciferin",
+        "lure",
+        "colonizing"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L4_LEC_001_set6",
+    "parentSetId": "L4_LEC_001",
+    "theme": "Biology — Bioluminescence",
+    "level": 6,
+    "setNumber": 6,
+    "sentences": [
+      {
+        "id": 25,
+        "english": "This makes them effectively invisible to predators looking up from below, because the bioluminescent glow matches the surrounding light and eliminates their silhouette.",
+        "korean": "이것은 아래에서 올려다보는 포식자들에게 그들을 사실상 보이지 않게 만드는데, 생물발광 빛이 주변 빛과 일치하여 윤곽을 제거하기 때문입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 26,
+        "english": "Bioluminescence isn't limited to animals.",
+        "korean": "생물발광은 동물에만 한정되지 않습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 27,
+        "english": "Some species of fungi and bacteria are bioluminescent.",
+        "korean": "일부 곰팡이와 박테리아 종도 생물발광합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 28,
+        "english": "In fact, there are documented cases of bioluminescent bacteria colonizing dead fish and causing them to glow — something that historically led to reports of 'glowing meat,' which confused and frightened people before the biology was understood.",
+        "korean": "사실, 생물발광 박테리아가 죽은 물고기에 서식하여 빛나게 만든 기록된 사례들이 있습니다 — 이것은 역사적으로 생물학이 이해되기 전에 사람들을 혼란스럽고 두렵게 만든 '빛나는 고기' 보고로 이어진 것입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 29,
+        "english": "More recently, scientists have harnessed bioluminescence for research purposes.",
+        "korean": "더 최근에는, 과학자들이 연구 목적으로 생물발광을 활용해 왔습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '빛나는 미끼로 먹이를 유인하는 심해 물고기' mean in English?",
+      "options": [
+        "bioluminescence",
+        "incandescent",
+        "counterillumination",
+        "anglerfish"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L4_LEC_001_set7",
+    "parentSetId": "L4_LEC_001",
+    "theme": "Biology — Bioluminescence",
+    "level": 6,
+    "setNumber": 7,
+    "sentences": [
+      {
+        "id": 30,
+        "english": "Genes that produce luciferase can be inserted into other organisms as biological 'tags.'",
+        "korean": "루시퍼레이스를 생산하는 유전자들은 생물학적 '태그'로서 다른 유기체에 삽입될 수 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 31,
+        "english": "When these tagged cells are active, they literally glow, making them visible under specialized imaging equipment.",
+        "korean": "태그된 세포가 활성화되면, 말 그대로 빛이 나서 전문 영상 장비로 볼 수 있게 됩니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 32,
+        "english": "This has been tremendously useful in cancer research — scientists can track how tumors grow or how cancer cells spread in real time by watching where the glow moves.",
+        "korean": "이것은 암 연구에서 엄청나게 유용했습니다 — 과학자들은 빛이 어디로 움직이는지 관찰함으로써 종양이 어떻게 자라는지, 암세포가 어떻게 퍼지는지를 실시간으로 추적할 수 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 33,
+        "english": "It's a case where a natural phenomenon has become a powerful scientific tool.",
+        "korean": "이것은 자연 현상이 강력한 과학적 도구가 된 사례입니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '발광 화학반응에 관여하는 분자' mean in English?",
+      "options": [
+        "anglerfish",
+        "colonizing",
+        "luciferin",
+        "lure"
+      ],
+      "answer": 2
+    }
+  }
+]

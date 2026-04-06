@@ -1,0 +1,584 @@
+[
+  {
+    "setId": "L4_TED_001_set1",
+    "parentSetId": "L4_TED_001",
+    "theme": "How to Listen Better",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "We are losing our listening.",
+        "korean": "우리는 듣기 능력을 잃어가고 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I believe that we spend roughly 60% of our communication time listening, but we retain only about 25% of what we hear.",
+        "korean": "우리는 의사소통 시간의 대략 60%를 듣기에 쓰지만, 듣는 것의 약 25%만 기억합니다.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "That's a significant gap.",
+        "korean": "그것은 상당한 격차입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "In a world flooded with sound — notifications, music, news streams, conversation — we are becoming passive processors of noise rather than active, engaged listeners.",
+        "korean": "소리로 넘쳐나는 세계에서 — 알림, 음악, 뉴스, 대화 — 우리는 능동적이고 참여하는 경청자가 아니라 수동적인 소음 처리자가 되어가고 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I'd like to talk about why that matters, and what we can do about it.",
+        "korean": "왜 그것이 중요한지, 그리고 우리가 이에 대해 무엇을 할 수 있는지 이야기하고 싶습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '의도적으로 천천히 경험하며 즐기기' mean in English?",
+      "options": [
+        "pluralistic ignorance",
+        "RASA",
+        "savoring",
+        "retain"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L4_TED_001_set2",
+    "parentSetId": "L4_TED_001",
+    "theme": "How to Listen Better",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "First, let me be precise about what I mean by listening.",
+        "korean": "먼저, 제가 듣기로 의미하는 것이 정확히 무엇인지 말씀드리겠습니다.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 6,
+        "english": "I'm not talking about simply hearing.",
+        "korean": "저는 단순히 소리를 듣는 것에 대해 이야기하는 게 아닙니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Hearing is a passive biological process — your ears are always on, picking up vibrations.",
+        "korean": "듣기는 수동적인 생물학적 과정입니다 — 귀는 항상 작동하여 진동을 포착합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Listening is active and intentional.",
+        "korean": "경청은 능동적이고 의도적인 것입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "It means making meaning from sound.",
+        "korean": "소리에서 의미를 만들어내는 것을 뜻합니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '정보를 기억에 보존하다' mean in English?",
+      "options": [
+        "pluralistic ignorance",
+        "internal monologue",
+        "retain",
+        "empathetic"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L4_TED_001_set3",
+    "parentSetId": "L4_TED_001",
+    "theme": "How to Listen Better",
+    "level": 5,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "That distinction is crucial.",
+        "korean": "그 구분이 매우 중요합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "Consider a conversation between two people.",
+        "korean": "두 사람 사이의 대화를 생각해 보세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "One person is talking; the other appears to be listening.",
+        "korean": "한 사람은 이야기하고 있고, 다른 한 명은 듣고 있는 것처럼 보입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
+        "english": "But 'appearing to listen' and 'actually listening' are very different things.",
+        "korean": "하지만 '듣는 것처럼 보이는 것'과 '실제로 듣는 것'은 매우 다릅니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "True listening requires that you suspend your own internal monologue — the running commentary in your head — and genuinely focus on what the other person is communicating.",
+        "korean": "진정한 경청은 자신의 내면의 독백 — 머릿속의 계속되는 해설 — 을 중단하고, 상대방이 무엇을 전달하는지에 진심으로 집중할 것을 요구합니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '경청의 네 단계를 나타내는 약어' mean in English?",
+      "options": [
+        "retain",
+        "habituated",
+        "pluralistic ignorance",
+        "RASA"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L4_TED_001_set4",
+    "parentSetId": "L4_TED_001",
+    "theme": "How to Listen Better",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "Not just their words, but their tone, their pauses, their body language.",
+        "korean": "단지 말뿐 아니라, 톤, 쉼, 몸짓 언어까지.",
+        "properNounIndices": []
+      },
+      {
+        "id": 16,
+        "english": "Here's a challenge: when was the last time you sat with someone in complete silence and really listened — not waiting for your turn to speak, not composing your response while they were still talking?",
+        "korean": "도전 하나 드리겠습니다: 마지막으로 누군가와 완전한 침묵 속에 앉아 진정으로 들었던 때가 언제였나요 — 말할 차례를 기다리지 않고, 상대가 아직 말하는 동안 답변을 구성하지 않으면서요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "Most of us don't do this, because silence feels uncomfortable.",
+        "korean": "대부분의 우리는 이렇게 하지 않습니다, 침묵이 불편하게 느껴지기 때문이죠.",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
+        "english": "We rush to fill it.",
+        "korean": "우리는 그것을 채우려고 서두릅니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 19,
+        "english": "We are, as a culture, deeply uncomfortable with silence and deeply addicted to speaking.",
+        "korean": "우리는 문화적으로 침묵에 깊이 불편해하고, 말하기에 깊이 중독되어 있습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does 'pluralistic ignorance' mean in English?",
+      "options": [
+        "pluralistic ignorance",
+        "empathetic",
+        "RASA",
+        "internal monologue"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L4_TED_001_set5",
+    "parentSetId": "L4_TED_001",
+    "theme": "How to Listen Better",
+    "level": 4,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "I want to offer five practices that can dramatically improve your listening.",
+        "korean": "경청을 극적으로 향상시킬 수 있는 다섯 가지 실천법을 제안하고 싶습니다.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 21,
+        "english": "The first is what I call silence.",
+        "korean": "첫 번째는 제가 침묵이라 부르는 것입니다.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 22,
+        "english": "Spend three minutes a day in complete silence.",
+        "korean": "하루에 3분을 완전한 침묵 속에서 보내세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 23,
+        "english": "Not meditation, necessarily — just silence.",
+        "korean": "반드시 명상이 아니라 — 그냥 침묵입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 24,
+        "english": "Let your ears recalibrate.",
+        "korean": "귀가 재조정되도록 하세요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does 'pluralistic ignorance' mean in English?",
+      "options": [
+        "empathetic",
+        "internal monologue",
+        "retain",
+        "pluralistic ignorance"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L4_TED_001_set6",
+    "parentSetId": "L4_TED_001",
+    "theme": "How to Listen Better",
+    "level": 6,
+    "setNumber": 6,
+    "sentences": [
+      {
+        "id": 25,
+        "english": "In our noisy world, we become habituated to constant sound.",
+        "korean": "시끄러운 세계에서, 우리는 끊임없는 소리에 익숙해집니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 26,
+        "english": "Silence resets that calibration and makes us more sensitive to the details of what we hear.",
+        "korean": "침묵은 그 조정을 초기화하고 우리가 듣는 것의 세부사항에 더 민감해지게 합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 27,
+        "english": "The second practice is what I call the mixer.",
+        "korean": "두 번째 실천은 제가 믹서라 부르는 것입니다.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 28,
+        "english": "Even in a noisy environment — a crowded café, a busy street — try to count the number of individual sound channels you can hear.",
+        "korean": "시끄러운 환경에서도 — 붐비는 카페, 분주한 거리 — 들을 수 있는 개별 소리 채널의 수를 세어보세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 29,
+        "english": "How many separate sources of sound are there?",
+        "korean": "분리된 소리의 원천이 얼마나 있나요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '의도적으로 천천히 경험하며 즐기기' mean in English?",
+      "options": [
+        "RASA",
+        "retain",
+        "habituated",
+        "savoring"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L4_TED_001_set7",
+    "parentSetId": "L4_TED_001",
+    "theme": "How to Listen Better",
+    "level": 5,
+    "setNumber": 7,
+    "sentences": [
+      {
+        "id": 30,
+        "english": "You'll be surprised how many you find.",
+        "korean": "얼마나 많이 찾는지 놀라실 겁니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 31,
+        "english": "This is a form of auditory attention training, and it sharpens your ability to isolate what's important.",
+        "korean": "이것은 청각적 주의력 훈련의 한 형태이며, 중요한 것을 분리하는 능력을 날카롭게 합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 32,
+        "english": "Third, savoring.",
+        "korean": "셋째, 음미하기입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 33,
+        "english": "Pay deliberate attention to mundane sounds.",
+        "korean": "일상적인 소리에 의도적인 주의를 기울이세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 34,
+        "english": "The hum of a refrigerator. The rhythm of rain. The sound of your own footsteps.",
+        "korean": "냉장고의 윙윙거림. 비의 리듬. 자신의 발걸음 소리.",
+        "properNounIndices": [
+          5,
+          9
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '타인의 감정을 이해하고 공유하는' mean in English?",
+      "options": [
+        "habituated",
+        "empathetic",
+        "savoring",
+        "RASA"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L4_TED_001_set8",
+    "parentSetId": "L4_TED_001",
+    "theme": "How to Listen Better",
+    "level": 5,
+    "setNumber": 8,
+    "sentences": [
+      {
+        "id": 35,
+        "english": "Notice texture, pitch, rhythm.",
+        "korean": "질감, 음높이, 리듬을 주목하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 36,
+        "english": "This is not mysticism — it's calibrating your attention so that you engage with sound rather than simply passing through it.",
+        "korean": "이것은 신비주의가 아닙니다 — 단순히 소리를 통과하는 대신 소리에 참여하도록 주의를 조정하는 것입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 37,
+        "english": "Fourth, listening positions.",
+        "korean": "넷째, 듣기 자세입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 38,
+        "english": "The way we listen changes depending on our posture — not just physical posture, but what I call listening posture.",
+        "korean": "듣는 방식은 자세에 따라 변합니다 — 단지 신체적 자세뿐 아니라, 제가 듣기 자세라 부르는 것에 따라.",
+        "properNounIndices": [
+          16
+        ]
+      },
+      {
+        "id": 39,
+        "english": "Are you listening critically? Empathetically? With judgment? With curiosity?",
+        "korean": "비판적으로 듣고 있나요? 공감적으로? 판단으로? 호기심으로?",
+        "properNounIndices": [
+          4,
+          5,
+          7
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '반복 노출로 무감각해진' mean in English?",
+      "options": [
+        "habituated",
+        "internal monologue",
+        "empathetic",
+        "RASA"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L4_TED_001_set9",
+    "parentSetId": "L4_TED_001",
+    "theme": "How to Listen Better",
+    "level": 5,
+    "setNumber": 9,
+    "sentences": [
+      {
+        "id": 40,
+        "english": "Good listeners consciously choose their listening position depending on the context.",
+        "korean": "좋은 경청자들은 맥락에 따라 의식적으로 듣기 자세를 선택합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 41,
+        "english": "When a friend is grieving, you need an empathetic listening position — you're there to receive, not to analyze.",
+        "korean": "친구가 슬퍼할 때는 공감적 듣기 자세가 필요합니다 — 분석하기 위해서가 아니라 받아들이기 위해 거기 있는 것이죠.",
+        "properNounIndices": []
+      },
+      {
+        "id": 42,
+        "english": "When a colleague is presenting data, critical listening is appropriate.",
+        "korean": "동료가 데이터를 발표할 때는 비판적 경청이 적절합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 43,
+        "english": "Great listeners are flexible.",
+        "korean": "훌륭한 경청자는 유연합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 44,
+        "english": "And fifth, RASA — which is the Sanskrit word for 'juice' or 'essence.'",
+        "korean": "그리고 다섯째, RASA — 이것은 '즙' 또는 '본질'을 뜻하는 산스크리트어입니다.",
+        "properNounIndices": [
+          2,
+          7
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '의도적으로 천천히 경험하며 즐기기' mean in English?",
+      "options": [
+        "habituated",
+        "savoring",
+        "RASA",
+        "pluralistic ignorance"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L4_TED_001_set10",
+    "parentSetId": "L4_TED_001",
+    "theme": "How to Listen Better",
+    "level": 5,
+    "setNumber": 10,
+    "sentences": [
+      {
+        "id": 45,
+        "english": "It's an acronym: Receive, Appreciate, Summarize, Ask.",
+        "korean": "이것은 약어입니다: 받아들이기, 감사하기, 요약하기, 질문하기.",
+        "properNounIndices": [
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": 46,
+        "english": "Receive the words — pay attention.",
+        "korean": "말을 받아들이세요 — 주의를 기울이세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 47,
+        "english": "Appreciate with small acknowledgments — nods, sounds of understanding.",
+        "korean": "작은 인정으로 감사를 표하세요 — 끄덕임, 이해의 소리.",
+        "properNounIndices": []
+      },
+      {
+        "id": 48,
+        "english": "Summarize what you heard — this is powerful because it confirms to the speaker that they were genuinely heard.",
+        "korean": "들은 것을 요약하세요 — 이것은 화자에게 진심으로 들렸다는 것을 확인해주기에 강력합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 49,
+        "english": "And ask questions that go deeper.",
+        "korean": "그리고 더 깊이 들어가는 질문을 하세요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '타인의 감정을 이해하고 공유하는' mean in English?",
+      "options": [
+        "retain",
+        "empathetic",
+        "pluralistic ignorance",
+        "savoring"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L4_TED_001_set11",
+    "parentSetId": "L4_TED_001",
+    "theme": "How to Listen Better",
+    "level": 5,
+    "setNumber": 11,
+    "sentences": [
+      {
+        "id": 50,
+        "english": "What would the world look like if we all listened better?",
+        "korean": "우리 모두가 더 잘 들었다면 세계는 어떤 모습일까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 51,
+        "english": "I believe the quality of our conversations, our relationships, our communities, and our politics would be transformed.",
+        "korean": "우리의 대화, 관계, 공동체, 그리고 정치의 질이 변혁될 것이라 믿습니다.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 52,
+        "english": "Conflict thrives in a climate of poor listening.",
+        "korean": "갈등은 나쁜 경청의 환경에서 번성합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 53,
+        "english": "People act on assumptions and misinterpretations because they never truly heard what the other person was saying.",
+        "korean": "사람들은 가정과 오해에 근거하여 행동합니다, 상대방이 말하고 있던 것을 진정으로 듣지 못했기 때문에.",
+        "properNounIndices": []
+      },
+      {
+        "id": 54,
+        "english": "Conscious listening always creates understanding.",
+        "korean": "의식적인 경청은 항상 이해를 만들어냅니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 55,
+        "english": "And understanding, I'd argue, is the foundation of everything else we're trying to build together.",
+        "korean": "그리고 이해는, 제 주장으로는, 우리가 함께 만들려고 노력하는 다른 모든 것의 기반입니다.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 56,
+        "english": "Thank you.",
+        "korean": "감사합니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '경청의 네 단계를 나타내는 약어' mean in English?",
+      "options": [
+        "savoring",
+        "retain",
+        "empathetic",
+        "RASA"
+      ],
+      "answer": 3
+    }
+  }
+]

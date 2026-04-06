@@ -1,0 +1,442 @@
+[
+  {
+    "setId": "L2_B6ME_009_set1",
+    "parentSetId": "L2_B6ME_009",
+    "theme": "Why you need a good night's sleep",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hello, this is 6 Minute English from BBC Learning English. I'm Georgie, and we're ready to start, Phil… Phil?!",
+        "korean": "안녕하세요, BBC Learning English의 6 Minute English입니다. 시작할 준비가 됐어요, 필… 필?!",
+        "properNounIndices": [
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          17,
+          18
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Oh, sorry, Georgie, I was er, just, catching forty winks… you know, getting some shut-eye, dozing, taking a nap... I was sleeping!",
+        "korean": "미안, 조지, 잠깐 눈 좀 붙이고 있었어… 있잖아, 선잠, 꾸벅꾸벅, 낮잠...",
+        "properNounIndices": [
+          2,
+          3,
+          19
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Sleeping at work! Phil, how could you?",
+        "korean": "직장에서 자다니! 필, 어떻게 그럴 수가!",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I know, I know. Sorry, I… I didn't sleep well last night.",
+        "korean": "알아, 알아. 미안, 어젯밤에 잠을 잘 못 잤어.",
+        "properNounIndices": [
+          0,
+          2,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I'll forgive you this time, but make sure you go to bed early tonight because getting a good night's sleep is incredibly important. For example, did you know that people who get enough sleep live about five years longer than people who don't?",
+        "korean": "이번은 봐줄게, 오늘 밤에는 일찍 자도록 해.",
+        "properNounIndices": [
+          23
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '결핍, 박탈' mean in English?",
+      "options": [
+        "overlooked",
+        "deprivation",
+        "take in",
+        "sleep on it"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L2_B6ME_009_set2",
+    "parentSetId": "L2_B6ME_009",
+    "theme": "Why you need a good night's sleep",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Wow, so a good night's sleep can lengthen your life. In this programme, we'll be finding out more about the benefits of sleep, and, as usual, learning some useful new vocabulary as well.",
+        "korean": "와, 충분한 수면이 수명을 늘릴 수 있다니.",
+        "properNounIndices": [
+          10
+        ]
+      },
+      {
+        "id": 6,
+        "english": "But first, now that you've woken up, I have a question for you. Do you know how much of the average person's life is spent asleep? Is it: a) a half? b) a quarter? or, c) a third?",
+        "korean": "먼저 깨어났으니 질문이 있어요. 평균적으로 인생의 얼마를 잠으로 보내는지 알아요?",
+        "properNounIndices": [
+          7,
+          13,
+          26
+        ]
+      },
+      {
+        "id": 7,
+        "english": "I'll say c) a third.",
+        "korean": "c) 3분의 1이라고 할게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "OK, we'll find out the answer at the end of the programme. Now, I think we all know that sleep is important.",
+        "korean": "프로그램 끝에서 답을 알아볼게요.",
+        "properNounIndices": [
+          12,
+          13
+        ]
+      },
+      {
+        "id": 9,
+        "english": "But I was surprised to learn how much of our overall health is connected to how well we sleep.",
+        "korean": "전반적 건강이 수면의 질과 얼마나 연결되어 있는지 알고 놀랐어요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '잠깐 눈을 붙이다' mean in English?",
+      "options": [
+        "catch forty winks",
+        "overlooked",
+        "fight-or-flight",
+        "sleep on it"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_B6ME_009_set3",
+    "parentSetId": "L2_B6ME_009",
+    "theme": "Why you need a good night's sleep",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "Here, Ginny Smith, neuroscientist and author of the book 'Overloaded', explains to BBC Radio 4 programme, Inside Science:",
+        "korean": "신경과학자이자 '과부하' 저자인 지니 스미스가 설명합니다.",
+        "properNounIndices": [
+          1,
+          2,
+          9,
+          12,
+          13,
+          16,
+          17
+        ]
+      },
+      {
+        "id": 11,
+        "english": "Well, the key thing with sleep is that I think in the past people have underestimated its importance.",
+        "korean": "수면에서 핵심은 과거에 사람들이 그 중요성을 과소평가해왔다는 것입니다.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 12,
+        "english": "But there is now really convincing evidence that sleep is one of the most crucial pillars of health, alongside diet and exercise.",
+        "korean": "하지만 이제 수면이 건강의 가장 중요한 기둥 중 하나라는 정말 설득력 있는 증거가 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
+        "english": "And I think we've known about the benefits of diet and exercise for ages, but we've sort of overlooked sleep, and it's really just as important.",
+        "korean": "식단과 운동의 이점은 오래전부터 알았지만, 수면은 어느 정도 간과해왔다고 생각해요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 14,
+        "english": "In the past, the importance of sleep was often underestimated. It seems that we know about the benefits of eating well and exercising, but the effect of sleep has been overlooked, or not noticed.",
+        "korean": "과거에 수면의 중요성은 자주 과소평가됐습니다.",
+        "properNounIndices": [
+          10
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '잠깐 눈을 붙이다' mean in English?",
+      "options": [
+        "sleep on it",
+        "take in",
+        "catch forty winks",
+        "fight-or-flight"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_B6ME_009_set4",
+    "parentSetId": "L2_B6ME_009",
+    "theme": "Why you need a good night's sleep",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "In fact, Ginny Smith describes sleep as one of the pillars of health, meaning one of the fundamental parts. And recently, scientists have found out that our brain does important work while we sleep. Here's Ginny Smith again:",
+        "korean": "실제로 지니 스미스는 수면을 건강의 기둥 중 하나, 즉 근본적인 부분 중 하나로 묘사합니다.",
+        "properNounIndices": [
+          2,
+          3,
+          19,
+          34,
+          35,
+          36
+        ]
+      },
+      {
+        "id": 16,
+        "english": "So, we know that your brain is clearing out toxins during the night, your brain is refreshing so you can wake up and take in new information the next day.",
+        "korean": "밤에 뇌가 독소를 제거하고 새로고침한다는 걸 알고 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "We know that memory consolidation is affected by sleep, so you can actually improve skills by sleeping on it.",
+        "korean": "기억 강화가 수면의 영향을 받아서, 잠으로써 실제로 실력을 향상시킬 수 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
+        "english": "And your brain does actually work on things during the night, and you can often wake up and have solved the problem in your sleep.",
+        "korean": "뇌가 밤에 실제로 작업을 해서, 일어나면 문제가 풀려 있기도 합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 19,
+        "english": "When we sleep, our brains refresh, leaving us feeling rested in the morning. But after a bad night's sleep it's more difficult to concentrate. We can't take in, or understand, new information.",
+        "korean": "잠을 자면 뇌가 새로고침되어 아침에 개운함을 느낍니다.",
+        "properNounIndices": [
+          13,
+          24
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '간과된, 눈에 띄지 않은' mean in English?",
+      "options": [
+        "overlooked",
+        "fight-or-flight",
+        "deprivation",
+        "sleep on it"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_B6ME_009_set5",
+    "parentSetId": "L2_B6ME_009",
+    "theme": "Why you need a good night's sleep",
+    "level": 6,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "We also have the saying, if you've got a problem, sleep on it. To sleep on it means to delay making a decision until you've had time to think about it.",
+        "korean": "'문제가 있으면 하룻밤 자고 생각해라'라는 말도 있어요. 'sleep on it'은 결정을 미루는 것을 의미합니다.",
+        "properNounIndices": [
+          13
+        ]
+      },
+      {
+        "id": 21,
+        "english": "But that also turns out to be true scientifically speaking - during sleep, your brain really can work out problems and find solutions.",
+        "korean": "과학적으로도 이게 사실인 것으로 밝혀졌습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 22,
+        "english": "But what about the other side of the story? What happens when you get too little sleep, or none at all? Here's Ginny Smith again, talking to BBC Radio 4 programme, Inside Science:",
+        "korean": "반대의 경우는 어떨까요? 수면이 너무 부족하면 어떻게 될까요?",
+        "properNounIndices": [
+          9,
+          21,
+          22,
+          23,
+          27,
+          28,
+          31,
+          32
+        ]
+      },
+      {
+        "id": 23,
+        "english": "Sleep deprivation is a form of stress, and we know that when you are stressed your sort of fight-or-flight response is activated and that causes all these changes in your body that focus your body on dealing with danger.",
+        "korean": "수면 부족은 스트레스의 한 형태이고, 스트레스를 받으면 투쟁-도피 반응이 활성화됩니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 24,
+        "english": "A lack of sleep is called sleep deprivation. Deprivation is an absence or too little of something important such as food, sleep or freedom.",
+        "korean": "수면 부족을 수면 결핍(sleep deprivation)이라고 부릅니다.",
+        "properNounIndices": [
+          8
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '투쟁-도피 반응' mean in English?",
+      "options": [
+        "overlooked",
+        "take in",
+        "sleep on it",
+        "fight-or-flight"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L2_B6ME_009_set6",
+    "parentSetId": "L2_B6ME_009",
+    "theme": "Why you need a good night's sleep",
+    "level": 6,
+    "setNumber": 6,
+    "sentences": [
+      {
+        "id": 25,
+        "english": "And not getting enough sleep can trigger, or activate, the fight-or-flight response.",
+        "korean": "충분한 수면을 못 취하면 투쟁-도피 반응을 촉발하거나 활성화할 수 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 26,
+        "english": "This is a natural reaction to a dangerous situation which makes our body ready to either fight the danger, or run away.",
+        "korean": "이것은 위험한 상황에 대한 자연스러운 반응으로, 위험과 싸우거나 도망가도록 몸을 준비시킵니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 27,
+        "english": "So there you have it. Research suggests we should all make sure we get a good night's sleep, Phil? Plus, it will stop you sleeping at work again! Right, I think it's time to reveal the answer to my question.",
+        "korean": "자, 이제 알게 됐죠.",
+        "properNounIndices": [
+          5,
+          18,
+          19,
+          28,
+          29
+        ]
+      },
+      {
+        "id": 28,
+        "english": "Yes, you asked me how much of the average person's life is spent asleep, and I said it was about a third.",
+        "korean": "네, 평균 인생의 얼마를 잠으로 보내는지 물었었고, 3분의 1이라고 했었죠.",
+        "properNounIndices": [
+          15
+        ]
+      },
+      {
+        "id": 29,
+        "english": "Which was… the correct answer! Assuming you sleep eight hours a day, the average person will sleep for 229,961 hours in their lifetime or around one third of their life.",
+        "korean": "정답이었습니다!",
+        "properNounIndices": [
+          5
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '투쟁-도피 반응' mean in English?",
+      "options": [
+        "fight-or-flight",
+        "sleep on it",
+        "catch forty winks",
+        "pillar"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_B6ME_009_set7",
+    "parentSetId": "L2_B6ME_009",
+    "theme": "Why you need a good night's sleep",
+    "level": 6,
+    "setNumber": 7,
+    "sentences": [
+      {
+        "id": 30,
+        "english": "OK, let's recap the vocabulary we've learned starting with the phrases catch forty winks, get some shut-eye, doze and take a nap, all of which mean to sleep.",
+        "korean": "좋아요, 어휘를 정리해볼게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 31,
+        "english": "When someone takes in information, they understand it.",
+        "korean": "정보를 'take in'한다는 것은 이해한다는 뜻입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 32,
+        "english": "If you have a problem and you sleep on it, you delay making a decision until you've had time to think about it.",
+        "korean": "문제가 있을 때 'sleep on it'하면 결정을 미룬다는 뜻입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 33,
+        "english": "Deprivation is an absence or too little of something important such as food or sleep.",
+        "korean": "'deprivation'은 음식이나 수면 같은 중요한 것의 부재 또는 부족입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 34,
+        "english": "The fight-or-flight response describes changes in the human body in response to a dangerous situation which make us either stay and fight, or run away.",
+        "korean": "투쟁-도피 반응은 위험한 상황에 대한 인체의 변화를 설명합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 35,
+        "english": "And finally, if something has been overlooked, it hasn't been noticed. Once again, our six minutes are up! Bye for now!",
+        "korean": "마지막으로, 무언가가 'overlooked'됐다면 눈에 띄지 않았다는 뜻입니다.",
+        "properNounIndices": [
+          11,
+          18
+        ]
+      },
+      {
+        "id": 36,
+        "english": "Bye!",
+        "korean": "안녕!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '하룻밤 자고 생각하다' mean in English?",
+      "options": [
+        "overlooked",
+        "sleep on it",
+        "fight-or-flight",
+        "pillar"
+      ],
+      "answer": 1
+    }
+  }
+]

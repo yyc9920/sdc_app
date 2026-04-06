@@ -1,0 +1,53 @@
+[
+  {
+    "setId": "L3_BEP_001_set1",
+    "parentSetId": "L3_BEP_001",
+    "theme": "Clarifying What Was Said",
+    "level": 2,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I didn't quite catch that",
+        "korean": "",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Could you repeat that?",
+        "korean": "",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Did you say...?",
+        "korean": "",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "So you're saying that... is that right?",
+        "korean": "",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Could you speak a bit slower?",
+        "korean": "",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Clarifying What Was Meant",
+        "Clarifying What Was Said",
+        "Food and Cooking",
+        "Art and Culture"
+      ],
+      "answer": 1
+    }
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "setId": "L1_ELLO_005_set1",
+    "parentSetId": "L1_ELLO_005",
+    "theme": "Mixer #12 — Sleep Routine",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I try to go to bed around 11 PM, but honestly, I'm a bit of a night person. I love staying up late and working on projects. But my job requires me to wake up at 6:30 AM.",
+        "korean": "밤 11시쯤 자려고 하는데, 솔직히 저는 약간 밤형 인간이에요. 늦게까지 깨어 있으면서 프로젝트 작업하는 걸 좋아해요.",
+        "properNounIndices": [
+          0,
+          8,
+          11,
+          18,
+          27,
+          37
+        ]
+      },
+      {
+        "id": 1,
+        "english": "So I usually get about 6 to 6.5 hours of sleep. Ideally, I would like more sleep, but that's what I manage.",
+        "korean": "보통 6시간에서 6시간 반 정도 자요. 이상적으로는 더 자고 싶지만, 그 정도가 제가 할 수 있는 거예요.",
+        "properNounIndices": [
+          1,
+          11,
+          12,
+          20
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I usually wake up around 6:30 AM on workdays. On weekends, I like to sleep in and wake up around 9 or 10 AM. My sleep schedule is pretty regular, which I think is important for your health. I try to be in bed by 11 PM on weeknights.",
+        "korean": "평일에는 보통 6시 30분에 일어나요. 주말에는 늦잠 자면서 9시나 10시에 일어나요. 수면 일정은 꽤 규칙적이에요.",
+        "properNounIndices": [
+          0,
+          6,
+          9,
+          11,
+          23,
+          24,
+          31,
+          38,
+          46
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I'm definitely a night owl. I usually go to bed around 2 or 3 AM, and I wake up around 10 AM. I know that's not the most productive schedule, but that's when I'm most alert and energized. I do my best work late at night.",
+        "korean": "확실히 올빼미형이에요. 보통 새벽 2~3시에 자고 오전 10시에 일어나요. 가장 건강한 일정은 아닌 걸 알지만요.",
+        "properNounIndices": [
+          5,
+          14,
+          16,
+          21,
+          22,
+          33,
+          38
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I've been trying to establish a better sleep routine. I want to be in bed by 11 PM and wake up at 6:30 AM. That would give me about 7.5 hours, which is what I need to feel rested. Some nights I manage it, but other nights I stay up too late.",
+        "korean": "더 나은 수면 루틴을 만들려고 노력 중이에요. 밤 11시에 자고 아침 6시 30분에 일어나고 싶어요. 그러면 약 7시간 반이 되거든요.",
+        "properNounIndices": [
+          9,
+          17,
+          23,
+          24,
+          34,
+          39,
+          41,
+          47
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '수면 루틴' mean in English?",
+      "options": [
+        "night owl",
+        "regular",
+        "night person",
+        "sleep routine"
+      ],
+      "answer": 3
+    }
+  }
+]

@@ -1,0 +1,133 @@
+[
+  {
+    "setId": "L1_EXT_003_set1",
+    "parentSetId": "L1_EXT_003",
+    "theme": "Making a Doctor's Appointment",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Good morning, City Health Clinic. How can I help you?",
+        "korean": "좋은 아침입니다, 시티 헬스 클리닉입니다. 어떻게 도와드릴까요?",
+        "properNounIndices": [
+          2,
+          3,
+          4,
+          5,
+          7
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Hi, I'd like to make an appointment with Dr. Park, please.",
+        "korean": "안녕하세요, 박 선생님 진료 예약을 하고 싶습니다.",
+        "properNounIndices": [
+          1,
+          8,
+          9
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Sure. Is this for a regular checkup or a specific concern?",
+        "korean": "물론이죠. 정기 검진인가요, 특정 문제가 있으신 건가요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I've had a sore throat for about three days now.",
+        "korean": "목이 3일 정도 아팠어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I see. Let me check Dr. Park's schedule. How about Thursday at 2 p.m.?",
+        "korean": "알겠습니다. 박 선생님 스케줄을 확인해볼게요. 목요일 오후 2시 어떠세요?",
+        "properNounIndices": [
+          0,
+          2,
+          5,
+          6,
+          8,
+          10
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "University Office Hours",
+        "University Lecture — Behavioral Economics",
+        "Radio Interview — Small Business Owner",
+        "Making a Doctor's Appointment"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L1_EXT_003_set2",
+    "parentSetId": "L1_EXT_003",
+    "theme": "Making a Doctor's Appointment",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Thursday works perfectly.",
+        "korean": "목요일 완벽합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Great. Can I have your name and date of birth, please?",
+        "korean": "좋습니다. 성함과 생년월일을 알려주시겠어요?",
+        "properNounIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 7,
+        "english": "It's Sarah Lee, born March 15th, 1995.",
+        "korean": "세라 리이고, 1995년 3월 15일생입니다.",
+        "properNounIndices": [
+          1,
+          2,
+          4
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Thank you, Sarah. You're all set for Thursday at 2 p.m. Please arrive ten minutes early to fill out some forms.",
+        "korean": "감사합니다, 세라. 목요일 오후 2시로 예약됐습니다. 서류 작성을 위해 10분 일찍 와주세요.",
+        "properNounIndices": [
+          2,
+          3,
+          7,
+          11
+        ]
+      },
+      {
+        "id": 9,
+        "english": "Will do. Thanks!",
+        "korean": "그렇게 할게요. 감사합니다!",
+        "properNounIndices": [
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Science Documentary — Neuroplasticity",
+        "Business Meeting — Quarterly Review",
+        "Making a Doctor's Appointment",
+        "Economic Analysis — The Paradox of Thrift"
+      ],
+      "answer": 2
+    }
+  }
+]

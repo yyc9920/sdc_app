@@ -1,0 +1,74 @@
+[
+  {
+    "setId": "L2_EXT_004_set1",
+    "parentSetId": "L2_EXT_004",
+    "theme": "Airport Announcement",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Good afternoon, passengers. This is a boarding announcement for Flight KA-472 to London Heathrow, departing from Gate 23. We will begin boarding in approximately five minutes.",
+        "korean": "안녕하세요, 승객 여러분. 23번 게이트에서 출발하는 런던 히드로행 KA-472편의 탑승 안내입니다.",
+        "properNounIndices": [
+          3,
+          9,
+          10,
+          12,
+          13,
+          16,
+          18
+        ]
+      },
+      {
+        "id": 1,
+        "english": "We kindly ask all passengers to have your boarding passes and passports ready for inspection.",
+        "korean": "모든 승객께서는 탑승권과 여권을 검사를 위해 준비해주시기 바랍니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "We will board in the following order: First, passengers requiring special assistance and families traveling with young children. Next, business class and priority boarding members.",
+        "korean": "다음 순서로 탑승합니다. 먼저, 특별 도움이 필요한 승객과 어린 자녀를 동반한 가족입니다.",
+        "properNounIndices": [
+          7,
+          18
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Finally, all remaining passengers will be invited to board by row number, starting from the back of the aircraft.",
+        "korean": "마지막으로, 나머지 모든 승객은 비행기 뒤쪽부터 좌석 번호 순으로 탑승합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Please note that carry-on luggage must fit in the overhead bin or under the seat in front of you. If your bag is too large, it may need to be checked at the gate at no additional charge.",
+        "korean": "기내 수하물은 머리 위 선반이나 앞좌석 아래에 넣을 수 있어야 합니다.",
+        "properNounIndices": [
+          19
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Thank you for choosing Korean Air. We wish you a pleasant flight.",
+        "korean": "대한항공을 이용해주셔서 감사합니다. 즐거운 비행 되시길 바랍니다.",
+        "properNounIndices": [
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '탑승 안내 방송' mean in English?",
+      "options": [
+        "carry-on luggage",
+        "overhead bin",
+        "boarding announcement",
+        "departing from Gate ~"
+      ],
+      "answer": 2
+    }
+  }
+]

@@ -1,0 +1,261 @@
+[
+  {
+    "setId": "L5_EXT_002_set1",
+    "parentSetId": "L5_EXT_002",
+    "theme": "Investigative Journalism — Corporate Whistleblowing",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "When did you first realize that something was wrong at Veridian Pharmaceuticals?",
+        "korean": "베리디언 제약에서 뭔가 잘못됐다는 걸 처음 알게 된 건 언제였나요?",
+        "properNounIndices": [
+          10,
+          11
+        ]
+      },
+      {
+        "id": 1,
+        "english": "It wasn't one dramatic moment. It was a slow accumulation of things that didn't add up. I was working as a data analyst on the clinical trial team for their flagship drug, Corexa.",
+        "korean": "극적인 순간 하나가 아니었어요. 말이 안 되는 것들이 천천히 쌓인 거였습니다.",
+        "properNounIndices": [
+          5,
+          16,
+          32
+        ]
+      },
+      {
+        "id": 2,
+        "english": "My job was to compile the trial results and flag any anomalies. Around month eight of the trial, I started noticing patterns in the adverse event data that should have triggered a safety review.",
+        "korean": "제 일은 임상시험 결과를 정리하고 이상을 표시하는 거였어요. 8개월째쯤 패턴이 보이기 시작했습니다.",
+        "properNounIndices": [
+          12,
+          18
+        ]
+      },
+      {
+        "id": 3,
+        "english": "What kind of patterns?",
+        "korean": "어떤 종류의 패턴이었나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "A statistically significant increase in cardiac events among participants over sixty-five — elevated heart rates, arrhythmias, and in three cases, what appeared to be drug-induced cardiac arrest.",
+        "korean": "65세 이상 참가자들 사이에서 통계적으로 유의미한 심장 사건 증가가 있었습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Documentary Narration — The Deep Ocean",
+        "Investigative Journalism — Corporate Whistleblowing",
+        "At the Coffee Shop",
+        "Geopolitics Analysis — The Thucydides Trap"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L5_EXT_002_set2",
+    "parentSetId": "L5_EXT_002",
+    "theme": "Investigative Journalism — Corporate Whistleblowing",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "In a trial of that size, with that demographic, those numbers were alarming.",
+        "korean": "그 규모의 임상시험에서, 그 인구통계로는, 그 숫자가 놀라웠습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "And what happened when you raised the concern?",
+        "korean": "우려를 제기했을 때 어떻게 됐나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "I submitted a formal internal report to my supervisor and to the head of clinical operations. The response was... instructive.",
+        "korean": "상사와 임상운영 책임자에게 공식 내부 보고서를 제출했어요. 반응은... 시사적이었습니다.",
+        "properNounIndices": [
+          0,
+          16
+        ]
+      },
+      {
+        "id": 8,
+        "english": "My supervisor thanked me for my thoroughness and then told me that the senior team had already reviewed the data and determined that the events fell within an acceptable risk margin.",
+        "korean": "상사가 꼼꼼함에 감사하다고 하더니, 고위팀이 이미 데이터를 검토했고 수용 가능한 위험 범위 내라고 판단했다고 했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "No further action was needed.",
+        "korean": "추가 조치는 필요 없다고요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Job Interview — Small Talk",
+        "Investigative Journalism — Corporate Whistleblowing",
+        "Weather Forecast",
+        "Supreme Court Oral Arguments"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L5_EXT_002_set3",
+    "parentSetId": "L5_EXT_002",
+    "theme": "Investigative Journalism — Corporate Whistleblowing",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "Did you believe that assessment?",
+        "korean": "그 판단을 믿었나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "No. I went back and looked at the raw data again, and I found that several adverse events had been reclassified.",
+        "korean": "아니요. 다시 원시 데이터를 살펴봤더니 여러 이상반응이 재분류되어 있었습니다.",
+        "properNounIndices": [
+          1,
+          12
+        ]
+      },
+      {
+        "id": 12,
+        "english": "Cardiac events that I had flagged were reclassified as \"pre-existing conditions\" or \"unrelated to treatment.\" The effect was to lower the apparent adverse event rate below the threshold that would require the company to notify the FDA.",
+        "korean": "제가 표시했던 심장 사건들이 '기존 질환' 또는 '치료와 무관'으로 재분류되어 있었습니다.",
+        "properNounIndices": [
+          3,
+          15,
+          36
+        ]
+      },
+      {
+        "id": 13,
+        "english": "So the data was being manipulated.",
+        "korean": "그러면 데이터가 조작되고 있었군요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "I wouldn't have used that word at the time. I told myself there might be a legitimate clinical justification I wasn't aware of. But when I requested access to the reclassification memos, I was denied.",
+        "korean": "그때는 그 단어를 쓰지 않았을 거예요. 제가 모르는 정당한 임상적 근거가 있을 수도 있다고 스스로에게 말했거든요.",
+        "properNounIndices": [
+          0,
+          9,
+          19,
+          23,
+          25,
+          32
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Tech Support Call",
+        "Investigative Journalism — Corporate Whistleblowing",
+        "University Lecture — Behavioral Economics",
+        "Podcast Discussion — Work-Life Balance"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L5_EXT_002_set4",
+    "parentSetId": "L5_EXT_002",
+    "theme": "Investigative Journalism — Corporate Whistleblowing",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "And a week later, I was transferred to a different project entirely.",
+        "korean": "그리고 1주일 후, 완전히 다른 프로젝트로 전환 배치됐습니다.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 16,
+        "english": "That must have been a turning point.",
+        "korean": "전환점이었겠네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "It was. I realized that if I stayed inside the system, nothing would change. The incentive structure was designed to suppress exactly the kind of information I was trying to surface.",
+        "korean": "그랬어요. 시스템 안에 머물면 아무것도 바뀌지 않는다는 걸 깨달았습니다.",
+        "properNounIndices": [
+          2,
+          6,
+          14,
+          26
+        ]
+      },
+      {
+        "id": 18,
+        "english": "So I contacted the Office of the Inspector General and submitted everything I had.",
+        "korean": "그래서 감찰관실에 연락해서 가지고 있던 모든 것을 제출했습니다.",
+        "properNounIndices": [
+          1,
+          4,
+          7,
+          8,
+          12
+        ]
+      },
+      {
+        "id": 19,
+        "english": "And what was the personal cost?",
+        "korean": "개인적 대가는 어땠나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 20,
+        "english": "I lost my career at Veridian. I was labeled a disgruntled employee. Some colleagues stopped speaking to me. But three months after my report, the FDA opened a formal investigation.",
+        "korean": "베리디언에서 경력을 잃었어요. 불만 직원으로 낙인찍히고, 일부 동료들이 저와 말을 끊었습니다.",
+        "properNounIndices": [
+          0,
+          5,
+          6,
+          12,
+          18,
+          25
+        ]
+      },
+      {
+        "id": 21,
+        "english": "And last year, Corexa was pulled from the market. So I would make the same choice again.",
+        "korean": "작년에 코렉사가 시장에서 철수됐습니다. 그래서 같은 선택을 다시 할 거예요.",
+        "properNounIndices": [
+          3,
+          9,
+          10
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Job Interview — Small Talk",
+        "Academic Lecture — The Philosophy of Language",
+        "Investigative Journalism — Corporate Whistleblowing",
+        "Making a Doctor's Appointment"
+      ],
+      "answer": 2
+    }
+  }
+]

@@ -1,0 +1,88 @@
+[
+  {
+    "setId": "L3_EXT_004_set1",
+    "parentSetId": "L3_EXT_004",
+    "theme": "Museum Audio Guide",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Welcome to Gallery Seven. You are now standing in front of *Starry Night Over the Harbor*, painted in 1892 by the Dutch-American artist Willem de Groot.",
+        "korean": "7전시실에 오신 것을 환영합니다. 지금 1892년 네덜란드계 미국인 화가 빌렘 드 그루트가 그린 '항구 위의 별이 빛나는 밤' 앞에 서 계십니다.",
+        "properNounIndices": [
+          2,
+          3,
+          4,
+          11,
+          12,
+          13,
+          15,
+          21,
+          23,
+          25
+        ]
+      },
+      {
+        "id": 1,
+        "english": "At first glance, this painting might seem like a peaceful nighttime scene — a quiet harbor, a few boats, and a sky full of swirling stars.",
+        "korean": "언뜻 보면 이 그림은 평화로운 밤 풍경 — 고요한 항구, 몇 척의 배, 소용돌이치는 별이 가득한 하늘 — 같아 보일 수 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "But if you look more closely, you'll notice something unusual. The water beneath the boats isn't calm at all. It's painted with sharp, angular strokes that suggest turbulence and unease.",
+        "korean": "하지만 자세히 보면 뭔가 특이한 걸 알 수 있습니다. 배 아래 물이 전혀 잔잔하지 않아요.",
+        "properNounIndices": [
+          10,
+          19
+        ]
+      },
+      {
+        "id": 3,
+        "english": "De Groot created this piece during one of the most difficult periods of his life. He had recently lost his wife and was struggling with financial ruin.",
+        "korean": "드 그루트는 인생에서 가장 어려운 시기에 이 작품을 만들었습니다. 최근 아내를 잃었고 경제적 어려움을 겪고 있었습니다.",
+        "properNounIndices": [
+          1,
+          15
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Art historians believe that the contrast between the serene sky and the disturbed water reflects his internal conflict — a desire for peace set against the reality of his emotional state.",
+        "korean": "미술사학자들은 고요한 하늘과 어지러운 물 사이의 대비가 그의 내적 갈등을 반영한다고 봅니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Notice also the use of color. The sky is rendered in deep blues and golds, while the water uses darker tones of green and black.",
+        "korean": "색채 사용도 주목해보세요. 하늘은 짙은 파란색과 금색으로 표현되고, 물은 더 어두운 녹색과 검정 톤입니다.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 6,
+        "english": "This deliberate contrast draws your eye upward, toward the stars, as if the artist is inviting the viewer to look beyond present suffering toward something greater.",
+        "korean": "이 의도적인 대비가 시선을 별을 향해 위로 끌어올리는데, 마치 화가가 관객에게 현재의 고통 너머를 보라고 초대하는 듯합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Take a moment to absorb the painting before moving on to the next piece.",
+        "korean": "잠시 그림을 감상하신 후 다음 작품으로 이동해주세요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '~로 표현된' mean in English?",
+      "options": [
+        "financial ruin",
+        "serene",
+        "angular strokes",
+        "rendered in"
+      ],
+      "answer": 3
+    }
+  }
+]

@@ -1,0 +1,123 @@
+[
+  {
+    "setId": "L2_EXT_005_set1",
+    "parentSetId": "L2_EXT_005",
+    "theme": "Describing a Movie",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Have you seen anything good recently?",
+        "korean": "최근에 뭐 좋은 거 봤어?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Actually, yeah. I watched this film called *The Quiet Room* last weekend. It was really something.",
+        "korean": "사실 응. 지난 주말에 '더 콰이엇 룸'이라는 영화를 봤는데, 정말 뭔가 있었어.",
+        "properNounIndices": [
+          2,
+          7,
+          8,
+          9,
+          12
+        ]
+      },
+      {
+        "id": 2,
+        "english": "What's it about?",
+        "korean": "무슨 내용인데?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "It's about a therapist who starts receiving anonymous letters from someone who claims to know a secret about her past. At first she thinks it's a prank, but the letters get more and more specific, and she starts questioning people she's close to.",
+        "korean": "치료사 이야기인데, 과거의 비밀을 안다고 주장하는 누군가로부터 익명의 편지를 받기 시작해.",
+        "properNounIndices": [
+          20
+        ]
+      },
+      {
+        "id": 4,
+        "english": "That sounds intense. Is it like a thriller?",
+        "korean": "강렬하겠다. 스릴러 같은 거야?",
+        "properNounIndices": [
+          3
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Describing a Movie",
+        "At the Post Office",
+        "Introducing Your Family",
+        "TED-Style Talk — The Science of Habits"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_EXT_005_set2",
+    "parentSetId": "L2_EXT_005",
+    "theme": "Describing a Movie",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Yeah, a psychological thriller. The pacing is slow at first, which I actually liked because it builds tension gradually. And the acting is incredible — the lead actress really makes you feel her paranoia.",
+        "korean": "응, 심리 스릴러야. 처음에 전개가 느린데, 사실 그게 좋았어. 점점 긴장감을 쌓아가거든.",
+        "properNounIndices": [
+          4,
+          11,
+          19
+        ]
+      },
+      {
+        "id": 6,
+        "english": "No spoilers, but does it have a good ending?",
+        "korean": "스포 없이 말해줘, 결말이 좋아?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "I'll just say it surprised me. I had a theory about who was behind the letters, and I was completely wrong. The twist made me want to rewatch the whole thing.",
+        "korean": "놀랐다고만 할게. 편지 뒤에 누가 있는지 추리했는데, 완전히 틀렸어.",
+        "properNounIndices": [
+          6,
+          17,
+          21
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Okay, I'm sold. Let's watch it together this weekend.",
+        "korean": "좋아, 설득됐어. 이번 주말에 같이 보자.",
+        "properNounIndices": [
+          1,
+          3
+        ]
+      },
+      {
+        "id": 9,
+        "english": "Deal. I'll send you the trailer.",
+        "korean": "좋아. 예고편 보내줄게.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Introducing Your Family",
+        "Job Interview — Small Talk",
+        "Ordering Food Delivery",
+        "Describing a Movie"
+      ],
+      "answer": 3
+    }
+  }
+]

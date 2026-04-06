@@ -1,0 +1,200 @@
+[
+  {
+    "setId": "L1_BTEW_008_set1",
+    "parentSetId": "L1_BTEW_008",
+    "theme": "That's on you",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hello and welcome to The English We Speak, where we explain phrases used by fluent English speakers so that you can use them too. I'm Feifei, and I'm here with Phil.",
+        "korean": "안녕하세요, 유창한 영어 화자들이 쓰는 표현을 설명하는 The English We Speak에 오신 것을 환영합니다. 저는 페이페이이고, 필과 함께합니다.",
+        "properNounIndices": [
+          4,
+          5,
+          6,
+          7,
+          15,
+          24,
+          25,
+          27,
+          30
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Hello. Sorry I'm late, but you know, it's not my fault. The traffic was bad, and that's completely out of my control.",
+        "korean": "안녕. 늦어서 미안한데, 내 잘못이 아니야. 교통이 안 좋았는데, 그건 완전히 내가 어쩔 수 없는 거잖아.",
+        "properNounIndices": [
+          1,
+          2,
+          11
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I'm sorry, I'm not having that! The traffic is always bad – you should know that. If you're late because you haven't left enough time, well, that's on you, I'm afraid! It's your fault. Do better next time.",
+        "korean": "미안하지만 그건 안 통해! 교통은 항상 나쁘잖아 — 그걸 알아야지. 충분한 시간을 안 두고 나와서 늦은 거면, 그건 네 탓이야! 네 잘못이라고. 다음엔 더 잘해.",
+        "properNounIndices": [
+          2,
+          6,
+          16,
+          29,
+          31,
+          34
+        ]
+      },
+      {
+        "id": 3,
+        "english": "OK, so maybe that was my fault, but at least it gives us the phrase to look at for this episode – 'It's on you'. We use 'it's on you' to say 'it's your fault', and especially as a reminder to someone who doesn't want to admit responsibility.",
+        "korean": "좋아, 아마 내 잘못이었겠지만, 적어도 이번 에피소드에서 다룰 표현이 생겼네 — 'It's on you'. 'It's on you'는 '네 잘못이야'라는 뜻으로, 특히 책임을 인정하기 싫어하는 사람에게 상기시킬 때 써.",
+        "properNounIndices": [
+          22,
+          25
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Yes. If someone is having problems because they failed to prepare, then those problems 'are on them', and they should take responsibility.",
+        "korean": "맞아요. 누군가 준비를 안 해서 문제가 생겼다면, 그 문제는 '그 사람 탓'이고, 책임을 져야 해요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '내 통제 밖의' mean in English?",
+      "options": [
+        "this is on me",
+        "schedule",
+        "that's on you",
+        "out of my control"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L1_BTEW_008_set2",
+    "parentSetId": "L1_BTEW_008",
+    "theme": "That's on you",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "For example, if you come to work at the wrong time because you didn't read your schedule, it's on you. If you fail an exam because you didn't prepare, then the failure is on you.",
+        "korean": "예를 들어, 스케줄을 안 읽어서 잘못된 시간에 출근하면, 그건 네 탓이야. 준비를 안 해서 시험에 떨어지면, 그 실패도 네 탓이야.",
+        "properNounIndices": [
+          20
+        ]
+      },
+      {
+        "id": 6,
+        "english": "And if I'm late again after this, then it's definitely on me! Let's hear some examples of people using 'it's on you'.",
+        "korean": "그리고 이 다음에 또 늦으면, 확실히 내 탓이지! 사람들이 'it's on you'를 쓰는 예시를 들어보자.",
+        "properNounIndices": [
+          2,
+          12
+        ]
+      },
+      {
+        "id": 7,
+        "english": "If you didn't prepare for your speech, and it went badly, that's on you. It was obviously going to happen.",
+        "korean": "발표 준비를 안 했는데 망했다면, 그건 네 탓이야. 당연히 그렇게 될 수밖에.",
+        "properNounIndices": [
+          14
+        ]
+      },
+      {
+        "id": 8,
+        "english": "I've already eaten. If you haven't gone shopping and you don't have any food, that's on you.",
+        "korean": "나는 이미 먹었어. 장을 안 봐서 먹을 게 없으면, 그건 네 탓이야.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 9,
+        "english": "I told you to wear a coat, and you didn't, and now you've got a cold. Well, that's on you.",
+        "korean": "코트 입으라고 했는데, 안 입었잖아. 이제 감기 걸렸지. 그건 네 탓이야.",
+        "properNounIndices": [
+          0,
+          16
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '내 통제 밖의' mean in English?",
+      "options": [
+        "this is on me",
+        "admit",
+        "out of my control",
+        "schedule"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L1_BTEW_008_set3",
+    "parentSetId": "L1_BTEW_008",
+    "theme": "That's on you",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "A different way to use 'on someone' to talk about responsibility is when you offer to pay for something, usually food or drink. You can say 'this is on me' to mean that you'll pay for it.",
+        "korean": "'on someone'을 책임과 관련해서 쓰는 다른 방법이 있는데, 음식이나 음료를 사겠다고 할 때예요. 'This is on me'라고 하면 내가 낸다는 뜻이에요.",
+        "properNounIndices": [
+          23
+        ]
+      },
+      {
+        "id": 11,
+        "english": "Yes. If you invite people out for a meal, you can say 'Don't worry, this is on me' to say that you'll pay for it – you'll take responsibility for it.",
+        "korean": "맞아. 사람들을 식사에 초대했으면, '걱정 마, 내가 낼게'라고 말할 수 있어 — 네가 비용을 책임진다는 뜻이야.",
+        "properNounIndices": [
+          1,
+          12
+        ]
+      },
+      {
+        "id": 12,
+        "english": "Phil, seeing as you were late today, that's on you. Then, I think the next round of coffees should be on you as well! I hope you've brought your wallet!",
+        "korean": "필, 오늘 늦은 건 네 탓이니까. 그러면 다음 커피는 네가 사야 할 것 같은데! 지갑 가져왔길 바라!",
+        "properNounIndices": [
+          10,
+          11,
+          24
+        ]
+      },
+      {
+        "id": 13,
+        "english": "I have, yes. See you next time, on time. Bye!",
+        "korean": "가져왔어, 응. 다음에 봐, 제시간에. 안녕!",
+        "properNounIndices": [
+          0,
+          3,
+          9
+        ]
+      },
+      {
+        "id": 14,
+        "english": "Bye bye!",
+        "korean": "안녕!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '책임' mean in English?",
+      "options": [
+        "this is on me",
+        "out of my control",
+        "that's on you",
+        "responsibility"
+      ],
+      "answer": 3
+    }
+  }
+]

@@ -1,0 +1,422 @@
+[
+  {
+    "setId": "L4_TED_002_set1",
+    "parentSetId": "L4_TED_002",
+    "theme": "The Surprising Science of Motivation",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "There's a mismatch between what science knows and what business does.",
+        "korean": "과학이 아는 것과 비즈니스가 하는 것 사이에 불일치가 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "For roughly a century, our dominant model of motivation has been built on a very simple idea: reward good behavior, punish bad behavior.",
+        "korean": "거의 한 세기 동안, 우리의 지배적인 동기부여 모델은 매우 단순한 생각에 구축되어 왔습니다: 좋은 행동에 보상하고, 나쁜 행동에 처벌하라.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The carrot and the stick.",
+        "korean": "당근과 채찍입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Pay people more, and they'll work harder.",
+        "korean": "사람들에게 더 많이 지불하면, 더 열심히 일할 것입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Give people bonuses, and performance goes up.",
+        "korean": "보너스를 주면 성과가 올라갑니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '활동 자체에서 오는 만족감에 의한 동기' mean in English?",
+      "options": [
+        "functional fixedness",
+        "intrinsic motivation",
+        "flow state",
+        "extrinsic motivator"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L4_TED_002_set2",
+    "parentSetId": "L4_TED_002",
+    "theme": "The Surprising Science of Motivation",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "This model is so deeply embedded in how organizations operate that it's rarely questioned.",
+        "korean": "이 모델은 조직 운영 방식에 매우 깊이 내재되어 있어서 거의 의문시되지 않습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "But here's the thing: science has largely moved on from this model.",
+        "korean": "하지만 요점은 이것입니다: 과학은 대체로 이 모델을 넘어섰습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "And the business world, by and large, hasn't caught up.",
+        "korean": "그리고 비즈니스 세계는 대체로 따라잡지 못했습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Let me tell you about a classic study.",
+        "korean": "고전적인 연구에 대해 말씀드리겠습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Sam Glucksberg, a psychologist at Princeton, gave participants a problem called the candle problem.",
+        "korean": "프린스턴의 심리학자 샘 글럭스버그는 참가자들에게 양초 문제라 불리는 과제를 주었습니다.",
+        "properNounIndices": [
+          1,
+          5
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '활동 자체에서 오는 만족감에 의한 동기' mean in English?",
+      "options": [
+        "intrinsic motivation",
+        "flow state",
+        "autonomy",
+        "mastery"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L4_TED_002_set3",
+    "parentSetId": "L4_TED_002",
+    "theme": "The Surprising Science of Motivation",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "You give someone a candle, a box of thumbtacks, and a book of matches.",
+        "korean": "누군가에게 양초 하나, 압정 한 상자, 성냥 한 갑을 줍니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "Their task is to attach the candle to the wall so that it burns without dripping wax on the table.",
+        "korean": "그들의 과제는 양초를 벽에 붙여 밀랍이 테이블에 떨어지지 않게 타도록 하는 것입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "Most people try to tack the candle directly to the wall — doesn't work.",
+        "korean": "대부분은 양초를 직접 벽에 고정하려 합니다 — 안 됩니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
+        "english": "Most try to melt wax on the candle and stick it to the wall — doesn't work.",
+        "korean": "대부분은 양초의 밀랍을 녹여 벽에 붙이려 합니다 — 안 됩니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "The solution requires what psychologists call 'functional fixedness' — you need to see the box not as a container for tacks but as a platform.",
+        "korean": "해결책은 심리학자들이 '기능적 고착'이라 부르는 것을 극복해야 합니다 — 상자를 압정 용기가 아니라 플랫폼으로 봐야 합니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '과제에 깊이 빠져 시간 감각을 잃는 상태' mean in English?",
+      "options": [
+        "functional fixedness",
+        "intrinsic motivation",
+        "flow state",
+        "extrinsic motivator"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L4_TED_002_set4",
+    "parentSetId": "L4_TED_002",
+    "theme": "The Surprising Science of Motivation",
+    "level": 5,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "You tack the box to the wall, put the candle in the box.",
+        "korean": "상자를 벽에 고정하고, 양초를 상자 안에 놓는 것입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 16,
+        "english": "Glucksberg ran the experiment two ways.",
+        "korean": "글럭스버그는 실험을 두 가지 방식으로 진행했습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "He told one group that he was collecting baseline data — just take your time.",
+        "korean": "한 그룹에게는 기준 데이터를 수집 중이라고 말했습니다 — 천천히 하라고요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
+        "english": "He told another group that the top performer would receive a cash prize — a financial incentive.",
+        "korean": "다른 그룹에게는 최고 수행자가 현금 상을 받을 것이라고 말했습니다 — 금전적 인센티브요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 19,
+        "english": "Which group solved the problem faster?",
+        "korean": "어느 그룹이 문제를 더 빨리 해결했을까요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '활동 자체에서 오는 만족감에 의한 동기' mean in English?",
+      "options": [
+        "extrinsic motivator",
+        "intrinsic motivation",
+        "autonomy",
+        "functional fixedness"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L4_TED_002_set5",
+    "parentSetId": "L4_TED_002",
+    "theme": "The Surprising Science of Motivation",
+    "level": 5,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "The incentivized group was, on average, three and a half minutes slower.",
+        "korean": "인센티브를 받은 그룹이 평균적으로 3분 반 더 느렸습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 21,
+        "english": "Think about what that means.",
+        "korean": "그것이 무엇을 의미하는지 생각해 보세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 22,
+        "english": "The cash reward didn't improve performance. It made it worse.",
+        "korean": "현금 보상은 성과를 향상시키지 않았습니다. 오히려 더 나쁘게 만들었습니다.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 23,
+        "english": "The financial incentive narrowed focus, induced pressure, and reduced creative thinking.",
+        "korean": "금전적 인센티브는 초점을 좁히고, 압박을 유발하며, 창의적 사고를 감소시켰습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 24,
+        "english": "This finding has been replicated dozens of times in dozens of contexts.",
+        "korean": "이 발견은 수십 가지 맥락에서 수십 번 재현되어 왔습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '외부에서 오는 보상이나 처벌로 인한 동기' mean in English?",
+      "options": [
+        "functional fixedness",
+        "extrinsic motivator",
+        "mastery",
+        "autonomy"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L4_TED_002_set6",
+    "parentSetId": "L4_TED_002",
+    "theme": "The Surprising Science of Motivation",
+    "level": 6,
+    "setNumber": 6,
+    "sentences": [
+      {
+        "id": 25,
+        "english": "External rewards — what psychologists call 'extrinsic motivators' — work well for tasks that are simple, algorithmic, and require only follow-the-rules execution.",
+        "korean": "외적 보상 — 심리학자들이 '외재적 동기부여 요인'이라 부르는 것은 — 단순하고, 알고리즘적이며, 규칙 따르기 실행만 요구하는 과제에 잘 작동합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 26,
+        "english": "But for tasks that require creative thinking, conceptual understanding, and complex problem-solving, external rewards consistently underperform.",
+        "korean": "하지만 창의적 사고, 개념적 이해, 복잡한 문제해결을 요구하는 과제에서는 외적 보상이 일관되게 부진합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 27,
+        "english": "So what actually motivates people to do high-quality, creative work?",
+        "korean": "그러면 실제로 사람들에게 높은 질의 창의적인 일을 하도록 동기를 부여하는 것은 무엇일까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 28,
+        "english": "Researchers have identified three core elements.",
+        "korean": "연구자들은 세 가지 핵심 요소를 식별했습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 29,
+        "english": "The first is autonomy — the urge to direct our own lives.",
+        "korean": "첫 번째는 자율성입니다 — 우리 자신의 삶을 이끌고자 하는 충동이죠.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '기술이나 지식의 높은 수준의 습득' mean in English?",
+      "options": [
+        "intrinsic motivation",
+        "mastery",
+        "extrinsic motivator",
+        "flow state"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L4_TED_002_set7",
+    "parentSetId": "L4_TED_002",
+    "theme": "The Surprising Science of Motivation",
+    "level": 6,
+    "setNumber": 7,
+    "sentences": [
+      {
+        "id": 30,
+        "english": "People perform better and report higher satisfaction when they have genuine control over what they do, when they do it, how they do it, and with whom.",
+        "korean": "사람들은 무엇을, 언제, 어떻게, 누구와 하는지에 대해 진정한 통제를 가질 때 더 잘 수행하고 더 높은 만족감을 보고합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 31,
+        "english": "The second is mastery — the desire to get better at things that matter.",
+        "korean": "두 번째는 숙달입니다 — 중요한 것들에서 나아지고자 하는 욕구입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 32,
+        "english": "Flow states — those periods of deep engagement where time disappears — occur when the difficulty of a task is precisely matched to the capability of the person performing it.",
+        "korean": "몰입 상태 — 시간이 사라지는 깊은 참여의 기간 — 는 과제의 난이도가 수행하는 사람의 능력에 정확히 일치할 때 발생합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 33,
+        "english": "People seek that state.",
+        "korean": "사람들은 그 상태를 추구합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 34,
+        "english": "They're not trying to avoid work; they're looking for work that challenges them at exactly the right level.",
+        "korean": "일을 피하려는 것이 아닙니다; 정확히 적절한 수준에서 도전하는 일을 찾고 있는 것입니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '기술이나 지식의 높은 수준의 습득' mean in English?",
+      "options": [
+        "flow state",
+        "functional fixedness",
+        "mastery",
+        "autonomy"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L4_TED_002_set8",
+    "parentSetId": "L4_TED_002",
+    "theme": "The Surprising Science of Motivation",
+    "level": 6,
+    "setNumber": 8,
+    "sentences": [
+      {
+        "id": 35,
+        "english": "The third is purpose — the sense that what you're doing matters, that it connects to something larger than yourself.",
+        "korean": "세 번째는 목적입니다 — 하는 일이 중요하다는, 자신보다 더 큰 무언가에 연결된다는 감각입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 36,
+        "english": "When people understand why their work matters — not just what it produces but who it helps, what it contributes to — their engagement and performance improve markedly.",
+        "korean": "사람들이 왜 자신의 일이 중요한지 — 단지 무엇을 생산하는지가 아니라 누구를 돕는지, 무엇에 기여하는지 — 를 이해하면 참여와 성과가 현저하게 향상됩니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 37,
+        "english": "The most successful organizations of the coming decades, I'd argue, will be those that take these findings seriously.",
+        "korean": "다가오는 수십 년간 가장 성공적인 조직은 이 발견들을 진지하게 받아들이는 조직일 것이라 주장합니다.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 38,
+        "english": "Not replacing compensation — fair pay is still essential.",
+        "korean": "보상을 대체하는 것이 아닙니다 — 공정한 급여는 여전히 필수적입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 39,
+        "english": "But moving beyond the assumption that more money is always the answer.",
+        "korean": "하지만 더 많은 돈이 항상 답이라는 가정을 넘어서는 것입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 40,
+        "english": "Autonomy. Mastery. Purpose.",
+        "korean": "자율성. 숙달. 목적.",
+        "properNounIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 41,
+        "english": "That's the science.",
+        "korean": "그것이 과학입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 42,
+        "english": "The question is whether the business world is ready to believe it.",
+        "korean": "질문은 비즈니스 세계가 이것을 믿을 준비가 되었는지입니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '자신의 행동과 결정을 스스로 통제하는 능력' mean in English?",
+      "options": [
+        "extrinsic motivator",
+        "functional fixedness",
+        "autonomy",
+        "flow state"
+      ],
+      "answer": 2
+    }
+  }
+]

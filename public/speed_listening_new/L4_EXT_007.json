@@ -1,0 +1,163 @@
+[
+  {
+    "setId": "L4_EXT_007_set1",
+    "parentSetId": "L4_EXT_007",
+    "theme": "Science Documentary — Neuroplasticity",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "For most of the twentieth century, neuroscience operated under a fundamental assumption: that the adult brain was essentially fixed.",
+        "korean": "20세기 대부분, 신경과학은 성인의 뇌가 본질적으로 고정되어 있다는 근본적 가정 하에 작동했습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Once you passed a certain age — typically your mid-twenties — your neural circuitry was set. New connections couldn't form. Lost neurons couldn't be replaced.",
+        "korean": "특정 나이 — 보통 20대 중반 — 를 넘으면 신경 회로가 고정됐다고 봤습니다.",
+        "properNounIndices": [
+          16,
+          20
+        ]
+      },
+      {
+        "id": 2,
+        "english": "The brain you had was the brain you were stuck with. We now know that this assumption was spectacularly wrong.",
+        "korean": "가진 뇌가 평생 쓸 뇌였죠. 이제 이 가정이 완전히 틀렸다는 걸 압니다.",
+        "properNounIndices": [
+          11
+        ]
+      },
+      {
+        "id": 3,
+        "english": "The discovery of neuroplasticity — the brain's ability to reorganize itself by forming new neural connections throughout life — has been one of the most transformative findings in modern science.",
+        "korean": "신경가소성의 발견 — 뇌가 평생에 걸쳐 새로운 신경 연결을 형성하여 스스로를 재조직하는 능력 —",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "It means that the brain is not a static organ but a dynamic, constantly adapting system. Consider the case of London taxi drivers.",
+        "korean": "뇌가 정적인 기관이 아니라 끊임없이 적응하는 역동적 시스템이라는 뜻입니다.",
+        "properNounIndices": [
+          16,
+          20
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '보상 체계' mean in English?",
+      "options": [
+        "static organ",
+        "hippocampus (pl. hippocampi)",
+        "reward system",
+        "spatial memory"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L4_EXT_007_set2",
+    "parentSetId": "L4_EXT_007",
+    "theme": "Science Documentary — Neuroplasticity",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "A landmark study by neuroscientist Eleanor Maguire found that experienced cab drivers had significantly larger hippocampi — the brain regions associated with spatial memory and navigation — than control subjects.",
+        "korean": "신경과학자 엘리너 맥과이어의 획기적 연구에 따르면, 숙련된 택시 기사들의 해마가 상당히 더 컸습니다.",
+        "properNounIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Moreover, the size of the hippocampus correlated with the number of years spent driving a taxi. The brain had physically changed in response to the demands placed upon it.",
+        "korean": "더욱이, 해마의 크기가 택시 운전 연수와 상관관계가 있었습니다.",
+        "properNounIndices": [
+          16
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Neuroplasticity also offers hope for recovery.",
+        "korean": "신경가소성은 회복에 대한 희망도 제공합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Stroke patients who lose the ability to move a limb can, through intensive rehabilitation, retrain other parts of their brain to take over the lost function.",
+        "korean": "사지를 움직이는 능력을 잃은 뇌졸중 환자가 집중 재활을 통해 뇌의 다른 부분을 재훈련할 수 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Musicians who practice for thousands of hours develop enlarged areas in the motor cortex corresponding to the fingers they use most.",
+        "korean": "수천 시간 연습하는 음악가는 운동 피질에서 확대된 영역이 발달합니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '공간 기억' mean in English?",
+      "options": [
+        "spatial memory",
+        "neural circuitry",
+        "rehabilitation",
+        "prefrontal cortex"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L4_EXT_007_set3",
+    "parentSetId": "L4_EXT_007",
+    "theme": "Science Documentary — Neuroplasticity",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "And people who meditate regularly show measurable changes in the prefrontal cortex — the region associated with attention, decision-making, and emotional regulation.",
+        "korean": "규칙적으로 명상하는 사람들은 주의력, 의사결정과 관련된 전두엽 피질에서 측정 가능한 변화를 보입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "But neuroplasticity is a double-edged sword. The same mechanism that allows the brain to learn and adapt also makes it vulnerable to negative changes. Chronic stress can shrink the hippocampus.",
+        "korean": "하지만 신경가소성은 양날의 검입니다. 뇌가 배우고 적응하게 하는 같은 메커니즘이 취약하게도 만들어요.",
+        "properNounIndices": [
+          6,
+          24
+        ]
+      },
+      {
+        "id": 12,
+        "english": "Addiction rewires the reward system. And prolonged exposure to digital devices may be reshaping how the brain processes attention and memory in ways we don't yet fully understand.",
+        "korean": "중독은 보상 시스템을 재배선합니다. 디지털 기기에 대한 장기 노출이 뇌가 주의력을 처리하는 방식을 바꿀 수 있어요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 13,
+        "english": "The message is clear: your brain is constantly changing. The question is whether you're shaping it deliberately or letting your environment shape it for you.",
+        "korean": "메시지는 분명합니다: 뇌는 끊임없이 변해요. 문제는 의도적으로 형성하고 있는지, 환경이 대신 형성하게 놔두고 있는지입니다.",
+        "properNounIndices": [
+          9
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '해마' mean in English?",
+      "options": [
+        "neural circuitry",
+        "hippocampus (pl. hippocampi)",
+        "spatial memory",
+        "neuroplasticity"
+      ],
+      "answer": 1
+    }
+  }
+]

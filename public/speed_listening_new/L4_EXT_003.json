@@ -1,0 +1,185 @@
+[
+  {
+    "setId": "L4_EXT_003_set1",
+    "parentSetId": "L4_EXT_003",
+    "theme": "Panel Discussion — AI and the Future of Work",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Let's jump right into the big question. Will artificial intelligence create more jobs than it destroys, or are we headed for a massive displacement of workers?",
+        "korean": "핵심 질문으로 바로 들어가죠. AI가 파괴하는 것보다 더 많은 일자리를 만들 건가요?",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I think the honest answer is: both.",
+        "korean": "솔직한 답은 둘 다라고 생각합니다.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "History shows that every major technological revolution — the steam engine, electricity, the internet — eliminated certain jobs while creating entirely new categories of work that nobody could have predicted.",
+        "korean": "역사를 보면 증기기관, 전기, 인터넷 등 모든 주요 기술 혁명이 특정 직업을 없앤 동시에 완전히 새로운 직업을 만들었습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "AI will follow the same pattern. But — and this is critical — the transition period can be brutal, especially for workers in routine, repetitive roles.",
+        "korean": "AI도 같은 패턴을 따를 거예요. 하지만 — 이것이 중요한데 — 전환 기간이 잔인할 수 있습니다.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I agree with Dr. Patel on the long-term picture, but I think we're underestimating the speed of this particular transition. Previous revolutions took decades to fully play out.",
+        "korean": "장기적 전망에 대해서는 파텔 박사에게 동의하지만, 이 전환의 속도를 과소평가하고 있다고 생각합니다.",
+        "properNounIndices": [
+          0,
+          3,
+          4,
+          10,
+          20
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Panel Discussion — AI and the Future of Work",
+        "Investigative Journalism — Corporate Whistleblowing",
+        "Real Estate Tour",
+        "Checking Into a Hotel"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L4_EXT_003_set2",
+    "parentSetId": "L4_EXT_003",
+    "theme": "Panel Discussion — AI and the Future of Work",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "AI is evolving on a timeline of years, not decades. The gap between job destruction and job creation could leave millions of people in limbo.",
+        "korean": "AI는 수십 년이 아닌 수년 단위로 진화하고 있어요. 일자리 파괴와 창출 사이의 격차가 수백만 명을 뒤처지게 할 수 있습니다.",
+        "properNounIndices": [
+          10
+        ]
+      },
+      {
+        "id": 6,
+        "english": "So what should we be doing right now to prepare?",
+        "korean": "그래서 지금 당장 준비하기 위해 뭘 해야 할까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Investment in education and reskilling is absolutely essential. But we need to rethink what education means. It's not just about teaching people to code — that's too narrow.",
+        "korean": "교육과 재숙련에 대한 투자가 절대적으로 필수적입니다.",
+        "properNounIndices": [
+          8,
+          16
+        ]
+      },
+      {
+        "id": 8,
+        "english": "It's about developing adaptable skill sets: critical thinking, creativity, emotional intelligence, complex problem-solving. These are the capabilities that AI still struggles with.",
+        "korean": "적응 가능한 기술을 개발하는 거예요: 비판적 사고, 창의성, 감성 지능, 복잡한 문제 해결 같은.",
+        "properNounIndices": [
+          13,
+          18
+        ]
+      },
+      {
+        "id": 9,
+        "english": "I'd add that governments need to start experimenting with new social safety nets.",
+        "korean": "정부가 새로운 사회 안전망을 실험하기 시작해야 한다고 덧붙이고 싶습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Ordering Food Delivery",
+        "Panel Discussion — AI and the Future of Work",
+        "History Lecture — The Fall of the Berlin Wall",
+        "Radio Interview — Small Business Owner"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L4_EXT_003_set3",
+    "parentSetId": "L4_EXT_003",
+    "theme": "Panel Discussion — AI and the Future of Work",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "Universal basic income, portable benefits that aren't tied to a single employer, tax incentives for companies that invest in worker training rather than simply automating.",
+        "korean": "보편적 기본소득, 단일 고용주에 묶이지 않는 이동식 복리후생, 근로자 훈련에 투자하는 기업에 대한 세금 인센티브요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "We can't just rely on the market to sort this out.",
+        "korean": "시장이 알아서 해결하길 기대할 수만은 없습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "There's also the question of inequality. Won't the benefits of AI disproportionately flow to those who already have capital and education?",
+        "korean": "불평등의 문제도 있습니다. AI의 혜택이 이미 자본과 교육을 가진 사람들에게 불균형적으로 흘러가지 않을까요?",
+        "properNounIndices": [
+          6,
+          10
+        ]
+      },
+      {
+        "id": 13,
+        "english": "That's the real danger. If AI productivity gains are captured primarily by shareholders and tech companies, we'll see a massive concentration of wealth.",
+        "korean": "그게 진짜 위험입니다. AI 생산성 향상이 주로 주주와 테크 기업에게만 돌아간다면, 부의 대규모 집중을 보게 될 거예요.",
+        "properNounIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "id": 14,
+        "english": "The technology itself is neutral — it's the policy choices we make around it that will determine whether AI becomes a force for broad prosperity or deeper inequality.",
+        "korean": "기술 자체는 중립적입니다 — 그것을 둘러싼 정책적 선택이 AI가 광범위한 번영의 힘이 될지 결정할 거예요.",
+        "properNounIndices": [
+          18
+        ]
+      },
+      {
+        "id": 15,
+        "english": "Which means this isn't just a technology question. It's fundamentally a political one.",
+        "korean": "이것이 단순한 기술 문제가 아니라는 뜻입니다. 근본적으로 정치적 문제예요.",
+        "properNounIndices": [
+          8
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Panel Discussion — AI and the Future of Work",
+        "Economic Analysis — The Paradox of Thrift",
+        "Investigative Journalism — Corporate Whistleblowing",
+        "Describing a Movie"
+      ],
+      "answer": 0
+    }
+  }
+]

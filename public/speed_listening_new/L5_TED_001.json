@@ -1,0 +1,813 @@
+[
+  {
+    "setId": "L5_TED_001_set1",
+    "parentSetId": "L5_TED_001",
+    "theme": "The Power of Vulnerability",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "A few years ago, I had what I call a breakdown.",
+        "korean": "몇 년 전에 저는 소위 '붕괴'라고 부르는 경험을 했어요.",
+        "properNounIndices": [
+          4,
+          7
+        ]
+      },
+      {
+        "id": 1,
+        "english": "My therapist — who I'd been seeing for about a year at that point — had a different word for it.",
+        "korean": "제 치료사는 그 말 대신 다른 표현을 썼어요. 영적 각성이라고요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "english": "She called it a spiritual awakening.",
+        "korean": "영적인 깨어남이라고 부르더군요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I told her that language was going to be a problem for us.",
+        "korean": "그 말이 우리 사이에 문제가 될 거라고 했어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I'm a researcher.",
+        "korean": "저는 연구자입니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '더 이상 의심이나 두려움이 없이 온 마음으로 무언가를 하는 것' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_001_set2",
+    "parentSetId": "L5_TED_001",
+    "theme": "The Power of Vulnerability",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I like control and clarity and certainty.",
+        "korean": "저는 통제력, 명확성, 확실성을 좋아합니다.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 6,
+        "english": "I study things empirically.",
+        "korean": "저는 경험적으로 사물을 연구합니다.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 7,
+        "english": "I measure them.",
+        "korean": "저는 그것들을 측정해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 8,
+        "english": "I put them in spreadsheets and look for patterns.",
+        "korean": "스프레드시트에 넣고 패턴을 찾아요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 9,
+        "english": "My entire professional identity was built on the belief that if you study something long enough and carefully enough, you can predict and control it.",
+        "korean": "제 전문적 정체성 전부는 충분히 오래, 조심스럽게 연구하면 뭐든 예측하고 통제할 수 있다는 믿음 위에 세워져 있었어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '자신을 보호하기 위해 감정이나 생각 뒤에 숨거나 자신을 방어하는 것' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_001_set3",
+    "parentSetId": "L5_TED_001",
+    "theme": "The Power of Vulnerability",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "Including, to some degree, people.",
+        "korean": "사람들도 어느 정도까지요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "What I did not expect was that the thing I would spend twelve years studying would fundamentally dismantle my assumptions about the world — including about myself.",
+        "korean": "제가 예상하지 못한 것은 12년을 들여 공부할 그 주제가 제 세상에 대한 가정들을 근본적으로 무너뜨릴 거라는 점이었어요. 저 자신에 대한 것도 포함해서요.",
+        "properNounIndices": [
+          1,
+          9
+        ]
+      },
+      {
+        "id": 12,
+        "english": "I study human connection.",
+        "korean": "저는 인간 관계를 연구합니다.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 13,
+        "english": "Specifically, I study shame and vulnerability — two concepts that most people would rather not talk about.",
+        "korean": "구체적으로 저는 수치심과 취약성을 연구해요. 대부분의 사람들이 말하고 싶어하지 않는 두 개념이죠.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 14,
+        "english": "And the reason I ended up studying them is that when I was researching connection, they kept appearing as its precondition.",
+        "korean": "제가 그것들을 연구하게 된 이유는 관계를 연구할 때 그것들이 항상 전제조건으로 나타났기 때문이에요.",
+        "properNounIndices": [
+          3,
+          11
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '무언가를 받거나 좋은 대우를 받을 수 있는 자격이 있다는 느낌' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_001_set4",
+    "parentSetId": "L5_TED_001",
+    "theme": "The Power of Vulnerability",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "Here's what I found in the data.",
+        "korean": "제가 데이터에서 발견한 것은 이거예요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 16,
+        "english": "When I asked people to describe a moment of deep, genuine connection — with a partner, a friend, a stranger, anyone — the stories they told always involved one thing: the risk of exposure.",
+        "korean": "사람들에게 깊고 진정한 연결의 순간을 묘사해달라고 했을 때 — 파트너, 친구, 낯선 사람, 누구든 상관없이 — 그들이 한 이야기들은 항상 한 가지를 포함했어요: 노출의 위험이요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 17,
+        "english": "Someone had been honest about something painful.",
+        "korean": "누군가 뭔가 고통스러운 것에 대해 솔직했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
+        "english": "Someone had admitted uncertainty.",
+        "korean": "누군가 불확실성을 인정했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 19,
+        "english": "Someone had said \"I don't know\" or \"I was wrong\" or \"I'm scared.\"",
+        "korean": "누군가 '나 몰라요' 또는 '내가 틀렸어' 또는 '난 두려워'라고 말했어요.",
+        "properNounIndices": [
+          3,
+          7,
+          11
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '어떤 일이 일어나기 전에 먼저 만족되어야 하는 조건' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_001_set5",
+    "parentSetId": "L5_TED_001",
+    "theme": "The Power of Vulnerability",
+    "level": 4,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "Vulnerability — the willingness to be seen — was at the center of every story of real connection.",
+        "korean": "취약성 — 보여지려는 의지 — 가 모든 진정한 연결 이야기의 중심이었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 21,
+        "english": "And yet, when I asked people about vulnerability, they described it as the last thing they wanted to experience.",
+        "korean": "그런데 취약성에 대해 사람들에게 물어봤을 때 그들은 그것을 경험하고 싶지 않은 마지막 것이라고 설명했어요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 22,
+        "english": "They called it weakness.",
+        "korean": "그들은 그것을 약함이라고 불렀어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 23,
+        "english": "Exposure.",
+        "korean": "노출이라고요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 24,
+        "english": "Risk.",
+        "korean": "위험이라고요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '자신을 보호하기 위해 감정이나 생각 뒤에 숨거나 자신을 방어하는 것' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_001_set6",
+    "parentSetId": "L5_TED_001",
+    "theme": "The Power of Vulnerability",
+    "level": 6,
+    "setNumber": 6,
+    "sentences": [
+      {
+        "id": 25,
+        "english": "The gap between those two findings was striking enough that I spent the next several years trying to understand it.",
+        "korean": "그 두 발견 사이의 간극은 충분히 놀랐고 저는 그 다음 몇 년을 그것을 이해하려고 보냈어요.",
+        "properNounIndices": [
+          10
+        ]
+      },
+      {
+        "id": 26,
+        "english": "What I found is that there are two very different ways people relate to vulnerability.",
+        "korean": "제가 발견한 것은 사람들이 취약성과 관계하는 방식이 두 가지 매우 다른 방식이 있다는 거예요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 27,
+        "english": "And the difference between them is one of the most important distinctions I've come across in my research.",
+        "korean": "그리고 그 차이는 제 연구에서 마주친 가장 중요한 구분 중 하나예요.",
+        "properNounIndices": [
+          12
+        ]
+      },
+      {
+        "id": 28,
+        "english": "Some people — and I call them \"wholehearted\" people — live with a fundamental sense of worthiness.",
+        "korean": "어떤 사람들은 — 저는 그들을 '전심의' 사람이라고 부르는데 — 근본적인 가치감을 가지고 살아요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 29,
+        "english": "They believe they are enough, not because they've proven it, but because they've accepted it.",
+        "korean": "그들은 자신이 충분하다고 믿어요. 증명했기 때문이 아니라 받아들였기 때문이에요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '다른 사람이 당신을 상처 입힐 수 있는 상태나 상황에 노출된 것' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_001_set7",
+    "parentSetId": "L5_TED_001",
+    "theme": "The Power of Vulnerability",
+    "level": 3,
+    "setNumber": 7,
+    "sentences": [
+      {
+        "id": 30,
+        "english": "And from that foundation, they can be vulnerable.",
+        "korean": "그리고 그 기초에서 그들은 취약해질 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 31,
+        "english": "They can take emotional risks.",
+        "korean": "감정적 위험을 감수할 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 32,
+        "english": "They can have difficult conversations.",
+        "korean": "어려운 대화를 나눌 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 33,
+        "english": "They can create.",
+        "korean": "창조할 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 34,
+        "english": "They can love without guaranteeing the outcome.",
+        "korean": "결과를 보장하지 않고 사랑할 수 있어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '구조물이나 개념을 체계적으로 분해하거나 무너뜨리다' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_001_set8",
+    "parentSetId": "L5_TED_001",
+    "theme": "The Power of Vulnerability",
+    "level": 3,
+    "setNumber": 8,
+    "sentences": [
+      {
+        "id": 35,
+        "english": "Others — and this is the majority, I think — operate from a place of scarcity.",
+        "korean": "다른 사람들 — 그리고 대부분이 그렇다고 생각해요 — 부족감에서 작동해요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 36,
+        "english": "Not-good-enough.",
+        "korean": "충분히 좋지 않다고요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 37,
+        "english": "Not smart enough.",
+        "korean": "충분히 똑똑하지 않다고요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 38,
+        "english": "Not thin enough.",
+        "korean": "충분히 날씬하지 않다고요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 39,
+        "english": "Not successful enough.",
+        "korean": "충분히 성공하지 못했다고요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '어떤 일이 일어나기 전에 먼저 만족되어야 하는 조건' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_001_set9",
+    "parentSetId": "L5_TED_001",
+    "theme": "The Power of Vulnerability",
+    "level": 2,
+    "setNumber": 9,
+    "sentences": [
+      {
+        "id": 40,
+        "english": "And from that place, vulnerability feels dangerous.",
+        "korean": "그리고 그곳에서는 취약성이 위험하게 느껴져요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 41,
+        "english": "So they armor themselves.",
+        "korean": "그래서 그들은 자신을 무장해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 42,
+        "english": "They numb.",
+        "korean": "둔감해져요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 43,
+        "english": "They perfect.",
+        "korean": "완벽해지려고 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 44,
+        "english": "They perform.",
+        "korean": "연기해요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '다른 사람이 당신을 상처 입힐 수 있는 상태나 상황에 노출된 것' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_001_set10",
+    "parentSetId": "L5_TED_001",
+    "theme": "The Power of Vulnerability",
+    "level": 5,
+    "setNumber": 10,
+    "sentences": [
+      {
+        "id": 45,
+        "english": "Now here's the part that really unsettled me when I found it: you cannot selectively numb emotions.",
+        "korean": "지금 제가 발견했을 때 저를 정말 불안하게 만든 부분이 있어요: 선택적으로 감정을 마비시킬 수 없다는 거예요.",
+        "properNounIndices": [
+          9
+        ]
+      },
+      {
+        "id": 46,
+        "english": "This is not something I expected the data to say, but there it was, consistent across hundreds of interviews.",
+        "korean": "이건 제가 데이터에서 예상한 게 아니었어요. 하지만 그것이 있었어요, 수백 건의 인터뷰에서 일관되게요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 47,
+        "english": "When we numb the dark emotions — grief, shame, fear, vulnerability — we also numb the light ones.",
+        "korean": "우리가 어두운 감정들 — 슬픔, 수치심, 두려움, 취약성 — 을 마비시킬 때 밝은 것들도 마비시켜요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 48,
+        "english": "Joy.",
+        "korean": "기쁨이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 49,
+        "english": "Gratitude.",
+        "korean": "감사예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '더 이상 의심이나 두려움이 없이 온 마음으로 무언가를 하는 것' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_001_set11",
+    "parentSetId": "L5_TED_001",
+    "theme": "The Power of Vulnerability",
+    "level": 5,
+    "setNumber": 11,
+    "sentences": [
+      {
+        "id": 50,
+        "english": "Love.",
+        "korean": "사랑이예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 51,
+        "english": "You can't turn off one side of the emotional dial without turning off the other.",
+        "korean": "감정 다이얼의 한쪽을 끄지 않고는 다른 쪽을 끌 수 없어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 52,
+        "english": "So we numb, and we feel less pain, but we also feel less aliveness.",
+        "korean": "그래서 우리는 마비되고 적게 고통받지만 생명력도 적게 느껴요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 53,
+        "english": "And then we feel more numbness, and we reach for more substances, more achievement, more distraction to fill the space.",
+        "korean": "그리고 나서 우리는 더 많은 마비를 느끼고 더 많은 물질, 성취, 산만함에 손을 뻗어 그 공간을 채우려고 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 54,
+        "english": "And the cycle continues.",
+        "korean": "그리고 이 순환이 계속돼요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '구조물이나 개념을 체계적으로 분해하거나 무너뜨리다' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_001_set12",
+    "parentSetId": "L5_TED_001",
+    "theme": "The Power of Vulnerability",
+    "level": 5,
+    "setNumber": 12,
+    "sentences": [
+      {
+        "id": 55,
+        "english": "I want to tell you what wholehearted people do differently.",
+        "korean": "전심의 사람들이 뭐 다르게 하는지 말씀해드리고 싶어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 56,
+        "english": "And I want to be honest — I'm not describing myself here.",
+        "korean": "그리고 솔직하고 싶어요 — 저는 여기서 저 자신을 설명하는 게 아니에요.",
+        "properNounIndices": [
+          1,
+          7
+        ]
+      },
+      {
+        "id": 57,
+        "english": "I'm describing what the research showed, and I've spent years trying, imperfectly and inconsistently, to move in this direction.",
+        "korean": "저는 연구가 보여준 것을 설명하는 거고, 저는 완벽하지 않고 일관되지 않게 이 방향으로 움직이려고 몇 년을 보냈어요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 58,
+        "english": "Wholehearted people let themselves be seen.",
+        "korean": "전심의 사람들은 자신이 보여지게 놔둬요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 59,
+        "english": "Radically, vulnerably seen.",
+        "korean": "급진적으로, 취약하게 보여져요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '어떤 일이 일어나기 전에 먼저 만족되어야 하는 조건' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_001_set13",
+    "parentSetId": "L5_TED_001",
+    "theme": "The Power of Vulnerability",
+    "level": 6,
+    "setNumber": 13,
+    "sentences": [
+      {
+        "id": 60,
+        "english": "They love with their whole hearts, even knowing there's no guarantee.",
+        "korean": "그들은 온 마음으로 사랑해요, 보장이 없다는 걸 알면서도요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 61,
+        "english": "They practice gratitude and lean into joy even during difficult moments, because they've come to believe that joy is not a luxury — it's a form of radical resistance to a culture of scarcity.",
+        "korean": "그들은 감사를 연습하고 어려운 순간에도 기쁨으로 기울어져요. 기쁨은 사치가 아니라 부족 문화에 대한 급진적 저항의 형태라고 믿게 되었기 때문이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 62,
+        "english": "They believe they're enough.",
+        "korean": "그들은 자신이 충분하다고 믿어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 63,
+        "english": "Not because they've earned it, but because they've stopped needing to prove it.",
+        "korean": "벌었기 때문이 아니라 증명할 필요가 없게 되었기 때문이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 64,
+        "english": "And perhaps most importantly: they talk about their fears rather than pretending them away.",
+        "korean": "그리고 아마도 가장 중요한 것은: 그들은 두려움에 대해 말해요, 그것을 무시하기보다는요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '구조물이나 개념을 체계적으로 분해하거나 무너뜨리다' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_001_set14",
+    "parentSetId": "L5_TED_001",
+    "theme": "The Power of Vulnerability",
+    "level": 5,
+    "setNumber": 14,
+    "sentences": [
+      {
+        "id": 65,
+        "english": "The reason I had what I call a breakdown — and what my therapist calls a spiritual awakening — is that the research demanded I take a hard look at my own armor.",
+        "korean": "제가 소위 '붕괴'라고 부르는 것 — 제 치료사가 '영적 각성'이라고 부르는 — 이유는 연구가 제가 자신의 갑옷을 똑똑히 봐야 한다고 요구했거든요.",
+        "properNounIndices": [
+          2,
+          5,
+          24
+        ]
+      },
+      {
+        "id": 66,
+        "english": "My own perfectionism.",
+        "korean": "제 자신의 완벽주의요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 67,
+        "english": "My own certainty-seeking.",
+        "korean": "제 자신의 확실성 추구요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 68,
+        "english": "And when I did, it fell apart for a while.",
+        "korean": "그리고 제가 그렇게 했을 때 한동안 무너져 내렸어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 69,
+        "english": "Which was terrifying.",
+        "korean": "그것은 무서웠어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '어떤 일이 일어나기 전에 먼저 만족되어야 하는 조건' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_001_set15",
+    "parentSetId": "L5_TED_001",
+    "theme": "The Power of Vulnerability",
+    "level": 4,
+    "setNumber": 15,
+    "sentences": [
+      {
+        "id": 70,
+        "english": "And necessary.",
+        "korean": "그리고 필요했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 71,
+        "english": "Connection is why we're here.",
+        "korean": "연결이 우리가 여기 있는 이유예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 72,
+        "english": "It gives purpose and meaning to our lives.",
+        "korean": "그것은 우리 삶에 목적과 의미를 줘요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 73,
+        "english": "But connection requires vulnerability.",
+        "korean": "하지만 연결은 취약성을 요구해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 74,
+        "english": "And vulnerability requires the willingness to believe that you are worthy of connection — not someday, after you've achieved enough, or fixed enough, or proven enough.",
+        "korean": "그리고 취약성은 당신이 연결할 가치가 있다고 믿을 의지를 요구해요 — 어느 날이 아니라 충분히 성취하거나 고치거나 증명한 후가 아니라요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 75,
+        "english": "Now.",
+        "korean": "지금이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 76,
+        "english": "That's the most important thing I know.",
+        "korean": "그것이 제가 아는 가장 중요한 것이에요.",
+        "properNounIndices": [
+          5
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '어떤 일이 일어나기 전에 먼저 만족되어야 하는 조건' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  }
+]

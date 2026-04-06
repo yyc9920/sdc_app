@@ -1,0 +1,188 @@
+[
+  {
+    "setId": "L2_INT_004_set1",
+    "parentSetId": "L2_INT_004",
+    "theme": "Student Parking Fee Increase",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The university has announced that student parking permit fees will increase by 20% starting next academic year.",
+        "korean": "대학에서 학생 주차 허가 수수료가 다음 학년도부터 20% 인상된다고 발표했습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "The additional revenue will be used to fund improvements to the campus parking infrastructure, including the installation of electric vehicle charging stations and the repair of deteriorating surfaces in Lots B and D.",
+        "korean": "추가 수입은 전기차 충전소 설치와 B, D 구역 노면 보수 등 캠퍼스 주차 인프라 개선에 사용됩니다.",
+        "properNounIndices": [
+          29,
+          30,
+          32
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Currently, a standard annual parking permit costs $240.",
+        "korean": "현재 표준 연간 주차 허가증은 240달러입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Students who register before May 15th will receive the permit at the current rate.",
+        "korean": "5월 15일 이전에 등록하는 학생은 현재 가격으로 허가증을 받을 수 있습니다.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Did you see the parking fee increase notice?",
+        "korean": "주차비 인상 공지 봤어?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Campus Café Relocation",
+        "Student Parking Fee Increase",
+        "Mandatory Advising Sessions",
+        "Library Hours Change"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L2_INT_004_set2",
+    "parentSetId": "L2_INT_004",
+    "theme": "Student Parking Fee Increase",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Ugh, yes. Another price hike.",
+        "korean": "에, 응. 또 가격 인상이야.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 6,
+        "english": "I mean, the reasons seem reasonable to me. The parking lots on the south end are in really bad shape.",
+        "korean": "내 말은, 이유가 나에게는 합리적으로 보여. 남쪽 주차장은 정말 상태가 안 좋거든.",
+        "properNounIndices": [
+          0,
+          8
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Sure, but a 20% increase is a lot. That's almost 50 more dollars a year.",
+        "korean": "그렇긴 한데, 20% 인상은 많아. 일 년에 거의 50달러나 더 내는 거잖아.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 8,
+        "english": "$48, to be exact. But think about it — that's four dollars a month.",
+        "korean": "정확히 48달러야. 하지만 생각해봐 — 한 달에 4달러야.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 9,
+        "english": "And you're getting EV chargers, repaved lots, better infrastructure overall.",
+        "korean": "그리고 전기차 충전기, 재포장된 주차장, 전반적으로 더 나은 인프라를 얻잖아.",
+        "properNounIndices": [
+          3
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Library Hours Change",
+        "Campus Café Relocation",
+        "Student Parking Fee Increase",
+        "Mandatory Advising Sessions"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_INT_004_set3",
+    "parentSetId": "L2_INT_004",
+    "theme": "Student Parking Fee Increase",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "I drive an older car. EV chargers don't exactly benefit me.",
+        "korean": "나는 오래된 차를 몰아. 전기차 충전기는 나한테 별 도움이 안 돼.",
+        "properNounIndices": [
+          0,
+          5
+        ]
+      },
+      {
+        "id": 11,
+        "english": "Well, the repaving helps everyone, and honestly, more EV charging stations might mean fewer gas cars competing for spots in the future.",
+        "korean": "음, 재포장은 모두에게 도움이 되고, 솔직히 전기차 충전소가 늘어나면 미래에 자리를 두고 경쟁하는 일반 차가 줄어들 수도 있어.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 12,
+        "english": "I hadn't thought about it that way. I'm still a little frustrated, but at least the money is going toward something concrete, not just into a general fund.",
+        "korean": "그렇게는 생각 못 했어. 여전히 좀 답답하긴 한데, 적어도 돈이 일반 기금이 아니라 구체적인 곳에 쓰이니까.",
+        "properNounIndices": [
+          0,
+          7
+        ]
+      },
+      {
+        "id": 13,
+        "english": "Right. And if you register early, you still get the old rate. So there's a window to avoid the increase entirely.",
+        "korean": "맞아. 그리고 일찍 등록하면 여전히 이전 가격이야. 인상을 완전히 피할 수 있는 기간이 있어.",
+        "properNounIndices": [
+          1,
+          12
+        ]
+      },
+      {
+        "id": 14,
+        "english": "Oh, that's good. I'll have to remember to do that before May.",
+        "korean": "오, 좋다. 5월 전에 그거 해야 하는 거 기억해야겠다.",
+        "properNounIndices": [
+          3,
+          11
+        ]
+      },
+      {
+        "id": 15,
+        "english": "The man expresses his opinion about the parking fee increase. State his opinion and explain the reasons he gives for holding that opinion.",
+        "korean": "남자가 주차비 인상에 대한 의견을 표현합니다. 그의 의견과 이유를 설명하세요.",
+        "properNounIndices": [
+          10
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Student Parking Fee Increase",
+        "Campus Café Relocation",
+        "Library Hours Change",
+        "Mandatory Advising Sessions"
+      ],
+      "answer": 0
+    }
+  }
+]

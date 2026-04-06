@@ -1,0 +1,1101 @@
+[
+  {
+    "setId": "L5_TED_003_set1",
+    "parentSetId": "L5_TED_003",
+    "theme": "How Great Leaders Inspire Action",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "How do you explain when things don't go as we expect?",
+        "korean": "예상과 다르게 상황이 진행될 때, 어떻게 설명하시겠어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "How do you explain when others are able to achieve things that seem to defy our assumptions?",
+        "korean": "다른 사람들이 우리의 가정에 어긋나는 것을 성취할 수 있을 때, 이를 어떻게 설명하겠어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "There's a pattern, I've found, that explains why some leaders and some organizations are more innovative, more influential, and more profitable than others.",
+        "korean": "나는 어떤 지도자와 조직이 다른 것들보다 더 혁신적이고 영향력이 있고 수익성이 있는 이유를 설명하는 패턴을 발견했다.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 3,
+        "english": "And it starts with a very simple question: Why do some people and organizations inspire where others don't?",
+        "korean": "그리고 이것은 매우 단순한 질문으로 시작합니다: 어떤 사람들과 조직들은 왜 다른 것들이 하지 않는 곳에서 영감을 주는가?",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 4,
+        "english": "For years, I asked myself this question.",
+        "korean": "수년간 나는 자신에게 이 질문을 물었다.",
+        "properNounIndices": [
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '외부로부터 오는; 내재적이지 않은' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_003_set2",
+    "parentSetId": "L5_TED_003",
+    "theme": "How Great Leaders Inspire Action",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "And eventually I found the answer in a remarkably simple idea — so simple that I drew it as a set of three concentric circles.",
+        "korean": "결국 나는 매우 간단한 생각에서 그 답을 찾았는데 - 너무 간단해서 나는 그것을 세 개의 동심원으로 그렸다.",
+        "properNounIndices": [
+          2,
+          15
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Most organizations, most leaders, most of us — we think, we act, we communicate from the outside in.",
+        "korean": "대부분의 조직, 대부분의 지도자, 그리고 우리 대부분은 바깥쪽에서 안쪽으로 생각하고, 행동하고, 통신한다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "We go from the clearest thing to the fuzziest thing.",
+        "korean": "우리는 가장 명확한 것에서 가장 모호한 것으로 간다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "We start with \"What\" — what we do, what we sell, what the product is.",
+        "korean": "우리는 \"무엇\"으로 시작한다 - 우리가 하는 것, 우리가 파는 것, 제품이 무엇인지.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 9,
+        "english": "Then some of us move to \"How\" — how we do it differently, how we're better, what's our unique value proposition.",
+        "korean": "그러면 우리 중 일부는 \"어떻게\"로 이동한다 - 우리가 다르게 하는 방법, 우리가 더 좋은 방법, 우리의 고유한 가치 제안이 무엇인지.",
+        "properNounIndices": [
+          6
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '인간의 뇌의 바깥쪽 층으로 이성적 사고와 언어를 담당하는 부분' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_003_set3",
+    "parentSetId": "L5_TED_003",
+    "theme": "How Great Leaders Inspire Action",
+    "level": 4,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "But very few people or organizations articulate why they do what they do.",
+        "korean": "하지만 매우 적은 수의 사람들이나 조직들이 그들이 왜 그렇게 하는지 명확히 설명한다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "And I don't mean \"to make a profit\" — that's a result, not a reason.",
+        "korean": "그리고 나는 \"이익을 얻기 위해\"라는 뜻이 아니다 - 그것은 결과이지, 이유가 아니다.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 12,
+        "english": "I mean: what's your purpose?",
+        "korean": "나는 말하는 것: 당신의 목적이 무엇인가?",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 13,
+        "english": "What's your cause?",
+        "korean": "당신의 대의가 무엇인가?",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "What's your belief?",
+        "korean": "당신의 신념이 무엇인가?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '논리적 사고 없이 본능적으로 느껴지는 감정이나 감각' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_003_set4",
+    "parentSetId": "L5_TED_003",
+    "theme": "How Great Leaders Inspire Action",
+    "level": 4,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "Why does your organization exist?",
+        "korean": "당신의 조직은 왜 존재하는가?",
+        "properNounIndices": []
+      },
+      {
+        "id": 16,
+        "english": "Why do you get out of bed in the morning?",
+        "korean": "당신은 왜 아침에 침대에서 나오는가?",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "And why should anyone care?",
+        "korean": "그리고 누군가가 왜 신경 써야 하는가?",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
+        "english": "Here's the insight: inspired organizations — inspired leaders — think and act and communicate from the inside out.",
+        "korean": "여기 통찰력이 있습니다: 영감을 받은 조직들 - 영감을 받은 지도자들 - 안쪽에서 바깥쪽으로 생각하고, 행동하고, 통신합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 19,
+        "english": "They start with why.",
+        "korean": "그들은 왜로 시작한다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '인간의 뇌의 바깥쪽 층으로 이성적 사고와 언어를 담당하는 부분' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_003_set5",
+    "parentSetId": "L5_TED_003",
+    "theme": "How Great Leaders Inspire Action",
+    "level": 4,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "Let me give you an example.",
+        "korean": "제가 예를 들어 보겠습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 21,
+        "english": "I'll compare two computer companies.",
+        "korean": "두 개의 컴퓨터 회사를 비교하겠습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 22,
+        "english": "They operate in the same industry.",
+        "korean": "그들은 같은 산업에서 운영합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 23,
+        "english": "They have access to the same talent, the same agencies, the same media, the same consultants.",
+        "korean": "그들은 같은 재능, 같은 대행사, 같은 미디어, 같은 컨설턴트들에 접근할 수 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 24,
+        "english": "But their results are wildly different.",
+        "korean": "하지만 그들의 결과는 극도로 다릅니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '신념이나 열정으로 인해 다른 사람들을 행동하게 하거나 영향을 미치는 것' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_003_set6",
+    "parentSetId": "L5_TED_003",
+    "theme": "How Great Leaders Inspire Action",
+    "level": 4,
+    "setNumber": 6,
+    "sentences": [
+      {
+        "id": 25,
+        "english": "If I described a company from the outside in, it might sound like this: \"We make great computers.\"",
+        "korean": "만약 내가 회사를 바깥쪽에서 안쪽으로 설명한다면, 이렇게 들릴 수 있습니다: \"우리는 훌륭한 컴퓨터를 만듭니다.\"",
+        "properNounIndices": [
+          1,
+          14
+        ]
+      },
+      {
+        "id": 26,
+        "english": "They're beautifully designed, simple to use, and user-friendly.",
+        "korean": "그것들은 아름답게 설계되고, 사용하기 간단하고, 사용자 친화적입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 27,
+        "english": "Want to buy one?",
+        "korean": "하나 사고 싶으세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 28,
+        "english": "That's fine.",
+        "korean": "그것은 좋습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 29,
+        "english": "That's a perfectly adequate message.",
+        "korean": "그것은 완벽하게 적절한 메시지입니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '같은 중심을 가진; 중심을 공유하는' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_003_set7",
+    "parentSetId": "L5_TED_003",
+    "theme": "How Great Leaders Inspire Action",
+    "level": 5,
+    "setNumber": 7,
+    "sentences": [
+      {
+        "id": 30,
+        "english": "But it doesn't make you feel anything.",
+        "korean": "하지만 그것은 당신에게 아무 감정도 주지 않습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 31,
+        "english": "Now here's how the same company communicates from the inside out: \"With everything we do, we believe in challenging the status quo.\"",
+        "korean": "이제 같은 회사가 안쪽에서 바깥쪽으로 어떻게 통신하는지 보세요: \"우리가 하는 모든 것으로, 우리는 현 상태에 도전하는 것을 믿습니다.\"",
+        "properNounIndices": [
+          11
+        ]
+      },
+      {
+        "id": 32,
+        "english": "We believe in thinking differently.",
+        "korean": "우리는 다르게 생각하는 것을 믿습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 33,
+        "english": "The way we challenge the status quo is by making our products beautifully designed, simple to use, and user-friendly.",
+        "korean": "우리가 현 상태에 도전하는 방식은 우리 제품들을 아름답게 설계하고, 사용하기 간단하고, 사용자 친화적으로 만드는 것입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 34,
+        "english": "We just happen to make great computers.",
+        "korean": "우리는 단지 훌륭한 컴퓨터를 만들고 있을 뿐입니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '논리적 사고 없이 본능적으로 느껴지는 감정이나 감각' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_003_set8",
+    "parentSetId": "L5_TED_003",
+    "theme": "How Great Leaders Inspire Action",
+    "level": 3,
+    "setNumber": 8,
+    "sentences": [
+      {
+        "id": 35,
+        "english": "Want to buy one?",
+        "korean": "하나 사고 싶으세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 36,
+        "english": "Same information, completely different order — and completely different effect.",
+        "korean": "같은 정보, 완전히 다른 순서 - 그리고 완전히 다른 효과입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 37,
+        "english": "People don't buy what you do.",
+        "korean": "사람들은 당신이 하는 것을 사지 않습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 38,
+        "english": "They buy why you do it.",
+        "korean": "그들은 당신이 왜 하는지를 삽니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 39,
+        "english": "And what you do simply proves what you believe.",
+        "korean": "그리고 당신이 하는 것은 단순히 당신이 믿는 것을 증명합니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '인간의 뇌의 바깥쪽 층으로 이성적 사고와 언어를 담당하는 부분' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_003_set9",
+    "parentSetId": "L5_TED_003",
+    "theme": "How Great Leaders Inspire Action",
+    "level": 5,
+    "setNumber": 9,
+    "sentences": [
+      {
+        "id": 40,
+        "english": "The goal is not to do business with everyone who needs what you have.",
+        "korean": "목표는 당신이 가진 것이 필요한 모든 사람과 사업하는 것이 아닙니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 41,
+        "english": "The goal is to do business with people who believe what you believe.",
+        "korean": "목표는 당신이 믿는 것을 믿는 사람들과 사업하는 것입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 42,
+        "english": "And this isn't opinion or strategy — it's biology.",
+        "korean": "그리고 이것은 의견이나 전략이 아닙니다 - 그것은 생물학입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 43,
+        "english": "The human brain is divided into several areas.",
+        "korean": "인간의 뇌는 여러 개의 영역으로 나뉩니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 44,
+        "english": "The outer regions — the neocortex — are responsible for rational thought and language.",
+        "korean": "바깥쪽 영역들 - 신피질 - 은 이성적 사고와 언어를 담당합니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '자신의 목적을 위해 다른 사람들에게 영향을 미치거나 통제하는 행위' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_003_set10",
+    "parentSetId": "L5_TED_003",
+    "theme": "How Great Leaders Inspire Action",
+    "level": 6,
+    "setNumber": 10,
+    "sentences": [
+      {
+        "id": 45,
+        "english": "Analytical thinking, features and benefits — that's neocortex territory.",
+        "korean": "분석적 사고, 특징과 이점들 - 그것은 신피질 영역입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 46,
+        "english": "The inner regions — the limbic brain — control emotions, behavior, and decision-making.",
+        "korean": "안쪽 영역들 - 변연계 - 은 감정, 행동, 의사결정을 통제합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 47,
+        "english": "But here's the key: the limbic brain has no capacity for language.",
+        "korean": "하지만 여기 핵심이 있습니다: 변연계는 언어에 대한 능력이 없습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 48,
+        "english": "Which means when we communicate what we do — when we list features, when we make rational arguments — we're speaking to the neocortex.",
+        "korean": "그것은 우리가 우리가 하는 것을 통신할 때 - 특징들을 나열할 때, 이성적 논증을 할 때 - 우리는 신피질에 말하고 있다는 것을 의미합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 49,
+        "english": "People can understand everything we say, but it doesn't drive behavior.",
+        "korean": "사람들은 우리가 말하는 모든 것을 이해할 수 있지만, 그것은 행동을 유도하지 않습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '외부로부터 오는; 내재적이지 않은' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_003_set11",
+    "parentSetId": "L5_TED_003",
+    "theme": "How Great Leaders Inspire Action",
+    "level": 6,
+    "setNumber": 11,
+    "sentences": [
+      {
+        "id": 50,
+        "english": "When we communicate why — when we speak to belief and purpose and cause — we're speaking to the limbic brain.",
+        "korean": "우리가 왜를 통신할 때 - 신념, 목적, 대의에 대해 말할 때 - 우리는 변연계에 말하고 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 51,
+        "english": "That drives behavior.",
+        "korean": "그것이 행동을 유도합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 52,
+        "english": "That's where gut feelings come from.",
+        "korean": "그것이 직감이 나오는 곳입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 53,
+        "english": "That's why we say we made a decision \"for reasons I can't fully explain.\"",
+        "korean": "그렇기 때문에 우리는 우리가 \"완전히 설명할 수 없는 이유들로\" 결정을 내렸다고 말합니다.",
+        "properNounIndices": [
+          10
+        ]
+      },
+      {
+        "id": 54,
+        "english": "We can't explain it because the part of the brain that made the decision doesn't have language.",
+        "korean": "우리는 그것을 설명할 수 없습니다 왜냐하면 결정을 내린 뇌의 부분이 언어를 가지고 있지 않기 때문입니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '신념이나 열정으로 인해 다른 사람들을 행동하게 하거나 영향을 미치는 것' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_003_set12",
+    "parentSetId": "L5_TED_003",
+    "theme": "How Great Leaders Inspire Action",
+    "level": 4,
+    "setNumber": 12,
+    "sentences": [
+      {
+        "id": 55,
+        "english": "Think about the most loyal customers you've ever encountered.",
+        "korean": "당신이 본 가장 충성스러운 고객들을 생각해 보세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 56,
+        "english": "The ones who camp out overnight to be first in line.",
+        "korean": "밤새 줄을 서기 위해 주둔하는 사람들입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 57,
+        "english": "The ones who tattoo a company's logo on their body.",
+        "korean": "회사의 로고를 자신의 몸에 문신하는 사람들입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 58,
+        "english": "They can't fully explain why.",
+        "korean": "그들은 완전히 왜인지 설명할 수 없습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 59,
+        "english": "\"It just feels right.\"",
+        "korean": "\"그냥 맞는 것 같아요.\"",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '자신의 목적을 위해 다른 사람들에게 영향을 미치거나 통제하는 행위' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_003_set13",
+    "parentSetId": "L5_TED_003",
+    "theme": "How Great Leaders Inspire Action",
+    "level": 3,
+    "setNumber": 13,
+    "sentences": [
+      {
+        "id": 60,
+        "english": "That feeling is the limbic brain in action.",
+        "korean": "그 감정은 변연계가 작용하는 것입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 61,
+        "english": "Now let me be clear.",
+        "korean": "이제 명확히 말씀드리겠습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 62,
+        "english": "This isn't manipulation.",
+        "korean": "이것은 조종이 아닙니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 63,
+        "english": "Manipulation and inspiration are very different.",
+        "korean": "조종과 영감은 매우 다릅니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 64,
+        "english": "Manipulation says: \"If you act now, we'll throw in a second one free.\"",
+        "korean": "조종은 말합니다: \"지금 행동하면, 우리가 두 번째 것을 무료로 던져드릴 거예요.\"",
+        "properNounIndices": [
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '외부로부터 오는; 내재적이지 않은' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_003_set14",
+    "parentSetId": "L5_TED_003",
+    "theme": "How Great Leaders Inspire Action",
+    "level": 3,
+    "setNumber": 14,
+    "sentences": [
+      {
+        "id": 65,
+        "english": "Manipulation says: \"Four out of five dentists recommend this.\"",
+        "korean": "조종은 말합니다: \"5명 중 4명의 치과의사가 이것을 추천합니다.\"",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 66,
+        "english": "These work — they're not wrong — but they're transactional.",
+        "korean": "이것들은 작동합니다 - 그것들이 잘못된 것은 아닙니다 - 하지만 그것들은 거래적입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 67,
+        "english": "Inspiration is different.",
+        "korean": "영감은 다릅니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 68,
+        "english": "Inspiration says: \"Here's what we believe.\"",
+        "korean": "영감은 말합니다: \"우리가 믿는 것이 여기 있습니다.\"",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 69,
+        "english": "If you believe it too, join us.",
+        "korean": "당신도 그것을 믿는다면, 우리에게 합류하세요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '외부로부터 오는; 내재적이지 않은' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_003_set15",
+    "parentSetId": "L5_TED_003",
+    "theme": "How Great Leaders Inspire Action",
+    "level": 5,
+    "setNumber": 15,
+    "sentences": [
+      {
+        "id": 70,
+        "english": "The Wright Brothers are one of my favorite examples of leadership.",
+        "korean": "라이트 형제들은 내가 가장 좋아하는 지도력 사례 중 하나입니다.",
+        "properNounIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 71,
+        "english": "At the turn of the 20th century, the race to achieve powered flight was on.",
+        "korean": "20세기 초반에, 동력비행을 성취하기 위한 경주가 시작되었습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 72,
+        "english": "Samuel Pierpont Langley had received $50,000 in government grants.",
+        "korean": "새뮤엘 피어퐁트 랭글리는 정부 보조금으로 5만 달러를 받았습니다.",
+        "properNounIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 73,
+        "english": "He had connections with Harvard University.",
+        "korean": "그는 하버드 대학교와의 연결을 가지고 있었습니다.",
+        "properNounIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "id": 74,
+        "english": "He hired the best engineers of his day.",
+        "korean": "그는 그의 시대의 최고 엔지니어들을 고용했습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '논리적 사고 없이 본능적으로 느껴지는 감정이나 감각' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_003_set16",
+    "parentSetId": "L5_TED_003",
+    "theme": "How Great Leaders Inspire Action",
+    "level": 4,
+    "setNumber": 16,
+    "sentences": [
+      {
+        "id": 75,
+        "english": "The New York Times followed his progress.",
+        "korean": "뉴욕 타임즈는 그의 진행을 따랐습니다.",
+        "properNounIndices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": 76,
+        "english": "Every condition for success was in place.",
+        "korean": "성공의 모든 조건이 갖춰져 있었습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 77,
+        "english": "The Wright Brothers had none of that.",
+        "korean": "라이트 형제들은 그 중 어떤 것도 가지고 있지 않았습니다.",
+        "properNounIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 78,
+        "english": "They had a bicycle shop.",
+        "korean": "그들은 자전거 가게를 가지고 있었습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 79,
+        "english": "They had no government funding, no college education among them, no relevant credentials.",
+        "korean": "그들은 정부 자금이 없었고, 그들 중에 대학 교육이 없었으며, 관련된 자격이 없었습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '인간의 뇌의 바깥쪽 층으로 이성적 사고와 언어를 담당하는 부분' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_003_set17",
+    "parentSetId": "L5_TED_003",
+    "theme": "How Great Leaders Inspire Action",
+    "level": 3,
+    "setNumber": 17,
+    "sentences": [
+      {
+        "id": 80,
+        "english": "But they had an obsession.",
+        "korean": "하지만 그들은 강박관념을 가지고 있었습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 81,
+        "english": "They believed that if they could build this machine, it would change the world.",
+        "korean": "그들은 만약 그들이 이 기계를 만들 수 있다면, 그것이 세계를 변경할 것이라고 믿었습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 82,
+        "english": "Not for profit.",
+        "korean": "이익을 위해서가 아닙니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 83,
+        "english": "Not for fame.",
+        "korean": "명성을 위해서가 아닙니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 84,
+        "english": "Because they believed it mattered.",
+        "korean": "왜냐하면 그들은 그것이 중요하다고 믿었기 때문입니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '자신의 목적을 위해 다른 사람들에게 영향을 미치거나 통제하는 행위' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_003_set18",
+    "parentSetId": "L5_TED_003",
+    "theme": "How Great Leaders Inspire Action",
+    "level": 5,
+    "setNumber": 18,
+    "sentences": [
+      {
+        "id": 85,
+        "english": "The Wright Brothers achieved powered flight on December 17, 1903.",
+        "korean": "라이트 형제들은 1903년 12월 17일에 동력비행을 달성했습니다.",
+        "properNounIndices": [
+          1,
+          2,
+          7
+        ]
+      },
+      {
+        "id": 86,
+        "english": "Langley, on reading the news, quit.",
+        "korean": "랭글리는 소식을 읽고 그만두었습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 87,
+        "english": "He could have continued — but he was in the race for the wrong reasons.",
+        "korean": "그는 계속할 수 있었습니다 - 하지만 그는 잘못된 이유들로 경주에 있었습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 88,
+        "english": "He wanted to be rich and famous.",
+        "korean": "그는 부자이고 유명하기를 원했습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 89,
+        "english": "The Wright Brothers wanted to change the world.",
+        "korean": "라이트 형제들은 세계를 변경하고 싶었습니다.",
+        "properNounIndices": [
+          1,
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '자신의 목적을 위해 다른 사람들에게 영향을 미치거나 통제하는 행위' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_003_set19",
+    "parentSetId": "L5_TED_003",
+    "theme": "How Great Leaders Inspire Action",
+    "level": 5,
+    "setNumber": 19,
+    "sentences": [
+      {
+        "id": 90,
+        "english": "When someone else got there first, the game was over for him.",
+        "korean": "누군가 다른 사람이 먼저 도착했을 때, 그의 경기는 끝났습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 91,
+        "english": "Most people who work for the Wright Brothers came to work in the freezing cold of Dayton, Ohio, because they believed in what the brothers believed.",
+        "korean": "라이트 형제들을 위해 일하는 대부분의 사람들은 형제들이 믿는 것을 믿었기 때문에 데이턴, 오하이오의 얼어붙는 추위 속에서 일하러 왔습니다.",
+        "properNounIndices": [
+          6,
+          7,
+          16,
+          17
+        ]
+      },
+      {
+        "id": 92,
+        "english": "They weren't forced.",
+        "korean": "그들은 강요당하지 않았습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 93,
+        "english": "They weren't paid more than the competition.",
+        "korean": "그들은 경쟁보다 더 많은 급여를 받지 않았습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 94,
+        "english": "They believed.",
+        "korean": "그들은 믿었습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '논리적 사고 없이 본능적으로 느껴지는 감정이나 감각' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_003_set20",
+    "parentSetId": "L5_TED_003",
+    "theme": "How Great Leaders Inspire Action",
+    "level": 4,
+    "setNumber": 20,
+    "sentences": [
+      {
+        "id": 95,
+        "english": "Martin Luther King gave his speech \"I Have a Dream\" — not \"I Have a Plan.\"",
+        "korean": "마틴 루터 킹은 그의 연설 \"나는 꿈을 가지고 있습니다\"를 했습니다 - \"나는 계획을 가지고 있습니다\"가 아니라.",
+        "properNounIndices": [
+          1,
+          2,
+          6,
+          7,
+          9,
+          12,
+          13,
+          15
+        ]
+      },
+      {
+        "id": 96,
+        "english": "Plans are rational.",
+        "korean": "계획들은 이성적입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 97,
+        "english": "Dreams are emotional.",
+        "korean": "꿈들은 정서적입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 98,
+        "english": "He didn't talk about what needed to change.",
+        "korean": "그는 무엇이 변경되어야 하는지 말하지 않았습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 99,
+        "english": "He talked about what he believed.",
+        "korean": "그는 자신이 믿는 것에 대해 말했습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '인간의 뇌의 바깥쪽 층으로 이성적 사고와 언어를 담당하는 부분' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_TED_003_set21",
+    "parentSetId": "L5_TED_003",
+    "theme": "How Great Leaders Inspire Action",
+    "level": 6,
+    "setNumber": 21,
+    "sentences": [
+      {
+        "id": 100,
+        "english": "And a quarter of a million people showed up in Washington, D.C., because they believed what he believed.",
+        "korean": "그리고 25만 명의 사람들이 워싱턴 DC에 나타났습니다 왜냐하면 그들은 그가 믿는 것을 믿었기 때문입니다.",
+        "properNounIndices": [
+          10,
+          11
+        ]
+      },
+      {
+        "id": 101,
+        "english": "The goal is not to sell to everyone who needs what you have.",
+        "korean": "목표는 당신이 가진 것이 필요한 모든 사람에게 판매하는 것이 아닙니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 102,
+        "english": "The goal is to inspire the people who believe what you believe, and to build something together.",
+        "korean": "목표는 당신이 믿는 것을 믿는 사람들에게 영감을 주고, 함께 뭔가를 건축하는 것입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 103,
+        "english": "Because people don't buy what you do.",
+        "korean": "왜냐하면 사람들은 당신이 하는 것을 사지 않습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 104,
+        "english": "They buy why you do it.",
+        "korean": "그들은 당신이 왜 하는지를 삽니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '감정, 행동, 의사결정을 통제하는 뇌의 안쪽 부분' mean in English?",
+      "options": [
+        "Speaker",
+        "Speaker",
+        "Speaker",
+        "Speaker"
+      ],
+      "answer": 0
+    }
+  }
+]

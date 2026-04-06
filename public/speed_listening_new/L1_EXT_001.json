@@ -1,0 +1,131 @@
+[
+  {
+    "setId": "L1_EXT_001_set1",
+    "parentSetId": "L1_EXT_001",
+    "theme": "At the Coffee Shop",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hi there! Welcome to Bean & Brew. What can I get for you today?",
+        "korean": "안녕하세요! 빈 앤 브루에 오신 것을 환영합니다. 오늘 뭘 드릴까요?",
+        "properNounIndices": [
+          2,
+          4,
+          6,
+          7,
+          9
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Hi. Can I have a medium latte, please?",
+        "korean": "안녕하세요. 미디엄 라떼 하나 주세요.",
+        "properNounIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Sure! Would you like that hot or iced?",
+        "korean": "물론이죠! 뜨겁게 드릴까요, 아이스로 드릴까요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Hot, please.",
+        "korean": "뜨겁게 주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Any milk preference? We have oat, almond, and soy.",
+        "korean": "우유 선호하시는 게 있나요? 오트, 아몬드, 두유가 있습니다.",
+        "properNounIndices": [
+          3
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Business Meeting — Quarterly Review",
+        "At the Grocery Store",
+        "Podcast — Learning a Second Language",
+        "At the Coffee Shop"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L1_EXT_001_set2",
+    "parentSetId": "L1_EXT_001",
+    "theme": "At the Coffee Shop",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Regular milk is fine, thanks.",
+        "korean": "일반 우유로 괜찮아요, 감사합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Got it. Anything else? A pastry or a sandwich maybe?",
+        "korean": "알겠습니다. 다른 건요? 페이스트리나 샌드위치는 어떠세요?",
+        "properNounIndices": [
+          2,
+          4
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Hmm... I'll take a blueberry muffin too.",
+        "korean": "음... 블루베리 머핀도 하나 주세요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Great choice. That'll be six fifty. Would you like your receipt?",
+        "korean": "좋은 선택이에요. 6달러 50센트입니다. 영수증 드릴까요?",
+        "properNounIndices": [
+          2,
+          6
+        ]
+      },
+      {
+        "id": 9,
+        "english": "No, that's okay. Thank you!",
+        "korean": "아뇨, 괜찮아요. 감사합니다!",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 10,
+        "english": "You're welcome. Your latte will be ready at the end of the counter.",
+        "korean": "천만에요. 라떼는 카운터 끝에서 준비될 거예요.",
+        "properNounIndices": [
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Tour Guide Speech",
+        "Long-Form Journalism — The Ethics of Gene Editing",
+        "At the Coffee Shop",
+        "Describing a Movie"
+      ],
+      "answer": 2
+    }
+  }
+]

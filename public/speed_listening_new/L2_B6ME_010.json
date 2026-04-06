@@ -1,0 +1,434 @@
+[
+  {
+    "setId": "L2_B6ME_010_set1",
+    "parentSetId": "L2_B6ME_010",
+    "theme": "Divorce: Why does it happen?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hello. This is 6 Minute English from BBC Learning English. I'm Phil.",
+        "korean": "안녕하세요. BBC Learning English의 6 Minute English입니다. 저는 필이에요.",
+        "properNounIndices": [
+          1,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "id": 1,
+        "english": "And I'm Georgie.",
+        "korean": "저는 조지입니다.",
+        "properNounIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "english": "In the words of a famous 1960s pop song, 'breaking up is hard to do'. Divorce, when a married couple who no longer want to be together separate, can be one of life's toughest experiences.",
+        "korean": "유명한 60년대 팝송 가사처럼, '이별은 어렵다'입니다.",
+        "properNounIndices": [
+          15
+        ]
+      },
+      {
+        "id": 3,
+        "english": "During the 1990s, divorce rates in Europe and America were the highest in the world, with almost half of all marriages ending in divorce.",
+        "korean": "1990년대에 유럽과 미국의 이혼율은 세계에서 가장 높았습니다.",
+        "properNounIndices": [
+          6,
+          8
+        ]
+      },
+      {
+        "id": 4,
+        "english": "But since then, the trend has reversed and divorce rates in the West have slowed. Meanwhile, however, the number of couples divorcing in other parts of the world is on the rise.",
+        "korean": "하지만 그 이후 추세가 반전되어 서구의 이혼율은 둔화됐습니다.",
+        "properNounIndices": [
+          12,
+          15
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '해결할 수 없는' mean in English?",
+      "options": [
+        "unresolvable",
+        "change your mind",
+        "stay-at-home mum",
+        "invariably"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_B6ME_010_set2",
+    "parentSetId": "L2_B6ME_010",
+    "theme": "Divorce: Why does it happen?",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "In this programme we'll be hearing how divorce is talked about in different countries. And, as usual, we'll be learning some useful new vocabulary. But first, I have a question for you, Georgie.",
+        "korean": "이 프로그램에서 다양한 나라에서 이혼이 어떻게 이야기되는지 들어볼 거예요.",
+        "properNounIndices": [
+          14,
+          24,
+          26,
+          32
+        ]
+      },
+      {
+        "id": 6,
+        "english": "In Britain, one day of the year in particular is known by divorce lawyers and relationship counsellors as 'Divorce Day', but which day is it? a) Christmas Day? b) the first Monday of the new year?",
+        "korean": "영국에서는 일 년 중 특정 하루가 이혼 전문 변호사들에게 알려져 있어요.",
+        "properNounIndices": [
+          1,
+          18,
+          19,
+          26,
+          27,
+          31
+        ]
+      },
+      {
+        "id": 7,
+        "english": "or c) Valentine's Day?",
+        "korean": "아니면 c) 발렌타인 데이?",
+        "properNounIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Hmm, I'll guess it's b) the first Monday of the new year.",
+        "korean": "음, b) 새해 첫 월요일로 추측할게요.",
+        "properNounIndices": [
+          1,
+          7
+        ]
+      },
+      {
+        "id": 9,
+        "english": "OK, we'll find out the answer later. Now, different cultures have very different attitudes to divorce. In some places, divorce is considered shameful – something to be embarrassed about.",
+        "korean": "나중에 답을 알아볼게요.",
+        "properNounIndices": [
+          7,
+          16
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '냉각기, 숙려 기간' mean in English?",
+      "options": [
+        "cooling-off period",
+        "divorce",
+        "unresolvable",
+        "stay-at-home mum"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_B6ME_010_set3",
+    "parentSetId": "L2_B6ME_010",
+    "theme": "Divorce: Why does it happen?",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "Here, Marina, a woman from Colombia, South America, explains her experience:",
+        "korean": "남미 콜롬비아 출신 마리나가 자신의 경험을 설명합니다.",
+        "properNounIndices": [
+          1,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "id": 11,
+        "english": "I got married when I was 23 years old. My husband was 20 years older, so there was a big difference, but at the beginning everything was wonderful.",
+        "korean": "23살에 결혼했어요. 남편이 20살 더 많았어요.",
+        "properNounIndices": [
+          0,
+          4,
+          9
+        ]
+      },
+      {
+        "id": 12,
+        "english": "Then little by little, I didn't want to be a stay-at-home mum anymore, then I started to work, then I found new dreams and goals, and my ex-husband didn't want me to do that.",
+        "korean": "그러다 조금씩 전업주부로 있고 싶지 않게 됐고, 일을 시작했어요.",
+        "properNounIndices": [
+          4,
+          14,
+          19
+        ]
+      },
+      {
+        "id": 13,
+        "english": "Marina's story is true for a lot of marriages because people's situation changes over their lives, maybe they want children then maybe they change their minds.",
+        "korean": "마리나의 이야기는 많은 결혼에 해당됩니다. 사람들의 상황이 변하니까요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "Marina started her married life as a stay-at-home mum – a woman who stays home to take care of the children and manage the household.",
+        "korean": "마리나는 결혼 생활을 전업주부로 시작했습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '항상, 변함없이' mean in English?",
+      "options": [
+        "unresolvable",
+        "divorce",
+        "invariably",
+        "cooling-off period"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_B6ME_010_set4",
+    "parentSetId": "L2_B6ME_010",
+    "theme": "Divorce: Why does it happen?",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "Marina married an older man, and although their relationship started well, over time they developed different ideas about what they wanted from life. Marina and her husband changed their minds - they changed an earlier decision they had made.",
+        "korean": "마리나는 나이 많은 남자와 결혼해서 관계가 잘 시작됐지만, 시간이 지나면서 서로 다른 생각이 생겼어요.",
+        "properNounIndices": [
+          23
+        ]
+      },
+      {
+        "id": 16,
+        "english": "Growing apart is one of the most frequently given reasons for divorce, and eventually Marina and her husband's problems became unresolvable – not able to be fixed or satisfactorily ended.",
+        "korean": "서로 멀어지는 것은 이혼의 가장 흔한 이유 중 하나입니다.",
+        "properNounIndices": [
+          14
+        ]
+      },
+      {
+        "id": 17,
+        "english": "Marina's experience is typical of someone who finds themself trapped in a marriage that no longer works. Yet unfortunately, due to economic or emotional reasons, many people stay trapped.",
+        "korean": "마리나의 경험은 더 이상 작동하지 않는 결혼에 갇힌 사람의 전형적인 경우입니다.",
+        "properNounIndices": [
+          17
+        ]
+      },
+      {
+        "id": 18,
+        "english": "So, what can be done? Now, some countries are looking to the authorities for help.",
+        "korean": "그래서 뭘 할 수 있을까요?",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 19,
+        "english": "In China, where divorce rates have increased dramatically, the government has introduced a cooling-off period for divorcing couples.",
+        "korean": "중국에서는 이혼율이 급증하면서 정부가 냉각기를 도입했습니다.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '마음을 바꾸다' mean in English?",
+      "options": [
+        "change your mind",
+        "cooling-off period",
+        "invariably",
+        "stay-at-home mum"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_B6ME_010_set5",
+    "parentSetId": "L2_B6ME_010",
+    "theme": "Divorce: Why does it happen?",
+    "level": 6,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "Here, Joanna Gosling asks a couple's counsellor whether this could work in the UK:",
+        "korean": "여기서 조애나 고슬링이 커플 상담사에게 물어봅니다.",
+        "properNounIndices": [
+          1,
+          2,
+          13
+        ]
+      },
+      {
+        "id": 21,
+        "english": "What do you make of the idea of there being a cooling-off period?",
+        "korean": "냉각기 아이디어에 대해 어떻게 생각하세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 22,
+        "english": "I think the main problem is that inevitably the main reason that most people's relationships fail is lack of communication, and invariably by the time a couple decide they're going to divorce, they've probably been thinking about it for a number of years.",
+        "korean": "주된 문제는 필연적으로 대부분의 관계가 실패하는 주된 이유가 소통 부족이라는 것입니다.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 23,
+        "english": "A cooling-off period is a period of time in which two groups who are arguing can try to improve the situation before taking further action. However, it's unusual for governments to intervene - to become involved - in people's private lives this way.",
+        "korean": "냉각기는 다투는 두 집단이 상황을 개선하려고 시도하는 기간입니다.",
+        "properNounIndices": [
+          25
+        ]
+      },
+      {
+        "id": 24,
+        "english": "Joanna doubts a cooling-off period will work, especially as the main reason for relationships failing is non-communication.",
+        "korean": "조애나는 냉각기가 효과가 있을지 의심합니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '마음을 바꾸다' mean in English?",
+      "options": [
+        "change your mind",
+        "unresolvable",
+        "stay-at-home mum",
+        "invariably"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_B6ME_010_set6",
+    "parentSetId": "L2_B6ME_010",
+    "theme": "Divorce: Why does it happen?",
+    "level": 6,
+    "setNumber": 6,
+    "sentences": [
+      {
+        "id": 25,
+        "english": "She says a lack of communication is invariably - or always - the reason for divorce.",
+        "korean": "소통 부족이 항상(invariably) 이혼의 이유라고 합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 26,
+        "english": "On the plus side, by communicating openly, maybe with the professional help of a relationship counsellor, saving a marriage is possible.",
+        "korean": "긍정적인 면으로, 공개적으로 소통하면 — 아마 전문 상담사의 도움으로 — 결혼을 살릴 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 27,
+        "english": "I think it's time you reveal the answer to your question, Georgie. You asked about 'Divorce Day' in Britain, and I guessed it was the first Monday of the new year.",
+        "korean": "조지, 질문의 답을 공개할 시간이에요.",
+        "properNounIndices": [
+          0,
+          11,
+          12,
+          15,
+          16,
+          18,
+          20,
+          26
+        ]
+      },
+      {
+        "id": 28,
+        "english": "Good guess Phil, because that's the correct answer! 'Divorce Day' is the first Monday of the year.",
+        "korean": "잘 맞췄어요 필, 정답이에요! '이혼 데이'는 새해 첫 월요일입니다.",
+        "properNounIndices": [
+          2,
+          8,
+          9,
+          13
+        ]
+      },
+      {
+        "id": 29,
+        "english": "OK, let's recap the vocabulary we've learned in this programme, starting with stay-at-home mum, a phrase for a woman who stays home to raise the children and manage the household.",
+        "korean": "좋아요, 어휘를 정리해볼게요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '마음을 바꾸다' mean in English?",
+      "options": [
+        "stay-at-home mum",
+        "intervene",
+        "change your mind",
+        "cooling-off period"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_B6ME_010_set7",
+    "parentSetId": "L2_B6ME_010",
+    "theme": "Divorce: Why does it happen?",
+    "level": 6,
+    "setNumber": 7,
+    "sentences": [
+      {
+        "id": 30,
+        "english": "If you change your mind, you change a decision you made earlier.",
+        "korean": "'change your mind'는 이전에 내린 결정을 바꾸는 것입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 31,
+        "english": "Unresolvable problems cannot be satisfactorily fixed or ended.",
+        "korean": "'unresolvable' 문제는 만족스럽게 해결하거나 끝낼 수 없습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 32,
+        "english": "A cooling-off period is a period of time in which two groups who are arguing try to improve the situation before taking further action.",
+        "korean": "냉각기는 다투는 두 집단이 상황을 개선하려고 시도하는 기간입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 33,
+        "english": "And finally, if something invariably happens, it always happens. Once again, our six minutes are up. Bye for now!",
+        "korean": "마지막으로, 'invariably' 일어난다면 항상 일어난다는 뜻입니다.",
+        "properNounIndices": [
+          9,
+          16
+        ]
+      },
+      {
+        "id": 34,
+        "english": "Bye!",
+        "korean": "안녕!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '전업주부' mean in English?",
+      "options": [
+        "stay-at-home mum",
+        "divorce",
+        "intervene",
+        "change your mind"
+      ],
+      "answer": 0
+    }
+  }
+]

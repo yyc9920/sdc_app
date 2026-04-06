@@ -1,0 +1,87 @@
+[
+  {
+    "setId": "L1_EXT_010_set1",
+    "parentSetId": "L1_EXT_010",
+    "theme": "Weekend Plans",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hey, do you have any plans this weekend?",
+        "korean": "이번 주말에 무슨 계획 있어?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Not really. I was thinking about staying home and watching movies. What about you?",
+        "korean": "딱히 없어. 집에서 영화나 볼까 했는데. 넌 어때?",
+        "properNounIndices": [
+          2,
+          11
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I was going to check out that new brunch place on Main Street. Want to come?",
+        "korean": "메인 스트릿에 새로 생긴 브런치 가게 가보려고 했는데. 같이 갈래?",
+        "properNounIndices": [
+          0,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Oh, that sounds nice. What time?",
+        "korean": "오, 좋겠다. 몇 시에?",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 4,
+        "english": "How about eleven? That way we can sleep in a bit.",
+        "korean": "11시 어때? 그러면 좀 늦잠 잘 수 있잖아.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Perfect. And maybe after brunch we could walk around the park? The weather's supposed to be really nice on Saturday.",
+        "korean": "완벽해. 브런치 후에 공원 산책할까? 토요일 날씨가 정말 좋다던데.",
+        "properNounIndices": [
+          1,
+          11,
+          19
+        ]
+      },
+      {
+        "id": 6,
+        "english": "I'd love that. Let's meet at the restaurant at eleven and see how we feel after.",
+        "korean": "좋아. 11시에 레스토랑에서 만나서 그 다음은 기분 보고 정하자.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Sounds like a plan!",
+        "korean": "좋은 계획이야!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "University Debate",
+        "Science Documentary — Neuroplasticity",
+        "Weekend Plans",
+        "At the Coffee Shop"
+      ],
+      "answer": 2
+    }
+  }
+]
