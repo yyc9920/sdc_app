@@ -39,3 +39,4 @@ venv/
 public/tts/
 
 swiftpm/
+.mcp.json

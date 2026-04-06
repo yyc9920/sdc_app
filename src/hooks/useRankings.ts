@@ -12,7 +12,7 @@ export interface RankingEntry {
   rank: number;
 }
 
-const getRankingConfig = (type: RankingType): { field: string; label: string; unit: string } => {
+export const getRankingConfig = (type: RankingType): { field: string; label: string; unit: string } => {
   switch (type) {
     case 'weekly_study_time':
       return { field: 'stats.weeklyStudyTimeSeconds', label: '주간 학습 시간', unit: '분' };

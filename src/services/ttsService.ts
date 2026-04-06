@@ -8,7 +8,7 @@ const textToSpeechFn = httpsCallable<
   { audio: string }
 >(functions, 'textToSpeech');
 
-async function withRetry<T>(
+export async function withRetry<T>(
   fn: () => Promise<T>,
   maxAttempts = TIMEOUTS.TTS_MAX_RETRIES,
   baseDelayMs = TIMEOUTS.TTS_BASE_DELAY_MS,
@@ -30,7 +30,7 @@ const audioCache = new Map<string, string>();
 /** Deduplication map for in-flight requests */
 const pendingRequests = new Map<string, Promise<string>>();
 
-function base64ToBlobUrl(base64: string, mimeType = 'audio/mpeg'): string {
+export function base64ToBlobUrl(base64: string, mimeType = 'audio/mpeg'): string {
   const byteChars = atob(base64);
   const byteArray = new Uint8Array(byteChars.length);
   for (let i = 0; i < byteChars.length; i++) {
