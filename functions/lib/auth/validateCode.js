@@ -4,7 +4,9 @@ exports.validateCode = void 0;
 const https_1 = require("firebase-functions/v2/https");
 const auth_1 = require("firebase-admin/auth");
 const firestore_1 = require("firebase-admin/firestore");
-exports.validateCode = (0, https_1.onCall)(async (request) => {
+exports.validateCode = (0, https_1.onCall)({
+    cors: true
+}, async (request) => {
     const { code } = request.data;
     console.log(`[validateCode] Received code from client: '${code}'`);
     if (!code || typeof code !== 'string') {
@@ -41,9 +43,11 @@ exports.validateCode = (0, https_1.onCall)(async (request) => {
         });
         await db.collection('users').doc(uid).set({
             uid,
-            profile: { name: '', goal: '', createdAt: firestore_1.FieldValue.serverTimestamp() },
+            profile: { name: '', goal: '', phone: '', email: '', age: null, createdAt: firestore_1.FieldValue.serverTimestamp() },
+            profileCompleted: false,
             role: codeData.role,
             accessCode: code,
+            teacherId: null,
             stats: {
                 totalStudyTimeSeconds: 0,
                 totalMasteredCount: 0,
@@ -54,6 +58,7 @@ exports.validateCode = (0, https_1.onCall)(async (request) => {
             lastPosition: null,
         });
     }
+    await auth.setCustomUserClaims(uid, { role: codeData.role });
     const customToken = await auth.createCustomToken(uid, {
         role: codeData.role,
     });

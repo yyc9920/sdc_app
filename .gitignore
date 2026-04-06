@@ -13,6 +13,8 @@ dist-ssr
 *.local
 .ruff_cache
 *.xlsx
+.env
+.env.local
 
 # Editor directories and files
 .vscode/*
@@ -27,4 +29,13 @@ dist-ssr
 
 __pycache__/
 .venv/
+venv/
 *.pyc
+
+# Firebase service account keys (NEVER commit)
+**/service-account*.json
+.firebase/
+.firebase/hosting.*.cache
+public/tts/
+
+swiftpm/

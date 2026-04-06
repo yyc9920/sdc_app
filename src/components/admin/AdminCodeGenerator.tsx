@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import app from '../../firebase';
+import { FIREBASE_REGION } from '../../constants';
 import { Copy, CheckCircle2, AlertCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -18,7 +19,7 @@ export const AdminCodeGenerator: React.FC = () => {
     setCopied(false);
     
     try {
-      const functions = getFunctions(app, 'asia-northeast3');
+      const functions = getFunctions(app, FIREBASE_REGION);
       const createCodeFn = httpsCallable<{role: string}, {code: string, expiresAt: string | null}>(functions, 'createAccessCode');
       const result = await createCodeFn({ role });
       

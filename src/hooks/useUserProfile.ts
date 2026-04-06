@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import { doc, onSnapshot, Timestamp } from 'firebase/firestore';
-import { db } from '../firebase';
+import { db, auth } from '../firebase';
 
 export interface UserProfile {
   uid: string;
   role: 'admin' | 'teacher' | 'student';
   profileCompleted: boolean;
   teacherId: string | null;
+  accessCode?: string;
   profile: {
     name: string;
     goal: string;
@@ -18,7 +19,9 @@ export interface UserProfile {
   stats?: {
     totalStudyTimeSeconds?: number;
     currentStreak?: number;
+    longestStreak?: number;
     totalMasteredCount?: number;
+    lastActiveDate?: string;
   };
 }
 
@@ -29,29 +32,56 @@ export const useUserProfile = (uid: string | undefined) => {
 
   useEffect(() => {
     let unsubscribe: () => void = () => {};
+    let cancelled = false;
 
-    if (uid) {
-      const docRef = doc(db, 'users', uid);
-      unsubscribe = onSnapshot(docRef, (docSnap) => {
-        if (docSnap.exists()) {
-          setProfile(docSnap.data() as UserProfile);
-        } else {
-      setProfile(null);
-        }
-        setLoading(false);
-      }, (err) => {
-        console.error("Error fetching user profile:", err);
-        setError(err);
-        setLoading(false);
-      });
-    } else {
+    if (!uid) {
       setTimeout(() => {
         setProfile(null);
         setLoading(false);
       }, 0);
+      return;
     }
 
-    return () => unsubscribe();
+    let retryCount = 0;
+    const MAX_RETRIES = 3;
+
+    const startListener = () => {
+      if (cancelled) return;
+      const docRef = doc(db, 'users', uid);
+      unsubscribe = onSnapshot(
+        docRef,
+        (docSnap) => {
+          if (!cancelled) {
+            setProfile(docSnap.exists() ? (docSnap.data() as UserProfile) : null);
+            setLoading(false);
+          }
+        },
+        (err) => {
+          if (cancelled) return;
+          if (err.code === 'permission-denied' && retryCount < MAX_RETRIES) {
+            retryCount++;
+            unsubscribe();
+            auth.currentUser
+              ?.getIdToken(true)
+              .then(() => startListener())
+              .catch(() => {
+                setError(err);
+                setLoading(false);
+              });
+          } else {
+            setError(err);
+            setLoading(false);
+          }
+        }
+      );
+    };
+
+    startListener();
+
+    return () => {
+      cancelled = true;
+      unsubscribe();
+    };
   }, [uid]);
 
   return { profile, loading, error };

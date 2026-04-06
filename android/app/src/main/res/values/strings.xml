@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">SDC English Study</string>
+    <string name="title_activity_main">SDC English Study</string>
+    <string name="package_name">com.sdc.englishstudy</string>
+    <string name="custom_url_scheme">com.sdc.englishstudy</string>
+</resources>

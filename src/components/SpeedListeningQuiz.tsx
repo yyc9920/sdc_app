@@ -1,19 +1,53 @@
-import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import type { SpeedListeningSet } from '../types';
+import { useSaveQuizResult } from '../hooks/useStudySession';
+import { SPEEDS, AVAILABLE_VOICES, BLANK_MULTIPLIER } from '../constants';
+import type { Voice } from '../constants';
+import { getTTSAudioUrl, getStaticAudioUrl, prefetchTTS } from '../services/ttsService';
 
 interface Props {
-  datasetId: string;
   set: SpeedListeningSet;
   onNext?: () => void;
 }
 
-const SPEEDS = [1, 1.2, 1.5, 2];
-
-const AVAILABLE_VOICES = ['female', 'male', 'child_female', 'child_male', 'elderly_female', 'elderly_male'];
-
 const cleanWord = (word: string) => word.replace(/[.,?!;:"']/g, '').toLowerCase();
 
-export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) => {
+const generateSentenceVoices = (sentences: SpeedListeningSet['sentences']): Record<number, Voice> => {
+  const v1Index = Math.floor(Math.random() * AVAILABLE_VOICES.length);
+  let v2Index = Math.floor(Math.random() * AVAILABLE_VOICES.length);
+  while (v2Index === v1Index) {
+    v2Index = Math.floor(Math.random() * AVAILABLE_VOICES.length);
+  }
+  const v1 = AVAILABLE_VOICES[v1Index];
+  const v2 = AVAILABLE_VOICES[v2Index];
+
+  const map: Record<number, Voice> = {};
+  sentences.forEach((sentence, index) => {
+    map[sentence.id] = index % 2 === 0 ? v1 : v2;
+  });
+  return map;
+};
+
+const generateBlankIndices = (sentences: SpeedListeningSet['sentences'], level: number): Record<number, Set<number>> => {
+  const map: Record<number, Set<number>> = {};
+  sentences.forEach(sentence => {
+    const words = sentence.english.split(' ');
+    const eligibleIndices = words
+      .map((_, i) => i)
+      .filter(i => !sentence.properNounIndices.includes(i));
+    
+    for (let i = eligibleIndices.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [eligibleIndices[i], eligibleIndices[j]] = [eligibleIndices[j], eligibleIndices[i]];
+    }
+    
+    const numBlanks = Math.max(1, Math.floor(words.length * (level * BLANK_MULTIPLIER)));
+    map[sentence.id] = new Set(eligibleIndices.slice(0, numBlanks));
+  });
+  return map;
+};
+
+export const SpeedListeningQuiz: React.FC<Props> = ({ set, onNext }) => {
   const [blanks, setBlanks] = useState<Record<string, string>>({});
   const [isSubmitted, setIsSubmitted] = useState(false);
   
@@ -27,6 +61,9 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
   
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const currentAudioSrcRef = useRef<string>('');
+  const startTimeRef = useRef<number>(Date.now());
+  
+  const { saveQuizResult } = useSaveQuizResult();
 
   useEffect(() => {
     const audio = audioRef.current;
@@ -38,6 +75,13 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
     };
   }, []);
 
+const [sentenceVoices, setSentenceVoices] = useState<Record<number, Voice>>(() => 
+    generateSentenceVoices(set.sentences)
+  );
+  const [blankIndicesMap, setBlankIndicesMap] = useState<Record<number, Set<number>>>(() => 
+    generateBlankIndices(set.sentences, set.level)
+  );
+
   useEffect(() => {
     setBlanks({});
     setIsSubmitted(false);
@@ -48,54 +92,15 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
     setIsTransitionChimePlaying(false);
     setAudioFinished(false);
     setIsReviewMode(false);
+    setSentenceVoices(generateSentenceVoices(set.sentences));
+    setBlankIndicesMap(generateBlankIndices(set.sentences, set.level));
+    startTimeRef.current = Date.now();
     if (audioRef.current) {
       audioRef.current.pause();
       audioRef.current.src = '';
     }
     currentAudioSrcRef.current = '';
     window.scrollTo(0, 0);
-  }, [set]);
-
-
-  const sentenceVoices = useMemo(() => {
-    const map: Record<number, string> = {};
-    // eslint-disable-next-line react-hooks/purity
-    const v1Index = Math.floor(Math.random() * AVAILABLE_VOICES.length);
-    // eslint-disable-next-line react-hooks/purity
-    let v2Index = Math.floor(Math.random() * AVAILABLE_VOICES.length);
-    while (v2Index === v1Index) {
-      // eslint-disable-next-line react-hooks/purity
-      v2Index = Math.floor(Math.random() * AVAILABLE_VOICES.length);
-    }
-    const v1 = AVAILABLE_VOICES[v1Index];
-    const v2 = AVAILABLE_VOICES[v2Index];
-
-    set.sentences.forEach((sentence, index) => {
-      const isEven = index % 2 === 0;
-      map[sentence.id] = isEven ? v1 : v2;
-    });
-    return map;
-  }, [set]);
-
-  const blankIndicesMap = useMemo(() => {
-    const map: Record<number, Set<number>> = {};
-    set.sentences.forEach(sentence => {
-      const words = sentence.english.split(' ');
-      const eligibleIndices = words
-        .map((_, i) => i)
-        .filter(i => !sentence.properNounIndices.includes(i));
-      
-      for (let i = eligibleIndices.length - 1; i > 0; i--) {
-        // eslint-disable-next-line react-hooks/purity
-        const j = Math.floor(Math.random() * (i + 1));
-        [eligibleIndices[i], eligibleIndices[j]] = [eligibleIndices[j], eligibleIndices[i]];
-      }
-      
-      const numBlanks = Math.max(1, Math.floor(words.length * (set.level * 0.15)));
-      const selectedIndices = new Set(eligibleIndices.slice(0, numBlanks));
-      map[sentence.id] = selectedIndices;
-    });
-    return map;
   }, [set]);
 
   const handleAudioEnded = useCallback(() => {
@@ -126,39 +131,66 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
     }
   }, [isAnnouncementPlaying, isTransitionChimePlaying, currentSentenceIndex, set.sentences.length, isReviewMode, currentSpeedIndex]);
 
+  // Prefetch upcoming sentence audio
   useEffect(() => {
-    if (isPlaying && audioRef.current) {
-      let targetSrc = '';
-      let targetRate = 1.0;
-      
-      if (isAnnouncementPlaying) {
-        targetSrc = `${import.meta.env.BASE_URL}tts/announcement.mp3`;
-        targetRate = 1.0;
-      } else if (isTransitionChimePlaying) {
-        targetSrc = `${import.meta.env.BASE_URL}tts/dingdong.wav`;
-        targetRate = 1.0;
-      } else {
-        const sentence = set.sentences[currentSentenceIndex];
-                const voice = sentenceVoices[sentence.id] || 'female';
-        targetSrc = `${import.meta.env.BASE_URL}tts/${datasetId}/${voice}/${sentence.id}.mp3`;
-        targetRate = SPEEDS[currentSpeedIndex];
+    if (isAnnouncementPlaying || isTransitionChimePlaying) return;
+    const nextIndices = [1, 2, 3].map(offset => currentSentenceIndex + offset);
+    for (const idx of nextIndices) {
+      const sentence = set.sentences[idx];
+      if (sentence) {
+        const voice = sentenceVoices[sentence.id] || AVAILABLE_VOICES[0];
+        prefetchTTS(sentence.english, voice);
       }
-      
-      if (currentAudioSrcRef.current !== targetSrc) {
-        audioRef.current.src = targetSrc;
-        currentAudioSrcRef.current = targetSrc;
-      }
-      
-      audioRef.current.playbackRate = targetRate;
-      
-      audioRef.current.play().catch(e => {
-        console.error("Audio play failed", e);
-        handleAudioEnded();
-      });
-    } else if (!isPlaying && audioRef.current) {
-      audioRef.current.pause();
     }
-  }, [isPlaying, isAnnouncementPlaying, isTransitionChimePlaying, currentSentenceIndex, currentSpeedIndex, datasetId, set.sentences, handleAudioEnded, sentenceVoices]);
+  }, [currentSentenceIndex, set.sentences, sentenceVoices, isAnnouncementPlaying, isTransitionChimePlaying]);
+
+  useEffect(() => {
+    let isCancelled = false;
+
+    const updateAudio = async () => {
+      if (isPlaying && audioRef.current) {
+        let targetSrc = '';
+        let targetRate = 1.0;
+
+        if (isAnnouncementPlaying) {
+          targetSrc = await getStaticAudioUrl('ANNOUNCEMENT');
+          targetRate = 1.0;
+        } else if (isTransitionChimePlaying) {
+          targetSrc = await getStaticAudioUrl('TRANSITION_CHIME');
+          targetRate = 1.0;
+        } else {
+          const sentence = set.sentences[currentSentenceIndex];
+          const voice = sentenceVoices[sentence.id] || AVAILABLE_VOICES[0];
+          targetSrc = await getTTSAudioUrl(sentence.english, voice);
+          targetRate = SPEEDS[currentSpeedIndex];
+        }
+
+        if (isCancelled || !audioRef.current) return;
+
+        if (currentAudioSrcRef.current !== targetSrc) {
+          audioRef.current.src = targetSrc;
+          currentAudioSrcRef.current = targetSrc;
+        }
+
+        audioRef.current.playbackRate = targetRate;
+
+        audioRef.current.play().catch(e => {
+          if (e.name !== 'AbortError') {
+            console.error("Audio play failed", e);
+            handleAudioEnded();
+          }
+        });
+      } else if (!isPlaying && audioRef.current) {
+        audioRef.current.pause();
+      }
+    };
+
+    updateAudio();
+
+    return () => {
+      isCancelled = true;
+    };
+  }, [isPlaying, isAnnouncementPlaying, isTransitionChimePlaying, currentSentenceIndex, currentSpeedIndex, set.sentences, handleAudioEnded, sentenceVoices]);
 
   const renderWord = (word: string, sentenceId: number, wordIndex: number) => {
     const isBlank = blankIndicesMap[sentenceId]?.has(wordIndex);
@@ -267,6 +299,30 @@ export const SpeedListeningQuiz: React.FC<Props> = ({ datasetId, set, onNext }) 
             if (audioRef.current) {
               audioRef.current.pause();
             }
+            
+            let blanksTotal = 0;
+            let blanksCorrect = 0;
+            
+            set.sentences.forEach(sentence => {
+              const words = sentence.english.split(' ');
+              words.forEach((word, wIndex) => {
+                if (blankIndicesMap[sentence.id]?.has(wIndex)) {
+                  blanksTotal++;
+                  const blankKey = `${sentence.id}-${wIndex}`;
+                  const userInput = blanks[blankKey] || '';
+                  const match = word.match(/^[.,?!;:"']*(.+?)[.,?!;:"']*$/);
+                  const actualWord = match ? match[1] : word;
+                  if (cleanWord(userInput) === cleanWord(actualWord)) {
+                    blanksCorrect++;
+                  }
+                }
+              });
+            });
+            
+            const score = blanksTotal > 0 ? Math.round((blanksCorrect / blanksTotal) * 100) : 0;
+            const timeSpentSeconds = Math.floor((Date.now() - startTimeRef.current) / 1000);
+            
+            saveQuizResult(set.setId, set.level, score, blanksTotal, blanksCorrect, timeSpentSeconds);
           }}
           disabled={isSubmitted}
           className="w-full py-3.5 bg-green-600 text-white font-bold rounded-lg hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors shadow-sm"

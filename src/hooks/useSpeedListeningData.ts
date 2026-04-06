@@ -1,16 +1,23 @@
 import { useState, useEffect } from 'react';
-import { collection, getDocs, query, orderBy } from 'firebase/firestore';
+import { collection, getDocs, query, orderBy, where } from 'firebase/firestore';
 import { db } from '../firebase';
 import type { SpeedListeningSet, Quiz } from '../types';
 
-export const useSpeedListeningData = (setId: string | null) => {
+/**
+ * Custom hook to fetch speed listening sets from Firestore.
+ * Fetches the parent set metadata and all associated sentences for a given learning set.
+ * 
+ * @param {string | null} learningSetId - The ID of the parent learning set.
+ * @returns {Object} An object containing the sets data, loading state, and any errors.
+ */
+export const useSpeedListeningData = (learningSetId: string | null) => {
   const [data, setData] = useState<SpeedListeningSet[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     let mounted = true;
-    if (!setId) {
+    if (!learningSetId) {
       setTimeout(() => {
         setData([]);
         setLoading(false);
@@ -21,44 +28,54 @@ export const useSpeedListeningData = (setId: string | null) => {
     const fetchData = async () => {
       if (mounted) setLoading(true);
       setError(null);
+      
       try {
-        const q = query(
-          collection(db, 'speed_listening_sets', setId, 'sentences'),
-          orderBy('level', 'asc')
+        const setsQuery = query(
+          collection(db, 'speed_listening_sets'),
+          where('parentSetId', '==', learningSetId),
+          orderBy('setNumber', 'asc')
         );
-        const snapshot = await getDocs(q);
+        const setsSnapshot = await getDocs(setsQuery);
+
+        console.log(`Fetched ${setsSnapshot.docs.length} sets for learningSetId:`, learningSetId);
         
-        const levels: Record<number, SpeedListeningSet> = {};
-        
-        snapshot.docs.forEach(doc => {
-          const item = doc.data();
-          const level = item.level;
+        const results = await Promise.all(setsSnapshot.docs.map(async (setDoc) => {
+          const setData = setDoc.data();
           
-          if (!levels[level]) {
-            levels[level] = {
-              setId: `${setId}_level_${level}`,
-              theme: item.theme || 'Speed Listening',
-              level: level,
-              sentences: [],
-              quiz: item.quiz as Quiz
+          const sentencesQuery = query(
+            collection(db, 'speed_listening_sets', setDoc.id, 'sentences'),
+            orderBy('id', 'asc')
+          );
+          const sentencesSnapshot = await getDocs(sentencesQuery);
+          
+          const sentences = sentencesSnapshot.docs.map(doc => {
+            const s = doc.data();
+            return {
+              id: s.id,
+              english: s.english || '',
+              korean: s.korean || '',
+              properNounIndices: s.properNounIndices || []
             };
-          }
-          
-          levels[level].sentences.push({
-            id: item.originalId,
-            english: item.english || '',
-            korean: item.korean || '',
-            properNounIndices: item.properNounIndices || []
           });
-        });
+          
+          return {
+            setId: setDoc.id,
+            parentSetId: setData.parentSetId,
+            theme: setData.theme || 'Speed Listening',
+            level: setData.level || 1,
+            setNumber: setData.setNumber || 0,
+            sentences,
+            quiz: setData.quiz as Quiz
+          };
+        }));
         
         if (mounted) {
-          setData(Object.values(levels));
+          setData(results);
           setLoading(false);
         }
       } catch (err) {
         if (mounted) {
-          console.error('Error fetching speed listening set:', err);
+          console.error('Error fetching speed listening sets:', err);
           setError('Failed to fetch speed listening data');
           setLoading(false);
         }
@@ -67,7 +84,7 @@ export const useSpeedListeningData = (setId: string | null) => {
 
     fetchData();
     return () => { mounted = false; };
-  }, [setId]);
+  }, [learningSetId]);
 
   return { data, loading, error };
 };

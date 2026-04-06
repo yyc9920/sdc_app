@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import app from '../../firebase';
+import { FIREBASE_REGION } from '../../constants';
 import { AlertCircle, Clock, CalendarDays } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -24,7 +25,7 @@ export const CodeExpirationManager: React.FC = () => {
     setMessage(null);
     
     try {
-      const functions = getFunctions(app, 'asia-northeast3');
+      const functions = getFunctions(app, FIREBASE_REGION);
       const extendCodeFn = httpsCallable<{codeId: string, extensionDays: number}, {success: boolean, message: string, newExpiresAt: string}>(functions, 'extendCodeExpiration');
       
       const result = await extendCodeFn({ codeId: finalCodeId, extensionDays });

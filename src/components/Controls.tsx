@@ -40,7 +40,7 @@ export const Controls = ({
   onPrev,
 }: ControlsProps) => {
   return (
-    <div className="w-full bg-white/90 dark:bg-gray-800/90 backdrop-blur sticky bottom-0 border-t border-gray-200 dark:border-gray-700 p-3 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] z-50">
+    <div className="w-full bg-white/90 dark:bg-gray-800/90 backdrop-blur relative border-t border-gray-200 dark:border-gray-700 p-3 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] z-40 shrink-0">
       <div className="flex flex-col gap-4 max-w-4xl mx-auto w-full">
         <div className="flex justify-between gap-3 flex-wrap items-center text-sm">
           <div className="flex items-center gap-2">

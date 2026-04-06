@@ -1,0 +1,280 @@
+import { useState, useMemo, useEffect } from 'react';
+import { useSpeedListeningData } from '../../hooks/useSpeedListeningData';
+import { usePrefetchData } from '../../hooks/useData';
+import { useAuth } from '../../hooks/useAuth';
+import { SpeedListeningQuiz } from '../SpeedListeningQuiz';
+import { LevelRecommendationBadge } from '../speed-listening/LevelRecommendationBadge';
+import { LoadingSpinner } from '../LoadingSpinner';
+import { InfiniteSpeakingPage } from './InfiniteSpeaking/InfiniteSpeakingPage';
+import { DATA_SETS } from '../../constants/dataSets';
+import { ChevronLeft, Moon, Sun, Headphones, Mic2, BookOpen, Plane } from 'lucide-react';
+import type { DataSet, SpeedListeningSet } from '../../types';
+
+interface LearningPageProps {
+  isNightMode: boolean;
+  onToggleNight: () => void;
+}
+
+const formatSetTitle = (setId: string) => {
+  const match = setId.match(/set(\d+)$/i);
+  return match ? `Set ${match[1]}` : setId;
+};
+
+type LearningMode = 'speed_listening' | 'infinite_speaking' | null;
+
+export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) => {
+  const { user } = useAuth();
+  const { prefetch } = usePrefetchData();
+  const [mode, setMode] = useState<LearningMode>(null);
+  const [selectedDataSet, setSelectedDataSet] = useState<DataSet | null>(null);
+  const [selectedSpeedListeningSet, setSelectedSpeedListeningSet] = useState<SpeedListeningSet | null>(null);
+  const [selectedLevel, setSelectedLevel] = useState<number | 'all'>('all');
+
+  // Prefetch all datasets when entering learning tab
+  useEffect(() => {
+    DATA_SETS.forEach(ds => prefetch(ds.filename));
+  }, [prefetch]);
+
+  const { data: speedListeningData, loading: slLoading } = useSpeedListeningData(
+    mode === 'speed_listening' && selectedDataSet ? selectedDataSet.id : null
+  );
+
+  const availableLevels = useMemo(() => {
+    return Array.from(new Set(speedListeningData.map(s => s.level))).sort((a, b) => a - b);
+  }, [speedListeningData]);
+
+  const filteredSets = useMemo(() => {
+    return selectedLevel === 'all'
+      ? speedListeningData
+      : speedListeningData.filter(s => s.level === selectedLevel);
+  }, [speedListeningData, selectedLevel]);
+
+  const handleBack = () => {
+    if (selectedSpeedListeningSet) {
+      setSelectedSpeedListeningSet(null);
+    } else if (selectedDataSet) {
+      setSelectedDataSet(null);
+    } else if (mode) {
+      setMode(null);
+    }
+  };
+
+  // Infinite Speaking active session
+  if (mode === 'infinite_speaking' && selectedDataSet) {
+    return (
+      <InfiniteSpeakingPage
+        dataSet={selectedDataSet}
+        isNightMode={isNightMode}
+        onToggleNight={onToggleNight}
+        onBack={() => { setSelectedDataSet(null); }}
+      />
+    );
+  }
+
+  // Speed Listening Quiz active
+  if (mode === 'speed_listening' && selectedDataSet && selectedSpeedListeningSet) {
+    return (
+      <div className={`h-full ${isNightMode ? 'dark bg-gray-900' : 'bg-gray-50'} flex flex-col transition-colors duration-300 overflow-hidden`}>
+        <header className="shrink-0 w-full max-w-4xl mx-auto flex justify-between items-center p-3 sm:p-4 bg-gray-50/90 dark:bg-gray-900/90 backdrop-blur z-40 border-b border-gray-200 dark:border-gray-700 gap-3">
+          <div className="flex items-center gap-1 sm:gap-3 flex-1 min-w-0">
+            <button
+              onClick={handleBack}
+              className="p-2 -ml-2 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors active:scale-90 shrink-0"
+              title="Back"
+            >
+              <ChevronLeft className="w-6 h-6 text-gray-600 dark:text-gray-400" />
+            </button>
+            <h1 className="text-base sm:text-lg font-bold text-gray-800 dark:text-white truncate">
+              {selectedDataSet.name} <span className="text-gray-400 mx-1 font-normal">|</span> Lv.{selectedSpeedListeningSet.level} {formatSetTitle(selectedSpeedListeningSet.setId)}
+            </h1>
+          </div>
+          <button
+            onClick={onToggleNight}
+            className="p-2 shrink-0 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+          >
+            {isNightMode ? <Sun className="w-5 h-5 text-yellow-400" /> : <Moon className="w-5 h-5 text-gray-600" />}
+          </button>
+        </header>
+        <main className="flex-1 overflow-y-auto w-full max-w-4xl mx-auto flex flex-col p-4 gap-4 pb-6">
+          <SpeedListeningQuiz
+            set={selectedSpeedListeningSet}
+            onNext={(() => {
+              const currentIndex = speedListeningData.findIndex(s => s.setId === selectedSpeedListeningSet.setId);
+              const nextSet = speedListeningData[currentIndex + 1];
+              return nextSet ? () => setSelectedSpeedListeningSet(nextSet) : undefined;
+            })()}
+          />
+        </main>
+      </div>
+    );
+  }
+
+  // Lobby screens
+  return (
+    <div className={`h-full ${isNightMode ? 'dark bg-gray-900' : 'bg-gray-50'} flex flex-col transition-colors duration-300 overflow-hidden`}>
+      <header className="shrink-0 z-40 bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800 px-6 py-4">
+        <div className="flex justify-between items-center">
+          <div className="flex items-center gap-2 flex-1 min-w-0">
+            {(mode || selectedDataSet) && (
+              <button
+                onClick={handleBack}
+                className="p-2 -ml-2 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors active:scale-90 shrink-0"
+              >
+                <ChevronLeft className="w-6 h-6 text-gray-600 dark:text-gray-400" />
+              </button>
+            )}
+            <div>
+              <h1 className="text-2xl font-extrabold text-gray-900 dark:text-white tracking-tight">
+                학습
+              </h1>
+              {!mode && !selectedDataSet && (
+                <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                  학습 모드를 선택하세요
+                </p>
+              )}
+            </div>
+          </div>
+          <button
+            onClick={onToggleNight}
+            className="p-2 shrink-0 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+          >
+            {isNightMode ? <Sun className="w-5 h-5 text-yellow-400" /> : <Moon className="w-5 h-5 text-gray-600" />}
+          </button>
+        </div>
+      </header>
+
+      <main className="flex-1 overflow-y-auto max-w-4xl mx-auto p-6 flex flex-col gap-8 w-full pb-6">
+        {/* Step 1: Mode selection */}
+        {!mode && (
+          <>
+            <section className="text-center space-y-2">
+              <h2 className="text-2xl font-bold text-gray-800 dark:text-white">학습 모드 선택</h2>
+              <p className="text-gray-500 dark:text-gray-400">원하는 학습 방식을 선택하세요.</p>
+            </section>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <button
+                onClick={() => setMode('speed_listening')}
+                className="group relative flex items-center p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-sm border-2 border-transparent hover:border-blue-500 dark:hover:border-blue-400 transition-all hover:shadow-xl active:scale-[0.98]"
+              >
+                <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-2xl mr-4 group-hover:scale-110 transition-transform shrink-0">
+                  <Headphones className="w-8 h-8 text-blue-500" />
+                </div>
+                <div className="text-left">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white">스피드 리스닝</h3>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">빠른 속도로 듣고 빈칸 채우기</p>
+                </div>
+              </button>
+              <button
+                onClick={() => setMode('infinite_speaking')}
+                className="group relative flex items-center p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-sm border-2 border-transparent hover:border-purple-500 dark:hover:border-purple-400 transition-all hover:shadow-xl active:scale-[0.98]"
+              >
+                <div className="p-3 bg-purple-50 dark:bg-purple-900/30 rounded-2xl mr-4 group-hover:scale-110 transition-transform shrink-0">
+                  <Mic2 className="w-8 h-8 text-purple-500" />
+                </div>
+                <div className="text-left">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white">무한 스피킹</h3>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">단계별로 문장을 말하며 스피킹 훈련</p>
+                </div>
+              </button>
+            </div>
+          </>
+        )}
+
+        {/* Step 2: Dataset selection */}
+        {mode && !selectedDataSet && (
+          <>
+            <section className="text-center space-y-2">
+              <h2 className="text-2xl font-bold text-gray-800 dark:text-white">학습 세트 선택</h2>
+              <p className="text-gray-500 dark:text-gray-400">공부하고 싶은 문장 세트를 선택하세요.</p>
+            </section>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {DATA_SETS.map((set) => (
+                <button
+                  key={set.id}
+                  onClick={() => setSelectedDataSet(set)}
+                  className="group relative flex items-center p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-sm border-2 border-transparent hover:border-blue-500 dark:hover:border-blue-400 transition-all hover:shadow-xl active:scale-[0.98]"
+                >
+                  <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-2xl mr-4 group-hover:scale-110 transition-transform shrink-0">
+                    {set.id.includes('travel') ? <Plane className="w-8 h-8 text-blue-500" /> : <BookOpen className="w-8 h-8 text-blue-500" />}
+                  </div>
+                  <div className="text-left flex-1">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white">{set.name}</h3>
+                    {set.description && (
+                      <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">{set.description}</p>
+                    )}
+                  </div>
+                </button>
+              ))}
+            </div>
+          </>
+        )}
+
+        {/* Step 3: Speed Listening set selection */}
+        {mode === 'speed_listening' && selectedDataSet && !selectedSpeedListeningSet && (
+          <>
+            <section className="text-center space-y-2">
+              <h2 className="text-2xl font-bold text-gray-800 dark:text-white">스피드 리스닝 세트 선택</h2>
+              <p className="text-gray-500 dark:text-gray-400">도전할 세트를 선택하세요.</p>
+            </section>
+            {slLoading ? (
+              <LoadingSpinner />
+            ) : (
+              <>
+                <div className="flex gap-2 mb-4 overflow-x-auto pb-2">
+                  <button
+                    onClick={() => setSelectedLevel('all')}
+                    className={`px-4 py-2 rounded-full text-sm font-bold whitespace-nowrap transition-colors ${
+                      selectedLevel === 'all'
+                        ? 'bg-blue-600 text-white'
+                        : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700'
+                    }`}
+                  >
+                    전체
+                  </button>
+                  {availableLevels.map(level => (
+                    <button
+                      key={level}
+                      onClick={() => setSelectedLevel(level)}
+                      className={`px-4 py-2 rounded-full text-sm font-bold whitespace-nowrap transition-colors ${
+                        selectedLevel === level
+                          ? 'bg-blue-600 text-white'
+                          : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700'
+                      }`}
+                    >
+                      Level {level}
+                    </button>
+                  ))}
+                </div>
+
+                <LevelRecommendationBadge
+                  uid={user?.uid}
+                  currentLevel={selectedLevel}
+                  onSelectLevel={(level) => setSelectedLevel(level)}
+                />
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {filteredSets.map((set) => (
+                    <button
+                      key={set.setId}
+                      onClick={() => setSelectedSpeedListeningSet(set)}
+                      className="flex flex-col p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400 transition-all hover:shadow-md text-left"
+                    >
+                      <div className="flex justify-between items-start mb-2">
+                        <h3 className="text-lg font-bold text-gray-900 dark:text-white">{formatSetTitle(set.setId)}</h3>
+                        <span className="px-2 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300 text-xs font-bold rounded-full">
+                          Level {set.level}
+                        </span>
+                      </div>
+                      <p className="text-gray-600 dark:text-gray-300 font-medium">{set.theme}</p>
+                      <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">{set.sentences.length} sentences</p>
+                    </button>
+                  ))}
+                </div>
+              </>
+            )}
+          </>
+        )}
+      </main>
+    </div>
+  );
+};

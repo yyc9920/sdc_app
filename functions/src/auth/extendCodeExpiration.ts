@@ -1,7 +1,14 @@
 import { onCall, HttpsError } from 'firebase-functions/v2/https';
 import { getFirestore, FieldValue, Timestamp } from 'firebase-admin/firestore';
 
-export const extendCodeExpiration = onCall(async (request) => {
+export const extendCodeExpiration = onCall({ 
+  cors: [
+    'https://sdc-app-1d02c.web.app',
+    'https://sdc-app-1d02c.firebaseapp.com',
+    'http://localhost:5173',
+    'http://127.0.0.1:5173'
+  ] 
+}, async (request) => {
   if (request.auth?.token.role !== 'admin') {
     throw new HttpsError('permission-denied', 'Admin access required');
   }

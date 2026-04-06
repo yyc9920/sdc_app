@@ -1,45 +1,8 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
+import { Capacitor } from '@capacitor/core';
+import { createSpeechService } from '../services/speechService';
 
-export interface SpeechRecognitionEvent extends Event {
-  resultIndex: number;
-  results: SpeechRecognitionResultList;
-}
-
-export interface SpeechRecognitionResultList {
-  readonly length: number;
-  item(index: number): SpeechRecognitionResult;
-  [index: number]: SpeechRecognitionResult;
-}
-
-export interface SpeechRecognitionResult {
-  readonly length: number;
-  item(index: number): SpeechRecognitionAlternative;
-  [index: number]: SpeechRecognitionAlternative;
-  isFinal: boolean;
-}
-
-export interface SpeechRecognitionAlternative {
-  transcript: string;
-  confidence: number;
-}
-
-export interface SpeechRecognition extends EventTarget {
-  continuous: boolean;
-  interimResults: boolean;
-  lang: string;
-  onstart: (event: Event) => void;
-  onresult: (event: SpeechRecognitionEvent) => void;
-  onerror: (event: { error: string }) => void;
-  onend: (event: Event) => void;
-  start(): void;
-  stop(): void;
-  abort(): void;
-}
-
-interface WindowWithSpeechRecognition extends Window {
-  SpeechRecognition?: new () => SpeechRecognition;
-  webkitSpeechRecognition?: new () => SpeechRecognition;
-}
+const speechService = createSpeechService();
 
 export const usePronunciationCheck = (targetSentence: string) => {
   const [isRecording, setIsRecording] = useState(false);
@@ -50,10 +13,9 @@ export const usePronunciationCheck = (targetSentence: string) => {
   const [supportError, setSupportError] = useState('');
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
 
-  const recognitionRef = useRef<SpeechRecognition | null>(null);
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const audioChunksRef = useRef<Blob[]>([]);
-  
+
   const targetWords = useMemo(() => targetSentence.split(' '), [targetSentence]);
 
   const resetState = useCallback(() => {
@@ -85,77 +47,47 @@ export const usePronunciationCheck = (targetSentence: string) => {
     const correctCount = newStatuses.filter((s: string) => s === 'correct').length;
     const newScore = Math.round((correctCount / targetWords.length) * 100);
     setScore(newScore);
-    
-    if (newScore === 100) {
-      recognitionRef.current?.stop();
-      setIsFinished(true);
-    } else if (markFinished) {
+
+    if (newScore === 100 || markFinished) {
       setIsFinished(true);
     }
-    
+
     return newScore;
   }, [targetWords]);
 
   useEffect(() => {
-    recognitionRef.current?.stop();
-    // eslint-disable-next-line react-hooks/set-state-in-effect
     resetState();
   }, [targetSentence, resetState]);
 
+  // Check availability on mount
   useEffect(() => {
-    const win = window as WindowWithSpeechRecognition;
-    const SpeechRecognitionConstructor = win.SpeechRecognition || win.webkitSpeechRecognition;
-    if (!SpeechRecognitionConstructor) {
-      // eslint-disable-next-line react-hooks/set-state-in-effect
-      setSupportError("This browser does not support speech recognition. Please use Chrome.");
-      return;
-    }
-
-    const recognition = new SpeechRecognitionConstructor();
-    recognition.continuous = true;
-    recognition.interimResults = true;
-    recognition.lang = 'en-US';
-
-    recognition.onstart = () => {
-      setIsRecording(true);
-      setTranscript('');
-      setIsFinished(false);
-    };
-
-    recognition.onresult = (event: SpeechRecognitionEvent) => {
-      let interimTranscript = '';
-      let finalTranscript = '';
-
-      for (let i = event.resultIndex; i < event.results.length; ++i) {
-        if (event.results[i].isFinal) {
-          finalTranscript += event.results[i][0].transcript;
-        } else {
-          interimTranscript += event.results[i][0].transcript;
-        }
+    speechService.isAvailable().then(available => {
+      if (!available) {
+        setSupportError('음성 인식을 사용할 수 없습니다.');
       }
+    });
+  }, []);
 
-      const currentTranscript = finalTranscript + interimTranscript;
-      setTranscript(currentTranscript);
-      
-      // Real-time evaluation
-      evaluatePronunciation(currentTranscript, false);
-    };
-
-    recognition.onerror = (event: { error: string }) => {
-      console.error('Speech recognition error', event.error);
-      if (event.error !== 'no-speech') {
-         setIsRecording(false);
+  // Set up speech service listeners
+  useEffect(() => {
+    speechService.onResult((result) => {
+      if (result.matches.length > 0) {
+        const text = result.matches[0];
+        setTranscript(text);
+        evaluatePronunciation(text, result.isFinal);
       }
-    };
+      if (result.isFinal && result.matches.length === 0) {
+        setIsRecording(false);
+      }
+    });
 
-    recognition.onend = () => {
+    speechService.onError((error) => {
+      console.error('Speech recognition error:', error);
       setIsRecording(false);
-    };
+    });
 
-    recognitionRef.current = recognition;
-    
     return () => {
-      recognitionRef.current?.abort();
+      speechService.removeAllListeners();
     };
   }, [evaluatePronunciation]);
 
@@ -166,35 +98,50 @@ export const usePronunciationCheck = (targetSentence: string) => {
     setTranscript('');
     setAudioUrl(null);
     audioChunksRef.current = [];
-    
+
     try {
-      recognitionRef.current?.start();
-      
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      const mediaRecorder = new MediaRecorder(stream);
-      mediaRecorderRef.current = mediaRecorder;
-      
-      mediaRecorder.ondataavailable = (event) => {
-        if (event.data.size > 0) {
-          audioChunksRef.current.push(event.data);
+      const granted = await speechService.requestPermission();
+      if (!granted) {
+        setSupportError('마이크 권한이 거부되었습니다. 설정에서 허용해주세요.');
+        return;
+      }
+
+      speechService.startListening('en-US');
+      setIsRecording(true);
+
+      // Audio recording for playback - skip on native if getUserMedia unavailable
+      if (!Capacitor.isNativePlatform() && navigator.mediaDevices?.getUserMedia) {
+        try {
+          const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+          const mediaRecorder = new MediaRecorder(stream);
+          mediaRecorderRef.current = mediaRecorder;
+
+          mediaRecorder.ondataavailable = (event) => {
+            if (event.data.size > 0) {
+              audioChunksRef.current.push(event.data);
+            }
+          };
+
+          mediaRecorder.onstop = () => {
+            const audioBlob = new Blob(audioChunksRef.current, { type: 'audio/webm' });
+            const url = URL.createObjectURL(audioBlob);
+            setAudioUrl(url);
+            stream.getTracks().forEach(track => track.stop());
+          };
+
+          mediaRecorder.start();
+        } catch (e) {
+          console.warn('Audio recording not available:', e);
         }
-      };
-      
-      mediaRecorder.onstop = () => {
-        const audioBlob = new Blob(audioChunksRef.current, { type: 'audio/webm' });
-        const url = URL.createObjectURL(audioBlob);
-        setAudioUrl(url);
-        stream.getTracks().forEach(track => track.stop());
-      };
-      
-      mediaRecorder.start();
+      }
     } catch (e) {
       console.error('Failed to start recording', e);
     }
   }, [isRecording, targetWords]);
 
   const stopRecording = useCallback(() => {
-    recognitionRef.current?.stop();
+    speechService.stopListening();
+    setIsRecording(false);
     if (mediaRecorderRef.current && mediaRecorderRef.current.state !== 'inactive') {
       mediaRecorderRef.current.stop();
     }
@@ -207,20 +154,13 @@ export const usePronunciationCheck = (targetSentence: string) => {
       startRecording();
     }
   };
-  
+
   const playRecording = useCallback(() => {
     if (audioUrl) {
       const audio = new Audio(audioUrl);
       audio.play().catch(console.error);
     }
   }, [audioUrl]);
-
-  useEffect(() => {
-    if (!isRecording && transcript && !isFinished) {
-      // eslint-disable-next-line react-hooks/set-state-in-effect
-      evaluatePronunciation(transcript, true);
-    }
-  }, [isRecording, transcript, isFinished, evaluatePronunciation]);
 
   const speakSentence = () => {
     if ('speechSynthesis' in window) {

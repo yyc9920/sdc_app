@@ -1,58 +1,53 @@
-import { useState, useEffect } from 'react';
-import Papa from 'papaparse';
+import { useQuery, useQueryClient } from '@tanstack/react-query';
+import { useCallback } from 'react';
+import { collection, query, orderBy, getDocs } from 'firebase/firestore';
+import { db } from '../firebase';
 import type { SentenceData } from '../types';
 
-export const useData = (filename: string | undefined) => {
-  const [data, setData] = useState<SentenceData[]>([]);
-  const [loading, setLoading] = useState<boolean>(false);
-  const [error, setError] = useState<string | null>(null);
-  const [prevFilename, setPrevFilename] = useState(filename);
+const fetchLearningSetData = async (filename: string): Promise<SentenceData[]> => {
+  const setId = filename.replace('.csv', '');
 
-  if (filename !== prevFilename) {
-    setPrevFilename(filename);
-    setData([]);
-    setLoading(!!filename);
-    setError(null);
+  const q = query(
+    collection(db, `learning_sets/${setId}/sentences`),
+    orderBy('id', 'asc')
+  );
+
+  const snapshot = await getDocs(q);
+
+  if (snapshot.empty) {
+    throw new Error('Data not found in database');
   }
 
-  useEffect(() => {
-    if (!filename) {
-      return;
-    }
+  return snapshot.docs.map(doc => doc.data() as SentenceData);
+};
 
-    fetch(import.meta.env.BASE_URL + filename)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Failed to fetch data');
-        }
-        return response.text();
-      })
-      .then(csv => {
-        Papa.parse(csv, {
-          header: true,
-          skipEmptyLines: true,
-          complete: (results) => {
-            const parsedData: SentenceData[] = (results.data as Record<string, string>[]).map((row, index) => ({
-              id: index,
-              english: row['English Sentence'] || '',
-              koreanPronounce: row['Korean Pronounce'] || '',
-              directComprehension: row['Direct Comprehension'] || '',
-              comprehension: row['Comprehension'] || '',
-            }));
-            setData(parsedData);
-            setLoading(false);
-          },
-          error: (error: Error) => {
-            setError(error.message);
-            setLoading(false);
-          }
-        });
-      })
-      .catch(error => {
-        setError(error.message);
-        setLoading(false);
-      });
-  }, [filename]);
+export const useData = (filename: string | undefined) => {
+  const { data, isLoading, error } = useQuery({
+    queryKey: ['learningSet', filename],
+    queryFn: () => fetchLearningSetData(filename!),
+    enabled: !!filename,
+    staleTime: 30 * 60 * 1000,
+    gcTime: 60 * 60 * 1000,
+    retry: 2,
+  });
 
-  return { data, loading, error };
+  return {
+    data: data ?? [],
+    loading: isLoading,
+    error: error ? (error instanceof Error ? error.message : 'Failed to fetch data') : null,
+  };
+};
+
+export const usePrefetchData = () => {
+  const queryClient = useQueryClient();
+
+  const prefetch = useCallback((filename: string) => {
+    queryClient.prefetchQuery({
+      queryKey: ['learningSet', filename],
+      queryFn: () => fetchLearningSetData(filename),
+      staleTime: 30 * 60 * 1000,
+    });
+  }, [queryClient]);
+
+  return { prefetch };
 };

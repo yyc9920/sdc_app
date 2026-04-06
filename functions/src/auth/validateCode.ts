@@ -2,7 +2,9 @@ import { onCall, HttpsError } from 'firebase-functions/v2/https';
 import { getAuth } from 'firebase-admin/auth';
 import { getFirestore, FieldValue } from 'firebase-admin/firestore';
 
-export const validateCode = onCall(async (request) => {
+export const validateCode = onCall({ 
+  cors: true
+}, async (request) => {
   const { code } = request.data;
   
   console.log(`[validateCode] Received code from client: '${code}'`); 
@@ -71,6 +73,8 @@ export const validateCode = onCall(async (request) => {
     });
   }
   
+  await auth.setCustomUserClaims(uid, { role: codeData.role });
+
   const customToken = await auth.createCustomToken(uid, {
     role: codeData.role,
   });

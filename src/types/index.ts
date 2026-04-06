@@ -38,13 +38,15 @@ export interface SpeedListeningSentence {
 export interface Quiz {
   question: string;
   options: string[];
-  answer: number;
+  answerIndex: number;
 }
 
 export interface SpeedListeningSet {
   setId: string;
+  parentSetId: string;
   theme: string;
   level: number;
+  setNumber: number;
   sentences: SpeedListeningSentence[];
   quiz: Quiz;
 }

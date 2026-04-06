@@ -1,16 +1,19 @@
 import React from 'react';
-import { Home, Settings, User } from 'lucide-react';
+import { Home, Settings, User, BarChart3, Trophy, BookOpen } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 interface Props {
-  activeTab: 'home' | 'admin' | 'teacher' | 'profile';
-  onTabChange: (tab: 'home' | 'admin' | 'teacher' | 'profile') => void;
+  activeTab: 'home' | 'learning' | 'dashboard' | 'ranking' | 'admin' | 'teacher' | 'profile';
+  onTabChange: (tab: 'home' | 'learning' | 'dashboard' | 'ranking' | 'admin' | 'teacher' | 'profile') => void;
   role: 'admin' | 'teacher' | 'student' | null;
 }
 
 export const BottomNavigation: React.FC<Props> = ({ activeTab, onTabChange, role }) => {
   const tabs = [
-    { id: 'home', icon: Home, label: '학습' },
+    { id: 'home', icon: Home, label: '홈' },
+    { id: 'learning', icon: BookOpen, label: '학습' },
+    { id: 'dashboard', icon: BarChart3, label: '현황' },
+    { id: 'ranking', icon: Trophy, label: '랭킹' },
     { id: 'profile', icon: User, label: '내 정보' },
   ] as const;
 
@@ -22,16 +25,16 @@ export const BottomNavigation: React.FC<Props> = ({ activeTab, onTabChange, role
   }
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-lg border-t border-gray-200 dark:border-gray-800 pb-safe">
+    <nav className="relative z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-lg border-t border-gray-200 dark:border-gray-800 pb-safe">
       <div className="max-w-md mx-auto flex justify-around items-center px-6 py-2">
         {activeTabs.map((tab) => {
           const Icon = tab.icon;
           const isActive = activeTab === tab.id;
-          
+
           return (
             <button
               key={tab.id}
-              onClick={() => onTabChange(tab.id as 'home' | 'admin' | 'teacher' | 'profile')}
+              onClick={() => onTabChange(tab.id as Props['activeTab'])}
               className="relative flex flex-col items-center justify-center w-16 h-14 select-none focus:outline-none group"
             >
               {isActive && (
@@ -42,19 +45,19 @@ export const BottomNavigation: React.FC<Props> = ({ activeTab, onTabChange, role
                   transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
                 />
               )}
-              
+
               <div className="relative flex flex-col items-center gap-1 z-10">
-                <Icon 
+                <Icon
                   className={`w-6 h-6 transition-colors duration-200 ${
-                    isActive 
-                      ? 'text-blue-600 dark:text-blue-400' 
+                    isActive
+                      ? 'text-blue-600 dark:text-blue-400'
                       : 'text-gray-400 dark:text-gray-500 group-hover:text-gray-600 dark:group-hover:text-gray-300'
-                  }`} 
+                  }`}
                   strokeWidth={isActive ? 2.5 : 2}
                 />
                 <span className={`text-[10px] font-medium transition-colors duration-200 ${
-                  isActive 
-                    ? 'text-blue-600 dark:text-blue-400' 
+                  isActive
+                    ? 'text-blue-600 dark:text-blue-400'
                     : 'text-gray-400 dark:text-gray-500'
                 }`}>
                   {tab.label}

@@ -1,8 +1,9 @@
 import { initializeApp } from 'firebase/app';
-import { getAuth, connectAuthEmulator } from 'firebase/auth';
-import { initializeFirestore, persistentLocalCache, persistentMultipleTabManager, connectFirestoreEmulator } from 'firebase/firestore';
+import { getAuth, initializeAuth, indexedDBLocalPersistence, browserLocalPersistence, connectAuthEmulator } from 'firebase/auth';
+import { initializeFirestore, persistentLocalCache, persistentMultipleTabManager, memoryLocalCache, connectFirestoreEmulator } from 'firebase/firestore';
 import { getFunctions, connectFunctionsEmulator } from 'firebase/functions';
-import { getStorage, connectStorageEmulator } from 'firebase/storage';
+import { getStorage, connectStorageEmulator, ref, getDownloadURL } from 'firebase/storage';
+import { Capacitor } from '@capacitor/core';
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
@@ -15,21 +16,53 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 
-export const auth = getAuth(app);
+export const auth = Capacitor.isNativePlatform()
+  ? initializeAuth(app, {
+      persistence: [indexedDBLocalPersistence, browserLocalPersistence]
+    })
+  : getAuth(app);
 export const db = initializeFirestore(app, {
-  localCache: persistentLocalCache({
-    tabManager: persistentMultipleTabManager()
-  })
+  localCache: Capacitor.isNativePlatform()
+    ? memoryLocalCache()
+    : persistentLocalCache({
+        tabManager: persistentMultipleTabManager()
+      })
 });
 export const functions = getFunctions(app, 'asia-northeast3');
 export const storage = getStorage(app);
 
-// Use Emulators if running locally (e.g. Vite dev server)
-if (import.meta.env.DEV) {
-  connectAuthEmulator(auth, 'http://127.0.0.1:9099');
-  connectFirestoreEmulator(db, '127.0.0.1', 8080);
-  connectFunctionsEmulator(functions, '127.0.0.1', 5001);
-  connectStorageEmulator(storage, '127.0.0.1', 9199);
+/**
+ * Get the download URL for a file in Firebase Storage.
+ * This handles both production and emulator environments.
+ */
+export const getStorageUrl = async (path: string): Promise<string> => {
+  try {
+    const fileRef = ref(storage, path);
+    return await getDownloadURL(fileRef);
+  } catch (error) {
+    console.error(`Error getting storage URL for ${path}:`, error);
+    // Return the path as is as a last resort, prefixed with a slash
+    return `/${path}`;
+  }
+};
+
+// Use Emulators only in DEV mode AND when VITE_USE_EMULATOR is not 'false'
+// Never use emulators in native app builds
+const useEmulator = import.meta.env.DEV
+  && import.meta.env.VITE_USE_EMULATOR !== 'false'
+  && !Capacitor.isNativePlatform();
+
+if (useEmulator) {
+  const hostname = typeof window !== 'undefined' ? window.location.hostname : '127.0.0.1';
+  
+  connectAuthEmulator(auth, `http://${hostname}:9099`);
+  connectFirestoreEmulator(db, hostname, 8080);
+  connectFunctionsEmulator(functions, hostname, 5001);
+  connectStorageEmulator(storage, hostname, 9199);
+  
+  console.log('🔧 Using Firebase Emulators');
+} else if (import.meta.env.DEV) {
+  console.log('🔥 DEV mode using PRODUCTION Firebase');
 }
 
 export default app;
