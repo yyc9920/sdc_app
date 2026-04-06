@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest';
+import { describe, it, expect } from 'vitest';
 
 // Test the pure helper functions from updateStreaks
 // Since onSchedule functions are hard to wrap, we test logic by extracting helpers

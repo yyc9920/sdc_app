@@ -1,4 +1,4 @@
-import { describe, it, expect, vi } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { cleanWord, generateSentenceVoices, generateBlankIndices } from '../useQuizLogic';
 import { AVAILABLE_VOICES, BLANK_MULTIPLIER } from '../../constants';
 import type { SpeedListeningSentence } from '../../types';

@@ -1,7 +1,7 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 
 // vi.hoisted ensures these are available when vi.mock factories run
-const { mockAdd, mockCollection, mockDb } = vi.hoisted(() => {
+const { mockAdd, mockDb } = vi.hoisted(() => {
   const mockAdd = vi.fn();
   const mockCollection = vi.fn(() => ({ add: mockAdd }));
   const mockDb = { collection: mockCollection };

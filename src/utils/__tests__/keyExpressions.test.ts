@@ -34,7 +34,7 @@ describe('getKeyExpressionIndices', () => {
   });
 
   it('fallback: all function words -> marks last word as key', () => {
-    const result = getKeyExpressionIndices('I am the one');
+    getKeyExpressionIndices('I am the one');
     // "one" might be function word or not. Let's check more clearly:
     const result2 = getKeyExpressionIndices('I am a the');
     expect(result2).toEqual([3]); // fallback: last index
