@@ -1,8 +1,20 @@
+export type RowType = 'script' | 'reading' | 'prompt' | 'task' | 'vocab' | 'expression' | 'question' | 'meta';
+
+export type LearningLevel = 0 | 1 | 2 | 3 | 4 | 5;
+
+export type CategoryCode =
+  | 'LEGACY' | 'SPK' | 'INT' | 'CONV' | 'ACA'
+  | 'LEC' | 'TED' | 'BTEW' | 'B6ME' | 'ELLO'
+  | 'TRES' | 'BEP' | 'TAL' | 'EXT';
+
 export interface DataSet {
   id: string;
   name: string;
   description?: string;
-  filename: string;
+  filename?: string;
+  level?: LearningLevel;
+  category?: CategoryCode;
+  isLegacy?: boolean;
 }
 
 export interface SentenceData {
@@ -11,6 +23,20 @@ export interface SentenceData {
   koreanPronounce: string;
   directComprehension: string;
   comprehension: string;
+  rowType?: RowType;
+  speaker?: string;
+  note?: string;
+}
+
+export interface LearningSetMeta {
+  setId: string;
+  title: string;
+  level: LearningLevel;
+  category: CategoryCode;
+  categoryLabel: string;
+  sentenceCount: number;
+  isLegacy: boolean;
+  status: string;
 }
 
 export interface AppState {

@@ -1,14 +1,17 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo } from 'react';
 import { useSpeedListeningData } from '../../hooks/useSpeedListeningData';
 import { usePrefetchData } from '../../hooks/useData';
+import { useLearningSetsBrowser } from '../../hooks/useLearningSetsBrowser';
 import { useAuth } from '../../hooks/useAuth';
 import { SpeedListeningQuiz } from '../SpeedListeningQuiz';
 import { LevelRecommendationBadge } from '../speed-listening/LevelRecommendationBadge';
 import { LoadingSpinner } from '../LoadingSpinner';
 import { InfiniteSpeakingPage } from './InfiniteSpeaking/InfiniteSpeakingPage';
-import { DATA_SETS } from '../../constants/dataSets';
-import { ChevronLeft, Moon, Sun, Headphones, Mic2, BookOpen, Plane } from 'lucide-react';
-import type { DataSet, SpeedListeningSet } from '../../types';
+import { LevelSelector } from '../home/LevelSelector';
+import { CategorySelector } from '../home/CategorySelector';
+import { SetSelector } from '../home/SetSelector';
+import { ChevronLeft, Moon, Sun, Headphones, Mic2 } from 'lucide-react';
+import type { DataSet, SpeedListeningSet, LearningLevel, CategoryCode, LearningSetMeta } from '../../types';
 
 interface LearningPageProps {
   isNightMode: boolean;
@@ -25,15 +28,28 @@ type LearningMode = 'speed_listening' | 'infinite_speaking' | null;
 export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) => {
   const { user } = useAuth();
   const { prefetch } = usePrefetchData();
+  const { levels, loading: browsing } = useLearningSetsBrowser();
   const [mode, setMode] = useState<LearningMode>(null);
+  const [navLevel, setNavLevel] = useState<LearningLevel | null>(null);
+  const [navCategory, setNavCategory] = useState<CategoryCode | null>(null);
   const [selectedDataSet, setSelectedDataSet] = useState<DataSet | null>(null);
   const [selectedSpeedListeningSet, setSelectedSpeedListeningSet] = useState<SpeedListeningSet | null>(null);
   const [selectedLevel, setSelectedLevel] = useState<number | 'all'>('all');
 
-  // Prefetch all datasets when entering learning tab
-  useEffect(() => {
-    DATA_SETS.forEach(ds => prefetch(ds.filename));
-  }, [prefetch]);
+  const currentLevelGroup = levels.find(l => l.level === navLevel);
+  const currentCategoryGroup = currentLevelGroup?.categories.find(c => c.code === navCategory);
+
+  const handleSetSelect = (meta: LearningSetMeta) => {
+    setSelectedDataSet({
+      id: meta.setId,
+      name: meta.title,
+      description: `${meta.sentenceCount}문장`,
+      level: meta.level,
+      category: meta.category,
+      isLegacy: meta.isLegacy,
+    });
+    prefetch(meta.setId);
+  };
 
   const { data: speedListeningData, loading: slLoading } = useSpeedListeningData(
     mode === 'speed_listening' && selectedDataSet ? selectedDataSet.id : null
@@ -54,6 +70,12 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
       setSelectedSpeedListeningSet(null);
     } else if (selectedDataSet) {
       setSelectedDataSet(null);
+      setNavCategory(null);
+      setNavLevel(null);
+    } else if (navCategory) {
+      setNavCategory(null);
+    } else if (navLevel !== null) {
+      setNavLevel(null);
     } else if (mode) {
       setMode(null);
     }
@@ -184,32 +206,35 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
           </>
         )}
 
-        {/* Step 2: Dataset selection */}
+        {/* Step 2: Dataset selection (Level > Category > Set) */}
         {mode && !selectedDataSet && (
           <>
             <section className="text-center space-y-2">
               <h2 className="text-2xl font-bold text-gray-800 dark:text-white">학습 세트 선택</h2>
-              <p className="text-gray-500 dark:text-gray-400">공부하고 싶은 문장 세트를 선택하세요.</p>
+              <p className="text-gray-500 dark:text-gray-400">
+                {navCategory ? '학습할 세트를 선택하세요' : navLevel !== null ? '카테고리를 선택하세요' : '레벨을 선택하세요'}
+              </p>
             </section>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {DATA_SETS.map((set) => (
-                <button
-                  key={set.id}
-                  onClick={() => setSelectedDataSet(set)}
-                  className="group relative flex items-center p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-sm border-2 border-transparent hover:border-blue-500 dark:hover:border-blue-400 transition-all hover:shadow-xl active:scale-[0.98]"
-                >
-                  <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-2xl mr-4 group-hover:scale-110 transition-transform shrink-0">
-                    {set.id.includes('travel') ? <Plane className="w-8 h-8 text-blue-500" /> : <BookOpen className="w-8 h-8 text-blue-500" />}
-                  </div>
-                  <div className="text-left flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white">{set.name}</h3>
-                    {set.description && (
-                      <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">{set.description}</p>
-                    )}
-                  </div>
-                </button>
-              ))}
-            </div>
+            {browsing ? (
+              <LoadingSpinner />
+            ) : navCategory && currentCategoryGroup ? (
+              <SetSelector
+                sets={currentCategoryGroup.sets}
+                categoryLabel={currentCategoryGroup.label}
+                onSelect={handleSetSelect}
+              />
+            ) : navLevel !== null && currentLevelGroup ? (
+              <CategorySelector
+                categories={currentLevelGroup.categories}
+                levelLabel={currentLevelGroup.label}
+                onSelect={(code) => setNavCategory(code)}
+              />
+            ) : (
+              <LevelSelector
+                levels={levels}
+                onSelect={(level) => setNavLevel(level)}
+              />
+            )}
           </>
         )}
 

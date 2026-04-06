@@ -3,14 +3,17 @@ import { motion } from 'framer-motion';
 import { useData, usePrefetchData } from '../../hooks/useData';
 import { useAudio } from '../../hooks/useAudio';
 import { useStudySession } from '../../hooks/useStudySession';
+import { useLearningSetsBrowser } from '../../hooks/useLearningSetsBrowser';
 import { getTTSAudioUrl, prefetchTTS } from '../../services/ttsService';
 import { Card } from '../Card';
 import { Controls } from '../Controls';
 import { PronunciationChecker } from '../PronunciationChecker';
 import { LoadingSpinner } from '../LoadingSpinner';
-import { DATA_SETS } from '../../constants/dataSets';
-import { BookOpen, Plane, ChevronLeft, Moon, Sun } from 'lucide-react';
-import type { SentenceData, DataSet } from '../../types';
+import { LevelSelector } from './LevelSelector';
+import { CategorySelector } from './CategorySelector';
+import { SetSelector } from './SetSelector';
+import { ChevronLeft, Moon, Sun } from 'lucide-react';
+import type { SentenceData, DataSet, LearningLevel, CategoryCode, LearningSetMeta } from '../../types';
 
 interface RepetitionLearningPageProps {
   isNightMode: boolean;
@@ -18,13 +21,34 @@ interface RepetitionLearningPageProps {
 }
 
 export const RepetitionLearningPage = ({ isNightMode, onToggleNight }: RepetitionLearningPageProps) => {
+  const [selectedLevel, setSelectedLevel] = useState<LearningLevel | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState<CategoryCode | null>(null);
   const [selectedDataSet, setSelectedDataSet] = useState<DataSet | null>(null);
   const { prefetch } = usePrefetchData();
+  const { levels, loading: browsing } = useLearningSetsBrowser();
 
-  // Prefetch all datasets on mount
-  useEffect(() => {
-    DATA_SETS.forEach(ds => prefetch(ds.filename));
-  }, [prefetch]);
+  const currentLevelGroup = levels.find(l => l.level === selectedLevel);
+  const currentCategoryGroup = currentLevelGroup?.categories.find(c => c.code === selectedCategory);
+
+  const handleSetSelect = (meta: LearningSetMeta) => {
+    setSelectedDataSet({
+      id: meta.setId,
+      name: meta.title,
+      description: `${meta.sentenceCount}문장`,
+      level: meta.level,
+      category: meta.category,
+      isLegacy: meta.isLegacy,
+    });
+    prefetch(meta.setId);
+  };
+
+  const handleLobbyBack = () => {
+    if (selectedCategory) {
+      setSelectedCategory(null);
+    } else if (selectedLevel !== null) {
+      setSelectedLevel(null);
+    }
+  };
 
   const [rangeStart, setRangeStart] = useState(1);
   const [rangeEnd, setRangeEnd] = useState(100);
@@ -40,7 +64,7 @@ export const RepetitionLearningPage = ({ isNightMode, onToggleNight }: Repetitio
 
   const activeCardRef = useRef<HTMLDivElement | null>(null);
 
-  const { data, loading, error } = useData(selectedDataSet?.filename);
+  const { data, loading, error } = useData(selectedDataSet?.id);
 
   useEffect(() => {
     if (activeCardRef.current && isPlaying) {
@@ -187,8 +211,20 @@ export const RepetitionLearningPage = ({ isNightMode, onToggleNight }: Repetitio
     if (hasPrevCheck) setCheckingSentence(data[currentCheckIndex - 1]);
   }, [hasPrevCheck, currentCheckIndex, data]);
 
-  // Lobby: dataset selection
+  // Lobby: Level > Category > Set navigation
   if (!selectedDataSet) {
+    const showBack = selectedLevel !== null;
+    const lobbyTitle = selectedCategory
+      ? currentCategoryGroup?.label ?? '세트 선택'
+      : selectedLevel !== null
+        ? currentLevelGroup?.label ?? '카테고리 선택'
+        : '반복 학습';
+    const lobbySubtitle = selectedCategory
+      ? '학습할 세트를 선택하세요'
+      : selectedLevel !== null
+        ? '카테고리를 선택하세요'
+        : '레벨을 선택하세요';
+
     return (
       <div className={`h-full ${isNightMode ? 'dark bg-gray-900' : 'bg-gray-50'} flex flex-col transition-colors duration-300 relative overflow-hidden`}>
         <motion.div
@@ -199,16 +235,26 @@ export const RepetitionLearningPage = ({ isNightMode, onToggleNight }: Repetitio
         >
           <header className="shrink-0 z-40 bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800 px-6 py-4">
             <div className="flex justify-between items-center">
-              <div>
-                <div className="flex items-center gap-3">
-                  <img src="/sdc_logo.png" alt="SDC" className="w-8 h-8 object-contain" />
-                  <h1 className="text-2xl font-extrabold text-gray-900 dark:text-white tracking-tight">
-                    반복 학습
-                  </h1>
+              <div className="flex items-center gap-2 flex-1 min-w-0">
+                {showBack && (
+                  <button
+                    onClick={handleLobbyBack}
+                    className="p-2 -ml-2 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors active:scale-90 shrink-0"
+                  >
+                    <ChevronLeft className="w-6 h-6 text-gray-600 dark:text-gray-400" />
+                  </button>
+                )}
+                <div>
+                  <div className="flex items-center gap-3">
+                    <img src="/sdc_logo.png" alt="SDC" className="w-8 h-8 object-contain" />
+                    <h1 className="text-2xl font-extrabold text-gray-900 dark:text-white tracking-tight">
+                      {lobbyTitle}
+                    </h1>
+                  </div>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                    {lobbySubtitle}
+                  </p>
                 </div>
-                <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                  문장 세트를 선택하세요
-                </p>
               </div>
               <button
                 onClick={onToggleNight}
@@ -220,25 +266,26 @@ export const RepetitionLearningPage = ({ isNightMode, onToggleNight }: Repetitio
           </header>
 
           <main className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {DATA_SETS.map((set) => (
-                <button
-                  key={set.id}
-                  onClick={() => setSelectedDataSet(set)}
-                  className="group relative flex items-center p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-sm border-2 border-transparent hover:border-blue-500 dark:hover:border-blue-400 transition-all hover:shadow-xl active:scale-[0.98]"
-                >
-                  <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-2xl mr-4 group-hover:scale-110 transition-transform shrink-0">
-                    {set.id.includes('travel') ? <Plane className="w-8 h-8 text-blue-500" /> : <BookOpen className="w-8 h-8 text-blue-500" />}
-                  </div>
-                  <div className="text-left flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white">{set.name}</h3>
-                    {set.description && (
-                      <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">{set.description}</p>
-                    )}
-                  </div>
-                </button>
-              ))}
-            </div>
+            {browsing ? (
+              <LoadingSpinner />
+            ) : selectedCategory && currentCategoryGroup ? (
+              <SetSelector
+                sets={currentCategoryGroup.sets}
+                categoryLabel={currentCategoryGroup.label}
+                onSelect={handleSetSelect}
+              />
+            ) : selectedLevel !== null && currentLevelGroup ? (
+              <CategorySelector
+                categories={currentLevelGroup.categories}
+                levelLabel={currentLevelGroup.label}
+                onSelect={(code) => setSelectedCategory(code)}
+              />
+            ) : (
+              <LevelSelector
+                levels={levels}
+                onSelect={(level) => setSelectedLevel(level)}
+              />
+            )}
           </main>
         </motion.div>
       </div>
@@ -263,7 +310,7 @@ export const RepetitionLearningPage = ({ isNightMode, onToggleNight }: Repetitio
       <header className="shrink-0 w-full max-w-4xl mx-auto flex justify-between items-center p-3 sm:p-4 bg-gray-50/90 dark:bg-gray-900/90 backdrop-blur z-40 border-b border-gray-200 dark:border-gray-700 gap-3">
         <div className="flex items-center gap-1 sm:gap-3 flex-1 min-w-0">
           <button
-            onClick={() => { setSelectedDataSet(null); setIsPlaying(false); }}
+            onClick={() => { setSelectedDataSet(null); setSelectedCategory(null); setSelectedLevel(null); setIsPlaying(false); }}
             className="p-2 -ml-2 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors active:scale-90 shrink-0"
             title="Lobby"
           >
