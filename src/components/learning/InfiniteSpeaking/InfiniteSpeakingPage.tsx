@@ -86,6 +86,16 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
     }
   }, [state.phase, state.currentSentenceIndex, state.sentences, state.currentRound]);
 
+  // Eagerly prefetch first sentences as soon as data loads (during SETUP screen)
+  useEffect(() => {
+    if (!allSentences.length) return;
+    const toPreload = allSentences.slice(0, 3);
+    for (const s of toPreload) {
+      prefetchTTS(s.english, DEFAULT_VOICE);
+      prefetchTTS(s.comprehension, DEFAULT_KOREAN_VOICE);
+    }
+  }, [allSentences]);
+
   // Play model audio (English TTS via Cloud Function) for rounds 1-2
   const playModelAudio = useCallback(async () => {
     if (!currentSentence) return;
@@ -452,7 +462,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
 
       {/* Floating mic indicator during speaking */}
       {state.phase === 'SPEAKING' && speech.isRecording && (
-        <div className="fixed bottom-24 left-1/2 -translate-x-1/2 z-40">
+        <div className="fixed bottom-[calc(5rem+env(safe-area-inset-bottom))] left-1/2 -translate-x-1/2 z-40">
           <div className="flex items-center gap-2 px-4 py-2 bg-red-500/90 text-white rounded-full text-sm font-bold shadow-lg animate-pulse">
             <Mic className="w-4 h-4" />
             녹음 중...

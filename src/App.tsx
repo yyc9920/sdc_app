@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import sdcLogo from './assets/sdc_logo.png';
 import sdcLogoLong from './assets/sdc_logo_long.png';
@@ -16,26 +16,17 @@ import { RepetitionLearningPage } from './components/home/RepetitionLearningPage
 import { LearningPage } from './components/learning/LearningPage';
 import { LoadingSpinner } from './components/LoadingSpinner';
 import { ErrorBoundary } from './components/shared/ErrorBoundary';
+import { useTheme } from './hooks/useTheme';
 import './App.css';
 
 type TabId = 'home' | 'learning' | 'dashboard' | 'ranking' | 'admin' | 'teacher' | 'profile';
 
 function App() {
   const [activeTab, setActiveTab] = useState<TabId>('home');
-  const [isNightMode, setIsNightMode] = useState(false);
+  const { isNightMode, toggleNight } = useTheme();
   const [showSplash, setShowSplash] = useState(true);
   const { user, role, loading: authLoading, error: authError, loginWithCode } = useAuth();
   const { profile, loading: profileLoading } = useUserProfile(user?.uid);
-
-  useEffect(() => {
-    if (isNightMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, [isNightMode]);
-
-  const toggleNight = () => setIsNightMode(!isNightMode);
 
   if (showSplash) {
     return (

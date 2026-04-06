@@ -164,6 +164,15 @@ export const RepetitionLearningPage = ({ isNightMode, onToggleNight }: Repetitio
     }
   }, [currentIndex, activeRangeData, shuffledIndices, voice]);
 
+  // Eagerly prefetch the first sentence as soon as data and shuffle order are ready
+  useEffect(() => {
+    if (!activeRangeData.length || !shuffledIndices.length) return;
+    const firstSentence = activeRangeData[shuffledIndices[0]];
+    if (firstSentence) {
+      prefetchTTS(firstSentence.english, voice);
+    }
+  }, [activeRangeData, shuffledIndices, voice]);
+
   useEffect(() => {
     let isCancelled = false;
     const updateUrl = async () => {

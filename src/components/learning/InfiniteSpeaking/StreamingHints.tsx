@@ -7,7 +7,7 @@ interface StreamingHintsProps {
 
 export const StreamingHints = ({ hints }: StreamingHintsProps) => {
   return (
-    <div className="fixed top-4 left-0 right-0 z-50 flex flex-col items-center gap-2 pointer-events-none px-4">
+    <div className="fixed top-[calc(env(safe-area-inset-top)+1rem)] left-0 right-0 z-50 flex flex-col items-center gap-2 pointer-events-none px-4">
       <AnimatePresence>
         {hints.map(hint => (
           <motion.div
