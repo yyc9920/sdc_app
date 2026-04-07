@@ -431,6 +431,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
               onPlayModel={handlePlayModelForComparison}
               onPlayMine={speech.playRecording}
               hasRecording={!!speech.audioUrl}
+              recognizedText={speech.transcript}
               onNext={engine.nextSentence}
               onRetry={engine.retrySpeaking}
               retryCount={state.retryCount}

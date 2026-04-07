@@ -248,7 +248,7 @@ export function evaluateSpeechLogic(
   markFinal: boolean = false
 ): { wordStatuses: string[]; score: number } {
   const targetWords = targetSentence.split(' ');
-  const spokenClean = spokenText.toLowerCase().replace(/[.,!?;:'"()]/g, '').split(/\s+/).filter(Boolean);
+  const spokenClean = spokenText.toLowerCase().replace(/[.,!?;:'"()&\-_—]/g, '').split(/\s+/).filter(Boolean);
 
   const spokenWordCounts = new Map<string, number>();
   for (const w of spokenClean) {
@@ -256,7 +256,7 @@ export function evaluateSpeechLogic(
   }
 
   const newStatuses = targetWords.map((tWord) => {
-    const tClean = tWord.toLowerCase().replace(/[.,!?;:'"()]/g, '');
+    const tClean = tWord.toLowerCase().replace(/[.,!?;:'"()&\-_—]/g, '');
     const remaining = spokenWordCounts.get(tClean) ?? 0;
     if (remaining > 0) {
       spokenWordCounts.set(tClean, remaining - 1);

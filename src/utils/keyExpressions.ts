@@ -9,7 +9,7 @@ export function getKeyExpressionIndices(sentence: string): number[] {
   const indices: number[] = [];
 
   for (let i = 0; i < words.length; i++) {
-    const cleaned = words[i].toLowerCase().replace(/[.,!?;:'"()]/g, '');
+    const cleaned = words[i].toLowerCase().replace(/[.,!?;:'"()&\-_—]/g, '');
     if (cleaned && !FUNCTION_WORDS.has(cleaned)) {
       indices.push(i);
     }

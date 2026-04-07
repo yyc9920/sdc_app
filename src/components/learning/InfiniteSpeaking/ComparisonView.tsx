@@ -11,6 +11,7 @@ interface ComparisonViewProps {
   onPlayModel: () => void;
   onPlayMine: () => void;
   hasRecording: boolean;
+  recognizedText?: string;
   onNext: () => void;
   onRetry: () => void;
   retryCount: number;
@@ -24,6 +25,7 @@ export const ComparisonView = ({
   onPlayModel,
   onPlayMine,
   hasRecording,
+  recognizedText,
   onNext,
   onRetry,
   retryCount,
@@ -85,7 +87,7 @@ export const ComparisonView = ({
           <Volume2 className="w-5 h-5" />
           모범 발음
         </button>
-        {hasRecording && (
+        {hasRecording ? (
           <button
             onClick={() => {
               setPlayingMine(true);
@@ -101,7 +103,12 @@ export const ComparisonView = ({
             <Mic className="w-5 h-5" />
             내 발음
           </button>
-        )}
+        ) : recognizedText ? (
+          <div className="flex items-center gap-2 px-5 py-3 rounded-xl font-bold bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-400 border border-purple-200 dark:border-purple-800">
+            <Mic className="w-5 h-5 shrink-0" />
+            <span className="text-sm font-medium">{recognizedText}</span>
+          </div>
+        ) : null}
       </div>
 
       {/* Retry / Next buttons */}

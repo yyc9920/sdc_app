@@ -38,11 +38,11 @@ export const usePronunciationCheck = (targetSentence: string) => {
   }, []);
 
   const evaluatePronunciation = useCallback((spokenText: string, markFinished: boolean = true) => {
-    const spokenClean = spokenText.toLowerCase().replace(/[.,!?]/g, '').split(/\s+/);
+    const spokenClean = spokenText.toLowerCase().replace(/[.,!?;:'"()&\-_—]/g, '').split(/\s+/);
     let lastFoundIdx = -1;
 
     const newStatuses = targetWords.map((tWord: string) => {
-      const tClean = tWord.toLowerCase().replace(/[.,!?]/g, '');
+      const tClean = tWord.toLowerCase().replace(/[.,!?;:'"()&\-_—]/g, '');
       const foundIdx = spokenClean.findIndex((sWord: string, idx: number) => idx > lastFoundIdx && sWord === tClean);
 
       if (foundIdx !== -1) {
