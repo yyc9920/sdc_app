@@ -21,6 +21,28 @@ export const generateSentenceVoices = (sentences: SpeedListeningSet['sentences']
   return map;
 };
 
+const hasSpecialChars = (word: string) =>
+  /[&_—/]/.test(word) || (word.includes('-') && word.length > 1);
+
+const breakConsecutiveRuns = (indices: number[], maxConsecutive: number): number[] => {
+  const sorted = [...indices].sort((a, b) => a - b);
+  const result = new Set(sorted);
+
+  let runStart = 0;
+  for (let i = 1; i <= sorted.length; i++) {
+    if (i < sorted.length && sorted[i] === sorted[i - 1] + 1) continue;
+    const runLength = i - runStart;
+    if (runLength > maxConsecutive) {
+      for (let j = runStart + maxConsecutive; j < i; j += maxConsecutive + 1) {
+        result.delete(sorted[j]);
+      }
+    }
+    runStart = i;
+  }
+
+  return [...result];
+};
+
 export const generateBlankIndices = (
   sentences: SpeedListeningSet['sentences'],
   level: number
@@ -30,15 +52,18 @@ export const generateBlankIndices = (
     const words = sentence.english.split(' ');
     const eligibleIndices = words
       .map((_, i) => i)
-      .filter(i => !sentence.properNounIndices.includes(i));
-    
+      .filter(i => !sentence.properNounIndices.includes(i))
+      .filter(i => !hasSpecialChars(words[i]));
+
     for (let i = eligibleIndices.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [eligibleIndices[i], eligibleIndices[j]] = [eligibleIndices[j], eligibleIndices[i]];
     }
-    
+
     const numBlanks = Math.max(1, Math.floor(words.length * (level * BLANK_MULTIPLIER)));
-    map[sentence.id] = new Set(eligibleIndices.slice(0, numBlanks));
+    const selected = eligibleIndices.slice(0, numBlanks);
+    const cleaned = breakConsecutiveRuns(selected, 3);
+    map[sentence.id] = new Set(cleaned);
   });
   return map;
 };
