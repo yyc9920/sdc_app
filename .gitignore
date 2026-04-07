@@ -76,3 +76,6 @@ skills-lock.json
 
 # Git worktrees
 .worktrees/
+
+# Superpowers docs (auto-generated specs/plans)
+docs/superpowers/
