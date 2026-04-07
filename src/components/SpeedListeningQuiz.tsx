@@ -28,21 +28,46 @@ const generateSentenceVoices = (sentences: SpeedListeningSet['sentences']): Reco
   return map;
 };
 
+const hasSpecialChars = (word: string) =>
+  /[&_—/]/.test(word) || (word.includes('-') && word.length > 1);
+
+const breakConsecutiveRuns = (indices: number[], maxConsecutive: number): number[] => {
+  const sorted = [...indices].sort((a, b) => a - b);
+  const result = new Set(sorted);
+
+  let runStart = 0;
+  for (let i = 1; i <= sorted.length; i++) {
+    if (i < sorted.length && sorted[i] === sorted[i - 1] + 1) continue;
+    const runLength = i - runStart;
+    if (runLength > maxConsecutive) {
+      for (let j = runStart + maxConsecutive; j < i; j += maxConsecutive + 1) {
+        result.delete(sorted[j]);
+      }
+    }
+    runStart = i;
+  }
+
+  return [...result];
+};
+
 const generateBlankIndices = (sentences: SpeedListeningSet['sentences'], level: number): Record<number, Set<number>> => {
   const map: Record<number, Set<number>> = {};
   sentences.forEach(sentence => {
     const words = sentence.english.split(' ');
     const eligibleIndices = words
       .map((_, i) => i)
-      .filter(i => !sentence.properNounIndices.includes(i));
-    
+      .filter(i => !sentence.properNounIndices.includes(i))
+      .filter(i => !hasSpecialChars(words[i]));
+
     for (let i = eligibleIndices.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [eligibleIndices[i], eligibleIndices[j]] = [eligibleIndices[j], eligibleIndices[i]];
     }
-    
+
     const numBlanks = Math.max(1, Math.floor(words.length * (level * BLANK_MULTIPLIER)));
-    map[sentence.id] = new Set(eligibleIndices.slice(0, numBlanks));
+    const selected = eligibleIndices.slice(0, numBlanks);
+    const cleaned = breakConsecutiveRuns(selected, 3);
+    map[sentence.id] = new Set(cleaned);
   });
   return map;
 };
@@ -219,7 +244,7 @@ const [sentenceVoices, setSentenceVoices] = useState<Record<number, Voice>>(() =
       inputColor = "bg-red-50 dark:bg-red-900/20 border-red-300 dark:border-red-500/50 text-red-600 dark:text-red-400";
     }
 
-    const inputWidth = `${Math.max(actualWord.length, 2) + 1}ch`;
+    const inputWidth = `${Math.max(actualWord.length, 2) + 1.5}ch`;
 
     return (
       <span key={wordIndex} className="mr-1 inline-flex items-baseline">
@@ -231,8 +256,8 @@ const [sentenceVoices, setSentenceVoices] = useState<Record<number, Voice>>(() =
             onChange={(e) => setBlanks(prev => ({ ...prev, [blankKey]: e.target.value }))}
             disabled={isSubmitted}
             maxLength={actualWord.length}
-            style={{ width: inputWidth, boxSizing: 'content-box', minWidth: '40px' }}
-            className={`px-1 py-0.5 border rounded text-center focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors ${inputColor} text-sm sm:text-base`}
+            style={{ width: inputWidth, boxSizing: 'content-box', minWidth: '44px' }}
+            className={`px-1 py-0.5 border rounded text-center focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors ${inputColor} text-base`}
           />
           {isSubmitted && !isCorrect && (
             <span className="text-xs text-green-600">{actualWord}</span>
