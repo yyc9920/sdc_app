@@ -39,16 +39,18 @@ export const LoginOverlay: React.FC<Props> = ({ onLogin, loading, error }) => {
             <label htmlFor="code" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
               Access Code
             </label>
+            <input type="text" name="username" autoComplete="username" value="SDC Study" readOnly className="hidden" tabIndex={-1} aria-hidden="true" />
             <input
-              type="text"
+              type="password"
               id="code"
+              name="password"
               value={code}
-              onChange={(e) => setCode(e.target.value)}
+              onChange={(e) => setCode(e.target.value.toUpperCase())}
               placeholder="ABCD-1234"
               className="w-full px-5 py-4 text-center text-2xl tracking-widest uppercase rounded-2xl border-2 border-gray-200 dark:border-gray-600 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 dark:bg-gray-700 dark:text-white transition-all outline-none"
               disabled={loading}
               maxLength={10}
-              autoComplete="off"
+              autoComplete="current-password"
               autoFocus
             />
           </div>
