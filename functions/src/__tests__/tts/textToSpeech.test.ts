@@ -72,7 +72,7 @@ describe('textToSpeech', () => {
 
   it('returns base64 audio for valid request', async () => {
     const result = await wrapped({
-      data: { text: 'Hello world', voiceKey: 'female' },
+      data: { text: 'Hello world', voiceKey: 'female1' },
       auth: { uid: 'u1' },
     } as any);
 
@@ -82,7 +82,7 @@ describe('textToSpeech', () => {
   });
 
   it('accepts all valid voice keys', async () => {
-    const validKeys = ['female', 'male', 'child_female', 'child_male', 'elderly_female', 'elderly_male', 'korean_female', 'korean_male'];
+    const validKeys = ['female1', 'male1', 'female2', 'male2', 'female3', 'male3', 'korean_female', 'korean_male'];
 
     for (const voiceKey of validKeys) {
       const result = await wrapped({

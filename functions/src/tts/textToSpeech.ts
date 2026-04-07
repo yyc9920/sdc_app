@@ -9,12 +9,12 @@ type IAudioConfig = protos.google.cloud.texttospeech.v1.IAudioConfig;
  * Korean voices use Neural2 for high-quality synthesis.
  */
 const VOICE_CONFIGS: Record<string, IVoiceSelectionParams> = {
-  female: { languageCode: 'en-US', name: 'en-US-Journey-F', ssmlGender: 'FEMALE' },
-  male: { languageCode: 'en-US', name: 'en-US-Journey-D', ssmlGender: 'MALE' },
-  child_female: { languageCode: 'en-US', name: 'en-US-Studio-O', ssmlGender: 'FEMALE' },
-  child_male: { languageCode: 'en-US', name: 'en-US-Studio-Q', ssmlGender: 'MALE' },
-  elderly_female: { languageCode: 'en-US', name: 'en-US-Wavenet-H', ssmlGender: 'FEMALE' },
-  elderly_male: { languageCode: 'en-US', name: 'en-US-Wavenet-J', ssmlGender: 'MALE' },
+  female1: { languageCode: 'en-US', name: 'en-US-Journey-F', ssmlGender: 'FEMALE' },
+  male1: { languageCode: 'en-US', name: 'en-US-Journey-D', ssmlGender: 'MALE' },
+  female2: { languageCode: 'en-US', name: 'en-US-Studio-O', ssmlGender: 'FEMALE' },
+  male2: { languageCode: 'en-US', name: 'en-US-Studio-Q', ssmlGender: 'MALE' },
+  female3: { languageCode: 'en-US', name: 'en-US-Wavenet-H', ssmlGender: 'FEMALE' },
+  male3: { languageCode: 'en-US', name: 'en-US-Wavenet-J', ssmlGender: 'MALE' },
   korean_female: { languageCode: 'ko-KR', name: 'ko-KR-Neural2-A', ssmlGender: 'FEMALE' },
   korean_male: { languageCode: 'ko-KR', name: 'ko-KR-Neural2-C', ssmlGender: 'MALE' },
 };
