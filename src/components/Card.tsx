@@ -49,8 +49,8 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(({
       onClick={onClick}
       className={`
         p-6 rounded-2xl border-2 transition-all duration-300 cursor-pointer
-        ${isPlaying 
-          ? 'bg-blue-50 border-blue-400 shadow-md transform scale-[1.01]' 
+        ${isPlaying
+          ? 'bg-blue-50 dark:bg-blue-900/30 border-blue-400 dark:border-blue-500 shadow-md transform scale-[1.01]'
           : 'bg-white dark:bg-gray-800 border-transparent hover:border-gray-200 dark:hover:border-gray-700 shadow-sm'}
         ${!isInRange ? 'opacity-40 grayscale-[0.5]' : 'opacity-100'}
       `}
@@ -58,13 +58,13 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(({
       <div className="flex justify-end items-start mb-4">
         <div className="flex gap-2">
           {score !== null && (
-            <div className="flex items-center gap-1 bg-green-50 text-green-600 px-2 py-1 rounded-lg text-xs font-bold">
+            <div className="flex items-center gap-1 bg-green-50 dark:bg-green-900/30 text-green-600 dark:text-green-400 px-2 py-1 rounded-lg text-xs font-bold">
               <CheckCircle className="w-3 h-3" />
               {score}%
             </div>
           )}
           {isPlaying && (
-            <div className="flex items-center gap-1 bg-blue-100 text-blue-600 px-2 py-1 rounded-lg text-xs font-bold animate-pulse">
+            <div className="flex items-center gap-1 bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 px-2 py-1 rounded-lg text-xs font-bold animate-pulse">
               <Play className="w-3 h-3" />
               Playing
             </div>
@@ -74,17 +74,17 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(({
 
       <div className="flex flex-col gap-5">
         {(displayMode === 'all' || displayMode === 'english') && (
-          <div className="flex items-start gap-4">
-            <div className={`text-3xl font-bold shrink-0 min-w-[3rem] text-right ${isPlaying ? 'text-blue-700' : 'text-gray-300 dark:text-gray-600'}`}>
+          <div className="flex items-start gap-4 min-w-0">
+            <div className={`text-3xl font-bold shrink-0 min-w-[3rem] text-right ${isPlaying ? 'text-blue-700 dark:text-blue-300' : 'text-gray-300 dark:text-gray-600'}`}>
               {sentence.id + 1}.
             </div>
-            <div className="flex-1">
+            <div className="flex-1 min-w-0 overflow-hidden">
               {sentence.speaker && (
                 <span className="inline-block text-xs font-bold text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-900/30 px-2 py-0.5 rounded mb-1">
                   {sentence.speaker}
                 </span>
               )}
-              <p className={`text-3xl font-bold leading-tight ${isPlaying ? 'text-blue-700' : 'text-gray-900 dark:text-white'}`}>
+              <p className={`text-3xl font-bold leading-tight break-words ${isPlaying ? 'text-blue-700 dark:text-blue-300' : 'text-gray-900 dark:text-white'}`}>
                 {sentence.english}
               </p>
             </div>
@@ -93,33 +93,33 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(({
 
         <div className="flex flex-col gap-3">
           {(displayMode === 'all' || displayMode === 'korean') && (
-            <div className="flex items-start gap-4">
+            <div className="flex items-start gap-4 min-w-0">
               <div className="shrink-0 min-w-[3rem] text-right mt-0.5">
-                <span className="inline-block text-sm font-bold text-gray-500 bg-gray-100 dark:bg-gray-800 px-2.5 py-1 rounded">의미</span>
+                <span className="inline-block text-sm font-bold text-gray-500 dark:text-gray-300 bg-gray-100 dark:bg-gray-800 px-2.5 py-1 rounded">의미</span>
               </div>
-              <p className="text-xl text-gray-900 dark:text-gray-100 font-bold leading-relaxed flex-1">
+              <p className="text-xl text-gray-900 dark:text-gray-100 font-bold leading-relaxed flex-1 min-w-0 break-words">
                 {sentence.comprehension}
               </p>
             </div>
           )}
 
           {(displayMode === 'all' || displayMode === 'english') && (
-            <div className="flex items-start gap-4">
+            <div className="flex items-start gap-4 min-w-0">
               <div className="shrink-0 min-w-[3rem] text-right mt-0.5">
                 <span className="inline-block text-sm font-bold text-blue-500 bg-blue-50 dark:bg-blue-900/30 px-2.5 py-1 rounded">발음</span>
               </div>
-              <p className="text-xl text-blue-500 font-medium leading-relaxed flex-1">
+              <p className="text-xl text-blue-500 dark:text-blue-400 font-medium leading-relaxed flex-1 min-w-0 break-words">
                 {sentence.koreanPronounce}
               </p>
             </div>
           )}
 
           {(displayMode === 'all' || displayMode === 'korean') && (
-            <div className="flex items-start gap-4">
+            <div className="flex items-start gap-4 min-w-0">
               <div className="shrink-0 min-w-[3rem] text-right mt-0.5">
-                <span className="inline-block text-sm font-bold text-gray-400 bg-gray-50 dark:bg-gray-800/50 px-2.5 py-1 rounded">직독</span>
+                <span className="inline-block text-sm font-bold text-gray-400 dark:text-gray-300 bg-gray-50 dark:bg-gray-800/50 px-2.5 py-1 rounded">직독</span>
               </div>
-              <p className="text-xl text-gray-600 dark:text-gray-300 font-medium leading-relaxed flex-1">
+              <p className="text-xl text-gray-600 dark:text-gray-300 font-medium leading-relaxed flex-1 min-w-0 break-words">
                 {sentence.directComprehension}
               </p>
             </div>

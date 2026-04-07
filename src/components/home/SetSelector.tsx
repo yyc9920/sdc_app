@@ -8,9 +8,13 @@ interface SetSelectorProps {
 }
 
 export const SetSelector = ({ sets, categoryLabel, onSelect }: SetSelectorProps) => {
+  const showCategoryLabel = sets.length > 0 && sets[0].isLegacy;
+
   return (
     <div className="space-y-4">
-      <p className="text-sm text-gray-500 dark:text-gray-400">{categoryLabel}</p>
+      {showCategoryLabel && (
+        <p className="text-sm text-gray-500 dark:text-gray-400">{categoryLabel}</p>
+      )}
       <div className="grid grid-cols-1 gap-3">
         {sets.map((set) => (
           <button
