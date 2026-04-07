@@ -249,10 +249,10 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
               <LoadingSpinner />
             ) : (
               <>
-                <div className="flex gap-2 mb-4 overflow-x-auto pb-2">
+                <div className="flex gap-2 mb-4 overflow-x-auto pb-2 scrollbar-hide snap-x snap-mandatory pr-4">
                   <button
                     onClick={() => setSelectedLevel('all')}
-                    className={`px-4 py-2 rounded-full text-sm font-bold whitespace-nowrap transition-colors ${
+                    className={`flex-shrink-0 snap-start px-4 py-2 rounded-full text-sm font-bold whitespace-nowrap transition-colors ${
                       selectedLevel === 'all'
                         ? 'bg-blue-600 text-white'
                         : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700'
@@ -264,7 +264,7 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
                     <button
                       key={level}
                       onClick={() => setSelectedLevel(level)}
-                      className={`px-4 py-2 rounded-full text-sm font-bold whitespace-nowrap transition-colors ${
+                      className={`flex-shrink-0 snap-start px-4 py-2 rounded-full text-sm font-bold whitespace-nowrap transition-colors ${
                         selectedLevel === level
                           ? 'bg-blue-600 text-white'
                           : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700'
