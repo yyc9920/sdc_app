@@ -169,6 +169,37 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
         </div>
       </header>
 
+      {/* Speed Listening level filter - fixed between header and scrollable content */}
+      {mode === 'speed_listening' && selectedDataSet && !selectedSpeedListeningSet && !slLoading && (
+        <div className="shrink-0 bg-gray-50 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 px-6 py-2">
+          <div className="max-w-4xl mx-auto flex gap-2 overflow-x-auto scrollbar-hide snap-x snap-mandatory">
+            <button
+              onClick={() => setSelectedLevel('all')}
+              className={`flex-shrink-0 snap-start px-4 py-2 rounded-full text-sm font-bold whitespace-nowrap transition-colors ${
+                selectedLevel === 'all'
+                  ? 'bg-blue-600 text-white'
+                  : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700'
+              }`}
+            >
+              전체
+            </button>
+            {availableLevels.map(level => (
+              <button
+                key={level}
+                onClick={() => setSelectedLevel(level)}
+                className={`flex-shrink-0 snap-start px-4 py-2 rounded-full text-sm font-bold whitespace-nowrap transition-colors ${
+                  selectedLevel === level
+                    ? 'bg-blue-600 text-white'
+                    : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700'
+                }`}
+              >
+                Level {level}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
       <main className="flex-1 overflow-y-auto max-w-4xl mx-auto p-6 flex flex-col gap-8 w-full pb-6">
         {/* Step 1: Mode selection */}
         {!mode && (
@@ -249,32 +280,6 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
               <LoadingSpinner />
             ) : (
               <>
-                <div className="flex gap-2 mb-4 overflow-x-auto pb-2 scrollbar-hide snap-x snap-mandatory pr-4 sticky top-0 z-10 bg-gray-50 dark:bg-gray-900 -mx-6 px-6 pt-2">
-                  <button
-                    onClick={() => setSelectedLevel('all')}
-                    className={`flex-shrink-0 snap-start px-4 py-2 rounded-full text-sm font-bold whitespace-nowrap transition-colors ${
-                      selectedLevel === 'all'
-                        ? 'bg-blue-600 text-white'
-                        : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700'
-                    }`}
-                  >
-                    전체
-                  </button>
-                  {availableLevels.map(level => (
-                    <button
-                      key={level}
-                      onClick={() => setSelectedLevel(level)}
-                      className={`flex-shrink-0 snap-start px-4 py-2 rounded-full text-sm font-bold whitespace-nowrap transition-colors ${
-                        selectedLevel === level
-                          ? 'bg-blue-600 text-white'
-                          : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700'
-                      }`}
-                    >
-                      Level {level}
-                    </button>
-                  ))}
-                </div>
-
                 <LevelRecommendationBadge
                   uid={user?.uid}
                   currentLevel={selectedLevel}
