@@ -2,16 +2,16 @@ export const SPEEDS = [1, 1.2, 1.5, 2] as const;
 export type Speed = (typeof SPEEDS)[number];
 
 export const AVAILABLE_VOICES = [
-  'female',
-  'male',
-  'child_female',
-  'child_male',
-  'elderly_female',
-  'elderly_male',
+  'female1',
+  'male1',
+  'female2',
+  'male2',
+  'female3',
+  'male3',
 ] as const;
 export type Voice = (typeof AVAILABLE_VOICES)[number];
 
-export const DEFAULT_VOICE: Voice = 'female';
+export const DEFAULT_VOICE: Voice = 'female1';
 
 export const AUDIO_PATHS = {
   ANNOUNCEMENT: 'tts/announcement.mp3',

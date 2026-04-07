@@ -89,12 +89,12 @@ export const Controls = ({
               onChange={(e) => onVoiceChange(e.target.value)}
               className="p-1 border rounded dark:bg-gray-700 dark:border-gray-600 dark:text-white focus:ring-1 focus:ring-blue-500 outline-none"
             >
-              <option value="female">여성</option>
-              <option value="male">남성</option>
-              <option value="child_female">여자아이</option>
-              <option value="child_male">남자아이</option>
-              <option value="elderly_female">노년 여성</option>
-              <option value="elderly_male">노년 남성</option>
+              <option value="female1">여자1</option>
+              <option value="male1">남자1</option>
+              <option value="female2">여자2</option>
+              <option value="male2">남자2</option>
+              <option value="female3">여자3</option>
+              <option value="male3">남자3</option>
             </select>
           </div>
 
