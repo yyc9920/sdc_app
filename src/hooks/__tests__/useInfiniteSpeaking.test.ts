@@ -14,6 +14,8 @@ function stateWithSession(overrides: Partial<InfiniteSpeakingState> = {}): Infin
     phase: 'LISTENING',
     sentences: mockSentences,
     shuffledOrder: [0, 1],
+    sentenceGroups: [[0], [1]],
+    currentGroupIndex: 0,
     keyIndicesMap: { '1': [0], '2': [0] },
     currentRound: 1,
     sessionStartTime: Date.now(),
@@ -105,17 +107,17 @@ describe('useInfiniteSpeaking reducer', () => {
   });
 
   describe('NEXT_SENTENCE', () => {
-    it('should advance to next sentence', () => {
-      const prev = stateWithSession({ currentSentenceIndex: 0 });
+    it('should advance to next group', () => {
+      const prev = stateWithSession({ currentGroupIndex: 0 });
       const state = reducer(prev, { type: 'NEXT_SENTENCE' });
       expect(state.phase).toBe('LISTENING');
-      expect(state.currentSentenceIndex).toBe(1);
+      expect(state.currentGroupIndex).toBe(1);
       expect(state.retryCount).toBe(0);
       expect(state.score).toBe(0);
     });
 
-    it('should transition to ROUND_COMPLETE when all sentences done', () => {
-      const prev = stateWithSession({ currentSentenceIndex: 1 });
+    it('should transition to ROUND_COMPLETE when all groups done', () => {
+      const prev = stateWithSession({ currentGroupIndex: 1 });
       const state = reducer(prev, { type: 'NEXT_SENTENCE' });
       expect(state.phase).toBe('ROUND_COMPLETE');
     });
@@ -127,7 +129,7 @@ describe('useInfiniteSpeaking reducer', () => {
       const state = reducer(prev, { type: 'NEXT_ROUND' });
       expect(state.phase).toBe('ROUND_INTRO');
       expect(state.currentRound).toBe(2);
-      expect(state.currentSentenceIndex).toBe(0);
+      expect(state.currentGroupIndex).toBe(0);
     });
 
     it('should complete session after round 4', () => {
