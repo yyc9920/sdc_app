@@ -73,23 +73,19 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
   const speech = useStreamingSpeechRecognition({ onTranscriptUpdate: handleTranscriptUpdate });
   useEffect(() => { speechRef.current = speech; }, [speech]);
 
-  // Prefetch upcoming group audio
+  // Prefetch upcoming speaking unit audio
   useEffect(() => {
     if (state.phase === 'SETUP' || state.phase === 'SESSION_COMPLETE') return;
     const nextGroupIdx = state.currentGroupIndex + 1;
-    if (nextGroupIdx < state.sentenceGroups.length) {
-      const nextGroup = state.sentenceGroups[nextGroupIdx];
-      for (const idx of nextGroup) {
-        const s = state.sentences[idx];
-        if (!s) continue;
-        if (state.currentRound <= 2) {
-          prefetchTTS(s.english, DEFAULT_VOICE);
-        } else {
-          prefetchTTS(s.comprehension, DEFAULT_KOREAN_VOICE);
-        }
+    if (nextGroupIdx < state.speakingUnits.length) {
+      const nextUnit = state.speakingUnits[nextGroupIdx];
+      if (state.currentRound <= 2) {
+        prefetchTTS(nextUnit.english, DEFAULT_VOICE);
+      } else {
+        prefetchTTS(nextUnit.korean, DEFAULT_KOREAN_VOICE);
       }
     }
-  }, [state.phase, state.currentGroupIndex, state.sentenceGroups, state.sentences, state.currentRound]);
+  }, [state.phase, state.currentGroupIndex, state.speakingUnits, state.currentRound]);
 
   // Eagerly prefetch first sentences as soon as data loads (during SETUP screen)
   useEffect(() => {
@@ -310,13 +306,13 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
         <div className="shrink-0 max-w-4xl mx-auto px-4 pt-3 w-full">
           <div className="flex items-center gap-3 text-xs text-gray-500 dark:text-gray-400 mb-2">
             <span className="font-bold text-purple-600 dark:text-purple-400">Round {state.currentRound}/4</span>
-            <span>문장 {state.currentGroupIndex + 1}/{state.sentenceGroups.length}</span>
+            <span>문장 {state.currentGroupIndex + 1}/{state.speakingUnits.length}</span>
           </div>
           <div className="h-1.5 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
             <div
               className="h-full bg-purple-500 rounded-full transition-all duration-300"
               style={{
-                width: `${((((state.currentRound - 1) * state.sentenceGroups.length) + state.currentGroupIndex + (state.phase === 'COMPARISON' ? 1 : 0)) / (4 * state.sentenceGroups.length)) * 100}%`,
+                width: `${((((state.currentRound - 1) * state.speakingUnits.length) + state.currentGroupIndex + (state.phase === 'COMPARISON' ? 1 : 0)) / (4 * state.speakingUnits.length)) * 100}%`,
               }}
             />
           </div>

@@ -1,11 +1,11 @@
 import { describe, it, expect } from 'vitest';
-import { reducer, initialState } from '../useInfiniteSpeaking';
+import { reducer, initialState, buildSpeakingUnits } from '../useInfiniteSpeaking';
 import type { InfiniteSpeakingState } from '../useInfiniteSpeaking';
 import type { SentenceData } from '../../types';
 
 const mockSentences: SentenceData[] = [
-  { id: 1, english: 'Hello world', koreanPronounce: '헬로 월드', directComprehension: '', comprehension: '안녕 세상' },
-  { id: 2, english: 'Good morning', koreanPronounce: '굿 모닝', directComprehension: '', comprehension: '좋은 아침' },
+  { id: 1, english: 'Hello world from here', koreanPronounce: '헬로 월드', directComprehension: '', comprehension: '안녕 세상' },
+  { id: 2, english: 'Good morning to you', koreanPronounce: '굿 모닝', directComprehension: '', comprehension: '좋은 아침' },
 ];
 
 function stateWithSession(overrides: Partial<InfiniteSpeakingState> = {}): InfiniteSpeakingState {
@@ -14,7 +14,7 @@ function stateWithSession(overrides: Partial<InfiniteSpeakingState> = {}): Infin
     phase: 'LISTENING',
     sentences: mockSentences,
     shuffledOrder: [0, 1],
-    sentenceGroups: [[0], [1]],
+    speakingUnits: buildSpeakingUnits(mockSentences, [0, 1]),
     currentGroupIndex: 0,
     keyIndicesMap: { '1': [0], '2': [0] },
     currentRound: 1,
@@ -58,8 +58,8 @@ describe('useInfiniteSpeaking reducer', () => {
       const prev = stateWithSession({ phase: 'LISTENING' });
       const state = reducer(prev, { type: 'START_SPEAKING' });
       expect(state.phase).toBe('SPEAKING');
-      // "Hello world" has 2 words
-      expect(state.wordStatuses).toEqual(['pending', 'pending']);
+      // "Hello world from here" has 4 words
+      expect(state.wordStatuses).toEqual(['pending', 'pending', 'pending', 'pending']);
       expect(state.transcript).toBe('');
       expect(state.score).toBe(0);
     });
@@ -70,12 +70,12 @@ describe('useInfiniteSpeaking reducer', () => {
       const prev = stateWithSession({ phase: 'SPEAKING' });
       const state = reducer(prev, {
         type: 'UPDATE_SPEECH',
-        transcript: 'hello world',
-        wordStatuses: ['correct', 'correct'],
+        transcript: 'hello world from here',
+        wordStatuses: ['correct', 'correct', 'correct', 'correct'],
         score: 100,
       });
-      expect(state.transcript).toBe('hello world');
-      expect(state.wordStatuses).toEqual(['correct', 'correct']);
+      expect(state.transcript).toBe('hello world from here');
+      expect(state.wordStatuses).toEqual(['correct', 'correct', 'correct', 'correct']);
       expect(state.score).toBe(100);
     });
   });
