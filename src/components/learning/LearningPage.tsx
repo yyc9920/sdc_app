@@ -70,8 +70,6 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
       setSelectedSpeedListeningSet(null);
     } else if (selectedDataSet) {
       setSelectedDataSet(null);
-      setNavCategory(null);
-      setNavLevel(null);
     } else if (navCategory) {
       setNavCategory(null);
     } else if (navLevel !== null) {

@@ -30,7 +30,7 @@ interface InfiniteSpeakingPageProps {
 export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBack }: InfiniteSpeakingPageProps) => {
   const { data: allSentences, loading, error } = useData(dataSet.id);
   const engine = useInfiniteSpeaking();
-  const { state, currentSentence, currentKeyIndices } = engine;
+  const { state, currentSentenceGroup, currentKeyIndices } = engine;
   const { saveSpeakingResult } = useSaveSpeakingResult();
   const hasSavedRef = useRef(false);
   const [ttsError, setTtsError] = useState(false);
@@ -44,9 +44,10 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
   const speechRef = useRef<ReturnType<typeof useStreamingSpeechRecognition> | null>(null);
 
   const handleTranscriptUpdate = useCallback((transcript: string, isFinal: boolean) => {
-    if (state.phase !== 'SPEAKING' || !currentSentence) return;
+    if (state.phase !== 'SPEAKING' || !currentSentenceGroup) return;
 
-    const result = engine.evaluateSpeech(transcript, currentSentence.english, isFinal);
+    const targetText = currentSentenceGroup.combinedEnglish;
+    const result = engine.evaluateSpeech(transcript, targetText, isFinal);
     engine.updateSpeech(transcript, result.wordStatuses, result.score);
 
     // Auto-finish on 100%
@@ -59,7 +60,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
     // Streaming hints: debounced check for key word errors
     if (hintDebounceRef.current) clearTimeout(hintDebounceRef.current);
     hintDebounceRef.current = window.setTimeout(() => {
-      const words = currentSentence.english.split(' ');
+      const words = targetText.split(' ');
       for (const idx of currentKeyIndices) {
         if (result.wordStatuses[idx] === 'pending' && transcript.split(/\s+/).length > idx) {
           engine.addHint(`"${words[idx]}" 을 발음해보세요`);
@@ -67,24 +68,28 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
         }
       }
     }, TIMEOUTS.HINT_DEBOUNCE_MS);
-  }, [state.phase, currentSentence, currentKeyIndices, engine]);
+  }, [state.phase, currentSentenceGroup, currentKeyIndices, engine]);
 
   const speech = useStreamingSpeechRecognition({ onTranscriptUpdate: handleTranscriptUpdate });
   useEffect(() => { speechRef.current = speech; }, [speech]);
 
-  // Prefetch upcoming sentence audio
+  // Prefetch upcoming group audio
   useEffect(() => {
     if (state.phase === 'SETUP' || state.phase === 'SESSION_COMPLETE') return;
-    const nextIdx = state.currentSentenceIndex + 1;
-    if (nextIdx < state.sentences.length) {
-      const nextSentence = state.sentences[nextIdx];
-      if (state.currentRound <= 2) {
-        prefetchTTS(nextSentence.english, DEFAULT_VOICE);
-      } else {
-        prefetchTTS(nextSentence.comprehension, DEFAULT_KOREAN_VOICE);
+    const nextGroupIdx = state.currentGroupIndex + 1;
+    if (nextGroupIdx < state.sentenceGroups.length) {
+      const nextGroup = state.sentenceGroups[nextGroupIdx];
+      for (const idx of nextGroup) {
+        const s = state.sentences[idx];
+        if (!s) continue;
+        if (state.currentRound <= 2) {
+          prefetchTTS(s.english, DEFAULT_VOICE);
+        } else {
+          prefetchTTS(s.comprehension, DEFAULT_KOREAN_VOICE);
+        }
       }
     }
-  }, [state.phase, state.currentSentenceIndex, state.sentences, state.currentRound]);
+  }, [state.phase, state.currentGroupIndex, state.sentenceGroups, state.sentences, state.currentRound]);
 
   // Eagerly prefetch first sentences as soon as data loads (during SETUP screen)
   useEffect(() => {
@@ -98,10 +103,10 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
 
   // Play model audio (English TTS via Cloud Function) for rounds 1-2
   const playModelAudio = useCallback(async () => {
-    if (!currentSentence) return;
+    if (!currentSentenceGroup) return;
     try {
       setTtsError(false);
-      const url = await getTTSAudioUrl(currentSentence.english, DEFAULT_VOICE);
+      const url = await getTTSAudioUrl(currentSentenceGroup.combinedEnglish, DEFAULT_VOICE);
 
       if (modelAudioRef.current) {
         modelAudioRef.current.pause();
@@ -118,14 +123,14 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
       console.error('TTS failed after retries:', e);
       setTtsError(true);
     }
-  }, [currentSentence, state.phase, engine]);
+  }, [currentSentenceGroup, state.phase, engine]);
 
   // Play Korean TTS (via Cloud Function with edge-tts Korean Neural voice) for rounds 3-4
   const playKoreanTTS = useCallback(async () => {
-    if (!currentSentence) return;
+    if (!currentSentenceGroup) return;
     try {
       setTtsError(false);
-      const url = await getTTSAudioUrl(currentSentence.comprehension, DEFAULT_KOREAN_VOICE);
+      const url = await getTTSAudioUrl(currentSentenceGroup.combinedKorean, DEFAULT_KOREAN_VOICE);
 
       if (modelAudioRef.current) {
         modelAudioRef.current.pause();
@@ -142,7 +147,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
       console.error('Korean TTS failed after retries:', e);
       setTtsError(true);
     }
-  }, [currentSentence, state.phase, engine]);
+  }, [currentSentenceGroup, state.phase, engine]);
 
   const handleTtsRetry = useCallback(() => {
     if (state.currentRound <= 2) {
@@ -159,7 +164,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
 
   // Handle LISTENING phase: play appropriate audio
   useEffect(() => {
-    if (state.phase !== 'LISTENING' || !currentSentence) return;
+    if (state.phase !== 'LISTENING' || !currentSentenceGroup) return;
 
     if (state.currentRound <= 2) {
       playModelAudio(); // eslint-disable-line react-hooks/set-state-in-effect -- async audio playback may set error state
@@ -173,7 +178,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
         modelAudioRef.current = null;
       }
     };
-  }, [state.phase, state.currentRound, currentSentence, playModelAudio, playKoreanTTS]);
+  }, [state.phase, state.currentRound, currentSentenceGroup, playModelAudio, playKoreanTTS]);
 
   // Handle SPEAKING phase: auto-start recording + timeout
   // On mobile browsers, require user tap to start (getUserMedia needs user gesture)
@@ -237,19 +242,19 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
     if (speakingTimeoutRef.current) clearTimeout(speakingTimeoutRef.current);
 
     // Finalize evaluation
-    if (currentSentence) {
-      const result = engine.evaluateSpeech(speech.transcript, currentSentence.english, true);
+    if (currentSentenceGroup) {
+      const result = engine.evaluateSpeech(speech.transcript, currentSentenceGroup.combinedEnglish, true);
       engine.updateSpeech(speech.transcript, result.wordStatuses, result.score);
     }
     engine.finishSpeaking();
-  }, [speech, currentSentence, engine]);
+  }, [speech, currentSentenceGroup, engine]);
 
   const handlePlayModelForComparison = useCallback(async () => {
-    if (!currentSentence) return;
-    const url = await getTTSAudioUrl(currentSentence.english, DEFAULT_VOICE);
+    if (!currentSentenceGroup) return;
+    const url = await getTTSAudioUrl(currentSentenceGroup.combinedEnglish, DEFAULT_VOICE);
     const audio = new Audio(url);
     audio.play().catch(console.error);
-  }, [currentSentence]);
+  }, [currentSentenceGroup]);
 
   const handleStartSession = useCallback((sentences: SentenceData[]) => {
     engine.startSession(sentences);
@@ -305,13 +310,13 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
         <div className="shrink-0 max-w-4xl mx-auto px-4 pt-3 w-full">
           <div className="flex items-center gap-3 text-xs text-gray-500 dark:text-gray-400 mb-2">
             <span className="font-bold text-purple-600 dark:text-purple-400">Round {state.currentRound}/4</span>
-            <span>문장 {state.currentSentenceIndex + 1}/{state.sentences.length}</span>
+            <span>문장 {state.currentGroupIndex + 1}/{state.sentenceGroups.length}</span>
           </div>
           <div className="h-1.5 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
             <div
               className="h-full bg-purple-500 rounded-full transition-all duration-300"
               style={{
-                width: `${((((state.currentRound - 1) * state.sentences.length) + state.currentSentenceIndex + (state.phase === 'COMPARISON' ? 1 : 0)) / (4 * state.sentences.length)) * 100}%`,
+                width: `${((((state.currentRound - 1) * state.sentenceGroups.length) + state.currentGroupIndex + (state.phase === 'COMPARISON' ? 1 : 0)) / (4 * state.sentenceGroups.length)) * 100}%`,
               }}
             />
           </div>
@@ -340,11 +345,11 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
           )}
 
           {/* LISTENING */}
-          {state.phase === 'LISTENING' && currentSentence && (
+          {state.phase === 'LISTENING' && currentSentenceGroup && (
             <div className="space-y-4">
               <SpeakingCard
-                sentence={currentSentence.english}
-                koreanMeaning={currentSentence.comprehension}
+                sentence={currentSentenceGroup.combinedEnglish}
+                koreanMeaning={currentSentenceGroup.combinedKorean}
                 round={state.currentRound}
                 keyIndices={currentKeyIndices}
                 wordStatuses={state.wordStatuses}
@@ -367,11 +372,11 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
           )}
 
           {/* SPEAKING */}
-          {state.phase === 'SPEAKING' && currentSentence && (
+          {state.phase === 'SPEAKING' && currentSentenceGroup && (
             <div className="space-y-6">
               <SpeakingCard
-                sentence={currentSentence.english}
-                koreanMeaning={currentSentence.comprehension}
+                sentence={currentSentenceGroup.combinedEnglish}
+                koreanMeaning={currentSentenceGroup.combinedKorean}
                 round={state.currentRound}
                 keyIndices={currentKeyIndices}
                 wordStatuses={state.wordStatuses}
@@ -423,11 +428,11 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
           )}
 
           {/* COMPARISON */}
-          {state.phase === 'COMPARISON' && currentSentence && (
+          {state.phase === 'COMPARISON' && currentSentenceGroup && (
             <ComparisonView
               score={state.score}
               wordStatuses={state.wordStatuses}
-              words={currentSentence.english.split(' ')}
+              words={currentSentenceGroup.combinedEnglish.split(' ')}
               onPlayModel={handlePlayModelForComparison}
               onPlayMine={speech.playRecording}
               hasRecording={!!speech.audioUrl}

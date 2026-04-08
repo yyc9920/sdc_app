@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import sdcLogo from './assets/sdc_logo.png';
 import sdcLogoLong from './assets/sdc_logo_long.png';
@@ -23,6 +23,15 @@ type TabId = 'home' | 'learning' | 'dashboard' | 'ranking' | 'admin' | 'teacher'
 
 function App() {
   const [activeTab, setActiveTab] = useState<TabId>('home');
+  const [tabResetKey, setTabResetKey] = useState(0);
+
+  const handleTabChange = useCallback((tab: TabId) => {
+    if (tab === activeTab) {
+      setTabResetKey(prev => prev + 1);
+    } else {
+      setActiveTab(tab);
+    }
+  }, [activeTab]);
   const { isNightMode, toggleNight } = useTheme();
   const [showSplash, setShowSplash] = useState(true);
   const { user, role, loading: authLoading, error: authError, loginWithCode } = useAuth();
@@ -100,11 +109,11 @@ function App() {
   return (
     <div className="flex flex-col h-full w-full overflow-hidden pt-safe">
       <ErrorBoundary>
-        <div className="flex-1 relative overflow-hidden">
+        <div className="flex-1 relative overflow-hidden" key={`${activeTab}-${tabResetKey}`}>
           {renderTab()}
         </div>
       </ErrorBoundary>
-      <BottomNavigation activeTab={activeTab} onTabChange={setActiveTab} role={role} />
+      <BottomNavigation activeTab={activeTab} onTabChange={handleTabChange} role={role} />
     </div>
   );
 }

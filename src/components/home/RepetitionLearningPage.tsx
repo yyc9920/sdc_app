@@ -5,6 +5,7 @@ import { useAudio } from '../../hooks/useAudio';
 import { useStudySession } from '../../hooks/useStudySession';
 import { useLearningSetsBrowser } from '../../hooks/useLearningSetsBrowser';
 import { getTTSAudioUrl, prefetchTTS } from '../../services/ttsService';
+import { DEFAULT_VOICE } from '../../constants/audio';
 import { Card } from '../Card';
 import { Controls } from '../Controls';
 import { PronunciationChecker } from '../PronunciationChecker';
@@ -54,7 +55,7 @@ export const RepetitionLearningPage = ({ isNightMode, onToggleNight }: Repetitio
   const [rangeEnd, setRangeEnd] = useState(100);
   const [repeatCount, setRepeatCount] = useState(3);
   const [isRandom, setIsRandom] = useState(false);
-  const [voice, setVoice] = useState<string>('female');
+  const [voice, setVoice] = useState<string>(DEFAULT_VOICE);
   const [displayMode, setDisplayMode] = useState<'all' | 'english' | 'korean'>('all');
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -319,7 +320,7 @@ export const RepetitionLearningPage = ({ isNightMode, onToggleNight }: Repetitio
       <header className="shrink-0 w-full max-w-4xl mx-auto flex justify-between items-center p-3 sm:p-4 bg-gray-50/90 dark:bg-gray-900/90 backdrop-blur z-40 border-b border-gray-200 dark:border-gray-700 gap-3">
         <div className="flex items-center gap-1 sm:gap-3 flex-1 min-w-0">
           <button
-            onClick={() => { setSelectedDataSet(null); setSelectedCategory(null); setSelectedLevel(null); setIsPlaying(false); }}
+            onClick={() => { setSelectedDataSet(null); setIsPlaying(false); }}
             className="p-2 -ml-2 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors active:scale-90 shrink-0"
             title="Lobby"
           >

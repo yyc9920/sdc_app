@@ -26,8 +26,10 @@ export interface InfiniteSpeakingState {
   phase: InfiniteSpeakingPhase;
   currentRound: Round;
   currentSentenceIndex: number;
+  currentGroupIndex: number;
   sentences: SentenceData[];
   shuffledOrder: number[];
+  sentenceGroups: number[][];
   keyIndicesMap: Record<number, number[]>;
   handsFree: boolean;
   wordStatuses: string[];
@@ -75,14 +77,40 @@ export function buildKeyIndicesMap(sentences: SentenceData[]): Record<number, nu
   return map;
 }
 
+/**
+ * Groups sentences for speaking turns.
+ * If a sentence has 3 or fewer words, it is grouped with the next sentence.
+ */
+export function buildSentenceGroups(
+  sentences: SentenceData[],
+  shuffledOrder: number[]
+): number[][] {
+  const groups: number[][] = [];
+  let i = 0;
+  while (i < shuffledOrder.length) {
+    const idx = shuffledOrder[i];
+    const wordCount = sentences[idx].english.split(' ').length;
+    if (wordCount <= 3 && i + 1 < shuffledOrder.length) {
+      groups.push([shuffledOrder[i], shuffledOrder[i + 1]]);
+      i += 2;
+    } else {
+      groups.push([shuffledOrder[i]]);
+      i += 1;
+    }
+  }
+  return groups;
+}
+
 // --- Reducer ---
 
 export const initialState: InfiniteSpeakingState = {
   phase: 'SETUP',
   currentRound: 1,
   currentSentenceIndex: 0,
+  currentGroupIndex: 0,
   sentences: [],
   shuffledOrder: [],
+  sentenceGroups: [],
   keyIndicesMap: {},
   handsFree: false,
   wordStatuses: [],
@@ -98,11 +126,13 @@ export function reducer(state: InfiniteSpeakingState, action: Action): InfiniteS
   switch (action.type) {
     case 'START_SESSION': {
       const keyMap = buildKeyIndicesMap(action.sentences);
+      const shuffled = shuffleArray(action.sentences.length);
       return {
         ...initialState,
         phase: 'ROUND_INTRO',
         sentences: action.sentences,
-        shuffledOrder: shuffleArray(action.sentences.length),
+        shuffledOrder: shuffled,
+        sentenceGroups: buildSentenceGroups(action.sentences, shuffled),
         keyIndicesMap: keyMap,
         handsFree: state.handsFree,
         currentRound: 1,
@@ -110,16 +140,20 @@ export function reducer(state: InfiniteSpeakingState, action: Action): InfiniteS
       };
     }
 
-    case 'START_ROUND':
+    case 'START_ROUND': {
+      const shuffled = shuffleArray(state.sentences.length);
       return {
         ...state,
         phase: 'ROUND_INTRO',
         currentSentenceIndex: 0,
-        shuffledOrder: shuffleArray(state.sentences.length),
+        currentGroupIndex: 0,
+        shuffledOrder: shuffled,
+        sentenceGroups: buildSentenceGroups(state.sentences, shuffled),
         wordStatuses: [],
         transcript: '',
         score: 0,
       };
+    }
 
     case 'START_LISTENING':
       return {
@@ -132,16 +166,19 @@ export function reducer(state: InfiniteSpeakingState, action: Action): InfiniteS
         hints: [],
       };
 
-    case 'START_SPEAKING':
+    case 'START_SPEAKING': {
+      const group = state.sentenceGroups[state.currentGroupIndex] ?? [];
+      const combinedWordCount = group.reduce(
+        (sum, idx) => sum + (state.sentences[idx]?.english.split(' ').length ?? 0), 0
+      );
       return {
         ...state,
         phase: 'SPEAKING',
-        wordStatuses: new Array(
-          state.sentences[state.shuffledOrder[state.currentSentenceIndex]]?.english.split(' ').length ?? 0
-        ).fill('pending'),
+        wordStatuses: new Array(combinedWordCount).fill('pending'),
         transcript: '',
         score: 0,
       };
+    }
 
     case 'UPDATE_SPEECH':
       return {
@@ -157,28 +194,31 @@ export function reducer(state: InfiniteSpeakingState, action: Action): InfiniteS
         phase: 'COMPARISON',
       };
 
-    case 'RETRY_SPEAKING':
+    case 'RETRY_SPEAKING': {
+      const retryGroup = state.sentenceGroups[state.currentGroupIndex] ?? [];
+      const retryWordCount = retryGroup.reduce(
+        (sum, idx) => sum + (state.sentences[idx]?.english.split(' ').length ?? 0), 0
+      );
       return {
         ...state,
         phase: 'SPEAKING',
-        wordStatuses: new Array(
-          state.sentences[state.shuffledOrder[state.currentSentenceIndex]]?.english.split(' ').length ?? 0
-        ).fill('pending'),
+        wordStatuses: new Array(retryWordCount).fill('pending'),
         transcript: '',
         score: 0,
         retryCount: state.retryCount + 1,
         hints: [],
       };
+    }
 
     case 'NEXT_SENTENCE': {
-      const nextIndex = state.currentSentenceIndex + 1;
-      if (nextIndex >= state.sentences.length) {
+      const nextGroupIndex = state.currentGroupIndex + 1;
+      if (nextGroupIndex >= state.sentenceGroups.length) {
         return { ...state, phase: 'ROUND_COMPLETE' };
       }
       return {
         ...state,
         phase: 'LISTENING',
-        currentSentenceIndex: nextIndex,
+        currentGroupIndex: nextGroupIndex,
         wordStatuses: [],
         transcript: '',
         score: 0,
@@ -195,12 +235,15 @@ export function reducer(state: InfiniteSpeakingState, action: Action): InfiniteS
       if (nextRound > 4) {
         return { ...state, phase: 'SESSION_COMPLETE' };
       }
+      const newShuffled = shuffleArray(state.sentences.length);
       return {
         ...state,
         phase: 'ROUND_INTRO',
         currentRound: nextRound,
         currentSentenceIndex: 0,
-        shuffledOrder: shuffleArray(state.sentences.length),
+        currentGroupIndex: 0,
+        shuffledOrder: newShuffled,
+        sentenceGroups: buildSentenceGroups(state.sentences, newShuffled),
         wordStatuses: [],
         transcript: '',
         score: 0,
@@ -287,16 +330,39 @@ export const useInfiniteSpeaking = () => {
     };
   }, []);
 
+  const currentSentenceGroup = useMemo(() => {
+    if (state.sentences.length === 0 || state.sentenceGroups.length === 0) return null;
+    const group = state.sentenceGroups[state.currentGroupIndex];
+    if (!group || group.length === 0) return null;
+    const groupSentences = group.map(idx => state.sentences[idx]).filter(Boolean);
+    if (groupSentences.length === 0) return null;
+    return {
+      sentences: groupSentences,
+      combinedEnglish: groupSentences.map(s => s.english).join(' '),
+      combinedKorean: groupSentences.map(s => s.comprehension).join(' '),
+      ids: groupSentences.map(s => s.id),
+    };
+  }, [state.sentences, state.sentenceGroups, state.currentGroupIndex]);
+
+  // Keep currentSentence for backward compat (first sentence in group)
   const currentSentence = useMemo(() => {
-    if (state.sentences.length === 0 || state.shuffledOrder.length === 0) return null;
-    const idx = state.shuffledOrder[state.currentSentenceIndex];
-    return state.sentences[idx] ?? null;
-  }, [state.sentences, state.shuffledOrder, state.currentSentenceIndex]);
+    return currentSentenceGroup?.sentences[0] ?? null;
+  }, [currentSentenceGroup]);
 
   const currentKeyIndices = useMemo(() => {
-    if (!currentSentence) return [];
-    return state.keyIndicesMap[currentSentence.id] ?? [];
-  }, [currentSentence, state.keyIndicesMap]);
+    if (!currentSentenceGroup) return [];
+    // Merge key indices from all sentences in group, adjusting offsets
+    const merged: number[] = [];
+    let offset = 0;
+    for (const s of currentSentenceGroup.sentences) {
+      const indices = state.keyIndicesMap[s.id] ?? [];
+      for (const idx of indices) {
+        merged.push(idx + offset);
+      }
+      offset += s.english.split(' ').length;
+    }
+    return merged;
+  }, [currentSentenceGroup, state.keyIndicesMap]);
 
   const startSession = useCallback((sentences: SentenceData[]) => {
     dispatch({ type: 'START_SESSION', sentences });
@@ -397,6 +463,7 @@ export const useInfiniteSpeaking = () => {
   return {
     state,
     currentSentence,
+    currentSentenceGroup,
     currentKeyIndices,
     startSession,
     startListening,
