@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { collection, getDocs } from 'firebase/firestore';
+import { collection, getDocs, query, orderBy } from 'firebase/firestore';
 import { db } from '../firebase';
 import type { LearningSetMeta, LearningLevel, CategoryCode } from '../types';
 import { CATEGORY_MAP, LEVEL_LABELS } from '../constants/categories';
@@ -18,7 +18,8 @@ interface LevelGroup {
 }
 
 const fetchAllSets = async (): Promise<LearningSetMeta[]> => {
-  const snapshot = await getDocs(collection(db, 'learning_sets'));
+  const q = query(collection(db, 'learning_sets'), orderBy('setId', 'asc'));
+  const snapshot = await getDocs(q);
   return snapshot.docs
     .map((doc) => doc.data() as LearningSetMeta)
     .filter((s) => s.status === 'ready');

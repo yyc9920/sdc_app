@@ -159,7 +159,7 @@ export function reducer(state: InfiniteSpeakingState, action: Action): InfiniteS
   switch (action.type) {
     case 'START_SESSION': {
       const keyMap = buildKeyIndicesMap(action.sentences);
-      const shuffled = shuffleArray(action.sentences.length);
+      const shuffled = Array.from({ length: action.sentences.length }, (_, i) => i);
       return {
         ...initialState,
         phase: 'ROUND_INTRO',
@@ -174,7 +174,7 @@ export function reducer(state: InfiniteSpeakingState, action: Action): InfiniteS
     }
 
     case 'START_ROUND': {
-      const shuffled = shuffleArray(state.sentences.length);
+      const shuffled = Array.from({ length: state.sentences.length }, (_, i) => i);
       return {
         ...state,
         phase: 'ROUND_INTRO',
@@ -264,7 +264,7 @@ export function reducer(state: InfiniteSpeakingState, action: Action): InfiniteS
       if (nextRound > 4) {
         return { ...state, phase: 'SESSION_COMPLETE' };
       }
-      const newShuffled = shuffleArray(state.sentences.length);
+      const newShuffled = Array.from({ length: state.sentences.length }, (_, i) => i);
       return {
         ...state,
         phase: 'ROUND_INTRO',
