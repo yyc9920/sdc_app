@@ -41,26 +41,26 @@ describe('textToSpeech', () => {
 
   it('throws unauthenticated when no auth', async () => {
     await expect(
-      wrapped({ data: { text: 'hello', voiceKey: 'female' } } as any)
+      wrapped({ data: { text: 'hello', voiceKey: 'female1' } } as any)
     ).rejects.toThrow(/Authentication required/);
   });
 
   it('throws invalid-argument for missing text', async () => {
     await expect(
-      wrapped({ data: { voiceKey: 'female' }, auth: { uid: 'u1' } } as any)
+      wrapped({ data: { voiceKey: 'female1' }, auth: { uid: 'u1' } } as any)
     ).rejects.toThrow(/Missing or invalid text/);
   });
 
   it('throws invalid-argument for empty text', async () => {
     await expect(
-      wrapped({ data: { text: '', voiceKey: 'female' }, auth: { uid: 'u1' } } as any)
+      wrapped({ data: { text: '', voiceKey: 'female1' }, auth: { uid: 'u1' } } as any)
     ).rejects.toThrow(/Missing or invalid text/);
   });
 
   it('throws invalid-argument for text > 500 characters', async () => {
     const longText = 'a'.repeat(501);
     await expect(
-      wrapped({ data: { text: longText, voiceKey: 'female' }, auth: { uid: 'u1' } } as any)
+      wrapped({ data: { text: longText, voiceKey: 'female1' }, auth: { uid: 'u1' } } as any)
     ).rejects.toThrow(/Text too long/);
   });
 
