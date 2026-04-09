@@ -80,3 +80,12 @@ Three roles verified via Firebase Custom Claims: Admin, Teacher, Student. Firest
 - **Speech Recognition Plugin**: `@capacitor-community/speech-recognition`은 SPM 미지원. 플러그인 소스를 `ios/App/App/`에 직접 복사하고 Xcode App 타겟에 수동 추가. Bridging Header에 `#import "SpeechRecognitionPlugin.h"` 필요.
 - **getUserMedia**: iOS WKWebView에서 미지원. 네이티브에서는 Capacitor 플러그인을 통해 마이크 접근. `Capacitor.isNativePlatform()` 분기 필수.
 - **`cap sync` 안전 사용**: `ios/App/App/public/`(웹 빌드 결과)만 덮어쓰며, 수동 추가한 네이티브 파일과 Xcode 타겟 설정은 영향 없음. 단, `CapApp-SPM/Package.swift`는 덮어쓰여지므로 sync 후 재설정 필요.
+
+## graphify
+
+This project has a graphify knowledge graph at graphify-out/.
+
+Rules:
+- Before answering architecture or codebase questions, read graphify-out/GRAPH_REPORT.md for god nodes and community structure
+- If graphify-out/wiki/index.md exists, navigate it instead of reading raw files
+- After modifying code files in this session, run `python3 -c "from graphify.watch import _rebuild_code; from pathlib import Path; _rebuild_code(Path('.'))"` to keep the graph current

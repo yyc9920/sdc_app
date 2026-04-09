@@ -1,16 +1,15 @@
 import React from 'react';
-import { Home, Settings, User, BarChart3, Trophy, BookOpen } from 'lucide-react';
+import { Settings, User, BarChart3, Trophy, BookOpen } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 interface Props {
-  activeTab: 'home' | 'learning' | 'dashboard' | 'ranking' | 'admin' | 'teacher' | 'profile';
-  onTabChange: (tab: 'home' | 'learning' | 'dashboard' | 'ranking' | 'admin' | 'teacher' | 'profile') => void;
+  activeTab: 'learning' | 'dashboard' | 'ranking' | 'admin' | 'teacher' | 'profile';
+  onTabChange: (tab: 'learning' | 'dashboard' | 'ranking' | 'admin' | 'teacher' | 'profile') => void;
   role: 'admin' | 'teacher' | 'student' | null;
 }
 
 export const BottomNavigation: React.FC<Props> = ({ activeTab, onTabChange, role }) => {
   const tabs = [
-    { id: 'home', icon: Home, label: '홈' },
     { id: 'learning', icon: BookOpen, label: '학습' },
     { id: 'dashboard', icon: BarChart3, label: '현황' },
     { id: 'ranking', icon: Trophy, label: '랭킹' },

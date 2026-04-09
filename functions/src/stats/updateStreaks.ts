@@ -29,6 +29,10 @@ export const updateStreaks = onSchedule(
     let updatedCount = 0;
     let resetCount = 0;
 
+    const MAX_BATCH_SIZE = 500;
+    let batch = db.batch();
+    let batchCount = 0;
+
     for (const userDoc of usersSnapshot.docs) {
       const userData = userDoc.data();
       const lastActive = userData.stats?.lastActiveDate;
@@ -50,11 +54,22 @@ export const updateStreaks = onSchedule(
       }
 
       if (newStreak !== currentStreak || newLongestStreak !== longestStreak) {
-        await userDoc.ref.update({
+        batch.update(userDoc.ref, {
           'stats.currentStreak': newStreak,
           'stats.longestStreak': newLongestStreak,
         });
+        batchCount++;
+
+        if (batchCount >= MAX_BATCH_SIZE) {
+          await batch.commit();
+          batch = db.batch();
+          batchCount = 0;
+        }
       }
+    }
+
+    if (batchCount > 0) {
+      await batch.commit();
     }
 
     console.log(`Streak update complete. Incremented: ${updatedCount}, Reset: ${resetCount}`);

@@ -12,17 +12,16 @@ import { TeacherDashboard } from './components/teacher/TeacherDashboard';
 import { ProfilePage } from './components/dashboard/ProfilePage';
 import { DashboardPage } from './components/dashboard/DashboardPage';
 import { RankingPage } from './components/dashboard/RankingPage';
-import { RepetitionLearningPage } from './components/home/RepetitionLearningPage';
 import { LearningPage } from './components/learning/LearningPage';
 import { LoadingSpinner } from './components/LoadingSpinner';
 import { ErrorBoundary } from './components/shared/ErrorBoundary';
 import { useTheme } from './hooks/useTheme';
 import './App.css';
 
-type TabId = 'home' | 'learning' | 'dashboard' | 'ranking' | 'admin' | 'teacher' | 'profile';
+type TabId = 'learning' | 'dashboard' | 'ranking' | 'admin' | 'teacher' | 'profile';
 
 function App() {
-  const [activeTab, setActiveTab] = useState<TabId>('home');
+  const [activeTab, setActiveTab] = useState<TabId>('learning');
   const [tabResetKey, setTabResetKey] = useState(0);
 
   const handleTabChange = useCallback((tab: TabId) => {
@@ -99,10 +98,8 @@ function App() {
       case 'profile':
         return <ProfilePage />;
       case 'learning':
-        return <LearningPage isNightMode={isNightMode} onToggleNight={toggleNight} />;
-      case 'home':
       default:
-        return <RepetitionLearningPage isNightMode={isNightMode} onToggleNight={toggleNight} />;
+        return <LearningPage isNightMode={isNightMode} onToggleNight={toggleNight} />;
     }
   };
 

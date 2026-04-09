@@ -3,7 +3,7 @@ import { useSpeedListeningData } from '../../hooks/useSpeedListeningData';
 import { usePrefetchData } from '../../hooks/useData';
 import { useLearningSetsBrowser } from '../../hooks/useLearningSetsBrowser';
 import { useAuth } from '../../hooks/useAuth';
-import { SpeedListeningQuiz } from '../SpeedListeningQuiz';
+import { SpeedListeningPage } from './SpeedListening';
 import { LevelRecommendationBadge } from '../speed-listening/LevelRecommendationBadge';
 import { LoadingSpinner } from '../LoadingSpinner';
 import { InfiniteSpeakingPage } from './InfiniteSpeaking/InfiniteSpeakingPage';
@@ -145,42 +145,17 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
     );
   }
 
-  // Speed Listening Quiz active
+  // Speed Listening active session
   if (mode === 'speed_listening' && selectedDataSet && selectedSpeedListeningSet) {
+    const currentIndex = speedListeningData.findIndex(s => s.setId === selectedSpeedListeningSet.setId);
+    const nextSet = speedListeningData[currentIndex + 1];
     return (
-      <div className={`h-full ${isNightMode ? 'dark bg-gray-900' : 'bg-gray-50'} flex flex-col transition-colors duration-300 overflow-hidden`}>
-        <header className="shrink-0 w-full max-w-4xl mx-auto flex justify-between items-center p-3 sm:p-4 bg-gray-50/90 dark:bg-gray-900/90 backdrop-blur z-40 border-b border-gray-200 dark:border-gray-700 gap-3">
-          <div className="flex items-center gap-1 sm:gap-3 flex-1 min-w-0">
-            <button
-              onClick={handleBack}
-              className="p-2 -ml-2 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors active:scale-90 shrink-0"
-              title="Back"
-            >
-              <ChevronLeft className="w-6 h-6 text-gray-600 dark:text-gray-400" />
-            </button>
-            <img src="/sdc_logo.png" alt="SDC" className="w-7 h-7 object-contain shrink-0" />
-            <h1 className="text-base sm:text-lg font-bold text-gray-800 dark:text-white truncate">
-              {selectedDataSet.name} <span className="text-gray-400 mx-1 font-normal">|</span> Lv.{selectedSpeedListeningSet.level} {formatSetTitle(selectedSpeedListeningSet.setId)}
-            </h1>
-          </div>
-          <button
-            onClick={onToggleNight}
-            className="p-2 shrink-0 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
-          >
-            {isNightMode ? <Sun className="w-5 h-5 text-yellow-400" /> : <Moon className="w-5 h-5 text-gray-600" />}
-          </button>
-        </header>
-        <main className="flex-1 overflow-y-auto w-full max-w-4xl mx-auto flex flex-col p-4 gap-4 pb-6">
-          <SpeedListeningQuiz
-            set={selectedSpeedListeningSet}
-            onNext={(() => {
-              const currentIndex = speedListeningData.findIndex(s => s.setId === selectedSpeedListeningSet.setId);
-              const nextSet = speedListeningData[currentIndex + 1];
-              return nextSet ? () => setSelectedSpeedListeningSet(nextSet) : undefined;
-            })()}
-          />
-        </main>
-      </div>
+      <SpeedListeningPage
+        setId={selectedSpeedListeningSet.setId}
+        level={selectedSpeedListeningSet.level as LearningLevel}
+        title={`${selectedDataSet.name} | Lv.${selectedSpeedListeningSet.level} ${formatSetTitle(selectedSpeedListeningSet.setId)}`}
+        onNext={nextSet ? () => setSelectedSpeedListeningSet(nextSet) : undefined}
+      />
     );
   }
 
