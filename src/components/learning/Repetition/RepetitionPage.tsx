@@ -88,6 +88,23 @@ export const RepetitionPage = ({
     [goTo, session.rows, playRow],
   );
 
+  // Next/prev with auto-play
+  const handleNext = useCallback(() => {
+    if (isRangePlaying) return; // playLoop controls navigation during auto-play
+    next();
+    const nextIdx = session.currentIndex + 1;
+    const row = session.rows[nextIdx];
+    if (row) playRow(row).catch(console.error);
+  }, [isRangePlaying, next, session.currentIndex, session.rows, playRow]);
+
+  const handlePrev = useCallback(() => {
+    if (isRangePlaying) return;
+    prev();
+    const prevIdx = Math.max(0, session.currentIndex - 1);
+    const row = session.rows[prevIdx];
+    if (row) playRow(row).catch(console.error);
+  }, [isRangePlaying, prev, session.currentIndex, session.rows, playRow]);
+
   // Single unified play/stop button
   const handlePlayStop = useCallback(() => {
     if (isRangePlaying) {
@@ -265,7 +282,7 @@ export const RepetitionPage = ({
 
           {/* Center: Prev / Play-Stop / Next */}
           <div className="flex items-center gap-2">
-            <button onClick={prev} className="p-3 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors active:scale-90" aria-label="이전 문장">
+            <button onClick={handlePrev} className="p-3 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors active:scale-90" aria-label="이전 문장">
               <SkipBack className="w-5 h-5" />
             </button>
             <button
@@ -275,7 +292,7 @@ export const RepetitionPage = ({
             >
               {isRangePlaying ? <Square className="w-5 h-5 fill-current" /> : <Play className="w-6 h-6" />}
             </button>
-            <button onClick={next} className="p-3 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors active:scale-90" aria-label="다음 문장">
+            <button onClick={handleNext} className="p-3 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors active:scale-90" aria-label="다음 문장">
               <ChevronRight className="w-5 h-5" />
             </button>
           </div>
