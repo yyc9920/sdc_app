@@ -1,0 +1,151 @@
+import { useMemo, useEffect, useRef, useState, useCallback } from 'react';
+import {
+  useTrainingData,
+  useTrainingSession,
+  useTrainingAudio,
+  useTrainingProgress,
+} from './training';
+import type { TrainingRow, TrainingSession, VoiceKey } from './training';
+
+export interface RepetitionGroup {
+  prompt: TrainingRow | null;
+  items: TrainingRow[];
+}
+
+const SPEAKER_COLORS = ['blue', 'rose', 'amber', 'emerald', 'violet', 'cyan'] as const;
+
+// Exported for unit testing
+export function computeGroups(allRows: TrainingRow[]): RepetitionGroup[] {
+  const groups: RepetitionGroup[] = [];
+  let current: RepetitionGroup = { prompt: null, items: [] };
+
+  for (const row of allRows) {
+    if (row.rowType === 'prompt') {
+      // Push accumulated group before starting a new one (skip empty initial state)
+      if (current.items.length > 0 || current.prompt !== null) {
+        groups.push(current);
+      }
+      current = { prompt: row, items: [] };
+    } else if (row.rowType === 'script' || row.rowType === 'reading') {
+      current.items.push(row);
+    }
+    // Other row types (vocab, expression, meta, question, task) are skipped
+  }
+
+  if (current.items.length > 0 || current.prompt !== null) {
+    groups.push(current);
+  }
+
+  return groups;
+}
+
+// Exported for unit testing
+export function computeSpeakerColors(speakers: string[]): Record<string, string> {
+  const map: Record<string, string> = {};
+  speakers.forEach((speaker, i) => {
+    map[speaker] = SPEAKER_COLORS[i % SPEAKER_COLORS.length];
+  });
+  return map;
+}
+
+export interface UseRepetitionReturn {
+  groups: RepetitionGroup[];
+  isLoading: boolean;
+  error: string | null;
+  ttsError: boolean;
+  session: TrainingSession;
+  currentRow: TrainingRow | null;
+  isPlaying: boolean;
+  speakerVoiceMap: Record<string, VoiceKey>;
+  speakerColors: Record<string, string>;
+  speed: number;
+  setSpeed: (s: number) => void;
+  rowSeqToSessionIndex: Map<number, number>;
+  playRow: (row: TrainingRow) => Promise<void>;
+  stop: () => void;
+  next: () => void;
+  prev: () => void;
+  goTo: (index: number) => void;
+  complete: () => void;
+  reset: () => void;
+  saveProgress: () => Promise<void>;
+}
+
+export function useRepetition(setId: string): UseRepetitionReturn {
+  const { rows, speakers, isLoading, error } = useTrainingData(setId);
+
+  const sessionApi = useTrainingSession({
+    setId,
+    mode: 'repetition',
+    allRows: rows,
+  });
+
+  // TTS: on-demand only (user tap or prev/next), max 1 concurrent via stop() before play()
+  const audioApi = useTrainingAudio({ speakers });
+  const progressApi = useTrainingProgress(sessionApi.session);
+
+  const hasSavedRef = useRef(false);
+  const [ttsError, setTtsError] = useState(false);
+
+  // Save progress exactly once when session completes
+  useEffect(() => {
+    if (sessionApi.session.phase === 'complete' && !hasSavedRef.current) {
+      hasSavedRef.current = true;
+      progressApi.saveProgress().catch(console.error);
+    }
+    if (sessionApi.session.phase === 'setup') {
+      hasSavedRef.current = false;
+    }
+  }, [sessionApi.session.phase]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Group all rows (including prompt) for display — prompt rows excluded from session navigation
+  const groups = useMemo(() => computeGroups(rows), [rows]);
+  const speakerColors = useMemo(() => computeSpeakerColors(speakers), [speakers]);
+
+  // rowSeq → session index (for progress bar clicks and card tap sync)
+  const rowSeqToSessionIndex = useMemo(() => {
+    const map = new Map<number, number>();
+    sessionApi.session.rows.forEach((row, i) => {
+      map.set(row.rowSeq, i);
+    });
+    return map;
+  }, [sessionApi.session.rows]);
+
+  // Play a row's audio. Max 1 concurrent: stop() clears previous before play().
+  // TTS failure captured in ttsError state.
+  const playRow = useCallback(
+    async (row: TrainingRow) => {
+      try {
+        setTtsError(false);
+        audioApi.stop();
+        await audioApi.play(row);
+      } catch {
+        setTtsError(true);
+      }
+    },
+    [audioApi],
+  );
+
+  return {
+    groups,
+    isLoading,
+    error,
+    ttsError,
+    session: sessionApi.session,
+    currentRow: sessionApi.currentRow,
+    isPlaying: audioApi.isPlaying,
+    speakerVoiceMap: audioApi.speakerVoiceMap,
+    speakerColors,
+    speed: audioApi.speed,
+    setSpeed: audioApi.setSpeed,
+    rowSeqToSessionIndex,
+    playRow,
+    stop: audioApi.stop,
+    next: sessionApi.next,
+    prev: sessionApi.prev,
+    goTo: sessionApi.goTo,
+    complete: sessionApi.complete,
+    reset: sessionApi.reset,
+    saveProgress: progressApi.saveProgress,
+  };
+}
