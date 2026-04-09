@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { getKeyExpressionIndices } from '../keyExpressions';
+import { getKeyExpressionIndices, getReducedBlankIndices } from '../keyExpressions';
 
 describe('getKeyExpressionIndices', () => {
   it('returns indices of content words', () => {
@@ -76,5 +76,39 @@ describe('getKeyExpressionIndices', () => {
     expect(result).toContain(5); // beautiful
     expect(result).toContain(6); // garden
     expect(result).toContain(9); // house
+  });
+});
+
+describe('getReducedBlankIndices', () => {
+  it('blanks ~50% of content words', () => {
+    const result = getReducedBlankIndices('She quickly ran to the beautiful garden behind the house');
+    // Full content words: [1, 2, 5, 6, 9] (quickly, ran, beautiful, garden, house)
+    // "She" at idx 0 is function word
+    // ~50% of 5 = 3 blanked
+    expect(result.length).toBeLessThanOrEqual(3);
+    expect(result.length).toBeGreaterThanOrEqual(1);
+  });
+
+  it('excludes proper nouns (capitalized, not first word)', () => {
+    const result = getReducedBlankIndices('I met John at the park');
+    // John (idx 2) is proper noun — should not be blanked
+    expect(result).not.toContain(2);
+  });
+
+  it('excludes words with special characters', () => {
+    const result = getReducedBlankIndices('The well-known artist painted beautifully');
+    // "well-known" has hyphen — should not be blanked
+    expect(result).not.toContain(1);
+  });
+
+  it('returns at least 1 blank for non-trivial sentences', () => {
+    const result = getReducedBlankIndices('The garden is beautiful');
+    expect(result.length).toBeGreaterThanOrEqual(1);
+  });
+
+  it('handles all function words gracefully', () => {
+    const result = getReducedBlankIndices('I am the one');
+    // Only "one" (idx 3) is content — but it's the fallback word from getKeyExpressionIndices
+    expect(result.length).toBeLessThanOrEqual(1);
   });
 });

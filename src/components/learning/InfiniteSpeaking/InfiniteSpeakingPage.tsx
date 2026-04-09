@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { ChevronLeft, Moon, Sun, Hand, HandMetal, Mic, Square, AlertTriangle, RefreshCw, SkipForward } from 'lucide-react';
 import { useInfiniteSpeaking } from '../../../hooks/useInfiniteSpeaking';
-import { getKeyExpressionIndices } from '../../../utils/keyExpressions';
+import { getReducedBlankIndices } from '../../../utils/keyExpressions';
 import { LoadingSpinner } from '../../LoadingSpinner';
 import { PromptCard } from './PromptCard';
 import { RoundIntro } from './RoundIntro';
@@ -39,7 +39,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
   } = engine;
 
   // Derived from currentRow
-  const currentKeyIndices = currentRow ? getKeyExpressionIndices(currentRow.english) : [];
+  const currentBlankIndices = currentRow ? getReducedBlankIndices(currentRow.english) : [];
   const currentSpeakerStyle = currentRow?.speaker ? speakerStyleMap[currentRow.speaker] : undefined;
   // R3: hide text during speaking
   const textVisible = session.round !== 3 || subPhase !== 'SPEAKING';
@@ -170,15 +170,15 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
             />
           )}
 
-          {/* LISTENING (R2 only) */}
+          {/* LISTENING (R2 only) — show full text while TTS plays */}
           {subPhase === 'LISTENING' && currentRow && (
             <div key={`listening-${session.currentIndex}`} className="space-y-4">
               {promptRow && <PromptCard row={promptRow} />}
               <SpeakingCard
                 sentence={session.round === 2 && currentUnit ? currentUnit.combinedEnglish : currentRow.english}
                 koreanMeaning={session.round === 2 && currentUnit ? currentUnit.combinedKorean : currentRow.comprehension}
-                round={session.round as 1 | 2 | 3 | 4}
-                keyIndices={currentKeyIndices}
+                round={1}
+                blankIndices={currentBlankIndices}
                 wordStatuses={wordStatuses}
                 isListening={true}
                 isSpeaking={false}
@@ -200,6 +200,25 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
             </div>
           )}
 
+          {/* BLANKING (R2 only) — transition from full text to blanks */}
+          {subPhase === 'BLANKING' && currentRow && (
+            <div key={`blanking-${session.currentIndex}`} className="space-y-4">
+              {promptRow && <PromptCard row={promptRow} />}
+              <SpeakingCard
+                sentence={session.round === 2 && currentUnit ? currentUnit.combinedEnglish : currentRow.english}
+                koreanMeaning={session.round === 2 && currentUnit ? currentUnit.combinedKorean : currentRow.comprehension}
+                round={session.round as 1 | 2 | 3 | 4}
+                blankIndices={currentBlankIndices}
+                wordStatuses={wordStatuses}
+                isListening={false}
+                isSpeaking={false}
+                speakerStyle={currentSpeakerStyle}
+                textVisible={true}
+                blankingTransition={true}
+              />
+            </div>
+          )}
+
           {/* SPEAKING */}
           {subPhase === 'SPEAKING' && currentRow && (
             <div key={`speaking-${session.currentIndex}-${retryCount}`} className="space-y-6">
@@ -208,7 +227,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
                 sentence={session.round === 2 && currentUnit ? currentUnit.combinedEnglish : currentRow.english}
                 koreanMeaning={session.round === 2 && currentUnit ? currentUnit.combinedKorean : currentRow.comprehension}
                 round={session.round as 1 | 2 | 3 | 4}
-                keyIndices={currentKeyIndices}
+                blankIndices={currentBlankIndices}
                 wordStatuses={wordStatuses}
                 isListening={false}
                 isSpeaking={!needsMicGesture}

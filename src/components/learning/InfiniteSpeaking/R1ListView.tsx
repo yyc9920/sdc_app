@@ -115,6 +115,17 @@ export const R1ListView = ({
               >
                 {row.english}
               </p>
+              {row.comprehension && (
+                <p
+                  className={`text-sm mt-1 ${
+                    isActive
+                      ? 'text-purple-600 dark:text-purple-400'
+                      : 'text-gray-400 dark:text-gray-500'
+                  }`}
+                >
+                  {row.comprehension}
+                </p>
+              )}
               {isActive && (
                 <div className="flex gap-0.5 mt-2 items-end h-4">
                   {isPlaying

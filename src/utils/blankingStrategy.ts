@@ -1,9 +1,10 @@
 /**
  * Returns the set of word indices that should be VISIBLE (not blanked) for a given round.
+ * For R2/R3, uses the reduced blank indices (fewer blanks than before).
  */
 export function getVisibleIndices(
   round: 1 | 2 | 3 | 4,
-  keyIndices: number[],
+  blankIndices: number[],
   totalWords: number
 ): Set<number> {
   const allIndices = new Set(Array.from({ length: totalWords }, (_, i) => i));
@@ -14,8 +15,8 @@ export function getVisibleIndices(
       return allIndices;
     case 2:
     case 3:
-      // Blank only key expressions (content words)
-      keyIndices.forEach(i => allIndices.delete(i));
+      // Blank only the provided indices (reduced set)
+      blankIndices.forEach(i => allIndices.delete(i));
       return allIndices;
     case 4:
       // All words blanked

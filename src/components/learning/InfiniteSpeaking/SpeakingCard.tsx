@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { getSentenceDisplay } from '../../../utils/blankingStrategy';
 import type { Round } from '../../../hooks/useInfiniteSpeaking';
@@ -7,7 +8,7 @@ interface SpeakingCardProps {
   sentence: string;
   koreanMeaning: string;
   round: Round;
-  keyIndices: number[];
+  blankIndices: number[];
   wordStatuses: string[];
   isListening: boolean;
   isSpeaking: boolean;
@@ -15,21 +16,39 @@ interface SpeakingCardProps {
   speakerStyle?: SpeakerStyle;
   /** R3: hide text during speaking phase */
   textVisible?: boolean;
+  /** Animate transition from full text to blanks */
+  blankingTransition?: boolean;
 }
 
 export const SpeakingCard = ({
   sentence,
   koreanMeaning,
   round,
-  keyIndices,
+  blankIndices,
   wordStatuses,
   isListening,
   isSpeaking,
   speakerStyle,
   textVisible = true,
+  blankingTransition = false,
 }: SpeakingCardProps) => {
-  const display = getSentenceDisplay(sentence, round, keyIndices);
-  const showKorean = round >= 3;
+  const display = getSentenceDisplay(sentence, round, blankIndices);
+  const showKorean = round >= 2;
+
+  // Pre-compute stagger delays for blanking transition
+  const blankStaggerMap = useMemo(() => {
+    if (!blankingTransition) return new Map<number, number>();
+    const hiddenIndices = display.filter(d => !d.visible).map(d => d.index);
+    const map = new Map<number, number>();
+    hiddenIndices.forEach((idx, i) => {
+      map.set(idx, i * 40); // 40ms stagger per word
+    });
+    return map;
+  }, [blankingTransition, display]);
+
+  const prefersReducedMotion =
+    typeof window !== 'undefined' &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   return (
     <motion.div
@@ -56,7 +75,12 @@ export const SpeakingCard = ({
               const isCorrect = status === 'correct';
               const isIncorrect = status === 'incorrect';
 
-              if (!visible) {
+              // During blanking transition: use CSS animation with stagger delay
+              const isBlankTarget = blankingTransition && !visible;
+              const staggerDelay = blankStaggerMap.get(index) ?? 0;
+
+              if (!visible && !isBlankTarget) {
+                // Normal blank slot (not during transition)
                 return (
                   <span key={index} className="inline-flex items-center">
                     <span
@@ -74,6 +98,33 @@ export const SpeakingCard = ({
                       {isCorrect || isIncorrect ? word : '·'.repeat(word.length)}
                     </span>
                   </span>
+                );
+              }
+
+              if (isBlankTarget) {
+                // Transitioning blank: word fades out and is replaced by underline
+                return (
+                  <motion.span
+                    key={index}
+                    className="inline-flex items-center"
+                    initial={{ opacity: 1, filter: 'blur(0px)' }}
+                    animate={prefersReducedMotion
+                      ? { opacity: 0 }
+                      : { opacity: 0, filter: 'blur(4px)' }
+                    }
+                    transition={{
+                      duration: 0.25,
+                      delay: staggerDelay / 1000,
+                      ease: 'easeOut',
+                    }}
+                  >
+                    <span
+                      className="inline-block border-b-4 border-gray-400 dark:border-gray-600 text-center text-gray-800 dark:text-gray-200"
+                      style={{ minWidth: `${Math.max(word.length * 0.7, 2)}em` }}
+                    >
+                      {word}
+                    </span>
+                  </motion.span>
                 );
               }
 
@@ -111,7 +162,7 @@ export const SpeakingCard = ({
         }
       </div>
 
-      {/* Korean meaning (shown in rounds 3-4) */}
+      {/* Korean meaning (shown in rounds 2-4) */}
       {showKorean && koreanMeaning && (
         <motion.div
           initial={{ opacity: 0 }}

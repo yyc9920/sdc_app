@@ -107,10 +107,26 @@ export const ComparisonView = ({
             내 발음
           </button>
         ) : recognizedText ? (
-          <div className="flex items-center gap-2 px-5 py-3 rounded-xl font-bold bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-400 border border-purple-200 dark:border-purple-800">
-            <Mic className="w-5 h-5 shrink-0" />
-            <span className="text-sm font-medium">{recognizedText}</span>
-          </div>
+          <button
+            onClick={() => {
+              setPlayingMine(true);
+              const utterance = new SpeechSynthesisUtterance(recognizedText);
+              utterance.lang = 'en-US';
+              utterance.rate = 0.9;
+              utterance.onend = () => setPlayingMine(false);
+              utterance.onerror = () => setPlayingMine(false);
+              speechSynthesis.cancel();
+              speechSynthesis.speak(utterance);
+            }}
+            className={`flex items-center gap-2 px-5 py-3 rounded-xl font-bold transition-all ${
+              playingMine
+                ? 'bg-purple-600 text-white shadow-md'
+                : 'bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-400 border border-purple-200 dark:border-purple-800 hover:bg-purple-200 dark:hover:bg-purple-900/50'
+            }`}
+          >
+            <Mic className="w-5 h-5" />
+            내 발음
+          </button>
         ) : null}
       </div>
 

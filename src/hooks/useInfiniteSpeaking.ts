@@ -20,6 +20,7 @@ export type ISSubPhase =
   | 'ROUND_INTRO'
   | 'R1_PLAYING'   // R1: sequential full-listen playback
   | 'LISTENING'    // R2: model audio plays before speaking
+  | 'BLANKING'     // R2: transition from full text to blanks (1.5s)
   | 'SPEAKING'     // user records their response
   | 'COMPARISON'   // scored result shown
   | 'ROUND_COMPLETE';
@@ -413,7 +414,7 @@ export function useInfiniteSpeaking(setId: string) {
     };
   }, [state.subPhase, playRowAudio]);
 
-  // ── R2: LISTENING — play all rows in current unit, then auto-transition to SPEAKING
+  // ── R2: LISTENING — play all rows in current unit, then transition to BLANKING
   useEffect(() => {
     if (state.subPhase !== 'LISTENING' || session.round !== 2 || !currentUnit) return;
 
@@ -427,7 +428,7 @@ export function useInfiniteSpeaking(setId: string) {
           await playRowAudio(row, listeningAudioRef);
         }
         if (!cancelled) {
-          dispatch({ type: 'SET_SUB_PHASE', subPhase: 'SPEAKING' });
+          dispatch({ type: 'SET_SUB_PHASE', subPhase: 'BLANKING' });
         }
       } catch {
         if (!cancelled) setTtsError(true);
@@ -444,6 +445,17 @@ export function useInfiniteSpeaking(setId: string) {
       }
     };
   }, [state.subPhase, session.round, currentUnit, playRowAudio]);
+
+  // ── R2: BLANKING — hold for 1.5s with blanking animation, then transition to SPEAKING
+  useEffect(() => {
+    if (state.subPhase !== 'BLANKING') return;
+
+    const timer = window.setTimeout(() => {
+      dispatch({ type: 'SET_SUB_PHASE', subPhase: 'SPEAKING' });
+    }, TIMEOUTS.BLANKING_DELAY_MS);
+
+    return () => clearTimeout(timer);
+  }, [state.subPhase]);
 
   // ── SPEAKING: start recording (with mobile gate) ─────────────────────────────
   useEffect(() => {
