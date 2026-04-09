@@ -315,9 +315,21 @@ export function useInfiniteSpeaking(setId: string) {
           if (audioRef.current) audioRef.current.pause();
           const audio = new Audio(url);
           audioRef.current = audio;
-          audio.onended = () => resolve();
-          audio.onerror = () => reject(new Error('TTS audio error'));
-          audio.play().catch(reject);
+
+          // Timeout: if audio doesn't finish in 30s, resolve anyway
+          const timeout = window.setTimeout(() => {
+            audio.pause();
+            resolve();
+          }, 30000);
+
+          audio.onended = () => { clearTimeout(timeout); resolve(); };
+          audio.onerror = () => { clearTimeout(timeout); reject(new Error('TTS audio error')); };
+
+          // Wait for audio to be ready before playing
+          audio.oncanplaythrough = () => {
+            audio.play().catch(reject);
+          };
+          audio.load();
         });
       });
     },
@@ -388,12 +400,21 @@ export function useInfiniteSpeaking(setId: string) {
 
         setR1PlayingIndex(i);
 
-        try {
-          await playRowAudio(rows[i], r1AudioRef);
-        } catch {
-          // TTS failed for this row — skip silently, continue sequence
+        // Try up to 2 times per row to ensure TTS plays
+        let played = false;
+        for (let attempt = 0; attempt < 2 && !played; attempt++) {
           if (r1AbortRef.current) return;
-          await new Promise(r => setTimeout(r, 300)); // brief pause before next
+          try {
+            await playRowAudio(rows[i], r1AudioRef);
+            played = true;
+          } catch {
+            if (r1AbortRef.current) return;
+            if (attempt === 0) await new Promise(r => setTimeout(r, 500)); // retry after 500ms
+          }
+        }
+        if (!played) {
+          // Both attempts failed — pause briefly and continue
+          await new Promise(r => setTimeout(r, 300));
         }
 
         if (r1AbortRef.current) return;

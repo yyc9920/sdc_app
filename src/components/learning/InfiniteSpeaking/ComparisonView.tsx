@@ -109,14 +109,19 @@ export const ComparisonView = ({
         ) : recognizedText ? (
           <button
             onClick={() => {
+              if (playingMine) return;
               setPlayingMine(true);
-              const utterance = new SpeechSynthesisUtterance(recognizedText);
-              utterance.lang = 'en-US';
-              utterance.rate = 0.9;
-              utterance.onend = () => setPlayingMine(false);
-              utterance.onerror = () => setPlayingMine(false);
+              // Cancel any previous utterance first, then create and speak new one
               speechSynthesis.cancel();
-              speechSynthesis.speak(utterance);
+              // Small delay to ensure cancel completes before new utterance
+              setTimeout(() => {
+                const utterance = new SpeechSynthesisUtterance(recognizedText);
+                utterance.lang = 'en-US';
+                utterance.rate = 0.9;
+                utterance.onend = () => setPlayingMine(false);
+                utterance.onerror = () => setPlayingMine(false);
+                speechSynthesis.speak(utterance);
+              }, 50);
             }}
             className={`flex items-center gap-2 px-5 py-3 rounded-xl font-bold transition-all ${
               playingMine

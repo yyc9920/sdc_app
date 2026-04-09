@@ -21,7 +21,7 @@ describe('buildSpeakingUnits', () => {
     expect(buildSpeakingUnits([])).toEqual([]);
   });
 
-  it('keeps long sentences as single units', () => {
+  it('creates one unit per row', () => {
     const rows = [
       makeRow(0, 'This is a longer sentence here'),
       makeRow(1, 'Another sentence with many words'),
@@ -29,46 +29,45 @@ describe('buildSpeakingUnits', () => {
     const units = buildSpeakingUnits(rows);
     expect(units).toHaveLength(2);
     expect(units[0].rows).toHaveLength(1);
+    expect(units[0].combinedEnglish).toBe('This is a longer sentence here');
     expect(units[1].rows).toHaveLength(1);
+    expect(units[1].combinedEnglish).toBe('Another sentence with many words');
   });
 
-  it('merges short sentence with next', () => {
+  it('short sentences are NOT merged — each is its own unit', () => {
     const rows = [
       makeRow(0, 'Hi there', '안녕'),
       makeRow(1, 'How are you doing today', '오늘 어때요'),
     ];
     const units = buildSpeakingUnits(rows);
-    expect(units).toHaveLength(1);
-    expect(units[0].rows).toHaveLength(2);
-    expect(units[0].combinedEnglish).toBe('Hi there How are you doing today');
-    expect(units[0].combinedKorean).toBe('안녕 오늘 어때요');
-    expect(units[0].startIndex).toBe(0);
-    expect(units[0].endIndex).toBe(1);
-  });
-
-  it('does not merge last short sentence if no next row', () => {
-    const rows = [
-      makeRow(0, 'Long enough sentence here yes'),
-      makeRow(1, 'OK'),
-    ];
-    const units = buildSpeakingUnits(rows);
     expect(units).toHaveLength(2);
-    expect(units[1].rows).toHaveLength(1);
-    expect(units[1].combinedEnglish).toBe('OK');
+    expect(units[0].combinedEnglish).toBe('Hi there');
+    expect(units[1].combinedEnglish).toBe('How are you doing today');
   });
 
-  it('handles consecutive short sentences by merging pairs', () => {
+  it('preserves startIndex and endIndex per row', () => {
     const rows = [
       makeRow(0, 'Yes'),
       makeRow(1, 'Sure thing'),
       makeRow(2, 'OK'),
-      makeRow(3, 'That works perfectly fine'),
     ];
     const units = buildSpeakingUnits(rows);
-    // "Yes" + "Sure thing" = unit 1
-    // "OK" + "That works perfectly fine" = unit 2
-    expect(units).toHaveLength(2);
-    expect(units[0].combinedEnglish).toBe('Yes Sure thing');
-    expect(units[1].combinedEnglish).toBe('OK That works perfectly fine');
+    expect(units).toHaveLength(3);
+    expect(units[0].startIndex).toBe(0);
+    expect(units[0].endIndex).toBe(0);
+    expect(units[1].startIndex).toBe(1);
+    expect(units[1].endIndex).toBe(1);
+    expect(units[2].startIndex).toBe(2);
+    expect(units[2].endIndex).toBe(2);
+  });
+
+  it('preserves Korean comprehension', () => {
+    const rows = [
+      makeRow(0, 'Hello', '안녕하세요'),
+      makeRow(1, 'Bye', '안녕히 가세요'),
+    ];
+    const units = buildSpeakingUnits(rows);
+    expect(units[0].combinedKorean).toBe('안녕하세요');
+    expect(units[1].combinedKorean).toBe('안녕히 가세요');
   });
 });

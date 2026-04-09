@@ -134,11 +134,14 @@ export const useStreamingSpeechRecognition = (options: UseStreamingSpeechRecogni
     await startRecording();
   }, [startRecording]);
 
-  const playRecording = useCallback(() => {
-    if (audioUrl) {
+  const playRecording = useCallback((): Promise<void> => {
+    if (!audioUrl) return Promise.resolve();
+    return new Promise<void>((resolve) => {
       const audio = new Audio(audioUrl);
-      audio.play().catch(console.error);
-    }
+      audio.onended = () => resolve();
+      audio.onerror = () => resolve();
+      audio.play().catch(() => resolve());
+    });
   }, [audioUrl]);
 
   const reset = useCallback(() => {
