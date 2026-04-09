@@ -1,12 +1,13 @@
 import { useMemo } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { ChevronLeft, Moon, Sun, Mic, ArrowRight, FastForward } from 'lucide-react';
+import { ChevronLeft, Moon, Sun, ArrowRight, FastForward } from 'lucide-react';
 import { useRolePlay } from '../../../hooks/useRolePlay';
 import { LoadingSpinner } from '../../LoadingSpinner';
 import { RoleSetup } from './RoleSetup';
 import { DemoView } from './DemoView';
 import { ChatView } from './ChatView';
 import { ReviewView } from './ReviewView';
+import { IntroView } from './IntroView';
 import { PHASE_LABELS } from '../../../constants/rolePlay';
 
 interface RolePlayPageProps {
@@ -49,6 +50,7 @@ export function RolePlayPage({
     overallAccuracy,
     selectRole,
     startDemo,
+    completeIntro,
     skipDemo,
     pauseDemo,
     resumeDemo,
@@ -112,7 +114,7 @@ export function RolePlayPage({
       </header>
 
       {/* Progress bar (not shown in SETUP) */}
-      {rolePlayPhase !== 'SETUP' && dialogueRows.length > 0 && (
+      {rolePlayPhase !== 'SETUP' && rolePlayPhase !== 'INTRO' && dialogueRows.length > 0 && (
         <div className="shrink-0 max-w-4xl mx-auto px-4 pt-3 w-full">
           <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400 mb-2">
             <span className="font-semibold text-blue-600 dark:text-blue-400">
@@ -174,6 +176,13 @@ export function RolePlayPage({
                 turnCounts={turnCounts}
                 onSelectRole={selectRole}
                 onStartDemo={startDemo}
+              />
+            )}
+
+            {rolePlayPhase === 'INTRO' && (
+              <IntroView
+                key="intro"
+                onComplete={completeIntro}
               />
             )}
 
@@ -263,15 +272,7 @@ export function RolePlayPage({
         )}
       </AnimatePresence>
 
-      {/* Floating mic indicator during user recording */}
-      {isRecording && (
-        <div className="fixed bottom-[calc(5rem+env(safe-area-inset-bottom))] left-1/2 -translate-x-1/2 z-40">
-          <div className="flex items-center gap-2 px-4 py-2 bg-red-500/90 text-white rounded-full text-sm font-bold shadow-lg animate-pulse">
-            <Mic className="w-4 h-4" />
-            녹음 중...
-          </div>
-        </div>
-      )}
+
     </div>
   );
 }
