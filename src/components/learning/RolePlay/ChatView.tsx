@@ -112,6 +112,7 @@ export function ChatView({
                 avatarColor={color}
                 speakerLabel={row.speaker}
                 phase={rolePlayPhase}
+                isRecording={isActive && isUser ? isRecording : false}
               />
             </div>
           );
