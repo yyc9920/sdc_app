@@ -259,11 +259,15 @@ export function useRolePlay(setId: string) {
       const playDone = new Promise<void>(res => { resolvePlay = res; });
       playInterruptRef.current = resolvePlay;
 
+      // Dynamic timeout: base + 500ms per word for long sentences
+      const wordCount = row.english.split(/\s+/).filter(Boolean).length;
+      const dynamicTimeout = Math.max(PARTNER_TTS_TIMEOUT_MS, wordCount * 500 + 3000);
+
       const timeout = new Promise<void>(res =>
         window.setTimeout(() => {
           setTtsError(true);
           res();
-        }, PARTNER_TTS_TIMEOUT_MS),
+        }, dynamicTimeout),
       );
 
       try {
@@ -395,18 +399,23 @@ export function useRolePlay(setId: string) {
 
       return () => { cancelled = true; };
     } else {
-      // Dynamic timeout = max(10s, wordCount * 600ms) — devil fix #4
+      // Dynamic timeout = max(USER_TURN_TIMEOUT_MS, wordCount * MS_PER_WORD)
       transcriptRef.current = '';
-      audioApi.startRecording();
+
+      // 200ms gap lets Web Speech API fully reset between turns
+      const startDelay = window.setTimeout(() => {
+        audioApi.startRecording();
+      }, 200);
 
       const wordCount = (row.english ?? '').split(/\s+/).filter(Boolean).length;
       const timeoutMs = Math.max(USER_TURN_TIMEOUT_MS, wordCount * MS_PER_WORD);
 
       turnTimeoutRef.current = window.setTimeout(() => {
         stopUserTurn();
-      }, timeoutMs);
+      }, timeoutMs + 200);
 
       return () => {
+        clearTimeout(startDelay);
         if (turnTimeoutRef.current) {
           clearTimeout(turnTimeoutRef.current);
           turnTimeoutRef.current = null;
