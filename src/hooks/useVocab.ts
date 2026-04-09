@@ -25,6 +25,8 @@ export function filterVocabRows(rows: TrainingRow[]): TrainingRow[] {
     if (r.rowType !== 'vocab' && r.rowType !== 'expression') return false;
     // Skip rows where 'english' field contains Korean (Korean-Korean pair data error)
     if (HANGUL_REGEX.test(r.english)) return false;
+    // Skip rows without a Korean meaning (comprehension)
+    if (!r.comprehension?.trim()) return false;
     return true;
   });
 }

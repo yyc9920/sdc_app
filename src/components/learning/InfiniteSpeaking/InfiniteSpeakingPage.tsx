@@ -31,7 +31,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
     ttsError, needsMicGesture,
     speech,
     startRound, finishSpeaking, retrySpeaking, nextRow, nextRound,
-    toggleHandsFree, toggleR1Pause,
+    toggleHandsFree, toggleR1Pause, skipR1,
     handleTtsRetry, handleTtsSkip,
     handleMobileMicStart, handleManualStopSpeaking,
     handlePlayModelForComparison,
@@ -166,6 +166,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
               playingIndex={r1PlayingIndex}
               isPaused={r1IsPaused}
               onTogglePause={toggleR1Pause}
+              onSkip={skipR1}
             />
           )}
 

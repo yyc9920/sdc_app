@@ -736,6 +736,12 @@ export function useInfiniteSpeaking(setId: string) {
     }
   }, []);
 
+  const skipR1 = useCallback(() => {
+    r1AbortRef.current = true;
+    if (r1AudioRef.current) { r1AudioRef.current.pause(); r1AudioRef.current = null; }
+    dispatch({ type: 'SET_SUB_PHASE', subPhase: 'ROUND_COMPLETE' });
+  }, []);
+
   const reset = useCallback(() => {
     r1AbortRef.current = true;
     if (r1AudioRef.current) { r1AudioRef.current.pause(); r1AudioRef.current = null; }
@@ -787,6 +793,7 @@ export function useInfiniteSpeaking(setId: string) {
     nextRound,
     toggleHandsFree,
     toggleR1Pause,
+    skipR1,
     addHint,
     dismissHint,
     handleTtsRetry,
