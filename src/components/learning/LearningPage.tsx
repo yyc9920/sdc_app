@@ -154,6 +154,7 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
         setId={selectedSpeedListeningSet.setId}
         level={selectedSpeedListeningSet.level as LearningLevel}
         title={`${selectedDataSet.name} | Lv.${selectedSpeedListeningSet.level} ${formatSetTitle(selectedSpeedListeningSet.setId)}`}
+        sentences={selectedSpeedListeningSet.sentences}
         onNext={nextSet ? () => setSelectedSpeedListeningSet(nextSet) : undefined}
       />
     );

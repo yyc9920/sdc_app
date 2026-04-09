@@ -9,6 +9,7 @@ interface SpeedListeningPageProps {
   setId: string;
   level: LearningLevel;
   title?: string;
+  sentences?: Array<{ id: number; english: string; korean: string }>;
   onNext?: () => void;
 }
 
@@ -16,6 +17,7 @@ export const SpeedListeningPage: React.FC<SpeedListeningPageProps> = ({
   setId,
   level,
   title,
+  sentences,
   onNext,
 }) => {
   const {
@@ -40,7 +42,7 @@ export const SpeedListeningPage: React.FC<SpeedListeningPageProps> = ({
     isSubmitted,
     score,
     submit,
-  } = useSpeedListening({ setId, level });
+  } = useSpeedListening({ setId, level, sentences });
 
   const phaseLabels: Record<typeof phase, string> = {
     listening: '듣기',
