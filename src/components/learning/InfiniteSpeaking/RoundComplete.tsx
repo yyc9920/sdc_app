@@ -33,7 +33,9 @@ export const RoundComplete = ({ round, totalSentences, onNextRound, handsFree, i
           {info.title} 완료!
         </h2>
         <p className="text-gray-500 dark:text-gray-400">
-          {totalSentences}개 문장을 모두 말했습니다.
+          {round === 1
+            ? `${totalSentences}개 문장을 모두 들었습니다.`
+            : `${totalSentences}개 문장을 모두 말했습니다.`}
         </p>
       </div>
 
