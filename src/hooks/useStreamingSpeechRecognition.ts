@@ -71,7 +71,6 @@ export const useStreamingSpeechRecognition = (options: UseStreamingSpeechRecogni
     if (isRecording) return;
 
     setTranscript('');
-    setAudioUrl(null);
     setMicError('');
     fullTranscriptRef.current = '';
     audioChunksRef.current = [];
@@ -110,6 +109,7 @@ export const useStreamingSpeechRecognition = (options: UseStreamingSpeechRecogni
             streamRef.current = null;
           };
 
+          setAudioUrl(null);
           mediaRecorder.start();
         } catch (e) {
           console.warn('Audio recording not available:', e);

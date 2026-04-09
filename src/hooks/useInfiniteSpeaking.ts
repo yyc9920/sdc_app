@@ -444,7 +444,9 @@ export function useInfiniteSpeaking(setId: string) {
         const result = evaluateSpeechLogic(speechRef.current?.transcript ?? '', currentRowRef.current.english, true);
         dispatch({ type: 'UPDATE_SPEECH', transcript: result.wordStatuses.join(' '), wordStatuses: result.wordStatuses, score: result.score });
       }
-      dispatch({ type: 'SET_SUB_PHASE', subPhase: 'COMPARISON' });
+      setTimeout(() => {
+        dispatch({ type: 'SET_SUB_PHASE', subPhase: 'COMPARISON' });
+      }, 150);
     }, TIMEOUTS.SPEAKING_TIMEOUT_MS);
 
     return () => {
@@ -572,7 +574,10 @@ export function useInfiniteSpeaking(setId: string) {
       const result = evaluateSpeechLogic(speechRef.current?.transcript ?? '', currentRowRef.current.english, true);
       dispatch({ type: 'UPDATE_SPEECH', transcript: speechRef.current?.transcript ?? '', wordStatuses: result.wordStatuses, score: result.score });
     }
-    dispatch({ type: 'SET_SUB_PHASE', subPhase: 'COMPARISON' });
+    // Delay transition to let MediaRecorder.onstop fire and set audioUrl
+    setTimeout(() => {
+      dispatch({ type: 'SET_SUB_PHASE', subPhase: 'COMPARISON' });
+    }, 150);
   }, [speech]);
 
   const retrySpeaking = useCallback(() => {
@@ -624,7 +629,10 @@ export function useInfiniteSpeaking(setId: string) {
         const result = evaluateSpeechLogic(speechRef.current?.transcript ?? '', currentRowRef.current.english, true);
         dispatch({ type: 'UPDATE_SPEECH', transcript: speechRef.current?.transcript ?? '', wordStatuses: result.wordStatuses, score: result.score });
       }
-      dispatch({ type: 'SET_SUB_PHASE', subPhase: 'COMPARISON' });
+      // Delay transition to let MediaRecorder.onstop fire and set audioUrl
+      setTimeout(() => {
+        dispatch({ type: 'SET_SUB_PHASE', subPhase: 'COMPARISON' });
+      }, 150);
     }, TIMEOUTS.SPEAKING_TIMEOUT_MS);
   }, [speech]);
 
@@ -635,7 +643,10 @@ export function useInfiniteSpeaking(setId: string) {
       const result = evaluateSpeechLogic(speech.transcript, currentRowRef.current.english, true);
       dispatch({ type: 'UPDATE_SPEECH', transcript: speech.transcript, wordStatuses: result.wordStatuses, score: result.score });
     }
-    dispatch({ type: 'SET_SUB_PHASE', subPhase: 'COMPARISON' });
+    // Delay transition to let MediaRecorder.onstop fire and set audioUrl
+    setTimeout(() => {
+      dispatch({ type: 'SET_SUB_PHASE', subPhase: 'COMPARISON' });
+    }, 150);
   }, [speech]);
 
   const handlePlayModelForComparison = useCallback(async () => {
