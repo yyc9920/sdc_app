@@ -108,6 +108,7 @@ export function ChatView({
                 liveTranscript={isActive && isUser ? liveTranscript : undefined}
                 avatarColor={color}
                 speakerLabel={row.speaker}
+                phase={rolePlayPhase}
               />
             </div>
           );

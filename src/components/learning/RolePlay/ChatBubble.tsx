@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Mic, Volume2 } from 'lucide-react';
 import type { TrainingRow } from '../../../hooks/training';
-import type { TurnResult } from '../../../constants/rolePlay';
+import type { TurnResult, RolePlayPhase } from '../../../constants/rolePlay';
 
 interface ChatBubbleProps {
   row: TrainingRow;
@@ -13,6 +13,7 @@ interface ChatBubbleProps {
   liveTranscript?: string;
   avatarColor: { bg: string; text: string; ring: string };
   speakerLabel: string;
+  phase?: RolePlayPhase;
 }
 
 function ScoreBadge({ score }: { score: number | null }) {
@@ -44,6 +45,7 @@ export function ChatBubble({
   liveTranscript,
   avatarColor,
   speakerLabel,
+  phase,
 }: ChatBubbleProps) {
   const isCompleted = result !== undefined;
 
@@ -84,7 +86,12 @@ export function ChatBubble({
         >
           {/* Content */}
           {showScript ? (
-            <p>{row.english}</p>
+            <div>
+              <p>{row.english}</p>
+              {phase === 'FREE' && row.comprehension && (
+                <p className="text-xs mt-1 opacity-70">{row.comprehension}</p>
+              )}
+            </div>
           ) : (
             <p className="text-gray-400 dark:text-gray-500 italic select-none">•••</p>
           )}
