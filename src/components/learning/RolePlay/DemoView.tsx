@@ -56,19 +56,20 @@ export function DemoView({
         <div className="flex items-center gap-2">
           <button
             onClick={isDemoPaused ? onResume : onPause}
-            className="flex items-center gap-1.5 px-3 py-2 text-sm text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl transition-colors"
+            title={isDemoPaused ? '재생' : '일시정지'}
+            className="p-2 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl transition-colors"
           >
             {isDemoPaused
-              ? <><Play className="w-4 h-4" />재생</>
-              : <><Pause className="w-4 h-4" />일시정지</>
+              ? <Play className="w-5 h-5" />
+              : <Pause className="w-5 h-5" />
             }
           </button>
           <button
             onClick={onSkip}
-            className="flex items-center gap-1.5 px-3 py-2 text-sm text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl transition-colors"
+            title="건너뛰기"
+            className="p-2 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl transition-colors"
           >
-            <SkipForward className="w-4 h-4" />
-            건너뛰기
+            <SkipForward className="w-5 h-5" />
           </button>
         </div>
       </div>
