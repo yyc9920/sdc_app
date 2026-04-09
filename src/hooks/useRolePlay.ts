@@ -79,6 +79,7 @@ export interface RolePlayState {
 type RolePlayAction =
   | { type: 'SET_ROLE'; role: string }
   | { type: 'START_DEMO' }
+  | { type: 'INTRO_COMPLETE' }
   | { type: 'DEMO_COMPLETE'; rowCount: number }
   | { type: 'NEXT_TURN'; rowCount: number; currentPhase: RolePlayPhase }
   | { type: 'PROCEED_NEXT_PHASE' }
@@ -115,7 +116,15 @@ export function rolePlayReducer(state: RolePlayState, action: RolePlayAction): R
     case 'SET_ROLE':
       return { ...state, selectedRole: action.role };
 
-    case 'START_DEMO':
+    case 'START_DEMO': {
+      const skipIntro = localStorage.getItem('roleplay-skip-intro') === 'true';
+      if (skipIntro) {
+        return { ...state, rolePlayPhase: 'DEMO', isAutoPlaying: true };
+      }
+      return { ...state, rolePlayPhase: 'INTRO' };
+    }
+
+    case 'INTRO_COMPLETE':
       return { ...state, rolePlayPhase: 'DEMO', isAutoPlaying: true };
 
     case 'DEMO_COMPLETE':
@@ -303,9 +312,16 @@ export function useRolePlay(setId: string) {
 
   const startDemo = useCallback(async () => {
     if (!rpState.selectedRole) return;
+
+    // Request mic permission early (needed for native Capacitor)
+    await audioApi.requestMicPermission();
+
     demoActiveRef.current = true;
     demoPausedRef.current = false;
     dispatch({ type: 'START_DEMO' });
+
+    // If intro is shown, demo playback is handled by completeIntro
+    if (localStorage.getItem('roleplay-skip-intro') !== 'true') return;
 
     for (let i = 0; i < dialogueRows.length; i++) {
       if (!demoActiveRef.current) break;
@@ -325,7 +341,32 @@ export function useRolePlay(setId: string) {
       dispatch({ type: 'DEMO_COMPLETE', rowCount: dialogueRows.length });
     }
     demoActiveRef.current = false;
-  }, [rpState.selectedRole, dialogueRows, playPartnerTurn]);
+  }, [rpState.selectedRole, dialogueRows, playPartnerTurn, audioApi]);
+
+  const completeIntro = useCallback(async () => {
+    // Request mic permission before demo starts (needed for native)
+    await audioApi.requestMicPermission();
+
+    demoActiveRef.current = true;
+    demoPausedRef.current = false;
+    dispatch({ type: 'INTRO_COMPLETE' });
+
+    for (let i = 0; i < dialogueRows.length; i++) {
+      if (!demoActiveRef.current) break;
+      while (demoPausedRef.current && demoActiveRef.current) {
+        await new Promise<void>(res => window.setTimeout(res, 100));
+      }
+      if (!demoActiveRef.current) break;
+      setDemoPlayingIndex(i);
+      await playPartnerTurn(dialogueRows[i]);
+    }
+
+    setDemoPlayingIndex(-1);
+    if (demoActiveRef.current) {
+      dispatch({ type: 'DEMO_COMPLETE', rowCount: dialogueRows.length });
+    }
+    demoActiveRef.current = false;
+  }, [dialogueRows, playPartnerTurn, audioApi]);
 
   const pauseDemo = useCallback(() => {
     demoPausedRef.current = true;
@@ -529,6 +570,7 @@ export function useRolePlay(setId: string) {
     // Actions
     selectRole,
     startDemo,
+    completeIntro,
     skipDemo,
     pauseDemo,
     resumeDemo,

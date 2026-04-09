@@ -127,14 +127,30 @@ describe('rolePlayReducer', () => {
     expect(state.selectedRole).toBe('A');
   });
 
-  it('START_DEMO transitions to DEMO and sets isAutoPlaying', () => {
+  it('START_DEMO transitions to INTRO when skip-intro not set', () => {
+    localStorage.removeItem('roleplay-skip-intro');
     const state = rolePlayReducer(initialRolePlayState, { type: 'START_DEMO' });
+    expect(state.rolePlayPhase).toBe('INTRO');
+    expect(state.isAutoPlaying).toBe(false);
+  });
+
+  it('START_DEMO transitions to DEMO when skip-intro is set', () => {
+    localStorage.setItem('roleplay-skip-intro', 'true');
+    const state = rolePlayReducer(initialRolePlayState, { type: 'START_DEMO' });
+    expect(state.rolePlayPhase).toBe('DEMO');
+    expect(state.isAutoPlaying).toBe(true);
+    localStorage.removeItem('roleplay-skip-intro');
+  });
+
+  it('INTRO_COMPLETE transitions from INTRO to DEMO', () => {
+    const introState: RolePlayState = { ...initialRolePlayState, rolePlayPhase: 'INTRO' };
+    const state = rolePlayReducer(introState, { type: 'INTRO_COMPLETE' });
     expect(state.rolePlayPhase).toBe('DEMO');
     expect(state.isAutoPlaying).toBe(true);
   });
 
   it('DEMO_COMPLETE transitions to GUIDED, resets index and results', () => {
-    const demoing = rolePlayReducer(initialRolePlayState, { type: 'START_DEMO' });
+    const demoing: RolePlayState = { ...initialRolePlayState, rolePlayPhase: 'DEMO', isAutoPlaying: true };
     const state = rolePlayReducer(demoing, { type: 'DEMO_COMPLETE', rowCount: 4 });
     expect(state.rolePlayPhase).toBe('GUIDED');
     expect(state.isAutoPlaying).toBe(false);
