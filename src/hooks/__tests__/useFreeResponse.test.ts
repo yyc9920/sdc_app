@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { renderHook, act } from '@testing-library/react';
+import { renderHook, act, waitFor } from '@testing-library/react';
 import { analyzeResponse } from '../useFreeResponse';
 import type { TrainingRow } from '../training/types';
 
@@ -139,19 +139,20 @@ describe('useFreeResponse', () => {
     expect(result.current.shortRecordingWarning).toBe(true);
   });
 
-  it('second stopRecord() transitions to COMPARE even under 15s', () => {
+  it('second stopRecord() transitions to COMPARE even under 15s', async () => {
     const { result } = renderHook(() => useFreeResponse('L1_SPK_001'));
-    act(() => { result.current.startThink(); result.current.startRecord(); });
+    // Use async act so the startRecording() promise microtask flushes before tapping Stop
+    await act(async () => { result.current.startThink(); result.current.startRecord(); });
     twoTapStop(result);
-    expect(result.current.phase).toBe('COMPARE');
+    await waitFor(() => expect(result.current.phase).toBe('COMPARE'));
     expect(result.current.analysis).not.toBeNull();
   });
 
-  it('sets transcriptMissing when transcript is empty on confirm stop', () => {
+  it('sets transcriptMissing when transcript is empty on confirm stop', async () => {
     const { result } = renderHook(() => useFreeResponse('L1_SPK_001'));
-    act(() => { result.current.startThink(); result.current.startRecord(); });
+    await act(async () => { result.current.startThink(); result.current.startRecord(); });
     twoTapStop(result);
-    expect(result.current.transcriptMissing).toBe(true);
+    await waitFor(() => expect(result.current.transcriptMissing).toBe(true));
   });
 
   it('transitions to STUDY on startStudy() with studyIndex 0', () => {
