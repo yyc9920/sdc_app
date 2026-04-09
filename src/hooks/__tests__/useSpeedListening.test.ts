@@ -294,7 +294,7 @@ describe('useSpeedListening', () => {
     mockedUseTrainingSession.mockReturnValue({
       session: makeSessionState([]),
       rows: [],
-      currentRow: null as TrainingRow | null,
+      currentRow: null as unknown as TrainingRow,
       next: vi.fn(),
       prev: vi.fn(),
       goTo: vi.fn(),
