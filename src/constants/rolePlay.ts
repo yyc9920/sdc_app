@@ -1,6 +1,6 @@
 // RolePlay mode constants and types
 
-export type RolePlayPhase = 'SETUP' | 'DEMO' | 'GUIDED' | 'PRACTICE' | 'FREE' | 'REVIEW';
+export type RolePlayPhase = 'SETUP' | 'INTRO' | 'DEMO' | 'GUIDED' | 'PRACTICE' | 'FREE' | 'REVIEW';
 
 export interface TurnResult {
   rowIndex: number;
@@ -29,6 +29,7 @@ export const SPEAKER_COLORS: { bg: string; text: string; ring: string }[] = [
 
 export const PHASE_LABELS: Record<RolePlayPhase, string> = {
   SETUP:    '역할 선택',
+  INTRO:    '학습 안내',
   DEMO:     '데모',
   GUIDED:   '가이드 연습',
   PRACTICE: '연습',
