@@ -23,6 +23,23 @@ export type ISSubPhase =
   | 'COMPARISON'   // scored result shown
   | 'ROUND_COMPLETE';
 
+/**
+ * R4 SPEC DEVIATION NOTE
+ * The spec describes R4 as "전체 스크립트 연속 발화" (continuous utterance of the full script).
+ * We implement R4 as per-row recording (same cadence as R3, but with full text visible).
+ *
+ * Reason: iOS SFSpeechRecognizer resets after ~60s of audio and Chrome/Safari Web Speech API
+ * has a ~2-minute timeout. A 20-row set would exceed both limits in a single recording session,
+ * causing silent failures on the primary platform with no recoverable error.
+ *
+ * Pedagogical trade-off: R4 remains a distinct skill from R3 because text visibility
+ * removes the recall burden, letting students focus on fluency and pronunciation rather
+ * than memory. "Continuous" refers to the uninterrupted flow between rows (no model audio
+ * played between sentences), not a single long recording.
+ *
+ * Single-take continuous recording may be revisited as a Phase 4 enhancement.
+ */
+
 export interface Hint {
   id: number;
   message: string;
@@ -244,6 +261,9 @@ export function useInfiniteSpeaking(setId: string) {
   const subPhaseRef = useRef(state.subPhase);
   useEffect(() => { subPhaseRef.current = state.subPhase; }, [state.subPhase]);
 
+  const handsFreeRef = useRef(state.handsFree);
+  useEffect(() => { handsFreeRef.current = state.handsFree; }, [state.handsFree]);
+
   const currentRowRef = useRef(currentRow);
   useEffect(() => { currentRowRef.current = currentRow; }, [currentRow]);
 
@@ -405,7 +425,11 @@ export function useInfiniteSpeaking(setId: string) {
     const wordCount = currentRowRef.current.english.split(' ').length;
     dispatch({ type: 'START_SPEAKING', wordCount });
 
-    if (isMobileBrowserRef.current) {
+    // On mobile: require a user gesture to start the microphone.
+    // Exception: when hands-free is active the user has already opted into auto-advance,
+    // so we start recording immediately to avoid a stuck state (hands-free auto-advances
+    // from COMPARISON → SPEAKING but would wait forever for a mic-gesture tap).
+    if (isMobileBrowserRef.current && !handsFreeRef.current) {
       setNeedsMicGesture(true);
       return;
     }
