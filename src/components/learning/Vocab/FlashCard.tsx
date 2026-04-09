@@ -60,9 +60,9 @@ export const FlashCard = ({
                 뜻
               </span>
               <p className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
-                {row.comprehension}
+                {row.comprehension || row.directComprehension || '(뜻 없음)'}
               </p>
-              {row.directComprehension && (
+              {row.directComprehension && row.comprehension && (
                 <p className="text-sm text-gray-500 dark:text-gray-400 border-t border-gray-100 dark:border-gray-700 pt-3 w-full text-center">
                   {row.directComprehension}
                 </p>

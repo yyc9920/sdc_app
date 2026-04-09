@@ -18,8 +18,15 @@ export interface VocabItemResult {
 
 // --- Pure helper functions (exported for testing) ---
 
+const HANGUL_REGEX = /[\uAC00-\uD7AF\u1100-\u11FF\u3130-\u318F]/;
+
 export function filterVocabRows(rows: TrainingRow[]): TrainingRow[] {
-  return rows.filter(r => r.rowType === 'vocab' || r.rowType === 'expression');
+  return rows.filter(r => {
+    if (r.rowType !== 'vocab' && r.rowType !== 'expression') return false;
+    // Skip rows where 'english' field contains Korean (Korean-Korean pair data error)
+    if (HANGUL_REGEX.test(r.english)) return false;
+    return true;
+  });
 }
 
 export function findContextRows(allRows: TrainingRow[], expression: string): TrainingRow[] {
