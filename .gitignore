@@ -79,3 +79,10 @@ skills-lock.json
 
 # Superpowers docs (auto-generated specs/plans)
 docs/superpowers/
+
+# Build outputs
+functions/lib/
+
+# Generated outputs
+graphify-out/
+test-results/
