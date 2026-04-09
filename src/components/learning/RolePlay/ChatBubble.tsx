@@ -15,6 +15,7 @@ interface ChatBubbleProps {
   speakerLabel: string;
   phase?: RolePlayPhase;
   liveWordStatuses?: string[];
+  isRecording?: boolean;
 }
 
 function ScoreBadge({ score }: { score: number | null }) {
@@ -48,6 +49,7 @@ export function ChatBubble({
   speakerLabel,
   phase,
   liveWordStatuses,
+  isRecording,
 }: ChatBubbleProps) {
   const isCompleted = result !== undefined;
 
@@ -89,13 +91,23 @@ export function ChatBubble({
           {/* Content */}
           {showScript ? (
             <div>
-              <p>{row.english}</p>
+              <p>
+                {isActive && isUser && isRecording && (
+                  <Mic className="w-3.5 h-3.5 text-red-400 animate-pulse inline-block mr-1.5 align-text-bottom" />
+                )}
+                {row.english}
+              </p>
               {phase === 'FREE' && row.comprehension && (
                 <p className="text-xs mt-1 opacity-70">{row.comprehension}</p>
               )}
             </div>
           ) : (
-            <p className="text-gray-400 dark:text-gray-500 italic select-none">•••</p>
+            <p className="text-gray-400 dark:text-gray-500 italic select-none">
+              {isActive && isUser && isRecording && (
+                <Mic className="w-3.5 h-3.5 text-red-400 animate-pulse inline-block mr-1.5 align-text-bottom" />
+              )}
+              •••
+            </p>
           )}
 
           {/* TTS playing indicator (partner) */}
@@ -106,13 +118,6 @@ export function ChatBubble({
             </span>
           )}
 
-          {/* Recording indicator (user) */}
-          {isActive && isUser && !isCompleted && (
-            <span className="absolute -bottom-5 right-0 flex items-center gap-1 text-xs text-blue-500">
-              <Mic className="w-3 h-3 animate-pulse" />
-              녹음 중
-            </span>
-          )}
         </div>
 
         {/* Live word-by-word feedback (user active turn) */}
