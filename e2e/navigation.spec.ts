@@ -58,7 +58,7 @@ test.describe('Learning Page - Mode Selection', () => {
 });
 
 test.describe('Speed Listening Page Structure', () => {
-  test('SpeedListeningPage component file exists and exports correctly', async ({}) => {
+  test('SpeedListeningPage component file exists and exports correctly', async () => {
     // This is a build-time structural test
     // Verified via tsc --noEmit passing. This test documents the contract.
     const fs = await import('fs');
@@ -73,7 +73,7 @@ test.describe('Speed Listening Page Structure', () => {
     expect(fs.existsSync(legacyPath)).toBeFalsy();
   });
 
-  test('legacy RepetitionLearningPage is removed', async ({}) => {
+  test('legacy RepetitionLearningPage is removed', async () => {
     const fs = await import('fs');
     const path = await import('path');
     const legacyPath = path.resolve('src/components/home/RepetitionLearningPage.tsx');
@@ -82,7 +82,7 @@ test.describe('Speed Listening Page Structure', () => {
 });
 
 test.describe('LearningPage imports verification', () => {
-  test('LearningPage imports SpeedListeningPage not SpeedListeningQuiz', async ({}) => {
+  test('LearningPage imports SpeedListeningPage not SpeedListeningQuiz', async () => {
     const fs = await import('fs');
     const path = await import('path');
     const content = fs.readFileSync(
@@ -93,7 +93,7 @@ test.describe('LearningPage imports verification', () => {
     expect(content).not.toContain("SpeedListeningQuiz");
   });
 
-  test('App.tsx does not import RepetitionLearningPage', async ({}) => {
+  test('App.tsx does not import RepetitionLearningPage', async () => {
     const fs = await import('fs');
     const path = await import('path');
     const content = fs.readFileSync(path.resolve('src/App.tsx'), 'utf-8');
@@ -102,7 +102,7 @@ test.describe('LearningPage imports verification', () => {
     expect(content).toContain("useState<TabId>('learning')");
   });
 
-  test('BottomNavigation does not include home tab', async ({}) => {
+  test('BottomNavigation does not include home tab', async () => {
     const fs = await import('fs');
     const path = await import('path');
     const content = fs.readFileSync(
@@ -115,7 +115,7 @@ test.describe('LearningPage imports verification', () => {
 });
 
 test.describe('Streak Cloud Function', () => {
-  test('updateStreaks uses batch writes', async ({}) => {
+  test('updateStreaks uses batch writes', async () => {
     const fs = await import('fs');
     const path = await import('path');
     const content = fs.readFileSync(
