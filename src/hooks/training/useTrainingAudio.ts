@@ -17,11 +17,15 @@ export function useTrainingAudio(config: UseTrainingAudioConfig) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isRecording, setIsRecording] = useState(false);
   const [transcript, setTranscript] = useState('');
+  // Single reusable Audio element — mobile browsers silently fail when
+  // too many new Audio() elements are created in rapid sequence.
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const speechServiceRef = useRef(createSpeechService());
-  // Promise that resolves when the current audio finishes (ended/error/pause).
-  // Created inside play() BEFORE audio.play() — guarantees no gap.
+  // Promise that resolves when the current audio finishes.
+  // Created inside play() BEFORE audio.play() — guarantees no event gap.
   const audioEndedRef = useRef<Promise<void>>(Promise.resolve());
+  // Manual resolve for stop() to break the waitForEnd() promise
+  const audioEndedResolveRef = useRef<(() => void) | null>(null);
 
   const speakerVoiceMap = useMemo(
     () => assignSpeakerVoices(speakers),
@@ -44,30 +48,33 @@ export function useTrainingAudio(config: UseTrainingAudioConfig) {
       const selectedVoice = getVoiceForRow(row, voice);
       const url = await getTTSAudioUrl(row.english, selectedVoice);
 
-      if (audioRef.current) {
-        audioRef.current.pause();
+      // Reuse a single Audio element for mobile compatibility
+      let audio = audioRef.current;
+      if (!audio) {
+        audio = new Audio();
+        audioRef.current = audio;
       }
+      audio.pause();
 
-      const audio = new Audio(url);
+      audio.src = url;
       audio.playbackRate = speed;
-      audioRef.current = audio;
 
-      // Create ended promise BEFORE play() — no gap possible between start and listener
+      // Create ended promise BEFORE play() — no gap between listener and playback start
       audioEndedRef.current = new Promise<void>(resolve => {
+        audioEndedResolveRef.current = resolve;
         const onDone = () => {
           audio.removeEventListener('ended', onDone);
           audio.removeEventListener('error', onDone);
-          audio.removeEventListener('pause', onDone);
+          audioEndedResolveRef.current = null;
           setIsPlaying(false);
           resolve();
         };
-        audio.addEventListener('ended', onDone);
-        audio.addEventListener('error', onDone);
-        audio.addEventListener('pause', onDone);
+        audio.addEventListener('ended', onDone, { once: true });
+        audio.addEventListener('error', onDone, { once: true });
       });
 
       setIsPlaying(true);
-      await audio.play?.();
+      await audio.play();
     },
     [getVoiceForRow, speed],
   );
@@ -83,15 +90,20 @@ export function useTrainingAudio(config: UseTrainingAudioConfig) {
   );
 
   // Returns a promise that resolves when the current audio finishes.
-  // The promise is created inside play() before audio.play(), so no events can be missed.
   const waitForEnd = useCallback((): Promise<void> => {
     return audioEndedRef.current;
   }, []);
 
   const stop = useCallback(() => {
     if (audioRef.current) {
-      audioRef.current.pause(); // triggers 'pause' listener → resolves audioEndedRef
-      audioRef.current = null;
+      audioRef.current.pause();
+      audioRef.current.removeAttribute('src');
+      audioRef.current.load();
+    }
+    // Resolve any pending waitForEnd() promise
+    if (audioEndedResolveRef.current) {
+      audioEndedResolveRef.current();
+      audioEndedResolveRef.current = null;
     }
     setIsPlaying(false);
   }, []);
