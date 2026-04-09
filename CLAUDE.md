@@ -23,7 +23,11 @@ npm run open:android     # Open Android Studio
 ```
 
 ## Workflow
-- Pre-commit: 성공적인 배포를 위해 커밋 전 반드시 `npx eslint .`와 `npx tsc --noEmit`을 실행하여 린트 및 타입 체크를 완료해야 합니다.
+- Pre-commit: 커밋 전 반드시 아래 4개 검증을 **모두** 통과해야 합니다. 하나라도 실패하면 커밋/푸시 금지.
+  1. `npx eslint .` — 린트
+  2. `npx tsc --noEmit` — 타입 체크
+  3. `npm run build` — 프로덕션 빌드 (tsc -b + vite build)
+  4. `npx vitest run` — 전체 테스트
 - Git Worktree: 코드 수정 작업 시 `superpowers:using-git-worktrees` 스킬을 사용하여 `.worktrees/` 디렉토리에 격리된 worktree를 생성하고 작업합니다. 독립적인 이슈는 병렬 worktree에서 동시 작업 후 main에 병합합니다.
 
 ## Architecture
