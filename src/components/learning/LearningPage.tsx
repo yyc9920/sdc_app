@@ -3,7 +3,7 @@ import { useSpeedListeningData } from '../../hooks/useSpeedListeningData';
 import { usePrefetchData } from '../../hooks/useData';
 import { useLearningSetsBrowser } from '../../hooks/useLearningSetsBrowser';
 import { useAuth } from '../../hooks/useAuth';
-import { SpeedListeningPage } from './SpeedListening';
+import { SpeedListeningQuiz } from '../SpeedListeningQuiz';
 import { LevelRecommendationBadge } from '../speed-listening/LevelRecommendationBadge';
 import { LoadingSpinner } from '../LoadingSpinner';
 import { InfiniteSpeakingPage } from './InfiniteSpeaking/InfiniteSpeakingPage';
@@ -155,18 +155,17 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
     );
   }
 
-  // Speed Listening active session
+  // Speed Listening active session — uses legacy SpeedListeningQuiz (stable mobile TTS)
   if (mode === 'speed_listening' && selectedDataSet && selectedSpeedListeningSet) {
     const currentIndex = speedListeningData.findIndex(s => s.setId === selectedSpeedListeningSet.setId);
     const nextSet = speedListeningData[currentIndex + 1];
     return (
-      <SpeedListeningPage
-        setId={selectedSpeedListeningSet.setId}
-        level={selectedSpeedListeningSet.level as LearningLevel}
-        title={`${selectedDataSet.name} | Lv.${selectedSpeedListeningSet.level} ${formatSetTitle(selectedSpeedListeningSet.setId)}`}
-        sentences={selectedSpeedListeningSet.sentences}
-        onNext={nextSet ? () => setSelectedSpeedListeningSet(nextSet) : undefined}
-      />
+      <div className={`h-full ${isNightMode ? 'dark bg-gray-900' : 'bg-gray-50'} overflow-y-auto`}>
+        <SpeedListeningQuiz
+          set={selectedSpeedListeningSet}
+          onNext={nextSet ? () => setSelectedSpeedListeningSet(nextSet) : undefined}
+        />
+      </div>
     );
   }
 
