@@ -303,7 +303,7 @@ export const RepetitionPage = ({
       )}
 
       {/* Scrollable card list grouped by prompt */}
-      <main className="flex-1 overflow-y-auto w-full max-w-4xl mx-auto p-4 sm:p-6 space-y-6 pb-28">
+      <main className="flex-1 overflow-y-auto w-full max-w-4xl mx-auto p-4 sm:p-6 space-y-6 pb-4">
         {groups.length === 0 ? (
           <p className="text-center text-gray-500 dark:text-gray-400 mt-10">
             이 세트에서 사용할 수 있는 콘텐츠가 없습니다
@@ -348,7 +348,7 @@ export const RepetitionPage = ({
 
       {/* Range playback controls (advanced) */}
       {showRangeControls && (
-        <div className="shrink-0 fixed bottom-[calc(4rem+env(safe-area-inset-bottom))] left-0 right-0 bg-white/95 dark:bg-gray-800/95 backdrop-blur border-t border-gray-200 dark:border-gray-700 px-4 py-3 z-30">
+        <div className="shrink-0 bg-white/95 dark:bg-gray-800/95 backdrop-blur border-t border-gray-200 dark:border-gray-700 px-4 py-3">
           <div className="max-w-4xl mx-auto space-y-3">
             <div className="flex items-center gap-3 text-sm">
               <label className="text-gray-600 dark:text-gray-300 font-bold shrink-0">범위</label>
@@ -407,7 +407,7 @@ export const RepetitionPage = ({
       )}
 
       {/* Footer playback controls */}
-      <div className="shrink-0 fixed bottom-0 left-0 right-0 bg-white/90 dark:bg-gray-900/90 backdrop-blur border-t border-gray-200 dark:border-gray-800 px-4 py-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))]">
+      <div className="shrink-0 bg-white/90 dark:bg-gray-900/90 backdrop-blur border-t border-gray-200 dark:border-gray-800 px-4 py-3">
         <div className="max-w-4xl mx-auto flex items-center justify-between gap-2">
           {/* Left: Speed + Loop count */}
           <div className="flex items-center gap-1.5">
