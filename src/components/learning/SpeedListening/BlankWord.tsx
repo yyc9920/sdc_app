@@ -1,5 +1,5 @@
 import React from 'react';
-import { cleanWord } from '../../../hooks/useSpeedListening';
+import { cleanWord } from '../../../utils/textProcessing';
 
 interface BlankWordProps {
   word: string;

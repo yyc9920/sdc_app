@@ -6,6 +6,15 @@ import { useTrainingSession } from './training/useTrainingSession';
 import { useTrainingAudio } from './training/useTrainingAudio';
 import { useTrainingProgress } from './training/useTrainingProgress';
 import { BLANK_MULTIPLIER } from '../constants';
+import {
+  cleanWord,
+  hasSpecialChars,
+  isAcronym,
+  breakConsecutiveRuns,
+} from '../utils/textProcessing';
+
+// Re-export cleanWord so components can import it from one place
+export { cleanWord } from '../utils/textProcessing';
 
 export type SpeedListeningPhase = 'listening' | 'quiz' | 'result';
 
@@ -15,36 +24,7 @@ export interface QuizScore {
   score: number; // 0–100
 }
 
-// Exported for use in components and tests
-export const cleanWord = (word: string): string =>
-  word.replace(/[.,?!;:"']/g, '').toLowerCase();
-
-const hasSpecialChars = (word: string): boolean =>
-  /[&_—/]/.test(word) || (word.includes('-') && word.length > 1);
-
-const isLikelyProperNoun = (word: string, wordIndex: number): boolean =>
-  wordIndex > 0 &&
-  word.length > 0 &&
-  word[0] !== word[0].toLowerCase();
-
-const breakConsecutiveRuns = (indices: number[], maxConsecutive: number): number[] => {
-  const sorted = [...indices].sort((a, b) => a - b);
-  const result = new Set(sorted);
-  let runStart = 0;
-  for (let i = 1; i <= sorted.length; i++) {
-    if (i < sorted.length && sorted[i] === sorted[i - 1] + 1) continue;
-    const runLength = i - runStart;
-    if (runLength > maxConsecutive) {
-      for (let j = runStart + maxConsecutive; j < i; j += maxConsecutive + 1) {
-        result.delete(sorted[j]);
-      }
-    }
-    runStart = i;
-  }
-  return [...result];
-};
-
-// Exported for testing
+// Exported for tests
 export function generateBlankIndicesForRows(
   rows: TrainingRow[],
   level: LearningLevel,
@@ -55,7 +35,7 @@ export function generateBlankIndicesForRows(
   rows.forEach(row => {
     const words = row.english.split(' ');
 
-    // Single-word sentences: 0 blanks (nothing to blank without full reveal)
+    // Single-word rows: nothing meaningful to blank without fully revealing the sentence
     if (words.length <= 1) {
       map[row.id] = new Set();
       return;
@@ -64,7 +44,10 @@ export function generateBlankIndicesForRows(
     const eligibleIndices = words
       .map((_, i) => i)
       .filter(i => !hasSpecialChars(words[i]))
-      .filter(i => !isLikelyProperNoun(words[i], i));
+      .filter(i => !isAcronym(words[i])); // only skip true acronyms (BBC, USA, NATO)
+    // Note: we intentionally do NOT try to detect proper nouns by capitalisation.
+    // A naive "uppercase + not first word" heuristic breaks on multi-sentence rows
+    // (e.g. "We went to Paris. France is beautiful." — "France" starts a new sentence).
 
     if (eligibleIndices.length === 0) {
       map[row.id] = new Set();
@@ -96,7 +79,7 @@ function getBlankKey(rowId: number, wordIndex: number): string {
 export function useSpeedListening(config: { setId: string; level: LearningLevel }) {
   const { setId, level } = config;
 
-  // 1. Data layer — fetches all rows; useTrainingSession will filter internally
+  // 1. Data layer — fetches all rows; useTrainingSession filters internally
   const { rows: allRows, speakers, isLoading } = useTrainingData(setId);
 
   // 2. Session management — filters to script + reading rows via filterRowsForMode
@@ -106,7 +89,8 @@ export function useSpeedListening(config: { setId: string; level: LearningLevel 
     allRows,
   });
 
-  // 3. Audio — speaker-aware TTS voices; stable voice map (deterministic, index-based)
+  // 3. Audio — speaker-aware TTS; voice assignment is deterministic (index-based rotation)
+  //    so the same speaker always gets the same voice across sessions for the same set
   const audioApi = useTrainingAudio({ speakers });
 
   // 4. Progress tracking
@@ -122,7 +106,7 @@ export function useSpeedListening(config: { setId: string; level: LearningLevel 
   const [score, setScore] = useState<QuizScore | null>(null);
   const [hasPlayedOnce, setHasPlayedOnce] = useState(false);
 
-  // Sync isPlaying to ref so async playAll loop can poll it without stale closure issues
+  // Sync isPlaying to ref so the async playAll loop can poll without stale closures
   const isPlayingRef = useRef(false);
   useEffect(() => {
     isPlayingRef.current = audioApi.isPlaying;
@@ -130,8 +114,30 @@ export function useSpeedListening(config: { setId: string; level: LearningLevel 
 
   const stopRef = useRef(false);
 
-  // Generate blank positions once per set+level. Stable voice assignment is guaranteed
-  // because assignSpeakerVoices uses deterministic index-based rotation, not random.
+  // Keep latest progressApi in a ref for the unmount cleanup effect
+  const progressApiRef = useRef(progressApi);
+  progressApiRef.current = progressApi;
+
+  // Keep latest session in a ref so the unmount cleanup can read current elapsed time
+  const sessionRef = useRef(sessionApi.session);
+  sessionRef.current = sessionApi.session;
+
+  // Save progress on unmount (mandatory: prevents losing study time if student navigates away).
+  // React 18 concurrent mode may delay cleanup, but this is the best available hook mechanism.
+  // Only save if there was actually tracked time (session left setup phase).
+  useEffect(() => {
+    return () => {
+      if (
+        sessionRef.current.elapsedSeconds > 0 &&
+        sessionRef.current.phase !== 'setup'
+      ) {
+        void progressApiRef.current.saveProgress();
+      }
+    };
+  }, []); // intentionally empty — runs only on unmount
+
+  // Generate blank positions once per set+level combination.
+  // rowKey changes when the set changes (first row id changes), re-triggering generation.
   const rowKey = rows.map(r => r.id).join(',');
   const blankIndicesMap = useMemo(
     () => (rows.length > 0 ? generateBlankIndicesForRows(rows, level) : {}),
@@ -158,8 +164,8 @@ export function useSpeedListening(config: { setId: string; level: LearningLevel 
     [],
   );
 
-  // Sequential playback with per-row index tracking.
-  // TTS strategy: max 1 concurrent request, skip row on failure, poll isPlayingRef.
+  // Sequential playback with per-row index tracking (Option B from architect review).
+  // TTS strategy: max 1 concurrent request. On TTS failure, log and skip to next row.
   const playAll = useCallback(async (): Promise<void> => {
     if (rows.length === 0) return;
     stopRef.current = false;
@@ -171,19 +177,19 @@ export function useSpeedListening(config: { setId: string; level: LearningLevel 
       try {
         await audioApi.play(rows[i]);
 
-        // Phase 1: wait for isPlaying to become true (audio started)
+        // Phase 1: wait for isPlaying to become true (audio started, with 1s timeout)
         const started = await new Promise<boolean>(resolve => {
           let attempts = 0;
           const check = (): void => {
             if (isPlayingRef.current) { resolve(true); return; }
-            if (attempts++ > 20 || stopRef.current) { resolve(false); return; } // 1s timeout
+            if (attempts++ > 20 || stopRef.current) { resolve(false); return; }
             setTimeout(check, 50);
           };
           check();
         });
         if (!started) continue;
 
-        // Phase 2: wait for isPlaying to become false (audio ended)
+        // Phase 2: wait for audio to end (isPlaying → false)
         await new Promise<void>(resolve => {
           const check = (): void => {
             if (!isPlayingRef.current || stopRef.current) { resolve(); return; }
@@ -192,7 +198,7 @@ export function useSpeedListening(config: { setId: string; level: LearningLevel 
           check();
         });
       } catch {
-        // TTS failure: skip this row and continue the sequence
+        // TTS failure: skip this row and continue (no audio gap visible to user)
       }
     }
 
@@ -206,17 +212,17 @@ export function useSpeedListening(config: { setId: string; level: LearningLevel 
     setCurrentPlayingIndex(-1);
   }, [audioApi]);
 
-  // Per-sentence replay during quiz phase (answers devil's concern about re-listening)
+  // Per-sentence replay during quiz phase — interrupts any ongoing sequence
   const replaySingle = useCallback(
     async (row: TrainingRow): Promise<void> => {
-      stopRef.current = true; // interrupt any ongoing sequence
+      stopRef.current = true;
       audioApi.stop();
       await new Promise(r => setTimeout(r, 100));
       stopRef.current = false;
       try {
         await audioApi.play(row);
       } catch {
-        // ignore replay failure
+        // ignore single-sentence replay failures
       }
     },
     [audioApi],
@@ -258,12 +264,13 @@ export function useSpeedListening(config: { setId: string; level: LearningLevel 
     setScore(quizScore);
     setLocalPhase('result');
     sessionApi.complete();
-    // Fire-and-forget: save result and progress; ignore errors (e.g. unauthenticated)
     void progressApi.saveResult(quizScore.score);
     void progressApi.saveProgress();
   }, [calculateScore, sessionApi, progressApi]);
 
   const restart = useCallback((): void => {
+    // Save progress BEFORE reset() — reset() zeroes elapsedSeconds
+    void progressApi.saveProgress();
     stop();
     setBlanks({});
     setIsSubmitted(false);
@@ -271,7 +278,7 @@ export function useSpeedListening(config: { setId: string; level: LearningLevel 
     setHasPlayedOnce(false);
     setLocalPhase('listening');
     sessionApi.reset();
-  }, [stop, sessionApi]);
+  }, [stop, sessionApi, progressApi]);
 
   return {
     // Data
@@ -285,7 +292,7 @@ export function useSpeedListening(config: { setId: string; level: LearningLevel 
     startQuiz,
     restart,
 
-    // Audio (listening phase) — 1 concurrent TTS max
+    // Audio (listening phase) — 1 concurrent TTS max, sequential
     isPlaying: audioApi.isPlaying,
     currentPlayingIndex,
     speed: audioApi.speed,

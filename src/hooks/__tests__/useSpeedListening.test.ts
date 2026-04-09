@@ -26,8 +26,8 @@ import { useTrainingProgress } from '../training/useTrainingProgress';
 import {
   useSpeedListening,
   generateBlankIndicesForRows,
-  cleanWord,
 } from '../useSpeedListening';
+import { cleanWord } from '../../utils/textProcessing';
 import type { TrainingRow } from '../training/types';
 import type { RowType } from '../../types';
 
@@ -294,7 +294,7 @@ describe('useSpeedListening', () => {
     mockedUseTrainingSession.mockReturnValue({
       session: makeSessionState([]),
       rows: [],
-      currentRow: null,
+      currentRow: null as TrainingRow | null,
       next: vi.fn(),
       prev: vi.fn(),
       goTo: vi.fn(),

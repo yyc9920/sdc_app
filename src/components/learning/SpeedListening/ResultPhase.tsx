@@ -1,6 +1,6 @@
 import React from 'react';
 import type { QuizScore } from '../../../hooks/useSpeedListening';
-import { cleanWord } from '../../../hooks/useSpeedListening';
+import { cleanWord } from '../../../utils/textProcessing';
 import type { TrainingRow } from '../../../hooks/training/types';
 
 interface ResultPhaseProps {
