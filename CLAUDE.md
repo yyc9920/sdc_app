@@ -30,6 +30,15 @@ npm run open:android     # Open Android Studio
   4. `npx vitest run` — 전체 테스트
 - Git Worktree: 코드 수정 작업 시 `superpowers:using-git-worktrees` 스킬을 사용하여 `.worktrees/` 디렉토리에 격리된 worktree를 생성하고 작업합니다. 독립적인 이슈는 병렬 worktree에서 동시 작업 후 main에 병합합니다.
 
+## UI/UX
+- UI/UX 관련 수정(레이아웃, 스타일, 컴포넌트 디자인, 인터랙션 변경 등)이 있을 경우 반드시 `ui-ux-pro-max` 스킬을 사용하여 디자인 가이드를 참고합니다.
+
+## E2E 검증 (Playwright)
+- 기능 구현 후 Playwright MCP 도구를 사용하여 실제 브라우저에서 동작을 검증합니다.
+- 로컬 dev 서버(`npm run dev`, localhost:5173)를 띄우고, 프로덕션 Firebase 백엔드를 사용합니다.
+- 로그인 액세스 코드: `.env.local`의 `VITE_TEST_ACCESS_CODE` 값을 사용합니다.
+- 검증 흐름: 스플래시 클릭 → 액세스 코드 입력 → 로그인 → 해당 기능 탐색 → 동작 확인
+
 ## Architecture
 
 ### Frontend Pattern
