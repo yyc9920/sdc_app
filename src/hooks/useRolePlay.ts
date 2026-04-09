@@ -8,39 +8,56 @@ import {
 } from './training';
 import type { TrainingRow } from './training';
 import type { RolePlayPhase, TurnResult } from '../constants/rolePlay';
-import { USER_TURN_TIMEOUT_MS } from '../constants/rolePlay';
+import { USER_TURN_TIMEOUT_MS, MS_PER_WORD, PARTNER_TTS_TIMEOUT_MS } from '../constants/rolePlay';
 
 // ─── Pure utilities ───────────────────────────────────────────────────────────
 
+function bagOverlapScore(spoken: string[], expected: string[]): number {
+  if (expected.length === 0) return 0;
+  const freq: Record<string, number> = {};
+  for (const w of spoken) freq[w] = (freq[w] ?? 0) + 1;
+  let matched = 0;
+  for (const w of expected) {
+    if (freq[w] && freq[w] > 0) { matched++; freq[w]--; }
+  }
+  return matched / expected.length;
+}
+
+function getBigrams(words: string[]): string[] {
+  if (words.length < 2) return [];
+  const result: string[] = [];
+  for (let i = 0; i < words.length - 1; i++) {
+    result.push(`${words[i]} ${words[i + 1]}`);
+  }
+  return result;
+}
+
 /**
- * Compute word-overlap similarity score between spoken text and expected text.
- * Returns 0–100. Returns null if expected is empty (guard against divide-by-zero).
+ * Compute similarity: 40% unigram bag-of-words + 60% bigram overlap.
+ * Bigram component penalizes wrong word order (language-learning intent).
+ * Returns 0–100. Both empty → 0.
  */
 export function computeSimilarity(spoken: string, expected: string): number {
-  const normalize = (s: string) =>
+  const normalize = (s: string): string =>
     s.toLowerCase().replace(/[^\w\s]/g, '').trim();
 
   const spokenWords = normalize(spoken).split(/\s+/).filter(Boolean);
   const expectedWords = normalize(expected).split(/\s+/).filter(Boolean);
 
-  if (expectedWords.length === 0) return 0;
-  if (spokenWords.length === 0) return 0;
+  if (expectedWords.length === 0 || spokenWords.length === 0) return 0;
 
-  // Build frequency map of spoken words
-  const freq: Record<string, number> = {};
-  for (const w of spokenWords) {
-    freq[w] = (freq[w] ?? 0) + 1;
+  const unigramScore = bagOverlapScore(spokenWords, expectedWords);
+
+  const spokenBigrams = getBigrams(spokenWords);
+  const expectedBigrams = getBigrams(expectedWords);
+
+  if (expectedBigrams.length === 0) {
+    // Single-word expected: unigram only
+    return Math.round(unigramScore * 100);
   }
 
-  let matched = 0;
-  for (const w of expectedWords) {
-    if (freq[w] && freq[w] > 0) {
-      matched++;
-      freq[w]--;
-    }
-  }
-
-  return Math.round((matched / expectedWords.length) * 100);
+  const bigramScore = bagOverlapScore(spokenBigrams, expectedBigrams);
+  return Math.round((0.4 * unigramScore + 0.6 * bigramScore) * 100);
 }
 
 // ─── Reducer ──────────────────────────────────────────────────────────────────
@@ -52,6 +69,8 @@ export interface RolePlayState {
   turnResults: TurnResult[];
   isAutoPlaying: boolean;
   isTTSPlaying: boolean;
+  isDemoPaused: boolean;
+  isPhaseComplete: boolean;
   liveTranscript: string;
 }
 
@@ -60,10 +79,13 @@ type RolePlayAction =
   | { type: 'START_DEMO' }
   | { type: 'DEMO_COMPLETE'; rowCount: number }
   | { type: 'NEXT_TURN'; rowCount: number; currentPhase: RolePlayPhase }
+  | { type: 'PROCEED_NEXT_PHASE' }
+  | { type: 'SKIP_TO_REVIEW' }
   | { type: 'USER_TURN_COMPLETE'; transcript: string; score: number | null; rowIndex: number; speaker: string; expected: string }
   | { type: 'UPDATE_LIVE_TRANSCRIPT'; transcript: string }
   | { type: 'SET_AUTO_PLAYING'; value: boolean }
   | { type: 'SET_TTS_PLAYING'; value: boolean }
+  | { type: 'SET_DEMO_PAUSED'; value: boolean }
   | { type: 'RESET' };
 
 const PHASE_PROGRESSION: Partial<Record<RolePlayPhase, RolePlayPhase>> = {
@@ -79,6 +101,8 @@ export const initialRolePlayState: RolePlayState = {
   turnResults: [],
   isAutoPlaying: false,
   isTTSPlaying: false,
+  isDemoPaused: false,
+  isPhaseComplete: false,
   liveTranscript: '',
 };
 
@@ -95,6 +119,7 @@ export function rolePlayReducer(state: RolePlayState, action: RolePlayAction): R
         ...state,
         rolePlayPhase: 'GUIDED',
         isAutoPlaying: false,
+        isDemoPaused: false,
         currentTurnIndex: 0,
         turnResults: [],
       };
@@ -102,12 +127,31 @@ export function rolePlayReducer(state: RolePlayState, action: RolePlayAction): R
     case 'NEXT_TURN': {
       const nextIndex = state.currentTurnIndex + 1;
       if (nextIndex >= action.rowCount) {
-        const nextPhase = PHASE_PROGRESSION[action.currentPhase];
-        if (!nextPhase) return state;
-        return { ...state, currentTurnIndex: 0, rolePlayPhase: nextPhase, isTTSPlaying: false };
+        // Stay in current phase, set completion flag — user chooses next step
+        return { ...state, isPhaseComplete: true, isTTSPlaying: false };
       }
-      return { ...state, currentTurnIndex: nextIndex };
+      return { ...state, currentTurnIndex: nextIndex, isPhaseComplete: false };
     }
+
+    case 'PROCEED_NEXT_PHASE': {
+      const nextPhase = PHASE_PROGRESSION[state.rolePlayPhase];
+      if (!nextPhase) return state;
+      return {
+        ...state,
+        rolePlayPhase: nextPhase,
+        currentTurnIndex: 0,
+        isPhaseComplete: false,
+        isTTSPlaying: false,
+      };
+    }
+
+    case 'SKIP_TO_REVIEW':
+      return {
+        ...state,
+        rolePlayPhase: 'REVIEW',
+        isPhaseComplete: false,
+        isTTSPlaying: false,
+      };
 
     case 'USER_TURN_COMPLETE': {
       const result: TurnResult = {
@@ -134,6 +178,9 @@ export function rolePlayReducer(state: RolePlayState, action: RolePlayAction): R
     case 'SET_TTS_PLAYING':
       return { ...state, isTTSPlaying: action.value };
 
+    case 'SET_DEMO_PAUSED':
+      return { ...state, isDemoPaused: action.value };
+
     case 'RESET':
       return initialRolePlayState;
 
@@ -145,7 +192,18 @@ export function rolePlayReducer(state: RolePlayState, action: RolePlayAction): R
 // ─── Hook ─────────────────────────────────────────────────────────────────────
 
 export function useRolePlay(setId: string) {
-  const { rows: allRows, speakers, isLoading, error } = useTrainingData(setId);
+  const { rows: allRows, speakers: dataSetSpeakers, isLoading, error } = useTrainingData(setId);
+
+  // Unique speakers from script rows only — used for both voice and color indices (devil fix #7)
+  const dialogueSpeakers: string[] = useMemo(
+    () => {
+      const scriptRows = allRows.filter(
+        (r: TrainingRow & { rowType?: string }) => r.rowType === 'script' && r.speaker !== '',
+      );
+      return Array.from(new Set(scriptRows.map((r: TrainingRow) => r.speaker)));
+    },
+    [allRows],
+  );
 
   const sessionApi = useTrainingSession({
     setId,
@@ -154,7 +212,9 @@ export function useRolePlay(setId: string) {
     options: {},
   });
 
-  const audioApi = useTrainingAudio({ speakers });
+  const audioApi = useTrainingAudio({
+    speakers: dialogueSpeakers.length > 0 ? dialogueSpeakers : dataSetSpeakers,
+  });
   const progressApi = useTrainingProgress(sessionApi.session);
 
   const [rpState, dispatch] = useReducer(rolePlayReducer, initialRolePlayState);
@@ -163,14 +223,8 @@ export function useRolePlay(setId: string) {
 
   // Dialogue rows: session rows with blank speakers filtered out
   const dialogueRows: TrainingRow[] = useMemo(
-    () => sessionApi.rows.filter(r => r.speaker !== ''),
+    () => sessionApi.rows.filter((r: TrainingRow) => r.speaker !== ''),
     [sessionApi.rows],
-  );
-
-  // Unique speakers from dialogue rows (preserves order)
-  const dialogueSpeakers: string[] = useMemo(
-    () => Array.from(new Set(dialogueRows.map(r => r.speaker))),
-    [dialogueRows],
   );
 
   const currentRow = dialogueRows[rpState.currentTurnIndex] ?? null;
@@ -185,32 +239,45 @@ export function useRolePlay(setId: string) {
     }
   }, [audioApi.transcript]);
 
-  // Demo active flag for cancellation
+  // Demo control refs
   const demoActiveRef = useRef(false);
+  const demoPausedRef = useRef(false);
 
-  // Partner audio element for direct playback with onended promise
-  const partnerAudioRef = useRef<HTMLAudioElement | null>(null);
+  // Expose an interrupt for DEMO pause + partner turn skip
+  const playInterruptRef = useRef<(() => void) | null>(null);
 
   /**
-   * Play a single row's TTS and return a Promise that resolves when audio ends.
-   * Uses speaker-voice mapping from audioApi.
+   * Play a single row's TTS with an 8-second timeout guard (devil fix #1).
+   * Returns a Promise that resolves when audio ends, times out, or errors.
    */
   const playPartnerTurn = useCallback(
     async (row: TrainingRow): Promise<void> => {
       const voice = audioApi.speakerVoiceMap[row.speaker] ?? 'female1';
       setTtsError(false);
+
+      let resolvePlay!: () => void;
+      const playDone = new Promise<void>(res => { resolvePlay = res; });
+      playInterruptRef.current = resolvePlay;
+
+      const timeout = new Promise<void>(res =>
+        window.setTimeout(() => {
+          setTtsError(true);
+          res();
+        }, PARTNER_TTS_TIMEOUT_MS),
+      );
+
       try {
         const url = await getTTSAudioUrl(row.english, voice);
-        return new Promise<void>(resolve => {
-          const audio = new Audio(url);
-          partnerAudioRef.current = audio;
-          audio.onended = () => { partnerAudioRef.current = null; resolve(); };
-          audio.onerror = () => { partnerAudioRef.current = null; resolve(); };
-          audio.play().catch(() => { partnerAudioRef.current = null; resolve(); });
-        });
+        const audio = new Audio(url);
+        audio.onended = resolvePlay;
+        audio.onerror = resolvePlay;
+        audio.play().catch(resolvePlay);
+        await Promise.race([playDone, timeout]);
+        audio.pause();
       } catch {
         setTtsError(true);
-        return;
+      } finally {
+        playInterruptRef.current = null;
       }
     },
     [audioApi.speakerVoiceMap],
@@ -221,10 +288,18 @@ export function useRolePlay(setId: string) {
   const startDemo = useCallback(async () => {
     if (!rpState.selectedRole) return;
     demoActiveRef.current = true;
+    demoPausedRef.current = false;
     dispatch({ type: 'START_DEMO' });
 
     for (let i = 0; i < dialogueRows.length; i++) {
       if (!demoActiveRef.current) break;
+
+      // Pause support (devil fix #6)
+      while (demoPausedRef.current && demoActiveRef.current) {
+        await new Promise<void>(res => window.setTimeout(res, 100));
+      }
+      if (!demoActiveRef.current) break;
+
       setDemoPlayingIndex(i);
       await playPartnerTurn(dialogueRows[i]);
     }
@@ -236,13 +311,23 @@ export function useRolePlay(setId: string) {
     demoActiveRef.current = false;
   }, [rpState.selectedRole, dialogueRows, playPartnerTurn]);
 
+  const pauseDemo = useCallback(() => {
+    demoPausedRef.current = true;
+    dispatch({ type: 'SET_DEMO_PAUSED', value: true });
+    if (playInterruptRef.current) playInterruptRef.current();
+  }, []);
+
+  const resumeDemo = useCallback(() => {
+    demoPausedRef.current = false;
+    dispatch({ type: 'SET_DEMO_PAUSED', value: false });
+  }, []);
+
   // ── Turn loop (GUIDED / PRACTICE / FREE) ────────────────────────────────────
 
   const stopUserTurn = useCallback(() => {
     audioApi.stopRecording();
     const transcript = transcriptRef.current;
     const expected = currentRow?.english ?? '';
-    // null score if no transcript (SR unavailable), else compute similarity
     const score = transcript.length > 0 ? computeSimilarity(transcript, expected) : null;
     dispatch({
       type: 'USER_TURN_COMPLETE',
@@ -252,7 +337,6 @@ export function useRolePlay(setId: string) {
       speaker: currentRow?.speaker ?? '',
       expected,
     });
-    // Advance after recording result
     dispatch({ type: 'NEXT_TURN', rowCount: dialogueRows.length, currentPhase: rpState.rolePlayPhase });
   }, [audioApi, currentRow, rpState.currentTurnIndex, rpState.rolePlayPhase, dialogueRows.length]);
 
@@ -269,14 +353,29 @@ export function useRolePlay(setId: string) {
     dispatch({ type: 'NEXT_TURN', rowCount: dialogueRows.length, currentPhase: rpState.rolePlayPhase });
   }, [audioApi, currentRow, rpState.currentTurnIndex, rpState.rolePlayPhase, dialogueRows.length]);
 
+  const skipPartnerTurn = useCallback(() => {
+    if (playInterruptRef.current) playInterruptRef.current();
+  }, []);
+
+  const proceedNextPhase = useCallback(() => {
+    progressApi.saveProgress(); // devil fix #8: save at phase boundary
+    dispatch({ type: 'PROCEED_NEXT_PHASE' });
+  }, [progressApi]);
+
+  const skipToReview = useCallback(() => {
+    progressApi.saveProgress(); // devil fix #8
+    dispatch({ type: 'SKIP_TO_REVIEW' });
+  }, [progressApi]);
+
   // Turn loop effect: fires on each turn change in active phases
   const turnTimeoutRef = useRef<number | null>(null);
 
   useEffect(() => {
     const activePhases: RolePlayPhase[] = ['GUIDED', 'PRACTICE', 'FREE'];
     if (!activePhases.includes(rpState.rolePlayPhase)) return;
+    if (rpState.isPhaseComplete) return;
     if (rpState.currentTurnIndex >= dialogueRows.length) return;
-    if (rpState.isTTSPlaying) return; // already in a partner turn
+    if (rpState.isTTSPlaying) return;
 
     const row = dialogueRows[rpState.currentTurnIndex];
     if (!row) return;
@@ -296,13 +395,16 @@ export function useRolePlay(setId: string) {
 
       return () => { cancelled = true; };
     } else {
-      // User turn: start recording, set timeout
+      // Dynamic timeout = max(10s, wordCount * 600ms) — devil fix #4
       transcriptRef.current = '';
       audioApi.startRecording();
 
+      const wordCount = (row.english ?? '').split(/\s+/).filter(Boolean).length;
+      const timeoutMs = Math.max(USER_TURN_TIMEOUT_MS, wordCount * MS_PER_WORD);
+
       turnTimeoutRef.current = window.setTimeout(() => {
         stopUserTurn();
-      }, USER_TURN_TIMEOUT_MS);
+      }, timeoutMs);
 
       return () => {
         if (turnTimeoutRef.current) {
@@ -312,7 +414,7 @@ export function useRolePlay(setId: string) {
       };
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [rpState.currentTurnIndex, rpState.rolePlayPhase]);
+  }, [rpState.currentTurnIndex, rpState.rolePlayPhase, rpState.isPhaseComplete]);
 
   // ── REVIEW ────────────────────────────────────────────────────────────────
 
@@ -337,15 +439,12 @@ export function useRolePlay(setId: string) {
     }
   }, [rpState.rolePlayPhase, overallAccuracy, progressApi]);
 
-  // Save progress on unmount
+  // Save progress on unmount (devil fix #8)
   useEffect(() => {
     return () => {
       progressApi.saveProgress();
       demoActiveRef.current = false;
-      if (partnerAudioRef.current) {
-        partnerAudioRef.current.pause();
-        partnerAudioRef.current = null;
-      }
+      if (playInterruptRef.current) playInterruptRef.current();
       if (turnTimeoutRef.current) clearTimeout(turnTimeoutRef.current);
     };
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -357,10 +456,7 @@ export function useRolePlay(setId: string) {
 
   const resetRolePlay = useCallback(() => {
     demoActiveRef.current = false;
-    if (partnerAudioRef.current) {
-      partnerAudioRef.current.pause();
-      partnerAudioRef.current = null;
-    }
+    if (playInterruptRef.current) playInterruptRef.current();
     audioApi.stop();
     audioApi.stopRecording();
     if (turnTimeoutRef.current) clearTimeout(turnTimeoutRef.current);
@@ -371,10 +467,7 @@ export function useRolePlay(setId: string) {
 
   const skipDemo = useCallback(() => {
     demoActiveRef.current = false;
-    if (partnerAudioRef.current) {
-      partnerAudioRef.current.pause();
-      partnerAudioRef.current = null;
-    }
+    if (playInterruptRef.current) playInterruptRef.current();
     setDemoPlayingIndex(-1);
     dispatch({ type: 'DEMO_COMPLETE', rowCount: dialogueRows.length });
   }, [dialogueRows.length]);
@@ -397,6 +490,8 @@ export function useRolePlay(setId: string) {
     isUserTurn,
     isTTSPlaying: rpState.isTTSPlaying,
     isAutoPlaying: rpState.isAutoPlaying,
+    isDemoPaused: rpState.isDemoPaused,
+    isPhaseComplete: rpState.isPhaseComplete,
     liveTranscript: rpState.liveTranscript,
     turnResults: rpState.turnResults,
     demoPlayingIndex,
@@ -413,8 +508,13 @@ export function useRolePlay(setId: string) {
     selectRole,
     startDemo,
     skipDemo,
+    pauseDemo,
+    resumeDemo,
     stopUserTurn,
     skipUserTurn,
+    skipPartnerTurn,
+    proceedNextPhase,
+    skipToReview,
     resetRolePlay,
   };
 }

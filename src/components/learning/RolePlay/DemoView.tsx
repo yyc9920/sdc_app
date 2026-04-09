@@ -1,15 +1,19 @@
 import { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { SkipForward } from 'lucide-react';
+import { SkipForward, Pause, Play } from 'lucide-react';
 import { ChatBubble } from './ChatBubble';
 import { getSpeakerColor } from '../../../constants/rolePlay';
 import type { TrainingRow } from '../../../hooks/training';
+
 interface DemoViewProps {
   rows: TrainingRow[];
   speakers: string[];
   selectedRole: string;
   demoPlayingIndex: number;
+  isDemoPaused: boolean;
   onSkip: () => void;
+  onPause: () => void;
+  onResume: () => void;
 }
 
 export function DemoView({
@@ -17,7 +21,10 @@ export function DemoView({
   speakers,
   selectedRole,
   demoPlayingIndex,
+  isDemoPaused,
   onSkip,
+  onPause,
+  onResume,
 }: DemoViewProps) {
   const activeRef = useRef<HTMLDivElement | null>(null);
 
@@ -46,13 +53,24 @@ export function DemoView({
             각 화자의 목소리로 전체 대화가 재생됩니다
           </p>
         </div>
-        <button
-          onClick={onSkip}
-          className="flex items-center gap-1.5 px-3 py-2 text-sm text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl transition-colors"
-        >
-          <SkipForward className="w-4 h-4" />
-          건너뛰기
-        </button>
+        <div className="flex items-center gap-2">
+          <button
+            onClick={isDemoPaused ? onResume : onPause}
+            className="flex items-center gap-1.5 px-3 py-2 text-sm text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl transition-colors"
+          >
+            {isDemoPaused
+              ? <><Play className="w-4 h-4" />재생</>
+              : <><Pause className="w-4 h-4" />일시정지</>
+            }
+          </button>
+          <button
+            onClick={onSkip}
+            className="flex items-center gap-1.5 px-3 py-2 text-sm text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl transition-colors"
+          >
+            <SkipForward className="w-4 h-4" />
+            건너뛰기
+          </button>
+        </div>
       </div>
 
       {/* Dialogue bubbles */}
