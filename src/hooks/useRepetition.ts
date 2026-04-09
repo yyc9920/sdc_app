@@ -78,7 +78,7 @@ export interface UseRepetitionReturn {
   setRangeEnd: (n: number) => void;
   setRepeatTotal: (n: number) => void;
   playRange: () => Promise<void>;
-  playLoop: (perSentenceRepeat: number) => Promise<void>;
+  playLoop: (perSentenceRepeat: number, fromIdx?: number, toIdx?: number) => Promise<void>;
   stopRange: () => void;
 }
 
@@ -196,18 +196,22 @@ export function useRepetition(setId: string): UseRepetitionReturn {
     setRepeatCurrent(0);
   }, [audioApi]);
 
-  // Infinite loop playback: plays all sentences with per-sentence repeat, loops forever
-  const playLoop = useCallback(async (perSentenceRepeat: number) => {
+  // Infinite loop playback with optional range and per-sentence repeat
+  const playLoop = useCallback(async (perSentenceRepeat: number, fromIdx?: number, toIdx?: number) => {
     const sessionRows = sessionApi.session.rows;
     if (sessionRows.length === 0) return;
+
+    const loopStart = fromIdx ?? 0;
+    const loopEnd = Math.min(toIdx ?? sessionRows.length - 1, sessionRows.length - 1);
 
     rangeAbortRef.current = false;
     setIsRangePlaying(true);
 
-    let startIdx = sessionApi.session.currentIndex;
+    // First pass starts from current position (clamped to range)
+    let startIdx = Math.max(loopStart, Math.min(sessionApi.session.currentIndex, loopEnd));
 
     while (!rangeAbortRef.current) {
-      for (let i = startIdx; i < sessionRows.length; i++) {
+      for (let i = startIdx; i <= loopEnd; i++) {
         if (rangeAbortRef.current) break;
         const row = sessionRows[i];
         sessionApi.goTo(i);
@@ -224,7 +228,7 @@ export function useRepetition(setId: string): UseRepetitionReturn {
           }
         }
       }
-      startIdx = 0; // subsequent passes start from beginning
+      startIdx = loopStart; // subsequent passes start from range beginning
     }
 
     setIsRangePlaying(false);

@@ -4,7 +4,6 @@ import {
   Moon,
   Sun,
   Play,
-  Pause,
   ChevronRight,
   SkipBack,
   RefreshCw,
@@ -40,46 +39,37 @@ export const RepetitionPage = ({
   const {
     groups,
     session,
-    currentRow,
-    isPlaying,
     speakerColors,
     speed,
     setSpeed,
     rowSeqToSessionIndex,
     playRow,
-    stop,
+    goTo,
     next,
     prev,
-    goTo,
     isLoading,
     error,
     ttsError,
     reset,
-    rangeStart,
-    rangeEnd,
-    repeatTotal,
-    repeatCurrent,
     isRangePlaying,
-    setRangeStart,
-    setRangeEnd,
-    setRepeatTotal,
-    playRange,
     playLoop,
     stopRange,
   } = engine;
 
-  // Per-sentence repeat count for continuous playback
   const [sentenceRepeat, setSentenceRepeat] = useState(1);
-  // Range controls panel visibility
+  // Range: null = full range (all sentences)
+  const [rangeStart, setRangeStart] = useState(0);
+  const [rangeEnd, setRangeEnd] = useState(-1); // -1 = last
+  const [useRange, setUseRange] = useState(false);
   const [showRangeControls, setShowRangeControls] = useState(false);
   const activeCardRef = useRef<HTMLButtonElement | null>(null);
 
-  // Auto-scroll to active card when index changes
+  const effectiveEnd = rangeEnd < 0 ? session.rows.length - 1 : rangeEnd;
+
   useEffect(() => {
     activeCardRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }, [session.currentIndex]);
 
-  // Card tap: play the tapped card and sync session index
   const handleCardTap = useCallback(
     (row: TrainingRow) => {
       const idx = rowSeqToSessionIndex.get(row.rowSeq);
@@ -89,7 +79,6 @@ export const RepetitionPage = ({
     [rowSeqToSessionIndex, goTo, playRow],
   );
 
-  // Progress bar segment click: navigate + play
   const handleProgressGoTo = useCallback(
     (idx: number) => {
       goTo(idx);
@@ -99,23 +88,16 @@ export const RepetitionPage = ({
     [goTo, session.rows, playRow],
   );
 
-  // Main play/stop: starts infinite loop playback or stops it
+  // Single unified play/stop button
   const handlePlayStop = useCallback(() => {
     if (isRangePlaying) {
       stopRange();
+    } else if (useRange) {
+      void playLoop(sentenceRepeat, rangeStart, effectiveEnd);
     } else {
       void playLoop(sentenceRepeat);
     }
-  }, [isRangePlaying, stopRange, playLoop, sentenceRepeat]);
-
-  // Single sentence play/pause (manual, no auto-advance)
-  const handleSinglePlay = useCallback(() => {
-    if (isPlaying) {
-      stop();
-    } else if (currentRow) {
-      playRow(currentRow).catch(console.error);
-    }
-  }, [isPlaying, stop, currentRow, playRow]);
+  }, [isRangePlaying, stopRange, playLoop, sentenceRepeat, useRange, rangeStart, effectiveEnd]);
 
   const handleSpeedCycle = useCallback(() => {
     const idx = SPEED_OPTIONS.indexOf(speed as 1 | 1.5 | 2);
@@ -127,6 +109,10 @@ export const RepetitionPage = ({
       const idx = REPEAT_OPTIONS.indexOf(prev as typeof REPEAT_OPTIONS[number]);
       return REPEAT_OPTIONS[(idx + 1) % REPEAT_OPTIONS.length];
     });
+  }, []);
+
+  const toggleRange = useCallback(() => {
+    setShowRangeControls(p => !p);
   }, []);
 
   const handleBack = useCallback(() => {
@@ -145,7 +131,6 @@ export const RepetitionPage = ({
     );
   }
 
-  // Empty content fallback
   if (session.rows.length === 0 && session.phase !== 'setup') {
     return (
       <div className={`h-full ${isNightMode ? 'dark bg-gray-900' : 'bg-gray-50'} flex flex-col transition-colors duration-300`}>
@@ -181,10 +166,8 @@ export const RepetitionPage = ({
         </button>
       </header>
 
-      {/* Progress bar */}
       <RepetitionProgress rows={session.rows} currentIndex={session.currentIndex} onGoTo={handleProgressGoTo} />
 
-      {/* TTS error banner */}
       {ttsError && (
         <div className="shrink-0 mx-4 mt-2 p-3 bg-amber-50 dark:bg-amber-900/30 border border-amber-300 dark:border-amber-700 rounded-xl flex items-center gap-3 text-sm">
           <RefreshCw className="w-4 h-4 text-amber-500 shrink-0" />
@@ -197,63 +180,68 @@ export const RepetitionPage = ({
         <div className="shrink-0 mx-4 mt-2 flex items-center justify-center gap-2 text-xs text-blue-600 dark:text-blue-400 font-bold">
           <Repeat className="w-3.5 h-3.5" />
           <span>
-            {sentenceRepeat > 1 ? `문장별 ${sentenceRepeat}회 반복 · ` : ''}무한 재생 중
+            {useRange ? `${rangeStart + 1}~${effectiveEnd + 1}번 · ` : ''}
+            {sentenceRepeat > 1 ? `문장별 ${sentenceRepeat}회 · ` : ''}
+            무한 재생 중
           </span>
         </div>
       )}
 
-      {/* Scrollable card list */}
+      {/* Card list */}
       <main className="flex-1 overflow-y-auto w-full max-w-4xl mx-auto p-4 sm:p-6 space-y-6 pb-4">
-        {groups.length === 0 ? (
-          <p className="text-center text-gray-500 dark:text-gray-400 mt-10">이 세트에서 사용할 수 있는 콘텐츠가 없습니다</p>
-        ) : (
-          groups.map((group, gi) => (
-            <section key={group.prompt?.rowSeq ?? `group-${gi}`} className="space-y-3">
-              {group.prompt && <PromptCard row={group.prompt} />}
-              {group.items.map((row) => {
-                const sessionIdx = rowSeqToSessionIndex.get(row.rowSeq);
-                const isActive = sessionIdx === session.currentIndex;
-                const speakerColor = row.speaker ? speakerColors[row.speaker] : undefined;
-                if (row.rowType === 'reading') {
-                  return <ReadingCard key={row.rowSeq} ref={isActive ? activeCardRef : null} row={row} isActive={isActive} speakerColor={speakerColor} onPlay={() => handleCardTap(row)} />;
-                }
-                return <ScriptCard key={row.rowSeq} ref={isActive ? activeCardRef : null} row={row} isActive={isActive} speakerColor={speakerColor} onPlay={() => handleCardTap(row)} />;
-              })}
-            </section>
-          ))
-        )}
+        {groups.map((group, gi) => (
+          <section key={group.prompt?.rowSeq ?? `group-${gi}`} className="space-y-3">
+            {group.prompt && <PromptCard row={group.prompt} />}
+            {group.items.map((row) => {
+              const sessionIdx = rowSeqToSessionIndex.get(row.rowSeq);
+              const isActive = sessionIdx === session.currentIndex;
+              const speakerColor = row.speaker ? speakerColors[row.speaker] : undefined;
+              if (row.rowType === 'reading') {
+                return <ReadingCard key={row.rowSeq} ref={isActive ? activeCardRef : null} row={row} isActive={isActive} speakerColor={speakerColor} onPlay={() => handleCardTap(row)} />;
+              }
+              return <ScriptCard key={row.rowSeq} ref={isActive ? activeCardRef : null} row={row} isActive={isActive} speakerColor={speakerColor} onPlay={() => handleCardTap(row)} />;
+            })}
+          </section>
+        ))}
       </main>
 
-      {/* Range playback controls (advanced) */}
+      {/* Range settings panel — only selects range, no separate play button */}
       {showRangeControls && (
         <div className="shrink-0 bg-white/95 dark:bg-gray-800/95 backdrop-blur border-t border-gray-200 dark:border-gray-700 px-4 py-3">
           <div className="max-w-4xl mx-auto space-y-3">
             <div className="flex items-center gap-3 text-sm">
-              <label className="text-gray-600 dark:text-gray-300 font-bold shrink-0">범위</label>
-              <select value={rangeStart} onChange={e => setRangeStart(Number(e.target.value))} className="flex-1 px-2 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border-0 text-sm font-medium">
+              <label className="flex items-center gap-2 shrink-0">
+                <input
+                  type="checkbox"
+                  checked={useRange}
+                  onChange={e => setUseRange(e.target.checked)}
+                  className="w-4 h-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                />
+                <span className="text-gray-600 dark:text-gray-300 font-bold">범위 지정</span>
+              </label>
+              <select
+                value={rangeStart}
+                onChange={e => setRangeStart(Number(e.target.value))}
+                disabled={!useRange}
+                className="flex-1 px-2 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border-0 text-sm font-medium disabled:opacity-40"
+              >
                 {session.rows.map((_, i) => <option key={i} value={i}>{i + 1}번</option>)}
               </select>
               <span className="text-gray-400">~</span>
-              <select value={rangeEnd} onChange={e => setRangeEnd(Number(e.target.value))} className="flex-1 px-2 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border-0 text-sm font-medium">
+              <select
+                value={effectiveEnd}
+                onChange={e => setRangeEnd(Number(e.target.value))}
+                disabled={!useRange}
+                className="flex-1 px-2 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border-0 text-sm font-medium disabled:opacity-40"
+              >
                 {session.rows.map((_, i) => <option key={i} value={i}>{i + 1}번</option>)}
               </select>
             </div>
-            <div className="flex items-center gap-3 text-sm">
-              <label className="text-gray-600 dark:text-gray-300 font-bold shrink-0">반복</label>
-              <div className="flex gap-2">
-                {[1, 2, 3, 5, 10].map(n => (
-                  <button key={n} onClick={() => setRepeatTotal(n)} className={`px-3 py-1.5 rounded-lg text-sm font-bold transition-colors ${repeatTotal === n ? 'bg-blue-600 text-white' : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300'}`}>{n}회</button>
-                ))}
-              </div>
-            </div>
-            <button onClick={isRangePlaying ? stopRange : playRange} className={`w-full py-2.5 rounded-xl font-bold text-white transition-colors ${isRangePlaying ? 'bg-red-500 hover:bg-red-600' : 'bg-blue-600 hover:bg-blue-700'}`}>
-              {isRangePlaying ? `정지 (${repeatCurrent}/${repeatTotal}회)` : `범위 재생 (${rangeStart + 1}~${rangeEnd + 1}번, ${repeatTotal}회)`}
-            </button>
           </div>
         </div>
       )}
 
-      {/* Footer playback controls */}
+      {/* Footer — single unified playback bar */}
       <div className="shrink-0 bg-white/90 dark:bg-gray-900/90 backdrop-blur border-t border-gray-200 dark:border-gray-800 px-4 py-3">
         <div className="max-w-4xl mx-auto flex items-center justify-between gap-2">
           {/* Left: Speed + Sentence repeat */}
@@ -292,24 +280,20 @@ export const RepetitionPage = ({
             </button>
           </div>
 
-          {/* Right: Single play + Range */}
-          <div className="flex items-center gap-1.5">
-            <button
-              onClick={handleSinglePlay}
-              disabled={isRangePlaying}
-              className="p-2.5 rounded-xl bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
-              aria-label={isPlaying ? '일시정지' : '현재 문장 재생'}
-            >
-              {isPlaying && !isRangePlaying ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
-            </button>
-            <button
-              onClick={() => setShowRangeControls(p => !p)}
-              className={`px-2.5 py-2 text-xs font-bold rounded-xl transition-colors ${showRangeControls ? 'bg-orange-500 text-white shadow-sm' : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400'}`}
-              aria-label={showRangeControls ? '범위 설정 닫기' : '범위 설정 열기'}
-            >
-              범위
-            </button>
-          </div>
+          {/* Right: Range toggle */}
+          <button
+            onClick={toggleRange}
+            className={`px-3 py-2 text-xs font-bold rounded-xl transition-colors min-w-[44px] ${
+              useRange
+                ? 'bg-orange-500 text-white shadow-sm'
+                : showRangeControls
+                ? 'bg-orange-200 dark:bg-orange-900/50 text-orange-700 dark:text-orange-300'
+                : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400'
+            }`}
+            aria-label={showRangeControls ? '범위 설정 닫기' : '범위 설정 열기'}
+          >
+            범위
+          </button>
         </div>
       </div>
     </div>
