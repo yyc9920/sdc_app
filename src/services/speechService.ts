@@ -155,16 +155,16 @@ function createWebService(): SpeechService {
       rec.lang = lang;
 
       rec.onresult = (event: WebSpeechRecognitionEvent) => {
-        let interim = '';
         let final = '';
-        for (let i = event.resultIndex; i < event.results.length; ++i) {
+        let interim = '';
+        for (let i = 0; i < event.results.length; ++i) {
           if (event.results[i].isFinal) {
             final += event.results[i][0].transcript;
           } else {
             interim += event.results[i][0].transcript;
           }
         }
-        const text = final + interim;
+        const text = (final + interim).trim();
         const isFinal = final.length > 0 && interim.length === 0;
         resultCb?.({ matches: [text], isFinal });
       };
