@@ -52,9 +52,20 @@ export const RepetitionPage = ({
     error,
     ttsError,
     reset,
+    rangeStart,
+    rangeEnd,
+    repeatTotal,
+    repeatCurrent,
+    isRangePlaying,
+    setRangeStart,
+    setRangeEnd,
+    setRepeatTotal,
+    playRange,
+    stopRange,
   } = engine;
 
   const [autoPlay, setAutoPlay] = useState(false);
+  const [showRangeControls, setShowRangeControls] = useState(false);
   const activeCardRef = useRef<HTMLButtonElement | null>(null);
 
   // Skip auto-play when currentIndex changes due to a direct card tap (not nav buttons)
@@ -264,6 +275,66 @@ export const RepetitionPage = ({
         )}
       </main>
 
+      {/* Range playback controls */}
+      {showRangeControls && (
+        <div className="shrink-0 fixed bottom-[calc(4rem+env(safe-area-inset-bottom))] left-0 right-0 bg-white/95 dark:bg-gray-800/95 backdrop-blur border-t border-gray-200 dark:border-gray-700 px-4 py-3 z-30">
+          <div className="max-w-4xl mx-auto space-y-3">
+            <div className="flex items-center gap-3 text-sm">
+              <label className="text-gray-600 dark:text-gray-300 font-bold shrink-0">범위</label>
+              <select
+                value={rangeStart}
+                onChange={e => setRangeStart(Number(e.target.value))}
+                className="flex-1 px-2 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border-0 text-sm font-medium"
+              >
+                {session.rows.map((_, i) => (
+                  <option key={i} value={i}>{i + 1}번</option>
+                ))}
+              </select>
+              <span className="text-gray-400">~</span>
+              <select
+                value={rangeEnd}
+                onChange={e => setRangeEnd(Number(e.target.value))}
+                className="flex-1 px-2 py-1.5 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border-0 text-sm font-medium"
+              >
+                {session.rows.map((_, i) => (
+                  <option key={i} value={i}>{i + 1}번</option>
+                ))}
+              </select>
+            </div>
+            <div className="flex items-center gap-3 text-sm">
+              <label className="text-gray-600 dark:text-gray-300 font-bold shrink-0">반복</label>
+              <div className="flex gap-2">
+                {[1, 2, 3, 5, 10].map(n => (
+                  <button
+                    key={n}
+                    onClick={() => setRepeatTotal(n)}
+                    className={`px-3 py-1.5 rounded-lg text-sm font-bold transition-colors ${
+                      repeatTotal === n
+                        ? 'bg-blue-600 text-white'
+                        : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300'
+                    }`}
+                  >
+                    {n}회
+                  </button>
+                ))}
+              </div>
+            </div>
+            <button
+              onClick={isRangePlaying ? stopRange : playRange}
+              className={`w-full py-2.5 rounded-xl font-bold text-white transition-colors ${
+                isRangePlaying
+                  ? 'bg-red-500 hover:bg-red-600'
+                  : 'bg-blue-600 hover:bg-blue-700'
+              }`}
+            >
+              {isRangePlaying
+                ? `정지 (${repeatCurrent}/${repeatTotal}회)`
+                : `범위 재생 (${rangeStart + 1}~${rangeEnd + 1}번, ${repeatTotal}회)`}
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* Footer playback controls */}
       <div className="shrink-0 fixed bottom-0 left-0 right-0 bg-white/90 dark:bg-gray-900/90 backdrop-blur border-t border-gray-200 dark:border-gray-800 px-4 py-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))]">
         <div className="max-w-4xl mx-auto flex items-center justify-between gap-3">
@@ -303,19 +374,34 @@ export const RepetitionPage = ({
             </button>
           </div>
 
-          {/* Auto-play toggle */}
-          <button
-            onClick={() => setAutoPlay((p) => !p)}
-            className={`px-3 py-2 text-xs font-bold rounded-xl transition-colors ${
-              autoPlay
-                ? 'bg-blue-600 text-white shadow-sm'
-                : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400'
-            }`}
-            aria-label={autoPlay ? '자동재생 끄기' : '자동재생 켜기'}
-            aria-pressed={autoPlay}
-          >
-            자동
-          </button>
+          {/* Range toggle + Auto-play toggle */}
+          <div className="flex items-center gap-2">
+            {/* Range toggle */}
+            <button
+              onClick={() => setShowRangeControls(p => !p)}
+              className={`px-3 py-2 text-xs font-bold rounded-xl transition-colors ${
+                showRangeControls
+                  ? 'bg-orange-500 text-white shadow-sm'
+                  : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400'
+              }`}
+              aria-label={showRangeControls ? '범위 설정 닫기' : '범위 설정 열기'}
+            >
+              범위
+            </button>
+            {/* Auto-play toggle */}
+            <button
+              onClick={() => setAutoPlay((p) => !p)}
+              className={`px-3 py-2 text-xs font-bold rounded-xl transition-colors ${
+                autoPlay
+                  ? 'bg-blue-600 text-white shadow-sm'
+                  : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400'
+              }`}
+              aria-label={autoPlay ? '자동재생 끄기' : '자동재생 켜기'}
+              aria-pressed={autoPlay}
+            >
+              자동
+            </button>
+          </div>
         </div>
       </div>
     </div>

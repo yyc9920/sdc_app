@@ -69,6 +69,16 @@ export interface UseRepetitionReturn {
   complete: () => void;
   reset: () => void;
   saveProgress: () => Promise<void>;
+  rangeStart: number;
+  rangeEnd: number;
+  repeatTotal: number;
+  repeatCurrent: number;
+  isRangePlaying: boolean;
+  setRangeStart: (n: number) => void;
+  setRangeEnd: (n: number) => void;
+  setRepeatTotal: (n: number) => void;
+  playRange: () => Promise<void>;
+  stopRange: () => void;
 }
 
 export function useRepetition(setId: string): UseRepetitionReturn {
@@ -86,6 +96,13 @@ export function useRepetition(setId: string): UseRepetitionReturn {
 
   const hasSavedRef = useRef(false);
   const [ttsError, setTtsError] = useState(false);
+
+  const [rangeStart, setRangeStart] = useState(0);
+  const [rangeEnd, setRangeEnd] = useState(0);
+  const [repeatTotal, setRepeatTotal] = useState(1);
+  const [repeatCurrent, setRepeatCurrent] = useState(0);
+  const [isRangePlaying, setIsRangePlaying] = useState(false);
+  const rangeAbortRef = useRef(false);
 
   // Stable refs for unmount cleanup — updated in effects (never during render)
   const sessionRef = useRef(sessionApi.session);
@@ -134,6 +151,57 @@ export function useRepetition(setId: string): UseRepetitionReturn {
     return map;
   }, [sessionApi.session.rows]);
 
+  useEffect(() => {
+    if (sessionApi.session.rows.length > 0) {
+      setRangeEnd(sessionApi.session.rows.length - 1);
+    }
+  }, [sessionApi.session.rows.length]);
+
+  const playRange = useCallback(async () => {
+    const sessionRows = sessionApi.session.rows;
+    if (sessionRows.length === 0) return;
+    const start = Math.max(0, Math.min(rangeStart, sessionRows.length - 1));
+    const end = Math.max(start, Math.min(rangeEnd, sessionRows.length - 1));
+
+    rangeAbortRef.current = false;
+    setIsRangePlaying(true);
+    setRepeatCurrent(0);
+
+    for (let rep = 0; rep < repeatTotal; rep++) {
+      if (rangeAbortRef.current) break;
+      setRepeatCurrent(rep + 1);
+      for (let i = start; i <= end; i++) {
+        if (rangeAbortRef.current) break;
+        const row = sessionRows[i];
+        sessionApi.goTo(i);
+        try {
+          audioApi.stop();
+          await audioApi.play(row);
+          // Wait for audio to finish playing
+          await new Promise<void>(resolve => {
+            const check = () => {
+              if (!audioApi.isPlaying || rangeAbortRef.current) { resolve(); return; }
+              setTimeout(check, 100);
+            };
+            setTimeout(check, 200);
+          });
+        } catch {
+          // TTS error — skip
+        }
+        if (rangeAbortRef.current) break;
+      }
+    }
+    setIsRangePlaying(false);
+    setRepeatCurrent(0);
+  }, [rangeStart, rangeEnd, repeatTotal, sessionApi, audioApi]);
+
+  const stopRange = useCallback(() => {
+    rangeAbortRef.current = true;
+    audioApi.stop();
+    setIsRangePlaying(false);
+    setRepeatCurrent(0);
+  }, [audioApi]);
+
   // Play a row's audio. Max 1 concurrent: stop() clears previous before play().
   // TTS failure captured in ttsError state.
   const playRow = useCallback(
@@ -170,5 +238,15 @@ export function useRepetition(setId: string): UseRepetitionReturn {
     complete: sessionApi.complete,
     reset: sessionApi.reset,
     saveProgress: progressApi.saveProgress,
+    rangeStart,
+    rangeEnd,
+    repeatTotal,
+    repeatCurrent,
+    isRangePlaying,
+    setRangeStart,
+    setRangeEnd,
+    setRepeatTotal,
+    playRange,
+    stopRange,
   };
 }
