@@ -130,8 +130,10 @@ export function useRepetition(setId: string): UseRepetitionReturn {
 
   // Save elapsed time on unmount — covers navigating away before session completes.
   // hasSavedRef guard prevents double-save when unmounting after completion.
+  // H4 fix: Also stop range playback on unmount to prevent audio leak.
   useEffect(() => {
     return () => {
+      rangeAbortRef.current = true;
       if (sessionRef.current.elapsedSeconds > 0 && !hasSavedRef.current) {
         saveProgressRef.current().catch(console.error);
       }

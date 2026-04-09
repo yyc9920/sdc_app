@@ -202,6 +202,11 @@ export function useFreeResponse(setId: string) {
 
   // ── Actions ──────────────────────────────────────────────────────────────────
 
+  // H3 fix: Clear TTS error on phase transitions
+  useEffect(() => {
+    setTtsError(false);
+  }, [phase]);
+
   const playPrompt = useCallback(() => {
     if (!promptRow) return;
     setTtsError(false);

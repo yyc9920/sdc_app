@@ -132,6 +132,23 @@ export function useSpeedListening(config: {
   const [score, setScore] = useState<QuizScore | null>(null);
   const [hasPlayedOnce, setHasPlayedOnce] = useState(false);
 
+  // C1 fix: Reset all local state when setId changes (e.g. "다음 세트" navigation)
+  const prevSetIdRef = useRef(setId);
+  useEffect(() => {
+    if (prevSetIdRef.current !== setId) {
+      prevSetIdRef.current = setId;
+      stopRef.current = true;
+      audioApi.stop();
+      setLocalPhase('listening');
+      setCurrentPlayingIndex(-1);
+      setBlanks({});
+      setIsSubmitted(false);
+      setScore(null);
+      setHasPlayedOnce(false);
+      sessionApi.reset();
+    }
+  }, [setId, audioApi, sessionApi]);
+
   // Sync isPlaying to ref so the async playAll loop can poll without stale closures
   const isPlayingRef = useRef(false);
   useEffect(() => {

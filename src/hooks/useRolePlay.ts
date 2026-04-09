@@ -244,7 +244,7 @@ export function useRolePlay(setId: string) {
     transcriptRef.current = audioApi.transcript;
     if (audioApi.transcript) {
       dispatch({ type: 'UPDATE_LIVE_TRANSCRIPT', transcript: audioApi.transcript });
-      if (currentRow) {
+      if (currentRow) { // C5 fix: null guard already here; also guard the evaluateSpeechLogic call
         const result = evaluateSpeechLogic(audioApi.transcript, currentRow.english, false);
         dispatch({ type: 'UPDATE_LIVE_WORD_STATUSES', statuses: result.wordStatuses });
       }

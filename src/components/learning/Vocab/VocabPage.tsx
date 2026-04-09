@@ -69,9 +69,10 @@ export const VocabPage = ({
     onBack();
   };
 
+  // M7 fix: Use currentIndex + 1 for all non-review phases so progress reaches 100%
   const progressPercent =
     totalItems > 0
-      ? Math.round(((currentIndex + (phase === 'review' ? 1 : 0)) / totalItems) * 100)
+      ? Math.round(((phase === 'review' ? totalItems : currentIndex + 1) / totalItems) * 100)
       : 0;
 
   if (isLoading) return <LoadingSpinner fullScreen />;
@@ -92,7 +93,7 @@ export const VocabPage = ({
       <header className="shrink-0 w-full max-w-4xl mx-auto flex justify-between items-center p-3 sm:p-4 bg-gray-50/90 dark:bg-gray-900/90 backdrop-blur z-40 border-b border-gray-200 dark:border-gray-700 gap-3">
         <div className="flex items-center gap-1 sm:gap-3 flex-1 min-w-0">
           <button
-            onClick={onBack}
+            onClick={() => { vocab.stop(); onBack(); }}
             className="p-2 -ml-2 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors active:scale-90 shrink-0"
           >
             <ChevronLeft className="w-6 h-6 text-gray-600 dark:text-gray-400" />

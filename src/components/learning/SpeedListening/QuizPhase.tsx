@@ -134,10 +134,10 @@ export const QuizPhase: React.FC<QuizPhaseProps> = ({
                   )}
                 </div>
 
-                {/* Per-sentence replay button (addresses devil's re-listen concern) */}
+                {/* Per-sentence replay button */}
                 <button
                   onClick={() => onReplaySingle(row)}
-                  className="absolute top-2 right-2 p-1 text-gray-300 dark:text-gray-600 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
+                  className="absolute top-2 right-2 p-2 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-blue-900/30 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                   title="이 문장 다시 듣기"
                   aria-label="이 문장 다시 듣기"
                 >

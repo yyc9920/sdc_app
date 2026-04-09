@@ -134,8 +134,9 @@ export function isReducer(state: ISState, action: ISAction): ISState {
       };
     }
 
-    case 'DISMISS_HINT':
+    case 'DISMISS_HINT': {
       return { ...state, hints: state.hints.filter(h => h.id !== action.id) };
+    }
 
     case 'RESET_ROW':
       return {
@@ -475,8 +476,9 @@ export function useInfiniteSpeaking(setId: string) {
         const target = sessionRef.current.round === 2 && currentUnitRef.current
           ? currentUnitRef.current.combinedEnglish
           : currentRowRef.current.english;
-        const result = evaluateSpeechLogic(speechRef.current?.transcript ?? '', target, true);
-        dispatch({ type: 'UPDATE_SPEECH', transcript: result.wordStatuses.join(' '), wordStatuses: result.wordStatuses, score: result.score });
+        const transcript = speechRef.current?.transcript ?? '';
+        const result = evaluateSpeechLogic(transcript, target, true);
+        dispatch({ type: 'UPDATE_SPEECH', transcript, wordStatuses: result.wordStatuses, score: result.score });
       }
       setTimeout(() => {
         dispatch({ type: 'SET_SUB_PHASE', subPhase: 'COMPARISON' });
@@ -562,6 +564,8 @@ export function useInfiniteSpeaking(setId: string) {
       hintTimers.forEach(t => clearTimeout(t));
       if (r1AudioRef.current) r1AudioRef.current.pause();
       if (listeningAudioRef.current) listeningAudioRef.current.pause();
+      // H5 fix: Stop speech recognition on unmount to prevent listener leak
+      speechRef.current?.stopRecording();
     };
   }, []);
 
@@ -660,7 +664,13 @@ export function useInfiniteSpeaking(setId: string) {
     dispatch({ type: 'ADD_HINT', message });
   }, []);
 
+  // M6 fix: Also clear the auto-dismiss timer when manually dismissing a hint
   const dismissHint = useCallback((id: number) => {
+    const timer = hintTimersRef.current.get(id);
+    if (timer) {
+      clearTimeout(timer);
+      hintTimersRef.current.delete(id);
+    }
     dispatch({ type: 'DISMISS_HINT', id });
   }, []);
 

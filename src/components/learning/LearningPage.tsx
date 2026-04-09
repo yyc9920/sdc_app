@@ -40,6 +40,16 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
   const [selectedSpeedListeningSet, setSelectedSpeedListeningSet] = useState<SpeedListeningSet | null>(null);
   const [selectedLevel, setSelectedLevel] = useState<number | 'all'>('all');
 
+  // M1 fix: Reset navigation state when switching modes
+  const selectMode = (newMode: LearningMode) => {
+    setMode(newMode);
+    setNavLevel(null);
+    setNavCategory(null);
+    setSelectedDataSet(null);
+    setSelectedSpeedListeningSet(null);
+    setSelectedLevel('all');
+  };
+
   const currentLevelGroup = levels.find(l => l.level === navLevel);
   const currentCategoryGroup = currentLevelGroup?.categories.find(c => c.code === navCategory);
 
@@ -79,7 +89,7 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
     } else if (navLevel !== null) {
       setNavLevel(null);
     } else if (mode) {
-      setMode(null);
+      selectMode(null);
     }
   };
 
@@ -169,7 +179,7 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
             {(mode || selectedDataSet) && (
               <button
                 onClick={handleBack}
-                className="p-2 -ml-2 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors active:scale-90 shrink-0"
+                className="p-2.5 -ml-2.5 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors active:scale-90 shrink-0"
               >
                 <ChevronLeft className="w-6 h-6 text-gray-600 dark:text-gray-400" />
               </button>
@@ -238,7 +248,7 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
             </section>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <button
-                onClick={() => setMode('speed_listening')}
+                onClick={() => selectMode('speed_listening')}
                 className="group relative flex items-center p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-sm border-2 border-transparent hover:border-blue-500 dark:hover:border-blue-400 transition-all hover:shadow-xl active:scale-[0.98]"
               >
                 <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-2xl mr-4 group-hover:scale-110 transition-transform shrink-0">
@@ -250,7 +260,7 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
                 </div>
               </button>
               <button
-                onClick={() => setMode('infinite_speaking')}
+                onClick={() => selectMode('infinite_speaking')}
                 className="group relative flex items-center p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-sm border-2 border-transparent hover:border-purple-500 dark:hover:border-purple-400 transition-all hover:shadow-xl active:scale-[0.98]"
               >
                 <div className="p-3 bg-purple-50 dark:bg-purple-900/30 rounded-2xl mr-4 group-hover:scale-110 transition-transform shrink-0">
@@ -262,7 +272,7 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
                 </div>
               </button>
               <button
-                onClick={() => setMode('vocab')}
+                onClick={() => selectMode('vocab')}
                 className="group relative flex items-center p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-sm border-2 border-transparent hover:border-emerald-500 dark:hover:border-emerald-400 transition-all hover:shadow-xl active:scale-[0.98]"
               >
                 <div className="p-3 bg-emerald-50 dark:bg-emerald-900/30 rounded-2xl mr-4 group-hover:scale-110 transition-transform shrink-0">
@@ -274,7 +284,7 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
                 </div>
               </button>
               <button
-                onClick={() => setMode('repetition')}
+                onClick={() => selectMode('repetition')}
                 className="group relative flex items-center p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-sm border-2 border-transparent hover:border-orange-500 dark:hover:border-orange-400 transition-all hover:shadow-xl active:scale-[0.98]"
               >
                 <div className="p-3 bg-orange-50 dark:bg-orange-900/30 rounded-2xl mr-4 group-hover:scale-110 transition-transform shrink-0">
@@ -286,7 +296,7 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
                 </div>
               </button>
               <button
-                onClick={() => setMode('role_play')}
+                onClick={() => selectMode('role_play')}
                 className="group relative flex items-center p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-sm border-2 border-transparent hover:border-pink-500 dark:hover:border-pink-400 transition-all hover:shadow-xl active:scale-[0.98]"
               >
                 <div className="p-3 bg-pink-50 dark:bg-pink-900/30 rounded-2xl mr-4 group-hover:scale-110 transition-transform shrink-0">
@@ -298,7 +308,7 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
                 </div>
               </button>
               <button
-                onClick={() => setMode('free_response')}
+                onClick={() => selectMode('free_response')}
                 className="group relative flex items-center p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-sm border-2 border-transparent hover:border-rose-500 dark:hover:border-rose-400 transition-all hover:shadow-xl active:scale-[0.98]"
               >
                 <div className="p-3 bg-rose-50 dark:bg-rose-900/30 rounded-2xl mr-4 group-hover:scale-110 transition-transform shrink-0">

@@ -8,6 +8,8 @@ import {
   ChevronRight,
   SkipBack,
   RefreshCw,
+  Repeat,
+  Square,
 } from 'lucide-react';
 import { useRepetition } from '../../../hooks/useRepetition';
 import { LoadingSpinner } from '../../LoadingSpinner';
@@ -26,6 +28,12 @@ interface RepetitionPageProps {
 }
 
 const SPEED_OPTIONS = [1, 1.5, 2] as const;
+// 0 = infinite loop
+const LOOP_OPTIONS = [1, 2, 3, 5, 0] as const;
+
+function loopLabel(n: number): string {
+  return n === 0 ? '∞' : `${n}`;
+}
 
 export const RepetitionPage = ({
   dataSet,
@@ -64,7 +72,13 @@ export const RepetitionPage = ({
     stopRange,
   } = engine;
 
+  // Auto-play: plays through all sentences sequentially with loop support
   const [autoPlay, setAutoPlay] = useState(false);
+  const [loopTotal, setLoopTotal] = useState(1); // 0 = infinite
+  const loopCurrentRef = useRef(1);
+  const [loopCurrentDisplay, setLoopCurrentDisplay] = useState(1);
+
+  // Range controls (advanced)
   const [showRangeControls, setShowRangeControls] = useState(false);
   const activeCardRef = useRef<HTMLButtonElement | null>(null);
 
@@ -81,14 +95,31 @@ export const RepetitionPage = ({
   }, [session.currentIndex]);
 
   // When audio ends naturally → advance to next card if autoPlay is on
+  // Supports looping: at last sentence, loops back to first if repeats remain
   useEffect(() => {
     if (wasPlayingRef.current && !isPlaying && autoPlay && session.phase === 'active') {
-      next();
+      const isLast = session.currentIndex >= session.rows.length - 1;
+      if (!isLast) {
+        next();
+      } else {
+        // At last sentence — check loop
+        const canLoop = loopTotal === 0 || loopCurrentRef.current < loopTotal;
+        if (canLoop) {
+          loopCurrentRef.current += 1;
+          setLoopCurrentDisplay(loopCurrentRef.current);
+          goTo(0);
+        } else {
+          // All loops done — stop auto-play
+          setAutoPlay(false);
+          loopCurrentRef.current = 1;
+          setLoopCurrentDisplay(1);
+        }
+      }
     }
     wasPlayingRef.current = isPlaying;
-  }, [isPlaying, autoPlay, session.phase, next]);
+  }, [isPlaying, autoPlay, session.phase, session.currentIndex, session.rows.length, next, goTo, loopTotal]);
 
-  // When currentIndex changes (from next/prev buttons) → auto-play the new card if autoPlay on
+  // When currentIndex changes (from next/prev/goTo) → auto-play the new card if autoPlay on
   // Skipped on first render and when change came from a direct card tap
   useEffect(() => {
     if (firstRenderRef.current) {
@@ -130,7 +161,25 @@ export const RepetitionPage = ({
     [goTo, session.rows, playRow],
   );
 
+  // Main play/pause: toggles autoPlay and starts/stops playback
   const handlePlayPause = useCallback(() => {
+    if (autoPlay) {
+      // Stop auto-play and current audio
+      setAutoPlay(false);
+      stop();
+      loopCurrentRef.current = 1;
+      setLoopCurrentDisplay(1);
+    } else if (currentRow) {
+      // Start auto-play from current position
+      loopCurrentRef.current = 1;
+      setLoopCurrentDisplay(1);
+      setAutoPlay(true);
+      playRow(currentRow).catch(console.error);
+    }
+  }, [autoPlay, stop, currentRow, playRow]);
+
+  // Manual play (single sentence, no auto-advance)
+  const handleSinglePlay = useCallback(() => {
     if (isPlaying) {
       stop();
     } else if (currentRow) {
@@ -143,8 +192,16 @@ export const RepetitionPage = ({
     setSpeed(SPEED_OPTIONS[(idx + 1) % SPEED_OPTIONS.length]);
   }, [speed, setSpeed]);
 
+  const handleLoopCycle = useCallback(() => {
+    setLoopTotal(prev => {
+      const idx = LOOP_OPTIONS.indexOf(prev as typeof LOOP_OPTIONS[number]);
+      return LOOP_OPTIONS[(idx + 1) % LOOP_OPTIONS.length];
+    });
+  }, []);
+
   const handleBack = useCallback(() => {
     stop();
+    setAutoPlay(false);
     reset();
     onBack();
   }, [stop, reset, onBack]);
@@ -185,6 +242,8 @@ export const RepetitionPage = ({
       </div>
     );
   }
+
+  const showLoopProgress = autoPlay && loopTotal !== 1;
 
   return (
     <div
@@ -228,6 +287,18 @@ export const RepetitionPage = ({
         <div className="shrink-0 mx-4 mt-2 p-3 bg-amber-50 dark:bg-amber-900/30 border border-amber-300 dark:border-amber-700 rounded-xl flex items-center gap-3 text-sm">
           <RefreshCw className="w-4 h-4 text-amber-500 shrink-0" />
           <span className="text-amber-800 dark:text-amber-200">음성을 불러올 수 없습니다</span>
+        </div>
+      )}
+
+      {/* Loop progress indicator */}
+      {showLoopProgress && (
+        <div className="shrink-0 mx-4 mt-2 flex items-center justify-center gap-2 text-xs text-blue-600 dark:text-blue-400 font-bold">
+          <Repeat className="w-3.5 h-3.5" />
+          <span>
+            {loopTotal === 0
+              ? `${loopCurrentDisplay}회 반복 중`
+              : `${loopCurrentDisplay} / ${loopTotal}회`}
+          </span>
         </div>
       )}
 
@@ -275,7 +346,7 @@ export const RepetitionPage = ({
         )}
       </main>
 
-      {/* Range playback controls */}
+      {/* Range playback controls (advanced) */}
       {showRangeControls && (
         <div className="shrink-0 fixed bottom-[calc(4rem+env(safe-area-inset-bottom))] left-0 right-0 bg-white/95 dark:bg-gray-800/95 backdrop-blur border-t border-gray-200 dark:border-gray-700 px-4 py-3 z-30">
           <div className="max-w-4xl mx-auto space-y-3">
@@ -337,17 +408,31 @@ export const RepetitionPage = ({
 
       {/* Footer playback controls */}
       <div className="shrink-0 fixed bottom-0 left-0 right-0 bg-white/90 dark:bg-gray-900/90 backdrop-blur border-t border-gray-200 dark:border-gray-800 px-4 py-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))]">
-        <div className="max-w-4xl mx-auto flex items-center justify-between gap-3">
-          {/* Speed cycle */}
-          <button
-            onClick={handleSpeedCycle}
-            className="px-3 py-2 text-sm font-bold rounded-xl bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors min-w-[48px]"
-            aria-label="재생 속도 변경"
-          >
-            {speed}x
-          </button>
+        <div className="max-w-4xl mx-auto flex items-center justify-between gap-2">
+          {/* Left: Speed + Loop count */}
+          <div className="flex items-center gap-1.5">
+            <button
+              onClick={handleSpeedCycle}
+              className="px-2.5 py-2 text-sm font-bold rounded-xl bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors min-w-[44px]"
+              aria-label={`재생 속도 ${speed}배`}
+            >
+              {speed}x
+            </button>
+            <button
+              onClick={handleLoopCycle}
+              className={`flex items-center gap-1 px-2.5 py-2 text-sm font-bold rounded-xl transition-colors min-w-[44px] ${
+                loopTotal !== 1
+                  ? 'bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300'
+                  : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
+              }`}
+              aria-label={`반복 횟수 ${loopLabel(loopTotal)}회`}
+            >
+              <Repeat className="w-3.5 h-3.5" />
+              {loopLabel(loopTotal)}
+            </button>
+          </div>
 
-          {/* Prev / Play-Pause / Next */}
+          {/* Center: Prev / Play-Stop / Next */}
           <div className="flex items-center gap-2">
             <button
               onClick={prev}
@@ -357,12 +442,17 @@ export const RepetitionPage = ({
               <SkipBack className="w-5 h-5" />
             </button>
 
+            {/* Auto-play button: starts sequential playback with loop */}
             <button
               onClick={handlePlayPause}
-              className="p-4 rounded-full bg-blue-600 text-white hover:bg-blue-700 shadow-md transition-all active:scale-90"
-              aria-label={isPlaying ? '일시정지' : '재생'}
+              className={`p-4 rounded-full text-white shadow-md transition-all active:scale-90 ${
+                autoPlay
+                  ? 'bg-red-500 hover:bg-red-600'
+                  : 'bg-blue-600 hover:bg-blue-700'
+              }`}
+              aria-label={autoPlay ? '연속 재생 정지' : '연속 재생'}
             >
-              {isPlaying ? <Pause className="w-6 h-6" /> : <Play className="w-6 h-6" />}
+              {autoPlay ? <Square className="w-5 h-5 fill-current" /> : <Play className="w-6 h-6" />}
             </button>
 
             <button
@@ -374,12 +464,21 @@ export const RepetitionPage = ({
             </button>
           </div>
 
-          {/* Range toggle + Auto-play toggle */}
-          <div className="flex items-center gap-2">
+          {/* Right: Single play + Range */}
+          <div className="flex items-center gap-1.5">
+            {/* Single sentence play/pause */}
+            <button
+              onClick={handleSinglePlay}
+              disabled={autoPlay}
+              className="p-2.5 rounded-xl bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+              aria-label={isPlaying ? '일시정지' : '현재 문장 재생'}
+            >
+              {isPlaying && !autoPlay ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
+            </button>
             {/* Range toggle */}
             <button
               onClick={() => setShowRangeControls(p => !p)}
-              className={`px-3 py-2 text-xs font-bold rounded-xl transition-colors ${
+              className={`px-2.5 py-2 text-xs font-bold rounded-xl transition-colors ${
                 showRangeControls
                   ? 'bg-orange-500 text-white shadow-sm'
                   : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400'
@@ -387,19 +486,6 @@ export const RepetitionPage = ({
               aria-label={showRangeControls ? '범위 설정 닫기' : '범위 설정 열기'}
             >
               범위
-            </button>
-            {/* Auto-play toggle */}
-            <button
-              onClick={() => setAutoPlay((p) => !p)}
-              className={`px-3 py-2 text-xs font-bold rounded-xl transition-colors ${
-                autoPlay
-                  ? 'bg-blue-600 text-white shadow-sm'
-                  : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400'
-              }`}
-              aria-label={autoPlay ? '자동재생 끄기' : '자동재생 켜기'}
-              aria-pressed={autoPlay}
-            >
-              자동
             </button>
           </div>
         </div>

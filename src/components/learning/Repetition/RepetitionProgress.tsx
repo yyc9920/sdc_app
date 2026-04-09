@@ -44,7 +44,7 @@ export const RepetitionProgress = ({ rows, currentIndex, onGoTo }: RepetitionPro
               role={isClickable ? 'button' : undefined}
               tabIndex={isClickable ? 0 : undefined}
               onClick={isClickable ? () => onGoTo(i) : undefined}
-              onKeyDown={isClickable ? (e) => { if (e.key === 'Enter') onGoTo(i); } : undefined}
+              onKeyDown={isClickable ? (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onGoTo(i); } } : undefined}
               className={`flex-1 transition-all duration-150 ${colorClass} ${
                 isClickable ? 'cursor-pointer' : 'cursor-default'
               }`}

@@ -90,6 +90,12 @@ export function useVocab(setId: string) {
   const [elapsedSeconds, setElapsedSeconds] = useState(0);
   const hasSavedRef = useRef(false);
 
+  // M3 fix: Reset elapsed time when setId changes
+  useEffect(() => {
+    startedAtRef.current = Date.now();
+    setElapsedSeconds(0);
+  }, [setId]);
+
   // Elapsed time counter
   useEffect(() => {
     const interval = setInterval(() => {

@@ -93,6 +93,11 @@ export const useLearningSetsBrowser = (mode?: string | null) => {
       );
     }
 
+    // Repetition works with any set that has script/reading rows — no filtering needed
+    if (mode === 'repetition') {
+      return data;
+    }
+
     return data.filter(s =>
       !s.supportedModes || s.supportedModes.includes(trainingMode)
     );
