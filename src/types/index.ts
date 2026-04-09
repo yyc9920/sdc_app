@@ -37,6 +37,8 @@ export interface LearningSetMeta {
   sentenceCount: number;
   isLegacy: boolean;
   status: string;
+  supportedModes?: string[];
+  hasSpeedListening?: boolean;
 }
 
 export interface AppState {

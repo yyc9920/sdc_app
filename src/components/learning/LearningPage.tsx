@@ -32,8 +32,8 @@ type LearningMode = 'repetition' | 'speed_listening' | 'infinite_speaking' | 'ro
 export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) => {
   const { user } = useAuth();
   const { prefetch } = usePrefetchData();
-  const { levels, loading: browsing } = useLearningSetsBrowser();
   const [mode, setMode] = useState<LearningMode>(null);
+  const { levels, loading: browsing } = useLearningSetsBrowser(mode);
   const [navLevel, setNavLevel] = useState<LearningLevel | null>(null);
   const [navCategory, setNavCategory] = useState<CategoryCode | null>(null);
   const [selectedDataSet, setSelectedDataSet] = useState<DataSet | null>(null);
