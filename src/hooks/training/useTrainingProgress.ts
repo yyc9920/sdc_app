@@ -2,7 +2,7 @@ import { useCallback } from 'react';
 import { doc, collection, writeBatch, increment, serverTimestamp } from 'firebase/firestore';
 import { db, auth } from '../../firebase';
 import type { TrainingSession } from './types';
-import { getTodayString } from '../useStudySession';
+import { getTodayString, getStreakUpdates } from '../useStudySession';
 
 export function useTrainingProgress(session: TrainingSession) {
   const saveProgress = useCallback(async () => {
@@ -24,11 +24,15 @@ export function useTrainingProgress(session: TrainingSession) {
       { merge: true },
     );
 
+    const streakUpdates = await getStreakUpdates(user.uid);
+
     const userRef = doc(db, 'users', user.uid);
     batch.update(userRef, {
       'stats.totalStudyTimeSeconds': increment(session.elapsedSeconds),
       'stats.weeklyStudyTimeSeconds': increment(session.elapsedSeconds),
       'stats.lastActiveDate': today,
+      'stats.currentStreak': streakUpdates.stats.currentStreak,
+      'stats.longestStreak': streakUpdates.stats.longestStreak,
     });
 
     await batch.commit();

@@ -8,7 +8,7 @@ export const getTodayString = () => {
 };
 
 
-const getStreakUpdates = async (uid: string) => {
+export const getStreakUpdates = async (uid: string) => {
   const statsRef = collection(db, `users/${uid}/daily_stats`);
   const q = query(statsRef, orderBy('date', 'desc'));
   const snap = await getDocs(q);

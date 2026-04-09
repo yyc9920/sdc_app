@@ -7,6 +7,13 @@ vi.mock('../../../firebase', () => ({
   auth: { currentUser: { uid: 'test-user' } },
 }));
 
+vi.mock('../../useStudySession', () => ({
+  getTodayString: vi.fn(() => '2026-04-09'),
+  getStreakUpdates: vi.fn().mockResolvedValue({
+    stats: { currentStreak: 3, longestStreak: 7, lastActiveDate: '2026-04-09' },
+  }),
+}));
+
 vi.mock('firebase/firestore', () => ({
   doc: vi.fn(),
   collection: vi.fn(),
