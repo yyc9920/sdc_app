@@ -503,8 +503,8 @@ export function useInfiniteSpeaking(setId: string) {
 
     speech.startRecording();
 
-    speakingTimeoutRef.current = window.setTimeout(() => {
-      speech.stopRecording();
+    speakingTimeoutRef.current = window.setTimeout(async () => {
+      await speechRef.current?.stopRecording();
       if (currentRowRef.current) {
         const target = sessionRef.current.round === 2 && currentUnitRef.current
           ? currentUnitRef.current.combinedEnglish
@@ -513,9 +513,7 @@ export function useInfiniteSpeaking(setId: string) {
         const result = evaluateSpeechLogic(transcript, target, true);
         dispatch({ type: 'UPDATE_SPEECH', transcript, wordStatuses: result.wordStatuses, score: result.score });
       }
-      setTimeout(() => {
-        dispatch({ type: 'SET_SUB_PHASE', subPhase: 'COMPARISON' });
-      }, 150);
+      dispatch({ type: 'SET_SUB_PHASE', subPhase: 'COMPARISON' });
     }, TIMEOUTS.SPEAKING_TIMEOUT_MS);
 
     return () => {
@@ -654,8 +652,9 @@ export function useInfiniteSpeaking(setId: string) {
     savedRoundRef.current = 0;
   }, [sessionNextRound]);
 
-  const finishSpeaking = useCallback(() => {
-    speech.stopRecording();
+  const finishSpeaking = useCallback(async () => {
+    // Wait for MediaRecorder blob to be finalized before transitioning
+    await speech.stopRecording();
     if (speakingTimeoutRef.current) clearTimeout(speakingTimeoutRef.current);
     if (currentRowRef.current) {
       const target = sessionRef.current.round === 2 && currentUnitRef.current
@@ -664,10 +663,7 @@ export function useInfiniteSpeaking(setId: string) {
       const result = evaluateSpeechLogic(speechRef.current?.transcript ?? '', target, true);
       dispatch({ type: 'UPDATE_SPEECH', transcript: speechRef.current?.transcript ?? '', wordStatuses: result.wordStatuses, score: result.score });
     }
-    // Delay transition to let MediaRecorder.onstop fire and set audioUrl
-    setTimeout(() => {
-      dispatch({ type: 'SET_SUB_PHASE', subPhase: 'COMPARISON' });
-    }, 150);
+    dispatch({ type: 'SET_SUB_PHASE', subPhase: 'COMPARISON' });
   }, [speech]);
 
   const retrySpeaking = useCallback(() => {
@@ -722,8 +718,8 @@ export function useInfiniteSpeaking(setId: string) {
   const handleMobileMicStart = useCallback(() => {
     setNeedsMicGesture(false);
     speech.startRecording();
-    speakingTimeoutRef.current = window.setTimeout(() => {
-      speech.stopRecording();
+    speakingTimeoutRef.current = window.setTimeout(async () => {
+      await speech.stopRecording();
       if (currentRowRef.current) {
         const target = sessionRef.current.round === 2 && currentUnitRef.current
           ? currentUnitRef.current.combinedEnglish
@@ -731,15 +727,12 @@ export function useInfiniteSpeaking(setId: string) {
         const result = evaluateSpeechLogic(speechRef.current?.transcript ?? '', target, true);
         dispatch({ type: 'UPDATE_SPEECH', transcript: speechRef.current?.transcript ?? '', wordStatuses: result.wordStatuses, score: result.score });
       }
-      // Delay transition to let MediaRecorder.onstop fire and set audioUrl
-      setTimeout(() => {
-        dispatch({ type: 'SET_SUB_PHASE', subPhase: 'COMPARISON' });
-      }, 150);
+      dispatch({ type: 'SET_SUB_PHASE', subPhase: 'COMPARISON' });
     }, TIMEOUTS.SPEAKING_TIMEOUT_MS);
   }, [speech]);
 
-  const handleManualStopSpeaking = useCallback(() => {
-    speech.stopRecording();
+  const handleManualStopSpeaking = useCallback(async () => {
+    await speech.stopRecording();
     if (speakingTimeoutRef.current) clearTimeout(speakingTimeoutRef.current);
     if (currentRowRef.current) {
       const target = sessionRef.current.round === 2 && currentUnitRef.current
@@ -748,10 +741,7 @@ export function useInfiniteSpeaking(setId: string) {
       const result = evaluateSpeechLogic(speech.transcript, target, true);
       dispatch({ type: 'UPDATE_SPEECH', transcript: speech.transcript, wordStatuses: result.wordStatuses, score: result.score });
     }
-    // Delay transition to let MediaRecorder.onstop fire and set audioUrl
-    setTimeout(() => {
-      dispatch({ type: 'SET_SUB_PHASE', subPhase: 'COMPARISON' });
-    }, 150);
+    dispatch({ type: 'SET_SUB_PHASE', subPhase: 'COMPARISON' });
   }, [speech]);
 
   const handlePlayModelForComparison = useCallback(async () => {

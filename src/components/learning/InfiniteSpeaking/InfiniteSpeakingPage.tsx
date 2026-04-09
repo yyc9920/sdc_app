@@ -27,7 +27,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
     promptRow, scriptRows, currentRow, speakerStyleMap,
     r1PlayingIndex, r1IsPaused, currentUnit,
     session,
-    subPhase, handsFree, wordStatuses, transcript, score, retryCount, hints,
+    subPhase, handsFree, wordStatuses, score, retryCount, hints,
     ttsError, needsMicGesture,
     speech,
     startRound, finishSpeaking, retrySpeaking, nextRow, nextRound,
@@ -43,6 +43,9 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
   const currentSpeakerStyle = currentRow?.speaker ? speakerStyleMap[currentRow.speaker] : undefined;
   // R3: hide text during speaking
   const textVisible = session.round !== 3 || subPhase !== 'SPEAKING';
+
+  // "내 발음" playback: only available when blob recording exists
+  const canPlayMine = !!speech.audioUrl;
 
   if (isLoading) return <LoadingSpinner fullScreen />;
   if (error) return (
@@ -287,8 +290,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
               words={session.round === 2 && currentUnit ? currentUnit.combinedEnglish.split(' ') : currentRow.english.split(' ')}
               onPlayModel={handlePlayModelForComparison}
               onPlayMine={speech.playRecording}
-              hasRecording={!!speech.audioUrl}
-              recognizedText={transcript}
+              canPlayMine={canPlayMine}
               onNext={nextRow}
               onRetry={retrySpeaking}
               retryCount={retryCount}

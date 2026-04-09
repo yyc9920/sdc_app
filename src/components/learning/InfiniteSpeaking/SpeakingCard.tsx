@@ -162,20 +162,11 @@ export const SpeakingCard = ({
         }
       </div>
 
-      {/* Korean meaning (shown in rounds 2-4) */}
+      {/* Korean meaning — compact inline below English */}
       {showKorean && koreanMeaning && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          className="text-center"
-        >
-          <span className="inline-block text-xs font-bold text-purple-500 bg-purple-50 dark:bg-purple-900/30 px-2.5 py-1 rounded mb-2">
-            한국어
-          </span>
-          <p className="text-xl text-gray-700 dark:text-gray-300 font-medium">
-            {koreanMeaning}
-          </p>
-        </motion.div>
+        <p className="text-center text-base text-purple-600 dark:text-purple-400 font-medium -mt-2">
+          {koreanMeaning}
+        </p>
       )}
 
       {/* Speaking indicator */}

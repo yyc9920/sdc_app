@@ -23,6 +23,8 @@ export const useStreamingSpeechRecognition = (options: UseStreamingSpeechRecogni
   const onTranscriptUpdateRef = useRef(onTranscriptUpdate);
   const fullTranscriptRef = useRef('');
   const streamRef = useRef<MediaStream | null>(null);
+  // Resolve function for the stop promise — called when blob is ready
+  const stopResolveRef = useRef<(() => void) | null>(null);
 
   useEffect(() => {
     onTranscriptUpdateRef.current = onTranscriptUpdate;
@@ -107,6 +109,11 @@ export const useStreamingSpeechRecognition = (options: UseStreamingSpeechRecogni
             setAudioUrl(url);
             stream.getTracks().forEach(track => track.stop());
             streamRef.current = null;
+            // Signal that blob is ready
+            if (stopResolveRef.current) {
+              stopResolveRef.current();
+              stopResolveRef.current = null;
+            }
           };
 
           setAudioUrl(null);
@@ -121,12 +128,24 @@ export const useStreamingSpeechRecognition = (options: UseStreamingSpeechRecogni
     }
   }, [isRecording, lang]);
 
-  const stopRecording = useCallback(() => {
+  /**
+   * Stop recording and return a promise that resolves when the audio blob is ready.
+   * If no MediaRecorder is active, resolves immediately.
+   */
+  const stopRecording = useCallback((): Promise<void> => {
     speechService.stopListening();
     setIsRecording(false);
+
     if (mediaRecorderRef.current && mediaRecorderRef.current.state !== 'inactive') {
-      mediaRecorderRef.current.stop();
+      return new Promise<void>((resolve) => {
+        stopResolveRef.current = resolve;
+        mediaRecorderRef.current!.stop();
+        // Safety timeout: resolve even if onstop never fires
+        setTimeout(resolve, 500);
+      });
     }
+
+    return Promise.resolve();
   }, []);
 
   const retryRecording = useCallback(async () => {

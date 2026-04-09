@@ -10,8 +10,8 @@ interface ComparisonViewProps {
   words: string[];
   onPlayModel: () => void;
   onPlayMine: () => void;
-  hasRecording: boolean;
-  recognizedText?: string;
+  /** Whether any form of "my pronunciation" playback is available */
+  canPlayMine: boolean;
   onNext: () => void;
   onRetry: () => void;
   retryCount: number;
@@ -26,8 +26,7 @@ export const ComparisonView = ({
   words,
   onPlayModel,
   onPlayMine,
-  hasRecording,
-  recognizedText,
+  canPlayMine,
   onNext,
   onRetry,
   retryCount,
@@ -90,38 +89,13 @@ export const ComparisonView = ({
           <Volume2 className="w-5 h-5" />
           모범 발음
         </button>
-        {hasRecording ? (
-          <button
-            onClick={() => {
-              setPlayingMine(true);
-              onPlayMine();
-              setTimeout(() => setPlayingMine(false), 2000);
-            }}
-            className={`flex items-center gap-2 px-5 py-3 rounded-xl font-bold transition-all ${
-              playingMine
-                ? 'bg-purple-600 text-white shadow-md'
-                : 'bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-400 border border-purple-200 dark:border-purple-800 hover:bg-purple-200 dark:hover:bg-purple-900/50'
-            }`}
-          >
-            <Mic className="w-5 h-5" />
-            내 발음
-          </button>
-        ) : recognizedText ? (
+        {canPlayMine && (
           <button
             onClick={() => {
               if (playingMine) return;
               setPlayingMine(true);
-              // Cancel any previous utterance first, then create and speak new one
-              speechSynthesis.cancel();
-              // Small delay to ensure cancel completes before new utterance
-              setTimeout(() => {
-                const utterance = new SpeechSynthesisUtterance(recognizedText);
-                utterance.lang = 'en-US';
-                utterance.rate = 0.9;
-                utterance.onend = () => setPlayingMine(false);
-                utterance.onerror = () => setPlayingMine(false);
-                speechSynthesis.speak(utterance);
-              }, 50);
+              onPlayMine();
+              setTimeout(() => setPlayingMine(false), 3000);
             }}
             className={`flex items-center gap-2 px-5 py-3 rounded-xl font-bold transition-all ${
               playingMine
@@ -132,7 +106,7 @@ export const ComparisonView = ({
             <Mic className="w-5 h-5" />
             내 발음
           </button>
-        ) : null}
+        )}
       </div>
 
       {/* Retry / Next buttons */}
