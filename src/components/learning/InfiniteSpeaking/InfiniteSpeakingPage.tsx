@@ -25,7 +25,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
   const {
     isLoading, error,
     promptRow, scriptRows, currentRow, speakerStyleMap,
-    r1PlayingIndex, r1IsPaused,
+    r1PlayingIndex, r1IsPaused, currentUnit,
     session,
     subPhase, handsFree, wordStatuses, transcript, score, retryCount, hints,
     ttsError, needsMicGesture,
@@ -174,8 +174,8 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
             <div key={`listening-${session.currentIndex}`} className="space-y-4">
               {promptRow && <PromptCard row={promptRow} />}
               <SpeakingCard
-                sentence={currentRow.english}
-                koreanMeaning={currentRow.comprehension}
+                sentence={session.round === 2 && currentUnit ? currentUnit.combinedEnglish : currentRow.english}
+                koreanMeaning={session.round === 2 && currentUnit ? currentUnit.combinedKorean : currentRow.comprehension}
                 round={session.round as 1 | 2 | 3 | 4}
                 keyIndices={currentKeyIndices}
                 wordStatuses={wordStatuses}
@@ -204,8 +204,8 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
             <div key={`speaking-${session.currentIndex}-${retryCount}`} className="space-y-6">
               {promptRow && <PromptCard row={promptRow} />}
               <SpeakingCard
-                sentence={currentRow.english}
-                koreanMeaning={currentRow.comprehension}
+                sentence={session.round === 2 && currentUnit ? currentUnit.combinedEnglish : currentRow.english}
+                koreanMeaning={session.round === 2 && currentUnit ? currentUnit.combinedKorean : currentRow.comprehension}
                 round={session.round as 1 | 2 | 3 | 4}
                 keyIndices={currentKeyIndices}
                 wordStatuses={wordStatuses}
@@ -264,7 +264,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
               key={`comparison-${session.currentIndex}-${retryCount}`}
               score={score}
               wordStatuses={wordStatuses}
-              words={currentRow.english.split(' ')}
+              words={session.round === 2 && currentUnit ? currentUnit.combinedEnglish.split(' ') : currentRow.english.split(' ')}
               onPlayModel={handlePlayModelForComparison}
               onPlayMine={speech.playRecording}
               hasRecording={!!speech.audioUrl}
