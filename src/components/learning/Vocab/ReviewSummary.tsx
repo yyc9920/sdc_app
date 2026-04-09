@@ -1,14 +1,13 @@
-import { Check, X, Calendar, Trophy } from 'lucide-react';
+import { Check, X, Trophy } from 'lucide-react';
 import type { VocabItemResult } from '../../../hooks/useVocab';
 
 interface ReviewSummaryProps {
   results: VocabItemResult[];
   score: number;
-  nextReviewDays: number;
   onFinish: () => void;
 }
 
-export const ReviewSummary = ({ results, score, nextReviewDays, onFinish }: ReviewSummaryProps) => {
+export const ReviewSummary = ({ results, score, onFinish }: ReviewSummaryProps) => {
   const getScoreColor = () => {
     if (score >= 80) return 'text-emerald-600 dark:text-emerald-400';
     if (score >= 50) return 'text-amber-600 dark:text-amber-400';
@@ -36,23 +35,6 @@ export const ReviewSummary = ({ results, score, nextReviewDays, onFinish }: Revi
         <Trophy className="w-10 h-10 mx-auto text-amber-400 mb-3" />
         <p className={`text-5xl font-extrabold ${getScoreColor()}`}>{score}%</p>
         <p className="text-gray-500 dark:text-gray-400 mt-1 font-medium">{getScoreLabel()}</p>
-      </div>
-
-      {/* Next review */}
-      <div className="flex items-center gap-3 px-5 py-4 bg-blue-50 dark:bg-blue-900/30 rounded-2xl border border-blue-200 dark:border-blue-700">
-        <Calendar className="w-5 h-5 text-blue-500 shrink-0" />
-        <div>
-          <p className="text-sm font-bold text-blue-800 dark:text-blue-200">
-            다음 복습 권장: {nextReviewDays}일 후
-          </p>
-          <p className="text-xs text-blue-600 dark:text-blue-400 mt-0.5">
-            {nextReviewDays === 7
-              ? '완벽하게 기억하고 있어요!'
-              : nextReviewDays === 3
-                ? '조금 더 연습하면 완벽해질 거예요.'
-                : '오늘 다시 복습해보세요.'}
-          </p>
-        </div>
       </div>
 
       {/* Result table */}

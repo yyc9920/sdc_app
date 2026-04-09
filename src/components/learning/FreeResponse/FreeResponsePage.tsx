@@ -147,6 +147,7 @@ export const FreeResponsePage = ({
         {fr.phase === 'THINK' && (
           <ThinkTimer
             secondsLeft={fr.thinkSecondsLeft}
+            expired={fr.thinkExpired}
             keywords={topKeywords}
             onStartRecord={fr.startRecord}
           />
@@ -158,6 +159,7 @@ export const FreeResponsePage = ({
             secondsLeft={fr.recordSecondsLeft}
             transcript={fr.userTranscript}
             isRecording={fr.isRecording}
+            shortRecordingWarning={fr.shortRecordingWarning}
             onStop={fr.stopRecord}
           />
         )}
@@ -167,6 +169,7 @@ export const FreeResponsePage = ({
           <CompareView
             analysis={fr.analysis}
             modelRows={fr.scriptRows}
+            transcriptMissing={fr.transcriptMissing}
             onStartStudy={fr.startStudy}
           />
         )}

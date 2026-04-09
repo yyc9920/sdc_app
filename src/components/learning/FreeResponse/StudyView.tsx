@@ -56,14 +56,18 @@ export const StudyView = ({
       </p>
     )}
 
-    {/* Play button */}
+    {/* Play button — no auto-play; student taps to listen when ready */}
     <button
       onClick={onPlay}
       disabled={isPlaying}
-      className="flex items-center gap-2 px-6 py-3 bg-white dark:bg-gray-800 border-2 border-purple-400 dark:border-purple-600 rounded-full text-purple-600 dark:text-purple-400 font-semibold hover:bg-purple-50 dark:hover:bg-purple-900/20 disabled:opacity-50 transition-colors"
+      className={`flex items-center gap-2 px-6 py-3 border-2 rounded-full font-semibold transition-colors disabled:opacity-50 ${
+        !isPlaying
+          ? 'bg-purple-600 border-purple-600 text-white hover:bg-purple-700 hover:border-purple-700'
+          : 'bg-white dark:bg-gray-800 border-purple-400 dark:border-purple-600 text-purple-600 dark:text-purple-400 hover:bg-purple-50 dark:hover:bg-purple-900/20'
+      }`}
     >
       <Volume2 className="w-5 h-5" />
-      {isPlaying ? '재생 중...' : '다시 듣기'}
+      {isPlaying ? '재생 중...' : '듣기'}
     </button>
 
     {/* Next button */}

@@ -23,11 +23,12 @@ export function filterVocabRows(rows: TrainingRow[]): TrainingRow[] {
 }
 
 export function findContextRows(allRows: TrainingRow[], expression: string): TrainingRow[] {
-  const lower = expression.toLowerCase();
+  // Use word-boundary regex to prevent partial-word false positives
+  // e.g. "turn" must not match "return" or "turning"
+  const escaped = expression.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const regex = new RegExp(`\\b${escaped}\\b`, 'i');
   return allRows.filter(
-    r =>
-      (r.rowType === 'script' || r.rowType === 'reading') &&
-      r.english.toLowerCase().includes(lower),
+    r => (r.rowType === 'script' || r.rowType === 'reading') && regex.test(r.english),
   );
 }
 
@@ -47,10 +48,19 @@ export function computeScore(results: VocabItemResult[]): number {
   return Math.round((correct / (results.length * 2)) * 100);
 }
 
-export function computeNextReview(score: number): number {
-  if (score >= 80) return 7;
-  if (score >= 50) return 3;
-  return 1;
+// Content-word matching for PRODUCE phase:
+// Checks that all "meaningful" words of the expression appear somewhere in the transcript,
+// allowing speech-recognition to drop filler words ("a", "the", etc.).
+const STOP_WORDS = new Set(['a', 'an', 'the', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by', 'up']);
+
+export function checkProduceHit(transcript: string, expression: string): boolean {
+  const contentWords = expression
+    .toLowerCase()
+    .split(/\s+/)
+    .filter(w => w.length > 1 && !STOP_WORDS.has(w));
+  if (contentWords.length === 0) return false;
+  const t = transcript.toLowerCase();
+  return contentWords.every(w => t.includes(w));
 }
 
 // --- Main hook ---
@@ -98,11 +108,12 @@ export function useVocab(setId: string) {
   }, [currentRow?.id, vocabRows]);
 
   // Blank sentence for fill-in-the-blank (uses first context row if available)
+  // Uses word-boundary regex to blank only exact phrase matches, not partial words.
   const blankSentence = useMemo(() => {
     if (!currentRow) return '';
     if (contextRows.length > 0) {
       const escaped = currentRow.english.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      return contextRows[0].english.replace(new RegExp(escaped, 'gi'), '___');
+      return contextRows[0].english.replace(new RegExp(`\\b${escaped}\\b`, 'gi'), '___');
     }
     return `___ (${currentRow.comprehension})`;
   }, [currentRow, contextRows]);
@@ -171,11 +182,11 @@ export function useVocab(setId: string) {
     [currentRow],
   );
 
-  // Returns whether the expression was found in the transcript
+  // Returns whether expression content words were found in the transcript
   const submitProduce = useCallback(
     (transcript: string): boolean => {
       if (!currentRow) return false;
-      const hit = transcript.toLowerCase().includes(currentRow.english.toLowerCase());
+      const hit = checkProduceHit(transcript, currentRow.english);
       setResults(prev => [
         ...prev,
         {
@@ -202,7 +213,6 @@ export function useVocab(setId: string) {
   );
 
   const score = useMemo(() => computeScore(results), [results]);
-  const nextReviewDays = useMemo(() => computeNextReview(score), [score]);
 
   return {
     // Data & loading
@@ -220,7 +230,6 @@ export function useVocab(setId: string) {
     isFlipped,
     results,
     score,
-    nextReviewDays,
     // Controls
     flipCard,
     advancePhase,

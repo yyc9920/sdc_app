@@ -9,7 +9,8 @@ interface ContextViewProps {
 
 function highlightExpression(text: string, expression: string): React.ReactNode[] {
   const escaped = expression.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const parts = text.split(new RegExp(`(${escaped})`, 'gi'));
+  // Word-boundary match ensures "turn" doesn't highlight inside "return"
+  const parts = text.split(new RegExp(`(\\b${escaped}\\b)`, 'gi'));
   return parts.map((part, i) =>
     // Odd indices are the captured regex matches
     i % 2 === 1 ? (

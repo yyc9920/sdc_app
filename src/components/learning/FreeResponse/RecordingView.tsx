@@ -1,9 +1,10 @@
-import { Square } from 'lucide-react';
+import { Square, AlertTriangle } from 'lucide-react';
 
 interface RecordingViewProps {
   secondsLeft: number;
   transcript: string;
   isRecording: boolean;
+  shortRecordingWarning: boolean;
   onStop: () => void;
 }
 
@@ -14,13 +15,12 @@ export const RecordingView = ({
   secondsLeft,
   transcript,
   isRecording,
+  shortRecordingWarning,
   onStop,
 }: RecordingViewProps) => {
   const elapsed = 120 - secondsLeft;
   const mm = String(Math.floor(elapsed / 60)).padStart(2, '0');
   const ss = String(elapsed % 60).padStart(2, '0');
-  const maxMm = '02';
-  const maxSs = '00';
 
   return (
     <div className="flex flex-col items-center gap-6 py-4">
@@ -29,16 +29,9 @@ export const RecordingView = ({
         {BAR_DELAYS.map((delay, i) => (
           <div
             key={i}
-            className={`w-3 rounded-full transition-all ${
-              isRecording
-                ? 'bg-red-500 animate-[wave_var(--dur)_var(--delay)_ease-in-out_infinite]'
-                : 'bg-gray-300 dark:bg-gray-600 h-2'
-            }`}
             style={
               isRecording
                 ? ({
-                    '--dur': BAR_DURATIONS[i],
-                    '--delay': delay,
                     animationName: 'wave',
                     animationDuration: BAR_DURATIONS[i],
                     animationDelay: delay,
@@ -49,6 +42,9 @@ export const RecordingView = ({
                   } as React.CSSProperties)
                 : { height: '8px' }
             }
+            className={`w-3 rounded-full transition-colors ${
+              isRecording ? 'bg-red-500' : 'bg-gray-300 dark:bg-gray-600'
+            }`}
           />
         ))}
       </div>
@@ -58,9 +54,7 @@ export const RecordingView = ({
         <span className="text-3xl font-mono font-bold text-gray-800 dark:text-white">
           {mm}:{ss}
         </span>
-        <span className="text-gray-400 dark:text-gray-500 text-sm ml-2">
-          / {maxMm}:{maxSs}
-        </span>
+        <span className="text-gray-400 dark:text-gray-500 text-sm ml-2">/ 02:00</span>
       </div>
 
       {isRecording && (
@@ -80,6 +74,14 @@ export const RecordingView = ({
           </p>
         )}
       </div>
+
+      {/* Short recording warning — tap Done again to confirm */}
+      {shortRecordingWarning && (
+        <div className="flex items-center gap-2 px-4 py-3 bg-amber-50 dark:bg-amber-900/30 border border-amber-300 dark:border-amber-700 rounded-xl text-sm text-amber-800 dark:text-amber-200">
+          <AlertTriangle className="w-4 h-4 shrink-0 text-amber-500" />
+          15초 미만입니다. 계속하려면 완료를 다시 누르세요.
+        </div>
+      )}
 
       <button
         onClick={onStop}

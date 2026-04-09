@@ -3,27 +3,24 @@ import { Mic } from 'lucide-react';
 
 interface ThinkTimerProps {
   secondsLeft: number;
+  expired: boolean;
   keywords: string[];
   onStartRecord: () => void;
 }
 
-export const ThinkTimer = ({ secondsLeft, keywords, onStartRecord }: ThinkTimerProps) => {
+export const ThinkTimer = ({ secondsLeft, expired, keywords, onStartRecord }: ThinkTimerProps) => {
   const [revealedIndices, setRevealedIndices] = useState<Set<number>>(new Set());
 
   const toggleReveal = (index: number) => {
     setRevealedIndices(prev => {
       const next = new Set(prev);
-      if (next.has(index)) {
-        next.delete(index);
-      } else {
-        next.add(index);
-      }
+      if (next.has(index)) { next.delete(index); } else { next.add(index); }
       return next;
     });
   };
 
-  const progress = (secondsLeft / 30) * 100;
-  const isUrgent = secondsLeft <= 10;
+  const progress = expired ? 0 : (secondsLeft / 30) * 100;
+  const isUrgent = !expired && secondsLeft <= 10;
 
   return (
     <div className="flex flex-col items-center gap-8 py-4">
@@ -48,14 +45,24 @@ export const ThinkTimer = ({ secondsLeft, keywords, onStartRecord }: ThinkTimerP
           />
         </svg>
         <div className="absolute text-center">
-          <span className={`text-4xl font-bold ${isUrgent ? 'text-red-500' : 'text-gray-800 dark:text-white'}`}>
-            {secondsLeft}
-          </span>
-          <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">초</p>
+          {expired ? (
+            <p className="text-sm font-bold text-indigo-600 dark:text-indigo-400 animate-pulse">
+              준비됐나요?
+            </p>
+          ) : (
+            <>
+              <span className={`text-4xl font-bold ${isUrgent ? 'text-red-500' : 'text-gray-800 dark:text-white'}`}>
+                {secondsLeft}
+              </span>
+              <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">초</p>
+            </>
+          )}
         </div>
       </div>
 
-      <p className="text-gray-600 dark:text-gray-300 font-medium">답변을 준비하세요</p>
+      <p className="text-gray-600 dark:text-gray-300 font-medium">
+        {expired ? '준비가 되면 녹음을 시작하세요' : '답변을 준비하세요'}
+      </p>
 
       {/* Keyword hints */}
       {keywords.length > 0 && (
@@ -68,10 +75,10 @@ export const ThinkTimer = ({ secondsLeft, keywords, onStartRecord }: ThinkTimerP
               <button
                 key={i}
                 onClick={() => toggleReveal(i)}
-                className={`px-4 py-1.5 rounded-full text-sm font-medium border transition-all ${
+                className={`px-4 py-1.5 rounded-full text-sm font-medium border transition-all select-none ${
                   revealedIndices.has(i)
                     ? 'bg-indigo-100 dark:bg-indigo-900/40 border-indigo-300 dark:border-indigo-700 text-indigo-700 dark:text-indigo-300'
-                    : 'bg-gray-100 dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-transparent select-none blur-sm'
+                    : 'bg-gray-100 dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-transparent blur-sm'
                 }`}
               >
                 {kw}
@@ -83,7 +90,11 @@ export const ThinkTimer = ({ secondsLeft, keywords, onStartRecord }: ThinkTimerP
 
       <button
         onClick={onStartRecord}
-        className="flex items-center gap-3 px-8 py-4 bg-red-500 hover:bg-red-600 active:scale-95 text-white font-bold text-lg rounded-2xl shadow-lg transition-all"
+        className={`flex items-center gap-3 px-8 py-4 text-white font-bold text-lg rounded-2xl shadow-lg transition-all active:scale-95 ${
+          expired
+            ? 'bg-red-500 hover:bg-red-600 animate-pulse'
+            : 'bg-red-400 hover:bg-red-500'
+        }`}
       >
         <Mic className="w-5 h-5" />
         녹음 시작

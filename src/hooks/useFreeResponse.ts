@@ -26,6 +26,7 @@ export interface AnalysisResult {
 
 const THINK_SECONDS = 30;
 const RECORD_SECONDS = 120;
+const MIN_RECORD_SECONDS = 15;
 
 const STOP_WORDS = new Set([
   'a', 'an', 'the', 'is', 'are', 'was', 'were', 'be', 'been', 'being',
@@ -47,6 +48,11 @@ function tokenize(text: string): string[] {
     .filter(Boolean);
 }
 
+/**
+ * Analyzes user transcript against model answer rows.
+ * Returns keyword overlap metrics (주요 어휘 일치율) based on token matching.
+ * Note: "overlap" is bag-of-words token matching — not syntactic similarity.
+ */
 export function analyzeResponse(
   userTranscript: string,
   scriptRows: TrainingRow[],
@@ -83,11 +89,11 @@ export function analyzeResponse(
 export function useFreeResponse(setId: string) {
   const { rows, speakers, isLoading, error } = useTrainingData(setId);
 
-  // Separate prompt vs script rows
+  // Separate prompt vs script rows.
+  // Fallback: if no prompt row exists, use the first script row as the topic.
   const { promptRow, scriptRows } = useMemo(() => {
     const promptRows = rows.filter(r => r.rowType === 'prompt');
     const scripts = rows.filter(r => r.rowType === 'script');
-    // Fallback: if no prompt row, treat first script as the topic
     const prompt = promptRows[0] ?? scripts[0] ?? null;
     return { promptRow: prompt, scriptRows: scripts };
   }, [rows]);
@@ -103,14 +109,20 @@ export function useFreeResponse(setId: string) {
 
   const [phase, setPhase] = useState<FreeResponsePhase>('PROMPT');
   const [thinkSecondsLeft, setThinkSecondsLeft] = useState(THINK_SECONDS);
+  // true once the think countdown hits 0 — signals the CTA to start recording
+  const [thinkExpired, setThinkExpired] = useState(false);
   const [recordSecondsLeft, setRecordSecondsLeft] = useState(RECORD_SECONDS);
   const [analysis, setAnalysis] = useState<AnalysisResult | null>(null);
   const [studyIndex, setStudyIndex] = useState(0);
   const [retryCount, setRetryCount] = useState(0);
   const [ttsError, setTtsError] = useState(false);
+  // true when the transcript was empty on submit
+  const [transcriptMissing, setTranscriptMissing] = useState(false);
+  // true when user stopped recording before MIN_RECORD_SECONDS
+  const [shortRecordingWarning, setShortRecordingWarning] = useState(false);
 
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
-  const hasSavedRef = useRef(false);
+  const hasSavedResultRef = useRef(false);
 
   const clearTimer = useCallback(() => {
     if (timerRef.current) {
@@ -119,15 +131,17 @@ export function useFreeResponse(setId: string) {
     }
   }, []);
 
-  // THINK countdown
+  // THINK countdown — when it expires, set thinkExpired flag.
+  // Does NOT auto-transition to RECORD; student must confirm.
   useEffect(() => {
     if (phase !== 'THINK') return;
     setThinkSecondsLeft(THINK_SECONDS);
+    setThinkExpired(false);
     timerRef.current = setInterval(() => {
       setThinkSecondsLeft(prev => {
         if (prev <= 1) {
           clearTimer();
-          setPhase('RECORD');
+          setThinkExpired(true);
           return 0;
         }
         return prev - 1;
@@ -136,7 +150,7 @@ export function useFreeResponse(setId: string) {
     return clearTimer;
   }, [phase, clearTimer]);
 
-  // RECORD countdown + auto-stop
+  // RECORD countdown — when it expires, auto-stop recording
   useEffect(() => {
     if (phase !== 'RECORD') return;
     setRecordSecondsLeft(RECORD_SECONDS);
@@ -156,32 +170,38 @@ export function useFreeResponse(setId: string) {
   useEffect(() => {
     if (phase === 'RECORD' && recordSecondsLeft === 0 && audioApi.isRecording) {
       audioApi.stopRecording();
+      const isEmpty = !audioApi.transcript.trim();
+      setTranscriptMissing(isEmpty);
       const result = analyzeResponse(audioApi.transcript, scriptRows);
       setAnalysis(result);
       setPhase('COMPARE');
     }
   }, [phase, recordSecondsLeft, audioApi, scriptRows]);
 
-  // STUDY: auto-play TTS for current script sentence
-  useEffect(() => {
-    if (phase !== 'STUDY' || scriptRows.length === 0) return;
-    const row = scriptRows[studyIndex];
-    if (!row) return;
-    setTtsError(false);
-    audioApi.play(row).catch(() => setTtsError(true));
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- intentionally re-run on studyIndex change
-  }, [phase, studyIndex]);
+  // STUDY: does NOT auto-play. Student taps "듣기" / "다시 듣기" to hear each sentence.
+  // (Auto-play on mount can surprise users in quiet environments.)
 
-  // Save result on COMPLETE
+  // Save result on COMPLETE (fire-and-forget)
   useEffect(() => {
-    if (phase === 'COMPLETE' && !hasSavedRef.current) {
-      hasSavedRef.current = true;
+    if (phase === 'COMPLETE' && !hasSavedResultRef.current) {
+      hasSavedResultRef.current = true;
       const score = analysis?.overlapPercent ?? undefined;
       progressApi.saveResult(score).catch(console.error);
     }
   }, [phase, analysis, progressApi]);
 
-  // Actions
+  // Save progress on unmount — preserves elapsed time even if student exits early
+  useEffect(() => {
+    return () => {
+      if (sessionApi.elapsed > 0) {
+        progressApi.saveProgress().catch(console.error);
+      }
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- run only on unmount
+  }, []);
+
+  // ── Actions ──────────────────────────────────────────────────────────────────
+
   const playPrompt = useCallback(() => {
     if (!promptRow) return;
     setTtsError(false);
@@ -195,17 +215,27 @@ export function useFreeResponse(setId: string) {
 
   const startRecord = useCallback(() => {
     clearTimer();
+    setShortRecordingWarning(false);
+    setTranscriptMissing(false);
     setPhase('RECORD');
     audioApi.startRecording().catch(console.error);
   }, [clearTimer, audioApi]);
 
   const stopRecord = useCallback(() => {
+    const elapsed = RECORD_SECONDS - recordSecondsLeft;
+    if (elapsed < MIN_RECORD_SECONDS && !shortRecordingWarning) {
+      // First tap under 15s: show warning but don't block — student can tap again to confirm
+      setShortRecordingWarning(true);
+      return;
+    }
     clearTimer();
     audioApi.stopRecording();
+    const isEmpty = !audioApi.transcript.trim();
+    setTranscriptMissing(isEmpty);
     const result = analyzeResponse(audioApi.transcript, scriptRows);
     setAnalysis(result);
     setPhase('COMPARE');
-  }, [clearTimer, audioApi, scriptRows]);
+  }, [clearTimer, audioApi, scriptRows, recordSecondsLeft, shortRecordingWarning]);
 
   const startStudy = useCallback(() => {
     setStudyIndex(0);
@@ -213,9 +243,9 @@ export function useFreeResponse(setId: string) {
   }, []);
 
   const nextStudySentence = useCallback(() => {
+    audioApi.stop();
     const next = studyIndex + 1;
     if (next >= scriptRows.length) {
-      audioApi.stop();
       setPhase('RETRY');
     } else {
       setStudyIndex(next);
@@ -230,30 +260,41 @@ export function useFreeResponse(setId: string) {
   }, [scriptRows, studyIndex, audioApi]);
 
   const retry = useCallback(() => {
+    // Save progress before resetting elapsed time
+    progressApi.saveProgress().catch(console.error);
     setRetryCount(c => c + 1);
     setAnalysis(null);
+    setShortRecordingWarning(false);
+    setTranscriptMissing(false);
     audioApi.startRecording().catch(console.error);
     setPhase('RECORD');
-  }, [audioApi]);
+  }, [audioApi, progressApi]);
 
   const complete = useCallback(() => {
     setPhase('COMPLETE');
   }, []);
 
   const reset = useCallback(() => {
+    // Save progress before zeroing elapsed time
+    if (sessionApi.elapsed > 0) {
+      progressApi.saveProgress().catch(console.error);
+    }
     clearTimer();
     audioApi.stop();
     audioApi.stopRecording();
     setPhase('PROMPT');
     setThinkSecondsLeft(THINK_SECONDS);
+    setThinkExpired(false);
     setRecordSecondsLeft(RECORD_SECONDS);
     setAnalysis(null);
     setStudyIndex(0);
     setRetryCount(0);
     setTtsError(false);
-    hasSavedRef.current = false;
+    setShortRecordingWarning(false);
+    setTranscriptMissing(false);
+    hasSavedResultRef.current = false;
     sessionApi.reset();
-  }, [clearTimer, audioApi, sessionApi]);
+  }, [clearTimer, audioApi, sessionApi, progressApi]);
 
   return {
     // Loading / error
@@ -266,11 +307,14 @@ export function useFreeResponse(setId: string) {
     // Phase state
     phase,
     thinkSecondsLeft,
+    thinkExpired,
     recordSecondsLeft,
     studyIndex,
     analysis,
     retryCount,
     ttsError,
+    transcriptMissing,
+    shortRecordingWarning,
     // Audio state
     isPlaying: audioApi.isPlaying,
     isRecording: audioApi.isRecording,

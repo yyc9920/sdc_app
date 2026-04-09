@@ -39,7 +39,6 @@ export const VocabPage = ({
     isFlipped,
     results,
     score,
-    nextReviewDays,
     flipCard,
     advancePhase,
     submitPractice,
@@ -240,7 +239,6 @@ export const VocabPage = ({
                 <ReviewSummary
                   results={results}
                   score={score}
-                  nextReviewDays={nextReviewDays}
                   onFinish={handleFinish}
                 />
               </motion.div>

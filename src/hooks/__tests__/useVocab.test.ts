@@ -5,7 +5,7 @@ import {
   findContextRows,
   buildPracticeOptions,
   computeScore,
-  computeNextReview,
+  checkProduceHit,
 } from '../useVocab';
 import type { TrainingRow } from '../training';
 import type { RowType } from '../../types';
@@ -82,6 +82,18 @@ describe('findContextRows', () => {
     const result = findContextRows(allRows, 'TURN OVER A NEW LEAF');
     expect(result).toHaveLength(1);
   });
+
+  it('does NOT match partial words — word-boundary enforcement', () => {
+    // "turn" should NOT match "returning" or "overturned"
+    const rowsWithPartial = [
+      makeRow(10, 'script', 'She is returning to work.'),
+      makeRow(11, 'script', 'The table was overturned.'),
+      makeRow(12, 'script', 'It was her turn to speak.'),
+    ];
+    const result = findContextRows(rowsWithPartial, 'turn');
+    expect(result).toHaveLength(1);
+    expect(result[0].id).toBe(12);
+  });
 });
 
 // --- buildPracticeOptions ---
@@ -154,24 +166,32 @@ describe('computeScore', () => {
   });
 });
 
-// --- computeNextReview ---
+// --- checkProduceHit ---
 
-describe('computeNextReview', () => {
-  it('returns 7 days for score >= 80', () => {
-    expect(computeNextReview(80)).toBe(7);
-    expect(computeNextReview(100)).toBe(7);
-    expect(computeNextReview(95)).toBe(7);
+describe('checkProduceHit', () => {
+  it('returns true when all content words are present in transcript', () => {
+    expect(checkProduceHit('I decided to turn over a new leaf today', 'turn over a new leaf')).toBe(true);
   });
 
-  it('returns 3 days for score >= 50 and < 80', () => {
-    expect(computeNextReview(50)).toBe(3);
-    expect(computeNextReview(79)).toBe(3);
-    expect(computeNextReview(60)).toBe(3);
+  it('is lenient when filler words are dropped by speech recognition', () => {
+    // "a" is a stop word — "turn over new leaf" should still match "turn over a new leaf"
+    expect(checkProduceHit('turn over new leaf', 'turn over a new leaf')).toBe(true);
   });
 
-  it('returns 1 day for score < 50', () => {
-    expect(computeNextReview(0)).toBe(1);
-    expect(computeNextReview(49)).toBe(1);
-    expect(computeNextReview(25)).toBe(1);
+  it('returns false when key content words are missing', () => {
+    expect(checkProduceHit('I leaf today', 'turn over a new leaf')).toBe(false);
+  });
+
+  it('returns false for empty transcript', () => {
+    expect(checkProduceHit('', 'turn over a new leaf')).toBe(false);
+  });
+
+  it('is case-insensitive', () => {
+    expect(checkProduceHit('I DECIDED TO TURN OVER A NEW LEAF', 'turn over a new leaf')).toBe(true);
+  });
+
+  it('matches single-word expressions correctly', () => {
+    expect(checkProduceHit('I feel overwhelmed right now', 'overwhelmed')).toBe(true);
+    expect(checkProduceHit('I feel fine today', 'overwhelmed')).toBe(false);
   });
 });
