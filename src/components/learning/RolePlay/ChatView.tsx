@@ -1,6 +1,6 @@
 import { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Square, SkipForward } from 'lucide-react';
+import { Square, SkipForward, AlertTriangle } from 'lucide-react';
 import { ChatBubble } from './ChatBubble';
 import { getSpeakerColor, PHASE_LABELS } from '../../../constants/rolePlay';
 import type { TrainingRow } from '../../../hooks/training';
@@ -15,10 +15,12 @@ interface ChatViewProps {
   isUserTurn: boolean;
   isTTSPlaying: boolean;
   isRecording: boolean;
+  ttsError: boolean;
   liveTranscript: string;
   turnResults: TurnResult[];
   onStopTurn: () => void;
   onSkipTurn: () => void;
+  onSkipPartnerTurn: () => void;
 }
 
 const PHASE_SUBTITLES: Partial<Record<RolePlayPhase, string>> = {
@@ -36,10 +38,12 @@ export function ChatView({
   isUserTurn,
   isTTSPlaying,
   isRecording,
+  ttsError,
   liveTranscript,
   turnResults,
   onStopTurn,
   onSkipTurn,
+  onSkipPartnerTurn,
 }: ChatViewProps) {
   const bottomRef = useRef<HTMLDivElement | null>(null);
 
@@ -110,6 +114,31 @@ export function ChatView({
         })}
         <div ref={bottomRef} />
       </div>
+
+      {/* Partner turn controls — skip stuck TTS (devil fix #1) */}
+      {isTTSPlaying && !isUserTurn && (
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="sticky bottom-0 bg-gray-50/95 dark:bg-gray-900/95 backdrop-blur pt-3 pb-2 border-t border-gray-100 dark:border-gray-800"
+        >
+          <div className="flex items-center justify-center gap-3">
+            {ttsError && (
+              <div className="flex items-center gap-1.5 text-amber-500 text-sm">
+                <AlertTriangle className="w-4 h-4" />
+                TTS 오류
+              </div>
+            )}
+            <button
+              onClick={onSkipPartnerTurn}
+              className="flex items-center gap-1.5 px-4 py-2 text-sm text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl transition-colors"
+            >
+              <SkipForward className="w-4 h-4" />
+              건너뛰기
+            </button>
+          </div>
+        </motion.div>
+      )}
 
       {/* User turn controls */}
       {isUserTurn && (

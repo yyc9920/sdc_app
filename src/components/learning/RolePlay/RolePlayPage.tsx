@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
-import { AnimatePresence } from 'framer-motion';
-import { ChevronLeft, Moon, Sun, Mic } from 'lucide-react';
+import { AnimatePresence, motion } from 'framer-motion';
+import { ChevronLeft, Moon, Sun, Mic, ArrowRight, FastForward } from 'lucide-react';
 import { useRolePlay } from '../../../hooks/useRolePlay';
 import { LoadingSpinner } from '../../LoadingSpinner';
 import { RoleSetup } from './RoleSetup';
@@ -38,17 +38,25 @@ export function RolePlayPage({
     isUserTurn,
     isTTSPlaying,
     isAutoPlaying,
+    isDemoPaused,
+    isPhaseComplete,
     liveTranscript,
     turnResults,
     demoPlayingIndex,
+    ttsError,
     isRecording,
     elapsed,
     overallAccuracy,
     selectRole,
     startDemo,
     skipDemo,
+    pauseDemo,
+    resumeDemo,
     stopUserTurn,
     skipUserTurn,
+    skipPartnerTurn,
+    proceedNextPhase,
+    skipToReview,
     resetRolePlay,
   } = rp;
 
@@ -176,7 +184,10 @@ export function RolePlayPage({
                 speakers={dialogueSpeakers}
                 selectedRole={selectedRole}
                 demoPlayingIndex={demoPlayingIndex}
+                isDemoPaused={isDemoPaused}
                 onSkip={skipDemo}
+                onPause={pauseDemo}
+                onResume={resumeDemo}
               />
             )}
 
@@ -191,10 +202,12 @@ export function RolePlayPage({
                 isUserTurn={isUserTurn}
                 isTTSPlaying={isTTSPlaying}
                 isRecording={isRecording}
+                ttsError={ttsError}
                 liveTranscript={liveTranscript}
                 turnResults={turnResults}
                 onStopTurn={stopUserTurn}
                 onSkipTurn={skipUserTurn}
+                onSkipPartnerTurn={skipPartnerTurn}
               />
             )}
 
@@ -214,6 +227,40 @@ export function RolePlayPage({
           </AnimatePresence>
         </main>
       )}
+
+      {/* Phase-complete overlay — user chooses next step (devil fix #3) */}
+      <AnimatePresence>
+        {isPhaseComplete && (
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 16 }}
+            className="fixed inset-x-0 bottom-0 z-50 px-4 pb-[calc(1.5rem+env(safe-area-inset-bottom))]"
+          >
+            <div className="max-w-md mx-auto bg-white dark:bg-gray-800 rounded-2xl shadow-2xl border border-gray-200 dark:border-gray-700 p-5">
+              <p className="text-center text-sm text-gray-500 dark:text-gray-400 mb-4">
+                이 단계를 완료했습니다!
+              </p>
+              <div className="flex flex-col gap-2">
+                <button
+                  onClick={proceedNextPhase}
+                  className="flex items-center justify-center gap-2 w-full py-3 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-xl transition-colors"
+                >
+                  <ArrowRight className="w-4 h-4" />
+                  다음 단계로
+                </button>
+                <button
+                  onClick={skipToReview}
+                  className="flex items-center justify-center gap-2 w-full py-2.5 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-xl transition-colors text-sm"
+                >
+                  <FastForward className="w-4 h-4" />
+                  결과 바로 보기
+                </button>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Floating mic indicator during user recording */}
       {isRecording && (

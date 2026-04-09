@@ -55,9 +55,9 @@ describe('computeSimilarity', () => {
     expect(computeSimilarity('hello world', '')).toBe(0);
   });
 
-  it('partial overlap returns correct percentage', () => {
-    // spoken has 1 of 2 expected words
-    expect(computeSimilarity('hello there', 'hello world')).toBe(50);
+  it('partial unigram match without bigram overlap scores lower (word order matters)', () => {
+    // "hello" matches but bigram "hello there" ≠ "hello world" → 40%*0.5 + 60%*0 = 20%
+    expect(computeSimilarity('hello there', 'hello world')).toBe(20);
   });
 
   it('is case insensitive', () => {
@@ -68,13 +68,30 @@ describe('computeSimilarity', () => {
     expect(computeSimilarity("hello, world!", 'hello world')).toBe(100);
   });
 
-  it('handles extra spoken words', () => {
+  it('handles extra spoken words — all expected words present', () => {
+    // bigram "hello world" is still present in spoken bigrams
     expect(computeSimilarity('hello world foo bar', 'hello world')).toBe(100);
   });
 
   it('does not double-count spoken words', () => {
-    // "hello hello" vs "hello world" — only 1 "hello" should match
-    expect(computeSimilarity('hello hello', 'hello world')).toBe(50);
+    // unigram: 1/2 (hello matches, world doesn't) = 0.5; bigram: 0 → 0.4*0.5 = 20
+    expect(computeSimilarity('hello hello', 'hello world')).toBe(20);
+  });
+
+  it('penalizes wrong word order (bigram-sensitive)', () => {
+    // All words correct but reversed: unigram=1.0, bigram=0 → 40%
+    expect(computeSimilarity('world hello', 'hello world')).toBe(40);
+    expect(computeSimilarity('world hello', 'hello world')).toBeLessThan(100);
+  });
+
+  it('single-word expected falls back to unigram only', () => {
+    expect(computeSimilarity('hello', 'hello')).toBe(100);
+    expect(computeSimilarity('world', 'hello')).toBe(0);
+  });
+
+  it('multi-word correct answer with correct bigrams scores 100', () => {
+    const phrase = 'I would like to go to the store';
+    expect(computeSimilarity(phrase, phrase)).toBe(100);
   });
 });
 
@@ -101,6 +118,10 @@ describe('rolePlayReducer', () => {
     expect(initialRolePlayState.rolePlayPhase).toBe('SETUP');
   });
 
+  it('isPhaseComplete starts false', () => {
+    expect(initialRolePlayState.isPhaseComplete).toBe(false);
+  });
+
   it('SET_ROLE sets selectedRole', () => {
     const state = rolePlayReducer(initialRolePlayState, { type: 'SET_ROLE', role: 'A' });
     expect(state.selectedRole).toBe('A');
@@ -125,27 +146,42 @@ describe('rolePlayReducer', () => {
     const base = guidedState({ currentTurnIndex: 0 });
     const state = rolePlayReducer(base, { type: 'NEXT_TURN', rowCount: 4, currentPhase: 'GUIDED' });
     expect(state.currentTurnIndex).toBe(1);
+    expect(state.isPhaseComplete).toBe(false);
   });
 
-  it('NEXT_TURN at last row in GUIDED transitions to PRACTICE', () => {
+  it('NEXT_TURN at last row sets isPhaseComplete instead of auto-transitioning', () => {
+    // devil fix #3: no forced phase advance — show transition UI
     const base = guidedState({ currentTurnIndex: 3 });
     const state = rolePlayReducer(base, { type: 'NEXT_TURN', rowCount: 4, currentPhase: 'GUIDED' });
+    expect(state.isPhaseComplete).toBe(true);
+    expect(state.rolePlayPhase).toBe('GUIDED'); // stays in GUIDED until user acts
+  });
+
+  it('PROCEED_NEXT_PHASE advances from GUIDED to PRACTICE', () => {
+    const base = guidedState({ isPhaseComplete: true });
+    const state = rolePlayReducer(base, { type: 'PROCEED_NEXT_PHASE' });
     expect(state.rolePlayPhase).toBe('PRACTICE');
     expect(state.currentTurnIndex).toBe(0);
+    expect(state.isPhaseComplete).toBe(false);
   });
 
-  it('NEXT_TURN at last row in PRACTICE transitions to FREE', () => {
-    const base: RolePlayState = { ...initialRolePlayState, rolePlayPhase: 'PRACTICE', currentTurnIndex: 3 };
-    const state = rolePlayReducer(base, { type: 'NEXT_TURN', rowCount: 4, currentPhase: 'PRACTICE' });
+  it('PROCEED_NEXT_PHASE advances from PRACTICE to FREE', () => {
+    const base: RolePlayState = { ...initialRolePlayState, rolePlayPhase: 'PRACTICE', isPhaseComplete: true };
+    const state = rolePlayReducer(base, { type: 'PROCEED_NEXT_PHASE' });
     expect(state.rolePlayPhase).toBe('FREE');
-    expect(state.currentTurnIndex).toBe(0);
   });
 
-  it('NEXT_TURN at last row in FREE transitions to REVIEW', () => {
-    const base: RolePlayState = { ...initialRolePlayState, rolePlayPhase: 'FREE', currentTurnIndex: 3 };
-    const state = rolePlayReducer(base, { type: 'NEXT_TURN', rowCount: 4, currentPhase: 'FREE' });
+  it('PROCEED_NEXT_PHASE advances from FREE to REVIEW', () => {
+    const base: RolePlayState = { ...initialRolePlayState, rolePlayPhase: 'FREE', isPhaseComplete: true };
+    const state = rolePlayReducer(base, { type: 'PROCEED_NEXT_PHASE' });
     expect(state.rolePlayPhase).toBe('REVIEW');
-    expect(state.currentTurnIndex).toBe(0);
+  });
+
+  it('SKIP_TO_REVIEW jumps directly to REVIEW from any phase', () => {
+    const base = guidedState({ isPhaseComplete: true });
+    const state = rolePlayReducer(base, { type: 'SKIP_TO_REVIEW' });
+    expect(state.rolePlayPhase).toBe('REVIEW');
+    expect(state.isPhaseComplete).toBe(false);
   });
 
   it('USER_TURN_COMPLETE appends to turnResults and clears liveTranscript', () => {
@@ -196,6 +232,11 @@ describe('rolePlayReducer', () => {
     expect(on.isTTSPlaying).toBe(true);
   });
 
+  it('SET_DEMO_PAUSED toggles flag', () => {
+    const on = rolePlayReducer(initialRolePlayState, { type: 'SET_DEMO_PAUSED', value: true });
+    expect(on.isDemoPaused).toBe(true);
+  });
+
   it('RESET returns to initial state', () => {
     const modified: RolePlayState = {
       ...initialRolePlayState,
@@ -203,12 +244,13 @@ describe('rolePlayReducer', () => {
       selectedRole: 'A',
       currentTurnIndex: 5,
       turnResults: [makeTurnResult()],
+      isPhaseComplete: true,
     };
     const state = rolePlayReducer(modified, { type: 'RESET' });
     expect(state).toEqual(initialRolePlayState);
   });
 
-  it('accumulates multiple turn results across turns', () => {
+  it('accumulates multiple turn results', () => {
     let state = guidedState();
     state = rolePlayReducer(state, {
       type: 'USER_TURN_COMPLETE', transcript: 'hi', score: 80, rowIndex: 0, speaker: 'A', expected: 'hi',
