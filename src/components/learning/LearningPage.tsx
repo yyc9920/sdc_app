@@ -7,10 +7,11 @@ import { SpeedListeningQuiz } from '../SpeedListeningQuiz';
 import { LevelRecommendationBadge } from '../speed-listening/LevelRecommendationBadge';
 import { LoadingSpinner } from '../LoadingSpinner';
 import { InfiniteSpeakingPage } from './InfiniteSpeaking/InfiniteSpeakingPage';
+import { VocabPage } from './Vocab/VocabPage';
 import { LevelSelector } from '../home/LevelSelector';
 import { CategorySelector } from '../home/CategorySelector';
 import { SetSelector } from '../home/SetSelector';
-import { ChevronLeft, Moon, Sun, Headphones, Mic2 } from 'lucide-react';
+import { ChevronLeft, Moon, Sun, Headphones, Mic2, BookOpen } from 'lucide-react';
 import type { DataSet, SpeedListeningSet, LearningLevel, CategoryCode, LearningSetMeta } from '../../types';
 
 interface LearningPageProps {
@@ -23,7 +24,7 @@ const formatSetTitle = (setId: string) => {
   return match ? `Set ${match[1]}` : setId;
 };
 
-type LearningMode = 'speed_listening' | 'infinite_speaking' | null;
+type LearningMode = 'speed_listening' | 'infinite_speaking' | 'vocab' | null;
 
 export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) => {
   const { user } = useAuth();
@@ -84,6 +85,19 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
     return (
       <InfiniteSpeakingPage
         dataSet={selectedDataSet}
+        isNightMode={isNightMode}
+        onToggleNight={onToggleNight}
+        onBack={() => { setSelectedDataSet(null); }}
+      />
+    );
+  }
+
+  // Vocab active session
+  if (mode === 'vocab' && selectedDataSet) {
+    return (
+      <VocabPage
+        setId={selectedDataSet.id}
+        setTitle={selectedDataSet.name}
         isNightMode={isNightMode}
         onToggleNight={onToggleNight}
         onBack={() => { setSelectedDataSet(null); }}
@@ -229,6 +243,18 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
                 <div className="text-left">
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white">무한 스피킹</h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">단계별로 문장을 말하며 스피킹 훈련</p>
+                </div>
+              </button>
+              <button
+                onClick={() => setMode('vocab')}
+                className="group relative flex items-center p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-sm border-2 border-transparent hover:border-emerald-500 dark:hover:border-emerald-400 transition-all hover:shadow-xl active:scale-[0.98]"
+              >
+                <div className="p-3 bg-emerald-50 dark:bg-emerald-900/30 rounded-2xl mr-4 group-hover:scale-110 transition-transform shrink-0">
+                  <BookOpen className="w-8 h-8 text-emerald-500" />
+                </div>
+                <div className="text-left">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white">어휘 학습</h3>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">표현을 카드로 익히고 문장으로 말하기</p>
                 </div>
               </button>
             </div>
