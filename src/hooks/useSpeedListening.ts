@@ -76,11 +76,37 @@ function getBlankKey(rowId: number, wordIndex: number): string {
   return `${rowId}-${wordIndex}`;
 }
 
-export function useSpeedListening(config: { setId: string; level: LearningLevel }) {
-  const { setId, level } = config;
+export function useSpeedListening(config: {
+  setId: string;
+  level: LearningLevel;
+  sentences?: Array<{ id: number; english: string; korean: string }>;
+}) {
+  const { setId, level, sentences: preloaded } = config;
 
-  // 1. Data layer — fetches all rows; useTrainingSession filters internally
-  const { rows: allRows, speakers, isLoading } = useTrainingData(setId);
+  // 1. Data layer — use preloaded sentences if available, else fetch from training data
+  const { rows: fetchedRows, speakers: fetchedSpeakers, isLoading: fetchLoading } = useTrainingData(
+    preloaded ? undefined : setId,
+  );
+
+  // Convert preloaded SpeedListeningSentences to TrainingRow format
+  const preloadedRows: TrainingRow[] = useMemo(() => {
+    if (!preloaded) return [];
+    return preloaded.map((s, index): TrainingRow => ({
+      id: s.id,
+      english: s.english,
+      koreanPronounce: '',
+      directComprehension: '',
+      comprehension: s.korean,
+      rowType: 'script',
+      rowSeq: index,
+      speaker: '',
+      note: '',
+    }));
+  }, [preloaded]);
+
+  const allRows = preloaded ? preloadedRows : fetchedRows;
+  const speakers = preloaded ? [] as string[] : fetchedSpeakers;
+  const isLoading = preloaded ? false : fetchLoading;
 
   // 2. Session management — filters to script + reading rows via filterRowsForMode
   const sessionApi = useTrainingSession({

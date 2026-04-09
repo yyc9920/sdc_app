@@ -61,3 +61,22 @@ describe('evaluateSpeechLogic', () => {
     expect(result.wordStatuses).toEqual(['correct', 'correct']);
   });
 });
+
+describe('special characters and punctuation-only words', () => {
+  it('should auto-pass words that are only special characters like em-dash', () => {
+    const result = evaluateSpeechLogic('hello world', 'hello — world', true);
+    expect(result.wordStatuses).toEqual(['correct', 'correct', 'correct']);
+    expect(result.score).toBe(100);
+  });
+
+  it('should auto-pass trailing punctuation-only tokens', () => {
+    const result = evaluateSpeechLogic('hello', 'hello —', true);
+    expect(result.wordStatuses).toEqual(['correct', 'correct']);
+    expect(result.score).toBe(100);
+  });
+
+  it('should auto-pass multiple consecutive special char tokens', () => {
+    const result = evaluateSpeechLogic('yes of course', 'yes — of course', true);
+    expect(result.score).toBe(100);
+  });
+});

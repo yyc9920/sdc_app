@@ -7,6 +7,7 @@ import { useStreamingSpeechRecognition } from './useStreamingSpeechRecognition';
 import { getTTSAudioUrl } from '../services/ttsService';
 import { getKeyExpressionIndices } from '../utils/keyExpressions';
 import { isMobileBrowser } from '../utils/platform';
+import { buildSpeakingUnits, type SpeakingUnit } from '../utils/speakingUnits';
 import { TIMEOUTS, SPEAKER_COLOR_PALETTE } from '../constants/infiniteSpeaking';
 import type { TrainingRow, VoiceKey } from './training/types';
 
@@ -175,6 +176,8 @@ export function evaluateSpeechLogic(
 
   const newStatuses = targetWords.map(tWord => {
     const clean = tWord.toLowerCase().replace(/[.,!?;:'"()&\-_—]/g, '');
+    // Auto-pass words that become empty after stripping punctuation/special chars
+    if (clean === '') return 'correct';
     const remaining = spokenCounts.get(clean) ?? 0;
     if (remaining > 0) {
       spokenCounts.set(clean, remaining - 1);
@@ -222,6 +225,8 @@ export function useInfiniteSpeaking(setId: string) {
     [speakers],
   );
 
+  const speakingUnits = useMemo(() => buildSpeakingUnits(scriptRows), [scriptRows]);
+
   const speakerStyleMap = useMemo<Record<string, SpeakerStyle>>(() => {
     const map: Record<string, SpeakerStyle> = {};
     speakers.forEach((speaker, i) => {
@@ -233,6 +238,13 @@ export function useInfiniteSpeaking(setId: string) {
 
   // ── Sub-phase state ─────────────────────────────────────────────────────────
   const [state, dispatch] = useReducer(isReducer, initialISState);
+
+  // ── R2 speaking-unit tracking ───────────────────────────────────────────────
+  const [r2UnitIndex, setR2UnitIndex] = useState(0);
+
+  const currentUnit: SpeakingUnit | null = session.round === 2
+    ? (speakingUnits[r2UnitIndex] ?? null)
+    : null;
 
   // ── R1 state ────────────────────────────────────────────────────────────────
   const [r1PlayingIndex, setR1PlayingIndex] = useState(-1);
@@ -279,6 +291,15 @@ export function useInfiniteSpeaking(setId: string) {
   const sessionRef = useRef(session);
   useEffect(() => { sessionRef.current = session; }, [session]);
 
+  const currentUnitRef = useRef(currentUnit);
+  useEffect(() => { currentUnitRef.current = currentUnit; }, [currentUnit]);
+
+  const speakingUnitsRef = useRef(speakingUnits);
+  useEffect(() => { speakingUnitsRef.current = speakingUnits; }, [speakingUnits]);
+
+  const r2UnitIndexRef = useRef(r2UnitIndex);
+  useEffect(() => { r2UnitIndexRef.current = r2UnitIndex; }, [r2UnitIndex]);
+
   // ── Helper: play a row via its speaker-mapped voice ──────────────────────────
   const playRowAudio = useCallback(
     (row: TrainingRow, audioRef: { current: HTMLAudioElement | null }): Promise<void> => {
@@ -307,7 +328,10 @@ export function useInfiniteSpeaking(setId: string) {
   const handleTranscriptUpdate = useCallback((transcript: string, isFinal: boolean) => {
     if (subPhaseRef.current !== 'SPEAKING' || !currentRowRef.current) return;
 
-    const result = evaluateSpeechLogic(transcript, currentRowRef.current.english, isFinal);
+    const target = sessionRef.current.round === 2 && currentUnitRef.current
+      ? currentUnitRef.current.combinedEnglish
+      : currentRowRef.current.english;
+    const result = evaluateSpeechLogic(transcript, target, isFinal);
     dispatch({ type: 'UPDATE_SPEECH', transcript, wordStatuses: result.wordStatuses, score: result.score });
 
     if (result.score === 100) {
@@ -320,8 +344,11 @@ export function useInfiniteSpeaking(setId: string) {
     if (hintDebounceRef.current) clearTimeout(hintDebounceRef.current);
     hintDebounceRef.current = window.setTimeout(() => {
       if (!currentRowRef.current) return;
-      const words = currentRowRef.current.english.split(' ');
-      const keyIndices = getKeyExpressionIndices(currentRowRef.current.english);
+      const hintTarget = sessionRef.current.round === 2 && currentUnitRef.current
+        ? currentUnitRef.current.combinedEnglish
+        : currentRowRef.current.english;
+      const words = hintTarget.split(' ');
+      const keyIndices = getKeyExpressionIndices(hintTarget);
       for (const idx of keyIndices) {
         if (result.wordStatuses[idx] === 'pending' && transcript.split(/\s+/).length > idx) {
           dispatch({ type: 'ADD_HINT', message: `"${words[idx]}" 을 발음해보세요` });
@@ -385,16 +412,19 @@ export function useInfiniteSpeaking(setId: string) {
     };
   }, [state.subPhase, playRowAudio]);
 
-  // ── R2: LISTENING — play model then auto-transition to SPEAKING ───────────────
+  // ── R2: LISTENING — play all rows in current unit, then auto-transition to SPEAKING
   useEffect(() => {
-    if (state.subPhase !== 'LISTENING' || session.round !== 2 || !currentRow) return;
+    if (state.subPhase !== 'LISTENING' || session.round !== 2 || !currentUnit) return;
 
     let cancelled = false;
     setTtsError(false);
 
     const run = async () => {
       try {
-        await playRowAudio(currentRow, listeningAudioRef);
+        for (const row of currentUnit.rows) {
+          if (cancelled) return;
+          await playRowAudio(row, listeningAudioRef);
+        }
         if (!cancelled) {
           dispatch({ type: 'SET_SUB_PHASE', subPhase: 'SPEAKING' });
         }
@@ -412,7 +442,7 @@ export function useInfiniteSpeaking(setId: string) {
         listeningAudioRef.current = null;
       }
     };
-  }, [state.subPhase, session.round, currentRow, playRowAudio]);
+  }, [state.subPhase, session.round, currentUnit, playRowAudio]);
 
   // ── SPEAKING: start recording (with mobile gate) ─────────────────────────────
   useEffect(() => {
@@ -422,7 +452,10 @@ export function useInfiniteSpeaking(setId: string) {
     }
     if (!currentRowRef.current) return;
 
-    const wordCount = currentRowRef.current.english.split(' ').length;
+    const speakingTarget = sessionRef.current.round === 2 && currentUnitRef.current
+      ? currentUnitRef.current.combinedEnglish
+      : currentRowRef.current.english;
+    const wordCount = speakingTarget.split(' ').length;
     dispatch({ type: 'START_SPEAKING', wordCount });
 
     // On mobile: require a user gesture to start the microphone.
@@ -439,10 +472,15 @@ export function useInfiniteSpeaking(setId: string) {
     speakingTimeoutRef.current = window.setTimeout(() => {
       speech.stopRecording();
       if (currentRowRef.current) {
-        const result = evaluateSpeechLogic(speechRef.current?.transcript ?? '', currentRowRef.current.english, true);
+        const target = sessionRef.current.round === 2 && currentUnitRef.current
+          ? currentUnitRef.current.combinedEnglish
+          : currentRowRef.current.english;
+        const result = evaluateSpeechLogic(speechRef.current?.transcript ?? '', target, true);
         dispatch({ type: 'UPDATE_SPEECH', transcript: result.wordStatuses.join(' '), wordStatuses: result.wordStatuses, score: result.score });
       }
-      dispatch({ type: 'SET_SUB_PHASE', subPhase: 'COMPARISON' });
+      setTimeout(() => {
+        dispatch({ type: 'SET_SUB_PHASE', subPhase: 'COMPARISON' });
+      }, 150);
     }, TIMEOUTS.SPEAKING_TIMEOUT_MS);
 
     return () => {
@@ -534,6 +572,9 @@ export function useInfiniteSpeaking(setId: string) {
     if (sessionRef.current.round === 1) {
       dispatch({ type: 'SET_SUB_PHASE', subPhase: 'R1_PLAYING' });
     } else {
+      if (sessionRef.current.round === 2) {
+        setR2UnitIndex(0);
+      }
       sessionGoTo(0);
       dispatch({ type: 'RESET_ROW' });
       const nextSubPhase = sessionRef.current.round === 2 ? 'LISTENING' : 'SPEAKING';
@@ -542,6 +583,20 @@ export function useInfiniteSpeaking(setId: string) {
   }, [sessionGoTo]);
 
   const nextRow = useCallback(() => {
+    if (sessionRef.current.round === 2) {
+      const nextIdx = r2UnitIndexRef.current + 1;
+      if (nextIdx >= speakingUnitsRef.current.length) {
+        dispatch({ type: 'SET_SUB_PHASE', subPhase: 'ROUND_COMPLETE' });
+        return;
+      }
+      setR2UnitIndex(nextIdx);
+      const nextUnit = speakingUnitsRef.current[nextIdx];
+      sessionGoTo(nextUnit.startIndex);
+      dispatch({ type: 'RESET_ROW' });
+      dispatch({ type: 'SET_SUB_PHASE', subPhase: 'LISTENING' });
+      return;
+    }
+
     const isLast = sessionRef.current.currentIndex >= scriptRowsRef.current.length - 1;
     if (isLast) {
       dispatch({ type: 'SET_SUB_PHASE', subPhase: 'ROUND_COMPLETE' });
@@ -549,9 +604,8 @@ export function useInfiniteSpeaking(setId: string) {
     }
     sessionNext();
     dispatch({ type: 'RESET_ROW' });
-    const nextSubPhase = sessionRef.current.round === 2 ? 'LISTENING' : 'SPEAKING';
-    dispatch({ type: 'SET_SUB_PHASE', subPhase: nextSubPhase });
-  }, [sessionNext]);
+    dispatch({ type: 'SET_SUB_PHASE', subPhase: 'SPEAKING' });
+  }, [sessionNext, sessionGoTo]);
 
   const nextRound = useCallback(() => {
     const isLast = sessionRef.current.round >= sessionRef.current.totalRounds;
@@ -567,15 +621,24 @@ export function useInfiniteSpeaking(setId: string) {
     speech.stopRecording();
     if (speakingTimeoutRef.current) clearTimeout(speakingTimeoutRef.current);
     if (currentRowRef.current) {
-      const result = evaluateSpeechLogic(speechRef.current?.transcript ?? '', currentRowRef.current.english, true);
+      const target = sessionRef.current.round === 2 && currentUnitRef.current
+        ? currentUnitRef.current.combinedEnglish
+        : currentRowRef.current.english;
+      const result = evaluateSpeechLogic(speechRef.current?.transcript ?? '', target, true);
       dispatch({ type: 'UPDATE_SPEECH', transcript: speechRef.current?.transcript ?? '', wordStatuses: result.wordStatuses, score: result.score });
     }
-    dispatch({ type: 'SET_SUB_PHASE', subPhase: 'COMPARISON' });
+    // Delay transition to let MediaRecorder.onstop fire and set audioUrl
+    setTimeout(() => {
+      dispatch({ type: 'SET_SUB_PHASE', subPhase: 'COMPARISON' });
+    }, 150);
   }, [speech]);
 
   const retrySpeaking = useCallback(() => {
     if (!currentRowRef.current) return;
-    const wordCount = currentRowRef.current.english.split(' ').length;
+    const target = sessionRef.current.round === 2 && currentUnitRef.current
+      ? currentUnitRef.current.combinedEnglish
+      : currentRowRef.current.english;
+    const wordCount = target.split(' ').length;
     dispatch({ type: 'RETRY_SPEAKING', wordCount });
   }, []);
 
@@ -619,10 +682,16 @@ export function useInfiniteSpeaking(setId: string) {
     speakingTimeoutRef.current = window.setTimeout(() => {
       speech.stopRecording();
       if (currentRowRef.current) {
-        const result = evaluateSpeechLogic(speechRef.current?.transcript ?? '', currentRowRef.current.english, true);
+        const target = sessionRef.current.round === 2 && currentUnitRef.current
+          ? currentUnitRef.current.combinedEnglish
+          : currentRowRef.current.english;
+        const result = evaluateSpeechLogic(speechRef.current?.transcript ?? '', target, true);
         dispatch({ type: 'UPDATE_SPEECH', transcript: speechRef.current?.transcript ?? '', wordStatuses: result.wordStatuses, score: result.score });
       }
-      dispatch({ type: 'SET_SUB_PHASE', subPhase: 'COMPARISON' });
+      // Delay transition to let MediaRecorder.onstop fire and set audioUrl
+      setTimeout(() => {
+        dispatch({ type: 'SET_SUB_PHASE', subPhase: 'COMPARISON' });
+      }, 150);
     }, TIMEOUTS.SPEAKING_TIMEOUT_MS);
   }, [speech]);
 
@@ -630,10 +699,16 @@ export function useInfiniteSpeaking(setId: string) {
     speech.stopRecording();
     if (speakingTimeoutRef.current) clearTimeout(speakingTimeoutRef.current);
     if (currentRowRef.current) {
-      const result = evaluateSpeechLogic(speech.transcript, currentRowRef.current.english, true);
+      const target = sessionRef.current.round === 2 && currentUnitRef.current
+        ? currentUnitRef.current.combinedEnglish
+        : currentRowRef.current.english;
+      const result = evaluateSpeechLogic(speech.transcript, target, true);
       dispatch({ type: 'UPDATE_SPEECH', transcript: speech.transcript, wordStatuses: result.wordStatuses, score: result.score });
     }
-    dispatch({ type: 'SET_SUB_PHASE', subPhase: 'COMPARISON' });
+    // Delay transition to let MediaRecorder.onstop fire and set audioUrl
+    setTimeout(() => {
+      dispatch({ type: 'SET_SUB_PHASE', subPhase: 'COMPARISON' });
+    }, 150);
   }, [speech]);
 
   const handlePlayModelForComparison = useCallback(async () => {
@@ -658,6 +733,7 @@ export function useInfiniteSpeaking(setId: string) {
     speech.stopRecording();
     dispatch({ type: 'RESET' });
     sessionReset();
+    setR2UnitIndex(0);
     hasSavedResultRef.current = false;
     savedRoundRef.current = 0;
   }, [speech, sessionReset]);
@@ -673,6 +749,8 @@ export function useInfiniteSpeaking(setId: string) {
     speakerStyleMap,
     r1PlayingIndex,
     r1IsPaused,
+    currentUnit,
+    speakingUnits,
 
     // Session
     session,

@@ -1,8 +1,18 @@
+import { useMemo } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { collection, getDocs, query, orderBy } from 'firebase/firestore';
 import { db } from '../firebase';
 import type { LearningSetMeta, LearningLevel, CategoryCode } from '../types';
 import { CATEGORY_MAP, LEVEL_LABELS } from '../constants/categories';
+
+const LEARNING_MODE_TO_TRAINING: Record<string, string> = {
+  repetition: 'repetition',
+  speed_listening: 'speedListening',
+  infinite_speaking: 'infiniteSpeaking',
+  role_play: 'rolePlay',
+  vocab: 'vocab',
+  free_response: 'freeResponse',
+};
 
 interface CategoryGroup {
   code: CategoryCode;
@@ -64,7 +74,7 @@ function groupByLevelAndCategory(sets: LearningSetMeta[]): LevelGroup[] {
   return levels;
 }
 
-export const useLearningSetsBrowser = () => {
+export const useLearningSetsBrowser = (mode?: string | null) => {
   const { data, isLoading, error } = useQuery({
     queryKey: ['learningSetsBrowser'],
     queryFn: fetchAllSets,
@@ -72,11 +82,27 @@ export const useLearningSetsBrowser = () => {
     gcTime: 2 * 60 * 60 * 1000,
   });
 
-  const levels = data ? groupByLevelAndCategory(data) : [];
+  const filteredData = useMemo(() => {
+    if (!data || !mode) return data ?? [];
+    const trainingMode = LEARNING_MODE_TO_TRAINING[mode];
+    if (!trainingMode) return data;
+
+    if (mode === 'speed_listening') {
+      return data.filter(s =>
+        !('hasSpeedListening' in s) || s.hasSpeedListening === true
+      );
+    }
+
+    return data.filter(s =>
+      !s.supportedModes || s.supportedModes.includes(trainingMode)
+    );
+  }, [data, mode]);
+
+  const levels = filteredData.length > 0 ? groupByLevelAndCategory(filteredData) : [];
 
   return {
     levels,
-    allSets: data ?? [],
+    allSets: filteredData ?? [],
     loading: isLoading,
     error: error ? (error instanceof Error ? error.message : 'Failed to load sets') : null,
   };
