@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react';
 import { useSpeedListeningData } from '../../hooks/useSpeedListeningData';
 import { usePrefetchData } from '../../hooks/useData';
+import { useTTSPrefetch } from '../../hooks/useTTSPrefetch';
 import { useLearningSetsBrowser } from '../../hooks/useLearningSetsBrowser';
 import { useAuth } from '../../hooks/useAuth';
 import { SpeedListeningQuiz } from '../SpeedListeningQuiz';
@@ -39,6 +40,8 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
   const [selectedDataSet, setSelectedDataSet] = useState<DataSet | null>(null);
   const [selectedSpeedListeningSet, setSelectedSpeedListeningSet] = useState<SpeedListeningSet | null>(null);
   const [selectedLevel, setSelectedLevel] = useState<number | 'all'>('all');
+
+  useTTSPrefetch(selectedDataSet?.id ?? null);
 
   // M1 fix: Reset navigation state when switching modes
   const selectMode = (newMode: LearningMode) => {

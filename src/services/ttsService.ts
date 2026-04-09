@@ -104,6 +104,31 @@ export async function getStaticAudioUrl(
 }
 
 /**
+ * Prefetch TTS for an entire learning set with concurrency control.
+ * Returns a handle to cancel remaining work (e.g., when user selects a different set).
+ */
+export function prefetchSetTTS(
+  items: Array<{ text: string; voiceKey: string }>,
+  concurrency = 5,
+): { cancel: () => void } {
+  let cancelled = false;
+
+  (async () => {
+    for (let i = 0; i < items.length; i += concurrency) {
+      if (cancelled) break;
+      const chunk = items.slice(i, i + concurrency);
+      await Promise.allSettled(
+        chunk.map(({ text, voiceKey }) =>
+          cancelled ? Promise.resolve() : getTTSAudioUrl(text, voiceKey).catch(() => {})
+        )
+      );
+    }
+  })();
+
+  return { cancel: () => { cancelled = true; } };
+}
+
+/**
  * Clear all cached audio blob URLs (call on logout or memory pressure).
  */
 export function clearTTSCache(): void {
