@@ -28,12 +28,8 @@ interface RepetitionPageProps {
 }
 
 const SPEED_OPTIONS = [1, 1.5, 2] as const;
-// 0 = infinite loop
-const LOOP_OPTIONS = [1, 2, 3, 5, 0] as const;
-
-function loopLabel(n: number): string {
-  return n === 0 ? '∞' : `${n}`;
-}
+// Per-sentence repeat count options
+const REPEAT_OPTIONS = [1, 2, 3, 5] as const;
 
 export const RepetitionPage = ({
   dataSet,
@@ -72,11 +68,11 @@ export const RepetitionPage = ({
     stopRange,
   } = engine;
 
-  // Auto-play: plays through all sentences sequentially with loop support
+  // Auto-play: plays through all sentences sequentially, always loops infinitely
   const [autoPlay, setAutoPlay] = useState(false);
-  const [loopTotal, setLoopTotal] = useState(1); // 0 = infinite
-  const loopCurrentRef = useRef(1);
-  const [loopCurrentDisplay, setLoopCurrentDisplay] = useState(1);
+  // Per-sentence repeat: how many times each sentence plays before advancing
+  const [sentenceRepeat, setSentenceRepeat] = useState(1);
+  const sentenceRepeatLeftRef = useRef(0);
 
   // Range controls (advanced)
   const [showRangeControls, setShowRangeControls] = useState(false);
@@ -94,30 +90,28 @@ export const RepetitionPage = ({
     activeCardRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }, [session.currentIndex]);
 
-  // When audio ends naturally → advance to next card if autoPlay is on
-  // Supports looping: at last sentence, loops back to first if repeats remain
+  // When audio ends naturally → repeat same sentence or advance, always loops infinitely
   useEffect(() => {
     if (wasPlayingRef.current && !isPlaying && autoPlay && session.phase === 'active') {
-      const isLast = session.currentIndex >= session.rows.length - 1;
-      if (!isLast) {
-        next();
+      // Check per-sentence repeat
+      if (sentenceRepeatLeftRef.current > 1) {
+        sentenceRepeatLeftRef.current -= 1;
+        // Replay same sentence
+        if (currentRow) playRow(currentRow).catch(console.error);
       } else {
-        // At last sentence — check loop
-        const canLoop = loopTotal === 0 || loopCurrentRef.current < loopTotal;
-        if (canLoop) {
-          loopCurrentRef.current += 1;
-          setLoopCurrentDisplay(loopCurrentRef.current);
-          goTo(0);
+        // Reset repeat counter for next sentence
+        sentenceRepeatLeftRef.current = sentenceRepeat;
+        const isLast = session.currentIndex >= session.rows.length - 1;
+        if (!isLast) {
+          next();
         } else {
-          // All loops done — stop auto-play
-          setAutoPlay(false);
-          loopCurrentRef.current = 1;
-          setLoopCurrentDisplay(1);
+          // At last sentence — always loop back to first (infinite loop)
+          goTo(0);
         }
       }
     }
     wasPlayingRef.current = isPlaying;
-  }, [isPlaying, autoPlay, session.phase, session.currentIndex, session.rows.length, next, goTo, loopTotal]);
+  }, [isPlaying, autoPlay, session.phase, session.currentIndex, session.rows.length, next, goTo, sentenceRepeat, currentRow, playRow]);
 
   // When currentIndex changes (from next/prev/goTo) → auto-play the new card if autoPlay on
   // Skipped on first render and when change came from a direct card tap
@@ -167,16 +161,13 @@ export const RepetitionPage = ({
       // Stop auto-play and current audio
       setAutoPlay(false);
       stop();
-      loopCurrentRef.current = 1;
-      setLoopCurrentDisplay(1);
     } else if (currentRow) {
       // Start auto-play from current position
-      loopCurrentRef.current = 1;
-      setLoopCurrentDisplay(1);
+      sentenceRepeatLeftRef.current = sentenceRepeat;
       setAutoPlay(true);
       playRow(currentRow).catch(console.error);
     }
-  }, [autoPlay, stop, currentRow, playRow]);
+  }, [autoPlay, stop, currentRow, playRow, sentenceRepeat]);
 
   // Manual play (single sentence, no auto-advance)
   const handleSinglePlay = useCallback(() => {
@@ -192,16 +183,16 @@ export const RepetitionPage = ({
     setSpeed(SPEED_OPTIONS[(idx + 1) % SPEED_OPTIONS.length]);
   }, [speed, setSpeed]);
 
-  const handleLoopCycle = useCallback(() => {
-    setLoopTotal(prev => {
-      const idx = LOOP_OPTIONS.indexOf(prev as typeof LOOP_OPTIONS[number]);
-      return LOOP_OPTIONS[(idx + 1) % LOOP_OPTIONS.length];
+  const handleRepeatCycle = useCallback(() => {
+    setSentenceRepeat(prev => {
+      const idx = REPEAT_OPTIONS.indexOf(prev as typeof REPEAT_OPTIONS[number]);
+      return REPEAT_OPTIONS[(idx + 1) % REPEAT_OPTIONS.length];
     });
   }, []);
 
   const handleBack = useCallback(() => {
-    stop();
     setAutoPlay(false);
+    stop();
     reset();
     onBack();
   }, [stop, reset, onBack]);
@@ -243,7 +234,7 @@ export const RepetitionPage = ({
     );
   }
 
-  const showLoopProgress = autoPlay && loopTotal !== 1;
+  const showRepeatInfo = autoPlay && sentenceRepeat > 1;
 
   return (
     <div
@@ -290,15 +281,11 @@ export const RepetitionPage = ({
         </div>
       )}
 
-      {/* Loop progress indicator */}
-      {showLoopProgress && (
+      {/* Repeat info indicator */}
+      {showRepeatInfo && (
         <div className="shrink-0 mx-4 mt-2 flex items-center justify-center gap-2 text-xs text-blue-600 dark:text-blue-400 font-bold">
           <Repeat className="w-3.5 h-3.5" />
-          <span>
-            {loopTotal === 0
-              ? `${loopCurrentDisplay}회 반복 중`
-              : `${loopCurrentDisplay} / ${loopTotal}회`}
-          </span>
+          <span>문장별 {sentenceRepeat}회 반복 · 무한 재생 중</span>
         </div>
       )}
 
@@ -419,16 +406,16 @@ export const RepetitionPage = ({
               {speed}x
             </button>
             <button
-              onClick={handleLoopCycle}
+              onClick={handleRepeatCycle}
               className={`flex items-center gap-1 px-2.5 py-2 text-sm font-bold rounded-xl transition-colors min-w-[44px] ${
-                loopTotal !== 1
+                sentenceRepeat > 1
                   ? 'bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300'
                   : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
               }`}
-              aria-label={`반복 횟수 ${loopLabel(loopTotal)}회`}
+              aria-label={`문장 반복 ${sentenceRepeat}회`}
             >
               <Repeat className="w-3.5 h-3.5" />
-              {loopLabel(loopTotal)}
+              {sentenceRepeat}
             </button>
           </div>
 

@@ -176,14 +176,8 @@ export function useRepetition(setId: string): UseRepetitionReturn {
         try {
           audioApi.stop();
           await audioApi.play(row);
-          // Wait for audio to finish playing
-          await new Promise<void>(resolve => {
-            const check = () => {
-              if (!audioApi.isPlaying || rangeAbortRef.current) { resolve(); return; }
-              setTimeout(check, 100);
-            };
-            setTimeout(check, 200);
-          });
+          if (rangeAbortRef.current) break;
+          await audioApi.waitForEnd();
         } catch {
           // TTS error — skip
         }

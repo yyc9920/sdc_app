@@ -77,7 +77,7 @@ export const SpeedListeningPage: React.FC<SpeedListeningPageProps> = ({
   }
 
   return (
-    <div className="w-full max-w-3xl mx-auto p-4 sm:p-6">
+    <div className="w-full max-w-3xl mx-auto p-4 sm:p-6 h-full overflow-y-auto">
       {/* Header */}
       <div className="mb-6">
         <div className="flex items-center justify-between mb-1">

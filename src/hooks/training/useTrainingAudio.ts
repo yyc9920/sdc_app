@@ -75,6 +75,21 @@ export function useTrainingAudio(config: UseTrainingAudioConfig) {
     [play],
   );
 
+  // Wait for the currently playing audio to finish (uses DOM events, not React state)
+  const waitForEnd = useCallback((): Promise<void> => {
+    return new Promise<void>(resolve => {
+      const audio = audioRef.current;
+      if (!audio || audio.ended || audio.paused) { resolve(); return; }
+      const onDone = () => {
+        audio.removeEventListener('ended', onDone);
+        audio.removeEventListener('error', onDone);
+        resolve();
+      };
+      audio.addEventListener('ended', onDone);
+      audio.addEventListener('error', onDone);
+    });
+  }, []);
+
   const stop = useCallback(() => {
     if (audioRef.current) {
       audioRef.current.pause();
@@ -113,6 +128,7 @@ export function useTrainingAudio(config: UseTrainingAudioConfig) {
   return {
     play,
     playSequence,
+    waitForEnd,
     stop,
     speed,
     setSpeed,

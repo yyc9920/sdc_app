@@ -149,7 +149,7 @@ export function useSpeedListening(config: {
     }
   }, [setId, audioApi, sessionApi]);
 
-  // Sync isPlaying to ref so the async playAll loop can poll without stale closures
+  // Kept for backward-compat — no longer used by playAll (uses waitForEnd instead)
   const isPlayingRef = useRef(false);
   useEffect(() => {
     isPlayingRef.current = audioApi.isPlaying;
@@ -207,8 +207,8 @@ export function useSpeedListening(config: {
     [],
   );
 
-  // Sequential playback with per-row index tracking (Option B from architect review).
-  // TTS strategy: max 1 concurrent request. On TTS failure, log and skip to next row.
+  // Sequential playback with per-row index tracking.
+  // Uses waitForEnd() (DOM audio events) instead of React state polling for reliability.
   const playAll = useCallback(async (): Promise<void> => {
     if (rows.length === 0) return;
     stopRef.current = false;
@@ -219,29 +219,10 @@ export function useSpeedListening(config: {
 
       try {
         await audioApi.play(rows[i]);
-
-        // Phase 1: wait for isPlaying to become true (audio started, with 1s timeout)
-        const started = await new Promise<boolean>(resolve => {
-          let attempts = 0;
-          const check = (): void => {
-            if (isPlayingRef.current) { resolve(true); return; }
-            if (attempts++ > 20 || stopRef.current) { resolve(false); return; }
-            setTimeout(check, 50);
-          };
-          check();
-        });
-        if (!started) continue;
-
-        // Phase 2: wait for audio to end (isPlaying → false)
-        await new Promise<void>(resolve => {
-          const check = (): void => {
-            if (!isPlayingRef.current || stopRef.current) { resolve(); return; }
-            setTimeout(check, 100);
-          };
-          check();
-        });
+        if (stopRef.current) break;
+        await audioApi.waitForEnd();
       } catch {
-        // TTS failure: skip this row and continue (no audio gap visible to user)
+        // TTS failure: skip this row and continue
       }
     }
 
