@@ -175,6 +175,8 @@ export function evaluateSpeechLogic(
 
   const newStatuses = targetWords.map(tWord => {
     const clean = tWord.toLowerCase().replace(/[.,!?;:'"()&\-_—]/g, '');
+    // Auto-pass words that become empty after stripping punctuation/special chars
+    if (clean === '') return 'correct';
     const remaining = spokenCounts.get(clean) ?? 0;
     if (remaining > 0) {
       spokenCounts.set(clean, remaining - 1);
