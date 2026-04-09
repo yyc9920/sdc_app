@@ -98,7 +98,7 @@ export function useRepetition(setId: string): UseRepetitionReturn {
   const [ttsError, setTtsError] = useState(false);
 
   const [rangeStart, setRangeStart] = useState(0);
-  const [rangeEnd, setRangeEnd] = useState(0);
+  const [rangeEnd, setRangeEnd] = useState(-1); // -1 = use max
   const [repeatTotal, setRepeatTotal] = useState(1);
   const [repeatCurrent, setRepeatCurrent] = useState(0);
   const [isRangePlaying, setIsRangePlaying] = useState(false);
@@ -151,17 +151,14 @@ export function useRepetition(setId: string): UseRepetitionReturn {
     return map;
   }, [sessionApi.session.rows]);
 
-  useEffect(() => {
-    if (sessionApi.session.rows.length > 0) {
-      setRangeEnd(sessionApi.session.rows.length - 1);
-    }
-  }, [sessionApi.session.rows.length]);
+  // Effective range end: -1 means "use last row"
+  const effectiveRangeEnd = rangeEnd < 0 ? sessionApi.session.rows.length - 1 : rangeEnd;
 
   const playRange = useCallback(async () => {
     const sessionRows = sessionApi.session.rows;
     if (sessionRows.length === 0) return;
     const start = Math.max(0, Math.min(rangeStart, sessionRows.length - 1));
-    const end = Math.max(start, Math.min(rangeEnd, sessionRows.length - 1));
+    const end = Math.max(start, Math.min(effectiveRangeEnd, sessionRows.length - 1));
 
     rangeAbortRef.current = false;
     setIsRangePlaying(true);
@@ -193,7 +190,7 @@ export function useRepetition(setId: string): UseRepetitionReturn {
     }
     setIsRangePlaying(false);
     setRepeatCurrent(0);
-  }, [rangeStart, rangeEnd, repeatTotal, sessionApi, audioApi]);
+  }, [rangeStart, effectiveRangeEnd, repeatTotal, sessionApi, audioApi]);
 
   const stopRange = useCallback(() => {
     rangeAbortRef.current = true;
@@ -239,7 +236,7 @@ export function useRepetition(setId: string): UseRepetitionReturn {
     reset: sessionApi.reset,
     saveProgress: progressApi.saveProgress,
     rangeStart,
-    rangeEnd,
+    rangeEnd: effectiveRangeEnd,
     repeatTotal,
     repeatCurrent,
     isRangePlaying,
