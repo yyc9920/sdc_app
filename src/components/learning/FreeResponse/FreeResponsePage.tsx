@@ -1,5 +1,5 @@
 import { useCallback } from 'react';
-import { ChevronLeft, Moon, Sun, RotateCcw, RefreshCw } from 'lucide-react';
+import { ChevronLeft, Moon, Sun, RotateCcw, RefreshCw, AlertTriangle } from 'lucide-react';
 import { useFreeResponse } from '../../../hooks/useFreeResponse';
 import { LoadingSpinner } from '../../LoadingSpinner';
 import { PromptCard } from './PromptCard';
@@ -54,19 +54,7 @@ export const FreeResponsePage = ({
     );
   }
 
-  // Top 5 keywords from model for THINK hints
-  const hintKeywords = fr.scriptRows
-    .flatMap(r => r.english.toLowerCase().replace(/[^a-z0-9\s]/g, '').split(/\s+/))
-    .filter(w => w.length > 4)
-    .reduce<Map<string, number>>((acc, w) => {
-      acc.set(w, (acc.get(w) ?? 0) + 1);
-      return acc;
-    }, new Map())
-    .entries();
-  const topKeywords = [...hintKeywords]
-    .sort((a, b) => b[1] - a[1])
-    .slice(0, 5)
-    .map(([w]) => w);
+  const promptText = fr.promptRow?.english ?? '';
 
   const currentStudyRow = fr.scriptRows[fr.studyIndex] ?? null;
   const isLastStudySentence = fr.studyIndex === fr.scriptRows.length - 1;
@@ -145,12 +133,20 @@ export const FreeResponsePage = ({
 
         {/* THINK */}
         {fr.phase === 'THINK' && (
-          <ThinkTimer
-            secondsLeft={fr.thinkSecondsLeft}
-            expired={fr.thinkExpired}
-            keywords={topKeywords}
-            onStartRecord={fr.startRecord}
-          />
+          <>
+            {fr.micPermissionDenied && (
+              <div className="flex items-center gap-2 p-3 mb-4 bg-amber-50 dark:bg-amber-900/30 border border-amber-300 dark:border-amber-700 rounded-xl text-sm text-amber-800 dark:text-amber-200">
+                <AlertTriangle className="w-4 h-4 shrink-0 text-amber-500" />
+                마이크 권한이 거부되었습니다. 브라우저 설정에서 마이크를 허용해주세요.
+              </div>
+            )}
+            <ThinkTimer
+              secondsLeft={fr.thinkSecondsLeft}
+              expired={fr.thinkExpired}
+              promptText={promptText}
+              onStartRecord={fr.startRecord}
+            />
+          </>
         )}
 
         {/* RECORD */}
@@ -160,6 +156,7 @@ export const FreeResponsePage = ({
             transcript={fr.userTranscript}
             isRecording={fr.isRecording}
             shortRecordingWarning={fr.shortRecordingWarning}
+            promptText={promptText}
             onStop={fr.stopRecord}
           />
         )}

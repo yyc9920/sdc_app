@@ -108,6 +108,11 @@ export function useTrainingAudio(config: UseTrainingAudioConfig) {
     setIsPlaying(false);
   }, []);
 
+  const requestMicPermission = useCallback(async () => {
+    const service = speechServiceRef.current;
+    return service.requestPermission();
+  }, []);
+
   const startRecording = useCallback(async () => {
     const service = speechServiceRef.current;
     setTranscript('');
@@ -143,6 +148,7 @@ export function useTrainingAudio(config: UseTrainingAudioConfig) {
     speed,
     setSpeed,
     isPlaying,
+    requestMicPermission,
     startRecording,
     stopRecording,
     transcript,

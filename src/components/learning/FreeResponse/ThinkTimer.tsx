@@ -1,23 +1,15 @@
 import { useState } from 'react';
-import { Mic } from 'lucide-react';
+import { Mic, Eye, EyeOff } from 'lucide-react';
 
 interface ThinkTimerProps {
   secondsLeft: number;
   expired: boolean;
-  keywords: string[];
+  promptText: string;
   onStartRecord: () => void;
 }
 
-export const ThinkTimer = ({ secondsLeft, expired, keywords, onStartRecord }: ThinkTimerProps) => {
-  const [revealedIndices, setRevealedIndices] = useState<Set<number>>(new Set());
-
-  const toggleReveal = (index: number) => {
-    setRevealedIndices(prev => {
-      const next = new Set(prev);
-      if (next.has(index)) { next.delete(index); } else { next.add(index); }
-      return next;
-    });
-  };
+export const ThinkTimer = ({ secondsLeft, expired, promptText, onStartRecord }: ThinkTimerProps) => {
+  const [showQuestion, setShowQuestion] = useState(false);
 
   const progress = expired ? 0 : (secondsLeft / 30) * 100;
   const isUrgent = !expired && secondsLeft <= 10;
@@ -64,27 +56,23 @@ export const ThinkTimer = ({ secondsLeft, expired, keywords, onStartRecord }: Th
         {expired ? '준비가 되면 녹음을 시작하세요' : '답변을 준비하세요'}
       </p>
 
-      {/* Keyword hints */}
-      {keywords.length > 0 && (
+      {/* Question review toggle */}
+      {promptText && (
         <div className="w-full max-w-md">
-          <p className="text-xs text-gray-400 dark:text-gray-500 text-center mb-3 uppercase tracking-wide">
-            키워드 힌트 (탭하여 보기)
-          </p>
-          <div className="flex flex-wrap justify-center gap-2">
-            {keywords.map((kw, i) => (
-              <button
-                key={i}
-                onClick={() => toggleReveal(i)}
-                className={`px-4 py-1.5 rounded-full text-sm font-medium border transition-all select-none ${
-                  revealedIndices.has(i)
-                    ? 'bg-indigo-100 dark:bg-indigo-900/40 border-indigo-300 dark:border-indigo-700 text-indigo-700 dark:text-indigo-300'
-                    : 'bg-gray-100 dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-transparent blur-sm'
-                }`}
-              >
-                {kw}
-              </button>
-            ))}
-          </div>
+          <button
+            onClick={() => setShowQuestion(prev => !prev)}
+            className="flex items-center gap-2 mx-auto px-4 py-2 rounded-full text-sm font-medium border border-indigo-300 dark:border-indigo-700 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 transition-colors"
+          >
+            {showQuestion ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+            {showQuestion ? '질문 숨기기' : '질문 다시보기'}
+          </button>
+          {showQuestion && (
+            <div className="mt-3 p-4 bg-indigo-50 dark:bg-indigo-900/20 border border-indigo-200 dark:border-indigo-700 rounded-2xl">
+              <p className="text-sm text-indigo-800 dark:text-indigo-200 font-medium leading-relaxed">
+                {promptText}
+              </p>
+            </div>
+          )}
         </div>
       )}
 
