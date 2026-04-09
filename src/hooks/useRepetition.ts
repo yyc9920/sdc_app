@@ -87,16 +87,39 @@ export function useRepetition(setId: string): UseRepetitionReturn {
   const hasSavedRef = useRef(false);
   const [ttsError, setTtsError] = useState(false);
 
-  // Save progress exactly once when session completes
+  // Stable refs for unmount cleanup — updated in effects (never during render)
+  const sessionRef = useRef(sessionApi.session);
+  const saveProgressRef = useRef(progressApi.saveProgress);
+
+  useEffect(() => {
+    sessionRef.current = sessionApi.session;
+  }, [sessionApi.session]);
+
+  useEffect(() => {
+    saveProgressRef.current = progressApi.saveProgress;
+  }, [progressApi.saveProgress]);
+
+  // Save progress + result exactly once when session completes
   useEffect(() => {
     if (sessionApi.session.phase === 'complete' && !hasSavedRef.current) {
       hasSavedRef.current = true;
       progressApi.saveProgress().catch(console.error);
+      progressApi.saveResult().catch(console.error);
     }
     if (sessionApi.session.phase === 'setup') {
       hasSavedRef.current = false;
     }
   }, [sessionApi.session.phase]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Save elapsed time on unmount — covers navigating away before session completes.
+  // hasSavedRef guard prevents double-save when unmounting after completion.
+  useEffect(() => {
+    return () => {
+      if (sessionRef.current.elapsedSeconds > 0 && !hasSavedRef.current) {
+        saveProgressRef.current().catch(console.error);
+      }
+    };
+  }, []);
 
   // Group all rows (including prompt) for display — prompt rows excluded from session navigation
   const groups = useMemo(() => computeGroups(rows), [rows]);
