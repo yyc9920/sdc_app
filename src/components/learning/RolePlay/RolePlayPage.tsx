@@ -204,6 +204,7 @@ export function RolePlayPage({
                 isRecording={isRecording}
                 ttsError={ttsError}
                 liveTranscript={liveTranscript}
+                liveWordStatuses={rp.liveWordStatuses}
                 turnResults={turnResults}
                 onStopTurn={stopUserTurn}
                 onSkipTurn={skipUserTurn}

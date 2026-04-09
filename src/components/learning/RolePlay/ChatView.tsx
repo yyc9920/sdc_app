@@ -17,6 +17,7 @@ interface ChatViewProps {
   isRecording: boolean;
   ttsError: boolean;
   liveTranscript: string;
+  liveWordStatuses?: string[];
   turnResults: TurnResult[];
   onStopTurn: () => void;
   onSkipTurn: () => void;
@@ -40,6 +41,7 @@ export function ChatView({
   isRecording,
   ttsError,
   liveTranscript,
+  liveWordStatuses,
   turnResults,
   onStopTurn,
   onSkipTurn,
@@ -106,6 +108,7 @@ export function ChatView({
                 showScript={bubbleShowScript}
                 result={result}
                 liveTranscript={isActive && isUser ? liveTranscript : undefined}
+                liveWordStatuses={isActive && isUser ? liveWordStatuses : undefined}
                 avatarColor={color}
                 speakerLabel={row.speaker}
                 phase={rolePlayPhase}

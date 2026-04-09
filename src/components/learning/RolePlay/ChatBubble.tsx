@@ -14,6 +14,7 @@ interface ChatBubbleProps {
   avatarColor: { bg: string; text: string; ring: string };
   speakerLabel: string;
   phase?: RolePlayPhase;
+  liveWordStatuses?: string[];
 }
 
 function ScoreBadge({ score }: { score: number | null }) {
@@ -46,6 +47,7 @@ export function ChatBubble({
   avatarColor,
   speakerLabel,
   phase,
+  liveWordStatuses,
 }: ChatBubbleProps) {
   const isCompleted = result !== undefined;
 
@@ -113,12 +115,30 @@ export function ChatBubble({
           )}
         </div>
 
-        {/* Live transcript (user active turn) */}
-        {isActive && isUser && liveTranscript && (
+        {/* Live word-by-word feedback (user active turn) */}
+        {isActive && isUser && liveWordStatuses && liveWordStatuses.length > 0 ? (
+          <div className="flex flex-wrap gap-1 px-1 mt-1">
+            {row.english.split(' ').map((word, i) => {
+              const status = liveWordStatuses[i] ?? 'pending';
+              return (
+                <span
+                  key={i}
+                  className={`text-xs font-medium px-1 rounded ${
+                    status === 'correct'
+                      ? 'text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/30'
+                      : 'text-gray-400 dark:text-gray-500'
+                  }`}
+                >
+                  {word}
+                </span>
+              );
+            })}
+          </div>
+        ) : isActive && isUser && liveTranscript ? (
           <p className="text-xs text-gray-500 dark:text-gray-400 italic px-1 max-w-full truncate">
             "{liveTranscript}"
           </p>
-        )}
+        ) : null}
 
         {/* Completed turn: transcript + score */}
         {isCompleted && isUser && (

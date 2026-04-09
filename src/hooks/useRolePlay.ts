@@ -1,5 +1,6 @@
 import { useReducer, useCallback, useEffect, useRef, useState, useMemo } from 'react';
 import { getTTSAudioUrl } from '../services/ttsService';
+import { evaluateSpeechLogic } from './useInfiniteSpeaking';
 import {
   useTrainingData,
   useTrainingSession,
@@ -72,6 +73,7 @@ export interface RolePlayState {
   isDemoPaused: boolean;
   isPhaseComplete: boolean;
   liveTranscript: string;
+  liveWordStatuses: string[];
 }
 
 type RolePlayAction =
@@ -83,6 +85,7 @@ type RolePlayAction =
   | { type: 'SKIP_TO_REVIEW' }
   | { type: 'USER_TURN_COMPLETE'; transcript: string; score: number | null; rowIndex: number; speaker: string; expected: string }
   | { type: 'UPDATE_LIVE_TRANSCRIPT'; transcript: string }
+  | { type: 'UPDATE_LIVE_WORD_STATUSES'; statuses: string[] }
   | { type: 'SET_AUTO_PLAYING'; value: boolean }
   | { type: 'SET_TTS_PLAYING'; value: boolean }
   | { type: 'SET_DEMO_PAUSED'; value: boolean }
@@ -104,6 +107,7 @@ export const initialRolePlayState: RolePlayState = {
   isDemoPaused: false,
   isPhaseComplete: false,
   liveTranscript: '',
+  liveWordStatuses: [],
 };
 
 export function rolePlayReducer(state: RolePlayState, action: RolePlayAction): RolePlayState {
@@ -166,11 +170,15 @@ export function rolePlayReducer(state: RolePlayState, action: RolePlayAction): R
         ...state,
         turnResults: [...state.turnResults, result],
         liveTranscript: '',
+        liveWordStatuses: [],
       };
     }
 
     case 'UPDATE_LIVE_TRANSCRIPT':
       return { ...state, liveTranscript: action.transcript };
+
+    case 'UPDATE_LIVE_WORD_STATUSES':
+      return { ...state, liveWordStatuses: action.statuses };
 
     case 'SET_AUTO_PLAYING':
       return { ...state, isAutoPlaying: action.value };
@@ -236,8 +244,12 @@ export function useRolePlay(setId: string) {
     transcriptRef.current = audioApi.transcript;
     if (audioApi.transcript) {
       dispatch({ type: 'UPDATE_LIVE_TRANSCRIPT', transcript: audioApi.transcript });
+      if (currentRow) {
+        const result = evaluateSpeechLogic(audioApi.transcript, currentRow.english, false);
+        dispatch({ type: 'UPDATE_LIVE_WORD_STATUSES', statuses: result.wordStatuses });
+      }
     }
-  }, [audioApi.transcript]);
+  }, [audioApi.transcript, currentRow]);
 
   // Demo control refs
   const demoActiveRef = useRef(false);
@@ -332,7 +344,7 @@ export function useRolePlay(setId: string) {
     audioApi.stopRecording();
     const transcript = transcriptRef.current;
     const expected = currentRow?.english ?? '';
-    const score = transcript.length > 0 ? computeSimilarity(transcript, expected) : null;
+    const score = transcript.length > 0 ? evaluateSpeechLogic(transcript, expected, true).score : null;
     dispatch({
       type: 'USER_TURN_COMPLETE',
       transcript,
@@ -502,6 +514,7 @@ export function useRolePlay(setId: string) {
     isDemoPaused: rpState.isDemoPaused,
     isPhaseComplete: rpState.isPhaseComplete,
     liveTranscript: rpState.liveTranscript,
+    liveWordStatuses: rpState.liveWordStatuses,
     turnResults: rpState.turnResults,
     demoPlayingIndex,
     ttsError,
