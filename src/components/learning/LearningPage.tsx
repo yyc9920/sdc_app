@@ -7,11 +7,14 @@ import { SpeedListeningQuiz } from '../SpeedListeningQuiz';
 import { LevelRecommendationBadge } from '../speed-listening/LevelRecommendationBadge';
 import { LoadingSpinner } from '../LoadingSpinner';
 import { InfiniteSpeakingPage } from './InfiniteSpeaking/InfiniteSpeakingPage';
+import { RepetitionPage } from './Repetition/RepetitionPage';
+import { RolePlayPage } from './RolePlay/RolePlayPage';
 import { VocabPage } from './Vocab/VocabPage';
+import { FreeResponsePage } from './FreeResponse/FreeResponsePage';
 import { LevelSelector } from '../home/LevelSelector';
 import { CategorySelector } from '../home/CategorySelector';
 import { SetSelector } from '../home/SetSelector';
-import { ChevronLeft, Moon, Sun, Headphones, Mic2, BookOpen } from 'lucide-react';
+import { ChevronLeft, Moon, Sun, Headphones, Mic2, BookOpen, RefreshCw, MessageSquare, PenTool } from 'lucide-react';
 import type { DataSet, SpeedListeningSet, LearningLevel, CategoryCode, LearningSetMeta } from '../../types';
 
 interface LearningPageProps {
@@ -24,7 +27,7 @@ const formatSetTitle = (setId: string) => {
   return match ? `Set ${match[1]}` : setId;
 };
 
-type LearningMode = 'speed_listening' | 'infinite_speaking' | 'vocab' | null;
+type LearningMode = 'repetition' | 'speed_listening' | 'infinite_speaking' | 'role_play' | 'vocab' | 'free_response' | null;
 
 export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) => {
   const { user } = useAuth();
@@ -92,12 +95,49 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
     );
   }
 
+  // Repetition active session
+  if (mode === 'repetition' && selectedDataSet) {
+    return (
+      <RepetitionPage
+        dataSet={selectedDataSet}
+        isNightMode={isNightMode}
+        onToggleNight={onToggleNight}
+        onBack={() => { setSelectedDataSet(null); }}
+      />
+    );
+  }
+
   // Vocab active session
   if (mode === 'vocab' && selectedDataSet) {
     return (
       <VocabPage
         setId={selectedDataSet.id}
         setTitle={selectedDataSet.name}
+        isNightMode={isNightMode}
+        onToggleNight={onToggleNight}
+        onBack={() => { setSelectedDataSet(null); }}
+      />
+    );
+  }
+
+  // Role Play active session
+  if (mode === 'role_play' && selectedDataSet) {
+    return (
+      <RolePlayPage
+        setId={selectedDataSet.id}
+        setName={selectedDataSet.name}
+        isNightMode={isNightMode}
+        onToggleNight={onToggleNight}
+        onBack={() => { setSelectedDataSet(null); }}
+      />
+    );
+  }
+
+  // Free Response active session
+  if (mode === 'free_response' && selectedDataSet) {
+    return (
+      <FreeResponsePage
+        setId={selectedDataSet.id}
         isNightMode={isNightMode}
         onToggleNight={onToggleNight}
         onBack={() => { setSelectedDataSet(null); }}
@@ -255,6 +295,42 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
                 <div className="text-left">
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white">어휘 학습</h3>
                   <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">표현을 카드로 익히고 문장으로 말하기</p>
+                </div>
+              </button>
+              <button
+                onClick={() => setMode('repetition')}
+                className="group relative flex items-center p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-sm border-2 border-transparent hover:border-orange-500 dark:hover:border-orange-400 transition-all hover:shadow-xl active:scale-[0.98]"
+              >
+                <div className="p-3 bg-orange-50 dark:bg-orange-900/30 rounded-2xl mr-4 group-hover:scale-110 transition-transform shrink-0">
+                  <RefreshCw className="w-8 h-8 text-orange-500" />
+                </div>
+                <div className="text-left">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white">반복 학습</h3>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">카드 형태로 문장을 반복하며 학습</p>
+                </div>
+              </button>
+              <button
+                onClick={() => setMode('role_play')}
+                className="group relative flex items-center p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-sm border-2 border-transparent hover:border-pink-500 dark:hover:border-pink-400 transition-all hover:shadow-xl active:scale-[0.98]"
+              >
+                <div className="p-3 bg-pink-50 dark:bg-pink-900/30 rounded-2xl mr-4 group-hover:scale-110 transition-transform shrink-0">
+                  <MessageSquare className="w-8 h-8 text-pink-500" />
+                </div>
+                <div className="text-left">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white">대화 롤플레이</h3>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">역할을 선택하고 대화 연습</p>
+                </div>
+              </button>
+              <button
+                onClick={() => setMode('free_response')}
+                className="group relative flex items-center p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-sm border-2 border-transparent hover:border-rose-500 dark:hover:border-rose-400 transition-all hover:shadow-xl active:scale-[0.98]"
+              >
+                <div className="p-3 bg-rose-50 dark:bg-rose-900/30 rounded-2xl mr-4 group-hover:scale-110 transition-transform shrink-0">
+                  <PenTool className="w-8 h-8 text-rose-500" />
+                </div>
+                <div className="text-left">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white">자유 스피킹</h3>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">주제를 듣고 자유롭게 말한 뒤 모범답안 비교</p>
                 </div>
               </button>
             </div>
