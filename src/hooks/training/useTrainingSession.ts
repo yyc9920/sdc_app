@@ -1,5 +1,5 @@
 // src/hooks/training/useTrainingSession.ts
-import { useReducer, useCallback, useEffect, useRef } from 'react';
+import { useReducer, useCallback, useEffect, useRef, useMemo } from 'react';
 import type { TrainingMode } from '../../types';
 import type { TrainingRow, TrainingSession, SessionAction, SessionPhase, ModeOptions } from './types';
 import { filterRowsForMode } from './dataAdapter';
@@ -80,7 +80,10 @@ export function useTrainingSession(config: {
 }) {
   const { setId, mode, allRows, options } = config;
 
-  const filteredRows = filterRowsForMode(allRows, mode);
+  const filteredRows = useMemo(
+    () => filterRowsForMode(allRows, mode),
+    [allRows, mode],
+  );
 
   const [session, dispatch] = useReducer(sessionReducer, initialSessionState);
 
@@ -96,7 +99,7 @@ export function useTrainingSession(config: {
         totalRounds: options?.totalRounds,
       });
     }
-  }, [filteredRows.length, mode, setId, options?.totalRounds, session.phase]);
+  }, [filteredRows, mode, setId, options?.totalRounds, session.phase]);
 
   useEffect(() => {
     if (session.phase === 'active' && !session.isPaused) {
@@ -114,6 +117,7 @@ export function useTrainingSession(config: {
         timerRef.current = null;
       }
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps -- startOffset captured once per timer activation
   }, [session.phase, session.isPaused, session.round]);
 
   useEffect(() => {

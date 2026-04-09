@@ -53,7 +53,7 @@ export function useTrainingAudio(config: UseTrainingAudioConfig) {
       audio.onended = () => setIsPlaying(false);
       audio.onerror = () => setIsPlaying(false);
 
-      await audio.play();
+      await audio.play?.();
     },
     [getVoiceForRow, speed],
   );
@@ -62,12 +62,13 @@ export function useTrainingAudio(config: UseTrainingAudioConfig) {
     async (rows: TrainingRow[]) => {
       for (const row of rows) {
         await play(row);
+        // Wait for current audio to finish before playing next
         await new Promise<void>(resolve => {
-          if (audioRef.current) {
-            audioRef.current.onended = () => resolve();
-          } else {
-            resolve();
-          }
+          const audio = audioRef.current;
+          if (!audio) { resolve(); return; }
+          const onEnd = () => { audio.removeEventListener('ended', onEnd); resolve(); };
+          if (audio.ended || audio.paused) { resolve(); return; }
+          audio.addEventListener('ended', onEnd);
         });
       }
     },

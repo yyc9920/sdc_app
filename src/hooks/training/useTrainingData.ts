@@ -9,6 +9,7 @@ import { toTrainingRow, getSupportedModes } from './dataAdapter';
 
 async function fetchTrainingRows(setId: string): Promise<TrainingRow[]> {
   const sentencesRef = collection(db, 'learning_sets', setId, 'sentences');
+  // Order by 'id' (Firestore doc field). toTrainingRow assigns rowSeq from array index.
   const q = query(sentencesRef, orderBy('id', 'asc'));
   const snapshot = await getDocs(q);
 
