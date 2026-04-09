@@ -1,10 +1,12 @@
-import { Square, AlertTriangle } from 'lucide-react';
+import { useState } from 'react';
+import { Square, AlertTriangle, Eye, EyeOff } from 'lucide-react';
 
 interface RecordingViewProps {
   secondsLeft: number;
   transcript: string;
   isRecording: boolean;
   shortRecordingWarning: boolean;
+  promptText: string;
   onStop: () => void;
 }
 
@@ -16,14 +18,36 @@ export const RecordingView = ({
   transcript,
   isRecording,
   shortRecordingWarning,
+  promptText,
   onStop,
 }: RecordingViewProps) => {
+  const [showQuestion, setShowQuestion] = useState(false);
   const elapsed = 120 - secondsLeft;
   const mm = String(Math.floor(elapsed / 60)).padStart(2, '0');
   const ss = String(elapsed % 60).padStart(2, '0');
 
   return (
     <div className="flex flex-col items-center gap-6 py-4">
+      {/* Question review toggle */}
+      {promptText && (
+        <div className="w-full max-w-xl">
+          <button
+            onClick={() => setShowQuestion(prev => !prev)}
+            className="flex items-center gap-2 mx-auto px-4 py-2 rounded-full text-sm font-medium border border-indigo-300 dark:border-indigo-700 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 transition-colors"
+          >
+            {showQuestion ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+            {showQuestion ? '질문 숨기기' : '질문 다시보기'}
+          </button>
+          {showQuestion && (
+            <div className="mt-3 p-4 bg-indigo-50 dark:bg-indigo-900/20 border border-indigo-200 dark:border-indigo-700 rounded-2xl">
+              <p className="text-sm text-indigo-800 dark:text-indigo-200 font-medium leading-relaxed">
+                {promptText}
+              </p>
+            </div>
+          )}
+        </div>
+      )}
+
       {/* Waveform animation */}
       <div className="flex items-end gap-1.5 h-16">
         {BAR_DELAYS.map((delay, i) => (

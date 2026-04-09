@@ -120,6 +120,8 @@ export function useFreeResponse(setId: string) {
   const [transcriptMissing, setTranscriptMissing] = useState(false);
   // true when user stopped recording before MIN_RECORD_SECONDS
   const [shortRecordingWarning, setShortRecordingWarning] = useState(false);
+  // true when mic permission was denied during THINK phase
+  const [micPermissionDenied, setMicPermissionDenied] = useState(false);
 
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const hasSavedResultRef = useRef(false);
@@ -215,7 +217,12 @@ export function useFreeResponse(setId: string) {
 
   const startThink = useCallback(() => {
     audioApi.stop();
+    setMicPermissionDenied(false);
     setPhase('THINK');
+    // Pre-request mic permission so it's ready when recording starts
+    audioApi.requestMicPermission().then(granted => {
+      if (!granted) setMicPermissionDenied(true);
+    }).catch(() => setMicPermissionDenied(true));
   }, [audioApi]);
 
   const startRecord = useCallback(() => {
@@ -297,6 +304,7 @@ export function useFreeResponse(setId: string) {
     setTtsError(false);
     setShortRecordingWarning(false);
     setTranscriptMissing(false);
+    setMicPermissionDenied(false);
     hasSavedResultRef.current = false;
     sessionApi.reset();
   }, [clearTimer, audioApi, sessionApi, progressApi]);
@@ -320,6 +328,7 @@ export function useFreeResponse(setId: string) {
     ttsError,
     transcriptMissing,
     shortRecordingWarning,
+    micPermissionDenied,
     // Audio state
     isPlaying: audioApi.isPlaying,
     isRecording: audioApi.isRecording,

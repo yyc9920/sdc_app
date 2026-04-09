@@ -108,6 +108,7 @@ function setupMocks(rows: TrainingRow[] = []) {
     isRecording: false,
     speakerVoiceMap: {},
     waitForEnd: vi.fn().mockResolvedValue(undefined),
+    requestMicPermission: vi.fn().mockResolvedValue(true),
   });
 
   mockedUseTrainingProgress.mockReturnValue({
