@@ -1,3 +1,39 @@
+export const SPEAKER_COLOR_PALETTE = [
+  { colorClass: 'text-blue-600 dark:text-blue-400',      bgClass: 'bg-blue-50 dark:bg-blue-900/20' },
+  { colorClass: 'text-rose-600 dark:text-rose-400',       bgClass: 'bg-rose-50 dark:bg-rose-900/20' },
+  { colorClass: 'text-emerald-600 dark:text-emerald-400', bgClass: 'bg-emerald-50 dark:bg-emerald-900/20' },
+  { colorClass: 'text-amber-600 dark:text-amber-400',     bgClass: 'bg-amber-50 dark:bg-amber-900/20' },
+  { colorClass: 'text-violet-600 dark:text-violet-400',   bgClass: 'bg-violet-50 dark:bg-violet-900/20' },
+  { colorClass: 'text-teal-600 dark:text-teal-400',       bgClass: 'bg-teal-50 dark:bg-teal-900/20' },
+] as const;
+
+export const ROUND_DESCRIPTIONS = [
+  {
+    round: 1 as const,
+    title: 'Round 1',
+    subtitle: '전체 듣기',
+    description: '모든 문장을 순서대로 들어보세요. 말하지 않아도 됩니다.',
+  },
+  {
+    round: 2 as const,
+    title: 'Round 2',
+    subtitle: '따라 말하기',
+    description: '한 문장씩 듣고 바로 따라 말하세요.',
+  },
+  {
+    round: 3 as const,
+    title: 'Round 3',
+    subtitle: '기억해서 말하기',
+    description: '문장이 숨겨집니다. 힌트 없이 기억에서 말하세요.',
+  },
+  {
+    round: 4 as const,
+    title: 'Round 4',
+    subtitle: '전체 스피킹',
+    description: '전체 텍스트가 보입니다. 각 문장을 자연스럽게 말하세요.',
+  },
+] as const;
+
 export const FUNCTION_WORDS = new Set([
   // Pronouns
   'i', 'me', 'my', 'mine', 'myself',
@@ -45,13 +81,6 @@ export const FUNCTION_WORDS = new Set([
   "let's",
 ]);
 
-export const ROUND_DESCRIPTIONS = [
-  { round: 1 as const, title: 'Round 1', subtitle: 'Listen & Repeat', description: '영어 문장을 보고 듣고 따라 말하세요.' },
-  { round: 2 as const, title: 'Round 2', subtitle: 'Key Blanks', description: '핵심 표현이 빈칸으로 바뀝니다. 기억해서 말하세요.' },
-  { round: 3 as const, title: 'Round 3', subtitle: 'Korean Hint', description: '핵심 표현 빈칸 + 한국어 해석을 듣고 영어로 말하세요.' },
-  { round: 4 as const, title: 'Round 4', subtitle: 'Full Recall', description: '모든 단어가 빈칸! 한국어 해석만 듣고 영어로 말하세요.' },
-] as const;
-
 export const TIMEOUTS = {
   ROUND_INTRO_MS: 2500,
   AUTO_ADVANCE_MS: 2000,
@@ -64,5 +93,3 @@ export const TIMEOUTS = {
   MIC_MAX_RETRIES: 3,
   MIC_RETRY_DELAY_MS: 500,
 } as const;
-
-export const RANGE_OPTIONS = [5, 10, 15, 20, 25] as const;

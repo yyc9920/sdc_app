@@ -1,15 +1,18 @@
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ROUND_DESCRIPTIONS, TIMEOUTS } from '../../../constants/infiniteSpeaking';
+import { PromptCard } from './PromptCard';
 import type { Round } from '../../../hooks/useInfiniteSpeaking';
+import type { TrainingRow } from '../../../hooks/training/types';
 
 interface RoundIntroProps {
   round: Round;
+  promptRow: TrainingRow | null;
   onStart: () => void;
   handsFree: boolean;
 }
 
-export const RoundIntro = ({ round, onStart, handsFree }: RoundIntroProps) => {
+export const RoundIntro = ({ round, promptRow, onStart, handsFree }: RoundIntroProps) => {
   const info = ROUND_DESCRIPTIONS[round - 1];
 
   useEffect(() => {
@@ -43,17 +46,24 @@ export const RoundIntro = ({ round, onStart, handsFree }: RoundIntroProps) => {
       </motion.div>
 
       <div className="space-y-2">
-        <h2 className="text-3xl font-extrabold text-gray-800 dark:text-white">{info.title}</h2>
-        <p className="text-lg font-bold text-purple-600 dark:text-purple-400">{info.subtitle}</p>
+        <h2 className="text-3xl font-extrabold text-gray-800 dark:text-white">{info.subtitle}</h2>
+        <p className="text-base font-bold text-purple-600 dark:text-purple-400">{info.title}</p>
       </div>
 
       <p className="text-gray-500 dark:text-gray-400 max-w-sm">{info.description}</p>
+
+      {/* Prompt context card */}
+      {promptRow && (
+        <div className="w-full max-w-sm text-left">
+          <PromptCard row={promptRow} />
+        </div>
+      )}
 
       {!handsFree && (
         <motion.button
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
+          transition={{ delay: 0.4 }}
           onClick={onStart}
           className="px-8 py-4 bg-purple-600 hover:bg-purple-700 text-white text-lg font-bold rounded-2xl shadow-lg transition-all active:scale-[0.98]"
         >

@@ -1,24 +1,17 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { ChevronLeft, Moon, Sun, Hand, HandMetal, Mic, Square, AlertTriangle, RefreshCw, SkipForward } from 'lucide-react';
-import { useData } from '../../../hooks/useData';
 import { useInfiniteSpeaking } from '../../../hooks/useInfiniteSpeaking';
-import { useStreamingSpeechRecognition } from '../../../hooks/useStreamingSpeechRecognition';
-import { useSaveSpeakingResult } from '../../../hooks/useStudySession';
-import { getTTSAudioUrl, prefetchTTS } from '../../../services/ttsService';
-import { DEFAULT_VOICE } from '../../../constants/audio';
-import { DEFAULT_KOREAN_VOICE } from '../../../constants/audio';
-import { TIMEOUTS } from '../../../constants/infiniteSpeaking';
+import { getKeyExpressionIndices } from '../../../utils/keyExpressions';
 import { LoadingSpinner } from '../../LoadingSpinner';
-import { RangeSelector } from './RangeSelector';
+import { PromptCard } from './PromptCard';
 import { RoundIntro } from './RoundIntro';
+import { R1ListView } from './R1ListView';
 import { SpeakingCard } from './SpeakingCard';
 import { StreamingHints } from './StreamingHints';
 import { ComparisonView } from './ComparisonView';
 import { RoundComplete } from './RoundComplete';
 import { SessionComplete } from './SessionComplete';
-import { isMobileBrowser } from '../../../utils/platform';
-import type { DataSet, SentenceData } from '../../../types';
+import type { DataSet } from '../../../types';
 
 interface InfiniteSpeakingPageProps {
   dataSet: DataSet;
@@ -28,247 +21,71 @@ interface InfiniteSpeakingPageProps {
 }
 
 export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBack }: InfiniteSpeakingPageProps) => {
-  const { data: allSentences, loading, error } = useData(dataSet.id);
-  const engine = useInfiniteSpeaking();
-  const { state, currentSentenceGroup, currentKeyIndices } = engine;
-  const { saveSpeakingResult } = useSaveSpeakingResult();
-  const hasSavedRef = useRef(false);
-  const [ttsError, setTtsError] = useState(false);
+  const engine = useInfiniteSpeaking(dataSet.id);
+  const {
+    isLoading, error,
+    promptRow, scriptRows, currentRow, speakerStyleMap,
+    r1PlayingIndex, r1IsPaused,
+    session,
+    subPhase, handsFree, wordStatuses, transcript, score, retryCount, hints,
+    ttsError, needsMicGesture,
+    speech,
+    startRound, finishSpeaking, retrySpeaking, nextRow, nextRound,
+    toggleHandsFree, toggleR1Pause,
+    handleTtsRetry, handleTtsSkip,
+    handleMobileMicStart, handleManualStopSpeaking,
+    handlePlayModelForComparison,
+    reset,
+  } = engine;
 
-  const speakingTimeoutRef = useRef<number | null>(null);
-  const hintDebounceRef = useRef<number | null>(null);
-  const modelAudioRef = useRef<HTMLAudioElement | null>(null);
-  const isMobileBrowserRef = useRef(isMobileBrowser());
-  const [needsMicGesture, setNeedsMicGesture] = useState(false);
+  // Derived from currentRow
+  const currentKeyIndices = currentRow ? getKeyExpressionIndices(currentRow.english) : [];
+  const currentSpeakerStyle = currentRow?.speaker ? speakerStyleMap[currentRow.speaker] : undefined;
+  // R3: hide text during speaking
+  const textVisible = session.round !== 3 || subPhase !== 'SPEAKING';
 
-  const speechRef = useRef<ReturnType<typeof useStreamingSpeechRecognition> | null>(null);
+  if (isLoading) return <LoadingSpinner fullScreen />;
+  if (error) return (
+    <div className="flex h-screen items-center justify-center text-xl text-red-500">
+      에러: {error}
+    </div>
+  );
 
-  const handleTranscriptUpdate = useCallback((transcript: string, isFinal: boolean) => {
-    if (state.phase !== 'SPEAKING' || !currentSentenceGroup) return;
+  // Empty set fallback
+  if (!isLoading && scriptRows.length === 0) {
+    return (
+      <div className="flex h-screen items-center justify-center px-6">
+        <div className="text-center space-y-3">
+          <p className="text-xl font-bold text-gray-700 dark:text-gray-300">
+            이 세트에서 사용할 수 있는 콘텐츠가 없습니다
+          </p>
+          <p className="text-sm text-gray-500 dark:text-gray-400">
+            스크립트 타입의 행이 없습니다.
+          </p>
+          <button
+            onClick={onBack}
+            className="mt-4 px-6 py-3 bg-purple-600 text-white font-bold rounded-2xl"
+          >
+            돌아가기
+          </button>
+        </div>
+      </div>
+    );
+  }
 
-    const targetText = currentSentenceGroup.combinedEnglish;
-    const result = engine.evaluateSpeech(transcript, targetText, isFinal);
-    engine.updateSpeech(transcript, result.wordStatuses, result.score);
-
-    // Auto-finish on 100%
-    if (result.score === 100) {
-      speechRef.current?.stopRecording();
-      engine.finishSpeaking();
-      return;
-    }
-
-    // Streaming hints: debounced check for key word errors
-    if (hintDebounceRef.current) clearTimeout(hintDebounceRef.current);
-    hintDebounceRef.current = window.setTimeout(() => {
-      const words = targetText.split(' ');
-      for (const idx of currentKeyIndices) {
-        if (result.wordStatuses[idx] === 'pending' && transcript.split(/\s+/).length > idx) {
-          engine.addHint(`"${words[idx]}" 을 발음해보세요`);
-          break;
-        }
-      }
-    }, TIMEOUTS.HINT_DEBOUNCE_MS);
-  }, [state.phase, currentSentenceGroup, currentKeyIndices, engine]);
-
-  const speech = useStreamingSpeechRecognition({ onTranscriptUpdate: handleTranscriptUpdate });
-  useEffect(() => { speechRef.current = speech; }, [speech]);
-
-  // Prefetch upcoming speaking unit audio
-  useEffect(() => {
-    if (state.phase === 'SETUP' || state.phase === 'SESSION_COMPLETE') return;
-    const nextGroupIdx = state.currentGroupIndex + 1;
-    if (nextGroupIdx < state.speakingUnits.length) {
-      const nextUnit = state.speakingUnits[nextGroupIdx];
-      if (state.currentRound <= 2) {
-        prefetchTTS(nextUnit.english, DEFAULT_VOICE);
-      } else {
-        prefetchTTS(nextUnit.korean, DEFAULT_KOREAN_VOICE);
-      }
-    }
-  }, [state.phase, state.currentGroupIndex, state.speakingUnits, state.currentRound]);
-
-  // Eagerly prefetch first sentences as soon as data loads (during SETUP screen)
-  useEffect(() => {
-    if (!allSentences.length) return;
-    const toPreload = allSentences.slice(0, 3);
-    for (const s of toPreload) {
-      prefetchTTS(s.english, DEFAULT_VOICE);
-      prefetchTTS(s.comprehension, DEFAULT_KOREAN_VOICE);
-    }
-  }, [allSentences]);
-
-  // Play model audio (English TTS via Cloud Function) for rounds 1-2
-  const playModelAudio = useCallback(async () => {
-    if (!currentSentenceGroup) return;
-    try {
-      setTtsError(false);
-      const url = await getTTSAudioUrl(currentSentenceGroup.combinedEnglish, DEFAULT_VOICE);
-
-      if (modelAudioRef.current) {
-        modelAudioRef.current.pause();
-      }
-      const audio = new Audio(url);
-      modelAudioRef.current = audio;
-      audio.onended = () => {
-        if (state.phase === 'LISTENING') {
-          engine.startSpeaking();
-        }
-      };
-      audio.play().catch(console.error);
-    } catch (e) {
-      console.error('TTS failed after retries:', e);
-      setTtsError(true);
-    }
-  }, [currentSentenceGroup, state.phase, engine]);
-
-  // Play Korean TTS (via Cloud Function with edge-tts Korean Neural voice) for rounds 3-4
-  const playKoreanTTS = useCallback(async () => {
-    if (!currentSentenceGroup) return;
-    try {
-      setTtsError(false);
-      const url = await getTTSAudioUrl(currentSentenceGroup.combinedKorean, DEFAULT_KOREAN_VOICE);
-
-      if (modelAudioRef.current) {
-        modelAudioRef.current.pause();
-      }
-      const audio = new Audio(url);
-      modelAudioRef.current = audio;
-      audio.onended = () => {
-        if (state.phase === 'LISTENING') {
-          engine.startSpeaking();
-        }
-      };
-      audio.play().catch(console.error);
-    } catch (e) {
-      console.error('Korean TTS failed after retries:', e);
-      setTtsError(true);
-    }
-  }, [currentSentenceGroup, state.phase, engine]);
-
-  const handleTtsRetry = useCallback(() => {
-    if (state.currentRound <= 2) {
-      playModelAudio();
-    } else {
-      playKoreanTTS();
-    }
-  }, [state.currentRound, playModelAudio, playKoreanTTS]);
-
-  const handleTtsSkip = useCallback(() => {
-    setTtsError(false);
-    engine.startSpeaking();
-  }, [engine]);
-
-  // Handle LISTENING phase: play appropriate audio
-  useEffect(() => {
-    if (state.phase !== 'LISTENING' || !currentSentenceGroup) return;
-
-    if (state.currentRound <= 2) {
-      playModelAudio(); // eslint-disable-line react-hooks/set-state-in-effect -- async audio playback may set error state
-    } else {
-      playKoreanTTS();
-    }
-
-    return () => {
-      if (modelAudioRef.current) {
-        modelAudioRef.current.pause();
-        modelAudioRef.current = null;
-      }
-    };
-  }, [state.phase, state.currentRound, currentSentenceGroup, playModelAudio, playKoreanTTS]);
-
-  // Handle SPEAKING phase: auto-start recording + timeout
-  // On mobile browsers, require user tap to start (getUserMedia needs user gesture)
-  useEffect(() => {
-    if (state.phase !== 'SPEAKING') {
-      setNeedsMicGesture(false); // eslint-disable-line react-hooks/set-state-in-effect -- sync with phase
-      return;
-    }
-
-    if (isMobileBrowserRef.current) {
-      setNeedsMicGesture(true);
-      return;
-    }
-
-    // Desktop / native: auto-start as before
-    speech.startRecording();
-
-    speakingTimeoutRef.current = window.setTimeout(() => {
-      speech.stopRecording();
-      engine.finishSpeaking();
-    }, TIMEOUTS.SPEAKING_TIMEOUT_MS);
-
-    return () => {
-      if (speakingTimeoutRef.current) clearTimeout(speakingTimeoutRef.current);
-    };
-  }, [state.phase]); // eslint-disable-line react-hooks/exhaustive-deps
-
-  const handleMobileMicStart = useCallback(() => {
-    setNeedsMicGesture(false);
-    speech.startRecording();
-
-    speakingTimeoutRef.current = window.setTimeout(() => {
-      speech.stopRecording();
-      engine.finishSpeaking();
-    }, TIMEOUTS.SPEAKING_TIMEOUT_MS);
-  }, [speech, engine]);
-
-  // Save speaking result when session completes
-  useEffect(() => {
-    if (state.phase === 'SESSION_COMPLETE' && !hasSavedRef.current && state.sessionStartTime) {
-      hasSavedRef.current = true;
-      const elapsed = Math.floor((Date.now() - state.sessionStartTime) / 1000);
-      saveSpeakingResult(dataSet.id, state.sentences.length, state.currentRound, elapsed);
-    }
-    if (state.phase === 'SETUP') {
-      hasSavedRef.current = false;
-    }
-  }, [state.phase, state.sessionStartTime, state.sentences.length, state.currentRound, dataSet.id, saveSpeakingResult]);
-
-  // Cleanup on unmount
-  useEffect(() => {
-    return () => {
-      if (modelAudioRef.current) modelAudioRef.current.pause();
-      if (speakingTimeoutRef.current) clearTimeout(speakingTimeoutRef.current);
-      if (hintDebounceRef.current) clearTimeout(hintDebounceRef.current);
-    };
-  }, []);
-
-  const handleManualStopSpeaking = useCallback(() => {
-    speech.stopRecording();
-    if (speakingTimeoutRef.current) clearTimeout(speakingTimeoutRef.current);
-
-    // Finalize evaluation
-    if (currentSentenceGroup) {
-      const result = engine.evaluateSpeech(speech.transcript, currentSentenceGroup.combinedEnglish, true);
-      engine.updateSpeech(speech.transcript, result.wordStatuses, result.score);
-    }
-    engine.finishSpeaking();
-  }, [speech, currentSentenceGroup, engine]);
-
-  const handlePlayModelForComparison = useCallback(async () => {
-    if (!currentSentenceGroup) return;
-    const url = await getTTSAudioUrl(currentSentenceGroup.combinedEnglish, DEFAULT_VOICE);
-    const audio = new Audio(url);
-    audio.play().catch(console.error);
-  }, [currentSentenceGroup]);
-
-  const handleStartSession = useCallback((sentences: SentenceData[]) => {
-    engine.startSession(sentences);
-  }, [engine]);
-
-  if (loading) return <LoadingSpinner fullScreen />;
-  if (error) return <div className="flex h-screen items-center justify-center text-xl text-red-500">에러: {error}</div>;
+  const isSessionComplete = session.phase === 'complete';
+  const showProgress = !isSessionComplete && subPhase !== 'ROUND_INTRO';
 
   return (
     <div className={`h-full ${isNightMode ? 'dark bg-gray-900' : 'bg-gray-50'} flex flex-col transition-colors duration-300 overflow-hidden`}>
-      {/* Streaming Hints Overlay */}
-      <StreamingHints hints={state.hints} />
+      {/* Streaming hints overlay */}
+      <StreamingHints hints={hints} />
 
       {/* Header */}
       <header className="shrink-0 w-full max-w-4xl mx-auto flex justify-between items-center p-3 sm:p-4 bg-gray-50/90 dark:bg-gray-900/90 backdrop-blur z-40 border-b border-gray-200 dark:border-gray-700 gap-3">
         <div className="flex items-center gap-1 sm:gap-3 flex-1 min-w-0">
           <button
-            onClick={() => { engine.reset(); onBack(); }}
+            onClick={() => { reset(); onBack(); }}
             className="p-2 -ml-2 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors active:scale-90 shrink-0"
           >
             <ChevronLeft className="w-6 h-6 text-gray-600 dark:text-gray-400" />
@@ -279,17 +96,17 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
           </h1>
         </div>
         <div className="flex items-center gap-2">
-          {state.phase !== 'SETUP' && (
+          {!isSessionComplete && (
             <button
-              onClick={engine.toggleHandsFree}
+              onClick={toggleHandsFree}
               className={`p-2 rounded-full transition-colors ${
-                state.handsFree
+                handsFree
                   ? 'bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-400 shadow-sm'
                   : 'text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'
               }`}
-              title={state.handsFree ? '핸즈프리 ON' : '핸즈프리 OFF'}
+              title={handsFree ? '핸즈프리 ON' : '핸즈프리 OFF'}
             >
-              {state.handsFree ? <HandMetal className="w-5 h-5" /> : <Hand className="w-5 h-5" />}
+              {handsFree ? <HandMetal className="w-5 h-5" /> : <Hand className="w-5 h-5" />}
             </button>
           )}
           <button
@@ -302,18 +119,23 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
       </header>
 
       {/* Progress bar */}
-      {state.phase !== 'SETUP' && state.phase !== 'SESSION_COMPLETE' && (
+      {showProgress && (
         <div className="shrink-0 max-w-4xl mx-auto px-4 pt-3 w-full">
           <div className="flex items-center gap-3 text-xs text-gray-500 dark:text-gray-400 mb-2">
-            <span className="font-bold text-purple-600 dark:text-purple-400">Round {state.currentRound}/4</span>
-            <span>문장 {state.currentGroupIndex + 1}/{state.speakingUnits.length}</span>
+            <span className="font-bold text-purple-600 dark:text-purple-400">
+              Round {session.round}/4
+            </span>
+            {subPhase !== 'R1_PLAYING' && subPhase !== 'ROUND_COMPLETE' && currentRow && (
+              <span>문장 {session.currentIndex + 1}/{scriptRows.length}</span>
+            )}
           </div>
           <div className="h-1.5 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-            <div
-              className="h-full bg-purple-500 rounded-full transition-all duration-300"
-              style={{
-                width: `${((((state.currentRound - 1) * state.speakingUnits.length) + state.currentGroupIndex + (state.phase === 'COMPARISON' ? 1 : 0)) / (4 * state.speakingUnits.length)) * 100}%`,
+            <motion.div
+              className="h-full bg-purple-500 rounded-full"
+              animate={{
+                width: `${(((session.round - 1) * scriptRows.length + session.currentIndex + (subPhase === 'COMPARISON' ? 1 : 0)) / (4 * scriptRows.length)) * 100}%`,
               }}
+              transition={{ duration: 0.3 }}
             />
           </div>
         </div>
@@ -322,35 +144,45 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
       {/* Main content */}
       <main className="flex-1 overflow-y-auto max-w-4xl mx-auto p-4 sm:p-6 w-full pb-6">
         <AnimatePresence mode="wait">
-          {/* SETUP */}
-          {state.phase === 'SETUP' && (
-            <RangeSelector
-              totalSentences={allSentences.length}
-              allSentences={allSentences}
-              onStart={handleStartSession}
-            />
-          )}
 
           {/* ROUND INTRO */}
-          {state.phase === 'ROUND_INTRO' && (
+          {subPhase === 'ROUND_INTRO' && !isSessionComplete && (
             <RoundIntro
-              round={state.currentRound}
-              onStart={engine.startListening}
-              handsFree={state.handsFree}
+              key={`intro-${session.round}`}
+              round={session.round as 1 | 2 | 3 | 4}
+              promptRow={promptRow}
+              onStart={startRound}
+              handsFree={handsFree}
             />
           )}
 
-          {/* LISTENING */}
-          {state.phase === 'LISTENING' && currentSentenceGroup && (
-            <div className="space-y-4">
+          {/* R1: Full sequential listen */}
+          {subPhase === 'R1_PLAYING' && (
+            <R1ListView
+              key="r1-play"
+              rows={scriptRows}
+              promptRow={promptRow}
+              speakerStyleMap={speakerStyleMap}
+              playingIndex={r1PlayingIndex}
+              isPaused={r1IsPaused}
+              onTogglePause={toggleR1Pause}
+            />
+          )}
+
+          {/* LISTENING (R2 only) */}
+          {subPhase === 'LISTENING' && currentRow && (
+            <div key={`listening-${session.currentIndex}`} className="space-y-4">
+              {promptRow && <PromptCard row={promptRow} />}
               <SpeakingCard
-                sentence={currentSentenceGroup.combinedEnglish}
-                koreanMeaning={currentSentenceGroup.combinedKorean}
-                round={state.currentRound}
+                sentence={currentRow.english}
+                koreanMeaning={currentRow.comprehension}
+                round={session.round as 1 | 2 | 3 | 4}
                 keyIndices={currentKeyIndices}
-                wordStatuses={state.wordStatuses}
+                wordStatuses={wordStatuses}
                 isListening={true}
                 isSpeaking={false}
+                speakerStyle={currentSpeakerStyle}
+                textVisible={true}
               />
               {ttsError && (
                 <div className="flex items-center justify-center gap-3 p-3 bg-amber-50 dark:bg-amber-900/30 border border-amber-300 dark:border-amber-700 rounded-xl text-sm">
@@ -368,16 +200,19 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
           )}
 
           {/* SPEAKING */}
-          {state.phase === 'SPEAKING' && currentSentenceGroup && (
-            <div className="space-y-6">
+          {subPhase === 'SPEAKING' && currentRow && (
+            <div key={`speaking-${session.currentIndex}-${retryCount}`} className="space-y-6">
+              {promptRow && <PromptCard row={promptRow} />}
               <SpeakingCard
-                sentence={currentSentenceGroup.combinedEnglish}
-                koreanMeaning={currentSentenceGroup.combinedKorean}
-                round={state.currentRound}
+                sentence={currentRow.english}
+                koreanMeaning={currentRow.comprehension}
+                round={session.round as 1 | 2 | 3 | 4}
                 keyIndices={currentKeyIndices}
-                wordStatuses={state.wordStatuses}
+                wordStatuses={wordStatuses}
                 isListening={false}
                 isSpeaking={!needsMicGesture}
+                speakerStyle={currentSpeakerStyle}
+                textVisible={textVisible}
               />
 
               {needsMicGesture ? (
@@ -413,7 +248,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
                     <RefreshCw className="w-3.5 h-3.5" /> 다시 시도
                   </button>
                   <button
-                    onClick={() => { speech.stopRecording(); engine.finishSpeaking(); }}
+                    onClick={() => { speech.stopRecording(); finishSpeaking(); }}
                     className="flex items-center gap-1 px-3 py-1.5 text-amber-700 dark:text-amber-300 hover:bg-amber-100 dark:hover:bg-amber-800/50 font-medium rounded-lg text-xs transition-colors"
                   >
                     <SkipForward className="w-3.5 h-3.5" /> 건너뛰기
@@ -424,46 +259,51 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
           )}
 
           {/* COMPARISON */}
-          {state.phase === 'COMPARISON' && currentSentenceGroup && (
+          {subPhase === 'COMPARISON' && currentRow && (
             <ComparisonView
-              score={state.score}
-              wordStatuses={state.wordStatuses}
-              words={currentSentenceGroup.combinedEnglish.split(' ')}
+              key={`comparison-${session.currentIndex}-${retryCount}`}
+              score={score}
+              wordStatuses={wordStatuses}
+              words={currentRow.english.split(' ')}
               onPlayModel={handlePlayModelForComparison}
               onPlayMine={speech.playRecording}
               hasRecording={!!speech.audioUrl}
-              recognizedText={speech.transcript}
-              onNext={engine.nextSentence}
-              onRetry={engine.retrySpeaking}
-              retryCount={state.retryCount}
-              handsFree={state.handsFree}
+              recognizedText={transcript}
+              onNext={nextRow}
+              onRetry={retrySpeaking}
+              retryCount={retryCount}
+              handsFree={handsFree}
+              disableRetry={session.round === 4}
             />
           )}
 
           {/* ROUND COMPLETE */}
-          {state.phase === 'ROUND_COMPLETE' && (
+          {subPhase === 'ROUND_COMPLETE' && !isSessionComplete && (
             <RoundComplete
-              round={state.currentRound}
-              totalSentences={state.sentences.length}
-              onNextRound={engine.nextRound}
-              handsFree={state.handsFree}
-              isLastRound={state.currentRound === 4}
+              key={`round-complete-${session.round}`}
+              round={session.round as 1 | 2 | 3 | 4}
+              totalSentences={scriptRows.length}
+              onNextRound={nextRound}
+              handsFree={handsFree}
+              isLastRound={session.round === session.totalRounds}
             />
           )}
 
           {/* SESSION COMPLETE */}
-          {state.phase === 'SESSION_COMPLETE' && (
+          {isSessionComplete && (
             <SessionComplete
-              totalSentences={state.sentences.length}
-              sessionStartTime={state.sessionStartTime}
-              onFinish={() => { engine.reset(); onBack(); }}
+              key="session-complete"
+              totalSentences={scriptRows.length}
+              sessionStartTime={session.startedAt || null}
+              onFinish={() => { reset(); onBack(); }}
             />
           )}
+
         </AnimatePresence>
       </main>
 
       {/* Floating mic indicator during speaking */}
-      {state.phase === 'SPEAKING' && speech.isRecording && (
+      {subPhase === 'SPEAKING' && speech.isRecording && (
         <div className="fixed bottom-[calc(5rem+env(safe-area-inset-bottom))] left-1/2 -translate-x-1/2 z-40">
           <div className="flex items-center gap-2 px-4 py-2 bg-red-500/90 text-white rounded-full text-sm font-bold shadow-lg animate-pulse">
             <Mic className="w-4 h-4" />

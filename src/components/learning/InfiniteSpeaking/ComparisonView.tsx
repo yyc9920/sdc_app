@@ -16,6 +16,8 @@ interface ComparisonViewProps {
   onRetry: () => void;
   retryCount: number;
   handsFree: boolean;
+  /** R4: no retries offered */
+  disableRetry?: boolean;
 }
 
 export const ComparisonView = ({
@@ -30,6 +32,7 @@ export const ComparisonView = ({
   onRetry,
   retryCount,
   handsFree,
+  disableRetry = false,
 }: ComparisonViewProps) => {
   const [playingModel, setPlayingModel] = useState(false);
   const [playingMine, setPlayingMine] = useState(false);
@@ -114,7 +117,7 @@ export const ComparisonView = ({
       {/* Retry / Next buttons */}
       {(() => {
         const isPerfect = score === 100;
-        const canRetry = !isPerfect && retryCount < MAX_RETRIES;
+        const canRetry = !isPerfect && retryCount < MAX_RETRIES && !disableRetry;
 
         if (handsFree) {
           return (
