@@ -78,6 +78,7 @@ export interface UseRepetitionReturn {
   setRangeEnd: (n: number) => void;
   setRepeatTotal: (n: number) => void;
   playRange: () => Promise<void>;
+  playLoop: (perSentenceRepeat: number) => Promise<void>;
   stopRange: () => void;
 }
 
@@ -195,6 +196,40 @@ export function useRepetition(setId: string): UseRepetitionReturn {
     setRepeatCurrent(0);
   }, [audioApi]);
 
+  // Infinite loop playback: plays all sentences with per-sentence repeat, loops forever
+  const playLoop = useCallback(async (perSentenceRepeat: number) => {
+    const sessionRows = sessionApi.session.rows;
+    if (sessionRows.length === 0) return;
+
+    rangeAbortRef.current = false;
+    setIsRangePlaying(true);
+
+    let startIdx = sessionApi.session.currentIndex;
+
+    while (!rangeAbortRef.current) {
+      for (let i = startIdx; i < sessionRows.length; i++) {
+        if (rangeAbortRef.current) break;
+        const row = sessionRows[i];
+        sessionApi.goTo(i);
+
+        for (let r = 0; r < perSentenceRepeat; r++) {
+          if (rangeAbortRef.current) break;
+          audioApi.stop();
+          try {
+            await audioApi.play(row);
+            if (rangeAbortRef.current) break;
+            await audioApi.waitForEnd();
+          } catch {
+            // TTS error — skip
+          }
+        }
+      }
+      startIdx = 0; // subsequent passes start from beginning
+    }
+
+    setIsRangePlaying(false);
+  }, [sessionApi, audioApi]);
+
   // Play a row's audio. Max 1 concurrent: stop() clears previous before play().
   // TTS failure captured in ttsError state.
   const playRow = useCallback(
@@ -240,6 +275,7 @@ export function useRepetition(setId: string): UseRepetitionReturn {
     setRangeEnd,
     setRepeatTotal,
     playRange,
+    playLoop,
     stopRange,
   };
 }

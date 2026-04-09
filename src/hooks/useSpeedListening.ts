@@ -207,11 +207,15 @@ export function useSpeedListening(config: {
     [],
   );
 
+  // Sequence-level playing flag — stays true for the entire playAll loop (no per-sentence flicker)
+  const [isSequencePlaying, setIsSequencePlaying] = useState(false);
+
   // Sequential playback with per-row index tracking.
   // Uses waitForEnd() (DOM audio events) instead of React state polling for reliability.
   const playAll = useCallback(async (): Promise<void> => {
     if (rows.length === 0) return;
     stopRef.current = false;
+    setIsSequencePlaying(true);
 
     for (let i = 0; i < rows.length; i++) {
       if (stopRef.current) break;
@@ -228,12 +232,14 @@ export function useSpeedListening(config: {
 
     setCurrentPlayingIndex(-1);
     setHasPlayedOnce(true);
+    setIsSequencePlaying(false);
   }, [rows, audioApi]);
 
   const stop = useCallback((): void => {
     stopRef.current = true;
     audioApi.stop();
     setCurrentPlayingIndex(-1);
+    setIsSequencePlaying(false);
   }, [audioApi]);
 
   // Per-sentence replay during quiz phase — interrupts any ongoing sequence
@@ -317,7 +323,8 @@ export function useSpeedListening(config: {
     restart,
 
     // Audio (listening phase) — 1 concurrent TTS max, sequential
-    isPlaying: audioApi.isPlaying,
+    isPlaying: isSequencePlaying || audioApi.isPlaying,
+    isSequencePlaying,
     currentPlayingIndex,
     speed: audioApi.speed,
     setSpeed: audioApi.setSpeed,
