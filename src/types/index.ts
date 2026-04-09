@@ -77,3 +77,11 @@ export interface SpeedListeningSet {
   quiz?: Quiz;
 }
 
+export type TrainingMode =
+  | 'repetition'
+  | 'speedListening'
+  | 'infiniteSpeaking'
+  | 'rolePlay'
+  | 'vocab'
+  | 'freeResponse';
+
