@@ -1,12 +1,14 @@
 import { forwardRef } from 'react';
 import { Volume2 } from 'lucide-react';
 import type { TrainingRow } from '../../../hooks/training/types';
+import type { DisplayToggles } from '../../../hooks/useRepetition';
 
 interface ScriptCardProps {
   row: TrainingRow;
   isActive: boolean;
   speakerColor?: string;
   onPlay: () => void;
+  displayToggles?: DisplayToggles;
 }
 
 const COLOR_CLASSES: Record<string, { dot: string; name: string }> = {
@@ -19,7 +21,7 @@ const COLOR_CLASSES: Record<string, { dot: string; name: string }> = {
 };
 
 export const ScriptCard = forwardRef<HTMLButtonElement, ScriptCardProps>(
-  ({ row, isActive, speakerColor, onPlay }, ref) => {
+  ({ row, isActive, speakerColor, onPlay, displayToggles }, ref) => {
     const colors = speakerColor ? COLOR_CLASSES[speakerColor] : null;
 
     return (
@@ -38,20 +40,30 @@ export const ScriptCard = forwardRef<HTMLButtonElement, ScriptCardProps>(
             <span className={`text-xs font-semibold ${colors.name}`}>{row.speaker}</span>
           </div>
         )}
-        <div className="flex items-start gap-2">
-          <p className="flex-1 text-base font-medium text-gray-900 dark:text-white leading-relaxed">
-            {row.english}
-          </p>
-          {isActive && (
-            <Volume2 className="w-4 h-4 text-blue-500 shrink-0 mt-0.5" />
-          )}
-        </div>
-        {row.koreanPronounce && (
+        {displayToggles?.showEnglish !== false && (
+          <div className="flex items-start gap-2">
+            <p className="flex-1 text-base font-medium text-gray-900 dark:text-white leading-relaxed">
+              {row.english}
+            </p>
+            {isActive && (
+              <Volume2 className="w-4 h-4 text-blue-500 shrink-0 mt-0.5" />
+            )}
+          </div>
+        )}
+        {displayToggles?.showEnglish === false && isActive && (
+          <Volume2 className="w-4 h-4 text-blue-500 mb-1" />
+        )}
+        {displayToggles?.showPronunciation !== false && row.koreanPronounce && (
           <p className="mt-1.5 text-sm text-gray-500 dark:text-gray-400 font-medium">
             {row.koreanPronounce}
           </p>
         )}
-        {row.comprehension && (
+        {displayToggles?.showDirectComprehension && row.directComprehension && (
+          <p className="mt-1 text-sm text-blue-600 dark:text-blue-400">
+            {row.directComprehension}
+          </p>
+        )}
+        {displayToggles?.showComprehension !== false && row.comprehension && (
           <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
             {row.comprehension}
           </p>

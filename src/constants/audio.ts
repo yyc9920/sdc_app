@@ -13,6 +13,15 @@ export type Voice = (typeof AVAILABLE_VOICES)[number];
 
 export const DEFAULT_VOICE: Voice = 'female1';
 
+export const VOICE_DISPLAY_NAMES: Record<Voice, string> = {
+  female1: '여성 1',
+  male1: '남성 1',
+  female2: '여성 2',
+  male2: '남성 2',
+  female3: '여성 3',
+  male3: '남성 3',
+};
+
 export const AUDIO_PATHS = {
   ANNOUNCEMENT: 'tts/announcement.mp3',
   TRANSITION_CHIME: 'tts/dingdong.wav',

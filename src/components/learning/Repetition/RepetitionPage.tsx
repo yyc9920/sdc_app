@@ -10,6 +10,8 @@ import {
   Repeat,
   Square,
   Loader2,
+  Mic,
+  Eye,
 } from 'lucide-react';
 import { useRepetition } from '../../../hooks/useRepetition';
 import { LoadingSpinner } from '../../LoadingSpinner';
@@ -17,8 +19,11 @@ import { PromptCard } from './PromptCard';
 import { ScriptCard } from './ScriptCard';
 import { ReadingCard } from './ReadingCard';
 import { RepetitionProgress } from './RepetitionProgress';
+import { AVAILABLE_VOICES, VOICE_DISPLAY_NAMES } from '../../../constants/audio';
+import type { Voice } from '../../../constants/audio';
 import type { DataSet } from '../../../types';
 import type { TrainingRow } from '../../../hooks/training/types';
+import type { DisplayToggles } from '../../../hooks/useRepetition';
 
 interface RepetitionPageProps {
   dataSet: DataSet;
@@ -29,6 +34,13 @@ interface RepetitionPageProps {
 
 const SPEED_OPTIONS = [1, 1.5, 2] as const;
 const REPEAT_OPTIONS = [1, 2, 3, 5] as const;
+
+const DISPLAY_TOGGLE_OPTIONS: { key: keyof DisplayToggles; label: string }[] = [
+  { key: 'showEnglish', label: '영어' },
+  { key: 'showPronunciation', label: '발음' },
+  { key: 'showDirectComprehension', label: '직독직해' },
+  { key: 'showComprehension', label: '해석' },
+];
 
 export const RepetitionPage = ({
   dataSet,
@@ -56,6 +68,10 @@ export const RepetitionPage = ({
     isLoadingTTS,
     playLoop,
     stopRange,
+    displayToggles,
+    toggleDisplay,
+    voiceOverride,
+    setVoiceOverride,
   } = engine;
 
   const [sentenceRepeat, setSentenceRepeat] = useState(1);
@@ -64,6 +80,8 @@ export const RepetitionPage = ({
   const [rangeEnd, setRangeEnd] = useState(-1); // -1 = last
   const [useRange, setUseRange] = useState(false);
   const [showRangeControls, setShowRangeControls] = useState(false);
+  const [showVoiceSelector, setShowVoiceSelector] = useState(false);
+  const [showDisplaySettings, setShowDisplaySettings] = useState(false);
   const activeCardRef = useRef<HTMLButtonElement | null>(null);
   const cardTapLockRef = useRef(false);
 
@@ -136,6 +154,20 @@ export const RepetitionPage = ({
 
   const toggleRange = useCallback(() => {
     setShowRangeControls(p => !p);
+    setShowVoiceSelector(false);
+    setShowDisplaySettings(false);
+  }, []);
+
+  const toggleVoiceSelector = useCallback(() => {
+    setShowVoiceSelector(p => !p);
+    setShowRangeControls(false);
+    setShowDisplaySettings(false);
+  }, []);
+
+  const toggleDisplaySettings = useCallback(() => {
+    setShowDisplaySettings(p => !p);
+    setShowRangeControls(false);
+    setShowVoiceSelector(false);
   }, []);
 
   const handleBack = useCallback(() => {
@@ -220,15 +252,15 @@ export const RepetitionPage = ({
               const isActive = sessionIdx === session.currentIndex;
               const speakerColor = row.speaker ? speakerColors[row.speaker] : undefined;
               if (row.rowType === 'reading') {
-                return <ReadingCard key={row.rowSeq} ref={isActive ? activeCardRef : null} row={row} isActive={isActive} speakerColor={speakerColor} onPlay={() => handleCardTap(row)} />;
+                return <ReadingCard key={row.rowSeq} ref={isActive ? activeCardRef : null} row={row} isActive={isActive} speakerColor={speakerColor} onPlay={() => handleCardTap(row)} displayToggles={displayToggles} />;
               }
-              return <ScriptCard key={row.rowSeq} ref={isActive ? activeCardRef : null} row={row} isActive={isActive} speakerColor={speakerColor} onPlay={() => handleCardTap(row)} />;
+              return <ScriptCard key={row.rowSeq} ref={isActive ? activeCardRef : null} row={row} isActive={isActive} speakerColor={speakerColor} onPlay={() => handleCardTap(row)} displayToggles={displayToggles} />;
             })}
           </section>
         ))}
       </main>
 
-      {/* Range settings panel — only selects range, no separate play button */}
+      {/* Range settings panel */}
       {showRangeControls && (
         <div className="shrink-0 bg-white/95 dark:bg-gray-800/95 backdrop-blur border-t border-gray-200 dark:border-gray-700 px-4 py-3">
           <div className="max-w-4xl mx-auto space-y-3">
@@ -264,10 +296,62 @@ export const RepetitionPage = ({
         </div>
       )}
 
+      {/* Voice selector panel */}
+      {showVoiceSelector && (
+        <div className="shrink-0 bg-white/95 dark:bg-gray-800/95 backdrop-blur border-t border-gray-200 dark:border-gray-700 px-4 py-3">
+          <div className="max-w-4xl mx-auto flex flex-wrap gap-2">
+            <button
+              onClick={() => setVoiceOverride(null)}
+              className={`px-3 py-1.5 text-sm font-bold rounded-lg transition-colors ${
+                voiceOverride === null
+                  ? 'bg-purple-500 text-white'
+                  : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600'
+              }`}
+            >
+              자동
+            </button>
+            {AVAILABLE_VOICES.map(v => (
+              <button
+                key={v}
+                onClick={() => setVoiceOverride(v as Voice)}
+                className={`px-3 py-1.5 text-sm font-bold rounded-lg transition-colors ${
+                  voiceOverride === v
+                    ? 'bg-purple-500 text-white'
+                    : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600'
+                }`}
+              >
+                {VOICE_DISPLAY_NAMES[v]}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Display toggle panel */}
+      {showDisplaySettings && (
+        <div className="shrink-0 bg-white/95 dark:bg-gray-800/95 backdrop-blur border-t border-gray-200 dark:border-gray-700 px-4 py-3">
+          <div className="max-w-4xl mx-auto flex flex-wrap gap-2">
+            {DISPLAY_TOGGLE_OPTIONS.map(({ key, label }) => (
+              <button
+                key={key}
+                onClick={() => toggleDisplay(key)}
+                className={`px-3 py-1.5 text-sm font-bold rounded-lg transition-colors ${
+                  displayToggles[key]
+                    ? 'bg-blue-500 text-white'
+                    : 'bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400'
+                }`}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* Footer — single unified playback bar */}
       <div className="shrink-0 bg-white/90 dark:bg-gray-900/90 backdrop-blur border-t border-gray-200 dark:border-gray-800 px-4 py-3">
         <div className="max-w-4xl mx-auto flex items-center justify-between gap-2">
-          {/* Left: Speed + Sentence repeat */}
+          {/* Left: Speed + Sentence repeat + Voice */}
           <div className="flex items-center gap-1.5">
             <button onClick={handleSpeedCycle} className="px-2.5 py-2 text-sm font-bold rounded-xl bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors min-w-[44px] min-h-[44px]" aria-label={`재생 속도 ${speed}배`}>
               {speed}x
@@ -283,6 +367,19 @@ export const RepetitionPage = ({
             >
               <Repeat className="w-3.5 h-3.5" />
               {sentenceRepeat}
+            </button>
+            <button
+              onClick={toggleVoiceSelector}
+              className={`flex items-center gap-1 px-2.5 py-2 text-sm font-bold rounded-xl transition-colors min-w-[44px] min-h-[44px] ${
+                voiceOverride
+                  ? 'bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300'
+                  : showVoiceSelector
+                  ? 'bg-purple-50 dark:bg-purple-900/20 text-purple-600 dark:text-purple-400'
+                  : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
+              }`}
+              aria-label="목소리 선택"
+            >
+              <Mic className="w-3.5 h-3.5" />
             </button>
           </div>
 
@@ -303,20 +400,33 @@ export const RepetitionPage = ({
             </button>
           </div>
 
-          {/* Right: Range toggle */}
-          <button
-            onClick={toggleRange}
-            className={`px-3 py-2 text-xs font-bold rounded-xl transition-colors min-w-[44px] min-h-[44px] ${
-              useRange
-                ? 'bg-orange-500 text-white shadow-sm'
-                : showRangeControls
-                ? 'bg-orange-200 dark:bg-orange-900/50 text-orange-700 dark:text-orange-300'
-                : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400'
-            }`}
-            aria-label={showRangeControls ? '범위 설정 닫기' : '범위 설정 열기'}
-          >
-            범위
-          </button>
+          {/* Right: Display + Range toggles */}
+          <div className="flex items-center gap-1.5">
+            <button
+              onClick={toggleDisplaySettings}
+              className={`px-2.5 py-2 text-xs font-bold rounded-xl transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center ${
+                showDisplaySettings
+                  ? 'bg-blue-200 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300'
+                  : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400'
+              }`}
+              aria-label="표시 설정"
+            >
+              <Eye className="w-4 h-4" />
+            </button>
+            <button
+              onClick={toggleRange}
+              className={`px-3 py-2 text-xs font-bold rounded-xl transition-colors min-w-[44px] min-h-[44px] ${
+                useRange
+                  ? 'bg-orange-500 text-white shadow-sm'
+                  : showRangeControls
+                  ? 'bg-orange-200 dark:bg-orange-900/50 text-orange-700 dark:text-orange-300'
+                  : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400'
+              }`}
+              aria-label={showRangeControls ? '범위 설정 닫기' : '범위 설정 열기'}
+            >
+              범위
+            </button>
+          </div>
         </div>
       </div>
     </div>

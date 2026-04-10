@@ -72,6 +72,7 @@ export interface RolePlayState {
   isTTSPlaying: boolean;
   isDemoPaused: boolean;
   isPhaseComplete: boolean;
+  skipAllPartnerTTS: boolean;
   liveTranscript: string;
   liveWordStatuses: string[];
 }
@@ -90,7 +91,7 @@ type RolePlayAction =
   | { type: 'SET_AUTO_PLAYING'; value: boolean }
   | { type: 'SET_TTS_PLAYING'; value: boolean }
   | { type: 'SET_DEMO_PAUSED'; value: boolean }
-  | { type: 'SKIP_ALL_TURNS' }
+  | { type: 'SET_SKIP_ALL_PARTNER_TTS' }
   | { type: 'RESET' };
 
 const PHASE_PROGRESSION: Partial<Record<RolePlayPhase, RolePlayPhase>> = {
@@ -108,6 +109,7 @@ export const initialRolePlayState: RolePlayState = {
   isTTSPlaying: false,
   isDemoPaused: false,
   isPhaseComplete: false,
+  skipAllPartnerTTS: false,
   liveTranscript: '',
   liveWordStatuses: [],
 };
@@ -156,6 +158,7 @@ export function rolePlayReducer(state: RolePlayState, action: RolePlayAction): R
         currentTurnIndex: 0,
         isPhaseComplete: false,
         isTTSPlaying: false,
+        skipAllPartnerTTS: false,
       };
     }
 
@@ -167,10 +170,10 @@ export function rolePlayReducer(state: RolePlayState, action: RolePlayAction): R
         isTTSPlaying: false,
       };
 
-    case 'SKIP_ALL_TURNS':
+    case 'SET_SKIP_ALL_PARTNER_TTS':
       return {
         ...state,
-        isPhaseComplete: true,
+        skipAllPartnerTTS: true,
         isTTSPlaying: false,
       };
 
@@ -422,11 +425,10 @@ export function useRolePlay(setId: string) {
     if (playInterruptRef.current) playInterruptRef.current();
   }, []);
 
-  const skipAllTurns = useCallback(() => {
-    audioApi.stopRecording();
+  const activateSkipAllPartnerTTS = useCallback(() => {
     if (playInterruptRef.current) playInterruptRef.current();
-    dispatch({ type: 'SKIP_ALL_TURNS' });
-  }, [audioApi]);
+    dispatch({ type: 'SET_SKIP_ALL_PARTNER_TTS' });
+  }, []);
 
   const proceedNextPhase = useCallback(() => {
     progressApi.saveProgress(); // devil fix #8: save at phase boundary
@@ -455,7 +457,8 @@ export function useRolePlay(setId: string) {
 
     if (!thisTurnIsUser) {
       // GUIDED: 상대 턴은 TTS 없이 즉시 넘기기 (선택한 발화자만 연습)
-      if (rpState.rolePlayPhase === 'GUIDED') {
+      // skipAllPartnerTTS: 모든 페이즈에서 상대 TTS 건너뛰기 (사용자 발화는 유지)
+      if (rpState.rolePlayPhase === 'GUIDED' || rpState.skipAllPartnerTTS) {
         dispatch({ type: 'NEXT_TURN', rowCount: dialogueRows.length, currentPhase: rpState.rolePlayPhase });
         return;
       }
@@ -496,7 +499,7 @@ export function useRolePlay(setId: string) {
       };
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [rpState.currentTurnIndex, rpState.rolePlayPhase, rpState.isPhaseComplete]);
+  }, [rpState.currentTurnIndex, rpState.rolePlayPhase, rpState.isPhaseComplete, rpState.skipAllPartnerTTS]);
 
   // ── REVIEW ────────────────────────────────────────────────────────────────
 
@@ -597,7 +600,8 @@ export function useRolePlay(setId: string) {
     stopUserTurn,
     skipUserTurn,
     skipPartnerTurn,
-    skipAllTurns,
+    activateSkipAllPartnerTTS,
+    skipAllPartnerTTS: rpState.skipAllPartnerTTS,
     proceedNextPhase,
     skipToReview,
     resetRolePlay,

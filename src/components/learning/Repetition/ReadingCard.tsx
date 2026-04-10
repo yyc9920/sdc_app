@@ -1,12 +1,14 @@
 import { forwardRef } from 'react';
 import { Volume2 } from 'lucide-react';
 import type { TrainingRow } from '../../../hooks/training/types';
+import type { DisplayToggles } from '../../../hooks/useRepetition';
 
 interface ReadingCardProps {
   row: TrainingRow;
   isActive: boolean;
   speakerColor?: string;
   onPlay: () => void;
+  displayToggles?: DisplayToggles;
 }
 
 const COLOR_CLASSES: Record<string, { dot: string; name: string }> = {
@@ -19,7 +21,7 @@ const COLOR_CLASSES: Record<string, { dot: string; name: string }> = {
 };
 
 export const ReadingCard = forwardRef<HTMLButtonElement, ReadingCardProps>(
-  ({ row, isActive, speakerColor, onPlay }, ref) => {
+  ({ row, isActive, speakerColor, onPlay, displayToggles }, ref) => {
     const colors = speakerColor ? COLOR_CLASSES[speakerColor] : null;
 
     return (
@@ -46,15 +48,22 @@ export const ReadingCard = forwardRef<HTMLButtonElement, ReadingCardProps>(
             <Volume2 className="w-4 h-4 text-green-500 ml-auto shrink-0" />
           )}
         </div>
-        <p className="text-base text-gray-900 dark:text-white leading-loose">
-          {row.english}
-        </p>
-        {row.koreanPronounce && (
+        {displayToggles?.showEnglish !== false && (
+          <p className="text-base text-gray-900 dark:text-white leading-loose">
+            {row.english}
+          </p>
+        )}
+        {displayToggles?.showPronunciation !== false && row.koreanPronounce && (
           <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
             {row.koreanPronounce}
           </p>
         )}
-        {row.comprehension && (
+        {displayToggles?.showDirectComprehension && row.directComprehension && (
+          <p className="mt-1 text-sm text-blue-600 dark:text-blue-400">
+            {row.directComprehension}
+          </p>
+        )}
+        {displayToggles?.showComprehension !== false && row.comprehension && (
           <p className="mt-1 text-sm text-gray-400 dark:text-gray-500">
             {row.comprehension}
           </p>

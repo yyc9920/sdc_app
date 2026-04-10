@@ -1,10 +1,12 @@
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import { Square, SkipForward, AlertTriangle, ChevronsRight } from 'lucide-react';
 import { ChatBubble } from './ChatBubble';
 import { getSpeakerColor, PHASE_LABELS } from '../../../constants/rolePlay';
 import type { TrainingRow } from '../../../hooks/training';
 import type { RolePlayPhase, TurnResult } from '../../../constants/rolePlay';
+
+const LONG_PRESS_MS = 3000;
 
 interface ChatViewProps {
   rows: TrainingRow[];
@@ -22,7 +24,8 @@ interface ChatViewProps {
   onStopTurn: () => void;
   onSkipTurn: () => void;
   onSkipPartnerTurn: () => void;
-  onSkipAll?: () => void;
+  onActivateSkipAll: () => void;
+  skipAllPartnerTTS: boolean;
 }
 
 const PHASE_SUBTITLES: Partial<Record<RolePlayPhase, string>> = {
@@ -47,9 +50,13 @@ export function ChatView({
   onStopTurn,
   onSkipTurn,
   onSkipPartnerTurn,
-  onSkipAll,
+  onActivateSkipAll,
+  skipAllPartnerTTS,
 }: ChatViewProps) {
   const bottomRef = useRef<HTMLDivElement | null>(null);
+  const longPressTimerRef = useRef<number | null>(null);
+  const [longPressProgress, setLongPressProgress] = useState(false);
+  const longPressCompletedRef = useRef(false);
 
   // Scroll to bottom on each new turn
   useEffect(() => {
@@ -58,6 +65,44 @@ export function ChatView({
 
   // Whether to show script for user turns
   const showUserScript = rolePlayPhase === 'GUIDED';
+
+  // Long-press handlers for skip button
+  const handlePointerDown = useCallback(() => {
+    longPressCompletedRef.current = false;
+    setLongPressProgress(true);
+    longPressTimerRef.current = window.setTimeout(() => {
+      longPressCompletedRef.current = true;
+      setLongPressProgress(false);
+      onActivateSkipAll();
+    }, LONG_PRESS_MS);
+  }, [onActivateSkipAll]);
+
+  const handlePointerUp = useCallback(() => {
+    if (longPressTimerRef.current) {
+      clearTimeout(longPressTimerRef.current);
+      longPressTimerRef.current = null;
+    }
+    setLongPressProgress(false);
+    // If long-press didn't complete, treat as regular tap
+    if (!longPressCompletedRef.current) {
+      onSkipPartnerTurn();
+    }
+  }, [onSkipPartnerTurn]);
+
+  const handlePointerLeave = useCallback(() => {
+    if (longPressTimerRef.current) {
+      clearTimeout(longPressTimerRef.current);
+      longPressTimerRef.current = null;
+    }
+    setLongPressProgress(false);
+  }, []);
+
+  // Cleanup timer on unmount
+  useEffect(() => {
+    return () => {
+      if (longPressTimerRef.current) clearTimeout(longPressTimerRef.current);
+    };
+  }, []);
 
   return (
     <motion.div
@@ -78,14 +123,11 @@ export function ChatView({
               — {PHASE_SUBTITLES[rolePlayPhase]}
             </span>
           </div>
-          {onSkipAll && (
-            <button
-              onClick={onSkipAll}
-              className="flex items-center gap-1 px-3 py-1.5 text-xs font-medium text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors shrink-0"
-            >
-              <ChevronsRight className="w-3.5 h-3.5" />
-              모두 건너뛰기
-            </button>
+          {skipAllPartnerTTS && (
+            <div className="flex items-center gap-1 px-2.5 py-1 text-xs font-medium text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30 rounded-full shrink-0">
+              <ChevronsRight className="w-3 h-3" />
+              TTS 건너뛰기
+            </div>
           )}
         </div>
       </div>
@@ -132,7 +174,7 @@ export function ChatView({
         <div ref={bottomRef} />
       </div>
 
-      {/* Partner turn controls — skip stuck TTS (devil fix #1) */}
+      {/* Partner turn controls — skip button with long-press gauge */}
       {isTTSPlaying && !isUserTurn && (
         <motion.div
           initial={{ opacity: 0, y: 8 }}
@@ -147,11 +189,22 @@ export function ChatView({
               </div>
             )}
             <button
-              onClick={onSkipPartnerTurn}
-              className="flex items-center gap-1.5 px-4 py-2 text-sm text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl transition-colors"
+              onPointerDown={handlePointerDown}
+              onPointerUp={handlePointerUp}
+              onPointerLeave={handlePointerLeave}
+              onContextMenu={e => e.preventDefault()}
+              className="relative overflow-hidden flex items-center justify-center w-12 h-12 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl transition-colors select-none touch-none"
+              aria-label="건너뛰기 (길게 누르면 모두 건너뛰기)"
             >
-              <SkipForward className="w-4 h-4" />
-              건너뛰기
+              {/* Long-press gauge bar */}
+              <div
+                className="absolute inset-0 bg-blue-400/30 dark:bg-blue-500/20 origin-left"
+                style={{
+                  transform: longPressProgress ? 'scaleX(1)' : 'scaleX(0)',
+                  transition: longPressProgress ? `transform ${LONG_PRESS_MS}ms linear` : 'transform 0.15s ease-out',
+                }}
+              />
+              <SkipForward className="w-5 h-5 relative z-10" />
             </button>
           </div>
         </motion.div>
@@ -175,10 +228,10 @@ export function ChatView({
               </button>
               <button
                 onClick={onSkipTurn}
-                className="flex items-center gap-1.5 px-4 py-3 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-2xl transition-colors"
+                className="flex items-center justify-center w-12 h-12 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-2xl transition-colors"
+                aria-label="건너뛰기"
               >
                 <SkipForward className="w-4 h-4" />
-                건너뛰기
               </button>
             </div>
           ) : (

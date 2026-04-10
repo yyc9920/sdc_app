@@ -57,7 +57,8 @@ export function RolePlayPage({
     stopUserTurn,
     skipUserTurn,
     skipPartnerTurn,
-    skipAllTurns,
+    activateSkipAllPartnerTTS,
+    skipAllPartnerTTS,
     proceedNextPhase,
     skipToReview,
     resetRolePlay,
@@ -219,7 +220,8 @@ export function RolePlayPage({
                 onStopTurn={stopUserTurn}
                 onSkipTurn={skipUserTurn}
                 onSkipPartnerTurn={skipPartnerTurn}
-                onSkipAll={rolePlayPhase === 'GUIDED' ? skipAllTurns : undefined}
+                onActivateSkipAll={activateSkipAllPartnerTTS}
+                skipAllPartnerTTS={skipAllPartnerTTS}
               />
             )}
 

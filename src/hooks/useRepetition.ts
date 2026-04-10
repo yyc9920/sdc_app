@@ -12,6 +12,20 @@ export interface RepetitionGroup {
   items: TrainingRow[];
 }
 
+export interface DisplayToggles {
+  showEnglish: boolean;
+  showPronunciation: boolean;
+  showDirectComprehension: boolean;
+  showComprehension: boolean;
+}
+
+const DEFAULT_DISPLAY_TOGGLES: DisplayToggles = {
+  showEnglish: true,
+  showPronunciation: true,
+  showDirectComprehension: false,
+  showComprehension: true,
+};
+
 const SPEAKER_COLORS = ['blue', 'rose', 'amber', 'emerald', 'violet', 'cyan'] as const;
 
 // Exported for unit testing
@@ -81,6 +95,10 @@ export interface UseRepetitionReturn {
   playRange: () => Promise<void>;
   playLoop: (perSentenceRepeat: number, fromIdx?: number, toIdx?: number) => Promise<void>;
   stopRange: () => void;
+  displayToggles: DisplayToggles;
+  toggleDisplay: (key: keyof DisplayToggles) => void;
+  voiceOverride: VoiceKey | null;
+  setVoiceOverride: (v: VoiceKey | null) => void;
 }
 
 export function useRepetition(setId: string): UseRepetitionReturn {
@@ -98,6 +116,9 @@ export function useRepetition(setId: string): UseRepetitionReturn {
 
   const hasSavedRef = useRef(false);
   const [ttsError, setTtsError] = useState(false);
+  const [displayToggles, setDisplayToggles] = useState<DisplayToggles>(DEFAULT_DISPLAY_TOGGLES);
+  const [voiceOverride, setVoiceOverride] = useState<VoiceKey | null>(null);
+  const voiceOverrideRef = useRef<VoiceKey | null>(null);
 
   const [rangeStart, setRangeStart] = useState(0);
   const [rangeEnd, setRangeEnd] = useState(-1); // -1 = use max
@@ -177,7 +198,7 @@ export function useRepetition(setId: string): UseRepetitionReturn {
         sessionApi.goTo(i);
         try {
           audioApi.stop();
-          await audioApi.play(row);
+          await audioApi.play(row, voiceOverrideRef.current ?? undefined);
           if (rangeAbortRef.current) break;
           await audioApi.waitForEnd();
         } catch {
@@ -221,7 +242,7 @@ export function useRepetition(setId: string): UseRepetitionReturn {
           if (rangeAbortRef.current) break;
           audioApi.stop();
           try {
-            await audioApi.play(row);
+            await audioApi.play(row, voiceOverrideRef.current ?? undefined);
             if (rangeAbortRef.current) break;
             await audioApi.waitForEnd();
           } catch {
@@ -235,6 +256,15 @@ export function useRepetition(setId: string): UseRepetitionReturn {
     setIsRangePlaying(false);
   }, [sessionApi, audioApi]);
 
+  // Keep voiceOverrideRef in sync (avoids stale closure in playLoop)
+  useEffect(() => {
+    voiceOverrideRef.current = voiceOverride;
+  }, [voiceOverride]);
+
+  const toggleDisplay = useCallback((key: keyof DisplayToggles) => {
+    setDisplayToggles(prev => ({ ...prev, [key]: !prev[key] }));
+  }, []);
+
   // Play a row's audio. Max 1 concurrent: stop() clears previous before play().
   // TTS failure captured in ttsError state.
   const playRow = useCallback(
@@ -242,7 +272,7 @@ export function useRepetition(setId: string): UseRepetitionReturn {
       try {
         setTtsError(false);
         audioApi.stop();
-        await audioApi.play(row);
+        await audioApi.play(row, voiceOverrideRef.current ?? undefined);
       } catch {
         setTtsError(true);
       }
@@ -283,5 +313,9 @@ export function useRepetition(setId: string): UseRepetitionReturn {
     playRange,
     playLoop,
     stopRange,
+    displayToggles,
+    toggleDisplay,
+    voiceOverride,
+    setVoiceOverride,
   };
 }
