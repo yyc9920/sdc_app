@@ -42,7 +42,7 @@ export const AudioControls: React.FC<AudioControlsProps> = ({
         <button
           onClick={handleClick}
           disabled={isDisabled}
-          className="px-4 py-2 bg-blue-600 text-white font-medium rounded hover:bg-blue-700 disabled:opacity-50 transition-colors"
+          className="px-4 py-2.5 bg-blue-600 text-white font-medium rounded hover:bg-blue-700 disabled:opacity-50 transition-colors min-h-[44px]"
         >
           {buttonLabel}
         </button>

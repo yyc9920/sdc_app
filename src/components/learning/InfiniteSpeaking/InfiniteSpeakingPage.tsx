@@ -89,7 +89,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
         <div className="flex items-center gap-1 sm:gap-3 flex-1 min-w-0">
           <button
             onClick={() => { reset(); onBack(); }}
-            className="p-2 -ml-2 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors active:scale-90 shrink-0"
+            className="p-2.5 -ml-2 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors active:scale-90 shrink-0 min-h-[44px] min-w-[44px] flex items-center justify-center"
           >
             <ChevronLeft className="w-6 h-6 text-gray-600 dark:text-gray-400" />
           </button>
@@ -102,7 +102,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
           {!isSessionComplete && (
             <button
               onClick={toggleHandsFree}
-              className={`p-2 rounded-full transition-colors ${
+              className={`p-2.5 rounded-full transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center ${
                 handsFree
                   ? 'bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-400 shadow-sm'
                   : 'text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'
@@ -114,7 +114,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
           )}
           <button
             onClick={onToggleNight}
-            className="p-2 shrink-0 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+            className="p-2.5 shrink-0 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
           >
             {isNightMode ? <Sun className="w-5 h-5 text-yellow-400" /> : <Moon className="w-5 h-5 text-gray-600" />}
           </button>

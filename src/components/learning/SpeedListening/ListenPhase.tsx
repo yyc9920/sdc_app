@@ -55,7 +55,7 @@ export const ListenPhase: React.FC<ListenPhaseProps> = ({
           <div className="flex items-center gap-3">
             <button
               onClick={isPlaying ? stop : handlePlayAll}
-              className="px-5 py-2.5 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 active:bg-blue-800 transition-colors"
+              className="px-5 py-2.5 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 active:bg-blue-800 transition-colors min-h-[44px]"
             >
               {isPlaying ? '일시정지' : isActive ? '재개' : '전체 듣기 ▶'}
             </button>

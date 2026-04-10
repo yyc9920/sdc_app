@@ -52,7 +52,7 @@ export const ScriptCard = forwardRef<HTMLButtonElement, ScriptCardProps>(
           </p>
         )}
         {row.comprehension && (
-          <p className="mt-1 text-sm text-gray-400 dark:text-gray-500">
+          <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
             {row.comprehension}
           </p>
         )}

@@ -15,6 +15,7 @@ export function useTrainingAudio(config: UseTrainingAudioConfig) {
 
   const [speed, setSpeed] = useState(1);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [isLoadingTTS, setIsLoadingTTS] = useState(false);
   const [isRecording, setIsRecording] = useState(false);
   const [transcript, setTranscript] = useState('');
   // Single reusable Audio element — mobile browsers silently fail when
@@ -46,7 +47,13 @@ export function useTrainingAudio(config: UseTrainingAudioConfig) {
   const play = useCallback(
     async (row: TrainingRow, voice?: VoiceKey) => {
       const selectedVoice = getVoiceForRow(row, voice);
-      const url = await getTTSAudioUrl(row.english, selectedVoice);
+      setIsLoadingTTS(true);
+      let url: string;
+      try {
+        url = await getTTSAudioUrl(row.english, selectedVoice);
+      } finally {
+        setIsLoadingTTS(false);
+      }
 
       // Reuse a single Audio element for mobile compatibility
       let audio = audioRef.current;
@@ -148,6 +155,7 @@ export function useTrainingAudio(config: UseTrainingAudioConfig) {
     speed,
     setSpeed,
     isPlaying,
+    isLoadingTTS,
     requestMicPermission,
     startRecording,
     stopRecording,

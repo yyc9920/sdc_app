@@ -142,12 +142,19 @@ export const ComparisonView = ({
               </>
             )}
             {!canRetry && (
-              <button
-                onClick={onNext}
-                className="w-full flex items-center justify-center gap-2 py-4 bg-purple-600 hover:bg-purple-700 text-white text-lg font-bold rounded-2xl shadow-lg transition-all active:scale-[0.98]"
-              >
-                다음 <ChevronRight className="w-5 h-5" />
-              </button>
+              <>
+                {!isPerfect && retryCount >= MAX_RETRIES && !disableRetry && (
+                  <p className="text-center text-sm text-gray-500 dark:text-gray-400 py-2">
+                    충분히 연습했어요! 다음 문장으로 넘어가서 계속 도전해보세요
+                  </p>
+                )}
+                <button
+                  onClick={onNext}
+                  className="w-full flex items-center justify-center gap-2 py-4 bg-purple-600 hover:bg-purple-700 text-white text-lg font-bold rounded-2xl shadow-lg transition-all active:scale-[0.98]"
+                >
+                  다음 <ChevronRight className="w-5 h-5" />
+                </button>
+              </>
             )}
           </div>
         );

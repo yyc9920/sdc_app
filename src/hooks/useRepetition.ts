@@ -56,6 +56,7 @@ export interface UseRepetitionReturn {
   session: TrainingSession;
   currentRow: TrainingRow | null;
   isPlaying: boolean;
+  isLoadingTTS: boolean;
   speakerVoiceMap: Record<string, VoiceKey>;
   speakerColors: Record<string, string>;
   speed: number;
@@ -257,6 +258,7 @@ export function useRepetition(setId: string): UseRepetitionReturn {
     session: sessionApi.session,
     currentRow: sessionApi.currentRow,
     isPlaying: audioApi.isPlaying,
+    isLoadingTTS: audioApi.isLoadingTTS,
     speakerVoiceMap: audioApi.speakerVoiceMap,
     speakerColors,
     speed: audioApi.speed,

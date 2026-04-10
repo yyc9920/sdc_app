@@ -55,9 +55,10 @@ export const useSetTitles = (setIds: string[]) => {
                 return;
               }
 
-              // Default if not found in either
-              titleCache.set(setId, setId);
-              result[setId] = setId;
+              // Default if not found — humanize snake_case id
+              const humanReadable = setId.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+              titleCache.set(setId, humanReadable);
+              result[setId] = humanReadable;
             } catch (e) {
               console.error(`Error fetching title for ${setId}:`, e);
               result[setId] = setId;

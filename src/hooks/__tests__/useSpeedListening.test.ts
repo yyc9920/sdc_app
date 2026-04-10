@@ -102,6 +102,7 @@ function setupMocks(rows: TrainingRow[] = []) {
     speed: 1,
     setSpeed: vi.fn(),
     isPlaying: false,
+    isLoadingTTS: false,
     startRecording: vi.fn(),
     stopRecording: vi.fn(),
     transcript: '',

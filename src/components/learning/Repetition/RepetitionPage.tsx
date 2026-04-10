@@ -9,6 +9,7 @@ import {
   RefreshCw,
   Repeat,
   Square,
+  Loader2,
 } from 'lucide-react';
 import { useRepetition } from '../../../hooks/useRepetition';
 import { LoadingSpinner } from '../../LoadingSpinner';
@@ -52,6 +53,7 @@ export const RepetitionPage = ({
     ttsError,
     reset,
     isRangePlaying,
+    isLoadingTTS,
     playLoop,
     stopRange,
   } = engine;
@@ -63,6 +65,7 @@ export const RepetitionPage = ({
   const [useRange, setUseRange] = useState(false);
   const [showRangeControls, setShowRangeControls] = useState(false);
   const activeCardRef = useRef<HTMLButtonElement | null>(null);
+  const cardTapLockRef = useRef(false);
 
   const effectiveEnd = rangeEnd < 0 ? session.rows.length - 1 : rangeEnd;
 
@@ -72,6 +75,9 @@ export const RepetitionPage = ({
 
   const handleCardTap = useCallback(
     (row: TrainingRow) => {
+      if (cardTapLockRef.current) return;
+      cardTapLockRef.current = true;
+      setTimeout(() => { cardTapLockRef.current = false; }, 300);
       const idx = rowSeqToSessionIndex.get(row.rowSeq);
       if (idx !== undefined) goTo(idx);
       playRow(row).catch(console.error);
@@ -153,7 +159,7 @@ export const RepetitionPage = ({
       <div className={`h-full ${isNightMode ? 'dark bg-gray-900' : 'bg-gray-50'} flex flex-col transition-colors duration-300`}>
         <header className="shrink-0 w-full max-w-4xl mx-auto flex justify-between items-center p-3 sm:p-4 bg-gray-50/90 dark:bg-gray-900/90 backdrop-blur z-40 border-b border-gray-200 dark:border-gray-700 gap-3">
           <div className="flex items-center gap-1 sm:gap-3 flex-1 min-w-0">
-            <button onClick={handleBack} className="p-2 -ml-2 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors active:scale-90 shrink-0">
+            <button onClick={handleBack} className="p-2.5 -ml-2 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors active:scale-90 shrink-0 min-h-[44px] min-w-[44px] flex items-center justify-center">
               <ChevronLeft className="w-6 h-6 text-gray-600 dark:text-gray-400" />
             </button>
             <img src="/sdc_logo.png" alt="SDC" className="w-7 h-7 object-contain shrink-0" />
@@ -172,13 +178,13 @@ export const RepetitionPage = ({
       {/* Header */}
       <header className="shrink-0 w-full max-w-4xl mx-auto flex justify-between items-center p-3 sm:p-4 bg-gray-50/90 dark:bg-gray-900/90 backdrop-blur z-40 border-b border-gray-200 dark:border-gray-700 gap-3">
         <div className="flex items-center gap-1 sm:gap-3 flex-1 min-w-0">
-          <button onClick={handleBack} className="p-2 -ml-2 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors active:scale-90 shrink-0">
+          <button onClick={handleBack} className="p-2.5 -ml-2 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors active:scale-90 shrink-0 min-h-[44px] min-w-[44px] flex items-center justify-center">
             <ChevronLeft className="w-6 h-6 text-gray-600 dark:text-gray-400" />
           </button>
           <img src="/sdc_logo.png" alt="SDC" className="w-7 h-7 object-contain shrink-0" />
           <h1 className="text-base sm:text-lg font-bold text-gray-800 dark:text-white truncate">반복 학습 — {dataSet.name}</h1>
         </div>
-        <button onClick={onToggleNight} className="p-2 shrink-0 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+        <button onClick={onToggleNight} className="p-2.5 shrink-0 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center">
           {isNightMode ? <Sun className="w-5 h-5 text-yellow-400" /> : <Moon className="w-5 h-5 text-gray-600" />}
         </button>
       </header>
@@ -263,12 +269,12 @@ export const RepetitionPage = ({
         <div className="max-w-4xl mx-auto flex items-center justify-between gap-2">
           {/* Left: Speed + Sentence repeat */}
           <div className="flex items-center gap-1.5">
-            <button onClick={handleSpeedCycle} className="px-2.5 py-2 text-sm font-bold rounded-xl bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors min-w-[44px]" aria-label={`재생 속도 ${speed}배`}>
+            <button onClick={handleSpeedCycle} className="px-2.5 py-2 text-sm font-bold rounded-xl bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors min-w-[44px] min-h-[44px]" aria-label={`재생 속도 ${speed}배`}>
               {speed}x
             </button>
             <button
               onClick={handleRepeatCycle}
-              className={`flex items-center gap-1 px-2.5 py-2 text-sm font-bold rounded-xl transition-colors min-w-[44px] ${
+              className={`flex items-center gap-1 px-2.5 py-2 text-sm font-bold rounded-xl transition-colors min-w-[44px] min-h-[44px] ${
                 sentenceRepeat > 1
                   ? 'bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300'
                   : 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
@@ -282,17 +288,17 @@ export const RepetitionPage = ({
 
           {/* Center: Prev / Play-Stop / Next */}
           <div className="flex items-center gap-2">
-            <button onClick={handlePrev} className="p-3 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors active:scale-90" aria-label="이전 문장">
+            <button onClick={handlePrev} className="p-3 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors active:scale-90 min-h-[44px] min-w-[44px] flex items-center justify-center" aria-label="이전 문장">
               <SkipBack className="w-5 h-5" />
             </button>
             <button
               onClick={handlePlayStop}
-              className={`p-4 rounded-full text-white shadow-md transition-all active:scale-90 ${isRangePlaying ? 'bg-red-500 hover:bg-red-600' : 'bg-blue-600 hover:bg-blue-700'}`}
+              className={`p-4 rounded-full text-white shadow-md transition-all active:scale-90 min-h-[44px] min-w-[44px] flex items-center justify-center ${isRangePlaying ? 'bg-red-500 hover:bg-red-600' : 'bg-blue-600 hover:bg-blue-700'}`}
               aria-label={isRangePlaying ? '정지' : '연속 재생'}
             >
-              {isRangePlaying ? <Square className="w-5 h-5 fill-current" /> : <Play className="w-6 h-6" />}
+              {isRangePlaying ? <Square className="w-5 h-5 fill-current" /> : isLoadingTTS ? <Loader2 className="w-6 h-6 animate-spin" /> : <Play className="w-6 h-6" />}
             </button>
-            <button onClick={handleNext} className="p-3 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors active:scale-90" aria-label="다음 문장">
+            <button onClick={handleNext} className="p-3 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors active:scale-90 min-h-[44px] min-w-[44px] flex items-center justify-center" aria-label="다음 문장">
               <ChevronRight className="w-5 h-5" />
             </button>
           </div>
@@ -300,7 +306,7 @@ export const RepetitionPage = ({
           {/* Right: Range toggle */}
           <button
             onClick={toggleRange}
-            className={`px-3 py-2 text-xs font-bold rounded-xl transition-colors min-w-[44px] ${
+            className={`px-3 py-2 text-xs font-bold rounded-xl transition-colors min-w-[44px] min-h-[44px] ${
               useRange
                 ? 'bg-orange-500 text-white shadow-sm'
                 : showRangeControls

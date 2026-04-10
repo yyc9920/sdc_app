@@ -50,7 +50,7 @@ export const R1ListView = ({
         <div className="flex items-center gap-2">
           <button
             onClick={onTogglePause}
-            className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-bold text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl transition-colors"
+            className="flex items-center gap-1.5 px-3 py-2 text-sm font-bold text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl transition-colors min-h-[44px]"
           >
             {isPaused ? (
               <><Play className="w-4 h-4" /> 계속</>
@@ -60,7 +60,7 @@ export const R1ListView = ({
           </button>
           <button
             onClick={onSkip}
-            className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-bold text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl transition-colors"
+            className="flex items-center gap-1.5 px-3 py-2 text-sm font-bold text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl transition-colors min-h-[44px]"
           >
             <SkipForward className="w-4 h-4" /> 건너뛰기
           </button>

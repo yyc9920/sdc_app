@@ -95,8 +95,7 @@ export const QuizHistory: React.FC<QuizHistoryProps> = ({ results, loading }) =>
                   {getTitle(result.setId)}
                 </div>
                 <div className="text-xs text-gray-500 dark:text-gray-400 flex items-center gap-2">
-                  <span>Lv.{result.level}</span>
-                  <span>•</span>
+                  {result.level != null && <><span>Lv.{result.level}</span><span>•</span></>}
                   <span>{formatDate(result.completedAt)}</span>
                   <span>•</span>
                   <Clock className="w-3 h-3" />
