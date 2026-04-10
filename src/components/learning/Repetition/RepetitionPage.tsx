@@ -302,7 +302,7 @@ export const RepetitionPage = ({
           <div className="max-w-4xl mx-auto flex flex-wrap gap-2">
             <button
               onClick={() => setVoiceOverride(null)}
-              className={`px-3 py-1.5 text-sm font-bold rounded-lg transition-colors ${
+              className={`px-3 py-2.5 text-sm font-bold rounded-lg transition-colors min-h-[44px] ${
                 voiceOverride === null
                   ? 'bg-purple-500 text-white'
                   : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600'
@@ -314,7 +314,7 @@ export const RepetitionPage = ({
               <button
                 key={v}
                 onClick={() => setVoiceOverride(v as Voice)}
-                className={`px-3 py-1.5 text-sm font-bold rounded-lg transition-colors ${
+                className={`px-3 py-2.5 text-sm font-bold rounded-lg transition-colors min-h-[44px] ${
                   voiceOverride === v
                     ? 'bg-purple-500 text-white'
                     : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600'
@@ -335,7 +335,7 @@ export const RepetitionPage = ({
               <button
                 key={key}
                 onClick={() => toggleDisplay(key)}
-                className={`px-3 py-1.5 text-sm font-bold rounded-lg transition-colors ${
+                className={`px-3 py-2.5 text-sm font-bold rounded-lg transition-colors min-h-[44px] ${
                   displayToggles[key]
                     ? 'bg-blue-500 text-white'
                     : 'bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400'
