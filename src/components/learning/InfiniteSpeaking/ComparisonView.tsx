@@ -54,7 +54,7 @@ export const ComparisonView = ({
       </div>
 
       {/* Word-by-word result */}
-      <div className="flex flex-wrap gap-2 justify-center">
+      <div className="flex flex-wrap gap-2 justify-center max-h-[25vh] overflow-y-auto py-1">
         {words.map((word, i) => {
           const status = wordStatuses[i];
           return (

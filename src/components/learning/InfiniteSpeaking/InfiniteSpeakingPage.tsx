@@ -1,3 +1,4 @@
+import { useRef, useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ChevronLeft, Moon, Sun, Hand, HandMetal, Mic, Square, AlertTriangle, RefreshCw, SkipForward } from 'lucide-react';
 import { useInfiniteSpeaking } from '../../../hooks/useInfiniteSpeaking';
@@ -39,8 +40,16 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
   } = engine;
 
   // Derived from currentRow
+  const mainRef = useRef<HTMLDivElement>(null);
   const currentBlankIndices = currentRow ? getReducedBlankIndices(currentRow.english) : [];
   const currentSpeakerStyle = currentRow?.speaker ? speakerStyleMap[currentRow.speaker] : undefined;
+
+  // [m3] Scroll reset on LISTENING/SPEAKING phase change
+  useEffect(() => {
+    if ((subPhase === 'LISTENING' || subPhase === 'SPEAKING') && mainRef.current) {
+      mainRef.current.scrollTop = 0;
+    }
+  }, [subPhase, session.currentIndex]);
   // R3: hide text during speaking
   const textVisible = session.round !== 3 || subPhase !== 'SPEAKING';
 
@@ -89,6 +98,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
         <div className="flex items-center gap-1 sm:gap-3 flex-1 min-w-0">
           <button
             onClick={() => { reset(); onBack(); }}
+            aria-label="뒤로 가기"
             className="p-2.5 -ml-2 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors active:scale-90 shrink-0 min-h-[44px] min-w-[44px] flex items-center justify-center"
           >
             <ChevronLeft className="w-6 h-6 text-gray-600 dark:text-gray-400" />
@@ -98,7 +108,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
             무한 스피킹 — {dataSet.name}
           </h1>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3">
           {!isSessionComplete && (
             <button
               onClick={toggleHandsFree}
@@ -107,6 +117,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
                   ? 'bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-400 shadow-sm'
                   : 'text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'
               }`}
+              aria-label={handsFree ? '핸즈프리 켜짐' : '핸즈프리 꺼짐'}
               title={handsFree ? '핸즈프리 ON' : '핸즈프리 OFF'}
             >
               {handsFree ? <HandMetal className="w-5 h-5" /> : <Hand className="w-5 h-5" />}
@@ -114,6 +125,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
           )}
           <button
             onClick={onToggleNight}
+            aria-label={isNightMode ? '낮 모드로 전환' : '야간 모드로 전환'}
             className="p-2.5 shrink-0 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
           >
             {isNightMode ? <Sun className="w-5 h-5 text-yellow-400" /> : <Moon className="w-5 h-5 text-gray-600" />}
@@ -145,7 +157,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
       )}
 
       {/* Main content */}
-      <main className="flex-1 overflow-y-auto max-w-4xl mx-auto p-4 sm:p-6 w-full pb-6">
+      <main ref={mainRef} className={`flex-1 overflow-y-auto max-w-4xl mx-auto p-4 sm:p-6 w-full ${subPhase === 'SPEAKING' ? 'pb-28' : 'pb-6'}`}>
         <AnimatePresence mode="wait">
 
           {/* ROUND INTRO */}
@@ -238,27 +250,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
                 textVisible={textVisible}
               />
 
-              {needsMicGesture ? (
-                <div className="flex justify-center">
-                  <button
-                    onClick={handleMobileMicStart}
-                    className="flex items-center gap-2 px-8 py-4 bg-purple-500 hover:bg-purple-600 text-white font-bold rounded-2xl shadow-lg transition-all active:scale-95 animate-pulse"
-                  >
-                    <Mic className="w-6 h-6" />
-                    마이크 켜기
-                  </button>
-                </div>
-              ) : (
-                <div className="flex justify-center">
-                  <button
-                    onClick={handleManualStopSpeaking}
-                    className="flex items-center gap-2 px-6 py-3 bg-red-500 hover:bg-red-600 text-white font-bold rounded-2xl shadow-lg transition-all active:scale-95"
-                  >
-                    <Square className="w-5 h-5" />
-                    말하기 완료
-                  </button>
-                </div>
-              )}
+              {/* Buttons rendered as fixed overlay below */}
 
               {speech.supportError && (
                 <p className="text-center text-red-500 text-sm">{speech.supportError}</p>
@@ -323,6 +315,29 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
 
         </AnimatePresence>
       </main>
+
+      {/* Fixed bottom action buttons during SPEAKING */}
+      {subPhase === 'SPEAKING' && currentRow && (
+        <div className="fixed bottom-[calc(env(safe-area-inset-bottom)+1.5rem)] left-0 right-0 z-40 flex justify-center px-4">
+          {needsMicGesture ? (
+            <button
+              onClick={handleMobileMicStart}
+              className="flex items-center gap-2 px-8 py-4 bg-purple-500 hover:bg-purple-600 text-white font-bold rounded-2xl shadow-lg transition-all active:scale-95 animate-pulse"
+            >
+              <Mic className="w-6 h-6" />
+              마이크 켜기
+            </button>
+          ) : (
+            <button
+              onClick={handleManualStopSpeaking}
+              className="flex items-center gap-2 px-6 py-3 bg-red-500 hover:bg-red-600 text-white font-bold rounded-2xl shadow-lg transition-all active:scale-95"
+            >
+              <Square className="w-5 h-5" />
+              말하기 완료
+            </button>
+          )}
+        </div>
+      )}
 
       {/* Floating mic indicator during speaking */}
       {subPhase === 'SPEAKING' && speech.isRecording && (
