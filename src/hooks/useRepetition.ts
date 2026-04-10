@@ -226,6 +226,9 @@ export function useRepetition(setId: string): UseRepetitionReturn {
     const loopStart = fromIdx ?? 0;
     const loopEnd = Math.min(toIdx ?? sessionRows.length - 1, sessionRows.length - 1);
 
+    // Guard: invalid range (start > end) would cause sync infinite loop
+    if (loopStart > loopEnd) return;
+
     rangeAbortRef.current = false;
     setIsRangePlaying(true);
 
