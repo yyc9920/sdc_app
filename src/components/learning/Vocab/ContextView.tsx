@@ -1,10 +1,12 @@
-import { ChevronRight } from 'lucide-react';
+import { ChevronRight, Volume2 } from 'lucide-react';
 import type { TrainingRow } from '../../../hooks/training';
 
 interface ContextViewProps {
   currentRow: TrainingRow;
   contextRows: TrainingRow[];
   onNext: () => void;
+  onPlayTTS?: (row: TrainingRow) => void;
+  isPlaying?: boolean;
 }
 
 function highlightExpression(text: string, expression: string): React.ReactNode[] {
@@ -26,7 +28,7 @@ function highlightExpression(text: string, expression: string): React.ReactNode[
   );
 }
 
-export const ContextView = ({ currentRow, contextRows, onNext }: ContextViewProps) => {
+export const ContextView = ({ currentRow, contextRows, onNext, onPlayTTS, isPlaying }: ContextViewProps) => {
   return (
     <div className="flex flex-col gap-6 max-w-lg mx-auto">
       <div className="text-center">
@@ -58,9 +60,21 @@ export const ContextView = ({ currentRow, contextRows, onNext }: ContextViewProp
               key={row.id}
               className="p-4 bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm"
             >
-              <p className="text-gray-900 dark:text-white leading-relaxed">
-                {highlightExpression(row.english, currentRow.english)}
-              </p>
+              <div className="flex items-start gap-2">
+                <p className="flex-1 text-gray-900 dark:text-white leading-relaxed">
+                  {highlightExpression(row.english, currentRow.english)}
+                </p>
+                {onPlayTTS && (
+                  <button
+                    onClick={() => onPlayTTS(row)}
+                    disabled={isPlaying}
+                    className="shrink-0 p-2 rounded-full text-emerald-500 hover:bg-emerald-50 dark:hover:bg-emerald-900/30 transition-colors disabled:opacity-50 min-h-[44px] min-w-[44px] flex items-center justify-center"
+                    aria-label="문장 듣기"
+                  >
+                    <Volume2 className="w-5 h-5" />
+                  </button>
+                )}
+              </div>
               {row.comprehension && (
                 <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">
                   {row.comprehension}

@@ -1,6 +1,6 @@
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { ChevronLeft, Moon, Sun, Hand, HandMetal, Mic, Square, AlertTriangle, RefreshCw, SkipForward } from 'lucide-react';
+import { ChevronLeft, Moon, Sun, Hand, HandMetal, Mic, Square, AlertTriangle, RefreshCw, SkipForward, Eye } from 'lucide-react';
 import { useInfiniteSpeaking } from '../../../hooks/useInfiniteSpeaking';
 import { getReducedBlankIndices } from '../../../utils/keyExpressions';
 import { LoadingSpinner } from '../../LoadingSpinner';
@@ -38,6 +38,9 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
     handlePlayModelForComparison,
     reset,
   } = engine;
+
+  // Hint button state (press-and-hold to reveal blanks)
+  const [hintPressed, setHintPressed] = useState(false);
 
   // Derived from currentRow
   const mainRef = useRef<HTMLDivElement>(null);
@@ -248,6 +251,7 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
                 isSpeaking={!needsMicGesture}
                 speakerStyle={currentSpeakerStyle}
                 textVisible={textVisible}
+                hintPressed={hintPressed}
               />
 
               {/* Buttons rendered as fixed overlay below */}
@@ -328,13 +332,29 @@ export const InfiniteSpeakingPage = ({ dataSet, isNightMode, onToggleNight, onBa
               마이크 켜기
             </button>
           ) : (
-            <button
-              onClick={handleManualStopSpeaking}
-              className="flex items-center gap-2 px-6 py-3 bg-red-500 hover:bg-red-600 text-white font-bold rounded-2xl shadow-lg transition-all active:scale-95"
-            >
-              <Square className="w-5 h-5" />
-              말하기 완료
-            </button>
+            <div className="flex items-center gap-3">
+              <button
+                onPointerDown={() => setHintPressed(true)}
+                onPointerUp={() => setHintPressed(false)}
+                onPointerLeave={() => setHintPressed(false)}
+                onPointerCancel={() => setHintPressed(false)}
+                className={`flex items-center gap-1.5 px-4 py-3 rounded-2xl shadow-lg transition-all active:scale-95 select-none ${
+                  hintPressed
+                    ? 'bg-purple-500 text-white'
+                    : 'bg-white dark:bg-gray-700 text-purple-600 dark:text-purple-400 border border-purple-200 dark:border-purple-700'
+                }`}
+              >
+                <Eye className="w-5 h-5" />
+                힌트
+              </button>
+              <button
+                onClick={handleManualStopSpeaking}
+                className="flex items-center gap-2 px-6 py-3 bg-red-500 hover:bg-red-600 text-white font-bold rounded-2xl shadow-lg transition-all active:scale-95"
+              >
+                <Square className="w-5 h-5" />
+                말하기 완료
+              </button>
+            </div>
           )}
         </div>
       )}

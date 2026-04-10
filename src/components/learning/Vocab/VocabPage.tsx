@@ -188,6 +188,8 @@ export const VocabPage = ({
                   currentRow={currentRow}
                   contextRows={contextRows}
                   onNext={advancePhase}
+                  onPlayTTS={(row) => { play(row).catch(() => setTtsError(true)); }}
+                  isPlaying={isPlaying}
                 />
               </motion.div>
             )}

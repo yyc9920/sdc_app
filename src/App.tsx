@@ -23,6 +23,7 @@ type TabId = 'learning' | 'dashboard' | 'ranking' | 'admin' | 'teacher' | 'profi
 function App() {
   const [activeTab, setActiveTab] = useState<TabId>('learning');
   const [tabResetKey, setTabResetKey] = useState(0);
+  const isLearningFullScreen = activeTab === 'learning';
 
   const handleTabChange = useCallback((tab: TabId) => {
     if (tab === activeTab) {
@@ -110,7 +111,9 @@ function App() {
           {renderTab()}
         </div>
       </ErrorBoundary>
-      <BottomNavigation activeTab={activeTab} onTabChange={handleTabChange} role={role} />
+      {!isLearningFullScreen && (
+        <BottomNavigation activeTab={activeTab} onTabChange={handleTabChange} role={role} />
+      )}
     </div>
   );
 }

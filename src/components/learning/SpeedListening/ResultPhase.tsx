@@ -10,6 +10,7 @@ interface ResultPhaseProps {
   getUserInput: (rowId: number, wordIndex: number) => string;
   onRestart: () => void;
   onNext?: () => void;
+  onFinish?: () => void;
 }
 
 function getScoreColor(score: number): string {
@@ -32,6 +33,7 @@ export const ResultPhase: React.FC<ResultPhaseProps> = ({
   getUserInput,
   onRestart,
   onNext,
+  onFinish,
 }) => {
   return (
     <div className="space-y-6">
@@ -122,13 +124,21 @@ export const ResultPhase: React.FC<ResultPhaseProps> = ({
         >
           다시 도전
         </button>
-        <button
-          onClick={onNext}
-          disabled={!onNext}
-          className="w-full py-3.5 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 font-bold rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-        >
-          {onNext ? '다음 세트 →' : '마지막 세트입니다'}
-        </button>
+        {onNext ? (
+          <button
+            onClick={onNext}
+            className="w-full py-3.5 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 font-bold rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+          >
+            다음 세트 →
+          </button>
+        ) : (
+          <button
+            onClick={onFinish}
+            className="w-full py-3.5 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 font-bold rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+          >
+            학습 종료
+          </button>
+        )}
       </div>
     </div>
   );

@@ -11,6 +11,7 @@ interface SpeedListeningPageProps {
   title?: string;
   sentences?: Array<{ id: number; english: string; korean: string }>;
   onNext?: () => void;
+  onFinish?: () => void;
 }
 
 export const SpeedListeningPage: React.FC<SpeedListeningPageProps> = ({
@@ -19,6 +20,7 @@ export const SpeedListeningPage: React.FC<SpeedListeningPageProps> = ({
   title,
   sentences,
   onNext,
+  onFinish,
 }) => {
   const {
     rows,
@@ -149,6 +151,7 @@ export const SpeedListeningPage: React.FC<SpeedListeningPageProps> = ({
           getUserInput={getUserInput}
           onRestart={restart}
           onNext={onNext}
+          onFinish={onFinish}
         />
       )}
     </div>

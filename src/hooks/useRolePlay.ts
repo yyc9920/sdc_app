@@ -90,6 +90,7 @@ type RolePlayAction =
   | { type: 'SET_AUTO_PLAYING'; value: boolean }
   | { type: 'SET_TTS_PLAYING'; value: boolean }
   | { type: 'SET_DEMO_PAUSED'; value: boolean }
+  | { type: 'SKIP_ALL_TURNS' }
   | { type: 'RESET' };
 
 const PHASE_PROGRESSION: Partial<Record<RolePlayPhase, RolePlayPhase>> = {
@@ -163,6 +164,13 @@ export function rolePlayReducer(state: RolePlayState, action: RolePlayAction): R
         ...state,
         rolePlayPhase: 'REVIEW',
         isPhaseComplete: false,
+        isTTSPlaying: false,
+      };
+
+    case 'SKIP_ALL_TURNS':
+      return {
+        ...state,
+        isPhaseComplete: true,
         isTTSPlaying: false,
       };
 
@@ -414,6 +422,12 @@ export function useRolePlay(setId: string) {
     if (playInterruptRef.current) playInterruptRef.current();
   }, []);
 
+  const skipAllTurns = useCallback(() => {
+    audioApi.stopRecording();
+    if (playInterruptRef.current) playInterruptRef.current();
+    dispatch({ type: 'SKIP_ALL_TURNS' });
+  }, [audioApi]);
+
   const proceedNextPhase = useCallback(() => {
     progressApi.saveProgress(); // devil fix #8: save at phase boundary
     dispatch({ type: 'PROCEED_NEXT_PHASE' });
@@ -440,6 +454,12 @@ export function useRolePlay(setId: string) {
     const thisTurnIsUser = row.speaker === rpState.selectedRole;
 
     if (!thisTurnIsUser) {
+      // GUIDED: 상대 턴은 TTS 없이 즉시 넘기기 (선택한 발화자만 연습)
+      if (rpState.rolePlayPhase === 'GUIDED') {
+        dispatch({ type: 'NEXT_TURN', rowCount: dialogueRows.length, currentPhase: rpState.rolePlayPhase });
+        return;
+      }
+
       let cancelled = false;
       dispatch({ type: 'SET_TTS_PLAYING', value: true });
 
@@ -577,6 +597,7 @@ export function useRolePlay(setId: string) {
     stopUserTurn,
     skipUserTurn,
     skipPartnerTurn,
+    skipAllTurns,
     proceedNextPhase,
     skipToReview,
     resetRolePlay,

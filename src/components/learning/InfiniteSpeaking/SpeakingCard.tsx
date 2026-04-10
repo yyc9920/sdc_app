@@ -18,6 +18,8 @@ interface SpeakingCardProps {
   textVisible?: boolean;
   /** Animate transition from full text to blanks */
   blankingTransition?: boolean;
+  /** Show all blanked words when hint button is pressed */
+  hintPressed?: boolean;
 }
 
 export const SpeakingCard = ({
@@ -31,6 +33,7 @@ export const SpeakingCard = ({
   speakerStyle,
   textVisible = true,
   blankingTransition = false,
+  hintPressed = false,
 }: SpeakingCardProps) => {
   const display = getSentenceDisplay(sentence, round, blankIndices);
   const showKorean = round >= 2;
@@ -81,6 +84,7 @@ export const SpeakingCard = ({
 
               if (!visible && !isBlankTarget) {
                 // Normal blank slot (not during transition)
+                const showHint = hintPressed && !isCorrect && !isIncorrect;
                 return (
                   <span key={index} className="inline-flex items-center">
                     <span
@@ -90,12 +94,14 @@ export const SpeakingCard = ({
                           ? 'border-green-500 text-green-700 dark:text-green-400'
                           : isIncorrect
                             ? 'border-red-500 text-red-600 dark:text-red-400'
-                            : 'border-gray-400 dark:border-gray-600 text-transparent'
+                            : showHint
+                              ? 'border-purple-400 dark:border-purple-600 text-purple-400 dark:text-purple-500'
+                              : 'border-gray-400 dark:border-gray-600 text-transparent'
                         }
                       `}
                       style={{ minWidth: `${Math.max(word.length * 0.7, 2)}em` }}
                     >
-                      {isCorrect || isIncorrect ? word : '·'.repeat(word.length)}
+                      {isCorrect || isIncorrect || showHint ? word : '·'.repeat(word.length)}
                     </span>
                   </span>
                 );
@@ -148,14 +154,18 @@ export const SpeakingCard = ({
               );
             })
           : (
-            // R3: text hidden during speaking — show blank placeholders
+            // R3: text hidden during speaking — show blank placeholders (or hint)
             sentence.split(' ').map((word, index) => (
               <span
                 key={index}
-                className="inline-block border-b-4 border-gray-400 dark:border-gray-600 text-transparent"
+                className={`inline-block border-b-4 ${
+                  hintPressed
+                    ? 'border-purple-400 dark:border-purple-600 text-purple-400 dark:text-purple-500'
+                    : 'border-gray-400 dark:border-gray-600 text-transparent'
+                }`}
                 style={{ minWidth: `${Math.max(word.length * 0.7, 2)}em` }}
               >
-                {'·'.repeat(word.length)}
+                {hintPressed ? word : '·'.repeat(word.length)}
               </span>
             ))
           )

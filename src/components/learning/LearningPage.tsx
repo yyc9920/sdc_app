@@ -167,6 +167,7 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
         <SpeedListeningQuiz
           set={selectedSpeedListeningSet}
           onNext={nextSet ? () => setSelectedSpeedListeningSet(nextSet) : undefined}
+          onFinish={() => { setSelectedSpeedListeningSet(null); setSelectedDataSet(null); }}
         />
       </div>
     );

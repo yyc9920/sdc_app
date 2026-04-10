@@ -1,6 +1,6 @@
 import { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Square, SkipForward, AlertTriangle } from 'lucide-react';
+import { Square, SkipForward, AlertTriangle, ChevronsRight } from 'lucide-react';
 import { ChatBubble } from './ChatBubble';
 import { getSpeakerColor, PHASE_LABELS } from '../../../constants/rolePlay';
 import type { TrainingRow } from '../../../hooks/training';
@@ -22,6 +22,7 @@ interface ChatViewProps {
   onStopTurn: () => void;
   onSkipTurn: () => void;
   onSkipPartnerTurn: () => void;
+  onSkipAll?: () => void;
 }
 
 const PHASE_SUBTITLES: Partial<Record<RolePlayPhase, string>> = {
@@ -46,6 +47,7 @@ export function ChatView({
   onStopTurn,
   onSkipTurn,
   onSkipPartnerTurn,
+  onSkipAll,
 }: ChatViewProps) {
   const bottomRef = useRef<HTMLDivElement | null>(null);
 
@@ -67,13 +69,24 @@ export function ChatView({
     >
       {/* Phase header */}
       <div className="sticky top-0 z-10 bg-gray-50/90 dark:bg-gray-900/90 backdrop-blur pb-2 pt-1">
-        <div className="flex items-baseline gap-2">
-          <h2 className="font-bold text-gray-800 dark:text-white">
-            {PHASE_LABELS[rolePlayPhase]}
-          </h2>
-          <span className="text-sm text-gray-500 dark:text-gray-400">
-            — {PHASE_SUBTITLES[rolePlayPhase]}
-          </span>
+        <div className="flex items-center gap-2">
+          <div className="flex items-baseline gap-2 flex-1 min-w-0">
+            <h2 className="font-bold text-gray-800 dark:text-white">
+              {PHASE_LABELS[rolePlayPhase]}
+            </h2>
+            <span className="text-sm text-gray-500 dark:text-gray-400">
+              — {PHASE_SUBTITLES[rolePlayPhase]}
+            </span>
+          </div>
+          {onSkipAll && (
+            <button
+              onClick={onSkipAll}
+              className="flex items-center gap-1 px-3 py-1.5 text-xs font-medium text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors shrink-0"
+            >
+              <ChevronsRight className="w-3.5 h-3.5" />
+              모두 건너뛰기
+            </button>
+          )}
         </div>
       </div>
 

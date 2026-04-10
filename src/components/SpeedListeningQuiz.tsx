@@ -8,6 +8,7 @@ import { getTTSAudioUrl, getStaticAudioUrl, prefetchTTS } from '../services/ttsS
 interface Props {
   set: SpeedListeningSet;
   onNext?: () => void;
+  onFinish?: () => void;
 }
 
 const cleanWord = (word: string) => word.replace(/[.,?!;:"']/g, '').toLowerCase();
@@ -72,7 +73,7 @@ const generateBlankIndices = (sentences: SpeedListeningSet['sentences'], level: 
   return map;
 };
 
-export const SpeedListeningQuiz: React.FC<Props> = ({ set, onNext }) => {
+export const SpeedListeningQuiz: React.FC<Props> = ({ set, onNext, onFinish }) => {
   const [blanks, setBlanks] = useState<Record<string, string>>({});
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [quizAnswer, setQuizAnswer] = useState<number | null>(null);
@@ -414,11 +415,10 @@ const [sentenceVoices, setSentenceVoices] = useState<Record<number, Voice>>(() =
         )}
         {isSubmitted && (
           <button
-            onClick={() => onNext?.()}
-            disabled={!onNext}
-            className="w-full py-3.5 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors shadow-sm"
+            onClick={() => onNext ? onNext() : onFinish?.()}
+            className="w-full py-3.5 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors shadow-sm"
           >
-            {onNext ? '다음 세트' : '마지막 세트입니다'}
+            {onNext ? '다음 세트' : '학습 종료'}
           </button>
         )}
       </div>

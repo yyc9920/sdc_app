@@ -348,10 +348,8 @@ export function useInfiniteSpeaking(setId: string) {
     const result = evaluateSpeechLogic(transcript, target, isFinal);
     dispatch({ type: 'UPDATE_SPEECH', transcript, wordStatuses: result.wordStatuses, score: result.score });
 
+    // 100% 매칭 시 시각적 피드백만 표시, 사용자가 수동 종료할 때까지 대기
     if (result.score === 100) {
-      speechRef.current?.stopRecording();
-      if (speakingTimeoutRef.current) clearTimeout(speakingTimeoutRef.current);
-      dispatch({ type: 'SET_SUB_PHASE', subPhase: 'COMPARISON' });
       return;
     }
 
@@ -503,22 +501,7 @@ export function useInfiniteSpeaking(setId: string) {
 
     speech.startRecording();
 
-    speakingTimeoutRef.current = window.setTimeout(async () => {
-      await speechRef.current?.stopRecording();
-      if (currentRowRef.current) {
-        const target = sessionRef.current.round === 2 && currentUnitRef.current
-          ? currentUnitRef.current.combinedEnglish
-          : currentRowRef.current.english;
-        const transcript = speechRef.current?.transcript ?? '';
-        const result = evaluateSpeechLogic(transcript, target, true);
-        dispatch({ type: 'UPDATE_SPEECH', transcript, wordStatuses: result.wordStatuses, score: result.score });
-      }
-      dispatch({ type: 'SET_SUB_PHASE', subPhase: 'COMPARISON' });
-    }, TIMEOUTS.SPEAKING_TIMEOUT_MS);
-
-    return () => {
-      if (speakingTimeoutRef.current) clearTimeout(speakingTimeoutRef.current);
-    };
+    // 타임아웃 없음 — 사용자가 "말하기 완료" 버튼으로 수동 종료
   }, [state.subPhase]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // ── Hands-free auto-advance ───────────────────────────────────────────────────
