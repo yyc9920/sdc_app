@@ -111,7 +111,6 @@ export function ChatView({
                 liveWordStatuses={isActive && isUser ? liveWordStatuses : undefined}
                 avatarColor={color}
                 speakerLabel={row.speaker}
-                phase={rolePlayPhase}
                 isRecording={isActive && isUser ? isRecording : false}
               />
             </div>

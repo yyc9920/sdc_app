@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
-import { Mic, Volume2 } from 'lucide-react';
+import { Mic } from 'lucide-react';
 import type { TrainingRow } from '../../../hooks/training';
-import type { TurnResult, RolePlayPhase } from '../../../constants/rolePlay';
+import type { TurnResult } from '../../../constants/rolePlay';
 
 interface ChatBubbleProps {
   row: TrainingRow;
@@ -13,7 +13,6 @@ interface ChatBubbleProps {
   liveTranscript?: string;
   avatarColor: { bg: string; text: string; ring: string };
   speakerLabel: string;
-  phase?: RolePlayPhase;
   liveWordStatuses?: string[];
   isRecording?: boolean;
 }
@@ -47,7 +46,6 @@ export function ChatBubble({
   liveTranscript,
   avatarColor,
   speakerLabel,
-  phase,
   liveWordStatuses,
   isRecording,
 }: ChatBubbleProps) {
@@ -97,8 +95,8 @@ export function ChatBubble({
                 )}
                 {row.english}
               </p>
-              {phase === 'FREE' && row.comprehension && (
-                <p className="text-xs mt-1 opacity-70">{row.comprehension}</p>
+              {row.comprehension && (
+                <p className="text-xs mt-1 text-purple-600 dark:text-purple-400 font-medium">{row.comprehension}</p>
               )}
             </div>
           ) : (
@@ -110,11 +108,17 @@ export function ChatBubble({
             </p>
           )}
 
-          {/* TTS playing indicator (partner) */}
+          {/* TTS playing indicator (partner) — R1-style waveform */}
           {isActive && !isUser && isTTSPlaying && (
-            <span className="absolute -bottom-5 left-0 flex items-center gap-1 text-xs text-gray-400 dark:text-gray-500">
-              <Volume2 className="w-3 h-3" />
-              재생 중
+            <span className="absolute -bottom-5 left-0 flex items-center gap-0.5 h-3">
+              {[0, 1, 2, 3].map(i => (
+                <motion.span
+                  key={i}
+                  className="w-0.5 bg-blue-500 rounded-full inline-block"
+                  animate={{ height: [3, 10, 3] }}
+                  transition={{ duration: 0.5, repeat: Infinity, delay: i * 0.1 }}
+                />
+              ))}
             </span>
           )}
 

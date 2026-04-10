@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { Volume2, ChevronRight, CheckCircle } from 'lucide-react';
 
 interface StudyViewProps {
@@ -38,15 +39,37 @@ export const StudyView = ({
       </div>
     </div>
 
-    {/* Sentence card */}
-    <div className="w-full max-w-2xl bg-white dark:bg-gray-800 rounded-2xl shadow-md p-6 border border-gray-100 dark:border-gray-700">
-      <p className="text-xl sm:text-2xl font-bold text-gray-800 dark:text-white leading-relaxed">
+    {/* Sentence card — R1 style */}
+    <div className={`w-full max-w-2xl bg-white dark:bg-gray-800 rounded-2xl p-6 transition-all ${
+      isPlaying
+        ? 'border-2 border-blue-300 dark:border-blue-600 shadow-md'
+        : 'border border-gray-100 dark:border-gray-700 shadow-md'
+    }`}>
+      <p className={`text-xl sm:text-2xl font-bold leading-relaxed transition-colors ${
+        isPlaying
+          ? 'text-gray-900 dark:text-white'
+          : 'text-gray-800 dark:text-white'
+      }`}>
         {sentence}
       </p>
       {koreanMeaning && (
-        <p className="mt-3 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+        <p className="mt-3 text-purple-600 dark:text-purple-400 font-medium text-sm leading-relaxed">
           {koreanMeaning}
         </p>
+      )}
+
+      {/* R1-style waveform animation during playback */}
+      {isPlaying && (
+        <div className="flex gap-0.5 mt-3 items-end h-4">
+          {[0, 1, 2, 3].map(i => (
+            <motion.div
+              key={i}
+              className="w-1 bg-blue-500 rounded-full"
+              animate={{ height: [4, 14, 4] }}
+              transition={{ duration: 0.5, repeat: Infinity, delay: i * 0.1 }}
+            />
+          ))}
+        </div>
       )}
     </div>
 
@@ -56,7 +79,7 @@ export const StudyView = ({
       </p>
     )}
 
-    {/* Play button — no auto-play; student taps to listen when ready */}
+    {/* Play button */}
     <button
       onClick={onPlay}
       disabled={isPlaying}

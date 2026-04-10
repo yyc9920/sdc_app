@@ -3,7 +3,7 @@ import type { AnalysisResult } from '../../../hooks/useFreeResponse';
 
 interface CompareViewProps {
   analysis: AnalysisResult;
-  modelRows: Array<{ english: string }>;
+  modelRows: Array<{ english: string; comprehension: string }>;
   transcriptMissing: boolean;
   onStartStudy: () => void;
 }
@@ -138,9 +138,16 @@ export const CompareView = ({
           모범답안 전문
         </p>
         {modelRows.map((row, i) => (
-          <p key={i} className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed pl-3 border-l-2 border-purple-300 dark:border-purple-700">
-            {row.english}
-          </p>
+          <div key={i} className="pl-3 border-l-2 border-purple-300 dark:border-purple-700">
+            <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+              {row.english}
+            </p>
+            {row.comprehension && (
+              <p className="text-xs text-purple-600 dark:text-purple-400 font-medium mt-0.5">
+                {row.comprehension}
+              </p>
+            )}
+          </div>
         ))}
       </div>
 
