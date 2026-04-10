@@ -1,0 +1,65 @@
+[
+  {
+    "setId": "L2_ELLO_044_set1",
+    "parentSetId": "L2_ELLO_044",
+    "theme": "Mixer #102 — Superstitions",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I always avoid walking under ladders.",
+        "korean": "사다리 밑으로 걷는 걸 항상 피해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I know it's silly but it just feels like bad luck.",
+        "korean": "어리석은 줄 알지만 불길하게 느껴져요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "In my culture, the number four is considered unlucky.",
+        "korean": "우리 문화에서 숫자 4는 불길하다고 여겨져요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Some buildings even skip the fourth floor.",
+        "korean": "어떤 건물은 4층을 아예 건너뛰어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I don't believe in superstitions at all.",
+        "korean": "미신을 전혀 믿지 않아요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "english": "I think they are just old stories that people pass down.",
+        "korean": "사람들이 전해 내려오는 그냥 옛날 이야기라고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #102 — Superstitions",
+        "Mixer #106 — Favorite Teacher",
+        "Mixer #82 — Apartment Living",
+        "Mixer #95 — Bucket List"
+      ],
+      "answer": 0
+    }
+  }
+]

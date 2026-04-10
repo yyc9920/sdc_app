@@ -1,0 +1,73 @@
+[
+  {
+    "setId": "L1_SPK_059_set1",
+    "parentSetId": "L1_SPK_059",
+    "theme": "Uniforms in School",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think students should be required to wear uniforms?",
+        "korean": "학생이 교복을 입어야 한다고 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your position.",
+        "korean": "입장을 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I think school uniforms have more advantages than disadvantages.",
+        "korean": "교복이 단점보다 장점이 더 많다고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "First they eliminate the social pressure that comes from comparing clothes and brands.",
+        "korean": "첫째 옷과 브랜드를 비교하는 데서 오는 사회적 압박을 없애줘요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Students from less wealthy families don't have to feel embarrassed about what they wear.",
+        "korean": "덜 부유한 가정의 학생들이 자신의 옷차림에 대해 부끄러워할 필요가 없어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Second uniforms simplify the morning routine — you never have to waste time deciding what to wear.",
+        "korean": "둘째 교복은 아침 루틴을 단순화해요 — 뭘 입을지 결정하는 데 시간을 낭비할 필요가 없어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "While some argue that uniforms limit self-expression I believe students can express their individuality in many other ways beyond clothing.",
+        "korean": "교복이 자기표현을 제한한다는 주장이 있지만 학생은 옷 외에도 다양한 방식으로 개성을 표현할 수 있다고 생각해요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 7,
+        "english": "social pressure",
+        "korean": "사회적 압박",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "The Value of Travel",
+        "Competitive Sports for Children",
+        "Uniforms in School",
+        "The Influence of Advertising"
+      ],
+      "answer": 2
+    }
+  }
+]

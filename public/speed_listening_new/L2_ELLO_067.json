@@ -1,0 +1,70 @@
+[
+  {
+    "setId": "L2_ELLO_067_set1",
+    "parentSetId": "L2_ELLO_067",
+    "theme": "Mixer #79 — Sleeping Habits",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I need at least eight hours of sleep or I'm useless the next day.",
+        "korean": "최소 8시간 자야 해요.",
+        "properNounIndices": [
+          0,
+          9
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I become really cranky if I don't sleep enough.",
+        "korean": "아니면 다음 날 쓸모없어요. 잠을 충분히 못 자면 정말 짜증이 나요.",
+        "properNounIndices": [
+          0,
+          5
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I can function on just five hours.",
+        "korean": "5시간만 자도 괜찮아요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I've always been like that, even since I was a kid.",
+        "korean": "어릴 때부터 항상 그랬어요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I have trouble falling asleep, so I listen to podcasts in bed.",
+        "korean": "잠들기 어려워서 침대에서 팟캐스트를 들어요.",
+        "properNounIndices": [
+          0,
+          6
+        ]
+      },
+      {
+        "id": 5,
+        "english": "It helps me relax and turn off my brain.",
+        "korean": "편안해지고 머리를 끌 수 있게 도와줘요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #74 — Recycling",
+        "Mixer #26 — Weekend Cooking",
+        "Mixer #79 — Sleeping Habits",
+        "Mixer #25 — Favorite Number"
+      ],
+      "answer": 2
+    }
+  }
+]

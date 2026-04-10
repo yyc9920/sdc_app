@@ -1,0 +1,114 @@
+[
+  {
+    "setId": "L3_DLG_032_set1",
+    "parentSetId": "L3_DLG_032",
+    "theme": "Airport Check-in — Baggage Issue",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'd like to check in for my flight to Tokyo.",
+        "korean": "도쿄행 비행기 체크인하고 싶어요.",
+        "properNounIndices": [
+          9
+        ]
+      },
+      {
+        "id": 1,
+        "english": "May I see your passport and booking reference?",
+        "korean": "여권과 예약 번호를 보여주시겠어요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Here they are.",
+        "korean": "여기 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "How many bags are you checking?",
+        "korean": "부치는 짐이 몇 개인가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Just one suitcase.",
+        "korean": "가방 하나요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '예약 번호' mean in English?",
+      "options": [
+        "carry-on",
+        "booking reference",
+        "over the limit",
+        "check (luggage)"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L3_DLG_032_set2",
+    "parentSetId": "L3_DLG_032",
+    "theme": "Airport Check-in — Baggage Issue",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Let me weigh it.",
+        "korean": "무게를 재볼게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "I'm afraid your bag is twenty-five kilograms which is two kilograms over the limit.",
+        "korean": "가방이 25킬로그램인데 제한보다 2킬로그램 초과예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Is there an extra charge?",
+        "korean": "추가 요금이 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Yes it's fifty dollars per kilogram over the limit.",
+        "korean": "네 제한 초과 킬로그램당 50달러예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Can I take some things out and put them in my carry-on instead?",
+        "korean": "물건 몇 개를 빼서 기내용 가방에 넣어도 되나요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 10,
+        "english": "Of course. Take your time.",
+        "korean": "물론이죠. 천천히 하세요.",
+        "properNounIndices": [
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '기내 반입 가방' mean in English?",
+      "options": [
+        "booking reference",
+        "check (luggage)",
+        "over the limit",
+        "carry-on"
+      ],
+      "answer": 3
+    }
+  }
+]

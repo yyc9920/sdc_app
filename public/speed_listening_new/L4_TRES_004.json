@@ -8,14 +8,18 @@
     "sentences": [
       {
         "id": 0,
-        "english": "Have you ever disagreed with something but stayed silent because you thought you were the only one who didn't like it? But later it turned out that almost everyone else shared your belief?",
-        "korean": "뭔가에 동의하지 않았지만 나만 안 좋아하는 줄 알고 침묭한 적 있나요? 그런데 나중에 보니 거의 모두가 같은 생각이었던 적이요?",
-        "properNounIndices": [
-          21
-        ]
+        "english": "Have you ever disagreed with something but stayed silent because you thought you were the only one who didn't like it?",
+        "korean": "뭔가에 동의하지 않았지만 나만 안 좋아하는 줄 알고 침묭한 적 있나요?",
+        "properNounIndices": []
       },
       {
         "id": 1,
+        "english": "But later it turned out that almost everyone else shared your belief?",
+        "korean": "그런데 나중에 보니 거의 모두가 같은 생각이었던 적이요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
         "english": "Well, you may have experienced something that sociologists call \"pluralistic ignorance.\" This is when our public behavior says \"everything's fine,\" while our private beliefs say \"I'm confused\" or \"I don't like this.\" This false impression that no one else in our group shares our belief can keep the entire group stuck and unable to progress as desired.",
         "korean": "사회학자들이 '다원적 무지'라고 부르는 것을 경험했을 수 있어요. 이건 겉으로는 '다 괜찮아'라고 행동하면서 속으로는 동의하지 않을 때를 말해요.",
         "properNounIndices": [
@@ -26,29 +30,56 @@
         ]
       },
       {
-        "id": 2,
-        "english": "Consider a classroom where the professor has just made a difficult point and asks if anyone has questions. Several students are confused, but no one raises a hand.",
-        "korean": "교수가 어려운 내용을 설명하고 질문 있냐고 묻는 교실을 생각해보세요. 여러 학생이 혼란스럽지만 아무도 손을 들지 않아요.",
-        "properNounIndices": [
-          18
-        ]
-      },
-      {
         "id": 3,
-        "english": "Each person looks around, sees silence, and assumes they're the only one who doesn't understand. The lecturer moves on… and obviously confusion increases.",
-        "korean": "각자 주위를 둘러보고, 침묵을 보고, 자기만 이해 못 한다고 생각해요. 강사는 넘어가고… 당연히 혼란은 커집니다.",
-        "properNounIndices": [
-          15
-        ]
+        "english": "Consider a classroom where the professor has just made a difficult point and asks if anyone has questions.",
+        "korean": "교수가 어려운 내용을 설명하고 질문 있냐고 묻는 교실을 생각해보세요.",
+        "properNounIndices": []
       },
       {
         "id": 4,
+        "english": "Several students are confused, but no one raises a hand.",
+        "korean": "여러 학생이 혼란스럽지만 아무도 손을 들지 않아요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '규범, 기준' mean in English?",
+      "options": [
+        "norms",
+        "hedging phrases",
+        "pluralistic ignorance",
+        "elicit"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L4_TRES_004_set2",
+    "parentSetId": "L4_TRES_004",
+    "theme": "Academic Talk — Pluralistic Ignorance",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Each person looks around, sees silence, and assumes they're the only one who doesn't understand.",
+        "korean": "각자 주위를 둘러보고, 침묵을 보고, 자기만 이해 못 한다고 생각해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "The lecturer moves on… and obviously confusion increases.",
+        "korean": "강사는 넘어가고… 당연히 혼란은 커집니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
         "english": "To break this pattern, the professor could have invited private signals like anonymous polls or asking students to fill in comment cards.",
         "korean": "이 패턴을 깨려면, 교수가 익명 투표나 코멘트 카드 작성 같은 사적 신호를 유도할 수 있었을 거예요.",
         "properNounIndices": []
       },
       {
-        "id": 5,
+        "id": 8,
         "english": "On the other hand, the students themselves could have used hedging phrases to make asking questions more comfortable — things like \"I might be missing something…\" or \"It's possible I lost track of your last point…\" Because we read silence as approval, it is always important to encourage people to voice their opinions.",
         "korean": "반면에, 학생들 스스로 '제가 뭔가 놓친 건지 모르겠지만' 같은 완화 표현을 써서 질문을 더 편하게 할 수도 있었을 거예요.",
         "properNounIndices": [
@@ -59,24 +90,29 @@
         ]
       },
       {
-        "id": 6,
-        "english": "In the end, this can prevent groups from following norms that no one actually supports. Next week, we'll practice rephrasing basic prompts like \"Any questions?\" into queries that elicit real opinions.",
-        "korean": "결국 이것은 아무도 실제로 지지하지 않는 규범을 집단이 따르는 것을 방지할 수 있어요. 다음 주에는 기본 질문을 다시 표현하는 연습을 할 거예요.",
+        "id": 9,
+        "english": "In the end, this can prevent groups from following norms that no one actually supports.",
+        "korean": "결국 이것은 아무도 실제로 지지하지 않는 규범을 집단이 따르는 것을 방지할 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 10,
+        "english": "Next week, we'll practice rephrasing basic prompts like \"Any questions?\" into queries that elicit real opinions.",
+        "korean": "다음 주에는 기본 질문을 다시 표현하는 연습을 할 거예요.",
         "properNounIndices": [
-          15,
-          23
+          8
         ]
       }
     ],
     "quiz": {
-      "question": "What does '완화 표현 (\"I might be…\", \"It's possible that…\")' mean in English?",
+      "question": "What does '끌어내다, 유도하다' mean in English?",
       "options": [
         "elicit",
-        "hedging phrases",
         "norms",
+        "hedging phrases",
         "pluralistic ignorance"
       ],
-      "answer": 1
+      "answer": 0
     }
   }
 ]

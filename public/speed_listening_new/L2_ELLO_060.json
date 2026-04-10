@@ -1,0 +1,66 @@
+[
+  {
+    "setId": "L2_ELLO_060_set1",
+    "parentSetId": "L2_ELLO_060",
+    "theme": "Mixer #86 — Forgetting Names",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'm terrible at remembering names.",
+        "korean": "이름 기억을 잘 못해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I can meet someone and forget their name five seconds later.",
+        "korean": "누군가를 만나고 5초 후에 이름을 잊어버려요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I use tricks to remember names, like repeating them right away.",
+        "korean": "이름 기억하는 요령이 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Like 'Nice to meet you, John' — it really helps.",
+        "korean": "바로 반복하는 거예요. '만나서 반갑습니다 존' 같이요 — 정말 도움이 돼요.",
+        "properNounIndices": [
+          1,
+          5
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I remember faces perfectly, but names just disappear from my brain.",
+        "korean": "얼굴은 완벽히 기억하지만 이름은 머릿속에서 사라져요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "english": "It's so embarrassing when you have to ask again.",
+        "korean": "다시 물어봐야 할 때 너무 창피해요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #14 — Side Hustle",
+        "Mixer #43 — Cold Remedy",
+        "Mixer #86 — Forgetting Names",
+        "Mixer #150 — Bad Habits"
+      ],
+      "answer": 2
+    }
+  }
+]

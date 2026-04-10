@@ -1,0 +1,47 @@
+[
+  {
+    "setId": "L5_EXT_019_set1",
+    "parentSetId": "L5_EXT_019",
+    "theme": "Sapir-Whorf Hypothesis — Does Language Shape Thought?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The Sapir-Whorf hypothesis proposes that the language we speak fundamentally shapes the way we perceive and think about the world.",
+        "korean": "사피어워프 가설은 우리가 말하는 언어가 세상을 인식하고 생각하는 방식을 근본적으로 형성한다고 제안한다.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "The Hopi people of Arizona have no grammatical tense markers for past present and future leading some linguists to argue that they experience time differently from English speakers.",
+        "korean": "애리조나의 호피족은 과거 현재 미래에 대한 문법적 시제 표시가 없다. 일부 언어학자들은 그들이 영어 화자와 다르게 시간을 경험한다고 주장한다.",
+        "properNounIndices": [
+          1,
+          4,
+          26
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Russian speakers who have separate words for light blue and dark blue can distinguish between those shades faster than English speakers can providing empirical support for a weaker version of the hypothesis.",
+        "korean": "연한 파란색과 짙은 파란색에 별도 단어가 있는 러시아어 화자들은 영어 화자보다 빠르게 그 색조를 구분할 수 있다. 이는 가설의 약한 버전에 경험적 지지를 제공한다.",
+        "properNounIndices": [
+          19
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '언어학자' mean in English?",
+      "options": [
+        "hypothesis",
+        "tense marker",
+        "linguist",
+        "distinguish"
+      ],
+      "answer": 2
+    }
+  }
+]

@@ -1,0 +1,136 @@
+[
+  {
+    "setId": "L2_ELLO_014_set1",
+    "parentSetId": "L2_ELLO_014",
+    "theme": "Mixer #43 — Cold Remedy",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "If I have a cold, I do absolutely nothing.",
+        "korean": "감기에 걸리면 저는 아무것도 안 해요.",
+        "properNounIndices": [
+          1,
+          5
+        ]
+      },
+      {
+        "id": 1,
+        "english": "My theory is that cold remedies and antibiotics don't help because your body is immune to them.",
+        "korean": "제 이론은 감기약과 항생제가 도움이 안 된다는 거예요. 몸이 그것들에 면역이 되었기 때문이죠.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "You may as well just let your body heal itself.",
+        "korean": "차라리 그냥 몸이 스스로 치유하게 하는 게 나아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "What do I do for a cold?",
+        "korean": "감기에 뭘 하냐고요?",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Well, I drink lots of fluids.",
+        "korean": "글쎄요, 수분을 많이 마셔요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '감기 치료법' mean in English?",
+      "options": [
+        "works for me",
+        "heal itself",
+        "wait it out",
+        "cold remedy"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L2_ELLO_014_set2",
+    "parentSetId": "L2_ELLO_014",
+    "theme": "Mixer #43 — Cold Remedy",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I like to eat soups, so get as much clear soup down me as possible.",
+        "korean": "수프 먹는 걸 좋아해서, 가능한 한 많은 맑은 수프를 마셔요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 6,
+        "english": "I take cayenne pepper, red pepper powder and I put it in everything I'm eating.",
+        "korean": "카이엔 고추, 빨간 고춧가루를 먹는 모든 것에 넣어요.",
+        "properNounIndices": [
+          0,
+          8,
+          13
+        ]
+      },
+      {
+        "id": 7,
+        "english": "That works for me.",
+        "korean": "그게 저한테 효과가 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "When I've got a cold, I will stay at home and my grandmother always gives me a special herb tea.",
+        "korean": "감기에 걸리면 집에 있고, 할머니가 항상 특별한 허브 차를 주세요.",
+        "properNounIndices": [
+          1,
+          5
+        ]
+      },
+      {
+        "id": 9,
+        "english": "Now I live by myself so I just make myself herb tea and massage my fingers and my hands.",
+        "korean": "지금은 혼자 사니까 그냥 허브 차를 만들고 손가락과 손을 마사지해요.",
+        "properNounIndices": [
+          1,
+          6
+        ]
+      },
+      {
+        "id": 10,
+        "english": "I think the only thing you can do with a cold is to wait it out.",
+        "korean": "감기에 할 수 있는 유일한 건 기다리는 것뿐이라고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 11,
+        "english": "I will go to bed for the weekend, drink lots of hot drinks and eat oranges for vitamin C.",
+        "korean": "주말 동안 침대에 누워 있고, 뜨거운 음료를 많이 마시고 비타민 C를 위해 오렌지를 먹어요.",
+        "properNounIndices": [
+          0,
+          18
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '감기 치료법' mean in English?",
+      "options": [
+        "cold remedy",
+        "works for me",
+        "wait it out",
+        "immune to"
+      ],
+      "answer": 0
+    }
+  }
+]

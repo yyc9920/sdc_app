@@ -1,0 +1,67 @@
+[
+  {
+    "setId": "L1_DLG_037_set1",
+    "parentSetId": "L1_DLG_037",
+    "theme": "Returning a Library Book",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'm here to return these books.",
+        "korean": "이 책들 반납하러 왔어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Let me scan them.",
+        "korean": "스캔해볼게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "One of these is three days overdue.",
+        "korean": "하나가 3일 연체됐네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Oh really? I'm sorry about that.",
+        "korean": "아 정말요? 죄송합니다.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 4,
+        "english": "There's a small late fee of one dollar fifty.",
+        "korean": "소액 연체료 1달러 50센트가 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Can I pay with my card?",
+        "korean": "카드로 낼 수 있나요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Yes of course.",
+        "korean": "네 물론이죠.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "At the Stationery Store",
+        "Returning a Library Book",
+        "Signing Up for a Class",
+        "Requesting Time Off from Work"
+      ],
+      "answer": 1
+    }
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "setId": "L5_EXT_027_set1",
+    "parentSetId": "L5_EXT_027",
+    "theme": "The Paradox of Choice",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Psychologist Barry Schwartz argues that while freedom of choice is essential to human well-being having too many options paradoxically leads to less satisfaction and more anxiety.",
+        "korean": "심리학자 배리 슈워츠는 선택의 자유가 인간의 안녕에 필수적이지만 너무 많은 선택지는 역설적으로 만족을 줄이고 불안을 늘린다고 주장한다.",
+        "properNounIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 1,
+        "english": "A famous study found that shoppers presented with twenty-four varieties of jam were far less likely to make a purchase than those offered only six options.",
+        "korean": "유명한 연구에 따르면 24가지 잼을 제시받은 쇼핑객은 6가지만 제시받은 이들보다 구매할 가능성이 훨씬 낮았다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "This has profound implications for modern life where we face an overwhelming number of decisions daily — from which streaming show to watch to which career path to pursue.",
+        "korean": "이는 현대 생활에 심오한 함의를 가진다. 매일 압도적인 수의 결정에 직면한다 — 어떤 스트리밍 쇼를 볼지부터 어떤 커리어를 추구할지까지.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '추구하다' mean in English?",
+      "options": [
+        "overwhelming",
+        "paradoxically",
+        "profound",
+        "pursue"
+      ],
+      "answer": 3
+    }
+  }
+]

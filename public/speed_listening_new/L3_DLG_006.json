@@ -1,0 +1,155 @@
+[
+  {
+    "setId": "L3_DLG_006_set1",
+    "parentSetId": "L3_DLG_006",
+    "theme": "Doctor's Office — Annual Checkup",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Good morning. I'm here for my annual checkup.",
+        "korean": "좋은 아침이에요. 연례 건강검진 때문에 왔어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Great, please have a seat.",
+        "korean": "좋습니다, 앉으세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "How have you been feeling lately?",
+        "korean": "최근에 몸 상태가 어떠세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Generally fine, but I've been getting headaches more often than usual.",
+        "korean": "대체로 괜찮은데 평소보다 두통이 자주 생겨요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 4,
+        "english": "How often? Like once a week, or more?",
+        "korean": "얼마나 자주요? 일주일에 한 번 정도, 아니면 더?",
+        "properNounIndices": [
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '두통' mean in English?",
+      "options": [
+        "headache",
+        "abnormal",
+        "blood test",
+        "follow-up"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L3_DLG_006_set2",
+    "parentSetId": "L3_DLG_006",
+    "theme": "Doctor's Office — Annual Checkup",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Maybe two or three times a week, usually in the afternoon.",
+        "korean": "일주일에 두세 번 정도, 보통 오후에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Are you getting enough sleep?",
+        "korean": "잠은 충분히 자고 있어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "And how's your stress level?",
+        "korean": "스트레스 수준은 어떠세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "To be honest, I've been working a lot lately and probably not sleeping enough.",
+        "korean": "솔직히 최근에 일을 많이 하고 아마 잠을 충분히 못 자고 있어요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 9,
+        "english": "That could definitely be the cause.",
+        "korean": "그게 확실히 원인일 수 있어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '추가 진료/후속 조치' mean in English?",
+      "options": [
+        "annual checkup",
+        "abnormal",
+        "headache",
+        "follow-up"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L3_DLG_006_set3",
+    "parentSetId": "L3_DLG_006",
+    "theme": "Doctor's Office — Annual Checkup",
+    "level": 5,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "I'd like to run some blood tests just to be safe, and I'd strongly recommend getting at least seven hours of sleep.",
+        "korean": "만약을 위해 혈액 검사를 하고 싶고 최소 7시간 수면을 강력히 권합니다.",
+        "properNounIndices": [
+          12
+        ]
+      },
+      {
+        "id": 11,
+        "english": "I'll try my best.",
+        "korean": "최선을 다할게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "Should I come back for the results?",
+        "korean": "결과를 받으러 다시 와야 하나요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 13,
+        "english": "We'll call you within a week, and if anything is abnormal we'll schedule a follow-up.",
+        "korean": "일주일 내에 전화드릴게요. 이상이 있으면 추가 진료를 잡겠습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '혈액 검사' mean in English?",
+      "options": [
+        "blood test",
+        "abnormal",
+        "headache",
+        "annual checkup"
+      ],
+      "answer": 0
+    }
+  }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "setId": "L1_DLG_033_set1",
+    "parentSetId": "L1_DLG_033",
+    "theme": "Asking About the Time",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Excuse me. What time is it?",
+        "korean": "실례합니다. 몇 시예요?",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 1,
+        "english": "It's quarter past two.",
+        "korean": "2시 15분이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Oh no! I'm late for my appointment.",
+        "korean": "이런! 약속에 늦었어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Where do you need to go?",
+        "korean": "어디 가셔야 해요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "The hospital. It's about ten minutes from here.",
+        "korean": "병원이요. 여기서 약 10분이에요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 5,
+        "english": "You should take a taxi.",
+        "korean": "택시를 타는 게 좋겠어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Good idea. Thanks!",
+        "korean": "좋은 생각이에요. 감사합니다!",
+        "properNounIndices": [
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Negotiation — Salary Discussion",
+        "Study Group — Exam Prep",
+        "Asking About the Time",
+        "Fixing a Schedule Conflict"
+      ],
+      "answer": 2
+    }
+  }
+]

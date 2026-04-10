@@ -1,0 +1,136 @@
+[
+  {
+    "setId": "L2_DLG_003_set1",
+    "parentSetId": "L2_DLG_003",
+    "theme": "Ordering at a Restaurant",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hi! Welcome in.",
+        "korean": "안녕하세요! 어서 오세요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Can I get you started with something to drink?",
+        "korean": "음료부터 시작할까요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Yes, I'll have a glass of water with lemon, please.",
+        "korean": "네, 레몬 넣은 물 한 잔 주세요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Great! Are you ready to order, or do you need a few more minutes?",
+        "korean": "좋아요! 주문하실 준비가 됐나요, 아니면 몇 분 더 필요하세요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Actually, I have a couple of questions about the menu.",
+        "korean": "사실 메뉴에 대해 몇 가지 질문이 있어요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '추천하다' mean in English?",
+      "options": [
+        "stir-fry",
+        "house dressing",
+        "vegetarian",
+        "recommend"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L2_DLG_003_set2",
+    "parentSetId": "L2_DLG_003",
+    "theme": "Ordering at a Restaurant",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "What do you recommend?",
+        "korean": "뭘 추천하세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "The salmon is excellent today.",
+        "korean": "오늘 연어가 훌륭해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "And our pasta is very popular.",
+        "korean": "그리고 파스타도 매우 인기 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "I'm vegetarian, so I'm looking for something without meat.",
+        "korean": "저는 채식주의자라서 고기 없는 걸 찾고 있어요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 9,
+        "english": "Oh, perfect! Our vegetable stir-fry is delicious, and it comes with rice.",
+        "korean": "오, 딱이네요! 야채 볶음이 맛있고 밥이 함께 나와요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 10,
+        "english": "That sounds great! I'll have that.",
+        "korean": "좋겠네요! 그걸로 할게요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 11,
+        "english": "Excellent choice! And will that be with our house dressing or vinaigrette?",
+        "korean": "훌륭한 선택이에요! 자체 드레싱으로 하실래요, 비니그렛으로 하실래요?",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 12,
+        "english": "House dressing, please.",
+        "korean": "자체 드레싱으로 주세요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '볶음 요리' mean in English?",
+      "options": [
+        "vegetarian",
+        "stir-fry",
+        "recommend",
+        "house dressing"
+      ],
+      "answer": 1
+    }
+  }
+]

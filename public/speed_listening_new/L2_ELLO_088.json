@@ -1,0 +1,61 @@
+[
+  {
+    "setId": "L2_ELLO_088_set1",
+    "parentSetId": "L2_ELLO_088",
+    "theme": "Mixer #57 — Tattoos",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I have three tattoos and I love all of them.",
+        "korean": "문신이 세 개 있고 다 좋아해요.",
+        "properNounIndices": [
+          0,
+          5
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Each one has a special meaning to me.",
+        "korean": "각각 나에게 특별한 의미가 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I would never get a tattoo, because I know I'd regret it later.",
+        "korean": "절대 문신을 안 할 거예요. 나중에 후회할 걸 아니까요.",
+        "properNounIndices": [
+          0,
+          7,
+          9
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I want to get a small one on my wrist but I'm afraid of the pain.",
+        "korean": "손목에 작은 걸 하고 싶지만 아픔이 두려워요.",
+        "properNounIndices": [
+          0,
+          11
+        ]
+      },
+      {
+        "id": 4,
+        "english": "My friend said it felt like a cat scratching you over and over.",
+        "korean": "친구가 고양이가 반복해서 할퀴는 느낌이라고 했어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '문신' mean in English?",
+      "options": [
+        "wrist",
+        "regret",
+        "scratch",
+        "tattoo"
+      ],
+      "answer": 3
+    }
+  }
+]

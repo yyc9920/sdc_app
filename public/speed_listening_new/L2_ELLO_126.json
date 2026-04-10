@@ -1,0 +1,48 @@
+[
+  {
+    "setId": "L2_ELLO_126_set1",
+    "parentSetId": "L2_ELLO_126",
+    "theme": "Mixer #19 — Language Barriers",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "When I first moved to America, I couldn't understand anyone because they spoke so fast.",
+        "korean": "처음 미국으로 갔을 때 아무도 이해할 수 없었어요. 너무 빨리 말해서요.",
+        "properNounIndices": [
+          1,
+          5,
+          6
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I tried ordering food in France with my terrible French, and the waiter just switched to English.",
+        "korean": "형편없는 프랑스어로 프랑스에서 음식을 주문하려 했더니 웨이터가 그냥 영어로 바꿨어요.",
+        "properNounIndices": [
+          0,
+          5,
+          9,
+          16
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Body language can save you when words fail, because a smile is universal.",
+        "korean": "말이 안 통할 때 보디랭귀지가 살려줄 수 있어요. 미소는 만국 공통이니까요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #29 — Spending Time Alone",
+        "Mixer #84 — Saving vs Spending",
+        "Mixer #19 — Language Barriers",
+        "Mixer #23 — Online Reviews"
+      ],
+      "answer": 2
+    }
+  }
+]

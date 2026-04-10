@@ -1,0 +1,105 @@
+[
+  {
+    "setId": "L3_DLG_040_set1",
+    "parentSetId": "L3_DLG_040",
+    "theme": "Negotiating Rent with Landlord",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I wanted to discuss the rent increase for next year.",
+        "korean": "내년 임대료 인상에 대해 논의하고 싶어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "The new rent will be ten percent higher starting from March.",
+        "korean": "3월부터 임대료가 10% 오를 예정이에요.",
+        "properNounIndices": [
+          10
+        ]
+      },
+      {
+        "id": 2,
+        "english": "That's quite a big jump.",
+        "korean": "꽤 큰 인상이네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Is there any room for negotiation?",
+        "korean": "협상의 여지가 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Maintenance costs have gone up significantly this year.",
+        "korean": "올해 유지비가 상당히 올랐어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '임대료 인상' mean in English?",
+      "options": [
+        "reliable",
+        "lease",
+        "negotiation",
+        "rent increase"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L3_DLG_040_set2",
+    "parentSetId": "L3_DLG_040",
+    "theme": "Negotiating Rent with Landlord",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I understand that but I've been a reliable tenant for four years.",
+        "korean": "이해하지만 4년간 신뢰할 수 있는 세입자였어요.",
+        "properNounIndices": [
+          0,
+          4
+        ]
+      },
+      {
+        "id": 6,
+        "english": "You're right and I appreciate that.",
+        "korean": "맞아요 감사하게 생각해요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 7,
+        "english": "I can lower it to seven percent if you sign a two-year lease.",
+        "korean": "2년 계약에 서명하시면 7%로 낮춰드릴 수 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 8,
+        "english": "That works for me.",
+        "korean": "그 정도면 괜찮아요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '임대료 인상' mean in English?",
+      "options": [
+        "rent increase",
+        "reliable",
+        "negotiation",
+        "lease"
+      ],
+      "answer": 0
+    }
+  }
+]

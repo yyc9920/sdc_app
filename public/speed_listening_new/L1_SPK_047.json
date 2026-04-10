@@ -1,0 +1,71 @@
+[
+  {
+    "setId": "L1_SPK_047_set1",
+    "parentSetId": "L1_SPK_047",
+    "theme": "The Best Age to Learn a Language",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "At what age do you think people should start learning a foreign language?",
+        "korean": "외국어를 몇 살에 배우기 시작해야 한다고 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your reasoning.",
+        "korean": "근거를 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I think children should start learning a foreign language as early as possible — ideally around age four or five.",
+        "korean": "외국어를 가능한 한 빨리 배우기 시작해야 해요 — 이상적으로 4~5세 정도요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Research clearly shows that young children's brains are wired to absorb languages naturally in a way that adults simply cannot replicate.",
+        "korean": "연구에 따르면 어린 아이의 뇌는 성인이 재현할 수 없는 방식으로 자연스럽게 언어를 흡수하도록 설계되어 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Children who start early develop native-like pronunciation and grammar intuition that late starters rarely achieve.",
+        "korean": "일찍 시작한 아이들은 늦게 시작한 사람이 거의 달성하지 못하는 원어민 같은 발음과 문법 직관을 발달시켜요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "That said it's never too late to learn — adults can still become highly proficient with the right methods and motivation.",
+        "korean": "그렇긴 해도 배우기에 너무 늦은 건 없어요 — 성인도 적절한 방법과 동기가 있으면 높은 수준에 도달할 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "that said",
+        "korean": "그렇긴 해도",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "it's never too late",
+        "korean": "너무 늦은 건 없다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "The Best Age to Learn a Language",
+        "Working in a Team vs. Alone",
+        "News from Social Media vs. Traditional Media",
+        "A Meaningful Tradition"
+      ],
+      "answer": 0
+    }
+  }
+]

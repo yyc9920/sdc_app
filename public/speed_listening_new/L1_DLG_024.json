@@ -1,0 +1,63 @@
+[
+  {
+    "setId": "L1_DLG_024_set1",
+    "parentSetId": "L1_DLG_024",
+    "theme": "At the Pet Store",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'm looking for food for my hamster.",
+        "korean": "햄스터 먹이를 찾고 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "What kind of hamster do you have?",
+        "korean": "어떤 종류의 햄스터를 키우세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "A dwarf hamster.",
+        "korean": "왜소 햄스터요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "This food mix is perfect for small hamsters.",
+        "korean": "이 혼합 먹이가 작은 햄스터에게 딱 좋아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "How much is it?",
+        "korean": "얼마예요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Eight dollars for the small bag.",
+        "korean": "작은 봉지가 8달러예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "I'll take one please.",
+        "korean": "하나 주세요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "At the Pet Store",
+        "Signing Up for a Cooking Class",
+        "Talking About Weekend Plans",
+        "Library Late Fees"
+      ],
+      "answer": 0
+    }
+  }
+]

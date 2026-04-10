@@ -1,0 +1,55 @@
+[
+  {
+    "setId": "L2_ELLO_113_set1",
+    "parentSetId": "L2_ELLO_113",
+    "theme": "Mixer #32 — Personal Space",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I need a lot of personal space.",
+        "korean": "개인 공간이 많이 필요해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "When people stand too close to me, it makes me really uncomfortable.",
+        "korean": "사람들이 너무 가까이 서면 정말 불편해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "In my culture, we stand very close when talking and it's completely normal.",
+        "korean": "우리 문화에서 말할 때 매우 가까이 서고 완전히 정상이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "If you stand too far away, it seems cold.",
+        "korean": "너무 멀리 서면 차갑게 보여요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "On crowded trains, you have no personal space at all, and I'll never get used to it.",
+        "korean": "붐비는 기차에서는 개인 공간이 전혀 없고 절대 익숙해지지 않을 거예요.",
+        "properNounIndices": [
+          11
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #29 — Spending Time Alone",
+        "Mixer #40 — Money Habits",
+        "Mixer #44 — Streaming Services",
+        "Mixer #32 — Personal Space"
+      ],
+      "answer": 3
+    }
+  }
+]

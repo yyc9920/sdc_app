@@ -1,0 +1,65 @@
+[
+  {
+    "setId": "L1_DLG_015_set1",
+    "parentSetId": "L1_DLG_015",
+    "theme": "Sharing Snacks",
+    "level": 2,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you want some chips?",
+        "korean": "과자 좀 먹을래요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Sure thanks!",
+        "korean": "네 고마워요!",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "What flavor is it?",
+        "korean": "무슨 맛이에요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Barbecue.",
+        "korean": "바비큐요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "That's my favorite!",
+        "korean": "내가 제일 좋아하는 거예요!",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "I also have chocolate if you want some later.",
+        "korean": "나중에 먹고 싶으면 초콜릿도 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 6,
+        "english": "You always have the best snacks.",
+        "korean": "넌 항상 간식이 최고예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Annual Budget Meeting",
+        "Sharing Snacks",
+        "Cross-Team Collaboration Meeting",
+        "Airport Check-in — Baggage Issue"
+      ],
+      "answer": 1
+    }
+  }
+]

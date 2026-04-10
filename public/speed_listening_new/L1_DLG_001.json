@@ -1,0 +1,100 @@
+[
+  {
+    "setId": "L1_DLG_001_set1",
+    "parentSetId": "L1_DLG_001",
+    "theme": "At the Ice Cream Shop",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hello! What flavor would you like?",
+        "korean": "안녕하세요! 무슨 맛을 원하세요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Can I try the strawberry one?",
+        "korean": "딸기 맛 맛볼 수 있나요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Sure, here you go.",
+        "korean": "네 여기요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Mmm that's really good.",
+        "korean": "음 정말 맛있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I'll have one scoop of strawberry please.",
+        "korean": "딸기 한 스쿱 주세요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "At the Laundromat",
+        "At the Ice Cream Shop",
+        "Booking a Haircut",
+        "Checking Out of a Hotel"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L1_DLG_001_set2",
+    "parentSetId": "L1_DLG_001",
+    "theme": "At the Ice Cream Shop",
+    "level": 2,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Cup or cone?",
+        "korean": "컵이요 아니면 콘이요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Cone please.",
+        "korean": "콘이요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "That's three dollars.",
+        "korean": "3달러입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Here you are. Thank you!",
+        "korean": "여기요. 감사합니다!",
+        "properNounIndices": [
+          3
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Ordering Coffee for the Office",
+        "At the Ice Cream Shop",
+        "Asking to Borrow Something",
+        "At the Vending Machine"
+      ],
+      "answer": 1
+    }
+  }
+]

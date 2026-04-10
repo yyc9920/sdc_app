@@ -1,0 +1,48 @@
+[
+  {
+    "setId": "L2_ELLO_117_set1",
+    "parentSetId": "L2_ELLO_117",
+    "theme": "Mixer #28 — Moving to a New City",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Moving to a new city is exciting but terrifying at the same time, because you don't know anyone.",
+        "korean": "새 도시로 이사하는 건 설레지만 동시에 무서워요. 아는 사람이 없으니까요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I joined a local sports club to meet people when I moved.",
+        "korean": "이사했을 때 사람들을 만나려고 지역 스포츠 클럽에 가입했어요.",
+        "properNounIndices": [
+          0,
+          10
+        ]
+      },
+      {
+        "id": 2,
+        "english": "It was the best way to make friends quickly.",
+        "korean": "빨리 친구를 사귀는 최고의 방법이었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "The hardest part of moving to a new city was finding a good dentist, a good hairdresser, and a good restaurant.",
+        "korean": "새 도시 이사에서 가장 힘든 건 좋은 치과 좋은 미용실 좋은 식당을 찾는 거였어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #28 — Moving to a New City",
+        "Mixer #52 — Texting vs Calling",
+        "Mixer #146 — Cheating on Tests",
+        "Mixer #48 — Hometown Changes"
+      ],
+      "answer": 0
+    }
+  }
+]

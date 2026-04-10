@@ -1,0 +1,109 @@
+[
+  {
+    "setId": "L3_DLG_025_set1",
+    "parentSetId": "L3_DLG_025",
+    "theme": "Coworker — Lunch Plans",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hey, are you free for lunch today?",
+        "korean": "이봐요. 오늘 점심 시간 돼요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I think so, but I have a meeting at one so I need to be back by twelve fifty.",
+        "korean": "될 것 같은데 1시에 회의가 있어서 12시 50분까지 돌아와야 해요.",
+        "properNounIndices": [
+          0,
+          4,
+          11
+        ]
+      },
+      {
+        "id": 2,
+        "english": "That new Thai place around the corner is supposed to be really good.",
+        "korean": "모퉁이에 있는 새 태국 음식점이 정말 맛있다고 해요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I've been wanting to try it.",
+        "korean": "거기 가보고 싶었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Do they take reservations or is it walk-in only?",
+        "korean": "예약을 받아요 아니면 현장 방문만 돼요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Business Negotiation — Pricing",
+        "Coworker — Lunch Plans",
+        "Bank — Opening an Account",
+        "Returning Online Order"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L3_DLG_025_set2",
+    "parentSetId": "L3_DLG_025",
+    "theme": "Coworker — Lunch Plans",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I'm pretty sure it's walk-in only.",
+        "korean": "현장 방문만인 걸로 알아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "If we leave at eleven forty-five we should be able to beat the lunch rush.",
+        "korean": "11시 45분에 나가면 점심 혼잡 시간 전에 갈 수 있을 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Sounds good.",
+        "korean": "좋아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Should we invite anyone else?",
+        "korean": "다른 사람도 초대할까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "I already asked Jason and he said he's in.",
+        "korean": "이미 제이슨한테 물었는데 간다고 했어요.",
+        "properNounIndices": [
+          0,
+          3
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Coworker — Lunch Plans",
+        "Parent-Teacher Conference",
+        "Academic Consultation — Thesis Direction",
+        "Returning a Library Book Late"
+      ],
+      "answer": 0
+    }
+  }
+]

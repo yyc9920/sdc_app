@@ -1,0 +1,49 @@
+[
+  {
+    "setId": "L2_EXT_035_set1",
+    "parentSetId": "L2_EXT_035",
+    "theme": "Korean Convenience Store Culture",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Korean convenience stores are like small supermarkets that never close.",
+        "korean": "한국 편의점은 절대 닫지 않는 작은 슈퍼마켓 같아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "You can find everything from triangle kimbap and instant ramen to phone chargers and concert tickets.",
+        "korean": "삼각김밥과 인스턴트 라면에서 폰 충전기와 콘서트 티켓까지 모든 것을 찾을 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Many Korean convenience stores also have small eating areas where customers can sit and enjoy their food.",
+        "korean": "한국 편의점 많은 곳에는 고객이 앉아서 음식을 즐길 수 있는 작은 식사 공간도 있어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 3,
+        "english": "For many young Koreans late-night convenience store runs are a beloved part of everyday life.",
+        "korean": "많은 한국 젊은이들에게 늦은 밤 편의점 방문은 일상의 사랑받는 부분이에요.",
+        "properNounIndices": [
+          3
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '인스턴트 라면' mean in English?",
+      "options": [
+        "triangle kimbap",
+        "beloved",
+        "instant ramen",
+        "convenience store"
+      ],
+      "answer": 2
+    }
+  }
+]

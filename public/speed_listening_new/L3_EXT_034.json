@@ -1,0 +1,51 @@
+[
+  {
+    "setId": "L3_EXT_034_set1",
+    "parentSetId": "L3_EXT_034",
+    "theme": "The Growth Mindset",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Psychologist Carol Dweck's research on mindset has transformed how we think about intelligence and talent.",
+        "korean": "심리학자 캐럴 드웩의 마인드셋 연구가 지능과 재능에 대한 우리의 사고방식을 변화시켰다.",
+        "properNounIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 1,
+        "english": "People with a fixed mindset believe their abilities are set in stone while those with a growth mindset believe they can improve through effort and learning.",
+        "korean": "고정 마인드셋을 가진 사람은 능력이 불변이라고 믿는 반면 성장 마인드셋을 가진 사람은 노력과 학습으로 향상할 수 있다고 믿는다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The key difference is how they respond to failure — growth mindset individuals see mistakes as learning opportunities while fixed mindset individuals see them as proof of their limitations.",
+        "korean": "핵심 차이는 실패에 대한 반응이다. 성장 마인드셋은 실수를 학습 기회로 보고 고정 마인드셋은 한계의 증거로 본다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Simply changing the phrase from I can't do this to I can't do this yet activates a completely different neural pathway and motivates continued effort.",
+        "korean": "문구를 '못해'에서 '아직 못해'로 바꾸는 것만으로도 완전히 다른 신경 경로가 활성화되고 지속적 노력이 동기 부여된다.",
+        "properNounIndices": [
+          5,
+          10
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '마인드셋/사고방식' mean in English?",
+      "options": [
+        "fixed",
+        "mindset",
+        "limitation",
+        "neural pathway"
+      ],
+      "answer": 1
+    }
+  }
+]

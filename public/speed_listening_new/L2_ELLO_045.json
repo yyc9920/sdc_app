@@ -1,0 +1,63 @@
+[
+  {
+    "setId": "L2_ELLO_045_set1",
+    "parentSetId": "L2_ELLO_045",
+    "theme": "Mixer #101 — First Impression",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "First impressions are really important, I think.",
+        "korean": "첫인상이 정말 중요하다고 생각해요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 1,
+        "english": "You only get one chance to make a good one.",
+        "korean": "좋은 첫인상을 만들 기회는 한 번뿐이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I try not to judge people by their first impression.",
+        "korean": "첫인상으로 사람을 판단하지 않으려 해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Some people are just shy at first but really cool once you get to know them.",
+        "korean": "처음에 수줍어하지만 알고 보면 정말 멋진 사람도 있거든요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Honestly, I form opinions about people within the first five seconds.",
+        "korean": "솔직히 처음 5초 안에 사람에 대한 의견이 생겨요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 5,
+        "english": "It's not fair, but it happens automatically.",
+        "korean": "공평하지 않지만 자동으로 일어나요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #79 — Sleeping Habits",
+        "Mixer #83 — Advice to Younger Self",
+        "Mixer #17 — Introductions",
+        "Mixer #101 — First Impression"
+      ],
+      "answer": 3
+    }
+  }
+]

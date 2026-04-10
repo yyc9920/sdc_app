@@ -1,0 +1,69 @@
+[
+  {
+    "setId": "L2_ELLO_021_set1",
+    "parentSetId": "L2_ELLO_021",
+    "theme": "Mixer #145 — Field Trips",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My school didn't have field trips, but there were events like homecoming, which is the first major sports game of the year.",
+        "korean": "우리 학교는 현장학습이 없었지만 홈커밍 같은 행사가 있었어요. 그해 첫 주요 스포츠 경기요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "The only school field trip I really remember is going to a farm when I was in second grade.",
+        "korean": "정말 기억나는 유일한 현장학습은 2학년 때 농장에 간 거예요.",
+        "properNounIndices": [
+          5,
+          14
+        ]
+      },
+      {
+        "id": 2,
+        "english": "We got to pet a lot of animals, which I liked.",
+        "korean": "많은 동물을 만져볼 수 있어서 좋았어요.",
+        "properNounIndices": [
+          9
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I do remember taking a school field trip in junior high.",
+        "korean": "중학교에서 현장학습 간 건 기억나요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "We went to the Statue of Liberty and climbed all the way to the top.",
+        "korean": "자유의 여신상에 가서 꼭대기까지 올라갔어요.",
+        "properNounIndices": [
+          4,
+          6
+        ]
+      },
+      {
+        "id": 5,
+        "english": "My favorite school trip was when we went to a Nobel prize winner's laboratory, and he demonstrated the experiment that got him the prize.",
+        "korean": "가장 좋아하는 수학여행은 노벨상 수상자의 연구실에 갔을 때예요. 상을 받게 한 실험을 시연해줬어요.",
+        "properNounIndices": [
+          10
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #81 — Morning Person or Night Owl",
+        "Mixer #79 — Sleeping Habits",
+        "Mixer #145 — Field Trips",
+        "Mixer #8 — Dream Job"
+      ],
+      "answer": 2
+    }
+  }
+]

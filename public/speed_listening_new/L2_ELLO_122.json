@@ -1,0 +1,62 @@
+[
+  {
+    "setId": "L2_ELLO_122_set1",
+    "parentSetId": "L2_ELLO_122",
+    "theme": "Mixer #23 — Online Reviews",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I always check reviews before buying anything online.",
+        "korean": "온라인으로 뭘 사기 전에 항상 리뷰를 확인해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "If it has less than four stars, I won't buy it.",
+        "korean": "별 4개 미만이면 안 사요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I don't trust online reviews anymore because too many of them are fake.",
+        "korean": "온라인 리뷰를 더 이상 안 믿어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I prefer asking friends for recommendations.",
+        "korean": "가짜가 너무 많아서요. 친구에게 추천을 물어보는 게 나아요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I always leave reviews after a good experience, because I want to support small businesses.",
+        "korean": "좋은 경험 후에 항상 리뷰를 남겨요. 작은 사업체를 지지하고 싶어서요.",
+        "properNounIndices": [
+          0,
+          9
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #148 — Favorite Season",
+        "Mixer #25 — Morning Routine",
+        "Mixer #23 — Online Reviews",
+        "Mixer #97 — Guilty Pleasure"
+      ],
+      "answer": 2
+    }
+  }
+]

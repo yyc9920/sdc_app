@@ -1,0 +1,119 @@
+[
+  {
+    "setId": "L2_DLG_012_set1",
+    "parentSetId": "L2_DLG_012",
+    "theme": "Taxi Ride",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hi, can you take me to Gangnam Station?",
+        "korean": "안녕하세요. 강남역까지 가주실 수 있나요?",
+        "properNounIndices": [
+          6,
+          7
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Sure. Hop in.",
+        "korean": "네. 타세요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
+        "english": "About how long will it take?",
+        "korean": "대략 얼마나 걸릴까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "It depends on traffic.",
+        "korean": "교통 상황에 따라 달라요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Probably about twenty minutes at this time of day.",
+        "korean": "이 시간대면 아마 약 20분이요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '내려주다' mean in English?",
+      "options": [
+        "drop off",
+        "fare",
+        "traffic",
+        "hop in"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_DLG_012_set2",
+    "parentSetId": "L2_DLG_012",
+    "theme": "Taxi Ride",
+    "level": 2,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Can you drop me off at exit number three?",
+        "korean": "3번 출구에서 내려주실 수 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "No problem.",
+        "korean": "문제없어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Here we are.",
+        "korean": "다 왔습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "How much is the fare?",
+        "korean": "요금이 얼마예요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "It's nine thousand won.",
+        "korean": "9천 원입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 10,
+        "english": "Can I pay with a card?",
+        "korean": "카드로 결제할 수 있나요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 11,
+        "english": "Yes, just tap here.",
+        "korean": "네 여기 태그하세요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '내려주다' mean in English?",
+      "options": [
+        "hop in",
+        "fare",
+        "traffic",
+        "drop off"
+      ],
+      "answer": 3
+    }
+  }
+]

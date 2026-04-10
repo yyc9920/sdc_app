@@ -1,0 +1,58 @@
+[
+  {
+    "setId": "L1_EXT_018_set1",
+    "parentSetId": "L1_EXT_018",
+    "theme": "My School Life",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I am a high school student in Seoul.",
+        "korean": "나는 서울의 고등학생이에요.",
+        "properNounIndices": [
+          0,
+          7
+        ]
+      },
+      {
+        "id": 1,
+        "english": "School starts at eight thirty and ends at four.",
+        "korean": "학교는 8시 30분에 시작해서 4시에 끝나요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "My favorite subject is science because the experiments are fun.",
+        "korean": "좋아하는 과목은 과학이에요. 실험이 재미있어서요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "After school I go to a study café with my friends.",
+        "korean": "방과 후에 친구들과 스터디 카페에 가요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I wish we had more free time during the day.",
+        "korean": "낮에 자유 시간이 더 있었으면 좋겠어요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "First Day at a New Job",
+        "Korean Culture Shock",
+        "Weekend Plans",
+        "My School Life"
+      ],
+      "answer": 3
+    }
+  }
+]

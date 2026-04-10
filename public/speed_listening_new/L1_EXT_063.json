@@ -1,0 +1,63 @@
+[
+  {
+    "setId": "L1_EXT_063_set1",
+    "parentSetId": "L1_EXT_063",
+    "theme": "My Neighborhood Store",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "There is a small store at the corner of my street.",
+        "korean": "우리 길 모퉁이에 작은 가게가 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "The owner is an old man named Mr.",
+        "korean": "주인은 이 선생님이라는 어르신이에요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Lee.",
+        "korean": "어르신이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "He knows everyone in the neighborhood.",
+        "korean": "동네 사람들을 다 아세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I go there to buy milk and bread for my mom.",
+        "korean": "엄마 심부름으로 우유와 빵을 사러 가요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "english": "He always gives me a free candy when I visit.",
+        "korean": "갈 때마다 항상 사탕을 하나 주세요.",
+        "properNounIndices": [
+          8
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Korean Culture Shock",
+        "Visiting the Dentist",
+        "My Neighborhood Store",
+        "My Alarm Clock"
+      ],
+      "answer": 2
+    }
+  }
+]

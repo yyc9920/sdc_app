@@ -1,0 +1,78 @@
+[
+  {
+    "setId": "L1_SPK_078B_set1",
+    "parentSetId": "L1_SPK_078B",
+    "theme": "Describe a time when you overcame a fear.",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Describe a time when you overcame a fear.",
+        "korean": "두려움을 극복한 때를 묘사하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain how you did it and what you learned.",
+        "korean": "어떻게 했고 무엇을 배웠는지 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I used to have a terrible fear of public speaking — even presenting in front of five classmates made my hands shake.",
+        "korean": "대중 앞 말하기에 극심한 두려움이 있었어요 — 반 친구 5명 앞에서 발표해도 손이 떨렸어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I decided to join a public speaking club where I had to give a short speech every week.",
+        "korean": "매주 짧은 연설을 해야 하는 스피킹 클럽에 가입하기로 결심했어요.",
+        "properNounIndices": [
+          0,
+          9
+        ]
+      },
+      {
+        "id": 4,
+        "english": "The first few times were absolutely terrifying but I noticed that each time it got a little easier.",
+        "korean": "처음 몇 번은 완전히 무서웠지만 매번 조금씩 쉬워진다는 걸 알아챘어요.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 5,
+        "english": "After six months I gave a presentation at a company conference in front of two hundred people and actually enjoyed it.",
+        "korean": "6개월 후 200명 앞에서 회사 컨퍼런스 발표를 했고 실제로 즐겼어요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 6,
+        "english": "This experience taught me that courage isn't the absence of fear — it's taking action despite feeling afraid.",
+        "korean": "이 경험은 용기가 두려움이 없는 게 아니라 두려움에도 불구하고 행동하는 것이라고 가르쳐줬어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "despite feeling afraid",
+        "korean": "두려움에도 불구하고",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Describe a time when you overcame a fear.",
+        "Your Favorite Season and Why",
+        "Attending a Large vs. Small School",
+        "Giving Back to Your Community"
+      ],
+      "answer": 0
+    }
+  }
+]

@@ -40,14 +40,14 @@
       }
     ],
     "quiz": {
-      "question": "What does '생물이 화학반응을 통해 빛을 내는 현상' mean in English?",
+      "question": "What does '빛나는 미끼로 먹이를 유인하는 심해 물고기' mean in English?",
       "options": [
-        "colonizing",
-        "bioluminescence",
-        "luciferase",
-        "incandescent"
+        "incandescent",
+        "luciferin",
+        "lure",
+        "anglerfish"
       ],
-      "answer": 1
+      "answer": 3
     }
   },
   {
@@ -89,14 +89,14 @@
       }
     ],
     "quiz": {
-      "question": "What does '생물이 화학반응을 통해 빛을 내는 현상' mean in English?",
+      "question": "What does '먹이를 끌어들이기 위한 유인 수단' mean in English?",
       "options": [
-        "anglerfish",
-        "bioluminescence",
+        "lure",
         "luciferase",
-        "luciferin"
+        "anglerfish",
+        "colonizing"
       ],
-      "answer": 1
+      "answer": 0
     }
   },
   {
@@ -138,14 +138,14 @@
       }
     ],
     "quiz": {
-      "question": "What does '열에 의해 빛을 내는' mean in English?",
+      "question": "What does '먹이를 끌어들이기 위한 유인 수단' mean in English?",
       "options": [
-        "incandescent",
         "colonizing",
-        "luciferase",
-        "luciferin"
+        "incandescent",
+        "luciferin",
+        "lure"
       ],
-      "answer": 0
+      "answer": 3
     }
   },
   {
@@ -187,14 +187,14 @@
       }
     ],
     "quiz": {
-      "question": "What does '루시페린의 산화 반응을 촉매하는 효소' mean in English?",
+      "question": "What does '빛나는 미끼로 먹이를 유인하는 심해 물고기' mean in English?",
       "options": [
+        "bioluminescence",
         "lure",
         "anglerfish",
-        "counterillumination",
-        "luciferase"
+        "luciferin"
       ],
-      "answer": 3
+      "answer": 2
     }
   },
   {
@@ -236,14 +236,14 @@
       }
     ],
     "quiz": {
-      "question": "What does '발광 화학반응에 관여하는 분자' mean in English?",
+      "question": "What does '빛나는 미끼로 먹이를 유인하는 심해 물고기' mean in English?",
       "options": [
-        "counterillumination",
         "luciferin",
-        "lure",
-        "colonizing"
+        "bioluminescence",
+        "anglerfish",
+        "incandescent"
       ],
-      "answer": 1
+      "answer": 2
     }
   },
   {
@@ -287,12 +287,12 @@
     "quiz": {
       "question": "What does '빛나는 미끼로 먹이를 유인하는 심해 물고기' mean in English?",
       "options": [
-        "bioluminescence",
-        "incandescent",
-        "counterillumination",
-        "anglerfish"
+        "anglerfish",
+        "luciferin",
+        "colonizing",
+        "counterillumination"
       ],
-      "answer": 3
+      "answer": 0
     }
   },
   {
@@ -328,14 +328,14 @@
       }
     ],
     "quiz": {
-      "question": "What does '발광 화학반응에 관여하는 분자' mean in English?",
+      "question": "What does '새로운 환경에 정착하여 번식하는' mean in English?",
       "options": [
-        "anglerfish",
         "colonizing",
-        "luciferin",
-        "lure"
+        "anglerfish",
+        "lure",
+        "luciferin"
       ],
-      "answer": 2
+      "answer": 0
     }
   }
 ]

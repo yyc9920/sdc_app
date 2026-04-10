@@ -1,0 +1,43 @@
+[
+  {
+    "setId": "L2_ELLO_112_set1",
+    "parentSetId": "L2_ELLO_112",
+    "theme": "Mixer #33 — Embarrassing Parents",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My mom always tells embarrassing stories about me to my friends, especially baby stories.",
+        "korean": "엄마가 항상 친구들에게 내 창피한 이야기를 해요. 특히 아기 때 이야기요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "My dad dances in public and it's so cringy, but I secretly think it's kind of cute.",
+        "korean": "아빠가 공공장소에서 춤을 추고 너무 민망하지만 은근히 귀엽다고 생각해요.",
+        "properNounIndices": [
+          10
+        ]
+      },
+      {
+        "id": 2,
+        "english": "My parents call me by my childhood nickname in front of everyone, and I'm thirty years old.",
+        "korean": "부모님이 모두 앞에서 어릴 때 별명으로 불러요. 나는 30살인데요.",
+        "properNounIndices": [
+          13
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #92 — Collecting Things",
+        "Mixer #101 — First Impression",
+        "Mixer #98 — Moving House",
+        "Mixer #33 — Embarrassing Parents"
+      ],
+      "answer": 3
+    }
+  }
+]

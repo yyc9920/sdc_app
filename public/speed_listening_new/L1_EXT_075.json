@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L1_EXT_075_set1",
+    "parentSetId": "L1_EXT_075",
+    "theme": "My Pencil Case",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I have a cute pencil case shaped like a cat.",
+        "korean": "고양이 모양의 귀여운 필통이 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Inside I have three pencils two pens an eraser and a ruler.",
+        "korean": "안에 연필 세 자루 펜 두 자루 지우개와 자가 있어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I also have some colorful highlighters.",
+        "korean": "색색의 형광펜도 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "My favorite pen is a blue gel pen that writes very smoothly.",
+        "korean": "가장 좋아하는 펜은 매우 부드럽게 써지는 파란 젤 펜이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I take good care of my pencil case because my best friend gave it to me.",
+        "korean": "가장 친한 친구가 줘서 필통을 잘 관리해요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '필통' mean in English?",
+      "options": [
+        "ruler",
+        "take care of",
+        "pencil case",
+        "highlighter"
+      ],
+      "answer": 2
+    }
+  }
+]

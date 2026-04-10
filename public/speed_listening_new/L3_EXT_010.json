@@ -8,78 +8,149 @@
     "sentences": [
       {
         "id": 0,
-        "english": "This is an emergency broadcast from the National Weather Service. A tornado warning has been issued for the following counties: Davidson, Williamson, and Rutherford.",
-        "korean": "국가기상청의 긴급 방송입니다. 토네이도 경보가 발령되었습니다.",
+        "english": "This is an emergency broadcast from the National Weather Service.",
+        "korean": "국가기상청의 긴급 방송입니다.",
         "properNounIndices": [
           7,
           8,
-          9,
-          10,
-          20,
-          21,
-          23
+          9
         ]
       },
       {
         "id": 1,
-        "english": "This warning is in effect until 8:45 p.m. Central Time. Doppler radar has detected a severe thunderstorm capable of producing a tornado.",
-        "korean": "이 경보는 중부시간 오후 8시 45분까지 유효합니다. 도플러 레이더가 토네이도를 생성할 수 있는 심한 뇌우를 감지했습니다.",
+        "english": "A tornado warning has been issued for the following counties: Davidson, Williamson, and Rutherford.",
+        "korean": "토네이도 경보가 발령되었습니다.",
         "properNounIndices": [
-          8,
-          9,
-          10
+          10,
+          11,
+          13
         ]
       },
       {
         "id": 2,
-        "english": "The storm is currently located near the town of Franklin, moving northeast at approximately fifty miles per hour. Residents in the path of this storm should take immediate shelter.",
-        "korean": "폭풍은 현재 프랭클린 마을 근처에 있으며 시속 약 50마일로 북동쪽으로 이동 중입니다.",
-        "properNounIndices": [
-          9,
-          18
-        ]
+        "english": "This warning is in effect until 8:45 p.m.",
+        "korean": "이 경보는 중부시간 오후 8시 45분까지 유효합니다.",
+        "properNounIndices": []
       },
       {
         "id": 3,
-        "english": "If you are indoors, move to the lowest floor of your building. Go to an interior room away from windows — a bathroom, closet, or hallway is ideal.",
-        "korean": "실내에 계시면 건물의 가장 낮은 층으로 이동하세요. 창문에서 떨어진 내부 방으로 가세요.",
+        "english": "Central Time. Doppler radar has detected a severe thunderstorm capable of producing a tornado.",
+        "korean": "도플러 레이더가 토네이도를 생성할 수 있는 심한 뇌우를 감지했습니다.",
         "properNounIndices": [
-          12
+          1,
+          2
         ]
       },
       {
         "id": 4,
-        "english": "Cover yourself with a mattress, heavy blankets, or cushions to protect against flying debris. If you are driving, do not try to outrun the tornado.",
-        "korean": "매트리스, 두꺼운 담요, 쿠션으로 몸을 덮어 날아오는 파편으로부터 보호하세요.",
+        "english": "The storm is currently located near the town of Franklin, moving northeast at approximately fifty miles per hour.",
+        "korean": "폭풍은 현재 프랭클린 마을 근처에 있으며 시속 약 50마일로 북동쪽으로 이동 중입니다.",
         "properNounIndices": [
-          14
+          9
         ]
-      },
+      }
+    ],
+    "quiz": {
+      "question": "What does '즉시 대피하다' mean in English?",
+      "options": [
+        "take immediate shelter",
+        "low-lying area",
+        "in effect",
+        "Doppler radar"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L3_EXT_010_set2",
+    "parentSetId": "L3_EXT_010",
+    "theme": "Emergency Broadcast",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
       {
         "id": 5,
-        "english": "Pull over, leave your vehicle, and lie flat in the nearest ditch or low-lying area, covering your head with your arms. Do not wait to see the tornado before taking action.",
-        "korean": "차를 세우고, 차에서 내려 가장 가까운 도랑이나 낮은 지대에 납작 엎드리세요. 팔로 머리를 감싸세요.",
-        "properNounIndices": [
-          21
-        ]
+        "english": "Residents in the path of this storm should take immediate shelter.",
+        "korean": "시속 약 50마일로 북동쪽으로 이동 중입니다",
+        "properNounIndices": []
       },
       {
         "id": 6,
-        "english": "Many tornadoes are hidden by rain or darkness. Take shelter now. Stay tuned to this station for further updates.",
-        "korean": "많은 토네이도가 비나 어둠에 가려져 있습니다. 지금 대피하세요. 추가 소식은 이 방송을 계속 청취하세요.",
-        "properNounIndices": [
-          8,
-          11
-        ]
+        "english": "If you are indoors, move to the lowest floor of your building.",
+        "korean": "실내에 계시면 건물의 가장 낮은 층으로 이동하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Go to an interior room away from windows — a bathroom, closet, or hallway is ideal.",
+        "korean": "창문에서 떨어진 내부 방으로 가세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Cover yourself with a mattress, heavy blankets, or cushions to protect against flying debris.",
+        "korean": "매트리스, 두꺼운 담요, 쿠션으로 몸을 덮어 날아오는 파편으로부터 보호하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "If you are driving, do not try to outrun the tornado.",
+        "korean": "몸을 덮어 날아오는 파편으로부터 보호하세요",
+        "properNounIndices": []
       }
     ],
     "quiz": {
       "question": "What does '도플러 레이더' mean in English?",
       "options": [
+        "Doppler radar",
         "take immediate shelter",
         "low-lying area",
-        "Doppler radar",
         "outrun"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L3_EXT_010_set3",
+    "parentSetId": "L3_EXT_010",
+    "theme": "Emergency Broadcast",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "Pull over, leave your vehicle, and lie flat in the nearest ditch or low-lying area, covering your head with your arms.",
+        "korean": "차를 세우고, 차에서 내려 가장 가까운 도랑이나 낮은 지대에 납작 엎드리세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "Do not wait to see the tornado before taking action.",
+        "korean": "팔로 머리를 감싸세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "Many tornadoes are hidden by rain or darkness.",
+        "korean": "많은 토네이도가 비나 어둠에 가려져 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
+        "english": "Take shelter now. Stay tuned to this station for further updates.",
+        "korean": "지금 대피하세요. 추가 소식은 이 방송을 계속 청취하세요.",
+        "properNounIndices": [
+          3
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '토네이도 경보' mean in English?",
+      "options": [
+        "interior room",
+        "take immediate shelter",
+        "tornado warning",
+        "Doppler radar"
       ],
       "answer": 2
     }

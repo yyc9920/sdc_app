@@ -1,0 +1,96 @@
+[
+  {
+    "setId": "L1_SPK_056_set1",
+    "parentSetId": "L1_SPK_056",
+    "theme": "Attending a Large vs. Small School",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Would you prefer attending a large university with many students or a small college with fewer students?",
+        "korean": "학생이 많은 대형 대학과 적은 소형 대학 중 어느 쪽을 선호합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your choice.",
+        "korean": "선택을 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I would prefer attending a small college.",
+        "korean": "소형 대학에 다니는 것을 선호하겠어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "First smaller class sizes mean more individual attention from professors.",
+        "korean": "첫째 적은 수업 규모는 교수로부터 더 많은 개별 관심을 의미해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "In a lecture hall of three hundred students you're just a face in the crowd but in a class of twenty the professor actually knows your name.",
+        "korean": "300명의 강의실에서는 군중 속 얼굴에 불과하지만 20명 수업에서는 교수가 실제로 이름을 알아요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Living with a Roommate vs. Living Alone",
+        "Attending a Large vs. Small School",
+        "Should Homework Be Abolished",
+        "Longer Vacations vs. Shorter Frequent Breaks"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L1_SPK_056_set2",
+    "parentSetId": "L1_SPK_056",
+    "theme": "Attending a Large vs. Small School",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Second the sense of community at a small school is much stronger.",
+        "korean": "둘째 소형 학교의 공동체 의식이 훨씬 강해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "You form deeper friendships and those connections often last well beyond graduation.",
+        "korean": "더 깊은 우정을 쌓고 그 인연은 종종 졸업 후에도 오래 지속돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "a face in the crowd",
+        "korean": "군중 속 한 명",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "beyond graduation",
+        "korean": "졸업 후에도",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "The Best Invention in History",
+        "Importance of Sleep",
+        "The Value of Volunteering",
+        "Attending a Large vs. Small School"
+      ],
+      "answer": 3
+    }
+  }
+]

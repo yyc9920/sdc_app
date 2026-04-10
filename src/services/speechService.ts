@@ -210,7 +210,6 @@ function createWebService(): SpeechService {
 
 export function createSpeechService(): SpeechService {
   const isNative = Capacitor.isNativePlatform();
-  console.log('[SpeechService] Platform:', Capacitor.getPlatform(), 'isNative:', isNative);
   if (isNative) {
     return createNativeService();
   }

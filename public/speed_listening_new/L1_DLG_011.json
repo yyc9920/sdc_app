@@ -1,0 +1,102 @@
+[
+  {
+    "setId": "L1_DLG_011_set1",
+    "parentSetId": "L1_DLG_011",
+    "theme": "At the Shoe Store",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Can I help you find something?",
+        "korean": "찾으시는 거 도와드릴까요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I'm looking for running shoes.",
+        "korean": "운동화를 찾고 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "What size do you wear?",
+        "korean": "사이즈가 어떻게 되세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I'm a size ten.",
+        "korean": "10 사이즈요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "How about these? They're very popular.",
+        "korean": "이건 어떠세요? 매우 인기 있어요.",
+        "properNounIndices": [
+          3
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "At the Shoe Store",
+        "Negotiating Rent with Landlord",
+        "Lending a Pencil",
+        "Dentist — Toothache"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L1_DLG_011_set2",
+    "parentSetId": "L1_DLG_011",
+    "theme": "At the Shoe Store",
+    "level": 2,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Can I try them on?",
+        "korean": "신어봐도 되나요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Of course. The mirror is over there.",
+        "korean": "물론이죠. 거울은 저기 있어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 7,
+        "english": "They fit perfectly.",
+        "korean": "딱 맞아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "I'll take them.",
+        "korean": "이걸로 할게요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Asking About Allergies at a Restaurant",
+        "At the Eye Doctor",
+        "Calling About a Job Posting",
+        "At the Shoe Store"
+      ],
+      "answer": 3
+    }
+  }
+]

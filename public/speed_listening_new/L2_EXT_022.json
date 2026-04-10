@@ -1,0 +1,53 @@
+[
+  {
+    "setId": "L2_EXT_022_set1",
+    "parentSetId": "L2_EXT_022",
+    "theme": "Visiting a Night Market",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Night markets are one of the most exciting parts of traveling in Asia.",
+        "korean": "야시장은 아시아 여행에서 가장 흥미로운 부분 중 하나예요.",
+        "properNounIndices": [
+          12
+        ]
+      },
+      {
+        "id": 1,
+        "english": "The streets are full of food stalls selling everything from grilled meat to fresh fruit smoothies.",
+        "korean": "거리는 음식 가판대로 가득해요. 구운 고기에서 신선한 과일 스무디까지 모든 것을 팔아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The prices are usually very cheap compared to restaurants.",
+        "korean": "가격은 보통 식당에 비해 매우 저렴해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "You can also find clothes accessories and handmade souvenirs at bargain prices.",
+        "korean": "옷 액세서리 수제 기념품도 저렴한 가격에 찾을 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "The atmosphere is always lively with bright lights and loud music.",
+        "korean": "밝은 조명과 큰 음악으로 분위기가 항상 활기차요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '야시장' mean in English?",
+      "options": [
+        "food stall",
+        "bargain",
+        "souvenir",
+        "night market"
+      ],
+      "answer": 3
+    }
+  }
+]

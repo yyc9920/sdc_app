@@ -1,0 +1,122 @@
+[
+  {
+    "setId": "L3_B6ME_024_set1",
+    "parentSetId": "L3_B6ME_024",
+    "theme": "Why Are Billionaires Building Bunkers?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Today we're talking all about preppers.",
+        "korean": "오늘은 프레퍼에 대해 이야기해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "A prepper is someone who believes that disaster is likely to happen soon, and so they prepare for it.",
+        "korean": "프레퍼는 재난이 곧 일어날 거라고 믿어 대비하는 사람이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "A prepper might learn survival skills or they might build a bunker — an underground shelter.",
+        "korean": "생존 기술을 배우거나 지하 대피소인 벙커를 지을 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Recently, many famous billionaires from the tech industry have been buying huge areas of land and building bunker complexes.",
+        "korean": "최근 기술 업계 유명 억만장자들이 거대한 토지를 사고 벙커 단지를 짓고 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Are you kidding?",
+        "korean": "농담이냐고요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '(생활 수준을) 낮추다, 타협하다' mean in English?",
+      "options": [
+        "kidding",
+        "prepper",
+        "compromise",
+        "bunker"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L3_B6ME_024_set2",
+    "parentSetId": "L3_B6ME_024",
+    "theme": "Why Are Billionaires Building Bunkers?",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "No, I am not kidding — I'm not joking.",
+        "korean": "아니요, 농담이 아니에요.",
+        "properNounIndices": [
+          1,
+          6
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Nathalie Jimenez is a journalist who's studied prepper culture.",
+        "korean": "나탈리 히메네즈는 프레퍼 문화를 연구한 기자예요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 7,
+        "english": "She says many people share this prepper mentality — a person's way of thinking about things.",
+        "korean": "많은 사람이 이 프레퍼 사고방식 — 사물에 대한 사고방식 — 을 공유한다고 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "The reasons include nuclear tensions, AI risk, climate disaster — essentially any world-ending event.",
+        "korean": "이유에는 핵 긴장, AI 위험, 기후 재난 — 본질적으로 세계 종말 사건이 포함돼요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 9,
+        "english": "But secondly, it's also a mark of societal status.",
+        "korean": "하지만 사회적 지위의 표시이기도 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 10,
+        "english": "How much did Mark Zuckerberg reportedly spend on his property?",
+        "korean": "마크 저커버그가 부동산에 얼마를 썼다고 보도되었을까요?",
+        "properNounIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "id": 11,
+        "english": "The answer was $100 million.",
+        "korean": "정답은 1억 달러예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '재난에 대비하는 사람' mean in English?",
+      "options": [
+        "bunker",
+        "mentality",
+        "kidding",
+        "prepper"
+      ],
+      "answer": 3
+    }
+  }
+]

@@ -1,0 +1,64 @@
+[
+  {
+    "setId": "L1_DLG_036_set1",
+    "parentSetId": "L1_DLG_036",
+    "theme": "Finding a Seat on the Bus",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Excuse me. Is this seat taken?",
+        "korean": "실례합니다. 이 자리 있나요?",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 1,
+        "english": "No go ahead.",
+        "korean": "아니요 앉으세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Thank you. This bus is so crowded today.",
+        "korean": "감사합니다. 오늘 버스가 정말 붐비네요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 3,
+        "english": "It's always like this during rush hour.",
+        "korean": "출퇴근 시간에는 항상 이래요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Which stop are you getting off at?",
+        "korean": "어느 정류장에서 내리세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "City Hall. Two more stops.",
+        "korean": "시청이요. 두 정거장 남았어요.",
+        "properNounIndices": [
+          1,
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Asking for a Refund",
+        "Finding a Seat on the Bus",
+        "Dentist — Toothache",
+        "Asking for a Recommendation"
+      ],
+      "answer": 1
+    }
+  }
+]

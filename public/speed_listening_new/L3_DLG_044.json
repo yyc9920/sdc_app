@@ -1,0 +1,72 @@
+[
+  {
+    "setId": "L3_DLG_044_set1",
+    "parentSetId": "L3_DLG_044",
+    "theme": "Parking Ticket Dispute",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I got a parking ticket but I think it was a mistake.",
+        "korean": "주차 딱지를 받았는데 실수인 것 같아요.",
+        "properNounIndices": [
+          0,
+          6
+        ]
+      },
+      {
+        "id": 1,
+        "english": "What makes you think it was a mistake?",
+        "korean": "왜 실수라고 생각하세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I paid for two hours of parking and came back within that time.",
+        "korean": "2시간 주차 요금을 냈고 그 시간 안에 돌아왔어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I have the parking receipt as proof.",
+        "korean": "주차 영수증을 증거로 가지고 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Can I see the receipt and the ticket?",
+        "korean": "영수증과 딱지를 볼 수 있을까요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 5,
+        "english": "You're right the times don't match.",
+        "korean": "맞아요 시간이 안 맞네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "I'll file a dispute and the ticket should be cancelled within seven business days.",
+        "korean": "이의 신청을 접수하고 영업일 기준 7일 내에 딱지가 취소될 거예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '이의 제기/분쟁' mean in English?",
+      "options": [
+        "cancelled",
+        "proof",
+        "dispute",
+        "parking ticket"
+      ],
+      "answer": 2
+    }
+  }
+]

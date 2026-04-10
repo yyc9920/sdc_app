@@ -1,0 +1,111 @@
+[
+  {
+    "setId": "L2_ELLO_023_set1",
+    "parentSetId": "L2_ELLO_023",
+    "theme": "Mixer #122 — Big & Skip Meals",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My biggest meal of the day is dinner.",
+        "korean": "하루에서 가장 큰 식사는 저녁이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I heard you should have a heavier breakfast and a lighter dinner, but time-wise, it's easier for me to eat a heavy dinner.",
+        "korean": "더 무거운 아침과 가벼운 저녁이 좋다고 들었지만 시간상 저녁을 많이 먹는 게 쉬워요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I never miss a meal.",
+        "korean": "식사를 거른 적은 없어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Breakfast, I skip most every day.",
+        "korean": "아침은 거의 매일 건너뛰어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I always oversleep, so I don't have time for breakfast.",
+        "korean": "항상 늦잠을 자서 아침 먹을 시간이 없거든요.",
+        "properNounIndices": [
+          0,
+          4
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #51 — Cleaning Habits",
+        "Mixer #122 — Big & Skip Meals",
+        "Mixer #10 — Giving Directions",
+        "Mixer #94 — Complaining"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L2_ELLO_023_set2",
+    "parentSetId": "L2_ELLO_023",
+    "theme": "Mixer #122 — Big & Skip Meals",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I know that breakfast should be the biggest meal of the day, but that just never works out for me.",
+        "korean": "아침이 가장 큰 식사여야 한다는 건 알지만 나한테는 절대 안 돼요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 6,
+        "english": "I try not to skip meals.",
+        "korean": "식사를 거르지 않으려 해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 7,
+        "english": "I always try to at least eat something, even if it's on the go.",
+        "korean": "이동 중이더라도 항상 최소한 뭔가는 먹으려 해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 8,
+        "english": "I tend to snack quite a lot.",
+        "korean": "간식을 꽤 많이 먹는 편이에요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #72 — Driving",
+        "Mixer #37 — Noise Canceling",
+        "Mixer #148 — Favorite Season",
+        "Mixer #122 — Big & Skip Meals"
+      ],
+      "answer": 3
+    }
+  }
+]

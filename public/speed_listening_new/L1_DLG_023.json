@@ -1,0 +1,74 @@
+[
+  {
+    "setId": "L1_DLG_023_set1",
+    "parentSetId": "L1_DLG_023",
+    "theme": "Looking for a Lost Item",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Excuse me, I think I left my scarf on the bus.",
+        "korean": "실례합니다. 버스에 스카프를 두고 내린 것 같아요.",
+        "properNounIndices": [
+          2,
+          4
+        ]
+      },
+      {
+        "id": 1,
+        "english": "What color was it?",
+        "korean": "무슨 색이었나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "It's a red wool scarf.",
+        "korean": "빨간 모직 스카프예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Which bus were you on?",
+        "korean": "몇 번 버스를 타셨나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Bus number forty-two.",
+        "korean": "42번 버스요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Let me check the lost and found.",
+        "korean": "분실물 센터를 확인해볼게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Is this yours?",
+        "korean": "이거 맞나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Yes that's it! Thank you so much!",
+        "korean": "네 그거예요! 정말 감사합니다!",
+        "properNounIndices": [
+          3
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Choosing a Movie to Watch",
+        "Coffee Shop — Wi-Fi Problem",
+        "Getting Wi-Fi at a Hotel",
+        "Looking for a Lost Item"
+      ],
+      "answer": 3
+    }
+  }
+]

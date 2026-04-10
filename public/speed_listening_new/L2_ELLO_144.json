@@ -1,0 +1,51 @@
+[
+  {
+    "setId": "L2_ELLO_144_set1",
+    "parentSetId": "L2_ELLO_144",
+    "theme": "Mixer #1 — Small Talk",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'm good at small talk, and I can talk to anyone about anything.",
+        "korean": "스몰토크를 잘해요. 누구와든 뭐든 이야기할 수 있어요.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I find small talk really difficult, especially with strangers.",
+        "korean": "스몰토크가 정말 어려워요, 특히 낯선 사람과요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I never know what to say.",
+        "korean": "뭘 말해야 할지 모르겠어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "The easiest topics for small talk are weather, food, and travel, because everyone has something to say about those.",
+        "korean": "스몰토크에 가장 쉬운 주제는 날씨 음식 여행이에요. 누구나 할 말이 있으니까요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #1 — Small Talk",
+        "Mixer #9 — Compliments",
+        "Mixer #63 — Technology Problems",
+        "Mixer #149 — Who Do You Admire?"
+      ],
+      "answer": 0
+    }
+  }
+]

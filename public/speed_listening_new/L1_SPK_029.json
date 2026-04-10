@@ -1,0 +1,73 @@
+[
+  {
+    "setId": "L1_SPK_029_set1",
+    "parentSetId": "L1_SPK_029",
+    "theme": "Saving Money vs. Enjoying Life Now",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Some people save most of their money for the future while others prefer to spend and enjoy life now.",
+        "korean": "미래를 위해 돈을 대부분 저축하는 사람이 있고 지금 쓰며 인생을 즐기는 사람이 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Which approach do you prefer?",
+        "korean": "어느 접근을 선호합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I believe the best approach is finding a balance between saving and spending.",
+        "korean": "최선의 접근은 저축과 소비 사이의 균형을 찾는 것이라고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Saving is important because unexpected events like medical emergencies or job loss can happen at any time.",
+        "korean": "저축이 중요한 이유는 의료 비상이나 실직 같은 예상치 못한 사건이 언제든 일어날 수 있기 때문이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "However spending only on the future and never enjoying the present isn't healthy either.",
+        "korean": "하지만 미래에만 쓰고 현재를 즐기지 않는 것도 건강하지 않아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "My personal rule is to save thirty percent of my income and use the rest for living expenses and experiences that make me happy.",
+        "korean": "개인적인 규칙은 수입의 30%를 저축하고 나머지는 생활비와 행복하게 해주는 경험에 쓰는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "This way I feel secure about the future without sacrificing my quality of life today.",
+        "korean": "이렇게 하면 오늘의 삶의 질을 희생하지 않으면서 미래에 대해 안심이 돼요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 7,
+        "english": "find a balance",
+        "korean": "균형을 찾다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Importance of Sleep",
+        "Daily Routines — Helpful or Boring",
+        "Children and Mobile Phones",
+        "Saving Money vs. Enjoying Life Now"
+      ],
+      "answer": 3
+    }
+  }
+]

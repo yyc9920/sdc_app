@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L3_B6ME_029_set1",
+    "parentSetId": "L3_B6ME_029",
+    "theme": "Finding and Eating Wild Food",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Foraging is the activity of walking in the countryside, looking for plants you can eat that grow in the wild.",
+        "korean": "채집은 시골을 걸으며 야생에서 자라는 먹을 수 있는 식물을 찾는 활동이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "That's anything from blackberries and chestnuts to mushrooms and wild garlic.",
+        "korean": "블랙베리, 밤부터 버섯, 야생 마늘까지 다양해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Roushanna only picks plants that she knows a hundred and ten percent are safe to eat.",
+        "korean": "루샤나는 먹어도 안전하다고 110% 확신하는 식물만 따요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "The idiom 'a hundred and ten percent' means she is completely sure.",
+        "korean": "'110 퍼센트'는 완전히 확신한다는 뜻이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "That stigma is a bit misplaced, I think, because plants can be just as dangerous, if not more dangerous than mushrooms.",
+        "korean": "그 오명은 좀 잘못된 거예요.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 5,
+        "english": "You've got to exercise caution.",
+        "korean": "식물도 버섯만큼, 아니 더 위험할 수 있거든요. 주의를 기울여야 해요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '부당한 부정적 인식, 오명' mean in English?",
+      "options": [
+        "stigma",
+        "foraging",
+        "exercise caution",
+        "scanning"
+      ],
+      "answer": 0
+    }
+  }
+]

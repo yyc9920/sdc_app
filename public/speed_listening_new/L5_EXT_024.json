@@ -1,0 +1,44 @@
+[
+  {
+    "setId": "L5_EXT_024_set1",
+    "parentSetId": "L5_EXT_024",
+    "theme": "Language and Thought",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The Sapir-Whorf hypothesis proposes that the language we speak doesn't merely describe the world but actively shapes how we perceive and think about it.",
+        "korean": "사피어-워프 가설은 우리가 쓰는 언어가 단순히 세계를 묘사하는 것이 아니라 우리가 세계를 인식하고 생각하는 방식을 능동적으로 형성한다고 제안한다.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "The Pirahã people of the Amazon whose language has no words for specific numbers struggle with exact counting tasks — suggesting that the absence of number words literally limits their mathematical cognition.",
+        "korean": "아마존의 피라하 부족은 특정 숫자에 대한 단어가 없어 정확한 세기 과제에 어려움을 겪는다. 숫자 단어의 부재가 그들의 수학적 인지를 말 그대로 제한한다는 것을 시사한다.",
+        "properNounIndices": [
+          1,
+          5
+        ]
+      },
+      {
+        "id": 2,
+        "english": "If language truly constrains thought then translation between languages is not just converting words — it is bridging fundamentally different ways of experiencing reality.",
+        "korean": "언어가 진정으로 사고를 제약한다면 언어 간 번역은 단순히 단어를 바꾸는 것이 아니다. 현실을 경험하는 근본적으로 다른 방식들을 연결하는 것이다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '제약하다' mean in English?",
+      "options": [
+        "hypothesis",
+        "constrain",
+        "cognition",
+        "bridging"
+      ],
+      "answer": 1
+    }
+  }
+]

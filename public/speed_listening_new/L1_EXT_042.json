@@ -1,0 +1,55 @@
+[
+  {
+    "setId": "L1_EXT_042_set1",
+    "parentSetId": "L1_EXT_042",
+    "theme": "Helping at Home",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I help my parents with housework on the weekends.",
+        "korean": "주말에 부모님의 집안일을 도와드려요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I vacuum my room and clean the bathroom.",
+        "korean": "내 방에 청소기를 돌리고 화장실을 청소해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "My sister does the dishes after dinner.",
+        "korean": "언니는 저녁 후에 설거지를 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "My dad takes out the trash every morning.",
+        "korean": "아빠는 매일 아침 쓰레기를 내다 버려요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Working together makes everything faster and easier.",
+        "korean": "함께 하면 모든 게 더 빠르고 쉬워요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Helping at Home",
+        "Medical Consultation",
+        "The Attention Economy",
+        "Learning to Ride a Bike"
+      ],
+      "answer": 0
+    }
+  }
+]

@@ -3,69 +3,64 @@
     "setId": "L1_BTEW_014_set1",
     "parentSetId": "L1_BTEW_014",
     "theme": "Bide someone's time",
-    "level": 6,
+    "level": 5,
     "setNumber": 1,
     "sentences": [
       {
         "id": 0,
-        "english": "Hello and welcome to The English We Speak, where we explain phrases used by fluent English speakers so that you can use them too. I'm Feifei, and I'm here with Phil.",
-        "korean": "안녕하세요, 유창한 영어 화자들이 쓰는 표현을 설명하는 The English We Speak에 오신 것을 환영합니다. 저는 페이페이이고, 필과 함께합니다.",
+        "english": "Hello and welcome to The English We Speak, where we explain phrases used by fluent English speakers so that you can use them too.",
+        "korean": "안녕하세요, 유창한 영어 화자들이 쓰는 표현을 설명하는 The English We Speak에 오신 것을 환영합니다.",
         "properNounIndices": [
           4,
           5,
           6,
           7,
-          15,
-          24,
-          25,
-          27,
-          30
+          15
         ]
       },
       {
         "id": 1,
-        "english": "Hello. How are you, Feifei? Did you buy that new car that you wanted?",
-        "korean": "안녕. 잘 지내, 페이페이? 원하던 새 차 샀어?",
+        "english": "I'm Feifei, and I'm here with Phil.",
+        "korean": "저는 페이페이이고, 필과 함께합니다.",
         "properNounIndices": [
           1,
-          4,
-          5
+          3,
+          6
         ]
       },
       {
         "id": 2,
-        "english": "No, actually, I didn't. I went to look, but there wasn't anything at the right price that I liked. But that doesn't matter - it's not an emergency, I can bide my time until the right deal comes along.",
-        "korean": "아니, 사실 안 샀어. 보러 갔는데 마음에 드는 적정 가격대가 없었어. 하지만 괜찮아 — 급한 건 아니니까 좋은 거래가 올 때까지 기다릴 수 있어.",
+        "english": "Hello. How are you, Feifei?",
+        "korean": "안녕. 잘 지내, 페이페이?",
         "properNounIndices": [
-          2,
-          4,
-          17,
-          19,
-          28
+          1,
+          4
         ]
       },
       {
         "id": 3,
-        "english": "That sounds like smart thinking!",
-        "korean": "현명한 생각이네!",
+        "english": "Did you buy that new car that you wanted?",
+        "korean": "원하던 새 차 샀어?",
         "properNounIndices": []
       },
       {
         "id": 4,
-        "english": "And that's the phrase we're looking at in this episode - 'bide someone's time' - and when we're speaking it can be 'bide my time', 'bide your time', 'bide his or her time', 'bide our time' or 'bide their time'.",
-        "korean": "이번 에피소드에서 다룰 표현이야 — 'bide someone's time'. 말할 때는 'bide my time', 'bide your time', 'bide his or her time' 등으로 쓸 수 있어.",
-        "properNounIndices": []
+        "english": "No, actually, I didn't.",
+        "korean": "아니, 사실 안 샀어.",
+        "properNounIndices": [
+          2
+        ]
       }
     ],
     "quiz": {
-      "question": "What does '승진' mean in English?",
+      "question": "What does '나타나다, 찾아오다' mean in English?",
       "options": [
-        "opportunity",
         "old-fashioned",
+        "come along",
         "promotion",
         "bide your time"
       ],
-      "answer": 2
+      "answer": 1
     }
   },
   {
@@ -77,51 +72,47 @@
     "sentences": [
       {
         "id": 5,
-        "english": "It means to wait for an opportunity. What can you say about it?",
-        "korean": "기회를 기다린다는 뜻이야. 이에 대해 뭐라고 할 수 있어?",
+        "english": "I went to look, but there wasn't anything at the right price that I liked.",
+        "korean": "보러 갔는데 마음에 드는 적정 가격대가 없었어.",
         "properNounIndices": [
-          7
+          0,
+          13
         ]
       },
       {
         "id": 6,
-        "english": "'Bide' is a very old-fashioned word that means wait. We don't really use it on its own anymore. But it survives in this expression 'to bide your time', meaning to wait patiently for the right moment or opportunity.",
-        "korean": "'bide'는 '기다리다'라는 뜻의 매우 구식 단어야. 이제 단독으로는 잘 안 쓰지만, 'to bide your time'이라는 표현에서 살아남았어. 적절한 순간이나 기회를 인내심 있게 기다린다는 뜻이야.",
+        "english": "But that doesn't matter - it's not an emergency, I can bide my time until the right deal comes along.",
+        "korean": "하지만 괜찮아 — 급한 건 아니니까 좋은 거래가 올 때까지 기다릴 수 있어.",
         "properNounIndices": [
-          9,
-          18
+          9
         ]
       },
       {
         "id": 7,
-        "english": "You talked about biding your time for the right deal to come along - you don't need a new car right now, you're happy to wait. And we can use it anywhere where opportunities come up.",
-        "korean": "좋은 거래가 올 때까지 기다린다고 했지 — 지금 당장 새 차가 필요하진 않으니까 기꺼이 기다리는 거야. 기회가 생기는 어떤 상황에서든 쓸 수 있어.",
-        "properNounIndices": [
-          26
-        ]
+        "english": "That sounds like smart thinking!",
+        "korean": "현명한 생각이네!",
+        "properNounIndices": []
       },
       {
         "id": 8,
-        "english": "Maybe at work, you're not totally happy with your job, but rather than look for a new one, you're happy to bide your time until there's an opportunity for a promotion.",
-        "korean": "직장에서 현재 일에 완전히 만족하지 않더라도, 새 일을 찾기보다 승진 기회가 올 때까지 기꺼이 기다리는 거야.",
+        "english": "And that's the phrase we're looking at in this episode - 'bide someone's time' - and when we're speaking it can be 'bide my time', 'bide your time', 'bide his or her time', 'bide our time' or 'bide their time'.",
+        "korean": "이번 에피소드에서 다룰 표현이야 — 'bide someone's time'. 말할 때는 'bide my time', 'bide your time', 'bide his or her time' 등으로 쓸 수 있어.",
         "properNounIndices": []
       },
       {
         "id": 9,
-        "english": "Yes, so you're waiting patiently for the right job to come up. Let's listen to some examples of people using 'bide someone's time'.",
-        "korean": "맞아, 적합한 일이 나올 때까지 인내심 있게 기다리는 거야. 사람들이 쓰는 예시를 들어보자.",
-        "properNounIndices": [
-          12
-        ]
+        "english": "It means to wait for an opportunity.",
+        "korean": "기회를 기다린다는 뜻이야.",
+        "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '승진' mean in English?",
+      "question": "What does '인내심 있게' mean in English?",
       "options": [
         "come along",
-        "promotion",
-        "bide your time",
-        "patiently"
+        "patiently",
+        "opportunity",
+        "bide your time"
       ],
       "answer": 1
     }
@@ -135,53 +126,189 @@
     "sentences": [
       {
         "id": 10,
-        "english": "My sister auditions for this dance company every year and she still hasn't got in, but she's biding her time, practising her skills, and hopefully she'll get in soon.",
-        "korean": "언니가 이 댄스 컴퍼니에 매년 오디션을 보는데 아직 들어가지 못했어. 하지만 기다리면서 실력을 연습하고 있고, 곧 들어갈 수 있길 바라고 있어.",
+        "english": "What can you say about it?",
+        "korean": "이에 대해 뭐라고 할 수 있어?",
         "properNounIndices": []
       },
       {
         "id": 11,
-        "english": "I really want to go to the beach with my friend, but it keeps raining every weekend. We've just got to bide our time and wait for a sunny day.",
-        "korean": "친구와 해변에 정말 가고 싶은데, 매주 주말마다 비가 와. 맑은 날이 올 때까지 참고 기다려야 해.",
-        "properNounIndices": [
-          0,
-          17
-        ]
+        "english": "'Bide' is a very old-fashioned word that means wait.",
+        "korean": "'bide'는 '기다리다'라는 뜻의 매우 구식 단어야.",
+        "properNounIndices": []
       },
       {
         "id": 12,
-        "english": "I've just learnt the secret to fishing. You've just got to bide your time until a big one comes along.",
-        "korean": "낚시의 비결을 방금 알았어. 큰 놈이 올 때까지 참고 기다리면 돼.",
-        "properNounIndices": [
-          7
-        ]
+        "english": "We don't really use it on its own anymore.",
+        "korean": "이제 단독으로는 잘 안 쓰지만, 'to bide your time'이라는 표현에서 살아남았어.",
+        "properNounIndices": []
       },
       {
         "id": 13,
-        "english": "You're listening to The English We Speak, and we're talking about the phrase 'bide your time'. Remember, it means to wait patiently for the right opportunity. And Phil, there are no negative associations with this phrase, are there?",
-        "korean": "The English We Speak을 듣고 계시고, 'bide your time'에 대해 이야기하고 있어요. 적절한 기회를 인내심 있게 기다린다는 뜻이에요. 필, 이 표현에 부정적 의미는 없죠?",
+        "english": "But it survives in this expression 'to bide your time', meaning to wait patiently for the right moment or opportunity.",
+        "korean": "적절한 순간이나 기회를 인내심 있게 기다린다는 뜻이야.",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "You talked about biding your time for the right deal to come along - you don't need a new car right now, you're happy to wait.",
+        "korean": "좋은 거래가 올 때까지 기다린다고 했지 — 지금 당장 새 차가 필요하진 않으니까 기꺼이 기다리는 거야.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '때를 기다리다' mean in English?",
+      "options": [
+        "patiently",
+        "promotion",
+        "opportunity",
+        "bide your time"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L1_BTEW_014_set4",
+    "parentSetId": "L1_BTEW_014",
+    "theme": "Bide someone's time",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "And we can use it anywhere where opportunities come up.",
+        "korean": "기회가 생기는 어떤 상황에서든 쓸 수 있어.",
+        "properNounIndices": []
+      },
+      {
+        "id": 16,
+        "english": "Maybe at work, you're not totally happy with your job, but rather than look for a new one, you're happy to bide your time until there's an opportunity for a promotion.",
+        "korean": "직장에서 현재 일에 완전히 만족하지 않더라도, 새 일을 찾기보다 승진 기회가 올 때까지 기꺼이 기다리는 거야.",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "Yes, so you're waiting patiently for the right job to come up.",
+        "korean": "맞아, 적합한 일이 나올 때까지 인내심 있게 기다리는 거야.",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
+        "english": "Let's listen to some examples of people using 'bide someone's time'.",
+        "korean": "사람들이 쓰는 예시를 들어보자.",
+        "properNounIndices": []
+      },
+      {
+        "id": 19,
+        "english": "My sister auditions for this dance company every year and she still hasn't got in, but she's biding her time, practising her skills, and hopefully she'll get in soon.",
+        "korean": "언니가 이 댄스 컴퍼니에 매년 오디션을 보는데 아직 들어가지 못했어. 하지만 기다리면서 실력을 연습하고 있고, 곧 들어갈 수 있길 바라고 있어.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '나타나다, 찾아오다' mean in English?",
+      "options": [
+        "old-fashioned",
+        "patiently",
+        "come along",
+        "bide your time"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L1_BTEW_014_set5",
+    "parentSetId": "L1_BTEW_014",
+    "theme": "Bide someone's time",
+    "level": 6,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "I really want to go to the beach with my friend, but it keeps raining every weekend.",
+        "korean": "친구와 해변에 정말 가고 싶은데, 매주 주말마다 비가 와.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 21,
+        "english": "We've just got to bide our time and wait for a sunny day.",
+        "korean": "맑은 날이 올 때까지 참고 기다려야 해.",
+        "properNounIndices": []
+      },
+      {
+        "id": 22,
+        "english": "I've just learnt the secret to fishing.",
+        "korean": "낚시의 비결을 방금 알았어.",
+        "properNounIndices": []
+      },
+      {
+        "id": 23,
+        "english": "You've just got to bide your time until a big one comes along.",
+        "korean": "큰 놈이 올 때까지 참고 기다리면 돼.",
+        "properNounIndices": []
+      },
+      {
+        "id": 24,
+        "english": "You're listening to The English We Speak, and we're talking about the phrase 'bide your time'.",
+        "korean": "The English We Speak을 듣고 계시고, 'bide your time'에 대해 이야기하고 있어요.",
         "properNounIndices": [
           3,
           4,
           5,
-          6,
-          16,
-          26,
-          27
+          6
         ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '나타나다, 찾아오다' mean in English?",
+      "options": [
+        "bide your time",
+        "old-fashioned",
+        "promotion",
+        "come along"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L1_BTEW_014_set6",
+    "parentSetId": "L1_BTEW_014",
+    "theme": "Bide someone's time",
+    "level": 4,
+    "setNumber": 6,
+    "sentences": [
+      {
+        "id": 25,
+        "english": "Remember, it means to wait patiently for the right opportunity.",
+        "korean": "적절한 기회를 인내심 있게 기다린다는 뜻이에요.",
+        "properNounIndices": []
       },
       {
-        "id": 14,
-        "english": "No, it's all about patience and waiting for a good opportunity. So, Feifei, I hope the right car comes along for you soon!",
-        "korean": "아니, 인내심과 좋은 기회를 기다리는 것에 관한 거야. 페이페이, 곧 맞는 차가 나오길 바라!",
+        "id": 26,
+        "english": "And Phil, there are no negative associations with this phrase, are there?",
+        "korean": "필, 이 표현에 부정적 의미는 없죠?",
         "properNounIndices": [
-          11,
-          12,
-          13
+          1
         ]
       },
       {
-        "id": 15,
+        "id": 27,
+        "english": "No, it's all about patience and waiting for a good opportunity.",
+        "korean": "아니, 인내심과 좋은 기회를 기다리는 것에 관한 거야.",
+        "properNounIndices": []
+      },
+      {
+        "id": 28,
+        "english": "So, Feifei, I hope the right car comes along for you soon!",
+        "korean": "페이페이, 곧 맞는 차가 나오길 바라!",
+        "properNounIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 29,
         "english": "Thank you! See you next time!",
         "korean": "고마워! 다음에 봐!",
         "properNounIndices": [
@@ -189,21 +316,21 @@
         ]
       },
       {
-        "id": 16,
+        "id": 30,
         "english": "Bye!",
         "korean": "안녕!",
         "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '구식의, 옛날의' mean in English?",
+      "question": "What does '기회' mean in English?",
       "options": [
-        "patiently",
         "come along",
+        "old-fashioned",
         "opportunity",
-        "old-fashioned"
+        "bide your time"
       ],
-      "answer": 3
+      "answer": 2
     }
   }
 ]

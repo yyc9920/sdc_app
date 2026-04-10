@@ -1,0 +1,51 @@
+[
+  {
+    "setId": "L2_EXT_038_set1",
+    "parentSetId": "L2_EXT_038",
+    "theme": "How to Deal with Jet Lag",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Jet lag happens when your body's internal clock is out of sync with the local time zone.",
+        "korean": "시차 피로는 체내 시계가 현지 시간대와 맞지 않을 때 발생해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "The most effective strategy is to immediately adjust to the local schedule by eating and sleeping at local times.",
+        "korean": "가장 효과적인 전략은 현지 시간에 맞춰 먹고 자며 즉시 현지 일정에 적응하는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Getting sunlight in the morning helps reset your body clock faster.",
+        "korean": "아침에 햇빛을 쬐면 체내 시계를 더 빨리 재설정하는 데 도움이 돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Avoid coffee and alcohol during the flight because they dehydrate your body and make jet lag worse.",
+        "korean": "비행 중 커피와 알코올을 피하세요. 몸의 수분을 빼앗아 시차 피로를 악화시키니까요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Most people recover from jet lag within three to five days depending on how many time zones they crossed.",
+        "korean": "대부분의 사람은 몇 개의 시간대를 넘었느냐에 따라 3~5일 안에 시차 피로에서 회복해요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '수분을 빼앗다' mean in English?",
+      "options": [
+        "internal clock",
+        "jet lag",
+        "time zone",
+        "dehydrate"
+      ],
+      "answer": 3
+    }
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "setId": "L3_B6ME_057_set1",
+    "parentSetId": "L3_B6ME_057",
+    "theme": "How Important Is Politeness?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Britain has a reputation for being a polite place where children are told to say 'please' and 'thank you', but in real life that isn't always true.",
+        "korean": "영국은 아이들이 '부탁해요'와 '감사해요'를 말하라고 배우는 예의 바른 곳이라는 평판이 있지만, 현실에서는 항상 그렇지 않아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "A boy was walking past me in the street, stopped and said, 'Hey!",
+        "korean": "한 소년이 거리에서 내 옆을 지나가다 멈추고 말했어요, '야!",
+        "properNounIndices": [
+          12
+        ]
+      },
+      {
+        "id": 2,
+        "english": "You're thingy, innit!'",
+        "korean": "너 그 사람이지, 그치!'",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Why Are Some Animals Black and White?",
+        "How Important Is Politeness?",
+        "What English Phrases Really Mean",
+        "Why Are Billionaires Building Bunkers?"
+      ],
+      "answer": 1
+    }
+  }
+]

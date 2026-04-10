@@ -1,0 +1,78 @@
+[
+  {
+    "setId": "L1_SPK_025_set1",
+    "parentSetId": "L1_SPK_025",
+    "theme": "A Hobby You Want to Start",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "If you could start a new hobby what would it be?",
+        "korean": "새 취미를 시작할 수 있다면 무엇이겠습니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain why.",
+        "korean": "이유를 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "If I could start a new hobby I would choose learning to play the guitar.",
+        "korean": "새 취미를 시작할 수 있다면 기타 치는 법을 배우겠어요.",
+        "properNounIndices": [
+          1,
+          7
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Music has always been a big part of my life and I listen to songs every day.",
+        "korean": "음악은 항상 내 삶의 큰 부분이었고 매일 노래를 들어요.",
+        "properNounIndices": [
+          11
+        ]
+      },
+      {
+        "id": 4,
+        "english": "But I've never actually learned to play an instrument.",
+        "korean": "하지만 실제로 악기를 배운 적이 없어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 5,
+        "english": "I think the guitar is perfect because it's portable and you can play almost any genre of music with it.",
+        "korean": "기타가 완벽하다고 생각하는 이유는 휴대가 가능하고 거의 모든 장르의 음악을 연주할 수 있어서예요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Also playing music is a great stress reliever and it would give me a creative outlet outside of work.",
+        "korean": "또한 음악 연주는 좋은 스트레스 해소법이고 일 밖에서 창의적 배출구를 줄 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "stress reliever",
+        "korean": "스트레스 해소법",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "A Hobby You Want to Start",
+        "A Difficult Decision You Made",
+        "First Impressions — Reliable or Not",
+        "Learning from Older vs. Younger People"
+      ],
+      "answer": 0
+    }
+  }
+]

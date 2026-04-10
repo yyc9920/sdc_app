@@ -1,0 +1,55 @@
+[
+  {
+    "setId": "L1_EXT_073_set1",
+    "parentSetId": "L1_EXT_073",
+    "theme": "My Lunchbox",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My mom makes my lunchbox every morning.",
+        "korean": "엄마가 매일 아침 도시락을 만들어주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Today I had rice and fried eggs and some kimchi.",
+        "korean": "오늘은 밥과 계란프라이와 김치가 있었어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
+        "english": "My friends always want to try my food.",
+        "korean": "친구들이 항상 내 음식을 먹어보고 싶어 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I share with them and they share their snacks with me.",
+        "korean": "나도 나눠주고 친구들도 간식을 나눠줘요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Lunchtime is my favorite part of school.",
+        "korean": "점심시간이 학교에서 가장 좋아하는 시간이에요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Moving to a New Apartment",
+        "Helping a Lost Dog",
+        "Making a Doctor's Appointment",
+        "My Lunchbox"
+      ],
+      "answer": 3
+    }
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "setId": "L4_EXT_026_set1",
+    "parentSetId": "L4_EXT_026",
+    "theme": "The Mere Exposure Effect",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The mere exposure effect is a well-documented psychological phenomenon where people develop a preference for things simply because they are familiar with them.",
+        "korean": "단순 노출 효과는 잘 기록된 심리적 현상으로 사람들이 단순히 익숙하다는 이유만으로 무언가를 선호하게 되는 것이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "This is why songs that initially sound unremarkable become your favorites after hearing them several times on the radio.",
+        "korean": "이것이 처음에 별 볼 일 없게 들리는 노래가 라디오에서 여러 번 듣고 나면 좋아하는 곡이 되는 이유이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Advertisers exploit this effect by showing the same commercial repeatedly knowing that each exposure builds familiarity and familiarity breeds trust.",
+        "korean": "광고주들은 이 효과를 이용하여 같은 광고를 반복적으로 보여준다. 노출이 친숙함을 쌓고 친숙함이 신뢰를 낳는다는 것을 알기에.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Understanding this bias can help consumers make more rational purchasing decisions by asking whether they genuinely prefer a product or simply recognize it.",
+        "korean": "이 편향을 이해하면 제품을 진정으로 선호하는 건지 단순히 인식하는 건지 질문함으로써 더 합리적인 구매 결정을 할 수 있다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '편향' mean in English?",
+      "options": [
+        "mere exposure",
+        "bias",
+        "exploit",
+        "familiarity"
+      ],
+      "answer": 1
+    }
+  }
+]

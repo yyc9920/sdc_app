@@ -1,0 +1,55 @@
+[
+  {
+    "setId": "L2_ELLO_110_set1",
+    "parentSetId": "L2_ELLO_110",
+    "theme": "Mixer #35 — Personality Type",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'm definitely an introvert, and I need alone time to recharge.",
+        "korean": "확실히 내향적이에요. 재충전하려면 혼자 시간이 필요해요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I'm an extrovert who gets energy from being around people.",
+        "korean": "사람들과 함께 있을 때 에너지를 얻는 외향적인 사람이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "If I'm alone too long, I get restless.",
+        "korean": "너무 오래 혼자 있으면 안절부절못해요.",
+        "properNounIndices": [
+          1,
+          5
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I think I'm an ambivert — sometimes I love parties, and other times I just want to be alone with a book.",
+        "korean": "양향적인 것 같아요 — 파티를 좋아할 때도 있고 그냥 책과 함께 혼자 있고 싶을 때도 있어요.",
+        "properNounIndices": [
+          0,
+          2,
+          7,
+          13
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '외향적인 사람' mean in English?",
+      "options": [
+        "ambivert",
+        "extrovert",
+        "introvert",
+        "restless"
+      ],
+      "answer": 1
+    }
+  }
+]

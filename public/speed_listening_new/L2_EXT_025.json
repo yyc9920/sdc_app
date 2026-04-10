@@ -1,0 +1,53 @@
+[
+  {
+    "setId": "L2_EXT_025_set1",
+    "parentSetId": "L2_EXT_025",
+    "theme": "Benefits of Walking",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Walking is one of the easiest and most effective forms of exercise.",
+        "korean": "걷기는 가장 쉽고 효과적인 운동 중 하나예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "You don't need any equipment or a gym membership.",
+        "korean": "장비나 헬스장 회원권이 필요 없어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Doctors recommend at least thirty minutes of walking per day.",
+        "korean": "의사들은 하루 최소 30분 걷기를 추천해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Walking improves your mood reduces stress and helps you sleep better.",
+        "korean": "걷기는 기분을 개선하고 스트레스를 줄이고 수면에 도움을 줘요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I try to walk to work instead of taking the bus at least three times a week.",
+        "korean": "일주일에 최소 세 번은 버스 대신 걸어서 출근하려 해요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "The Attention Economy",
+        "University Office Hours",
+        "Benefits of Walking",
+        "A Rainy Morning"
+      ],
+      "answer": 2
+    }
+  }
+]

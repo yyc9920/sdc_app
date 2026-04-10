@@ -3,7 +3,7 @@
     "setId": "L2_EXT_006_set1",
     "parentSetId": "L2_EXT_006",
     "theme": "Calling in Sick",
-    "level": 6,
+    "level": 4,
     "setNumber": 1,
     "sentences": [
       {
@@ -16,42 +16,36 @@
       },
       {
         "id": 1,
-        "english": "Hi Rachel, it's Kevin. I'm really sorry, but I don't think I can come in today. I woke up with a terrible headache and a fever.",
-        "korean": "안녕 레이첼, 케빈이에요. 정말 죄송한데 오늘 출근 못 할 것 같아요. 심한 두통과 열이 있어서요.",
+        "english": "Hi Rachel, it's Kevin.",
+        "korean": "안녕 레이첼, 케빈이에요.",
         "properNounIndices": [
           1,
-          3,
-          4,
-          8,
-          11,
-          16
+          3
         ]
       },
       {
         "id": 2,
-        "english": "Oh no, I'm sorry to hear that. Do you think it's the flu?",
-        "korean": "안됐네요. 독감인 것 같아요?",
+        "english": "I'm really sorry, but I don't think I can come in today.",
+        "korean": "정말 죄송한데 오늘 출근 못 할 것 같아요.",
         "properNounIndices": [
-          2,
+          4,
           7
         ]
       },
       {
         "id": 3,
-        "english": "It might be. I'm going to see if I can get an appointment with my doctor this afternoon.",
-        "korean": "그럴 수도 있어요. 오늘 오후에 의사 예약을 잡을 수 있는지 볼게요.",
+        "english": "I woke up with a terrible headache and a fever.",
+        "korean": "심한 두통과 열이 있어서요.",
         "properNounIndices": [
-          3,
-          8
+          0
         ]
       },
       {
         "id": 4,
-        "english": "Of course. Take care of yourself first. Do you have anything urgent on your plate today?",
-        "korean": "물론이죠. 먼저 몸부터 챙기세요. 오늘 급한 업무가 있나요?",
+        "english": "Oh no, I'm sorry to hear that.",
+        "korean": "안됐네요.",
         "properNounIndices": [
-          2,
-          7
+          2
         ]
       }
     ],
@@ -59,9 +53,9 @@
       "question": "What is the main topic of this passage?",
       "options": [
         "Calling in Sick",
-        "Airport Announcement",
-        "Philosophy of Science — The Demarcation Problem",
-        "Science Documentary — Neuroplasticity"
+        "A Fun Field Day",
+        "TED-Style Talk — The Science of Habits",
+        "Podcast Discussion — Work-Life Balance"
       ],
       "answer": 0
     }
@@ -70,50 +64,143 @@
     "setId": "L2_EXT_006_set2",
     "parentSetId": "L2_EXT_006",
     "theme": "Calling in Sick",
-    "level": 6,
+    "level": 5,
     "setNumber": 2,
     "sentences": [
       {
         "id": 5,
-        "english": "I was supposed to send the monthly report to the marketing team by noon. I've got about eighty percent of it done. Would it be possible for someone to finish it?",
-        "korean": "정오까지 마케팅팀에 월간 보고서를 보내기로 했는데, 약 80% 정도 완성했어요.",
-        "properNounIndices": [
-          0,
-          14,
-          22
-        ]
+        "english": "Do you think it's the flu?",
+        "korean": "독감인 것 같아요?",
+        "properNounIndices": []
       },
       {
         "id": 6,
-        "english": "Sure, I'll ask Lisa to take over. Is the file on the shared drive?",
-        "korean": "네, 리사에게 넘기라고 할게요. 파일이 공유 드라이브에 있나요?",
+        "english": "It might be. I'm going to see if I can get an appointment with my doctor this afternoon.",
+        "korean": "그럴 수도 있어요. 오늘 오후에 의사 예약을 잡을 수 있는지 볼게요.",
         "properNounIndices": [
-          1,
           3,
-          7
-        ]
-      },
-      {
-        "id": 7,
-        "english": "Yes, it's in the April folder. I'll send Lisa a quick email with notes on what's left.",
-        "korean": "네, 4월 폴더에 있어요. 리사에게 남은 작업 메모와 함께 간단히 이메일 보낼게요.",
-        "properNounIndices": [
-          4,
-          6,
           8
         ]
       },
       {
-        "id": 8,
-        "english": "Perfect. Don't worry about it. Just rest up and let me know how you're feeling tomorrow.",
-        "korean": "좋아요. 걱정 마세요. 푹 쉬시고 내일 상태 알려주세요.",
+        "id": 7,
+        "english": "Of course. Take care of yourself first.",
+        "korean": "물론이죠. 먼저 몸부터 챙기세요.",
         "properNounIndices": [
-          1,
-          5
+          2
         ]
       },
       {
+        "id": 8,
+        "english": "Do you have anything urgent on your plate today?",
+        "korean": "오늘 급한 업무가 있나요?",
+        "properNounIndices": []
+      },
+      {
         "id": 9,
+        "english": "I was supposed to send the monthly report to the marketing team by noon.",
+        "korean": "정오까지 마케팅팀에 월간 보고서를 보내기로 했는데, 약 80% 정도 완성했어요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Dealing with Stress",
+        "My Pencil Case",
+        "Calling in Sick",
+        "My Favorite Game"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_EXT_006_set3",
+    "parentSetId": "L2_EXT_006",
+    "theme": "Calling in Sick",
+    "level": 4,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "I've got about eighty percent of it done.",
+        "korean": "월간 보고서를 보내기로 했어요",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "Would it be possible for someone to finish it?",
+        "korean": "약 80% 완성했어요",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "Sure, I'll ask Lisa to take over.",
+        "korean": "네, 리사에게 넘기라고 할게요.",
+        "properNounIndices": [
+          1,
+          3
+        ]
+      },
+      {
+        "id": 13,
+        "english": "Is the file on the shared drive?",
+        "korean": "파일이 공유 드라이브에 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "Yes, it's in the April folder.",
+        "korean": "네, 4월 폴더에 있어요.",
+        "properNounIndices": [
+          4
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Calling in Sick",
+        "Daily Routine — Working Mom",
+        "Academic Lecture — The Philosophy of Language",
+        "My Water Bottle"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_EXT_006_set4",
+    "parentSetId": "L2_EXT_006",
+    "theme": "Calling in Sick",
+    "level": 4,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "I'll send Lisa a quick email with notes on what's left.",
+        "korean": "리사에게 남은 작업 메모와 함께 간단히 이메일 보낼게요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 16,
+        "english": "Perfect. Don't worry about it.",
+        "korean": "좋아요. 걱정 마세요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 17,
+        "english": "Just rest up and let me know how you're feeling tomorrow.",
+        "korean": "푹 쉬시고 내일 상태 알려주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
         "english": "Thanks, Rachel. I really appreciate it.",
         "korean": "감사합니다, 레이첼. 정말 감사해요.",
         "properNounIndices": [
@@ -125,12 +212,12 @@
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Panel Discussion — AI and the Future of Work",
-        "Calling in Sick",
-        "Making a Doctor's Appointment",
-        "TED-Style Talk — The Science of Habits"
+        "Podcast — Learning a Second Language",
+        "Buying a Gift",
+        "The Attention Economy",
+        "Calling in Sick"
       ],
-      "answer": 1
+      "answer": 3
     }
   }
 ]

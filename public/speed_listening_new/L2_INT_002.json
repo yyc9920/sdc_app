@@ -49,10 +49,10 @@
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Student Parking Fee Increase",
-        "Campus Café Relocation",
         "Mandatory Advising Sessions",
-        "Library Hours Change"
+        "Campus Café Relocation",
+        "Library Hours Change",
+        "Student Parking Fee Increase"
       ],
       "answer": 1
     }
@@ -61,7 +61,7 @@
     "setId": "L2_INT_002_set2",
     "parentSetId": "L2_INT_002",
     "theme": "Campus Café Relocation",
-    "level": 6,
+    "level": 4,
     "setNumber": 2,
     "sentences": [
       {
@@ -75,49 +75,42 @@
       },
       {
         "id": 6,
-        "english": "What do you mean? I think it's great news.",
-        "korean": "무슨 뜻이야? 나는 좋은 소식이라고 생각하는데.",
-        "properNounIndices": [
-          4
-        ]
+        "english": "What do you mean?",
+        "korean": "무슨 뜻이야?",
+        "properNounIndices": []
       },
       {
         "id": 7,
-        "english": "Well, the basement location was kind of inconvenient, I agree. But I liked that it was quiet down there. It never got too crowded.",
-        "korean": "음, 지하 위치가 좀 불편한 건 맞아. 하지만 거기가 조용한 게 좋았어. 절대 너무 붐비지 않았거든.",
-        "properNounIndices": [
-          8,
-          10,
-          11,
-          19
-        ]
-      },
-      {
-        "id": 8,
-        "english": "I get that, but think about the bigger picture.",
-        "korean": "이해해, 하지만 더 큰 그림을 생각해봐.",
+        "english": "I think it's great news.",
+        "korean": "나는 좋은 소식이라고 생각하는데.",
         "properNounIndices": [
           0
         ]
       },
       {
-        "id": 9,
-        "english": "The Morrison Center is right in the middle of campus. Everyone passes through there between classes.",
-        "korean": "모리슨 센터는 캠퍼스 한가운데에 있어. 수업 사이에 모두가 거기를 지나가거든.",
+        "id": 8,
+        "english": "Well, the basement location was kind of inconvenient, I agree.",
+        "korean": "음, 지하 위치가 좀 불편한 건 맞아.",
         "properNounIndices": [
-          1,
-          2,
-          10
+          8
+        ]
+      },
+      {
+        "id": 9,
+        "english": "But I liked that it was quiet down there.",
+        "korean": "하지만 거기가 조용한 게 좋았어.",
+        "properNounIndices": [
+          1
         ]
       }
     ],
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Student Parking Fee Increase",
+        "Library Hours Change",
         "Mandatory Advising Sessions",
         "Campus Café Relocation",
-        "Library Hours Change"
+        "Student Parking Fee Increase"
       ],
       "answer": 2
     }
@@ -126,17 +119,65 @@
     "setId": "L2_INT_002_set3",
     "parentSetId": "L2_INT_002",
     "theme": "Campus Café Relocation",
-    "level": 6,
+    "level": 4,
     "setNumber": 3,
     "sentences": [
       {
         "id": 10,
-        "english": "It'll be so much easier to just grab coffee on your way to a lecture.",
-        "korean": "강의실 가는 길에 커피 한 잔 사기가 훨씬 쉬워질 거야.",
+        "english": "It never got too crowded.",
+        "korean": "절대 너무 붐비지 않았거든.",
         "properNounIndices": []
       },
       {
         "id": 11,
+        "english": "I get that, but think about the bigger picture.",
+        "korean": "이해해, 하지만 더 큰 그림을 생각해봐.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 12,
+        "english": "The Morrison Center is right in the middle of campus.",
+        "korean": "모리슨 센터는 캠퍼스 한가운데에 있어.",
+        "properNounIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 13,
+        "english": "Everyone passes through there between classes.",
+        "korean": "수업 사이에 모두가 거기를 지나가거든.",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "It'll be so much easier to just grab coffee on your way to a lecture.",
+        "korean": "강의실 가는 길에 커피 한 잔 사기가 훨씬 쉬워질 거야.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mandatory Advising Sessions",
+        "Student Parking Fee Increase",
+        "Library Hours Change",
+        "Campus Café Relocation"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L2_INT_002_set4",
+    "parentSetId": "L2_INT_002",
+    "theme": "Campus Café Relocation",
+    "level": 5,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
         "english": "That's true. And you said the new place is bigger?",
         "korean": "그건 맞아. 그리고 새 장소가 더 크다고 했지?",
         "properNounIndices": [
@@ -144,7 +185,7 @@
         ]
       },
       {
-        "id": 12,
+        "id": 16,
         "english": "Way bigger. And an expanded menu — apparently they're adding hot food options.",
         "korean": "훨씬 더 커. 그리고 메뉴도 확장된대 — 따뜻한 음식 옵션을 추가한다더라.",
         "properNounIndices": [
@@ -152,44 +193,80 @@
         ]
       },
       {
-        "id": 13,
+        "id": 17,
         "english": "Right now they only have sandwiches and pastries.",
         "korean": "지금은 샌드위치와 빵류밖에 없거든.",
         "properNounIndices": []
       },
       {
-        "id": 14,
-        "english": "Okay, that does sound good. I guess the week of downtime is a small price to pay.",
-        "korean": "그건 좋겠다. 1주일 쉬는 건 감수할 만한 작은 대가인 것 같아.",
-        "properNounIndices": [
-          5
-        ]
+        "id": 18,
+        "english": "Okay, that does sound good.",
+        "korean": "그건 좋겠다.",
+        "properNounIndices": []
       },
       {
-        "id": 15,
-        "english": "Exactly. It's just one week. I think once it opens, everyone's going to love the new spot.",
-        "korean": "맞아. 단 1주일이야. 열리면 모두가 새 장소를 좋아할 거야.",
+        "id": 19,
+        "english": "I guess the week of downtime is a small price to pay.",
+        "korean": "1주일 쉬는 건 감수할 만한 작은 대가인 것 같아.",
         "properNounIndices": [
-          1,
-          5
-        ]
-      },
-      {
-        "id": 16,
-        "english": "The man expresses his opinion about the café relocation. State his opinion and explain the reasons he gives for holding that opinion.",
-        "korean": "남자가 카페 이전에 대한 의견을 표현합니다. 그의 의견과 이유를 설명하세요.",
-        "properNounIndices": [
-          9
+          0
         ]
       }
     ],
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Campus Café Relocation",
-        "Student Parking Fee Increase",
         "Library Hours Change",
+        "Student Parking Fee Increase",
+        "Campus Café Relocation",
         "Mandatory Advising Sessions"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_INT_002_set5",
+    "parentSetId": "L2_INT_002",
+    "theme": "Campus Café Relocation",
+    "level": 5,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "Exactly. It's just one week.",
+        "korean": "맞아. 단 1주일이야.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 21,
+        "english": "I think once it opens, everyone's going to love the new spot.",
+        "korean": "열리면 모두가 새 장소를 좋아할 거야.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 22,
+        "english": "The man expresses his opinion about the café relocation.",
+        "korean": "남자가 카페 이전에 대한 의견을 표현합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 23,
+        "english": "State his opinion and explain the reasons he gives for holding that opinion.",
+        "korean": "그의 의견과 이유를 설명하세요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Campus Café Relocation",
+        "Mandatory Advising Sessions",
+        "Library Hours Change",
+        "Student Parking Fee Increase"
       ],
       "answer": 0
     }

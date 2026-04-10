@@ -1,0 +1,47 @@
+[
+  {
+    "setId": "L2_EXT_036_set1",
+    "parentSetId": "L2_EXT_036",
+    "theme": "Tips for Better Sleep",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Getting a good night's sleep starts hours before bedtime.",
+        "korean": "숙면은 잠자리에 들기 몇 시간 전부터 시작돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Avoid caffeine after two PM because it stays in your system for up to eight hours.",
+        "korean": "카페인은 체내에 최대 8시간 남아 있으니 오후 2시 이후에는 피하세요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Put away your phone at least thirty minutes before bed because the blue light tricks your brain into thinking it's still daytime.",
+        "korean": "잠자기 최소 30분 전에 폰을 치우세요. 블루라이트가 뇌를 속여 아직 낮이라고 생각하게 하니까요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Keep your bedroom cool and dark and try to go to bed at the same time every night even on weekends.",
+        "korean": "침실을 시원하고 어둡게 유지하고 주말에도 매일 같은 시간에 잠자리에 드세요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "My Daily Schedule",
+        "Tips for Better Sleep",
+        "Dealing with Jet Lag",
+        "My Pet"
+      ],
+      "answer": 1
+    }
+  }
+]

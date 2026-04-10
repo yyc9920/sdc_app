@@ -1,0 +1,51 @@
+[
+  {
+    "setId": "L1_EXT_067_set1",
+    "parentSetId": "L1_EXT_067",
+    "theme": "Going Camping",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Last summer my family went camping in the mountains.",
+        "korean": "지난 여름 가족이 산에 캠핑을 갔어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "We put up a tent near a river.",
+        "korean": "강 근처에 텐트를 쳤어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "We cooked meat and corn on a campfire.",
+        "korean": "캠프파이어에서 고기와 옥수수를 구웠어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "At night we looked at the stars and told stories.",
+        "korean": "밤에 별을 보고 이야기를 했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "It was one of the best trips ever.",
+        "korean": "역대 최고의 여행 중 하나였어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "My Neighborhood Store",
+        "Going Camping",
+        "Waiting for the Bus",
+        "Benefits of Reading Before Bed"
+      ],
+      "answer": 1
+    }
+  }
+]

@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L2_ELLO_130_set1",
+    "parentSetId": "L2_ELLO_130",
+    "theme": "Mixer #15 — Concerts",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The best concert I ever went to was a rock concert in a small club.",
+        "korean": "최고의 콘서트는 작은 클럽에서의 록 콘서트였어요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 1,
+        "english": "The energy was incredible.",
+        "korean": "에너지가 엄청났어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I went to a K-pop concert in Seoul and the fans were amazing.",
+        "korean": "서울에서 K-pop 콘서트에 갔는데 팬들이 놀라웠어요.",
+        "properNounIndices": [
+          0,
+          4,
+          7
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Everyone knew every word of every song.",
+        "korean": "모두가 모든 노래의 모든 가사를 알았어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I prefer outdoor music festivals because the atmosphere is incredible, with thousands of people all singing together.",
+        "korean": "야외 음악 축제를 선호해요. 분위기가 엄청나거든요. 수천 명이 함께 노래해요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #87 — Sharing Food",
+        "Mixer #26 — Weekend Cooking",
+        "Mixer #13 — Favorite Smell",
+        "Mixer #15 — Concerts"
+      ],
+      "answer": 3
+    }
+  }
+]

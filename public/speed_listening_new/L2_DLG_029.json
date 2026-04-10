@@ -1,0 +1,77 @@
+[
+  {
+    "setId": "L2_DLG_029_set1",
+    "parentSetId": "L2_DLG_029",
+    "theme": "Discussing Weekend Plans",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "What are you doing this weekend?",
+        "korean": "이번 주말에 뭐 해요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I'm thinking of going to the new art exhibition at the museum.",
+        "korean": "박물관의 새 미술 전시에 가려고 생각 중이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Oh I heard about that.",
+        "korean": "아 나도 그거 들었어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Is it the one with the modern sculptures?",
+        "korean": "현대 조각 전시 맞아요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Yes and they also have an interactive section where you can create your own digital art.",
+        "korean": "네 그리고 직접 디지털 아트를 만들 수 있는 인터랙티브 섹션도 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Can I come with you?",
+        "korean": "나도 같이 가도 돼요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Of course! I was going to ask you anyway.",
+        "korean": "물론이죠! 어차피 물어보려고 했어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Let's go Saturday afternoon.",
+        "korean": "토요일 오후에 가요.",
+        "properNounIndices": [
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Startup — Investor Pitch",
+        "Asking for Help at a Store",
+        "Discussing Weekend Plans",
+        "Ordering at a Restaurant"
+      ],
+      "answer": 2
+    }
+  }
+]

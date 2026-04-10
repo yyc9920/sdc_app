@@ -1,0 +1,73 @@
+[
+  {
+    "setId": "L2_DLG_043_set1",
+    "parentSetId": "L2_DLG_043",
+    "theme": "Asking About Wi-Fi",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Excuse me. Do you have Wi-Fi here?",
+        "korean": "실례합니다. 여기 와이파이 있나요?",
+        "properNounIndices": [
+          2,
+          5
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Yes. The network name is CafeGuest.",
+        "korean": "네. 네트워크 이름은 CafeGuest예요.",
+        "properNounIndices": [
+          1,
+          5
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Is there a password?",
+        "korean": "비밀번호가 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Yes it's on the receipt.",
+        "korean": "네 영수증에 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Oh I see it.",
+        "korean": "아 보여요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Thank you.",
+        "korean": "감사합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Let me know if the speed is slow and I'll restart the router.",
+        "korean": "속도가 느리면 알려주세요. 라우터를 재시작할게요.",
+        "properNounIndices": [
+          9
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Calling About a Job Posting",
+        "Asking About Wi-Fi",
+        "At the Swimming Pool",
+        "Splitting the Bill"
+      ],
+      "answer": 1
+    }
+  }
+]

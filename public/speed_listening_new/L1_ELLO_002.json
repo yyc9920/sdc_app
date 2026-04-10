@@ -8,64 +8,57 @@
     "sentences": [
       {
         "id": 0,
-        "english": "My first part-time job was washing dishes in a restaurant. It wasn't a very glamorous job, but I really wanted it because I wanted to pay for horse-riding lessons.",
-        "korean": "첫 아르바이트는 식당에서 설거지하는 거였어요. 화려한 일은 아니었지만, 겨우 13살이라 내 돈을 벌고 싶어서 정말 하고 싶었어요.",
-        "properNounIndices": [
-          10,
-          17,
-          22
-        ]
+        "english": "My first part-time job was washing dishes in a restaurant.",
+        "korean": "첫 아르바이트는 식당에서 설거지하는 거였어요.",
+        "properNounIndices": []
       },
       {
         "id": 1,
-        "english": "So every Saturday night I went to this restaurant and worked for maybe five hours. It was hard physical labor, but it taught me the value of money.",
-        "korean": "매주 토요일 밤에 이 식당에 가서 약 5시간 일했어요. 힘든 육체노동이었지만 노력에 대해 많이 배웠어요.",
+        "english": "It wasn't a very glamorous job, but I really wanted it because I wanted to pay for horse-riding lessons.",
+        "korean": "화려한 일은 아니었지만, 겨우 13살이라 내 돈을 벌고 싶어서 정말 하고 싶었어요.",
         "properNounIndices": [
-          2,
-          4,
-          15
+          7,
+          12
         ]
       },
       {
         "id": 2,
-        "english": "My first part-time job — I was living in a small town, Tulsa, Oklahoma, and I worked for the Harmon Foundation. They owned a hands-on science and math museum for children.",
-        "korean": "첫 아르바이트 — 오클라호마 털사라는 작은 마을에 살면서 하몬 재단에서 일했어요. 거기서 어린이를 위한 체험형 과학·수학 박물관을 운영했어요.",
+        "english": "So every Saturday night I went to this restaurant and worked for maybe five hours.",
+        "korean": "매주 토요일 밤에 이 식당에 가서 약 5시간 일했어요.",
+        "properNounIndices": [
+          2,
+          4
+        ]
+      },
+      {
+        "id": 3,
+        "english": "It was hard physical labor, but it taught me the value of money.",
+        "korean": "힘든 육체노동이었지만 노력에 대해 많이 배웠어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "My first part-time job — I was living in a small town, Tulsa, Oklahoma, and I worked for the Harmon Foundation.",
+        "korean": "첫 아르바이트 — 오클라호마 털사라는 작은 마을에 살면서 하몬 재단에서 일했어요.",
         "properNounIndices": [
           5,
           12,
           13,
           15,
           19,
-          20,
-          21
+          20
         ]
-      },
-      {
-        "id": 3,
-        "english": "Every day I would run a laser light show, and once I was through with that I would give museum tours and explain the science and math background to each exhibit.",
-        "korean": "매일 레이저 라이트 쇼를 진행하고, 끝나면 박물관 투어를 하면서 모든 전시물의 과학과 수학을 설명했어요.",
-        "properNounIndices": [
-          2,
-          11,
-          16
-        ]
-      },
-      {
-        "id": 4,
-        "english": "It was a lot of fun seeing kids open their eyes to mathematics and science.",
-        "korean": "아이들이 수학과 과학에 눈을 뜨는 걸 보는 게 정말 재미있었어요.",
-        "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '남은 음식/물건' mean in English?",
+      "question": "What does '햄버거를 만들다 (패스트푸드 조리)' mean in English?",
       "options": [
         "hands-on",
         "leftover",
-        "physical labor",
+        "flipping burgers",
         "open their eyes (to)"
       ],
-      "answer": 1
+      "answer": 2
     }
   },
   {
@@ -77,62 +70,51 @@
     "sentences": [
       {
         "id": 5,
+        "english": "They owned a hands-on science and math museum for children.",
+        "korean": "거기서 어린이를 위한 체험형 과학·수학 박물관을 운영했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Every day I would run a laser light show, and once I was through with that I would give museum tours and explain the science and math background to each exhibit.",
+        "korean": "매일 레이저 라이트 쇼를 진행하고, 끝나면 박물관 투어를 하면서 모든 전시물의 과학과 수학을 설명했어요.",
+        "properNounIndices": [
+          2,
+          11,
+          16
+        ]
+      },
+      {
+        "id": 7,
+        "english": "It was a lot of fun seeing kids open their eyes to mathematics and science.",
+        "korean": "아이들이 수학과 과학에 눈을 뜨는 걸 보는 게 정말 재미있었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
         "english": "My first part-time job was as a cashier at a supermarket.",
         "korean": "첫 아르바이트는 슈퍼마켓 계산원이었어요.",
         "properNounIndices": []
       },
       {
-        "id": 6,
+        "id": 9,
         "english": "I really hated it because I had to stand on my feet for basically eight hours a day, dealing with a lot of people who don't appreciate the job that we do.",
         "korean": "정말 싫었어요. 기본적으로 하루 8시간 서 있어야 하고, 인사도 안 하고 고맙다는 말도 없는 사람들을 많이 상대해야 했거든요.",
         "properNounIndices": [
           0,
           5
         ]
-      },
-      {
-        "id": 7,
-        "english": "I had a lot of people yelling at me for different reasons and always misunderstanding the situations. It's not a job I would go back to.",
-        "korean": "여러 이유로 소리 지르는 사람들이 많았고 항상 상황을 오해했어요. 추천하고 싶지 않은 일이에요.",
-        "properNounIndices": [
-          0,
-          17,
-          21
-        ]
-      },
-      {
-        "id": 8,
-        "english": "My first part-time job was working at McDonald's. When I was fifteen, I had a job at McDonald's flipping burgers, doing fries, cooking — not taking orders.",
-        "korean": "첫 아르바이트는 맥도날드에서 일하는 거였어요. 15살 때 맥도날드에서 버거를 뒤집고, 감자튀김을 만들고, 손님을 응대했어요.",
-        "properNounIndices": [
-          7,
-          8,
-          9,
-          12,
-          17
-        ]
-      },
-      {
-        "id": 9,
-        "english": "I enjoyed it for a while, about two or three months, but then I started losing interest in it, and after six months, I quit the job. But it was a good job for a fifteen-year-old.",
-        "korean": "2~3개월 정도는 즐겼는데, 그 후에 흥미를 잃기 시작해서 6개월 후에 그만뒀어요.",
-        "properNounIndices": [
-          0,
-          13,
-          23,
-          27
-        ]
       }
     ],
     "quiz": {
-      "question": "What does '직접 체험하는' mean in English?",
+      "question": "What does '남은 음식/물건' mean in English?",
       "options": [
-        "hands-on",
+        "flipping burgers",
+        "open their eyes (to)",
         "leftover",
-        "physical labor",
-        "flipping burgers"
+        "physical labor"
       ],
-      "answer": 0
+      "answer": 2
     }
   },
   {
@@ -144,6 +126,75 @@
     "sentences": [
       {
         "id": 10,
+        "english": "I had a lot of people yelling at me for different reasons and always misunderstanding the situations.",
+        "korean": "여러 이유로 소리 지르는 사람들이 많았고 항상 상황을 오해했어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 11,
+        "english": "It's not a job I would go back to.",
+        "korean": "추천하고 싶지 않은 일이에요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 12,
+        "english": "My first part-time job was working at McDonald's.",
+        "korean": "첫 아르바이트는 맥도날드에서 일하는 거였어요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 13,
+        "english": "When I was fifteen, I had a job at McDonald's flipping burgers, doing fries, cooking — not taking orders.",
+        "korean": "15살 때 맥도날드에서 버거를 뒤집고, 감자튀김을 만들고, 손님을 응대했어요.",
+        "properNounIndices": [
+          1,
+          4,
+          9
+        ]
+      },
+      {
+        "id": 14,
+        "english": "I enjoyed it for a while, about two or three months, but then I started losing interest in it, and after six months, I quit the job.",
+        "korean": "2~3개월 정도는 즐겼는데, 그 후에 흥미를 잃기 시작해서 6개월 후에 그만뒀어요.",
+        "properNounIndices": [
+          0,
+          13,
+          23
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '남은 음식/물건' mean in English?",
+      "options": [
+        "physical labor",
+        "leftover",
+        "open their eyes (to)",
+        "hands-on"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L1_ELLO_002_set4",
+    "parentSetId": "L1_ELLO_002",
+    "theme": "Mixer #11 — First Job",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "But it was a good job for a fifteen-year-old.",
+        "korean": "하지만 흥미를 잃기 시작했고 6개월 후에 그만뒀어요",
+        "properNounIndices": []
+      },
+      {
+        "id": 16,
         "english": "My first part-time job was at a bakery, in New Zealand.",
         "korean": "첫 아르바이트는 뉴질랜드의 빵집에서였어요.",
         "properNounIndices": [
@@ -152,7 +203,7 @@
         ]
       },
       {
-        "id": 11,
+        "id": 17,
         "english": "I was in high school then, so about two times a week — the weekends and Fridays after school — I would go to the bakery and sell bread to the customers.",
         "korean": "그때 고등학생이라 일주일에 두 번 정도 — 주말과 금요일 방과 후에 — 빵집에 가서 바닥 쓸기, 반죽 준비, 손님 응대 같은 걸 했어요.",
         "properNounIndices": [
@@ -162,48 +213,85 @@
         ]
       },
       {
-        "id": 12,
+        "id": 18,
         "english": "The best part was that at the end of the day, all the leftover bread, we could take home to our families, which made my brother very, very happy.",
         "korean": "가장 좋았던 건 하루가 끝나면 남은 빵을 모두 집에 가져갈 수 있었다는 거예요. 엄마가 좋아하셨어요.",
         "properNounIndices": []
       },
       {
-        "id": 13,
-        "english": "My first part-time job was at a restaurant called Chuck E. Cheese. It's a famous restaurant in America for little kids. Sometimes I was a waiter, but sometimes I got to dress up as Chucky.",
+        "id": 19,
+        "english": "My first part-time job was at a restaurant called Chuck E.",
         "korean": "첫 아르바이트는 뉴질랜드의 빵집에서였어요.",
         "properNounIndices": [
           9,
-          10,
-          11,
-          12,
-          17,
-          21,
-          22,
-          28,
-          34
-        ]
-      },
-      {
-        "id": 14,
-        "english": "Chucky is a big mouse — he's the character for Chuck E. Cheese — and so I would dress up in a big mouse costume and go around entertaining little kids.",
-        "korean": "처키는 큰 쥐로 척 이 치즈의 캐릭터예요. 그래서 큰 쥐 의상을 입고 돌아다니면서 아이들과 놀았어요.",
-        "properNounIndices": [
-          10,
-          11,
-          12,
-          16
+          10
         ]
       }
     ],
     "quiz": {
-      "question": "What does '직접 체험하는' mean in English?",
+      "question": "What does '남은 음식/물건' mean in English?",
       "options": [
-        "hands-on",
+        "flipping burgers",
+        "physical labor",
         "open their eyes (to)",
-        "leftover",
-        "physical labor"
+        "leftover"
       ],
-      "answer": 0
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L1_ELLO_002_set5",
+    "parentSetId": "L1_ELLO_002",
+    "theme": "Mixer #11 — First Job",
+    "level": 6,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "Cheese. It's a famous restaurant in America for little kids.",
+        "korean": "첫 아르바이트는 /",
+        "properNounIndices": [
+          1,
+          6
+        ]
+      },
+      {
+        "id": 21,
+        "english": "Sometimes I was a waiter, but sometimes I got to dress up as Chucky.",
+        "korean": "뉴질랜드의 빵집에서였어요",
+        "properNounIndices": [
+          1,
+          7,
+          13
+        ]
+      },
+      {
+        "id": 22,
+        "english": "Chucky is a big mouse — he's the character for Chuck E.",
+        "korean": "처키는 큰 쥐로 척 이 치즈의 캐릭터예요.",
+        "properNounIndices": [
+          10,
+          11
+        ]
+      },
+      {
+        "id": 23,
+        "english": "Cheese — and so I would dress up in a big mouse costume and go around entertaining little kids.",
+        "korean": "그래서 큰 쥐 의상을 입고 돌아다니면서 아이들과 놀았어요.",
+        "properNounIndices": [
+          4
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '육체 노동' mean in English?",
+      "options": [
+        "leftover",
+        "physical labor",
+        "open their eyes (to)",
+        "hands-on"
+      ],
+      "answer": 1
     }
   }
 ]

@@ -1,0 +1,53 @@
+[
+  {
+    "setId": "L1_EXT_049_set1",
+    "parentSetId": "L1_EXT_049",
+    "theme": "Eating Lunch at School",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "We eat lunch at school every day.",
+        "korean": "매일 학교에서 점심을 먹어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "The school cafeteria serves Korean food.",
+        "korean": "학교 급식실에서 한식을 줘요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Today we had rice, kimchi, and bulgogi.",
+        "korean": "오늘은 밥 김치 불고기를 먹었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "My favorite school lunch is curry rice.",
+        "korean": "가장 좋아하는 급식은 카레 라이스예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "After lunch we have a short break to play outside.",
+        "korean": "점심 후에 밖에서 노는 짧은 쉬는 시간이 있어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Moving to a New Apartment",
+        "Eating Lunch at School",
+        "My First Time Living Abroad",
+        "Introducing Your Family"
+      ],
+      "answer": 1
+    }
+  }
+]

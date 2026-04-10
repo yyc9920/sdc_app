@@ -1,0 +1,67 @@
+[
+  {
+    "setId": "L3_B6ME_036_set1",
+    "parentSetId": "L3_B6ME_036",
+    "theme": "Is Breakfast the Most Important Meal?",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I am supporting the meme 'breakfast like a king and dine like a pauper'.",
+        "korean": "'왕처럼 아침을 먹고 거지처럼 저녁을 먹으라'는 밈을 지지해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "We're going to talk about breakfast.",
+        "korean": "아침 식사에 대해 이야기할 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "How important is it?",
+        "korean": "얼마나 중요할까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "One of the reasons given why people might be leaner is that they have better appetite control.",
+        "korean": "사람들이 더 날씬할 수 있는 이유 중 하나는 더 나은 식욕 조절 때문이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Appetite control is where your brain decides how much you should eat.",
+        "korean": "식욕 조절은 뇌가 얼마나 먹어야 하는지 결정하는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "According to a recent survey, what is the most popular breakfast in the UK?",
+        "korean": "최근 조사에 따르면 영국에서 가장 인기 있는 아침은?",
+        "properNounIndices": [
+          13
+        ]
+      },
+      {
+        "id": 6,
+        "english": "The answer is cereal.",
+        "korean": "정답은 시리얼이에요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '(데이터가) 급등하다' mean in English?",
+      "options": [
+        "appetite control",
+        "lean",
+        "spike",
+        "metabolism"
+      ],
+      "answer": 2
+    }
+  }
+]

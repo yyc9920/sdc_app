@@ -1,0 +1,53 @@
+[
+  {
+    "setId": "L1_EXT_028_set1",
+    "parentSetId": "L1_EXT_028",
+    "theme": "Going to the Beach",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My family goes to the beach every summer.",
+        "korean": "가족이 매년 여름 해변에 가요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "We swim in the ocean and build sandcastles.",
+        "korean": "바다에서 수영하고 모래성을 쌓아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I like to collect seashells along the shore.",
+        "korean": "해안가를 따라 조개를 모으는 걸 좋아해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "My favorite part is watching the sunset over the water.",
+        "korean": "가장 좋아하는 부분은 물 위로 지는 석양을 보는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "The beach always makes me feel happy and relaxed.",
+        "korean": "해변은 항상 행복하고 편안하게 해줘요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '해변' mean in English?",
+      "options": [
+        "beach",
+        "sandcastle",
+        "sunset",
+        "seashell"
+      ],
+      "answer": 0
+    }
+  }
+]

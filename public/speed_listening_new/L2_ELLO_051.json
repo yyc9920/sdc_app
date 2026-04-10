@@ -1,0 +1,65 @@
+[
+  {
+    "setId": "L2_ELLO_051_set1",
+    "parentSetId": "L2_ELLO_051",
+    "theme": "Mixer #95 — Bucket List",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The number one thing on my bucket list is to skydive.",
+        "korean": "버킷리스트 1순위는 스카이다이빙이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I've always wanted to know what it feels like to fall through the sky.",
+        "korean": "하늘에서 떨어지는 느낌이 어떤지 항상 알고 싶었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I want to see the Northern Lights in person before I die.",
+        "korean": "죽기 전에 오로라를 직접 보고 싶어요.",
+        "properNounIndices": [
+          0,
+          5,
+          6,
+          10
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Pictures don't do it justice.",
+        "korean": "사진으로는 제대로 표현이 안 돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I want to learn to surf, even though I'm terrified of big waves.",
+        "korean": "서핑을 배우고 싶어요, 큰 파도가 무섭지만요.",
+        "properNounIndices": [
+          0,
+          8
+        ]
+      },
+      {
+        "id": 5,
+        "english": "That's kind of the point though — facing your fears.",
+        "korean": "그게 핵심이긴 해요 — 두려움에 맞서는 거요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #72 — Driving",
+        "Mixer #69 — Volunteering",
+        "Mixer #114 — Weekend Plans",
+        "Mixer #95 — Bucket List"
+      ],
+      "answer": 3
+    }
+  }
+]

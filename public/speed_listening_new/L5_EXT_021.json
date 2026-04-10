@@ -1,0 +1,41 @@
+[
+  {
+    "setId": "L5_EXT_021_set1",
+    "parentSetId": "L5_EXT_021",
+    "theme": "The Dunning-Kruger Effect",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The Dunning-Kruger effect is a cognitive bias in which people with limited competence in a particular domain significantly overestimate their own abilities.",
+        "korean": "더닝크루거 효과는 특정 분야에서 능력이 제한된 사람들이 자신의 능력을 크게 과대평가하는 인지 편향이다.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Paradoxically those who are highly skilled in an area tend to underestimate their competence assuming that what comes easily to them must be easy for everyone.",
+        "korean": "역설적으로 특정 분야에 고도로 숙련된 사람들은 자신의 능력을 과소평가하는 경향이 있다. 자신에게 쉬운 것이 모두에게 쉬울 거라고 가정하기 때문이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "This asymmetry has profound implications for fields ranging from medicine and education to politics and business where overconfident novices may make dangerous decisions while genuine experts hesitate.",
+        "korean": "이 비대칭은 의학 교육에서 정치 비즈니스까지 광범위한 분야에 깊은 함의를 가진다. 과신하는 초보자가 위험한 결정을 내릴 수 있는 반면 진정한 전문가는 주저한다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '인지 편향' mean in English?",
+      "options": [
+        "cognitive bias",
+        "overestimate",
+        "underestimate",
+        "asymmetry"
+      ],
+      "answer": 0
+    }
+  }
+]

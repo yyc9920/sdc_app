@@ -1,0 +1,65 @@
+[
+  {
+    "setId": "L2_DLG_046_set1",
+    "parentSetId": "L2_DLG_046",
+    "theme": "Discussing Weekend Weather",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Did you check the weather for Saturday?",
+        "korean": "토요일 날씨 확인했어요?",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Yeah it says it's going to rain all day.",
+        "korean": "네 하루 종일 비 온다고 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "That ruins our hiking plan.",
+        "korean": "등산 계획이 망했네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "We could go to an indoor rock climbing gym instead.",
+        "korean": "대신 실내 암벽 등반 체육관에 갈 수도 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I've never tried that before.",
+        "korean": "해본 적 없는데요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Me neither but it looks really fun.",
+        "korean": "나도요. 근데 정말 재밌어 보여요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Let's do it!",
+        "korean": "하자요!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Discussing Weekend Weather",
+        "At the Bakery",
+        "Asking for a Recommendation",
+        "Asking to Borrow Something"
+      ],
+      "answer": 0
+    }
+  }
+]

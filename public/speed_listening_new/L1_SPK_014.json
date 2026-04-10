@@ -1,0 +1,107 @@
+[
+  {
+    "setId": "L1_SPK_014_set1",
+    "parentSetId": "L1_SPK_014",
+    "theme": "A Place You'd Like to Visit",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "If you could visit any country in the world where would you go?",
+        "korean": "세계 어느 나라든 방문할 수 있다면 어디에 가겠습니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your choice.",
+        "korean": "선택을 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "If I could visit any country I would choose New Zealand.",
+        "korean": "어느 나라든 방문할 수 있다면 뉴질랜드를 선택하겠어요.",
+        "properNounIndices": [
+          1,
+          6,
+          9,
+          10
+        ]
+      },
+      {
+        "id": 3,
+        "english": "The biggest reason is the stunning natural scenery.",
+        "korean": "가장 큰 이유는 놀라운 자연 경관이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I've always dreamed of seeing the mountains and lakes that appeared in the Lord of the Rings films.",
+        "korean": "반지의 제왕 영화에 나온 산과 호수를 보는 것을 항상 꿈꿔왔어요.",
+        "properNounIndices": [
+          13,
+          16
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "A Place You'd Like to Visit",
+        "Do you think competition is healthy or harmful for",
+        "The Influence of Advertising",
+        "A Historical Figure You Admire"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L1_SPK_014_set2",
+    "parentSetId": "L1_SPK_014",
+    "theme": "A Place You'd Like to Visit",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Also New Zealand is famous for adventure sports like bungee jumping and skydiving.",
+        "korean": "또한 뉴질랜드는 번지 점프와 스카이다이빙 같은 어드벤처 스포츠로 유명해요.",
+        "properNounIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 6,
+        "english": "I love outdoor activities so it would be the perfect destination for me.",
+        "korean": "야외 활동을 좋아해서 나에게 완벽한 여행지가 될 거예요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 7,
+        "english": "On top of that the people there are known for being very friendly and welcoming.",
+        "korean": "게다가 그곳 사람들은 매우 친절하고 환대하는 것으로 알려져 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "on top of that",
+        "korean": "게다가",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "How would you spend a day completely without techn",
+        "Do you think voting should be mandatory for all ci",
+        "A Place You'd Like to Visit",
+        "Favorite Place"
+      ],
+      "answer": 2
+    }
+  }
+]

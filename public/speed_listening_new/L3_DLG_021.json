@@ -1,0 +1,99 @@
+[
+  {
+    "setId": "L3_DLG_021_set1",
+    "parentSetId": "L3_DLG_021",
+    "theme": "Customer Service — Returning a Product",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hi, I'd like to return this jacket I bought last week.",
+        "korean": "안녕하세요. 지난주에 산 이 재킷을 반품하고 싶어요.",
+        "properNounIndices": [
+          1,
+          7
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Do you have the receipt?",
+        "korean": "영수증이 있으세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Yes, here it is.",
+        "korean": "네 여기 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "May I ask the reason for the return?",
+        "korean": "반품 사유를 여쭤봐도 될까요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 4,
+        "english": "The zipper broke after wearing it just twice.",
+        "korean": "두 번만 입었는데 지퍼가 고장났어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '환불' mean in English?",
+      "options": [
+        "refund",
+        "receipt",
+        "payment method",
+        "exchange"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L3_DLG_021_set2",
+    "parentSetId": "L3_DLG_021",
+    "theme": "Customer Service — Returning a Product",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I'm sorry about that.",
+        "korean": "그건 죄송합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Would you prefer a full refund or an exchange for a new one?",
+        "korean": "전액 환불을 원하시나요 아니면 새 것으로 교환하시겠어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "I'd like a refund please.",
+        "korean": "환불로 부탁드려요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "The refund will be processed back to your original payment method within three to five business days.",
+        "korean": "환불은 원래 결제 수단으로 영업일 기준 3~5일 내에 처리됩니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '영수증' mean in English?",
+      "options": [
+        "exchange",
+        "payment method",
+        "receipt",
+        "refund"
+      ],
+      "answer": 2
+    }
+  }
+]

@@ -3,25 +3,31 @@
     "setId": "L1_BTEW_010_set1",
     "parentSetId": "L1_BTEW_010",
     "theme": "Off the scale",
-    "level": 6,
+    "level": 5,
     "setNumber": 1,
     "sentences": [
       {
         "id": 0,
-        "english": "Hello and welcome to The English We Speak, where we explain phrases used by fluent English speakers so that you can use them as well. I'm Feifei.",
-        "korean": "안녕하세요, 유창한 영어 화자들이 쓰는 표현을 설명하는 The English We Speak에 오신 것을 환영합니다. 저는 페이페이입니다.",
+        "english": "Hello and welcome to The English We Speak, where we explain phrases used by fluent English speakers so that you can use them as well.",
+        "korean": "안녕하세요, 유창한 영어 화자들이 쓰는 표현을 설명하는 The English We Speak에 오신 것을 환영합니다.",
         "properNounIndices": [
           4,
           5,
           6,
           7,
-          15,
-          25,
-          26
+          15
         ]
       },
       {
         "id": 1,
+        "english": "I'm Feifei.",
+        "korean": "저는 페이페이입니다.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
         "english": "And I'm Beth. How are you, Feifei?",
         "korean": "저는 베스입니다. 잘 지내, 페이페이?",
         "properNounIndices": [
@@ -32,45 +38,29 @@
         ]
       },
       {
-        "id": 2,
-        "english": "I'm doing great, thank you. What are we learning in this programme, Beth?",
-        "korean": "아주 잘 지내, 고마워. 이번 프로그램에서 뭘 배우지, 베스?",
-        "properNounIndices": [
-          5,
-          12
-        ]
-      },
-      {
         "id": 3,
-        "english": "Well, we are learning 'off the scale'. Now, I heard this when I was chatting to a friend about her holiday. She said that she went to an amazing restaurant and the food was 'off the scale'.",
-        "korean": "우리는 'off the scale'을 배울 거야. 친구 휴가 얘기하다가 들었는데, 멋진 레스토랑에 갔는데 음식이 'off the scale'이었다고 했어.",
-        "properNounIndices": [
-          7,
-          8,
-          12,
-          21
-        ]
+        "english": "I'm doing great, thank you.",
+        "korean": "아주 잘 지내, 고마워.",
+        "properNounIndices": []
       },
       {
         "id": 4,
-        "english": "Ah yes. 'Off the scale'. It's a funny expression because 'scale' makes it sounds like the food is being measured, but that's not what she meant, I guess.",
-        "korean": "'Off the scale'. 재밌는 표현이야. 'scale'이라서 음식을 측정하는 것 같지만, 그게 그녀가 의미한 건 아닌 것 같아.",
+        "english": "What are we learning in this programme, Beth?",
+        "korean": "이번 프로그램에서 뭘 배우지, 베스?",
         "properNounIndices": [
-          2,
-          5,
-          26
+          7
         ]
       }
     ],
     "quiz": {
-      "question": "What does '경쟁자, 라이벌' mean in English?",
+      "question": "What does '척도, 등급' mean in English?",
       "options": [
         "rival",
-        "authentic",
         "beyond",
+        "exceptionally",
         "scale"
       ],
-      "answer": 0
+      "answer": 3
     }
   },
   {
@@ -82,53 +72,51 @@
     "sentences": [
       {
         "id": 5,
-        "english": "Yeah, exactly! She meant that the food was so good that it can't be rated on a normal scale. So, we use 'off the scale' to say something goes beyond what is expected, and it's usually used in a positive way.",
-        "korean": "맞아! 음식이 너무 좋아서 일반적인 등급으로는 평가할 수 없다는 뜻이야. 'off the scale'은 기대를 뛰어넘는다고 할 때 쓰는데, 보통 긍정적으로 써.",
-        "properNounIndices": [
-          2,
-          19
-        ]
+        "english": "Well, we are learning 'off the scale'.",
+        "korean": "우리는 'off the scale'을 배울 거야.",
+        "properNounIndices": []
       },
       {
         "id": 6,
-        "english": "For example an influencer said the restaurant around the corner serves the most authentic Chinese food and since then bookings have been off the scale!",
-        "korean": "예를 들어 인플루언서가 모퉁이 레스토랑이 가장 정통 중국 음식을 한다고 했더니, 그 이후로 예약이 폭발적이었어!",
+        "english": "Now, I heard this when I was chatting to a friend about her holiday.",
+        "korean": "친구 휴가 얘기하다가 들었는데, 멋진 레스토랑에 갔는데 음식이 'off the scale'이었다고 했어.",
         "properNounIndices": [
-          14
+          1,
+          5
         ]
       },
       {
         "id": 7,
-        "english": "Oo, well maybe I should try and get in there then.",
-        "korean": "오, 그러면 나도 거기 가봐야겠네.",
-        "properNounIndices": [
-          3
-        ]
-      },
-      {
-        "id": 8,
-        "english": "Here are some more examples of 'off the scale'.",
-        "korean": "'off the scale'의 예시를 더 들어볼게.",
+        "english": "She said that she went to an amazing restaurant and the food was 'off the scale'.",
+        "korean": "쉬 세드 댓 쉬 웬트 투 언 어메이징 레스토랑 앤 더 푸드 워즈 '오프 더 스케일'.",
         "properNounIndices": []
       },
       {
-        "id": 9,
-        "english": "Last week I went to see my local football team beating their closest rivals and the celebrations were off the scale.",
-        "korean": "지난주에 우리 동네 축구팀이 최대 라이벌을 이기는 걸 봤는데 축하가 엄청났어.",
+        "id": 8,
+        "english": "Ah yes. 'Off the scale'.",
+        "korean": "'Off the scale'.",
         "properNounIndices": [
           2
+        ]
+      },
+      {
+        "id": 9,
+        "english": "It's a funny expression because 'scale' makes it sounds like the food is being measured, but that's not what she meant, I guess.",
+        "korean": "재밌는 표현이야. 'scale'이라서 음식을 측정하는 것 같지만, 그게 그녀가 의미한 건 아닌 것 같아.",
+        "properNounIndices": [
+          21
         ]
       }
     ],
     "quiz": {
-      "question": "What does '경쟁자, 라이벌' mean in English?",
+      "question": "What does '진짜의, 정통의' mean in English?",
       "options": [
         "beyond",
-        "scale",
-        "rival",
-        "authentic"
+        "authentic",
+        "exceptionally",
+        "off the scale"
       ],
-      "answer": 2
+      "answer": 1
     }
   },
   {
@@ -140,32 +128,132 @@
     "sentences": [
       {
         "id": 10,
-        "english": "My boyfriend cooked me dinner yesterday and he made this amazing roast chicken. It was delicious – it was just off the scale.",
-        "korean": "남자친구가 어제 저녁을 해줬는데 끝내주는 로스트 치킨을 만들었어. 정말 맛있었어 — 기대 이상이었어.",
+        "english": "Yeah, exactly! She meant that the food was so good that it can't be rated on a normal scale.",
+        "korean": "맞아! 음식이 너무 좋아서 일반적인 등급으로는 평가할 수 없다는 뜻이야.",
         "properNounIndices": [
-          13
+          2
         ]
       },
       {
         "id": 11,
-        "english": "Oh yes, I remember passing my driving test. The sense of achievement afterwards, it was just off the scale. It felt amazing.",
-        "korean": "맞아, 운전면허 합격했을 때 기억나. 그 후의 성취감이 정말 엄청났어. 놀라운 기분이었어.",
-        "properNounIndices": [
-          2,
-          8,
-          19
-        ]
+        "english": "So, we use 'off the scale' to say something goes beyond what is expected, and it's usually used in a positive way.",
+        "korean": "'off the scale'은 기대를 뛰어넘는다고 할 때 쓰는데, 보통 긍정적으로 써.",
+        "properNounIndices": []
       },
       {
         "id": 12,
-        "english": "So, 'off the scale' is used when something is beyond the usual limits, and though it's normally used positively, it can be negative too. And we can also use it to describe an adjective.",
-        "korean": "'off the scale'은 무언가가 일반적 한계를 넘어설 때 쓰는데, 보통 긍정적이지만 부정적으로도 쓸 수 있어. 형용사를 꾸밀 때도 사용할 수 있어.",
+        "english": "For example an influencer said the restaurant around the corner serves the most authentic Chinese food and since then bookings have been off the scale!",
+        "korean": "예를 들어 인플루언서가 모퉁이 레스토랑이 가장 정통 중국 음식을 한다고 했더니, 그 이후로 예약이 폭발적이었어!",
         "properNounIndices": [
-          24
+          14
         ]
       },
       {
         "id": 13,
+        "english": "Oo, well maybe I should try and get in there then.",
+        "korean": "오, 그러면 나도 거기 가봐야겠네.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 14,
+        "english": "Here are some more examples of 'off the scale'.",
+        "korean": "'off the scale'의 예시를 더 들어볼게.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '진짜의, 정통의' mean in English?",
+      "options": [
+        "authentic",
+        "scale",
+        "beyond",
+        "exceptionally"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L1_BTEW_010_set4",
+    "parentSetId": "L1_BTEW_010",
+    "theme": "Off the scale",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "Last week I went to see my local football team beating their closest rivals and the celebrations were off the scale.",
+        "korean": "지난주에 우리 동네 축구팀이 최대 라이벌을 이기는 걸 봤는데 축하가 엄청났어.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 16,
+        "english": "My boyfriend cooked me dinner yesterday and he made this amazing roast chicken.",
+        "korean": "남자친구가 어제 저녁을 해줬는데 끝내주는 로스트 치킨을 만들었어.",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "It was delicious – it was just off the scale.",
+        "korean": "정말 맛있었어 — 기대 이상이었어.",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
+        "english": "Oh yes, I remember passing my driving test.",
+        "korean": "맞아, 운전면허 합격했을 때 기억나.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 19,
+        "english": "The sense of achievement afterwards, it was just off the scale.",
+        "korean": "그 후의 성취감이 정말 엄청났어.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '~을 넘어서' mean in English?",
+      "options": [
+        "off the scale",
+        "rival",
+        "beyond",
+        "authentic"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L1_BTEW_010_set5",
+    "parentSetId": "L1_BTEW_010",
+    "theme": "Off the scale",
+    "level": 6,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "It felt amazing.",
+        "korean": "놀라운 기분이었어.",
+        "properNounIndices": []
+      },
+      {
+        "id": 21,
+        "english": "So, 'off the scale' is used when something is beyond the usual limits, and though it's normally used positively, it can be negative too.",
+        "korean": "'off the scale'은 무언가가 일반적 한계를 넘어설 때 쓰는데, 보통 긍정적이지만 부정적으로도 쓸 수 있어.",
+        "properNounIndices": []
+      },
+      {
+        "id": 22,
+        "english": "And we can also use it to describe an adjective.",
+        "korean": "형용사를 꾸밀 때도 사용할 수 있어.",
+        "properNounIndices": []
+      },
+      {
+        "id": 23,
         "english": "Yes. For example, if someone is really annoying you, you might say they're annoying, or even 'off the scale annoying'.",
         "korean": "맞아. 예를 들어, 누군가 정말 짜증나면, 짜증난다고 하거나 심지어 '엄청나게 짜증난다'고 할 수 있어.",
         "properNounIndices": [
@@ -173,37 +261,66 @@
         ]
       },
       {
-        "id": 14,
+        "id": 24,
         "english": "Or maybe you're so hungry, you could say you're 'off the scale hungry', which means exceptionally hungry!",
         "korean": "아니면 너무 배고프면, '엄청나게 배고프다'고 할 수도 있는데, 예외적으로 배고프다는 뜻이야!",
         "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '~을 넘어서' mean in English?",
+      "options": [
+        "exceptionally",
+        "beyond",
+        "scale",
+        "rival"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L1_BTEW_010_set6",
+    "parentSetId": "L1_BTEW_010",
+    "theme": "Off the scale",
+    "level": 2,
+    "setNumber": 6,
+    "sentences": [
+      {
+        "id": 25,
+        "english": "And that's all from us.",
+        "korean": "오늘은 여기까지야.",
+        "properNounIndices": []
       },
       {
-        "id": 15,
-        "english": "And that's all from us. We'll be back next time with another useful English expression. Bye!",
-        "korean": "오늘은 여기까지야. 다음에 또 다른 유용한 영어 표현으로 돌아올게. 안녕!",
+        "id": 26,
+        "english": "We'll be back next time with another useful English expression.",
+        "korean": "다음에 또 다른 유용한 영어 표현으로 돌아올게.",
         "properNounIndices": [
-          5,
-          13,
-          15
+          8
         ]
       },
       {
-        "id": 16,
+        "id": 27,
+        "english": "Bye!",
+        "korean": "안녕!",
+        "properNounIndices": []
+      },
+      {
+        "id": 28,
         "english": "Bye!",
         "korean": "안녕!",
         "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '엄청난, 기대 이상의' mean in English?",
+      "question": "What does '경쟁자, 라이벌' mean in English?",
       "options": [
-        "off the scale",
-        "scale",
         "beyond",
-        "rival"
+        "scale",
+        "rival",
+        "off the scale"
       ],
-      "answer": 0
+      "answer": 2
     }
   }
 ]

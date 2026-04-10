@@ -1,0 +1,43 @@
+[
+  {
+    "setId": "L3_B6ME_063_set1",
+    "parentSetId": "L3_B6ME_063",
+    "theme": "Climate Change and Animal Migration",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Today we're talking about animal migration: the movement of animals from one place to another, usually because of the weather or temperature.",
+        "korean": "오늘은 동물 이주에 대해 이야기해요: 보통 날씨나 온도 때문에 한 곳에서 다른 곳으로 이동하는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "How many animals are thought to take part in The Great Migration every year?",
+        "korean": "매년 대이동에 참여하는 동물은 몇 마리로 추정될까요?",
+        "properNounIndices": [
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "id": 2,
+        "english": "The answer is 1.5 million.",
+        "korean": "정답은 150만 마리예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Artistic Swimming",
+        "Climate Change and Animal Migration",
+        "How Do Babies Communicate?",
+        "What's It Like to Be a Twin?"
+      ],
+      "answer": 1
+    }
+  }
+]

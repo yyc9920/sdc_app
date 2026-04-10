@@ -1,0 +1,77 @@
+[
+  {
+    "setId": "L2_DLG_019_set1",
+    "parentSetId": "L2_DLG_019",
+    "theme": "Fixing a Schedule Conflict",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hey I just realized our study group is at the same time as my English class.",
+        "korean": "이봐요. 방금 깨달았는데 스터디 그룹이 내 영어 수업과 같은 시간이에요.",
+        "properNounIndices": [
+          1,
+          14
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Can you come after your class?",
+        "korean": "수업 끝나고 올 수 있어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "What time does the study group end?",
+        "korean": "스터디 그룹이 몇 시에 끝나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Usually around five.",
+        "korean": "보통 5시쯤이요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "My class ends at four so I can be there by four fifteen.",
+        "korean": "수업이 4시에 끝나서 4시 15분까지 갈 수 있어요.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 5,
+        "english": "That works.",
+        "korean": "그러면 돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "I'll save you a seat.",
+        "korean": "자리 맡아놓을게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Thanks. I'll text you when I'm on my way.",
+        "korean": "고마워요. 가는 중에 문자할게요.",
+        "properNounIndices": [
+          1,
+          5
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Fixing a Schedule Conflict",
+        "Ordering at a Fast Food Restaurant",
+        "Booking a Hotel Room",
+        "At the Car Wash"
+      ],
+      "answer": 0
+    }
+  }
+]

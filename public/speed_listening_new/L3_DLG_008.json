@@ -1,0 +1,116 @@
+[
+  {
+    "setId": "L3_DLG_008_set1",
+    "parentSetId": "L3_DLG_008",
+    "theme": "Airport — Flight Delay",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Excuse me, can you tell me what's happening with Flight 302 to Chicago?",
+        "korean": "실례합니다, 시카고행 302편에 무슨 일인지 알려주실 수 있나요?",
+        "properNounIndices": [
+          9,
+          12
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I'm afraid that flight has been delayed by approximately two hours due to severe weather conditions.",
+        "korean": "유감스럽게도 심한 기상 조건으로 인해 약 2시간 지연되었습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Two hours? I have a connecting flight in Chicago, and I'll definitely miss it if we leave that late.",
+        "korean": "2시간이요? 시카고에서 환승 비행기가 있는데 그렇게 늦게 출발하면 확실히 놓칠 거예요.",
+        "properNounIndices": [
+          2,
+          8,
+          10
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Let me see what I can do.",
+        "korean": "뭘 할 수 있는지 볼게요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I can rebook you on a direct flight to your final destination, which actually leaves in ninety minutes.",
+        "korean": "최종 목적지까지 직항편으로 다시 예약해드릴 수 있는데 사실 90분 후에 출발해요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '탑승' mean in English?",
+      "options": [
+        "rebook",
+        "connecting flight",
+        "boarding",
+        "destination"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L3_DLG_008_set2",
+    "parentSetId": "L3_DLG_008",
+    "theme": "Airport — Flight Delay",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "That would be perfect.",
+        "korean": "완벽하겠네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Is there an extra charge for the rebooking?",
+        "korean": "재예약 추가 비용이 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "No, since the delay was on our end there's no additional fee.",
+        "korean": "아니요, 지연이 저희 쪽이라 추가 비용은 없습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Great. Which gate should I go to?",
+        "korean": "좋아요. 어떤 게이트로 가야 하나요?",
+        "properNounIndices": [
+          1,
+          4
+        ]
+      },
+      {
+        "id": 9,
+        "english": "Gate B22, and boarding starts in about forty-five minutes.",
+        "korean": "B22 게이트이고 약 45분 후에 탑승이 시작됩니다.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '지연된' mean in English?",
+      "options": [
+        "rebook",
+        "boarding",
+        "delayed",
+        "destination"
+      ],
+      "answer": 2
+    }
+  }
+]

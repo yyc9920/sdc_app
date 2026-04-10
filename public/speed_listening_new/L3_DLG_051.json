@@ -1,0 +1,67 @@
+[
+  {
+    "setId": "L3_DLG_051_set1",
+    "parentSetId": "L3_DLG_051",
+    "theme": "Subscribing to a Streaming Service",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I want to subscribe to your streaming service.",
+        "korean": "스트리밍 서비스에 가입하고 싶어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "We have three plans — basic standard and premium.",
+        "korean": "세 가지 플랜이 있어요 — 기본 일반 프리미엄.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "What's the difference?",
+        "korean": "차이가 뭔가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Basic is ad-supported at six dollars per month.",
+        "korean": "기본은 광고 포함으로 월 6달러예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Standard is ad-free at twelve dollars and premium adds 4K streaming and four simultaneous screens for eighteen dollars.",
+        "korean": "일반은 광고 없이 12달러이고 프리미엄은 4K 스트리밍과 4개 동시 화면이 추가되어 18달러예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Can I try it before committing?",
+        "korean": "약정 전에 시험 사용해볼 수 있나요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Yes we offer a seven-day free trial for all plans.",
+        "korean": "네 모든 플랜에 7일 무료 체험을 제공해요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '무료 체험' mean in English?",
+      "options": [
+        "streaming",
+        "free trial",
+        "ad-supported",
+        "simultaneous"
+      ],
+      "answer": 1
+    }
+  }
+]

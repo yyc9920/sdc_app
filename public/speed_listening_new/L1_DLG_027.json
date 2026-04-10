@@ -1,0 +1,65 @@
+[
+  {
+    "setId": "L1_DLG_027_set1",
+    "parentSetId": "L1_DLG_027",
+    "theme": "Helping a Friend Find Something",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I can't find my pencil case.",
+        "korean": "필통을 못 찾겠어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Where did you last use it?",
+        "korean": "마지막으로 어디서 썼어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I think during art class.",
+        "korean": "미술 시간인 것 같아요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Let's go check the art room.",
+        "korean": "미술실 가서 확인해봐요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "There it is! It's on the table.",
+        "korean": "거기 있어요! 테이블 위에요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 5,
+        "english": "See? You just need to retrace your steps.",
+        "korean": "봐요? 왔던 길을 되돌아가면 돼요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Helping a Friend Find Something",
+        "Job Interview — Entry Level",
+        "Getting a Flat Tire",
+        "Ordering Delivery Food"
+      ],
+      "answer": 0
+    }
+  }
+]

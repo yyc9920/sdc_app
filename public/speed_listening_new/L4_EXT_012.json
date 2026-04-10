@@ -1,0 +1,45 @@
+[
+  {
+    "setId": "L4_EXT_012_set1",
+    "parentSetId": "L4_EXT_012",
+    "theme": "The Economics of Attention",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "In the modern economy, attention has become the scarcest and most valuable resource — more precious than oil or gold.",
+        "korean": "현대 경제에서 주의력이 가장 희소하고 가치 있는 자원이 됐다 — 석유나 금보다 귀중한 자원이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Every app on your phone is engineered to capture and hold your attention for as long as possible, using techniques borrowed from behavioral psychology and gambling.",
+        "korean": "/ 행동 심리학과 도박에서 빌려온 기법을 사용하여.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The business model is straightforward — the longer you scroll, the more advertisements you see, and the more revenue the platform generates.",
+        "korean": "비즈니스 모델은 간단하다 — 오래 스크롤할수록 더 많은 광고를 보고 플랫폼은 더 많은 수익을 창출한다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Some researchers warn that this constant competition for our attention is not merely annoying — it is fundamentally rewiring our brains, shortening attention spans and reducing our capacity for deep, sustained thought.",
+        "korean": "/ 집중 시간을 줄이고 깊은 지속적 사고 능력을 감소시키면서.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '설계된' mean in English?",
+      "options": [
+        "attention span",
+        "scarce",
+        "engineered",
+        "behavioral psychology"
+      ],
+      "answer": 2
+    }
+  }
+]

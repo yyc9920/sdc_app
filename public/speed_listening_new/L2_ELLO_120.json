@@ -1,0 +1,42 @@
+[
+  {
+    "setId": "L2_ELLO_120_set1",
+    "parentSetId": "L2_ELLO_120",
+    "theme": "Mixer #25 — Favorite Number",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My favorite number is seven, because it's my birthday and my lucky number.",
+        "korean": "좋아하는 숫자는 7이에요. 생일이기도 하고 행운의 숫자이기도 해서요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I don't have a favorite number, but I avoid four because it sounds like death in my language.",
+        "korean": "좋아하는 숫자는 없지만 4를 피해요. 우리 언어로 죽음과 비슷하게 들려서요.",
+        "properNounIndices": [
+          0,
+          7
+        ]
+      },
+      {
+        "id": 2,
+        "english": "My favorite is thirteen, which most people consider unlucky, but it's been lucky for me.",
+        "korean": "좋아하는 숫자는 13이에요. 대부분 불길하다고 여기지만 나에겐 행운이었어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #6 — Getting Lost",
+        "Mixer #25 — Favorite Number",
+        "Mixer #40 — Money Habits",
+        "Mixer #114 — Weekend Plans"
+      ],
+      "answer": 1
+    }
+  }
+]

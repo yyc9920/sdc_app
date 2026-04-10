@@ -1,0 +1,55 @@
+[
+  {
+    "setId": "L1_EXT_072_set1",
+    "parentSetId": "L1_EXT_072",
+    "theme": "Riding the School Bus",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I take the school bus every morning.",
+        "korean": "매일 아침 스쿨버스를 타요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "The bus comes at seven forty-five.",
+        "korean": "버스가 7시 45분에 와요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I always sit with my best friend in the back.",
+        "korean": "항상 뒤쪽에서 가장 친한 친구와 앉아요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "We talk about homework and what happened yesterday.",
+        "korean": "숙제와 어제 있었던 일에 대해 이야기해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "The ride is only about fifteen minutes but it's my favorite part of the morning.",
+        "korean": "15분밖에 안 걸리지만 아침 중 가장 좋아하는 시간이에요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Sapir-Whorf Revisited",
+        "Riding the School Bus",
+        "Buying a Gift",
+        "First Day at a New Job"
+      ],
+      "answer": 1
+    }
+  }
+]

@@ -1,0 +1,76 @@
+[
+  {
+    "setId": "L1_SPK_088_set1",
+    "parentSetId": "L1_SPK_088",
+    "theme": "Paper Books vs. Audiobooks",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you prefer reading paper books or listening to audiobooks?",
+        "korean": "종이 책 읽기와 오디오북 듣기 중 어느 것을 선호합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your preference.",
+        "korean": "선호를 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I prefer audiobooks because they let me consume books during times when reading would be impossible.",
+        "korean": "독서가 불가능한 시간에 책을 소비할 수 있기 때문에 오디오북을 선호해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I listen while commuting exercising and doing household chores which means I finish about three books a month compared to one with paper books.",
+        "korean": "통근 운동 집안일 하면서 듣는데 종이 책으로 한 달에 한 권인 것에 비해 약 세 권을 끝내요.",
+        "properNounIndices": [
+          0,
+          11
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Also a great narrator can bring characters to life in ways that reading silently simply cannot.",
+        "korean": "또한 훌륭한 내레이터는 조용히 읽는 것으로는 불가능한 방식으로 캐릭터에 생명을 불어넣을 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "The one downside is that I sometimes zone out during complex sections and have to rewind which doesn't happen with paper books.",
+        "korean": "유일한 단점은 복잡한 부분에서 가끔 멍해져서 되감아야 한다는 거예요. 종이 책에서는 일어나지 않아요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 6,
+        "english": "zone out",
+        "korean": "멍해지다",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "bring to life",
+        "korean": "생명을 불어넣다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Uniforms in School",
+        "A Book That Changed Your Thinking",
+        "Social Media Age Limit",
+        "Paper Books vs. Audiobooks"
+      ],
+      "answer": 3
+    }
+  }
+]

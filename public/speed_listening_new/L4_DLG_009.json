@@ -1,0 +1,106 @@
+[
+  {
+    "setId": "L4_DLG_009_set1",
+    "parentSetId": "L4_DLG_009",
+    "theme": "Startup Team — Product Launch Decision",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Alright team, we need to decide whether to launch next month or delay until Q2.",
+        "korean": "자 팀원들. 다음 달 출시할지 2분기까지 연기할지 결정해야 합니다.",
+        "properNounIndices": [
+          14
+        ]
+      },
+      {
+        "id": 1,
+        "english": "The product is about ninety percent ready.",
+        "korean": "제품이 약 90% 준비됐어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The core features work well but the onboarding flow still needs polish.",
+        "korean": "핵심 기능은 잘 작동하지만 온보딩 흐름은 아직 다듬어야 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "What's the risk of launching with the current onboarding?",
+        "korean": "현재 온보딩으로 출시하면 리스크가 뭔가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Our testing shows a thirty percent drop-off rate during signup.",
+        "korean": "테스트에 따르면 가입 과정에서 30% 이탈률이 나타났어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '출시/런칭' mean in English?",
+      "options": [
+        "launch",
+        "compromise",
+        "drop-off rate",
+        "soft launch"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L4_DLG_009_set2",
+    "parentSetId": "L4_DLG_009",
+    "theme": "Startup Team — Product Launch Decision",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "That's high.",
+        "korean": "높네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "But we also need to consider that our competitor is launching a similar product in March.",
+        "korean": "하지만 경쟁사가 3월에 비슷한 제품을 출시한다는 것도 고려해야 해요.",
+        "properNounIndices": [
+          15
+        ]
+      },
+      {
+        "id": 7,
+        "english": "What if we do a soft launch with a limited number of users to gather feedback while we fix the onboarding?",
+        "korean": "제한된 사용자로 소프트 런치를 해서 피드백을 모으면서 온보딩을 고치는 건 어떨까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "That's actually a solid compromise.",
+        "korean": "사실 괜찮은 절충안이네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Let's go with a beta launch of five hundred users next month, then a full public launch in Q2.",
+        "korean": "다음 달 500명 사용자로 베타 런치를 하고 2분기에 공개 출시하죠.",
+        "properNounIndices": [
+          18
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '절충안/타협' mean in English?",
+      "options": [
+        "onboarding",
+        "compromise",
+        "launch",
+        "drop-off rate"
+      ],
+      "answer": 1
+    }
+  }
+]

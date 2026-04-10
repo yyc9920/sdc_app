@@ -1,0 +1,75 @@
+[
+  {
+    "setId": "L2_DLG_025_set1",
+    "parentSetId": "L2_DLG_025",
+    "theme": "Returning Clothes Online",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'd like to return this sweater I bought online.",
+        "korean": "온라인에서 산 이 스웨터를 반품하고 싶어요.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Do you have the receipt or order number?",
+        "korean": "영수증이나 주문 번호가 있으세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I have the order confirmation email.",
+        "korean": "주문 확인 이메일이 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "What's the reason for the return?",
+        "korean": "반품 사유가 뭔가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "The color looks different from the photo on the website.",
+        "korean": "색상이 웹사이트 사진과 달라 보여요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "I understand.",
+        "korean": "이해합니다.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Would you like a refund or store credit?",
+        "korean": "환불을 원하시나요 아니면 스토어 크레딧이요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "A refund please.",
+        "korean": "환불로 부탁해요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Returning Clothes Online",
+        "Reporting a Lost Item at a Hotel",
+        "Discussing a Company Retreat",
+        "At the Bookstore"
+      ],
+      "answer": 0
+    }
+  }
+]

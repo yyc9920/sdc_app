@@ -1,0 +1,57 @@
+[
+  {
+    "setId": "L1_EXT_064_set1",
+    "parentSetId": "L1_EXT_064",
+    "theme": "My First Day of School",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I still remember my first day of elementary school.",
+        "korean": "초등학교 첫날을 아직도 기억해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I was very scared and held my mom's hand tightly.",
+        "korean": "매우 무서워서 엄마 손을 꽉 잡았어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "The teacher smiled at me and showed me to my seat.",
+        "korean": "선생님이 웃으며 자리로 안내해줬어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "The boy next to me shared his crayons with me.",
+        "korean": "옆에 앉은 남자아이가 크레용을 나눠줬어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "By the end of the day I didn't want to go home.",
+        "korean": "하루가 끝날 때쯤 집에 가기 싫었어요.",
+        "properNounIndices": [
+          6
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '꽉/단단히' mean in English?",
+      "options": [
+        "tightly",
+        "scared",
+        "shared",
+        "crayon"
+      ],
+      "answer": 0
+    }
+  }
+]

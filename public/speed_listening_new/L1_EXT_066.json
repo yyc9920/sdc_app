@@ -1,0 +1,57 @@
+[
+  {
+    "setId": "L1_EXT_066_set1",
+    "parentSetId": "L1_EXT_066",
+    "theme": "Cleaning My Room",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My mom asked me to clean my room today.",
+        "korean": "오늘 엄마가 방 청소를 하라고 하셨어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "It was really messy with clothes on the floor and books on the bed.",
+        "korean": "바닥에 옷이 있고 침대에 책이 있어서 정말 지저분했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I put my clothes in the closet and the books on the shelf.",
+        "korean": "옷을 옷장에 넣고 책을 선반에 놓았어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Then I vacuumed the floor and wiped the desk.",
+        "korean": "그러고 나서 바닥에 청소기를 돌리고 책상을 닦았어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Now my room looks great and I feel much better.",
+        "korean": "이제 방이 멋져 보이고 기분이 훨씬 좋아요.",
+        "properNounIndices": [
+          6
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "At the Post Office",
+        "The Ship of Theseus Problem",
+        "Taking the Subway",
+        "Cleaning My Room"
+      ],
+      "answer": 3
+    }
+  }
+]

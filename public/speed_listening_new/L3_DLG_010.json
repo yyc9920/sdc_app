@@ -1,0 +1,109 @@
+[
+  {
+    "setId": "L3_DLG_010_set1",
+    "parentSetId": "L3_DLG_010",
+    "theme": "Landlord — Lease Renewal",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hi, I wanted to talk to you about my lease renewal.",
+        "korean": "안녕하세요, 임대 계약 갱신에 대해 이야기하고 싶어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Sure, your current lease ends next month, right?",
+        "korean": "네, 현재 임대가 다음 달에 끝나죠?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Yes, and I'd like to stay, but I noticed the new rent is fifteen percent higher.",
+        "korean": "네, 계속 있고 싶은데 새 임대료가 15% 오른 것을 봤어요.",
+        "properNounIndices": [
+          2,
+          7
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I understand your concern, but property taxes have gone up and maintenance costs have increased significantly.",
+        "korean": "우려를 이해하지만 재산세가 올랐고 유지비도 상당히 증가했어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Is there any room for negotiation?",
+        "korean": "협상의 여지가 있나요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '협상' mean in English?",
+      "options": [
+        "tenant",
+        "negotiation",
+        "lease",
+        "flexible"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L3_DLG_010_set2",
+    "parentSetId": "L3_DLG_010",
+    "theme": "Landlord — Lease Renewal",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I've been a good tenant for three years — always paid on time and kept the place in great condition.",
+        "korean": "3년간 좋은 세입자였어요 — 항상 제때 납부하고 집을 잘 관리했고요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "You're right, you've been an excellent tenant.",
+        "korean": "맞아요, 훌륭한 세입자였죠.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "How about we meet in the middle — a ten percent increase instead of fifteen?",
+        "korean": "중간을 취하는 건 어떨까요 — 15% 대신 10% 인상이요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "I can work with that.",
+        "korean": "그 정도면 괜찮아요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 9,
+        "english": "Thank you for being flexible.",
+        "korean": "유연하게 해주셔서 감사합니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '유연한' mean in English?",
+      "options": [
+        "flexible",
+        "tenant",
+        "negotiation",
+        "renewal"
+      ],
+      "answer": 0
+    }
+  }
+]

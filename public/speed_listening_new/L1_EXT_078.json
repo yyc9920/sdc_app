@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L1_EXT_078_set1",
+    "parentSetId": "L1_EXT_078",
+    "theme": "Waiting for the Bus",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I waited for the bus for thirty minutes today.",
+        "korean": "오늘 버스를 30분이나 기다렸어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "It was very cold and I forgot my gloves.",
+        "korean": "매우 추웠고 장갑을 잊고 왔어요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I put my hands in my pockets to keep them warm.",
+        "korean": "따뜻하게 하려고 손을 주머니에 넣었어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "When the bus finally came it was completely full.",
+        "korean": "버스가 드디어 왔는데 완전히 만원이었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I had to stand the whole way to school.",
+        "korean": "학교까지 내내 서서 가야 했어요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "At the Library",
+        "The Psychology of Color",
+        "My Bicycle",
+        "Waiting for the Bus"
+      ],
+      "answer": 3
+    }
+  }
+]

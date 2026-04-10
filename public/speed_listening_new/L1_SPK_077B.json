@@ -1,0 +1,78 @@
+[
+  {
+    "setId": "L1_SPK_077B_set1",
+    "parentSetId": "L1_SPK_077B",
+    "theme": "Do you think art and music education should be req",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think art and music education should be required in schools?",
+        "korean": "예술과 음악 교육이 학교에서 필수여야 한다고 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your opinion.",
+        "korean": "의견을 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I firmly believe that art and music education should be required in all schools.",
+        "korean": "예술과 음악 교육이 모든 학교에서 필수여야 한다고 확고히 믿어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "First arts education develops creativity which is the most important skill for innovation in any field.",
+        "korean": "첫째 예술 교육은 창의성을 발달시켜요. 어떤 분야에서든 혁신에 가장 중요한 기술이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Even Steve Jobs credited his calligraphy class for inspiring the beautiful typography in Apple products.",
+        "korean": "스티브 잡스조차 서예 수업이 애플 제품의 아름다운 타이포그래피에 영감을 줬다고 했어요.",
+        "properNounIndices": [
+          1,
+          2,
+          13
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Second learning an instrument or painting teaches patience and discipline in ways that math and science classes simply cannot.",
+        "korean": "둘째 악기나 그림을 배우는 것은 수학과 과학 수업이 할 수 없는 방식으로 인내와 규율을 가르쳐줘요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Cutting arts programs to save money is short-sighted because it sacrifices long-term creative development for short-term budget savings.",
+        "korean": "예산 절감을 위해 예술 프로그램을 없애는 것은 근시안적이에요. 단기 예산 절감을 위해 장기적 창의적 발달을 희생하니까요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "credit A for B",
+        "korean": "A가 B에 기여했다고 인정하다",
+        "properNounIndices": [
+          1,
+          3
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Do you think art and music education should be req",
+        "The Importance of Reading",
+        "A Difficult Decision You Made",
+        "Paper Money vs. Cashless Society"
+      ],
+      "answer": 0
+    }
+  }
+]

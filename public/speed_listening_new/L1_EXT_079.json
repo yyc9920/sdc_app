@@ -1,0 +1,65 @@
+[
+  {
+    "setId": "L1_EXT_079_set1",
+    "parentSetId": "L1_EXT_079",
+    "theme": "Helping a Lost Dog",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Yesterday I found a small dog near my school.",
+        "korean": "어제 학교 근처에서 작은 개를 발견했어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "It looked scared and hungry.",
+        "korean": "겁먹고 배고파 보였어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I gave it some of my sandwich.",
+        "korean": "내 샌드위치를 좀 줬어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "It had a name tag that said Max with a phone number.",
+        "korean": "전화번호가 적힌 맥스라는 이름표가 있었어요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I called the number and the owner came to pick him up.",
+        "korean": "전화했더니 주인이 데리러 왔어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "english": "She was so happy and thanked me many times.",
+        "korean": "너무 기뻐하면서 여러 번 감사하다고 했어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Emergency Broadcast",
+        "Helping a Lost Dog",
+        "The Science of Habit Formation",
+        "Going to the Dentist"
+      ],
+      "answer": 1
+    }
+  }
+]

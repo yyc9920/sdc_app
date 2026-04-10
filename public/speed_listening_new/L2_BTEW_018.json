@@ -1,0 +1,101 @@
+[
+  {
+    "setId": "L2_BTEW_018_set1",
+    "parentSetId": "L2_BTEW_018",
+    "theme": "Kick the Can Down the Road",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "You're a bit late!",
+        "korean": "좀 늦었네!",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Yes, sorry I've been getting my car fixed — it's very old and it wouldn't start.",
+        "korean": "응, 미안. 차 수리하느라. 너무 오래돼서 시동이 안 걸렸어.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Oh, not again! Why don't you just get a new car?",
+        "korean": "오, 또야! 그냥 새 차를 사지 그래?",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I probably should, but it's very expensive so I'm going to kick the can down the road and just keep getting it fixed.",
+        "korean": "아마 그래야 하는데, 너무 비싸서 그 일은 미루고 그냥 계속 수리할 거야.",
+        "properNounIndices": [
+          0,
+          8
+        ]
+      },
+      {
+        "id": 4,
+        "english": "When we talk about kicking the can down the road, it means we delay doing something.",
+        "korean": "'kick the can down the road'는 무언가를 미루는 뜻이에요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Short-Change",
+        "Facepalm Moment",
+        "Kick the Can Down the Road",
+        "Cut Corners"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_BTEW_018_set2",
+    "parentSetId": "L2_BTEW_018",
+    "theme": "Kick the Can Down the Road",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "It might mean that we'll have to deal with it in the future, or we might be able to delay it long enough that it becomes someone else's problem.",
+        "korean": "나중에 처리해야 할 수도 있고, 충분히 미뤄서 다른 사람의 문제가 될 수도 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "A similar expression with the same meaning is to 'kick something into the long grass'.",
+        "korean": "같은 뜻의 비슷한 표현으로 'kick something into the long grass'가 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "kick the can down the road",
+        "korean": "(관용구) 해야 할 일을 미루다, 결정을 연기하다",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "kick something into the long grass",
+        "korean": "(관용구) ~을 미루다 (같은 뜻)",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Go Through a Rough Patch",
+        "A Big Ask",
+        "Kick the Can Down the Road",
+        "Turn over a new leaf"
+      ],
+      "answer": 2
+    }
+  }
+]

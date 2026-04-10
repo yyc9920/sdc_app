@@ -1,0 +1,55 @@
+[
+  {
+    "setId": "L1_EXT_077_set1",
+    "parentSetId": "L1_EXT_077",
+    "theme": "My Water Bottle",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I carry a water bottle to school every day.",
+        "korean": "매일 학교에 물병을 가져가요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "It is blue and has a cute sticker on it.",
+        "korean": "파란색이고 귀여운 스티커가 붙어 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "My teacher says we should drink eight glasses of water a day.",
+        "korean": "선생님은 하루에 물 8잔을 마셔야 한다고 하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Drinking water helps me focus in class.",
+        "korean": "물을 마시면 수업에 집중하는 데 도움이 돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I refill it at the water fountain during break time.",
+        "korean": "쉬는 시간에 정수기에서 다시 채워요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Checking Into a Hotel",
+        "Language and Thought",
+        "The Popularity of K-Drama",
+        "My Water Bottle"
+      ],
+      "answer": 3
+    }
+  }
+]

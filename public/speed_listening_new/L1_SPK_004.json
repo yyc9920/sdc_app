@@ -3,58 +3,53 @@
     "setId": "L1_SPK_004_set1",
     "parentSetId": "L1_SPK_004",
     "theme": "A Person Who Has Influenced You",
-    "level": 6,
+    "level": 5,
     "setNumber": 1,
     "sentences": [
       {
         "id": 0,
-        "english": "Talk about a person who has had a significant influence on your life. Explain why this person has been important to you.",
-        "korean": "당신의 삶에 큰 영향을 준 사람에 대해 이야기하세요. 왜 그 사람이 중요한지 설명하세요.",
-        "properNounIndices": [
-          13
-        ]
+        "english": "Talk about a person who has had a significant influence on your life.",
+        "korean": "당신의 삶에 큰 영향을 준 사람에 대해 이야기하세요.",
+        "properNounIndices": []
       },
       {
         "id": 1,
-        "english": "The person who has influenced me the most is my high school science teacher, Mr. Kim.",
-        "korean": "저에게 가장 큰 영향을 준 사람은 고등학교 과학 선생님이신 김 선생님이에요.",
-        "properNounIndices": [
-          14,
-          15
-        ]
+        "english": "Explain why this person has been important to you.",
+        "korean": "왜 그 사람이 중요한지 설명하세요.",
+        "properNounIndices": []
       },
       {
         "id": 2,
-        "english": "Before his class, I thought science was just a collection of facts to memorize.",
-        "korean": "그의 수업 전에는, 과학이 그저 외워야 할 사실들의 모음이라고 생각했어요.",
+        "english": "The person who has influenced me the most is my high school science teacher, Mr.",
+        "korean": "저에게 가장 큰 영향을 준 사람은 고등학교 과학 선생님이신 김 선생님이에요.",
         "properNounIndices": [
-          3
+          14
         ]
       },
       {
         "id": 3,
-        "english": "But he taught us to ask questions and think critically.",
-        "korean": "하지만 그분은 우리에게 질문하고 비판적으로 사고하는 법을 가르쳐주셨어요.",
+        "english": "Kim.",
+        "korean": "가장 많이 ~이다 나의 고등학교 과학 선생님 김 선생님",
         "properNounIndices": []
       },
       {
         "id": 4,
-        "english": "He would often say, \"Don't accept anything unless you understand why it's true.\"",
-        "korean": "그분은 자주 말씀하셨어요, \"왜 그것이 사실인지 이해하지 못하면 어떤 것도 받아들이지 마라.\"",
+        "english": "Before his class, I thought science was just a collection of facts to memorize.",
+        "korean": "그의 수업 전에는, 과학이 그저 외워야 할 사실들의 모음이라고 생각했어요.",
         "properNounIndices": [
-          4
+          3
         ]
       }
     ],
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
+        "Why is empathy important in today's society?",
         "A Person Who Has Influenced You",
-        "A Skill You Want to Learn",
-        "Studying Alone vs. Studying in a Group",
-        "Favorite Place"
+        "Gap Year — Good Idea or Not",
+        "First Impressions — Reliable or Not"
       ],
-      "answer": 0
+      "answer": 1
     }
   },
   {
@@ -66,6 +61,20 @@
     "sentences": [
       {
         "id": 5,
+        "english": "But he taught us to ask questions and think critically.",
+        "korean": "하지만 그분은 우리에게 질문하고 비판적으로 사고하는 법을 가르쳐주셨어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "He would often say, \"Don't accept anything unless you understand why it's true.\"",
+        "korean": "그분은 자주 말씀하셨어요, \"왜 그것이 사실인지 이해하지 못하면 어떤 것도 받아들이지 마라.\"",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 7,
         "english": "That mindset completely changed the way I approach learning — not just in science, but in everything.",
         "korean": "그 사고방식은 제가 배움에 접근하는 방식을 완전히 바꿨어요 — 과학뿐 아니라, 모든 것에서요.",
         "properNounIndices": [
@@ -73,7 +82,7 @@
         ]
       },
       {
-        "id": 6,
+        "id": 8,
         "english": "He also encouraged me personally when I was struggling with a difficult project.",
         "korean": "또한 제가 어려운 프로젝트로 힘들어할 때 개인적으로 격려해주셨어요.",
         "properNounIndices": [
@@ -81,13 +90,13 @@
         ]
       },
       {
-        "id": 7,
+        "id": 9,
         "english": "He stayed after school to help me, which showed me that he genuinely cared about his students.",
         "korean": "방과 후에 남아서 도와주셨는데, 그분이 학생들을 진심으로 걱정한다는 것을 보여줬어요.",
         "properNounIndices": []
       },
       {
-        "id": 8,
+        "id": 10,
         "english": "Because of him, I became interested in research and eventually chose to major in biology.",
         "korean": "그분 덕분에, 연구에 관심을 갖게 되었고 결국 생물학을 전공하기로 했어요.",
         "properNounIndices": [
@@ -95,7 +104,7 @@
         ]
       },
       {
-        "id": 9,
+        "id": 11,
         "english": "He shaped both my academic path and my way of thinking.",
         "korean": "그분은 저의 학업 경로와 사고 방식 모두를 형성해주셨어요.",
         "properNounIndices": []
@@ -104,12 +113,12 @@
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
+        "Weekday vs. Weekend Weddings",
+        "Working from Home Pros and Cons",
         "A Person Who Has Influenced You",
-        "Important Quality in a Friend",
-        "Favorite Place",
-        "Technology in Education"
+        "The Future of Education"
       ],
-      "answer": 0
+      "answer": 2
     }
   }
 ]

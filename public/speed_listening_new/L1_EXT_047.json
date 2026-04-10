@@ -1,0 +1,53 @@
+[
+  {
+    "setId": "L1_EXT_047_set1",
+    "parentSetId": "L1_EXT_047",
+    "theme": "At the Park",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "There is a big park near my apartment.",
+        "korean": "아파트 근처에 큰 공원이 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I go there after dinner to take a walk.",
+        "korean": "저녁 후에 산책하러 거기 가요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "There is a playground where children play.",
+        "korean": "아이들이 노는 놀이터가 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Old people exercise with machines near the fountain.",
+        "korean": "어르신들이 분수 근처에서 기구로 운동하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "It is my favorite place to relax in the evening.",
+        "korean": "저녁에 쉬기에 가장 좋아하는 장소예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "How Coffee Changed the World",
+        "My Morning",
+        "At the Park",
+        "The Effective Altruism Debate"
+      ],
+      "answer": 2
+    }
+  }
+]

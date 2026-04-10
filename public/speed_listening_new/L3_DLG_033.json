@@ -1,0 +1,121 @@
+[
+  {
+    "setId": "L3_DLG_033_set1",
+    "parentSetId": "L3_DLG_033",
+    "theme": "Calling to Cancel a Reservation",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Good afternoon, Grand Hotel.",
+        "korean": "좋은 오후입니다 그랜드 호텔입니다.",
+        "properNounIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "id": 1,
+        "english": "How may I help you?",
+        "korean": "어떻게 도와드릴까요?",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I need to cancel my reservation for next weekend.",
+        "korean": "다음 주말 예약을 취소해야 해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I'm sorry to hear that.",
+        "korean": "그건 아쉽네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Can I have your name and reservation number?",
+        "korean": "성함과 예약 번호를 알려주시겠어요?",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '영업일' mean in English?",
+      "options": [
+        "cancel",
+        "notice",
+        "refund",
+        "business days"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L3_DLG_033_set2",
+    "parentSetId": "L3_DLG_033",
+    "theme": "Calling to Cancel a Reservation",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "My name is Park Joonho and the reservation number is GH-4521.",
+        "korean": "이름은 박준호이고 예약 번호는 GH-4521이에요.",
+        "properNounIndices": [
+          3,
+          4,
+          10
+        ]
+      },
+      {
+        "id": 6,
+        "english": "I see your reservation here.",
+        "korean": "여기 예약이 확인되네요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Our cancellation policy requires at least forty-eight hours' notice for a full refund.",
+        "korean": "취소 정책상 전액 환불을 위해서는 최소 48시간 전에 알려주셔야 합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "That should be fine since it's still a week away.",
+        "korean": "아직 일주일이나 남았으니 괜찮을 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "You're correct.",
+        "korean": "맞습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 10,
+        "english": "Your cancellation is confirmed and the refund will be processed within five business days.",
+        "korean": "취소가 확인됐고 영업일 기준 5일 내에 환불이 처리됩니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '영업일' mean in English?",
+      "options": [
+        "refund",
+        "cancellation policy",
+        "cancel",
+        "business days"
+      ],
+      "answer": 3
+    }
+  }
+]

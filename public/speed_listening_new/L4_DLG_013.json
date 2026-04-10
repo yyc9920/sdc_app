@@ -1,0 +1,96 @@
+[
+  {
+    "setId": "L4_DLG_013_set1",
+    "parentSetId": "L4_DLG_013",
+    "theme": "Annual Budget Meeting",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Let's start with last quarter's numbers.",
+        "korean": "지난 분기 수치부터 시작합시다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Overall revenue was up eight percent, but expenses also increased by twelve percent.",
+        "korean": "전체 매출은 8% 증가했지만 비용도 12% 증가했습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Where did most of the increased spending come from?",
+        "korean": "증가한 지출의 대부분이 어디서 나왔나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Primarily from hiring and marketing.",
+        "korean": "주로 채용과 마케팅에서요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "We added fifteen new employees and doubled our ad spend.",
+        "korean": "새 직원 15명을 충원했고 광고비를 두 배로 늘렸습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '유기적 성장' mean in English?",
+      "options": [
+        "organic growth",
+        "customer acquisition",
+        "revenue",
+        "expenses"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L4_DLG_013_set2",
+    "parentSetId": "L4_DLG_013",
+    "theme": "Annual Budget Meeting",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Is the increased marketing spend showing results?",
+        "korean": "증가한 마케팅 지출이 성과를 보이고 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Customer acquisition cost actually dropped by fifteen percent while new signups increased by thirty percent.",
+        "korean": "고객 획득 비용이 실제로 15% 떨어졌고 신규 가입은 30% 증가했습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "That's a solid return on investment.",
+        "korean": "확실한 투자 수익이네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "For next year I propose we maintain the current marketing budget but focus more on organic growth strategies.",
+        "korean": "내년에는 현재 마케팅 예산을 유지하되 유기적 성장 전략에 더 집중할 것을 제안합니다.",
+        "properNounIndices": [
+          3
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '고객 획득' mean in English?",
+      "options": [
+        "expenses",
+        "customer acquisition",
+        "organic growth",
+        "return on investment"
+      ],
+      "answer": 1
+    }
+  }
+]

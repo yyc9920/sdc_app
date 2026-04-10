@@ -1,0 +1,63 @@
+[
+  {
+    "setId": "L1_DLG_030_set1",
+    "parentSetId": "L1_DLG_030",
+    "theme": "Asking to Borrow Something",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Can I borrow your eraser?",
+        "korean": "지우개 빌려줄 수 있어요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Sure but give it back after class.",
+        "korean": "네 근데 수업 끝나고 돌려줘요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I promise.",
+        "korean": "약속할게요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "You said that last time too and you forgot.",
+        "korean": "지난번에도 그렇게 말하고 잊어버렸잖아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "This time I'll put it in your bag myself.",
+        "korean": "이번엔 내가 직접 가방에 넣어줄게요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Okay deal!",
+        "korean": "좋아요 약속!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Project Meeting Update",
+        "Quarterly Business Review",
+        "Mentoring Session — Career Advice",
+        "Asking to Borrow Something"
+      ],
+      "answer": 3
+    }
+  }
+]

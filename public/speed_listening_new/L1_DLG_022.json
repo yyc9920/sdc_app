@@ -1,0 +1,67 @@
+[
+  {
+    "setId": "L1_DLG_022_set1",
+    "parentSetId": "L1_DLG_022",
+    "theme": "Lending a Pencil",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Can I borrow a pencil?",
+        "korean": "연필 빌려도 돼요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I forgot mine at home.",
+        "korean": "내 거 집에 놓고 왔어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Sure here you go.",
+        "korean": "네 여기요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Thanks! I'll give it back after class.",
+        "korean": "고마워요! 수업 끝나고 돌려줄게요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Keep it. I have three more.",
+        "korean": "가져요. 세 개 더 있어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Really? You're so nice.",
+        "korean": "진짜요? 정말 착해요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Lending a Pencil",
+        "Picking Up a Friend",
+        "Planning a Weekend BBQ",
+        "Finding a Seat on the Bus"
+      ],
+      "answer": 0
+    }
+  }
+]

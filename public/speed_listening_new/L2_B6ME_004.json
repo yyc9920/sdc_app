@@ -3,26 +3,32 @@
     "setId": "L2_B6ME_004_set1",
     "parentSetId": "L2_B6ME_004",
     "theme": "Can you trust ancestry DNA kits?",
-    "level": 6,
+    "level": 5,
     "setNumber": 1,
     "sentences": [
       {
         "id": 0,
-        "english": "Hello. This is 6 Minute English from BBC Learning English. I'm Neil.",
-        "korean": "안녕하세요. BBC Learning English의 6 Minute English입니다. 저는 닐이에요.",
+        "english": "Hello. This is 6 Minute English from BBC Learning English.",
+        "korean": "안녕하세요. BBC Learning English의 6 Minute English입니다.",
         "properNounIndices": [
           1,
           4,
           5,
           7,
           8,
-          9,
-          10,
-          11
+          9
         ]
       },
       {
         "id": 1,
+        "english": "I'm Neil.",
+        "korean": "저는 닐이에요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
         "english": "And I'm Beth.",
         "korean": "저는 베스예요.",
         "properNounIndices": [
@@ -31,45 +37,29 @@
         ]
       },
       {
-        "id": 2,
-        "english": "Nowadays, it's popular to find out more about your family history by tracing your family tree – a diagram that shows all the members of a family over a long period of time. What do you know about your family history, Beth?",
-        "korean": "요즘에는 가계도를 추적해서 가족 역사를 더 알아보는 게 유행이에요.",
-        "properNounIndices": [
-          33,
-          41
-        ]
-      },
-      {
         "id": 3,
-        "english": "Well, my Mum actually did our family tree, and she found a lot of our ancestors had emigrated to the United States. But, yeah, I don't know much more than that. What about you?",
-        "korean": "사실 엄마가 우리 가계도를 만들었는데, 많은 조상이 미국으로 이민 갔다는 걸 알아냈어요.",
-        "properNounIndices": [
-          2,
-          20,
-          21,
-          22,
-          24,
-          31
-        ]
+        "english": "Nowadays, it's popular to find out more about your family history by tracing your family tree – a diagram that shows all the members of a family over a long period of time.",
+        "korean": "요즘에는 가계도를 추적해서 가족 역사를 더 알아보는 게 유행이에요.",
+        "properNounIndices": []
       },
       {
         "id": 4,
-        "english": "Well, I'm lucky to have an unusual surname, so it's quite easy to trace my ancestors and somebody in my family has gone back to 1700 and found somebody with my name.",
-        "korean": "드문 성을 가져서 운이 좋아요. 조상을 추적하기가 꽤 쉽거든요.",
+        "english": "What do you know about your family history, Beth?",
+        "korean": "가계도를 추적해서 가족 역사를 더 알아보는 게 유행이에요",
         "properNounIndices": [
-          1
+          8
         ]
       }
     ],
     "quiz": {
-      "question": "What does '언뜻 보면, 처음 보면' mean in English?",
+      "question": "What does '충격을 주다' mean in English?",
       "options": [
+        "forebears",
         "family tree",
-        "at first glance",
-        "take with a pinch of salt",
-        "ancestry"
+        "blow someone's mind",
+        "DNA kit"
       ],
-      "answer": 1
+      "answer": 2
     }
   },
   {
@@ -81,58 +71,54 @@
     "sentences": [
       {
         "id": 5,
+        "english": "Well, my Mum actually did our family tree, and she found a lot of our ancestors had emigrated to the United States.",
+        "korean": "사실 엄마가 우리 가계도를 만들었는데, 많은 조상이 미국으로 이민 갔다는 걸 알아냈어요.",
+        "properNounIndices": [
+          2,
+          20,
+          21
+        ]
+      },
+      {
+        "id": 6,
+        "english": "But, yeah, I don't know much more than that.",
+        "korean": "많은 조상이",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 7,
+        "english": "What about you?",
+        "korean": "미국으로 이민 갔다는 걸 알아냈어요",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Well, I'm lucky to have an unusual surname, so it's quite easy to trace my ancestors and somebody in my family has gone back to 1700 and found somebody with my name.",
+        "korean": "드문 성을 가져서 운이 좋아요. 조상을 추적하기가 꽤 쉽거든요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 9,
         "english": "Wow, that's amazing. Well, the internet has made it easier to find the historical records needed to research your ancestry - the origins of your family.",
         "korean": "와, 대단하네요. 인터넷이 가문을 조사하는 데 필요한 역사적 기록을 찾기 쉽게 만들었어요.",
         "properNounIndices": [
           3
         ]
-      },
-      {
-        "id": 6,
-        "english": "But what if you want to find out about a time before historical records began? Luckily, some companies now sell DNA ancestry kits which claim to reveal the countries of origin in your DNA.",
-        "korean": "하지만 역사적 기록이 시작되기 전 시대에 대해 알고 싶다면? 다행히 일부 회사가 DNA 유전자 키트를 판매합니다.",
-        "properNounIndices": [
-          15,
-          20,
-          33
-        ]
-      },
-      {
-        "id": 7,
-        "english": "But just how accurate are the results from these DNA tests? That's what we'll be discussing in this programme, and of course we'll be learning some useful new words and phrases as well.",
-        "korean": "이 DNA 검사 결과가 정확히 얼마나 정확할까요? 이 프로그램에서 논의할 내용입니다.",
-        "properNounIndices": [
-          9,
-          11
-        ]
-      },
-      {
-        "id": 8,
-        "english": "So, Neil, here's a question. What percentage of human DNA is shared by every person on the planet? Is it: a) 89.9%, b) 99.9%, or c) 99.99%?",
-        "korean": "닐, 질문이에요. 인류 DNA의 몇 퍼센트가 지구상 모든 사람이 공유할까요?",
-        "properNounIndices": [
-          1,
-          5,
-          9,
-          18
-        ]
-      },
-      {
-        "id": 9,
-        "english": "I'll say b) 99.9%.",
-        "korean": "b) 99.9%라고 할게요.",
-        "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '조상, 선조' mean in English?",
+      "question": "What does '가계, 혈통' mean in English?",
       "options": [
-        "forebears",
-        "database",
+        "take with a pinch of salt",
+        "DNA kit",
         "ancestry",
-        "at first glance"
+        "forebears"
       ],
-      "answer": 0
+      "answer": 2
     }
   },
   {
@@ -144,99 +130,248 @@
     "sentences": [
       {
         "id": 10,
-        "english": "OK. Well, we'll find out the answer at the end of the programme. Now, Greg Foot is a science broadcaster for BBC Radio.",
-        "korean": "프로그램 끝에서 답을 알아볼게요. 그렉 풋은 BBC 라디오의 과학 방송인이에요.",
-        "properNounIndices": [
-          1,
-          13,
-          14,
-          15,
-          21,
-          22
-        ]
+        "english": "But what if you want to find out about a time before historical records began?",
+        "korean": "하지만 역사적 기록이 시작되기 전 시대에 대해 알고 싶다면?",
+        "properNounIndices": []
       },
       {
         "id": 11,
-        "english": "He used two different companies' DNA kits and, interestingly, got very different results. Here he describes the reaction to his first DNA test:",
-        "korean": "두 회사의 DNA 키트를 사용했는데, 흥미롭게도 매우 다른 결과를 받았어요.",
+        "english": "Luckily, some companies now sell DNA ancestry kits which claim to reveal the countries of origin in your DNA.",
+        "korean": "다행히 일부 회사가 DNA 유전자 키트를 판매합니다.",
         "properNounIndices": [
           5,
-          13,
-          21
+          18
         ]
       },
       {
         "id": 12,
-        "english": "When I first got back my ancestry test from Company 1, it showed that I was 70% English, 15% German, which was really cool. There's a bit of French in there, and a little bit of Danish.",
-        "korean": "1번 회사에서 유전자 검사 결과를 받았을 때, 70% 영국인, 15% 독일인이라고 나왔어요.",
+        "english": "But just how accurate are the results from these DNA tests?",
+        "korean": "이 DNA 검사 결과가 정확히 얼마나 정확할까요?",
         "properNounIndices": [
-          1,
-          9,
-          14,
-          17,
-          19,
-          24,
-          28,
-          36
+          9
         ]
       },
       {
         "id": 13,
-        "english": "And so that, at first glance, that makes sense. I have family from the north of England, so you might expect those kind of Nordic and northern connections.",
-        "korean": "언뜻 보면 말이 돼요. 영국 북부에 가족이 있거든요.",
-        "properNounIndices": [
-          9,
-          16,
-          24
-        ]
+        "english": "That's what we'll be discussing in this programme, and of course we'll be learning some useful new words and phrases as well.",
+        "korean": "이 프로그램에서 논의할 내용입니다.",
+        "properNounIndices": []
       },
       {
         "id": 14,
-        "english": "The first company said Greg was 70% English and 15% German. It made sense because his family comes from the north of England, an area with historical connections to Nordic countries.",
-        "korean": "1번 회사는 그렉이 70% 영국인, 15% 독일인이라고 했어요.",
+        "english": "So, Neil, here's a question.",
+        "korean": "닐, 질문이에요.",
         "properNounIndices": [
-          4,
-          7,
-          10,
-          11,
-          22,
-          29
+          1
         ]
       }
     ],
     "quiz": {
-      "question": "What does '충격을 주다' mean in English?",
+      "question": "What does '언뜻 보면, 처음 보면' mean in English?",
       "options": [
-        "at first glance",
+        "forebears",
         "blow someone's mind",
-        "DNA kit",
-        "family tree"
+        "at first glance",
+        "take with a pinch of salt"
       ],
-      "answer": 1
+      "answer": 2
     }
   },
   {
     "setId": "L2_B6ME_004_set4",
     "parentSetId": "L2_B6ME_004",
     "theme": "Can you trust ancestry DNA kits?",
-    "level": 6,
+    "level": 5,
     "setNumber": 4,
     "sentences": [
       {
         "id": 15,
-        "english": "But the second company's results were very different. They tested the same DNA but found something surprising — 27.5% Irish, Scottish and Welsh, but explicitly not English.",
-        "korean": "하지만 2번 회사 결과는 매우 달랐습니다.",
+        "english": "What percentage of human DNA is shared by every person on the planet?",
+        "korean": "인류 DNA의 몇 퍼센트가 지구상 모든 사람이 공유할까요?",
         "properNounIndices": [
-          8,
-          12,
-          19,
-          20,
-          22,
-          26
+          4
         ]
       },
       {
         "id": 16,
+        "english": "Is it: a) 89.9%, b) 99.9%, or c) 99.99%?",
+        "korean": "지구상 모든 사람이 공유할까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "I'll say b) 99.9%.",
+        "korean": "b) 99.9%라고 할게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
+        "english": "OK. Well, we'll find out the answer at the end of the programme.",
+        "korean": "프로그램 끝에서 답을 알아볼게요. 그렉 풋은 BBC 라디오의 과학 방송인이에요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 19,
+        "english": "Now, Greg Foot is a science broadcaster for BBC Radio.",
+        "korean": "그렉 풋은 BBC 라디오의 과학 방송인이에요",
+        "properNounIndices": [
+          1,
+          2,
+          8,
+          9
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '조상, 선조' mean in English?",
+      "options": [
+        "blow someone's mind",
+        "database",
+        "forebears",
+        "take with a pinch of salt"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_B6ME_004_set5",
+    "parentSetId": "L2_B6ME_004",
+    "theme": "Can you trust ancestry DNA kits?",
+    "level": 6,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "He used two different companies' DNA kits and, interestingly, got very different results.",
+        "korean": "두 회사의 DNA 키트를 사용했는데, 흥미롭게도 매우 다른 결과를 받았어요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 21,
+        "english": "Here he describes the reaction to his first DNA test:",
+        "korean": "흥미롭게도 매우 다른 결과를 받았어요",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 22,
+        "english": "When I first got back my ancestry test from Company 1, it showed that I was 70% English, 15% German, which was really cool.",
+        "korean": "1번 회사에서 유전자 검사 결과를 받았을 때, 70% 영국인, 15% 독일인이라고 나왔어요.",
+        "properNounIndices": [
+          1,
+          9,
+          14,
+          17,
+          19
+        ]
+      },
+      {
+        "id": 23,
+        "english": "There's a bit of French in there, and a little bit of Danish.",
+        "korean": "70% 영국인, 15% 독일인이라고 나왔어요",
+        "properNounIndices": [
+          4,
+          12
+        ]
+      },
+      {
+        "id": 24,
+        "english": "And so that, at first glance, that makes sense.",
+        "korean": "언뜻 보면 말이 돼요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '조상, 선조' mean in English?",
+      "options": [
+        "take with a pinch of salt",
+        "family tree",
+        "forebears",
+        "ancestry"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_B6ME_004_set6",
+    "parentSetId": "L2_B6ME_004",
+    "theme": "Can you trust ancestry DNA kits?",
+    "level": 6,
+    "setNumber": 6,
+    "sentences": [
+      {
+        "id": 25,
+        "english": "I have family from the north of England, so you might expect those kind of Nordic and northern connections.",
+        "korean": "영국 북부에 가족이 있거든요.",
+        "properNounIndices": [
+          0,
+          7,
+          15
+        ]
+      },
+      {
+        "id": 26,
+        "english": "The first company said Greg was 70% English and 15% German.",
+        "korean": "1번 회사는 그렉이 70% 영국인, 15% 독일인이라고 했어요.",
+        "properNounIndices": [
+          4,
+          7,
+          10
+        ]
+      },
+      {
+        "id": 27,
+        "english": "It made sense because his family comes from the north of England, an area with historical connections to Nordic countries.",
+        "korean": "70% 영국인, 15% 독일인이라고 했어요",
+        "properNounIndices": [
+          11,
+          18
+        ]
+      },
+      {
+        "id": 28,
+        "english": "But the second company's results were very different.",
+        "korean": "하지만 2번 회사 결과는 매우 달랐습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 29,
+        "english": "They tested the same DNA but found something surprising — 27.5% Irish, Scottish and Welsh, but explicitly not English.",
+        "korean": "매우 달랐어요",
+        "properNounIndices": [
+          4,
+          11,
+          12,
+          14,
+          18
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does 'DNA 검사 키트' mean in English?",
+      "options": [
+        "take with a pinch of salt",
+        "DNA kit",
+        "blow someone's mind",
+        "database"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L2_B6ME_004_set7",
+    "parentSetId": "L2_B6ME_004",
+    "theme": "Can you trust ancestry DNA kits?",
+    "level": 6,
+    "setNumber": 7,
+    "sentences": [
+      {
+        "id": 30,
         "english": "So Greg's results were completely contradictory depending on which company he used.",
         "korean": "그렉의 결과는 어떤 회사를 사용했느냐에 따라 완전히 모순됐습니다.",
         "properNounIndices": [
@@ -244,65 +379,109 @@
         ]
       },
       {
-        "id": 17,
-        "english": "Actually, companies compare DNA with other samples in their database, and since companies use different databases, it's not too surprising that Greg's results were so different – unlike his actual DNA. OK, Beth, what was the answer to your question?",
+        "id": 31,
+        "english": "Actually, companies compare DNA with other samples in their database, and since companies use different databases, it's not too surprising that Greg's results were so different – unlike his actual DNA.",
         "korean": "사실 회사들은 DNA를 자체 데이터베이스의 다른 샘플과 비교합니다.",
         "properNounIndices": [
           3,
           21,
-          30,
-          31,
-          32
+          30
         ]
       },
       {
-        "id": 18,
-        "english": "I asked what percentage of human DNA is shared by everyone. The answer is b) 99.9%. OK, let's recap the vocabulary starting with family tree, a diagram showing all the members of a family.",
-        "korean": "모든 사람이 공유하는 DNA 비율을 물었었죠. 정답은 b) 99.9%입니다.",
+        "id": 32,
+        "english": "OK, Beth, what was the answer to your question?",
+        "korean": "DNA를 자체 데이터베이스의 다른 샘플과 비교해요",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 33,
+        "english": "I asked what percentage of human DNA is shared by everyone.",
+        "korean": "모든 사람이 공유하는 DNA 비율을 물었었죠.",
         "properNounIndices": [
           0,
-          6,
-          11,
-          16
+          6
         ]
       },
       {
-        "id": 19,
+        "id": 34,
+        "english": "The answer is b) 99.9%.",
+        "korean": "정답은 b) 99.9%입니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '액면 그대로 믿지 않다' mean in English?",
+      "options": [
+        "family tree",
+        "take with a pinch of salt",
+        "blow someone's mind",
+        "forebears"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L2_B6ME_004_set8",
+    "parentSetId": "L2_B6ME_004",
+    "theme": "Can you trust ancestry DNA kits?",
+    "level": 4,
+    "setNumber": 8,
+    "sentences": [
+      {
+        "id": 35,
+        "english": "OK, let's recap the vocabulary starting with family tree, a diagram showing all the members of a family.",
+        "korean": "정답은 b) 99.9%예요",
+        "properNounIndices": []
+      },
+      {
+        "id": 36,
         "english": "Ancestry refers to the origins of a family.",
         "korean": "가문(ancestry)은 가족의 기원을 의미합니다.",
         "properNounIndices": []
       },
       {
-        "id": 20,
+        "id": 37,
         "english": "If you take something with a pinch of salt, you don't believe it's completely true.",
         "korean": "'take with a pinch of salt'는 완전히 사실이라고 믿지 않는다는 뜻입니다.",
         "properNounIndices": []
       },
       {
-        "id": 21,
-        "english": "Forebears are relatives who lived in the past. Once again, we've run out of time. Bye for now!",
-        "korean": "선조(forebears)는 과거에 살았던 친척입니다. 시간이 다 됐네요. 안녕!",
-        "properNounIndices": [
-          8,
-          15
-        ]
+        "id": 38,
+        "english": "Forebears are relatives who lived in the past.",
+        "korean": "선조(forebears)는 과거에 살았던 친척입니다.",
+        "properNounIndices": []
       },
       {
-        "id": 22,
+        "id": 39,
+        "english": "Once again, we've run out of time.",
+        "korean": "시간이 다 됐네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 40,
+        "english": "Bye for now!",
+        "korean": "안녕!",
+        "properNounIndices": []
+      },
+      {
+        "id": 41,
         "english": "Bye!",
         "korean": "안녕!",
         "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '데이터베이스' mean in English?",
+      "question": "What does '언뜻 보면, 처음 보면' mean in English?",
       "options": [
-        "blow someone's mind",
+        "at first glance",
+        "family tree",
         "ancestry",
-        "database",
-        "forebears"
+        "DNA kit"
       ],
-      "answer": 2
+      "answer": 0
     }
   }
 ]

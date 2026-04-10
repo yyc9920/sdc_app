@@ -1,0 +1,39 @@
+[
+  {
+    "setId": "L3_EXT_031_set1",
+    "parentSetId": "L3_EXT_031",
+    "theme": "The Psychology of First Impressions",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Research shows that people form lasting judgments about others within the first seven seconds of meeting them.",
+        "korean": "연구에 따르면 사람들은 만난 지 처음 7초 이내에 타인에 대한 지속적인 판단을 형성한다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "These snap judgments are based primarily on nonverbal cues — body language facial expressions tone of voice and even clothing.",
+        "korean": "이 즉각적 판단은 주로 비언어적 단서에 기반한다 — 몸짓 언어 표정 목소리 톤 심지어 옷차림까지.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "What's particularly interesting is that first impressions are remarkably resistant to change — even when presented with contradictory evidence people tend to look for information that confirms their initial judgment.",
+        "korean": "특히 흥미로운 점은 첫인상이 놀라울 정도로 변화에 저항적이라는 것이다. 모순되는 증거를 제시받아도 최초의 판단을 확인해주는 정보를 찾는 경향이 있다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '비언어적인' mean in English?",
+      "options": [
+        "nonverbal",
+        "contradictory",
+        "first impression",
+        "resistant"
+      ],
+      "answer": 0
+    }
+  }
+]

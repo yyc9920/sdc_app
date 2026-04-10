@@ -1,0 +1,73 @@
+[
+  {
+    "setId": "L1_SPK_033_set1",
+    "parentSetId": "L1_SPK_033",
+    "theme": "Homework — Necessary or Not",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think homework is necessary for students?",
+        "korean": "학생에게 숙제가 필요하다고 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Give reasons to support your opinion.",
+        "korean": "의견을 뒷받침하는 이유를 제시하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I believe homework is necessary but only when it's meaningful and not excessive.",
+        "korean": "숙제가 필요하다고 생각하지만 의미 있고 과도하지 않을 때만 그래요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "First homework reinforces what students learn in class.",
+        "korean": "첫째 숙제는 수업에서 배운 것을 강화시켜줘요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Without practice most information is forgotten within days.",
+        "korean": "연습 없이는 대부분의 정보가 며칠 안에 잊혀져요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Second it teaches students self-discipline and time management skills that are essential for adult life.",
+        "korean": "둘째 성인 생활에 필수적인 자기 통제력과 시간 관리 능력을 가르쳐줘요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "However I think teachers should focus on quality over quantity — one thoughtful assignment is worth more than ten pages of busywork.",
+        "korean": "하지만 교사는 양보다 질에 집중해야 해요 — 사려 깊은 과제 하나가 10페이지 단순 반복보다 가치 있어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 7,
+        "english": "quality over quantity",
+        "korean": "양보다 질",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Technology and Human Connection",
+        "The Best Way to Learn a Language",
+        "Homework — Necessary or Not",
+        "Morning Person vs. Night Owl"
+      ],
+      "answer": 2
+    }
+  }
+]

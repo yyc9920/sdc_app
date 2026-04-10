@@ -1,0 +1,69 @@
+[
+  {
+    "setId": "L1_DLG_018_set1",
+    "parentSetId": "L1_DLG_018",
+    "theme": "Picking Up a Friend",
+    "level": 2,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hey I'm outside your house.",
+        "korean": "이봐요 집 밖에 있어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Okay give me two minutes.",
+        "korean": "알겠어요 2분만요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Hurry up or we'll be late.",
+        "korean": "서둘러요 안 그러면 늦어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I'm coming!",
+        "korean": "나가고 있어요!",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I just need to find my keys.",
+        "korean": "열쇠만 찾으면 돼요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Check your jacket pocket.",
+        "korean": "재킷 주머니 확인해봐요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Found them! I'm coming out now.",
+        "korean": "찾았어요! 지금 나가요!",
+        "properNounIndices": [
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "HR — Employee Conflict Resolution",
+        "Discussing Remote Work Policy",
+        "At the Swimming Pool",
+        "Picking Up a Friend"
+      ],
+      "answer": 3
+    }
+  }
+]

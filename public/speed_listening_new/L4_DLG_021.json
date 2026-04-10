@@ -1,0 +1,75 @@
+[
+  {
+    "setId": "L4_DLG_021_set1",
+    "parentSetId": "L4_DLG_021",
+    "theme": "Vendor Negotiation — SaaS Contract",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "We're evaluating your platform for our company of about three hundred employees.",
+        "korean": "약 300명 규모 회사를 위해 귀사 플랫폼을 평가하고 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Our enterprise plan starts at twenty-five dollars per user per month.",
+        "korean": "엔터프라이즈 플랜은 사용자당 월 25달러부터 시작합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "That's above our budget.",
+        "korean": "예산을 초과하네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "We were hoping for something closer to eighteen per user.",
+        "korean": "사용자당 18달러에 가까운 것을 기대하고 있었습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "If you commit to a two-year contract I can offer twenty per user.",
+        "korean": "2년 계약에 약정하시면 사용자당 20달러를 제안할 수 있습니다.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Can you include onboarding and training at no additional cost?",
+        "korean": "온보딩과 교육을 추가 비용 없이 포함할 수 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "I can include basic onboarding but dedicated training workshops would be an additional five thousand.",
+        "korean": "기본 온보딩은 포함할 수 있지만 전용 교육 워크숍은 추가 5천 달러입니다.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Let me take this back to my team and we'll get back to you by Friday.",
+        "korean": "팀과 논의해보고 금요일까지 연락드리겠습니다.",
+        "properNounIndices": [
+          15
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '약정하다/전념하다' mean in English?",
+      "options": [
+        "dedicated",
+        "commit",
+        "enterprise",
+        "contract"
+      ],
+      "answer": 1
+    }
+  }
+]

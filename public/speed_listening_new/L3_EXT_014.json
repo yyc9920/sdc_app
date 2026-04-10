@@ -1,0 +1,45 @@
+[
+  {
+    "setId": "L3_EXT_014_set1",
+    "parentSetId": "L3_EXT_014",
+    "theme": "Digital Detox",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "A growing number of people are choosing to disconnect from technology for extended periods, a practice known as a digital detox.",
+        "korean": "/ 디지털 디톡스로 알려진 실천이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Research shows that excessive screen time can lead to increased anxiety, poor sleep quality, and difficulty concentrating.",
+        "korean": "연구에 따르면 과도한 화면 시간은 불안 증가 수면의 질 저하 집중력 저하로 이어질 수 있다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Some luxury resorts now offer phone-free packages, where guests surrender their devices upon arrival and reconnect with nature instead.",
+        "korean": "/ 도착 시 기기를 반납하고 / 대신 자연과 다시 연결하는.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Critics argue that digital detoxes are a band-aid solution, and that the real issue is designing technology that respects our attention rather than exploiting it.",
+        "korean": "/ 진짜 문제는 우리의 주의력을 / 착취하지 않고 존중하는 기술을 설계하는 것이라고 한다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '디지털 디톡스' mean in English?",
+      "options": [
+        "band-aid solution",
+        "excessive",
+        "exploit",
+        "digital detox"
+      ],
+      "answer": 3
+    }
+  }
+]

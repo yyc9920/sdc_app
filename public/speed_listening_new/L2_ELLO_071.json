@@ -1,0 +1,66 @@
+[
+  {
+    "setId": "L2_ELLO_071_set1",
+    "parentSetId": "L2_ELLO_071",
+    "theme": "Mixer #75 — Favorite Holiday",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Christmas is my favorite holiday by far.",
+        "korean": "크리스마스가 단연 최고의 명절이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "The decorations, the food, the family gatherings — I love everything about it.",
+        "korean": "장식 음식 가족 모임 — 모든 것이 좋아요.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 2,
+        "english": "For me, it's Chuseok, the Korean harvest festival.",
+        "korean": "/ 한국의 추수 명절.",
+        "properNounIndices": [
+          3,
+          5
+        ]
+      },
+      {
+        "id": 3,
+        "english": "We visit our grandparents and eat traditional food.",
+        "korean": "/ 조부모님을 방문하고 / 전통 음식을 먹는다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I love Carnival in Brazil.",
+        "korean": "브라질의 카니발을 좋아해요.",
+        "properNounIndices": [
+          0,
+          2,
+          4
+        ]
+      },
+      {
+        "id": 5,
+        "english": "The music, the dancing, the costumes — it's the biggest party in the world.",
+        "korean": "음악 춤 의상 — 세계에서 가장 큰 파티예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #75 — Favorite Holiday",
+        "Mixer #122 — Big & Skip Meals",
+        "Mixer #43 — Friendship",
+        "Mixer #70 — Pets"
+      ],
+      "answer": 0
+    }
+  }
+]

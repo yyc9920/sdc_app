@@ -1,0 +1,142 @@
+[
+  {
+    "setId": "L2_ELLO_012_set1",
+    "parentSetId": "L2_ELLO_012",
+    "theme": "Mixer #3 — Cats vs Dogs",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Between cats and dogs I definitely prefer dogs.",
+        "korean": "고양이와 개 중에 저는 확실히 개를 선호해요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Although cats are very cute, I like to be active.",
+        "korean": "고양이도 매우 귀엽지만, 저는 활동적인 걸 좋아해요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I like to run around the lawn and take them for walks.",
+        "korean": "잔디밭을 뛰어다니고 산책시키는 걸 좋아해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "The dogs are more like a little kid.",
+        "korean": "개는 어린 아이 같아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I actually have a dog in New Zealand.",
+        "korean": "실제로 뉴질랜드에서 개를 키우고 있어요.",
+        "properNounIndices": [
+          0,
+          6,
+          7
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '관리가 적은, 손이 안 가는' mean in English?",
+      "options": [
+        "in a time of need",
+        "independent",
+        "allergic",
+        "low maintenance"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L2_ELLO_012_set2",
+    "parentSetId": "L2_ELLO_012",
+    "theme": "Mixer #3 — Cats vs Dogs",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I think I would prefer a dog over a cat.",
+        "korean": "저는 고양이보다 개를 선호할 것 같아요.",
+        "properNounIndices": [
+          0,
+          2
+        ]
+      },
+      {
+        "id": 6,
+        "english": "The reason being, cats make me sneeze and they make my eyes itch, whereas dogs I'm not too allergic to.",
+        "korean": "이유는, 고양이가 재채기와 눈 가려움을 유발하거든요. 반면 개에는 알레르기가 심하지 않아요.",
+        "properNounIndices": [
+          15
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Dogs have personality. If you're ever in a time of need, a dog may save your life.",
+        "korean": "개는 성격이 있어요. 도움이 필요할 때 개가 당신의 생명을 구할 수도 있어요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 8,
+        "english": "I think cats are better pets than dogs because cats don't need to be minded.",
+        "korean": "고양이가 개보다 더 좋은 반려동물이라고 생각해요. 고양이는 돌봐줄 필요가 없거든요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 9,
+        "english": "A cat is independent and will walk itself.",
+        "korean": "고양이는 독립적이고 스스로 산책해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 10,
+        "english": "I prefer cats. Cats are clean, quiet, low maintenance animals.",
+        "korean": "저는 고양이를 선호해요. 고양이는 깨끗하고 조용하며 관리가 적은 동물이에요.",
+        "properNounIndices": [
+          0,
+          3
+        ]
+      },
+      {
+        "id": 11,
+        "english": "You feed them. You let them out once in a while.",
+        "korean": "먹이를 주고, 가끔 밖에 나가게 해주고, 관심을 주면 행복해해요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 12,
+        "english": "You give them attention, and they're happy.",
+        "korean": "관심을 주면 행복해해요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '도움이 필요할 때' mean in English?",
+      "options": [
+        "in a time of need",
+        "allergic",
+        "low maintenance",
+        "independent"
+      ],
+      "answer": 0
+    }
+  }
+]

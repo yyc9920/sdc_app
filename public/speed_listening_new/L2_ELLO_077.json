@@ -1,0 +1,65 @@
+[
+  {
+    "setId": "L2_ELLO_077_set1",
+    "parentSetId": "L2_ELLO_077",
+    "theme": "Mixer #69 — Volunteering",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I volunteer at an animal shelter every Saturday.",
+        "korean": "매주 토요일 동물 보호소에서 봉사해요.",
+        "properNounIndices": [
+          0,
+          7
+        ]
+      },
+      {
+        "id": 1,
+        "english": "It's hard work but it feels so rewarding.",
+        "korean": "힘든 일이지만 너무 보람차요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I used to volunteer at a soup kitchen in college.",
+        "korean": "대학교 때 무료 급식소에서 봉사하곤 했어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "It really opened my eyes to how many people need help.",
+        "korean": "얼마나 많은 사람들이 도움이 필요한지 눈을 뜨게 해줬어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I want to volunteer, but I honestly can't find the time with my job and kids.",
+        "korean": "봉사하고 싶지만 솔직히 일과 아이들 때문에 시간이 안 나요.",
+        "properNounIndices": [
+          0,
+          5
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Maybe when they are older.",
+        "korean": "아이들이 크면 할 수도 있겠죠.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #54 — Apologizing",
+        "Mixer #69 — Volunteering",
+        "Mixer #39 — Sibling Rivalry",
+        "Mixer #62 — Favorite Drink"
+      ],
+      "answer": 1
+    }
+  }
+]

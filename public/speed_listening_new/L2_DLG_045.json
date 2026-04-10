@@ -1,0 +1,66 @@
+[
+  {
+    "setId": "L2_DLG_045_set1",
+    "parentSetId": "L2_DLG_045",
+    "theme": "Asking About Allergies at a Restaurant",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Does this dish contain any peanuts?",
+        "korean": "이 요리에 땅콩이 들어 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Let me check with the kitchen.",
+        "korean": "주방에 확인해볼게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Yes it does use peanut oil.",
+        "korean": "네 땅콩기름을 사용합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I have a severe peanut allergy so I can't eat that.",
+        "korean": "심한 땅콩 알레르기가 있어서 그건 못 먹어요.",
+        "properNounIndices": [
+          0,
+          7
+        ]
+      },
+      {
+        "id": 4,
+        "english": "We can make the chicken without peanut oil and use vegetable oil instead.",
+        "korean": "땅콩기름 없이 만들고 식물성 기름으로 대체할 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "That would be great.",
+        "korean": "좋아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Thank you for being so careful.",
+        "korean": "세심하게 해주셔서 감사합니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '알레르기' mean in English?",
+      "options": [
+        "severe",
+        "substitute",
+        "contain",
+        "allergy"
+      ],
+      "answer": 3
+    }
+  }
+]

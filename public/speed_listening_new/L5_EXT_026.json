@@ -1,0 +1,39 @@
+[
+  {
+    "setId": "L5_EXT_026_set1",
+    "parentSetId": "L5_EXT_026",
+    "theme": "The Effective Altruism Debate",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Effective altruism is a philosophical and social movement that uses evidence and reason to determine the most effective ways to benefit others.",
+        "korean": "효과적 이타주의는 증거와 이성을 사용하여 타인에게 가장 효과적으로 도움이 되는 방법을 결정하는 철학적 사회적 운동이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Its proponents argue that if you're going to donate to charity you have a moral obligation to ensure your money does the maximum possible good rather than simply supporting causes that feel emotionally compelling.",
+        "korean": "지지자들은 자선에 기부한다면 단순히 감정적으로 끌리는 대의를 지원하는 것이 아니라 돈이 가능한 최대의 선을 행하도록 보장할 도덕적 의무가 있다고 주장한다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Critics argue that reducing all moral decisions to cost-benefit calculations misses something essential about human compassion and that it can lead to absurd conclusions like prioritizing hypothetical future beings over people suffering right now.",
+        "korean": "비판자들은 모든 도덕적 결정을 비용편익 계산으로 환원하면 인간 연민에 대한 본질적인 것을 놓친다고 주장한다. 지금 고통받는 사람들보다 가상의 미래 존재를 우선시하는 부조리한 결론에 이를 수 있다고도 한다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '효과적 이타주의' mean in English?",
+      "options": [
+        "absurd",
+        "effective altruism",
+        "obligation",
+        "compassion"
+      ],
+      "answer": 1
+    }
+  }
+]

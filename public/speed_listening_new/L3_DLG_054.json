@@ -1,0 +1,71 @@
+[
+  {
+    "setId": "L3_DLG_054_set1",
+    "parentSetId": "L3_DLG_054",
+    "theme": "Reporting a Lost Item at a Hotel",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I think I left my laptop charger in my room after checking out.",
+        "korean": "체크아웃 후에 방에 노트북 충전기를 놓고 온 것 같아요.",
+        "properNounIndices": [
+          0,
+          2
+        ]
+      },
+      {
+        "id": 1,
+        "english": "What room were you in?",
+        "korean": "몇 호실에 계셨나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Room 507.",
+        "korean": "507호요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Let me check with housekeeping.",
+        "korean": "객실 관리팀에 확인해볼게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "They found a black laptop charger under the desk.",
+        "korean": "책상 밑에서 검은 노트북 충전기를 찾았대요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "That's mine! Can I come pick it up?",
+        "korean": "그거 제 거예요! 가져가러 갈 수 있나요?",
+        "properNounIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Of course. It's at the front desk whenever you're ready.",
+        "korean": "물론이죠. 준비되실 때 프런트 데스크에 있어요.",
+        "properNounIndices": [
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Buying Glasses",
+        "Checking Out at a Supermarket",
+        "Restaurant — Reservation Problem",
+        "Reporting a Lost Item at a Hotel"
+      ],
+      "answer": 3
+    }
+  }
+]

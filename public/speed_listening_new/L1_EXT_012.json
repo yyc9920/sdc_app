@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L1_EXT_012_set1",
+    "parentSetId": "L1_EXT_012",
+    "theme": "My Morning",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I usually wake up at seven o'clock.",
+        "korean": "보통 7시에 일어나요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "First I brush my teeth and wash my face.",
+        "korean": "먼저 양치하고 세수해요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Then I eat breakfast — usually toast with eggs and a glass of milk.",
+        "korean": "그리고 아침을 먹어요 — 보통 달걀과 토스트 그리고 우유 한 잔이요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I leave the house at eight thirty and take the bus to school.",
+        "korean": "8시 30분에 집을 나서서 버스를 타고 학교에 가요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "The bus ride takes about twenty minutes.",
+        "korean": "버스 타는 데 약 20분 걸려요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '버스 탑승' mean in English?",
+      "options": [
+        "brush my teeth",
+        "wash my face",
+        "bus ride",
+        "leave the house"
+      ],
+      "answer": 2
+    }
+  }
+]

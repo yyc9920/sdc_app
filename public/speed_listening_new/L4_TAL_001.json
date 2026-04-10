@@ -3,7 +3,7 @@
     "setId": "L4_TAL_001_set1",
     "parentSetId": "L4_TAL_001",
     "theme": "It's Not the Product, It's the Person",
-    "level": 6,
+    "level": 3,
     "setNumber": 1,
     "sentences": [
       {
@@ -42,7 +42,26 @@
         "english": "Oh, they're like actual tennis shoes.",
         "korean": "아, 이건 진짜 테니스화 같네.",
         "properNounIndices": []
-      },
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Art and Culture",
+        "Travel and Tourism",
+        "It's Not the Product, It's the Person",
+        "History and Politics"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L4_TAL_001_set2",
+    "parentSetId": "L4_TAL_001",
+    "theme": "It's Not the Product, It's the Person",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
       {
         "id": 5,
         "english": "Oh, OK. Then, yeah, wear the other ones. *진행자 해설:* \"Like a lot of conversations between married people, what we're talking about is not actually what we're talking about.",
@@ -55,31 +74,44 @@
       },
       {
         "id": 6,
-        "english": "Here's what we're actually talking about. We have a two-year-old and a four-year-old. My wife has a demanding job where she works till 11 o'clock most nights a week.",
-        "korean": "사실 우리가 진짜 얘기하는 건 이거야. 2살짜리와 4살짜리가 있어. 아내는 일주일 대부분 밤 11시까지 일하는 빡센 직장이 있어.",
-        "properNounIndices": [
-          6,
-          13
-        ]
+        "english": "Here's what we're actually talking about.",
+        "korean": "사실 우리가 진짜 얘기하는 건 이거야.",
+        "properNounIndices": []
       },
       {
         "id": 7,
-        "english": "I'm leaving a full-time job with a good salary and benefits for an uncertain future. Our plan, if you can call it that, is to spend down our meager savings, go into debt, and hope it works out.\"",
-        "korean": "안정적인 연봉과 복리후생이 있는 정규직을 떠나 불확실한 미래로 가려고 해. 우리의 계획이라 할 것도 없는 건, 빈약한 저축을 쓰고 빚을 지면서 잘 되길 바라는 거야.",
-        "properNounIndices": [
-          15
-        ]
+        "english": "We have a two-year-old and a four-year-old.",
+        "korean": "2살짜리와 4살짜리가 있어.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "My wife has a demanding job where she works till 11 o'clock most nights a week.",
+        "korean": "아내는 일주일 대부분 밤 11시까지 일하는 빡센 직장이 있어.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "I'm leaving a full-time job with a good salary and benefits for an uncertain future.",
+        "korean": "안정적인 연봉과 복리후생이 있는 정규직을 떠나 불확실한 미래로 가려고 해.",
+        "properNounIndices": []
+      },
+      {
+        "id": 10,
+        "english": "Our plan, if you can call it that, is to spend down our meager savings, go into debt, and hope it works out.\"",
+        "korean": "우리의 계획이라 할 것도 없는 건, 빈약한 저축을 쓰고 빚을 지면서 잘 되길 바라는 거야.",
+        "properNounIndices": []
       }
     ],
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Art and Culture",
-        "It's Not the Product, It's the Person",
-        "This American Life — Episode Guide",
-        "Sports and Exercise"
+        "Environment and Nature",
+        "Weather and Seasons",
+        "Food and Cooking",
+        "It's Not the Product, It's the Person"
       ],
-      "answer": 1
+      "answer": 3
     }
   }
 ]

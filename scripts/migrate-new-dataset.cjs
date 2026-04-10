@@ -38,6 +38,7 @@ const CATEGORY_MAP = {
   BEP: 'Business English Pod',
   TAL: 'This American Life',
   EXT: '확장 콘텐츠',
+  DLG: '일상 대화',
 };
 
 function parseSetCode(setCode) {

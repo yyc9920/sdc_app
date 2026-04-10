@@ -1,0 +1,45 @@
+[
+  {
+    "setId": "L3_EXT_023_set1",
+    "parentSetId": "L3_EXT_023",
+    "theme": "Remote Work and Mental Health",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "While remote work offers unprecedented flexibility and eliminates commuting it has also created new challenges for mental health.",
+        "korean": "재택근무는 전례 없는 유연성을 제공하고 통근을 없애지만 정신 건강에 새로운 과제도 만들었다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "The blurring of boundaries between work and personal life means many remote workers find it difficult to truly disconnect at the end of the day.",
+        "korean": "일과 개인 생활의 경계가 모호해지면서 많은 재택근무자가 하루가 끝나면 진정으로 업무에서 벗어나기 어렵다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Studies show that loneliness among remote workers has increased by thirty percent since 2020.",
+        "korean": "연구에 따르면 재택근무자의 외로움이 2020년 이후 30% 증가했다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Experts recommend establishing clear work hours creating a dedicated workspace and scheduling regular social interactions to maintain mental wellbeing.",
+        "korean": "전문가들은 명확한 근무 시간 설정 전용 작업 공간 마련 정기적 사교 활동 계획으로 정신 건강을 유지하라고 권한다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '전용의/헌신적인' mean in English?",
+      "options": [
+        "wellbeing",
+        "dedicated",
+        "boundary",
+        "disconnect"
+      ],
+      "answer": 1
+    }
+  }
+]

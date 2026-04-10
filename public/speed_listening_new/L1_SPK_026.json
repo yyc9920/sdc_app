@@ -1,0 +1,73 @@
+[
+  {
+    "setId": "L1_SPK_026_set1",
+    "parentSetId": "L1_SPK_026",
+    "theme": "Children and Mobile Phones",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think children under twelve should have their own mobile phones?",
+        "korean": "12세 미만의 아이들이 자기 폰을 가져야 한다고 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your opinion.",
+        "korean": "의견을 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I don't think children under twelve should have their own smartphones.",
+        "korean": "12세 미만의 아이들이 자기 스마트폰을 가져서는 안 된다고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "First young children are particularly vulnerable to the addictive features of social media and games.",
+        "korean": "첫째 어린 아이들은 소셜 미디어와 게임의 중독적 기능에 특히 취약해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Studies show that excessive screen time can harm brain development in young children.",
+        "korean": "연구에 따르면 과도한 화면 시간이 어린 아이들의 뇌 발달에 해를 끼칠 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Second there are serious safety concerns including cyberbullying and exposure to inappropriate content.",
+        "korean": "둘째 사이버 괴롭힘과 부적절한 콘텐츠 노출을 포함한 심각한 안전 우려가 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Instead I think parents should provide a basic phone for emergencies and gradually introduce smartphones as children get older and more responsible.",
+        "korean": "대신 부모가 비상시를 위한 기본 폰을 제공하고 아이들이 나이가 들고 책임감이 생기면서 점진적으로 스마트폰을 도입해야 한다고 생각해요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 7,
+        "english": "screen time",
+        "korean": "화면 시간",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Importance of Learning History",
+        "Cooking as a Life Skill",
+        "Children and Mobile Phones",
+        "Handwriting vs. Typing Notes"
+      ],
+      "answer": 2
+    }
+  }
+]

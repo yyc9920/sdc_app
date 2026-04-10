@@ -1,0 +1,41 @@
+[
+  {
+    "setId": "L3_B6ME_043_set1",
+    "parentSetId": "L3_B6ME_043",
+    "theme": "What Causes Hearing Loss?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "As we get older, many of us notice our sense of hearing getting worse.",
+        "korean": "나이가 들면 많은 사람이 청력이 나빠지는 걸 알아차려요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "In the UK alone, hearing loss affects 18 million people and that number is increasing.",
+        "korean": "영국에서만 1800만 명에게 영향을 미치고 그 수는 증가하고 있어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Did you know that the three smallest bones in the human body — the hammer, the anvil and the stirrup — are found in the ear?",
+        "korean": "인체에서 가장 작은 세 뼈 — 망치뼈, 모루뼈, 등자뼈 — 가 귀에 있다는 걸 알고 있었나요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '예방' mean in English?",
+      "options": [
+        "degrade",
+        "exposure",
+        "hearing loss",
+        "prevention"
+      ],
+      "answer": 3
+    }
+  }
+]

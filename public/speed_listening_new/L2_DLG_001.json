@@ -1,0 +1,157 @@
+[
+  {
+    "setId": "L2_DLG_001_set1",
+    "parentSetId": "L2_DLG_001",
+    "theme": "Shopping for Clothes",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hi there! Can I help you find something?",
+        "korean": "안녕하세요! 찾으시는 거 도와드릴까요?",
+        "properNounIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Yes, I'm looking for a blue sweater.",
+        "korean": "네, 파란색 스웨터를 찾고 있어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Do you have any in medium?",
+        "korean": "미디엄 사이즈로 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Let me check in the back.",
+        "korean": "뒤쪽에서 확인해볼게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "We just got a new shipment this morning.",
+        "korean": "오늘 아침에 새 물건이 들어왔거든요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '배송된 상품' mean in English?",
+      "options": [
+        "on sale",
+        "fits perfectly",
+        "fitting room",
+        "shipment"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L2_DLG_001_set2",
+    "parentSetId": "L2_DLG_001",
+    "theme": "Shopping for Clothes",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Here we go! We have three styles.",
+        "korean": "여기 있네요! 세 가지 스타일이 있어요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 6,
+        "english": "This one is on sale — 20% off.",
+        "korean": "이건 세일 중이에요 — 20% 할인이요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Oh, that's nice! Can I try it on?",
+        "korean": "오, 좋네요! 입어봐도 될까요?",
+        "properNounIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Of course! The fitting rooms are over there.",
+        "korean": "물론이죠! 탈의실은 저쪽이에요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 9,
+        "english": "Just take up to five items.",
+        "korean": "최대 다섯 개까지 가져가세요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '세일 중인' mean in English?",
+      "options": [
+        "fitting room",
+        "fits perfectly",
+        "shipment",
+        "on sale"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L2_DLG_001_set3",
+    "parentSetId": "L2_DLG_001",
+    "theme": "Shopping for Clothes",
+    "level": 3,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "This one fits perfectly!",
+        "korean": "이거 딱 맞아요!",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "How much is it?",
+        "korean": "얼마예요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "It's normally $45, but with the sale it's $36.",
+        "korean": "원래 45달러인데 세일 적용하면 36달러예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
+        "english": "Great! I'll take it.",
+        "korean": "좋아요! 이걸로 할게요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '세일 중인' mean in English?",
+      "options": [
+        "shipment",
+        "fits perfectly",
+        "on sale",
+        "fitting room"
+      ],
+      "answer": 2
+    }
+  }
+]

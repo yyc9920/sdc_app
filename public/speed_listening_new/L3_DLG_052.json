@@ -1,0 +1,102 @@
+[
+  {
+    "setId": "L3_DLG_052_set1",
+    "parentSetId": "L3_DLG_052",
+    "theme": "Gym Membership Cancellation",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'd like to cancel my gym membership.",
+        "korean": "헬스장 회원권을 해지하고 싶어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I'm sorry to hear that.",
+        "korean": "아쉽네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "May I ask the reason?",
+        "korean": "이유를 여쭤봐도 될까요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I'm moving to a different city next month.",
+        "korean": "다음 달에 다른 도시로 이사해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "We do have branches in other cities.",
+        "korean": "다른 도시에도 지점이 있어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Travel Agency — Planning a Trip",
+        "Returning a Book to a Friend",
+        "At the Pharmacy",
+        "Gym Membership Cancellation"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L3_DLG_052_set2",
+    "parentSetId": "L3_DLG_052",
+    "theme": "Gym Membership Cancellation",
+    "level": 3,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Would you like to transfer your membership instead?",
+        "korean": "대신 회원권을 이전하시겠어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Is there a branch in Daejeon?",
+        "korean": "대전에 지점이 있나요?",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Yes we have two locations in Daejeon.",
+        "korean": "네 대전에 두 곳 있어요.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Then I'd like to transfer please.",
+        "korean": "그러면 이전으로 부탁해요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Gym Membership Cancellation",
+        "Discussing a Career Change",
+        "Booking a Hotel Room",
+        "Signing Up for a Class"
+      ],
+      "answer": 0
+    }
+  }
+]

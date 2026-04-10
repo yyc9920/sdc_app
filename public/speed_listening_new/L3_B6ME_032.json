@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L3_B6ME_032_set1",
+    "parentSetId": "L3_B6ME_032",
+    "theme": "How Are Influencers Affecting Politics?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Everywhere you look online, from gaming and fashion to music, travel and culture, you'll find social media influencers.",
+        "korean": "온라인 어디를 봐도 게임, 패션, 음악, 여행, 문화에서 소셜 미디어 인플루언서를 찾을 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "These influencers do what they're famous for: influencing and creating trends.",
+        "korean": "이들은 유명한 이유 그대로 영향을 미치고 트렌드를 만들어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The most successful influencers have millions of followers and this has caught the attention of politicians.",
+        "korean": "가장 성공한 인플루언서는 수백만 팔로워가 있고 이것이 정치인의 관심을 끌었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Now, some social media celebrities are branching out into politics.",
+        "korean": "이제 일부 소셜 미디어 유명인이 정치로 영역을 넓히고 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "In Nigeria, there was a pushback against social media influencers turned politicians.",
+        "korean": "나이지리아에서는 정치인이 된 소셜 미디어 인플루언서에 대한 반발이 있었어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 5,
+        "english": "People started to dig up information about influencers who promote politicians.",
+        "korean": "사람들이 정치인을 홍보하는 인플루언서의 정보를 캐내기 시작했죠.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Dreaming of Being a Chef",
+        "How Are Influencers Affecting Politics?",
+        "Is Social Media Dead?",
+        "Do You Need to Declutter Your Home?"
+      ],
+      "answer": 1
+    }
+  }
+]

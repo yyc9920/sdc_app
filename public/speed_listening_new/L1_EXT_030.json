@@ -1,0 +1,56 @@
+[
+  {
+    "setId": "L1_EXT_030_set1",
+    "parentSetId": "L1_EXT_030",
+    "theme": "Exercise and Sports",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I play basketball with my friends after school.",
+        "korean": "방과 후에 친구들과 농구를 해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "We play at the park near our school.",
+        "korean": "학교 근처 공원에서 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I also go swimming on Saturdays.",
+        "korean": "토요일에는 수영도 가요.",
+        "properNounIndices": [
+          0,
+          5
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Exercise makes me feel strong and healthy.",
+        "korean": "운동은 나를 강하고 건강하게 느끼게 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "My dream is to be on the school basketball team.",
+        "korean": "꿈은 학교 농구팀에 들어가는 거예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Exercise and Sports",
+        "My Favorite Food",
+        "How Sleep Affects Learning",
+        "The Paradox of Productivity"
+      ],
+      "answer": 0
+    }
+  }
+]

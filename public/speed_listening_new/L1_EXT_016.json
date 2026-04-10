@@ -1,0 +1,57 @@
+[
+  {
+    "setId": "L1_EXT_016_set1",
+    "parentSetId": "L1_EXT_016",
+    "theme": "The Weather Today",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Today the weather is really nice.",
+        "korean": "오늘 날씨가 정말 좋아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "The sky is clear and the temperature is about twenty-two degrees.",
+        "korean": "하늘이 맑고 기온은 약 22도예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Yesterday it rained all day, so I stayed home.",
+        "korean": "어제는 하루 종일 비가 와서 집에 있었어요.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 3,
+        "english": "But today I want to go for a walk in the park, because the air feels fresh after the rain.",
+        "korean": "/ 비 온 뒤에 / 공기가 상쾌하니까.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I hope the weather stays like this all week.",
+        "korean": "이번 주 내내 이런 날씨였으면 좋겠어요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "The Weather Today",
+        "Washing the Dishes",
+        "My Favorite Game",
+        "Cultural Commentary — Tipping Culture"
+      ],
+      "answer": 0
+    }
+  }
+]

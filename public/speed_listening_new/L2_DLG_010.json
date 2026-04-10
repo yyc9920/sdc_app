@@ -1,0 +1,107 @@
+[
+  {
+    "setId": "L2_DLG_010_set1",
+    "parentSetId": "L2_DLG_010",
+    "theme": "At the Cafe — Ordering Coffee",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "What can I get for you today?",
+        "korean": "오늘 뭘 드릴까요?",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Can I get an iced Americano?",
+        "korean": "아이스 아메리카노 하나 주세요.",
+        "properNounIndices": [
+          1,
+          5
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Sure. What size?",
+        "korean": "네. 사이즈가 어떻게 되나요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Large please.",
+        "korean": "큰 걸로요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Would you like an extra shot of espresso?",
+        "korean": "에스프레소 샷 추가하시겠어요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "At the Cafe — Ordering Coffee",
+        "Feedback on a Presentation",
+        "Talking About the Weather",
+        "Getting a Package Delivered"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_DLG_010_set2",
+    "parentSetId": "L2_DLG_010",
+    "theme": "At the Cafe — Ordering Coffee",
+    "level": 2,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Yes please.",
+        "korean": "네 부탁해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "How much is that?",
+        "korean": "얼마예요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "That's five fifty.",
+        "korean": "5달러 50센트입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Here you go.",
+        "korean": "여기요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Your drink will be ready at the counter in a minute.",
+        "korean": "음료는 잠시 후 카운터에서 받으실 수 있어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Discussing Weekend Plans",
+        "Startup — Investor Pitch",
+        "Parking Ticket Dispute",
+        "At the Cafe — Ordering Coffee"
+      ],
+      "answer": 3
+    }
+  }
+]

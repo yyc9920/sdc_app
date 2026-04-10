@@ -1,0 +1,61 @@
+[
+  {
+    "setId": "L2_ELLO_100_set1",
+    "parentSetId": "L2_ELLO_100",
+    "theme": "Mixer #45 — Learning to Cook",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I learned to cook from YouTube videos.",
+        "korean": "유튜브 영상으로 요리를 배웠어요.",
+        "properNounIndices": [
+          0,
+          5
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I just followed recipes step by step until I got better.",
+        "korean": "단계별로 레시피를 따라하다 보니 실력이 늘었어요.",
+        "properNounIndices": [
+          0,
+          8
+        ]
+      },
+      {
+        "id": 2,
+        "english": "My grandmother taught me everything I know about cooking.",
+        "korean": "할머니가 요리에 대해 아는 모든 걸 가르쳐주셨어요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 3,
+        "english": "She never used recipes — everything was by feel.",
+        "korean": "레시피를 안 쓰셨어요 — 모든 게 감이었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I took a cooking class last year and it was worth every penny, especially the knife skills.",
+        "korean": "작년에 요리 수업을 들었고 값어치를 했어요. 특히 칼 기술이요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #46 — Work-Life Balance",
+        "Mixer #100 — Pet Peeves",
+        "Mixer #10 — Favorite Country",
+        "Mixer #45 — Learning to Cook"
+      ],
+      "answer": 3
+    }
+  }
+]

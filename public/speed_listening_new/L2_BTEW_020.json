@@ -1,0 +1,75 @@
+[
+  {
+    "setId": "L2_BTEW_020_set1",
+    "parentSetId": "L2_BTEW_020",
+    "theme": "Short-Change",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "This morning I decided to treat myself with a really nice takeaway coffee, and I ordered a large cappuccino, but when I looked at it, it was only half full.",
+        "korean": "오늘 아침 좋은 테이크아웃 커피로 자신에게 선물하기로 했는데, 라지 카푸치노를 주문했더니 반밖에 안 차 있었어요.",
+        "properNounIndices": [
+          2,
+          14,
+          21
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I was short-changed.",
+        "korean": "부당한 대우를 받은 거죠.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "The word 'change' can refer to the money you get back after you've paid too much.",
+        "korean": "'change'는 거스름돈을 뜻할 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "If the cashier only gives you £2 back instead of £3, they have short-changed you.",
+        "korean": "계산원이 3파운드 대신 2파운드만 돌려주면 속인 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "It doesn't just apply to money though.",
+        "korean": "돈에만 적용되는 게 아니에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "If you feel you haven't been given as much as you deserve — like my cappuccino — you've been short-changed.",
+        "korean": "마땅히 받아야 할 만큼 못 받았다고 느끼면 — 제 카푸치노처럼 — 부당한 대우를 받은 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "short-change",
+        "korean": "(관용구) 부당한 대우를 하다, 거스름돈을 적게 주다",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "treat yourself",
+        "korean": "자신에게 선물하다, 자기 보상하다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Short-Change",
+        "Bide someone's time",
+        "Shoot Off",
+        "An uphill task"
+      ],
+      "answer": 0
+    }
+  }
+]

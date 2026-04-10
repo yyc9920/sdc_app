@@ -1,0 +1,45 @@
+[
+  {
+    "setId": "L3_EXT_022_set1",
+    "parentSetId": "L3_EXT_022",
+    "theme": "Microplastics in Our Food",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Scientists have discovered that microplastics — tiny fragments of plastic smaller than five millimeters — are now found in almost everything we consume.",
+        "korean": "과학자들은 5밀리미터보다 작은 플라스틱 조각인 미세 플라스틱이 이제 우리가 소비하는 거의 모든 것에서 발견된다는 것을 알아냈다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "A recent study estimated that the average person ingests approximately five grams of plastic per week — roughly the weight of a credit card.",
+        "korean": "최근 연구에 따르면 보통 사람이 매주 약 5그램의 플라스틱을 섭취한다 — 대략 신용카드 한 장 무게이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "These particles enter our food chain through contaminated water packaging materials and even the air we breathe.",
+        "korean": "이 입자들은 오염된 물 포장재 심지어 우리가 숨 쉬는 공기를 통해 먹이 사슬에 들어온다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "The long-term health effects are still being studied but early research suggests links to inflammation hormonal disruption and increased risk of certain cancers.",
+        "korean": "장기적 건강 영향은 아직 연구 중이지만 초기 연구는 염증 호르몬 교란 특정 암 위험 증가와의 연관성을 시사한다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '미세 플라스틱' mean in English?",
+      "options": [
+        "ingest",
+        "inflammation",
+        "contaminated",
+        "microplastics"
+      ],
+      "answer": 3
+    }
+  }
+]

@@ -1,0 +1,109 @@
+[
+  {
+    "setId": "L4_DLG_012_set1",
+    "parentSetId": "L4_DLG_012",
+    "theme": "Team Standup — Sprint Planning",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Good morning everyone. Let's do a quick standup.",
+        "korean": "좋은 아침 여러분. 빠르게 스탠드업 합시다.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Jason, what did you work on yesterday?",
+        "korean": "제이슨, 어제 뭘 했나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I finished the API integration for the payment module.",
+        "korean": "결제 모듈의 API 연동을 완료했습니다.",
+        "properNounIndices": [
+          0,
+          3
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Today I'll start writing unit tests for it.",
+        "korean": "오늘은 그에 대한 유닛 테스트 작성을 시작할 겁니다.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Any blockers?",
+        "korean": "막히는 거 있나요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '스탠드업 미팅' mean in English?",
+      "options": [
+        "staging server",
+        "prioritize",
+        "standup",
+        "sprint"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L4_DLG_012_set2",
+    "parentSetId": "L4_DLG_012",
+    "theme": "Team Standup — Sprint Planning",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I need access to the staging server to test the payment flow end to end.",
+        "korean": "결제 흐름을 전체적으로 테스트하려면 스테이징 서버 접근이 필요합니다.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 6,
+        "english": "I'll get you access by this afternoon.",
+        "korean": "오늘 오후까지 접근 권한 드리겠습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "We also need to discuss the sprint priorities for next week.",
+        "korean": "다음 주 스프린트 우선순위도 논의해야 합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "The product team wants us to prioritize the user dashboard redesign over the notification feature.",
+        "korean": "프로덕트 팀에서 알림 기능보다 사용자 대시보드 리디자인을 우선시하기를 원합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "That makes sense given the user feedback we've been getting.",
+        "korean": "우리가 받아온 사용자 피드백을 고려하면 이치에 맞습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '스탠드업 미팅' mean in English?",
+      "options": [
+        "standup",
+        "blocker",
+        "prioritize",
+        "sprint"
+      ],
+      "answer": 0
+    }
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "setId": "L2_ELLO_066_set1",
+    "parentSetId": "L2_ELLO_066",
+    "theme": "Mixer #80 — Tipping Culture",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "In the U.S., tipping is basically required.",
+        "korean": "미국에서 팁은 기본적으로 필수예요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 1,
+        "english": "You are expected to tip at least fifteen to twenty percent.",
+        "korean": "최소 15~20%를 주도록 기대돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "In Japan, tipping doesn't exist.",
+        "korean": "일본에서 팁은 존재하지 않아요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 3,
+        "english": "It can even be considered rude if you try to tip.",
+        "korean": "팁을 주려 하면 무례하다고 여겨질 수도 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I think tipping should be optional, not expected.",
+        "korean": "팁은 기대가 아니라 선택이어야 한다고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Workers should be paid properly by their employers.",
+        "korean": "노동자들은 고용주에게 제대로 된 급여를 받아야 해요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #80 — Tipping Culture",
+        "Mixer #46 — Work-Life Balance",
+        "Mixer #112 — Smartphone Habits",
+        "Mixer #73 — Reading Habits"
+      ],
+      "answer": 0
+    }
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "setId": "L1_DLG_029_set1",
+    "parentSetId": "L1_DLG_029",
+    "theme": "At the Vending Machine",
+    "level": 2,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'm thirsty.",
+        "korean": "목이 말라요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Let's get something from the vending machine.",
+        "korean": "자판기에서 뭔가 사요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "What do they have?",
+        "korean": "뭐가 있어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Water juice and some soft drinks.",
+        "korean": "물 주스 탄산음료가 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I'll have an orange juice.",
+        "korean": "나는 오렌지 주스요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "It costs one thousand won.",
+        "korean": "000원이야.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Here's a coin.",
+        "korean": "여기 동전이요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "At the Cafe — Ordering Coffee",
+        "At the Vending Machine",
+        "Campus Housing — Dorm Problem",
+        "Weekend Hiking Plan"
+      ],
+      "answer": 1
+    }
+  }
+]

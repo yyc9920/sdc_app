@@ -1,0 +1,100 @@
+[
+  {
+    "setId": "L4_DLG_015_set1",
+    "parentSetId": "L4_DLG_015",
+    "theme": "Cross-Team Collaboration Meeting",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The marketing and engineering teams need to align on the product launch timeline.",
+        "korean": "마케팅팀과 엔지니어링팀이 제품 출시 일정에 대해 조율해야 합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "From engineering's side we can have the product ready by the end of June.",
+        "korean": "엔지니어링 쪽에서는 6월 말까지 제품을 준비할 수 있습니다.",
+        "properNounIndices": [
+          13
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Marketing needs at least three weeks of lead time for the campaign.",
+        "korean": "마케팅은 캠페인을 위해 최소 3주의 준비 기간이 필요합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "So that puts the launch date around mid-July?",
+        "korean": "그러면 출시일이 7월 중순쯤이 되나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Ideally yes.",
+        "korean": "이상적으로는 그래요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '베타 버전' mean in English?",
+      "options": [
+        "beta version",
+        "lead time",
+        "cross-team",
+        "sync"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L4_DLG_015_set2",
+    "parentSetId": "L4_DLG_015",
+    "theme": "Cross-Team Collaboration Meeting",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "But we'll need early access to the beta version for creating screenshots and demo videos.",
+        "korean": "하지만 스크린샷과 데모 영상 제작을 위해 베타 버전에 조기 접근이 필요합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "We can share the beta with you by June fifteenth.",
+        "korean": "6월 15일까지 베타를 공유해드릴 수 있습니다.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 7,
+        "english": "That gives us exactly four weeks which should be enough.",
+        "korean": "그러면 정확히 4주가 되는데 충분할 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Let's set up a weekly sync between both teams starting next Monday.",
+        "korean": "다음 주 월요일부터 양 팀 간 주간 동기화 미팅을 잡읍시다.",
+        "properNounIndices": [
+          11
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '조율하다/맞추다' mean in English?",
+      "options": [
+        "cross-team",
+        "sync",
+        "align",
+        "lead time"
+      ],
+      "answer": 2
+    }
+  }
+]

@@ -1,0 +1,64 @@
+[
+  {
+    "setId": "L1_EXT_035_set1",
+    "parentSetId": "L1_EXT_035",
+    "theme": "My Favorite Movie",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My favorite movie is a comedy called Home Alone.",
+        "korean": "가장 좋아하는 영화는 홈 얼론이라는 코미디예요.",
+        "properNounIndices": [
+          7,
+          8
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I first saw it when I was eight years old.",
+        "korean": "8살 때 처음 봤어요.",
+        "properNounIndices": [
+          0,
+          5
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I laughed so hard that my stomach hurt.",
+        "korean": "너무 많이 웃어서 배가 아팠어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I have watched it at least ten times since then.",
+        "korean": "그 이후로 적어도 열 번은 봤어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I still laugh every time I watch it.",
+        "korean": "볼 때마다 여전히 웃어요.",
+        "properNounIndices": [
+          0,
+          5
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "My Favorite Movie",
+        "My Favorite Color",
+        "The Psychology of Decision Fatigue",
+        "Planning a Trip"
+      ],
+      "answer": 0
+    }
+  }
+]

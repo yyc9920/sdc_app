@@ -1,0 +1,98 @@
+[
+  {
+    "setId": "L4_DLG_024_set1",
+    "parentSetId": "L4_DLG_024",
+    "theme": "Presenting a Marketing Campaign",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'd like to present our proposed social media campaign for Q3.",
+        "korean": "3분기 소셜 미디어 캠페인 제안을 발표하겠습니다.",
+        "properNounIndices": [
+          10
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Go ahead.",
+        "korean": "시작하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "We're planning a user-generated content campaign where customers share photos of themselves using our product.",
+        "korean": "고객이 제품 사용 사진을 공유하는 사용자 제작 콘텐츠 캠페인을 계획하고 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "What's the incentive for customers to participate?",
+        "korean": "고객이 참여할 인센티브가 뭔가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "The top ten posts each week will win a fifty-dollar gift card and the grand prize winner gets a free product bundle worth three hundred dollars.",
+        "korean": "매주 상위 10개 게시물이 50달러 상품권을 받고 대상은 300달러 상당의 무료 제품 번들을 받습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '인센티브/동기' mean in English?",
+      "options": [
+        "user-generated content",
+        "move forward",
+        "incentive",
+        "influencer"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L4_DLG_024_set2",
+    "parentSetId": "L4_DLG_024",
+    "theme": "Presenting a Marketing Campaign",
+    "level": 3,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "What's the total budget for this campaign?",
+        "korean": "이 캠페인 총 예산이 어떻게 되나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Twenty-five thousand dollars over three months including influencer partnerships and prize costs.",
+        "korean": "000달러입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "I like the concept.",
+        "korean": "컨셉이 마음에 듭니다.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Let's move forward with it.",
+        "korean": "진행합시다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '사용자 제작 콘텐츠' mean in English?",
+      "options": [
+        "incentive",
+        "user-generated content",
+        "move forward",
+        "influencer"
+      ],
+      "answer": 1
+    }
+  }
+]

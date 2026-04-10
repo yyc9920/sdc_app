@@ -1,0 +1,68 @@
+[
+  {
+    "setId": "L1_SPK_097_set1",
+    "parentSetId": "L1_SPK_097",
+    "theme": "A Meaningful Tradition",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Describe a tradition in your family or culture that is meaningful to you.",
+        "korean": "가족이나 문화에서 의미 있는 전통을 묘사하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain why it matters.",
+        "korean": "왜 중요한지 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The tradition that means the most to me is Chuseok the Korean harvest festival when my entire extended family gathers at my grandparents' house.",
+        "korean": "나에게 가장 의미 있는 전통은 추석이에요. 한국의 추수 명절로 대가족 전체가 조부모 댁에 모여요.",
+        "properNounIndices": [
+          9,
+          11
+        ]
+      },
+      {
+        "id": 3,
+        "english": "We prepare traditional food together especially songpyeon which are rice cakes shaped by hand.",
+        "korean": "함께 전통 음식을 준비하는데 특히 손으로 빚는 떡인 송편이 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "What makes it meaningful is that it's the only time each year when all my cousins aunts and uncles are in the same room.",
+        "korean": "의미 있게 만드는 것은 매년 모든 사촌 이모 삼촌이 같은 방에 있는 유일한 때라는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "In our busy modern lives we rarely see each other so Chuseok serves as a reminder of where we come from and the bonds that connect us.",
+        "korean": "바쁜 현대 생활에서 서로 거의 보지 못해 추석은 우리가 어디서 왔고 연결하는 유대가 무엇인지 상기시켜줘요.",
+        "properNounIndices": [
+          11
+        ]
+      },
+      {
+        "id": 6,
+        "english": "serve as a reminder",
+        "korean": "상기시켜주다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Attending a Large vs. Small School",
+        "Competitive Sports for Children",
+        "Learning from Older vs. Younger People",
+        "A Meaningful Tradition"
+      ],
+      "answer": 3
+    }
+  }
+]

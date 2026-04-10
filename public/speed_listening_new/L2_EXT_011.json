@@ -1,0 +1,63 @@
+[
+  {
+    "setId": "L2_EXT_011_set1",
+    "parentSetId": "L2_EXT_011",
+    "theme": "Daily Routine — Working Mom",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I wake up at five thirty every morning, even before my alarm goes off.",
+        "korean": "매일 아침 5시 반에 일어나요. 알람이 울리기 전에요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "The first thing I do is make coffee and pack lunches for my two kids.",
+        "korean": "가장 먼저 하는 일은 커피를 만들고 두 아이의 도시락을 싸는 거예요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I drop them off at school at eight, then head straight to work.",
+        "korean": "8시에 학교에 내려주고 바로 출근해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "After work, I pick up the kids, help with homework, cook dinner, and try to squeeze in some exercise.",
+        "korean": "퇴근 후 아이들을 데리러 가고 숙제를 도와주고 저녁을 만들고 운동을 좀 끼워넣으려 해요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 4,
+        "english": "By ten PM, I'm completely exhausted, but I wouldn't trade this life for anything.",
+        "korean": "밤 10시쯤이면 완전히 지치지만 이 삶을 그 무엇과도 바꾸지 않겠어요.",
+        "properNounIndices": [
+          2,
+          3,
+          7
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '~와 바꾸다' mean in English?",
+      "options": [
+        "trade for",
+        "squeeze in",
+        "exhausted",
+        "pick up"
+      ],
+      "answer": 0
+    }
+  }
+]

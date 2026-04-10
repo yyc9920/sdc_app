@@ -1,0 +1,69 @@
+[
+  {
+    "setId": "L1_DLG_031_set1",
+    "parentSetId": "L1_DLG_031",
+    "theme": "Sharing an Umbrella",
+    "level": 2,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Oh no it's raining!",
+        "korean": "이런 비가 와요!",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I have an umbrella.",
+        "korean": "나 우산 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Do you want to share?",
+        "korean": "같이 쓸래요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Really? That would be great!",
+        "korean": "진짜요? 좋겠어요!",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Where are you going?",
+        "korean": "어디 가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "To the bus stop.",
+        "korean": "버스 정류장이요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Me too. Let's go together.",
+        "korean": "나도요. 같이 가요.",
+        "properNounIndices": [
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Helping a Friend Find Something",
+        "Sharing an Umbrella",
+        "Asking About Homework",
+        "Borrowing a Book"
+      ],
+      "answer": 1
+    }
+  }
+]

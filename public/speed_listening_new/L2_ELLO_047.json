@@ -1,0 +1,67 @@
+[
+  {
+    "setId": "L2_ELLO_047_set1",
+    "parentSetId": "L2_ELLO_047",
+    "theme": "Mixer #99 — Coffee or Tea",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'm a coffee person all the way.",
+        "korean": "완전 커피파예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I need at least two cups before I can even talk to anyone.",
+        "korean": "최소 두 잔은 마셔야 누구와도 대화할 수 있어요.",
+        "properNounIndices": [
+          0,
+          7
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I prefer tea.",
+        "korean": "차를 선호해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "It's more relaxing and it doesn't make me jittery like coffee does.",
+        "korean": "더 편안하고 커피처럼 초조하게 만들지 않아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I drink both depending on my mood.",
+        "korean": "기분에 따라 둘 다 마셔요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "english": "In the morning I want coffee for energy, but in the evening I like herbal tea.",
+        "korean": "아침에는 에너지를 위해 커피를 마시고 저녁에는 허브차를 좋아해요.",
+        "properNounIndices": [
+          3,
+          12
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #99 — Coffee or Tea",
+        "Mixer #79 — Sleeping Habits",
+        "Mixer #74 — Recycling",
+        "Mixer #150 — Bad Habits"
+      ],
+      "answer": 0
+    }
+  }
+]

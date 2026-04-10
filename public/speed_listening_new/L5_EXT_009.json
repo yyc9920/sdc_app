@@ -1,0 +1,65 @@
+[
+  {
+    "setId": "L5_EXT_009_set1",
+    "parentSetId": "L5_EXT_009",
+    "theme": "Artificial Intelligence and Society",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Artificial intelligence is no longer a futuristic concept — it's woven into the fabric of our daily lives.",
+        "korean": "인공지능은 더 이상 미래적 개념이 아니라 우리 일상에 깊이 엮여 있다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "From the algorithms that curate our social media feeds to the voice assistants that manage our schedules — AI is everywhere.",
+        "korean": "소셜 미디어 피드를 큐레이션하는 알고리즘에서 일정을 관리하는 음성 비서까지 — AI는 어디에나 있다.",
+        "properNounIndices": [
+          18
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Yet this rapid integration raises profound questions about privacy, employment, and the nature of human creativity itself.",
+        "korean": "하지만 이 급속한 통합은 프라이버시 고용 그리고 인간 창의성의 본질에 대해 깊은 질문을 제기한다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Critics argue that AI threatens to automate millions of jobs, from truck driving to legal research, creating unprecedented levels of economic displacement.",
+        "korean": "비판자들은 AI가 트럭 운전에서 법률 조사까지 수백만 개의 일자리를 자동화하여 전례 없는 수준의 경제적 전치를 만든다고 주장한다.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Proponents counter that AI will create entirely new categories of work, much as the internet did in the late twentieth century.",
+        "korean": "지지자들은 AI가 20세기 후반 인터넷이 그랬듯이 완전히 새로운 직업 범주를 만들 것이라고 반박한다.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 5,
+        "english": "The most pressing concern may be the concentration of AI power in the hands of a few tech corporations, which could lead to monopolistic control over the tools that increasingly govern how we work and think.",
+        "korean": "가장 시급한 우려는 AI 권력이 소수 기술 기업에 집중되는 것이며 이는 우리가 일하고 생각하는 방식을 점점 지배하는 도구에 대한 독점적 통제로 이어질 수 있다.",
+        "properNounIndices": [
+          9
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '전례 없는' mean in English?",
+      "options": [
+        "monopolistic",
+        "integration",
+        "displacement",
+        "unprecedented"
+      ],
+      "answer": 3
+    }
+  }
+]

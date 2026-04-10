@@ -1,0 +1,55 @@
+[
+  {
+    "setId": "L1_EXT_074_set1",
+    "parentSetId": "L1_EXT_074",
+    "theme": "Playing in the Snow",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "School was cancelled today because of the heavy snow.",
+        "korean": "폭설 때문에 오늘 학교가 휴교됐어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I went outside with my brother to play.",
+        "korean": "남동생과 밖에 나가 놀았어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "We made a huge snowman with a carrot nose.",
+        "korean": "당근 코가 있는 커다란 눈사람을 만들었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Then we had a snowball fight with the neighbor kids.",
+        "korean": "그리고 이웃 아이들과 눈싸움을 했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "My hands got really cold but I didn't want to go inside.",
+        "korean": "손이 정말 시려웠지만 안에 들어가기 싫었어요.",
+        "properNounIndices": [
+          6
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Playing in the Snow",
+        "Shopping for Clothes",
+        "The Simulation Hypothesis",
+        "The Attention Residue Problem"
+      ],
+      "answer": 0
+    }
+  }
+]

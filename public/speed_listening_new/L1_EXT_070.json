@@ -1,0 +1,55 @@
+[
+  {
+    "setId": "L1_EXT_070_set1",
+    "parentSetId": "L1_EXT_070",
+    "theme": "A Surprise Party",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "We planned a surprise party for our friend Mina.",
+        "korean": "친구 미나를 위해 깜짝 파티를 계획했어요.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 1,
+        "english": "We decorated the classroom with balloons and a banner.",
+        "korean": "풍선과 현수막으로 교실을 꾸몄어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "When she walked in we all shouted 'Surprise!'",
+        "korean": "들어왔을 때 모두 '서프라이즈!' 하고 외쳤어요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 3,
+        "english": "She was so happy that she started to cry.",
+        "korean": "너무 기뻐서 울기 시작했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "It was the best surprise we ever planned.",
+        "korean": "우리가 계획한 최고의 서프라이즈였어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '외쳤다' mean in English?",
+      "options": [
+        "shouted",
+        "balloon",
+        "surprise",
+        "decorated"
+      ],
+      "answer": 0
+    }
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "setId": "L1_SPK_074_set1",
+    "parentSetId": "L1_SPK_074",
+    "theme": "A Skill You Taught Yourself",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Describe a skill you taught yourself without formal instruction.",
+        "korean": "정식 교육 없이 독학한 기술을 묘사하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain how you learned it.",
+        "korean": "어떻게 배웠는지 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "A skill I taught myself is video editing using free online tutorials.",
+        "korean": "독학한 기술은 무료 온라인 튜토리얼을 이용한 비디오 편집이에요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I started by watching beginner YouTube videos and practicing with short clips from my phone.",
+        "korean": "초보자 유튜브 영상을 보면서 폰의 짧은 클립으로 연습하며 시작했어요.",
+        "properNounIndices": [
+          0,
+          5
+        ]
+      },
+      {
+        "id": 4,
+        "english": "At first the results were terrible but I kept practicing every weekend for about three months.",
+        "korean": "처음에 결과는 끔찍했지만 약 3개월간 매주 주말 계속 연습했어요.",
+        "properNounIndices": [
+          7
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "The Best Way to Learn a Language",
+        "A Difficult Decision You Made",
+        "Working from Home Pros and Cons",
+        "A Skill You Taught Yourself"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L1_SPK_074_set2",
+    "parentSetId": "L1_SPK_074",
+    "theme": "A Skill You Taught Yourself",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Now I can create professional-looking travel videos that I share on social media.",
+        "korean": "이제 소셜 미디어에 공유하는 전문적으로 보이는 여행 영상을 만들 수 있어요.",
+        "properNounIndices": [
+          1,
+          8
+        ]
+      },
+      {
+        "id": 6,
+        "english": "This experience taught me that you can learn almost anything for free if you have the motivation and patience to stick with it.",
+        "korean": "이 경험은 동기와 끈기만 있으면 거의 모든 것을 무료로 배울 수 있다는 것을 가르쳐줬어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "stick with it",
+        "korean": "끈기 있게 계속하다",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "professional-looking",
+        "korean": "전문적으로 보이는",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Homework — Necessary or Not",
+        "Do you think voting should be mandatory for all ci",
+        "Should Voting Be Mandatory",
+        "A Skill You Taught Yourself"
+      ],
+      "answer": 3
+    }
+  }
+]

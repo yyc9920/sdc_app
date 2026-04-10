@@ -1,0 +1,67 @@
+[
+  {
+    "setId": "L2_ELLO_076_set1",
+    "parentSetId": "L2_ELLO_076",
+    "theme": "Mixer #70 — Pets",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I have two dogs and they're like my children.",
+        "korean": "개 두 마리가 있는데 내 아이들 같아요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I take them everywhere — the park, the beach, even shopping.",
+        "korean": "어디든 데려가요 — 공원 해변 심지어 쇼핑까지.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I have a cat and she's very independent.",
+        "korean": "고양이가 있는데 매우 독립적이에요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "She comes to me when she wants attention and ignores me the rest of the time.",
+        "korean": "관심이 필요할 때만 오고 나머지 시간에는 무시해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I want a pet but my apartment doesn't allow them.",
+        "korean": "반려동물을 원하지만 아파트에서 허용하지 않아요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "english": "So I just watch pet videos online instead.",
+        "korean": "그래서 대신 온라인으로 반려동물 영상을 봐요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #70 — Pets",
+        "Mixer #66 — Multitasking",
+        "Mixer #4 — Screen Time for Kids",
+        "Mixer #49 — Waking Up Early"
+      ],
+      "answer": 0
+    }
+  }
+]

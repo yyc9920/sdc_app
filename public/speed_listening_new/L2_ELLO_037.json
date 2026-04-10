@@ -1,0 +1,68 @@
+[
+  {
+    "setId": "L2_ELLO_037_set1",
+    "parentSetId": "L2_ELLO_037",
+    "theme": "Mixer #109 — Dream Vacation",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "If I could go anywhere, I'd go to the Maldives.",
+        "korean": "어디든 갈 수 있다면 몰디브에 갈 거예요.",
+        "properNounIndices": [
+          1,
+          5,
+          9
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I just want to relax on a beach and do nothing.",
+        "korean": "해변에서 쉬면서 아무것도 안 하고 싶어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I'd love to visit Japan, especially during cherry blossom season.",
+        "korean": "일본에 가보고 싶어요, 특히 벚꽃 시즌에요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 3,
+        "english": "The culture and the food look amazing.",
+        "korean": "문화와 음식이 놀라워 보여요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I've always wanted to do a road trip across the United States.",
+        "korean": "미국 횡단 로드트립을 항상 하고 싶었어요.",
+        "properNounIndices": [
+          10,
+          11
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Just driving from coast to coast sounds like an incredible adventure.",
+        "korean": "해안에서 해안까지 그냥 운전하는 건 엄청난 모험처럼 들려요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #115 — Cooking Skills",
+        "Mixer #9 — Compliments",
+        "Mixer #117 — Phobias",
+        "Mixer #109 — Dream Vacation"
+      ],
+      "answer": 3
+    }
+  }
+]

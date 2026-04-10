@@ -1,0 +1,110 @@
+[
+  {
+    "setId": "L3_DLG_026_set1",
+    "parentSetId": "L3_DLG_026",
+    "theme": "Neighbor Complaint — Noise",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Excuse me, I live in the apartment right below yours.",
+        "korean": "실례합니다. 바로 아래층에 사는데요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Oh hi, is everything okay?",
+        "korean": "아 안녕하세요. 다 괜찮으세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Actually, I wanted to talk to you about the noise late at night.",
+        "korean": "사실 밤늦게 나는 소음에 대해 이야기하고 싶었어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 3,
+        "english": "There's been a lot of loud music past midnight several nights this week.",
+        "korean": "이번 주 여러 밤에 자정 넘어서 큰 음악 소리가 많이 났어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I'm really sorry about that.",
+        "korean": "정말 죄송합니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Registering for a Conference",
+        "Asking for Help at a Store",
+        "Neighbor Complaint — Noise",
+        "Asking About Wi-Fi"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L3_DLG_026_set2",
+    "parentSetId": "L3_DLG_026",
+    "theme": "Neighbor Complaint — Noise",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I've been working on a music project and I completely lost track of time.",
+        "korean": "음악 프로젝트를 하고 있었는데 시간 가는 줄 전혀 몰랐어요.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 6,
+        "english": "I understand that creative work takes time.",
+        "korean": "창작 작업에 시간이 걸리는 건 이해해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 7,
+        "english": "But could you maybe use headphones after ten PM?",
+        "korean": "하지만 밤 10시 이후에는 헤드폰을 사용해주실 수 있나요?",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 8,
+        "english": "That's completely fair.",
+        "korean": "완전히 맞는 말이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "I'll make sure to keep it down from now on.",
+        "korean": "앞으로 소리를 줄이도록 하겠습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Hotel Check-in — Room Issue",
+        "IT Support — Computer Won't Start",
+        "Discussing a Work Schedule Change",
+        "Neighbor Complaint — Noise"
+      ],
+      "answer": 3
+    }
+  }
+]

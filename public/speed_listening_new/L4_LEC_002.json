@@ -40,14 +40,14 @@
       }
     ],
     "quiz": {
-      "question": "What does '상식이나 직감과 다른' mean in English?",
+      "question": "What does '목격자가 많을수록 개인이 도울 가능성이 낮아지는 현상' mean in English?",
       "options": [
         "pluralistic ignorance",
-        "counterintuitive",
         "intervention",
+        "bystander effect",
         "diffusion of responsibility"
       ],
-      "answer": 1
+      "answer": 2
     }
   },
   {
@@ -95,14 +95,14 @@
       }
     ],
     "quiz": {
-      "question": "What does '둘 이상의 해석이 가능한' mean in English?",
+      "question": "What does '상식이나 직감과 다른' mean in English?",
       "options": [
+        "pluralistic ignorance",
         "diffusion of responsibility",
-        "ambiguous",
         "intervention",
         "counterintuitive"
       ],
-      "answer": 1
+      "answer": 3
     }
   },
   {
@@ -151,9 +151,9 @@
     "quiz": {
       "question": "What does '많은 사람이 있을 때 개인 책임감이 줄어드는 현상' mean in English?",
       "options": [
-        "bystander effect",
         "ambiguous",
-        "counterintuitive",
+        "intervention",
+        "pluralistic ignorance",
         "diffusion of responsibility"
       ],
       "answer": 3
@@ -202,12 +202,12 @@
     "quiz": {
       "question": "What does '도움을 주기 위해 행동에 나서는 것' mean in English?",
       "options": [
-        "counterintuitive",
-        "ambiguous",
         "intervention",
+        "pluralistic ignorance",
+        "ambiguous",
         "diffusion of responsibility"
       ],
-      "answer": 2
+      "answer": 0
     }
   },
   {
@@ -251,14 +251,14 @@
       }
     ],
     "quiz": {
-      "question": "What does '모두가 다른 사람의 반응을 보고 상황을 오판하는 현상' mean in English?",
+      "question": "What does '많은 사람이 있을 때 개인 책임감이 줄어드는 현상' mean in English?",
       "options": [
-        "pluralistic ignorance",
+        "bystander effect",
+        "diffusion of responsibility",
         "intervention",
-        "ambiguous",
-        "bystander effect"
+        "counterintuitive"
       ],
-      "answer": 0
+      "answer": 1
     }
   },
   {
@@ -303,14 +303,14 @@
       }
     ],
     "quiz": {
-      "question": "What does '도움을 주기 위해 행동에 나서는 것' mean in English?",
+      "question": "What does '모두가 다른 사람의 반응을 보고 상황을 오판하는 현상' mean in English?",
       "options": [
+        "diffusion of responsibility",
         "bystander effect",
-        "ambiguous",
         "intervention",
-        "counterintuitive"
+        "pluralistic ignorance"
       ],
-      "answer": 2
+      "answer": 3
     }
   },
   {
@@ -352,14 +352,14 @@
       }
     ],
     "quiz": {
-      "question": "What does '목격자가 많을수록 개인이 도울 가능성이 낮아지는 현상' mean in English?",
+      "question": "What does '상식이나 직감과 다른' mean in English?",
       "options": [
-        "diffusion of responsibility",
-        "pluralistic ignorance",
-        "bystander effect",
-        "intervention"
+        "counterintuitive",
+        "intervention",
+        "ambiguous",
+        "pluralistic ignorance"
       ],
-      "answer": 2
+      "answer": 0
     }
   }
 ]

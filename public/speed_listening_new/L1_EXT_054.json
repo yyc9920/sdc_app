@@ -1,0 +1,58 @@
+[
+  {
+    "setId": "L1_EXT_054_set1",
+    "parentSetId": "L1_EXT_054",
+    "theme": "My Dream",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My dream is to become a doctor.",
+        "korean": "꿈은 의사가 되는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I want to help sick people feel better.",
+        "korean": "아픈 사람들이 나아지도록 돕고 싶어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I study hard every day to get into a good university.",
+        "korean": "좋은 대학에 가려고 매일 열심히 공부해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Science and math are the most important subjects for me.",
+        "korean": "과학과 수학이 나에게 가장 중요한 과목이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I know it will be hard but I will never give up.",
+        "korean": "어려울 거란 건 알지만 절대 포기하지 않을 거예요.",
+        "properNounIndices": [
+          0,
+          7
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Going Grocery Shopping",
+        "My Favorite Food",
+        "My Dream",
+        "Why We Underestimate Time"
+      ],
+      "answer": 2
+    }
+  }
+]

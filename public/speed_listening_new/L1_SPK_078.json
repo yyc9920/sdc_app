@@ -1,0 +1,71 @@
+[
+  {
+    "setId": "L1_SPK_078_set1",
+    "parentSetId": "L1_SPK_078",
+    "theme": "Paper Money vs. Cashless Society",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think society should go completely cashless?",
+        "korean": "사회가 완전히 현금 없는 사회로 가야 한다고 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your position.",
+        "korean": "입장을 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "While digital payments are incredibly convenient I don't think we should eliminate cash entirely.",
+        "korean": "디지털 결제가 엄청나게 편리하지만 현금을 완전히 없애서는 안 된다고 생각해요.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 3,
+        "english": "First not everyone has access to smartphones or bank accounts especially elderly people and low-income populations.",
+        "korean": "첫째 모든 사람이 스마트폰이나 은행 계좌에 접근할 수 있는 것은 아니에요. 특히 노인과 저소득층이요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Going cashless would effectively exclude these groups from the economy.",
+        "korean": "현금 없는 사회는 이러한 그룹을 경제에서 사실상 배제할 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Second a completely digital system is vulnerable to cyberattacks power outages and technical failures.",
+        "korean": "둘째 완전 디지털 시스템은 사이버 공격 정전 기술적 장애에 취약해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "The best approach is to make digital payment widely available while keeping cash as a backup option for everyone.",
+        "korean": "최선의 접근은 디지털 결제를 널리 보급하되 모두를 위한 대안으로 현금을 유지하는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "power outage",
+        "korean": "정전",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Paper Money vs. Cashless Society",
+        "The Influence of Advertising",
+        "Describe a place outside your actual home where yo",
+        "What Makes a Good Leader"
+      ],
+      "answer": 0
+    }
+  }
+]

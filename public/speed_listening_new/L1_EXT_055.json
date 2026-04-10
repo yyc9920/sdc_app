@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L1_EXT_055_set1",
+    "parentSetId": "L1_EXT_055",
+    "theme": "My Bicycle",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I ride my bicycle to school when the weather is nice.",
+        "korean": "날씨가 좋을 때 자전거를 타고 학교에 가요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "It is a red mountain bike that I got for my birthday.",
+        "korean": "생일에 받은 빨간 산악 자전거예요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Riding a bike is faster than walking and it is good exercise.",
+        "korean": "자전거는 걷는 것보다 빠르고 좋은 운동이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I always wear a helmet for safety.",
+        "korean": "안전을 위해 항상 헬멧을 써요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "On weekends I ride along the river path with my dad.",
+        "korean": "주말에는 아빠와 강변 길을 따라 타요.",
+        "properNounIndices": [
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Public Speaking Tips",
+        "My Bicycle",
+        "Going Camping",
+        "Doing Homework"
+      ],
+      "answer": 1
+    }
+  }
+]

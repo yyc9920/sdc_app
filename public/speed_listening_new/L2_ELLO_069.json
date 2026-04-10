@@ -1,0 +1,57 @@
+[
+  {
+    "setId": "L2_ELLO_069_set1",
+    "parentSetId": "L2_ELLO_069",
+    "theme": "Mixer #77 — Traffic Problems",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Traffic in my city is absolutely horrible.",
+        "korean": "우리 도시의 교통은 정말 끔찍해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "It can take two hours just to go ten kilometers.",
+        "korean": "10킬로미터 가는 데 2시간이 걸릴 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I avoid driving during rush hour completely.",
+        "korean": "출퇴근 시간에는 운전을 완전히 피해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I either leave very early or wait until the traffic dies down.",
+        "korean": "아주 일찍 나가거나 교통이 줄어들 때까지 기다려요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I switched to a motorcycle because of traffic, and now my commute is half the time.",
+        "korean": "교통 때문에 오토바이로 바꿨고 이제 출퇴근 시간이 반으로 줄었어요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #63 — Technology Problems",
+        "Mixer #14 — Hanging Out",
+        "Mixer #77 — Traffic Problems",
+        "Mixer #51 — Cleaning Habits"
+      ],
+      "answer": 2
+    }
+  }
+]

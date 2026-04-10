@@ -1,0 +1,167 @@
+[
+  {
+    "setId": "L3_DLG_001_set1",
+    "parentSetId": "L3_DLG_001",
+    "theme": "Project Meeting Update",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Okay, everyone. Let's get started.",
+        "korean": "좋아요, 여러분. 시작합시다.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Sarah, can you give us an update on the marketing campaign?",
+        "korean": "세라, 마케팅 캠페인 진행 상황 알려줄 수 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Sure! We've finished the first phase.",
+        "korean": "네! 첫 번째 단계를 끝냈어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 3,
+        "english": "The initial response has been positive, but we noticed one issue.",
+        "korean": "초기 반응은 긍정적이었는데, 한 가지 문제를 발견했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "What's the issue?",
+        "korean": "무슨 문제인가요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '실행하다' mean in English?",
+      "options": [
+        "shift",
+        "engagement",
+        "implement",
+        "analytics"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L3_DLG_001_set2",
+    "parentSetId": "L3_DLG_001",
+    "theme": "Project Meeting Update",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "We're not getting enough engagement on social media.",
+        "korean": "소셜 미디어에서 충분한 참여를 얻지 못하고 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "The engagement rate is about half of what we expected.",
+        "korean": "참여율이 예상의 약 절반이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Interesting. Do you have any ideas on why that might be?",
+        "korean": "흥미롭네요. 왜 그런지 아이디어가 있나요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 8,
+        "english": "I think the problem is timing.",
+        "korean": "타이밍이 문제라고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 9,
+        "english": "We've been posting at 9 AM, but our analytics show our audience is most active in the evening.",
+        "korean": "오전 9시에 올려왔는데, 분석을 보면 우리 청중은 저녁에 가장 활발하거든요.",
+        "properNounIndices": [
+          5
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '옮기다, 바꾸다' mean in English?",
+      "options": [
+        "analytics",
+        "shift",
+        "implement",
+        "engagement"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L3_DLG_001_set3",
+    "parentSetId": "L3_DLG_001",
+    "theme": "Project Meeting Update",
+    "level": 5,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "Good observation. So what's your recommendation?",
+        "korean": "좋은 관찰이에요. 그러면 추천 사항이 뭔가요?",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 11,
+        "english": "I'd suggest we shift our posting time to 6 PM and test for two weeks.",
+        "korean": "게시 시간을 오후 6시로 바꾸고 2주간 테스트할 것을 제안해요.",
+        "properNounIndices": [
+          9
+        ]
+      },
+      {
+        "id": 12,
+        "english": "Then we can measure the results.",
+        "korean": "그러면 결과를 측정할 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
+        "english": "That sounds reasonable. Can you implement that by next week?",
+        "korean": "합리적으로 들리네요. 다음 주까지 실행할 수 있나요?",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 14,
+        "english": "Absolutely. I'll make the changes and send you a report.",
+        "korean": "물론이죠. 변경사항을 적용하고 보고서 보낼게요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '(소셜 미디어) 상호 작용, 참여' mean in English?",
+      "options": [
+        "analytics",
+        "implement",
+        "shift",
+        "engagement"
+      ],
+      "answer": 3
+    }
+  }
+]

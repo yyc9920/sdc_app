@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L1_EXT_031_set1",
+    "parentSetId": "L1_EXT_031",
+    "theme": "My Phone",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I got a new phone for my birthday.",
+        "korean": "생일에 새 폰을 받았어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I use it to text my friends and watch videos.",
+        "korean": "친구에게 문자하고 영상을 보는 데 써요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I also take a lot of photos with it.",
+        "korean": "사진도 많이 찍어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "My mom says I use my phone too much.",
+        "korean": "엄마는 폰을 너무 많이 쓴다고 해요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 4,
+        "english": "She wants me to read more books instead.",
+        "korean": "대신 책을 더 읽으라고 하세요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Introducing Your Family",
+        "My School Life",
+        "My Phone",
+        "Investigative Journalism — Corporate Whistleblowing"
+      ],
+      "answer": 2
+    }
+  }
+]

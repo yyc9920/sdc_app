@@ -1,0 +1,71 @@
+[
+  {
+    "setId": "L1_DLG_010_set1",
+    "parentSetId": "L1_DLG_010",
+    "theme": "Calling a Friend",
+    "level": 2,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hey it's me.",
+        "korean": "이봐요 나예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Are you busy right now?",
+        "korean": "지금 바빠요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "No, what's up?",
+        "korean": "아니요, 무슨 일이에요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Do you want to play basketball at the park?",
+        "korean": "공원에서 농구할래요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "When?",
+        "korean": "언제요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Right now. I'm already at the park.",
+        "korean": "지금이요. 이미 공원에 있어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Give me ten minutes.",
+        "korean": "10분만 줘요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Okay hurry up!",
+        "korean": "알겠어요 빨리 와요!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Looking for a Lost Item",
+        "At the Phone Store",
+        "Sharing Food at Lunch",
+        "Calling a Friend"
+      ],
+      "answer": 3
+    }
+  }
+]

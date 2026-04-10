@@ -1,0 +1,67 @@
+[
+  {
+    "setId": "L1_SPK_043_set1",
+    "parentSetId": "L1_SPK_043",
+    "theme": "Public Transportation vs. Private Car",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you prefer using public transportation or driving your own car?",
+        "korean": "대중교통과 자가용 중 어느 것을 선호합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your choice.",
+        "korean": "선택을 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I prefer using public transportation in most situations.",
+        "korean": "대부분의 상황에서 대중교통 이용을 선호해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "First it's much cheaper than owning a car when you factor in gas insurance maintenance and parking fees.",
+        "korean": "첫째 기름값 보험 유지비 주차비를 고려하면 자가용보다 훨씬 저렴해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Second I can use my commute time productively — reading or listening to podcasts — instead of staring at traffic.",
+        "korean": "둘째 교통 체증을 바라보는 대신 통근 시간을 생산적으로 쓸 수 있어요 — 책을 읽거나 팟캐스트를 들으면서.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Finally using public transit reduces my carbon footprint which matters to me as someone who cares about the environment.",
+        "korean": "마지막으로 대중교통 이용은 탄소 발자국을 줄여줘요. 환경을 생각하는 사람으로서 중요한 일이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "factor in",
+        "korean": "고려하다/포함하다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Public Transportation vs. Private Car",
+        "Long Commute vs. Small Apartment Near Work",
+        "Social Media Age Limit",
+        "Gap Year — Good Idea or Not"
+      ],
+      "answer": 0
+    }
+  }
+]

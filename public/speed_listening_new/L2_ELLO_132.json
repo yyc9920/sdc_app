@@ -1,0 +1,41 @@
+[
+  {
+    "setId": "L2_ELLO_132_set1",
+    "parentSetId": "L2_ELLO_132",
+    "theme": "Mixer #13 — Favorite Smell",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My favorite smell is fresh bread baking in the oven, it immediately makes me feel warm and happy.",
+        "korean": "가장 좋아하는 냄새는 오븐에서 구워지는 빵이에요. 바로 따뜻하고 행복한 기분이 들어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I love the smell of rain on hot pavement, it's called petrichor.",
+        "korean": "뜨거운 보도에 내리는 비 냄새를 좋아해요. 페트리코르라고 불려요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Coffee brewing in the morning is my absolute favorite, because even the smell alone wakes me up.",
+        "korean": "아침에 커피 내리는 냄새가 단연 최고예요. 냄새만으로도 잠이 깨거든요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #3 — Morning Coffee Ritual",
+        "Mixer #67 — Fashion",
+        "Mixer #1 — Small Talk",
+        "Mixer #13 — Favorite Smell"
+      ],
+      "answer": 3
+    }
+  }
+]

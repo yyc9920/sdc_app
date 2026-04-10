@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L1_EXT_062_set1",
+    "parentSetId": "L1_EXT_062",
+    "theme": "My Weekend Morning",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "On weekends I sleep until ten o'clock.",
+        "korean": "주말에는 10시까지 자요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Then I eat a big breakfast with my family.",
+        "korean": "그리고 가족과 든든한 아침을 먹어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
+        "english": "My dad makes pancakes every Sunday and they are the best.",
+        "korean": "아빠가 매주 일요일 팬케이크를 만드는데 최고예요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 3,
+        "english": "After breakfast I watch cartoons or play video games.",
+        "korean": "아침 후에 만화를 보거나 비디오 게임을 해요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Weekend mornings are my happiest time of the week.",
+        "korean": "주말 아침이 일주일 중 가장 행복한 시간이에요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Urban Farming Revolution",
+        "At the Convenience Store",
+        "Shopping for Clothes",
+        "My Weekend Morning"
+      ],
+      "answer": 3
+    }
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "setId": "L3_B6ME_041_set1",
+    "parentSetId": "L3_B6ME_041",
+    "theme": "The Criminal Trade in Ancient Objects",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "BBC reporter Ryan Keane recently bought a 1,800-year-old Roman coin in London.",
+        "korean": "BBC 기자 라이언 킨이 최근 런던에서 1800년 된 로마 동전을 샀어요.",
+        "properNounIndices": [
+          2,
+          3,
+          8,
+          11
+        ]
+      },
+      {
+        "id": 1,
+        "english": "But soon afterwards, he discovered there was more to the story.",
+        "korean": "하지만 곧 이야기에 더 많은 것이 있다는 걸 발견했죠.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I came across reports of expansive criminal networks related to antiquities.",
+        "korean": "골동품과 관련된 광범위한 범죄 네트워크에 대한 보고서를 접했어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Some ancient artefacts being sold online and in stores have been looted and trafficked.",
+        "korean": "온라인과 상점에서 판매되는 일부 고대 유물이 약탈되고 밀거래된 것이었어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '출처, 유래 — 물건이 어디서 왔는지의 기록' mean in English?",
+      "options": [
+        "antiquity",
+        "artefact",
+        "looted",
+        "provenance"
+      ],
+      "answer": 3
+    }
+  }
+]

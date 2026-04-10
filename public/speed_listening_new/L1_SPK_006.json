@@ -3,20 +3,29 @@
     "setId": "L1_SPK_006_set1",
     "parentSetId": "L1_SPK_006",
     "theme": "City Living vs. Rural Living",
-    "level": 6,
+    "level": 5,
     "setNumber": 1,
     "sentences": [
       {
         "id": 0,
-        "english": "Some people prefer living in a big city. Others prefer living in a rural area. Which do you prefer and why?",
-        "korean": "대도시에 사는 것을 좋아하는 사람도 있고, 시골에 사는 것을 좋아하는 사람도 있습니다. 어느 쪽을 선호하며 이유는?",
-        "properNounIndices": [
-          8,
-          15
-        ]
+        "english": "Some people prefer living in a big city.",
+        "korean": "어떤 이들은 대도시에 사는 것을 좋아합니다.",
+        "properNounIndices": []
       },
       {
         "id": 1,
+        "english": "Others prefer living in a rural area.",
+        "korean": "시골에 사는 것을 좋아하는 사람도 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Which do you prefer and why?",
+        "korean": "어느 쪽을 선호하며 이유는?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
         "english": "I prefer living in a big city, primarily because of the opportunities it offers.",
         "korean": "저는 대도시에 사는 것을 선호하는데, 주로 제공하는 기회들 때문이에요.",
         "properNounIndices": [
@@ -24,13 +33,32 @@
         ]
       },
       {
-        "id": 2,
+        "id": 4,
         "english": "Cities have more job options, better universities, and richer cultural experiences.",
         "korean": "도시에는 더 많은 일자리, 더 좋은 대학, 더 풍부한 문화 경험이 있어요.",
         "properNounIndices": []
-      },
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Important Quality in a Friend",
+        "City Living vs. Rural Living",
+        "Learning from Older vs. Younger People",
+        "Social Media — More Harm or Good"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L1_SPK_006_set2",
+    "parentSetId": "L1_SPK_006",
+    "theme": "City Living vs. Rural Living",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
       {
-        "id": 3,
+        "id": 5,
         "english": "I grew up in a small town, and while it was peaceful, I often felt limited in terms of what I could do or where I could go.",
         "korean": "저는 작은 마을에서 자랐는데, 평화롭긴 했지만 할 수 있는 것이나 갈 수 있는 곳이 제한적이라고 자주 느꼈어요.",
         "properNounIndices": [
@@ -41,7 +69,7 @@
         ]
       },
       {
-        "id": 4,
+        "id": 6,
         "english": "Moving to a city opened up a completely different world for me — I could attend concerts, visit museums, take evening classes, and meet people from all kinds of backgrounds.",
         "korean": "도시로 이사하면서 완전히 다른 세계가 열렸어요 — 콘서트에 가고, 박물관을 방문하고, 야간 수업을 듣고, 다양한 배경의 사람들을 만날 수 있었어요.",
         "properNounIndices": [
@@ -49,7 +77,7 @@
         ]
       },
       {
-        "id": 5,
+        "id": 7,
         "english": "I also appreciate the convenience of public transportation in cities, which makes commuting without a car possible.",
         "korean": "도시의 대중교통 편리함도 고마운데, 차 없이 통근할 수 있게 해줘요.",
         "properNounIndices": [
@@ -57,7 +85,7 @@
         ]
       },
       {
-        "id": 6,
+        "id": 8,
         "english": "Of course, cities can be noisy and expensive, but for someone like me who values career growth and cultural engagement, city life is the better fit.",
         "korean": "물론, 도시는 시끄럽고 비쌀 수 있지만, 경력 성장과 문화적 참여를 중시하는 저 같은 사람에게는 도시 생활이 더 맞아요.",
         "properNounIndices": []
@@ -66,12 +94,12 @@
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Technology in Education",
-        "A Skill You Want to Learn",
+        "The Best Invention in History",
         "City Living vs. Rural Living",
-        "Studying Alone vs. Studying in a Group"
+        "Experience vs. Possessions",
+        "Learning from Failure"
       ],
-      "answer": 2
+      "answer": 1
     }
   }
 ]

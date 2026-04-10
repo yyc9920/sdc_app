@@ -108,9 +108,11 @@ export const QuizHistory: React.FC<QuizHistoryProps> = ({ results, loading }) =>
               <div className={`text-xl font-bold ${getScoreColor(result.score)}`}>
                 {result.score}%
               </div>
-              <div className="text-xs text-gray-500 dark:text-gray-400">
-                {result.blanksCorrect}/{result.blanksTotal}
-              </div>
+              {result.blanksTotal != null && (
+                <div className="text-xs text-gray-500 dark:text-gray-400">
+                  {result.blanksCorrect ?? 0}/{result.blanksTotal}
+                </div>
+              )}
             </div>
           </div>
         ))}

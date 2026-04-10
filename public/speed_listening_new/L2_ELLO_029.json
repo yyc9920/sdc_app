@@ -1,0 +1,74 @@
+[
+  {
+    "setId": "L2_ELLO_029_set1",
+    "parentSetId": "L2_ELLO_029",
+    "theme": "Mixer #117 — Phobias",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I have a terrible fear of spiders, even the tiny ones.",
+        "korean": "거미가 너무 무서워요, 아주 작은 것도요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "If I see one in my room, I can't sleep until someone removes it.",
+        "korean": "방에서 하나라도 보면 누가 치워줄 때까지 잘 수 없어요.",
+        "properNounIndices": [
+          1,
+          7
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Heights really bother me.",
+        "korean": "높은 곳이 정말 괴로워요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I can't even stand on a balcony without feeling dizzy.",
+        "korean": "발코니에 서 있기만 해도 어지러워요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "My legs start to shake.",
+        "korean": "다리가 떨리기 시작해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "I'm afraid of flying, which is a problem because I love to travel.",
+        "korean": "비행이 두려운데 여행을 좋아해서 문제예요.",
+        "properNounIndices": [
+          9
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Every time I get on a plane, my heart beats so fast.",
+        "korean": "비행기를 탈 때마다 심장이 너무 빨리 뛰어요.",
+        "properNounIndices": [
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #117 — Phobias",
+        "Mixer #46 — Work-Life Balance",
+        "Mixer #25 — Morning Routine",
+        "Mixer #119 — Sleeping In"
+      ],
+      "answer": 0
+    }
+  }
+]

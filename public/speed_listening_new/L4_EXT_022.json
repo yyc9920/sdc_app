@@ -1,0 +1,39 @@
+[
+  {
+    "setId": "L4_EXT_022_set1",
+    "parentSetId": "L4_EXT_022",
+    "theme": "The Science of Habits",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Every habit follows the same neurological loop — a cue triggers a routine which delivers a reward and over time this loop becomes automatic.",
+        "korean": "모든 습관은 같은 신경학적 고리를 따른다 — 신호가 루틴을 촉발하고 보상을 제공하며 시간이 지나면 이 고리가 자동화된다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Research suggests it takes an average of sixty-six days to form a new habit though this varies significantly depending on the complexity of the behavior.",
+        "korean": "연구에 따르면 새 습관을 만드는 데 평균 66일이 걸리지만 행동의 복잡성에 따라 상당히 다르다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The most effective strategy for building good habits is habit stacking — attaching a new behavior to an existing one like doing ten push-ups immediately after brushing your teeth.",
+        "korean": "좋은 습관을 만드는 가장 효과적인 전략은 습관 쌓기이다. 양치 직후 팔 굽혀 펴기 10회 하기처럼 새 행동을 기존 행동에 붙이는 것이다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '신호/단서' mean in English?",
+      "options": [
+        "reward",
+        "habit stacking",
+        "cue",
+        "habit"
+      ],
+      "answer": 2
+    }
+  }
+]

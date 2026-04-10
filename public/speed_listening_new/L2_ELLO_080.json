@@ -1,0 +1,55 @@
+[
+  {
+    "setId": "L2_ELLO_080_set1",
+    "parentSetId": "L2_ELLO_080",
+    "theme": "Mixer #66 — Multitasking",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'm great at multitasking.",
+        "korean": "멀티태스킹을 잘해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I can talk on the phone, write emails, and eat lunch all at the same time.",
+        "korean": "전화하면서 이메일 쓰고 점심 먹는 걸 동시에 할 수 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Actually, studies show that multitasking makes you less productive.",
+        "korean": "사실 연구에 따르면 멀티태스킹은 생산성을 떨어뜨려요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "It's better to focus on one thing at a time.",
+        "korean": "한 번에 한 가지에 집중하는 게 나아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I try to single-task, but it's hard when there are so many things to do at work.",
+        "korean": "한 가지에 집중하려 하지만 직장에서 할 일이 너무 많으면 어려워요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '한 가지에 집중하다' mean in English?",
+      "options": [
+        "focus",
+        "multitasking",
+        "productive",
+        "single-task"
+      ],
+      "answer": 3
+    }
+  }
+]

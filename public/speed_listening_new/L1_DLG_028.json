@@ -1,0 +1,77 @@
+[
+  {
+    "setId": "L1_DLG_028_set1",
+    "parentSetId": "L1_DLG_028",
+    "theme": "Talking About a Test",
+    "level": 2,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "How was the English test today?",
+        "korean": "오늘 영어 시험 어땠어요?",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 1,
+        "english": "It was harder than I expected.",
+        "korean": "예상보다 어려웠어요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Which part was the hardest?",
+        "korean": "어떤 부분이 가장 어려웠어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "The listening section.",
+        "korean": "듣기 영역이요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "They spoke so fast.",
+        "korean": "너무 빨리 말하더라고요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "I thought the writing section was the hardest.",
+        "korean": "나는 쓰기 영역이 가장 어려웠어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 6,
+        "english": "When do we get the results?",
+        "korean": "결과가 언제 나와요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Next Friday.",
+        "korean": "다음 주 금요일이요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Splitting the Bill",
+        "Renewing a Driver's License",
+        "Talking About a Test",
+        "Business Negotiation — Pricing"
+      ],
+      "answer": 2
+    }
+  }
+]

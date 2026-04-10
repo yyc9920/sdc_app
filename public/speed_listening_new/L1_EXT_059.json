@@ -1,0 +1,58 @@
+[
+  {
+    "setId": "L1_EXT_059_set1",
+    "parentSetId": "L1_EXT_059",
+    "theme": "My Teacher",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My English teacher is very kind and funny.",
+        "korean": "영어 선생님은 매우 친절하고 재미있어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "She always tells jokes to make the class more fun.",
+        "korean": "수업을 더 재미있게 하려고 항상 농담을 하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "She explains difficult grammar in a simple way.",
+        "korean": "어려운 문법을 간단하게 설명해주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "When I make a mistake she encourages me to try again.",
+        "korean": "실수하면 다시 해보라고 격려해주세요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Thanks to her I started to enjoy learning English.",
+        "korean": "선생님 덕분에 영어 공부가 즐거워지기 시작했어요.",
+        "properNounIndices": [
+          3,
+          8
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '농담' mean in English?",
+      "options": [
+        "joke",
+        "grammar",
+        "encourage",
+        "thanks to"
+      ],
+      "answer": 0
+    }
+  }
+]

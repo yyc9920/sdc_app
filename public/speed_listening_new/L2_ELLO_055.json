@@ -1,0 +1,65 @@
+[
+  {
+    "setId": "L2_ELLO_055_set1",
+    "parentSetId": "L2_ELLO_055",
+    "theme": "Mixer #91 — Being on Time",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'm always early.",
+        "korean": "항상 일찍 가요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "If I'm not ten minutes early, I feel like I'm late.",
+        "korean": "10분 일찍 안 가면 늦은 것 같아요.",
+        "properNounIndices": [
+          1,
+          6,
+          9
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I'm always late, no matter how hard I try.",
+        "korean": "아무리 노력해도 항상 늦어요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I underestimate how long things take.",
+        "korean": "일이 얼마나 걸리는지 과소평가하거든요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "In my country, being a little late is totally normal.",
+        "korean": "우리나라에서는 약간 늦는 게 완전히 정상이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "If you say seven o'clock, people show up at seven thirty.",
+        "korean": "7시라고 하면 7시 반에 와요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #30 — Birthdays",
+        "Mixer #73 — Reading Habits",
+        "Mixer #91 — Being on Time",
+        "Mixer #16 — Roommates"
+      ],
+      "answer": 2
+    }
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "setId": "L3_DLG_039_set1",
+    "parentSetId": "L3_DLG_039",
+    "theme": "Applying for a Library Card",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'd like to get a library card please.",
+        "korean": "도서관 카드를 만들고 싶어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Do you live in this city?",
+        "korean": "이 도시에 거주하시나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Yes I moved here last month.",
+        "korean": "네 지난달에 이사 왔어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I'll need a photo ID and proof of your current address like a utility bill or a bank statement.",
+        "korean": "사진이 있는 신분증과 공과금 청구서나 은행 명세서 같은 현재 주소 증명이 필요해요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I have my driver's license and a phone bill.",
+        "korean": "운전면허증과 전화 요금 청구서가 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '공과금 청구서' mean in English?",
+      "options": [
+        "fill out",
+        "proof",
+        "form",
+        "utility bill"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L3_DLG_039_set2",
+    "parentSetId": "L3_DLG_039",
+    "theme": "Applying for a Library Card",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Those will work.",
+        "korean": "그것들이면 돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Just fill out this form and your card will be ready in about five minutes.",
+        "korean": "이 양식만 작성하시면 약 5분 후에 카드가 준비됩니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "How many books can I borrow at a time?",
+        "korean": "한 번에 몇 권까지 빌릴 수 있나요?",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Up to ten books for three weeks.",
+        "korean": "최대 10권까지 3주 동안이요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '증명/증거' mean in English?",
+      "options": [
+        "utility bill",
+        "fill out",
+        "form",
+        "proof"
+      ],
+      "answer": 3
+    }
+  }
+]

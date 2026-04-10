@@ -1,0 +1,63 @@
+[
+  {
+    "setId": "L2_ELLO_050_set1",
+    "parentSetId": "L2_ELLO_050",
+    "theme": "Mixer #96 — Dream House",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My dream house would be by the ocean.",
+        "korean": "꿈의 집은 바다 옆이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I want to wake up every morning and see the water.",
+        "korean": "매일 아침 일어나서 바다를 보고 싶어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I'd love a house in the mountains with a big fireplace.",
+        "korean": "큰 벽난로가 있는 산속 집을 원해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Somewhere quiet, surrounded by nature.",
+        "korean": "조용하고 자연에 둘러싸인 곳이요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I want a modern apartment in the city center.",
+        "korean": "도심에 현대적인 아파트를 원해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "english": "I love being close to restaurants, shops, and nightlife.",
+        "korean": "식당 가게 그리고 야간 문화에 가까이 있는 게 좋아요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #64 — Noise at Night",
+        "Mixer #96 — Dream House",
+        "Mixer #107 — Online Shopping",
+        "Mixer #81 — Morning Person or Night Owl"
+      ],
+      "answer": 1
+    }
+  }
+]

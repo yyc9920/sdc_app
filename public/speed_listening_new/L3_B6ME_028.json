@@ -1,0 +1,100 @@
+[
+  {
+    "setId": "L3_B6ME_028_set1",
+    "parentSetId": "L3_B6ME_028",
+    "theme": "Was Christmas Better in the Past?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "At this time of year, we might look back at the Christmases from the past, from our childhood, and feel like they were happier or more magical than Christmas feels today.",
+        "korean": "이맘때면 어린 시절의 크리스마스를 돌아보며 오늘날보다 더 행복하고 마법 같았다고 느낄 수 있어요.",
+        "properNounIndices": [
+          11,
+          28
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Thinking about the past can make us feel happy and sad at the same time.",
+        "korean": "과거를 생각하면 행복하면서도 동시에 슬플 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "It's a strange feeling we call nostalgia.",
+        "korean": "이 이상한 감정을 노스탤지아라고 불러요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Nostalgic memories are often going to be rose-tinted and made more positive.",
+        "korean": "향수에 젖은 기억은 종종 장밋빛으로 물들어 더 긍정적이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "The function of memory is not about accuracy.",
+        "korean": "기억의 기능은 정확성에 관한 게 아니에요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '(구어) 정말 ~하고 싶은, 간절히 원하는' mean in English?",
+      "options": [
+        "function",
+        "dying for",
+        "nostalgia",
+        "rose-tinted"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L3_B6ME_028_set2",
+    "parentSetId": "L3_B6ME_028",
+    "theme": "Was Christmas Better in the Past?",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "It doesn't matter if some of the details are wrong.",
+        "korean": "세부 사항 일부가 틀려도 상관없어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Catherine says nostalgic memories are rose-tinted — seeing only the positive parts of something, and not the bad parts.",
+        "korean": "캐서린은 향수에 젖은 기억이 장밋빛이라고 해요 — 긍정적인 부분만 보고 나쁜 부분은 안 보는 거죠.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "What has become a traditional food to eat in Japan at Christmas time?",
+        "korean": "일본에서 크리스마스에 전통 음식이 된 것은?",
+        "properNounIndices": [
+          9,
+          11
+        ]
+      },
+      {
+        "id": 8,
+        "english": "The answer is fried chicken.",
+        "korean": "정답은 프라이드 치킨이에요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '(구어) 정말 ~하고 싶은, 간절히 원하는' mean in English?",
+      "options": [
+        "rose-tinted",
+        "frame",
+        "nostalgia",
+        "dying for"
+      ],
+      "answer": 3
+    }
+  }
+]

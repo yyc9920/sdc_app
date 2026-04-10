@@ -1,0 +1,73 @@
+[
+  {
+    "setId": "L4_DLG_028_set1",
+    "parentSetId": "L4_DLG_028",
+    "theme": "Performance Review Feedback",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Let's go over your annual performance review.",
+        "korean": "연간 업무 평가를 살펴봅시다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I've been looking forward to getting your feedback.",
+        "korean": "피드백을 받기를 기대하고 있었습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Overall your performance has been strong this year.",
+        "korean": "전반적으로 올해 업무 성과가 우수했습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Your client retention rate is the highest on the team and you consistently exceed your quarterly targets.",
+        "korean": "고객 유지율이 팀에서 가장 높고 분기별 목표를 꾸준히 초과달성합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Thank you. I've put a lot of effort into building relationships with our clients.",
+        "korean": "감사합니다. 고객과의 관계 구축에 많은 노력을 기울였습니다.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 5,
+        "english": "One area for improvement is cross-team communication.",
+        "korean": "개선할 영역 하나는 팀 간 커뮤니케이션입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "There have been a few cases where marketing didn't receive project updates in time.",
+        "korean": "마케팅팀이 프로젝트 업데이트를 제때 받지 못한 경우가 몇 건 있었습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "That's fair feedback. I'll set up a weekly status update email to all stakeholders starting next week.",
+        "korean": "공정한 피드백입니다. 다음 주부터 모든 이해관계자에게 주간 현황 업데이트 이메일을 보내겠습니다.",
+        "properNounIndices": [
+          3
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '초과하다' mean in English?",
+      "options": [
+        "retention rate",
+        "stakeholder",
+        "exceed",
+        "performance review"
+      ],
+      "answer": 2
+    }
+  }
+]

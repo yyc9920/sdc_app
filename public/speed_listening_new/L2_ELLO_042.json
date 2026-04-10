@@ -1,0 +1,73 @@
+[
+  {
+    "setId": "L2_ELLO_042_set1",
+    "parentSetId": "L2_ELLO_042",
+    "theme": "Mixer #104 — Breakfast Habits",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I always have a big breakfast.",
+        "korean": "항상 든든한 아침을 먹어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Eggs, bacon, toast, and coffee.",
+        "korean": "달걀 베이컨 토스트 커피요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I can't function without it.",
+        "korean": "이것 없이는 기능을 못 해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I usually skip breakfast.",
+        "korean": "보통 아침을 건너뛰어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I just have coffee and that keeps me going until lunch.",
+        "korean": "커피만 마시고 점심까지 버텨요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "english": "I eat the same thing every morning — oatmeal with fruit.",
+        "korean": "매일 아침 같은 걸 먹어요 — 과일 넣은 오트밀이요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 6,
+        "english": "It's quick, healthy, and filling.",
+        "korean": "빠르고 건강하고 배가 든든해요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #65 — Dieting",
+        "Mixer #9 — Compliments",
+        "Mixer #104 — Breakfast Habits",
+        "Mixer #107 — Online Shopping"
+      ],
+      "answer": 2
+    }
+  }
+]

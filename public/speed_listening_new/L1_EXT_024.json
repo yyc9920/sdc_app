@@ -1,0 +1,57 @@
+[
+  {
+    "setId": "L1_EXT_024_set1",
+    "parentSetId": "L1_EXT_024",
+    "theme": "My Room",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My room is small but very cozy.",
+        "korean": "내 방은 작지만 매우 아늑해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I have a bed, a desk, and a bookshelf.",
+        "korean": "침대 책상 책장이 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "There are many photos on the wall from my trips.",
+        "korean": "벽에 여행에서 찍은 사진이 많이 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "My desk is usually messy because I have too many books.",
+        "korean": "책이 너무 많아서 책상이 보통 지저분해요.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I like to open the window in the morning to get fresh air.",
+        "korean": "아침에 창문을 열어서 신선한 공기를 쐬는 걸 좋아해요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "At the Zoo",
+        "My Room",
+        "My Best Friend",
+        "The Rise of Electric Vehicles"
+      ],
+      "answer": 1
+    }
+  }
+]

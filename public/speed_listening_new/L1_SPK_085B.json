@@ -1,0 +1,69 @@
+[
+  {
+    "setId": "L1_SPK_085B_set1",
+    "parentSetId": "L1_SPK_085B",
+    "theme": "Do you think voting should be mandatory for all ci",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think voting should be mandatory for all citizens?",
+        "korean": "투표가 모든 시민에게 의무여야 한다고 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your position.",
+        "korean": "입장을 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I believe making voting mandatory would strengthen democracy.",
+        "korean": "투표를 의무화하면 민주주의를 강화할 거라고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "When only a small percentage of citizens vote election results don't truly represent the will of the people.",
+        "korean": "소수의 시민만 투표하면 선거 결과가 국민의 의사를 진정으로 대표하지 못해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Countries like Australia which have mandatory voting consistently see participation rates above ninety percent.",
+        "korean": "의무 투표제인 호주 같은 나라는 꾸준히 90% 이상의 참여율을 기록해요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Some argue that forcing people to vote violates their freedom but I think participating in democracy is a civic responsibility not just a right.",
+        "korean": "투표를 강제하면 자유를 침해한다는 주장이 있지만 민주주의 참여는 권리만이 아닌 시민적 책임이라 생각해요.",
+        "properNounIndices": [
+          11
+        ]
+      },
+      {
+        "id": 6,
+        "english": "will of the people",
+        "korean": "국민의 의사",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Longer Vacations vs. Shorter Frequent Breaks",
+        "Do you think a university degree is still necessar",
+        "Do you think voting should be mandatory for all ci",
+        "An Important Childhood Memory"
+      ],
+      "answer": 2
+    }
+  }
+]

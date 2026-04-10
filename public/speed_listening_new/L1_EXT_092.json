@@ -1,0 +1,53 @@
+[
+  {
+    "setId": "L1_EXT_092_set1",
+    "parentSetId": "L1_EXT_092",
+    "theme": "Feeding Ducks at the Pond",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "There is a small pond near my grandmother's house.",
+        "korean": "할머니 집 근처에 작은 연못이 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "We went there yesterday to feed the ducks.",
+        "korean": "어제 오리에게 먹이를 주러 갔어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "We brought old bread from home.",
+        "korean": "집에서 오래된 빵을 가져갔어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "The ducks were very friendly and came right up to us.",
+        "korean": "오리들이 매우 친근하게 바로 우리에게 다가왔어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I counted twelve ducks and three baby ducks.",
+        "korean": "오리 12마리와 새끼 오리 3마리를 세었어요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "The Seasons",
+        "Feeding Ducks at the Pond",
+        "Weather Forecast",
+        "At the Park"
+      ],
+      "answer": 1
+    }
+  }
+]

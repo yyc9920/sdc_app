@@ -1,0 +1,128 @@
+[
+  {
+    "setId": "L3_DLG_017_set1",
+    "parentSetId": "L3_DLG_017",
+    "theme": "Travel Agency — Planning a Trip",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hi, I'd like to plan a two-week vacation to Southeast Asia for me and my husband.",
+        "korean": "안녕하세요, 남편과 함께 동남아시아로 2주 휴가를 계획하고 싶어요.",
+        "properNounIndices": [
+          1,
+          9,
+          10
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Great choice! Do you have specific countries in mind, or would you like some suggestions?",
+        "korean": "좋은 선택이에요! 특정 나라를 생각하고 계세요, 아니면 추천을 드릴까요?",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "english": "We're interested in Thailand and Vietnam, but we're open to other options.",
+        "korean": "태국과 베트남에 관심 있지만 다른 옵션에도 열려 있어요.",
+        "properNounIndices": [
+          3,
+          5
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I'd actually recommend adding Cambodia to the itinerary.",
+        "korean": "사실 캄보디아를 일정에 추가하는 걸 권해요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 4,
+        "english": "You could do five days in Thailand, five in Vietnam, and four in Cambodia.",
+        "korean": "태국 5일 베트남 5일 캄보디아 4일로 할 수 있어요.",
+        "properNounIndices": [
+          6,
+          9,
+          13
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '숙소' mean in English?",
+      "options": [
+        "itinerary",
+        "boutique hotel",
+        "accommodation",
+        "doable"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L3_DLG_017_set2",
+    "parentSetId": "L3_DLG_017",
+    "theme": "Travel Agency — Planning a Trip",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "What's our total budget looking like?",
+        "korean": "총 예산이 어느 정도 될까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "We're hoping to keep it under five thousand per person.",
+        "korean": "1인당 5천 달러 이하로 유지하고 싶어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "That's very doable for Southeast Asia.",
+        "korean": "동남아시아에서 충분히 가능해요.",
+        "properNounIndices": [
+          4,
+          5
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Flights would be around twelve hundred, accommodations about a hundred per night for nice boutique hotels, and the rest for food and activities.",
+        "korean": "항공편이 약 1,200달러, 좋은 부티크 호텔이 1박 약 100달러, 나머지는 음식과 활동비요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "That sounds perfect. Can you put together a detailed itinerary for us?",
+        "korean": "완벽하네요. 상세 일정을 만들어주실 수 있나요?",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 10,
+        "english": "Absolutely, I'll have it ready by tomorrow afternoon.",
+        "korean": "물론이죠, 내일 오후까지 준비해둘게요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '숙소' mean in English?",
+      "options": [
+        "doable",
+        "accommodation",
+        "boutique hotel",
+        "budget"
+      ],
+      "answer": 1
+    }
+  }
+]

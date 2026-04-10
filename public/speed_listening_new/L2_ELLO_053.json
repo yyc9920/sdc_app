@@ -1,0 +1,65 @@
+[
+  {
+    "setId": "L2_ELLO_053_set1",
+    "parentSetId": "L2_ELLO_053",
+    "theme": "Mixer #93 — Handwriting",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My handwriting is terrible.",
+        "korean": "글씨가 끔찍해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Even I can't read it sometimes.",
+        "korean": "가끔 나도 못 읽어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I have pretty neat handwriting, actually.",
+        "korean": "사실 글씨가 꽤 깔끔해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "My mom made me practice writing every day when I was young.",
+        "korean": "어릴 때 엄마가 매일 글쓰기 연습을 시키셨거든요.",
+        "properNounIndices": [
+          9
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I barely write by hand anymore.",
+        "korean": "손으로 거의 안 써요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Everything is typing now so my handwriting has gotten worse over the years.",
+        "korean": "다 타이핑이라서 글씨가 점점 나빠졌어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #51 — Cleaning Habits",
+        "Mixer #93 — Handwriting",
+        "Mixer #23 — Online Reviews",
+        "Mixer #14 — Side Hustle"
+      ],
+      "answer": 1
+    }
+  }
+]

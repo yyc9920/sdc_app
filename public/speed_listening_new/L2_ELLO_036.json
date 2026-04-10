@@ -1,0 +1,67 @@
+[
+  {
+    "setId": "L2_ELLO_036_set1",
+    "parentSetId": "L2_ELLO_036",
+    "theme": "Mixer #110 — Exercise Routine",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I try to go to the gym three times a week.",
+        "korean": "일주일에 세 번 헬스장에 가려고 해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Mostly weight training and a bit of cardio.",
+        "korean": "주로 웨이트 트레이닝과 약간의 유산소요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I prefer outdoor exercise like jogging or cycling.",
+        "korean": "야외 운동을 선호해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "The gym feels too boring for me.",
+        "korean": "조깅이나 사이클링 같은 거요. 헬스장은 너무 지루해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "To be honest, I don't really exercise.",
+        "korean": "솔직히 운동을 안 해요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 5,
+        "english": "I know I should, but I just can't find the motivation.",
+        "korean": "해야 하는 건 아는데 동기를 찾을 수가 없어요.",
+        "properNounIndices": [
+          0,
+          2,
+          5
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #110 — Exercise Routine",
+        "Mixer #44 — Streaming Services",
+        "Mixer #87 — Sharing Food",
+        "Mixer #58 — Worst Job"
+      ],
+      "answer": 0
+    }
+  }
+]

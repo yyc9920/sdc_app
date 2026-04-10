@@ -1,0 +1,63 @@
+[
+  {
+    "setId": "L2_ELLO_026_set1",
+    "parentSetId": "L2_ELLO_026",
+    "theme": "Mixer #121 — Favorite Proverb",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My favorite proverb would have to be 'Don't judge a book by its cover.' You always need to give someone a chance.",
+        "korean": "가장 좋아하는 속담은 '겉모습으로 판단하지 마라'예요. 항상 누군가에게 기회를 줘야 해요.",
+        "properNounIndices": [
+          7,
+          14
+        ]
+      },
+      {
+        "id": 1,
+        "english": "'Don't count your chickens before they hatch' — it means don't always bank on you guessing the result.",
+        "korean": "'부화하기 전에 병아리를 세지 마라' — 결과를 예측하는 데 의존하지 말라는 뜻이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Life can change very quickly, so it's good to learn patience.",
+        "korean": "인생은 빠르게 변할 수 있으니 인내를 배우는 게 좋아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "'Hear and I forget; see and I understand; I do and I know.' Until you actually do something, it's hard to really, truly know it.",
+        "korean": "'듣고 잊는다; 보고 이해한다; 하고 안다.' 실제로 뭔가를 하기 전에는 정말로 아는 게 어려워요.",
+        "properNounIndices": [
+          2,
+          6,
+          8,
+          11,
+          13
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I really like the proverb, 'The grass is always greener on the other side.'",
+        "korean": "이 속담을 정말 좋아해요: '다른 쪽의 잔디가 항상 더 푸르다.'",
+        "properNounIndices": [
+          0,
+          5
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '속담, 격언' mean in English?",
+      "options": [
+        "proverb",
+        "don't judge a book by its cover",
+        "don't count your chickens before they hatch",
+        "the grass is always greener"
+      ],
+      "answer": 0
+    }
+  }
+]

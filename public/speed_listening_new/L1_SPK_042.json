@@ -1,0 +1,96 @@
+[
+  {
+    "setId": "L1_SPK_042_set1",
+    "parentSetId": "L1_SPK_042",
+    "theme": "A Skill Everyone Should Learn",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "What is one skill that you think everyone should learn?",
+        "korean": "모든 사람이 배워야 한다고 생각하는 기술 한 가지는 무엇입니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain why it is important.",
+        "korean": "왜 중요한지 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I believe everyone should learn basic cooking skills.",
+        "korean": "모든 사람이 기본적인 요리 기술을 배워야 한다고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "First knowing how to cook saves a tremendous amount of money over a lifetime.",
+        "korean": "첫째 요리할 줄 알면 평생에 걸쳐 엄청난 돈을 절약해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "People who rely entirely on restaurants and delivery spend three to four times more on food than those who cook at home.",
+        "korean": "전적으로 식당과 배달에 의존하는 사람은 집에서 요리하는 사람보다 식비를 3~4배 더 써요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "A Skill Everyone Should Learn",
+        "Important Quality in a Friend",
+        "Experience vs. Possessions",
+        "Paper Money vs. Cashless Society"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L1_SPK_042_set2",
+    "parentSetId": "L1_SPK_042",
+    "theme": "A Skill Everyone Should Learn",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Second cooking gives you control over your nutrition which directly impacts your long-term health.",
+        "korean": "둘째 요리는 영양을 조절할 수 있게 해주고 이는 장기 건강에 직접 영향을 미쳐요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "It's a practical life skill that pays dividends every single day.",
+        "korean": "매일 보답하는 실용적인 생활 기술이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "pay dividends",
+        "korean": "보답하다/이익을 가져다주다",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "rely on",
+        "korean": "~에 의존하다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "A Skill Everyone Should Learn",
+        "Advantages of Being Bilingual",
+        "Technology in Education",
+        "Your Ideal Weekend"
+      ],
+      "answer": 0
+    }
+  }
+]

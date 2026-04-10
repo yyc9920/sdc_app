@@ -1,0 +1,96 @@
+[
+  {
+    "setId": "L1_SPK_058_set1",
+    "parentSetId": "L1_SPK_058",
+    "theme": "Living in the Present vs. Planning Ahead",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think it is more important to live in the present or plan for the future?",
+        "korean": "현재를 사는 것과 미래를 계획하는 것 중 어느 것이 더 중요합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your opinion.",
+        "korean": "의견을 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I think striking a balance between living in the present and planning for the future is the ideal approach.",
+        "korean": "현재를 사는 것과 미래를 계획하는 것 사이의 균형을 맞추는 것이 이상적인 접근이라 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "People who only plan for the future often miss out on the joy of everyday moments.",
+        "korean": "미래만 계획하는 사람들은 일상의 기쁨을 종종 놓쳐요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "They're always working toward the next goal without ever stopping to appreciate what they've already achieved.",
+        "korean": "이미 이룬 것을 감상하기 위해 멈추지 않고 항상 다음 목표를 향해 일해요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Online Classes vs. In-Person Classes",
+        "Your Dream Job",
+        "A Movie That Inspired You",
+        "Living in the Present vs. Planning Ahead"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L1_SPK_058_set2",
+    "parentSetId": "L1_SPK_058",
+    "theme": "Living in the Present vs. Planning Ahead",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "On the other hand people who only live in the moment may face serious problems later because they never saved money or developed long-term skills.",
+        "korean": "반면 순간만 사는 사람들은 돈을 모으거나 장기적 기술을 발전시키지 않아 나중에 심각한 문제에 직면할 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "The wisest approach is to enjoy today while taking reasonable steps to prepare for tomorrow.",
+        "korean": "가장 현명한 접근은 내일을 준비하는 합리적 조치를 취하면서 오늘을 즐기는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "strike a balance",
+        "korean": "균형을 맞추다",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "miss out on",
+        "korean": "놓치다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Your Role Model",
+        "Should Voting Be Mandatory",
+        "Long Commute vs. Small Apartment Near Work",
+        "Living in the Present vs. Planning Ahead"
+      ],
+      "answer": 3
+    }
+  }
+]

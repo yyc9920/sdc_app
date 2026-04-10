@@ -1,0 +1,73 @@
+[
+  {
+    "setId": "L2_DLG_040_set1",
+    "parentSetId": "L2_DLG_040",
+    "theme": "Renewing a Driver's License",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I need to renew my driver's license.",
+        "korean": "운전면허를 갱신해야 해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "When does it expire?",
+        "korean": "언제 만료되나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Next week.",
+        "korean": "다음 주요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "You'll need your current license a recent photo and the renewal fee of twenty-five dollars.",
+        "korean": "현재 면허증과 최근 사진 그리고 갱신 수수료 25달러가 필요해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Do I need to take an eye test again?",
+        "korean": "시력 검사를 다시 해야 하나요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Yes a basic vision test is required for all renewals.",
+        "korean": "네 모든 갱신에 기본 시력 검사가 필요해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "How long does the whole process take?",
+        "korean": "전체 과정이 얼마나 걸리나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Usually about thirty minutes.",
+        "korean": "보통 약 30분이요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '시력 검사' mean in English?",
+      "options": [
+        "renewal fee",
+        "expire",
+        "vision test",
+        "renew"
+      ],
+      "answer": 2
+    }
+  }
+]

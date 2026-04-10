@@ -1,0 +1,45 @@
+[
+  {
+    "setId": "L2_EXT_029_set1",
+    "parentSetId": "L2_EXT_029",
+    "theme": "Benefits of Reading Before Bed",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Many successful people share one habit — they read before going to sleep.",
+        "korean": "많은 성공한 사람들이 한 가지 습관을 공유해요 — 자기 전에 독서를 하는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Studies show that reading for just six minutes before bed can reduce stress by up to sixty-eight percent.",
+        "korean": "연구에 따르면 자기 전 단 6분의 독서가 스트레스를 최대 68%까지 줄일 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Reading a physical book is better than using a screen because the blue light from devices can disrupt your sleep.",
+        "korean": "종이 책을 읽는 것이 화면보다 나아요. 기기에서 나오는 블루 라이트가 수면을 방해할 수 있으니까요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "If you don't know where to start try reading just one page per night and gradually increase from there.",
+        "korean": "어디서 시작할지 모르겠다면 하루에 한 페이지만 읽어보고 거기서 점차 늘려보세요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '종이 책' mean in English?",
+      "options": [
+        "reduce",
+        "physical book",
+        "disrupt",
+        "gradually"
+      ],
+      "answer": 1
+    }
+  }
+]

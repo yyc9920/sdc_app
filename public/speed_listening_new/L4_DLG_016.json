@@ -1,0 +1,100 @@
+[
+  {
+    "setId": "L4_DLG_016_set1",
+    "parentSetId": "L4_DLG_016",
+    "theme": "Discussing Quarterly Results",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Let's review the Q1 results.",
+        "korean": "1분기 결과를 검토합시다.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Revenue came in at twelve million which is five percent above target.",
+        "korean": "200만 달러로 / 목표 대비 5% 초과달성입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "That's encouraging.",
+        "korean": "고무적이네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "How about customer churn?",
+        "korean": "고객 이탈률은 어때요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Churn decreased from eight percent to six point five percent which is our lowest in two years.",
+        "korean": "이탈률이 8%에서 6.5%로 감소했고 2년 만에 최저입니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '더 강화하다/배로 밀어붙이다' mean in English?",
+      "options": [
+        "at-risk",
+        "churn",
+        "proactively",
+        "double down"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L4_DLG_016_set2",
+    "parentSetId": "L4_DLG_016",
+    "theme": "Discussing Quarterly Results",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "What drove that improvement?",
+        "korean": "어떤 요인이 개선을 이끌었나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "The new customer success team we hired in Q4 has been proactively reaching out to at-risk accounts.",
+        "korean": "4분기에 채용한 고객 성공 팀이 위험 고객에게 적극적으로 연락하고 있습니다.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Great work.",
+        "korean": "잘했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Let's double down on that strategy for Q2.",
+        "korean": "2분기에도 그 전략을 더 강화합시다.",
+        "properNounIndices": [
+          7
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '이탈률' mean in English?",
+      "options": [
+        "quarterly results",
+        "proactively",
+        "double down",
+        "churn"
+      ],
+      "answer": 3
+    }
+  }
+]

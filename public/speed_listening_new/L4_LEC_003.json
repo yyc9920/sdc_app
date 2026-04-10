@@ -53,14 +53,14 @@
       }
     ],
     "quiz": {
-      "question": "What does '정복 또는 지배하에 놓이는 것' mean in English?",
+      "question": "What does '1492년 이후 신세계와 구세계 간의 대규모 생물학적·문화적 교류' mean in English?",
       "options": [
-        "immunity",
-        "blight",
+        "staple crop",
         "subjugation",
-        "unprecedented"
+        "blight",
+        "Columbian Exchange"
       ],
-      "answer": 2
+      "answer": 3
     }
   },
   {
@@ -116,14 +116,14 @@
       }
     ],
     "quiz": {
-      "question": "What does '식물을 급속히 죽이는 질병' mean in English?",
+      "question": "What does '이전에 한 번도 없었던' mean in English?",
       "options": [
-        "blight",
+        "immunity",
+        "unprecedented",
         "demographic collapse",
-        "subjugation",
-        "immunity"
+        "Columbian Exchange"
       ],
-      "answer": 0
+      "answer": 1
     }
   },
   {
@@ -180,14 +180,14 @@
       }
     ],
     "quiz": {
-      "question": "What does '기본 식량이 되는 핵심 작물' mean in English?",
+      "question": "What does '단기간에 인구가 급격히 감소하는 현상' mean in English?",
       "options": [
+        "demographic collapse",
         "Columbian Exchange",
-        "subjugation",
-        "unprecedented",
-        "staple crop"
+        "blight",
+        "unprecedented"
       ],
-      "answer": 3
+      "answer": 0
     }
   },
   {
@@ -237,12 +237,12 @@
       }
     ],
     "quiz": {
-      "question": "What does '1492년 이후 신세계와 구세계 간의 대규모 생물학적·문화적 교류' mean in English?",
+      "question": "What does '단기간에 인구가 급격히 감소하는 현상' mean in English?",
       "options": [
-        "immunity",
-        "Columbian Exchange",
+        "unprecedented",
+        "demographic collapse",
         "subjugation",
-        "blight"
+        "staple crop"
       ],
       "answer": 1
     }
@@ -308,12 +308,12 @@
     "quiz": {
       "question": "What does '1492년 이후 신세계와 구세계 간의 대규모 생물학적·문화적 교류' mean in English?",
       "options": [
-        "demographic collapse",
+        "subjugation",
         "staple crop",
-        "Columbian Exchange",
-        "immunity"
+        "unprecedented",
+        "Columbian Exchange"
       ],
-      "answer": 2
+      "answer": 3
     }
   }
 ]

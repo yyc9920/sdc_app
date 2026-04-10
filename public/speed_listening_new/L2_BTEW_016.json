@@ -1,0 +1,173 @@
+[
+  {
+    "setId": "L2_BTEW_016_set1",
+    "parentSetId": "L2_BTEW_016",
+    "theme": "Flow State",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I've had a very productive morning.",
+        "korean": "매우 생산적인 아침이었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I finished lots of tasks and made a to-do list for the afternoon.",
+        "korean": "일을 많이 끝내고 오후 할 일 목록도 만들었어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I feel like I've entered a flow state pretty early in the day.",
+        "korean": "오늘 꽤 일찍 몰입 상태에 들어간 것 같아요.",
+        "properNounIndices": [
+          0,
+          3
+        ]
+      },
+      {
+        "id": 3,
+        "english": "The phrase 'flow state' gained popularity on social media.",
+        "korean": "'flow state'는 소셜 미디어에서 인기를 얻은 표현이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "When we enter a flow state, we feel that we are fully focused on something.",
+        "korean": "몰입 상태에 들어가면 무언가에 완전히 집중하고 있다고 느끼고, 시간이 더 빨리 가는 정신 상태예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "An uphill task",
+        "In my travel era",
+        "Off the scale",
+        "Flow State"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L2_BTEW_016_set2",
+    "parentSetId": "L2_BTEW_016",
+    "theme": "Flow State",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "It's a mental state where we're fully concentrated and time moves more quickly.",
+        "korean": "잇츠 어 멘틀 스테이트 웨어 위어 풀리 컨센트레이티드 앤 타임 무브즈 모어 퀵리.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "It's probably easier to get into a flow state with activities that you really enjoy.",
+        "korean": "정말 즐기는 활동으로 몰입 상태에 들어가기가 아마 더 쉬울 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "For example, I love painting.",
+        "korean": "저는 그림 그리기를 좋아해서 편하게 앉아 음악 틀고 몰입하면 어느새 밖이 어두워지고 하루가 지나가 있어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 8,
+        "english": "I sit comfortably, put on some relaxing music and I enter a flow state.",
+        "korean": "아이 싯 컴포터블리, 풋 온 썸 릴랙싱 뮤직 앤 아이 엔터 어 플로우 스테이트.",
+        "properNounIndices": [
+          0,
+          9
+        ]
+      },
+      {
+        "id": 9,
+        "english": "Before I know it, it's dark outside and the day has completely passed me by.",
+        "korean": "비포 아이 노잇, 잇츠 다크 아웃사이드.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Throw one's toys out the pram",
+        "Flow State",
+        "Learn the Hard Way",
+        "That's on you"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L2_BTEW_016_set3",
+    "parentSetId": "L2_BTEW_016",
+    "theme": "Flow State",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "When I pick up my guitar and start playing, I enter a flow state quite quickly and then time flies.",
+        "korean": "기타를 들고 연주하기 시작하면 꽤 빨리 몰입 상태에 들어가서 시간이 훌쩍 가요.",
+        "properNounIndices": [
+          1,
+          9
+        ]
+      },
+      {
+        "id": 11,
+        "english": "I find it easiest to get into a flow state when I'm working from home, I've got some music on that I like, and I've got a hot drink with me.",
+        "korean": "재택근무하면서 좋아하는 음악 틀고 따뜻한 음료를 곁에 두면 몰입 상태에 들어가기가 가장 쉬워요.",
+        "properNounIndices": [
+          0,
+          11,
+          15,
+          21,
+          24
+        ]
+      },
+      {
+        "id": 12,
+        "english": "I find it really hard to get into a flow state when lots of people are talking around me. I really just need silence.",
+        "korean": "주위에서 사람들이 많이 이야기하면 몰입 상태에 들어가기가 정말 어려워요. 정말 조용해야 해요.",
+        "properNounIndices": [
+          0,
+          19
+        ]
+      },
+      {
+        "id": 13,
+        "english": "Flow state is also a technique in yoga and meditation to train the mind to focus.",
+        "korean": "flow state는 요가와 명상에서 마음을 집중하도록 훈련하는 기법이기도 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "You might also hear it in science — when particles are able to move, or flow, more freely.",
+        "korean": "과학에서도 — 입자가 더 자유롭게 움직일 때 — 들을 수 있어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "A Big Ask",
+        "Flow State",
+        "Cut Corners",
+        "On the fly"
+      ],
+      "answer": 1
+    }
+  }
+]

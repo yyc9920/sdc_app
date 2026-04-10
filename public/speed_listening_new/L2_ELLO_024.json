@@ -1,0 +1,74 @@
+[
+  {
+    "setId": "L2_ELLO_024_set1",
+    "parentSetId": "L2_ELLO_024",
+    "theme": "Mixer #125 — Bad Haircut",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The worst haircut I ever had was when I cut my hair completely bald.",
+        "korean": "최악의 머리 스타일은 완전히 민머리로 깎았을 때예요.",
+        "properNounIndices": [
+          3,
+          8
+        ]
+      },
+      {
+        "id": 1,
+        "english": "My eyes started to pop out and my nose looked bigger.",
+        "korean": "눈이 튀어나와 보이고 코가 더 커 보였어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Especially because I had that haircut in winter, so my head was kind of freezing.",
+        "korean": "특히 겨울에 깎아서 머리가 얼었어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I'm an African-American, and living outside of an African-American community and having to get a haircut can be a trying experience.",
+        "korean": "아프리카계 미국인인데 아프리카계 커뮤니티 밖에서 머리를 깎아야 하는 건 힘든 경험이 될 수 있어요.",
+        "properNounIndices": [
+          2,
+          8
+        ]
+      },
+      {
+        "id": 4,
+        "english": "The person cutting my hair cried, because she didn't understand how to cut my hair.",
+        "korean": "내 머리 자르는 법을 몰라서 미용사가 울었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "The worst haircut I ever had was when I was preparing for a job interview and asked the barber for a smart business cut.",
+        "korean": "최악의 머리는 면접 준비할 때 이발사에게 깔끔한 비즈니스 컷을 부탁했을 때예요.",
+        "properNounIndices": [
+          3,
+          8
+        ]
+      },
+      {
+        "id": 6,
+        "english": "It was completely out of sync with my age and the year.",
+        "korean": "내 나이와 시대에 완전히 안 맞았어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #93 — Handwriting",
+        "Mixer #87 — Sharing Food",
+        "Mixer #13 — No Place Like Home",
+        "Mixer #125 — Bad Haircut"
+      ],
+      "answer": 3
+    }
+  }
+]

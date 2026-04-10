@@ -1,0 +1,103 @@
+[
+  {
+    "setId": "L4_DLG_003_set1",
+    "parentSetId": "L4_DLG_003",
+    "theme": "Job Interview — Marketing Manager",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Thank you for coming in today.",
+        "korean": "오늘 와주셔서 감사합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Could you start by telling us about your experience in digital marketing?",
+        "korean": "디지털 마케팅 경험에 대해 말씀해주시겠어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Absolutely. I've been working in digital marketing for about seven years, primarily focused on social media strategy and content creation.",
+        "korean": "물론이죠. 약 7년간 디지털 마케팅을 했고 주로 소셜 미디어 전략과 콘텐츠 제작에 집중했습니다.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Can you give us an example of a campaign you're particularly proud of?",
+        "korean": "특별히 자랑스러운 캠페인 사례를 들어주실 수 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "At my previous company, I led a rebranding campaign that increased our social media engagement by sixty percent within three months.",
+        "korean": "이전 회사에서 리브랜딩 캠페인을 이끌어 3개월 만에 소셜 미디어 참여도를 60% 증가시켰습니다.",
+        "properNounIndices": [
+          4
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '모범 사례' mean in English?",
+      "options": [
+        "rebranding",
+        "best practices",
+        "engagement",
+        "innovation"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L4_DLG_003_set2",
+    "parentSetId": "L4_DLG_003",
+    "theme": "Job Interview — Marketing Manager",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "That's impressive. How do you stay current with the rapidly changing digital landscape?",
+        "korean": "인상적이네요. 빠르게 변하는 디지털 환경에 어떻게 최신 상태를 유지하나요?",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 6,
+        "english": "I attend industry conferences, take online courses, and I'm active in several professional communities where we share insights and best practices.",
+        "korean": "업계 컨퍼런스에 참석하고 온라인 강좌를 듣고 여러 전문 커뮤니티에서 활동하며 인사이트와 모범 사례를 공유합니다.",
+        "properNounIndices": [
+          0,
+          8
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Where do you see yourself in five years?",
+        "korean": "5년 후에 어디에 있을 것 같으세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "I'd love to be leading a marketing team at a company like yours, driving innovation in how we connect with customers through digital channels.",
+        "korean": "귀사 같은 회사에서 마케팅 팀을 이끌며 디지털 채널을 통해 고객과 소통하는 방식에 혁신을 주도하고 싶습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '참여도' mean in English?",
+      "options": [
+        "digital landscape",
+        "engagement",
+        "best practices",
+        "rebranding"
+      ],
+      "answer": 1
+    }
+  }
+]

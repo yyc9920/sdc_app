@@ -1,0 +1,45 @@
+[
+  {
+    "setId": "L3_B6ME_061_set1",
+    "parentSetId": "L3_B6ME_061",
+    "theme": "Should Animals Be Kept in Zoos?",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Should animals be kept in zoos?",
+        "korean": "동물을 동물원에 가둬야 할까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "For some, zoos are a good way to teach people about nature and save endangered species from extinction.",
+        "korean": "일부에게 동물원은 자연을 가르치고 멸종위기종을 구하는 좋은 방법이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Others think separating animals from their natural habitat is cruel and unnecessary.",
+        "korean": "다른 이들은 동물을 자연 서식지에서 분리하는 것이 잔인하고 불필요하다고 생각해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "With an estimated 700 million visitors every year, zoos remain popular.",
+        "korean": "연간 약 7억 명의 방문객으로 동물원은 여전히 인기 있어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '멸종위기종' mean in English?",
+      "options": [
+        "captivity",
+        "extinction",
+        "endangered species",
+        "habitat"
+      ],
+      "answer": 2
+    }
+  }
+]

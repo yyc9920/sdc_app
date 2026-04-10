@@ -1,0 +1,66 @@
+[
+  {
+    "setId": "L2_ELLO_092_set1",
+    "parentSetId": "L2_ELLO_092",
+    "theme": "Mixer #53 — Picky Eater",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'm a very picky eater.",
+        "korean": "매우 편식하는 편이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I don't eat seafood, mushrooms, or anything spicy.",
+        "korean": "해산물 버섯 매운 것을 안 먹어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I'll eat anything.",
+        "korean": "뭐든 먹어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "The weirder the food, the more I want to try it.",
+        "korean": "음식이 이상할수록 더 먹어보고 싶어요.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I was a picky eater as a kid, but I grew out of it.",
+        "korean": "어릴 때 편식했지만 자라면서 그만뒀어요.",
+        "properNounIndices": [
+          0,
+          9
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Now I enjoy all kinds of food.",
+        "korean": "이제는 모든 종류의 음식을 즐겨요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #22 — Favorite Movie Genre",
+        "Mixer #50 — Fast Food",
+        "Mixer #79 — Sleeping Habits",
+        "Mixer #53 — Picky Eater"
+      ],
+      "answer": 3
+    }
+  }
+]

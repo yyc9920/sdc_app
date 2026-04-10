@@ -1,0 +1,73 @@
+[
+  {
+    "setId": "L1_SPK_085_set1",
+    "parentSetId": "L1_SPK_085",
+    "theme": "Should Voting Be Mandatory",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Some countries require all citizens to vote.",
+        "korean": "일부 국가에서는 모든 시민이 투표하도록 요구합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Do you think voting should be mandatory?",
+        "korean": "투표가 의무적이어야 한다고 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Explain.",
+        "korean": "설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I think mandatory voting is a good idea because it ensures that election results truly represent the will of the people.",
+        "korean": "의무 투표가 좋은 생각이라고 생각해요. 선거 결과가 국민의 의지를 진정으로 대표하도록 보장하기 때문이에요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "In countries with low voter turnout elections can be decided by a small motivated minority rather than the general population.",
+        "korean": "투표율이 낮은 나라에서는 일반 대중이 아닌 동기 부여된 소수에 의해 선거가 결정될 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Australia has had mandatory voting since 1924 and consistently achieves turnout rates above ninety percent.",
+        "korean": "호주는 1924년부터 의무 투표를 시행하고 있고 꾸준히 90% 이상의 투표율을 달성해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Some argue that forcing people to vote violates personal freedom but I believe participating in democracy is a civic responsibility just like paying taxes.",
+        "korean": "투표를 강제하는 것이 개인의 자유를 침해한다는 주장이 있지만 민주주의 참여는 세금 납부처럼 시민의 책임이라고 생각해요.",
+        "properNounIndices": [
+          11
+        ]
+      },
+      {
+        "id": 7,
+        "english": "the will of the people",
+        "korean": "국민의 의지",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Social Media Age Limit",
+        "Longer Vacations vs. Shorter Frequent Breaks",
+        "Should Voting Be Mandatory",
+        "A Skill Everyone Should Learn"
+      ],
+      "answer": 2
+    }
+  }
+]

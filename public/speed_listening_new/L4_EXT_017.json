@@ -1,0 +1,51 @@
+[
+  {
+    "setId": "L4_EXT_017_set1",
+    "parentSetId": "L4_EXT_017",
+    "theme": "Why Sleep Deprivation Is Dangerous",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Sleep deprivation has been called a hidden public health crisis by the World Health Organization with devastating consequences that extend far beyond simply feeling tired.",
+        "korean": "수면 부족은 세계보건기구에 의해 숨겨진 공중 보건 위기라 불린다. 단순히 피곤함을 훨씬 넘어서는 파괴적 결과를 동반한다.",
+        "properNounIndices": [
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "id": 1,
+        "english": "After just one night of poor sleep cognitive performance drops by up to forty percent affecting decision-making memory consolidation and emotional regulation.",
+        "korean": "단 하룻밤 수면 부족 후 인지 수행 능력이 최대 40% 떨어지며 의사결정 기억 강화 감정 조절에 영향을 미친다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Chronic sleep deprivation has been linked to a dramatically increased risk of cardiovascular disease diabetes obesity and even Alzheimer's disease.",
+        "korean": "만성 수면 부족은 심혈관 질환 당뇨 비만 심지어 알츠하이머병의 극적으로 증가한 위험과 관련이 있다.",
+        "properNounIndices": [
+          18
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Despite this evidence modern work culture continues to glorify sleeplessness treating it as a badge of honor rather than a serious health risk.",
+        "korean": "이런 증거에도 불구하고 현대 직장 문화는 수면 부족을 심각한 건강 위험이 아니라 명예의 훈장처럼 미화하고 있다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '미화하다' mean in English?",
+      "options": [
+        "cognitive",
+        "cardiovascular",
+        "glorify",
+        "badge of honor"
+      ],
+      "answer": 2
+    }
+  }
+]

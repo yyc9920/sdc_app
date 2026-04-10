@@ -1,0 +1,60 @@
+[
+  {
+    "setId": "L1_EXT_038_set1",
+    "parentSetId": "L1_EXT_038",
+    "theme": "Walking to School",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I walk to school every day because it is very close.",
+        "korean": "매우 가까워서 매일 걸어서 학교에 가요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "It takes only ten minutes from my house.",
+        "korean": "집에서 10분밖에 안 걸려요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "On the way I pass a bakery that smells amazing.",
+        "korean": "가는 길에 냄새가 놀라운 빵집을 지나가요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Sometimes I stop and buy a bread roll for breakfast.",
+        "korean": "가끔 멈춰서 아침으로 빵을 사요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I like walking because I can listen to music on the way.",
+        "korean": "가는 길에 음악을 들을 수 있어서 걷는 게 좋아요.",
+        "properNounIndices": [
+          0,
+          4
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "My Grandparents",
+        "Walking to School",
+        "My Piggy Bank",
+        "Cleaning My Room"
+      ],
+      "answer": 1
+    }
+  }
+]

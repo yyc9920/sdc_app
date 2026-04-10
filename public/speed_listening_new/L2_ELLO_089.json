@@ -1,0 +1,57 @@
+[
+  {
+    "setId": "L2_ELLO_089_set1",
+    "parentSetId": "L2_ELLO_089",
+    "theme": "Mixer #56 — Favorite App",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My favorite app is definitely Google Maps.",
+        "korean": "좋아하는 앱은 확실히 구글 맵이에요.",
+        "properNounIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I have no sense of direction so I'd be lost without it.",
+        "korean": "방향 감각이 없어서 이것 없이는 길을 잃을 거예요.",
+        "properNounIndices": [
+          0,
+          7
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I use a language learning app every day, and I've been on a three-hundred-day streak.",
+        "korean": "매일 언어 학습 앱을 사용하고 300일 연속 기록 중이에요.",
+        "properNounIndices": [
+          0,
+          9
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I love my music streaming app, because I can listen to anything anytime anywhere.",
+        "korean": "음악 스트리밍 앱을 좋아해요. 언제 어디서든 무엇이든 들을 수 있어서요.",
+        "properNounIndices": [
+          0,
+          7
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #56 — Favorite App",
+        "Mixer #72 — Driving",
+        "Mixer #91 — Being on Time",
+        "Mixer #31 — Classroom Memories"
+      ],
+      "answer": 0
+    }
+  }
+]

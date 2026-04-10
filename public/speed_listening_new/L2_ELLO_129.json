@@ -1,0 +1,49 @@
+[
+  {
+    "setId": "L2_ELLO_129_set1",
+    "parentSetId": "L2_ELLO_129",
+    "theme": "Mixer #16 — Roommates",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My worst roommate ever used to eat my food without asking.",
+        "korean": "최악의 룸메이트는 물어보지도 않고 내 음식을 먹곤 했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I would buy groceries and they'd be gone the next day.",
+        "korean": "장을 보면 다음 날 다 없어져 있었어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "My current roommate and I get along perfectly, because we have similar schedules and respect each other's space.",
+        "korean": "현재 룸메이트와 완벽하게 잘 지내요. 비슷한 일정이 있고 서로의 공간을 존중해서요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 3,
+        "english": "The key to good roommate relationships is communication, because you have to talk about problems before they get big.",
+        "korean": "좋은 룸메이트 관계의 핵심은 소통이에요. 문제가 커지기 전에 이야기해야 하니까요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #146 — Cheating on Tests",
+        "Mixer #16 — Roommates",
+        "Mixer #87 — Sharing Food",
+        "Mixer #119 — Sleeping In"
+      ],
+      "answer": 1
+    }
+  }
+]

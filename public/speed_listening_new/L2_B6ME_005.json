@@ -3,86 +3,136 @@
     "setId": "L2_B6ME_005_set1",
     "parentSetId": "L2_B6ME_005",
     "theme": "How babies learn to talk",
-    "level": 6,
+    "level": 5,
     "setNumber": 1,
     "sentences": [
       {
         "id": 0,
-        "english": "Hello. This is 6 Minute English from BBC Learning English. I'm Phil.",
-        "korean": "안녕하세요. BBC Learning English의 6 Minute English입니다. 저는 필이에요.",
+        "english": "Hello. This is 6 Minute English from BBC Learning English.",
+        "korean": "안녕하세요. BBC Learning English의 6 Minute English입니다.",
         "properNounIndices": [
           1,
           4,
           5,
           7,
           8,
-          9,
-          10,
-          11
+          9
         ]
       },
       {
         "id": 1,
-        "english": "And I'm Georgie. For most parents, their baby's first word is a special moment. This happens after an early stage of language development called babble, when babies start making simple sounds like \"ga\" or \"ma\".",
-        "korean": "저는 조지예요. 대부분의 부모에게 아기의 첫 단어는 특별한 순간이에요.",
+        "english": "I'm Phil.",
+        "korean": "저는 필이에요.",
         "properNounIndices": [
-          1,
-          2,
-          3,
-          14
+          1
         ]
       },
       {
         "id": 2,
-        "english": "Babies have to learn to use their mouth muscles to make specific sounds. They experiment with different sounds and mouth shapes. So, what exactly is happening when babies start learning to speak? What do you think, Georgie?",
-        "korean": "아기들은 특정 소리를 내기 위해 입 근육을 사용하는 법을 배워야 해요.",
+        "english": "And I'm Georgie. For most parents, their baby's first word is a special moment.",
+        "korean": "저는 조지예요. 대부분의 부모에게 아기의 첫 단어는 특별한 순간이에요.",
         "properNounIndices": [
-          13,
-          21,
-          32,
-          36
+          1,
+          2,
+          3
         ]
       },
       {
         "id": 3,
-        "english": "Well, Phil, I'm no expert, but I imagine they watch the adults around them and kind of copy and imitate what they do. What do you think?",
-        "korean": "필, 전문가는 아니지만 주변 어른들을 보고 하는 걸 따라하고 흉내 내는 것 같아요.",
-        "properNounIndices": [
-          1,
-          2,
-          6,
-          23
-        ]
+        "english": "This happens after an early stage of language development called babble, when babies start making simple sounds like \"ga\" or \"ma\".",
+        "korean": "아기의 첫 단어는 특별한 순간이에요",
+        "properNounIndices": []
       },
       {
         "id": 4,
-        "english": "I definitely think that's what my children did when they were learning to speak.",
-        "korean": "제 아이들이 말 배울 때 확실히 그랬던 것 같아요.",
-        "properNounIndices": [
-          0
-        ]
+        "english": "Babies have to learn to use their mouth muscles to make specific sounds.",
+        "korean": "아기들은 특정 소리를 내기 위해 입 근육을 사용하는 법을 배워야 해요.",
+        "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '당연하게 여기다' mean in English?",
+      "question": "What does '강세 음절' mean in English?",
       "options": [
-        "take for granted",
         "segment",
+        "classic example",
         "babble",
-        "ambiguous"
+        "stressed syllable"
       ],
-      "answer": 0
+      "answer": 3
     }
   },
   {
     "setId": "L2_B6ME_005_set2",
     "parentSetId": "L2_B6ME_005",
     "theme": "How babies learn to talk",
-    "level": 6,
+    "level": 5,
     "setNumber": 2,
     "sentences": [
       {
         "id": 5,
+        "english": "They experiment with different sounds and mouth shapes.",
+        "korean": "아기들은 배워야 해요",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "So, what exactly is happening when babies start learning to speak?",
+        "korean": "입 근육을 사용하는 법을",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "What do you think, Georgie?",
+        "korean": "특정 소리를 내기 위해",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Well, Phil, I'm no expert, but I imagine they watch the adults around them and kind of copy and imitate what they do.",
+        "korean": "필, 전문가는 아니지만 주변 어른들을 보고 하는 걸 따라하고 흉내 내는 것 같아요.",
+        "properNounIndices": [
+          1,
+          2,
+          6
+        ]
+      },
+      {
+        "id": 9,
+        "english": "What do you think?",
+        "korean": "주변 어른들을 보고 하는 걸 따라하고 흉내 내는 것 같아요",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '옹알이, 의미 없는 소리' mean in English?",
+      "options": [
+        "segment",
+        "stressed syllable",
+        "babble",
+        "take for granted"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_B6ME_005_set3",
+    "parentSetId": "L2_B6ME_005",
+    "theme": "How babies learn to talk",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "I definitely think that's what my children did when they were learning to speak.",
+        "korean": "제 아이들이 말 배울 때 확실히 그랬던 것 같아요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 11,
         "english": "Well, let's compare our ideas with those of an expert - Professor Julian Pine from Liverpool University, speaking here on BBC Radio 4, and he lists the skills that babies develop in order to speak:",
         "korean": "우리 생각을 전문가의 생각과 비교해봅시다.",
         "properNounIndices": [
@@ -96,69 +146,107 @@
         ]
       },
       {
-        "id": 6,
-        "english": "Well, one of the things they need to learn is how to recognise words in the speech that they hear, because we don't actually put spaces between words. So, children have got to learn to work out, where do words start and end?",
+        "id": 12,
+        "english": "Well, one of the things they need to learn is how to recognise words in the speech that they hear, because we don't actually put spaces between words.",
         "korean": "아기들이 배워야 할 것 중 하나는 듣는 말에서 단어를 인식하는 법이에요.",
-        "properNounIndices": [
-          28
-        ]
+        "properNounIndices": []
       },
       {
-        "id": 7,
-        "english": "We might think that learning words is the first thing babies do, but Professor Pine says that before that, they need to segment words from the flow of speech around them. Unlike written language, spoken words have no gaps between them.",
+        "id": 13,
+        "english": "So, children have got to learn to work out, where do words start and end?",
+        "korean": "듣는 말에서 단어를 인식하는 법이에요",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "We might think that learning words is the first thing babies do, but Professor Pine says that before that, they need to segment words from the flow of speech around them.",
         "korean": "단어 배우기가 아기의 첫 과제라고 생각할 수 있지만, 파인 교수는 그 전에 한 단어가 어디서 끝나고 다른 단어가 시작되는지 파악해야 한다고 해요.",
         "properNounIndices": [
           13,
-          14,
-          31
+          14
         ]
-      },
-      {
-        "id": 8,
-        "english": "Yes, if you think about it, that's a really important step that we take for granted. Here's Professor Pine again, explaining how the sounds babies hear help them recognise individual words:",
-        "korean": "생각해보면 우리가 당연하게 여기는 정말 중요한 단계예요.",
-        "properNounIndices": [
-          16,
-          17,
-          18
-        ]
-      },
-      {
-        "id": 9,
-        "english": "So, one of the tricks the baby uses to work out where words start and end is to use information about the typical stress patterns of language.",
-        "korean": "아기가 단어의 시작과 끝을 파악하는 비결 중 하나는 전형적인 강세 패턴에 대한 정보를 사용하는 거예요.",
-        "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '옹알이, 의미 없는 소리' mean in English?",
+      "question": "What does '분리하다, 구분하다' mean in English?",
       "options": [
-        "error",
-        "babble",
         "stressed syllable",
-        "take for granted"
+        "error",
+        "classic example",
+        "segment"
       ],
-      "answer": 1
+      "answer": 3
     }
   },
   {
-    "setId": "L2_B6ME_005_set3",
+    "setId": "L2_B6ME_005_set4",
     "parentSetId": "L2_B6ME_005",
     "theme": "How babies learn to talk",
     "level": 6,
-    "setNumber": 3,
+    "setNumber": 4,
     "sentences": [
       {
-        "id": 10,
-        "english": "Now in English, the stressed syllable of a word tends to come first. So, the baby can use the assumption that words begin with a stressed syllable to work out where the word starts.",
-        "korean": "영어에서 단어의 강세 음절은 처음에 오는 경향이 있어서, 아기는 단어가 강세로 시작한다는 가정을 사용할 수 있어요.",
+        "id": 15,
+        "english": "Unlike written language, spoken words have no gaps between them.",
+        "korean": "그 전에 한 단어가 어디서 끝나고 다른 단어가 어디서 시작되는지 파악해야 해요",
+        "properNounIndices": []
+      },
+      {
+        "id": 16,
+        "english": "Yes, if you think about it, that's a really important step that we take for granted.",
+        "korean": "생각해보면 우리가 당연하게 여기는 정말 중요한 단계예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "Here's Professor Pine again, explaining how the sounds babies hear help them recognise individual words:",
+        "korean": "우리가 당연하게 여기는 정말 중요한 단계예요",
         "properNounIndices": [
-          2,
-          13
+          1,
+          2
         ]
       },
       {
-        "id": 11,
+        "id": 18,
+        "english": "So, one of the tricks the baby uses to work out where words start and end is to use information about the typical stress patterns of language.",
+        "korean": "아기가 단어의 시작과 끝을 파악하는 비결 중 하나는 전형적인 강세 패턴에 대한 정보를 사용하는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 19,
+        "english": "Now in English, the stressed syllable of a word tends to come first.",
+        "korean": "영어에서 단어의 강세 음절은 처음에 오는 경향이 있어서, 아기는 단어가 강세로 시작한다는 가정을 사용할 수 있어요.",
+        "properNounIndices": [
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '분리하다, 구분하다' mean in English?",
+      "options": [
+        "error",
+        "stressed syllable",
+        "segment",
+        "ambiguous"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_B6ME_005_set5",
+    "parentSetId": "L2_B6ME_005",
+    "theme": "How babies learn to talk",
+    "level": 6,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "So, the baby can use the assumption that words begin with a stressed syllable to work out where the word starts.",
+        "korean": "아기는 단어가 강세로 시작한다는 가정을 사용할 수 있어요",
+        "properNounIndices": []
+      },
+      {
+        "id": 21,
         "english": "Babies learn that English words usually start with a stressed syllable – the sound in a word which is emphasised by being spoken longer or louder.",
         "korean": "아기는 영어 단어가 보통 강세 음절 — 더 크고 길고 높게 발음되는 소리 — 로 시작한다는 걸 배웁니다.",
         "properNounIndices": [
@@ -166,7 +254,7 @@
         ]
       },
       {
-        "id": 12,
+        "id": 22,
         "english": "Learning this takes time, and here, Professor Pine and Michael Rosen, presenter of BBC Radio 4's programme, 'Word of Mouth', discuss children who haven't quite discovered it yet:",
         "korean": "이걸 배우는 데는 시간이 걸려요.",
         "properNounIndices": [
@@ -181,7 +269,7 @@
         ]
       },
       {
-        "id": 13,
+        "id": 23,
         "english": "We can see this in the kind of errors that children make, because little kids will often call a giraffe a 'raffe' by leaving off the unstressed syllable because that's not typical English.",
         "korean": "아이들이 하는 실수에서 볼 수 있어요. 어린 아이들은 기린(giraffe)을 종종 '래프'라고 불러요.",
         "properNounIndices": [
@@ -189,7 +277,7 @@
         ]
       },
       {
-        "id": 14,
+        "id": 24,
         "english": "Ooh, and I've got an example of this - my son used to call a machine a 'sminge' – he just hit the stress, he didn't bother with the 'ma' bit.",
         "korean": "오, 이것의 예가 있어요 — 제 아들이 기계(machine)를 '스민지'라고 불렀거든요.",
         "properNounIndices": [
@@ -198,122 +286,14 @@
       }
     ],
     "quiz": {
-      "question": "What does '분리하다, 구분하다' mean in English?",
+      "question": "What does '전형적인 예' mean in English?",
       "options": [
-        "stressed syllable",
         "classic example",
-        "segment",
-        "babble"
-      ],
-      "answer": 2
-    }
-  },
-  {
-    "setId": "L2_B6ME_005_set4",
-    "parentSetId": "L2_B6ME_005",
-    "theme": "How babies learn to talk",
-    "level": 6,
-    "setNumber": 4,
-    "sentences": [
-      {
-        "id": 15,
-        "english": "Yeah, exactly.",
-        "korean": "네, 맞아요.",
-        "properNounIndices": []
-      },
-      {
-        "id": 16,
-        "english": "Or he may have thought it was 'my sminge' of course, that's the other thing.",
-        "korean": "아니면 'my sminge'라고 생각했을 수도 있죠, 그것도 가능하고요.",
-        "properNounIndices": []
-      },
-      {
-        "id": 17,
-        "english": "And the classic example, of course, is 'nana' for banana which virtually every child does.",
-        "korean": "가장 전형적인 예는 당연히 바나나를 '나나'라고 하는 건데, 거의 모든 아이가 그래요.",
-        "properNounIndices": []
-      },
-      {
-        "id": 18,
-        "english": "The classic example of something is the most typical example, containing all its usual features. By saying 'nana' for 'banana' and 'raffe' for 'giraffe', children are focusing on the stressed syllable and ignoring the rest.",
-        "korean": "무언가의 '전형적 예'란 모든 일반적 특징을 담고 있는 가장 대표적인 예입니다.",
-        "properNounIndices": [
-          15
-        ]
-      },
-      {
-        "id": 19,
-        "english": "But learning to speak also involves understanding what words mean.",
-        "korean": "하지만 말하기를 배우는 건 단어의 의미를 이해하는 것도 포함합니다.",
-        "properNounIndices": []
-      }
-    ],
-    "quiz": {
-      "question": "What does '당연하게 여기다' mean in English?",
-      "options": [
+        "stressed syllable",
         "take for granted",
-        "classic example",
-        "stressed syllable",
         "segment"
       ],
       "answer": 0
-    }
-  },
-  {
-    "setId": "L2_B6ME_005_set5",
-    "parentSetId": "L2_B6ME_005",
-    "theme": "How babies learn to talk",
-    "level": 6,
-    "setNumber": 5,
-    "sentences": [
-      {
-        "id": 20,
-        "english": "And from a child's point of view, it's really difficult to work out what a word refers to because there's so many things it could refer to. So, you know, the speech signal is very ambiguous.",
-        "korean": "아이의 관점에서 단어가 무엇을 가리키는지 파악하기가 정말 어렵습니다.",
-        "properNounIndices": [
-          27
-        ]
-      },
-      {
-        "id": 21,
-        "english": "How does the child know that you're talking about the cup in front of you, or the pen in front of you when you say 'pen' or 'cup'?",
-        "korean": "아이가 어떻게 앞에 있는 컵을 말하는 건지 펜을 말하는 건지 알까요?",
-        "properNounIndices": []
-      },
-      {
-        "id": 22,
-        "english": "As adults, we take it for granted that when a friend says, \"apple\", they mean that round, red thing on the table. To take it for granted means to assume something without question.",
-        "korean": "어른으로서 친구가 '사과'라고 하면 테이블 위의 둥글고 빨간 것을 의미한다고 당연하게 여기죠.",
-        "properNounIndices": [
-          22
-        ]
-      },
-      {
-        "id": 23,
-        "english": "But for a baby, the link between the word 'apple' and the object is not obvious, it's ambiguous, meaning it has more than one possible meaning.",
-        "korean": "하지만 아기에게 '사과'라는 단어와 물체 사이의 연결은 분명하지 않아요. 모호합니다.",
-        "properNounIndices": []
-      },
-      {
-        "id": 24,
-        "english": "Wow! Who knew so much was going on inside babies' sponge-like brains as they soak up the sounds they hear? Right, Phil, isn't it time to reveal the answer to your question?",
-        "korean": "와! 아기의 스펀지 같은 뇌 안에서 이렇게 많은 일이 일어나는 줄 누가 알았겠어요?",
-        "properNounIndices": [
-          1,
-          20,
-          21
-        ]
-      }
-    ],
-    "quiz": {
-      "question": "What does '당연하게 여기다' mean in English?",
-      "options": [
-        "segment",
-        "classic example",
-        "take for granted",
-        "error"
-      ],
-      "answer": 2
     }
   },
   {
@@ -325,49 +305,42 @@
     "sentences": [
       {
         "id": 25,
-        "english": "It is indeed. The question was, at what age do babies start to make babbling noises?",
-        "korean": "맞아요. 질문은 아기가 몇 살에 옹알이를 시작하냐는 거였어요.",
-        "properNounIndices": [
-          3
-        ]
+        "english": "Yeah, exactly.",
+        "korean": "네, 맞아요.",
+        "properNounIndices": []
       },
       {
         "id": 26,
-        "english": "And I said it was around six months.",
-        "korean": "약 6개월이라고 했어요.",
-        "properNounIndices": [
-          1
-        ]
+        "english": "Or he may have thought it was 'my sminge' of course, that's the other thing.",
+        "korean": "아니면 'my sminge'라고 생각했을 수도 있죠, 그것도 가능하고요.",
+        "properNounIndices": []
       },
       {
         "id": 27,
-        "english": "And that is the correct answer. Babies start to do this when they're about 6 months old. OK, let's recap the vocabulary that we've learned starting with babble, the meaningless noises babies make as they're learning to speak.",
-        "korean": "정답이에요. 아기들은 약 6개월쯤 옹알이를 시작합니다.",
-        "properNounIndices": [
-          6,
-          17
-        ]
+        "english": "And the classic example, of course, is 'nana' for banana which virtually every child does.",
+        "korean": "가장 전형적인 예는 당연히 바나나를 '나나'라고 하는 건데, 거의 모든 아이가 그래요.",
+        "properNounIndices": []
       },
       {
         "id": 28,
-        "english": "The stressed syllable in a word is the sound which is emphasised by being longer, louder, or higher.",
-        "korean": "강세 음절은 더 길고, 크고, 높게 발음되어 강조되는 소리입니다.",
+        "english": "The classic example of something is the most typical example, containing all its usual features.",
+        "korean": "무언가의 '전형적 예'란 모든 일반적 특징을 담고 있는 가장 대표적인 예입니다.",
         "properNounIndices": []
       },
       {
         "id": 29,
-        "english": "An error is a mistake.",
-        "korean": "에러는 실수입니다.",
+        "english": "By saying 'nana' for 'banana' and 'raffe' for 'giraffe', children are focusing on the stressed syllable and ignoring the rest.",
+        "korean": "모든 일반적 특징을 담고 있는 가장 대표적인 예예요",
         "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '전형적인 예' mean in English?",
+      "question": "What does '옹알이, 의미 없는 소리' mean in English?",
       "options": [
-        "babble",
         "ambiguous",
-        "take for granted",
-        "classic example"
+        "classic example",
+        "stressed syllable",
+        "babble"
       ],
       "answer": 3
     }
@@ -381,50 +354,211 @@
     "sentences": [
       {
         "id": 30,
+        "english": "But learning to speak also involves understanding what words mean.",
+        "korean": "하지만 말하기를 배우는 건 단어의 의미를 이해하는 것도 포함합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 31,
+        "english": "And from a child's point of view, it's really difficult to work out what a word refers to because there's so many things it could refer to.",
+        "korean": "아이의 관점에서 단어가 무엇을 가리키는지 파악하기가 정말 어렵습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 32,
+        "english": "So, you know, the speech signal is very ambiguous.",
+        "korean": "단어가 무엇을 가리키는지 파악하기가 정말 어려워요",
+        "properNounIndices": []
+      },
+      {
+        "id": 33,
+        "english": "How does the child know that you're talking about the cup in front of you, or the pen in front of you when you say 'pen' or 'cup'?",
+        "korean": "아이가 어떻게 앞에 있는 컵을 말하는 건지 펜을 말하는 건지 알까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 34,
+        "english": "As adults, we take it for granted that when a friend says, \"apple\", they mean that round, red thing on the table.",
+        "korean": "어른으로서 친구가 '사과'라고 하면 테이블 위의 둥글고 빨간 것을 의미한다고 당연하게 여기죠.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '당연하게 여기다' mean in English?",
+      "options": [
+        "take for granted",
+        "stressed syllable",
+        "error",
+        "ambiguous"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_B6ME_005_set8",
+    "parentSetId": "L2_B6ME_005",
+    "theme": "How babies learn to talk",
+    "level": 6,
+    "setNumber": 8,
+    "sentences": [
+      {
+        "id": 35,
+        "english": "To take it for granted means to assume something without question.",
+        "korean": "친구가 '사과'라고 하면 테이블 위의 둥글고 빨간 걸 의미한다고",
+        "properNounIndices": []
+      },
+      {
+        "id": 36,
+        "english": "But for a baby, the link between the word 'apple' and the object is not obvious, it's ambiguous, meaning it has more than one possible meaning.",
+        "korean": "하지만 아기에게 '사과'라는 단어와 물체 사이의 연결은 분명하지 않아요. 모호합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 37,
+        "english": "Wow! Who knew so much was going on inside babies' sponge-like brains as they soak up the sounds they hear?",
+        "korean": "와! 아기의 스펀지 같은 뇌 안에서 이렇게 많은 일이 일어나는 줄 누가 알았겠어요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 38,
+        "english": "Right, Phil, isn't it time to reveal the answer to your question?",
+        "korean": "이렇게 많은 일이 일어나는 줄 누가 알았겠어요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 39,
+        "english": "It is indeed. The question was, at what age do babies start to make babbling noises?",
+        "korean": "맞아요. 질문은 아기가 몇 살에 옹알이를 시작하냐는 거였어요.",
+        "properNounIndices": [
+          3
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '분리하다, 구분하다' mean in English?",
+      "options": [
+        "ambiguous",
+        "classic example",
+        "segment",
+        "babble"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_B6ME_005_set9",
+    "parentSetId": "L2_B6ME_005",
+    "theme": "How babies learn to talk",
+    "level": 6,
+    "setNumber": 9,
+    "sentences": [
+      {
+        "id": 40,
+        "english": "And I said it was around six months.",
+        "korean": "약 6개월이라고 했어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 41,
+        "english": "And that is the correct answer.",
+        "korean": "정답이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 42,
+        "english": "Babies start to do this when they're about 6 months old.",
+        "korean": "아기들은 약 6개월쯤 옹알이를 시작합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 43,
+        "english": "OK, let's recap the vocabulary that we've learned starting with babble, the meaningless noises babies make as they're learning to speak.",
+        "korean": "이것을 시작해요",
+        "properNounIndices": []
+      },
+      {
+        "id": 44,
+        "english": "The stressed syllable in a word is the sound which is emphasised by being longer, louder, or higher.",
+        "korean": "강세 음절은 더 길고, 크고, 높게 발음되어 강조되는 소리입니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '강세 음절' mean in English?",
+      "options": [
+        "error",
+        "ambiguous",
+        "stressed syllable",
+        "take for granted"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_B6ME_005_set10",
+    "parentSetId": "L2_B6ME_005",
+    "theme": "How babies learn to talk",
+    "level": 5,
+    "setNumber": 10,
+    "sentences": [
+      {
+        "id": 45,
+        "english": "An error is a mistake.",
+        "korean": "에러는 실수입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 46,
         "english": "The classic example of something is the most typical example of it, containing its most important features.",
         "korean": "무언가의 '전형적 예'란 모든 일반적 특징을 담고 있는 가장 대표적인 예입니다.",
         "properNounIndices": []
       },
       {
-        "id": 31,
+        "id": 47,
         "english": "If you take something for granted, you accept or assume it without question.",
         "korean": "뭔가를 당연하게 여긴다는 것은 의문 없이 받아들이거나 가정하는 것입니다.",
         "properNounIndices": []
       },
       {
-        "id": 32,
+        "id": 48,
         "english": "And finally, the adjective ambiguous means having more than one possible meaning.",
         "korean": "마지막으로, 형용사 'ambiguous'는 둘 이상의 가능한 의미를 가진다는 뜻입니다.",
         "properNounIndices": []
       },
       {
-        "id": 33,
+        "id": 49,
         "english": "Once again, our six minutes are up, but if you're ready for more you'll find the worksheet with a quiz and a transcript for this programme on our website – see you there soon!",
         "korean": "오늘도 6분이 다 됐네요.",
         "properNounIndices": []
       },
       {
-        "id": 34,
+        "id": 50,
         "english": "Bye!",
         "korean": "안녕!",
         "properNounIndices": []
       },
       {
-        "id": 35,
+        "id": 51,
         "english": "Bye!",
         "korean": "안녕!",
         "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '전형적인 예' mean in English?",
+      "question": "What does '옹알이, 의미 없는 소리' mean in English?",
       "options": [
-        "ambiguous",
+        "babble",
         "classic example",
-        "error",
-        "stressed syllable"
+        "stressed syllable",
+        "ambiguous"
       ],
-      "answer": 1
+      "answer": 0
     }
   }
 ]

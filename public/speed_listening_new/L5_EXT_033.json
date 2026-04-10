@@ -1,0 +1,42 @@
+[
+  {
+    "setId": "L5_EXT_033_set1",
+    "parentSetId": "L5_EXT_033",
+    "theme": "The Simulation Hypothesis",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The simulation hypothesis — the idea that our entire reality might be a sophisticated computer simulation run by an advanced civilization — was popularized by philosopher Nick Bostrom in 2003.",
+        "korean": "시뮬레이션 가설 — 우리의 전체 현실이 발전된 문명이 운영하는 정교한 컴퓨터 시뮬레이션일 수 있다는 생각 — 은 2003년 철학자 닉 보스트롬에 의해 대중화됐다.",
+        "properNounIndices": [
+          26,
+          27
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Bostrom's argument is probabilistic — if advanced civilizations can create simulations containing conscious beings, and if they create many such simulations, then the number of simulated realities would vastly outnumber the single base reality making it statistically more likely that we are in a simulation.",
+        "korean": "보스트롬의 논증은 확률적이다. 발전된 문명이 의식 있는 존재를 포함하는 시뮬레이션을 만들 수 있고 많은 시뮬레이션을 만든다면 시뮬레이션된 현실의 수가 단일 기본 현실을 압도적으로 넘어선다. 통계적으로 우리가 시뮬레이션 속에 있을 가능성이 더 높아진다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Whether or not the hypothesis is true it raises fascinating questions about the nature of reality consciousness and what it even means to be real.",
+        "korean": "가설이 사실이든 아니든 현실의 본질 의식 그리고 진짜라는 것이 무엇을 의미하는지에 대한 매혹적인 질문을 제기한다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '통계적으로' mean in English?",
+      "options": [
+        "base reality",
+        "outnumber",
+        "simulation",
+        "statistically"
+      ],
+      "answer": 3
+    }
+  }
+]

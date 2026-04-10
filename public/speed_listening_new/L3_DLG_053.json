@@ -1,0 +1,73 @@
+[
+  {
+    "setId": "L3_DLG_053_set1",
+    "parentSetId": "L3_DLG_053",
+    "theme": "Getting a Passport Renewed",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I need to renew my passport.",
+        "korean": "여권을 갱신해야 해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "When does your current passport expire?",
+        "korean": "현재 여권이 언제 만료되나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Next month.",
+        "korean": "다음 달이요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "You'll need to fill out this application form and submit two passport photos.",
+        "korean": "이 신청서를 작성하고 여권 사진 2장을 제출하셔야 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "How long does the renewal process take?",
+        "korean": "갱신 절차가 얼마나 걸리나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Standard processing takes about two weeks.",
+        "korean": "일반 처리는 약 2주 걸려요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Express processing is available for an extra fee and takes three business days.",
+        "korean": "추가 비용으로 급행 처리도 가능하고 영업일 기준 3일 걸려요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "I'll go with standard since I'm not in a rush.",
+        "korean": "급하지 않으니 일반으로 할게요.",
+        "properNounIndices": [
+          5
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '만료되다' mean in English?",
+      "options": [
+        "application form",
+        "expire",
+        "renew",
+        "processing"
+      ],
+      "answer": 1
+    }
+  }
+]

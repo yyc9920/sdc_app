@@ -8,14 +8,18 @@
     "sentences": [
       {
         "id": 0,
-        "english": "Counselor, your argument seems to rest on the premise that social media platforms are the functional equivalent of a public square. But these are private companies.",
+        "english": "Counselor, your argument seems to rest on the premise that social media platforms are the functional equivalent of a public square.",
         "korean": "변호인, 귀하의 주장은 소셜 미디어 플랫폼이 공공 광장과 기능적으로 동등하다는 전제에 기반한 것 같습니다.",
-        "properNounIndices": [
-          21
-        ]
+        "properNounIndices": []
       },
       {
         "id": 1,
+        "english": "But these are private companies.",
+        "korean": "소셜 미디어 플랫폼이 공공 광장과 기능적으로 동등하다는",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
         "english": "How do you reconcile that with established First Amendment doctrine, which protects individuals from government restriction of speech — not from the editorial decisions of private actors?",
         "korean": "수정헌법 제1조 법리와 어떻게 조화시키시나요? 이 법리는 개인을 정부의 언론 제한으로부터 보호합니다.",
         "properNounIndices": [
@@ -24,43 +28,30 @@
         ]
       },
       {
-        "id": 2,
-        "english": "Your Honor, I acknowledge the traditional framework. But I would argue that the scale and centrality of these platforms have fundamentally altered the analysis.",
-        "korean": "재판관님, 전통적 틀을 인정합니다. 하지만 이들 플랫폼의 규모와 중심성이 판도를 근본적으로 바꿨다고 주장합니다.",
+        "id": 3,
+        "english": "Your Honor, I acknowledge the traditional framework.",
+        "korean": "재판관님, 전통적 틀을 인정합니다.",
         "properNounIndices": [
           1,
-          2,
-          7,
-          8
-        ]
-      },
-      {
-        "id": 3,
-        "english": "When a single company controls the primary channel through which three hundred million Americans access information, participate in public discourse, and engage with their elected officials, the distinction between public and private begins to lose its analytical force.",
-        "korean": "단일 기업이 3억 미국인이 정보에 접근하는 주요 채널을 통제할 때요.",
-        "properNounIndices": [
-          13
+          2
         ]
       },
       {
         "id": 4,
-        "english": "But wouldn't your logic lead to the conclusion that any sufficiently large private entity — a television network, a newspaper chain — could be compelled to carry speech it disagrees with? That seems directly at odds with *Miami Herald v. Tornillo*.",
-        "korean": "하지만 그 논리대로라면, 충분히 큰 민간 단체 — TV 방송, 신문 체인 — 도 같은 제약을 받아야 하는 것 아닌가요?",
+        "english": "But I would argue that the scale and centrality of these platforms have fundamentally altered the analysis.",
+        "korean": "하지만 이들 플랫폼의 규모와 중심성이 판도를 근본적으로 바꿨다고 주장합니다.",
         "properNounIndices": [
-          31,
-          37,
-          38,
-          40
+          1
         ]
       }
     ],
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Weekend Plans",
-        "Checking Into a Hotel",
+        "Learning to Ride a Bike",
+        "Feeding Ducks at the Pond",
         "Supreme Court Oral Arguments",
-        "Job Interview — Small Talk"
+        "Going Grocery Shopping"
       ],
       "answer": 2
     }
@@ -74,54 +65,53 @@
     "sentences": [
       {
         "id": 5,
-        "english": "With respect, Your Honor, I think the analogy to newspapers is imperfect. A newspaper is a curated product. Its editorial judgments are themselves a form of expression.",
-        "korean": "존경하는 재판관님, 신문에 대한 비유는 불완전하다고 생각합니다. 신문은 큐레이션된 제품입니다.",
+        "english": "When a single company controls the primary channel through which three hundred million Americans access information, participate in public discourse, and engage with their elected officials, the distinction between public and private begins to lose its analytical force.",
+        "korean": "단일 기업이 3억 미국인이 정보에 접근하는 주요 채널을 통제할 때요.",
         "properNounIndices": [
-          2,
-          3,
-          4,
-          12,
-          18
+          13
         ]
       },
       {
         "id": 6,
-        "english": "A social media platform, by contrast, holds itself out as a neutral conduit for user-generated content.",
-        "korean": "반면 소셜 미디어 플랫폼은 사용자 생성 콘텐츠의 중립적 통로라고 자처합니다.",
+        "english": "But wouldn't your logic lead to the conclusion that any sufficiently large private entity — a television network, a newspaper chain — could be compelled to carry speech it disagrees with?",
+        "korean": "하지만 그 논리대로라면, 충분히 큰 민간 단체 — TV 방송, 신문 체인 — 도 같은 제약을 받아야 하는 것 아닌가요?",
         "properNounIndices": []
       },
       {
         "id": 7,
-        "english": "It benefits enormously from Section 230 protections precisely because it claims not to be a publisher.",
-        "korean": "출판사가 아니라고 주장하기 때문에 230조 보호로부터 엄청난 혜택을 받습니다.",
+        "english": "That seems directly at odds with *Miami Herald v.",
+        "korean": "충분히 큰 민간 단체도",
         "properNounIndices": [
-          4
+          6,
+          7
         ]
       },
       {
         "id": 8,
-        "english": "It cannot simultaneously claim the editorial freedom of a newspaper and the liability protections of a neutral platform.",
-        "korean": "신문의 편집 자유와 중립 플랫폼의 면책 보호를 동시에 주장할 수는 없습니다.",
+        "english": "Tornillo*.",
+        "korean": "TV 방송, 신문 체인 같은 제약을 받아야 하는 것 아닌가요?",
         "properNounIndices": []
       },
       {
         "id": 9,
-        "english": "Counselor, let me press you on the remedy. Even if we accept your characterization of these platforms, what standard would govern their content moderation decisions?",
-        "korean": "변호인, 구제 방법에 대해 좀 더 따져보겠습니다.",
+        "english": "With respect, Your Honor, I think the analogy to newspapers is imperfect.",
+        "korean": "존경하는 재판관님, 신문에 대한 비유는 불완전하다고 생각합니다.",
         "properNounIndices": [
-          8
+          2,
+          3,
+          4
         ]
       }
     ],
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Planning a Trip",
+        "Tech Support Call",
+        "The Rise of Electric Vehicles",
         "Supreme Court Oral Arguments",
-        "Tour Guide Speech",
-        "Economic Analysis — The Paradox of Thrift"
+        "Long-Form Journalism — The Ethics of Gene Editing"
       ],
-      "answer": 1
+      "answer": 2
     }
   },
   {
@@ -133,6 +123,69 @@
     "sentences": [
       {
         "id": 10,
+        "english": "A newspaper is a curated product.",
+        "korean": "신문은 큐레이션된 제품입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "Its editorial judgments are themselves a form of expression.",
+        "korean": "신문은 큐레이션된 제품이에요",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "A social media platform, by contrast, holds itself out as a neutral conduit for user-generated content.",
+        "korean": "반면 소셜 미디어 플랫폼은 사용자 생성 콘텐츠의 중립적 통로라고 자처합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
+        "english": "It benefits enormously from Section 230 protections precisely because it claims not to be a publisher.",
+        "korean": "출판사가 아니라고 주장하기 때문에 230조 보호로부터 엄청난 혜택을 받습니다.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 14,
+        "english": "It cannot simultaneously claim the editorial freedom of a newspaper and the liability protections of a neutral platform.",
+        "korean": "신문의 편집 자유와 중립 플랫폼의 면책 보호를 동시에 주장할 수는 없습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Supreme Court Oral Arguments",
+        "Why We Procrastinate",
+        "Introducing Your Family",
+        "Why We Underestimate Time"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L5_EXT_003_set4",
+    "parentSetId": "L5_EXT_003",
+    "theme": "Supreme Court Oral Arguments",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "Counselor, let me press you on the remedy.",
+        "korean": "변호인, 구제 방법에 대해 좀 더 따져보겠습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 16,
+        "english": "Even if we accept your characterization of these platforms, what standard would govern their content moderation decisions?",
+        "korean": "구제 방법에 대해 압박하겠습니다",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
         "english": "Are you asking this Court to hold that a platform cannot remove any content unless it violates criminal law?",
         "korean": "이 법원에 플랫폼이 형법을 위반하지 않는 한 어떤 콘텐츠도 삭제할 수 없다고 판결해달라는 건가요?",
         "properNounIndices": [
@@ -140,7 +193,7 @@
         ]
       },
       {
-        "id": 11,
+        "id": 18,
         "english": "No, Your Honor. Our position is narrower than that.",
         "korean": "아닙니다, 재판관님. 우리의 입장은 그보다 좁습니다.",
         "properNounIndices": [
@@ -150,41 +203,69 @@
         ]
       },
       {
-        "id": 12,
+        "id": 19,
         "english": "We argue that when a platform achieves a position of market dominance such that it constitutes essential infrastructure for public discourse, its content moderation policies must satisfy a standard of viewpoint neutrality.",
         "korean": "우리가 주장하는 건 플랫폼이 시장 지배적 위치에 달해 공적 담론의 필수 인프라가 되면, 관점 중립성 기준을 충족해야 한다는 것입니다.",
         "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Science Documentary — Neuroplasticity",
+        "Supreme Court Oral Arguments",
+        "A Picnic in the Park",
+        "My First Time Living Abroad"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L5_EXT_003_set5",
+    "parentSetId": "L5_EXT_003",
+    "theme": "Supreme Court Oral Arguments",
+    "level": 5,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "The platform may enforce rules against harassment, threats, and illegal content.",
+        "korean": "플랫폼은 괴롭힘, 위협, 불법 콘텐츠에 대한 규칙을 집행할 수 있습니다.",
+        "properNounIndices": []
       },
       {
-        "id": 13,
-        "english": "The platform may enforce rules against harassment, threats, and illegal content. What it may not do is selectively suppress lawful speech based on the viewpoint it expresses.",
-        "korean": "플랫폼은 괴롭힘, 위협, 불법 콘텐츠에 대한 규칙을 집행할 수 있습니다. 하지 못하는 건 합법적 발언을 선택적으로 억압하는 것입니다.",
+        "id": 21,
+        "english": "What it may not do is selectively suppress lawful speech based on the viewpoint it expresses.",
+        "korean": "하지 못하는 건 합법적 발언을 선택적으로 억압하는 것입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 22,
+        "english": "And who determines whether suppression was viewpoint-based?",
+        "korean": "억압이 관점에 기반했는지 누가 결정하나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 23,
+        "english": "A jury? A regulatory agency? That seems like an enormous First Amendment entanglement.",
+        "korean": "배심원? 규제 기관? 수정헌법 제1조 우려가 큰데요.",
         "properNounIndices": [
+          2,
+          5,
+          10,
           11
-        ]
-      },
-      {
-        "id": 14,
-        "english": "And who determines whether suppression was viewpoint-based? A jury? A regulatory agency? That seems like an enormous First Amendment entanglement.",
-        "korean": "억압이 관점에 기반했는지 누가 결정하나요? 배심원? 규제 기관? 수정헌법 제1조 우려가 큰데요.",
-        "properNounIndices": [
-          7,
-          9,
-          12,
-          17,
-          18
         ]
       }
     ],
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Psychology Lecture — The Bystander Effect",
-        "Supreme Court Oral Arguments",
-        "Business Meeting — Quarterly Review",
-        "NPR-Style News Report"
+        "The Rise of Online Shopping",
+        "Why We Underestimate Time",
+        "Podcast Discussion — Work-Life Balance",
+        "Supreme Court Oral Arguments"
       ],
-      "answer": 1
+      "answer": 3
     }
   }
 ]

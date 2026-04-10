@@ -1,0 +1,49 @@
+[
+  {
+    "setId": "L3_B6ME_033_set1",
+    "parentSetId": "L3_B6ME_033",
+    "theme": "Do You Have Good Dining Etiquette?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "In this episode, we're discussing etiquette — the rules about what makes polite behaviour — and in particular the dos and don'ts about what you should and shouldn't do when eating.",
+        "korean": "이번 에피소드에서 에티켓 — 예의 바른 행동의 규칙, 특히 먹을 때 해야 할 것과 하지 말아야 할 것을 논의해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "If you clink glasses, you're slopping a bit of your drink into his cup and he's slopping a bit of drink into your cup.",
+        "korean": "잔을 부딪치면 음료가 서로의 컵에 조금 넘쳐요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "And therefore, by having that toast you are showing: 'Look I trust you. You trust me.’",
+        "korean": "그래서 건배를 함으로써 '나는 널 믿어, 너도 나를 믿잖아'를 보여주는 거예요.",
+        "properNounIndices": [
+          9,
+          10,
+          13
+        ]
+      },
+      {
+        "id": 3,
+        "english": "The answer to my quiz question about the most common complaint about bad restaurant behaviour was people eating noisily.",
+        "korean": "식당에서 가장 흔한 불만에 대한 퀴즈 답은 시끄럽게 먹는 사람이었어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '건배하다 — 존경이나 축하를 위해 잔을 들고 마시다' mean in English?",
+      "options": [
+        "picky",
+        "make a toast",
+        "first impression",
+        "clink glasses"
+      ],
+      "answer": 1
+    }
+  }
+]

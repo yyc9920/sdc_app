@@ -1,0 +1,71 @@
+[
+  {
+    "setId": "L2_DLG_039_set1",
+    "parentSetId": "L2_DLG_039",
+    "theme": "Ordering Coffee for the Office",
+    "level": 2,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'm making a coffee run.",
+        "korean": "커피 사러 가는데.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Does anyone want anything?",
+        "korean": "누구 뭐 필요한 거 있어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I'd love an iced latte.",
+        "korean": "아이스 라떼 좋겠어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Regular or large?",
+        "korean": "레귤러 아니면 라지요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Large please.",
+        "korean": "라지로요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "With oat milk if they have it.",
+        "korean": "오트 밀크로 있으면요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Sure. Anyone else?",
+        "korean": "알겠어요. 다른 사람은요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 7,
+        "english": "I'll be back in fifteen minutes.",
+        "korean": "15분 후에 올게요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "At the Vending Machine",
+        "Job Interview — Entry Level",
+        "Moving Company — Getting a Quote",
+        "Ordering Coffee for the Office"
+      ],
+      "answer": 3
+    }
+  }
+]

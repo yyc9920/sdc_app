@@ -1,0 +1,50 @@
+[
+  {
+    "setId": "L3_B6ME_056_set1",
+    "parentSetId": "L3_B6ME_056",
+    "theme": "Can Climate Change Affect Mental Health?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Natural disasters and the impacts of climate change can be stressful.",
+        "korean": "자연재해와 기후 변화의 영향은 스트레스가 될 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "We're going to find out about how people can protect their mental health from the impacts of climate change.",
+        "korean": "기후 변화의 영향으로부터 정신 건강을 어떻게 보호할 수 있는지 알아볼 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "In January 2025, big wildfires affected big parts of Los Angeles in California.",
+        "korean": "2025년 1월 대규모 산불이 LA 광범위한 지역에 영향을 미쳤어요.",
+        "properNounIndices": [
+          1,
+          9,
+          10,
+          12
+        ]
+      },
+      {
+        "id": 3,
+        "english": "According to research, climate change made these wildfires 35% more likely.",
+        "korean": "연구에 따르면 기후 변화가 이 산불을 35% 더 발생 가능하게 만들었어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Can Climate Change Affect Mental Health?",
+        "Why you need a good night's sleep",
+        "Did a Civilisation Exist Before Humans?",
+        "Dreaming of Being a Chef"
+      ],
+      "answer": 0
+    }
+  }
+]

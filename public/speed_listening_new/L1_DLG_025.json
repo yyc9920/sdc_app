@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L1_DLG_025_set1",
+    "parentSetId": "L1_DLG_025",
+    "theme": "Choosing a Class Activity",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "We need to choose an activity for class day.",
+        "korean": "학급의 날 활동을 골라야 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "How about a soccer game?",
+        "korean": "축구 경기는 어때요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Not everyone likes soccer.",
+        "korean": "모두가 축구를 좋아하진 않아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Then what about a talent show?",
+        "korean": "그러면 장기 자랑은요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "That sounds fun. Everyone can participate.",
+        "korean": "재밌겠어요. 모두 참여할 수 있어요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Let's ask the teacher if that's okay.",
+        "korean": "선생님께 괜찮은지 물어봐요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Asking for a Day Off",
+        "Talking About a Test",
+        "Choosing a Class Activity",
+        "At the Bus Stop"
+      ],
+      "answer": 2
+    }
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "setId": "L2_EXT_023_set1",
+    "parentSetId": "L2_EXT_023",
+    "theme": "Tips for Saving Money",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Saving money is not easy but small changes can make a big difference.",
+        "korean": "돈을 모으는 건 쉽지 않지만 작은 변화가 큰 차이를 만들 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "One simple tip is to make coffee at home instead of buying it every day.",
+        "korean": "간단한 팁 하나는 매일 사 먹는 대신 집에서 커피를 만드는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Another good habit is to bring lunch to work instead of eating out.",
+        "korean": "또 다른 좋은 습관은 외식 대신 점심을 싸가는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Before buying something ask yourself if you really need it or just want it.",
+        "korean": "뭔가를 사기 전에 정말 필요한 건지 그냥 원하는 건지 자문해보세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Setting up automatic transfers to a savings account each month is one of the easiest ways to build savings without thinking about it.",
+        "korean": "매달 저축 계좌로 자동 이체를 설정하는 것이 생각 없이 저축을 쌓는 가장 쉬운 방법 중 하나예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Benefits of Reading",
+        "The Anchoring Effect",
+        "Language and Thought",
+        "Tips for Saving Money"
+      ],
+      "answer": 3
+    }
+  }
+]

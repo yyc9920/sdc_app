@@ -1,0 +1,64 @@
+[
+  {
+    "setId": "L2_ELLO_101_set1",
+    "parentSetId": "L2_ELLO_101",
+    "theme": "Mixer #44 — Streaming Services",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I subscribe to too many streaming services.",
+        "korean": "스트리밍 서비스에 너무 많이 가입했어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Netflix, Disney Plus, YouTube Premium — it all adds up.",
+        "korean": "넷플릭스 디즈니플러스 유튜브 프리미엄 — 다 합치면 꽤 돼요.",
+        "properNounIndices": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I only have one, and I share the account with my family.",
+        "korean": "하나만 있고 가족과 계정을 공유해요.",
+        "properNounIndices": [
+          0,
+          5
+        ]
+      },
+      {
+        "id": 3,
+        "english": "It saves a lot of money.",
+        "korean": "돈이 많이 절약돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I cancelled all my subscriptions and just use free content now, like podcasts and YouTube.",
+        "korean": "모든 구독을 취소하고 이제 무료 콘텐츠만 써요. 팟캐스트랑 유튜브 같은 거요.",
+        "properNounIndices": [
+          0,
+          14
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #2 — Life Lessons",
+        "Mixer #44 — Streaming Services",
+        "Mixer #36 — Comfort Food",
+        "Mixer #8 — Queuing"
+      ],
+      "answer": 1
+    }
+  }
+]

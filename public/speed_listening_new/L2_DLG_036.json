@@ -1,0 +1,108 @@
+[
+  {
+    "setId": "L2_DLG_036_set1",
+    "parentSetId": "L2_DLG_036",
+    "theme": "Checking Out of a Hotel",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'd like to check out please.",
+        "korean": "체크아웃 하고 싶어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Of course. What room number?",
+        "korean": "물론이죠. 몇 호실이시죠?",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Room 812.",
+        "korean": "812호요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Did you use the minibar during your stay?",
+        "korean": "투숙 중 미니바를 이용하셨나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Yes I had a bottle of water and some snacks.",
+        "korean": "네 물 한 병과 간식을 먹었어요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Negotiating a Deadline Extension",
+        "At the Hair Salon",
+        "Checking Out of a Hotel",
+        "Checking Into a Gym"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_DLG_036_set2",
+    "parentSetId": "L2_DLG_036",
+    "theme": "Checking Out of a Hotel",
+    "level": 3,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "That'll be an additional twelve dollars.",
+        "korean": "추가 12달러입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Can I pay with a credit card?",
+        "korean": "신용카드로 결제할 수 있나요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Yes of course.",
+        "korean": "네 물론이죠.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Did you enjoy your stay?",
+        "korean": "투숙은 즐거우셨나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "It was wonderful. I'll definitely come back.",
+        "korean": "훌륭했어요. 꼭 다시 올게요.",
+        "properNounIndices": [
+          3
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "At the Shoe Store",
+        "Parent-Teacher Conference",
+        "Checking Out of a Hotel",
+        "At the Fruit Stand"
+      ],
+      "answer": 2
+    }
+  }
+]

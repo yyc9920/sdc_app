@@ -1,0 +1,102 @@
+[
+  {
+    "setId": "L1_DLG_013_set1",
+    "parentSetId": "L1_DLG_013",
+    "theme": "Ordering at a Fast Food Restaurant",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hi what can I get for you?",
+        "korean": "안녕하세요 뭘 드릴까요?",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I'd like a cheeseburger and a medium fries.",
+        "korean": "치즈버거 하나와 중간 감자튀김 주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "What would you like to drink?",
+        "korean": "음료는 뭘로 하시겠어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "A small cola please.",
+        "korean": "작은 콜라 주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Would you like to make it a combo?",
+        "korean": "세트로 하시겠어요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Ordering at a Fast Food Restaurant",
+        "Post Office — Sending a Package",
+        "Lost on the Street",
+        "Returning Online Order"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L1_DLG_013_set2",
+    "parentSetId": "L1_DLG_013",
+    "theme": "Ordering at a Fast Food Restaurant",
+    "level": 2,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "It's only one dollar more.",
+        "korean": "1달러만 더 하면 돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Sure why not.",
+        "korean": "네 그러죠.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "For here or to go?",
+        "korean": "여기서 드시나요 가져가시나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "For here.",
+        "korean": "여기서요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Your total is seven ninety-nine.",
+        "korean": "총 7달러 99센트입니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Choosing a Class Activity",
+        "Parent-Teacher Conference",
+        "Ordering at a Fast Food Restaurant",
+        "Asking for a Recommendation"
+      ],
+      "answer": 2
+    }
+  }
+]

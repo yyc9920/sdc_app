@@ -1,0 +1,114 @@
+[
+  {
+    "setId": "L3_DLG_031_set1",
+    "parentSetId": "L3_DLG_031",
+    "theme": "Returning Online Order",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'd like to return this item I ordered online.",
+        "korean": "온라인에서 주문한 이 상품을 반품하고 싶어요.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Do you have the order confirmation or tracking number?",
+        "korean": "주문 확인서나 추적 번호가 있으세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Yes I have the confirmation email on my phone.",
+        "korean": "네 폰에 확인 이메일이 있어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 3,
+        "english": "What's the reason for the return?",
+        "korean": "반품 사유가 뭔가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "The size doesn't fit.",
+        "korean": "사이즈가 안 맞아요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Returning Online Order",
+        "Discussing a Merger",
+        "Asking for Help at a Store",
+        "Discussing a Movie"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L3_DLG_031_set2",
+    "parentSetId": "L3_DLG_031",
+    "theme": "Returning Online Order",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I ordered a medium but I think I need a large.",
+        "korean": "미디엄을 주문했는데 라지가 필요한 것 같아요.",
+        "properNounIndices": [
+          0,
+          5,
+          7
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Would you like to exchange it for a large or get a refund?",
+        "korean": "라지로 교환하시겠어요 아니면 환불하시겠어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "I'll exchange it if you have the large in stock.",
+        "korean": "라지 재고가 있으면 교환할게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Let me check.",
+        "korean": "확인해볼게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Yes we have it in the large.",
+        "korean": "네 라지 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 10,
+        "english": "I'll process the exchange right now.",
+        "korean": "지금 바로 교환 처리할게요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Asking for a Recommendation",
+        "Study Group — Exam Prep",
+        "Returning Online Order",
+        "At the Ice Cream Shop"
+      ],
+      "answer": 2
+    }
+  }
+]

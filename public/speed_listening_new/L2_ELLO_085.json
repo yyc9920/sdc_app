@@ -1,0 +1,57 @@
+[
+  {
+    "setId": "L2_ELLO_085_set1",
+    "parentSetId": "L2_ELLO_085",
+    "theme": "Mixer #61 — Secret Talent",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I can solve a Rubik's cube in under a minute.",
+        "korean": "루빅스 큐브를 1분 안에 풀 수 있어요.",
+        "properNounIndices": [
+          0,
+          4
+        ]
+      },
+      {
+        "id": 1,
+        "english": "People are always surprised when they see me do it.",
+        "korean": "사람들은 내가 하는 걸 보면 항상 놀라요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I can whistle any song perfectly, but I never do it in public.",
+        "korean": "어떤 노래든 완벽하게 휘파람으로 할 수 있지만 공공장소에서는 절대 안 해요.",
+        "properNounIndices": [
+          0,
+          7
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I'm really good at doing impressions of famous people.",
+        "korean": "유명인 성대모사를 잘해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "My friends always ask me to do them at parties.",
+        "korean": "친구들이 파티에서 항상 해달라고 해요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '성대모사/흉내' mean in English?",
+      "options": [
+        "talent",
+        "whistle",
+        "solve",
+        "impression"
+      ],
+      "answer": 3
+    }
+  }
+]

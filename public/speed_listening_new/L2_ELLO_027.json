@@ -1,0 +1,69 @@
+[
+  {
+    "setId": "L2_ELLO_027_set1",
+    "parentSetId": "L2_ELLO_027",
+    "theme": "Mixer #119 — Sleeping In",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I can sleep until noon if no one wakes me up.",
+        "korean": "아무도 안 깨우면 정오까지 잘 수 있어.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I'm not really good at sleeping in, actually.",
+        "korean": "사실 늦잠을 잘 못 자요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I tend to wake up early no matter what.",
+        "korean": "무슨 일이 있어도 일찍 일어나는 편이에요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Even if I go to bed late, my body just wakes up.",
+        "korean": "늦게 자도 몸이 그냥 깨어나요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I wish I could sleep in more, but I have a dog that wakes me up every morning at six.",
+        "korean": "더 늦잠 자고 싶지만 매일 아침 6시에 깨우는 개가 있어요.",
+        "properNounIndices": [
+          0,
+          2,
+          8
+        ]
+      },
+      {
+        "id": 5,
+        "english": "He needs to go outside, so I have no choice.",
+        "korean": "밖에 나가야 해서 선택의 여지가 없어요.",
+        "properNounIndices": [
+          6
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #46 — Work-Life Balance",
+        "Mixer #119 — Sleeping In",
+        "Mixer #72 — Driving",
+        "Mixer #117 — Phobias"
+      ],
+      "answer": 1
+    }
+  }
+]

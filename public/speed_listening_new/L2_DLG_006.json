@@ -1,0 +1,100 @@
+[
+  {
+    "setId": "L2_DLG_006_set1",
+    "parentSetId": "L2_DLG_006",
+    "theme": "At the Phone Store",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hi, my phone screen is cracked.",
+        "korean": "안녕하세요 폰 화면이 깨졌는데요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Can it be fixed?",
+        "korean": "고칠 수 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Let me take a look.",
+        "korean": "한번 볼게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "The screen needs to be replaced.",
+        "korean": "화면을 교체해야 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "How much will that cost?",
+        "korean": "비용이 얼마나 드나요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Returning a Rental Car",
+        "At the Vending Machine",
+        "Negotiating Rent with Landlord",
+        "At the Phone Store"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L2_DLG_006_set2",
+    "parentSetId": "L2_DLG_006",
+    "theme": "At the Phone Store",
+    "level": 3,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "It's a hundred and twenty dollars for this model.",
+        "korean": "이 모델은 120달러예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "How long will it take?",
+        "korean": "시간은 얼마나 걸리나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "About one hour.",
+        "korean": "약 1시간이요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "You can wait here or come back later.",
+        "korean": "여기서 기다리시거나 나중에 오셔도 돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "I'll come back in an hour then.",
+        "korean": "그럼 1시간 후에 올게요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Post Office — Sending a Package",
+        "Car Repair — Mechanic Visit",
+        "At the Phone Store",
+        "At the Laundromat"
+      ],
+      "answer": 2
+    }
+  }
+]

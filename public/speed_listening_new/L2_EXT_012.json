@@ -1,0 +1,50 @@
+[
+  {
+    "setId": "L2_EXT_012_set1",
+    "parentSetId": "L2_EXT_012",
+    "theme": "Weekend Farmer's Market",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Every Saturday morning, I go to the local farmer's market near my apartment.",
+        "korean": "매주 토요일 아침 아파트 근처 지역 농산물 시장에 가요.",
+        "properNounIndices": [
+          1,
+          3
+        ]
+      },
+      {
+        "id": 1,
+        "english": "The vegetables are so much fresher than the supermarket, and you can actually talk to the farmers who grew them.",
+        "korean": "채소가 슈퍼마켓보다 훨씬 신선하고 실제로 그것을 키운 농부와 이야기할 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "My favorite part is trying the free samples — homemade jams and freshly baked bread.",
+        "korean": "가장 좋아하는 부분은 무료 시식이에요 — 수제 잼과 갓 구운 빵이요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "It's a bit more expensive than the supermarket, but I think it's worth it to support local farmers.",
+        "korean": "슈퍼마켓보다 좀 더 비싸지만 지역 농부를 지원하는 게 가치가 있다고 생각해요.",
+        "properNounIndices": [
+          9
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '집에서 만든/수제' mean in English?",
+      "options": [
+        "homemade",
+        "farmer's market",
+        "support",
+        "sample"
+      ],
+      "answer": 0
+    }
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "setId": "L1_EXT_069_set1",
+    "parentSetId": "L1_EXT_069",
+    "theme": "Recycling at School",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Our school has different bins for recycling.",
+        "korean": "학교에 재활용을 위한 다른 통들이 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "There is one for paper and one for plastic and one for cans.",
+        "korean": "종이용 하나 플라스틱용 하나 캔용 하나가 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Every class takes turns cleaning the recycling area.",
+        "korean": "모든 반이 돌아가며 재활용 구역을 청소해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Our teacher says recycling is important for the environment.",
+        "korean": "선생님은 재활용이 환경에 중요하다고 하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I try to use less plastic at home too.",
+        "korean": "집에서도 플라스틱을 적게 쓰려고 노력해요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "The Power of Gratitude",
+        "Buying a Gift",
+        "My Morning",
+        "Recycling at School"
+      ],
+      "answer": 3
+    }
+  }
+]

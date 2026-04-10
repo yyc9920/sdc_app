@@ -1,0 +1,78 @@
+[
+  {
+    "setId": "L3_B6ME_026_set1",
+    "parentSetId": "L3_B6ME_026",
+    "theme": "Is Social Media Dead?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Whatever you think of social media, in less than a generation it has changed the internet.",
+        "korean": "소셜 미디어를 어떻게 생각하든 한 세대도 안 돼서 인터넷을 바꿨어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Facebook, Twitter — now known as X — and MySpace used to be places to post messages to friends or share photos of your breakfast.",
+        "korean": "페이스북, 트위터(현재 X), 마이스페이스는 친구에게 메시지를 올리거나 아침 사진을 공유하는 곳이었죠.",
+        "properNounIndices": [
+          1,
+          6,
+          9
+        ]
+      },
+      {
+        "id": 2,
+        "english": "But with the rise of AI, the fun of connecting with friends changed into something much stranger.",
+        "korean": "하지만 AI의 부상과 함께 친구와 연결되는 즐거움은 훨씬 이상한 것으로 바뀌었어요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Kyle Chayka is a writer for The New Yorker.",
+        "korean": "카일 차이카는 뉴요커 기고가예요.",
+        "properNounIndices": [
+          1,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": 4,
+        "english": "He describes much of social media content as slop — low-quality online content designed to grab your attention.",
+        "korean": "소셜 미디어 콘텐츠의 대부분을 '슬롭' — 관심을 끌기 위해 설계된 저품질 온라인 콘텐츠 — 이라고 묘사해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "We see the large social networks and the tech behemoths leaning into generated content, and I think users don't actually want that.",
+        "korean": "대형 소셜 네트워크와 거대 기술 기업이 생성 콘텐츠에 몰두하지만 사용자들은 실제로 원하지 않아요.",
+        "properNounIndices": [
+          15
+        ]
+      },
+      {
+        "id": 6,
+        "english": "I see people gravitating towards smaller online spaces, connecting more closely with individual voices.",
+        "korean": "사람들이 더 작은 온라인 공간으로, 개인의 목소리와 더 밀접하게 연결되는 쪽으로 끌리고 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '새롭고 신기한 것' mean in English?",
+      "options": [
+        "slop",
+        "behemoth",
+        "novelty",
+        "cultural happening"
+      ],
+      "answer": 2
+    }
+  }
+]

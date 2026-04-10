@@ -1,0 +1,53 @@
+[
+  {
+    "setId": "L1_EXT_039_set1",
+    "parentSetId": "L1_EXT_039",
+    "theme": "My Grandparents",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My grandparents live in the countryside.",
+        "korean": "조부모님은 시골에 사세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "We visit them every holiday.",
+        "korean": "매 명절 방문해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "My grandmother is a great cook and she always makes too much food.",
+        "korean": "할머니는 요리를 잘 하시고 항상 음식을 너무 많이 만드세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "My grandfather likes to go fishing at the river near their house.",
+        "korean": "할아버지는 집 근처 강에서 낚시하는 걸 좋아하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I always feel sad when it is time to go back home.",
+        "korean": "돌아갈 시간이 되면 항상 슬퍼요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "My Grandparents",
+        "My Favorite Game",
+        "My Favorite TV Show",
+        "Job Hunting Tips"
+      ],
+      "answer": 0
+    }
+  }
+]

@@ -1,0 +1,96 @@
+[
+  {
+    "setId": "L2_DLG_016_set1",
+    "parentSetId": "L2_DLG_016",
+    "theme": "Booking a Hotel Room",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'd like to book a room for two nights.",
+        "korean": "2박으로 방을 예약하고 싶어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "When would you like to check in?",
+        "korean": "언제 체크인하시겠어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "This Friday.",
+        "korean": "이번 금요일이요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 3,
+        "english": "We have standard rooms and deluxe rooms available.",
+        "korean": "스탠다드 룸과 디럭스 룸이 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "What's the price difference?",
+        "korean": "가격 차이가 어떻게 되나요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '체크인하다' mean in English?",
+      "options": [
+        "check in",
+        "included",
+        "per night",
+        "available"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_DLG_016_set2",
+    "parentSetId": "L2_DLG_016",
+    "theme": "Booking a Hotel Room",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Standard is eighty dollars per night and deluxe is one hundred and twenty.",
+        "korean": "스탠다드는 1박 80달러이고 디럭스는 120달러예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Does the standard include breakfast?",
+        "korean": "스탠다드에 조식이 포함되나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Breakfast is included in both room types.",
+        "korean": "조식은 두 객실 유형 모두 포함이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "I'll go with the standard then.",
+        "korean": "그럼 스탠다드로 할게요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '1박당' mean in English?",
+      "options": [
+        "included",
+        "check in",
+        "per night",
+        "available"
+      ],
+      "answer": 2
+    }
+  }
+]

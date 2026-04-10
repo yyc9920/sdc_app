@@ -1,0 +1,100 @@
+[
+  {
+    "setId": "L3_DLG_028_set1",
+    "parentSetId": "L3_DLG_028",
+    "theme": "Apartment Maintenance — Broken Sink",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hi I'm calling about my kitchen sink.",
+        "korean": "안녕하세요. 부엌 싱크대 때문에 전화했어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "It's been leaking for two days and the water is getting under the cabinet.",
+        "korean": "2일째 새고 있고 물이 캐비닛 아래로 들어가고 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I'm sorry about that.",
+        "korean": "그건 죄송합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Can you turn off the water valve under the sink for now?",
+        "korean": "지금은 싱크대 아래 수도 밸브를 잠글 수 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I already did that.",
+        "korean": "이미 그렇게 했어요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '배관공' mean in English?",
+      "options": [
+        "leaking",
+        "valve",
+        "plumber",
+        "water damage"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L3_DLG_028_set2",
+    "parentSetId": "L3_DLG_028",
+    "theme": "Apartment Maintenance — Broken Sink",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I'll send a plumber first thing tomorrow morning.",
+        "korean": "내일 아침 일찍 배관공을 보내드리겠습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Is there any chance someone can come today?",
+        "korean": "혹시 오늘 와줄 수 있는 가능성이 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "I'm worried it might cause water damage.",
+        "korean": "수해가 생길까 봐 걱정돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Let me make some calls and see if I can get someone there by this afternoon.",
+        "korean": "몇 군데 전화해보고 오늘 오후까지 사람을 보낼 수 있는지 알아볼게요.",
+        "properNounIndices": [
+          8
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '새는' mean in English?",
+      "options": [
+        "valve",
+        "leaking",
+        "plumber",
+        "water damage"
+      ],
+      "answer": 1
+    }
+  }
+]

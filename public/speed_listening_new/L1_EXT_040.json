@@ -1,0 +1,58 @@
+[
+  {
+    "setId": "L1_EXT_040_set1",
+    "parentSetId": "L1_EXT_040",
+    "theme": "At the Convenience Store",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I go to the convenience store near my school almost every day.",
+        "korean": "거의 매일 학교 근처 편의점에 가요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I usually buy a triangle kimbap and a banana milk.",
+        "korean": "보통 삼각김밥과 바나나 우유를 사요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Sometimes I get a cup of instant noodles when I am very hungry.",
+        "korean": "매우 배고플 때는 가끔 컵라면을 사먹어요.",
+        "properNounIndices": [
+          1,
+          9
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Korean convenience stores have so many delicious options.",
+        "korean": "한국 편의점에는 맛있는 선택지가 정말 많아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "My foreign friends are always amazed by how good the food is.",
+        "korean": "외국인 친구들은 음식이 얼마나 맛있는지 항상 놀라요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Supreme Court Oral Arguments",
+        "At the Convenience Store",
+        "My Bike Ride",
+        "The Growth Mindset"
+      ],
+      "answer": 1
+    }
+  }
+]

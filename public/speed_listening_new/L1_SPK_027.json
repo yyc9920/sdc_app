@@ -1,0 +1,104 @@
+[
+  {
+    "setId": "L1_SPK_027_set1",
+    "parentSetId": "L1_SPK_027",
+    "theme": "A Difficult Decision You Made",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Describe a difficult decision you made recently.",
+        "korean": "최근에 내린 어려운 결정을 묘사하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain the process you went through.",
+        "korean": "겪은 과정을 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "A difficult decision I made recently was choosing to leave my comfortable job and move to a new city for a better career opportunity.",
+        "korean": "최근에 내린 어려운 결정은 편한 직장을 떠나 더 좋은 커리어 기회를 위해 새 도시로 이사하기로 한 거예요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 3,
+        "english": "On one hand I had a stable income and close friends nearby.",
+        "korean": "한편으로는 안정적인 수입과 가까이에 친한 친구들이 있었어요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 4,
+        "english": "On the other hand the new position offered twice the salary and room for professional growth.",
+        "korean": "다른 한편으로는 새 직위가 두 배의 급여와 전문적 성장의 여지를 제공했어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Technology in Education",
+        "A Difficult Decision You Made",
+        "Describe a time when you overcame a fear.",
+        "The Best Way to Relieve Stress"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L1_SPK_027_set2",
+    "parentSetId": "L1_SPK_027",
+    "theme": "A Difficult Decision You Made",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I made a pros and cons list and talked to my family before deciding.",
+        "korean": "결정하기 전에 장단점 목록을 만들고 가족과 이야기했어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 6,
+        "english": "In the end I chose to take the risk and I'm glad I did because it's been a rewarding experience.",
+        "korean": "결국 위험을 감수하기로 했고 보람 있는 경험이었기 때문에 잘했다고 생각해요.",
+        "properNounIndices": [
+          3,
+          10,
+          12
+        ]
+      },
+      {
+        "id": 7,
+        "english": "pros and cons",
+        "korean": "장단점",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "take the risk",
+        "korean": "위험을 감수하다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Importance of Learning History",
+        "Physical Stores vs. Online Shopping",
+        "How would you spend a day completely without techn",
+        "A Difficult Decision You Made"
+      ],
+      "answer": 3
+    }
+  }
+]

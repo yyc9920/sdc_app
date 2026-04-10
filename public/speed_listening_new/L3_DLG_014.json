@@ -1,0 +1,81 @@
+[
+  {
+    "setId": "L3_DLG_014_set1",
+    "parentSetId": "L3_DLG_014",
+    "theme": "Pharmacy — Prescription Pickup",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hi, I'm here to pick up a prescription under the name Lee.",
+        "korean": "안녕하세요, 리 이름으로 된 처방전을 받으러 왔어요.",
+        "properNounIndices": [
+          1,
+          11
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Let me check. Yes, it's ready. This is an antibiotic — you need to take one tablet twice a day with food.",
+        "korean": "확인할게요. 네, 준비됐어요. 이건 항생제인데 하루 두 번 음식과 함께 한 알씩 드세요.",
+        "properNounIndices": [
+          3,
+          6
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Are there any side effects I should know about?",
+        "korean": "알아야 할 부작용이 있나요?",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Some people experience nausea or stomach upset, so that's why it's important to take it with food.",
+        "korean": "메스꺼움이나 위장 장애가 올 수 있어서 음식과 함께 먹는 게 중요해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Also avoid alcohol while you're on this medication.",
+        "korean": "또한 이 약 복용 중에는 술을 피하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "How long do I need to take it?",
+        "korean": "얼마나 오래 먹어야 하나요?",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 6,
+        "english": "It's a seven-day course, and it's very important to finish the entire course even if you start feeling better before that.",
+        "korean": "7일 코스이고 그 전에 좋아지기 시작해도 전체 코스를 끝내는 게 매우 중요해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Got it. Thank you for the explanation.",
+        "korean": "알겠습니다. 설명 감사합니다.",
+        "properNounIndices": [
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '처방전' mean in English?",
+      "options": [
+        "antibiotic",
+        "prescription",
+        "medication",
+        "nausea"
+      ],
+      "answer": 1
+    }
+  }
+]

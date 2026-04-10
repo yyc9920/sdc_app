@@ -45,11 +45,11 @@
       "question": "What is the main topic of this passage?",
       "options": [
         "Clarifying What Was Said",
-        "Health and Medicine",
-        "Clarifying What Was Meant",
-        "Weather and Seasons"
+        "Sports and Exercise",
+        "Environment and Nature",
+        "Clarifying What Was Meant"
       ],
-      "answer": 2
+      "answer": 3
     }
   }
 ]

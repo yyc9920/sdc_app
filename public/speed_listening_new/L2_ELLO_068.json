@@ -1,0 +1,55 @@
+[
+  {
+    "setId": "L2_ELLO_068_set1",
+    "parentSetId": "L2_ELLO_068",
+    "theme": "Mixer #78 — Childhood Games",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "We used to play hide and seek in the neighborhood every evening.",
+        "korean": "매일 저녁 동네에서 숨바꼭질을 하곤 했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "We would play until it got dark.",
+        "korean": "어두워질 때까지 놀았어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I loved playing jump rope with my friends, especially double dutch.",
+        "korean": "친구들과 줄넘기를 좋아했어요, 특히 더블 더치요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "We were so competitive about it.",
+        "korean": "승부욕이 엄청났어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "We played marbles at school during recess, and I had the biggest collection in my class.",
+        "korean": "쉬는 시간에 학교에서 구슬치기를 했어요. 반에서 가장 큰 컬렉션을 가지고 있었어요.",
+        "properNounIndices": [
+          8
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '승부욕 강한/경쟁적인' mean in English?",
+      "options": [
+        "hide and seek",
+        "competitive",
+        "jump rope",
+        "recess"
+      ],
+      "answer": 1
+    }
+  }
+]

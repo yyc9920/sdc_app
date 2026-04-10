@@ -1,0 +1,52 @@
+[
+  {
+    "setId": "L3_EXT_033_set1",
+    "parentSetId": "L3_EXT_033",
+    "theme": "Why Introverts Succeed in Business",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "While extroverts tend to dominate the corporate spotlight research shows that introverted leaders often outperform their more outgoing counterparts.",
+        "korean": "외향적인 사람들이 기업 현장을 지배하는 경향이 있지만 연구에 따르면 내향적인 리더가 더 외향적인 상대를 종종 능가한다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "This is because introverts tend to be better listeners which makes their teams feel heard and valued.",
+        "korean": "이는 내향적인 사람들이 더 나은 경청자인 경향이 있어 팀원이 경청받고 가치 있게 느끼게 만들기 때문이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "They also tend to think more deeply before speaking which means their decisions are often more carefully considered.",
+        "korean": "또한 말하기 전에 더 깊이 생각하는 경향이 있어 결정이 종종 더 신중하게 고려된다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Famous introverted business leaders include Bill Gates Warren Buffett and Satya Nadella all of whom have credited their reflective nature as a key to their success.",
+        "korean": "유명한 내향적 비즈니스 리더에는 빌 게이츠 워런 버핏 사트야 나델라가 포함되며 모두 성찰적 성격을 성공의 핵심으로 꼽았다.",
+        "properNounIndices": [
+          5,
+          6,
+          7,
+          8,
+          10,
+          11
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '상대/대응 인물' mean in English?",
+      "options": [
+        "introvert",
+        "outperform",
+        "reflective",
+        "counterpart"
+      ],
+      "answer": 3
+    }
+  }
+]

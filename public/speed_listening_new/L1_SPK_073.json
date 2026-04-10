@@ -1,0 +1,72 @@
+[
+  {
+    "setId": "L1_SPK_073_set1",
+    "parentSetId": "L1_SPK_073",
+    "theme": "Impact of AI on Jobs",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think artificial intelligence will eliminate more jobs than it creates?",
+        "korean": "인공지능이 창출하는 것보다 더 많은 일자리를 없앨 것이라 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your view.",
+        "korean": "견해를 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I believe AI will transform jobs rather than simply eliminate them.",
+        "korean": "AI가 단순히 일자리를 없애는 것이 아니라 변화시킬 것이라고 생각해요.",
+        "properNounIndices": [
+          0,
+          2
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Throughout history every major technological revolution has destroyed some jobs while creating entirely new ones that nobody imagined before.",
+        "korean": "역사를 통틀어 모든 주요 기술 혁명은 일부 일자리를 없앴지만 이전에 아무도 상상하지 못한 완전히 새로운 일자리를 만들었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Repetitive manual tasks will certainly be automated but jobs requiring creativity emotional intelligence and complex decision-making will remain human.",
+        "korean": "반복적인 수작업은 확실히 자동화되겠지만 창의성 감성 지능 복잡한 의사결정이 필요한 일자리는 인간에게 남을 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "The challenge is ensuring that workers are retrained for the new economy so nobody gets left behind.",
+        "korean": "과제는 새 경제에 맞게 근로자를 재교육하여 누구도 뒤처지지 않게 하는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "left behind",
+        "korean": "뒤처진",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "emotional intelligence",
+        "korean": "감성 지능",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Impact of AI on Jobs",
+        "Important Quality in a Friend",
+        "Cash vs. Digital Payment",
+        "The Importance of Exercise"
+      ],
+      "answer": 0
+    }
+  }
+]

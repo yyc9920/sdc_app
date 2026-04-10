@@ -1,0 +1,102 @@
+[
+  {
+    "setId": "L2_DLG_014_set1",
+    "parentSetId": "L2_DLG_014",
+    "theme": "Ordering Delivery Food",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "What do you want to order for dinner?",
+        "korean": "저녁에 뭐 시켜 먹을래요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "How about chicken?",
+        "korean": "치킨 어때요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "We had chicken two days ago.",
+        "korean": "이틀 전에 치킨 먹었잖아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Then what about jajangmyeon?",
+        "korean": "그럼 자장면은?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "That sounds good to me.",
+        "korean": "그거 좋아요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Asking About Wi-Fi",
+        "Study Group — Exam Prep",
+        "Job Interview — Entry Level",
+        "Ordering Delivery Food"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L2_DLG_014_set2",
+    "parentSetId": "L2_DLG_014",
+    "theme": "Ordering Delivery Food",
+    "level": 2,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Should we get tangsuyuk too?",
+        "korean": "탕수육도 시킬까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Definitely.",
+        "korean": "당연하죠.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "I'll order on the app right now.",
+        "korean": "지금 앱으로 주문할게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "It says delivery takes about thirty-five minutes.",
+        "korean": "배달이 약 35분 걸린다고 나와요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Perfect. I'm starving.",
+        "korean": "완벽해요. 배고파 죽겠어요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Weekend Hiking Plan",
+        "Getting a Package Delivered",
+        "Picking Up a Friend",
+        "Ordering Delivery Food"
+      ],
+      "answer": 3
+    }
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "setId": "L2_ELLO_097_set1",
+    "parentSetId": "L2_ELLO_097",
+    "theme": "Mixer #48 — Hometown Changes",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My hometown has changed so much in the last ten years.",
+        "korean": "지난 10년간 고향이 많이 변했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "All the small shops are gone, and now it's all big chain stores.",
+        "korean": "작은 가게들이 다 없어지고 이제 다 대형 체인점이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "My town is exactly the same as when I left, which is kind of comforting.",
+        "korean": "내가 떠났을 때와 우리 동네는 똑같아요. 그게 나름 위안이 돼요.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 3,
+        "english": "They built a huge shopping mall where the old park used to be, and I was really upset about it.",
+        "korean": "옛날 공원 자리에 큰 쇼핑몰을 지었고 정말 속상했어요.",
+        "properNounIndices": [
+          14
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #113 — Learning a Language",
+        "Mixer #146 — Cheating on Tests",
+        "Mixer #48 — Hometown Changes",
+        "Mixer #9 — Compliments"
+      ],
+      "answer": 2
+    }
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "setId": "L3_B6ME_030_set1",
+    "parentSetId": "L3_B6ME_030",
+    "theme": "How Are Horses Helping to Heal Humans?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The relationship between humans and horses has been close throughout history.",
+        "korean": "인간과 말의 관계는 역사 내내 가까웠어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Equine Assisted Services, sometimes called horse therapy, is a health trend where caring and interacting with horses is used to heal physical and mental illness.",
+        "korean": "말 보조 서비스(말 치료)는 말을 돌보고 상호작용하여 신체적·정신적 질병을 치유하는 건강 트렌드예요.",
+        "properNounIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "english": "As a child, Claudia spent hours on end with her pony.",
+        "korean": "어린 시절 클로디아는 조랑말과 몇 시간이고 보냈어요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Phrases like 'hours on end' mean hours doing something continuously, without stopping.",
+        "korean": "/ 'hours on end' 같은 표현은 쉬지 않고 계속 몇 시간이라는 뜻이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "It will take maybe a few sessions for a relationship of trust to be formed, and it's quite extraordinary to see a child that's experienced a lot of trauma.",
+        "korean": "신뢰 관계가 형성되려면 몇 번의 세션이 걸릴 거예요. 많은 트라우마를 겪은 아이를 보는 것은 정말 놀라워요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '(아동이) 지방자치단체의 보호를 받는' mean in English?",
+      "options": [
+        "in care",
+        "umbrella term",
+        "bond of trust",
+        "puberty"
+      ],
+      "answer": 0
+    }
+  }
+]

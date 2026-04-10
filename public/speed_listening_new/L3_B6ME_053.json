@@ -1,0 +1,47 @@
+[
+  {
+    "setId": "L3_B6ME_053_set1",
+    "parentSetId": "L3_B6ME_053",
+    "theme": "How Do You Say Sorry?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "In English there are many ways to apologise.",
+        "korean": "영어에는 사과하는 방법이 많아요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "In formal situations you could say, 'Please forgive me,' while to a friend you might say, 'My bad.'",
+        "korean": "격식 상황에서는 '용서해주세요', 친구에게는 '내 실수야(My bad)'라고 할 수 있어요.",
+        "properNounIndices": [
+          6,
+          16
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I had to apologise this morning because I stepped on someone's toes on the tube.",
+        "korean": "오늘 아침에 지하철에서 누군가의 발가락을 밟아서 사과해야 했어요.",
+        "properNounIndices": [
+          0,
+          7
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "How Do You Say Sorry?",
+        "Learning a new food culture",
+        "How Can We Help Wild Bees?",
+        "How Are Influencers Affecting Politics?"
+      ],
+      "answer": 0
+    }
+  }
+]

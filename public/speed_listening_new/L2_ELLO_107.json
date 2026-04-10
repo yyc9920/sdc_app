@@ -1,0 +1,58 @@
+[
+  {
+    "setId": "L2_ELLO_107_set1",
+    "parentSetId": "L2_ELLO_107",
+    "theme": "Mixer #38 — Regrets",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My biggest regret is not studying abroad when I had the chance in college.",
+        "korean": "가장 큰 후회는 대학 때 기회가 있었는데 유학을 안 간 거예요.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I regret not learning to play an instrument when I was young.",
+        "korean": "어렸을 때 악기를 배우지 않은 게 후회돼요.",
+        "properNounIndices": [
+          0,
+          9
+        ]
+      },
+      {
+        "id": 2,
+        "english": "It's much harder to start as an adult.",
+        "korean": "어른이 되어 시작하기가 훨씬 어려워요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I try not to have regrets, because every experience teaches you something.",
+        "korean": "후회하지 않으려 해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Even mistakes help you grow.",
+        "korean": "모든 경험이 뭔가를 가르쳐주니까요. 실수도 성장에 도움이 돼요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #17 — Introductions",
+        "Mixer #38 — Regrets",
+        "Mixer #8 — Queuing",
+        "Mixer #97 — Guilty Pleasure"
+      ],
+      "answer": 1
+    }
+  }
+]

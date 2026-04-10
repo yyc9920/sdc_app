@@ -1,0 +1,96 @@
+[
+  {
+    "setId": "L1_SPK_032_set1",
+    "parentSetId": "L1_SPK_032",
+    "theme": "A Celebration You Enjoyed",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Describe a celebration or event you attended that was enjoyable.",
+        "korean": "즐거웠던 축하 행사나 이벤트를 묘사하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain what made it special.",
+        "korean": "무엇이 특별하게 만들었는지 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The most enjoyable celebration I attended was my best friend's surprise birthday party last year.",
+        "korean": "내가 참석한 가장 즐거운 축하는 작년 가장 친한 친구의 깜짝 생일 파티였어요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 3,
+        "english": "About twenty of us gathered at a rooftop restaurant and decorated it with fairy lights and balloons before she arrived.",
+        "korean": "약 20명이 옥상 레스토랑에 모여 그녀가 도착하기 전에 조명과 풍선으로 장식했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "When she walked in and saw everyone she was so shocked that she burst into tears of joy.",
+        "korean": "들어와서 모두를 봤을 때 너무 놀라서 기쁨의 눈물을 터뜨렸어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Cash vs. Digital Payment",
+        "A Celebration You Enjoyed",
+        "A Hobby You Want to Start",
+        "Homework — Necessary or Not"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L1_SPK_032_set2",
+    "parentSetId": "L1_SPK_032",
+    "theme": "A Celebration You Enjoyed",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "What made it special was the sense of community — everyone contributed something whether it was food music or decorations.",
+        "korean": "특별하게 만든 것은 공동체 의식이었어요 — 음식이든 음악이든 장식이든 모두가 기여했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "It reminded me that the best celebrations aren't about expensive venues — they're about the people you share them with.",
+        "korean": "최고의 축하는 비싼 장소가 아니라 함께하는 사람이라는 것을 상기시켜줬어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "burst into tears",
+        "korean": "눈물을 터뜨리다",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "sense of community",
+        "korean": "공동체 의식",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Cooking as a Life Skill",
+        "A Celebration You Enjoyed",
+        "Your Ideal Weekend",
+        "Impact of AI on Jobs"
+      ],
+      "answer": 1
+    }
+  }
+]

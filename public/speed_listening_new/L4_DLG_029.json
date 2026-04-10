@@ -1,0 +1,72 @@
+[
+  {
+    "setId": "L4_DLG_029_set1",
+    "parentSetId": "L4_DLG_029",
+    "theme": "Discussing a Merger",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The board has approved moving forward with the acquisition of TechNova.",
+        "korean": "이사회가 테크노바 인수를 진행하기로 승인했습니다.",
+        "properNounIndices": [
+          10
+        ]
+      },
+      {
+        "id": 1,
+        "english": "What's the timeline for completing the deal?",
+        "korean": "거래 완료 일정이 어떻게 되나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "We're targeting Q3 pending regulatory approval and due diligence.",
+        "korean": "규제 승인과 실사를 거쳐 3분기를 목표로 하고 있습니다.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 3,
+        "english": "How will this affect our existing team structure?",
+        "korean": "기존 팀 구조에 어떤 영향이 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "There will be some overlap in engineering and sales so we'll need to work through a restructuring plan carefully.",
+        "korean": "엔지니어링과 영업에 중복이 있어서 구조조정 계획을 신중하게 마련해야 합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Retaining key talent from TechNova should be our top priority.",
+        "korean": "테크노바의 핵심 인재를 유지하는 것이 최우선 과제여야 합니다.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Agreed. I've already asked HR to prepare retention packages for their senior engineers.",
+        "korean": "동의합니다. 이미 인사팀에 시니어 엔지니어를 위한 잔류 패키지를 준비하라고 했습니다.",
+        "properNounIndices": [
+          1,
+          4
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '인수' mean in English?",
+      "options": [
+        "restructuring",
+        "due diligence",
+        "acquisition",
+        "retention package"
+      ],
+      "answer": 2
+    }
+  }
+]

@@ -3,61 +3,52 @@
     "setId": "L3_EXT_006_set1",
     "parentSetId": "L3_EXT_006",
     "theme": "University Debate",
-    "level": 6,
+    "level": 4,
     "setNumber": 1,
     "sentences": [
       {
         "id": 0,
-        "english": "Today's motion is: \"All public universities should be tuition-free.\" Let's hear from both sides. Alex, you're arguing in favor. Go ahead.",
-        "korean": "오늘의 주제는 '모든 공립대학은 등록금 무료여야 한다'입니다. 양측의 의견을 들어봅시다.",
+        "english": "Today's motion is: \"All public universities should be tuition-free.\" Let's hear from both sides.",
+        "korean": "오늘의 주제는 '모든 공립대학은 등록금 무료여야 한다'입니다.",
         "properNounIndices": [
           3,
-          9,
-          14,
-          19
+          9
         ]
       },
       {
         "id": 1,
-        "english": "Thank you. The case for free college is fundamentally about equity. Right now, the cost of higher education creates a two-tier system.",
-        "korean": "감사합니다. 무료 대학의 논거는 근본적으로 형평성에 관한 것입니다.",
-        "properNounIndices": [
-          2,
-          11
-        ]
+        "english": "Alex, you're arguing in favor.",
+        "korean": "양측의 의견을 들어봅시다.",
+        "properNounIndices": []
       },
       {
         "id": 2,
-        "english": "Students from wealthy families can attend the best universities without worrying about debt, while students from low-income backgrounds either take on crushing loans or skip college altogether.",
-        "korean": "부유한 가정의 학생들은 빚 걱정 없이 최고의 대학에 다닐 수 있습니다.",
+        "english": "Go ahead.",
+        "korean": "양측의 의견을 들어봅시다",
         "properNounIndices": []
       },
       {
         "id": 3,
-        "english": "A tuition-free system would level the playing field and ensure that talent — not wealth — determines who gets educated. There's also an economic argument.",
-        "korean": "등록금 무료 시스템은 공평한 경쟁의 장을 만들어 재산이 아닌 재능이 교육받을 사람을 결정하게 할 것입니다.",
+        "english": "Thank you. The case for free college is fundamentally about equity.",
+        "korean": "감사합니다. 무료 대학의 논거는 근본적으로 형평성에 관한 것입니다.",
         "properNounIndices": [
-          20
+          2
         ]
       },
       {
         "id": 4,
-        "english": "Countries like Germany and Norway offer free university education, and their economies are among the strongest in Europe.",
-        "korean": "독일과 노르웨이 같은 나라들은 무료 대학 교육을 제공하며, 유럽에서 가장 강한 경제국에 속합니다.",
-        "properNounIndices": [
-          2,
-          4,
-          17
-        ]
+        "english": "Right now, the cost of higher education creates a two-tier system.",
+        "korean": "근본적으로 형평성에 관한 것입니다",
+        "properNounIndices": []
       }
     ],
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Emergency Broadcast",
-        "Investigative Journalism — Corporate Whistleblowing",
+        "My Morning",
+        "My Weekend Morning",
         "University Debate",
-        "Long-Form Journalism — The Ethics of Gene Editing"
+        "Cleaning My Room"
       ],
       "answer": 2
     }
@@ -71,14 +62,65 @@
     "sentences": [
       {
         "id": 5,
-        "english": "An educated workforce drives innovation, increases productivity, and generates higher tax revenue in the long run. Free college isn't a cost — it's an investment.",
-        "korean": "교육받은 노동력은 혁신을 이끌고, 생산성을 높이며, 장기적으로 더 높은 세수를 창출합니다.",
-        "properNounIndices": [
-          16
-        ]
+        "english": "Students from wealthy families can attend the best universities without worrying about debt, while students from low-income backgrounds either take on crushing loans or skip college altogether.",
+        "korean": "부유한 가정의 학생들은 빚 걱정 없이 최고의 대학에 다닐 수 있습니다.",
+        "properNounIndices": []
       },
       {
         "id": 6,
+        "english": "A tuition-free system would level the playing field and ensure that talent — not wealth — determines who gets educated.",
+        "korean": "등록금 무료 시스템은 공평한 경쟁의 장을 만들어 재산이 아닌 재능이 교육받을 사람을 결정하게 할 것입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "There's also an economic argument.",
+        "korean": "재산이 아닌 재능이 교육받을 사람을 결정하게 할 것입니다",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Countries like Germany and Norway offer free university education, and their economies are among the strongest in Europe.",
+        "korean": "독일과 노르웨이 같은 나라들은 무료 대학 교육을 제공하며, 유럽에서 가장 강한 경제국에 속합니다.",
+        "properNounIndices": [
+          2,
+          4,
+          17
+        ]
+      },
+      {
+        "id": 9,
+        "english": "An educated workforce drives innovation, increases productivity, and generates higher tax revenue in the long run.",
+        "korean": "교육받은 노동력은 혁신을 이끌고, 생산성을 높이며, 장기적으로 더 높은 세수를 창출합니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Taking the Subway",
+        "Why Introverts Succeed in Business",
+        "My Morning Coffee Routine",
+        "University Debate"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L3_EXT_006_set3",
+    "parentSetId": "L3_EXT_006",
+    "theme": "University Debate",
+    "level": 4,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "Free college isn't a cost — it's an investment.",
+        "korean": "생산성을 높이고 장기적으로 더 높은 세수를 창출합니다",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
         "english": "Thank you, Alex. Now, Maria, the opposing argument.",
         "korean": "감사합니다, 알렉스. 이제 마리아, 반대 의견을 들어봅시다.",
         "properNounIndices": [
@@ -88,81 +130,114 @@
         ]
       },
       {
-        "id": 7,
-        "english": "I appreciate Alex's passion, but the reality is more complicated. First, \"free\" is misleading. Someone has to pay, and that someone is the taxpayer.",
-        "korean": "알렉스의 열정은 인정하지만 현실은 더 복잡해요. 우선 '무료'라는 말이 오해의 소지가 있어요. 누군가는 내야 하거든요.",
+        "id": 12,
+        "english": "I appreciate Alex's passion, but the reality is more complicated.",
+        "korean": "알렉스의 열정은 인정하지만 현실은 더 복잡해요.",
         "properNounIndices": [
           0,
-          2,
-          10,
-          14
+          2
         ]
       },
       {
-        "id": 8,
-        "english": "Making college tuition-free would require either massive tax increases or significant cuts to other public services — healthcare, infrastructure, defense.",
-        "korean": "대학 등록금을 무료로 하려면 대규모 세금 인상이나 다른 공공 서비스의 상당한 삭감이 필요합니다.",
+        "id": 13,
+        "english": "First, \"free\" is misleading.",
+        "korean": "우선 '무료'라는 말이 오해의 소지가 있어요.",
         "properNounIndices": []
       },
       {
-        "id": 9,
-        "english": "Second, not everyone needs or wants a four-year degree.",
-        "korean": "둘째, 모든 사람이 4년제 학위를 필요로 하거나 원하는 건 아닙니다.",
+        "id": 14,
+        "english": "Someone has to pay, and that someone is the taxpayer.",
+        "korean": "누군가는 내야 하거든요.",
         "properNounIndices": []
       }
     ],
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "University Debate",
-        "Podcast Discussion — Work-Life Balance",
-        "Emergency Broadcast",
-        "Checking Into a Hotel"
+        "Digital Detox",
+        "At the Park",
+        "Why Sleep Deprivation Is Dangerous",
+        "University Debate"
       ],
-      "answer": 0
+      "answer": 3
     }
   },
   {
-    "setId": "L3_EXT_006_set3",
+    "setId": "L3_EXT_006_set4",
     "parentSetId": "L3_EXT_006",
     "theme": "University Debate",
     "level": 6,
-    "setNumber": 3,
+    "setNumber": 4,
     "sentences": [
       {
-        "id": 10,
+        "id": 15,
+        "english": "Making college tuition-free would require either massive tax increases or significant cuts to other public services — healthcare, infrastructure, defense.",
+        "korean": "대학 등록금을 무료로 하려면 대규모 세금 인상이나 다른 공공 서비스의 상당한 삭감이 필요합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 16,
+        "english": "Second, not everyone needs or wants a four-year degree.",
+        "korean": "둘째, 모든 사람이 4년제 학위를 필요로 하거나 원하는 건 아닙니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
         "english": "Subsidizing university education for all effectively transfers wealth from working-class taxpayers — many of whom didn't attend college — to middle and upper-class students who are statistically more likely to enroll.",
         "korean": "모든 이를 위한 대학 교육 보조금은 사실상 대학에 가지 않은 노동자 계층 납세자의 부를 이전시키는 것입니다.",
         "properNounIndices": []
       },
       {
-        "id": 11,
+        "id": 18,
         "english": "That's regressive, not progressive.",
         "korean": "그건 역진적이지, 진보적인 게 아닙니다.",
         "properNounIndices": []
       },
       {
-        "id": 12,
+        "id": 19,
         "english": "A better approach would be targeted financial aid: generous scholarships and grants for low-income students, combined with more investment in vocational training and community colleges.",
         "korean": "더 나은 접근법은 저소득 학생을 위한 넉넉한 장학금과 보조금 같은 대상 맞춤형 재정 지원입니다.",
         "properNounIndices": []
-      },
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Going Camping",
+        "Calling in Sick",
+        "Digital Detox",
+        "University Debate"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L3_EXT_006_set5",
+    "parentSetId": "L3_EXT_006",
+    "theme": "University Debate",
+    "level": 5,
+    "setNumber": 5,
+    "sentences": [
       {
-        "id": 13,
+        "id": 20,
         "english": "That way, we help the people who actually need it without creating a blank check for everyone.",
         "korean": "그렇게 하면 모든 사람에게 백지수표를 써주지 않고 실제로 필요한 사람들을 도울 수 있어요.",
         "properNounIndices": []
       },
       {
-        "id": 14,
-        "english": "Strong arguments from both sides. Alex, a brief rebuttal?",
-        "korean": "양측 모두 강력한 주장이었습니다. 알렉스, 간단한 반론은?",
-        "properNounIndices": [
-          5
-        ]
+        "id": 21,
+        "english": "Strong arguments from both sides.",
+        "korean": "양측 모두 강력한 주장이었습니다.",
+        "properNounIndices": []
       },
       {
-        "id": 15,
+        "id": 22,
+        "english": "Alex, a brief rebuttal?",
+        "korean": "알렉스, 간단한 반론은?",
+        "properNounIndices": []
+      },
+      {
+        "id": 23,
         "english": "Maria raises valid concerns about funding, but I'd point out that universal programs tend to generate broader public support than means-tested ones.",
         "korean": "마리아가 재원에 대해 타당한 우려를 제기했지만, 보편적 프로그램이 더 넓은 대중의 지지를 얻는 경향이 있다고 지적하겠습니다.",
         "properNounIndices": [
@@ -170,24 +245,29 @@
         ]
       },
       {
-        "id": 16,
-        "english": "Social Security works precisely because everyone benefits. A universal tuition-free policy would be harder to defund politically.",
+        "id": 24,
+        "english": "Social Security works precisely because everyone benefits.",
         "korean": "사회보장제도가 작동하는 이유가 바로 모든 사람이 혜택을 받기 때문입니다.",
         "properNounIndices": [
-          1,
-          7
+          1
         ]
+      },
+      {
+        "id": 25,
+        "english": "A universal tuition-free policy would be harder to defund politically.",
+        "korean": "정확히 모든 사람이 혜택을 받기 때문이에요",
+        "properNounIndices": []
       }
     ],
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Geopolitics Analysis — The Thucydides Trap",
-        "At the Coffee Shop",
+        "Learning to Ride a Bike",
         "University Debate",
-        "At the Post Office"
+        "Digital Detox",
+        "The Paradox of Choice"
       ],
-      "answer": 2
+      "answer": 1
     }
   }
 ]

@@ -1,0 +1,98 @@
+[
+  {
+    "setId": "L2_DLG_018_set1",
+    "parentSetId": "L2_DLG_018",
+    "theme": "At the Dry Cleaner",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'd like to have these shirts cleaned and pressed.",
+        "korean": "이 셔츠들 세탁하고 다려주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "How many shirts?",
+        "korean": "몇 벌인가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Three white shirts and one suit jacket.",
+        "korean": "흰 셔츠 세 벌과 정장 재킷 하나요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "The shirts are four dollars each and the jacket is twelve.",
+        "korean": "셔츠는 벌당 4달러이고 재킷은 12달러예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "When can I pick them up?",
+        "korean": "언제 찾으러 올 수 있나요?",
+        "properNounIndices": [
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '세탁소' mean in English?",
+      "options": [
+        "pick up",
+        "pressed",
+        "in a rush",
+        "dry cleaner"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L2_DLG_018_set2",
+    "parentSetId": "L2_DLG_018",
+    "theme": "At the Dry Cleaner",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "They'll be ready the day after tomorrow.",
+        "korean": "모레 준비됩니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Is there an express option?",
+        "korean": "급행 옵션이 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Yes we can have them ready by tomorrow evening for an extra five dollars.",
+        "korean": "네 5달러 추가하면 내일 저녁까지 준비해드릴 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Regular is fine. I'm not in a rush.",
+        "korean": "일반으로 괜찮아요. 급하지 않아요.",
+        "properNounIndices": [
+          3
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '급한' mean in English?",
+      "options": [
+        "in a rush",
+        "pick up",
+        "dry cleaner",
+        "pressed"
+      ],
+      "answer": 0
+    }
+  }
+]

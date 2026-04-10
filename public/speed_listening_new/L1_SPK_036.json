@@ -1,0 +1,76 @@
+[
+  {
+    "setId": "L1_SPK_036_set1",
+    "parentSetId": "L1_SPK_036",
+    "theme": "Learning from Failure",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you agree that people learn more from their failures than from their successes?",
+        "korean": "실패에서 성공보다 더 많이 배운다는 데 동의합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain why or why not.",
+        "korean": "이유를 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I strongly agree that people learn more from failure than from success.",
+        "korean": "실패에서 성공보다 더 많이 배운다는 데 강하게 동의해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "When we succeed we rarely stop to analyze what went right — we just enjoy the result.",
+        "korean": "성공하면 무엇이 잘됐는지 거의 분석하지 않아요 — 그냥 결과를 즐겨요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "But when we fail we're forced to examine our mistakes and figure out what went wrong.",
+        "korean": "하지만 실패하면 실수를 검토하고 무엇이 잘못됐는지 파악할 수밖에 없어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "For example I failed my driving test the first time because I didn't check my mirrors properly.",
+        "korean": "예를 들어 첫 운전 시험에 떨어졌는데 거울을 제대로 확인하지 않아서였어요.",
+        "properNounIndices": [
+          2,
+          11
+        ]
+      },
+      {
+        "id": 6,
+        "english": "That failure made me such a careful driver that I haven't had a single accident in ten years.",
+        "korean": "그 실패가 나를 10년간 사고 한 번 없는 조심스러운 운전자로 만들었어요.",
+        "properNounIndices": [
+          9
+        ]
+      },
+      {
+        "id": 7,
+        "english": "figure out",
+        "korean": "파악하다/알아내다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Do you think art and music education should be req",
+        "Learning from Failure",
+        "Children and Mobile Phones",
+        "Living with a Roommate vs. Living Alone"
+      ],
+      "answer": 1
+    }
+  }
+]

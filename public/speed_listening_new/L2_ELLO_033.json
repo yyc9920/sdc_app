@@ -1,0 +1,66 @@
+[
+  {
+    "setId": "L2_ELLO_033_set1",
+    "parentSetId": "L2_ELLO_033",
+    "theme": "Mixer #113 — Learning a Language",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The hardest part of learning a language is speaking with confidence.",
+        "korean": "언어 학습에서 가장 어려운 부분은 자신감 있게 말하는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I always worry about making mistakes.",
+        "korean": "항상 실수할까 봐 걱정해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "For me, it's vocabulary.",
+        "korean": "나에겐 어휘예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "There are so many words to remember, and I keep forgetting them.",
+        "korean": "기억해야 할 단어가 너무 많고 자꾸 잊어버려요.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I think listening is the toughest, because native speakers talk so fast.",
+        "korean": "듣기가 가장 어렵다고 생각해요, 원어민이 너무 빨리 말해서요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "english": "I can read it fine, but I can't understand when people talk.",
+        "korean": "읽으면 괜찮은데 사람들이 말할 때 이해를 못 해요.",
+        "properNounIndices": [
+          0,
+          6
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #113 — Learning a Language",
+        "Mixer #47 — Bucket List Travel",
+        "Mixer #14 — Hanging Out",
+        "Mixer #10 — Giving Directions"
+      ],
+      "answer": 0
+    }
+  }
+]

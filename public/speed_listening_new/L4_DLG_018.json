@@ -1,0 +1,79 @@
+[
+  {
+    "setId": "L4_DLG_018_set1",
+    "parentSetId": "L4_DLG_018",
+    "theme": "Resolving a Billing Error",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I noticed an incorrect charge on my latest invoice.",
+        "korean": "최근 청구서에 잘못된 청구를 발견했어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I apologize for the inconvenience.",
+        "korean": "불편을 드려 죄송합니다.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Can you tell me which charge you're referring to?",
+        "korean": "어떤 청구를 말씀하시는 건지 알려주시겠어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "There's a charge of four hundred and ninety-nine dollars for a premium subscription that I never signed up for.",
+        "korean": "가입한 적 없는 프리미엄 구독에 대해 499달러가 청구되어 있어요.",
+        "properNounIndices": [
+          14
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Let me pull up your account.",
+        "korean": "계정을 확인해볼게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "I can see the charge here and it does look like a system error on our end.",
+        "korean": "청구가 보이는데 저희 쪽 시스템 오류인 것 같아요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 6,
+        "english": "How long will the refund take?",
+        "korean": "환불이 얼마나 걸리나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "It will be processed within three to five business days and I'm adding a ten percent discount on your next invoice as well.",
+        "korean": "영업일 기준 3~5일 내 처리되고 다음 청구서에 10% 할인도 적용해드리겠습니다.",
+        "properNounIndices": [
+          11
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '시스템 오류' mean in English?",
+      "options": [
+        "invoice",
+        "subscription",
+        "system error",
+        "incorrect charge"
+      ],
+      "answer": 2
+    }
+  }
+]

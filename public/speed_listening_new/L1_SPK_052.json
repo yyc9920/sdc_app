@@ -1,0 +1,98 @@
+[
+  {
+    "setId": "L1_SPK_052_set1",
+    "parentSetId": "L1_SPK_052",
+    "theme": "Experience vs. Possessions",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think spending money on experiences is better than spending money on material possessions?",
+        "korean": "경험에 돈을 쓰는 것이 물질적 소유보다 낫다고 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain why.",
+        "korean": "이유를 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I strongly believe that spending money on experiences is more valuable than buying material things.",
+        "korean": "경험에 돈을 쓰는 것이 물질적인 것을 사는 것보다 더 가치 있다고 강하게 믿어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "First the happiness from buying a new phone or bag fades quickly but memories from a trip or concert last a lifetime.",
+        "korean": "첫째 새 폰이나 가방에서 오는 행복은 빨리 사라지지만 여행이나 콘서트의 추억은 평생 남아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Second experiences often involve other people which strengthens relationships.",
+        "korean": "둘째 경험에는 종종 다른 사람이 관여해서 관계를 강화해요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Experience vs. Possessions",
+        "What Makes a Good Leader",
+        "Pets and Responsibility",
+        "Saving Money vs. Enjoying Life Now"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L1_SPK_052_set2",
+    "parentSetId": "L1_SPK_052",
+    "theme": "Experience vs. Possessions",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Nobody reminisces about a handbag they bought ten years ago but everyone remembers the trip they took with their best friend.",
+        "korean": "10년 전에 산 핸드백을 추억하는 사람은 없지만 가장 친한 친구와 한 여행은 모두 기억해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "That's why I always choose to invest in experiences over things.",
+        "korean": "그래서 항상 물건보다 경험에 투자하는 것을 선택해요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 7,
+        "english": "reminisce about",
+        "korean": "추억하다",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "invest in",
+        "korean": "~에 투자하다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Experience vs. Possessions",
+        "Physical Stores vs. Online Shopping",
+        "Studying Alone vs. Studying in a Group",
+        "Attending a Large vs. Small School"
+      ],
+      "answer": 0
+    }
+  }
+]

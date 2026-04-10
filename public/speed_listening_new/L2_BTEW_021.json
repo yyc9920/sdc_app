@@ -1,0 +1,66 @@
+[
+  {
+    "setId": "L2_BTEW_021_set1",
+    "parentSetId": "L2_BTEW_021",
+    "theme": "Go Through a Rough Patch",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I've got a friend who's going through a bit of a rough patch.",
+        "korean": "친구가 힘든 시기를 겪고 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "He's feeling quite down, so I rang him for a chat to see if I could cheer him up.",
+        "korean": "꽤 우울해해서 기운을 북돋워줄 수 있을지 전화를 걸었어요.",
+        "properNounIndices": [
+          5,
+          14
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Imagine you're driving along a smooth road, and then you hit a rough patch of road — it gets bumpy, uncomfortable.",
+        "korean": "매끄러운 길을 운전하다 울퉁불퉁한 구간을 만나면 불편해지죠.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "A rough patch is when something in your life does that.",
+        "korean": "러프 패치는 삶에서 그런 일이 일어날 때예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "go through a rough patch",
+        "korean": "(관용구) 힘든 시기를 겪다",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "cheer someone up",
+        "korean": "기운을 북돋우다",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "feeling down",
+        "korean": "우울한, 기분이 안 좋은",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Facepalm Moment",
+        "Throw one's toys out the pram",
+        "Short-Change",
+        "Go Through a Rough Patch"
+      ],
+      "answer": 3
+    }
+  }
+]

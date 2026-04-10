@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L3_B6ME_050_set1",
+    "parentSetId": "L3_B6ME_050",
+    "theme": "What Is Degrowth?",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Some people think that to deal with climate change, we can't just rely on individuals.",
+        "korean": "일부 사람들은 기후 변화에 대처하려면 개인에게만 의존할 수 없고 경제 작동 방식 자체를 바꿔야 한다고 생각해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "We need to actually change the way our economy works.",
+        "korean": "이것이 '디그로우쓰'라는 아이디어예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "And this is an idea called degrowth.",
+        "korean": "그리고 이것은 탈성장이라는 아이디어예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "World leaders promised in 2015 to limit global temperature rises.",
+        "korean": "세계 지도자들은 2015년에 지구 온도 상승을 제한하겠다고 약속했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "But how much did they say temperatures should be limited to?",
+        "korean": "얼마로 제한하겠다고 했을까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "The answer is 1.5 degrees Celsius.",
+        "korean": "정답은 1.5도예요.",
+        "properNounIndices": [
+          5
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '배출량 (특히 온실가스)' mean in English?",
+      "options": [
+        "sustainable",
+        "emissions",
+        "degrowth",
+        "GDP (Gross Domestic Product)"
+      ],
+      "answer": 1
+    }
+  }
+]

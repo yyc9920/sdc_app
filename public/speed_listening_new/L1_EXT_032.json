@@ -1,0 +1,58 @@
+[
+  {
+    "setId": "L1_EXT_032_set1",
+    "parentSetId": "L1_EXT_032",
+    "theme": "Cooking with Mom",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Yesterday I helped my mom cook dinner.",
+        "korean": "어제 엄마의 저녁 요리를 도와드렸어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "We made kimchi jjigae together.",
+        "korean": "같이 김치찌개를 만들었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I washed the vegetables and cut the tofu.",
+        "korean": "야채를 씻고 두부를 잘랐어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Mom did the hard part — she made the broth and seasoned everything.",
+        "korean": "엄마가 어려운 부분을 했어요 — 육수를 만들고 양념을 했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "It tasted delicious and I felt proud that I helped.",
+        "korean": "맛있었고 도와드린 게 자랑스러웠어요.",
+        "properNounIndices": [
+          4,
+          8
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '자랑스러운' mean in English?",
+      "options": [
+        "proud",
+        "jjigae",
+        "tofu",
+        "broth"
+      ],
+      "answer": 0
+    }
+  }
+]

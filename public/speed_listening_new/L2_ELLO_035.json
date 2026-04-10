@@ -1,0 +1,71 @@
+[
+  {
+    "setId": "L2_ELLO_035_set1",
+    "parentSetId": "L2_ELLO_035",
+    "theme": "Mixer #111 — Embarrassing Moment",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I once called my teacher 'Mom' in front of the whole class.",
+        "korean": "한번 반 전체 앞에서 선생님을 '엄마'라고 불렀어요.",
+        "properNounIndices": [
+          0,
+          5
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Everyone laughed and I turned bright red.",
+        "korean": "모두 웃었고 얼굴이 새빨개졌어요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I tripped and fell in front of my crush at school.",
+        "korean": "학교에서 짝사랑 앞에서 넘어졌어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I tried to play it cool but it was pretty obvious.",
+        "korean": "아무렇지 않은 척했지만 꽤 티가 났어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I accidentally sent a text about my boss to my boss.",
+        "korean": "실수로 상사에 대한 문자를 상사에게 보냈어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "english": "My heart dropped when I realized what I'd done.",
+        "korean": "뭘 했는지 깨달았을 때 심장이 철렁했어요.",
+        "properNounIndices": [
+          4,
+          7
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #50 — Fast Food",
+        "Mixer #111 — Embarrassing Moment",
+        "Mixer #75 — Favorite Holiday",
+        "Mixer #87 — Sharing Food"
+      ],
+      "answer": 1
+    }
+  }
+]

@@ -1,0 +1,105 @@
+[
+  {
+    "setId": "L3_B6ME_025_set1",
+    "parentSetId": "L3_B6ME_025",
+    "theme": "What English Phrases Really Mean",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "In English, what we say and what we mean are sometimes two very different things.",
+        "korean": "영어에서 우리가 말하는 것과 의미하는 것은 때때로 매우 달라요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "We often use exaggeration for emphasis or humour — something known as hyperbole.",
+        "korean": "강조나 유머를 위해 과장을 자주 사용하는데 이를 과장법(hyperbole)이라고 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Understatement is valued in British culture, unlike taking yourself too seriously.",
+        "korean": "영국 문화에서는 절제된 표현이 가치 있어요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 3,
+        "english": "If you take yourself too seriously, you think you're more important than you really are.",
+        "korean": "자신을 너무 진지하게 여기면 실제보다 더 중요하다고 생각하는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "In Britain, this is a no-no.",
+        "korean": "영국에서 이건 금기(no-no)예요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '(줄임말) 불쾌하거나 어려운 경험' mean in English?",
+      "options": [
+        "miffed",
+        "barney",
+        "mare (nightmare)",
+        "hyperbole"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L3_B6ME_025_set2",
+    "parentSetId": "L3_B6ME_025",
+    "theme": "What English Phrases Really Mean",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "People do say, 'Absolute nightmare!'",
+        "korean": "사람들은 실제로 '완전 악몽이야!'라고 말해요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 6,
+        "english": "When they say 'mare', which is shortened from 'nightmare', what it basically means is they've had a mild and potentially slightly humorous occurrence at work.",
+        "korean": "'mare'라고 할 때 — 'nightmare'의 줄임말인데 — 기본적으로 직장에서 가볍고 약간 웃긴 일이 있었다는 뜻이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "I'm actually a bit miffed about that.",
+        "korean": "사실 그것 때문에 좀 짜증나요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "The ancient Greek words 'huper' and 'ballo' meant a) to overthrow — huper means beyond, and ballo means I throw.",
+        "korean": "고대 그리스어 'huper'와 'ballo'의 뜻은 a) 뒤집어엎다예요 — huper는 '넘어서', ballo는 '던지다'라는 뜻이에요.",
+        "properNounIndices": [
+          2,
+          18
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '약간 짜증난, 기분이 상한' mean in English?",
+      "options": [
+        "hyperbole",
+        "mare (nightmare)",
+        "no-no",
+        "miffed"
+      ],
+      "answer": 3
+    }
+  }
+]

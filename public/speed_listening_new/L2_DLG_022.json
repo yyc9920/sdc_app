@@ -1,0 +1,100 @@
+[
+  {
+    "setId": "L2_DLG_022_set1",
+    "parentSetId": "L2_DLG_022",
+    "theme": "Planning a Weekend BBQ",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Let's have a barbecue this Sunday.",
+        "korean": "이번 일요일에 바비큐 해요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Sounds fun. Where?",
+        "korean": "재밌겠어요. 어디서요?",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "english": "At the park by the river.",
+        "korean": "강변 공원에서요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Who should we invite?",
+        "korean": "누구를 초대할까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I was thinking about ten people including us.",
+        "korean": "우리 포함 10명 정도 생각하고 있었어요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Planning a Weekend BBQ",
+        "Buying Glasses",
+        "Doctor Visit — Persistent Headache",
+        "Splitting the Bill"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_DLG_022_set2",
+    "parentSetId": "L2_DLG_022",
+    "theme": "Planning a Weekend BBQ",
+    "level": 3,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I'll bring a salad and some drinks.",
+        "korean": "내가 샐러드와 음료를 가져갈게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "I'll get the meat and charcoal.",
+        "korean": "내가 고기와 숯을 준비할게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "What time should everyone come?",
+        "korean": "다들 몇 시에 오면 돼요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Let's say noon.",
+        "korean": "12시라고 해요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Planning a Weekend BBQ",
+        "Startup — Investor Pitch",
+        "Wedding Planning — Venue Visit",
+        "Registering for a Conference"
+      ],
+      "answer": 0
+    }
+  }
+]

@@ -8,14 +8,20 @@
     "sentences": [
       {
         "id": 0,
-        "english": "I'm quite good at saving money. I think it's important to be disciplined about your finances.",
-        "korean": "저축을 꽤 잘하는 편이에요. 재정에 대해 규율 있는 게 중요하다고 생각해요.",
-        "properNounIndices": [
-          6
-        ]
+        "english": "I'm quite good at saving money.",
+        "korean": "저축을 꽤 잘하는 편이에요.",
+        "properNounIndices": []
       },
       {
         "id": 1,
+        "english": "I think it's important to be disciplined about your finances.",
+        "korean": "재정에 대해 규율 있는 게 중요하다고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
         "english": "I usually save money and only have one or two days a month where I let myself splurge — maybe buy something I want or go out and have fun without thinking about the cost.",
         "korean": "보통 저축하고 한 달에 하루나 이틀만 마음껏 써요 — 원하는 걸 사거나 비용 걱정 없이 놀러 가거나요.",
         "properNounIndices": [
@@ -25,68 +31,213 @@
         ]
       },
       {
-        "id": 2,
-        "english": "I wish I was better at saving. I tend to spend money as soon as I earn it. I have good intentions, but I don't follow through. I'd like to be more disciplined, but it's difficult for me to resist spending.",
-        "korean": "저축을 더 잘했으면 좋겠어요. 돈을 벌자마자 쓰는 경향이 있거든요.",
+        "id": 3,
+        "english": "I wish I was better at saving.",
+        "korean": "저축을 더 잘했으면 좋겠어요.",
         "properNounIndices": [
           0,
-          2,
-          7,
-          15,
-          18,
-          23,
-          27
-        ]
-      },
-      {
-        "id": 3,
-        "english": "I'm very good at saving. My family is actually envious of my ability to save money. I have a plan and stick to it. I enjoy the challenge of finding ways to save. I set aside money for different goals, and I'm pretty strategic about my spending.",
-        "korean": "저축을 아주 잘해요. 가족이 사실 제 저축 능력을 부러워할 정도예요.",
-        "properNounIndices": [
-          5,
-          16,
-          24,
-          33,
-          41
+          2
         ]
       },
       {
         "id": 4,
-        "english": "I'm terrible at saving. Money just burns a hole in my pocket. As soon as I have money, I want to spend it. I don't think I'm ever going to be good at saving. I just enjoy spending and living in the moment.",
-        "korean": "저축을 정말 못해요. 돈이 있으면 바로 쓰고 싶어져요. 주머니에 구멍이 난 것 같아요.",
+        "english": "I tend to spend money as soon as I earn it.",
+        "korean": "돈을 벌자마자 쓰는 경향이 있거든요.",
         "properNounIndices": [
-          4,
-          12,
-          15,
-          18,
-          23,
-          26,
-          34
-        ]
-      },
-      {
-        "id": 5,
-        "english": "I'm not good at saving. I spend faster than I earn. I spend a lot on services and beer. I know I should be more careful, but it's just my nature to enjoy things and spend money on the things I love.",
-        "korean": "저축을 못해요. 버는 것보다 빨리 써요. 서비스와 맥주에 많이 쓰거든요.",
-        "properNounIndices": [
-          5,
-          9,
-          11,
-          19,
-          21,
-          40
+          0,
+          8
         ]
       }
     ],
     "quiz": {
-      "question": "What does '헤프게 쓰다' mean in English?",
+      "question": "What does '자기 절제하는' mean in English?",
       "options": [
-        "envious",
         "stick to",
-        "splurge",
-        "strategic"
+        "resist",
+        "disciplined",
+        "envious"
       ],
       "answer": 2
+    }
+  },
+  {
+    "setId": "L2_ELLO_010_set2",
+    "parentSetId": "L2_ELLO_010",
+    "theme": "Mixer #22 — Saving Money",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I have good intentions, but I don't follow through.",
+        "korean": "좋은 의도는 있는데 실천을 못 해.",
+        "properNounIndices": [
+          0,
+          5
+        ]
+      },
+      {
+        "id": 6,
+        "english": "I'd like to be more disciplined, but it's difficult for me to resist spending.",
+        "korean": "돈을 벌자마자 쓰는 경향이 있어요",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "I'm very good at saving.",
+        "korean": "저축을 아주 잘해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "My family is actually envious of my ability to save money.",
+        "korean": "가족이 사실 제 저축 능력을 부러워할 정도예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "I have a plan and stick to it.",
+        "korean": "계획을 세우고 그걸 지켜.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '의도, 계획' mean in English?",
+      "options": [
+        "envious",
+        "intentions",
+        "strategic",
+        "splurge"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L2_ELLO_010_set3",
+    "parentSetId": "L2_ELLO_010",
+    "theme": "Mixer #22 — Saving Money",
+    "level": 5,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "I enjoy the challenge of finding ways to save.",
+        "korean": "가족이 사실",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 11,
+        "english": "I set aside money for different goals, and I'm pretty strategic about my spending.",
+        "korean": "제 저축 능력을 부러워해요",
+        "properNounIndices": [
+          0,
+          8
+        ]
+      },
+      {
+        "id": 12,
+        "english": "I'm terrible at saving.",
+        "korean": "저축을 정말 못해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
+        "english": "Money just burns a hole in my pocket.",
+        "korean": "돈이 있으면 바로 쓰고 싶어져요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "As soon as I have money, I want to spend it.",
+        "korean": "주머니에 구멍이 난 것 같아요.",
+        "properNounIndices": [
+          3,
+          6
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '저항하다, 참다' mean in English?",
+      "options": [
+        "intentions",
+        "burns a hole in my pocket",
+        "resist",
+        "set aside"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_ELLO_010_set4",
+    "parentSetId": "L2_ELLO_010",
+    "theme": "Mixer #22 — Saving Money",
+    "level": 5,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "I don't think I'm ever going to be good at saving.",
+        "korean": "돈이 생기자마자",
+        "properNounIndices": [
+          0,
+          3
+        ]
+      },
+      {
+        "id": 16,
+        "english": "I just enjoy spending and living in the moment.",
+        "korean": "쓰고 싶어져요",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 17,
+        "english": "I'm not good at saving.",
+        "korean": "저축을 못해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
+        "english": "I spend faster than I earn.",
+        "korean": "버는 것보다 빨리 써요.",
+        "properNounIndices": [
+          0,
+          4
+        ]
+      },
+      {
+        "id": 19,
+        "english": "I spend a lot on services and beer.",
+        "korean": "서비스와 맥주에 많이 쓰거든요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 20,
+        "english": "I know I should be more careful, but it's just my nature to enjoy things and spend money on the things I love.",
+        "korean": "서비스와 맥주에 많이 써요",
+        "properNounIndices": [
+          0,
+          2,
+          21
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '지키다, 따르다' mean in English?",
+      "options": [
+        "intentions",
+        "stick to",
+        "disciplined",
+        "resist"
+      ],
+      "answer": 1
     }
   }
 ]

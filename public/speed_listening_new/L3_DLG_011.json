@@ -1,0 +1,111 @@
+[
+  {
+    "setId": "L3_DLG_011_set1",
+    "parentSetId": "L3_DLG_011",
+    "theme": "Hotel Check-in — Room Issue",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Good evening, I have a reservation under the name Park for three nights.",
+        "korean": "좋은 저녁이에요. 파크 이름으로 3박 예약이 있어요.",
+        "properNounIndices": [
+          2,
+          9
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Welcome, Mr. Park. Let me pull up your reservation.",
+        "korean": "환영합니다, 파크 님. 예약을 확인해볼게요.",
+        "properNounIndices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I see you booked a standard double room, but unfortunately we're overbooked on that room type tonight.",
+        "korean": "스탠다드 더블룸을 예약하셨는데 안타깝게도 오늘 밤 그 객실 유형이 초과 예약되었어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "So what does that mean for me?",
+        "korean": "그러면 저는 어떻게 되나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "The good news is we can upgrade you to a deluxe suite at no extra cost, as an apology for the inconvenience.",
+        "korean": "좋은 소식은 불편에 대한 사과로 추가 비용 없이 디럭스 스위트로 업그레이드해드릴 수 있어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '업그레이드' mean in English?",
+      "options": [
+        "upgrade",
+        "key card",
+        "deluxe suite",
+        "inconvenience"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L3_DLG_011_set2",
+    "parentSetId": "L3_DLG_011",
+    "theme": "Hotel Check-in — Room Issue",
+    "level": 3,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Oh, that's actually great.",
+        "korean": "아, 그거 정말 좋네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Thank you.",
+        "korean": "감사합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Here's your key card.",
+        "korean": "키 카드 여기 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "You're in room 1205 on the twelfth floor.",
+        "korean": "12층 1205호이시고요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "The elevator is to your right, and breakfast is served from seven to ten AM.",
+        "korean": "엘리베이터는 오른쪽에 있고 조식은 7시부터 10시까지입니다.",
+        "properNounIndices": [
+          14
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '키 카드' mean in English?",
+      "options": [
+        "deluxe suite",
+        "key card",
+        "overbooked",
+        "inconvenience"
+      ],
+      "answer": 1
+    }
+  }
+]

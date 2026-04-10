@@ -1,0 +1,210 @@
+[
+  {
+    "setId": "L3_B6ME_018_set1",
+    "parentSetId": "L3_B6ME_018",
+    "theme": "Weight Loss Drugs",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Diet, exercise, and eating in moderation helps some people stay at a healthy weight.",
+        "korean": "식단, 운동, 적당히 먹기가 일부 사람들의 건강한 체중 유지에 도움이 되지만, 영국 성인의 약 65%가 과체중으로 추정되니 모두에게 통하지는 않아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "But with around 65% of British adults estimated to be overweight, that doesn't help everyone.",
+        "korean": "/ 하지만 영국 성인의 약 65%가 과체중으로 추정되는데, 모두에게 도움이 되지는 않는다.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Weight loss drugs like Ozempic and Mounjaro have been a hot topic this year.",
+        "korean": "오젬픽과 마운자로 같은 체중 감량 약물이 올해 뜨거운 주제였어요.",
+        "properNounIndices": [
+          4,
+          6
+        ]
+      },
+      {
+        "id": 3,
+        "english": "The drugs are modified versions of natural hormones which make us feel full when released into the body.",
+        "korean": "이 약물들은 몸에 분비되면 포만감을 느끼게 하는 천연 호르몬의 변형 버전이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Well, I don't get hungry, so food noise stops.",
+        "korean": "배고프지 않아서 음식에 대한 잡념이 멈춰요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '(관용구) 양심과 유혹 사이의 개인적 딜레마' mean in English?",
+      "options": [
+        "an angel on one shoulder and a devil on the other",
+        "food noise",
+        "into the ether",
+        "side effect"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L3_B6ME_018_set2",
+    "parentSetId": "L3_B6ME_018",
+    "theme": "Weight Loss Drugs",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "And all those scripts about yourself — that you're a bad person for eating.",
+        "korean": "먹는다고 나쁜 사람이라는 자기 판단 — 그런 게 다 허공 속으로 사라진 것 같아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "I feel like that judgment has drifted into the ether.",
+        "korean": "/ 그 판단이 사라진 것 같아요 허공 속으로.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 7,
+        "english": "For me, it was a conflict, like I'd got a devil and an angel on my shoulder.",
+        "korean": "저한테는 갈등이었어요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 8,
+        "english": "The angel saying you shouldn't eat that, and the devil saying, well you know you want to.",
+        "korean": "마치 어깨 위에 악마와 천사가 있는 것 같았죠. 천사는 그거 먹지 말라고 하고, 악마는 먹고 싶은 거 알잖아 하고요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Over many years, this inner conflict damaged Lynne's self-esteem, her belief and confidence in her own abilities.",
+        "korean": "수년간 이 내면의 갈등이 린의 자존감 — 자기 능력에 대한 믿음과 자신감을 손상시켰어요.",
+        "properNounIndices": [
+          7
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '시장에 나온 — 판매 가능한' mean in English?",
+      "options": [
+        "self-esteem",
+        "side effect",
+        "into the ether",
+        "on the market"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L3_B6ME_018_set3",
+    "parentSetId": "L3_B6ME_018",
+    "theme": "Weight Loss Drugs",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "Weight loss drugs weren't invented to lose weight at all.",
+        "korean": "체중 감량 약물은 원래 체중을 줄이려고 발명된 게 아니에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "They were originally designed for diabetes.",
+        "korean": "당뇨병을 위해 설계된 건데 나중에야 의사들이 체중에 대한 효과를 알아챘어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "It was only later that doctors noticed the drugs' effect on weight.",
+        "korean": "/ 나중에야 의사들이 알아챘다 약물의 효과를 체중에 대한.",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
+        "english": "We talk about Ozempic first because that was the first on the market for diabetes, and then people begin to notice, as a side effect, that people were losing weight.",
+        "korean": "오젬픽을 먼저 이야기하는데 당뇨병을 위해 처음 시장에 나왔거든요. 그러다 부작용으로 사람들이 체중이 줄고 있다는 걸 알아채기 시작했어요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 14,
+        "english": "Ozempic was the first drug on the market.",
+        "korean": "오젬픽이 처음 시장에 나온 약이에요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '시장에 나온 — 판매 가능한' mean in English?",
+      "options": [
+        "food noise",
+        "on the market",
+        "side effect",
+        "an angel on one shoulder and a devil on the other"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L3_B6ME_018_set4",
+    "parentSetId": "L3_B6ME_018",
+    "theme": "Weight Loss Drugs",
+    "level": 5,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "When something is on the market, it's available for sale.",
+        "korean": "on the market이란 판매 가능하다는 뜻이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 16,
+        "english": "Ozempic was designed for diabetes, but doctors noticed that patients lost weight as a side effect — an unexpected secondary effect of a drug.",
+        "korean": "오젬픽은 당뇨병용으로 설계됐지만, 의사들이 환자들의 체중이 줄었다는 걸 부작용으로 알아챘어요 — 약물의 예상치 못한 이차적 효과죠.",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "I asked what BMI stands for.",
+        "korean": "BMI가 무엇의 약자인지 물었는데 정답은 b) body mass index(체질량지수)예요.",
+        "properNounIndices": [
+          0,
+          3
+        ]
+      },
+      {
+        "id": 18,
+        "english": "The answer is b) body mass index.",
+        "korean": "/ 정답은 b) 체질량지수예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '시장에 나온 — 판매 가능한' mean in English?",
+      "options": [
+        "on the market",
+        "side effect",
+        "self-esteem",
+        "an angel on one shoulder and a devil on the other"
+      ],
+      "answer": 0
+    }
+  }
+]

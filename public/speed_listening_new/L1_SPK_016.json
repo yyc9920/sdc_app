@@ -1,0 +1,105 @@
+[
+  {
+    "setId": "L1_SPK_016_set1",
+    "parentSetId": "L1_SPK_016",
+    "theme": "Living with a Roommate vs. Living Alone",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you prefer living alone or living with a roommate?",
+        "korean": "혼자 사는 것과 룸메이트와 사는 것 중 어느 것을 선호합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Use specific reasons and examples to support your answer.",
+        "korean": "구체적인 이유와 예시로 답을 뒷받침하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I prefer living with a roommate rather than living alone.",
+        "korean": "혼자보다 룸메이트와 사는 것을 선호해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "First splitting rent and utility bills makes living much more affordable.",
+        "korean": "첫째 집세와 공과금을 나누면 생활이 훨씬 저렴해져요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "When I lived alone I spent almost sixty percent of my income on housing.",
+        "korean": "혼자 살 때 수입의 거의 60%를 주거비에 썼어요.",
+        "properNounIndices": [
+          1,
+          4
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Living with a Roommate vs. Living Alone",
+        "The Best Way to Learn a Language",
+        "Experience vs. Possessions",
+        "The Best Way to Relieve Stress"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L1_SPK_016_set2",
+    "parentSetId": "L1_SPK_016",
+    "theme": "Living with a Roommate vs. Living Alone",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Second having someone around prevents loneliness.",
+        "korean": "둘째 누군가 주변에 있으면 외로움을 방지해줘요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "After a tough day at work it's nice to come home and have someone to talk to.",
+        "korean": "힘든 하루 일과 후 집에 와서 대화할 사람이 있으면 좋아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Of course there are challenges like sharing space and coordinating schedules but the benefits far outweigh the drawbacks.",
+        "korean": "물론 공간 공유와 일정 조율 같은 어려움이 있지만 장점이 단점보다 훨씬 커요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "outweigh",
+        "korean": "~보다 크다/능가하다",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "drawback",
+        "korean": "단점",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Importance of Learning History",
+        "Living with a Roommate vs. Living Alone",
+        "A Hobby You Want to Start",
+        "Cooking as a Life Skill"
+      ],
+      "answer": 1
+    }
+  }
+]

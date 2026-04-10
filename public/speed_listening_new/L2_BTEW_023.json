@@ -1,0 +1,55 @@
+[
+  {
+    "setId": "L2_BTEW_023_set1",
+    "parentSetId": "L2_BTEW_023",
+    "theme": "A Big Ask",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Could I swap weeks with you and take next week off?",
+        "korean": "나랑 주를 바꿔서 다음 주에 쉴 수 있을까요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I know it's a big ask.",
+        "korean": "큰 부탁인 거 알아요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "A big ask is a request for something that you know will be difficult for the person that you are asking.",
+        "korean": "'a big ask'는 부탁하는 상대에게 어려울 것을 아는 요청이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "a big ask",
+        "korean": "큰 부탁, 무리한 요청",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "swap",
+        "korean": "교환하다, 바꾸다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Bide someone's time",
+        "A Big Ask",
+        "Got You",
+        "Makes my skin crawl"
+      ],
+      "answer": 1
+    }
+  }
+]

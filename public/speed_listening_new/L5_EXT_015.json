@@ -1,0 +1,45 @@
+[
+  {
+    "setId": "L5_EXT_015_set1",
+    "parentSetId": "L5_EXT_015",
+    "theme": "The Multiverse Hypothesis",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The idea that our universe may be just one of an infinite number of parallel universes has moved from science fiction into serious scientific discourse.",
+        "korean": "우리 우주가 무한한 수의 평행 우주 중 하나일 수 있다는 생각이 공상 과학에서 진지한 과학적 담론으로 옮겨왔다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "String theory one of the leading candidates for a theory of everything mathematically predicts the existence of up to ten to the power of five hundred possible universe configurations.",
+        "korean": "만물의 이론의 유력한 후보 중 하나인 끈 이론은 수학적으로 최대 10의 500제곱 가지 가능한 우주 배열의 존재를 예측한다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The philosophical implications are staggering — if every possible configuration exists then somewhere there is a version of you who made every different choice you didn't.",
+        "korean": "철학적 함의는 엄청나다 — 모든 가능한 배열이 존재한다면 어딘가에 당신이 하지 않은 모든 다른 선택을 한 당신의 버전이 있다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Critics counter that a hypothesis which by definition can never be empirically tested or falsified falls outside the boundaries of science and into the realm of metaphysics.",
+        "korean": "비판자들은 정의상 경험적으로 검증되거나 반증될 수 없는 가설은 과학의 경계 밖에 있으며 형이상학의 영역에 속한다고 반박한다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '함의/시사점' mean in English?",
+      "options": [
+        "configuration",
+        "empirically",
+        "string theory",
+        "implication"
+      ],
+      "answer": 3
+    }
+  }
+]

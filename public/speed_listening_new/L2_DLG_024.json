@@ -1,0 +1,104 @@
+[
+  {
+    "setId": "L2_DLG_024_set1",
+    "parentSetId": "L2_DLG_024",
+    "theme": "At the Eye Doctor",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I've been having trouble seeing things far away.",
+        "korean": "먼 곳에 있는 것이 잘 안 보여요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "How long has this been going on?",
+        "korean": "얼마나 됐나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "About two months.",
+        "korean": "약 두 달이요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Let's do an eye exam.",
+        "korean": "시력 검사를 해봅시다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Can you read the letters on the third line?",
+        "korean": "세 번째 줄의 글자를 읽을 수 있나요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '근시의' mean in English?",
+      "options": [
+        "blurry",
+        "contact lenses",
+        "nearsighted",
+        "eye exam"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_DLG_024_set2",
+    "parentSetId": "L2_DLG_024",
+    "theme": "At the Eye Doctor",
+    "level": 3,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I can see the first two but the rest are blurry.",
+        "korean": "처음 두 개는 보이는데 나머지는 흐려요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 6,
+        "english": "It looks like you're slightly nearsighted.",
+        "korean": "약간 근시인 것 같네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "I'd recommend getting glasses.",
+        "korean": "안경을 맞추시는 걸 추천해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Can I get contact lenses instead?",
+        "korean": "대신 콘택트렌즈를 할 수 있나요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 9,
+        "english": "Yes that's also an option.",
+        "korean": "네 그것도 가능해요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '콘택트렌즈' mean in English?",
+      "options": [
+        "blurry",
+        "eye exam",
+        "nearsighted",
+        "contact lenses"
+      ],
+      "answer": 3
+    }
+  }
+]

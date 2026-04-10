@@ -1,0 +1,70 @@
+[
+  {
+    "setId": "L2_ELLO_039_set1",
+    "parentSetId": "L2_ELLO_039",
+    "theme": "Mixer #107 — Online Shopping",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I do almost all my shopping online now.",
+        "korean": "이제 거의 모든 쇼핑을 온라인으로 해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "It's so much easier than going to the store.",
+        "korean": "가게에 가는 것보다 훨씬 쉬워요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I prefer going to the store, actually.",
+        "korean": "사실 가게에 가는 걸 선호해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I like to see and touch things before I buy them.",
+        "korean": "사기 전에 보고 만져보는 걸 좋아해요.",
+        "properNounIndices": [
+          0,
+          8
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I shop online too much, honestly.",
+        "korean": "솔직히 온라인 쇼핑을 너무 많이 해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "english": "I keep getting packages delivered and I can't even remember what I ordered.",
+        "korean": "택배가 계속 오는데 뭘 주문했는지도 기억이 안 나요.",
+        "properNounIndices": [
+          0,
+          6,
+          11
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #35 — Personality Type",
+        "Mixer #29 — Spending Time Alone",
+        "Mixer #107 — Online Shopping",
+        "Mixer #58 — Worst Job"
+      ],
+      "answer": 2
+    }
+  }
+]

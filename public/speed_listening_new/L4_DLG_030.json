@@ -1,0 +1,71 @@
+[
+  {
+    "setId": "L4_DLG_030_set1",
+    "parentSetId": "L4_DLG_030",
+    "theme": "Crisis Communication Meeting",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "We have a situation.",
+        "korean": "상황이 발생했습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "A customer has posted a viral video criticizing our product quality.",
+        "korean": "고객이 제품 품질을 비판하는 바이럴 영상을 올렸습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "How many views?",
+        "korean": "조회수가 얼마나 되나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Over two million in the last twelve hours and it's still climbing.",
+        "korean": "지난 12시간 동안 200만 이상이고 계속 오르고 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "We need to respond quickly and transparently.",
+        "korean": "빠르고 투명하게 대응해야 합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "What's the actual issue with the product?",
+        "korean": "제품의 실제 문제가 뭔가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Our QA team confirmed that a batch of units shipped last month had a defective seal which could cause leaking.",
+        "korean": "QA팀이 확인한 바로는 지난달 출하된 제품 중 일부에 누수를 유발할 수 있는 결함 있는 밀봉이 있었습니다.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Issue a voluntary recall on the affected batch and post a public apology acknowledging the problem and outlining our corrective actions.",
+        "korean": "해당 배치에 자발적 리콜을 실시하고 문제를 인정하고 시정 조치를 설명하는 공개 사과를 게시하세요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '결함이 있는' mean in English?",
+      "options": [
+        "transparently",
+        "corrective action",
+        "viral",
+        "defective"
+      ],
+      "answer": 3
+    }
+  }
+]

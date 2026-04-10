@@ -20,22 +20,20 @@
       },
       {
         "id": 2,
-        "english": "Here's a concrete example. Suppose someone believes strongly that a low-carb diet is the best approach for losing weight.",
-        "korean": "구체적인 예를 들어볼게요. 누군가 저탄수화물 식단이 체중 감량에 최선이라고 강하게 믿는다고 합시다.",
-        "properNounIndices": [
-          4
-        ]
+        "english": "Here's a concrete example.",
+        "korean": "구체적인 예를 들어볼게요.",
+        "properNounIndices": []
       },
       {
         "id": 3,
-        "english": "When they go online and read about diet research, they tend to click on articles that say 'low-carb diet proven effective' and skim past articles that challenge that idea.",
-        "korean": "온라인에서 식단 연구를 읽을 때, '저탄수 식단 효과 입증' 기사를 클릭하고 반박하는 기사는 대충 넘기는 경향이 있어요.",
+        "english": "Suppose someone believes strongly that a low-carb diet is the best approach for losing weight.",
+        "korean": "누군가 저탄수화물 식단이 체중 감량에 최선이라고 강하게 믿는다고 합시다.",
         "properNounIndices": []
       },
       {
         "id": 4,
-        "english": "Even when they encounter conflicting data, they might dismiss it as being funded by the wrong group or having flawed methodology.",
-        "korean": "상충하는 데이터를 만나도, 잘못된 단체의 후원이거나 방법론에 결함이 있다며 무시할 수 있어요.",
+        "english": "When they go online and read about diet research, they tend to click on articles that say 'low-carb diet proven effective' and skim past articles that challenge that idea.",
+        "korean": "온라인에서 식단 연구를 읽을 때, '저탄수 식단 효과 입증' 기사를 클릭하고 반박하는 기사는 대충 넘기는 경향이 있어요.",
         "properNounIndices": []
       }
     ],
@@ -43,11 +41,11 @@
       "question": "What is the main topic of this passage?",
       "options": [
         "Opportunity Cost",
-        "History and Politics",
-        "Confirmation Bias",
-        "Classical Conditioning"
+        "Food and Cooking",
+        "Classical Conditioning",
+        "Confirmation Bias"
       ],
-      "answer": 2
+      "answer": 3
     }
   },
   {
@@ -59,24 +57,30 @@
     "sentences": [
       {
         "id": 5,
+        "english": "Even when they encounter conflicting data, they might dismiss it as being funded by the wrong group or having flawed methodology.",
+        "korean": "상충하는 데이터를 만나도, 잘못된 단체의 후원이거나 방법론에 결함이 있다며 무시할 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
         "english": "They're not lying — they genuinely believe they're being rational — but they are selectively processing information.",
         "korean": "거짓말하는 게 아니에요 — 진심으로 합리적이라고 믿어요 — 하지만 정보를 선택적으로 처리하고 있는 거예요.",
         "properNounIndices": []
       },
       {
-        "id": 6,
+        "id": 7,
         "english": "The dangerous thing about confirmation bias is that it feels like rational thinking from the inside.",
         "korean": "확증 편향의 위험한 점은 내면에서 보면 합리적 사고처럼 느껴진다는 거예요.",
         "properNounIndices": []
       },
       {
-        "id": 7,
+        "id": 8,
         "english": "Understanding it is the first step toward counteracting it — for example, by actively seeking out the strongest counterarguments to your own views.",
         "korean": "이해하는 것이 대응의 첫걸음입니다 — 예를 들어, 자신의 견해에 대한 가장 강력한 반론을 적극적으로 찾아보는 거죠.",
         "properNounIndices": []
       },
       {
-        "id": 8,
+        "id": 9,
         "english": "Using the examples from the lecture, explain what confirmation bias is and how it affects people's behavior.",
         "korean": "강의의 예를 사용하여 확증 편향이 무엇이고 사람들의 행동에 어떤 영향을 미치는지 설명하세요.",
         "properNounIndices": []
@@ -85,10 +89,10 @@
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Environment and Nature",
         "Classical Conditioning",
+        "Opportunity Cost",
         "Confirmation Bias",
-        "Opportunity Cost"
+        "Science and Research"
       ],
       "answer": 2
     }

@@ -1,0 +1,52 @@
+[
+  {
+    "setId": "L2_ELLO_105_set1",
+    "parentSetId": "L2_ELLO_105",
+    "theme": "Mixer #40 — Money Habits",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I check my bank account every morning, it's the first thing I do.",
+        "korean": "매일 아침 은행 계좌를 확인해요. 가장 먼저 하는 일이에요.",
+        "properNounIndices": [
+          0,
+          11
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I never carry cash anymore.",
+        "korean": "더 이상 현금을 안 들고 다녀요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Everything is card or mobile payment.",
+        "korean": "다 카드 아니면 모바일 결제예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I use a budgeting app that tracks every single expense, and it's made me much more careful with money.",
+        "korean": "모든 지출을 추적하는 가계부 앱을 써요. 돈에 훨씬 더 신중해졌어요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '예산 관리/가계부' mean in English?",
+      "options": [
+        "expense",
+        "bank account",
+        "budgeting",
+        "cash"
+      ],
+      "answer": 2
+    }
+  }
+]

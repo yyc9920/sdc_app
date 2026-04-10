@@ -1,0 +1,75 @@
+[
+  {
+    "setId": "L1_DLG_032_set1",
+    "parentSetId": "L1_DLG_032",
+    "theme": "Talking About Weekend Plans",
+    "level": 2,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "What are you doing this weekend?",
+        "korean": "이번 주말에 뭐 해요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I'm going to the beach with my family.",
+        "korean": "가족이랑 바다에 갈 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "That sounds fun!",
+        "korean": "재밌겠어요!",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Which beach?",
+        "korean": "어느 해변이요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Haeundae in Busan.",
+        "korean": "부산 해운대요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 5,
+        "english": "I went there last summer.",
+        "korean": "나 작년 여름에 거기 갔어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 6,
+        "english": "The water was so clear.",
+        "korean": "물이 정말 맑았어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "I can't wait!",
+        "korean": "기대돼요!",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "At the Bakery",
+        "At the Shoe Store",
+        "At the Pharmacy",
+        "Talking About Weekend Plans"
+      ],
+      "answer": 3
+    }
+  }
+]

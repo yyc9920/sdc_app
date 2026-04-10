@@ -1,0 +1,60 @@
+[
+  {
+    "setId": "L1_EXT_091_set1",
+    "parentSetId": "L1_EXT_091",
+    "theme": "My Piggy Bank",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I have a pink piggy bank on my desk.",
+        "korean": "책상 위에 분홍 돼지 저금통이 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Every day I put my leftover coins in it.",
+        "korean": "매일 남은 동전을 넣어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "english": "My goal is to save enough money to buy a new skateboard.",
+        "korean": "새 스케이트보드를 사기 위해 충분히 모으는 게 목표예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I already have about twenty dollars.",
+        "korean": "이미 약 20달러가 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I need thirty more dollars so I'll keep saving.",
+        "korean": "30달러 더 필요해서 계속 모을 거예요.",
+        "properNounIndices": [
+          0,
+          6
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "My Piggy Bank",
+        "Emergent Properties in Complex Systems",
+        "Staying Up Late",
+        "Waiting for the Bus"
+      ],
+      "answer": 0
+    }
+  }
+]

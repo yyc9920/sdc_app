@@ -1,0 +1,80 @@
+[
+  {
+    "setId": "L2_ELLO_025_set1",
+    "parentSetId": "L2_ELLO_025",
+    "theme": "Mixer #124 — Public Transport",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I don't use public transportation too often.",
+        "korean": "대중교통을 자주 사용하지 않아요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Nowadays, I like to ride my car.",
+        "korean": "요즘은 차를 타는 게 좋아요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I think public transportation is a great idea, but I really like the convenience of having my own vehicle.",
+        "korean": "대중교통은 좋은 아이디어지만 자기 차의 편리함이 정말 좋거든요.",
+        "properNounIndices": [
+          0,
+          9
+        ]
+      },
+      {
+        "id": 3,
+        "english": "All the time, especially here at the university, I always use the bus or the train or walk everywhere.",
+        "korean": "항상 이용해요, 특히 대학에서요.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I can't drive, so it's my only option really.",
+        "korean": "항상 버스나 기차를 이용하거나 어디든 걸어다녀요. 운전을 못해서 유일한 선택지예요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "english": "American public transportation is few and far between.",
+        "korean": "미국의 대중교통은 드물어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "It's not very well-funded.",
+        "korean": "자금이 잘 지원되지 않고, 모두 차가 있어서 대중교통이 필요 없어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Everybody has cars, so you don't really have a need for public transportation.",
+        "korean": "/ 모두 차가 있어서 대중교통이 필요 없다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #80 — Tipping Culture",
+        "Mixer #93 — Handwriting",
+        "Mixer #115 — Cooking Skills",
+        "Mixer #124 — Public Transport"
+      ],
+      "answer": 3
+    }
+  }
+]

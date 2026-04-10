@@ -1,0 +1,39 @@
+[
+  {
+    "setId": "L3_B6ME_054_set1",
+    "parentSetId": "L3_B6ME_054",
+    "theme": "Are Plant-Based Substitutes Healthier?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "An increasing number of people are trying to reduce, or even stop, eating meat.",
+        "korean": "점점 더 많은 사람이 건강, 동물 복지, 환경적 이유로 고기 먹는 것을 줄이거나 멈추려 하고 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "This is often for health, animal welfare or environmental reasons.",
+        "korean": "이것은 종종 건강, 동물 복지 또는 환경적 이유 때문이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "People are getting their daily amount of protein through plant-based alternatives — meat-free sausages and burgers made using ingredients like soy, tofu or fungi.",
+        "korean": "사람들은 콩, 두부, 균류 같은 재료로 만든 무육 소시지와 버거 같은 식물성 대체품을 통해 일일 단백질을 얻고 있어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Are Plant-Based Substitutes Healthier?",
+        "Do You Need to Declutter Your Home?",
+        "Rethinking Dyslexia",
+        "What Causes Hearing Loss?"
+      ],
+      "answer": 0
+    }
+  }
+]

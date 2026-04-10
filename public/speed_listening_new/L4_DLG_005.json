@@ -1,0 +1,103 @@
+[
+  {
+    "setId": "L4_DLG_005_set1",
+    "parentSetId": "L4_DLG_005",
+    "theme": "Negotiation — Salary Discussion",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I appreciate the offer, but I was hoping we could discuss the compensation package.",
+        "korean": "제안에 감사하지만 보상 패키지에 대해 논의할 수 있었으면 합니다.",
+        "properNounIndices": [
+          0,
+          5
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Of course, what did you have in mind?",
+        "korean": "물론이죠, 어떤 점을 생각하고 계세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Based on my research and my experience level, I believe a salary in the range of ninety to ninety-five thousand would be more in line with the market rate.",
+        "korean": "제 조사와 경력 수준을 바탕으로 9만에서 9만 5천 달러 범위가 시장 가격에 더 맞다고 생각합니다.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I understand your perspective.",
+        "korean": "관점을 이해합니다.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "While we may not be able to meet that exact figure, we can offer eighty-eight thousand plus a signing bonus of five thousand.",
+        "korean": "정확한 금액은 맞추기 어렵지만 8만 8천에 5천 달러 계약 보너스를 제안할 수 있어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '보상/급여' mean in English?",
+      "options": [
+        "signing bonus",
+        "market rate",
+        "compensation",
+        "seniority"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L4_DLG_005_set2",
+    "parentSetId": "L4_DLG_005",
+    "theme": "Negotiation — Salary Discussion",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "What about the benefits package?",
+        "korean": "복리후생 패키지는 어떤가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Is there any flexibility on the number of vacation days?",
+        "korean": "휴가 일수에 유연성이 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "We can bump it up from fifteen to twenty days, considering your seniority level.",
+        "korean": "경력 수준을 고려해서 15일에서 20일로 늘려드릴 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "That sounds reasonable. I'd like to accept the offer with those revised terms.",
+        "korean": "합리적이네요. 수정된 조건으로 제안을 수락하겠습니다.",
+        "properNounIndices": [
+          3
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '복리후생 패키지' mean in English?",
+      "options": [
+        "market rate",
+        "signing bonus",
+        "revised terms",
+        "benefits package"
+      ],
+      "answer": 3
+    }
+  }
+]

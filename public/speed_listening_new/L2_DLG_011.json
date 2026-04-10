@@ -1,0 +1,107 @@
+[
+  {
+    "setId": "L2_DLG_011_set1",
+    "parentSetId": "L2_DLG_011",
+    "theme": "At the Pharmacy",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hi, I have a cold and I need some medicine.",
+        "korean": "안녕하세요. 감기에 걸려서 약이 필요해요.",
+        "properNounIndices": [
+          1,
+          6
+        ]
+      },
+      {
+        "id": 1,
+        "english": "What are your symptoms?",
+        "korean": "증상이 어떠세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I have a runny nose and a sore throat.",
+        "korean": "콧물이 나고 목이 아파요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I also have a slight fever.",
+        "korean": "미열도 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I'd recommend this cold medicine.",
+        "korean": "이 감기약을 추천해요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '콧물' mean in English?",
+      "options": [
+        "lozenge",
+        "symptom",
+        "runny nose",
+        "fever"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_DLG_011_set2",
+    "parentSetId": "L2_DLG_011",
+    "theme": "At the Pharmacy",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Take two tablets after meals three times a day.",
+        "korean": "하루 세 번 식후에 두 알씩 드세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Is there anything for the sore throat?",
+        "korean": "목 아픈 데 쓸 건 없나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "These throat lozenges should help.",
+        "korean": "이 목 사탕이 도움될 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "How much is everything?",
+        "korean": "다 합쳐서 얼마예요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "The medicine is eight dollars and the lozenges are three fifty.",
+        "korean": "약은 8달러이고 목 사탕은 3달러 50센트예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '열' mean in English?",
+      "options": [
+        "symptom",
+        "lozenge",
+        "fever",
+        "runny nose"
+      ],
+      "answer": 2
+    }
+  }
+]

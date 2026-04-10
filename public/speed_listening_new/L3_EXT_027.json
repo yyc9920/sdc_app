@@ -1,0 +1,45 @@
+[
+  {
+    "setId": "L3_EXT_027_set1",
+    "parentSetId": "L3_EXT_027",
+    "theme": "Why Minimalism Is Trending",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Minimalism is a lifestyle movement that encourages people to own fewer things and focus on what truly adds value to their lives.",
+        "korean": "미니멀리즘은 사람들이 물건을 적게 소유하고 삶에 진정으로 가치를 더하는 것에 집중하도록 격려하는 라이프스타일 운동이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Many young people are attracted to minimalism because they grew up seeing their parents accumulate things that never got used.",
+        "korean": "많은 젊은이들이 미니멀리즘에 끌리는 이유는 부모님이 사용하지 않은 물건을 축적하는 것을 보며 자랐기 때문이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Studies show that decluttering your physical space can reduce anxiety and improve mental clarity.",
+        "korean": "연구에 따르면 물리적 공간을 정리하면 불안을 줄이고 정신적 명료함을 높일 수 있다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Critics argue that minimalism is often a privilege of the wealthy since only those who can afford to replace items easily can afford to get rid of them.",
+        "korean": "비판자들은 미니멀리즘이 종종 부유층의 특권이라고 주장한다. 물건을 쉽게 대체할 수 있는 사람만이 버릴 여유가 있기 때문이다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '미니멀리즘' mean in English?",
+      "options": [
+        "mental clarity",
+        "declutter",
+        "minimalism",
+        "privilege"
+      ],
+      "answer": 2
+    }
+  }
+]

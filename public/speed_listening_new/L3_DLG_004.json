@@ -1,0 +1,117 @@
+[
+  {
+    "setId": "L3_DLG_004_set1",
+    "parentSetId": "L3_DLG_004",
+    "theme": "Library Late Fees",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hi, I have some overdue books and I'm not sure how much I owe.",
+        "korean": "안녕하세요, 연체된 책이 있는데 얼마를 내야 하는지 모르겠어요.",
+        "properNounIndices": [
+          1,
+          7,
+          12
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Let me check your account.",
+        "korean": "계정을 확인해볼게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "It looks like you have three books that are two weeks overdue.",
+        "korean": "2주 연체된 책이 세 권 있는 것 같네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Oh, that's more than I thought.",
+        "korean": "아, 생각보다 많네요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 4,
+        "english": "How much is the fine?",
+        "korean": "벌금이 얼마예요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '벌금' mean in English?",
+      "options": [
+        "on time",
+        "fine",
+        "midterms",
+        "overdue"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L3_DLG_004_set2",
+    "parentSetId": "L3_DLG_004",
+    "theme": "Library Late Fees",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "It's fifty cents per book per day, so that comes to twenty-one dollars total.",
+        "korean": "책 한 권당 하루에 50센트예요. 총 21달러가 됩니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Is there any way to reduce the fine?",
+        "korean": "벌금을 줄일 방법이 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "I've been really busy with midterms.",
+        "korean": "중간고사 때문에 정말 바빴거든요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Well, if this is your first time, I can waive half the fine.",
+        "korean": "음, 처음이시라면 벌금의 절반을 면제해드릴 수 있어요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 9,
+        "english": "But please try to return them on time next time.",
+        "korean": "하지만 다음에는 제때 반납해주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 10,
+        "english": "I will. Thank you for being so understanding.",
+        "korean": "그럴게요. 이해해주셔서 감사합니다.",
+        "properNounIndices": [
+          0,
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '면제하다' mean in English?",
+      "options": [
+        "on time",
+        "midterms",
+        "waive",
+        "overdue"
+      ],
+      "answer": 2
+    }
+  }
+]

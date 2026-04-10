@@ -1,0 +1,83 @@
+[
+  {
+    "setId": "L1_SPK_062_set1",
+    "parentSetId": "L1_SPK_062",
+    "theme": "A Historical Figure You Admire",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Describe a historical figure you admire.",
+        "korean": "존경하는 역사적 인물을 묘사하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain why this person is important to you.",
+        "korean": "이 사람이 왜 중요한지 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The historical figure I admire most is King Sejong the Great of Korea.",
+        "korean": "가장 존경하는 역사적 인물은 한국의 세종대왕이에요.",
+        "properNounIndices": [
+          3,
+          7,
+          8,
+          10,
+          12
+        ]
+      },
+      {
+        "id": 3,
+        "english": "He created Hangul the Korean alphabet specifically to give ordinary people the ability to read and write.",
+        "korean": "한국어 문자인 한글을 만들었는데 특히 일반인에게 읽고 쓰는 능력을 주기 위해서였어요.",
+        "properNounIndices": [
+          2,
+          4
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Before Hangul only the wealthy elite could read because Chinese characters were extremely difficult to learn.",
+        "korean": "한글 이전에는 한자가 배우기 매우 어려워서 부유한 엘리트만 읽을 수 있었어요.",
+        "properNounIndices": [
+          1,
+          9
+        ]
+      },
+      {
+        "id": 5,
+        "english": "What makes him truly remarkable is that he put the needs of common people above everything else.",
+        "korean": "그를 진정으로 놀랍게 만드는 것은 일반 백성의 필요를 다른 모든 것 위에 둔 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "His invention of Hangul is considered one of the most significant contributions to human literacy in history.",
+        "korean": "한글 발명은 역사상 인류 문해력에 대한 가장 중요한 기여 중 하나로 여겨져요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 7,
+        "english": "put above",
+        "korean": "~보다 위에 두다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "A Skill Everyone Should Learn",
+        "First Impressions — Reliable or Not",
+        "A Historical Figure You Admire",
+        "Would you prefer living in a large house with a lo"
+      ],
+      "answer": 2
+    }
+  }
+]

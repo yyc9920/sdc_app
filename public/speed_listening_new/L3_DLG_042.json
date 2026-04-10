@@ -1,0 +1,73 @@
+[
+  {
+    "setId": "L3_DLG_042_set1",
+    "parentSetId": "L3_DLG_042",
+    "theme": "Complaining About Internet Speed",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hi, my internet speed has been extremely slow this week.",
+        "korean": "안녕하세요. 이번 주 인터넷 속도가 극도로 느려요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I'm sorry to hear that.",
+        "korean": "그건 죄송합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Can you tell me your account number?",
+        "korean": "계정 번호를 알려주시겠어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "It's 7823456.",
+        "korean": "7823456이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I can see that you're on our basic plan which offers speeds up to fifty megabits per second.",
+        "korean": "기본 요금제에 가입하신 것으로 보이는데 최대 50메가비트 속도를 제공해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "english": "I'm paying for fifty but I'm only getting about ten.",
+        "korean": "50에 대해 내고 있는데 약 10밖에 안 나와요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 6,
+        "english": "I'll run a diagnostic on your line from our end.",
+        "korean": "저희 쪽에서 회선 진단을 실행해보겠습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "If the issue persists we can send a technician out tomorrow.",
+        "korean": "문제가 지속되면 내일 기술자를 보내드릴 수 있어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '기술자' mean in English?",
+      "options": [
+        "internet speed",
+        "diagnostic",
+        "persist",
+        "technician"
+      ],
+      "answer": 3
+    }
+  }
+]

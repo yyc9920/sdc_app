@@ -1,0 +1,116 @@
+[
+  {
+    "setId": "L3_DLG_009_set1",
+    "parentSetId": "L3_DLG_009",
+    "theme": "Bank — Opening an Account",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hi, I'd like to open a new savings account.",
+        "korean": "안녕하세요, 새 저축 계좌를 개설하고 싶어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Of course, I can help you with that.",
+        "korean": "물론이죠, 도와드릴 수 있어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Do you already have a checking account with us?",
+        "korean": "저희 은행에 이미 당좌 계좌가 있으세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Yes, I've had one for about two years.",
+        "korean": "네, 약 2년 정도 사용하고 있어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 4,
+        "english": "That makes things easier.",
+        "korean": "그러면 더 쉽겠네요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '최소 잔고' mean in English?",
+      "options": [
+        "interest rate",
+        "high-yield",
+        "checking account",
+        "minimum balance"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L3_DLG_009_set2",
+    "parentSetId": "L3_DLG_009",
+    "theme": "Bank — Opening an Account",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "We have two options — a standard savings account with no minimum balance, and a high-yield account that requires a minimum of one thousand dollars.",
+        "korean": "두 가지 옵션이 있어요 — 최소 잔고 없는 일반 저축 계좌와 최소 1천 달러가 필요한 고수익 계좌요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "What's the interest rate on the high-yield account?",
+        "korean": "고수익 계좌의 이자율이 어떻게 되나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Currently it's four point five percent, which is quite competitive.",
+        "korean": "현재 4.5%이고 꽤 경쟁력 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "I'll go with the high-yield one.",
+        "korean": "고수익 계좌로 할게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "What documents do I need?",
+        "korean": "어떤 서류가 필요하나요?",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 10,
+        "english": "Just your photo ID, and we can set everything up right now.",
+        "korean": "사진이 있는 신분증만 있으면 되고 지금 바로 다 설정할 수 있어요.",
+        "properNounIndices": [
+          3
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '고수익의' mean in English?",
+      "options": [
+        "checking account",
+        "high-yield",
+        "interest rate",
+        "minimum balance"
+      ],
+      "answer": 1
+    }
+  }
+]

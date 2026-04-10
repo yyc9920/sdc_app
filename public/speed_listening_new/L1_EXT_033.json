@@ -1,0 +1,60 @@
+[
+  {
+    "setId": "L1_EXT_033_set1",
+    "parentSetId": "L1_EXT_033",
+    "theme": "Rainy Day",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "It rained all day today.",
+        "korean": "오늘 하루 종일 비가 왔어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I forgot to bring my umbrella so I got wet.",
+        "korean": "우산을 가져오는 걸 깜빡해서 젖었어요.",
+        "properNounIndices": [
+          0,
+          7
+        ]
+      },
+      {
+        "id": 2,
+        "english": "My shoes were soaked and my socks were cold.",
+        "korean": "신발이 흠뻑 젖고 양말이 차가웠어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "When I got home I took a hot shower right away.",
+        "korean": "집에 오자마자 뜨거운 샤워를 했어요.",
+        "properNounIndices": [
+          1,
+          4
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Then I made hot chocolate and watched TV under a blanket.",
+        "korean": "그런 다음 핫초코를 만들고 담요 밑에서 TV를 봤어요.",
+        "properNounIndices": [
+          1,
+          7
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "A Birthday Party",
+        "Helping a Lost Dog",
+        "Cultural Commentary — Tipping Culture",
+        "Rainy Day"
+      ],
+      "answer": 3
+    }
+  }
+]

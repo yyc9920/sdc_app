@@ -1,0 +1,76 @@
+[
+  {
+    "setId": "L3_DLG_062_set1",
+    "parentSetId": "L3_DLG_062",
+    "theme": "Planning a Farewell Party",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Did you hear that Minjae is leaving the company next month?",
+        "korean": "민재가 다음 달에 회사를 떠난다는 거 들었어요?",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Yes he told me last week.",
+        "korean": "네 지난주에 말해줬어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "We should throw him a farewell party.",
+        "korean": "송별회를 해줘야 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I was thinking the same thing.",
+        "korean": "나도 그 생각을 하고 있었어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "How about next Friday after work at that Italian restaurant he likes?",
+        "korean": "다음 주 금요일 퇴근 후에 그가 좋아하는 이탈리안 레스토랑은 어때요?",
+        "properNounIndices": [
+          3,
+          8
+        ]
+      },
+      {
+        "id": 5,
+        "english": "I'll make a reservation for about fifteen people.",
+        "korean": "약 15명으로 예약할게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Should we also get him a gift?",
+        "korean": "선물도 사줄까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "I'll collect money from everyone and we can buy him something nice.",
+        "korean": "다들한테 돈을 걷어서 좋은 걸 사줄 수 있어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Signing Up for a Class",
+        "Restaurant — Reservation Problem",
+        "Planning a Farewell Party",
+        "Feedback on a Presentation"
+      ],
+      "answer": 2
+    }
+  }
+]

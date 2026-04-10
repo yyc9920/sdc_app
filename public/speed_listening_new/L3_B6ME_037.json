@@ -1,0 +1,51 @@
+[
+  {
+    "setId": "L3_B6ME_037_set1",
+    "parentSetId": "L3_B6ME_037",
+    "theme": "Did a Civilisation Exist Before Humans?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Phil, do you believe there's life on other planets?",
+        "korean": "필, 다른 행성에 생명체가 있다고 믿어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "We know that there's been no other civilisation on Earth, and he stopped me and said, 'How do you know that?' And my jaw just dropped down to the floor.",
+        "korean": "지구에 다른 문명이 없었다는 걸 안다고 하자, 그가 '어떻게 알아?'라고 했어요. 턱이 바닥까지 떨어질 정도로 놀랐죠.",
+        "properNounIndices": [
+          9,
+          16,
+          21
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Could there have been a technologically advanced civilisation before us?",
+        "korean": "우리 이전에 기술적으로 진보한 문명이 있었을 수 있을까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "This idea is known as the Silurian hypothesis.",
+        "korean": "이 아이디어를 실루리안 가설이라고 해요.",
+        "properNounIndices": [
+          6
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '(관용구) 충격과 놀라움으로 입이 벌어지다' mean in English?",
+      "options": [
+        "jaw dropped",
+        "sediment",
+        "leave a trace",
+        "hypothesis"
+      ],
+      "answer": 0
+    }
+  }
+]

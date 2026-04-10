@@ -1,0 +1,74 @@
+[
+  {
+    "setId": "L1_SPK_046_set1",
+    "parentSetId": "L1_SPK_046",
+    "theme": "Printed Books vs. E-books",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you prefer reading printed books or e-books?",
+        "korean": "종이 책과 전자책 중 어느 것을 선호합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your preference.",
+        "korean": "선호를 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "While e-books are convenient I still prefer printed books.",
+        "korean": "전자책이 편리하지만 여전히 종이 책을 선호해요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 3,
+        "english": "First there's something about the physical experience of turning pages and the smell of paper that makes reading more enjoyable.",
+        "korean": "첫째 페이지를 넘기는 물리적 경험과 종이 냄새는 읽기를 더 즐겁게 만드는 뭔가가 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Second research shows that people retain information better when reading from paper compared to screens.",
+        "korean": "둘째 연구에 따르면 화면보다 종이에서 읽을 때 정보를 더 잘 기억해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Also reading a printed book before bed doesn't expose your eyes to blue light which can disrupt sleep.",
+        "korean": "또한 자기 전에 종이 책을 읽으면 수면을 방해할 수 있는 블루라이트에 눈이 노출되지 않아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "For these reasons I'll always choose a printed book when I have the option.",
+        "korean": "이러한 이유로 선택지가 있으면 항상 종이 책을 선택할 거예요.",
+        "properNounIndices": [
+          3,
+          10
+        ]
+      },
+      {
+        "id": 7,
+        "english": "compared to",
+        "korean": "~와 비교했을 때",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Eating at Home vs. Eating Out",
+        "Attending a Large vs. Small School",
+        "Children and Mobile Phones",
+        "Printed Books vs. E-books"
+      ],
+      "answer": 3
+    }
+  }
+]

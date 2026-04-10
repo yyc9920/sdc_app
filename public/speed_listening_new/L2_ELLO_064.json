@@ -1,0 +1,60 @@
+[
+  {
+    "setId": "L2_ELLO_064_set1",
+    "parentSetId": "L2_ELLO_064",
+    "theme": "Mixer #82 — Apartment Living",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The best thing about living in an apartment is the location.",
+        "korean": "아파트 생활의 최고 장점은 위치예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I'm close to everything — work, shops, restaurants.",
+        "korean": "모든 것에 가까워요 — 직장 가게 식당.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The worst part is the noise.",
+        "korean": "최악인 건 소음이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "You can hear everything your neighbors do through the walls.",
+        "korean": "벽 너머로 이웃이 하는 모든 소리가 들려요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I wish I had a garden or a balcony at least.",
+        "korean": "정원이나 최소한 발코니라도 있으면 좋겠어요.",
+        "properNounIndices": [
+          0,
+          2
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Living in a small space can feel claustrophobic sometimes.",
+        "korean": "좁은 공간에 사는 건 가끔 답답할 수 있어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #110 — Exercise Routine",
+        "Mixer #64 — Noise at Night",
+        "Mixer #13 — Favorite Smell",
+        "Mixer #82 — Apartment Living"
+      ],
+      "answer": 3
+    }
+  }
+]

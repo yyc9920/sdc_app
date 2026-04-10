@@ -1,0 +1,103 @@
+[
+  {
+    "setId": "L1_SPK_049_set1",
+    "parentSetId": "L1_SPK_049",
+    "theme": "The Impact of Music on Mood",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "How does music affect your mood?",
+        "korean": "음악이 기분에 어떤 영향을 미칩니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Give specific examples from your own experience.",
+        "korean": "본인 경험에서 구체적인 예시를 제시하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Music has a powerful effect on my mood and I use it deliberately throughout the day.",
+        "korean": "음악은 기분에 강력한 영향을 미치고 하루 종일 의도적으로 활용해요.",
+        "properNounIndices": [
+          9
+        ]
+      },
+      {
+        "id": 3,
+        "english": "In the morning I listen to upbeat pop music to energize myself for the day ahead.",
+        "korean": "아침에 신나는 팝 음악을 들어 하루를 위해 기운을 내요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 4,
+        "english": "When I study I switch to classical or lo-fi music because it helps me concentrate without being distracting.",
+        "korean": "공부할 때는 클래식이나 로파이 음악으로 바꾸는데 방해 없이 집중하는 데 도움이 되기 때문이에요.",
+        "properNounIndices": [
+          1,
+          3
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "A Skill You Taught Yourself",
+        "A Time You Helped Someone",
+        "The Impact of Music on Mood",
+        "Your Dream Job"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L1_SPK_049_set2",
+    "parentSetId": "L1_SPK_049",
+    "theme": "The Impact of Music on Mood",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "After a stressful day nothing relaxes me more than putting on some jazz and closing my eyes for ten minutes.",
+        "korean": "스트레스 많은 하루 후에 재즈를 틀고 10분간 눈을 감는 것보다 나를 더 편안하게 하는 건 없어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "I truly believe music is one of the most accessible and effective tools for managing our emotions.",
+        "korean": "음악은 감정을 관리하는 가장 접근 가능하고 효과적인 도구 중 하나라고 진심으로 믿어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 7,
+        "english": "switch to",
+        "korean": "~로 바꾸다",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "manage emotions",
+        "korean": "감정을 관리하다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Advantages of Smartphones",
+        "The Impact of Music on Mood",
+        "Strict vs. Relaxed Parenting",
+        "Your Role Model"
+      ],
+      "answer": 1
+    }
+  }
+]

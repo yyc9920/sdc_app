@@ -1,0 +1,96 @@
+[
+  {
+    "setId": "L1_SPK_030_set1",
+    "parentSetId": "L1_SPK_030",
+    "theme": "Your Favorite Season and Why",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "What is your favorite season?",
+        "korean": "가장 좋아하는 계절은 무엇입니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain why you prefer it over other seasons.",
+        "korean": "다른 계절보다 선호하는 이유를 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "My favorite season is autumn without a doubt.",
+        "korean": "의심의 여지 없이 가장 좋아하는 계절은 가을이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "First I love the comfortable temperature — not too hot and not too cold.",
+        "korean": "첫째 쾌적한 기온을 좋아해요 — 너무 덥지도 춥지도 않은.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 4,
+        "english": "It's the perfect weather for spending time outdoors without sweating or shivering.",
+        "korean": "땀을 흘리거나 떨지 않고 야외에서 시간을 보내기에 완벽한 날씨예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Studying Abroad — Worth It?",
+        "Should Homework Be Abolished",
+        "Your Favorite Season and Why",
+        "Renting vs. Owning a Home"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L1_SPK_030_set2",
+    "parentSetId": "L1_SPK_030",
+    "theme": "Your Favorite Season and Why",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Second the scenery is absolutely breathtaking — the mountains covered in red orange and yellow leaves look like paintings.",
+        "korean": "둘째 풍경이 정말 숨이 멎을 정도예요 — 빨강 주황 노랑 잎으로 덮인 산이 그림처럼 보여요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Finally autumn food is the best — roasted sweet potatoes and fresh apples are my favorites.",
+        "korean": "마지막으로 가을 음식이 최고예요 — 군고구마와 신선한 사과가 제일 좋아하는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Autumn just makes everything feel warm and cozy.",
+        "korean": "가을은 모든 것을 따뜻하고 아늑하게 느끼게 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "without a doubt",
+        "korean": "의심의 여지 없이",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Environmental Responsibility",
+        "Studying Abroad — Worth It?",
+        "A Piece of Advice That Changed Your Life",
+        "Your Favorite Season and Why"
+      ],
+      "answer": 3
+    }
+  }
+]

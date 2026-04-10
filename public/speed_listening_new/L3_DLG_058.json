@@ -1,0 +1,73 @@
+[
+  {
+    "setId": "L3_DLG_058_set1",
+    "parentSetId": "L3_DLG_058",
+    "theme": "Discussing Flexible Work Hours",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'd like to propose a flexible work schedule for our team.",
+        "korean": "우리 팀에 유연 근무 일정을 제안하고 싶습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "What exactly do you have in mind?",
+        "korean": "구체적으로 어떤 걸 생각하고 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Instead of everyone starting at nine I'd like to offer a window between seven and ten where employees can choose their start time.",
+        "korean": "모두 9시에 출근하는 대신 직원이 출근 시간을 선택할 수 있는 7시~10시 사이의 범위를 제공하고 싶습니다.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 3,
+        "english": "How would that work for team meetings?",
+        "korean": "팀 회의는 어떻게 되나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "We'd set core hours from ten to three when everyone must be available.",
+        "korean": "모두가 가능해야 하는 핵심 시간을 10시~3시로 설정하겠습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Research shows that flexible hours improve employee satisfaction and reduce turnover.",
+        "korean": "연구에 따르면 유연 근무가 직원 만족도를 높이고 이직률을 낮춘다고 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Exactly. And our team's work is mostly project-based so output matters more than hours at a desk.",
+        "korean": "맞아요. 그리고 우리 팀 업무는 대부분 프로젝트 기반이라 책상에 앉아 있는 시간보다 결과가 더 중요합니다.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Let's pilot it for one quarter and see how it goes.",
+        "korean": "한 분기 동안 시범 운영하고 어떻게 되는지 봅시다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '핵심 시간' mean in English?",
+      "options": [
+        "output",
+        "flexible hours",
+        "turnover",
+        "core hours"
+      ],
+      "answer": 3
+    }
+  }
+]

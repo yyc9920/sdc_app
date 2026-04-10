@@ -1,0 +1,102 @@
+[
+  {
+    "setId": "L3_DLG_061_set1",
+    "parentSetId": "L3_DLG_061",
+    "theme": "Negotiating a Deadline Extension",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I need to ask for an extension on the project deadline.",
+        "korean": "프로젝트 마감일 연장을 요청해야 합니다.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "The current deadline is next Friday right?",
+        "korean": "현재 마감이 다음 주 금요일이죠?",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Yes but we've run into some unexpected technical issues.",
+        "korean": "네 하지만 예상치 못한 기술적 문제가 발생했습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "The API integration is taking longer than we estimated because of compatibility issues with the legacy system.",
+        "korean": "레거시 시스템과의 호환성 문제 때문에 API 연동이 예상보다 오래 걸리고 있습니다.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 4,
+        "english": "How much additional time do you need?",
+        "korean": "추가로 얼마나 시간이 필요하나요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '연장' mean in English?",
+      "options": [
+        "deadline",
+        "compatibility",
+        "legacy system",
+        "extension"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L3_DLG_061_set2",
+    "parentSetId": "L3_DLG_061",
+    "theme": "Negotiating a Deadline Extension",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Five business days would be enough to deliver everything at the quality level we promised.",
+        "korean": "영업일 5일이면 약속한 품질 수준으로 모든 것을 전달하기 충분합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "I can approve three extra days but no more than that.",
+        "korean": "3일 추가는 승인할 수 있지만 그 이상은 안 됩니다.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 7,
+        "english": "We'll make it work.",
+        "korean": "해내겠습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Thank you for understanding.",
+        "korean": "이해해주셔서 감사합니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '레거시 시스템' mean in English?",
+      "options": [
+        "compatibility",
+        "extension",
+        "deadline",
+        "legacy system"
+      ],
+      "answer": 3
+    }
+  }
+]

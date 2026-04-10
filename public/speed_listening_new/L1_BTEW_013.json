@@ -3,78 +3,63 @@
     "setId": "L1_BTEW_013_set1",
     "parentSetId": "L1_BTEW_013",
     "theme": "An uphill task",
-    "level": 6,
+    "level": 4,
     "setNumber": 1,
     "sentences": [
       {
         "id": 0,
-        "english": "Hello. Welcome to The English We Speak, where we explain phrases used by fluent English speakers so that you can use them too. I'm Feifei, and I'm here with Phil.",
-        "korean": "안녕하세요. 유창한 영어 화자들이 쓰는 표현을 설명하는 The English We Speak에 오신 것을 환영합니다. 저는 페이페이이고, 필과 함께합니다.",
+        "english": "Hello. Welcome to The English We Speak, where we explain phrases used by fluent English speakers so that you can use them too.",
+        "korean": "안녕하세요. 유창한 영어 화자들이 쓰는 표현을 설명하는 The English We Speak에 오신 것을 환영합니다.",
         "properNounIndices": [
           1,
           3,
           4,
           5,
           6,
-          14,
-          23,
-          24,
-          26,
-          29
+          14
         ]
       },
       {
         "id": 1,
-        "english": "Hello. How are you, Feifei? Have you been busy?",
-        "korean": "안녕. 잘 지내, 페이페이? 바빴어?",
+        "english": "I'm Feifei, and I'm here with Phil.",
+        "korean": "저는 페이페이이고, 필과 함께합니다.",
         "properNounIndices": [
           1,
-          4,
-          5
+          3,
+          6
         ]
       },
       {
         "id": 2,
-        "english": "How can you tell? Yes, I have. I've been trying to sort out all the photos I've taken over the last few years - but there are so many! Choosing which ones to print out really is an uphill task.",
-        "korean": "어떻게 알았어? 응, 지난 몇 년간 찍은 사진들을 정리하려고 했는데 너무 많아! 어떤 걸 출력할지 고르는 건 정말 힘든 일이야.",
+        "english": "Hello. How are you, Feifei?",
+        "korean": "안녕. 잘 지내, 페이페이?",
         "properNounIndices": [
-          4,
-          5,
-          7,
-          16,
-          29
+          1,
+          4
         ]
       },
       {
         "id": 3,
-        "english": "I don't even want to think about sorting out the pictures on my phone, but I do want to think about that phrase you used - 'an uphill task'. We use it to talk about something difficult.",
-        "korean": "핸드폰 사진 정리는 생각하고 싶지도 않지만, 네가 쓴 'an uphill task'라는 표현에 대해선 생각해보고 싶어. 어려운 일을 말할 때 써.",
-        "properNounIndices": [
-          0,
-          15,
-          29
-        ]
+        "english": "Have you been busy?",
+        "korean": "바빴어?",
+        "properNounIndices": []
       },
       {
         "id": 4,
-        "english": "So, think about walking up a steep hill. It takes a lot of energy and effort, doesn't it? So, an uphill task is something that's difficult and takes a lot of energy. I've literally got thousands of pictures to sort through.",
-        "korean": "가파른 언덕을 올라가는 걸 상상해봐. 에너지와 노력이 많이 들잖아? 그래서 uphill task는 어렵고 에너지가 많이 드는 일이야. 정리해야 할 사진이 진짜 수천 장이거든.",
-        "properNounIndices": [
-          8,
-          18,
-          32
-        ]
+        "english": "How can you tell?",
+        "korean": "어떻게 알았어?",
+        "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '결단력, 의지' mean in English?",
+      "question": "What does '힘든 일, 어려운 과제' mean in English?",
       "options": [
         "determination",
-        "steep",
-        "uphill struggle",
-        "sort out"
+        "an uphill task",
+        "unlikely",
+        "uphill struggle"
       ],
-      "answer": 0
+      "answer": 1
     }
   },
   {
@@ -86,58 +71,51 @@
     "sentences": [
       {
         "id": 5,
-        "english": "That definitely sounds like an uphill task! Any task that looks as if it's going to take a very long time, or where success seems very unlikely, can be described as 'uphill'.",
-        "korean": "확실히 힘든 일 같아! 매우 오래 걸리거나 성공이 어려워 보이는 일은 'uphill'로 묘사할 수 있어.",
+        "english": "Yes, I have. I've been trying to sort out all the photos I've taken over the last few years - but there are so many!",
+        "korean": "응, 지난 몇 년간 찍은 사진들을 정리하려고 했는데 너무 많아! 어떤 걸 출력할지 고르는 건 정말 힘든 일이야.",
         "properNounIndices": [
-          7
+          1,
+          3,
+          12
         ]
       },
       {
         "id": 6,
-        "english": "We also often use it when there is something working against us. So, if I fix something in my home, there's always something else that goes wrong straight afterwards.",
-        "korean": "방해되는 것이 있을 때도 자주 써. 집에서 뭔가를 고치면, 항상 바로 뒤에 다른 게 또 고장나거든.",
-        "properNounIndices": [
-          12,
-          14
-        ]
+        "english": "Choosing which ones to print out really is an uphill task.",
+        "korean": "추징 위치 원즈 투 프린트 아웃 리얼리 이즈 언 업힐 태스크.",
+        "properNounIndices": []
       },
       {
         "id": 7,
-        "english": "Keeping everything OK just feels like an uphill task.",
-        "korean": "모든 걸 제대로 유지하는 것만으로도 힘든 일처럼 느껴져.",
+        "english": "I don't even want to think about sorting out the pictures on my phone, but I do want to think about that phrase you used - 'an uphill task'.",
+        "korean": "핸드폰 사진 정리는 생각하고 싶지도 않지만, 네가 쓴 'an uphill task'라는 표현에 대해선 생각해보고 싶어.",
         "properNounIndices": [
-          2
+          0,
+          15
         ]
       },
       {
         "id": 8,
-        "english": "Oh Phil, you're doing really well dealing with all the uphill tasks in life. Here are some more examples of people using 'an uphill task'.",
-        "korean": "필, 인생의 힘든 일들을 잘 해내고 있어. 사람들이 'an uphill task'를 쓰는 예시를 더 들어보자.",
-        "properNounIndices": [
-          1,
-          14
-        ]
+        "english": "We use it to talk about something difficult.",
+        "korean": "어려운 일을 말할 때 써.",
+        "properNounIndices": []
       },
       {
         "id": 9,
-        "english": "Sorting out my unread emails is such an uphill task. As soon as I delete the ones I haven't read, more come in.",
-        "korean": "읽지 않은 이메일 정리하는 건 정말 힘든 일이야. 안 읽은 걸 지우자마자 더 들어오거든.",
-        "properNounIndices": [
-          10,
-          13,
-          17
-        ]
+        "english": "So, think about walking up a steep hill.",
+        "korean": "가파른 언덕을 올라가는 걸 상상해봐.",
+        "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '가능성이 낮은' mean in English?",
+      "question": "What does '결단력, 의지' mean in English?",
       "options": [
-        "sort out",
-        "steep",
-        "unlikely",
-        "determination"
+        "determination",
+        "uphill struggle",
+        "an uphill task",
+        "steep"
       ],
-      "answer": 2
+      "answer": 0
     }
   },
   {
@@ -149,68 +127,253 @@
     "sentences": [
       {
         "id": 10,
-        "english": "I'm going on holiday next week, and I've got so much to do before I go. Getting it all done is such an uphill task.",
-        "korean": "다음 주에 휴가를 가는데, 가기 전에 할 일이 너무 많아. 다 끝내는 건 정말 힘든 일이야.",
-        "properNounIndices": [
-          7,
-          14,
-          16
-        ]
+        "english": "It takes a lot of energy and effort, doesn't it?",
+        "korean": "에너지와 노력이 많이 들잖아?",
+        "properNounIndices": []
       },
       {
         "id": 11,
-        "english": "I've got so many lines to memorise for a play this weekend. It's such an uphill task.",
-        "korean": "이번 주말 연극을 위해 외워야 할 대사가 너무 많아. 정말 힘든 일이야.",
-        "properNounIndices": [
-          12
-        ]
+        "english": "So, an uphill task is something that's difficult and takes a lot of energy.",
+        "korean": "그래서 uphill task는 어렵고 에너지가 많이 드는 일이야.",
+        "properNounIndices": []
       },
       {
         "id": 12,
-        "english": "You're listening to The English We Speak, and we're talking about the phrase 'an uphill task'. Phil, I think we can use other words to replace 'task', can't we?",
-        "korean": "The English We Speak을 듣고 계시고, 'an uphill task'에 대해 얘기하고 있어요. 필, 'task' 대신 다른 단어도 쓸 수 있잖아?",
+        "english": "I've literally got thousands of pictures to sort through.",
+        "korean": "정리해야 할 사진이 진짜 수천 장이거든.",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
+        "english": "That definitely sounds like an uphill task!",
+        "korean": "확실히 힘든 일 같아!",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "Any task that looks as if it's going to take a very long time, or where success seems very unlikely, can be described as 'uphill'.",
+        "korean": "매우 오래 걸리거나 성공이 어려워 보이는 일은 'uphill'로 묘사할 수 있어.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '가파른' mean in English?",
+      "options": [
+        "steep",
+        "sort out",
+        "determination",
+        "an uphill task"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L1_BTEW_013_set4",
+    "parentSetId": "L1_BTEW_013",
+    "theme": "An uphill task",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "We also often use it when there is something working against us.",
+        "korean": "방해되는 것이 있을 때도 자주 써.",
+        "properNounIndices": []
+      },
+      {
+        "id": 16,
+        "english": "So, if I fix something in my home, there's always something else that goes wrong straight afterwards.",
+        "korean": "집에서 뭔가를 고치면, 항상 바로 뒤에 다른 게 또 고장나거든.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 17,
+        "english": "Keeping everything OK just feels like an uphill task.",
+        "korean": "모든 걸 제대로 유지하는 것만으로도 힘든 일처럼 느껴져.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 18,
+        "english": "Oh Phil, you're doing really well dealing with all the uphill tasks in life.",
+        "korean": "필, 인생의 힘든 일들을 잘 해내고 있어.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 19,
+        "english": "Here are some more examples of people using 'an uphill task'.",
+        "korean": "사람들이 'an uphill task'를 쓰는 예시를 더 들어보자.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '힘든 일, 어려운 과제' mean in English?",
+      "options": [
+        "unlikely",
+        "uphill struggle",
+        "an uphill task",
+        "determination"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L1_BTEW_013_set5",
+    "parentSetId": "L1_BTEW_013",
+    "theme": "An uphill task",
+    "level": 5,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "Sorting out my unread emails is such an uphill task.",
+        "korean": "읽지 않은 이메일 정리하는 건 정말 힘든 일이야.",
+        "properNounIndices": []
+      },
+      {
+        "id": 21,
+        "english": "As soon as I delete the ones I haven't read, more come in.",
+        "korean": "안 읽은 걸 지우자마자 더 들어오거든.",
+        "properNounIndices": [
+          3,
+          7
+        ]
+      },
+      {
+        "id": 22,
+        "english": "I'm going on holiday next week, and I've got so much to do before I go.",
+        "korean": "다음 주에 휴가를 가는데, 가기 전에 할 일이 너무 많아.",
+        "properNounIndices": [
+          7,
+          14
+        ]
+      },
+      {
+        "id": 23,
+        "english": "Getting it all done is such an uphill task.",
+        "korean": "다 끝내는 건 정말 힘든 일이야.",
+        "properNounIndices": []
+      },
+      {
+        "id": 24,
+        "english": "I've got so many lines to memorise for a play this weekend.",
+        "korean": "이번 주말 연극을 위해 외워야 할 대사가 너무 많아.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '힘든 투쟁, 고된 노력' mean in English?",
+      "options": [
+        "steep",
+        "unlikely",
+        "uphill struggle",
+        "sort out"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L1_BTEW_013_set6",
+    "parentSetId": "L1_BTEW_013",
+    "theme": "An uphill task",
+    "level": 6,
+    "setNumber": 6,
+    "sentences": [
+      {
+        "id": 25,
+        "english": "It's such an uphill task.",
+        "korean": "정말 힘든 일이야.",
+        "properNounIndices": []
+      },
+      {
+        "id": 26,
+        "english": "You're listening to The English We Speak, and we're talking about the phrase 'an uphill task'.",
+        "korean": "The English We Speak을 듣고 계시고, 'an uphill task'에 대해 얘기하고 있어요.",
         "properNounIndices": [
           3,
           4,
           5,
-          6,
-          16,
-          17
+          6
         ]
       },
       {
-        "id": 13,
-        "english": "Yes, we can use 'uphill' with 'struggle' or 'battle' and it has this same idea - that it will take a lot of determination to complete it. So, for example, it was an uphill struggle for me to write my thesis.",
-        "korean": "맞아, 'uphill'을 'struggle'이나 'battle'과 함께 써도 같은 의미야 — 완수하려면 많은 결단력이 필요하다는 거지. 예를 들어, 논문 쓰는 건 힘든 투쟁이었어.",
+        "id": 27,
+        "english": "Phil, I think we can use other words to replace 'task', can't we?",
+        "korean": "필, 'task' 대신 다른 단어도 쓸 수 있잖아?",
         "properNounIndices": [
-          27
+          1
         ]
       },
       {
-        "id": 14,
-        "english": "OK, so we've learnt 'an uphill task' – something which is very difficult and takes a lot of energy. Time for me to get back to sorting my photos, that uphill task! See you later.",
-        "korean": "좋아, 'an uphill task'를 배웠어 — 매우 어렵고 에너지가 많이 드는 일. 이제 사진 정리하러 가야겠다, 그 힘든 일! 나중에 봐.",
-        "properNounIndices": [
-          19,
-          32
-        ]
+        "id": 28,
+        "english": "Yes, we can use 'uphill' with 'struggle' or 'battle' and it has this same idea - that it will take a lot of determination to complete it.",
+        "korean": "맞아, 'uphill'을 'struggle'이나 'battle'과 함께 써도 같은 의미야 — 완수하려면 많은 결단력이 필요하다는 거지.",
+        "properNounIndices": []
       },
       {
-        "id": 15,
+        "id": 29,
+        "english": "So, for example, it was an uphill struggle for me to write my thesis.",
+        "korean": "예를 들어, 논문 쓰는 건 힘든 투쟁이었어.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '힘든 투쟁, 고된 노력' mean in English?",
+      "options": [
+        "steep",
+        "uphill struggle",
+        "determination",
+        "unlikely"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L1_BTEW_013_set7",
+    "parentSetId": "L1_BTEW_013",
+    "theme": "An uphill task",
+    "level": 4,
+    "setNumber": 7,
+    "sentences": [
+      {
+        "id": 30,
+        "english": "OK, so we've learnt 'an uphill task' – something which is very difficult and takes a lot of energy.",
+        "korean": "좋아, 'an uphill task'를 배웠어 — 매우 어렵고 에너지가 많이 드는 일.",
+        "properNounIndices": []
+      },
+      {
+        "id": 31,
+        "english": "Time for me to get back to sorting my photos, that uphill task!",
+        "korean": "이제 사진 정리하러 가야겠다, 그 힘든 일!",
+        "properNounIndices": []
+      },
+      {
+        "id": 32,
+        "english": "See you later.",
+        "korean": "나중에 봐.",
+        "properNounIndices": []
+      },
+      {
+        "id": 33,
         "english": "Bye!",
         "korean": "안녕!",
         "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '결단력, 의지' mean in English?",
+      "question": "What does '가능성이 낮은' mean in English?",
       "options": [
         "determination",
-        "unlikely",
+        "steep",
         "an uphill task",
-        "uphill struggle"
+        "unlikely"
       ],
-      "answer": 0
+      "answer": 3
     }
   }
 ]

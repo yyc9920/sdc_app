@@ -1,0 +1,65 @@
+[
+  {
+    "setId": "L3_DLG_050_set1",
+    "parentSetId": "L3_DLG_050",
+    "theme": "Discussing Team Building Activities",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "We need to plan a team-building event for next month.",
+        "korean": "다음 달 팀빌딩 행사를 계획해야 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "What kind of activities are you thinking?",
+        "korean": "어떤 종류의 활동을 생각하고 있어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I was thinking of either an escape room or a cooking class.",
+        "korean": "방탈출이나 요리 수업을 생각하고 있었어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "The escape room sounds more fun.",
+        "korean": "방탈출이 더 재미있을 것 같은데요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "It also requires better teamwork.",
+        "korean": "팀워크도 더 필요하고요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "How about we send out a survey and let the team vote?",
+        "korean": "설문을 보내서 팀원들이 투표하게 하는 건 어때요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "I'll set up the survey and send it out today.",
+        "korean": "설문을 만들어서 오늘 보낼게요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '방탈출' mean in English?",
+      "options": [
+        "team-building",
+        "survey",
+        "vote",
+        "escape room"
+      ],
+      "answer": 3
+    }
+  }
+]

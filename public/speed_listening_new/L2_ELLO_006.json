@@ -3,167 +3,350 @@
     "setId": "L2_ELLO_006_set1",
     "parentSetId": "L2_ELLO_006",
     "theme": "Mixer #13 — No Place Like Home",
-    "level": 6,
+    "level": 5,
     "setNumber": 1,
     "sentences": [
       {
         "id": 0,
-        "english": "I'm from Birmingham, Alabama. It's in the Deep South. It's a city that's been through a lot historically — a lot of industrial history, but also a lot of civil rights history.",
-        "korean": "버밍햄, 앨라배마 출신이에요. 딥 사우스에 있는, 역사적으로 많은 일을 겪은 도시예요.",
+        "english": "I'm from Birmingham, Alabama.",
+        "korean": "버밍햄, 앨라배마 출신이에요.",
         "properNounIndices": [
           2,
-          3,
-          4,
-          7,
-          8,
-          9
+          3
         ]
       },
       {
         "id": 1,
-        "english": "The people are very friendly and Southern hospitality is real. The food is amazing — barbecue, soul food. It's hot and humid in the summer.",
-        "korean": "사람들이 아주 친절하고 남부의 환대는 진짜예요. 음식이 끝내줘요 — 바비큐, 소울 푸드. 여름엔 덥고 습해요.",
+        "english": "It's in the Deep South.",
+        "korean": "딥 사우스에 있는, 역사적으로 많은 일을 겪은 도시예요.",
         "properNounIndices": [
-          6,
-          10,
-          18
+          3,
+          4
         ]
       },
       {
         "id": 2,
-        "english": "I'm from Philadelphia. It's a historic city with lots of character. You have the Liberty Bell and Independence Hall. The food is great — we're famous for cheesesteaks.",
-        "korean": "필라델피아 출신이에요. 개성이 넘치는 역사적인 도시로, 자유의 종과 독립기념관이 있어요. 음식도 맛있고요.",
-        "properNounIndices": [
-          2,
-          3,
-          11,
-          14,
-          15,
-          17,
-          18,
-          19
-        ]
+        "english": "It's a city that's been through a lot historically — a lot of industrial history, but also a lot of civil rights history.",
+        "korean": "역사적으로 많은 일을 겪은 도시예요",
+        "properNounIndices": []
       },
       {
         "id": 3,
-        "english": "There's a lot of history all around you. The people can be direct and blunt, but they're genuine. It's a great city.",
-        "korean": "주위에 역사가 가득해요. 사람들은 직설적이고 무뚝뚝할 수 있지만 진솔해요. 좋은 도시예요.",
+        "english": "The people are very friendly and Southern hospitality is real.",
+        "korean": "사람들이 아주 친절하고 남부의 환대는 진짜예요.",
         "properNounIndices": [
-          8,
-          18
+          6
         ]
       },
       {
         "id": 4,
-        "english": "I'm from a small town called Melanie on the Sunshine Coast in Australia. It's very relaxed and laid-back. The beach lifestyle is central to everything.",
-        "korean": "호주 선샤인 코스트에 있는 멜라니라는 작은 마을 출신이에요. 아주 여유롭고 느긋한 곳으로, 해변 생활이 모든 것의 중심이에요.",
-        "properNounIndices": [
-          6,
-          9,
-          10,
-          12,
-          13,
-          18
-        ]
+        "english": "The food is amazing — barbecue, soul food.",
+        "korean": "음식이 끝내줘요 — 바비큐, 소울 푸드.",
+        "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '고립' mean in English?",
+      "question": "What does '깨끗한, 원시적인' mean in English?",
       "options": [
-        "isolation",
-        "humid",
-        "dynamic",
-        "relaxed"
+        "challenging",
+        "pristine",
+        "industrial",
+        "Deep South"
       ],
-      "answer": 0
+      "answer": 1
     }
   },
   {
     "setId": "L2_ELLO_006_set2",
     "parentSetId": "L2_ELLO_006",
     "theme": "Mixer #13 — No Place Like Home",
-    "level": 6,
+    "level": 4,
     "setNumber": 2,
     "sentences": [
       {
         "id": 5,
-        "english": "Everyone knows everyone, so it's very community-oriented. The weather is beautiful year-round. It's a small-town feel in paradise.",
-        "korean": "서로 다 알아서 아주 공동체 중심이에요. 1년 내내 날씨가 좋고요. 천국 같은 작은 마을 분위기예요.",
-        "properNounIndices": [
-          7,
-          12
-        ]
+        "english": "It's hot and humid in the summer.",
+        "korean": "여름엔 덥고 습해요.",
+        "properNounIndices": []
       },
       {
         "id": 6,
-        "english": "I'm from Toronto, Canada. It's a diverse, multicultural city with lots to do. There are different neighborhoods with different cultures and cuisines. It's very dynamic and modern.",
-        "korean": "캐나다 토론토 출신이에요. 다양하고 다문화적인 도시로 할 것이 많아요. 각기 다른 문화와 요리를 가진 동네들이 있어요.",
+        "english": "I'm from Philadelphia. It's a historic city with lots of character.",
+        "korean": "필라델피아 출신이에요. 개성이 넘치는 역사적인 도시로, 자유의 종과 독립기념관이 있어요.",
         "properNounIndices": [
           2,
-          3,
-          4,
-          13,
-          22
+          3
         ]
       },
       {
         "id": 7,
+        "english": "You have the Liberty Bell and Independence Hall.",
+        "korean": "음식도 맛있고요.",
+        "properNounIndices": [
+          3,
+          4,
+          6,
+          7
+        ]
+      },
+      {
+        "id": 8,
+        "english": "The food is great — we're famous for cheesesteaks.",
+        "korean": "음식이 맛있어요",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "There's a lot of history all around you.",
+        "korean": "주위에 역사가 가득해요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '도전적인' mean in English?",
+      "options": [
+        "challenging",
+        "barbecue",
+        "dynamic",
+        "isolation"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_ELLO_006_set3",
+    "parentSetId": "L2_ELLO_006",
+    "theme": "Mixer #13 — No Place Like Home",
+    "level": 4,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "The people can be direct and blunt, but they're genuine.",
+        "korean": "사람들은 직설적이고 무뚝뚝할 수 있지만 진솔해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "It's a great city.",
+        "korean": "좋은 도시예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "I'm from a small town called Melanie on the Sunshine Coast in Australia.",
+        "korean": "호주 선샤인 코스트에 있는 멜라니라는 작은 마을 출신이에요.",
+        "properNounIndices": [
+          6,
+          9,
+          10,
+          12
+        ]
+      },
+      {
+        "id": 13,
+        "english": "It's very relaxed and laid-back.",
+        "korean": "아주 여유롭고 느긋한 곳으로, 해변 생활이 모든 것의 중심이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "The beach lifestyle is central to everything.",
+        "korean": "아주 여유롭고 느긋해요 해변 생활이 모든 것의 중심이에요",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '산업의' mean in English?",
+      "options": [
+        "Direct and blunt",
+        "industrial",
+        "genuine",
+        "humid"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L2_ELLO_006_set4",
+    "parentSetId": "L2_ELLO_006",
+    "theme": "Mixer #13 — No Place Like Home",
+    "level": 3,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "Everyone knows everyone, so it's very community-oriented.",
+        "korean": "서로 다 알아서 아주 공동체 중심이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 16,
+        "english": "The weather is beautiful year-round.",
+        "korean": "1년 내내 날씨가 좋고요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "It's a small-town feel in paradise.",
+        "korean": "천국 같은 작은 마을 분위기예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
+        "english": "I'm from Toronto, Canada.",
+        "korean": "캐나다 토론토 출신이에요.",
+        "properNounIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "id": 19,
+        "english": "It's a diverse, multicultural city with lots to do.",
+        "korean": "다양하고 다문화적인 도시로 할 것이 많아요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '시민권' mean in English?",
+      "options": [
+        "relaxed",
+        "Direct and blunt",
+        "pristine",
+        "civil rights"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L2_ELLO_006_set5",
+    "parentSetId": "L2_ELLO_006",
+    "theme": "Mixer #13 — No Place Like Home",
+    "level": 4,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "There are different neighborhoods with different cultures and cuisines.",
+        "korean": "각기 다른 문화와 요리를 가진 동네들이 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 21,
+        "english": "It's very dynamic and modern.",
+        "korean": "다양한 문화와 요리의 동네들이 있어요",
+        "properNounIndices": []
+      },
+      {
+        "id": 22,
         "english": "The winters are cold, which is challenging, but the rest of the year is beautiful.",
         "korean": "겨울이 추워서 힘들지만, 나머지 계절은 아름다워요.",
         "properNounIndices": []
       },
       {
-        "id": 8,
-        "english": "I'm from Perth, Western Australia. It's a laid-back coastal city. It's very isolated from the rest of Australia because there's nothing but desert between us and the Eastern cities.",
-        "korean": "서호주 퍼스 출신이에요. 여유로운 해안 도시인데, 호주 나머지 지역과 매우 고립되어 있어요.",
+        "id": 23,
+        "english": "I'm from Perth, Western Australia.",
+        "korean": "서호주 퍼스 출신이에요.",
         "properNounIndices": [
           2,
           3,
-          4,
-          5,
-          10,
-          17,
-          27
+          4
         ]
       },
       {
-        "id": 9,
-        "english": "Because of that isolation, Perth has developed its own unique character and identity. The weather is beautiful, and the beaches are pristine.",
-        "korean": "그 고립 때문에 퍼스만의 독특한 성격과 정체성이 생겼어요. 날씨가 아름답고 해변이 깨끗해요.",
-        "properNounIndices": [
-          4,
-          13
-        ]
-      },
-      {
-        "id": 10,
-        "english": "I'm from Southend-on-Sea in England. It's a seaside town on the coast. It's quite quiet and peaceful, but it's still very accessible to London — only an hour away by train.",
-        "korean": "영국 사우센드온씨 출신이에요. 해안가에 있는 해변 마을로 꽤 조용하고 평화롭지만, 런던 접근성은 좋아요.",
-        "properNounIndices": [
-          2,
-          4,
-          5,
-          12,
-          23
-        ]
-      },
-      {
-        "id": 11,
-        "english": "The town has a pier which is a classic British thing. It's a nice, relaxed place to grow up.",
-        "korean": "마을에 부두가 있는데 전형적인 영국 문화예요. 자라기에 좋은, 편안한 곳이에요.",
-        "properNounIndices": [
-          9,
-          11
-        ]
+        "id": 24,
+        "english": "It's a laid-back coastal city.",
+        "korean": "여유로운 해안 도시인데, 호주 나머지 지역과 매우 고립되어 있어요.",
+        "properNounIndices": []
       }
     ],
     "quiz": {
       "question": "What does '고립' mean in English?",
       "options": [
-        "industrial",
-        "humid",
+        "Deep South",
+        "genuine",
         "isolation",
         "relaxed"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_ELLO_006_set6",
+    "parentSetId": "L2_ELLO_006",
+    "theme": "Mixer #13 — No Place Like Home",
+    "level": 5,
+    "setNumber": 6,
+    "sentences": [
+      {
+        "id": 25,
+        "english": "It's very isolated from the rest of Australia because there's nothing but desert between us and the Eastern cities.",
+        "korean": "호주 나머지 지역과 매우 고립되어 있어요",
+        "properNounIndices": [
+          7,
+          17
+        ]
+      },
+      {
+        "id": 26,
+        "english": "Because of that isolation, Perth has developed its own unique character and identity.",
+        "korean": "그 고립 때문에 퍼스만의 독특한 성격과 정체성이 생겼어요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 27,
+        "english": "The weather is beautiful, and the beaches are pristine.",
+        "korean": "날씨가 아름답고 해변이 깨끗해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 28,
+        "english": "I'm from Southend-on-Sea in England.",
+        "korean": "영국 사우센드온씨 출신이에요.",
+        "properNounIndices": [
+          2,
+          4
+        ]
+      },
+      {
+        "id": 29,
+        "english": "It's a seaside town on the coast.",
+        "korean": "해안가에 있는 해변 마을로 꽤 조용하고 평화롭지만, 런던 접근성은 좋아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 30,
+        "english": "It's quite quiet and peaceful, but it's still very accessible to London — only an hour away by train.",
+        "korean": "꽤 조용하고 평화롭지만 런던 접근성이 좋아요",
+        "properNounIndices": [
+          11
+        ]
+      },
+      {
+        "id": 31,
+        "english": "The town has a pier which is a classic British thing.",
+        "korean": "마을에 부두가 있는데 전형적인 영국 문화예요.",
+        "properNounIndices": [
+          9
+        ]
+      },
+      {
+        "id": 32,
+        "english": "It's a nice, relaxed place to grow up.",
+        "korean": "자라기에 좋은, 편안한 곳이에요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '역동적인' mean in English?",
+      "options": [
+        "genuine",
+        "diverse",
+        "dynamic",
+        "Direct and blunt"
       ],
       "answer": 2
     }

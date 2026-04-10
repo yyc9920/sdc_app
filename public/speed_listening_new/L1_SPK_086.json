@@ -1,0 +1,71 @@
+[
+  {
+    "setId": "L1_SPK_086_set1",
+    "parentSetId": "L1_SPK_086",
+    "theme": "The Influence of Advertising",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think advertising has too much influence on what people buy?",
+        "korean": "광고가 사람들의 구매에 너무 큰 영향을 미친다고 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your opinion.",
+        "korean": "의견을 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I believe advertising has an enormous and often unhealthy influence on consumer behavior.",
+        "korean": "광고가 소비자 행동에 거대하고 종종 건강하지 않은 영향을 미친다고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Modern ads don't just inform us about products — they create artificial needs by making us feel inadequate without them.",
+        "korean": "현대 광고는 제품을 알리는 데 그치지 않아요 — 그것 없이는 부족하다고 느끼게 해 인위적 필요를 만들어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Social media has made this even worse through influencer marketing which disguises ads as personal recommendations.",
+        "korean": "소셜 미디어는 광고를 개인 추천으로 위장하는 인플루언서 마케팅을 통해 이를 더욱 악화시켰어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "However consumers can fight back by developing media literacy — learning to recognize persuasion techniques and making purchases based on genuine need rather than emotion.",
+        "korean": "하지만 소비자는 미디어 리터러시를 발달시켜 대항할 수 있어요 — 설득 기법을 인식하고 감정이 아닌 진짜 필요에 기반해 구매하는 법을 배움으로써요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "fight back",
+        "korean": "대항하다",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "disguise as",
+        "korean": "~으로 위장하다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "The Influence of Advertising",
+        "Handwriting vs. Typing Notes",
+        "Your Favorite Season and Why",
+        "Early Bird vs. Procrastinator"
+      ],
+      "answer": 0
+    }
+  }
+]

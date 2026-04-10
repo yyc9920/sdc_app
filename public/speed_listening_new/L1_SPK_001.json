@@ -8,14 +8,18 @@
     "sentences": [
       {
         "id": 0,
-        "english": "Describe a place where you feel most comfortable and relaxed. Explain why you feel that way.",
-        "korean": "당신이 가장 편안하고 여유롭다고 느끼는 장소를 묘사하세요. 왜 그렇게 느끼는지 설명하세요.",
-        "properNounIndices": [
-          10
-        ]
+        "english": "Describe a place where you feel most comfortable and relaxed.",
+        "korean": "당신이 가장 편안하고 여유롭다고 느끼는 장소를 묘사하세요.",
+        "properNounIndices": []
       },
       {
         "id": 1,
+        "english": "Explain why you feel that way.",
+        "korean": "왜 그렇게 느끼는지 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
         "english": "The place where I feel most comfortable is my local library.",
         "korean": "내가 가장 편안하게 느끼는 곳은 우리 동네 도서관이에요.",
         "properNounIndices": [
@@ -23,7 +27,7 @@
         ]
       },
       {
-        "id": 2,
+        "id": 3,
         "english": "I've been visiting it since I was a child, so it carries a lot of personal memories for me.",
         "korean": "어렸을 때부터 다녔기 때문에 저에게는 개인적인 추억이 많은 곳이에요.",
         "properNounIndices": [
@@ -31,29 +35,21 @@
         ]
       },
       {
-        "id": 3,
+        "id": 4,
         "english": "First, the atmosphere is incredibly calm — there's no loud noise, no distractions, just the quiet sound of pages turning.",
         "korean": "우선, 분위기가 믿을 수 없이 고요해요 — 시끄러운 소음도 없고, 방해 요소도 없고, 오직 페이지 넘기는 조용한 소리만 있어요.",
         "properNounIndices": []
-      },
-      {
-        "id": 4,
-        "english": "I find it much easier to concentrate there than at home or in a café.",
-        "korean": "거기서는 집이나 카페보다 집중하기가 훨씬 쉬워요.",
-        "properNounIndices": [
-          0
-        ]
       }
     ],
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Technology in Education",
         "Favorite Place",
-        "Important Quality in a Friend",
-        "Studying Alone vs. Studying in a Group"
+        "Competitive Sports for Children",
+        "First Impressions — Reliable or Not",
+        "Working from Home Pros and Cons"
       ],
-      "answer": 1
+      "answer": 0
     }
   },
   {
@@ -65,6 +61,14 @@
     "sentences": [
       {
         "id": 5,
+        "english": "I find it much easier to concentrate there than at home or in a café.",
+        "korean": "거기서는 집이나 카페보다 집중하기가 훨씬 쉬워요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 6,
         "english": "Second, I love being surrounded by books.",
         "korean": "둘째, 저는 책으로 둘러싸여 있는 것을 좋아해요.",
         "properNounIndices": [
@@ -72,7 +76,7 @@
         ]
       },
       {
-        "id": 6,
+        "id": 7,
         "english": "Even if I'm not reading them, just knowing that so much knowledge is around me feels reassuring and inspiring.",
         "korean": "읽지 않더라도, 그렇게 많은 지식이 주변에 있다는 것만으로도 안심이 되고 영감을 받아요.",
         "properNounIndices": [
@@ -80,7 +84,7 @@
         ]
       },
       {
-        "id": 7,
+        "id": 8,
         "english": "Whenever I feel stressed or overwhelmed, spending an hour at the library always helps me reset.",
         "korean": "스트레스를 받거나 압도당할 때마다, 도서관에서 한 시간 보내면 항상 리셋되는 데 도움이 돼요.",
         "properNounIndices": [
@@ -88,7 +92,7 @@
         ]
       },
       {
-        "id": 8,
+        "id": 9,
         "english": "It's more than just a building — it's a personal retreat for me.",
         "korean": "그곳은 단순한 건물 이상이에요 — 저만의 안식처예요.",
         "properNounIndices": []
@@ -98,11 +102,11 @@
       "question": "What is the main topic of this passage?",
       "options": [
         "A Person Who Has Influenced You",
-        "Studying Alone vs. Studying in a Group",
-        "Favorite Place",
-        "Important Quality in a Friend"
+        "A Celebration You Enjoyed",
+        "Learning from Failure",
+        "Favorite Place"
       ],
-      "answer": 2
+      "answer": 3
     }
   }
 ]

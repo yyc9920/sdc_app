@@ -1,0 +1,49 @@
+[
+  {
+    "setId": "L3_EXT_017_set1",
+    "parentSetId": "L3_EXT_017",
+    "theme": "The Impact of Social Media on News",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Social media has fundamentally changed how people consume news, with more than half of adults now getting their primary news from platforms like Instagram, X, and TikTok.",
+        "korean": "/ 성인의 절반 이상이 이제 / 인스타그램 X 틱톡 같은 플랫폼에서 주요 뉴스를 얻으면서.",
+        "properNounIndices": [
+          23,
+          24,
+          26
+        ]
+      },
+      {
+        "id": 1,
+        "english": "While this democratizes access to information, it also creates dangerous echo chambers where people only encounter viewpoints that confirm their existing beliefs.",
+        "korean": "이는 정보 접근을 민주화하지만 사람들이 기존 신념을 확인해주는 관점만 접하게 되는 위험한 반향실도 만든다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The algorithms that determine what content users see are designed to maximize engagement, which means sensational and emotionally charged stories are prioritized over balanced and factual reporting.",
+        "korean": "사용자가 보는 콘텐츠를 결정하는 알고리즘은 참여를 극대화하도록 설계되어 있다. 그래서 균형 있고 사실적인 보도보다 자극적이고 감정적인 이야기가 우선시된다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Media literacy — the ability to critically evaluate the sources and reliability of information — has never been a more essential skill for navigating the modern information landscape.",
+        "korean": "미디어 리터러시 — 정보의 출처와 신뢰성을 비판적으로 평가하는 능력 — 는 현대 정보 환경을 항해하는 데 그 어느 때보다 필수적인 기술이다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '미디어 리터러시' mean in English?",
+      "options": [
+        "reliability",
+        "media literacy",
+        "factual",
+        "sensational"
+      ],
+      "answer": 1
+    }
+  }
+]

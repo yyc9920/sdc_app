@@ -3,27 +3,33 @@
     "setId": "L1_BTEW_012_set1",
     "parentSetId": "L1_BTEW_012",
     "theme": "Makes my skin crawl",
-    "level": 6,
+    "level": 4,
     "setNumber": 1,
     "sentences": [
       {
         "id": 0,
-        "english": "Hello and welcome to The English We Speak, where we explain phrases used by fluent English speakers so that you can use them, too! I'm Feifei, and I'm joined by Georgie.",
-        "korean": "안녕하세요, 유창한 영어 화자들이 쓰는 표현을 설명하는 The English We Speak에 오신 것을 환영합니다! 저는 페이페이이고, 조지와 함께합니다.",
+        "english": "Hello and welcome to The English We Speak, where we explain phrases used by fluent English speakers so that you can use them, too!",
+        "korean": "안녕하세요, 유창한 영어 화자들이 쓰는 표현을 설명하는 The English We Speak에 오신 것을 환영합니다!",
         "properNounIndices": [
           4,
           5,
           6,
           7,
-          15,
-          24,
-          25,
-          27,
-          30
+          15
         ]
       },
       {
         "id": 1,
+        "english": "I'm Feifei, and I'm joined by Georgie.",
+        "korean": "저는 페이페이이고, 조지와 함께합니다.",
+        "properNounIndices": [
+          1,
+          3,
+          6
+        ]
+      },
+      {
+        "id": 2,
         "english": "Hi Feifei! How's your day going?",
         "korean": "안녕 페이페이! 오늘 하루 어때?",
         "properNounIndices": [
@@ -32,41 +38,27 @@
         ]
       },
       {
-        "id": 2,
-        "english": "Not too bad, thank you. What about you?",
-        "korean": "나쁘지 않아, 고마워. 넌 어때?",
-        "properNounIndices": [
-          5
-        ]
-      },
-      {
         "id": 3,
-        "english": "Well, actually… not great. I was taking out the bins this morning and there were maggots everywhere! It was disgusting – it made my skin crawl.",
-        "korean": "사실… 별로야. 오늘 아침에 쓰레기를 버리러 나갔는데 구더기가 여기저기 있었어! 역겨웠어 — 소름이 끼쳤다니까.",
-        "properNounIndices": [
-          4,
-          17
-        ]
+        "english": "Not too bad, thank you.",
+        "korean": "나쁘지 않아, 고마워.",
+        "properNounIndices": []
       },
       {
         "id": 4,
-        "english": "Oh, Georgie! You just said the maggots 'made your skin crawl', and that's the expression we're learning in this programme, but what does it mean?",
-        "korean": "오, 조지! 방금 구더기가 '소름 끼쳤다'고 했지. 그게 이번 프로그램에서 배울 표현인데, 무슨 뜻이야?",
-        "properNounIndices": [
-          1,
-          2
-        ]
+        "english": "What about you?",
+        "korean": "넌 어때?",
+        "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '징그러운 벌레들' mean in English?",
+      "question": "What does '구더기' mean in English?",
       "options": [
-        "makes my skin crawl",
+        "maggot",
         "creepy crawlies",
-        "crawl",
-        "disgusted"
+        "shudder",
+        "crawl"
       ],
-      "answer": 1
+      "answer": 0
     }
   },
   {
@@ -78,58 +70,52 @@
     "sentences": [
       {
         "id": 5,
+        "english": "Well, actually… not great.",
+        "korean": "사실… 별로야.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "I was taking out the bins this morning and there were maggots everywhere!",
+        "korean": "오늘 아침에 쓰레기를 버리러 나갔는데 구더기가 여기저기 있었어!",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 7,
+        "english": "It was disgusting – it made my skin crawl.",
+        "korean": "역겨웠어 — 소름이 끼쳤다니까.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Oh, Georgie! You just said the maggots 'made your skin crawl', and that's the expression we're learning in this programme, but what does it mean?",
+        "korean": "오, 조지! 방금 구더기가 '소름 끼쳤다'고 했지. 그게 이번 프로그램에서 배울 표현인데, 무슨 뜻이야?",
+        "properNounIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 9,
         "english": "OK, well I'm sure our listeners know what skin is, but Feifei, what does crawl mean?",
         "korean": "좋아, 청취자들은 skin이 뭔지 알겠지만, 페이페이, crawl은 무슨 뜻이지?",
         "properNounIndices": [
           2,
           11
         ]
-      },
-      {
-        "id": 6,
-        "english": "Well, 'crawl' is a verb and it's a way of moving your body along the ground, for example, babies crawl on their hands and knees. And animals can crawl too – and it can be quite a creepy movement when they do so!",
-        "korean": "'crawl'은 동사로 바닥을 따라 몸을 이동하는 방법이야. 예를 들어 아기들은 손과 무릎으로 기어다니지. 동물도 기어다닐 수 있는데, 그게 꽤 소름 끼치는 움직임이야!",
-        "properNounIndices": [
-          25
-        ]
-      },
-      {
-        "id": 7,
-        "english": "That's right! So, we even have a nickname for bugs which is 'creepy crawlies'. And, if something makes our skin crawl, it means you have the sensation of horrible insects crawling over your body – that doesn't sound very nice, does it?!",
-        "korean": "맞아! 벌레를 'creepy crawlies'라고 부르기도 해. 무언가가 소름 끼치게 한다면, 끔찍한 곤충이 몸 위를 기어다니는 것 같은 느낌이라는 뜻이야 — 별로 안 좋겠지?!",
-        "properNounIndices": [
-          2,
-          14
-        ]
-      },
-      {
-        "id": 8,
-        "english": "No, it doesn't… So, if something makes your skin crawl, it means you're incredibly disgusted or frightened by it. Let's hear some examples.",
-        "korean": "별로지… 그러니까 무언가가 소름 끼치게 한다면, 엄청나게 역겹거나 무섭다는 뜻이야. 예시를 들어보자.",
-        "properNounIndices": [
-          3,
-          19
-        ]
-      },
-      {
-        "id": 9,
-        "english": "I watched a film about an alien that attacked a group of people on a spaceship. The alien made my skin crawl.",
-        "korean": "우주선에서 외계인이 사람들을 공격하는 영화를 봤는데, 외계인이 정말 소름 끼쳤어.",
-        "properNounIndices": [
-          0,
-          16
-        ]
       }
     ],
     "quiz": {
-      "question": "What does '소름이 끼치다, 끔찍하다' mean in English?",
+      "question": "What does '징그러운 벌레들' mean in English?",
       "options": [
+        "shudder",
         "makes my skin crawl",
-        "disgusted",
-        "crawl",
-        "maggot"
+        "maggot",
+        "creepy crawlies"
       ],
-      "answer": 0
+      "answer": 3
     }
   },
   {
@@ -141,76 +127,213 @@
     "sentences": [
       {
         "id": 10,
-        "english": "My brother changes his bed sheets about three times a year. It makes my skin crawl just thinking about it.",
-        "korean": "형은 침대 시트를 1년에 세 번 정도 갈아. 생각만 해도 소름이 끼쳐.",
-        "properNounIndices": [
-          11
-        ]
+        "english": "Well, 'crawl' is a verb and it's a way of moving your body along the ground, for example, babies crawl on their hands and knees.",
+        "korean": "'crawl'은 동사로 바닥을 따라 몸을 이동하는 방법이야.",
+        "properNounIndices": []
       },
       {
         "id": 11,
-        "english": "I saw a news story about a plague of mice. There were thousands of them running through people's houses and it just made my skin crawl to see it.",
-        "korean": "생쥐 떼에 대한 뉴스를 봤는데, 수천 마리가 사람들의 집을 돌아다니고 있었어. 보기만 해도 소름이 끼쳤어.",
-        "properNounIndices": [
-          0,
-          10
-        ]
+        "english": "And animals can crawl too – and it can be quite a creepy movement when they do so!",
+        "korean": "예를 들어 아기들은 손과 무릎으로 기어다니지. 동물도 기어다닐 수 있는데, 그게 꽤 소름 끼치는 움직임이야!",
+        "properNounIndices": []
       },
       {
         "id": 12,
+        "english": "That's right! So, we even have a nickname for bugs which is 'creepy crawlies'.",
+        "korean": "맞아! 벌레를 'creepy crawlies'라고 부르기도 해.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 13,
+        "english": "And, if something makes our skin crawl, it means you have the sensation of horrible insects crawling over your body – that doesn't sound very nice, does it?!",
+        "korean": "무언가가 소름 끼치게 한다면, 끔찍한 곤충이 몸 위를 기어다니는 것 같은 느낌이라는 뜻이야 — 별로 안 좋겠지?!",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "No, it doesn't… So, if something makes your skin crawl, it means you're incredibly disgusted or frightened by it.",
+        "korean": "별로지… 그러니까 무언가가 소름 끼치게 한다면, 엄청나게 역겹거나 무섭다는 뜻이야.",
+        "properNounIndices": [
+          3
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '징그러운 벌레들' mean in English?",
+      "options": [
+        "crawl",
+        "creepy crawlies",
+        "shudder",
+        "disgusted"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L1_BTEW_012_set4",
+    "parentSetId": "L1_BTEW_012",
+    "theme": "Makes my skin crawl",
+    "level": 5,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "Let's hear some examples.",
+        "korean": "예시를 들어보자.",
+        "properNounIndices": []
+      },
+      {
+        "id": 16,
+        "english": "I watched a film about an alien that attacked a group of people on a spaceship.",
+        "korean": "우주선에서 외계인이 사람들을 공격하는 영화를 봤는데, 외계인이 정말 소름 끼쳤어.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 17,
+        "english": "The alien made my skin crawl.",
+        "korean": "디 에일리언 메이드 마이 스킨 크롤.",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
+        "english": "My brother changes his bed sheets about three times a year.",
+        "korean": "형은 침대 시트를 1년에 세 번 정도 갈아.",
+        "properNounIndices": []
+      },
+      {
+        "id": 19,
+        "english": "It makes my skin crawl just thinking about it.",
+        "korean": "생각만 해도 소름이 끼쳐.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '징그러운 벌레들' mean in English?",
+      "options": [
+        "makes my skin crawl",
+        "creepy crawlies",
+        "crawl",
+        "maggot"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L1_BTEW_012_set5",
+    "parentSetId": "L1_BTEW_012",
+    "theme": "Makes my skin crawl",
+    "level": 5,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "I saw a news story about a plague of mice.",
+        "korean": "생쥐 떼에 대한 뉴스를 봤는데, 수천 마리가 사람들의 집을 돌아다니고 있었어.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 21,
+        "english": "There were thousands of them running through people's houses and it just made my skin crawl to see it.",
+        "korean": "보기만 해도 소름이 끼쳤어.",
+        "properNounIndices": []
+      },
+      {
+        "id": 22,
         "english": "Georgie, what kind of reaction did you have when you found those maggots this morning?",
         "korean": "조지, 오늘 아침에 그 구더기를 발견했을 때 어떤 반응이었어?",
         "properNounIndices": []
       },
       {
-        "id": 13,
-        "english": "… I don't want to think about it. My whole body shuddered and shook.",
-        "korean": "… 생각하고 싶지 않아. 온몸이 부르르 떨렸어.",
+        "id": 23,
+        "english": "… I don't want to think about it.",
+        "korean": "… 생각하고 싶지 않아.",
         "properNounIndices": [
-          1,
-          8
+          1
         ]
       },
       {
-        "id": 14,
-        "english": "Like your skin was physically crawling! So, to remember this expression, you can either think about insects crawling over your skin, or that your skin itself crawls in disgust.",
-        "korean": "피부가 진짜로 기어다니는 것 같았겠네! 이 표현을 기억하려면, 곤충이 피부 위를 기어다니는 걸 상상하거나, 피부 자체가 역겨움에 꿈틀거리는 걸 생각하면 돼.",
-        "properNounIndices": [
-          6
-        ]
+        "id": 24,
+        "english": "My whole body shuddered and shook.",
+        "korean": "온몸이 부르르 떨렸어.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '기어가다' mean in English?",
+      "options": [
+        "crawl",
+        "maggot",
+        "makes my skin crawl",
+        "shudder"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L1_BTEW_012_set6",
+    "parentSetId": "L1_BTEW_012",
+    "theme": "Makes my skin crawl",
+    "level": 4,
+    "setNumber": 6,
+    "sentences": [
+      {
+        "id": 25,
+        "english": "Like your skin was physically crawling!",
+        "korean": "피부가 진짜로 기어다니는 것 같았겠네!",
+        "properNounIndices": []
       },
       {
-        "id": 15,
-        "english": "Let's have a quick recap. If something 'makes your skin crawl', it means it disgusts you or frightens you – it gives you a horrible physical sensation.",
-        "korean": "빠르게 요약하자. 'makes your skin crawl'은 역겹거나 무서워서 끔찍한 신체 반응을 일으킨다는 뜻이야.",
-        "properNounIndices": [
-          5
-        ]
+        "id": 26,
+        "english": "So, to remember this expression, you can either think about insects crawling over your skin, or that your skin itself crawls in disgust.",
+        "korean": "이 표현을 기억하려면, 곤충이 피부 위를 기어다니는 걸 상상하거나, 피부 자체가 역겨움에 꿈틀거리는 걸 생각하면 돼.",
+        "properNounIndices": []
       },
       {
-        "id": 16,
-        "english": "Thank you for listening! Bye!",
-        "korean": "들어줘서 고마워! 안녕!",
-        "properNounIndices": [
-          4
-        ]
+        "id": 27,
+        "english": "Let's have a quick recap.",
+        "korean": "빠르게 요약하자.",
+        "properNounIndices": []
       },
       {
-        "id": 17,
+        "id": 28,
+        "english": "If something 'makes your skin crawl', it means it disgusts you or frightens you – it gives you a horrible physical sensation.",
+        "korean": "'makes your skin crawl'은 역겹거나 무서워서 끔찍한 신체 반응을 일으킨다는 뜻이야.",
+        "properNounIndices": []
+      },
+      {
+        "id": 29,
+        "english": "Thank you for listening!",
+        "korean": "들어줘서 고마워!",
+        "properNounIndices": []
+      },
+      {
+        "id": 30,
+        "english": "Bye!",
+        "korean": "안녕!",
+        "properNounIndices": []
+      },
+      {
+        "id": 31,
         "english": "Bye!",
         "korean": "안녕!",
         "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '구더기' mean in English?",
+      "question": "What does '역겨운, 구역질 나는' mean in English?",
       "options": [
-        "creepy crawlies",
-        "disgusted",
         "maggot",
-        "shudder"
+        "disgusted",
+        "crawl",
+        "makes my skin crawl"
       ],
-      "answer": 2
+      "answer": 1
     }
   }
 ]

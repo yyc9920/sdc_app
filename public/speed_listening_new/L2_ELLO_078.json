@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L2_ELLO_078_set1",
+    "parentSetId": "L2_ELLO_078",
+    "theme": "Mixer #68 — Cooking Disasters",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I once set the kitchen on fire trying to make fried chicken.",
+        "korean": "한번 프라이드 치킨을 만들다가 부엌에 불을 냈어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "The oil got too hot and flames shot up.",
+        "korean": "기름이 너무 뜨거워져서 불꽃이 솟아올랐어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I tried to bake a cake for my friend's birthday, and it came out completely flat.",
+        "korean": "친구 생일에 케이크를 구우려 했는데 완전히 납작하게 나왔어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I forgot to add the baking powder.",
+        "korean": "베이킹 파우더를 넣는 걸 잊었어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I put sugar instead of salt in the soup, and my whole family noticed immediately.",
+        "korean": "수프에 소금 대신 설탕을 넣었고 가족 전체가 바로 알아챘어요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '불을 내다/불붙이다' mean in English?",
+      "options": [
+        "flat",
+        "flames",
+        "set on fire",
+        "instead of"
+      ],
+      "answer": 2
+    }
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "setId": "L2_BTEW_025_set1",
+    "parentSetId": "L2_BTEW_025",
+    "theme": "Facepalm Moment",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I decided to cycle to work today, I usually bring some clothes to change into, but today I got here and saw that I'd left my trousers at home — it was a real facepalm moment!",
+        "korean": "오늘 자전거로 출근했는데, 보통 갈아입을 옷을 가져오거든요. 근데 와보니 바지를 집에 두고 왔어요 — 진짜 페이스팜 순간이었어요!",
+        "properNounIndices": [
+          0,
+          7,
+          17,
+          23
+        ]
+      },
+      {
+        "id": 1,
+        "english": "A facepalm is where you have your head against the palm of your hand because you're embarrassed or frustrated.",
+        "korean": "페이스팜은 창피하거나 좌절해서 손바닥에 머리를 대는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "A facepalm moment is a moment where something like that happens.",
+        "korean": "페이스팜 순간은 그런 일이 일어나는 순간이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "facepalm moment",
+        "korean": "창피하거나 한심한 순간 (얼굴을 손으로 가리는 동작에서 유래)",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Flow State",
+        "Facepalm Moment",
+        "Shoot Off",
+        "Give it some welly!"
+      ],
+      "answer": 1
+    }
+  }
+]

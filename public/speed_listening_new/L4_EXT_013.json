@@ -1,0 +1,48 @@
+[
+  {
+    "setId": "L4_EXT_013_set1",
+    "parentSetId": "L4_EXT_013",
+    "theme": "The Loneliness Epidemic",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Despite living in an era of unprecedented connectivity, research shows that rates of loneliness have reached epidemic levels in many developed nations.",
+        "korean": "전례 없는 연결의 시대에 살고 있음에도 연구에 따르면 외로움 비율이 많은 선진국에서 전염병 수준에 도달했다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "A comprehensive study found that chronic loneliness is as damaging to health as smoking fifteen cigarettes a day, increasing the risk of heart disease and dementia by up to fifty percent.",
+        "korean": "/ 심장병과 치매 위험을 / 최대 50%까지 높이면서.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Social media appears to exacerbate the problem, creating an illusion of connection while often leaving users feeling more isolated than before.",
+        "korean": "/ 연결의 환상을 만들면서 / 종종 사용자를 / 이전보다 더 고립되게 느끼게 하면서.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Some governments have begun to treat loneliness as a public health crisis, with Japan and the UK both appointing official ministers of loneliness to coordinate national responses.",
+        "korean": "/ 일본과 영국 모두 / 국가 대응을 조율하기 위해 / 외로움 담당 장관을 임명하면서.",
+        "properNounIndices": [
+          13,
+          16
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '외로움' mean in English?",
+      "options": [
+        "isolated",
+        "loneliness",
+        "epidemic",
+        "dementia"
+      ],
+      "answer": 1
+    }
+  }
+]

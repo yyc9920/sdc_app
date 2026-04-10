@@ -1,0 +1,45 @@
+[
+  {
+    "setId": "L5_EXT_018_set1",
+    "parentSetId": "L5_EXT_018",
+    "theme": "The Trolley Problem and Moral Intuition",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "A runaway trolley is heading toward five people tied to the tracks and the only way to save them is to divert it onto a side track where it will kill one person instead — do you pull the lever?",
+        "korean": "폭주하는 트롤리가 선로에 묶인 5명을 향해 달리고 있다. 그들을 구하는 유일한 방법은 대신 1명을 죽이는 측선으로 돌리는 것이다. 레버를 당기겠는가?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Most people say yes to this version but when the scenario changes to physically pushing someone off a bridge to stop the trolley most people refuse even though the mathematical outcome is identical.",
+        "korean": "대부분은 이 버전에 예라고 말한다. 하지만 시나리오가 누군가를 다리에서 밀어 트롤리를 멈추는 것으로 바뀌면 수학적 결과가 동일한데도 대부분 거부한다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "This inconsistency reveals that human moral reasoning is not purely rational but is deeply influenced by emotional responses particularly the distinction between causing harm directly versus allowing it to happen.",
+        "korean": "이 불일치는 인간의 도덕적 추론이 순전히 이성적이지 않으며 감정적 반응에 깊이 영향받는다는 것을 드러낸다. 특히 직접 해를 끼치는 것과 그것이 일어나도록 허용하는 것의 구별에서.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "This thought experiment has taken on practical urgency with the rise of autonomous vehicles which must be programmed with algorithms that make exactly these kinds of life-and-death decisions.",
+        "korean": "이 사고 실험은 자율 주행 차량의 등장과 함께 실질적 긴급성을 띠게 됐다. 바로 이런 종류의 생사 결정을 내리는 알고리즘으로 프로그래밍돼야 하기 때문이다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '도덕적 직관' mean in English?",
+      "options": [
+        "moral intuition",
+        "inconsistency",
+        "autonomous",
+        "divert"
+      ],
+      "answer": 0
+    }
+  }
+]

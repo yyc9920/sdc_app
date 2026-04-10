@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L4_DLG_023_set1",
+    "parentSetId": "L4_DLG_023",
+    "theme": "Discussing Remote Work Policy",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'd like to propose that we move to a four-day remote work schedule.",
+        "korean": "주 4일 재택근무 일정으로 전환할 것을 제안하고 싶습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "What's driving this proposal?",
+        "korean": "이 제안의 동기가 뭔가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Our employee satisfaction survey showed that seventy-two percent of staff want more remote flexibility.",
+        "korean": "직원 만족도 조사에서 직원의 72%가 더 많은 재택 유연성을 원한다고 나왔습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "How would this affect collaboration?",
+        "korean": "이것이 협업에 어떤 영향을 미칠까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "We'd designate Wednesday as the mandatory in-office day for all team meetings and workshops.",
+        "korean": "수요일을 모든 팀 회의와 워크샵을 위한 필수 출근일로 지정하겠습니다.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Let's run a three-month pilot and evaluate the results before making it permanent.",
+        "korean": "3개월 파일럿을 운영하고 영구화하기 전에 결과를 평가합시다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '직원 만족도' mean in English?",
+      "options": [
+        "employee satisfaction",
+        "remote work",
+        "mandatory",
+        "evaluate"
+      ],
+      "answer": 0
+    }
+  }
+]

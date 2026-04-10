@@ -1,0 +1,109 @@
+[
+  {
+    "setId": "L3_DLG_036_set1",
+    "parentSetId": "L3_DLG_036",
+    "theme": "Calling to Reschedule a Meeting",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hi Sarah, I'm calling about our meeting tomorrow at two.",
+        "korean": "안녕 세라. 내일 2시 미팅 관련해서 전화했어요.",
+        "properNounIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Is everything okay?",
+        "korean": "다 괜찮아요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Something came up and I need to reschedule.",
+        "korean": "일이 생겨서 일정을 변경해야 해요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Would Thursday work for you instead?",
+        "korean": "대신 목요일은 괜찮아요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Morning or afternoon?",
+        "korean": "오전이에요 오후예요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '일이 생겼다' mean in English?",
+      "options": [
+        "something came up",
+        "reschedule",
+        "conference room",
+        "flexible"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L3_DLG_036_set2",
+    "parentSetId": "L3_DLG_036",
+    "theme": "Calling to Reschedule a Meeting",
+    "level": 3,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I'm flexible either way.",
+        "korean": "어느 쪽이든 유연해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Let's do ten AM then.",
+        "korean": "그럼 오전 10시에 해요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Same place as before?",
+        "korean": "전이랑 같은 장소요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Yes the conference room on the third floor.",
+        "korean": "네 3층 회의실이요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "I'll send a calendar update right away.",
+        "korean": "바로 캘린더 업데이트 보낼게요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '회의실' mean in English?",
+      "options": [
+        "reschedule",
+        "flexible",
+        "conference room",
+        "something came up"
+      ],
+      "answer": 2
+    }
+  }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "setId": "L1_SPK_048_set1",
+    "parentSetId": "L1_SPK_048",
+    "theme": "Strict vs. Relaxed Parenting",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think parents should be strict or relaxed when raising children?",
+        "korean": "아이를 키울 때 엄격해야 하는가 느슨해야 합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your position.",
+        "korean": "입장을 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I think the best parenting approach is a balance between strict and relaxed.",
+        "korean": "최선의 양육 방식은 엄격함과 느슨함 사이의 균형이라고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Children need clear boundaries and rules to feel safe and learn discipline.",
+        "korean": "아이들은 안전하게 느끼고 규율을 배우기 위해 명확한 경계와 규칙이 필요해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "But they also need the freedom to make their own choices explore their interests and even make mistakes.",
+        "korean": "하지만 자기 선택을 하고 관심사를 탐색하고 실수까지 할 자유도 필요해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Parents who are too strict risk raising children who are afraid to take risks or think independently.",
+        "korean": "너무 엄격한 부모는 위험을 감수하거나 독립적으로 생각하기를 두려워하는 아이를 키울 위험이 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "On the other hand parents who are too relaxed may fail to prepare their children for the real world's expectations.",
+        "korean": "반면 너무 느슨한 부모는 아이를 현실 세계의 기대에 대비시키는 데 실패할 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "on the other hand",
+        "korean": "반면에",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Do you think art and music education should be req",
+        "A Celebration You Enjoyed",
+        "Should Students Work Part-Time",
+        "Strict vs. Relaxed Parenting"
+      ],
+      "answer": 3
+    }
+  }
+]

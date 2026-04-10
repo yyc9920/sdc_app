@@ -1,0 +1,57 @@
+[
+  {
+    "setId": "L5_EXT_010_set1",
+    "parentSetId": "L5_EXT_010",
+    "theme": "The Psychology of Habit Formation",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Every behavior we repeat regularly becomes a habit, and habits account for roughly forty percent of our daily actions.",
+        "korean": "규칙적으로 반복하는 모든 행동은 습관이 되고 습관은 우리 일상 행동의 약 40%를 차지한다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "The neurological process behind habit formation follows what researchers call the 'habit loop' — a cue triggers a routine, which delivers a reward.",
+        "korean": "습관 형성의 신경학적 과정은 연구자들이 '습관 루프'라 부르는 것을 따른다 — 단서가 루틴을 촉발하고 그것이 보상을 전달한다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Understanding this loop is the key to both building positive habits and breaking destructive ones.",
+        "korean": "이 루프를 이해하는 것이 긍정적 습관을 만들고 파괴적 습관을 깨뜨리는 열쇠이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Research suggests that it takes an average of sixty-six days to form a new habit, far longer than the commonly cited twenty-one days.",
+        "korean": "연구에 따르면 새 습관을 형성하는 데 평균 66일이 걸리며 흔히 인용되는 21일보다 훨씬 길다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "The most effective strategy for building lasting habits is what psychologists call 'habit stacking' — attaching a new behavior to an existing one.",
+        "korean": "지속적인 습관을 만드는 가장 효과적인 전략은 심리학자들이 '습관 쌓기'라 부르는 것이다 — 새로운 행동을 기존 행동에 붙이는 것.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "For example, if you want to start meditating, do it immediately after your morning coffee — the existing habit serves as a reliable trigger for the new one.",
+        "korean": "예를 들어 명상을 시작하고 싶다면 아침 커피 직후에 하라 — 기존 습관이 새 습관의 신뢰할 수 있는 촉발제가 된다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '촉발하다/촉발제' mean in English?",
+      "options": [
+        "neurological",
+        "trigger",
+        "cue",
+        "destructive"
+      ],
+      "answer": 1
+    }
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "setId": "L2_ELLO_142_set1",
+    "parentSetId": "L2_ELLO_142",
+    "theme": "Mixer #3 — Morning Coffee Ritual",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The first thing I do every morning is make coffee, and the whole routine takes exactly seven minutes.",
+        "korean": "매일 아침 가장 먼저 하는 일은 커피 만들기예요. 전체 루틴이 정확히 7분 걸려요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I go to the same café every morning and the barista already knows my order, which is a large oat milk latte.",
+        "korean": "매일 아침 같은 카페에 가고 바리스타가 이미 주문을 알아요. 큰 오트밀크 라떼요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I recently switched from coffee to green tea, and I feel less anxious and I sleep better at night.",
+        "korean": "최근에 커피에서 녹차로 바꿨고 불안감이 줄고 밤에 잠을 더 잘 자요.",
+        "properNounIndices": [
+          0,
+          9,
+          14
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #120 — Best Way to Learn English",
+        "Mixer #3 — Morning Coffee Ritual",
+        "Mixer #28 — Moving to a New City",
+        "Mixer #59 — Ideal Weekend"
+      ],
+      "answer": 1
+    }
+  }
+]

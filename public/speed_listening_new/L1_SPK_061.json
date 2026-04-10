@@ -1,0 +1,65 @@
+[
+  {
+    "setId": "L1_SPK_061_set1",
+    "parentSetId": "L1_SPK_061",
+    "theme": "Renting vs. Owning a Home",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think it is better to rent or buy a home?",
+        "korean": "집을 임대하는 것과 사는 것 중 어느 것이 더 낫다고 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your opinion.",
+        "korean": "의견을 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "For young professionals I believe renting is the smarter choice in most situations.",
+        "korean": "젊은 직장인에게는 대부분의 상황에서 임대가 더 현명한 선택이라고 생각해요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 3,
+        "english": "First renting provides flexibility — if you get a job offer in another city you can simply move without the hassle of selling a property.",
+        "korean": "첫째 임대는 유연성을 제공해요 — 다른 도시에서 취업 제안을 받으면 부동산 매매의 번거로움 없이 간단히 이사할 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Second homeownership comes with hidden costs like property taxes maintenance and repair expenses that renters don't have to worry about.",
+        "korean": "둘째 주택 소유에는 재산세 유지비 수리비 같은 숨겨진 비용이 따르는데 임차인은 걱정할 필요가 없어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "That said owning a home is a great long-term investment for people who plan to stay in one place for many years.",
+        "korean": "그렇긴 해도 한 곳에 오래 머물 계획인 사람에게는 주택 소유가 훌륭한 장기 투자예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "hidden costs",
+        "korean": "숨겨진 비용",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "An Important Childhood Memory",
+        "The Best Invention in History",
+        "Renting vs. Owning a Home",
+        "A Skill You Want to Learn"
+      ],
+      "answer": 2
+    }
+  }
+]

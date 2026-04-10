@@ -1,0 +1,77 @@
+[
+  {
+    "setId": "L1_SPK_084B_set1",
+    "parentSetId": "L1_SPK_084B",
+    "theme": "How would you spend a day completely without techn",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "How would you spend a day completely without technology?",
+        "korean": "기술 없이 하루를 어떻게 보내겠습니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Describe your ideal tech-free day.",
+        "korean": "이상적인 기술 없는 날을 묘사하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "My ideal technology-free day would start with a long walk in a nearby forest.",
+        "korean": "이상적인 기술 없는 날은 근처 숲에서의 긴 산책으로 시작할 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Without my phone constantly buzzing I'd finally notice the sounds of birds and the wind through the trees.",
+        "korean": "폰이 끊임없이 울리지 않으니 드디어 새소리와 나무 사이 바람 소리를 알아차릴 거예요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 4,
+        "english": "In the afternoon I'd read a physical book at a park and maybe sketch in a notebook.",
+        "korean": "오후에는 공원에서 종이책을 읽고 노트에 스케치를 할 거예요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 5,
+        "english": "In the evening I'd cook a meal from scratch and have a long conversation with my family without anyone checking their phones.",
+        "korean": "저녁에는 처음부터 요리를 만들고 아무도 폰을 확인하지 않고 가족과 긴 대화를 나눌 거예요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 6,
+        "english": "I think we'd all be surprised how much more present and connected we feel when screens are removed from the equation.",
+        "korean": "화면이 제거되면 얼마나 더 현재에 있고 연결된 느낌인지 모두 놀랄 거라고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 7,
+        "english": "removed from the equation",
+        "korean": "방정식에서 제거된/빠진",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "How would you spend a day completely without techn",
+        "Famous People as Role Models",
+        "Your Dream Job",
+        "Giving Back to Your Community"
+      ],
+      "answer": 0
+    }
+  }
+]

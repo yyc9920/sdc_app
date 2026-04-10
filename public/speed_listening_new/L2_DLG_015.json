@@ -1,0 +1,102 @@
+[
+  {
+    "setId": "L2_DLG_015_set1",
+    "parentSetId": "L2_DLG_015",
+    "theme": "Complaining About a Meal",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Excuse me. There's a problem with my food.",
+        "korean": "실례합니다. 음식에 문제가 있어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I'm sorry to hear that.",
+        "korean": "그건 죄송합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "What seems to be the issue?",
+        "korean": "어떤 문제인가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I ordered my steak medium rare but this is well done.",
+        "korean": "스테이크를 미디엄 레어로 주문했는데 이건 웰던이에요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I apologize for the mistake.",
+        "korean": "실수에 대해 사과드립니다.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '미디엄 레어' mean in English?",
+      "options": [
+        "bill",
+        "well done",
+        "medium rare",
+        "apologize"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_DLG_015_set2",
+    "parentSetId": "L2_DLG_015",
+    "theme": "Complaining About a Meal",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I'll have the kitchen make a new one right away.",
+        "korean": "주방에서 새 것을 바로 만들도록 하겠습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Thank you. How long will it take?",
+        "korean": "감사합니다. 얼마나 걸릴까요?",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 7,
+        "english": "About ten minutes.",
+        "korean": "약 10분이요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "We'll also take this dish off your bill as an apology.",
+        "korean": "사과의 의미로 이 요리를 계산서에서 빼드리겠습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '계산서' mean in English?",
+      "options": [
+        "bill",
+        "apologize",
+        "well done",
+        "medium rare"
+      ],
+      "answer": 0
+    }
+  }
+]

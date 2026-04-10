@@ -1,0 +1,51 @@
+[
+  {
+    "setId": "L2_EXT_019_set1",
+    "parentSetId": "L2_EXT_019",
+    "theme": "Public Speaking Fear",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Public speaking is one of the most common fears in the world.",
+        "korean": "대중 연설은 세계에서 가장 흔한 두려움 중 하나예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Some surveys show that people fear it even more than death, which sounds extreme but many can relate.",
+        "korean": "일부 조사에 따르면 사람들이 죽음보다 더 두려워해요. 극단적으로 들리지만 많은 사람이 공감할 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The key to overcoming this fear is practice, because the more you do it the less scary it becomes.",
+        "korean": "/ 많이 할수록 / 덜 무서워지니까.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Start small — present to a friend, then a small group, then gradually increase the audience size.",
+        "korean": "작게 시작하세요 — 친구에게 발표하고 그 다음 작은 그룹에 그리고 점차 관객 규모를 늘리세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Remember that the audience wants you to succeed — nobody is hoping you will fail.",
+        "korean": "관객은 당신이 성공하기를 원한다는 걸 기억하세요 — 아무도 실패하기를 바라지 않아요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '관객/청중' mean in English?",
+      "options": [
+        "audience",
+        "public speaking",
+        "gradually",
+        "overcome"
+      ],
+      "answer": 0
+    }
+  }
+]

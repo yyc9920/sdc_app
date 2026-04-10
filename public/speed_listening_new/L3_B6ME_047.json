@@ -1,0 +1,43 @@
+[
+  {
+    "setId": "L3_B6ME_047_set1",
+    "parentSetId": "L3_B6ME_047",
+    "theme": "Grown-ups Buying Kids' Toys",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Recent estimates suggest that adults buying kids' toys for themselves account for between 30 and 40% of the entire toy market, so many that advertisers have come up with a term for them: kidults.",
+        "korean": "최근 추정에 따르면 자신을 위해 아이용 장난감을 사는 어른이 전체 시장의 30~40%나 돼요. 너무 많아서 광고업계가 '키덜트'라는 용어를 만들었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Between last October and December alone, American kidults spent over 1.5 billion dollars on toys for themselves.",
+        "korean": "지난 10~12월 사이에만 미국 키덜트들이 자신을 위한 장난감에 15억 달러 이상을 썼어요.",
+        "properNounIndices": [
+          2,
+          4,
+          6
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Among the most popular were plush toys, or plushies.",
+        "korean": "가장 인기 있는 건 봉제 인형이었어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '봉제 인형' mean in English?",
+      "options": [
+        "inner child",
+        "plushie",
+        "nostalgic",
+        "kidult"
+      ],
+      "answer": 1
+    }
+  }
+]

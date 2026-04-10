@@ -1,0 +1,63 @@
+[
+  {
+    "setId": "L2_ELLO_084_set1",
+    "parentSetId": "L2_ELLO_084",
+    "theme": "Mixer #62 — Favorite Drink",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My favorite drink is iced coffee.",
+        "korean": "좋아하는 음료는 아이스 커피예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I drink it year-round, even in winter.",
+        "korean": "겨울에도 일 년 내내 마셔요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "For me, it's fresh orange juice.",
+        "korean": "나에겐 생오렌지 주스예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Not the store-bought kind — freshly squeezed.",
+        "korean": "가게에서 산 게 아니라 — 갓 짜낸 거요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I love bubble tea, especially taro flavor.",
+        "korean": "버블티를 좋아해요, 특히 타로 맛이요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "english": "I get it at least three times a week.",
+        "korean": "일주일에 최소 세 번 마셔요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #99 — Coffee or Tea",
+        "Mixer #62 — Favorite Drink",
+        "Mixer #50 — Fast Food",
+        "Mixer #92 — Collecting Things"
+      ],
+      "answer": 1
+    }
+  }
+]

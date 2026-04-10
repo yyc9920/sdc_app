@@ -1,0 +1,48 @@
+[
+  {
+    "setId": "L2_ELLO_128_set1",
+    "parentSetId": "L2_ELLO_128",
+    "theme": "Mixer #17 — Luck",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I consider myself a pretty lucky person, because good things seem to happen to me randomly.",
+        "korean": "꽤 운이 좋은 사람이라고 생각해요. 좋은 일이 무작위로 생기는 것 같아서요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I don't believe in luck, I think everything is the result of hard work.",
+        "korean": "운을 믿지 않아요. 모든 것은 노력의 결과라고 생각해요.",
+        "properNounIndices": [
+          0,
+          5
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I won a raffle once and got a free trip to Bali, so yeah, I believe in luck.",
+        "korean": "한번 추첨에 당첨되어 발리 무료 여행을 받았어요. 그래서 네, 운을 믿어요.",
+        "properNounIndices": [
+          0,
+          11,
+          14
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #24 — Manners",
+        "Mixer #4 — Screen Time for Kids",
+        "Mixer #17 — Luck",
+        "Mixer #87 — Sharing Food"
+      ],
+      "answer": 2
+    }
+  }
+]

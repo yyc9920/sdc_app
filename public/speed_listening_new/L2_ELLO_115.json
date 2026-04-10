@@ -1,0 +1,61 @@
+[
+  {
+    "setId": "L2_ELLO_115_set1",
+    "parentSetId": "L2_ELLO_115",
+    "theme": "Mixer #30 — Birthdays",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I love celebrating my birthday.",
+        "korean": "생일 축하하는 걸 좋아해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I always plan a big party with all my friends.",
+        "korean": "항상 친구들과 큰 파티를 계획해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I don't like celebrating my birthday.",
+        "korean": "생일 축하하는 게 싫어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "It just reminds me that I'm getting older.",
+        "korean": "나이 들고 있다는 걸 그냥 상기시켜줄 뿐이에요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I prefer a quiet dinner with close friends rather than a big party, because it feels more personal and meaningful.",
+        "korean": "큰 파티보다 친한 친구들과 조용한 저녁을 선호해요. 더 개인적이고 의미 있게 느껴지거든요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #14 — Hanging Out",
+        "Mixer #30 — Birthdays",
+        "Mixer #103 — Social Media",
+        "Mixer #68 — Cooking Disasters"
+      ],
+      "answer": 1
+    }
+  }
+]

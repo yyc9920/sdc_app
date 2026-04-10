@@ -1,0 +1,48 @@
+[
+  {
+    "setId": "L3_EXT_013_set1",
+    "parentSetId": "L3_EXT_013",
+    "theme": "The Gig Economy",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The gig economy has fundamentally changed the way millions of people work, replacing traditional nine-to-five jobs with short-term, flexible engagements.",
+        "korean": "/ 전통적 9시-5시 직업을 / 단기적이고 유연한 업무로 대체하면서.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Platforms like Uber and Airbnb have created entirely new categories of work, enabling anyone with a car or a spare room to earn income on their own schedule.",
+        "korean": "우버나 에어비앤비 같은 플랫폼이 완전히 새로운 직업 범주를 만들어 차나 여분의 방이 있으면 자기 일정에 맞춰 수입을 올릴 수 있게 했다.",
+        "properNounIndices": [
+          2,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "english": "However, this freedom comes at a cost — gig workers typically lack health insurance, retirement benefits, and the job security that traditional employment provides.",
+        "korean": "하지만 이 자유에는 대가가 따른다 — 긱 노동자는 보통 건강 보험 퇴직 급여 전통적 고용이 제공하는 고용 안정성이 없다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Governments around the world are now grappling with how to regulate this rapidly growing sector while preserving the flexibility that makes it attractive in the first place.",
+        "korean": "전 세계 정부가 이 급성장하는 부문을 어떻게 규제할지 고심하고 있다. 처음부터 매력적이게 만드는 유연성을 보존하면서.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '~와 씨름하다/고심하다' mean in English?",
+      "options": [
+        "grapple with",
+        "job security",
+        "gig economy",
+        "regulate"
+      ],
+      "answer": 0
+    }
+  }
+]

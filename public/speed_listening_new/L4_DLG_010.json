@@ -1,0 +1,104 @@
+[
+  {
+    "setId": "L4_DLG_010_set1",
+    "parentSetId": "L4_DLG_010",
+    "theme": "HR — Employee Conflict Resolution",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Thanks for coming in, both of you.",
+        "korean": "두 분 다 와주셔서 감사합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I understand there's been some tension between your teams.",
+        "korean": "팀 간에 긴장이 있었다고 알고 있습니다.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "The design team keeps changing requirements after we've already started coding.",
+        "korean": "디자인 팀이 우리가 이미 코딩을 시작한 후에 계속 요구사항을 바꿔요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "It's wasting our time and causing us to miss deadlines.",
+        "korean": "시간이 낭비되고 마감을 놓치게 만들어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I hear your frustration.",
+        "korean": "좌절감이 이해됩니다.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '인계/넘기기' mean in English?",
+      "options": [
+        "requirements",
+        "handoff",
+        "root cause",
+        "mandatory"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L4_DLG_010_set2",
+    "parentSetId": "L4_DLG_010",
+    "theme": "HR — Employee Conflict Resolution",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Can you share your perspective on this?",
+        "korean": "이 문제에 대한 입장을 말씀해주시겠어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "The problem is that we don't get enough time for user testing before the handoff, so issues only surface after development has started.",
+        "korean": "문제는 핸드오프 전에 사용자 테스트 시간이 충분하지 않아서 개발 시작 후에야 문제가 드러난다는 겁니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "It sounds like the root cause is a process issue rather than a people issue.",
+        "korean": "근본 원인은 사람 문제가 아니라 프로세스 문제인 것 같습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "What if we add a mandatory review stage between design and development?",
+        "korean": "디자인과 개발 사이에 필수 검토 단계를 추가하면 어떨까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "That would actually solve most of our problems.",
+        "korean": "그러면 대부분의 문제가 실제로 해결될 거예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '인계/넘기기' mean in English?",
+      "options": [
+        "mandatory",
+        "root cause",
+        "handoff",
+        "tension"
+      ],
+      "answer": 2
+    }
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "setId": "L2_ELLO_125_set1",
+    "parentSetId": "L2_ELLO_125",
+    "theme": "Mixer #20 — Aging",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The worst thing about getting older is that my body doesn't recover as fast.",
+        "korean": "나이 드는 게 가장 안 좋은 건 몸이 예전만큼 빨리 회복이 안 되는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I played basketball last week and my knees still hurt.",
+        "korean": "지난주 농구를 했는데 무릎이 아직도 아파요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "The best thing about getting older is caring less about what others think, because you finally feel free to be yourself.",
+        "korean": "나이 드는 게 가장 좋은 건 남의 시선을 덜 신경 쓰는 거예요. 드디어 자유롭게 자신이 될 수 있으니까요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I'm only thirty but I already feel old, because I can't stay up past eleven anymore.",
+        "korean": "겨우 30살인데 이미 늙은 느낌이에요. 11시 넘기면 더 이상 안 깨어 있으니까요.",
+        "properNounIndices": [
+          4,
+          9
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #92 — Collecting Things",
+        "Mixer #20 — Aging",
+        "Mixer #72 — Driving",
+        "Mixer #90 — Losing Things"
+      ],
+      "answer": 1
+    }
+  }
+]

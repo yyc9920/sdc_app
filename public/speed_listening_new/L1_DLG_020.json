@@ -1,0 +1,65 @@
+[
+  {
+    "setId": "L1_DLG_020_set1",
+    "parentSetId": "L1_DLG_020",
+    "theme": "At the Swimming Pool",
+    "level": 2,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Two tickets for the pool please.",
+        "korean": "수영장 표 두 장 주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Adults or children?",
+        "korean": "성인인가요 어린이인가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "One adult and one child.",
+        "korean": "성인 한 명 어린이 한 명이요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "That's eight dollars total.",
+        "korean": "총 8달러입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "What time does the pool close?",
+        "korean": "수영장 몇 시에 닫나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "We close at nine PM.",
+        "korean": "밤 9시에 닫아요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Thank you.",
+        "korean": "감사합니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Checking Out of a Hotel",
+        "Returning a Book to a Friend",
+        "At the Swimming Pool",
+        "Bank — Opening an Account"
+      ],
+      "answer": 2
+    }
+  }
+]

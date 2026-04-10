@@ -3,7 +3,7 @@
     "setId": "L1_EXT_004_set1",
     "parentSetId": "L1_EXT_004",
     "theme": "At the Grocery Store",
-    "level": 6,
+    "level": 5,
     "setNumber": 1,
     "sentences": [
       {
@@ -22,23 +22,47 @@
       },
       {
         "id": 2,
-        "english": "Aisle five, left side. Thanks. Oh, and do you carry fresh basil?",
-        "korean": "5번 통로 왼쪽이요. 감사합니다. 참, 신선한 바질도 있나요?",
-        "properNounIndices": [
-          4,
-          5
-        ]
+        "english": "Aisle five, left side.",
+        "korean": "5번 통로 왼쪽이요.",
+        "properNounIndices": []
       },
       {
         "id": 3,
+        "english": "Thanks. Oh, and do you carry fresh basil?",
+        "korean": "감사합니다. 참, 신선한 바질도 있나요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 4,
         "english": "Yes, we do. That would be in the produce section, right at the front of the store.",
         "korean": "네, 있습니다. 농산물 코너에 있어요, 매장 맨 앞쪽이요.",
         "properNounIndices": [
           3
         ]
-      },
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Sleep Deprivation and Productivity",
+        "Why We Love Stories",
+        "The Attention Residue Problem",
+        "At the Grocery Store"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L1_EXT_004_set2",
+    "parentSetId": "L1_EXT_004",
+    "theme": "At the Grocery Store",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
       {
-        "id": 4,
+        "id": 5,
         "english": "Perfect. One more question — is there a self-checkout here?",
         "korean": "완벽해요. 질문 하나만 더 — 셀프 계산대가 있나요?",
         "properNounIndices": [
@@ -46,25 +70,35 @@
         ]
       },
       {
-        "id": 5,
-        "english": "There is! We have four self-checkout machines near the exit. But if you have more than fifteen items, the regular checkout lanes might be faster.",
-        "korean": "있습니다! 출구 근처에 셀프 계산대가 4대 있어요. 하지만 물건이 15개 넘으면 일반 계산대가 더 빠를 수 있어요.",
-        "properNounIndices": [
-          2,
-          10
-        ]
-      },
-      {
         "id": 6,
-        "english": "I only have a few things, so self-checkout sounds good. Thanks for your help!",
-        "korean": "물건이 몇 개 안 돼서 셀프 계산대가 좋겠네요. 도움 감사합니다!",
+        "english": "There is! We have four self-checkout machines near the exit.",
+        "korean": "있습니다! 출구 근처에 셀프 계산대가 4대 있어요.",
         "properNounIndices": [
-          0,
-          10
+          2
         ]
       },
       {
         "id": 7,
+        "english": "But if you have more than fifteen items, the regular checkout lanes might be faster.",
+        "korean": "하지만 물건이 15개 넘으면 일반 계산대가 더 빠를 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "I only have a few things, so self-checkout sounds good.",
+        "korean": "물건이 몇 개 안 돼서 셀프 계산대가 좋겠네요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 9,
+        "english": "Thanks for your help!",
+        "korean": "도움 감사합니다!",
+        "properNounIndices": []
+      },
+      {
+        "id": 10,
         "english": "Anytime!",
         "korean": "언제든지요!",
         "properNounIndices": []
@@ -73,12 +107,12 @@
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Returning a Product",
-        "Business Meeting — Quarterly Review",
-        "At the Grocery Store",
-        "Weather Forecast"
+        "Planning a Trip",
+        "Why Introverts Succeed in Business",
+        "Long-Form Journalism — The Ethics of Gene Editing",
+        "At the Grocery Store"
       ],
-      "answer": 2
+      "answer": 3
     }
   }
 ]

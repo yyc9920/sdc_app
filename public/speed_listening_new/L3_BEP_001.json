@@ -42,10 +42,10 @@
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Clarifying What Was Meant",
+        "Business and Finance",
         "Clarifying What Was Said",
-        "Food and Cooking",
-        "Art and Culture"
+        "Education and Learning",
+        "Clarifying What Was Meant"
       ],
       "answer": 1
     }

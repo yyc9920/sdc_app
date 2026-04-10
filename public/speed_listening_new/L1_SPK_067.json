@@ -1,0 +1,80 @@
+[
+  {
+    "setId": "L1_SPK_067_set1",
+    "parentSetId": "L1_SPK_067",
+    "theme": "A Restaurant You Recommend",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Describe a restaurant you would recommend to a friend.",
+        "korean": "친구에게 추천할 식당을 묘사하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain why you like it.",
+        "korean": "왜 좋아하는지 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The restaurant I always recommend to friends is a small Italian place called Buono near Hongdae station.",
+        "korean": "항상 친구들에게 추천하는 식당은 홍대역 근처 부오노라는 작은 이탈리안 식당이에요.",
+        "properNounIndices": [
+          2,
+          10,
+          13,
+          15
+        ]
+      },
+      {
+        "id": 3,
+        "english": "The pasta is handmade fresh every day and the tomato sauce uses ingredients imported directly from Italy.",
+        "korean": "파스타가 매일 수제로 만들어지고 토마토 소스는 이탈리아에서 직접 수입한 재료를 사용해요.",
+        "properNounIndices": [
+          16
+        ]
+      },
+      {
+        "id": 4,
+        "english": "What I love most is the cozy atmosphere — it feels like eating at a friend's home rather than a restaurant.",
+        "korean": "가장 좋아하는 것은 아늑한 분위기예요 — 식당보다 친구 집에서 먹는 것 같은 느낌이에요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 5,
+        "english": "The prices are also very reasonable — a full meal costs around fifteen thousand won.",
+        "korean": "000원이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Every friend I've taken there has loved it and many have become regulars themselves.",
+        "korean": "데려간 모든 친구가 좋아했고 많은 친구가 직접 단골이 됐어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 7,
+        "english": "handmade fresh",
+        "korean": "갓 수제로 만든",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "A Restaurant You Recommend",
+        "The Value of Travel",
+        "Long Commute vs. Small Apartment Near Work",
+        "First Impressions — Reliable or Not"
+      ],
+      "answer": 0
+    }
+  }
+]

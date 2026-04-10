@@ -1,0 +1,58 @@
+[
+  {
+    "setId": "L1_EXT_086_set1",
+    "parentSetId": "L1_EXT_086",
+    "theme": "My Bike Ride",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I ride my bike to the park every Sunday.",
+        "korean": "매주 일요일 자전거를 타고 공원에 가요.",
+        "properNounIndices": [
+          0,
+          8
+        ]
+      },
+      {
+        "id": 1,
+        "english": "The park has a long path along the river.",
+        "korean": "공원에 강을 따라 긴 길이 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I ride for about forty minutes and then take a rest on a bench.",
+        "korean": "약 40분 타고 벤치에서 쉬어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I always bring water and a small snack.",
+        "korean": "항상 물과 작은 간식을 가져가요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Riding my bike makes me feel free and happy.",
+        "korean": "자전거를 타면 자유롭고 행복해요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "The Gig Economy",
+        "A Snowy Day",
+        "The Philosophy of Time",
+        "My Bike Ride"
+      ],
+      "answer": 3
+    }
+  }
+]

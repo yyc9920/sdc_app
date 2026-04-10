@@ -1,0 +1,67 @@
+[
+  {
+    "setId": "L2_ELLO_075_set1",
+    "parentSetId": "L2_ELLO_075",
+    "theme": "Mixer #71 — Living Alone",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I love living alone.",
+        "korean": "혼자 사는 게 좋아요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I can do whatever I want, whenever I want.",
+        "korean": "원할 때 원하는 걸 할 수 있어요.",
+        "properNounIndices": [
+          0,
+          4,
+          7
+        ]
+      },
+      {
+        "id": 2,
+        "english": "No one to bother me.",
+        "korean": "방해할 사람이 없어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I lived alone for a year and it got really lonely, especially on weekends.",
+        "korean": "1년 동안 혼자 살았는데 정말 외로웠어요, 특히 주말에요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I ended up getting a roommate.",
+        "korean": "결국 룸메이트를 구했어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "english": "The hardest part of living alone is doing all the chores yourself, like cooking and cleaning every day.",
+        "korean": "혼자 사는 게 가장 힘든 건 모든 집안일을 혼자 하는 거예요. 매일 요리하고 청소하는 것 같은 거요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #71 — Living Alone",
+        "Mixer #48 — Hometown Changes",
+        "Mixer #121 — Favorite Proverb",
+        "Mixer #67 — Fashion"
+      ],
+      "answer": 0
+    }
+  }
+]

@@ -3,7 +3,7 @@
     "setId": "L1_EXT_010_set1",
     "parentSetId": "L1_EXT_010",
     "theme": "Weekend Plans",
-    "level": 5,
+    "level": 4,
     "setNumber": 1,
     "sentences": [
       {
@@ -14,34 +14,67 @@
       },
       {
         "id": 1,
-        "english": "Not really. I was thinking about staying home and watching movies. What about you?",
-        "korean": "딱히 없어. 집에서 영화나 볼까 했는데. 넌 어때?",
+        "english": "Not really. I was thinking about staying home and watching movies.",
+        "korean": "딱히 없어. 집에서 영화나 볼까 했는데.",
         "properNounIndices": [
-          2,
-          11
+          2
         ]
       },
       {
         "id": 2,
-        "english": "I was going to check out that new brunch place on Main Street. Want to come?",
-        "korean": "메인 스트릿에 새로 생긴 브런치 가게 가보려고 했는데. 같이 갈래?",
-        "properNounIndices": [
-          0,
-          11,
-          12,
-          13
-        ]
+        "english": "What about you?",
+        "korean": "넌 어때?",
+        "properNounIndices": []
       },
       {
         "id": 3,
-        "english": "Oh, that sounds nice. What time?",
-        "korean": "오, 좋겠다. 몇 시에?",
+        "english": "I was going to check out that new brunch place on Main Street.",
+        "korean": "메인 스트릿에 새로 생긴 브런치 가게 가보려고 했는데.",
         "properNounIndices": [
-          4
+          0,
+          11,
+          12
         ]
       },
       {
         "id": 4,
+        "english": "Want to come?",
+        "korean": "같이 갈래?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "My First Day of School",
+        "Weekend Plans",
+        "Korean Culture Shock",
+        "The Rise of Online Shopping"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L1_EXT_010_set2",
+    "parentSetId": "L1_EXT_010",
+    "theme": "Weekend Plans",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Oh, that sounds nice.",
+        "korean": "오, 좋겠다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "What time?",
+        "korean": "몇 시에?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
         "english": "How about eleven? That way we can sleep in a bit.",
         "korean": "11시 어때? 그러면 좀 늦잠 잘 수 있잖아.",
         "properNounIndices": [
@@ -49,17 +82,23 @@
         ]
       },
       {
-        "id": 5,
-        "english": "Perfect. And maybe after brunch we could walk around the park? The weather's supposed to be really nice on Saturday.",
-        "korean": "완벽해. 브런치 후에 공원 산책할까? 토요일 날씨가 정말 좋다던데.",
+        "id": 8,
+        "english": "Perfect. And maybe after brunch we could walk around the park?",
+        "korean": "완벽해. 브런치 후에 공원 산책할까?",
         "properNounIndices": [
-          1,
-          11,
-          19
+          1
         ]
       },
       {
-        "id": 6,
+        "id": 9,
+        "english": "The weather's supposed to be really nice on Saturday.",
+        "korean": "토요일 날씨가 정말 좋다던데.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 10,
         "english": "I'd love that. Let's meet at the restaurant at eleven and see how we feel after.",
         "korean": "좋아. 11시에 레스토랑에서 만나서 그 다음은 기분 보고 정하자.",
         "properNounIndices": [
@@ -67,7 +106,7 @@
         ]
       },
       {
-        "id": 7,
+        "id": 11,
         "english": "Sounds like a plan!",
         "korean": "좋은 계획이야!",
         "properNounIndices": []
@@ -76,10 +115,10 @@
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "University Debate",
-        "Science Documentary — Neuroplasticity",
+        "Visiting the Dentist",
+        "My Room",
         "Weekend Plans",
-        "At the Coffee Shop"
+        "My Favorite Snack"
       ],
       "answer": 2
     }

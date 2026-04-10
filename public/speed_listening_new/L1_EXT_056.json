@@ -1,0 +1,60 @@
+[
+  {
+    "setId": "L1_EXT_056_set1",
+    "parentSetId": "L1_EXT_056",
+    "theme": "Doing Homework",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I have homework every day.",
+        "korean": "매일 숙제가 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I usually do it right after dinner.",
+        "korean": "보통 저녁 먹은 직후에 해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Math homework is the hardest for me.",
+        "korean": "수학 숙제가 나에게 가장 어려워요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Sometimes I ask my older sister for help.",
+        "korean": "가끔 언니에게 도움을 요청해요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I feel really good when I finish all my homework before bed.",
+        "korean": "잠자기 전에 숙제를 다 끝내면 기분이 정말 좋아요.",
+        "properNounIndices": [
+          0,
+          5
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Playing Video Games",
+        "Doing Homework",
+        "Why We Underestimate Time",
+        "Playing Hide and Seek"
+      ],
+      "answer": 1
+    }
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "setId": "L3_TRES_003_set1",
+    "parentSetId": "L3_TRES_003",
+    "theme": "Campus Announcement",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Good afternoon. The university will host a study abroad information session next Monday at 4 p.m. in Room 210 of the International Center.",
+        "korean": "안녕하세요. 대학교에서 다음 월요일 오후 4시에 국제센터 210호에서 유학 설명회를 개최합니다.",
+        "properNounIndices": [
+          2,
+          12,
+          17,
+          21,
+          22
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Advisors and students who have previously studied abroad will answer questions about programs, scholarships, and application timelines.",
+        "korean": "지도교수와 이전에 유학한 학생들이 프로그램, 장학금, 지원 일정에 대한 질문에 답변합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "All majors are welcome.",
+        "korean": "모든 전공 환영입니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Daily Life Conversation",
+        "Travel and Tourism",
+        "Academic Talk — Pluralistic Ignorance",
+        "Campus Announcement"
+      ],
+      "answer": 3
+    }
+  }
+]

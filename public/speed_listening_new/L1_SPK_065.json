@@ -1,0 +1,71 @@
+[
+  {
+    "setId": "L1_SPK_065_set1",
+    "parentSetId": "L1_SPK_065",
+    "theme": "The Value of Volunteering",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Why do you think volunteering is important?",
+        "korean": "봉사활동이 왜 중요하다고 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Give specific reasons and examples.",
+        "korean": "구체적인 이유와 예시를 제시하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I think volunteering is important because it benefits both the community and the individual.",
+        "korean": "봉사활동이 중요한 이유는 지역사회와 개인 모두에게 도움이 되기 때문이에요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "First it addresses real needs in society that governments and businesses can't always meet.",
+        "korean": "첫째 정부와 기업이 항상 충족시킬 수 없는 사회의 실질적 필요를 해결해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "For example local food banks depend entirely on volunteers to sort and distribute food to families in need.",
+        "korean": "예를 들어 지역 푸드 뱅크는 필요한 가정에 음식을 분류하고 배분하는 데 전적으로 자원봉사자에 의존해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Second volunteering teaches skills like leadership teamwork and communication that look great on a resume.",
+        "korean": "둘째 봉사활동은 리더십 팀워크 의사소통 같은 기술을 가르쳐줘서 이력서에도 좋아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Most importantly it gives you a sense of purpose and fulfillment that money simply cannot buy.",
+        "korean": "가장 중요한 건 돈으로는 살 수 없는 목적의식과 성취감을 준다는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "sense of purpose",
+        "korean": "목적의식",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Living with a Roommate vs. Living Alone",
+        "The Best Age to Learn a Language",
+        "Weekday vs. Weekend Weddings",
+        "The Value of Volunteering"
+      ],
+      "answer": 3
+    }
+  }
+]

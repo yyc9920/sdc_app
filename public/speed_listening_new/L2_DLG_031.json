@@ -1,0 +1,62 @@
+[
+  {
+    "setId": "L2_DLG_031_set1",
+    "parentSetId": "L2_DLG_031",
+    "theme": "Getting Wi-Fi at a Hotel",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "How do I connect to the hotel Wi-Fi?",
+        "korean": "호텔 와이파이 어떻게 연결하나요?",
+        "properNounIndices": [
+          2,
+          7
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Select the network called GrandHotel-Guest.",
+        "korean": "GrandHotel-Guest라는 네트워크를 선택하세요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Is there a password?",
+        "korean": "비밀번호가 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Enter your room number and last name.",
+        "korean": "객실 번호와 성을 입력하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Is it free for all guests?",
+        "korean": "모든 투숙객에게 무료인가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Yes it's complimentary for all rooms.",
+        "korean": "네 모든 객실에 무료예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Talking About a Test",
+        "Getting Wi-Fi at a Hotel",
+        "Picking Up a Friend",
+        "Reporting a Lost Item at a Hotel"
+      ],
+      "answer": 1
+    }
+  }
+]

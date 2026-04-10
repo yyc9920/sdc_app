@@ -1,0 +1,69 @@
+[
+  {
+    "setId": "L2_DLG_035_set1",
+    "parentSetId": "L2_DLG_035",
+    "theme": "Discussing a Movie",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Did you watch that new movie everyone's talking about?",
+        "korean": "다들 얘기하는 그 새 영화 봤어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Yes I saw it last weekend.",
+        "korean": "네 지난 주말에 봤어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
+        "english": "What did you think?",
+        "korean": "어땠어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "The acting was amazing but the ending was disappointing.",
+        "korean": "연기는 놀라웠는데 결말이 실망이었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Really? I heard the ending was a big twist.",
+        "korean": "진짜요? 결말이 큰 반전이라고 들었는데요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 5,
+        "english": "It was a twist but it didn't make sense to me.",
+        "korean": "반전이긴 했는데 나한테는 이해가 안 됐어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Now I'm even more curious to see it.",
+        "korean": "이제 더 궁금해졌어요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Discussing a Movie",
+        "Tech Support — Internet Issue",
+        "Joining a Book Club",
+        "Buying Movie Tickets"
+      ],
+      "answer": 0
+    }
+  }
+]

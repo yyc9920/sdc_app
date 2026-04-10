@@ -1,0 +1,62 @@
+[
+  {
+    "setId": "L2_ELLO_095_set1",
+    "parentSetId": "L2_ELLO_095",
+    "theme": "Mixer #50 — Fast Food",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I eat fast food way more than I should.",
+        "korean": "패스트푸드를 먹어야 할 것보다 훨씬 많이 먹어요.",
+        "properNounIndices": [
+          0,
+          7
+        ]
+      },
+      {
+        "id": 1,
+        "english": "It's so quick and cheap that it's hard to resist.",
+        "korean": "너무 빠르고 싸서 참기 어려워요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I stopped eating fast food two years ago and I feel so much healthier.",
+        "korean": "2년 전에 패스트푸드를 끊었고 훨씬 건강해진 느낌이에요.",
+        "properNounIndices": [
+          0,
+          9
+        ]
+      },
+      {
+        "id": 3,
+        "english": "My skin cleared up and I have more energy.",
+        "korean": "피부가 맑아지고 에너지가 더 생겼어요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I only eat fast food when I'm traveling, because sometimes there's no other option.",
+        "korean": "여행할 때만 패스트푸드를 먹어요. 가끔 다른 선택지가 없어서요.",
+        "properNounIndices": [
+          0,
+          6
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #54 — Apologizing",
+        "Mixer #105 — Rainy Days",
+        "Mixer #13 — No Place Like Home",
+        "Mixer #50 — Fast Food"
+      ],
+      "answer": 3
+    }
+  }
+]

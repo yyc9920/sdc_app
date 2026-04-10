@@ -3,61 +3,53 @@
     "setId": "L2_EXT_001_set1",
     "parentSetId": "L2_EXT_001",
     "theme": "Job Interview — Small Talk",
-    "level": 6,
+    "level": 3,
     "setNumber": 1,
     "sentences": [
       {
         "id": 0,
-        "english": "Hi, you must be David. I'm Karen, the hiring manager. Thanks for coming in today.",
-        "korean": "안녕, 데이빗이시죠. 저는 채용 담당자 캐런입니다. 오늘 와주셔서 감사해요.",
+        "english": "Hi, you must be David.",
+        "korean": "안녕, 데이빗이시죠.",
         "properNounIndices": [
-          4,
-          5,
-          6,
-          10
+          4
         ]
       },
       {
         "id": 1,
-        "english": "Hi Karen, it's great to meet you. Thank you for having me.",
-        "korean": "안녕 캐런, 만나서 반갑습니다. 초대해주셔서 감사해요.",
+        "english": "I'm Karen, the hiring manager.",
+        "korean": "저는 채용 담당자 캐런입니다.",
         "properNounIndices": [
-          1,
-          7
+          1
         ]
       },
       {
         "id": 2,
-        "english": "Did you find the office okay?",
-        "korean": "사무실 잘 찾으셨어요?",
+        "english": "Thanks for coming in today.",
+        "korean": "오늘 와주셔서 감사해요.",
         "properNounIndices": []
       },
       {
         "id": 3,
-        "english": "I did, yes. I actually took the bus, and the stop is right outside, so it was very convenient.",
-        "korean": "네, 잘 찾았어요. 사실 버스를 탔는데, 정류장이 바로 밖에 있어서 아주 편리했어요.",
+        "english": "Hi Karen, it's great to meet you.",
+        "korean": "안녕 캐런, 만나서 반갑습니다.",
         "properNounIndices": [
-          0,
-          3
+          1
         ]
       },
       {
         "id": 4,
-        "english": "Oh good, that's one of the perks of this location. So, David, before we dive in, why don't you tell me a little bit about yourself?",
-        "korean": "좋네요, 이 위치의 장점 중 하나죠. 데이빗, 본격적으로 시작하기 전에 자기소개를 좀 해주시겠어요?",
-        "properNounIndices": [
-          10,
-          11
-        ]
+        "english": "Thank you for having me.",
+        "korean": "초대해주셔서 감사해요.",
+        "properNounIndices": []
       }
     ],
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Real Estate Tour",
-        "Describing a Movie",
+        "Supreme Court Oral Arguments",
+        "History Lecture — The Fall of the Berlin Wall",
         "Job Interview — Small Talk",
-        "Science Documentary — Neuroplasticity"
+        "Radio Interview — Small Business Owner"
       ],
       "answer": 2
     }
@@ -71,6 +63,35 @@
     "sentences": [
       {
         "id": 5,
+        "english": "Did you find the office okay?",
+        "korean": "사무실 잘 찾으셨어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "I did, yes. I actually took the bus, and the stop is right outside, so it was very convenient.",
+        "korean": "네, 잘 찾았어요. 사실 버스를 탔는데, 정류장이 바로 밖에 있어서 아주 편리했어요.",
+        "properNounIndices": [
+          0,
+          3
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Oh good, that's one of the perks of this location.",
+        "korean": "좋네요, 이 위치의 장점 중 하나죠.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "So, David, before we dive in, why don't you tell me a little bit about yourself?",
+        "korean": "데이빗, 본격적으로 시작하기 전에 자기소개를 좀 해주시겠어요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 9,
         "english": "Sure. I graduated from State University last year with a degree in marketing.",
         "korean": "네. 작년에 스테이트 대학교에서 마케팅 학위를 받고 졸업했어요.",
         "properNounIndices": [
@@ -78,9 +99,28 @@
           4,
           5
         ]
-      },
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Exercise and Sports",
+        "A Picnic in the Park",
+        "Job Interview — Small Talk",
+        "My First Part-Time Job"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_EXT_001_set3",
+    "parentSetId": "L2_EXT_001",
+    "theme": "Job Interview — Small Talk",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
       {
-        "id": 6,
+        "id": 10,
         "english": "During my final year, I completed an internship at a digital advertising agency, where I helped manage social media campaigns for several small businesses.",
         "korean": "마지막 학년에 디지털 광고 회사에서 인턴십을 했는데, 여러 소규모 기업의 소셜 미디어 캠페인 관리를 도왔어요.",
         "properNounIndices": [
@@ -89,17 +129,22 @@
         ]
       },
       {
-        "id": 7,
-        "english": "That experience really confirmed my interest in marketing strategy. Outside of work, I enjoy running and I recently started learning photography.",
-        "korean": "그 경험이 마케팅 전략에 대한 관심을 확인시켜줬어요. 일 외에 달리기를 즐기고 최근 사진 촬영을 배우기 시작했어요.",
+        "id": 11,
+        "english": "That experience really confirmed my interest in marketing strategy.",
+        "korean": "그 경험이 마케팅 전략에 대한 관심을 확인시켜줬어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "Outside of work, I enjoy running and I recently started learning photography.",
+        "korean": "일 외에 달리기를 즐기고 최근 사진 촬영을 배우기 시작했어요.",
         "properNounIndices": [
-          9,
-          12,
-          16
+          3,
+          7
         ]
       },
       {
-        "id": 8,
+        "id": 13,
         "english": "I'm excited about this role because I think it combines creative thinking with data analysis, which is exactly what I want to focus on.",
         "korean": "이 역할에 기대가 돼요. 창의적 사고와 데이터 분석을 결합하는 거라 딱 제가 집중하고 싶은 분야거든요.",
         "properNounIndices": [
@@ -108,23 +153,27 @@
         ]
       },
       {
-        "id": 9,
-        "english": "That's a great background. Let's talk a bit more about your internship experience...",
-        "korean": "좋은 배경이네요. 인턴십 경험에 대해 좀 더 이야기해봐요...",
-        "properNounIndices": [
-          4
-        ]
+        "id": 14,
+        "english": "That's a great background.",
+        "korean": "좋은 배경이네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 15,
+        "english": "Let's talk a bit more about your internship experience...",
+        "korean": "인턴십 경험에 대해 좀 더 이야기해봐요...",
+        "properNounIndices": []
       }
     ],
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Investigative Journalism — Corporate Whistleblowing",
-        "Weather Forecast",
-        "Supreme Court Oral Arguments",
-        "Job Interview — Small Talk"
+        "Dealing with Jet Lag",
+        "Digital Detox",
+        "Job Interview — Small Talk",
+        "My Morning"
       ],
-      "answer": 3
+      "answer": 2
     }
   }
 ]

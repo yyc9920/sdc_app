@@ -1,0 +1,57 @@
+[
+  {
+    "setId": "L1_EXT_097_set1",
+    "parentSetId": "L1_EXT_097",
+    "theme": "My Favorite Snack",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My favorite snack is chocolate chip cookies.",
+        "korean": "가장 좋아하는 간식은 초콜릿 칩 쿠키예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "My mom bakes them every Sunday.",
+        "korean": "엄마가 매주 일요일 구워주세요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 2,
+        "english": "The whole house smells amazing when they're in the oven.",
+        "korean": "오븐에 있을 때 온 집 안에 좋은 냄새가 나요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I always eat them with a cold glass of milk.",
+        "korean": "항상 차가운 우유 한 잔과 같이 먹어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I can never eat just one.",
+        "korean": "하나만 먹는 건 절대 못 해요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "My Favorite Snack",
+        "Korean Street Food",
+        "Dealing with Jet Lag",
+        "Making a New Friend"
+      ],
+      "answer": 0
+    }
+  }
+]

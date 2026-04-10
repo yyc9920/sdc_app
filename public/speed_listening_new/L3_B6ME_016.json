@@ -1,0 +1,249 @@
+[
+  {
+    "setId": "L3_B6ME_016_set1",
+    "parentSetId": "L3_B6ME_016",
+    "theme": "Why Are Some Animals Black and White?",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Neil, what do the following animals have in common?",
+        "korean": "닐, 다음 동물들의 공통점이 뭘까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Zebras, giant pandas and magpies.",
+        "korean": "얼룩말, 자이언트 판다, 그리고 까치요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "That's pretty easy, Becca.",
+        "korean": "꽤 쉬운데, 베카.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 3,
+        "english": "They're all black and white.",
+        "korean": "다 흑백이잖아.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Right! But do you know why these animals evolved to be black and white?",
+        "korean": "맞아요! 하지만 왜 이 동물들이 흑백으로 진화했는지 아세요?",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '착시 현상 — 눈과 뇌가 실제와 다르게 인식하는 시각적 트릭' mean in English?",
+      "options": [
+        "something clicked in my mind",
+        "a whole bunch of",
+        "put off",
+        "optical illusion"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L3_B6ME_016_set2",
+    "parentSetId": "L3_B6ME_016",
+    "theme": "Why Are Some Animals Black and White?",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "The animal world is full of colour — shiny blue peacocks and bright green frogs.",
+        "korean": "동물의 세계는 반짝이는 파란 공작과 밝은 초록 개구리 같은 색으로 가득해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "But in fact, hundreds of animal species are black and white.",
+        "korean": "하지만 사실 수백 종의 동물이 흑백이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "According to one theory, some animals are black and white to warn potential predators that they're dangerous or they taste bad.",
+        "korean": "한 이론에 따르면 일부 동물은 잠재적 포식자에게 위험하거나 맛이 나쁘다고 경고하기 위해 흑백이래요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "But what is the scientific term for this?",
+        "korean": "이것의 과학 용어는 뭘까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "We found out that practically every high-contrast pattern, every black and white pattern we used, almost every pattern was really effective at stopping flies.",
+        "korean": "우리가 사용한 사실상 모든 고대비 패턴, 모든 흑백 패턴이 파리를 막는 데 정말 효과적이었다는 것을 발견했어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '비밀이나 알려지지 않은 것을 쉽게 발견하게 하는 단서' mean in English?",
+      "options": [
+        "giveaway",
+        "optical illusion",
+        "put off",
+        "something clicked in my mind"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L3_B6ME_016_set3",
+    "parentSetId": "L3_B6ME_016",
+    "theme": "Why Are Some Animals Black and White?",
+    "level": 5,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "Martin conducted a whole bunch of tests using different colours and patterns.",
+        "korean": "마틴은 다양한 색과 패턴으로 아주 많은 테스트를 수행했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "Black and white stripes created an optical illusion.",
+        "korean": "흑백 줄무늬가 착시 현상을 만들어서 파리들이 흥미를 잃었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "As a result, the flies were put off.",
+        "korean": "그 결과 파리들이 기피하게 되었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
+        "english": "So, zebras' stripes confuse insects, telling them to look elsewhere for food.",
+        "korean": "그러니까 얼룩말의 줄무늬가 곤충을 혼란시켜서 다른 곳에서 먹이를 찾게 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "But are there other reasons animals are black and white?",
+        "korean": "하지만 동물이 흑백인 다른 이유가 있을까요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '착시 현상 — 눈과 뇌가 실제와 다르게 인식하는 시각적 트릭' mean in English?",
+      "options": [
+        "optical illusion",
+        "black and white",
+        "giveaway",
+        "something clicked in my mind"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L3_B6ME_016_set4",
+    "parentSetId": "L3_B6ME_016",
+    "theme": "Why Are Some Animals Black and White?",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "Nobody who's seen giant pandas in a zoo would find them hard to spot.",
+        "korean": "동물원에서 자이언트 판다를 본 사람이라면 찾기 어렵다고 생각하지 않을 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 16,
+        "english": "But seen from a distance in the snowy mountain forests where they live, black and white makes the perfect disguise.",
+        "korean": "하지만 그들이 사는 눈 덮인 산림에서 멀리서 보면 흑백이 완벽한 위장이 돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "The giveaway for me was 15 photos of giant pandas, taken either fairly close up or at a distance, and in two of those photos, I was unable to see anything in the picture other than rocks and snow.",
+        "korean": "저에게 단서가 된 건 자이언트 판다 사진 15장이었어요. 가까이서 또는 멀리서 찍은 건데, 그 중 두 장에서는 바위와 눈 외에는 아무것도 볼 수 없었어요.",
+        "properNounIndices": [
+          25
+        ]
+      },
+      {
+        "id": 18,
+        "english": "And then later on, I realised that in fact there was a giant panda in the centre of that picture some distance away.",
+        "korean": "그리고 나중에 사실 그 사진 중앙에 꽤 멀리 자이언트 판다가 있었다는 걸 깨달았어요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 19,
+        "english": "Immediately that clicked in my mind.",
+        "korean": "즉시 머릿속에서 뭔가 떠올랐죠.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '비밀이나 알려지지 않은 것을 쉽게 발견하게 하는 단서' mean in English?",
+      "options": [
+        "something clicked in my mind",
+        "a whole bunch of",
+        "giveaway",
+        "optical illusion"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L3_B6ME_016_set5",
+    "parentSetId": "L3_B6ME_016",
+    "theme": "Why Are Some Animals Black and White?",
+    "level": 6,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "Really, science never has a black-and-white answer — excuse the pun — about the... with penguins being black and white.",
+        "korean": "사실 과학에는 펭귄이 왜 흑백인지에 대한 명확한 답이 없어요 — 말장난 실례 — 종종 매우 복잡한 이유의 혼합이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 21,
+        "english": "It's often a very complex mixture of reasons.",
+        "korean": "그것은 종종 매우 복잡한 이유의 혼합이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 22,
+        "english": "In fact, there's no one reason why animals are black and white.",
+        "korean": "사실 동물이 흑백인 이유는 하나가 아니에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 23,
+        "english": "Zebras avoid bites, pandas hide from predators and some animals, like skunks, warn other animals they're dangerous.",
+        "korean": "얼룩말은 물림을 피하고, 판다는 포식자로부터 숨고, 스컹크 같은 동물은 위험하다고 경고해요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '(비유) 옳고 그름이 명확한 상황' mean in English?",
+      "options": [
+        "a whole bunch of",
+        "giveaway",
+        "black and white",
+        "optical illusion"
+      ],
+      "answer": 2
+    }
+  }
+]

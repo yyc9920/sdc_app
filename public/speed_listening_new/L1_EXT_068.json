@@ -1,0 +1,62 @@
+[
+  {
+    "setId": "L1_EXT_068_set1",
+    "parentSetId": "L1_EXT_068",
+    "theme": "A Sick Day",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I was sick yesterday so I stayed home from school.",
+        "korean": "어제 아파서 학교를 쉬었어요.",
+        "properNounIndices": [
+          0,
+          5
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I had a sore throat and a runny nose.",
+        "korean": "목이 아프고 코가 나왔어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "My mom made me warm soup and gave me medicine.",
+        "korean": "엄마가 따뜻한 수프를 만들어주시고 약을 주셨어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I slept most of the day and watched some TV.",
+        "korean": "거의 하루 종일 자고 TV를 좀 봤어요.",
+        "properNounIndices": [
+          0,
+          9
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Today I feel much better and I can go back to school tomorrow.",
+        "korean": "오늘은 훨씬 나아졌고 내일 학교에 갈 수 있어요.",
+        "properNounIndices": [
+          1,
+          6
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Going to the Movies",
+        "A Sick Day",
+        "The Effective Altruism Debate",
+        "How to Make Friends in a New City"
+      ],
+      "answer": 1
+    }
+  }
+]

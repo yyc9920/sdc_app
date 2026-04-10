@@ -1,0 +1,96 @@
+[
+  {
+    "setId": "L1_SPK_079_set1",
+    "parentSetId": "L1_SPK_079",
+    "theme": "Long Commute vs. Small Apartment Near Work",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Would you prefer living in a spacious home with a long commute or a small apartment close to work?",
+        "korean": "긴 통근의 넓은 집과 직장 근처의 작은 집 중 어느 것을 선호합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain.",
+        "korean": "설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I would choose the small apartment close to work without hesitation.",
+        "korean": "망설임 없이 직장 가까운 작은 아파트를 선택하겠어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Time is the one resource you can never get back and long commutes waste enormous amounts of it.",
+        "korean": "시간은 절대 되돌릴 수 없는 자원이고 긴 통근은 엄청난 양을 낭비해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Someone with a ninety-minute commute each way spends three hours a day just traveling — that's fifteen hours a week.",
+        "korean": "편도 90분 통근하는 사람은 이동에만 하루 3시간을 써요 — 일주일에 15시간이에요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Eating Alone vs. with Others",
+        "A Book That Changed Your Thinking",
+        "Long Commute vs. Small Apartment Near Work",
+        "Technology and Human Connection"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L1_SPK_079_set2",
+    "parentSetId": "L1_SPK_079",
+    "theme": "Long Commute vs. Small Apartment Near Work",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "That time could be spent exercising cooking healthy meals or simply resting.",
+        "korean": "그 시간을 운동하거나 건강한 식사를 하거나 단순히 쉬는 데 쓸 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "A smaller space is a worthwhile trade-off for a significantly better quality of life.",
+        "korean": "더 작은 공간은 현저히 나은 삶의 질을 위해 가치 있는 교환이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "trade-off",
+        "korean": "교환/절충",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "without hesitation",
+        "korean": "망설임 없이",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Cash vs. Digital Payment",
+        "News from Social Media vs. Traditional Media",
+        "The Best Way to Learn a Language",
+        "Long Commute vs. Small Apartment Near Work"
+      ],
+      "answer": 3
+    }
+  }
+]

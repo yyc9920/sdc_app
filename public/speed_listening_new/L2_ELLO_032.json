@@ -1,0 +1,67 @@
+[
+  {
+    "setId": "L2_ELLO_032_set1",
+    "parentSetId": "L2_ELLO_032",
+    "theme": "Mixer #114 — Weekend Plans",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I usually just stay home and catch up on sleep.",
+        "korean": "보통 집에서 밀린 잠을 자요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Maybe watch a movie or read a book.",
+        "korean": "영화를 보거나 책을 읽을 수도 있고요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I like to go hiking on the weekends, weather permitting.",
+        "korean": "주말에 등산 가는 걸 좋아해요, 날씨가 허락하면요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "There's a great trail near my house that I really enjoy.",
+        "korean": "집 근처에 정말 좋은 등산로가 있어요.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I spend my weekends with my kids at the park.",
+        "korean": "주말에 아이들과 공원에서 보내요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "english": "They have so much energy that I need to tire them out.",
+        "korean": "에너지가 너무 넘쳐서 지치게 해야 해요.",
+        "properNounIndices": [
+          6
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #71 — Living Alone",
+        "Mixer #8 — Dream Job",
+        "Mixer #67 — Fashion",
+        "Mixer #114 — Weekend Plans"
+      ],
+      "answer": 3
+    }
+  }
+]

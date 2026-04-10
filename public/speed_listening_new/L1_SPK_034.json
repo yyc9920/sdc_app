@@ -1,0 +1,71 @@
+[
+  {
+    "setId": "L1_SPK_034_set1",
+    "parentSetId": "L1_SPK_034",
+    "theme": "A Time You Helped Someone",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Describe a time when you helped someone.",
+        "korean": "누군가를 도운 경험을 묘사하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain how it made you feel.",
+        "korean": "어떤 기분이었는지 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Last winter I volunteered at a local food bank for three weekends in a row.",
+        "korean": "지난 겨울 3주 연속 주말에 지역 푸드 뱅크에서 봉사했어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 3,
+        "english": "My job was to sort donated food into boxes and hand them out to families in need.",
+        "korean": "기부된 음식을 상자에 분류하고 필요한 가정에 나눠주는 일이었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I'll never forget the look on one elderly woman's face when she received her box.",
+        "korean": "한 할머니가 상자를 받았을 때 얼굴 표정을 절대 잊지 못할 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "She held my hand and said thank you with tears in her eyes.",
+        "korean": "내 손을 잡고 눈에 눈물을 글썽이며 감사하다고 했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "That experience taught me that even small acts of kindness can have a profound impact on someone's life.",
+        "korean": "그 경험은 작은 친절도 누군가의 삶에 깊은 영향을 미칠 수 있다는 것을 가르쳐줬어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "acts of kindness",
+        "korean": "친절한 행동",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Handwriting vs. Typing Notes",
+        "A Time You Helped Someone",
+        "Importance of Learning History",
+        "The Impact of Music on Mood"
+      ],
+      "answer": 1
+    }
+  }
+]

@@ -46,14 +46,14 @@
       }
     ],
     "quiz": {
-      "question": "What does '생물 발광의' mean in English?",
+      "question": "What does '황량한 불모지' mean in English?",
       "options": [
-        "perpetual darkness",
         "bioluminescent",
-        "subsurface oceans",
+        "submersible",
+        "chemosynthesis",
         "barren wasteland"
       ],
-      "answer": 1
+      "answer": 3
     }
   },
   {
@@ -65,28 +65,55 @@
     "sentences": [
       {
         "id": 5,
-        "english": "What made this discovery revolutionary was not just the existence of life, but how that life sustained itself. These organisms didn't rely on sunlight.",
+        "english": "What made this discovery revolutionary was not just the existence of life, but how that life sustained itself.",
         "korean": "이 발견이 혁명적인 건 생명의 존재 자체뿐 아니라 그 생명이 어떻게 유지됐는지였습니다.",
-        "properNounIndices": [
-          18
-        ]
+        "properNounIndices": []
       },
       {
         "id": 6,
+        "english": "These organisms didn't rely on sunlight.",
+        "korean": "생명의 존재뿐 아니라 그 생명이 어떻게 유지됐는지였어요",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
         "english": "Instead, they drew energy from chemicals — particularly hydrogen sulfide — released by the vents.",
         "korean": "대신 분출구에서 방출되는 화학물질, 특히 황화수소에서 에너지를 얻었습니다.",
         "properNounIndices": []
       },
       {
-        "id": 7,
-        "english": "This process, known as chemosynthesis, fundamentally changed our understanding of where life can exist. Since then, deep-sea exploration has continued to reveal surprises.",
+        "id": 8,
+        "english": "This process, known as chemosynthesis, fundamentally changed our understanding of where life can exist.",
         "korean": "화학합성이라 알려진 이 과정은 생명이 존재할 수 있는 곳에 대한 우리의 이해를 근본적으로 바꿨습니다.",
-        "properNounIndices": [
-          14
-        ]
+        "properNounIndices": []
       },
       {
-        "id": 8,
+        "id": 9,
+        "english": "Since then, deep-sea exploration has continued to reveal surprises.",
+        "korean": "생명이 존재할 수 있는 곳에 대한 우리의 이해를 근본적으로 바꿨어요",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '열수 분출구' mean in English?",
+      "options": [
+        "chemosynthesis",
+        "hydrothermal vents",
+        "subsurface oceans",
+        "barren wasteland"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L4_EXT_004_set3",
+    "parentSetId": "L4_EXT_004",
+    "theme": "Documentary Narration — The Deep Ocean",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
         "english": "In the Mariana Trench, the deepest point on Earth at nearly eleven thousand meters, researchers have found shrimp-like amphipods thriving under pressures that would crush a submarine.",
         "korean": "지구에서 가장 깊은 곳인 거의 11,000미터의 마리아나 해구에서 연구진이 새우와 비슷한 단각류를 발견했습니다.",
         "properNounIndices": [
@@ -96,15 +123,19 @@
         ]
       },
       {
-        "id": 9,
-        "english": "In the abyssal plains, bioluminescent creatures produce their own light in a world of perpetual darkness. These discoveries carry implications far beyond marine biology.",
+        "id": 11,
+        "english": "In the abyssal plains, bioluminescent creatures produce their own light in a world of perpetual darkness.",
         "korean": "심해 평원에서는 생물 발광 생물이 영원한 어둠 속에서 스스로 빛을 만들어냅니다.",
-        "properNounIndices": [
-          16
-        ]
+        "properNounIndices": []
       },
       {
-        "id": 10,
+        "id": 12,
+        "english": "These discoveries carry implications far beyond marine biology.",
+        "korean": "영원한 어둠 속에서 스스로 빛을 만들어내요",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
         "english": "If life can flourish in such extreme conditions on Earth, it raises a compelling question: could similar ecosystems exist on other worlds?",
         "korean": "지구에서 이런 극한 환경에서 생명이 번성할 수 있다면, 다른 세계에도 비슷한 생태계가 존재할 수 있을까 하는 설득력 있는 질문이 생깁니다.",
         "properNounIndices": [
@@ -112,27 +143,33 @@
         ]
       },
       {
-        "id": 11,
-        "english": "Jupiter's moon Europa and Saturn's moon Enceladus both have subsurface oceans. The search for life beyond Earth may well begin in the deep.",
-        "korean": "목성의 달 유로파와 토성의 달 엔셀라두스 모두 지하 해양이 있습니다. 지구 밖 생명 탐색은 심해에서 시작될 수 있어요.",
+        "id": 14,
+        "english": "Jupiter's moon Europa and Saturn's moon Enceladus both have subsurface oceans.",
+        "korean": "목성의 달 유로파와 토성의 달 엔셀라두스 모두 지하 해양이 있습니다.",
         "properNounIndices": [
           2,
           4,
-          6,
-          11,
-          16
+          6
+        ]
+      },
+      {
+        "id": 15,
+        "english": "The search for life beyond Earth may well begin in the deep.",
+        "korean": "지구 밖 생명 탐색은 심해에서 시작될 수 있어요.",
+        "properNounIndices": [
+          5
         ]
       }
     ],
     "quiz": {
-      "question": "What does '화학합성 (빛 없이 화학 에너지로 유기물 합성)' mean in English?",
+      "question": "What does '단각류 (새우와 비슷한 심해 갑각류)' mean in English?",
       "options": [
-        "chemosynthesis",
-        "perpetual darkness",
-        "subsurface oceans",
+        "submersible",
+        "amphipods",
+        "bioluminescent",
         "barren wasteland"
       ],
-      "answer": 0
+      "answer": 1
     }
   }
 ]

@@ -1,0 +1,58 @@
+[
+  {
+    "setId": "L1_EXT_020_set1",
+    "parentSetId": "L1_EXT_020",
+    "theme": "Going to the Movies",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Last Saturday I went to the movies with my friend.",
+        "korean": "지난 토요일에 친구와 영화관에 갔어요.",
+        "properNounIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 1,
+        "english": "We watched an action movie.",
+        "korean": "액션 영화를 봤어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I bought a large popcorn and a soda.",
+        "korean": "큰 팝콘과 탄산음료를 샀어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "The movie was really exciting and the special effects were amazing.",
+        "korean": "영화가 정말 흥미진진했고 특수 효과가 놀라웠어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I want to go again next weekend.",
+        "korean": "다음 주말에 또 가고 싶어요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "At the Library",
+        "Going to the Movies",
+        "Business Meeting — Quarterly Review",
+        "Learning to Drive"
+      ],
+      "answer": 1
+    }
+  }
+]

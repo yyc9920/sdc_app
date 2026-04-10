@@ -3,104 +3,190 @@
     "setId": "L2_EXT_003_set1",
     "parentSetId": "L2_EXT_003",
     "theme": "Flatmate Discussion",
-    "level": 6,
+    "level": 4,
     "setNumber": 1,
     "sentences": [
       {
         "id": 0,
-        "english": "So, since we're going to be living together, maybe we should set some ground rules? Just so we're on the same page.",
-        "korean": "같이 살 거니까 기본 규칙을 좀 정할까? 서로 같은 생각이 되도록.",
-        "properNounIndices": [
-          15
-        ]
+        "english": "So, since we're going to be living together, maybe we should set some ground rules?",
+        "korean": "같이 살 거니까 기본 규칙을 좀 정할까?",
+        "properNounIndices": []
       },
       {
         "id": 1,
-        "english": "Yeah, that's a good idea. What were you thinking?",
-        "korean": "응, 좋은 생각이야. 뭘 생각하고 있었어?",
-        "properNounIndices": [
-          5
-        ]
+        "english": "Just so we're on the same page.",
+        "korean": "서로 같은 생각이 되도록.",
+        "properNounIndices": []
       },
       {
         "id": 2,
-        "english": "Well, the biggest thing for me is cleanliness. I'm not a neat freak or anything, but I'd like us to keep the common areas — like the kitchen and the living room — reasonably tidy.",
-        "korean": "나한테 가장 중요한 건 청결이야. 결벽증은 아닌데, 공용 공간은 깔끔하게 유지했으면 해.",
-        "properNounIndices": [
-          8,
-          16
-        ]
+        "english": "Yeah, that's a good idea.",
+        "korean": "응, 좋은 생각이야.",
+        "properNounIndices": []
       },
       {
         "id": 3,
-        "english": "Totally agree. How about we take turns with the dishes? Like, I'll do them on weekdays and you do weekends? Or we could each just wash our own.",
-        "korean": "완전 동의. 설거지를 번갈아 하는 건 어때?",
-        "properNounIndices": [
-          2,
-          10,
-          11,
-          20
-        ]
+        "english": "What were you thinking?",
+        "korean": "뭘 생각하고 있었어?",
+        "properNounIndices": []
       },
       {
         "id": 4,
-        "english": "Let's each wash our own. That seems simpler. What about noise?",
-        "korean": "각자 자기 거 씻자. 더 간단하잖아. 소음은 어때?",
-        "properNounIndices": [
-          5,
-          8
-        ]
+        "english": "Well, the biggest thing for me is cleanliness.",
+        "korean": "나한테 가장 중요한 건 청결이야.",
+        "properNounIndices": []
       }
     ],
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Flatmate Discussion",
-        "History Lecture — The Fall of the Berlin Wall",
-        "Supreme Court Oral Arguments",
-        "Science Documentary — Neuroplasticity"
+        "My Bag",
+        "The Psychology of Habit Formation",
+        "Benefits of Reading",
+        "Flatmate Discussion"
       ],
-      "answer": 0
+      "answer": 3
     }
   },
   {
     "setId": "L2_EXT_003_set2",
     "parentSetId": "L2_EXT_003",
     "theme": "Flatmate Discussion",
-    "level": 6,
+    "level": 5,
     "setNumber": 2,
     "sentences": [
       {
         "id": 5,
-        "english": "Good point. I sometimes play guitar in the evenings. Is that going to be an issue?",
-        "korean": "좋은 지적이야. 저녁에 가끔 기타를 치는데, 문제가 될까?",
+        "english": "I'm not a neat freak or anything, but I'd like us to keep the common areas — like the kitchen and the living room — reasonably tidy.",
+        "korean": "결벽증은 아닌데, 공용 공간은 깔끔하게 유지했으면 해.",
         "properNounIndices": [
-          2,
-          9
+          8
         ]
       },
       {
         "id": 6,
-        "english": "Not at all, as long as it's not super late. Maybe keep it before 10 p.m. on weeknights?",
-        "korean": "전혀 괜찮아, 너무 늦지만 않으면 돼. 평일엔 밤 10시 전까지만 하면 될까?",
+        "english": "Totally agree. How about we take turns with the dishes?",
+        "korean": "완전 동의. 설거지를 번갈아 하는 건 어때?",
         "properNounIndices": [
-          10
+          2
         ]
       },
       {
         "id": 7,
-        "english": "That's fair. And I should mention — I have a friend who visits pretty often. He usually stays for dinner. Is that cool?",
-        "korean": "그거 공평해. 말해둘 게 있는데 — 꽤 자주 오는 친구가 있어. 보통 저녁까지 있거든. 괜찮아?",
+        "english": "Like, I'll do them on weekdays and you do weekends?",
+        "korean": "예를 들어 내가 주중에 하고 너는 주말에 하는 거?",
         "properNounIndices": [
-          2,
-          3,
-          7,
-          15,
-          20
+          1
         ]
       },
       {
         "id": 8,
+        "english": "Or we could each just wash our own.",
+        "korean": "설거지를 번갈아 하는 건 어때?",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Let's each wash our own.",
+        "korean": "각자 자기 거 씻자.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "A School Trip",
+        "University Lecture — Behavioral Economics",
+        "The Science of Habit Formation",
+        "Flatmate Discussion"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L2_EXT_003_set3",
+    "parentSetId": "L2_EXT_003",
+    "theme": "Flatmate Discussion",
+    "level": 4,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "That seems simpler. What about noise?",
+        "korean": "더 간단하잖아. 소음은 어때?",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 11,
+        "english": "Good point. I sometimes play guitar in the evenings.",
+        "korean": "좋은 지적이야. 저녁에 가끔 기타를 치는데, 문제가 될까?",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 12,
+        "english": "Is that going to be an issue?",
+        "korean": "문제가 될까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
+        "english": "Not at all, as long as it's not super late.",
+        "korean": "전혀 괜찮아, 너무 늦지만 않으면 돼.",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "Maybe keep it before 10 p.m. on weeknights?",
+        "korean": "평일엔 밤 10시 전까지만 하면 될까?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "My Grandma's House",
+        "Moving to a New Apartment",
+        "Flatmate Discussion",
+        "Playing in the Snow"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_EXT_003_set4",
+    "parentSetId": "L2_EXT_003",
+    "theme": "Flatmate Discussion",
+    "level": 4,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "That's fair. And I should mention — I have a friend who visits pretty often.",
+        "korean": "그거 공평해. 말해둘 게 있는데 — 꽤 자주 오는 친구가 있어.",
+        "properNounIndices": [
+          2,
+          3,
+          7
+        ]
+      },
+      {
+        "id": 16,
+        "english": "He usually stays for dinner.",
+        "korean": "보통 저녁까지 있거든.",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "Is that cool?",
+        "korean": "괜찮아?",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
         "english": "Of course. Just give me a heads-up so I know if I need to make extra food or whatever.",
         "korean": "물론이지. 미리 알려주기만 해, 음식을 더 만들어야 하는지 알 수 있게.",
         "properNounIndices": [
@@ -110,7 +196,7 @@
         ]
       },
       {
-        "id": 9,
+        "id": 19,
         "english": "Deal. This is going to work out great.",
         "korean": "좋아. 잘 될 거야.",
         "properNounIndices": [
@@ -118,7 +204,7 @@
         ]
       },
       {
-        "id": 10,
+        "id": 20,
         "english": "I think so too.",
         "korean": "나도 그렇게 생각해.",
         "properNounIndices": [
@@ -129,12 +215,12 @@
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
+        "Philosophy of Science — The Demarcation Problem",
         "Flatmate Discussion",
-        "Long-Form Journalism — The Ethics of Gene Editing",
-        "Literary Criticism — Unreliable Narrators",
-        "Investigative Journalism — Corporate Whistleblowing"
+        "Summer Vacation Plans",
+        "My Alarm Clock"
       ],
-      "answer": 0
+      "answer": 1
     }
   }
 ]

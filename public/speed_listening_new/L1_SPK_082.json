@@ -1,0 +1,71 @@
+[
+  {
+    "setId": "L1_SPK_082_set1",
+    "parentSetId": "L1_SPK_082",
+    "theme": "The Influence of Advertising",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think advertising has too much influence on what people buy?",
+        "korean": "광고가 사람들의 구매에 너무 큰 영향을 미친다고 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your view.",
+        "korean": "견해를 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I believe advertising has far more influence on our purchasing decisions than most people realize.",
+        "korean": "광고가 우리의 구매 결정에 대부분의 사람이 인식하는 것보다 훨씬 더 큰 영향을 미친다고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Companies spend billions of dollars on advertising because it works — it creates desire for products we never knew we needed.",
+        "korean": "기업들이 광고에 수십억 달러를 쓰는 이유는 효과가 있기 때문이에요 — 필요한 줄 몰랐던 제품에 대한 욕구를 만들어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Social media has made this even worse because influencer marketing blurs the line between genuine recommendations and paid promotions.",
+        "korean": "소셜 미디어가 이를 더 악화시켰어요. 인플루언서 마케팅이 진정한 추천과 유료 홍보의 경계를 흐리기 때문이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "The best defense is being a conscious consumer — always asking yourself whether you truly need something before buying it.",
+        "korean": "최선의 방어는 의식 있는 소비자가 되는 거예요 — 사기 전에 진정으로 필요한지 항상 자문하는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "blur the line",
+        "korean": "경계를 흐리다",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "purchasing decision",
+        "korean": "구매 결정",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "A Book That Changed Your Thinking",
+        "Physical Stores vs. Online Shopping",
+        "Should Students Work Part-Time",
+        "The Influence of Advertising"
+      ],
+      "answer": 3
+    }
+  }
+]

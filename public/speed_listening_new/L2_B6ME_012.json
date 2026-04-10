@@ -3,26 +3,32 @@
     "setId": "L2_B6ME_012_set1",
     "parentSetId": "L2_B6ME_012",
     "theme": "Taylor Swift seismology",
-    "level": 6,
+    "level": 4,
     "setNumber": 1,
     "sentences": [
       {
         "id": 0,
-        "english": "Hello. This is 6 Minute English from BBC Learning English. I'm Phil.",
-        "korean": "안녕하세요. 6 Minute English입니다. 저는 필이에요.",
+        "english": "Hello. This is 6 Minute English from BBC Learning English.",
+        "korean": "안녕하세요. 6 Minute English입니다.",
         "properNounIndices": [
           1,
           4,
           5,
           7,
           8,
-          9,
-          10,
-          11
+          9
         ]
       },
       {
         "id": 1,
+        "english": "I'm Phil.",
+        "korean": "저는 필이에요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
         "english": "And I'm Georgie.",
         "korean": "저는 조지입니다.",
         "properNounIndices": [
@@ -31,7 +37,7 @@
         ]
       },
       {
-        "id": 2,
+        "id": 3,
         "english": "If you're a 'Swiftie', that's a fan of pop star, Taylor Swift, her music rocks your world.",
         "korean": "'스위프티' — 팝스타 테일러 스위프트의 팬 — 라면, 그녀의 음악이 세상을 흔들죠.",
         "properNounIndices": [
@@ -41,33 +47,21 @@
         ]
       },
       {
-        "id": 3,
-        "english": "I like that phrase, 'rock your world', Phil. It means that something makes your life enjoyable, right?",
-        "korean": "'rock your world'라는 표현 좋아요, 필. 삶을 즐겁게 만든다는 뜻이죠?",
+        "id": 4,
+        "english": "I like that phrase, 'rock your world', Phil.",
+        "korean": "'rock your world'라는 표현 좋아요, 필.",
         "properNounIndices": [
           0,
-          7,
-          8
-        ]
-      },
-      {
-        "id": 4,
-        "english": "Well, yes but actually no, Georgie. I mean, Taylor Swift literally rocks the world!",
-        "korean": "맞긴 한데 사실 아니에요, 조지. 테일러 스위프트가 말 그대로 지구를 흔들었거든요!",
-        "properNounIndices": [
-          5,
-          6,
-          8,
-          9
+          7
         ]
       }
     ],
     "quiz": {
-      "question": "What does '비교할 만한, 유사한' mean in English?",
+      "question": "What does '나노미터 (10억 분의 1미터)' mean in English?",
       "options": [
-        "in unison",
         "comparable",
-        "seismic",
+        "nanometre",
+        "flex",
         "peak"
       ],
       "answer": 1
@@ -82,6 +76,30 @@
     "sentences": [
       {
         "id": 5,
+        "english": "It means that something makes your life enjoyable, right?",
+        "korean": "삶을 즐겁게 만든다는 뜻이죠?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Well, yes but actually no, Georgie.",
+        "korean": "맞긴 한데 사실 아니에요, 조지.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 7,
+        "english": "I mean, Taylor Swift literally rocks the world!",
+        "korean": "테일러 스위프트가 말 그대로 지구를 흔들었거든요!",
+        "properNounIndices": [
+          0,
+          2,
+          3
+        ]
+      },
+      {
+        "id": 8,
         "english": "At a recent concert in Edinburgh, as part of Taylor Swift's 'Eras' tour, her fans' energetic dancing literally moved the Earth, with seismic activity usually associated with earthquakes detected four miles away!",
         "korean": "최근 에든버러 콘서트에서 팬들의 열정적인 춤이 문자 그대로 지구를 움직였습니다.",
         "properNounIndices": [
@@ -93,66 +111,23 @@
         ]
       },
       {
-        "id": 6,
-        "english": "Yes, it's hard to believe, but in this programme we'll be hearing about the 'Swift-quake', a powerful force like an earthquake, coming not from nature, but from a pop concert! And, as usual, we'll be learning some useful new vocabulary as well.",
+        "id": 9,
+        "english": "Yes, it's hard to believe, but in this programme we'll be hearing about the 'Swift-quake', a powerful force like an earthquake, coming not from nature, but from a pop concert!",
         "korean": "믿기 어렵지만, 이 프로그램에서 지진 같은 강력한 힘인 '스위프트퀘이크'에 대해 들어볼 거예요.",
         "properNounIndices": [
-          14,
-          30
-        ]
-      },
-      {
-        "id": 7,
-        "english": "Great. But first I have a question for you, Georgie. Actually, Taylor Swift's Edinburgh show wasn't the first music concert to shake the ground.",
-        "korean": "좋아요. 먼저 질문이 있어요.",
-        "properNounIndices": [
-          1,
-          3,
-          9,
-          10,
-          11,
-          12,
-          13
-        ]
-      },
-      {
-        "id": 8,
-        "english": "In July 1992, British band Madness played a concert which literally caused buildings in the surrounding area to vibrate. But where in London did the concert take place? Was it: a) Finsbury Park?",
-        "korean": "1992년 7월, 영국 밴드 매드니스가 콘서트를 했는데 말 그대로 주변 건물이 진동했습니다.",
-        "properNounIndices": [
-          1,
-          3,
-          5,
-          19,
-          22,
-          28,
-          31,
-          32
-        ]
-      },
-      {
-        "id": 9,
-        "english": "b) Wembley Stadium? or c) The Royal Albert Hall?",
-        "korean": "b) 웸블리 스타디움? 아니면 c) 로열 앨버트 홀?",
-        "properNounIndices": [
-          1,
-          2,
-          5,
-          6,
-          7,
-          8
+          14
         ]
       }
     ],
     "quiz": {
       "question": "What does '일제히, 동시에' mean in English?",
       "options": [
+        "peak",
         "rock your world",
-        "seismic",
-        "in unison",
-        "comparable"
+        "flex",
+        "in unison"
       ],
-      "answer": 2
+      "answer": 3
     }
   },
   {
@@ -164,6 +139,91 @@
     "sentences": [
       {
         "id": 10,
+        "english": "And, as usual, we'll be learning some useful new vocabulary as well.",
+        "korean": "지진 같은 강력한 힘인 '스위프트퀘이크'에 대해 들을 거예요",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "Great. But first I have a question for you, Georgie.",
+        "korean": "좋아요. 먼저 질문이 있어요.",
+        "properNounIndices": [
+          1,
+          3,
+          9
+        ]
+      },
+      {
+        "id": 12,
+        "english": "Actually, Taylor Swift's Edinburgh show wasn't the first music concert to shake the ground.",
+        "korean": "좋아요 먼저 질문이 있어요",
+        "properNounIndices": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "id": 13,
+        "english": "In July 1992, British band Madness played a concert which literally caused buildings in the surrounding area to vibrate.",
+        "korean": "1992년 7월, 영국 밴드 매드니스가 콘서트를 했는데 말 그대로 주변 건물이 진동했습니다.",
+        "properNounIndices": [
+          1,
+          3,
+          5
+        ]
+      },
+      {
+        "id": 14,
+        "english": "But where in London did the concert take place?",
+        "korean": "영국 밴드 매드니스가 콘서트를 했는데",
+        "properNounIndices": [
+          3
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '일제히, 동시에' mean in English?",
+      "options": [
+        "in unison",
+        "rock your world",
+        "comparable",
+        "peak"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_B6ME_012_set4",
+    "parentSetId": "L2_B6ME_012",
+    "theme": "Taylor Swift seismology",
+    "level": 4,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "Was it: a) Finsbury Park?",
+        "korean": "말 그대로 주변 건물이 진동했어요",
+        "properNounIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "id": 16,
+        "english": "b) Wembley Stadium? or c) The Royal Albert Hall?",
+        "korean": "b) 웸블리 스타디움? 아니면 c) 로열 앨버트 홀?",
+        "properNounIndices": [
+          1,
+          2,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": 17,
         "english": "I think I'll say the Royal Albert Hall.",
         "korean": "로열 앨버트 홀이라고 할게요.",
         "properNounIndices": [
@@ -175,176 +235,87 @@
         ]
       },
       {
-        "id": 11,
-        "english": "OK, we'll find out later. Now, Swifties love singing and dancing to Taylor Swift's songs, but how much seismic activity did they create? Here, BBC Radio 4's Marnie Chesterton asks seismologist James Panton:",
-        "korean": "나중에 알아볼게요.",
-        "properNounIndices": [
-          5,
-          6,
-          12,
-          13,
-          23,
-          24,
-          25,
-          27,
-          28,
-          31,
-          32
-        ]
-      },
-      {
-        "id": 12,
-        "english": "Now, talk us through this graph. What's it showing us?",
-        "korean": "이 그래프를 설명해주세요. 뭘 보여주고 있나요?",
-        "properNounIndices": [
-          6
-        ]
-      },
-      {
-        "id": 13,
-        "english": "So, this top graph of the red wiggly line, we're looking at the ground velocity in essentially metres per second. So, that's the velocity that the ground is vibrating up and down.",
-        "korean": "이 위쪽 그래프의 빨간 구불구불한 선은 지면 속도를 보여줍니다.",
-        "properNounIndices": [
-          20
-        ]
-      },
-      {
-        "id": 14,
-        "english": "So, this is literally people stamping up and down.",
-        "korean": "이건 말 그대로 사람들이 쿵쿵 뛰는 거예요.",
-        "properNounIndices": []
-      }
-    ],
-    "quiz": {
-      "question": "What does '나노미터 (10억 분의 1미터)' mean in English?",
-      "options": [
-        "nanometre",
-        "peak",
-        "flex",
-        "rock your world"
-      ],
-      "answer": 0
-    }
-  },
-  {
-    "setId": "L2_B6ME_012_set4",
-    "parentSetId": "L2_B6ME_012",
-    "theme": "Taylor Swift seismology",
-    "level": 6,
-    "setNumber": 4,
-    "sentences": [
-      {
-        "id": 15,
-        "english": "Yes, so this is all of the energy combined from the 73,000 people in the stadium, jumping in unison and stamping in unison.",
-        "korean": "네, 이건 경기장 안 73,000명이 일제히 뛰면서 합쳐진 에너지입니다.",
-        "properNounIndices": []
-      },
-      {
-        "id": 16,
-        "english": "James, the British Geological Survey recorded 23.4 nanometres of movement in Edinburgh. What's that actually mean?",
-        "korean": "제임즈, 영국지질조사소가 23.4나노미터의 움직임을 기록했다는데요.",
-        "properNounIndices": [
-          2,
-          3,
-          4,
-          11,
-          12
-        ]
-      },
-      {
-        "id": 17,
-        "english": "So, what that means is that they recorded the ground flexing up and down by a distance of 23 nanometres.",
-        "korean": "그 의미는 지면이 23나노미터 거리로 위아래로 구부러지는 걸 기록했다는 겁니다.",
-        "properNounIndices": []
-      },
-      {
         "id": 18,
-        "english": "James's equipment recorded seismic movement when Taylor Swift started to sing. Her hit song, Cruel Summer, created a peak - the highest point - in the graph which James's machine was drawing.",
-        "korean": "제임즈의 장비가 테일러 스위프트가 노래를 시작하자 지진파 움직임을 기록했습니다.",
-        "properNounIndices": [
-          6,
-          7,
-          11,
-          14,
-          15,
-          28
-        ]
+        "english": "OK, we'll find out later.",
+        "korean": "나중에 알아볼게요.",
+        "properNounIndices": []
       },
       {
         "id": 19,
-        "english": "The peak was made by thousands of Swifties jumping up and down in unison, together and at the same time, creating something like a mini earthquake.",
-        "korean": "최고점은 수천 명의 스위프티가 일제히 뛰면서 만들어졌습니다.",
+        "english": "Now, Swifties love singing and dancing to Taylor Swift's songs, but how much seismic activity did they create?",
+        "korean": "자, 스위프티들은 테일러 스위프트의 노래에 맞춰 노래하고 춤추는 걸 좋아하죠.",
         "properNounIndices": [
-          7
+          1,
+          7,
+          8
         ]
       }
     ],
     "quiz": {
-      "question": "What does '나노미터 (10억 분의 1미터)' mean in English?",
+      "question": "What does '삶을 즐겁게 해주다' mean in English?",
       "options": [
-        "seismic",
-        "peak",
+        "rock your world",
         "flex",
-        "nanometre"
+        "peak",
+        "comparable"
       ],
-      "answer": 3
+      "answer": 0
     }
   },
   {
     "setId": "L2_B6ME_012_set5",
     "parentSetId": "L2_B6ME_012",
     "theme": "Taylor Swift seismology",
-    "level": 6,
+    "level": 5,
     "setNumber": 5,
     "sentences": [
       {
         "id": 20,
-        "english": "The seismologist detected the ground flexing by 23.4 nanometres. To flex means to bend repeatedly.",
-        "korean": "지진학자가 지면이 23.4나노미터로 구부러지는 걸 감지했습니다.",
+        "english": "Here, BBC Radio 4's Marnie Chesterton asks seismologist James Panton:",
+        "korean": "나중에 알아볼게요",
         "properNounIndices": [
+          1,
+          2,
+          4,
+          5,
+          8,
           9
         ]
       },
       {
         "id": 21,
-        "english": "And it's a distance of 23.4 nanometres which is really small – a nanometre is one billionth of a metre – that's about the width of one strand of human DNA.",
-        "korean": "23.4나노미터라는 거리는 정말 작습니다.",
-        "properNounIndices": [
-          30
-        ]
+        "english": "Now, talk us through this graph.",
+        "korean": "이 그래프를 설명해주세요.",
+        "properNounIndices": []
       },
       {
         "id": 22,
-        "english": "But here's what the seismologist's graph actually sounded like when converted into audio:",
-        "korean": "지진학자의 그래프를 오디오로 변환하면 이렇게 들립니다.",
+        "english": "What's it showing us?",
+        "korean": "뭘 보여주고 있나요?",
         "properNounIndices": []
       },
       {
         "id": 23,
-        "english": "Wow! That's amazing! Now, as impressive as this sounds, it wasn't really comparable to a real earthquake. If something is comparable to another thing, it's similar in size, amount, or important as something else.",
-        "korean": "와! 놀라워요!",
-        "properNounIndices": [
-          1,
-          3,
-          17
-        ]
+        "english": "So, this top graph of the red wiggly line, we're looking at the ground velocity in essentially metres per second.",
+        "korean": "이 위쪽 그래프의 빨간 구불구불한 선은 지면 속도를 보여줍니다.",
+        "properNounIndices": []
       },
       {
         "id": 24,
-        "english": "Yes, the energy created by the music's sound waves and thousands of fans jumping did move the earth, but not in a way that's comparable, or similar, to a real earthquake.",
-        "korean": "네, 음악의 음파와 수천 팬의 점프가 만든 에너지가 지구를 움직이긴 했습니다.",
+        "english": "So, that's the velocity that the ground is vibrating up and down.",
+        "korean": "지면 속도를 보여줘요",
         "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '지진의' mean in English?",
+      "question": "What does '삶을 즐겁게 해주다' mean in English?",
       "options": [
-        "peak",
         "in unison",
-        "nanometre",
+        "rock your world",
+        "comparable",
         "seismic"
       ],
-      "answer": 3
+      "answer": 1
     }
   },
   {
@@ -356,66 +327,49 @@
     "sentences": [
       {
         "id": 25,
-        "english": "By definition, an earthquake must break the earth's crust, and is caused by either the movement of tectonic plates or a volcano.",
-        "korean": "정의상 지진은 지각을 깨야 합니다.",
+        "english": "So, this is literally people stamping up and down.",
+        "korean": "이건 말 그대로 사람들이 쿵쿵 뛰는 거예요.",
         "properNounIndices": []
       },
       {
         "id": 26,
-        "english": "Officially, Taylor Swift didn't cause an earthquake, but for the Swifties it probably felt like one!",
-        "korean": "공식적으로 테일러 스위프트가 지진을 일으킨 건 아니지만, 스위프티들에게는 그렇게 느껴졌을 거예요!",
-        "properNounIndices": [
-          1,
-          2,
-          10
-        ]
+        "english": "Yes, so this is all of the energy combined from the 73,000 people in the stadium, jumping in unison and stamping in unison.",
+        "korean": "네, 이건 경기장 안 73,000명이 일제히 뛰면서 합쳐진 에너지입니다.",
+        "properNounIndices": []
       },
       {
         "id": 27,
-        "english": "All of which brings us back to my question, Phil. I asked you about another earth-shattering concert involving the British band, Madness, but where in London did the show take place?",
-        "korean": "이 모든 것이 제 질문으로 돌아오네요, 필.",
+        "english": "James, the British Geological Survey recorded 23.4 nanometres of movement in Edinburgh.",
+        "korean": "제임즈, 영국지질조사소가 23.4나노미터의 움직임을 기록했다는데요.",
         "properNounIndices": [
-          9,
-          10,
-          19,
-          21,
-          25
+          2,
+          3,
+          4,
+          11
         ]
       },
       {
         "id": 28,
-        "english": "And I guessed it was at The Royal Albert Hall.",
-        "korean": "로열 앨버트 홀이라고 추측했어요.",
-        "properNounIndices": [
-          1,
-          6,
-          7,
-          8,
-          9
-        ]
+        "english": "What's that actually mean?",
+        "korean": "영국지질조사소가 23.4나노미터의 움직임을 기록했다는데",
+        "properNounIndices": []
       },
       {
         "id": 29,
-        "english": "Which was the wrong answer, I'm afraid, Phil. In fact, the concert happened in Finsbury Park.",
-        "korean": "틀린 답이에요, 유감이지만 필. 사실 콘서트는 핀스버리 파크에서 열렸습니다.",
-        "properNounIndices": [
-          5,
-          7,
-          8,
-          14,
-          15
-        ]
+        "english": "So, what that means is that they recorded the ground flexing up and down by a distance of 23 nanometres.",
+        "korean": "그 의미는 지면이 23나노미터 거리로 위아래로 구부러지는 걸 기록했다는 겁니다.",
+        "properNounIndices": []
       }
     ],
     "quiz": {
       "question": "What does '나노미터 (10억 분의 1미터)' mean in English?",
       "options": [
-        "rock your world",
         "nanometre",
-        "seismic",
-        "peak"
+        "rock your world",
+        "in unison",
+        "seismic"
       ],
-      "answer": 1
+      "answer": 0
     }
   },
   {
@@ -427,59 +381,283 @@
     "sentences": [
       {
         "id": 30,
+        "english": "James's equipment recorded seismic movement when Taylor Swift started to sing.",
+        "korean": "제임즈의 장비가 테일러 스위프트가 노래를 시작하자 지진파 움직임을 기록했습니다.",
+        "properNounIndices": [
+          6,
+          7
+        ]
+      },
+      {
+        "id": 31,
+        "english": "Her hit song, Cruel Summer, created a peak - the highest point - in the graph which James's machine was drawing.",
+        "korean": "테일러 스위프트가 노래를 시작하자 지진파 움직임을 기록했어요",
+        "properNounIndices": [
+          3,
+          4,
+          17
+        ]
+      },
+      {
+        "id": 32,
+        "english": "The peak was made by thousands of Swifties jumping up and down in unison, together and at the same time, creating something like a mini earthquake.",
+        "korean": "최고점은 수천 명의 스위프티가 일제히 뛰면서 만들어졌습니다.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 33,
+        "english": "The seismologist detected the ground flexing by 23.4 nanometres.",
+        "korean": "지진학자가 지면이 23.4나노미터로 구부러지는 걸 감지했습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 34,
+        "english": "To flex means to bend repeatedly.",
+        "korean": "지면이 23.4나노미터로 구부러지는 걸 감지했어요",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '최고점, 정점' mean in English?",
+      "options": [
+        "flex",
+        "comparable",
+        "peak",
+        "in unison"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_B6ME_012_set8",
+    "parentSetId": "L2_B6ME_012",
+    "theme": "Taylor Swift seismology",
+    "level": 6,
+    "setNumber": 8,
+    "sentences": [
+      {
+        "id": 35,
+        "english": "And it's a distance of 23.4 nanometres which is really small – a nanometre is one billionth of a metre – that's about the width of one strand of human DNA.",
+        "korean": "23.4나노미터라는 거리는 정말 작습니다.",
+        "properNounIndices": [
+          30
+        ]
+      },
+      {
+        "id": 36,
+        "english": "But here's what the seismologist's graph actually sounded like when converted into audio:",
+        "korean": "지진학자의 그래프를 오디오로 변환하면 이렇게 들립니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 37,
+        "english": "Wow! That's amazing! Now, as impressive as this sounds, it wasn't really comparable to a real earthquake.",
+        "korean": "와! 놀라워요!",
+        "properNounIndices": [
+          1,
+          3
+        ]
+      },
+      {
+        "id": 38,
+        "english": "If something is comparable to another thing, it's similar in size, amount, or important as something else.",
+        "korean": "와! 놀라워요!",
+        "properNounIndices": []
+      },
+      {
+        "id": 39,
+        "english": "Yes, the energy created by the music's sound waves and thousands of fans jumping did move the earth, but not in a way that's comparable, or similar, to a real earthquake.",
+        "korean": "네, 음악의 음파와 수천 팬의 점프가 만든 에너지가 지구를 움직이긴 했습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '비교할 만한, 유사한' mean in English?",
+      "options": [
+        "comparable",
+        "nanometre",
+        "rock your world",
+        "in unison"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_B6ME_012_set9",
+    "parentSetId": "L2_B6ME_012",
+    "theme": "Taylor Swift seismology",
+    "level": 6,
+    "setNumber": 9,
+    "sentences": [
+      {
+        "id": 40,
+        "english": "By definition, an earthquake must break the earth's crust, and is caused by either the movement of tectonic plates or a volcano.",
+        "korean": "정의상 지진은 지각을 깨야 합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 41,
+        "english": "Officially, Taylor Swift didn't cause an earthquake, but for the Swifties it probably felt like one!",
+        "korean": "공식적으로 테일러 스위프트가 지진을 일으킨 건 아니지만, 스위프티들에게는 그렇게 느껴졌을 거예요!",
+        "properNounIndices": [
+          1,
+          2,
+          10
+        ]
+      },
+      {
+        "id": 42,
+        "english": "All of which brings us back to my question, Phil.",
+        "korean": "이 모든 것이 제 질문으로 돌아오네요, 필.",
+        "properNounIndices": [
+          9
+        ]
+      },
+      {
+        "id": 43,
+        "english": "I asked you about another earth-shattering concert involving the British band, Madness, but where in London did the show take place?",
+        "korean": "이 모든 것이 제 질문으로 돌아오네요 필",
+        "properNounIndices": [
+          0,
+          9,
+          11,
+          15
+        ]
+      },
+      {
+        "id": 44,
+        "english": "And I guessed it was at The Royal Albert Hall.",
+        "korean": "로열 앨버트 홀이라고 추측했어요.",
+        "properNounIndices": [
+          1,
+          6,
+          7,
+          8,
+          9
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '삶을 즐겁게 해주다' mean in English?",
+      "options": [
+        "seismic",
+        "rock your world",
+        "in unison",
+        "flex"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L2_B6ME_012_set10",
+    "parentSetId": "L2_B6ME_012",
+    "theme": "Taylor Swift seismology",
+    "level": 6,
+    "setNumber": 10,
+    "sentences": [
+      {
+        "id": 45,
+        "english": "Which was the wrong answer, I'm afraid, Phil.",
+        "korean": "틀린 답이에요, 유감이지만 필.",
+        "properNounIndices": [
+          5,
+          7
+        ]
+      },
+      {
+        "id": 46,
+        "english": "In fact, the concert happened in Finsbury Park.",
+        "korean": "사실 콘서트는 핀스버리 파크에서 열렸습니다.",
+        "properNounIndices": [
+          6,
+          7
+        ]
+      },
+      {
+        "id": 47,
         "english": "OK, let's recap the vocabulary we've learned in this programme starting with the phrase, rock your world, meaning that someone or something has a positive effect on you, making your life enjoyable.",
         "korean": "어휘를 정리해볼게요.",
         "properNounIndices": []
       },
       {
-        "id": 31,
+        "id": 48,
         "english": "A peak is the highest point on a graph.",
         "korean": "'peak'은 그래프의 가장 높은 점입니다.",
         "properNounIndices": []
       },
       {
-        "id": 32,
+        "id": 49,
         "english": "In unison means together and at the same time.",
         "korean": "'in unison'은 함께 그리고 동시에라는 뜻입니다.",
         "properNounIndices": []
-      },
+      }
+    ],
+    "quiz": {
+      "question": "What does '구부리다, 휘다' mean in English?",
+      "options": [
+        "flex",
+        "nanometre",
+        "comparable",
+        "rock your world"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_B6ME_012_set11",
+    "parentSetId": "L2_B6ME_012",
+    "theme": "Taylor Swift seismology",
+    "level": 4,
+    "setNumber": 11,
+    "sentences": [
       {
-        "id": 33,
+        "id": 50,
         "english": "The verb to flex means to bend repeatedly.",
         "korean": "동사 'flex'는 반복적으로 구부리다는 뜻입니다.",
         "properNounIndices": []
       },
       {
-        "id": 34,
+        "id": 51,
         "english": "A nanometre is a tiny unit of measurement, one billionth of a metre.",
         "korean": "나노미터는 아주 작은 측정 단위로, 10억분의 1미터입니다.",
         "properNounIndices": []
       },
       {
-        "id": 35,
-        "english": "And finally, comparable means similar in size, amount, or importance as something else. Once again, our six minutes are up. Bye for now!",
+        "id": 52,
+        "english": "And finally, comparable means similar in size, amount, or importance as something else.",
         "korean": "마지막으로, 'comparable'은 크기, 양, 중요성에서 비슷하다는 뜻입니다.",
-        "properNounIndices": [
-          13,
-          20
-        ]
+        "properNounIndices": []
       },
       {
-        "id": 36,
+        "id": 53,
+        "english": "Once again, our six minutes are up.",
+        "korean": "'comparable'은.",
+        "properNounIndices": []
+      },
+      {
+        "id": 54,
+        "english": "Bye for now!",
+        "korean": "크기, 양, 중요성에서 비슷하다는 뜻이에요",
+        "properNounIndices": []
+      },
+      {
+        "id": 55,
         "english": "Bye!",
         "korean": "안녕!",
         "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '지진의' mean in English?",
+      "question": "What does '구부리다, 휘다' mean in English?",
       "options": [
-        "seismic",
         "peak",
-        "rock your world",
-        "in unison"
+        "seismic",
+        "flex",
+        "comparable"
       ],
-      "answer": 0
+      "answer": 2
     }
   }
 ]

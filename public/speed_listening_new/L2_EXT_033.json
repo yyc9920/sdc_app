@@ -1,0 +1,55 @@
+[
+  {
+    "setId": "L2_EXT_033_set1",
+    "parentSetId": "L2_EXT_033",
+    "theme": "Street Food Around the World",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Every country has its own unique street food culture.",
+        "korean": "모든 나라는 고유한 길거리 음식 문화가 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "In Thailand you can find pad thai being cooked right on the sidewalk.",
+        "korean": "태국에서는 인도 위에서 바로 팟타이를 만드는 걸 볼 수 있어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Mexico is famous for its tacos sold from colorful food trucks.",
+        "korean": "멕시코는 알록달록한 푸드트럭에서 파는 타코로 유명해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "In Turkey you can smell freshly baked simit — a sesame bread ring — from every corner.",
+        "korean": "터키에서는 모퉁이마다 갓 구운 시밋 — 참깨 빵 링 — 의 냄새를 맡을 수 있어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Street food is the best way to experience a country's real food culture.",
+        "korean": "길거리 음식은 한 나라의 진짜 음식 문화를 경험하는 가장 좋은 방법이에요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "How to Deal with Jet Lag",
+        "My Favorite Day",
+        "Street Food Around the World",
+        "Literary Criticism — Unreliable Narrators"
+      ],
+      "answer": 2
+    }
+  }
+]

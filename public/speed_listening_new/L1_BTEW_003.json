@@ -3,70 +3,61 @@
     "setId": "L1_BTEW_003_set1",
     "parentSetId": "L1_BTEW_003",
     "theme": "The flip side",
-    "level": 6,
+    "level": 5,
     "setNumber": 1,
     "sentences": [
       {
         "id": 0,
-        "english": "Hello and welcome to The English We Speak, where we explain phrases used by fluent English speakers so that you can use them too. I'm Feifei, and I'm here with Beth.",
+        "english": "Hello and welcome to The English We Speak, where we explain phrases used by fluent English speakers so that you can use them too.",
         "korean": "안녕하세요.",
         "properNounIndices": [
           4,
           5,
           6,
           7,
-          15,
-          24,
-          25,
-          27,
-          30
+          15
         ]
       },
       {
         "id": 1,
-        "english": "Hi everyone, and hi Feifei. How are you today?",
-        "korean": "안녕하세요.",
-        "properNounIndices": [
-          4,
-          5
-        ]
-      },
-      {
-        "id": 2,
-        "english": "I'm OK, but the weather is miserable! Non-stop rain.",
-        "korean": "날씨가 형편없습니다.",
+        "english": "I'm Feifei, and I'm here with Beth.",
+        "korean": "저는 페이페이이고 베스와 함께합니다.",
         "properNounIndices": [
           1,
-          7
-        ]
-      },
-      {
-        "id": 3,
-        "english": "I know. I hate it too. But, on the flip side, we're inside so we can't actually get wet, and at least it's warm!",
-        "korean": "하지만 반대로, 우리는 안에 있습니다.",
-        "properNounIndices": [
-          0,
-          2,
+          3,
           6
         ]
       },
       {
-        "id": 4,
-        "english": "It is. And 'the flip side' is the expression we're learning in this programme. The flip side means the opposite or another side of something, like showing both pros and cons.",
-        "korean": "반대편은 다른 관점을 의미합니다.",
+        "id": 2,
+        "english": "Hi everyone, and hi Feifei.",
+        "korean": "안녕하세요.",
         "properNounIndices": [
-          2,
-          14
+          4
+        ]
+      },
+      {
+        "id": 3,
+        "english": "How are you today?",
+        "korean": "오늘 어떻게 지내세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I'm OK, but the weather is miserable!",
+        "korean": "날씨가 형편없습니다.",
+        "properNounIndices": [
+          1
         ]
       }
     ],
     "quiz": {
-      "question": "What does '다른 관점이나 긍정적인 면' mean in English?",
+      "question": "What does '바뀔 수 있도록 준비된' mean in English?",
       "options": [
-        "exhausted",
         "perspective",
-        "pros and cons",
-        "the flip side"
+        "the flip side",
+        "miserable",
+        "flexible"
       ],
       "answer": 3
     }
@@ -75,27 +66,87 @@
     "setId": "L1_BTEW_003_set2",
     "parentSetId": "L1_BTEW_003",
     "theme": "The flip side",
-    "level": 6,
+    "level": 5,
     "setNumber": 2,
     "sentences": [
       {
         "id": 5,
-        "english": "Yes. The flip side is a way of introducing the opposite perspective of something. So, you said it's raining, but I turned it around and said we're inside, so at least we're warm.",
-        "korean": "무언가를 뒤집어서 다른 쪽을 보여주는 것과 같습니다.",
-        "properNounIndices": [
-          1,
-          14,
-          20
-        ]
+        "english": "Non-stop rain.",
+        "korean": "계속 내리는 비입니다.",
+        "properNounIndices": []
       },
       {
         "id": 6,
+        "english": "I know. I hate it too.",
+        "korean": "하지만 반대로, 우리는 안에 있습니다.",
+        "properNounIndices": [
+          0,
+          2
+        ]
+      },
+      {
+        "id": 7,
+        "english": "But, on the flip side, we're inside so we can't actually get wet, and at least it's warm!",
+        "korean": "하지만 반대로, 우리는 안에 있으니까 실제로 젖을 수 없고 적어도 따뜻합니다!",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "It is. And 'the flip side' is the expression we're learning in this programme.",
+        "korean": "반대편은 다른 관점을 의미합니다.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 9,
+        "english": "The flip side means the opposite or another side of something, like showing both pros and cons.",
+        "korean": "반대편은 무언가의 반대편이나 다른 쪽을 의미하며, 장점과 단점 모두를 보여주는 것 같습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '다른 관점이나 긍정적인 면' mean in English?",
+      "options": [
+        "flexible",
+        "perspective",
+        "pros and cons",
+        "the flip side"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L1_BTEW_003_set3",
+    "parentSetId": "L1_BTEW_003",
+    "theme": "The flip side",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "Yes. The flip side is a way of introducing the opposite perspective of something.",
+        "korean": "무언가를 뒤집어서 다른 쪽을 보여주는 것과 같습니다.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 11,
+        "english": "So, you said it's raining, but I turned it around and said we're inside, so at least we're warm.",
+        "korean": "그래서 당신은 비가 오고 있다고 말했지만, 저는 그것을 돌리고 우리는 안에 있다고 말했습니다. 동전처럼 무언가를 뒤집어서 다른 쪽을 드러내는 것처럼 생각해보세요.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 12,
         "english": "Think of it like turning something over to reveal the other side, like a coin.",
         "korean": "무언가를 뒤집어서 다른 쪽을 보여주는 것과 같습니다.",
         "properNounIndices": []
       },
       {
-        "id": 7,
+        "id": 13,
         "english": "So, I could say I spent the whole Sunday cooking this one dish, and the kitchen was a mess, and I was exhausted.",
         "korean": "부엌이 엉망이고 저는 지쳤습니다.",
         "properNounIndices": [
@@ -106,22 +157,46 @@
         ]
       },
       {
-        "id": 8,
-        "english": "Oh dear. But on the flip side, you have a delicious meal to enjoy! Let's hear some more examples.",
+        "id": 14,
+        "english": "Oh dear. But on the flip side, you have a delicious meal to enjoy!",
         "korean": "반대로, 맛있는 식사를 즐길 수 있습니다.",
         "properNounIndices": [
-          2,
-          14
+          2
         ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '어떤 것을 보는 특정한 방식' mean in English?",
+      "options": [
+        "perspective",
+        "miserable",
+        "exhausted",
+        "the flip side"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L1_BTEW_003_set4",
+    "parentSetId": "L1_BTEW_003",
+    "theme": "The flip side",
+    "level": 5,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "Let's hear some more examples.",
+        "korean": "더 많은 예를 들어보겠습니다.",
+        "properNounIndices": []
       },
       {
-        "id": 9,
+        "id": 16,
         "english": "So, the flip side is a useful expression for looking at things from a different, usually more positive, angle.",
         "korean": "반대편은 다양한 관점에서 보는 표현입니다.",
         "properNounIndices": []
       },
       {
-        "id": 10,
+        "id": 17,
         "english": "That's right. And on the flip side of this programme ending, you now have a great new phrase to use!",
         "korean": "훌륭한 새로운 표현을 가지고 있습니다.",
         "properNounIndices": [
@@ -129,27 +204,27 @@
         ]
       },
       {
-        "id": 11,
+        "id": 18,
         "english": "Bye everyone!",
         "korean": "안녕하세요!",
         "properNounIndices": []
       },
       {
-        "id": 12,
+        "id": 19,
         "english": "Bye!",
         "korean": "안녕!",
         "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '매우 피곤한 상태' mean in English?",
+      "question": "What does '나쁘고 행복하지 않은 상태' mean in English?",
       "options": [
         "miserable",
+        "the flip side",
         "perspective",
-        "exhausted",
-        "pros and cons"
+        "exhausted"
       ],
-      "answer": 2
+      "answer": 0
     }
   }
 ]

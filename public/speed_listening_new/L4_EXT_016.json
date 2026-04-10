@@ -1,0 +1,49 @@
+[
+  {
+    "setId": "L4_EXT_016_set1",
+    "parentSetId": "L4_EXT_016",
+    "theme": "The Future of Education",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Traditional classroom education is being fundamentally disrupted by technology with AI-powered tutoring systems now capable of providing personalized learning experiences tailored to each student's pace and style.",
+        "korean": "전통적 교실 교육이 기술에 의해 근본적으로 파괴되고 있다. AI 기반 튜터링 시스템이 이제 각 학생의 속도와 스타일에 맞춤화된 개인화 학습 경험을 제공할 수 있다.",
+        "properNounIndices": [
+          10
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Massive open online courses have already made world-class education accessible to anyone with an internet connection regardless of their geographic location or economic background.",
+        "korean": "대규모 공개 온라인 강좌는 이미 지리적 위치나 경제적 배경에 관계없이 인터넷만 있으면 누구에게나 세계 수준의 교육을 접근 가능하게 만들었다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "However critics argue that online learning cannot replicate the social development and collaborative skills that come from physically being in a classroom with peers.",
+        "korean": "하지만 비판자들은 온라인 학습이 교실에서 동료와 물리적으로 함께하면서 오는 사회적 발달과 협업 능력을 복제할 수 없다고 주장한다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "The most likely future is a hybrid model that combines the efficiency of AI-driven personalization with the irreplaceable human elements of mentorship and community.",
+        "korean": "가장 유력한 미래는 AI 기반 개인화의 효율성과 멘토십과 커뮤니티의 대체 불가능한 인간적 요소를 결합하는 하이브리드 모델이다.",
+        "properNounIndices": [
+          13
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '복제하다/재현하다' mean in English?",
+      "options": [
+        "replicate",
+        "irreplaceable",
+        "personalized",
+        "disrupted"
+      ],
+      "answer": 0
+    }
+  }
+]

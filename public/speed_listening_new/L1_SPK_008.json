@@ -1,0 +1,99 @@
+[
+  {
+    "setId": "L1_SPK_008_set1",
+    "parentSetId": "L1_SPK_008",
+    "theme": "A Memorable Gift",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Describe a gift you received that was very meaningful to you.",
+        "korean": "당신이 받은 매우 의미 있는 선물을 묘사하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain why it was special.",
+        "korean": "왜 특별했는지 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The most meaningful gift I've ever received was a handwritten letter from my grandfather.",
+        "korean": "내가 받은 가장 의미 있는 선물은 할아버지의 손편지였어요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 3,
+        "english": "He gave it to me on my high school graduation day.",
+        "korean": "고등학교 졸업식 날 주셨어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "In the letter he shared stories about his own youth and the lessons he had learned from his mistakes.",
+        "korean": "편지에서 자신의 젊은 시절 이야기와 실수에서 배운 교훈을 나눠주셨어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Working in a Team vs. Alone",
+        "Long Commute vs. Small Apartment Near Work",
+        "Studying Abroad — Worth It?",
+        "A Memorable Gift"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L1_SPK_008_set2",
+    "parentSetId": "L1_SPK_008",
+    "theme": "A Memorable Gift",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "What made it special was the effort he put into writing it — his handwriting was shaky because of his age but every word was full of love.",
+        "korean": "특별하게 만든 것은 쓰는 데 들인 노력이었어요 — 연세 때문에 글씨가 떨렸지만 모든 단어에 사랑이 가득했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "I still keep it in my desk drawer and read it whenever I need encouragement.",
+        "korean": "아직도 책상 서랍에 보관하고 있고 격려가 필요할 때마다 읽어요.",
+        "properNounIndices": [
+          0,
+          12
+        ]
+      },
+      {
+        "id": 7,
+        "english": "No expensive item could ever replace the emotional value of that letter.",
+        "korean": "어떤 비싼 물건도 그 편지의 감정적 가치를 대체할 수 없어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "put effort into",
+        "korean": "~에 노력을 들이다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Famous People as Role Models",
+        "A Memorable Gift",
+        "Eating Alone vs. with Others",
+        "A Skill You Want to Learn"
+      ],
+      "answer": 1
+    }
+  }
+]

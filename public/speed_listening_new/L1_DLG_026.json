@@ -1,0 +1,63 @@
+[
+  {
+    "setId": "L1_DLG_026_set1",
+    "parentSetId": "L1_DLG_026",
+    "theme": "Asking About Homework",
+    "level": 2,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Did you finish the homework?",
+        "korean": "숙제 끝냈어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Not yet. It's really hard.",
+        "korean": "아직이요. 진짜 어려워요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Which part?",
+        "korean": "어떤 부분이요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "The last three questions.",
+        "korean": "마지막 세 문제요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I can help you if you want.",
+        "korean": "원하면 도와줄 수 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Really? Thanks!",
+        "korean": "진짜요? 고마워요!",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "At the Bakery",
+        "Gym — Personal Trainer Consultation",
+        "Asking About Homework",
+        "Ordering at a Restaurant"
+      ],
+      "answer": 2
+    }
+  }
+]

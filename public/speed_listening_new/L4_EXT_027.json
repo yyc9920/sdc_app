@@ -1,0 +1,42 @@
+[
+  {
+    "setId": "L4_EXT_027_set1",
+    "parentSetId": "L4_EXT_027",
+    "theme": "Why We Underestimate Time",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The planning fallacy is our systematic tendency to underestimate how long tasks will take even when we have extensive experience with similar tasks.",
+        "korean": "계획 오류는 비슷한 작업에 풍부한 경험이 있더라도 작업에 걸리는 시간을 과소평가하는 체계적인 경향이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Research by Daniel Kahneman showed that people focus on the best-case scenario while ignoring the countless things that can go wrong.",
+        "korean": "대니얼 카너먼의 연구에 따르면 사람들은 잘못될 수 있는 수많은 것을 무시하고 최선의 시나리오에 집중한다.",
+        "properNounIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "english": "A practical solution is to multiply your initial time estimate by one point five for simple tasks and by two or three for complex ones.",
+        "korean": "실용적 해결책은 초기 시간 추정치에 간단한 작업은 1.5를 곱하고 복잡한 작업은 2~3을 곱하는 것이다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '과소평가하다' mean in English?",
+      "options": [
+        "planning fallacy",
+        "estimate",
+        "underestimate",
+        "best-case scenario"
+      ],
+      "answer": 2
+    }
+  }
+]

@@ -1,0 +1,139 @@
+[
+  {
+    "setId": "L2_ELLO_017_set1",
+    "parentSetId": "L2_ELLO_017",
+    "theme": "Mixer #149 — Who Do You Admire?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I admire Margaret Thatcher.",
+        "korean": "마거릿 대처를 존경해요.",
+        "properNounIndices": [
+          0,
+          2,
+          3
+        ]
+      },
+      {
+        "id": 1,
+        "english": "She was the first female prime minister in England.",
+        "korean": "영국 최초의 여성 총리였고 정치와 여성에 관한 사회적 규범을 깼어요.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 2,
+        "english": "She broke any normal social norms associated with politics and the female gender.",
+        "korean": "/ 깨뜨렸다 정치와 여성에 관한 사회적 규범을.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "A historical person I admire is Mark Twain.",
+        "korean": "내가 존경하는 역사적 인물은 마크 트웨인이에요.",
+        "properNounIndices": [
+          3,
+          6,
+          7
+        ]
+      },
+      {
+        "id": 4,
+        "english": "He has written a lot of fiction and is well known for 'The Adventures of Tom Sawyer.' I think he had a very unique perspective on the world.",
+        "korean": "많은 소설을 썼고 '톰 소여의 모험'으로 유명해요.",
+        "properNounIndices": [
+          12,
+          13,
+          15,
+          16,
+          17
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '혁명을 일으키다' mean in English?",
+      "options": [
+        "hardship",
+        "lead by example",
+        "social norms",
+        "revolutionize"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L2_ELLO_017_set2",
+    "parentSetId": "L2_ELLO_017",
+    "theme": "Mixer #149 — Who Do You Admire?",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I admire Nelson Mandela.",
+        "korean": "넬슨 만델라를 존경해요.",
+        "properNounIndices": [
+          0,
+          2,
+          3
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Despite the extreme hardship he went through, he remained dedicated to his beliefs and became a very important spiritual leader for the whole African continent.",
+        "korean": "극심한 고난에도 신념에 헌신했고 아프리카 대륙 전체의 매우 중요한 영적 지도자가 되었어요.",
+        "properNounIndices": [
+          23
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Someone I admire historically would be Jimmy Hendrix.",
+        "korean": "역사적으로 존경하는 사람은 지미 헨드릭스예요.",
+        "properNounIndices": [
+          1,
+          6,
+          7
+        ]
+      },
+      {
+        "id": 8,
+        "english": "I think he revolutionized rock music and many different styles of playing the guitar.",
+        "korean": "록 음악과 기타 연주의 여러 스타일에 혁명을 일으켰다고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 9,
+        "english": "I admire Martin Luther King.",
+        "korean": "마틴 루서 킹을 존경해요.",
+        "properNounIndices": [
+          0,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": 10,
+        "english": "He had a lot of strength and courage and was able to pull off the civil rights movement because he was a powerful leader and people looked at him to lead by example.",
+        "korean": "힘과 용기가 많았고 강력한 지도자여서 민권 운동을 성공시킬 수 있었어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '고난, 역경' mean in English?",
+      "options": [
+        "social norms",
+        "lead by example",
+        "hardship",
+        "revolutionize"
+      ],
+      "answer": 2
+    }
+  }
+]

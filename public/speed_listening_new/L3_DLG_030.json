@@ -1,0 +1,109 @@
+[
+  {
+    "setId": "L3_DLG_030_set1",
+    "parentSetId": "L3_DLG_030",
+    "theme": "Roommate Discussion — Chores",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hey, can we talk about the chores situation?",
+        "korean": "이봐요. 집안일 상황에 대해 이야기할 수 있을까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Sure. What's on your mind?",
+        "korean": "그래요. 무슨 생각인데요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I feel like I've been doing most of the cleaning and dishes lately.",
+        "korean": "최근에 청소와 설거지를 내가 대부분 하고 있는 것 같아요.",
+        "properNounIndices": [
+          0,
+          3
+        ]
+      },
+      {
+        "id": 3,
+        "english": "You're right and I'm sorry about that.",
+        "korean": "맞아요. 그건 미안해요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I've been really busy with exams.",
+        "korean": "시험 때문에 진짜 바빴어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Asking for a Day Off",
+        "Splitting the Bill",
+        "Roommate Discussion — Chores",
+        "Calling a Friend"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L3_DLG_030_set2",
+    "parentSetId": "L3_DLG_030",
+    "theme": "Roommate Discussion — Chores",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I understand but it's not fair to leave everything to me.",
+        "korean": "이해하지만 다 나한테 맡기는 건 공평하지 않아요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 6,
+        "english": "You're absolutely right.",
+        "korean": "완전히 맞아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "How about we make a weekly schedule so we each know what we're responsible for?",
+        "korean": "주간 일정을 만들어서 각자 뭘 담당하는지 알면 어떨까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "That's a great idea.",
+        "korean": "좋은 생각이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Let's write it up tonight.",
+        "korean": "오늘 밤에 작성해요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Choosing a Class Activity",
+        "Roommate Discussion — Chores",
+        "Discussing a Movie",
+        "Returning Online Order"
+      ],
+      "answer": 1
+    }
+  }
+]

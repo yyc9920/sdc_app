@@ -1,0 +1,47 @@
+[
+  {
+    "setId": "L3_EXT_018_set1",
+    "parentSetId": "L3_EXT_018",
+    "theme": "The Rise of Electric Vehicles",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Electric vehicles have gone from a niche product to a mainstream choice in just a decade, with global sales surpassing ten million units in 2024.",
+        "korean": "/ 2024년 글로벌 판매가 / 1천만 대를 넘으면서.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Battery technology has improved dramatically, with modern EVs capable of traveling over five hundred kilometers on a single charge.",
+        "korean": "배터리 기술이 극적으로 향상되어 현대 전기차는 한 번 충전으로 500킬로미터 이상 주행할 수 있다.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 2,
+        "english": "The biggest challenge remains the charging infrastructure, particularly in rural areas where stations are few and far between.",
+        "korean": "/ 특히 충전소가 드문 / 농촌 지역에서.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Several countries have announced plans to ban the sale of new gasoline vehicles by 2035, which will likely accelerate the transition to electric transportation.",
+        "korean": "여러 국가가 2035년까지 신규 가솔린 차량 판매 금지 계획을 발표했다. 이는 전기 교통으로의 전환을 가속화할 것이다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '틈새의' mean in English?",
+      "options": [
+        "accelerate",
+        "infrastructure",
+        "niche",
+        "transition"
+      ],
+      "answer": 2
+    }
+  }
+]

@@ -1,0 +1,100 @@
+[
+  {
+    "setId": "L1_SPK_051_set1",
+    "parentSetId": "L1_SPK_051",
+    "theme": "The Best Way to Relieve Stress",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "What is the best way to relieve stress?",
+        "korean": "스트레스를 해소하는 가장 좋은 방법은 무엇입니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Give specific reasons and examples.",
+        "korean": "구체적인 이유와 예시를 제시하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I believe the best way to relieve stress is through regular physical exercise.",
+        "korean": "정기적인 신체 운동이 스트레스를 해소하는 가장 좋은 방법이라고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "When you exercise your body releases endorphins which are natural mood boosters.",
+        "korean": "운동하면 몸이 엔도르핀을 분비하는데 천연 기분 향상제예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "For me jogging for just thirty minutes completely changes my mental state.",
+        "korean": "나의 경우 30분만 조깅해도 정신 상태가 완전히 바뀌어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Longer Vacations vs. Shorter Frequent Breaks",
+        "Your Role Model",
+        "The Best Way to Relieve Stress",
+        "A Hobby You Want to Start"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L1_SPK_051_set2",
+    "parentSetId": "L1_SPK_051",
+    "theme": "The Best Way to Relieve Stress",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I go from feeling overwhelmed and anxious to feeling calm and focused.",
+        "korean": "압도당하고 불안한 느낌에서 차분하고 집중된 느낌으로 바뀌어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Unlike watching TV or scrolling through social media exercise actually addresses the root cause of stress by lowering cortisol levels.",
+        "korean": "TV를 보거나 소셜 미디어를 스크롤하는 것과 달리 운동은 코르티솔 수치를 낮춰 스트레스의 근본 원인을 실제로 해결해요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 7,
+        "english": "mood booster",
+        "korean": "기분 향상제",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "root cause",
+        "korean": "근본 원인",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Pets and Responsibility",
+        "Competitive Sports for Children",
+        "Describe a place outside your actual home where yo",
+        "The Best Way to Relieve Stress"
+      ],
+      "answer": 3
+    }
+  }
+]

@@ -1,0 +1,73 @@
+[
+  {
+    "setId": "L1_SPK_017_set1",
+    "parentSetId": "L1_SPK_017",
+    "theme": "Your Role Model",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Describe a person you admire and explain why you look up to them.",
+        "korean": "존경하는 사람을 묘사하세요. 왜 존경하는지 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "The person I admire most is my mother.",
+        "korean": "가장 존경하는 사람은 어머니예요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "english": "She raised three children while working a full-time job and going to night school to finish her degree.",
+        "korean": "세 아이를 키우면서 풀타임으로 일하고 야간 학교에 다녀 학위를 마쳤어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "What I admire most about her is her never-give-up attitude.",
+        "korean": "가장 존경하는 점은 절대 포기하지 않는 태도예요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Even when things were financially difficult she always found a way to keep going.",
+        "korean": "경제적으로 어려울 때도 항상 계속할 방법을 찾았어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "She taught me that obstacles are not dead ends but detours that eventually lead you to your goal.",
+        "korean": "장애물은 막다른 길이 아니라 결국 목표로 이끄는 우회로라고 가르쳐줬어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Her example inspires me to push through challenges in my own life.",
+        "korean": "그녀의 본보기가 내 삶의 어려움을 극복하도록 영감을 줘요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "push through",
+        "korean": "극복하다/뚫고 나가다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Impact of AI on Jobs",
+        "A Person Who Has Influenced You",
+        "A Skill You Want to Learn",
+        "Your Role Model"
+      ],
+      "answer": 3
+    }
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "setId": "L2_ELLO_056_set1",
+    "parentSetId": "L2_ELLO_056",
+    "theme": "Mixer #90 — Losing Things",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I lose my keys at least once a week.",
+        "korean": "적어도 일주일에 한 번 열쇠를 잃어버려요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I finally bought one of those key finder devices.",
+        "korean": "결국 키 파인더 기기를 샀어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I always lose my sunglasses.",
+        "korean": "항상 선글라스를 잃어버려요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I've probably bought ten pairs this year alone.",
+        "korean": "올해만 아마 열 개 샀어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I lost my phone once and completely panicked.",
+        "korean": "한번 폰을 잃어버리고 완전히 패닉했어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "english": "It turned out it was in my bag the whole time.",
+        "korean": "알고 보니 내 가방에 계속 있었어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #18 — Junk Food",
+        "Mixer #90 — Losing Things",
+        "Mixer #3 — Cats vs Dogs",
+        "Mixer #31 — Classroom Memories"
+      ],
+      "answer": 1
+    }
+  }
+]

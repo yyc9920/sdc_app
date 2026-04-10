@@ -1,0 +1,53 @@
+[
+  {
+    "setId": "L1_EXT_085_set1",
+    "parentSetId": "L1_EXT_085",
+    "theme": "Playing Video Games",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I play video games for about one hour every day after finishing my homework.",
+        "korean": "매일 숙제를 끝낸 후 약 1시간 비디오 게임을 해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "My favorite game is a racing game where I can drive fast cars.",
+        "korean": "가장 좋아하는 게임은 빠른 차를 운전할 수 있는 레이싱 게임이에요.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Sometimes I play online with my friends from school.",
+        "korean": "가끔 학교 친구들과 온라인으로 같이 해요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 3,
+        "english": "My parents say one hour is enough and I agree.",
+        "korean": "부모님은 1시간이면 충분하다고 하시고 나도 동의해요.",
+        "properNounIndices": [
+          8
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Sapir-Whorf Revisited",
+        "The Growth Mindset",
+        "Playing Video Games",
+        "Psychology Lecture — The Bystander Effect"
+      ],
+      "answer": 2
+    }
+  }
+]

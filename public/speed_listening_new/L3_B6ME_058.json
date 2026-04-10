@@ -1,0 +1,43 @@
+[
+  {
+    "setId": "L3_B6ME_058_set1",
+    "parentSetId": "L3_B6ME_058",
+    "theme": "What's Your Favourite Noodle?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Some people buy noodles dried in a packet, others make them fresh from wheat or rice.",
+        "korean": "어떤 사람은 건면을 사고 어떤 사람은 밀이나 쌀로 생면을 만들어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "From their origins, probably somewhere in China, noodle recipes were spread by traders on the ancient Silk Road.",
+        "korean": "아마 중국 어딘가에서 시작된 국수 레시피가 고대 실크로드 상인들에 의해 퍼졌어요.",
+        "properNounIndices": [
+          6,
+          16,
+          17
+        ]
+      },
+      {
+        "id": 2,
+        "english": "At each destination along the road, people gave noodles a twist, adding different flavours and ingredients to create a new dish.",
+        "korean": "길을 따라 각 목적지에서 사람들은 다른 맛과 재료를 더해 국수에 변형을 가해 새로운 요리를 만들었어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Did a Civilisation Exist Before Humans?",
+        "How Are Influencers Affecting Politics?",
+        "Why Are Some Animals Black and White?",
+        "What's Your Favourite Noodle?"
+      ],
+      "answer": 3
+    }
+  }
+]

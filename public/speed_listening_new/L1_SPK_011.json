@@ -1,0 +1,113 @@
+[
+  {
+    "setId": "L1_SPK_011_set1",
+    "parentSetId": "L1_SPK_011",
+    "theme": "Online Classes vs. In-Person Classes",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you prefer taking online classes or in-person classes?",
+        "korean": "온라인 수업과 대면 수업 중 어느 것을 선호합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Use specific reasons and examples to support your answer.",
+        "korean": "구체적인 이유와 예시로 답을 뒷받침하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I strongly prefer in-person classes over online ones.",
+        "korean": "온라인 수업보다 대면 수업을 강하게 선호해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "The main reason is that I focus much better in a classroom setting.",
+        "korean": "주된 이유는 교실 환경에서 훨씬 더 잘 집중하기 때문이에요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 4,
+        "english": "At home there are too many distractions like my phone and TV.",
+        "korean": "집에서는 폰이나 TV 같은 방해 요소가 너무 많아요.",
+        "properNounIndices": [
+          11
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Longer Vacations vs. Shorter Frequent Breaks",
+        "Advantages of Being Bilingual",
+        "Social Media — More Harm or Good",
+        "Online Classes vs. In-Person Classes"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L1_SPK_011_set2",
+    "parentSetId": "L1_SPK_011",
+    "theme": "Online Classes vs. In-Person Classes",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Additionally I learn better through real-time interaction with the teacher.",
+        "korean": "또한 선생님과의 실시간 상호작용을 통해 더 잘 배워요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 6,
+        "english": "When I don't understand something I can raise my hand and ask immediately.",
+        "korean": "이해가 안 되면 바로 손을 들고 질문할 수 있어요.",
+        "properNounIndices": [
+          1,
+          5
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Finally being around classmates motivates me to work harder and stay on track.",
+        "korean": "마지막으로 급우들과 함께 있으면 더 열심히 하고 궤도에 머무르도록 동기 부여가 돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "That's why I believe in-person classes are more effective for learning.",
+        "korean": "그래서 대면 수업이 학습에 더 효과적이라고 생각해요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 9,
+        "english": "stay on track",
+        "korean": "궤도에 머무르다/제대로 하다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Renting vs. Owning a Home",
+        "Impact of AI on Jobs",
+        "Online Classes vs. In-Person Classes",
+        "A Person Who Has Influenced You"
+      ],
+      "answer": 2
+    }
+  }
+]

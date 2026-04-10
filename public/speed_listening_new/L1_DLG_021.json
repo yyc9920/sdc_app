@@ -1,0 +1,67 @@
+[
+  {
+    "setId": "L1_DLG_021_set1",
+    "parentSetId": "L1_DLG_021",
+    "theme": "Asking About Homework",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Did we have any homework for English class?",
+        "korean": "영어 숙제 있었어요?",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Yes we have to read chapter three.",
+        "korean": "네 3장을 읽어야 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Is that all?",
+        "korean": "그게 다예요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "We also need to answer the questions on page forty-five.",
+        "korean": "45페이지 문제도 풀어야 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "When is it due?",
+        "korean": "언제까지예요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Next Monday.",
+        "korean": "다음 주 월요일이요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Thanks for telling me.",
+        "korean": "알려줘서 고마워요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Discussing Investment Strategy",
+        "Ordering at a Restaurant",
+        "Weekend Hiking Plan",
+        "Asking About Homework"
+      ],
+      "answer": 3
+    }
+  }
+]

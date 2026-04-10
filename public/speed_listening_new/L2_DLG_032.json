@@ -1,0 +1,68 @@
+[
+  {
+    "setId": "L2_DLG_032_set1",
+    "parentSetId": "L2_DLG_032",
+    "theme": "Asking for a Recommendation",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Can you recommend a good restaurant near here?",
+        "korean": "근처에 좋은 식당 추천해주실 수 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "What kind of food do you like?",
+        "korean": "어떤 음식을 좋아하세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Anything really. We're not picky.",
+        "korean": "아무거나 괜찮아요. 안 가려요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 3,
+        "english": "There's a great Korean BBQ place two blocks from here.",
+        "korean": "여기서 두 블록 거리에 좋은 한국식 바비큐 집이 있어요.",
+        "properNounIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Do they take reservations?",
+        "korean": "예약을 받나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Yes but you can also walk in.",
+        "korean": "네 하지만 예약 없이 가도 돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Just try to go before six to avoid the dinner rush.",
+        "korean": "저녁 혼잡을 피하려면 6시 전에 가는 게 좋아요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Quarterly Business Review",
+        "Parent-Teacher Conference",
+        "Ordering Delivery Food",
+        "Asking for a Recommendation"
+      ],
+      "answer": 3
+    }
+  }
+]

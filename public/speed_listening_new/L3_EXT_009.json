@@ -8,61 +8,47 @@
     "sentences": [
       {
         "id": 0,
-        "english": "If you've ever traveled to the United States, you know that tipping isn't optional — it's expected. At restaurants, the standard tip is between fifteen and twenty percent of the bill.",
+        "english": "If you've ever traveled to the United States, you know that tipping isn't optional — it's expected.",
         "korean": "미국에 여행해본 적 있다면, 팁이 선택이 아니라 필수라는 걸 알 거예요.",
         "properNounIndices": [
           6,
-          7,
-          17
+          7
         ]
       },
       {
         "id": 1,
-        "english": "At coffee shops, there's often a screen turned toward you asking for a tip, even for a simple cup of drip coffee. Taxi drivers, hairdressers, hotel housekeepers — the list goes on.",
-        "korean": "카페에서는 종종 팁을 요청하는 화면이 고객을 향해 돌려져 있어요.",
-        "properNounIndices": [
-          22
-        ]
+        "english": "At restaurants, the standard tip is between fifteen and twenty percent of the bill.",
+        "korean": "팁이 선택이 아니라 필수라는 걸 알 거예요",
+        "properNounIndices": []
       },
       {
         "id": 2,
-        "english": "For many international visitors, this system is confusing and sometimes frustrating. In countries like Japan and South Korea, tipping is uncommon and can even be considered rude.",
-        "korean": "많은 외국인 방문객에게 이 시스템은 혼란스럽고 때로는 짜증스러워요.",
-        "properNounIndices": [
-          11,
-          14,
-          16,
-          17
-        ]
+        "english": "At coffee shops, there's often a screen turned toward you asking for a tip, even for a simple cup of drip coffee.",
+        "korean": "카페에서는 종종 팁을 요청하는 화면이 고객을 향해 돌려져 있어요.",
+        "properNounIndices": []
       },
       {
         "id": 3,
-        "english": "So why does the US cling to this practice? The answer lies in how workers are compensated. In many states, the federal minimum wage for tipped workers is just two dollars and thirteen cents per hour.",
-        "korean": "왜 미국은 이 관행을 고수할까요? 답은 근로자 보상 방식에 있습니다.",
-        "properNounIndices": [
-          4,
-          9,
-          17
-        ]
+        "english": "Taxi drivers, hairdressers, hotel housekeepers — the list goes on.",
+        "korean": "종종 팁을 요청하는 화면이 고객을 향해 돌려져 있어요",
+        "properNounIndices": []
       },
       {
         "id": 4,
-        "english": "The assumption is that tips will make up the difference. This means that when you tip your server, you're not giving a bonus — you're paying a significant portion of their salary.",
-        "korean": "가정은 팁이 차이를 메울 거라는 거예요. 서버에게 팁을 줄 때, 보너스가 아니라 임금의 일부를 내는 거예요.",
-        "properNounIndices": [
-          10
-        ]
+        "english": "For many international visitors, this system is confusing and sometimes frustrating.",
+        "korean": "많은 외국인 방문객에게 이 시스템은 혼란스럽고 때로는 짜증스러워요.",
+        "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '팁을 받는 근로자' mean in English?",
+      "question": "What does '드립 커피 (기본 커피)' mean in English?",
       "options": [
-        "federal minimum wage",
-        "tipped workers",
+        "shifts the burden",
         "tipping culture",
-        "shifts the burden"
+        "drip coffee",
+        "tipped workers"
       ],
-      "answer": 1
+      "answer": 2
     }
   },
   {
@@ -74,36 +60,97 @@
     "sentences": [
       {
         "id": 5,
+        "english": "In countries like Japan and South Korea, tipping is uncommon and can even be considered rude.",
+        "korean": "이 시스템은 혼란스럽고 때로는 짜증스러워요",
+        "properNounIndices": [
+          3,
+          5,
+          6
+        ]
+      },
+      {
+        "id": 6,
+        "english": "So why does the US cling to this practice?",
+        "korean": "왜 미국은 이 관행을 고수할까요?",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 7,
+        "english": "The answer lies in how workers are compensated.",
+        "korean": "답은 근로자 보상 방식에 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "In many states, the federal minimum wage for tipped workers is just two dollars and thirteen cents per hour.",
+        "korean": "답은 근로자 보상 방식에 있어요",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "The assumption is that tips will make up the difference.",
+        "korean": "가정은 팁이 차이를 메울 거라는 거예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '팁을 받는 근로자' mean in English?",
+      "options": [
+        "shifts the burden",
+        "federal minimum wage",
+        "tipped workers",
+        "reverted"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L3_EXT_009_set3",
+    "parentSetId": "L3_EXT_009",
+    "theme": "Cultural Commentary — Tipping Culture",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "This means that when you tip your server, you're not giving a bonus — you're paying a significant portion of their salary.",
+        "korean": "서버에게 팁을 줄 때, 보너스가 아니라 임금의 일부를 내는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
         "english": "Critics of tipping culture argue that it shifts the burden of fair compensation from employers to customers.",
         "korean": "팁 문화 비판자들은 공정한 보상의 부담을 고용주에서 고객에게 전가한다고 주장합니다.",
         "properNounIndices": []
       },
       {
-        "id": 6,
+        "id": 12,
         "english": "It also introduces inconsistency — a server's income can vary wildly depending on the day of the week, the neighborhood, or even the customer's mood.",
         "korean": "일관성 없는 결과도 초래하는데, 서버의 소득이 크게 달라질 수 있어요.",
         "properNounIndices": []
       },
       {
-        "id": 7,
+        "id": 13,
         "english": "Studies have shown that tipping amounts are influenced by factors that have nothing to do with service quality, including the server's race, gender, and physical attractiveness.",
         "korean": "연구에 따르면 팁 금액이 서비스 품질과 무관한 요인의 영향을 받는 것으로 나타났습니다.",
         "properNounIndices": []
       },
       {
-        "id": 8,
+        "id": 14,
         "english": "Supporters of the system counter that tipping incentivizes better service and allows high-performing servers to earn more than they would under a flat wage.",
         "korean": "지지자들은 팁이 더 나은 서비스를 장려한다고 반론합니다.",
         "properNounIndices": []
       },
       {
-        "id": 9,
+        "id": 15,
         "english": "Some restaurants have experimented with no-tipping policies and higher base pay, but many have reverted after servers complained about earning less overall.",
         "korean": "일부 레스토랑이 팁 없는 정책과 더 높은 기본급으로 실험해봤습니다.",
         "properNounIndices": []
       },
       {
-        "id": 10,
+        "id": 16,
         "english": "It's a uniquely American dilemma — one that touches on economics, culture, and deeply held beliefs about what workers deserve.",
         "korean": "독특하게 미국적인 딜레마로, 경제, 문화, 그리고 근로자가 무엇을 받을 자격이 있는지에 대한 깊은 신념에 관련된 문제입니다.",
         "properNounIndices": [
@@ -112,14 +159,14 @@
       }
     ],
     "quiz": {
-      "question": "What does '팁을 받는 근로자' mean in English?",
+      "question": "What does '연방 최저임금' mean in English?",
       "options": [
         "drip coffee",
-        "flat wage",
-        "shifts the burden",
-        "tipped workers"
+        "incentivizes",
+        "federal minimum wage",
+        "reverted"
       ],
-      "answer": 3
+      "answer": 2
     }
   }
 ]

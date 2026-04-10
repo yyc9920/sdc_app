@@ -1,0 +1,73 @@
+[
+  {
+    "setId": "L1_SPK_095_set1",
+    "parentSetId": "L1_SPK_095",
+    "theme": "The Future of Education",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "How do you think education will change in the next twenty years?",
+        "korean": "교육이 향후 20년간 어떻게 변할 것이라 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your predictions.",
+        "korean": "예측을 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I think education will look dramatically different in twenty years.",
+        "korean": "20년 후 교육은 극적으로 달라 보일 거라고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "First AI tutors will provide personalized learning paths for every student adapting in real time to each student's pace and learning style.",
+        "korean": "첫째 AI 튜터가 모든 학생에게 맞춤형 학습 경로를 제공할 거예요. 각 학생의 속도와 학습 스타일에 실시간으로 적응하면서요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Second the traditional lecture model will be replaced by project-based learning where students solve real-world problems in teams.",
+        "korean": "둘째 전통적 강의 모델은 학생이 팀으로 현실 문제를 해결하는 프로젝트 기반 학습으로 대체될 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Finally the concept of graduating at twenty-two and never studying again will disappear — lifelong learning will become the norm as careers change rapidly.",
+        "korean": "마지막으로 22세에 졸업하고 다시 공부하지 않는 개념은 사라질 거예요. 직업이 빠르게 변하면서 평생 학습이 표준이 될 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "become the norm",
+        "korean": "표준이 되다",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "adapt in real time",
+        "korean": "실시간으로 적응하다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Pets and Responsibility",
+        "The Future of Education",
+        "Do you think competition is healthy or harmful for",
+        "Importance of Learning History"
+      ],
+      "answer": 1
+    }
+  }
+]

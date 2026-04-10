@@ -1,0 +1,77 @@
+[
+  {
+    "setId": "L2_ELLO_043_set1",
+    "parentSetId": "L2_ELLO_043",
+    "theme": "Mixer #103 — Social Media",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I spend way too much time on social media.",
+        "korean": "소셜 미디어에 시간을 너무 많이 써요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I keep scrolling even when I know I should stop.",
+        "korean": "멈춰야 하는 걸 알면서도 계속 스크롤해요.",
+        "properNounIndices": [
+          0,
+          5,
+          7
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I deleted all my social media last year.",
+        "korean": "작년에 소셜 미디어를 다 삭제했어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "It was the best decision I ever made.",
+        "korean": "지금까지 한 최고의 결정이었어요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I'm so much happier now.",
+        "korean": "지금 훨씬 더 행복해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "I only use social media for work, like managing my company's page.",
+        "korean": "소셜 미디어를 일할 때만 써요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 6,
+        "english": "I don't post anything personal.",
+        "korean": "회사 페이지 관리 같은 거요. 개인적인 건 올리지 않아요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #103 — Social Media",
+        "Mixer #71 — Living Alone",
+        "Mixer #32 — Personal Space",
+        "Mixer #11 — Favorite Season Outfit"
+      ],
+      "answer": 0
+    }
+  }
+]

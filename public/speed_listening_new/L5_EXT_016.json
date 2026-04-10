@@ -1,0 +1,49 @@
+[
+  {
+    "setId": "L5_EXT_016_set1",
+    "parentSetId": "L5_EXT_016",
+    "theme": "The Meaning of Consciousness",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Consciousness — the subjective experience of being aware of oneself and one's surroundings — remains one of the deepest unsolved mysteries in both science and philosophy.",
+        "korean": "의식 — 자신과 주변 환경을 인식하는 주관적 경험 — 은 과학과 철학 모두에서 가장 깊은 미해결 수수께끼 중 하나로 남아 있다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "David Chalmers famously framed what he called the hard problem of consciousness — explaining why physical processes in the brain give rise to subjective experience at all.",
+        "korean": "데이비드 챌머즈는 의식의 어려운 문제라 불리는 것을 유명하게 제시했다 — 뇌의 물리적 과정이 왜 주관적 경험을 전혀 만들어내는지 설명하는 것이다.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
+        "english": "We can map every neuron and synapse in the brain, yet there remains an explanatory gap between neural activity and the felt quality of experience — what it is like to see the color red or to taste chocolate.",
+        "korean": "뇌의 모든 뉴런과 시냅스를 매핑할 수 있지만 신경 활동과 경험의 체감 품질 사이에 설명적 간극이 남아 있다 — 빨간색을 보거나 초콜릿을 맛보는 것이 어떤 것인지.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "This question takes on urgent practical importance as artificial intelligence systems become increasingly sophisticated — at what point if ever would an AI system become genuinely conscious.",
+        "korean": "이 질문은 인공지능 시스템이 점점 정교해지면서 긴급한 실용적 중요성을 띤다 — 어느 시점에서 AI 시스템이 진정으로 의식을 갖게 될 것인가.",
+        "properNounIndices": [
+          22
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '주관적인' mean in English?",
+      "options": [
+        "subjective",
+        "sophisticated",
+        "synapse",
+        "neuron"
+      ],
+      "answer": 0
+    }
+  }
+]

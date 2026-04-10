@@ -15,6 +15,7 @@ export const CATEGORY_MAP: Record<CategoryCode, { label: string; description: st
   BEP: { label: 'Business English Pod', description: 'Business English Podcast' },
   TAL: { label: 'This American Life', description: 'This American Life Stories' },
   EXT: { label: '확장 콘텐츠', description: 'Extended Practice Content' },
+  DLG: { label: '일상 대화', description: 'Daily Dialogue' },
 };
 
 export const LEVEL_LABELS: Record<number, string> = {

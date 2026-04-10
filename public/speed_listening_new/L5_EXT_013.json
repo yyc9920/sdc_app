@@ -1,0 +1,47 @@
+[
+  {
+    "setId": "L5_EXT_013_set1",
+    "parentSetId": "L5_EXT_013",
+    "theme": "The Philosophy of Time",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Time is perhaps the most fundamental yet least understood dimension of human experience — we are constantly immersed in it, yet defining what it actually is remains one of philosophy's most enduring puzzles.",
+        "korean": "시간은 아마도 인간 경험의 가장 근본적이면서 가장 이해되지 않는 차원이다. 우리는 끊임없이 그 안에 빠져 있지만 그것이 실제로 무엇인지 정의하는 것은 철학의 가장 오래된 수수께끼 중 하나로 남아 있다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Einstein's theory of relativity demonstrated that time is not absolute but relative — it flows differently depending on speed and gravitational fields, which challenged centuries of Newtonian physics.",
+        "korean": "/ 이는 수세기간의 뉴턴 물리학에 / 도전했다.",
+        "properNounIndices": [
+          26
+        ]
+      },
+      {
+        "id": 2,
+        "english": "From a psychological perspective, our perception of time is remarkably elastic — an hour of boredom feels like an eternity while an hour of deep engagement passes in what seems like minutes.",
+        "korean": "심리학적 관점에서 시간에 대한 우리의 인식은 놀라울 만큼 탄력적이다. 지루한 한 시간은 영원처럼 느껴지고 깊이 몰입한 한 시간은 몇 분처럼 지나간다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "This raises the provocative question of whether objective time even exists outside of our conscious experience of it.",
+        "korean": "이는 도발적인 질문을 제기한다 — 객관적 시간이 우리의 의식적 경험 밖에 존재하기라도 하는지.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '탄력적인' mean in English?",
+      "options": [
+        "gravitational",
+        "relativity",
+        "provocative",
+        "elastic"
+      ],
+      "answer": 3
+    }
+  }
+]

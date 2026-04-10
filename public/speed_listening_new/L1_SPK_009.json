@@ -1,0 +1,108 @@
+[
+  {
+    "setId": "L1_SPK_009_set1",
+    "parentSetId": "L1_SPK_009",
+    "theme": "Eating at Home vs. Eating Out",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Some people prefer eating at home, while others prefer eating at restaurants.",
+        "korean": "어떤 사람은 집에서 먹는 걸 선호하고 다른 사람은 식당에서 먹는 걸 선호합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Which do you prefer and why?",
+        "korean": "어느 쪽을 선호하며 이유는 무엇입니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I personally prefer eating at home for several reasons.",
+        "korean": "개인적으로 여러 이유로 집에서 먹는 것을 선호해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "First it's much cheaper to cook at home than to eat out.",
+        "korean": "첫째 집에서 요리하는 것이 외식보다 훨씬 저렴해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "A meal that costs thirty dollars at a restaurant can be made at home for less than ten.",
+        "korean": "식당에서 30달러짜리 식사를 집에서 10달러 미만으로 만들 수 있어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Living with a Roommate vs. Living Alone",
+        "Physical Stores vs. Online Shopping",
+        "Eating at Home vs. Eating Out",
+        "The Importance of Reading"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L1_SPK_009_set2",
+    "parentSetId": "L1_SPK_009",
+    "theme": "Eating at Home vs. Eating Out",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Second I can control exactly what goes into my food which is better for my health.",
+        "korean": "둘째 음식에 뭐가 들어가는지 정확히 조절할 수 있어 건강에 더 좋아요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 6,
+        "english": "I can use less oil and salt and choose fresh organic ingredients.",
+        "korean": "기름과 소금을 적게 쓰고 신선한 유기농 재료를 선택할 수 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Finally cooking is actually a relaxing activity for me after a long day at work.",
+        "korean": "마지막으로 요리는 사실 긴 하루 일과 후 나에게 편안한 활동이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "For these reasons I believe eating at home is the better choice.",
+        "korean": "이러한 이유로 집에서 먹는 것이 더 나은 선택이라고 생각해요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 9,
+        "english": "for these reasons",
+        "korean": "이러한 이유로",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Describe a place outside your actual home where yo",
+        "A Person Who Has Influenced You",
+        "Eating at Home vs. Eating Out",
+        "Important Quality in a Friend"
+      ],
+      "answer": 2
+    }
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "setId": "L2_DLG_037_set1",
+    "parentSetId": "L2_DLG_037",
+    "theme": "Asking for a Refund",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I bought this shirt yesterday but I found a hole in it.",
+        "korean": "어제 이 셔츠를 샀는데 구멍을 발견했어요.",
+        "properNounIndices": [
+          0,
+          6
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I'm sorry about that.",
+        "korean": "그건 죄송합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Do you have the receipt?",
+        "korean": "영수증 있으세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Yes right here.",
+        "korean": "네 여기 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Would you like a refund or an exchange?",
+        "korean": "환불을 원하시나요 아니면 교환이요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "A refund please.",
+        "korean": "환불로 부탁해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "The refund will go back to your card within three to five business days.",
+        "korean": "환불은 영업일 기준 3~5일 내에 카드로 돌아갑니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Thank you for your help.",
+        "korean": "도와주셔서 감사합니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Gym — Personal Trainer Consultation",
+        "Asking for a Refund",
+        "Performance Review Feedback",
+        "At the Pet Store"
+      ],
+      "answer": 1
+    }
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "setId": "L1_EXT_027_set1",
+    "parentSetId": "L1_EXT_027",
+    "theme": "The Seasons",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "There are four seasons in Korea — spring summer fall and winter.",
+        "korean": "한국에는 네 계절이 있어요 — 봄 여름 가을 겨울.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Spring is warm and the cherry blossoms are beautiful.",
+        "korean": "봄은 따뜻하고 벚꽃이 아름다워요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Summer is very hot and humid.",
+        "korean": "여름은 매우 덥고 습해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Fall has cool weather and colorful leaves.",
+        "korean": "가을은 시원한 날씨와 알록달록한 나뭇잎이 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Winter is cold and sometimes it snows.",
+        "korean": "겨울은 춥고 가끔 눈이 와요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "At the Post Office",
+        "Ordering Food Delivery",
+        "At the Convenience Store",
+        "The Seasons"
+      ],
+      "answer": 3
+    }
+  }
+]

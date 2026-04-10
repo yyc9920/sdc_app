@@ -1,0 +1,60 @@
+[
+  {
+    "setId": "L2_ELLO_133_set1",
+    "parentSetId": "L2_ELLO_133",
+    "theme": "Mixer #12 — Binge Watching",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I binge-watched an entire series in one weekend.",
+        "korean": "주말에 시리즈 전편을 몰아봤어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Twelve episodes straight.",
+        "korean": "12편 연속이요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I didn't even shower.",
+        "korean": "샤워도 안 했어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I try to limit myself to two episodes per night, but the cliffhangers always get me.",
+        "korean": "밤에 2편으로 제한하려 하지만 다음 회 예고가 항상 나를 잡아요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I never binge-watch because I like to think about each episode before watching the next one, it's more enjoyable that way.",
+        "korean": "몰아보기를 안 해요. 다음 편 보기 전에 각 에피소드를 생각해보는 게 좋아서요. 그 편이 더 즐거워요.",
+        "properNounIndices": [
+          0,
+          4
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #101 — First Impression",
+        "Mixer #49 — Waking Up Early",
+        "Mixer #64 — Noise at Night",
+        "Mixer #12 — Binge Watching"
+      ],
+      "answer": 3
+    }
+  }
+]

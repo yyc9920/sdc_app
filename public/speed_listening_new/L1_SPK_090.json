@@ -1,0 +1,71 @@
+[
+  {
+    "setId": "L1_SPK_090_set1",
+    "parentSetId": "L1_SPK_090",
+    "theme": "Cooking as a Life Skill",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think cooking should be taught as a required subject in school?",
+        "korean": "요리가 학교에서 필수 과목으로 가르쳐져야 한다고 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain why or why not.",
+        "korean": "이유를 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I strongly believe cooking should be a required subject in every school.",
+        "korean": "요리가 모든 학교에서 필수 과목이어야 한다고 강하게 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "First the ability to cook healthy meals is directly connected to lifelong physical health.",
+        "korean": "첫째 건강한 식사를 요리하는 능력은 평생의 신체 건강과 직접적으로 연결돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Many young adults today rely entirely on processed food and delivery because they never learned basic cooking skills.",
+        "korean": "오늘날 많은 청년이 기본적 요리 기술을 배우지 못해 가공식품과 배달에 전적으로 의존해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Second cooking teaches math science and time management in a hands-on engaging way that makes learning feel relevant and fun.",
+        "korean": "둘째 요리는 수학 과학 시간 관리를 실습적이고 흥미로운 방식으로 가르쳐 배움을 관련 있고 재미있게 느끼게 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Unlike algebra which many students never use again cooking is a skill they will use every single day for the rest of their lives.",
+        "korean": "많은 학생이 다시 쓰지 않는 대수학과 달리 요리는 남은 인생 동안 매일 사용할 기술이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "feel relevant",
+        "korean": "관련 있게 느끼다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Pets and Responsibility",
+        "A Place You'd Like to Visit",
+        "Cooking as a Life Skill",
+        "Weekday vs. Weekend Weddings"
+      ],
+      "answer": 2
+    }
+  }
+]

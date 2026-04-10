@@ -1,0 +1,65 @@
+[
+  {
+    "setId": "L1_DLG_012_set1",
+    "parentSetId": "L1_DLG_012",
+    "theme": "At the Bakery",
+    "level": 2,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Good morning! What would you like?",
+        "korean": "좋은 아침이에요! 뭘 드릴까요?",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I'd like two croissants and one chocolate muffin.",
+        "korean": "크루아상 두 개와 초콜릿 머핀 하나 주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Anything to drink?",
+        "korean": "마실 건 있으세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "A hot latte please.",
+        "korean": "뜨거운 라떼 주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "For here or to go?",
+        "korean": "여기서 드시나요 아니면 가져가시나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "To go please.",
+        "korean": "가져갈게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "That'll be nine fifty.",
+        "korean": "9달러 50센트입니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Asking a Teacher for Help",
+        "Roommate Discussion — Chores",
+        "At the Bakery",
+        "Real Estate — Viewing an Apartment"
+      ],
+      "answer": 2
+    }
+  }
+]

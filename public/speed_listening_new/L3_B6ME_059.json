@@ -1,0 +1,47 @@
+[
+  {
+    "setId": "L3_B6ME_059_set1",
+    "parentSetId": "L3_B6ME_059",
+    "theme": "Foods That Go Crunch",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "What do apples, carrots and celery have in common with insects like beetles, crickets and grasshoppers?",
+        "korean": "사과, 당근, 셀러리가 딱정벌레, 귀뚜라미, 메뚜기 같은 곤충과 공통점이 뭘까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "They're all examples of foods that crunch.",
+        "korean": "모두 바삭거리는 음식이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "A crunch of a fresh apple is nothing better in the world.",
+        "korean": "신선한 사과의 바삭함은 세상에서 이보다 좋은 게 없어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I grew up as a small child in an apple orchard.",
+        "korean": "어린 시절 사과 과수원에서 자랐거든요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Is Social Media Dead?",
+        "Making 'mum friends'",
+        "The secrets to a healthy old age",
+        "Foods That Go Crunch"
+      ],
+      "answer": 3
+    }
+  }
+]

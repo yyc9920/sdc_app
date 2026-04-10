@@ -1,0 +1,61 @@
+[
+  {
+    "setId": "L2_ELLO_099_set1",
+    "parentSetId": "L2_ELLO_099",
+    "theme": "Mixer #46 — Work-Life Balance",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I used to work seventy hours a week until my health suffered.",
+        "korean": "일주일에 70시간 일했었는데 건강이 나빠졌어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Now I strictly leave the office at six.",
+        "korean": "이제 6시에 칼퇴해요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I work from home, so the line between work and life is really blurry.",
+        "korean": "재택근무라서 일과 삶의 경계가 정말 모호해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I email clients at midnight sometimes.",
+        "korean": "가끔 자정에 고객에게 이메일을 보내요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I think the key is having hobbies outside of work, so you don't think about work all the time.",
+        "korean": "핵심은 일 밖에서 취미를 갖는 거라고 생각해요. 항상 일 생각을 안 하도록요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #100 — Pet Peeves",
+        "Mixer #9 — Compliments",
+        "Mixer #119 — Sleeping In",
+        "Mixer #46 — Work-Life Balance"
+      ],
+      "answer": 3
+    }
+  }
+]

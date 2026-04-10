@@ -1,0 +1,65 @@
+[
+  {
+    "setId": "L1_SPK_064_set1",
+    "parentSetId": "L1_SPK_064",
+    "theme": "Daily Routines — Helpful or Boring",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think having a daily routine is helpful or does it make life boring?",
+        "korean": "일상 루틴이 도움이 된다고 생각합니까 아니면 삶을 지루하게 만듭니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain.",
+        "korean": "설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I believe having a daily routine is extremely helpful rather than boring.",
+        "korean": "일상 루틴이 지루하기보다 극도로 도움이 된다고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "First a good routine eliminates the need to make dozens of small decisions each day which saves mental energy for important tasks.",
+        "korean": "첫째 좋은 루틴은 매일 수십 개의 작은 결정을 할 필요를 없앰으로써 중요한 일에 정신적 에너지를 절약해줘요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Second routines build healthy habits automatically — when you exercise at the same time every day it eventually requires no willpower at all.",
+        "korean": "둘째 루틴은 건강한 습관을 자동으로 만들어요 — 매일 같은 시간에 운동하면 결국 의지력이 전혀 필요 없게 돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "The key is to leave some flexibility within your routine so it doesn't feel rigid.",
+        "korean": "핵심은 루틴 안에 유연성을 남겨서 경직되게 느끼지 않게 하는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "mental energy",
+        "korean": "정신적 에너지",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Strict vs. Relaxed Parenting",
+        "Environmental Responsibility",
+        "Daily Routines — Helpful or Boring",
+        "A Festival or Event You Attended"
+      ],
+      "answer": 2
+    }
+  }
+]

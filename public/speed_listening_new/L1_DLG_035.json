@@ -1,0 +1,65 @@
+[
+  {
+    "setId": "L1_DLG_035_set1",
+    "parentSetId": "L1_DLG_035",
+    "theme": "Sharing Food at Lunch",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Your lunch looks delicious.",
+        "korean": "점심 맛있어 보여요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Thanks. My mom made japchae.",
+        "korean": "고마워요. 엄마가 잡채 만들어주셨어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Can I try some?",
+        "korean": "좀 먹어봐도 돼요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Sure. Do you want some rice too?",
+        "korean": "네. 밥도 줄까요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Yes please. Here have some of my sandwich.",
+        "korean": "네 부탁해요. 여기 내 샌드위치도 먹어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Mmm this is really good!",
+        "korean": "음 이거 진짜 맛있어요!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Asking for a Recommendation",
+        "Ordering at a Restaurant",
+        "Complaining About Internet Speed",
+        "Sharing Food at Lunch"
+      ],
+      "answer": 3
+    }
+  }
+]

@@ -3,7 +3,7 @@
     "setId": "L3_CONV_002_set1",
     "parentSetId": "L3_CONV_002",
     "theme": "Grade Appeal Process",
-    "level": 6,
+    "level": 4,
     "setNumber": 1,
     "sentences": [
       {
@@ -14,53 +14,44 @@
       },
       {
         "id": 1,
-        "english": "Hi, excuse me. I was hoping you could help me. I have a question about my final grade from last semester.",
-        "korean": "안녕하세요, 실례합니다. 도움을 받을 수 있을까 해서요. 지난 학기 기말 성적에 대해 질문이 있어요.",
+        "english": "Hi, excuse me. I was hoping you could help me.",
+        "korean": "안녕하세요, 실례합니다. 도움을 받을 수 있을까 해서요.",
         "properNounIndices": [
-          3,
-          10
+          3
         ]
       },
       {
         "id": 2,
-        "english": "Sure, I can try to help. What's the issue?",
-        "korean": "네, 도와볼게요. 무슨 문제죠?",
+        "english": "I have a question about my final grade from last semester.",
+        "korean": "지난 학기 기말 성적에 대해 질문이 있어요.",
         "properNounIndices": [
-          1,
-          6
+          0
         ]
       },
       {
         "id": 3,
-        "english": "I got a C in my Organic Chemistry course, but I'm pretty sure there was a grading error on my final exam.",
-        "korean": "유기화학에서 C를 받았는데, 기말 시험에 채점 오류가 있었던 것 같아요.",
+        "english": "Sure, I can try to help.",
+        "korean": "네, 도와볼게요.",
         "properNounIndices": [
-          0,
-          3,
-          6,
-          7,
-          10
+          1
         ]
       },
       {
         "id": 4,
-        "english": "I checked the answer key posted online, and I think two of my answers that were marked wrong were actually correct.",
-        "korean": "온라인에 올라온 답안지를 확인했는데, 틀렸다고 표시된 제 답 2개가 사실 맞는 것 같아요.",
-        "properNounIndices": [
-          0,
-          8
-        ]
+        "english": "What's the issue?",
+        "korean": "무슨 문제죠?",
+        "properNounIndices": []
       }
     ],
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Late Drop Policy",
-        "Internship Credit",
         "Grade Appeal Process",
-        "Student Visits Professor About Research Paper"
+        "Student Visits Professor About Research Paper",
+        "Internship Credit",
+        "Late Drop Policy"
       ],
-      "answer": 2
+      "answer": 0
     }
   },
   {
@@ -72,6 +63,27 @@
     "sentences": [
       {
         "id": 5,
+        "english": "I got a C in my Organic Chemistry course, but I'm pretty sure there was a grading error on my final exam.",
+        "korean": "유기화학에서 C를 받았는데, 기말 시험에 채점 오류가 있었던 것 같아요.",
+        "properNounIndices": [
+          0,
+          3,
+          6,
+          7,
+          10
+        ]
+      },
+      {
+        "id": 6,
+        "english": "I checked the answer key posted online, and I think two of my answers that were marked wrong were actually correct.",
+        "korean": "온라인에 올라온 답안지를 확인했는데, 틀렸다고 표시된 제 답 2개가 사실 맞는 것 같아요.",
+        "properNounIndices": [
+          0,
+          8
+        ]
+      },
+      {
+        "id": 7,
         "english": "I see. Well, the first step would be to contact your professor directly.",
         "korean": "알겠어요. 음, 첫 단계는 교수님에게 직접 연락하는 거예요.",
         "properNounIndices": [
@@ -80,95 +92,20 @@
         ]
       },
       {
-        "id": 6,
+        "id": 8,
         "english": "Faculty members are the ones responsible for reviewing grade disputes — it's not something we can change from this office without their authorization.",
         "korean": "교수진이 성적 이의 검토를 담당하고 있어요 — 그분들의 승인 없이는 여기서 변경할 수 없어요.",
         "properNounIndices": []
       },
       {
-        "id": 7,
-        "english": "I already emailed Professor Tran, but she hasn't responded. It's been almost two weeks.",
-        "korean": "이미 트란 교수님에게 이메일을 보냈는데 답이 없어요. 거의 2주 됐어요.",
+        "id": 9,
+        "english": "I already emailed Professor Tran, but she hasn't responded.",
+        "korean": "이미 트란 교수님에게 이메일을 보냈는데 답이 없어요.",
         "properNounIndices": [
           0,
           3,
-          4,
-          9
+          4
         ]
-      },
-      {
-        "id": 8,
-        "english": "Okay, that's a bit long. Did you try visiting during office hours?",
-        "korean": "좀 오래 됐네요. 오피스 아워에 방문해 봤나요?",
-        "properNounIndices": [
-          5
-        ]
-      },
-      {
-        "id": 9,
-        "english": "She doesn't have summer office hours listed anywhere on her faculty page.",
-        "korean": "교수 페이지 어디에도 여름 오피스 아워가 없어요.",
-        "properNounIndices": []
-      }
-    ],
-    "quiz": {
-      "question": "What is the main topic of this passage?",
-      "options": [
-        "Grade Appeal Process",
-        "Student Visits Professor About Research Paper",
-        "Late Drop Policy",
-        "Internship Credit"
-      ],
-      "answer": 0
-    }
-  },
-  {
-    "setId": "L3_CONV_002_set3",
-    "parentSetId": "L3_CONV_002",
-    "theme": "Grade Appeal Process",
-    "level": 6,
-    "setNumber": 3,
-    "sentences": [
-      {
-        "id": 10,
-        "english": "Hmm. In that case, you may need to escalate this.",
-        "korean": "흠. 그 경우에는 이걸 상급 단계로 올려야 할 수도 있어요.",
-        "properNounIndices": [
-          1
-        ]
-      },
-      {
-        "id": 11,
-        "english": "If you can't reach the professor, the next step is to file a formal grade appeal through the Dean of Students Office.",
-        "korean": "교수님에게 연락이 안 되면, 다음 단계는 학생처를 통해 공식 성적 이의를 제출하는 거예요.",
-        "properNounIndices": [
-          18,
-          20,
-          21
-        ]
-      },
-      {
-        "id": 12,
-        "english": "How does that process work?",
-        "korean": "그 과정이 어떻게 되나요?",
-        "properNounIndices": []
-      },
-      {
-        "id": 13,
-        "english": "You'd fill out a Grade Appeal Form — I can give you the link — and submit it along with any supporting documentation.",
-        "korean": "성적 이의 양식을 작성하고 — 링크를 줄 수 있어요 — 뒷받침 서류와 함께 제출하면 돼요.",
-        "properNounIndices": [
-          4,
-          5,
-          6,
-          8
-        ]
-      },
-      {
-        "id": 14,
-        "english": "In your case, that might be the answer key, your exam, and any written explanation of why you believe your answers were correct.",
-        "korean": "당신의 경우, 답안지, 시험지, 그리고 답이 왜 맞다고 생각하는지 서면 설명이 될 거예요.",
-        "properNounIndices": []
       }
     ],
     "quiz": {
@@ -176,10 +113,61 @@
       "options": [
         "Internship Credit",
         "Late Drop Policy",
-        "Grade Appeal Process",
-        "Student Visits Professor About Research Paper"
+        "Student Visits Professor About Research Paper",
+        "Grade Appeal Process"
       ],
-      "answer": 2
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L3_CONV_002_set3",
+    "parentSetId": "L3_CONV_002",
+    "theme": "Grade Appeal Process",
+    "level": 4,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "It's been almost two weeks.",
+        "korean": "거의 2주 됐어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "Okay, that's a bit long.",
+        "korean": "좀 오래 됐네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "Did you try visiting during office hours?",
+        "korean": "오피스 아워에 방문해 봤나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
+        "english": "She doesn't have summer office hours listed anywhere on her faculty page.",
+        "korean": "교수 페이지 어디에도 여름 오피스 아워가 없어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "Hmm. In that case, you may need to escalate this.",
+        "korean": "흠. 그 경우에는 이걸 상급 단계로 올려야 할 수도 있어요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Grade Appeal Process",
+        "Late Drop Policy",
+        "Student Visits Professor About Research Paper",
+        "Internship Credit"
+      ],
+      "answer": 0
     }
   },
   {
@@ -191,12 +179,64 @@
     "sentences": [
       {
         "id": 15,
-        "english": "And then what happens?",
-        "korean": "그 다음에는 어떻게 되나요?",
-        "properNounIndices": []
+        "english": "If you can't reach the professor, the next step is to file a formal grade appeal through the Dean of Students Office.",
+        "korean": "교수님에게 연락이 안 되면, 다음 단계는 학생처를 통해 공식 성적 이의를 제출하는 거예요.",
+        "properNounIndices": [
+          18,
+          20,
+          21
+        ]
       },
       {
         "id": 16,
+        "english": "How does that process work?",
+        "korean": "그 과정이 어떻게 되나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "You'd fill out a Grade Appeal Form — I can give you the link — and submit it along with any supporting documentation.",
+        "korean": "성적 이의 양식을 작성하고 — 링크를 줄 수 있어요 — 뒷받침 서류와 함께 제출하면 돼요.",
+        "properNounIndices": [
+          4,
+          5,
+          6,
+          8
+        ]
+      },
+      {
+        "id": 18,
+        "english": "In your case, that might be the answer key, your exam, and any written explanation of why you believe your answers were correct.",
+        "korean": "당신의 경우, 답안지, 시험지, 그리고 답이 왜 맞다고 생각하는지 서면 설명이 될 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 19,
+        "english": "And then what happens?",
+        "korean": "그 다음에는 어떻게 되나요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Grade Appeal Process",
+        "Internship Credit",
+        "Late Drop Policy",
+        "Student Visits Professor About Research Paper"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L3_CONV_002_set5",
+    "parentSetId": "L3_CONV_002",
+    "theme": "Grade Appeal Process",
+    "level": 5,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
         "english": "The Dean's Office contacts the professor and the department chair and asks them to review the exam again.",
         "korean": "학생처가 교수님과 학과장에게 연락해서 시험을 다시 검토해달라고 요청해요.",
         "properNounIndices": [
@@ -205,21 +245,25 @@
         ]
       },
       {
-        "id": 17,
-        "english": "If they find an error, the grade gets changed. If they don't, the original grade stands.",
+        "id": 21,
+        "english": "If they find an error, the grade gets changed.",
         "korean": "오류가 발견되면 성적이 변경되고, 아니면 원래 성적이 유지돼요.",
-        "properNounIndices": [
-          9
-        ]
+        "properNounIndices": []
       },
       {
-        "id": 18,
+        "id": 22,
+        "english": "If they don't, the original grade stands.",
+        "korean": "아니면 원래 성적이 유지돼요",
+        "properNounIndices": []
+      },
+      {
+        "id": 23,
         "english": "Is there a deadline for filing the appeal?",
         "korean": "이의 제출 마감이 있나요?",
         "properNounIndices": []
       },
       {
-        "id": 19,
+        "id": 24,
         "english": "Yes — appeals must be filed within 60 days of the end of the semester.",
         "korean": "네 — 이의는 학기 종료 후 60일 이내에 제출해야 해요.",
         "properNounIndices": []
@@ -228,23 +272,23 @@
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Late Drop Policy",
+        "Grade Appeal Process",
         "Student Visits Professor About Research Paper",
-        "Internship Credit",
-        "Grade Appeal Process"
+        "Late Drop Policy",
+        "Internship Credit"
       ],
-      "answer": 3
+      "answer": 0
     }
   },
   {
-    "setId": "L3_CONV_002_set5",
+    "setId": "L3_CONV_002_set6",
     "parentSetId": "L3_CONV_002",
     "theme": "Grade Appeal Process",
-    "level": 6,
-    "setNumber": 5,
+    "level": 5,
+    "setNumber": 6,
     "sentences": [
       {
-        "id": 20,
+        "id": 25,
         "english": "Since it ended in May, you still have time, but I wouldn't wait too long.",
         "korean": "5월에 끝났으니 아직 시간이 있지만, 너무 오래 기다리지는 마세요.",
         "properNounIndices": [
@@ -253,16 +297,23 @@
         ]
       },
       {
-        "id": 21,
-        "english": "Okay. Is this process likely to work? I mean, does it actually result in grade changes?",
+        "id": 26,
+        "english": "Okay. Is this process likely to work?",
         "korean": "이 과정이 효과가 있을까요? 실제로 성적 변경으로 이어지나요?",
         "properNounIndices": [
-          1,
-          7
+          1
         ]
       },
       {
-        "id": 22,
+        "id": 27,
+        "english": "I mean, does it actually result in grade changes?",
+        "korean": "실제로 성적 변경으로 이어지나요?",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 28,
         "english": "I can't predict outcomes, but the process is taken seriously.",
         "korean": "결과를 예측할 수는 없지만, 이 과정은 진지하게 다뤄져요.",
         "properNounIndices": [
@@ -270,19 +321,19 @@
         ]
       },
       {
-        "id": 23,
+        "id": 29,
         "english": "If you have clear evidence — an answer key that contradicts how you were graded — that's usually the strongest kind of case.",
         "korean": "명확한 증거가 있으면 — 채점과 모순되는 답안지 — 보통 가장 강력한 사례예요.",
         "properNounIndices": []
       },
       {
-        "id": 24,
+        "id": 30,
         "english": "The key is to document everything carefully and stay professional in your communications.",
         "korean": "핵심은 모든 것을 꼼꼼히 기록하고, 소통에서 전문적인 태도를 유지하는 거예요.",
         "properNounIndices": []
       },
       {
-        "id": 25,
+        "id": 31,
         "english": "Alright. Could I get that link now?",
         "korean": "알겠어요. 그 링크 지금 받을 수 있을까요?",
         "properNounIndices": [
@@ -291,7 +342,7 @@
         ]
       },
       {
-        "id": 26,
+        "id": 32,
         "english": "Of course. Let me write it down for you.",
         "korean": "물론이죠. 적어 드릴게요.",
         "properNounIndices": [
@@ -302,12 +353,12 @@
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Grade Appeal Process",
+        "Internship Credit",
         "Late Drop Policy",
-        "Student Visits Professor About Research Paper",
-        "Internship Credit"
+        "Grade Appeal Process",
+        "Student Visits Professor About Research Paper"
       ],
-      "answer": 0
+      "answer": 2
     }
   }
 ]

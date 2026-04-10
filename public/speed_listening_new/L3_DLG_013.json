@@ -1,0 +1,119 @@
+[
+  {
+    "setId": "L3_DLG_013_set1",
+    "parentSetId": "L3_DLG_013",
+    "theme": "Gym — Personal Trainer Consultation",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hi, I just joined the gym and I'd like to get a fitness assessment.",
+        "korean": "안녕하세요, 방금 헬스장에 가입했고 체력 평가를 받고 싶어요.",
+        "properNounIndices": [
+          1,
+          7
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Welcome! What are your main fitness goals?",
+        "korean": "환영합니다! 주요 운동 목표가 뭔가요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I want to lose about ten kilograms and build some muscle, but I haven't exercised in over two years.",
+        "korean": "약 10킬로를 빼고 근육을 좀 만들고 싶은데 2년 넘게 운동을 안 했어요.",
+        "properNounIndices": [
+          0,
+          12
+        ]
+      },
+      {
+        "id": 3,
+        "english": "No worries, that's very common.",
+        "korean": "걱정 마세요, 매우 흔해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I'd recommend starting with three sessions per week — a mix of cardio and strength training.",
+        "korean": "일주일에 세 번으로 시작하는 걸 추천해요 — 유산소와 근력 운동을 섞어서.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '가공식품' mean in English?",
+      "options": [
+        "strength training",
+        "accountability",
+        "protein intake",
+        "processed food"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L3_DLG_013_set2",
+    "parentSetId": "L3_DLG_013",
+    "theme": "Gym — Personal Trainer Consultation",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Should I change my diet too?",
+        "korean": "식단도 바꿔야 하나요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Absolutely, nutrition is actually more important than exercise when it comes to weight loss.",
+        "korean": "당연하죠.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "I'd suggest increasing your protein intake and cutting back on processed food.",
+        "korean": "체중 감량에는 사실 운동보다 영양이 더 중요해요. 단백질 섭취를 늘리고 가공식품을 줄이는 걸 권해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Can we set up a regular schedule?",
+        "korean": "정기 일정을 잡을 수 있을까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "I think I'll need some accountability.",
+        "korean": "누군가의 관리가 필요할 것 같아요.",
+        "properNounIndices": [
+          0,
+          2
+        ]
+      },
+      {
+        "id": 10,
+        "english": "Of course, let's look at the calendar and find times that work for you.",
+        "korean": "물론이죠. 캘린더를 보고 맞는 시간을 찾아봐요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '책임감/관리' mean in English?",
+      "options": [
+        "processed food",
+        "fitness assessment",
+        "accountability",
+        "protein intake"
+      ],
+      "answer": 2
+    }
+  }
+]

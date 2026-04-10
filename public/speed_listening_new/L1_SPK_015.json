@@ -1,0 +1,73 @@
+[
+  {
+    "setId": "L1_SPK_015_set1",
+    "parentSetId": "L1_SPK_015",
+    "theme": "The Importance of Exercise",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Why is regular exercise important?",
+        "korean": "정기적인 운동이 왜 중요합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Give specific reasons and examples.",
+        "korean": "구체적인 이유와 예시를 제시하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Regular exercise is extremely important for both physical and mental health.",
+        "korean": "정기적인 운동은 신체적 정신적 건강 모두에 매우 중요해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "First it keeps your body strong and prevents diseases like diabetes and heart disease.",
+        "korean": "첫째 몸을 튼튼하게 유지하고 당뇨병이나 심장병 같은 질병을 예방해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Second exercise releases endorphins which naturally improve your mood and reduce stress.",
+        "korean": "둘째 운동은 엔도르핀을 분비해 자연스럽게 기분을 개선하고 스트레스를 줄여줘요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "For example after I started jogging three times a week I noticed I sleep better and feel more energetic during the day.",
+        "korean": "예를 들어 일주일에 세 번 조깅을 시작한 후 잠을 더 잘 자고 낮에 더 활기차게 느꼈어요.",
+        "properNounIndices": [
+          3,
+          10,
+          12
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Even just thirty minutes of walking a day can make a huge difference in your overall well-being.",
+        "korean": "하루 30분 걷기만으로도 전반적인 건강에 큰 차이를 만들 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "make a huge difference",
+        "korean": "큰 차이를 만들다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Pets and Responsibility",
+        "News from Social Media vs. Traditional Media",
+        "The Importance of Exercise",
+        "A Piece of Advice That Changed Your Life"
+      ],
+      "answer": 2
+    }
+  }
+]

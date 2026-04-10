@@ -1,0 +1,62 @@
+[
+  {
+    "setId": "L1_EXT_052_set1",
+    "parentSetId": "L1_EXT_052",
+    "theme": "Getting a Haircut",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I got a haircut last weekend.",
+        "korean": "지난 주말에 머리를 잘랐어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I told the hairdresser to cut it short.",
+        "korean": "미용사에게 짧게 잘라달라고 했어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "She cut it much shorter than I expected.",
+        "korean": "예상보다 훨씬 짧게 잘랐어요.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 3,
+        "english": "At first I didn't like it.",
+        "korean": "처음에는 마음에 안 들었어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 4,
+        "english": "But after a few days I got used to it, and now I actually like it.",
+        "korean": "하지만 며칠 후 익숙해졌고 이제 사실 마음에 들어요.",
+        "properNounIndices": [
+          5,
+          12
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "The Weather Today",
+        "Getting a Haircut",
+        "A Rainy Morning",
+        "Helping a Classmate"
+      ],
+      "answer": 1
+    }
+  }
+]

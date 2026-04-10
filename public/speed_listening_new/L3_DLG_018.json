@@ -1,0 +1,114 @@
+[
+  {
+    "setId": "L3_DLG_018_set1",
+    "parentSetId": "L3_DLG_018",
+    "theme": "Moving Company — Getting a Quote",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hi, I need to move from a two-bedroom apartment to a house across town.",
+        "korean": "안녕하세요, 투룸 아파트에서 시내 반대편 집으로 이사해야 해요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Can I get a quote?",
+        "korean": "견적을 받을 수 있나요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Sure, when are you planning to move?",
+        "korean": "물론이죠, 언제 이사 계획이세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "The first weekend of next month, preferably Saturday.",
+        "korean": "다음 달 첫째 주말, 가능하면 토요일이요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Do you have any large or heavy items like a piano or a safe?",
+        "korean": "피아노나 금고 같은 크거나 무거운 물건이 있나요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '다시 연락하다' mean in English?",
+      "options": [
+        "estimate",
+        "movers",
+        "quote",
+        "get back to"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L3_DLG_018_set2",
+    "parentSetId": "L3_DLG_018",
+    "theme": "Moving Company — Getting a Quote",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "No, mostly standard furniture — a sofa, dining table, beds, and about thirty boxes.",
+        "korean": "아니요, 대부분 일반 가구예요 — 소파 식탁 침대 그리고 약 30개 상자요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Based on that, I'd estimate around eight hundred to a thousand dollars, which includes two movers and a truck for about five hours.",
+        "korean": "그걸 기준으로 약 800에서 1,000달러로 추산하고 이사 인력 2명과 트럭이 약 5시간 포함돼요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Does that include packing materials?",
+        "korean": "포장재가 포함인가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Boxes and tape are extra, but we offer a full packing service for an additional two hundred if you'd like us to pack everything for you.",
+        "korean": "상자와 테이프는 별도인데 모든 짐을 싸드리는 전체 포장 서비스를 추가 200달러에 제공해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "I'll handle the packing myself.",
+        "korean": "포장은 직접 할게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 10,
+        "english": "Let me confirm the date and get back to you.",
+        "korean": "날짜를 확인하고 다시 연락드리겠습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '견적' mean in English?",
+      "options": [
+        "movers",
+        "quote",
+        "packing materials",
+        "estimate"
+      ],
+      "answer": 1
+    }
+  }
+]

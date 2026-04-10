@@ -1,0 +1,98 @@
+[
+  {
+    "setId": "L3_DLG_037_set1",
+    "parentSetId": "L3_DLG_037",
+    "theme": "Calling About a Job Posting",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hello, I'm calling about the marketing assistant position posted on your website.",
+        "korean": "안녕하세요. 웹사이트에 올라온 마케팅 어시스턴트 직무에 대해 전화했어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Yes that position is still open.",
+        "korean": "네 그 직무 아직 열려 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I'd like to know more about the job requirements.",
+        "korean": "직무 요건에 대해 더 알고 싶어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "We're looking for someone with at least one year of experience in digital marketing.",
+        "korean": "디지털 마케팅에서 최소 1년 경력이 있는 분을 찾고 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I have about two years of experience.",
+        "korean": "약 2년 경력이 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '이력서' mean in English?",
+      "options": [
+        "resume",
+        "job posting",
+        "requirements",
+        "cover letter"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L3_DLG_037_set2",
+    "parentSetId": "L3_DLG_037",
+    "theme": "Calling About a Job Posting",
+    "level": 3,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "That's great.",
+        "korean": "좋네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Please send your resume and cover letter to hr@company.com and we'll review it within a week.",
+        "korean": "이력서와 자기소개서를 hr@company.com으로 보내주시면 일주일 내에 검토하겠습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "I'll send it today.",
+        "korean": "오늘 보내겠습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Thank you for your time.",
+        "korean": "시간 내주셔서 감사합니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '이력서' mean in English?",
+      "options": [
+        "resume",
+        "requirements",
+        "job posting",
+        "cover letter"
+      ],
+      "answer": 0
+    }
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "setId": "L2_ELLO_141_set1",
+    "parentSetId": "L2_ELLO_141",
+    "theme": "Mixer #4 — Screen Time for Kids",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I limit my kids' screen time to one hour a day, because otherwise they'd be on their tablets all day.",
+        "korean": "아이들의 화면 시간을 하루 1시간으로 제한해요. 안 그러면 하루 종일 태블릿만 하고 있을 테니까요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I think some screen time is fine if it's educational content, not just mindless games.",
+        "korean": "교육적 콘텐츠라면 약간의 화면 시간은 괜찮다고 생각해요. 생각 없는 게임만 아니라면요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "When I was a kid we didn't have tablets or smartphones, and we played outside all day, and I think kids today are missing out.",
+        "korean": "내가 어릴 때 태블릿이나 스마트폰이 없었고 하루 종일 밖에서 놀았어요. 요즘 아이들은 놓치고 있다고 생각해요.",
+        "properNounIndices": [
+          1,
+          18
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #43 — Friendship",
+        "Mixer #4 — Screen Time for Kids",
+        "Mixer #44 — Streaming Services",
+        "Mixer #61 — Secret Talent"
+      ],
+      "answer": 1
+    }
+  }
+]

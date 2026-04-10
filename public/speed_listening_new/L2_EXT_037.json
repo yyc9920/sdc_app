@@ -1,0 +1,55 @@
+[
+  {
+    "setId": "L2_EXT_037_set1",
+    "parentSetId": "L2_EXT_037",
+    "theme": "Moving to a New City",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I moved to Seoul three months ago for my new job.",
+        "korean": "3개월 전에 새 직장 때문에 서울로 이사했어요.",
+        "properNounIndices": [
+          0,
+          3
+        ]
+      },
+      {
+        "id": 1,
+        "english": "At first everything felt overwhelming — the subway system the busy streets and the fast pace of life.",
+        "korean": "처음에는 모든 것이 압도적이었어요 — 지하철 시스템 바쁜 거리 빠른 삶의 속도.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "But gradually I found my favorite coffee shop a nice running trail along the Han River and a friendly neighbor who always says hello.",
+        "korean": "하지만 점차 좋아하는 카페 한강을 따라 좋은 러닝 코스 항상 인사하는 친절한 이웃을 찾았어요.",
+        "properNounIndices": [
+          2,
+          14,
+          15
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Now Seoul feels like home and I can't imagine living anywhere else.",
+        "korean": "이제 서울이 집처럼 느껴지고 다른 곳에 사는 것은 상상이 안 돼요.",
+        "properNounIndices": [
+          1,
+          6
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '압도적인' mean in English?",
+      "options": [
+        "pace",
+        "overwhelming",
+        "trail",
+        "gradually"
+      ],
+      "answer": 1
+    }
+  }
+]

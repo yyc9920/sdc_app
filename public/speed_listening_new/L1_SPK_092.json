@@ -1,0 +1,100 @@
+[
+  {
+    "setId": "L1_SPK_092_set1",
+    "parentSetId": "L1_SPK_092",
+    "theme": "First Impressions — Reliable or Not",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think first impressions are usually accurate?",
+        "korean": "첫인상이 보통 정확하다고 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your view with examples.",
+        "korean": "예시와 함께 견해를 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I think first impressions are sometimes useful but often unreliable.",
+        "korean": "첫인상이 때로는 유용하지만 종종 믿을 수 없다고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "We tend to judge people based on superficial cues like their appearance clothing and tone of voice.",
+        "korean": "외모 옷차림 목소리 톤 같은 피상적 단서를 기반으로 사람을 판단하는 경향이 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "But these don't always reflect who a person truly is — someone might seem quiet and unfriendly because they're shy not because they dislike you.",
+        "korean": "하지만 이것이 항상 진짜 모습을 반영하지 않아요 — 조용하고 불친절해 보이는 사람이 싫어서가 아니라 수줍어서일 수 있어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Homework — Necessary or Not",
+        "Long Commute vs. Small Apartment Near Work",
+        "First Impressions — Reliable or Not",
+        "Online Classes vs. In-Person Classes"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L1_SPK_092_set2",
+    "parentSetId": "L1_SPK_092",
+    "theme": "First Impressions — Reliable or Not",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "My best friend in college was someone I initially disliked because he seemed arrogant but once I got to know him he turned out to be the kindest person I've ever met.",
+        "korean": "대학 때 가장 친한 친구는 처음에 거만해 보여서 싫었지만 알고 보니 내가 만난 가장 친절한 사람이었어요.",
+        "properNounIndices": [
+          7,
+          16,
+          29
+        ]
+      },
+      {
+        "id": 6,
+        "english": "That experience taught me to always give people a second chance before forming a final opinion.",
+        "korean": "그 경험이 최종 의견을 형성하기 전에 항상 두 번째 기회를 주라고 가르쳐줬어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "get to know",
+        "korean": "알아가다",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "give a second chance",
+        "korean": "두 번째 기회를 주다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "First Impressions — Reliable or Not",
+        "Would you prefer living in a large house with a lo",
+        "Homework — Necessary or Not",
+        "Longer Vacations vs. Shorter Frequent Breaks"
+      ],
+      "answer": 0
+    }
+  }
+]

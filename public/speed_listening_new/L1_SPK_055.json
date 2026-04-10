@@ -1,0 +1,74 @@
+[
+  {
+    "setId": "L1_SPK_055_set1",
+    "parentSetId": "L1_SPK_055",
+    "theme": "Your Dream Job",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "What is your dream job and why?",
+        "korean": "꿈의 직업은 무엇이며 이유는 무엇입니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain what makes it appealing to you.",
+        "korean": "무엇이 매력적인지 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "My dream job would be working as a documentary filmmaker.",
+        "korean": "꿈의 직업은 다큐멘터리 영화 제작자예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "First I'm passionate about storytelling and I believe documentaries have the power to change how people think about important issues.",
+        "korean": "첫째 스토리텔링에 열정이 있고 다큐멘터리가 중요한 이슈에 대한 사람들의 생각을 바꿀 힘이 있다고 믿어요.",
+        "properNounIndices": [
+          1,
+          6
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Second it would allow me to travel the world and meet fascinating people from all walks of life.",
+        "korean": "둘째 세계를 여행하며 각계각층의 매력적인 사람들을 만날 수 있을 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Every project would be completely different which means the work would never become boring or repetitive.",
+        "korean": "모든 프로젝트가 완전히 다를 거라 일이 지루하거나 반복적이지 않을 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "I know it's a competitive field but that challenge is part of what makes it so appealing.",
+        "korean": "경쟁이 치열한 분야인 건 알지만 그 도전이 매력의 일부예요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 7,
+        "english": "all walks of life",
+        "korean": "각계각층",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Printed Books vs. E-books",
+        "Long Commute vs. Small Apartment Near Work",
+        "Pets and Responsibility",
+        "Your Dream Job"
+      ],
+      "answer": 3
+    }
+  }
+]

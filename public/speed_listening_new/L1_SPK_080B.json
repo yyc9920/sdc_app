@@ -1,0 +1,69 @@
+[
+  {
+    "setId": "L1_SPK_080B_set1",
+    "parentSetId": "L1_SPK_080B",
+    "theme": "Why is empathy important in today's society?",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Why is empathy important in today's society?",
+        "korean": "공감이 오늘날 사회에서 왜 중요합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Give specific examples.",
+        "korean": "구체적인 예시를 제시하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Empathy is one of the most important qualities a person can develop in today's divided world.",
+        "korean": "공감은 오늘날 분열된 세계에서 사람이 발달시킬 수 있는 가장 중요한 자질 중 하나예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "First empathy helps us resolve conflicts peacefully because understanding someone else's feelings makes it easier to find common ground.",
+        "korean": "첫째 공감은 갈등을 평화롭게 해결하는 데 도움이 돼요. 다른 사람의 감정을 이해하면 공통점을 찾기 쉬워지니까요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Second empathetic leaders create better workplaces because they genuinely care about their employees' well-being which leads to higher motivation and loyalty.",
+        "korean": "둘째 공감적 리더는 더 좋은 직장을 만들어요. 직원의 안녕을 진심으로 걱정해서 더 높은 동기와 충성으로 이어지니까요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "In a world where technology is making communication faster but less personal we need empathy more than ever to maintain genuine human connections.",
+        "korean": "기술이 소통을 빠르게 하지만 덜 개인적으로 만드는 세상에서 진정한 인간적 연결을 유지하려면 그 어느 때보다 공감이 필요해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "more than ever",
+        "korean": "그 어느 때보다",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "genuine connection",
+        "korean": "진정한 연결",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Why is empathy important in today's society?",
+        "The Best Way to Relieve Stress",
+        "Printed Books vs. E-books",
+        "Big City vs. Small Town University"
+      ],
+      "answer": 0
+    }
+  }
+]

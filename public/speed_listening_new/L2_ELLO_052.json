@@ -1,0 +1,65 @@
+[
+  {
+    "setId": "L2_ELLO_052_set1",
+    "parentSetId": "L2_ELLO_052",
+    "theme": "Mixer #94 — Complaining",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I complain about the weather all the time.",
+        "korean": "날씨에 대해 항상 불평해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "It's either too hot or too cold — I can never be happy.",
+        "korean": "너무 덥거나 너무 춥고 — 만족할 수가 없어요.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I try not to complain too much.",
+        "korean": "불평을 많이 안 하려고 해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "It doesn't solve anything and it just makes you feel worse.",
+        "korean": "아무것도 해결하지 못하고 기분만 더 나빠지거든요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I complain about my commute every single day, honestly.",
+        "korean": "솔직히 매일 출퇴근에 대해 불평해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "english": "It takes me two hours to get to work and two hours back.",
+        "korean": "출근에 2시간 퇴근에 2시간 걸려요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #61 — Secret Talent",
+        "Mixer #47 — Bucket List Travel",
+        "Mixer #15 — Concerts",
+        "Mixer #94 — Complaining"
+      ],
+      "answer": 3
+    }
+  }
+]

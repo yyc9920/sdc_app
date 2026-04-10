@@ -8,71 +8,61 @@
     "sentences": [
       {
         "id": 0,
-        "english": "Hello and welcome to The English We Speak, where we explain phrases used by fluent English speakers so that you can use them too. I'm Feifei, and I'm here with Phil.",
+        "english": "Hello and welcome to The English We Speak, where we explain phrases used by fluent English speakers so that you can use them too.",
         "korean": "레시피를 어디서 얻으셨나요?",
         "properNounIndices": [
           4,
           5,
           6,
           7,
-          15,
-          24,
-          25,
-          27,
-          30
+          15
         ]
       },
       {
         "id": 1,
-        "english": "Now, I should be telling you that you shouldn't eat in the studio - but that looks delicious! Where did you get the recipe for that, Phil?",
-        "korean": "레시피를 어디서 얻으셨나요?",
+        "english": "I'm Feifei, and I'm here with Phil.",
+        "korean": "저는 페이페이이고 필과 함께합니다.",
         "properNounIndices": [
           1,
-          18,
-          26
+          3,
+          6
         ]
       },
       {
         "id": 2,
-        "english": "I didn't - I just made it up on the fly. I started cooking and then looked to see what was in the fridge. It's a bit random, but it turned out alright. Do you want to try some?",
-        "korean": "즉흥적으로 만들었습니다.",
+        "english": "Now, I should be telling you that you shouldn't eat in the studio - but that looks delicious!",
+        "korean": "레시피를 어디서 얻으셨나요?",
         "properNounIndices": [
-          0,
-          3,
-          11,
-          24,
-          33
+          1
         ]
       },
       {
         "id": 3,
-        "english": "Oh thanks! And also, thank you for giving us a phrase to learn in this episode - 'on the fly'. It means that you decide what to do, as you are doing it. So, you do something quickly, without any preparation, improvising as you go along.",
-        "korean": "준비 없이 빠르게 하는 것입니다.",
+        "english": "Where did you get the recipe for that, Phil?",
+        "korean": "필, 그 레시피를 어디서 얻으셨어요?",
         "properNounIndices": [
-          2,
-          20,
-          33
+          8
         ]
       },
       {
         "id": 4,
-        "english": "Yes, I was talking about making food - but it could be anything. If we didn't have a script for this programme we could just come in and make it up on the fly.",
-        "korean": "즉흥적으로 할 수 있습니다.",
+        "english": "I didn't - I just made it up on the fly.",
+        "korean": "즉흥적으로 만들었습니다.",
         "properNounIndices": [
-          1,
-          13
+          0,
+          3
         ]
       }
     ],
     "quiz": {
-      "question": "What does '같은 시간에 일어나는' mean in English?",
+      "question": "What does '준비하지 않고 바로 창의적으로 하다' mean in English?",
       "options": [
-        "on the fly",
-        "improvise",
         "preparation",
+        "improvise",
+        "random",
         "simultaneous"
       ],
-      "answer": 3
+      "answer": 1
     }
   },
   {
@@ -84,51 +74,156 @@
     "sentences": [
       {
         "id": 5,
-        "english": "If you are very good at something, then you can do it on the fly. For example, a simultaneous interpreter can come up with translations of what people are saying on the fly.",
-        "korean": "숙련된 사람들이 즉흥적으로 할 수 있습니다.",
+        "english": "I started cooking and then looked to see what was in the fridge.",
+        "korean": "저는 요리를 시작했다가 냉장고에 무엇이 있는지 보았습니다.",
         "properNounIndices": [
-          15
+          0
         ]
       },
       {
         "id": 6,
+        "english": "It's a bit random, but it turned out alright.",
+        "korean": "좀 무작위이지만 잘 나왔습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Do you want to try some?",
+        "korean": "조금 시도해보시겠어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Oh thanks! And also, thank you for giving us a phrase to learn in this episode - 'on the fly'.",
+        "korean": "준비 없이 빠르게 하는 것입니다.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 9,
+        "english": "It means that you decide what to do, as you are doing it.",
+        "korean": "당신이 하면서 결정한다는 뜻입니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '준비 없이 빠르게 결정하고 하는 것' mean in English?",
+      "options": [
+        "recipe",
+        "random",
+        "improvise",
+        "on the fly"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L1_BTEW_006_set3",
+    "parentSetId": "L1_BTEW_006",
+    "theme": "On the fly",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "So, you do something quickly, without any preparation, improvising as you go along.",
+        "korean": "그래서 당신은 아무 준비 없이 빠르게 무언가를 하고, 가면서 즉흥으로 합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "Yes, I was talking about making food - but it could be anything.",
+        "korean": "즉흥적으로 할 수 있습니다.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 12,
+        "english": "If we didn't have a script for this programme we could just come in and make it up on the fly.",
+        "korean": "이 프로그램의 스크립트가 없다면 그냥 올 수 있고 즉흥적으로 만들 수 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
+        "english": "If you are very good at something, then you can do it on the fly.",
+        "korean": "숙련된 사람들이 즉흥적으로 할 수 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "For example, a simultaneous interpreter can come up with translations of what people are saying on the fly.",
+        "korean": "예를 들어, 동시통역사는 사람들이 말하는 것의 번역을 즉흥적으로 할 수 있습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '특정한 계획이나 이유 없이' mean in English?",
+      "options": [
+        "simultaneous",
+        "random",
+        "recipe",
+        "preparation"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L1_BTEW_006_set4",
+    "parentSetId": "L1_BTEW_006",
+    "theme": "On the fly",
+    "level": 5,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
         "english": "Let's hear some more examples of people using 'on the fly'.",
         "korean": "더 많은 예를 들어봅시다.",
         "properNounIndices": []
       },
       {
-        "id": 7,
-        "english": "'On the fly' also has some specific uses when talking about computers or cars. In these cases, it refers to things that can be done without interrupting the car or the computer programme.",
+        "id": 16,
+        "english": "'On the fly' also has some specific uses when talking about computers or cars.",
         "korean": "컴퓨터나 자동차에서 사용됩니다.",
-        "properNounIndices": [
-          14
-        ]
+        "properNounIndices": []
       },
       {
-        "id": 8,
-        "english": "Interesting, well I can't think of anything more to say on the fly, so let's end there! Bye!",
+        "id": 17,
+        "english": "In these cases, it refers to things that can be done without interrupting the car or the computer programme.",
+        "korean": "이 경우, 자동차나 컴퓨터 프로그램을 중단하지 않고 할 수 있는 것들을 의미합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
+        "english": "Interesting, well I can't think of anything more to say on the fly, so let's end there!",
         "korean": "여기서 끝냅시다.",
         "properNounIndices": [
-          2,
-          17
+          2
         ]
       },
       {
-        "id": 9,
+        "id": 19,
+        "english": "Bye!",
+        "korean": "안녕!",
+        "properNounIndices": []
+      },
+      {
+        "id": 20,
         "english": "Goodbye!",
         "korean": "안녕!",
         "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '같은 시간에 일어나는' mean in English?",
+      "question": "What does '무언가를 하기 위해 미리 하는 것' mean in English?",
       "options": [
-        "recipe",
+        "preparation",
+        "on the fly",
         "simultaneous",
-        "random",
-        "preparation"
+        "random"
       ],
-      "answer": 1
+      "answer": 0
     }
   }
 ]

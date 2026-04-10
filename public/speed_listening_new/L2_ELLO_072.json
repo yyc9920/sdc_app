@@ -1,0 +1,58 @@
+[
+  {
+    "setId": "L2_ELLO_072_set1",
+    "parentSetId": "L2_ELLO_072",
+    "theme": "Mixer #74 — Recycling",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I try to recycle as much as possible.",
+        "korean": "가능한 한 많이 재활용하려 해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Plastic, paper, glass — I sort everything into different bins.",
+        "korean": "플라스틱 종이 유리 — 다른 통에 다 분리해요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "english": "In my country, recycling isn't very common yet.",
+        "korean": "우리나라에서 재활용은 아직 흔하지 않아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "There aren't enough recycling bins or programs.",
+        "korean": "재활용 통이나 프로그램이 충분하지 않아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I recently started composting, and it's made a huge difference in how much trash I produce.",
+        "korean": "최근에 퇴비 만들기를 시작했고 쓰레기 양에 큰 변화가 생겼어요.",
+        "properNounIndices": [
+          0,
+          14
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '재활용하다' mean in English?",
+      "options": [
+        "recycle",
+        "composting",
+        "bin",
+        "sort"
+      ],
+      "answer": 0
+    }
+  }
+]

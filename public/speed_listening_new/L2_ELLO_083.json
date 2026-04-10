@@ -1,0 +1,58 @@
+[
+  {
+    "setId": "L2_ELLO_083_set1",
+    "parentSetId": "L2_ELLO_083",
+    "theme": "Mixer #63 — Technology Problems",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My phone battery dies so fast, it's ridiculous.",
+        "korean": "폰 배터리가 너무 빨리 닳아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I have to charge it three times a day.",
+        "korean": "말도 안 돼요. 하루에 세 번 충전해야 해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "My Wi-Fi keeps disconnecting, and I work from home so it's a huge problem.",
+        "korean": "와이파이가 자꾸 끊기고 재택근무라서 큰 문제예요.",
+        "properNounIndices": [
+          1,
+          5
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I accidentally deleted all my photos from my phone last week.",
+        "korean": "지난주에 실수로 폰의 사진을 다 삭제했어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Years of memories gone in one second.",
+        "korean": "수년간의 추억이 1초 만에 사라졌어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '실수로' mean in English?",
+      "options": [
+        "charge",
+        "battery",
+        "accidentally",
+        "disconnect"
+      ],
+      "answer": 2
+    }
+  }
+]

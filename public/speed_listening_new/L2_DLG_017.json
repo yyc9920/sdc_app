@@ -1,0 +1,108 @@
+[
+  {
+    "setId": "L2_DLG_017_set1",
+    "parentSetId": "L2_DLG_017",
+    "theme": "Weekend Hiking Plan",
+    "level": 2,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'm thinking of going hiking this Saturday.",
+        "korean": "이번 토요일에 등산 가려고 생각 중이에요.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Do you want to come?",
+        "korean": "같이 갈래요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Where are you going?",
+        "korean": "어디로 가는데요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Bukhansan.",
+        "korean": "북한산이요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I've heard it's a pretty tough hike.",
+        "korean": "꽤 힘든 등산이라고 들었어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Client Feedback Session",
+        "Weekend Hiking Plan",
+        "Complaining About a Meal",
+        "Getting a Package Delivered"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L2_DLG_017_set2",
+    "parentSetId": "L2_DLG_017",
+    "theme": "Weekend Hiking Plan",
+    "level": 3,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "It depends on the trail you choose.",
+        "korean": "어떤 등산로를 선택하느냐에 따라 달라요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "There's an easy one that takes about two hours.",
+        "korean": "약 2시간 걸리는 쉬운 코스가 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "That sounds doable.",
+        "korean": "그 정도면 할 만하겠어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "What time should we meet?",
+        "korean": "몇 시에 만날까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "How about eight at the entrance?",
+        "korean": "8시에 입구에서 어때요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 10,
+        "english": "See you there!",
+        "korean": "거기서 봐요!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Sharing Snacks",
+        "Choosing a Movie to Watch",
+        "Weekend Hiking Plan",
+        "Client Meeting — Project Scope Change"
+      ],
+      "answer": 2
+    }
+  }
+]

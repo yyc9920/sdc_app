@@ -1,0 +1,60 @@
+[
+  {
+    "setId": "L1_DLG_016_set1",
+    "parentSetId": "L1_DLG_016",
+    "theme": "Talking About the Weather",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "It's so hot today.",
+        "korean": "오늘 진짜 더워요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I know. I'm sweating so much.",
+        "korean": "그러게요. 땀이 너무 나요.",
+        "properNounIndices": [
+          0,
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Do you want to get some ice cream?",
+        "korean": "아이스크림 먹으러 갈래요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "That's a great idea.",
+        "korean": "좋은 생각이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "There's a new ice cream shop near the station.",
+        "korean": "역 근처에 새 아이스크림 가게가 생겼어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Let's go right now.",
+        "korean": "지금 당장 가요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Talking About the Weather",
+        "Job Interview — Marketing Manager",
+        "Lending a Pencil",
+        "Presenting a Marketing Campaign"
+      ],
+      "answer": 0
+    }
+  }
+]

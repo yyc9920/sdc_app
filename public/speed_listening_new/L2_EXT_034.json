@@ -1,0 +1,65 @@
+[
+  {
+    "setId": "L2_EXT_034_set1",
+    "parentSetId": "L2_EXT_034",
+    "theme": "My Experience Learning Korean",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "When I first started learning Korean I thought it would be impossible.",
+        "korean": "처음 한국어를 배우기 시작했을 때 불가능할 거라고 생각했어요.",
+        "properNounIndices": [
+          1,
+          5,
+          6
+        ]
+      },
+      {
+        "id": 1,
+        "english": "The alphabet looked so different from English.",
+        "korean": "알파벳이 영어와 너무 달라 보였어요.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 2,
+        "english": "But once I learned Hangul I realized it's actually very logical and easy to read.",
+        "korean": "하지만 한글을 배우고 나니 사실 매우 논리적이고 읽기 쉽다는 걸 깨달았어요.",
+        "properNounIndices": [
+          2,
+          4,
+          5
+        ]
+      },
+      {
+        "id": 3,
+        "english": "The hardest part is the grammar because the sentence order is completely different from English.",
+        "korean": "가장 어려운 부분은 문법인데 문장 순서가 영어와 완전히 다르기 때문이에요.",
+        "properNounIndices": [
+          14
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Watching K-dramas without subtitles is my ultimate goal.",
+        "korean": "자막 없이 K-드라마를 보는 것이 궁극적인 목표예요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '알파벳' mean in English?",
+      "options": [
+        "ultimate goal",
+        "alphabet",
+        "logical",
+        "subtitles"
+      ],
+      "answer": 1
+    }
+  }
+]

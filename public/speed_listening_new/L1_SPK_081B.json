@@ -1,0 +1,71 @@
+[
+  {
+    "setId": "L1_SPK_081B_set1",
+    "parentSetId": "L1_SPK_081B",
+    "theme": "Do you think a university degree is still necessar",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think a university degree is still necessary or can people succeed through self-learning?",
+        "korean": "대학 학위가 여전히 필요합니까 아니면 독학으로 성공할 수 있습니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain.",
+        "korean": "설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I think a university degree is still valuable but it's no longer the only path to success.",
+        "korean": "대학 학위가 여전히 가치 있지만 더 이상 성공의 유일한 경로는 아니라고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "For fields like medicine law and engineering a formal degree is absolutely essential because these professions require rigorous standardized training.",
+        "korean": "의학 법학 공학 같은 분야에서는 정식 학위가 절대적으로 필수적이에요. 엄격한 표준화된 교육이 필요한 직업이니까요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "However in tech and creative fields many successful people have proven that skills matter more than diplomas.",
+        "korean": "하지만 기술과 창작 분야에서는 많은 성공한 사람이 졸업장보다 기술이 중요하다는 것을 증명했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "The key advantage of self-learning is that you can focus on exactly what you need and learn at your own pace.",
+        "korean": "독학의 핵심 장점은 필요한 것에 정확히 집중하고 자기 속도로 배울 수 있다는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "But what a university offers beyond knowledge — a network of peers mentors and structured discipline — is hard to replicate on your own.",
+        "korean": "하지만 대학이 지식 너머 제공하는 것 — 동료 멘토 네트워크와 체계적 규율 — 은 혼자서 재현하기 어려워요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "at your own pace",
+        "korean": "자기 속도로",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Do you think a university degree is still necessar",
+        "Your Dream Job",
+        "Long Commute vs. Small Apartment Near Work",
+        "The Importance of Exercise"
+      ],
+      "answer": 0
+    }
+  }
+]

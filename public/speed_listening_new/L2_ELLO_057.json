@@ -1,0 +1,63 @@
+[
+  {
+    "setId": "L2_ELLO_057_set1",
+    "parentSetId": "L2_ELLO_057",
+    "theme": "Mixer #89 — Favorite Snack",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I love chips and salsa.",
+        "korean": "칩스와 살사를 좋아해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I could eat it every day and never get tired of it.",
+        "korean": "매일 먹어도 절대 질리지 않아요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "My favorite snack is dried seaweed.",
+        "korean": "좋아하는 간식은 건김이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "It's light, crunchy, and really good for you.",
+        "korean": "가볍고 바삭하고 건강에 정말 좋아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I'm a chocolate person.",
+        "korean": "초콜릿파예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Dark chocolate, milk chocolate, white chocolate — I love it all.",
+        "korean": "다크 밀크 화이트 — 다 좋아해요.",
+        "properNounIndices": [
+          7
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #41 — Keeping Secrets",
+        "Mixer #89 — Favorite Snack",
+        "Mixer #115 — Cooking Skills",
+        "Mixer #31 — Classroom Memories"
+      ],
+      "answer": 1
+    }
+  }
+]

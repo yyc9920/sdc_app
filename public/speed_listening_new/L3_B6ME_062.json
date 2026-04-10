@@ -1,0 +1,47 @@
+[
+  {
+    "setId": "L3_B6ME_062_set1",
+    "parentSetId": "L3_B6ME_062",
+    "theme": "Can Cows Prevent Wildfires?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "If you watched Lassie as a child, you might also remember Flipper the Dolphin and Skippy the Kangaroo.",
+        "korean": "어린 시절 래시를 봤다면 돌고래 플리퍼와 캥거루 스키피도 기억할 거예요.",
+        "properNounIndices": [
+          3,
+          11,
+          13,
+          15,
+          17
+        ]
+      },
+      {
+        "id": 1,
+        "english": "The stars of these shows were animals who would come to the rescue of humans in trouble.",
+        "korean": "이 쇼의 주인공은 곤경에 처한 인간을 구하러 오는 동물이었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "It might sound strange, but we'll be hearing how cows are helping to stop fires in Spain!",
+        "korean": "이상하게 들릴 수 있지만, 스페인에서 소가 화재를 막는 데 어떻게 돕는지 들어볼 거예요!",
+        "properNounIndices": [
+          16
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Learning a new food culture",
+        "Artistic Swimming",
+        "Can Cows Prevent Wildfires?",
+        "Can Climate Change Affect Mental Health?"
+      ],
+      "answer": 2
+    }
+  }
+]

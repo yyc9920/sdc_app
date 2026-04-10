@@ -1,0 +1,76 @@
+[
+  {
+    "setId": "L2_DLG_034_set1",
+    "parentSetId": "L2_DLG_034",
+    "theme": "Signing Up for a Class",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'd like to sign up for the beginner swimming class.",
+        "korean": "초급 수영 수업에 등록하고 싶어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Classes are on Tuesday and Thursday evenings from seven to eight.",
+        "korean": "수업은 화요일과 목요일 저녁 7시에서 8시입니다.",
+        "properNounIndices": [
+          3,
+          5
+        ]
+      },
+      {
+        "id": 2,
+        "english": "How much is it per month?",
+        "korean": "한 달에 얼마예요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "It's sixty dollars per month including pool access on weekends.",
+        "korean": "월 60달러이고 주말 수영장 이용이 포함돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Do I need to bring my own equipment?",
+        "korean": "장비를 직접 가져와야 하나요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Just bring a swimsuit and goggles.",
+        "korean": "수영복과 물안경만 가져오시면 돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "When does the next session start?",
+        "korean": "다음 기수가 언제 시작하나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Next Monday.",
+        "korean": "다음 주 월요일이요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '물안경' mean in English?",
+      "options": [
+        "swimsuit",
+        "beginner",
+        "goggles",
+        "equipment"
+      ],
+      "answer": 2
+    }
+  }
+]

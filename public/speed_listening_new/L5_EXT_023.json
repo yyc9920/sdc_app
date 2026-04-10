@@ -1,0 +1,41 @@
+[
+  {
+    "setId": "L5_EXT_023_set1",
+    "parentSetId": "L5_EXT_023",
+    "theme": "The Trolley Problem and Moral Intuition",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Philippa Foot's famous trolley problem — would you divert a runaway trolley to kill one person in order to save five — has become the most widely discussed thought experiment in modern ethics.",
+        "korean": "필리파 풋의 유명한 트롤리 문제 — 5명을 구하기 위해 폭주하는 트롤리를 돌려 1명을 죽일 것인가 — 는 현대 윤리학에서 가장 널리 논의되는 사고 실험이 되었다.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "What makes this thought experiment so powerful is that it reveals a deep tension between two major ethical frameworks — utilitarianism which judges actions by their outcomes and deontological ethics which judges actions by their inherent rightness.",
+        "korean": "이 사고 실험이 강력한 이유는 두 주요 윤리적 프레임워크 사이의 깊은 긴장을 드러내기 때문이다. 결과로 행동을 판단하는 공리주의와 고유한 올바름으로 판단하는 의무론적 윤리이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The trolley problem has taken on practical urgency with the rise of autonomous vehicles — engineers must literally program these ethical decisions into the algorithms that will determine who lives and who dies in unavoidable accident scenarios.",
+        "korean": "트롤리 문제는 자율주행차의 부상으로 실질적 긴급성을 띠게 됐다. 엔지니어들은 말 그대로 이 윤리적 결정을 불가피한 사고 시나리오에서 누가 살고 죽는지를 결정할 알고리즘에 프로그래밍해야 한다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '의무론적인' mean in English?",
+      "options": [
+        "deontological",
+        "autonomous vehicle",
+        "trolley problem",
+        "utilitarianism"
+      ],
+      "answer": 0
+    }
+  }
+]

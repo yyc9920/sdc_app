@@ -1,0 +1,48 @@
+[
+  {
+    "setId": "L3_B6ME_044_set1",
+    "parentSetId": "L3_B6ME_044",
+    "theme": "The Joys of Writing Lists",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "A list is a collection of items with a single item written on each line, and they're everywhere: shopping lists, to-do lists, even bucket lists — a list of all the things a person would like to do before they die.",
+        "korean": "목록은 각 줄에 하나씩 쓰인 항목의 모음이고 어디에나 있어요: 쇼핑 목록, 할일 목록, 심지어 버킷 리스트 — 죽기 전에 하고 싶은 모든 것의 목록이요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I only list the first four items, but the list read: 'Nanas, aye-aye, puke, shrooms.'",
+        "korean": "처음 네 항목만 나열하면, 목록에는 '나나즈, 아이아이, 퓨크, 쉬룸즈'라고 적혀 있었어요.",
+        "properNounIndices": [
+          0,
+          11
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Jo's shopping list was written using slang — informal everyday words.",
+        "korean": "조의 쇼핑 목록은 속어 — 비격식 일상 단어로 쓰여 있었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Nanas means bananas, aye-aye is eggs, puke is a courgette, and shrooms is mushrooms.",
+        "korean": "나나즈는 바나나, 아이아이는 달걀, 퓨크는 애호박, 쉬룸즈는 버섯이에요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '치료적인, 심리적으로 도움이 되는' mean in English?",
+      "options": [
+        "shorthand",
+        "bucket list",
+        "slang",
+        "therapeutic"
+      ],
+      "answer": 3
+    }
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "setId": "L2_EXT_026_set1",
+    "parentSetId": "L2_EXT_026",
+    "theme": "How to Make Friends in a New City",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Moving to a new city can be lonely but there are many ways to meet people.",
+        "korean": "새 도시로 이사하면 외로울 수 있지만 사람을 만나는 방법이 많아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Joining a club or a sports team is one of the best ways to make connections.",
+        "korean": "클럽이나 스포츠 팀에 가입하는 것이 인맥을 쌓는 최고의 방법 중 하나예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Volunteering at local events is also a great option.",
+        "korean": "지역 행사에서 자원봉사를 하는 것도 좋은 선택이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Don't be afraid to start a conversation with your neighbors or coworkers.",
+        "korean": "이웃이나 동료에게 말을 거는 것을 두려워하지 마세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "It takes time to build real friendships so be patient with yourself.",
+        "korean": "진정한 우정을 쌓는 데는 시간이 걸리니 자신에게 인내심을 가지세요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "The Attention Economy",
+        "How to Make Friends in a New City",
+        "Why Sleep Deprivation Is Dangerous",
+        "Psychology Lecture — The Bystander Effect"
+      ],
+      "answer": 1
+    }
+  }
+]

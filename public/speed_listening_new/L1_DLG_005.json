@@ -1,0 +1,100 @@
+[
+  {
+    "setId": "L1_DLG_005_set1",
+    "parentSetId": "L1_DLG_005",
+    "theme": "At the Bookstore",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'm looking for a birthday present for my friend.",
+        "korean": "친구 생일 선물을 찾고 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "What does your friend like?",
+        "korean": "친구분은 뭘 좋아하세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "She loves cooking.",
+        "korean": "요리를 좋아해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "We have some great cookbooks over here.",
+        "korean": "여기 좋은 요리책이 몇 권 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Oh this one looks nice.",
+        "korean": "아 이거 좋아 보여요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Client Onboarding Call",
+        "At the Bookstore",
+        "Roommate Discussion — Chores",
+        "Getting Lost While Driving"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L1_DLG_005_set2",
+    "parentSetId": "L1_DLG_005",
+    "theme": "At the Bookstore",
+    "level": 2,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "How much is it?",
+        "korean": "얼마예요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "It's fifteen dollars.",
+        "korean": "15달러예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "I'll take it.",
+        "korean": "이걸로 할게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Can you gift wrap it?",
+        "korean": "선물 포장 해주실 수 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Of course, no problem.",
+        "korean": "물론이죠 문제없어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Helping a Friend Find Something",
+        "At the Bookstore",
+        "Sharing Food at Lunch",
+        "Campus Housing — Dorm Problem"
+      ],
+      "answer": 1
+    }
+  }
+]

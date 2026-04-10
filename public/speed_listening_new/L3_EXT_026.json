@@ -1,0 +1,53 @@
+[
+  {
+    "setId": "L3_EXT_026_set1",
+    "parentSetId": "L3_EXT_026",
+    "theme": "The Popularity of K-Drama",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Korean dramas have become a global cultural phenomenon with millions of viewers in every continent.",
+        "korean": "한국 드라마가 모든 대륙에서 수백만 시청자를 보유한 글로벌 문화 현상이 됐다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Streaming platforms like Netflix have played a huge role in making K-dramas accessible to international audiences.",
+        "korean": "넷플릭스 같은 스트리밍 플랫폼이 한국 드라마를 국제 관객에게 접근 가능하게 만드는 데 큰 역할을 했다.",
+        "properNounIndices": [
+          3,
+          11
+        ]
+      },
+      {
+        "id": 2,
+        "english": "What sets Korean dramas apart is their unique storytelling style which combines romance comedy and social commentary in ways that feel fresh to Western viewers.",
+        "korean": "한국 드라마를 차별화하는 것은 독특한 스토리텔링 스타일이다. 로맨스 코미디 사회적 논평을 서양 시청자에게 신선하게 느껴지는 방식으로 결합한다.",
+        "properNounIndices": [
+          2,
+          23
+        ]
+      },
+      {
+        "id": 3,
+        "english": "The Korean drama industry now generates over ten billion dollars annually and has become one of the country's most powerful soft power exports.",
+        "korean": "한국 드라마 산업은 이제 연간 100억 달러 이상을 창출하며 국가의 가장 강력한 소프트 파워 수출품 중 하나가 됐다.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '소프트 파워' mean in English?",
+      "options": [
+        "streaming",
+        "commentary",
+        "soft power",
+        "phenomenon"
+      ],
+      "answer": 2
+    }
+  }
+]

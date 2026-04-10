@@ -3,20 +3,29 @@
     "setId": "L1_SPK_003_set1",
     "parentSetId": "L1_SPK_003",
     "theme": "Studying Alone vs. Studying in a Group",
-    "level": 6,
+    "level": 5,
     "setNumber": 1,
     "sentences": [
       {
         "id": 0,
-        "english": "Some students prefer to study alone. Others prefer to study in a group. Which do you prefer and why?",
-        "korean": "혼자 공부하는 것을 좋아하는 학생도 있고, 그룹으로 공부하는 것을 좋아하는 학생도 있습니다. 어느 쪽을 선호하며 그 이유는?",
-        "properNounIndices": [
-          6,
-          13
-        ]
+        "english": "Some students prefer to study alone.",
+        "korean": "일부 학생들은 혼자 공부하는 것을 선호한다.",
+        "properNounIndices": []
       },
       {
         "id": 1,
+        "english": "Others prefer to study in a group.",
+        "korean": "다른 학생들은 그룹으로 공부하는 것을 선호한다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Which do you prefer and why?",
+        "korean": "어느 쪽을 선호하며 그 이유는?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
         "english": "Personally, I prefer studying alone.",
         "korean": "개인적으로, 저는 혼자 공부하는 것을 선호해요.",
         "properNounIndices": [
@@ -24,16 +33,35 @@
         ]
       },
       {
-        "id": 2,
+        "id": 4,
         "english": "When I study by myself, I can move at my own pace without having to wait for others or adjust to a group schedule.",
         "korean": "혼자 공부하면, 다른 사람을 기다리거나 그룹 일정에 맞출 필요 없이 제 속도로 진행할 수 있어요.",
         "properNounIndices": [
           1,
           5
         ]
-      },
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Your Ideal Weekend",
+        "Competitive Sports for Children",
+        "Studying Alone vs. Studying in a Group",
+        "Experience vs. Possessions"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L1_SPK_003_set2",
+    "parentSetId": "L1_SPK_003",
+    "theme": "Studying Alone vs. Studying in a Group",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
       {
-        "id": 3,
+        "id": 5,
         "english": "I also tend to get distracted very easily when other people are talking, even if the conversation is related to the subject.",
         "korean": "다른 사람들이 말하면 아주 쉽게 산만해지는 편이에요, 대화가 주제와 관련이 있더라도요.",
         "properNounIndices": [
@@ -41,13 +69,13 @@
         ]
       },
       {
-        "id": 4,
+        "id": 6,
         "english": "Studying alone allows me to stay fully focused.",
         "korean": "혼자 공부하면 완전히 집중할 수 있어요.",
         "properNounIndices": []
       },
       {
-        "id": 5,
+        "id": 7,
         "english": "That said, I do think group study has benefits — for example, it can be helpful when preparing for discussions or when you're stuck on a problem.",
         "korean": "그렇긴 하지만, 그룹 학습에도 장점이 있다고 생각해요 — 예를 들어, 토론을 준비하거나 문제에 막혔을 때 도움이 될 수 있어요.",
         "properNounIndices": [
@@ -55,7 +83,7 @@
         ]
       },
       {
-        "id": 6,
+        "id": 8,
         "english": "But for my daily study routine, I find individual study to be more efficient and productive.",
         "korean": "하지만 일상적인 공부 루틴에서는 혼자 공부하는 것이 더 효율적이고 생산적이라고 느껴요.",
         "properNounIndices": [
@@ -63,7 +91,7 @@
         ]
       },
       {
-        "id": 7,
+        "id": 9,
         "english": "I retain information better when I read and take notes quietly on my own.",
         "korean": "혼자 조용히 읽고 필기할 때 정보를 더 잘 기억해요.",
         "properNounIndices": [
@@ -75,10 +103,10 @@
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "A Person Who Has Influenced You",
+        "Learning from Older vs. Younger People",
         "Studying Alone vs. Studying in a Group",
-        "Technology in Education",
-        "Important Quality in a Friend"
+        "The Value of Volunteering",
+        "Should Students Work Part-Time"
       ],
       "answer": 1
     }

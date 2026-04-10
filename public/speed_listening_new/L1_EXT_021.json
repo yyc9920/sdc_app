@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L1_EXT_021_set1",
+    "parentSetId": "L1_EXT_021",
+    "theme": "My Favorite Food",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My favorite food is pizza.",
+        "korean": "가장 좋아하는 음식은 피자예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I like pepperoni pizza the most.",
+        "korean": "페퍼로니 피자를 가장 좋아해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I eat pizza at least once a week.",
+        "korean": "적어도 일주일에 한 번 먹어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "My mom says I should eat more vegetables.",
+        "korean": "엄마는 야채를 더 먹으라고 해요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 4,
+        "english": "But I think pizza has everything — bread, cheese, meat, and sauce.",
+        "korean": "하지만 피자에는 다 있다고 생각해요 — 빵 치즈 고기 소스.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "University Lecture — Behavioral Economics",
+        "Business Meeting — Quarterly Review",
+        "My Favorite Food",
+        "Washing the Dishes"
+      ],
+      "answer": 2
+    }
+  }
+]

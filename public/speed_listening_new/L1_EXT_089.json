@@ -1,0 +1,53 @@
+[
+  {
+    "setId": "L1_EXT_089_set1",
+    "parentSetId": "L1_EXT_089",
+    "theme": "A Fun Field Day",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Today was field day at school.",
+        "korean": "오늘 학교에서 체육대회를 했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "We had relay races and a tug of war.",
+        "korean": "이어달리기와 줄다리기를 했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "My team won the relay race and we were so proud.",
+        "korean": "우리 팀이 이어달리기에서 이겨서 매우 자랑스러웠어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "After the games we ate ddukbokki and drank juice.",
+        "korean": "경기 후에 떡볶이를 먹고 주스를 마셨어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I wish every day was field day.",
+        "korean": "매일 체육대회였으면 좋겠어요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "A Fun Field Day",
+        "A New Student",
+        "My First Airplane Ride",
+        "My Hobby"
+      ],
+      "answer": 0
+    }
+  }
+]

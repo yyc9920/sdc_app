@@ -35,31 +35,26 @@
       },
       {
         "id": 4,
-        "english": "Consider Kazuo Ishiguro's *The Remains of the Day*. The novel is narrated by Stevens, an English butler who has spent his entire life in devoted service to his employer, Lord Darlington.",
-        "korean": "가즈오 이시구로의 '남아 있는 나날'을 생각해보세요. 영국인 집사 스티븐스가 화자입니다.",
+        "english": "Consider Kazuo Ishiguro's *The Remains of the Day*.",
+        "korean": "가즈오 이시구로의 '남아 있는 나날'을 생각해보세요.",
         "properNounIndices": [
           1,
           2,
           3,
           4,
-          7,
-          8,
-          13,
-          15,
-          29,
-          30
+          7
         ]
       }
     ],
     "quiz": {
-      "question": "What does '서술자의 의도에 반하여 읽다' mean in English?",
+      "question": "What does '신뢰할 수 없는 서술자' mean in English?",
       "options": [
-        "deflects questions",
         "composure",
         "read against the narrator",
-        "self-deception"
+        "charged with unspoken emotion",
+        "unreliable narrator"
       ],
-      "answer": 2
+      "answer": 3
     }
   },
   {
@@ -71,6 +66,17 @@
     "sentences": [
       {
         "id": 5,
+        "english": "The novel is narrated by Stevens, an English butler who has spent his entire life in devoted service to his employer, Lord Darlington.",
+        "korean": "영국인 집사 스티븐스가 화자입니다.",
+        "properNounIndices": [
+          5,
+          7,
+          21,
+          22
+        ]
+      },
+      {
+        "id": 6,
         "english": "Throughout the novel, Stevens describes his years of service with extraordinary precision and formality.",
         "korean": "소설 내내 스티븐스는 자신의 봉사 기간을 놀라운 정밀함과 격식으로 묘사합니다.",
         "properNounIndices": [
@@ -78,54 +84,38 @@
         ]
       },
       {
-        "id": 6,
-        "english": "He speaks of dignity, professionalism, and the importance of maintaining one's composure at all times. But as the narrative unfolds, the reader begins to notice what Stevens doesn't say.",
+        "id": 7,
+        "english": "He speaks of dignity, professionalism, and the importance of maintaining one's composure at all times.",
         "korean": "품위, 전문성, 항상 침착함을 유지하는 것의 중요성에 대해 말합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "But as the narrative unfolds, the reader begins to notice what Stevens doesn't say.",
+        "korean": "품위, 전문성, 항상 침착함을 유지하는 것의 중요성을 말해요",
         "properNounIndices": [
-          15,
-          26
+          11
         ]
       },
       {
-        "id": 7,
+        "id": 9,
         "english": "He never directly acknowledges his feelings for Miss Kenton, the housekeeper, despite the fact that their interactions are charged with unspoken emotion.",
         "korean": "켄턴 양, 가정부에 대한 자신의 감정을 직접적으로 인정하지 않습니다.",
         "properNounIndices": [
           7,
           8
         ]
-      },
-      {
-        "id": 8,
-        "english": "He describes Lord Darlington's decisions during the lead-up to World War Two — decisions that history has judged as deeply misguided — without ever offering a moral assessment of his own.",
-        "korean": "로드 달링턴의 2차 세계대전 직전 결정들 — 역사가 깊이 잘못된 것으로 판단한 결정들 — 을 묘사합니다.",
-        "properNounIndices": [
-          2,
-          3,
-          9,
-          10,
-          11
-        ]
-      },
-      {
-        "id": 9,
-        "english": "And he consistently deflects questions about regret with polished, rehearsed responses that ring hollow. Ishiguro never breaks the first-person frame to tell us that Stevens is in denial.",
-        "korean": "후회에 대한 질문을 세련되고 연습된 답변으로 일관되게 피해가는데, 공허하게 들립니다.",
-        "properNounIndices": [
-          14,
-          24
-        ]
       }
     ],
     "quiz": {
-      "question": "What does '신뢰할 수 없는 서술자' mean in English?",
+      "question": "What does '생략, 빠뜨림' mean in English?",
       "options": [
+        "moral agency",
+        "charged with unspoken emotion",
         "self-deception",
-        "unreliable narrator",
-        "narrative theory",
-        "moral agency"
+        "omissions"
       ],
-      "answer": 1
+      "answer": 3
     }
   },
   {
@@ -137,29 +127,83 @@
     "sentences": [
       {
         "id": 10,
-        "english": "He doesn't need to. The gap between what Stevens says and what the reader perceives is the novel's central tragedy.",
-        "korean": "그럴 필요가 없습니다. 스티븐스가 말하는 것과 독자가 인식하는 것 사이의 간격이 소설의 핵심 비극입니다.",
+        "english": "He describes Lord Darlington's decisions during the lead-up to World War Two — decisions that history has judged as deeply misguided — without ever offering a moral assessment of his own.",
+        "korean": "로드 달링턴의 2차 세계대전 직전 결정들 — 역사가 깊이 잘못된 것으로 판단한 결정들 — 을 묘사합니다.",
         "properNounIndices": [
-          4,
-          8
+          2,
+          3,
+          9,
+          10,
+          11
         ]
       },
       {
         "id": 11,
+        "english": "And he consistently deflects questions about regret with polished, rehearsed responses that ring hollow.",
+        "korean": "후회에 대한 질문을 세련되고 연습된 답변으로 일관되게 피해가는데, 공허하게 들립니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "Ishiguro never breaks the first-person frame to tell us that Stevens is in denial.",
+        "korean": "일관되게 피해가는데 공허하게 들려요",
+        "properNounIndices": [
+          10
+        ]
+      },
+      {
+        "id": 13,
+        "english": "He doesn't need to.",
+        "korean": "그럴 필요가 없습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "The gap between what Stevens says and what the reader perceives is the novel's central tragedy.",
+        "korean": "스티븐스가 말하는 것과 독자가 인식하는 것 사이의 간격이 소설의 핵심 비극입니다.",
+        "properNounIndices": [
+          4
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '질문을 회피하다' mean in English?",
+      "options": [
+        "composure",
+        "deflects questions",
+        "read against the narrator",
+        "charged with unspoken emotion"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L5_EXT_007_set4",
+    "parentSetId": "L5_EXT_007",
+    "theme": "Literary Criticism — Unreliable Narrators",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
         "english": "Stevens has sacrificed love, moral agency, and self-knowledge in the pursuit of an ideal of service that, in the end, served a deeply flawed master.",
         "korean": "스티븐스는 봉사의 이상을 추구하며 사랑, 도덕적 주체성, 자기 인식을 희생했습니다.",
         "properNounIndices": []
       },
       {
-        "id": 12,
-        "english": "This is what separates a truly unreliable narrator from a merely deceptive one. A deceptive narrator lies to the reader deliberately.",
+        "id": 16,
+        "english": "This is what separates a truly unreliable narrator from a merely deceptive one.",
         "korean": "진정한 신뢰할 수 없는 화자와 단순히 기만적인 화자를 구분하는 것입니다.",
-        "properNounIndices": [
-          13
-        ]
+        "properNounIndices": []
       },
       {
-        "id": 13,
+        "id": 17,
+        "english": "A deceptive narrator lies to the reader deliberately.",
+        "korean": "단순히 기만적인 화자를 구분하는 것이에요",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
         "english": "An unreliable narrator like Stevens lies to himself — and in doing so, reveals truths about the human capacity for self-deception that a straightforward narrative could never achieve.",
         "korean": "스티븐스 같은 신뢰할 수 없는 화자는 자기 자신에게 거짓말합니다 — 그러면서 자기기만에 대한 인간의 능력에 관한 진실을 드러냅니다.",
         "properNounIndices": [
@@ -167,27 +211,27 @@
         ]
       },
       {
-        "id": 14,
+        "id": 19,
         "english": "The ethical implications are worth considering.",
         "korean": "윤리적 함의도 고려할 가치가 있습니다.",
         "properNounIndices": []
       },
       {
-        "id": 15,
+        "id": 20,
         "english": "By forcing us to reconstruct the truth from an unreliable account, these novels train us to be better readers — not just of books, but of the narratives that people construct in everyday life to make sense of their choices and their past.",
         "korean": "신뢰할 수 없는 서술에서 진실을 재구성하도록 강제함으로써, 이런 소설들은 우리를 더 나은 독자로 훈련시킵니다.",
         "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '침착함, 자제력' mean in English?",
+      "question": "What does '자기 기만' mean in English?",
       "options": [
         "charged with unspoken emotion",
-        "self-deception",
+        "narrative theory",
         "composure",
-        "moral agency"
+        "self-deception"
       ],
-      "answer": 2
+      "answer": 3
     }
   }
 ]

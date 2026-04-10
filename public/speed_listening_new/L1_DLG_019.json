@@ -1,0 +1,73 @@
+[
+  {
+    "setId": "L1_DLG_019_set1",
+    "parentSetId": "L1_DLG_019",
+    "theme": "At the Toy Store",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Can I look at that teddy bear on the top shelf?",
+        "korean": "위 선반에 있는 테디 베어 봐도 돼요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Of course. Here you go.",
+        "korean": "물론이죠. 여기요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "english": "It's so soft!",
+        "korean": "너무 부드러워요!",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "How much is it?",
+        "korean": "얼마예요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "That one is fifteen dollars.",
+        "korean": "그건 15달러예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "I'll buy it for my little sister.",
+        "korean": "여동생한테 사줄 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Would you like me to wrap it?",
+        "korean": "포장해드릴까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Yes please!",
+        "korean": "네 부탁해요!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "At the Pizza Shop",
+        "At the Hair Salon",
+        "At the Toy Store",
+        "Getting a Passport Renewed"
+      ],
+      "answer": 2
+    }
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "setId": "L3_EXT_020_set1",
+    "parentSetId": "L3_EXT_020",
+    "theme": "How Coffee Changed the World",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Coffee is the world's second most traded commodity after oil, and over two billion cups are consumed every single day.",
+        "korean": "커피는 석유 다음으로 세계에서 두 번째로 많이 거래되는 상품이다. 매일 20억 잔 이상이 소비된다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Historians believe that coffee played a crucial role in the Age of Enlightenment because coffeehouses became gathering places where intellectuals debated new ideas.",
+        "korean": "역사학자들은 커피가 계몽주의 시대에 중요한 역할을 했다고 믿는다. 커피하우스가 지식인들이 새 아이디어를 토론하는 모임 장소가 됐기 때문이다.",
+        "properNounIndices": [
+          10,
+          12
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Today the global coffee industry employs over one hundred and twenty-five million people from farmers in Ethiopia and Colombia to baristas in Seoul and New York.",
+        "korean": "500만 명 이상을 고용하고 있다.",
+        "properNounIndices": [
+          16,
+          18,
+          22,
+          24,
+          25
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Climate change now threatens coffee production with experts predicting that suitable growing areas could be reduced by fifty percent by 2050.",
+        "korean": "기후 변화가 이제 커피 생산을 위협하고 있다. 전문가들은 적합한 재배 지역이 2050년까지 50% 줄어들 수 있다고 예측한다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '지식인' mean in English?",
+      "options": [
+        "Enlightenment",
+        "commodity",
+        "climate change",
+        "intellectual"
+      ],
+      "answer": 3
+    }
+  }
+]

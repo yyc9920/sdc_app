@@ -1,0 +1,57 @@
+[
+  {
+    "setId": "L1_EXT_015_set1",
+    "parentSetId": "L1_EXT_015",
+    "theme": "My Family",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "There are five people in my family.",
+        "korean": "우리 가족은 다섯 명이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "My parents, my older sister, my younger brother, and me.",
+        "korean": "부모님, 누나, 남동생, 그리고 저예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "My father is an engineer and my mother is a teacher.",
+        "korean": "아버지는 엔지니어이고 어머니는 교사예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "My sister is in university studying law.",
+        "korean": "누나는 대학교에서 법학을 공부하고 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "My brother is still in middle school and he loves playing soccer.",
+        "korean": "남동생은 아직 중학생이고 축구를 좋아해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "We eat dinner together every night and talk about our day.",
+        "korean": "매일 저녁 같이 식사하고 그날 있었던 일을 이야기해요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "My Family",
+        "Why We Love Stories",
+        "Museum Audio Guide",
+        "Going to the Movies"
+      ],
+      "answer": 0
+    }
+  }
+]

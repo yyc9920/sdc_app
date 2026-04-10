@@ -1,0 +1,109 @@
+[
+  {
+    "setId": "L2_BTEW_017_set1",
+    "parentSetId": "L2_BTEW_017",
+    "theme": "A Bit of a Stretch",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I found out that I went to primary school with a famous comedian.",
+        "korean": "유명한 코미디언과 같은 초등학교를 다녔다는 걸 알아냈어.",
+        "properNounIndices": [
+          0,
+          4
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Really?",
+        "korean": "진짜?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Well, I was aged four in the nursery, when he was eleven and in year six.",
+        "korean": "음, 내가 유치반 4살이었을 때 그는 11살 6학년이었어.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 3,
+        "english": "So, you were like seven years apart?",
+        "korean": "그러면 7살 차이에 다른 건물이었잖아?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "In different buildings?",
+        "korean": "그와 같은 학교를 다녔다고 말하긴 좀 과장인 것 같아.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "A Bit of a Stretch",
+        "Got You",
+        "Shoehorn something in",
+        "Off the scale"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_BTEW_017_set2",
+    "parentSetId": "L2_BTEW_017",
+    "theme": "A Bit of a Stretch",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I think it's a bit of a stretch to say that you went to school with him.",
+        "korean": "아이 띵킷츠 어 빗 오브 어 스트레치 투 세이 댓 유 웬트 투 스쿨 윋 힘.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 6,
+        "english": "If something is a bit of a stretch, then you're exaggerating — it's not completely untrue, but it's not 100% true either.",
+        "korean": "'a bit of a stretch'라면 과장하는 거예요 — 완전히 거짓은 아니지만 100% 사실도 아닌 거죠.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "We can also use 'stretch' as a verb — 'that's stretching it a bit' means 'I don't think that's completely true'.",
+        "korean": "'stretch'를 동사로도 쓸 수 있어요 — 'that's stretching it a bit'은 '완전히 사실은 아닌 것 같다'는 뜻이에요.",
+        "properNounIndices": [
+          15
+        ]
+      },
+      {
+        "id": 8,
+        "english": "a bit of a stretch",
+        "korean": "좀 과장된, 완전히 사실은 아닌",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "that's stretching it a bit",
+        "korean": "그건 좀 과장이야",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "A Big Ask",
+        "Warts and all",
+        "A Bit of a Stretch",
+        "Facepalm Moment"
+      ],
+      "answer": 2
+    }
+  }
+]

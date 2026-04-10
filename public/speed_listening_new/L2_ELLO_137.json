@@ -1,0 +1,48 @@
+[
+  {
+    "setId": "L2_ELLO_137_set1",
+    "parentSetId": "L2_ELLO_137",
+    "theme": "Mixer #8 — Queuing",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "British people are obsessed with queuing properly.",
+        "korean": "영국 사람들은 줄 서기에 집착해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "If you skip the queue, people will give you angry looks.",
+        "korean": "새치기하면 화난 눈초리를 받을 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "In my country, there's no real concept of queuing, and people just push to the front.",
+        "korean": "우리나라에는 줄 서기 개념이 없고 사람들이 그냥 앞으로 밀고 가요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I hate waiting in line, so I try to go to places during off-peak hours whenever possible.",
+        "korean": "줄 서서 기다리는 게 싫어서 가능하면 한산한 시간에 가려고 해요.",
+        "properNounIndices": [
+          0,
+          6
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #26 — Weekend Cooking",
+        "Mixer #69 — Volunteering",
+        "Mixer #18 — Junk Food",
+        "Mixer #8 — Queuing"
+      ],
+      "answer": 3
+    }
+  }
+]

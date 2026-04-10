@@ -1,0 +1,53 @@
+[
+  {
+    "setId": "L1_EXT_081_set1",
+    "parentSetId": "L1_EXT_081",
+    "theme": "My Favorite Day",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My favorite day of the week is Friday.",
+        "korean": "일주일 중 가장 좋아하는 날은 금요일이에요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I feel happy because the weekend is coming.",
+        "korean": "주말이 오니까 행복해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "On Friday nights my family orders pizza and watches a movie.",
+        "korean": "금요일 밤에 가족이 피자를 시키고 영화를 봐요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I can also stay up late because there is no school the next day.",
+        "korean": "다음 날 학교가 없어서 늦게까지 깨어 있을 수도 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "My Favorite Day",
+        "My School Life",
+        "My Experience Learning Korean",
+        "The Weather Today"
+      ],
+      "answer": 0
+    }
+  }
+]

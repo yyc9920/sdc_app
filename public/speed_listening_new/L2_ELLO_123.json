@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L2_ELLO_123_set1",
+    "parentSetId": "L2_ELLO_123",
+    "theme": "Mixer #22 — Favorite Movie Genre",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I love horror movies even though they terrify me.",
+        "korean": "무섭지만 공포 영화를 좋아해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "The scarier, the better.",
+        "korean": "무서울수록 더 좋아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I only watch comedies because life is already stressful enough.",
+        "korean": "코미디만 봐요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I want to laugh, not cry.",
+        "korean": "인생이 이미 충분히 스트레스니까요. 울고 싶지 않고 웃고 싶어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I love documentaries because you learn something real, and some of them are more exciting than fiction.",
+        "korean": "다큐멘터리를 좋아해요. 진짜를 배울 수 있으니까요. 어떤 건 픽션보다 더 흥미진진해요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #117 — Phobias",
+        "Mixer #40 — Money Habits",
+        "Mixer #22 — Favorite Movie Genre",
+        "Mixer #98 — Moving House"
+      ],
+      "answer": 2
+    }
+  }
+]

@@ -1,0 +1,96 @@
+[
+  {
+    "setId": "L1_SPK_096_set1",
+    "parentSetId": "L1_SPK_096",
+    "theme": "Famous People as Role Models",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think celebrities are good role models for young people?",
+        "korean": "유명인이 젊은 사람들에게 좋은 롤모델이라고 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your opinion.",
+        "korean": "의견을 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I think it depends entirely on the celebrity because some are excellent role models while others are terrible ones.",
+        "korean": "전적으로 유명인에 달렸어요. 일부는 훌륭한 롤모델이지만 다른 일부는 끔찍하기 때문이에요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Athletes who speak about mental health and musicians who use their platform for social justice can inspire young people in powerful ways.",
+        "korean": "정신 건강을 이야기하는 운동선수와 사회 정의를 위해 플랫폼을 활용하는 음악가는 젊은 사람들에게 강력하게 영감을 줄 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "However celebrities who promote materialism and reckless behavior set a dangerous example.",
+        "korean": "하지만 물질주의와 무모한 행동을 조장하는 유명인은 위험한 본보기를 세워요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Favorite Place",
+        "A Skill You Want to Learn",
+        "Do you think a university degree is still necessar",
+        "Famous People as Role Models"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L1_SPK_096_set2",
+    "parentSetId": "L1_SPK_096",
+    "theme": "Famous People as Role Models",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "The real problem is that young people often admire celebrities for their fame and wealth rather than their character and actions.",
+        "korean": "진짜 문제는 젊은이들이 종종 성품과 행동보다 명성과 부 때문에 유명인을 존경한다는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Parents should help children distinguish between celebrities worth admiring and those who are not.",
+        "korean": "부모는 아이들이 존경할 가치가 있는 유명인과 그렇지 않은 유명인을 구분하도록 도와야 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "set an example",
+        "korean": "본보기를 세우다",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "distinguish between",
+        "korean": "~을 구분하다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "An Important Childhood Memory",
+        "Famous People as Role Models",
+        "Advantages of Being Bilingual",
+        "The Importance of Exercise"
+      ],
+      "answer": 1
+    }
+  }
+]

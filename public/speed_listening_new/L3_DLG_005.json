@@ -1,0 +1,127 @@
+[
+  {
+    "setId": "L3_DLG_005_set1",
+    "parentSetId": "L3_DLG_005",
+    "theme": "Office — Project Deadline",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "David, do you have a minute?",
+        "korean": "데이비드, 잠깐 시간 돼요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I need to talk about the quarterly report.",
+        "korean": "분기 보고서에 대해 이야기해야 해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Sure, what's going on?",
+        "korean": "네, 무슨 일이에요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "The client moved the deadline up by a week, so now it's due Friday instead of next Friday.",
+        "korean": "클라이언트가 마감을 일주일 앞당겼어요. 그래서 다음 주 금요일이 아니라 이번 금요일이에요.",
+        "properNounIndices": [
+          13,
+          17
+        ]
+      },
+      {
+        "id": 4,
+        "english": "That's tight. What sections still need to be finished?",
+        "korean": "빠듯하네요. 아직 끝내야 할 섹션이 어떤 거예요?",
+        "properNounIndices": [
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '검토하다/살펴보다' mean in English?",
+      "options": [
+        "quarterly report",
+        "deadline",
+        "go over",
+        "submission"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L3_DLG_005_set2",
+    "parentSetId": "L3_DLG_005",
+    "theme": "Office — Project Deadline",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "The financial analysis is done, but the market overview and the executive summary still need work.",
+        "korean": "재무 분석은 끝났지만 시장 개요와 임원 요약은 아직 작업이 필요해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "How about I take the market overview, and you handle the executive summary?",
+        "korean": "제가 시장 개요를 맡고 임원 요약은 당신이 하는 건 어때요?",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 7,
+        "english": "That sounds like a plan.",
+        "korean": "좋은 계획이네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Can you have your part done by Wednesday?",
+        "korean": "수요일까지 당신 파트를 끝낼 수 있어요?",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 9,
+        "english": "I'll do my best.",
+        "korean": "최선을 다할게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 10,
+        "english": "Let's also schedule a quick review meeting on Thursday, so we can go over everything before submission.",
+        "korean": "목요일에 빠른 검토 회의도 잡죠.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 11,
+        "english": "Perfect. I'll send a calendar invite right now.",
+        "korean": "완벽해요. 지금 바로 캘린더 초대를 보낼게요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '제출' mean in English?",
+      "options": [
+        "submission",
+        "deadline",
+        "quarterly report",
+        "executive summary"
+      ],
+      "answer": 0
+    }
+  }
+]

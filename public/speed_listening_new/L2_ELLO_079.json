@@ -1,0 +1,72 @@
+[
+  {
+    "setId": "L2_ELLO_079_set1",
+    "parentSetId": "L2_ELLO_079",
+    "theme": "Mixer #67 — Fashion",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I don't care about fashion at all, honestly.",
+        "korean": "솔직히 패션에 전혀 관심이 없어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I wear whatever is comfortable.",
+        "korean": "편한 걸 아무거나 입어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I love fashion and I follow trends closely, especially Korean fashion.",
+        "korean": "패션을 좋아하고 트렌드를 면밀히 따라요, 특히 한국 패션이요.",
+        "properNounIndices": [
+          0,
+          4,
+          9
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I spend a lot of money on clothes but it makes me happy.",
+        "korean": "옷에 돈을 많이 쓰지만 행복해져요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I have a pretty simple style — jeans, T-shirt, sneakers.",
+        "korean": "꽤 심플한 스타일이에요 — 청바지 티셔츠 운동화.",
+        "properNounIndices": [
+          0,
+          8
+        ]
+      },
+      {
+        "id": 5,
+        "english": "That's literally all I need.",
+        "korean": "그게 말 그대로 전부예요.",
+        "properNounIndices": [
+          3
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #5 — Saying Goodbye",
+        "Mixer #67 — Fashion",
+        "Mixer #57 — Tattoos",
+        "Mixer #16 — Roommates"
+      ],
+      "answer": 1
+    }
+  }
+]

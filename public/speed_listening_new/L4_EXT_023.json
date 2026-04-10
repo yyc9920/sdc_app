@@ -1,0 +1,50 @@
+[
+  {
+    "setId": "L4_EXT_023_set1",
+    "parentSetId": "L4_EXT_023",
+    "theme": "The Science of Habit Formation",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Neuroscience has revealed that habits are encoded in a brain region called the basal ganglia which operates largely outside of conscious awareness.",
+        "korean": "신경과학은 습관이 기저핵이라는 뇌 영역에 인코딩되며 의식적 인식 밖에서 주로 작동한다는 것을 밝혀냈다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "This explains why habits feel automatic — once formed they require almost no mental effort to execute.",
+        "korean": "이것이 습관이 자동적으로 느껴지는 이유를 설명한다. 일단 형성되면 실행에 정신적 노력이 거의 필요 없다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The most effective strategy for building new habits is a technique called habit stacking — attaching a new behavior to an existing one.",
+        "korean": "새 습관을 만드는 가장 효과적인 전략은 습관 쌓기라는 기법이다. 기존 행동에 새 행동을 부착하는 것이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "For example instead of saying 'I will meditate every day' you say 'After I pour my morning coffee I will meditate for two minutes' which anchors the new habit to an established routine.",
+        "korean": "예를 들어 '매일 명상하겠다' 대신 '아침 커피를 따른 후 2분간 명상하겠다'라고 하면 새 습관을 확립된 루틴에 고정시킨다.",
+        "properNounIndices": [
+          5,
+          12,
+          13,
+          18
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '습관 쌓기' mean in English?",
+      "options": [
+        "habit stacking",
+        "basal ganglia",
+        "anchor",
+        "execute"
+      ],
+      "answer": 0
+    }
+  }
+]

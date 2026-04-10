@@ -1,0 +1,60 @@
+[
+  {
+    "setId": "L2_ELLO_098_set1",
+    "parentSetId": "L2_ELLO_098",
+    "theme": "Mixer #47 — Bucket List Travel",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I really want to see the pyramids in Egypt.",
+        "korean": "이집트의 피라미드를 정말 보고 싶어요.",
+        "properNounIndices": [
+          0,
+          8
+        ]
+      },
+      {
+        "id": 1,
+        "english": "They've been on my bucket list since I was a kid.",
+        "korean": "어릴 때부터 버킷리스트에 있었어요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I want to take the Trans-Siberian Railway across Russia, even though it takes a whole week.",
+        "korean": "시베리아 횡단 열차를 타고 러시아를 횡단하고 싶어요. 일주일이나 걸리지만요.",
+        "properNounIndices": [
+          0,
+          5,
+          6,
+          8
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I dream of visiting Machu Picchu, and I've been saving money for the trip for two years.",
+        "korean": "마추픽추 방문을 꿈꿔요. 여행을 위해 2년간 돈을 모으고 있어요.",
+        "properNounIndices": [
+          0,
+          4,
+          5,
+          7
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #91 — Being on Time",
+        "Mixer #43 — Cold Remedy",
+        "Mixer #8 — Dream Job",
+        "Mixer #47 — Bucket List Travel"
+      ],
+      "answer": 3
+    }
+  }
+]

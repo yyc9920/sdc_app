@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L1_EXT_098_set1",
+    "parentSetId": "L1_EXT_098",
+    "theme": "Playing Hide and Seek",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "We played hide and seek at the park after school.",
+        "korean": "방과 후에 공원에서 숨바꼭질을 했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I hid behind a big tree and nobody could find me.",
+        "korean": "큰 나무 뒤에 숨었는데 아무도 나를 찾지 못했어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I waited for a very long time.",
+        "korean": "아주 오래 기다렸어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Then I realized everyone had gone home without me.",
+        "korean": "그때 모두가 나 없이 집에 갔다는 걸 깨달았어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I was too good at hiding!",
+        "korean": "숨는 걸 너무 잘 한 거예요!",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Making a New Friend",
+        "My Neighborhood Store",
+        "The Science of Habits",
+        "Playing Hide and Seek"
+      ],
+      "answer": 3
+    }
+  }
+]

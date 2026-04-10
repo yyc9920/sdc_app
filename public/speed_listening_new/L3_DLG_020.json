@@ -1,0 +1,80 @@
+[
+  {
+    "setId": "L3_DLG_020_set1",
+    "parentSetId": "L3_DLG_020",
+    "theme": "Wedding Planning — Venue Visit",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "We're getting married in June and we're looking for a venue that can hold about a hundred and fifty guests.",
+        "korean": "6월에 결혼하는데 약 150명 수용 가능한 장소를 찾고 있어요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Congratulations! Our main hall can accommodate up to two hundred guests, so it would be perfect for your size.",
+        "korean": "축하드려요! 메인 홀이 최대 200명까지 수용 가능해서 규모에 딱 맞을 거예요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Does the package include catering?",
+        "korean": "패키지에 케이터링이 포함되나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Yes, our all-inclusive package covers the venue, catering for up to two hundred guests, a DJ, floral arrangements, and a wedding coordinator.",
+        "korean": "네, 올인클루시브 패키지에 장소 200명 케이터링 DJ 꽃 장식 웨딩 코디네이터가 포함돼요.",
+        "properNounIndices": [
+          15
+        ]
+      },
+      {
+        "id": 4,
+        "english": "How much is the all-inclusive package?",
+        "korean": "올인클루시브 패키지가 얼마예요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "For a Saturday in June, it starts at twenty-five thousand, and we require a thirty percent deposit to secure the date.",
+        "korean": "6월 토요일의 경우 2만 5천 달러부터 시작하고 날짜 확보를 위해 30% 보증금이 필요합니다.",
+        "properNounIndices": [
+          2,
+          4
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Can we see the hall and taste the menu before making a decision?",
+        "korean": "결정하기 전에 홀을 보고 메뉴를 시식할 수 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Of course, I can schedule a tasting session and a full tour for you this weekend.",
+        "korean": "물론이죠, 이번 주말에 시식과 전체 투어를 잡아드릴 수 있어요.",
+        "properNounIndices": [
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '확보하다/보장하다' mean in English?",
+      "options": [
+        "venue",
+        "all-inclusive",
+        "tasting session",
+        "secure"
+      ],
+      "answer": 3
+    }
+  }
+]

@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L1_EXT_043_set1",
+    "parentSetId": "L1_EXT_043",
+    "theme": "Visiting the Dentist",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I went to the dentist yesterday for a checkup.",
+        "korean": "어제 검진을 받으러 치과에 갔어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I was a little nervous because I don't like the dentist.",
+        "korean": "치과를 좋아하지 않아서 좀 긴장했어요.",
+        "properNounIndices": [
+          0,
+          6
+        ]
+      },
+      {
+        "id": 2,
+        "english": "The dentist checked my teeth and said they look healthy.",
+        "korean": "치과의사가 이를 확인하고 건강해 보인다고 했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "She told me to brush my teeth three times a day.",
+        "korean": "하루 세 번 양치하라고 했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I was so happy that I didn't need any treatment.",
+        "korean": "치료가 필요 없어서 너무 기뻤어요.",
+        "properNounIndices": [
+          0,
+          5
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Visiting the Dentist",
+        "Rainy Day",
+        "The Attention Economy",
+        "My Bicycle"
+      ],
+      "answer": 0
+    }
+  }
+]

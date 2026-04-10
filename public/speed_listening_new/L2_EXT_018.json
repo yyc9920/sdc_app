@@ -1,0 +1,56 @@
+[
+  {
+    "setId": "L2_EXT_018_set1",
+    "parentSetId": "L2_EXT_018",
+    "theme": "Moving to a New Apartment",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I moved to a new apartment last month.",
+        "korean": "지난달에 새 아파트로 이사했어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "It took me three whole days to unpack all the boxes.",
+        "korean": "모든 상자를 푸는 데 꼬박 3일이 걸렸어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The new place is smaller but the location is much better.",
+        "korean": "새 곳은 더 작지만 위치가 훨씬 좋아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "There's a subway station right outside, and a big supermarket just a five-minute walk away.",
+        "korean": "바로 밖에 지하철역이 있고 걸어서 5분 거리에 큰 슈퍼마켓이 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "The only downside is that the walls are thin and I can hear my neighbor's TV at night.",
+        "korean": "유일한 단점은 벽이 얇아서 밤에 이웃의 TV 소리가 들린다는 거예요.",
+        "properNounIndices": [
+          10,
+          15
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '단점' mean in English?",
+      "options": [
+        "thin",
+        "unpack",
+        "downside",
+        "location"
+      ],
+      "answer": 2
+    }
+  }
+]

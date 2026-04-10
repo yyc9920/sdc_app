@@ -1,0 +1,106 @@
+[
+  {
+    "setId": "L3_DLG_024_set1",
+    "parentSetId": "L3_DLG_024",
+    "theme": "Vet Clinic — Sick Pet",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hi, my dog has been vomiting since last night and he won't eat anything.",
+        "korean": "안녕하세요. 어젯밤부터 개가 토하고 아무것도 안 먹어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "How old is he and what breed?",
+        "korean": "몇 살이고 무슨 품종인가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "He's a four-year-old golden retriever, and he's usually very active.",
+        "korean": "4살 골든 리트리버이고 보통 매우 활발해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Did he eat anything unusual yesterday?",
+        "korean": "어제 평소와 다른 걸 먹었나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I'm not sure, but he was playing in the park and might have eaten something off the ground.",
+        "korean": "잘 모르겠는데 공원에서 놀면서 바닥에 있는 걸 먹었을 수도 있어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '구토/토하기' mean in English?",
+      "options": [
+        "blockage",
+        "vomiting",
+        "breed",
+        "X-ray"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L3_DLG_024_set2",
+    "parentSetId": "L3_DLG_024",
+    "theme": "Vet Clinic — Sick Pet",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I'd like to run some blood tests and take an X-ray to rule out any blockage.",
+        "korean": "혈액 검사와 엑스레이를 해서 막힘이 없는지 확인하고 싶어요.",
+        "properNounIndices": [
+          10
+        ]
+      },
+      {
+        "id": 6,
+        "english": "How much will that cost?",
+        "korean": "비용이 얼마나 드나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "The tests and X-ray together will be about two hundred and fifty dollars.",
+        "korean": "검사와 엑스레이 합쳐서 약 250달러 정도예요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Please go ahead.",
+        "korean": "진행해주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "I just want him to be okay.",
+        "korean": "그냥 괜찮기만 하면 돼요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '배제하다/가능성을 제거하다' mean in English?",
+      "options": [
+        "breed",
+        "blockage",
+        "vomiting",
+        "rule out"
+      ],
+      "answer": 3
+    }
+  }
+]

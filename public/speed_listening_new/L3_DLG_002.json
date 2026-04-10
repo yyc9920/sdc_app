@@ -1,0 +1,203 @@
+[
+  {
+    "setId": "L3_DLG_002_set1",
+    "parentSetId": "L3_DLG_002",
+    "theme": "Doctor Visit — Persistent Headache",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Good morning! How are you feeling today?",
+        "korean": "좋은 아침이에요! 오늘 기분이 어떠세요?",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I've had a persistent headache for about three days.",
+        "korean": "약 3일째 지속적인 두통이 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Nothing seems to help.",
+        "korean": "아무것도 도움이 안 돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I see. On a scale of 1 to 10, how severe is the pain?",
+        "korean": "그렇군요. 1에서 10 중에 통증이 얼마나 심한가요?",
+        "properNounIndices": [
+          0,
+          2
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I'd say it's about a 7.",
+        "korean": "약 7정도요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '메스꺼움' mean in English?",
+      "options": [
+        "nausea",
+        "prescribe",
+        "trigger",
+        "severe"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L3_DLG_002_set2",
+    "parentSetId": "L3_DLG_002",
+    "theme": "Doctor Visit — Persistent Headache",
+    "level": 3,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "It's worse in the afternoon.",
+        "korean": "오후에 더 심해져요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Have you experienced any nausea or sensitivity to light?",
+        "korean": "메스꺼움이나 빛에 대한 민감함이 있었나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Yes, both! Especially the light sensitivity.",
+        "korean": "네, 둘 다요! 특히 빛 민감함이요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 8,
+        "english": "I've been staying inside.",
+        "korean": "계속 실내에 있었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Let me examine you.",
+        "korean": "진찰해 볼게요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '유발하다' mean in English?",
+      "options": [
+        "nausea",
+        "trigger",
+        "severe",
+        "prescribe"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L3_DLG_002_set3",
+    "parentSetId": "L3_DLG_002",
+    "theme": "Doctor Visit — Persistent Headache",
+    "level": 4,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "Your blood pressure is fine.",
+        "korean": "혈압은 정상이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "Tell me, have you been under any stress recently?",
+        "korean": "최근에 스트레스를 받으셨나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "Actually, yes. We have a big project at work.",
+        "korean": "사실 네. 직장에서 큰 프로젝트가 있어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 13,
+        "english": "Stress can certainly trigger headaches like this.",
+        "korean": "스트레스가 확실히 이런 두통을 유발할 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "I'm going to prescribe you something.",
+        "korean": "약을 처방해 드릴게요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '메스꺼움' mean in English?",
+      "options": [
+        "severe",
+        "persistent",
+        "nausea",
+        "prescribe"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L3_DLG_002_set4",
+    "parentSetId": "L3_DLG_002",
+    "theme": "Doctor Visit — Persistent Headache",
+    "level": 4,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "Take this medication twice a day, and get plenty of rest and water.",
+        "korean": "하루 두 번 드시고, 충분히 쉬면서 물 많이 드세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 16,
+        "english": "How long should I take it?",
+        "korean": "얼마나 오래 먹어야 하나요?",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 17,
+        "english": "For about a week.",
+        "korean": "약 1주일이요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
+        "english": "If it doesn't improve, come back and we'll do further tests.",
+        "korean": "나아지지 않으면 다시 오세요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '유발하다' mean in English?",
+      "options": [
+        "trigger",
+        "severe",
+        "nausea",
+        "prescribe"
+      ],
+      "answer": 0
+    }
+  }
+]

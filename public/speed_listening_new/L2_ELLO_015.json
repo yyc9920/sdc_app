@@ -1,0 +1,71 @@
+[
+  {
+    "setId": "L2_ELLO_015_set1",
+    "parentSetId": "L2_ELLO_015",
+    "theme": "Mixer #44 — Best City",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The best city in my country, I'd have to say, is Seattle.",
+        "korean": "우리나라 최고의 도시는 시애틀이라고 할 수 있어요.",
+        "properNounIndices": [
+          6,
+          11
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Seattle's pretty much got everything.",
+        "korean": "시애틀은 거의 모든 게 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "It's not too hot, it's not too cold.",
+        "korean": "너무 덥지도, 너무 춥지도 않아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "It's got lovely mountains everywhere, great ocean views, and a lot of salmon.",
+        "korean": "어디에나 아름다운 산이 있고, 멋진 바다 전망, 그리고 연어가 많아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "If someone asks me what the best city is I have to say it's Sapporo.",
+        "korean": "누가 최고의 도시가 어디냐고 물으면 삿포로라고 해야 해요.",
+        "properNounIndices": [
+          9,
+          14
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Unlike too many cities in Japan, it's not so crowded and it's not so humid during the summer.",
+        "korean": "일본의 많은 도시와 달리 그렇게 붐비지도, 여름에 그렇게 습하지도 않아요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 6,
+        "english": "If you love going snowboarding or skiing, we got the best snow ever.",
+        "korean": "스노우보드나 스키를 좋아하면 최고의 눈이 있어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '바다 전망' mean in English?",
+      "options": [
+        "ocean views",
+        "humid",
+        "crowded",
+        "pretty much"
+      ],
+      "answer": 0
+    }
+  }
+]

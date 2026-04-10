@@ -1,0 +1,140 @@
+[
+  {
+    "setId": "L2_ELLO_016_set1",
+    "parentSetId": "L2_ELLO_016",
+    "theme": "Mixer #150 — Bad Habits",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I think I'm not very good at keeping clean.",
+        "korean": "정리를 잘 못하는 것 같아요.",
+        "properNounIndices": [
+          0,
+          2
+        ]
+      },
+      {
+        "id": 1,
+        "english": "My wife is always getting upset that I'm leaving things out on the counter in the kitchen, or leaving my clothes in the bedroom in the wrong place.",
+        "korean": "부엌 조리대에 물건을 놓아두거나 침실에 옷을 엉뚱한 곳에 두면 아내가 항상 화내요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I procrastinate. This means to kind of put stuff off.",
+        "korean": "미루는 버릇이 있어요. 중요한 일을 마지막 순간까지 남겨두죠.",
+        "properNounIndices": [
+          0,
+          2
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I often leave really important things until the last minute.",
+        "korean": "할일 목록으로 극복하려 하지만 여전히 떨쳐낼 수 없어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I try to fight it by making to-do lists, but it's still a part of me that I really can't shake off.",
+        "korean": "/ 할일 목록으로 극복하려 하지만, 떨쳐낼 수 없는 나의 일부다.",
+        "properNounIndices": [
+          0,
+          17
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #51 — Cleaning Habits",
+        "Mixer #149 — Who Do You Admire?",
+        "Mixer #150 — Bad Habits",
+        "Mixer #13 — Favorite Smell"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_ELLO_016_set2",
+    "parentSetId": "L2_ELLO_016",
+    "theme": "Mixer #150 — Bad Habits",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "When I see somebody, sometimes I tend to judge the person too quickly.",
+        "korean": "누군가를 볼 때 너무 빨리 판단하는 경향이 있어요.",
+        "properNounIndices": [
+          1,
+          5
+        ]
+      },
+      {
+        "id": 6,
+        "english": "And I think that's a very bad habit.",
+        "korean": "매우 나쁜 습관이라고 생각해요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 7,
+        "english": "My biggest bad habit is wasting money.",
+        "korean": "가장 큰 나쁜 습관은 돈 낭비예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "I often eat out just for the sake of eating out.",
+        "korean": "그냥 외식하려고 외식하고, 그냥 사려고 물건을 사고 아마 절대 안 쓸 거예요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 9,
+        "english": "I often buy something just for the sake of buying it, and I will probably never use it.",
+        "korean": "/ 그냥 사려고 물건을 사고 아마 절대 안 쓸 것이다.",
+        "properNounIndices": [
+          0,
+          12
+        ]
+      },
+      {
+        "id": 10,
+        "english": "I have a bad habit of sleeping too much.",
+        "korean": "너무 많이 자는 나쁜 습관이 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 11,
+        "english": "If I'm even the slightest bit tired, I'll usually lie down and take a nap, but that makes it very difficult for me to wake up in the morning.",
+        "korean": "조금이라도 피곤하면 보통 누워서 낮잠을 자는데 아침에 일어나기가 매우 어려워요.",
+        "properNounIndices": [
+          1,
+          7
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #37 — Noise Canceling",
+        "Mixer #26 — Weekend Cooking",
+        "Mixer #150 — Bad Habits",
+        "Mixer #4 — Screen Time for Kids"
+      ],
+      "answer": 2
+    }
+  }
+]

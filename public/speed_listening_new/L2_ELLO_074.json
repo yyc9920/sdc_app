@@ -1,0 +1,66 @@
+[
+  {
+    "setId": "L2_ELLO_074_set1",
+    "parentSetId": "L2_ELLO_074",
+    "theme": "Mixer #72 — Driving",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I love driving on long empty roads.",
+        "korean": "길고 한적한 도로에서 운전하는 걸 좋아해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "It's so freeing — just you, the road, and good music.",
+        "korean": "너무 자유로워요 — 나 도로 그리고 좋은 음악뿐이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I hate driving, honestly.",
+        "korean": "솔직히 운전이 싫어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "It stresses me out, especially in heavy traffic.",
+        "korean": "특히 교통 체증에서 스트레스를 받아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I just got my license last month and I'm still really nervous.",
+        "korean": "지난달에 면허를 땄는데 아직도 긴장돼요.",
+        "properNounIndices": [
+          0,
+          8
+        ]
+      },
+      {
+        "id": 5,
+        "english": "I avoid highways completely.",
+        "korean": "고속도로는 완전히 피해요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #111 — Embarrassing Moment",
+        "Mixer #102 — Superstitions",
+        "Mixer #20 — Aging",
+        "Mixer #72 — Driving"
+      ],
+      "answer": 3
+    }
+  }
+]

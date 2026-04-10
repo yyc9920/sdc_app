@@ -1,0 +1,66 @@
+[
+  {
+    "setId": "L2_ELLO_091_set1",
+    "parentSetId": "L2_ELLO_091",
+    "theme": "Mixer #54 — Apologizing",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I apologize too much.",
+        "korean": "사과를 너무 많이 해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Even if it's not my fault, I say sorry out of habit.",
+        "korean": "내 잘못이 아니어도 습관적으로 미안하다고 해요.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I find it really hard to apologize when I'm wrong.",
+        "korean": "잘못했을 때 사과하기가 정말 어려워요.",
+        "properNounIndices": [
+          0,
+          8
+        ]
+      },
+      {
+        "id": 3,
+        "english": "My pride gets in the way.",
+        "korean": "자존심이 방해하거든요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "A sincere apology can fix almost anything, I believe.",
+        "korean": "진심 어린 사과는 거의 무엇이든 고칠 수 있다고 믿어요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 5,
+        "english": "But it has to be real, not just words.",
+        "korean": "하지만 진짜여야 해요. 말뿐이 아니라요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #106 — Favorite Teacher",
+        "Mixer #54 — Apologizing",
+        "Mixer #63 — Technology Problems",
+        "Mixer #17 — Luck"
+      ],
+      "answer": 1
+    }
+  }
+]

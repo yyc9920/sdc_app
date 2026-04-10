@@ -1,0 +1,57 @@
+[
+  {
+    "setId": "L1_EXT_022_set1",
+    "parentSetId": "L1_EXT_022",
+    "theme": "Taking the Subway",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I take the subway to work every day.",
+        "korean": "매일 지하철을 타고 출근해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "It takes about forty minutes from my house to the office.",
+        "korean": "집에서 사무실까지 약 40분 걸려요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The subway is very crowded during rush hour.",
+        "korean": "출퇴근 시간에 지하철이 매우 붐벼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I usually listen to music or read a book on the train.",
+        "korean": "보통 전철에서 음악을 듣거나 책을 읽어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Sometimes I fall asleep and almost miss my stop.",
+        "korean": "가끔 잠이 들어서 거의 내릴 곳을 지나칠 뻔해요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Taking the Subway",
+        "My School Life",
+        "My Teacher",
+        "How Sleep Affects Learning"
+      ],
+      "answer": 0
+    }
+  }
+]

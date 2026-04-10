@@ -1,0 +1,71 @@
+[
+  {
+    "setId": "L1_SPK_068_set1",
+    "parentSetId": "L1_SPK_068",
+    "theme": "Social Media Age Limit",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think there should be a minimum age for using social media?",
+        "korean": "소셜 미디어 사용에 최소 연령이 있어야 한다고 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your reasoning.",
+        "korean": "근거를 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I strongly believe there should be a minimum age of at least fourteen for social media use.",
+        "korean": "소셜 미디어 사용에 최소 14세 이상의 연령 제한이 있어야 한다고 강하게 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Young children lack the emotional maturity to handle cyberbullying negative comments and the pressure to get likes and followers.",
+        "korean": "어린 아이들은 사이버 괴롭힘 부정적 댓글 좋아요와 팔로워를 얻으려는 압박을 감당할 감정적 성숙도가 부족해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Studies show a clear link between early social media use and increased rates of anxiety and depression in children.",
+        "korean": "연구에 따르면 조기 소셜 미디어 사용과 아동의 불안 우울증 증가 사이에 명확한 연관이 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Also children are more vulnerable to misinformation and online predators than older teenagers.",
+        "korean": "또한 아이들은 나이 많은 십대보다 허위 정보와 온라인 포식자에 더 취약해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Protecting children online should be a priority for both parents and policymakers.",
+        "korean": "온라인에서 아이들을 보호하는 것이 부모와 정책 입안자 모두의 우선 과제여야 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "clear link",
+        "korean": "명확한 연관",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Social Media Age Limit",
+        "Technology and Human Connection",
+        "Importance of Learning History",
+        "Working from Home Pros and Cons"
+      ],
+      "answer": 0
+    }
+  }
+]

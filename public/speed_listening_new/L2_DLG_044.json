@@ -1,0 +1,73 @@
+[
+  {
+    "setId": "L2_DLG_044_set1",
+    "parentSetId": "L2_DLG_044",
+    "theme": "Buying a Train Ticket",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'd like two round-trip tickets to Daejeon.",
+        "korean": "대전까지 왕복 표 2장 주세요.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 1,
+        "english": "KTX or regular train?",
+        "korean": "KTX요 일반 열차요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "KTX please. What are the departure times?",
+        "korean": "KTX요. 출발 시간이 어떻게 되나요?",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 3,
+        "english": "There's one at nine fifteen and the next one at ten thirty.",
+        "korean": "9시 15분에 하나 있고 다음은 10시 30분이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "We'll take the nine fifteen.",
+        "korean": "9시 15분으로 할게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Window or aisle seats?",
+        "korean": "창가석이요 통로석이요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Window please.",
+        "korean": "창가석이요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "That'll be ninety-six thousand won total.",
+        "korean": "000원입니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Weekend Hiking Plan",
+        "Handling a Client Complaint",
+        "Discussing Investment Strategy",
+        "Buying a Train Ticket"
+      ],
+      "answer": 3
+    }
+  }
+]

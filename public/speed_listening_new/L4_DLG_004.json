@@ -1,0 +1,126 @@
+[
+  {
+    "setId": "L4_DLG_004_set1",
+    "parentSetId": "L4_DLG_004",
+    "theme": "Real Estate — Viewing an Apartment",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Welcome, let me show you around.",
+        "korean": "어서 오세요, 안내해드릴게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "As you can see the living room gets a lot of natural light.",
+        "korean": "보시다시피 거실에 자연광이 많이 들어와요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "It's very spacious, and I like the hardwood floors.",
+        "korean": "매우 넓고 원목 바닥이 마음에 들어요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 3,
+        "english": "What's the monthly rent?",
+        "korean": "월 임대료가 얼마예요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "It's two thousand two hundred a month, and that includes water and garbage, but electricity and internet are separate.",
+        "korean": "월 2,200달러이고 수도와 쓰레기 처리비가 포함되지만 전기와 인터넷은 별도예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '보증금' mean in English?",
+      "options": [
+        "hardwood floor",
+        "security deposit",
+        "assigned",
+        "spacious"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L4_DLG_004_set2",
+    "parentSetId": "L4_DLG_004",
+    "theme": "Real Estate — Viewing an Apartment",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Is there parking available?",
+        "korean": "주차가 가능한가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Yes, there's one assigned spot in the underground garage, and it's included in the rent.",
+        "korean": "네, 지하 주차장에 지정 주차 공간 하나가 있고 임대료에 포함되어 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "What about the lease terms?",
+        "korean": "임대 조건은 어떻게 되나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Is it a one-year lease?",
+        "korean": "1년 계약인가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Yes, it's a twelve-month lease with an option to renew.",
+        "korean": "네, 12개월 계약이고 갱신 옵션이 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 10,
+        "english": "We require a security deposit equal to one month's rent.",
+        "korean": "한 달치 임대료와 동일한 보증금이 필요합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "I'm very interested. Can I have a couple of days to think it over?",
+        "korean": "매우 관심 있어요. 며칠 생각해볼 수 있을까요?",
+        "properNounIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "id": 12,
+        "english": "Of course, but I should mention that we've had a lot of interest in this unit so I wouldn't wait too long.",
+        "korean": "물론이죠. 하지만 이 유닛에 관심이 많아서 너무 오래 기다리지 않는 게 좋을 거예요.",
+        "properNounIndices": [
+          3,
+          17
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '지정된' mean in English?",
+      "options": [
+        "assigned",
+        "spacious",
+        "hardwood floor",
+        "think it over"
+      ],
+      "answer": 0
+    }
+  }
+]

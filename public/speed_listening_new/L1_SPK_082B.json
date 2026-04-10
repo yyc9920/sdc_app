@@ -1,0 +1,102 @@
+[
+  {
+    "setId": "L1_SPK_082B_set1",
+    "parentSetId": "L1_SPK_082B",
+    "theme": "Describe a place outside your actual home where yo",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Describe a place outside your actual home where you feel completely at ease.",
+        "korean": "실제 집 밖에서 완전히 편안하게 느끼는 장소를 묘사하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain why.",
+        "korean": "이유를 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The place where I feel most at ease outside my home is a small bookstore café near my university.",
+        "korean": "집 밖에서 가장 편안한 곳은 대학 근처의 작은 서점 카페예요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 3,
+        "english": "It's always quiet with soft jazz playing in the background and the warm smell of coffee filling the air.",
+        "korean": "항상 조용하고 배경에 부드러운 재즈가 흐르며 따뜻한 커피 향이 공기를 채워요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "The owner knows me by name and always recommends new books she thinks I'll enjoy.",
+        "korean": "주인이 내 이름을 알고 내가 좋아할 것 같은 새 책을 항상 추천해줘요.",
+        "properNounIndices": [
+          13
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Living in the Present vs. Planning Ahead",
+        "Handwriting vs. Typing Notes",
+        "Gap Year — Good Idea or Not",
+        "Describe a place outside your actual home where yo"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L1_SPK_082B_set2",
+    "parentSetId": "L1_SPK_082B",
+    "theme": "Describe a place outside your actual home where yo",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I can spend hours there reading studying or just watching people walk by through the big front window.",
+        "korean": "거기서 읽고 공부하거나 큰 앞 유리를 통해 지나가는 사람을 보며 몇 시간이고 보낼 수 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 6,
+        "english": "It feels like home because it combines everything I love — books coffee and a peaceful atmosphere.",
+        "korean": "집처럼 느껴지는 이유는 내가 사랑하는 모든 것 — 책 커피 평화로운 분위기를 결합하기 때문이에요.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 7,
+        "english": "know by name",
+        "korean": "이름을 알다",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "fills the air",
+        "korean": "공기를 채우다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Public Transportation vs. Private Car",
+        "The Influence of Advertising",
+        "The Best Way to Learn a Language",
+        "Describe a place outside your actual home where yo"
+      ],
+      "answer": 3
+    }
+  }
+]

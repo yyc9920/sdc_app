@@ -1,0 +1,62 @@
+[
+  {
+    "setId": "L2_ELLO_138_set1",
+    "parentSetId": "L2_ELLO_138",
+    "theme": "Mixer #7 — Jet Lag",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The worst jet lag I ever had was flying from London to Tokyo.",
+        "korean": "최악의 시차증은 런던에서 도쿄로 갈 때였어요.",
+        "properNounIndices": [
+          4,
+          10,
+          12
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I was awake at three AM for a whole week.",
+        "korean": "일주일 내내 새벽 3시에 깨어 있었어요.",
+        "properNounIndices": [
+          0,
+          5
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I try to adjust to the local time immediately by staying awake until bedtime.",
+        "korean": "바로 현지 시간에 맞추려 해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "It's hard but it works.",
+        "korean": "취침 시간까지 깨어 있으면서요. 힘들지만 효과가 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I drink a lot of water on the plane and avoid caffeine, and that seems to help with jet lag.",
+        "korean": "비행기에서 물을 많이 마시고 카페인을 피해요. 시차증에 도움이 되는 것 같아요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #19 — Travel Wish List",
+        "Mixer #43 — Cold Remedy",
+        "Mixer #7 — Jet Lag",
+        "Mixer #83 — Advice to Younger Self"
+      ],
+      "answer": 2
+    }
+  }
+]

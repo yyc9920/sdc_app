@@ -1,0 +1,60 @@
+[
+  {
+    "setId": "L2_ELLO_114_set1",
+    "parentSetId": "L2_ELLO_114",
+    "theme": "Mixer #31 — Classroom Memories",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I always sat in the back of the class so the teacher wouldn't call on me.",
+        "korean": "선생님이 나를 안 시키도록 항상 뒤에 앉았어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I was so shy back then.",
+        "korean": "그때 너무 수줍었거든요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I loved group projects because I could talk instead of writing.",
+        "korean": "쓰는 대신 말할 수 있어서 그룹 프로젝트를 좋아했어요.",
+        "properNounIndices": [
+          0,
+          5
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I was always the presenter.",
+        "korean": "항상 발표자였어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "My favorite memory is when our teacher brought a guitar to class and we all sang together, it was so unexpected.",
+        "korean": "가장 좋은 기억은 선생님이 교실에 기타를 가져와서 다 같이 노래한 거예요. 너무 뜻밖이었어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #2 — Life Lessons",
+        "Mixer #3 — Morning Coffee Ritual",
+        "Mixer #69 — Volunteering",
+        "Mixer #31 — Classroom Memories"
+      ],
+      "answer": 3
+    }
+  }
+]

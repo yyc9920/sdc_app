@@ -1,0 +1,61 @@
+[
+  {
+    "setId": "L1_EXT_048_set1",
+    "parentSetId": "L1_EXT_048",
+    "theme": "My Alarm Clock",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I hate my alarm clock.",
+        "korean": "알람 시계가 싫어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "It rings at six thirty every morning and I always want five more minutes.",
+        "korean": "매일 아침 6시 30분에 울리고 항상 5분만 더 자고 싶어요.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Sometimes I press snooze three or four times.",
+        "korean": "가끔 스누즈를 서너 번 눌러요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Then I have to rush to get ready for school.",
+        "korean": "그러면 학교 갈 준비를 서둘러야 해요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 4,
+        "english": "One day I want to wake up naturally, without any alarm.",
+        "korean": "언젠가 알람 없이 자연스럽게 일어나고 싶어요.",
+        "properNounIndices": [
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '자연스럽게' mean in English?",
+      "options": [
+        "naturally",
+        "alarm clock",
+        "rush",
+        "snooze"
+      ],
+      "answer": 0
+    }
+  }
+]

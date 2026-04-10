@@ -1,0 +1,45 @@
+[
+  {
+    "setId": "L3_EXT_028_set1",
+    "parentSetId": "L3_EXT_028",
+    "theme": "Why Minimalism Is Growing",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Minimalism has evolved from a design aesthetic into a full lifestyle movement embraced by millions who feel overwhelmed by the excess of modern consumer culture.",
+        "korean": "미니멀리즘이 디자인 미학에서 현대 소비 문화의 과잉에 압도당하는 수백만 명이 받아들인 라이프스타일 운동으로 진화했다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "The core philosophy is simple — own less to experience more.",
+        "korean": "핵심 철학은 간단하다 — 적게 소유하고 더 많이 경험하라.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "By decluttering their homes and simplifying their schedules minimalists report lower stress levels more free time and a greater sense of purpose.",
+        "korean": "집을 정리하고 일정을 단순화함으로써 미니멀리스트는 스트레스 수준이 낮아지고 여유 시간이 늘고 더 큰 목적 의식을 느낀다고 보고한다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Critics argue that minimalism is a luxury only available to those who already have enough and that it ignores the fact that many people don't own excess — they struggle to own enough.",
+        "korean": "비판자들은 미니멀리즘이 이미 충분히 가진 사람에게만 가능한 사치이며 많은 사람이 과잉을 소유하지 않고 충분히 소유하기 위해 고군분투한다는 사실을 무시한다고 주장한다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '정리하다/불필요한 것을 버리다' mean in English?",
+      "options": [
+        "purpose",
+        "minimalism",
+        "luxury",
+        "declutter"
+      ],
+      "answer": 3
+    }
+  }
+]

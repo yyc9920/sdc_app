@@ -1,0 +1,54 @@
+[
+  {
+    "setId": "L2_ELLO_140_set1",
+    "parentSetId": "L2_ELLO_140",
+    "theme": "Mixer #5 — Saying Goodbye",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I hate saying goodbye at airports.",
+        "korean": "공항에서 작별 인사하는 게 싫어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I always cry, even if it's just a short trip.",
+        "korean": "짧은 여행이라도 항상 울어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I prefer Irish goodbye — just leaving without telling anyone, because it avoids all the awkwardness.",
+        "korean": "아이리시 굿바이를 선호해요 — 아무에게도 안 말하고 떠나기요. 모든 어색함을 피할 수 있어서요.",
+        "properNounIndices": [
+          0,
+          2
+        ]
+      },
+      {
+        "id": 3,
+        "english": "In Korean culture, we walk guests to the door or even to their car, because it shows respect.",
+        "korean": "한국 문화에서는 손님을 문까지 혹은 차까지 배웅해요. 존경을 보여주는 거니까요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #10 — Giving Directions",
+        "Mixer #124 — Public Transport",
+        "Mixer #43 — Friendship",
+        "Mixer #5 — Saying Goodbye"
+      ],
+      "answer": 3
+    }
+  }
+]

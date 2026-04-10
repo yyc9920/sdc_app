@@ -1,0 +1,76 @@
+[
+  {
+    "setId": "L3_DLG_035_set1",
+    "parentSetId": "L3_DLG_035",
+    "theme": "Coffee Shop — Wi-Fi Problem",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Excuse me. I can't connect to the Wi-Fi.",
+        "korean": "실례합니다. 와이파이에 연결이 안 돼요.",
+        "properNounIndices": [
+          2,
+          7
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Did you enter the password on the receipt?",
+        "korean": "영수증에 있는 비밀번호를 입력하셨나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Yes but it says the password is incorrect.",
+        "korean": "네 그런데 비밀번호가 틀리다고 나와요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Oh we changed it this morning.",
+        "korean": "아 오늘 아침에 바꿨어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "The new password is maple2026 all lowercase.",
+        "korean": "새 비밀번호는 maple2026이고 전부 소문자예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Let me try that.",
+        "korean": "해볼게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "It works now. Thanks.",
+        "korean": "지금 돼요. 감사합니다.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 7,
+        "english": "No problem. Let me know if you need anything else.",
+        "korean": "별말씀을요. 다른 필요한 거 있으면 알려주세요.",
+        "properNounIndices": [
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '비밀번호' mean in English?",
+      "options": [
+        "password",
+        "lowercase",
+        "incorrect",
+        "connect"
+      ],
+      "answer": 0
+    }
+  }
+]

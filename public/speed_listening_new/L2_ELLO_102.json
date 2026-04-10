@@ -1,0 +1,56 @@
+[
+  {
+    "setId": "L2_ELLO_102_set1",
+    "parentSetId": "L2_ELLO_102",
+    "theme": "Mixer #43 — Friendship",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My best friend and I have known each other since kindergarten.",
+        "korean": "친한 친구와 유치원 때부터 알았어요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 1,
+        "english": "We've been through everything together.",
+        "korean": "모든 것을 함께 겪어왔어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Making friends as an adult is really hard.",
+        "korean": "어른이 되어 친구를 사귀기는 정말 어려워요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Everyone is so busy with work and family.",
+        "korean": "모두 일과 가족으로 바쁘거든요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I think quality is more important than quantity when it comes to friends, so I'd rather have three close friends than thirty acquaintances.",
+        "korean": "친구에 관해서는 양보다 질이 중요하다고 생각해요. 지인 30명보다 친한 친구 3명이 나아요.",
+        "properNounIndices": [
+          0,
+          14
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #117 — Phobias",
+        "Mixer #43 — Friendship",
+        "Mixer #23 — Online Reviews",
+        "Mixer #100 — Pet Peeves"
+      ],
+      "answer": 1
+    }
+  }
+]

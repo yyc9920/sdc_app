@@ -1,0 +1,104 @@
+[
+  {
+    "setId": "L1_SPK_013_set1",
+    "parentSetId": "L1_SPK_013",
+    "theme": "Should Students Work Part-Time",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think high school students should have part-time jobs?",
+        "korean": "고등학생이 아르바이트를 해야 한다고 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Give reasons to support your opinion.",
+        "korean": "의견을 뒷받침하는 이유를 제시하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I believe high school students can benefit from having part-time jobs.",
+        "korean": "고등학생이 아르바이트를 하면 도움이 될 수 있다고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "First it teaches them the value of money.",
+        "korean": "첫째 돈의 가치를 가르쳐줘요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "When you earn your own money you think twice before spending it on unnecessary things.",
+        "korean": "자기 돈을 벌면 불필요한 것에 쓰기 전에 두 번 생각하게 돼요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Traveling Alone vs. with Friends",
+        "Cash vs. Digital Payment",
+        "Should Students Work Part-Time",
+        "A Book That Changed Your Thinking"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L1_SPK_013_set2",
+    "parentSetId": "L1_SPK_013",
+    "theme": "Should Students Work Part-Time",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Second part-time work develops important life skills like time management and communication.",
+        "korean": "둘째 아르바이트는 시간 관리와 의사소통 같은 중요한 생활 기술을 개발해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "However it's crucial that the job doesn't interfere with their studies.",
+        "korean": "하지만 일이 공부를 방해하지 않는 것이 중요해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "I think working around ten hours a week is a good balance between earning experience and maintaining good grades.",
+        "korean": "일주일에 약 10시간 일하는 것이 경험을 쌓으면서 좋은 성적을 유지하는 좋은 균형이라고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 8,
+        "english": "think twice",
+        "korean": "두 번 생각하다/신중히 생각하다",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "interfere with",
+        "korean": "~을 방해하다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "City Living vs. Rural Living",
+        "The Importance of Reading",
+        "Should Students Work Part-Time",
+        "A Person Who Has Influenced You"
+      ],
+      "answer": 2
+    }
+  }
+]

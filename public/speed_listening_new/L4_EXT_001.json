@@ -28,30 +28,23 @@
       },
       {
         "id": 3,
-        "english": "Humans are subject to a wide range of cognitive biases that lead us to make decisions that are irrational, inconsistent, or contrary to our own interests. This is where nudging comes in.",
+        "english": "Humans are subject to a wide range of cognitive biases that lead us to make decisions that are irrational, inconsistent, or contrary to our own interests.",
         "korean": "인간은 다양한 인지 편향에 영향을 받아 비합리적이고, 일관성 없으며, 자기 이익에 반하는 결정을 내립니다.",
-        "properNounIndices": [
-          26
-        ]
+        "properNounIndices": []
       },
       {
         "id": 4,
-        "english": "A nudge, as defined by Richard Thaler and Cass Sunstein in their 2008 book, is any aspect of the choice architecture that alters people's behavior in a predictable way without forbidding any options or significantly changing their economic incentives.",
-        "korean": "넛지란, 리처드 탈러와 캐스 선스타인이 2008년 저서에서 정의한 대로, 예측 가능한 방식으로 사람들의 행동을 바꾸는 선택 설계의 어떤 측면입니다.",
-        "properNounIndices": [
-          5,
-          6,
-          8,
-          9
-        ]
+        "english": "This is where nudging comes in.",
+        "korean": "비합리적이고 일관성 없는 또는 자기 이익에 반하는 결정을 합니다",
+        "properNounIndices": []
       }
     ],
     "quiz": {
       "question": "What does '장기 기증' mean in English?",
       "options": [
         "organ donation",
-        "forbidding",
         "choice architecture",
+        "economic incentives",
         "rational actors"
       ],
       "answer": 0
@@ -66,50 +59,49 @@
     "sentences": [
       {
         "id": 5,
-        "english": "Let me give you a concrete example. Imagine a company cafeteria.",
-        "korean": "구체적인 예시를 들어볼게요. 회사 구내식당을 상상해보세요.",
+        "english": "A nudge, as defined by Richard Thaler and Cass Sunstein in their 2008 book, is any aspect of the choice architecture that alters people's behavior in a predictable way without forbidding any options or significantly changing their economic incentives.",
+        "korean": "넛지란, 리처드 탈러와 캐스 선스타인이 2008년 저서에서 정의한 대로, 예측 가능한 방식으로 사람들의 행동을 바꾸는 선택 설계의 어떤 측면입니다.",
         "properNounIndices": [
-          7
+          5,
+          6,
+          8,
+          9
         ]
       },
       {
         "id": 6,
+        "english": "Let me give you a concrete example.",
+        "korean": "구체적인 예시를 들어볼게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Imagine a company cafeteria.",
+        "korean": "회사 구내식당을 상상해보세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
         "english": "If the salad bar is placed at the front of the line, right where people enter, and the desserts are placed at the back, people are statistically more likely to eat salad and less likely to grab a slice of cake.",
         "korean": "샐러드 바가 줄 맨 앞 입구에 놓이고 디저트가 뒤쪽에 놓이면, 사람들은 샐러드를 선택할 가능성이 더 높아집니다.",
         "properNounIndices": []
       },
       {
-        "id": 7,
-        "english": "Nobody is being told what to eat. Nobody is being punished for choosing dessert.",
-        "korean": "아무도 뭘 먹으라고 지시받지 않고, 디저트를 고른다고 벌받지도 않습니다.",
-        "properNounIndices": [
-          7
-        ]
-      },
-      {
-        "id": 8,
-        "english": "But the design of the environment — the choice architecture — makes the healthier option more convenient and more visible. This principle has been applied in a variety of domains.",
-        "korean": "하지만 환경의 설계, 즉 선택 설계가 더 건강한 옵션을 더 편리하고 눈에 잘 띄게 만드는 거예요.",
-        "properNounIndices": [
-          20
-        ]
-      },
-      {
         "id": 9,
-        "english": "Governments around the world have established \"nudge units\" — teams of behavioral scientists who redesign public services to encourage better outcomes.",
-        "korean": "전 세계 정부들이 공공 서비스를 재설계하는 행동과학자 팀인 '넛지 유닛'을 설립했습니다.",
+        "english": "Nobody is being told what to eat.",
+        "korean": "아무도 뭘 먹으라고 지시받지 않고, 디저트를 고른다고 벌받지도 않습니다.",
         "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '선택 가입 / 선택 탈퇴 (기본값 설정 방식)' mean in English?",
+      "question": "What does '개인의 자율성을 훼손하다' mean in English?",
       "options": [
-        "economic incentives",
-        "rational actors",
-        "choice architecture",
-        "opt in / opt out"
+        "organ donation",
+        "undermines individual autonomy",
+        "opt in / opt out",
+        "forbidding"
       ],
-      "answer": 3
+      "answer": 1
     }
   },
   {
@@ -121,18 +113,61 @@
     "sentences": [
       {
         "id": 10,
-        "english": "For instance, changing the default option on organ donation forms from \"opt in\" to \"opt out\" has dramatically increased donor registration rates in several countries.",
-        "korean": "예를 들어, 장기 기증 양식의 기본 옵션을 '동의'에서 '거부'로 바꾸자 기증 등록이 극적으로 증가했습니다.",
+        "english": "Nobody is being punished for choosing dessert.",
+        "korean": "디저트를 고른다고 벌받지도 않아요",
         "properNounIndices": []
       },
       {
         "id": 11,
+        "english": "But the design of the environment — the choice architecture — makes the healthier option more convenient and more visible.",
+        "korean": "하지만 환경의 설계, 즉 선택 설계가 더 건강한 옵션을 더 편리하고 눈에 잘 띄게 만드는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "This principle has been applied in a variety of domains.",
+        "korean": "즉 선택 설계가 더 건강한 옵션을 더 편리하고 눈에 잘 띄게 만들어요",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
+        "english": "Governments around the world have established \"nudge units\" — teams of behavioral scientists who redesign public services to encourage better outcomes.",
+        "korean": "전 세계 정부들이 공공 서비스를 재설계하는 행동과학자 팀인 '넛지 유닛'을 설립했습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "For instance, changing the default option on organ donation forms from \"opt in\" to \"opt out\" has dramatically increased donor registration rates in several countries.",
+        "korean": "예를 들어, 장기 기증 양식의 기본 옵션을 '동의'에서 '거부'로 바꾸자 기증 등록이 극적으로 증가했습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '인지 편향' mean in English?",
+      "options": [
+        "cognitive biases",
+        "forbidding",
+        "organ donation",
+        "opt in / opt out"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L4_EXT_001_set4",
+    "parentSetId": "L4_EXT_001",
+    "theme": "University Lecture — Behavioral Economics",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
         "english": "Now, nudging is not without criticism.",
         "korean": "넛지에 비판이 없는 건 아닙니다.",
         "properNounIndices": []
       },
       {
-        "id": 12,
+        "id": 16,
         "english": "Some argue that it's a form of manipulation — that it undermines individual autonomy by steering people toward choices that someone else has decided are \"better.\" Others worry about who gets to design the nudges and for whose benefit.",
         "korean": "어떤 이들은 다른 사람이 최선이라고 결정한 선택으로 사람들을 유도함으로써 개인의 자율성을 훼손하는 조작이라고 주장합니다.",
         "properNounIndices": [
@@ -140,12 +175,17 @@
         ]
       },
       {
-        "id": 13,
-        "english": "These are important ethical questions, and we'll explore them in more depth next week. For now, I want you to think about this: can a nudge ever be truly neutral?",
+        "id": 17,
+        "english": "These are important ethical questions, and we'll explore them in more depth next week.",
         "korean": "중요한 윤리적 질문들이며, 다음 주에 더 깊이 탐구하겠습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
+        "english": "For now, I want you to think about this: can a nudge ever be truly neutral?",
+        "korean": "다음 주에 더 깊이 탐구할 거예요",
         "properNounIndices": [
-          14,
-          16
+          2
         ]
       }
     ],
@@ -153,9 +193,9 @@
       "question": "What does '선택 설계' mean in English?",
       "options": [
         "choice architecture",
-        "organ donation",
         "forbidding",
-        "economic incentives"
+        "organ donation",
+        "cognitive biases"
       ],
       "answer": 0
     }

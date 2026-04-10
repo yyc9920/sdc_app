@@ -1,0 +1,61 @@
+[
+  {
+    "setId": "L1_EXT_036_set1",
+    "parentSetId": "L1_EXT_036",
+    "theme": "A New Student",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "A new student joined our class today.",
+        "korean": "오늘 새 학생이 우리 반에 왔어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "His name is James and he is from Canada.",
+        "korean": "이름은 제임스이고 캐나다에서 왔어요.",
+        "properNounIndices": [
+          3,
+          8
+        ]
+      },
+      {
+        "id": 2,
+        "english": "He speaks English and a little bit of Korean.",
+        "korean": "영어를 하고 한국어를 조금 해요.",
+        "properNounIndices": [
+          2,
+          8
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I showed him around the school during lunch.",
+        "korean": "점심시간에 학교를 안내해줬어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I think we will become good friends.",
+        "korean": "좋은 친구가 될 것 같아요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "The Philosophy of Time",
+        "A New Student",
+        "My Room",
+        "Geopolitics Analysis — The Thucydides Trap"
+      ],
+      "answer": 1
+    }
+  }
+]

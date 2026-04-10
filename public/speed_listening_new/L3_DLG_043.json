@@ -1,0 +1,96 @@
+[
+  {
+    "setId": "L3_DLG_043_set1",
+    "parentSetId": "L3_DLG_043",
+    "theme": "Buying Glasses",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I need to get new glasses.",
+        "korean": "새 안경을 맞춰야 해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Do you have your prescription?",
+        "korean": "처방전이 있으세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Yes here it is.",
+        "korean": "네 여기 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Would you like to look at some frames?",
+        "korean": "프레임 좀 보시겠어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I'd like something lightweight and modern.",
+        "korean": "가볍고 현대적인 걸로 하고 싶어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '처방전' mean in English?",
+      "options": [
+        "frame",
+        "prescription",
+        "coating",
+        "lightweight"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L3_DLG_043_set2",
+    "parentSetId": "L3_DLG_043",
+    "theme": "Buying Glasses",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "These titanium frames are very popular and extremely light.",
+        "korean": "이 티타늄 프레임이 매우 인기 있고 극도로 가벼워요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "How much are those?",
+        "korean": "그건 얼마예요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "The frame is one hundred and fifty and the lenses start at eighty depending on the coating you choose.",
+        "korean": "프레임은 150달러이고 렌즈는 선택하는 코팅에 따라 80달러부터 시작해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "I'll try these on.",
+        "korean": "이거 써볼게요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '처방전' mean in English?",
+      "options": [
+        "prescription",
+        "lightweight",
+        "coating",
+        "frame"
+      ],
+      "answer": 0
+    }
+  }
+]

@@ -1,0 +1,61 @@
+[
+  {
+    "setId": "L1_EXT_065_set1",
+    "parentSetId": "L1_EXT_065",
+    "theme": "Staying Up Late",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Last night I stayed up until midnight to finish a book.",
+        "korean": "어젯밤 책을 끝내려고 자정까지 깨어 있었어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 1,
+        "english": "The story was so exciting that I could not stop reading.",
+        "korean": "이야기가 너무 흥미진진해서 읽는 걸 멈출 수 없었어요.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 2,
+        "english": "This morning I was very sleepy at school.",
+        "korean": "오늘 아침 학교에서 매우 졸렸어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I almost fell asleep during math class.",
+        "korean": "수학 시간에 거의 잠들 뻔했어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I will try to go to bed earlier tonight.",
+        "korean": "오늘 밤에는 더 일찍 자려고 노력할 거예요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Staying Up Late",
+        "The Trolley Problem and Moral Intuition",
+        "My Teacher",
+        "At the Park"
+      ],
+      "answer": 0
+    }
+  }
+]

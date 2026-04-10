@@ -1,0 +1,60 @@
+[
+  {
+    "setId": "L1_EXT_061_set1",
+    "parentSetId": "L1_EXT_061",
+    "theme": "Lost My Wallet",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I lost my wallet on the bus yesterday.",
+        "korean": "어제 버스에서 지갑을 잃어버렸어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I was very worried because my student ID was inside.",
+        "korean": "학생증이 안에 있어서 매우 걱정했어요.",
+        "properNounIndices": [
+          0,
+          7
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I called the bus company's lost and found center.",
+        "korean": "버스 회사의 분실물 센터에 전화했어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Someone had turned it in and nothing was missing.",
+        "korean": "누군가 가져다줬고 아무것도 없어지지 않았어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I was so grateful and relieved.",
+        "korean": "너무 감사하고 안심이 됐어요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '분실물 센터' mean in English?",
+      "options": [
+        "lost and found",
+        "wallet",
+        "relieved",
+        "grateful"
+      ],
+      "answer": 0
+    }
+  }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "setId": "L1_SPK_035_set1",
+    "parentSetId": "L1_SPK_035",
+    "theme": "Gap Year — Good Idea or Not",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think taking a gap year before university is a good idea?",
+        "korean": "대학 전 갭이어를 가지는 것이 좋다고 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Give reasons to support your opinion.",
+        "korean": "의견을 뒷받침하는 이유를 제시하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I think taking a gap year can be very beneficial if used wisely.",
+        "korean": "현명하게 활용한다면 갭이어가 매우 유익할 수 있다고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Many high school students choose their major without truly knowing what they want to do.",
+        "korean": "많은 고등학생이 정말 하고 싶은 게 뭔지 모르면서 전공을 선택해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "A gap year gives them time to explore their interests through travel work or volunteer experiences.",
+        "korean": "갭이어는 여행 일 봉사 경험을 통해 관심사를 탐색할 시간을 줘요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "However a gap year without a plan can lead to wasted time.",
+        "korean": "하지만 계획 없는 갭이어는 시간 낭비로 이어질 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "So the key is to set clear goals before starting — whether that's learning a language gaining work experience or doing community service.",
+        "korean": "핵심은 시작 전에 명확한 목표를 세우는 거예요 — 언어 학습이든 업무 경험이든 봉사활동이든.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "set clear goals",
+        "korean": "명확한 목표를 세우다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Giving Back to Your Community",
+        "A Person Who Has Influenced You",
+        "Impact of AI on Jobs",
+        "Gap Year — Good Idea or Not"
+      ],
+      "answer": 3
+    }
+  }
+]

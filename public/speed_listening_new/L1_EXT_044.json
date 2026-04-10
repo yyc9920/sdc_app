@@ -1,0 +1,58 @@
+[
+  {
+    "setId": "L1_EXT_044_set1",
+    "parentSetId": "L1_EXT_044",
+    "theme": "Summer Vacation Plans",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Summer vacation starts next week.",
+        "korean": "여름 방학이 다음 주에 시작해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I am going to visit my aunt in Busan.",
+        "korean": "부산에 있는 이모를 방문할 거예요.",
+        "properNounIndices": [
+          0,
+          8
+        ]
+      },
+      {
+        "id": 2,
+        "english": "She lives near the beach so we can swim every day.",
+        "korean": "해변 근처에 사셔서 매일 수영할 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I also want to eat lots of fresh seafood.",
+        "korean": "신선한 해산물도 많이 먹고 싶어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I can't wait for vacation to start.",
+        "korean": "방학이 시작되는 게 너무 기다려져요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '방학/휴가' mean in English?",
+      "options": [
+        "can't wait",
+        "aunt",
+        "vacation",
+        "seafood"
+      ],
+      "answer": 2
+    }
+  }
+]

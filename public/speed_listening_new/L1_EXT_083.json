@@ -1,0 +1,64 @@
+[
+  {
+    "setId": "L1_EXT_083_set1",
+    "parentSetId": "L1_EXT_083",
+    "theme": "My Report Card",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I got my report card today.",
+        "korean": "오늘 성적표를 받았어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I got an A in English and science.",
+        "korean": "영어와 과학에서 A를 받았어요.",
+        "properNounIndices": [
+          0,
+          3,
+          5
+        ]
+      },
+      {
+        "id": 2,
+        "english": "But I got a C in math which was disappointing.",
+        "korean": "하지만 수학에서 C를 받아서 실망스러웠어요.",
+        "properNounIndices": [
+          1,
+          4
+        ]
+      },
+      {
+        "id": 3,
+        "english": "My parents said I need to study math more.",
+        "korean": "부모님은 수학 공부를 더 해야 한다고 했어요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I will try harder next semester.",
+        "korean": "다음 학기에 더 열심히 할 거예요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Lost My Wallet",
+        "How Coffee Changed the World",
+        "My Report Card",
+        "The Gig Economy"
+      ],
+      "answer": 2
+    }
+  }
+]

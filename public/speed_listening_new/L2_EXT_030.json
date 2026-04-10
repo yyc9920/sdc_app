@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L2_EXT_030_set1",
+    "parentSetId": "L2_EXT_030",
+    "theme": "My Morning Coffee Routine",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I start every morning with a cup of coffee.",
+        "korean": "매일 아침 커피 한 잔으로 시작해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I grind the beans fresh and use a drip coffee maker.",
+        "korean": "원두를 갓 갈아서 드립 커피 메이커를 사용해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "The smell of fresh coffee is the best part of waking up.",
+        "korean": "갓 내린 커피 향이 일어나면서 가장 좋은 부분이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I drink it black with no sugar and no cream.",
+        "korean": "설탕도 크림도 없이 블랙으로 마셔요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Without my morning coffee I can't focus on anything.",
+        "korean": "아침 커피 없이는 아무것에도 집중할 수 없어요.",
+        "properNounIndices": [
+          4
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "My Favorite Day",
+        "My Morning Coffee Routine",
+        "The Seasons",
+        "My Hobby"
+      ],
+      "answer": 1
+    }
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "setId": "L1_EXT_076_set1",
+    "parentSetId": "L1_EXT_076",
+    "theme": "A Busy Saturday",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Last Saturday was a very busy day.",
+        "korean": "지난 토요일은 매우 바쁜 날이었어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "In the morning I had a piano lesson.",
+        "korean": "오전에 피아노 레슨이 있었어요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "english": "After that I went to the dentist for a checkup.",
+        "korean": "그 후에 검진을 받으러 치과에 갔어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 3,
+        "english": "In the afternoon I met my friends at the mall.",
+        "korean": "오후에 쇼핑몰에서 친구들을 만났어요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 4,
+        "english": "By the time I got home I was so tired that I fell asleep on the sofa.",
+        "korean": "집에 도착했을 때 너무 피곤해서 소파에서 잠이 들었어요.",
+        "properNounIndices": [
+          3,
+          6,
+          11
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "A Busy Saturday",
+        "Returning a Product",
+        "The Ship of Theseus",
+        "Calling in Sick"
+      ],
+      "answer": 0
+    }
+  }
+]

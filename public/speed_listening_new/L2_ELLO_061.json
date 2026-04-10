@@ -1,0 +1,64 @@
+[
+  {
+    "setId": "L2_ELLO_061_set1",
+    "parentSetId": "L2_ELLO_061",
+    "theme": "Mixer #85 — Street Food",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The best street food I've ever had was in Bangkok.",
+        "korean": "지금까지 먹어본 최고의 길거리 음식은 방콕에서였어요.",
+        "properNounIndices": [
+          4,
+          9
+        ]
+      },
+      {
+        "id": 1,
+        "english": "The pad thai from a small cart was amazing.",
+        "korean": "작은 카트의 팟타이가 놀라웠어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "In Mexico, tacos from street vendors are the best.",
+        "korean": "멕시코에서 길거리 상인의 타코가 최고예요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 3,
+        "english": "They are so much better than any restaurant.",
+        "korean": "어떤 식당보다 훨씬 맛있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Korean street food is amazing.",
+        "korean": "한국 길거리 음식은 놀라워요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Tteokbokki, sundae, hotdog — you can find everything in Myeongdong.",
+        "korean": "떡볶이 순대 핫도그 — 명동에서 다 찾을 수 있어요.",
+        "properNounIndices": [
+          9
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #85 — Street Food",
+        "Mixer #91 — Being on Time",
+        "Mixer #121 — Favorite Proverb",
+        "Mixer #66 — Multitasking"
+      ],
+      "answer": 0
+    }
+  }
+]

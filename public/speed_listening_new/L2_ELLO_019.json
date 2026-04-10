@@ -1,0 +1,113 @@
+[
+  {
+    "setId": "L2_ELLO_019_set1",
+    "parentSetId": "L2_ELLO_019",
+    "theme": "Mixer #147 — Gadgets",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I don't think I have enough gadgets.",
+        "korean": "충분한 기기가 없는 것 같아요.",
+        "properNounIndices": [
+          0,
+          3
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I'm definitely wanting to have a few more devices to help me.",
+        "korean": "확실히 몇 개 더 갖고 싶어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Right now, I only have a regular cellphone, but I really wanted to get an iPhone.",
+        "korean": "지금은 일반 핸드폰만 있지만 정말 아이폰을 갖고 싶었어요.",
+        "properNounIndices": [
+          2,
+          9
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I have essential things, like a cellphone, a computer, a camera.",
+        "korean": "핸드폰, 컴퓨터, 카메라 같은 필수적인 것만 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "If I don't use something very often, I don't see the point of having it, so I get rid of it.",
+        "korean": "자주 안 쓰면 가지고 있을 이유가 없으니 없애요.",
+        "properNounIndices": [
+          1,
+          7,
+          16
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #67 — Fashion",
+        "Mixer #53 — Picky Eater",
+        "Mixer #122 — Big & Skip Meals",
+        "Mixer #147 — Gadgets"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L2_ELLO_019_set2",
+    "parentSetId": "L2_ELLO_019",
+    "theme": "Mixer #147 — Gadgets",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Every time Apple releases a new product, I have to have it, so it's a little bit like an obsession for me.",
+        "korean": "애플이 새 제품을 출시할 때마다 가져야 해요. 약간 집착 같아요.",
+        "properNounIndices": [
+          2,
+          7
+        ]
+      },
+      {
+        "id": 6,
+        "english": "I avoid anything that is technical or complicated.",
+        "korean": "기술적이거나 복잡한 건 피해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 7,
+        "english": "The simpler, the better.",
+        "korean": "단순할수록 좋아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "I find gadgets a little bit difficult to use.",
+        "korean": "기기는 좀 사용하기 어렵거든요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #60 — Favorite Animal",
+        "Mixer #147 — Gadgets",
+        "Mixer #31 — Classroom Memories",
+        "Mixer #36 — Comfort Food"
+      ],
+      "answer": 1
+    }
+  }
+]

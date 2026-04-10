@@ -1,0 +1,113 @@
+[
+  {
+    "setId": "L2_DLG_002_set1",
+    "parentSetId": "L2_DLG_002",
+    "theme": "Boarding a Flight",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Good morning! May I see your boarding pass and ID?",
+        "korean": "좋은 아침이에요! 탑승권과 신분증 보여주시겠어요?",
+        "properNounIndices": [
+          2,
+          3,
+          9
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Of course. Here you go.",
+        "korean": "물론이죠. 여기요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Thank you. I see you're in seat 12A.",
+        "korean": "감사합니다. 12A석이시네요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 3,
+        "english": "That's by the window.",
+        "korean": "창가석이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "You're all set!",
+        "korean": "준비 다 됐습니다!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "At the Cafe — Ordering Coffee",
+        "Discussing Data Privacy Policy",
+        "Boarding a Flight",
+        "Complaining About a Meal"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_DLG_002_set2",
+    "parentSetId": "L2_DLG_002",
+    "theme": "Boarding a Flight",
+    "level": 3,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Is the flight on time?",
+        "korean": "비행기 정시 출발인가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Yes, we're expecting to push back in about 20 minutes.",
+        "korean": "네, 약 20분 후에 출발할 예정이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Wonderful! Should I board now?",
+        "korean": "좋아요! 지금 탑승해야 하나요?",
+        "properNounIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 8,
+        "english": "You're in Group 2, so you can board whenever you're ready.",
+        "korean": "2그룹이시니까 준비되시면 언제든 탑승하세요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 9,
+        "english": "Thank you so much!",
+        "korean": "정말 감사합니다!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Boarding a Flight",
+        "Ordering at a Restaurant",
+        "Asking About Allergies at a Restaurant",
+        "Discussing Weekend Weather"
+      ],
+      "answer": 0
+    }
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "setId": "L2_ELLO_108_set1",
+    "parentSetId": "L2_ELLO_108",
+    "theme": "Mixer #37 — Noise Canceling",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I wear noise-canceling headphones everywhere.",
+        "korean": "노이즈캔슬링 헤드폰을 어디서나 써요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "On the train, at the office, even at home.",
+        "korean": "기차에서 사무실에서 집에서도요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "They saved my sanity.",
+        "korean": "정신 건강을 지켜줬어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I can't work without them anymore, especially in open-plan offices.",
+        "korean": "이것 없이는 일을 못 해요. 특히 개방형 사무실에서요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I tried them once but I didn't like feeling so cut off from the world, it felt weird not hearing anything around me.",
+        "korean": "한번 써봤지만 세상과 단절된 느낌이 싫었어요. 주변 소리가 안 들리니 이상했어요.",
+        "properNounIndices": [
+          0,
+          5
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #86 — Forgetting Names",
+        "Mixer #34 — Bad Weather",
+        "Mixer #37 — Noise Canceling",
+        "Mixer #13 — Favorite Smell"
+      ],
+      "answer": 2
+    }
+  }
+]

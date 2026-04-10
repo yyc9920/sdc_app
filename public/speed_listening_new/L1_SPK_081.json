@@ -1,0 +1,69 @@
+[
+  {
+    "setId": "L1_SPK_081_set1",
+    "parentSetId": "L1_SPK_081",
+    "theme": "Multitasking — Effective or Not",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think multitasking is an effective way to work?",
+        "korean": "멀티태스킹이 효과적인 업무 방식이라고 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your opinion with examples.",
+        "korean": "예시와 함께 의견을 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Despite what many people believe I think multitasking is actually counterproductive in most situations.",
+        "korean": "많은 사람의 믿음과 달리 멀티태스킹은 대부분의 상황에서 실제로 비생산적이라고 생각해요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Research shows that our brains don't actually do two things simultaneously — they rapidly switch between tasks which reduces the quality of both.",
+        "korean": "연구에 따르면 뇌는 실제로 두 가지를 동시에 하지 않아요 — 작업 간 빠르게 전환하여 둘 다의 질을 떨어뜨려요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "When I tried to study while watching TV I ended up understanding neither the textbook nor the show.",
+        "korean": "TV를 보면서 공부하려고 했을 때 교과서도 프로그램도 이해하지 못하게 됐어요.",
+        "properNounIndices": [
+          1,
+          7,
+          8
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Instead focusing deeply on one task at a time produces faster and higher-quality results.",
+        "korean": "대신 한 번에 하나의 작업에 깊이 집중하면 더 빠르고 높은 품질의 결과를 내요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "end up",
+        "korean": "결국 ~하게 되다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Competitive Sports for Children",
+        "Eating Alone vs. with Others",
+        "Multitasking — Effective or Not",
+        "Uniforms in School"
+      ],
+      "answer": 2
+    }
+  }
+]

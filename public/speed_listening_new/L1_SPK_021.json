@@ -1,0 +1,101 @@
+[
+  {
+    "setId": "L1_SPK_021_set1",
+    "parentSetId": "L1_SPK_021",
+    "theme": "Social Media — More Harm or Good",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think social media does more harm than good?",
+        "korean": "소셜 미디어가 이로운 것보다 해로운 것이 더 많다고 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your position.",
+        "korean": "입장을 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I think social media does more good than harm when used responsibly.",
+        "korean": "책임감 있게 사용하면 소셜 미디어가 해보다 이익이 더 많다고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "First it connects people across the world.",
+        "korean": "첫째 전 세계 사람들을 연결해줘요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I have friends in Japan and Brazil who I stay in touch with only through social media.",
+        "korean": "일본과 브라질에 있는 친구들과 소셜 미디어를 통해서만 연락해요.",
+        "properNounIndices": [
+          0,
+          4,
+          6,
+          8
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Public Transportation vs. Private Car",
+        "Social Media — More Harm or Good",
+        "Eating at Home vs. Eating Out",
+        "Importance of Arts Education"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L1_SPK_021_set2",
+    "parentSetId": "L1_SPK_021",
+    "theme": "Social Media — More Harm or Good",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Second it provides a platform for small businesses and creators to reach audiences without expensive advertising.",
+        "korean": "둘째 소규모 사업체와 크리에이터에게 비싼 광고 없이 관객에게 도달할 플랫폼을 제공해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "The key is moderation — setting daily time limits and being mindful of what content you consume.",
+        "korean": "핵심은 절제예요 — 하루 시간 제한을 설정하고 어떤 콘텐츠를 소비하는지 주의하는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "stay in touch",
+        "korean": "연락을 유지하다",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "be mindful of",
+        "korean": "~을 주의하다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Social Media — More Harm or Good",
+        "A Skill You Want to Learn",
+        "Social Media Age Limit",
+        "The Importance of Exercise"
+      ],
+      "answer": 0
+    }
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "setId": "L4_EXT_010_set1",
+    "parentSetId": "L4_EXT_010",
+    "theme": "The Future of Remote Work",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The pandemic permanently reshaped how we think about the workplace, and what was once considered a temporary arrangement has become a fundamental expectation for millions of knowledge workers.",
+        "korean": "팬데믹은 직장에 대한 사고를 영구적으로 재편했고 일시적 조치로 여겨졌던 것이 수백만 지식 근로자의 근본적 기대가 됐다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Companies that mandate full-time office attendance are finding it increasingly difficult to attract top talent, particularly among younger generations who prioritize flexibility and work-life balance.",
+        "korean": "전일 출근을 의무화하는 기업들은 최고 인재를 유치하기 점점 어려워하고 있다. 특히 유연성과 워라밸을 우선시하는 젊은 세대 사이에서.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "However, remote work is not without its challenges — isolation, blurred boundaries between personal and professional life, and the loss of spontaneous collaboration that often drives innovation.",
+        "korean": "하지만 재택근무에도 어려움이 있다 — 고립감, 개인과 직업 생활의 모호한 경계, 그리고 혁신을 종종 이끄는 자발적 협업의 상실.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "The emerging consensus seems to favor hybrid models, where employees split their time between home and office, theoretically getting the best of both worlds.",
+        "korean": "새롭게 부상하는 합의는 하이브리드 모델을 선호하는 것 같다. 직원들이 집과 사무실 사이에 시간을 나누어 이론적으로 양쪽의 장점을 취하는 모델이다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '합의/여론' mean in English?",
+      "options": [
+        "mandate",
+        "spontaneous",
+        "consensus",
+        "knowledge worker"
+      ],
+      "answer": 2
+    }
+  }
+]

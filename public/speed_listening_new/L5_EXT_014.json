@@ -1,0 +1,54 @@
+[
+  {
+    "setId": "L5_EXT_014_set1",
+    "parentSetId": "L5_EXT_014",
+    "theme": "The Fermi Paradox",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Given the billions of stars in our galaxy alone and the high probability that many host habitable planets, the universe should be teeming with intelligent life — and yet we have found no evidence of it.",
+        "korean": "우리 은하에만 수십억 개의 별이 있고 많은 별이 거주 가능한 행성을 가질 높은 확률을 고려하면 우주는 지적 생명체로 넘쳐야 한다. 그런데 우리는 그 증거를 찾지 못했다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "This contradiction, known as the Fermi Paradox, has generated dozens of proposed explanations, ranging from the plausible to the terrifying.",
+        "korean": "페르미 역설로 알려진 이 모순은 그럴듯한 것에서 무서운 것까지 수십 가지 설명을 만들어냈다.",
+        "properNounIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "id": 2,
+        "english": "One popular hypothesis is the Great Filter — the idea that there is some catastrophic barrier in the development of civilizations that prevents them from becoming spacefaring, and the question is whether humanity has already passed this filter or whether it still lies ahead.",
+        "korean": "/ 인류가 이미 이 필터를 통과했는지 / 아니면 아직 앞에 놓여 있는지가 / 문제이다.",
+        "properNounIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Another unsettling possibility is the Dark Forest hypothesis, which suggests that advanced civilizations deliberately remain silent because revealing their existence to the cosmos would invite destruction by hostile species.",
+        "korean": "/ 이는 발전된 문명이 / 의도적으로 침묵을 지킨다고 시사한다 / 우주에 존재를 드러내면 / 적대적 종에 의한 파괴를 초래할 것이기 때문에.",
+        "properNounIndices": [
+          5,
+          6
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '가설' mean in English?",
+      "options": [
+        "hypothesis",
+        "habitable",
+        "spacefaring",
+        "hostile"
+      ],
+      "answer": 0
+    }
+  }
+]

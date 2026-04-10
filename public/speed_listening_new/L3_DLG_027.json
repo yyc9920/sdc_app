@@ -1,0 +1,126 @@
+[
+  {
+    "setId": "L3_DLG_027_set1",
+    "parentSetId": "L3_DLG_027",
+    "theme": "Booking a Haircut",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Good morning, Style Studio.",
+        "korean": "좋은 아침이에요 스타일 스튜디오입니다.",
+        "properNounIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "id": 1,
+        "english": "How can I help you?",
+        "korean": "어떻게 도와드릴까요?",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I'd like to book a haircut for this Saturday.",
+        "korean": "이번 토요일에 머리 커트 예약하고 싶어요.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Do you have a preferred stylist?",
+        "korean": "선호하는 스타일리스트가 있으세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I usually go to Jenny, if she's available.",
+        "korean": "보통 제니한테 가는데 가능하면요.",
+        "properNounIndices": [
+          0,
+          4
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '미용사/스타일리스트' mean in English?",
+      "options": [
+        "opening",
+        "stylist",
+        "beard trim",
+        "haircut"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L3_DLG_027_set2",
+    "parentSetId": "L3_DLG_027",
+    "theme": "Booking a Haircut",
+    "level": 3,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Jenny has an opening at two PM.",
+        "korean": "제니가 오후 2시에 자리가 있어요.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Would that work for you?",
+        "korean": "괜찮으시겠어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "That's perfect.",
+        "korean": "완벽해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "I also want a beard trim if possible.",
+        "korean": "가능하면 수염 다듬기도 하고 싶어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 9,
+        "english": "The haircut is thirty-five dollars and the beard trim is an additional fifteen.",
+        "korean": "머리 커트는 35달러이고 수염 다듬기는 추가 15달러예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 10,
+        "english": "Sounds good.",
+        "korean": "좋아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "Book me in for both.",
+        "korean": "둘 다 예약해주세요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '빈 시간/자리' mean in English?",
+      "options": [
+        "stylist",
+        "beard trim",
+        "opening",
+        "haircut"
+      ],
+      "answer": 2
+    }
+  }
+]

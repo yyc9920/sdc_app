@@ -1,0 +1,58 @@
+[
+  {
+    "setId": "L1_EXT_017_set1",
+    "parentSetId": "L1_EXT_017",
+    "theme": "My Hobby",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My hobby is drawing.",
+        "korean": "내 취미는 그림 그리기예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I started drawing when I was ten years old.",
+        "korean": "10살 때 그림을 그리기 시작했어요.",
+        "properNounIndices": [
+          0,
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I usually draw animals and nature scenes.",
+        "korean": "보통 동물과 자연 풍경을 그려요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I use colored pencils and watercolors.",
+        "korean": "색연필과 수채화를 사용해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Drawing helps me relax after a long day at school.",
+        "korean": "그림 그리기는 학교에서의 긴 하루 후에 쉴 수 있게 도와줘요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "My Hobby",
+        "The Ship of Theseus Problem",
+        "My Umbrella",
+        "The Seasons"
+      ],
+      "answer": 0
+    }
+  }
+]

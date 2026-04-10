@@ -1,0 +1,78 @@
+[
+  {
+    "setId": "L3_DLG_047_set1",
+    "parentSetId": "L3_DLG_047",
+    "theme": "Signing Up for a Cooking Class",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'd like to sign up for the Italian cooking class.",
+        "korean": "이탈리안 요리 수업에 등록하고 싶어요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 1,
+        "english": "The next session starts on March tenth and runs for six weeks.",
+        "korean": "다음 세션은 3월 10일에 시작하고 6주간 진행돼요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 2,
+        "english": "How much does it cost?",
+        "korean": "비용이 얼마예요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "It's two hundred and forty dollars for the full course which includes all ingredients.",
+        "korean": "전체 과정이 240달러이고 모든 재료가 포함돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "What days are the classes?",
+        "korean": "수업이 무슨 요일이에요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Every Wednesday from six to eight PM.",
+        "korean": "매주 수요일 저녁 6시부터 8시까지요.",
+        "properNounIndices": [
+          1,
+          6
+        ]
+      },
+      {
+        "id": 6,
+        "english": "That works perfectly for me.",
+        "korean": "딱 좋아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "We still have three spots left so I'd recommend signing up soon.",
+        "korean": "자리가 세 개 남았으니 빨리 등록하시는 걸 추천해요.",
+        "properNounIndices": [
+          7
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '세션/기수' mean in English?",
+      "options": [
+        "ingredients",
+        "spots left",
+        "session",
+        "sign up"
+      ],
+      "answer": 2
+    }
+  }
+]

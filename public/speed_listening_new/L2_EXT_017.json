@@ -1,0 +1,51 @@
+[
+  {
+    "setId": "L2_EXT_017_set1",
+    "parentSetId": "L2_EXT_017",
+    "theme": "Dealing with Stress",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Everyone experiences stress, but what matters is how you deal with it.",
+        "korean": "누구나 스트레스를 경험하지만 중요한 것은 어떻게 대처하느냐예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Some people exercise, while others prefer meditation or journaling.",
+        "korean": "어떤 사람은 운동을 하고 다른 사람은 명상이나 일기 쓰기를 선호해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "For me, taking a long walk in nature is the best stress reliever.",
+        "korean": "나에겐 자연 속에서 긴 산책을 하는 것이 최고의 스트레스 해소법이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "The worst thing you can do is ignore your stress, because it only gets worse over time.",
+        "korean": "최악인 것은 스트레스를 무시하는 거예요. 시간이 갈수록 악화될 뿐이니까요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "If you're feeling overwhelmed, don't be afraid to ask for help.",
+        "korean": "압도당하는 느낌이 든다면 도움을 요청하는 것을 두려워하지 마세요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '압도당하는' mean in English?",
+      "options": [
+        "deal with",
+        "ignore",
+        "stress reliever",
+        "overwhelmed"
+      ],
+      "answer": 3
+    }
+  }
+]

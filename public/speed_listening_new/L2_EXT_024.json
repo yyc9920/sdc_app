@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L2_EXT_024_set1",
+    "parentSetId": "L2_EXT_024",
+    "theme": "Learning to Drive",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I started taking driving lessons last month.",
+        "korean": "지난달에 운전 수업을 시작했어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "My instructor is very patient and explains everything clearly.",
+        "korean": "강사님은 매우 인내심이 있고 모든 것을 명확하게 설명해주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Parking is the hardest part for me.",
+        "korean": "주차가 나에게 가장 어려운 부분이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I always get nervous when I have to parallel park.",
+        "korean": "평행 주차를 해야 할 때 항상 긴장돼요.",
+        "properNounIndices": [
+          0,
+          5
+        ]
+      },
+      {
+        "id": 4,
+        "english": "My driving test is next month and I hope I pass on the first try.",
+        "korean": "운전 시험이 다음 달인데 첫 시도에 합격하면 좋겠어요.",
+        "properNounIndices": [
+          7,
+          9
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '강사' mean in English?",
+      "options": [
+        "instructor",
+        "parallel park",
+        "driving lesson",
+        "driving test"
+      ],
+      "answer": 0
+    }
+  }
+]

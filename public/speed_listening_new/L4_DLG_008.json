@@ -1,0 +1,110 @@
+[
+  {
+    "setId": "L4_DLG_008_set1",
+    "parentSetId": "L4_DLG_008",
+    "theme": "Client Meeting — Project Scope Change",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Thanks for joining the call, everyone.",
+        "korean": "통화에 참여해주셔서 감사합니다 여러분.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "We need to discuss some changes to the project scope.",
+        "korean": "프로젝트 범위 변경에 대해 논의해야 합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "What kind of changes are we looking at?",
+        "korean": "어떤 종류의 변경인가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "The client wants to add a mobile app component to the existing web platform project.",
+        "korean": "고객이 기존 웹 플랫폼 프로젝트에 모바일 앱 구성요소를 추가하기를 원합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "That's a significant change.",
+        "korean": "상당한 변경이네요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '예비의/사전의' mean in English?",
+      "options": [
+        "preliminary",
+        "proposal",
+        "deliver",
+        "scope"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L4_DLG_008_set2",
+    "parentSetId": "L4_DLG_008",
+    "theme": "Client Meeting — Project Scope Change",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "It will definitely impact our timeline and budget.",
+        "korean": "일정과 예산에 확실히 영향을 줄 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "I've done a preliminary estimate.",
+        "korean": "예비 견적을 해봤습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "We'd need at least two additional developers and roughly six extra weeks.",
+        "korean": "최소 개발자 2명 추가와 대략 6주의 추가 기간이 필요합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Has the client approved the additional budget?",
+        "korean": "고객이 추가 예산을 승인했나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Not yet, but they've indicated they're open to it as long as we can deliver by Q3.",
+        "korean": "아직 아니지만 3분기까지 납품할 수 있다면 수용할 의향이 있다고 했습니다.",
+        "properNounIndices": [
+          16
+        ]
+      },
+      {
+        "id": 10,
+        "english": "I'll put together a detailed proposal with revised milestones and send it to the team by Friday.",
+        "korean": "수정된 이정표가 포함된 상세 제안서를 작성해서 금요일까지 팀에 보내겠습니다.",
+        "properNounIndices": [
+          16
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '이정표/주요 단계' mean in English?",
+      "options": [
+        "proposal",
+        "preliminary",
+        "milestone",
+        "scope"
+      ],
+      "answer": 2
+    }
+  }
+]

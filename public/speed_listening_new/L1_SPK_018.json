@@ -1,0 +1,100 @@
+[
+  {
+    "setId": "L1_SPK_018_set1",
+    "parentSetId": "L1_SPK_018",
+    "theme": "Advantages of Smartphones",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "What do you think is the biggest advantage of smartphones?",
+        "korean": "스마트폰의 가장 큰 장점이 무엇이라 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain with specific examples.",
+        "korean": "구체적인 예시로 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "In my opinion the biggest advantage of smartphones is instant access to information.",
+        "korean": "내 생각에 스마트폰의 가장 큰 장점은 정보에 즉시 접근할 수 있다는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Twenty years ago finding the answer to a simple question meant going to a library or asking someone who might know.",
+        "korean": "20년 전에는 간단한 질문의 답을 찾는 것이 도서관에 가거나 아는 사람에게 물어보는 것을 의미했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Now we can search anything within seconds.",
+        "korean": "이제 몇 초 안에 무엇이든 검색할 수 있어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "A Celebration You Enjoyed",
+        "Advantages of Smartphones",
+        "Should Voting Be Mandatory",
+        "Long Commute vs. Small Apartment Near Work"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L1_SPK_018_set2",
+    "parentSetId": "L1_SPK_018",
+    "theme": "Advantages of Smartphones",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "For example last week I used my phone to find a recipe while I was at the grocery store.",
+        "korean": "예를 들어 지난주에 마트에 있으면서 폰으로 레시피를 찾았어요.",
+        "properNounIndices": [
+          4,
+          13
+        ]
+      },
+      {
+        "id": 6,
+        "english": "I could check the ingredients I needed and compare prices all in real time.",
+        "korean": "필요한 재료를 확인하고 가격을 비교할 수 있었어요. 모두 실시간으로.",
+        "properNounIndices": [
+          0,
+          5
+        ]
+      },
+      {
+        "id": 7,
+        "english": "This convenience was unimaginable just a generation ago.",
+        "korean": "이런 편리함은 불과 한 세대 전만 해도 상상할 수 없었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "in real time",
+        "korean": "실시간으로",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Advantages of Smartphones",
+        "The Best Age to Learn a Language",
+        "Advantages of Being Bilingual",
+        "Privacy vs. Safety"
+      ],
+      "answer": 0
+    }
+  }
+]

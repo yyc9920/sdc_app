@@ -1,0 +1,73 @@
+[
+  {
+    "setId": "L1_SPK_100_set1",
+    "parentSetId": "L1_SPK_100",
+    "theme": "What Makes a Good Leader",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "What qualities do you think make a good leader?",
+        "korean": "좋은 리더를 만드는 자질이 무엇이라 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Give specific examples.",
+        "korean": "구체적인 예시를 제시하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I believe the most important quality of a good leader is the ability to listen.",
+        "korean": "좋은 리더의 가장 중요한 자질은 경청하는 능력이라고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Many people think leadership is about giving orders and making big speeches but the best leaders I've worked with spent more time listening than talking.",
+        "korean": "많은 사람이 리더십은 명령하고 큰 연설하는 것이라 생각하지만 내가 함께 일한 최고의 리더들은 말하기보다 듣기에 더 많은 시간을 보냈어요.",
+        "properNounIndices": [
+          16
+        ]
+      },
+      {
+        "id": 4,
+        "english": "When a leader truly listens team members feel valued and are more willing to share creative ideas and honest feedback.",
+        "korean": "리더가 진심으로 경청하면 팀원이 가치 있게 느끼고 창의적 아이디어와 솔직한 피드백을 더 기꺼이 나눠요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Second a good leader takes responsibility when things go wrong instead of blaming others.",
+        "korean": "둘째 좋은 리더는 일이 잘못됐을 때 남을 탓하는 대신 책임을 져요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "This kind of accountability builds trust and loyalty which are the foundation of any successful team.",
+        "korean": "이런 책임감이 신뢰와 충성심을 쌓는데 성공적인 팀의 토대가 돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "take responsibility",
+        "korean": "책임을 지다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "The Best Way to Relieve Stress",
+        "Favorite Place",
+        "What Makes a Good Leader",
+        "A Historical Figure You Admire"
+      ],
+      "answer": 2
+    }
+  }
+]

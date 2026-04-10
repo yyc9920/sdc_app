@@ -1,0 +1,58 @@
+[
+  {
+    "setId": "L1_EXT_096_set1",
+    "parentSetId": "L1_EXT_096",
+    "theme": "Going to the Supermarket",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My mom and I went to the supermarket after school.",
+        "korean": "엄마와 방과 후에 슈퍼마켓에 갔어요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 1,
+        "english": "We bought milk eggs bread and some fruit.",
+        "korean": "우유 달걀 빵 과일을 샀어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I asked mom if I could get a bag of chips and she said yes.",
+        "korean": "엄마한테 과자 한 봉지 사도 되냐고 물었더니 된다고 하셨어요.",
+        "properNounIndices": [
+          0,
+          4
+        ]
+      },
+      {
+        "id": 3,
+        "english": "The total was thirty-two thousand won.",
+        "korean": "000원이었다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I helped carry the bags to the car.",
+        "korean": "가방을 차까지 나르는 걸 도왔어요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Dealing with Stress",
+        "Learning to Drive",
+        "Going to the Supermarket",
+        "Sapir-Whorf Hypothesis — Does Language Shape Thought?"
+      ],
+      "answer": 2
+    }
+  }
+]

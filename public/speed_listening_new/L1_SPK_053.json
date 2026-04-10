@@ -1,0 +1,77 @@
+[
+  {
+    "setId": "L1_SPK_053_set1",
+    "parentSetId": "L1_SPK_053",
+    "theme": "Handwriting vs. Typing Notes",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you prefer taking notes by hand or typing on a laptop?",
+        "korean": "손으로 필기와 노트북 타이핑 중 어느 것을 선호합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your preference.",
+        "korean": "선호를 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I prefer taking notes by hand even though typing is faster.",
+        "korean": "타이핑이 더 빠르지만 손으로 필기하는 것을 선호해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Research shows that handwriting activates deeper cognitive processing because you have to summarize and paraphrase rather than transcribe word for word.",
+        "korean": "연구에 따르면 손글씨가 더 깊은 인지적 처리를 활성화해요. 단어 그대로 받아쓰는 대신 요약하고 바꿔 쓰기 때문이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "When I type notes in class I tend to write everything down without really thinking about it.",
+        "korean": "수업 시간에 노트를 타이핑하면 실제로 생각하지 않고 모든 걸 적는 경향이 있어요.",
+        "properNounIndices": [
+          1,
+          6
+        ]
+      },
+      {
+        "id": 5,
+        "english": "But when I write by hand I have to decide what's important and that process helps me understand the material better.",
+        "korean": "하지만 손으로 쓰면 무엇이 중요한지 결정해야 하고 그 과정이 내용을 더 잘 이해하게 해줘요.",
+        "properNounIndices": [
+          2,
+          6
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Also there are no notifications or distractions when you're using just a pen and paper.",
+        "korean": "또한 펜과 종이만 사용하면 알림이나 방해가 없어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "word for word",
+        "korean": "단어 그대로",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Handwriting vs. Typing Notes",
+        "News from Social Media vs. Traditional Media",
+        "A Movie That Inspired You",
+        "Saving Money vs. Enjoying Life Now"
+      ],
+      "answer": 0
+    }
+  }
+]

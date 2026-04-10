@@ -1,0 +1,99 @@
+[
+  {
+    "setId": "L1_SPK_037_set1",
+    "parentSetId": "L1_SPK_037",
+    "theme": "Working in a Team vs. Alone",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you prefer working independently or as part of a team?",
+        "korean": "독립적으로 일하는 것과 팀의 일원으로 일하는 것 중 어느 쪽을 선호합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your preference.",
+        "korean": "선호를 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I prefer working as part of a team because I believe collaboration produces better results than working alone.",
+        "korean": "혼자보다 협업이 더 나은 결과를 낸다고 믿기에 팀의 일원으로 일하는 것을 선호해요.",
+        "properNounIndices": [
+          0,
+          9
+        ]
+      },
+      {
+        "id": 3,
+        "english": "First team members bring different strengths and perspectives to the table.",
+        "korean": "첫째 팀원들이 서로 다른 강점과 관점을 제공해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "A problem that seems impossible to one person might be easily solved by someone with a different background.",
+        "korean": "한 사람에게 불가능해 보이는 문제가 다른 배경을 가진 사람에게는 쉽게 풀릴 수 있어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Working in a Team vs. Alone",
+        "Printed Books vs. E-books",
+        "Strict vs. Relaxed Parenting",
+        "Should Homework Be Abolished"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L1_SPK_037_set2",
+    "parentSetId": "L1_SPK_037",
+    "theme": "Working in a Team vs. Alone",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Second teamwork keeps me motivated because I don't want to let my teammates down.",
+        "korean": "둘째 팀워크는 동기 부여가 돼요. 팀원들을 실망시키고 싶지 않으니까요.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 6,
+        "english": "That sense of accountability pushes me to do my best work.",
+        "korean": "그 책임감이 최선의 작업을 하도록 밀어줘요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "bring to the table",
+        "korean": "제공하다/기여하다",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "let someone down",
+        "korean": "~을 실망시키다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Living with a Roommate vs. Living Alone",
+        "Social Media Age Limit",
+        "Working in a Team vs. Alone",
+        "Would you prefer living in a large house with a lo"
+      ],
+      "answer": 2
+    }
+  }
+]

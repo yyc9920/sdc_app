@@ -1,0 +1,45 @@
+[
+  {
+    "setId": "L3_EXT_019_set1",
+    "parentSetId": "L3_EXT_019",
+    "theme": "The Psychology of Color",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Colors have a powerful effect on our emotions and behavior even when we're not consciously aware of it.",
+        "korean": "색상은 우리가 의식하지 못해도 감정과 행동에 강력한 영향을 미친다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Red is associated with urgency and excitement which is why sale signs and fast food restaurants frequently use it.",
+        "korean": "빨간색은 긴박감과 흥분과 관련이 있다. 이것이 세일 표지판과 패스트푸드점이 자주 사용하는 이유이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Blue creates feelings of trust and calm which explains why many banks and technology companies choose it for their branding.",
+        "korean": "파란색은 신뢰와 평온함을 만들어낸다. 이것이 많은 은행과 기술 회사가 브랜딩에 선택하는 이유이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Green is universally connected to nature and health making it the go-to color for organic and eco-friendly brands.",
+        "korean": "초록색은 보편적으로 자연과 건강에 연결되어 유기농과 친환경 브랜드에 최적의 색상이 된다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '친환경적인' mean in English?",
+      "options": [
+        "urgency",
+        "branding",
+        "psychology",
+        "eco-friendly"
+      ],
+      "answer": 3
+    }
+  }
+]

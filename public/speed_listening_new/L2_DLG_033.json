@@ -1,0 +1,71 @@
+[
+  {
+    "setId": "L2_DLG_033_set1",
+    "parentSetId": "L2_DLG_033",
+    "theme": "Getting a Flat Tire",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Oh no. I think I have a flat tire.",
+        "korean": "이런. 타이어가 펑크 난 것 같아요.",
+        "properNounIndices": [
+          2,
+          4
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Do you have a spare tire in the trunk?",
+        "korean": "트렁크에 스페어 타이어 있어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I think so but I don't know how to change it.",
+        "korean": "있는 것 같은데 교환하는 법을 모르겠어요.",
+        "properNounIndices": [
+          0,
+          4
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I can help you.",
+        "korean": "내가 도와줄 수 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "First we need the jack and the lug wrench.",
+        "korean": "먼저 잭과 러그 렌치가 필요해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "They should be in the trunk with the spare.",
+        "korean": "스페어와 함께 트렁크에 있을 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "It'll take about fifteen minutes.",
+        "korean": "약 15분 걸릴 거예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "At the Ice Cream Shop",
+        "Airport Check-in — Baggage Issue",
+        "Getting a Flat Tire",
+        "Planning a Weekend BBQ"
+      ],
+      "answer": 2
+    }
+  }
+]

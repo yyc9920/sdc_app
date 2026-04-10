@@ -1,0 +1,45 @@
+[
+  {
+    "setId": "L3_EXT_015_set1",
+    "parentSetId": "L3_EXT_015",
+    "theme": "The Power of Storytelling",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Humans have been telling stories for over forty thousand years, from ancient cave paintings to modern-day podcasts.",
+        "korean": "/ 고대 동굴 벽화에서 / 현대의 팟캐스트까지.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Neuroscience has shown that stories activate multiple areas of the brain simultaneously, making them far more memorable than raw facts or statistics.",
+        "korean": "신경과학에 따르면 이야기는 뇌의 여러 영역을 동시에 활성화하여 순수한 사실이나 통계보다 훨씬 더 기억에 남게 만든다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "This is why the most effective leaders, teachers, and marketers are all skilled storytellers.",
+        "korean": "이것이 가장 효과적인 지도자 교사 마케터가 모두 숙련된 스토리텔러인 이유이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "When we hear a compelling story, our brains release oxytocin, the hormone associated with empathy and trust, which is why stories can change minds in ways that logical arguments alone cannot.",
+        "korean": "/ 이것이 논리적 주장만으로는 할 수 없는 방식으로 / 이야기가 마음을 바꿀 수 있는 이유이다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '옥시토신' mean in English?",
+      "options": [
+        "storytelling",
+        "oxytocin",
+        "simultaneously",
+        "compelling"
+      ],
+      "answer": 1
+    }
+  }
+]

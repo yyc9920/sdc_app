@@ -1,0 +1,55 @@
+[
+  {
+    "setId": "L1_EXT_082_set1",
+    "parentSetId": "L1_EXT_082",
+    "theme": "Going to the Dentist",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I had to go to the dentist today because my tooth hurt.",
+        "korean": "이가 아파서 오늘 치과에 가야 했어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "The dentist said I had a small cavity.",
+        "korean": "치과의사가 작은 충치가 있다고 했어요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "english": "She filled it in just ten minutes.",
+        "korean": "단 10분 만에 때워줬어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "It didn't hurt at all because she used a special gel.",
+        "korean": "특별한 젤을 사용해서 전혀 아프지 않았어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "She told me to brush my teeth more carefully.",
+        "korean": "이를 더 꼼꼼히 닦으라고 했어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "The Paradox of Choice",
+        "History Lecture — The Fall of the Berlin Wall",
+        "Going to the Dentist",
+        "Public Speaking Fear"
+      ],
+      "answer": 2
+    }
+  }
+]

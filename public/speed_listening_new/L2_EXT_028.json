@@ -1,0 +1,45 @@
+[
+  {
+    "setId": "L2_EXT_028_set1",
+    "parentSetId": "L2_EXT_028",
+    "theme": "Dealing with Jet Lag",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Jet lag is one of the most annoying parts of traveling to a different time zone.",
+        "korean": "시차증은 다른 시간대로 여행할 때 가장 성가신 부분 중 하나예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Your body feels tired during the day and wide awake at night.",
+        "korean": "낮에는 피곤하고 밤에는 완전히 깨어 있게 돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Experts recommend adjusting your sleep schedule a few days before your trip.",
+        "korean": "전문가들은 여행 며칠 전부터 수면 일정을 조정하라고 추천해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Staying hydrated and getting sunlight when you arrive also helps your body adjust faster.",
+        "korean": "수분을 유지하고 도착 후 햇빛을 쬐는 것도 몸이 더 빨리 적응하는 데 도움이 돼요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '수분이 충분한' mean in English?",
+      "options": [
+        "adjust",
+        "time zone",
+        "hydrated",
+        "jet lag"
+      ],
+      "answer": 2
+    }
+  }
+]

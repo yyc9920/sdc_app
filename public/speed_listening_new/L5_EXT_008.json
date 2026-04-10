@@ -17,40 +17,38 @@
       },
       {
         "id": 1,
-        "english": "It sounds like a straightforward question, but the more you examine it, the more elusive a clean answer becomes. Popper's own answer, proposed in the 1930s, was falsifiability.",
+        "english": "It sounds like a straightforward question, but the more you examine it, the more elusive a clean answer becomes.",
         "korean": "간단한 질문 같지만, 살펴볼수록 깔끔한 답은 더 찾기 어려워집니다.",
-        "properNounIndices": [
-          19
-        ]
+        "properNounIndices": []
       },
       {
         "id": 2,
+        "english": "Popper's own answer, proposed in the 1930s, was falsifiability.",
+        "korean": "살펴볼수록 깔끔한 답은 더 찾기 어려워져요",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
         "english": "A theory is scientific, he argued, if and only if it makes predictions that could, in principle, be shown to be wrong.",
         "korean": "이론이 과학적이려면, 원칙적으로 틀렸다고 증명될 수 있는 예측을 해야 한다고 그는 주장했습니다.",
         "properNounIndices": []
       },
       {
-        "id": 3,
+        "id": 4,
         "english": "Einstein's theory of general relativity predicted that light from distant stars would bend as it passed near the sun — a prediction that was confirmed during the 1919 solar eclipse.",
         "korean": "아인슈타인의 일반상대성이론은 먼 별의 빛이 태양 근처를 지날 때 휘어질 거라고 예측했습니다.",
-        "properNounIndices": []
-      },
-      {
-        "id": 4,
-        "english": "Crucially, the prediction could have been falsified: if the light hadn't bent, the theory would have been in serious trouble.",
-        "korean": "결정적으로, 그 예측은 반증될 수 있었습니다. 빛이 휘어지지 않았다면 이론은 심각한 위기에 처했을 거예요.",
         "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '패러다임 전환' mean in English?",
+      "question": "What does '연구 프로그램 (라카토스)' mean in English?",
       "options": [
-        "demarcation problem",
-        "internal consistency",
-        "paradigm shift",
-        "predictive accuracy"
+        "research programs",
+        "post-hoc explanations",
+        "falsifiability",
+        "paradigm shift"
       ],
-      "answer": 2
+      "answer": 0
     }
   },
   {
@@ -62,6 +60,12 @@
     "sentences": [
       {
         "id": 5,
+        "english": "Crucially, the prediction could have been falsified: if the light hadn't bent, the theory would have been in serious trouble.",
+        "korean": "결정적으로, 그 예측은 반증될 수 있었습니다. 빛이 휘어지지 않았다면 이론은 심각한 위기에 처했을 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
         "english": "By contrast, Popper argued, theories like Freudian psychoanalysis and Marxist historical materialism were unfalsifiable.",
         "korean": "반면 포퍼는 프로이트 정신분석과 마르크스 사적 유물론 같은 이론은 반증 불가능하다고 주장했습니다.",
         "properNounIndices": [
@@ -71,45 +75,33 @@
         ]
       },
       {
-        "id": 6,
-        "english": "No matter what evidence was presented, their proponents could always reinterpret it to fit the theory. A patient who confirms the analyst's interpretation proves the theory.",
-        "korean": "어떤 증거가 제시되든 지지자들은 항상 이론에 맞게 재해석할 수 있었습니다.",
-        "properNounIndices": [
-          16
-        ]
-      },
-      {
         "id": 7,
-        "english": "A patient who denies the interpretation is exhibiting resistance — which also proves the theory. There is no possible observation that could refute it.",
-        "korean": "해석을 부정하는 환자는 저항을 보이는 것인데 — 이것도 역시 이론을 증명합니다.",
-        "properNounIndices": [
-          15
-        ]
+        "english": "No matter what evidence was presented, their proponents could always reinterpret it to fit the theory.",
+        "korean": "어떤 증거가 제시되든 지지자들은 항상 이론에 맞게 재해석할 수 있었습니다.",
+        "properNounIndices": []
       },
       {
         "id": 8,
-        "english": "Popper's criterion is elegant, but it has faced significant challenges.",
-        "korean": "포퍼의 기준은 우아하지만 상당한 도전에 직면해왔습니다.",
+        "english": "A patient who confirms the analyst's interpretation proves the theory.",
+        "korean": "지지자들은 항상 이론에 맞게 재해석할 수 있었어요",
         "properNounIndices": []
       },
       {
         "id": 9,
-        "english": "Thomas Kuhn argued that in practice, scientists don't actually abandon a theory the moment it encounters a falsifying observation.",
-        "korean": "토마스 쿤은 실제로 과학자들이 반증적 관찰을 만나는 순간 이론을 포기하지 않는다고 주장했습니다.",
-        "properNounIndices": [
-          1
-        ]
+        "english": "A patient who denies the interpretation is exhibiting resistance — which also proves the theory.",
+        "korean": "해석을 부정하는 환자는 저항을 보이는 것인데 — 이것도 역시 이론을 증명합니다.",
+        "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '연구 프로그램 (라카토스)' mean in English?",
+      "question": "What does '사이비 과학' mean in English?",
       "options": [
+        "falsifiability",
         "pseudoscience",
-        "internal consistency",
-        "unfalsifiable",
-        "research programs"
+        "demarcation problem",
+        "predictive accuracy"
       ],
-      "answer": 3
+      "answer": 1
     }
   },
   {
@@ -121,6 +113,26 @@
     "sentences": [
       {
         "id": 10,
+        "english": "There is no possible observation that could refute it.",
+        "korean": "저항을 보이는 것인데 이것도 역시 이론을 증명해요",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "Popper's criterion is elegant, but it has faced significant challenges.",
+        "korean": "포퍼의 기준은 우아하지만 상당한 도전에 직면해왔습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "Thomas Kuhn argued that in practice, scientists don't actually abandon a theory the moment it encounters a falsifying observation.",
+        "korean": "토마스 쿤은 실제로 과학자들이 반증적 관찰을 만나는 순간 이론을 포기하지 않는다고 주장했습니다.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 13,
         "english": "During what Kuhn called \"normal science,\" anomalies are routinely set aside, explained away, or attributed to experimental error.",
         "korean": "쿤이 '정상 과학'이라 부른 시기에, 이상 현상은 일상적으로 보류되거나 설명되거나 실험 오류로 귀속되었습니다.",
         "properNounIndices": [
@@ -128,45 +140,21 @@
         ]
       },
       {
-        "id": 11,
+        "id": 14,
         "english": "A single failed prediction doesn't kill a theory — it usually takes an entire paradigm shift.",
         "korean": "단일 실패한 예측으로는 이론이 죽지 않습니다 — 보통 전체 패러다임 전환이 필요합니다.",
-        "properNounIndices": []
-      },
-      {
-        "id": 12,
-        "english": "Imre Lakatos tried to reconcile Popper and Kuhn by proposing that we evaluate not individual theories but research programs.",
-        "korean": "임레 라카토시는 개별 이론이 아닌 연구 프로그램을 평가하자고 제안하며 포퍼와 쿤을 조화시키려 했습니다.",
-        "properNounIndices": [
-          1,
-          5,
-          7
-        ]
-      },
-      {
-        "id": 13,
-        "english": "A progressive research program is one that successfully predicts novel facts. A degenerating research program is one that only produces post-hoc explanations for observations it didn't predict.",
-        "korean": "진보적 연구 프로그램은 새로운 사실을 성공적으로 예측하는 것입니다.",
-        "properNounIndices": [
-          11
-        ]
-      },
-      {
-        "id": 14,
-        "english": "Science, on this view, is not about single theories being falsified — it's about the overall trajectory of inquiry.",
-        "korean": "이 관점에서 과학은 개별 이론의 반증이 아니라 탐구의 전체적 궤적에 관한 것입니다.",
         "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '반증 불가능한' mean in English?",
+      "question": "What does '사후 설명' mean in English?",
       "options": [
-        "unfalsifiable",
-        "predictive accuracy",
+        "pseudoscience",
         "post-hoc explanations",
-        "falsifiability"
+        "progressive / degenerating",
+        "unfalsifiable"
       ],
-      "answer": 0
+      "answer": 1
     }
   },
   {
@@ -178,51 +166,106 @@
     "sentences": [
       {
         "id": 15,
+        "english": "Imre Lakatos tried to reconcile Popper and Kuhn by proposing that we evaluate not individual theories but research programs.",
+        "korean": "임레 라카토시는 개별 이론이 아닌 연구 프로그램을 평가하자고 제안하며 포퍼와 쿤을 조화시키려 했습니다.",
+        "properNounIndices": [
+          1,
+          5,
+          7
+        ]
+      },
+      {
+        "id": 16,
+        "english": "A progressive research program is one that successfully predicts novel facts.",
+        "korean": "진보적 연구 프로그램은 새로운 사실을 성공적으로 예측하는 것입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "A degenerating research program is one that only produces post-hoc explanations for observations it didn't predict.",
+        "korean": "새로운 사실을 성공적으로 예측하는 거예요",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
+        "english": "Science, on this view, is not about single theories being falsified — it's about the overall trajectory of inquiry.",
+        "korean": "이 관점에서 과학은 개별 이론의 반증이 아니라 탐구의 전체적 궤적에 관한 것입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 19,
         "english": "And then there's Paul Feyerabend, who argued — provocatively — that there is no single method that distinguishes science from other forms of knowledge-seeking.",
         "korean": "그리고 폴 파이어아벤트가 도발적으로 과학을 구분하는 단일 방법은 없다고 주장했습니다.",
         "properNounIndices": [
           3,
           4
         ]
-      },
+      }
+    ],
+    "quiz": {
+      "question": "What does '진보적 / 퇴행적' mean in English?",
+      "options": [
+        "falsifiability",
+        "post-hoc explanations",
+        "progressive / degenerating",
+        "demarcation problem"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L5_EXT_008_set5",
+    "parentSetId": "L5_EXT_008",
+    "theme": "Philosophy of Science — The Demarcation Problem",
+    "level": 6,
+    "setNumber": 5,
+    "sentences": [
       {
-        "id": 16,
-        "english": "His famous slogan, \"anything goes,\" was a challenge to the idea that science follows a unique, rational methodology. Where does this leave us?",
+        "id": 20,
+        "english": "His famous slogan, \"anything goes,\" was a challenge to the idea that science follows a unique, rational methodology.",
         "korean": "유명한 슬로건 '무엇이든 좋다'는 과학이 독특하고 합리적인 방법론을 따른다는 생각에 대한 도전이었습니다.",
-        "properNounIndices": [
-          18
-        ]
+        "properNounIndices": []
       },
       {
-        "id": 17,
-        "english": "Most philosophers today accept that there is no single, sharp criterion that cleanly separates science from pseudoscience. The boundary is fuzzy, contested, and context-dependent.",
+        "id": 21,
+        "english": "Where does this leave us?",
+        "korean": "과학이 독특하고 합리적인 방법론을 따른다는 생각에 대한 도전이었어요",
+        "properNounIndices": []
+      },
+      {
+        "id": 22,
+        "english": "Most philosophers today accept that there is no single, sharp criterion that cleanly separates science from pseudoscience.",
         "korean": "오늘날 대부분의 철학자들은 과학과 사이비과학을 깔끔하게 분리하는 단일하고 명확한 기준은 없다고 인정합니다.",
-        "properNounIndices": [
-          17
-        ]
+        "properNounIndices": []
       },
       {
-        "id": 18,
+        "id": 23,
+        "english": "The boundary is fuzzy, contested, and context-dependent.",
+        "korean": "과학과 사이비과학을 깔끔하게 분리하는 단일하고 명확한 기준은 없다고 인정해요",
+        "properNounIndices": []
+      },
+      {
+        "id": 24,
         "english": "But that doesn't mean the distinction is meaningless.",
         "korean": "하지만 그 구분이 무의미하다는 뜻은 아닙니다.",
         "properNounIndices": []
       },
       {
-        "id": 19,
+        "id": 25,
         "english": "We can still evaluate knowledge claims on criteria like predictive accuracy, internal consistency, testability, and transparency — even if no single criterion is sufficient on its own.",
         "korean": "예측 정확성, 내적 일관성, 검증 가능성, 투명성 같은 기준으로 지식 주장을 여전히 평가할 수 있습니다.",
         "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '사후 설명' mean in English?",
+      "question": "What does '패러다임 전환' mean in English?",
       "options": [
-        "internal consistency",
-        "post-hoc explanations",
-        "research programs",
-        "progressive / degenerating"
+        "predictive accuracy",
+        "pseudoscience",
+        "paradigm shift",
+        "internal consistency"
       ],
-      "answer": 1
+      "answer": 2
     }
   }
 ]

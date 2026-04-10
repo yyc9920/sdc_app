@@ -1,0 +1,70 @@
+[
+  {
+    "setId": "L2_EXT_013_set1",
+    "parentSetId": "L2_EXT_013",
+    "theme": "My First Time Living Abroad",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "When I first moved to Canada, I didn't speak English very well.",
+        "korean": "처음 캐나다로 갔을 때 영어를 잘 하지 못했어요.",
+        "properNounIndices": [
+          1,
+          5,
+          6,
+          9
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I was nervous about everything — ordering food and asking for directions.",
+        "korean": "모든 것이 긴장됐어요 — 음식 주문하는 것과 길을 묻는 것이요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "But after a few months, I started to feel more comfortable.",
+        "korean": "하지만 몇 달 후 더 편안해지기 시작했어요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I made friends at a language school, and they helped me practice every day.",
+        "korean": "어학원에서 친구를 사귀었고 매일 연습을 도와줬어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "The hardest part was missing my family and Korean food.",
+        "korean": "가장 힘든 부분은 가족과 한국 음식이 그리운 거였어요.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Looking back, that experience changed my life in so many positive ways.",
+        "korean": "돌이켜 보면 그 경험이 내 인생을 여러 긍정적인 방식으로 바꿨어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Korean Street Food",
+        "My First Time Living Abroad",
+        "The Science of Habit Formation",
+        "University Office Hours"
+      ],
+      "answer": 1
+    }
+  }
+]

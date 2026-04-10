@@ -1,0 +1,42 @@
+[
+  {
+    "setId": "L5_EXT_020_set1",
+    "parentSetId": "L5_EXT_020",
+    "theme": "The Effective Altruism Debate",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Effective altruism is a philosophical and social movement that uses evidence and reasoning to determine the most effective ways to benefit others.",
+        "korean": "효과적 이타주의는 증거와 추론을 사용하여 다른 사람에게 이익을 주는 가장 효과적인 방법을 결정하는 철학적 사회적 운동이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Its proponents argue that a dollar spent on preventing malaria in Sub-Saharan Africa saves far more lives than the same dollar spent on a local charity in a wealthy country.",
+        "korean": "지지자들은 사하라 이남 아프리카에서 말라리아 예방에 쓴 1달러가 부유한 나라의 지역 자선단체에 쓴 같은 1달러보다 훨씬 더 많은 생명을 구한다고 주장한다.",
+        "properNounIndices": [
+          11,
+          12
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Critics counter that reducing human suffering to cost-per-life calculations is dehumanizing and that this approach systematically undervalues forms of aid that are difficult to quantify such as community building art and cultural preservation.",
+        "korean": "비판자들은 인간의 고통을 생명당 비용 계산으로 축소하는 것이 비인간화라고 반박한다. 이 접근법은 커뮤니티 구축 예술 문화 보존 같은 정량화하기 어려운 원조 형태를 체계적으로 과소평가한다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '정량화하다' mean in English?",
+      "options": [
+        "dehumanizing",
+        "evidence",
+        "quantify",
+        "preservation"
+      ],
+      "answer": 2
+    }
+  }
+]

@@ -1,0 +1,55 @@
+[
+  {
+    "setId": "L2_EXT_015_set1",
+    "parentSetId": "L2_EXT_015",
+    "theme": "My Favorite Season",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My favorite season is autumn.",
+        "korean": "가장 좋아하는 계절은 가을이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "The leaves change color and the air becomes cool and crisp.",
+        "korean": "나뭇잎이 색이 변하고 공기가 시원하고 상쾌해져요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I love wearing sweaters and scarves, and drinking hot coffee while walking through the park.",
+        "korean": "스웨터와 스카프를 입고 공원을 걸으면서 뜨거운 커피 마시는 걸 좋아해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "The food in autumn is also amazing — roasted chestnuts, pumpkin soup, and apple pie.",
+        "korean": "가을 음식도 놀라워요 — 군밤 호박 수프 사과 파이요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "The only thing I don't like about autumn is that it means winter is coming soon.",
+        "korean": "가을에서 유일하게 싫은 점은 곧 겨울이 온다는 거예요.",
+        "properNounIndices": [
+          3
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "My Best Friend",
+        "My Favorite Season",
+        "Philosophy of Science — The Demarcation Problem",
+        "Why Introverts Succeed in Business"
+      ],
+      "answer": 1
+    }
+  }
+]

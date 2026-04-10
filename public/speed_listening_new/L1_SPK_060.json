@@ -1,0 +1,69 @@
+[
+  {
+    "setId": "L1_SPK_060_set1",
+    "parentSetId": "L1_SPK_060",
+    "theme": "Advantages of Being Bilingual",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "What are the advantages of being bilingual?",
+        "korean": "이중 언어를 구사하는 장점은 무엇입니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Give specific reasons and examples.",
+        "korean": "구체적인 이유와 예시를 제시하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Being bilingual offers tremendous advantages in both professional and personal life.",
+        "korean": "이중 언어 구사는 직업적으로나 개인적으로 엄청난 장점을 제공해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "First it opens up far more career opportunities especially in our increasingly globalized economy.",
+        "korean": "첫째 점점 더 글로벌화되는 경제에서 훨씬 더 많은 커리어 기회를 열어줘요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Companies actively seek employees who can communicate with international clients and partners.",
+        "korean": "기업들은 국제 고객 및 파트너와 소통할 수 있는 직원을 적극적으로 찾아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Second studies show that bilingual people are better at multitasking and problem-solving because switching between languages strengthens executive function in the brain.",
+        "korean": "둘째 연구에 따르면 이중 언어자는 멀티태스킹과 문제 해결에 더 뛰어나요. 언어 간 전환이 뇌의 실행 기능을 강화하기 때문이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Finally knowing another language lets you experience a completely different culture from the inside which broadens your perspective on life.",
+        "korean": "마지막으로 다른 언어를 알면 완전히 다른 문화를 내부에서 경험할 수 있어 삶에 대한 관점을 넓혀줘요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "from the inside",
+        "korean": "내부에서",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Cooking as a Life Skill",
+        "Advantages of Being Bilingual",
+        "City Living vs. Rural Living",
+        "Should Universities Be Free"
+      ],
+      "answer": 1
+    }
+  }
+]

@@ -1,0 +1,70 @@
+[
+  {
+    "setId": "L2_DLG_020_set1",
+    "parentSetId": "L2_DLG_020",
+    "theme": "Asking for Directions to a Restaurant",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Excuse me. Do you know where Maple Street Café is?",
+        "korean": "실례합니다. 메이플 스트릿 카페가 어디인지 아세요?",
+        "properNounIndices": [
+          2,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Yes it's just around the corner.",
+        "korean": "네 바로 모퉁이를 돌면 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Go straight for about one block and you'll see it on the left next to the bookstore.",
+        "korean": "한 블록 직진하면 왼쪽에 서점 옆에 보일 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Is it a big place?",
+        "korean": "큰 곳인가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "No it's pretty small but the food is amazing.",
+        "korean": "아니요 꽤 작지만 음식이 놀라워요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "I recommend the pasta.",
+        "korean": "파스타를 추천해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Thanks for the tip!",
+        "korean": "팁 감사합니다!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Asking for Directions to a Restaurant",
+        "Mentoring Session — Career Advice",
+        "Getting Lost While Driving",
+        "Business Negotiation — Pricing"
+      ],
+      "answer": 0
+    }
+  }
+]

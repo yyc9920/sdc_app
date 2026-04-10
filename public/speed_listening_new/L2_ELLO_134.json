@@ -1,0 +1,52 @@
+[
+  {
+    "setId": "L2_ELLO_134_set1",
+    "parentSetId": "L2_ELLO_134",
+    "theme": "Mixer #11 — Favorite Season Outfit",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I love fall fashion — boots scarves and cozy sweaters.",
+        "korean": "가을 패션을 좋아해요 — 부츠 스카프 아늑한 스웨터요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "It's my favorite season to dress up.",
+        "korean": "꾸미기에 가장 좋아하는 계절이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Summer is my time because I can just wear shorts and a T-shirt every day, no thinking required.",
+        "korean": "여름이 내 계절이에요. 매일 반바지와 티셔츠만 입으면 되니까요. 생각할 필요 없어요.",
+        "properNounIndices": [
+          5,
+          12
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I hate winter clothes because they're so heavy and bulky, and layering takes forever in the morning.",
+        "korean": "겨울 옷이 싫어요. 너무 무겁고 부피가 커서요. 아침에 레이어링하는 데 한참 걸려요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '아늑한/포근한' mean in English?",
+      "options": [
+        "dress up",
+        "bulky",
+        "layering",
+        "cozy"
+      ],
+      "answer": 3
+    }
+  }
+]

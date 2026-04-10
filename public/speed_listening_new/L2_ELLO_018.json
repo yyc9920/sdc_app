@@ -1,0 +1,210 @@
+[
+  {
+    "setId": "L2_ELLO_018_set1",
+    "parentSetId": "L2_ELLO_018",
+    "theme": "Mixer #148 — Favorite Season",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My favorite season is summer.",
+        "korean": "가장 좋아하는 계절은 여름이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "There is no school.",
+        "korean": "학교도 없고 따뜻하고 해가 늦게 져요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "It's warm.",
+        "korean": "발코니에서 맥주 마시고 바비큐 할 수 있으니 정말 멋져요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "The sun sets late.",
+        "korean": "/ 해가 늦게 진다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "You can sit on your balcony and drink a beer and barbecue.",
+        "korean": "/ 발코니에서 맥주 마시고 바비큐 할 수 있다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #13 — Favorite Smell",
+        "Mixer #148 — Favorite Season",
+        "Mixer #98 — Moving House",
+        "Mixer #124 — Public Transport"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L2_ELLO_018_set2",
+    "parentSetId": "L2_ELLO_018",
+    "theme": "Mixer #148 — Favorite Season",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I just think it's fabulous.",
+        "korean": "/ 정말 멋지다.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 6,
+        "english": "My favorite season is winter, because there's a lot of snow and it's just beautiful.",
+        "korean": "가장 좋아하는 계절은 겨울이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "When the countryside is covered with snow, it's perfectly white.",
+        "korean": "눈이 많고 아름다워요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "I love to build snowmen and have snowball fights with my friends.",
+        "korean": "시골이 눈으로 덮이면 완벽하게 하얗죠.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 9,
+        "english": "My favorite season is springtime, because everything is getting all flowery and new and fresh again.",
+        "korean": "가장 좋아하는 계절은 봄이에요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #103 — Social Media",
+        "Mixer #95 — Bucket List",
+        "Mixer #148 — Favorite Season",
+        "Mixer #61 — Secret Talent"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_ELLO_018_set3",
+    "parentSetId": "L2_ELLO_018",
+    "theme": "Mixer #148 — Favorite Season",
+    "level": 5,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "My least favorite is fall because you can't predict if it's going to be a warm day or a cold day.",
+        "korean": "모든 것이 꽃피고 새로워지니까요. 가장 싫은 건 가을인데 따뜻할지 추울지 예측할 수 없어서요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "My favorite season would be summer.",
+        "korean": "가장 좋아하는 계절은 여름이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "It's pretty cold in Canada, and it's nice to have a long, sunny, dry summer.",
+        "korean": "캐나다는 꽤 춥거든요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 13,
+        "english": "My least favorite is definitely winter.",
+        "korean": "긴 맑은 여름이 좋아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "I think it can be a little depressing.",
+        "korean": "가장 싫은 건 겨울이에요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #148 — Favorite Season",
+        "Mixer #85 — Street Food",
+        "Mixer #58 — Worst Job",
+        "Mixer #43 — Friendship"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_ELLO_018_set4",
+    "parentSetId": "L2_ELLO_018",
+    "theme": "Mixer #148 — Favorite Season",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "My favorite season would probably be autumn.",
+        "korean": "가장 좋아하는 계절은 아마 가을이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 16,
+        "english": "I love the changing of the leaves, the crisp autumn wind that blows the leaves around.",
+        "korean": "나뭇잎이 변하는 것과 나뭇잎을 흩날리는 상쾌한 가을 바람을 좋아해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 17,
+        "english": "I love walking around to come home to a warm cup of hot chocolate.",
+        "korean": "걸어다니다 집에 와서 따뜻한 핫초코 마시는 걸 좋아해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 18,
+        "english": "In my country, we've only got two seasons — summer and winter.",
+        "korean": "우리나라는 여름과 겨울 두 계절만 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 19,
+        "english": "My favorite is summer, because of the sun and the warm weather, you can hang out with friends and do pretty much anything.",
+        "korean": "제일 좋아하는 건 여름이에요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #21 — Handshake vs Bow",
+        "Mixer #97 — Guilty Pleasure",
+        "Mixer #119 — Sleeping In",
+        "Mixer #148 — Favorite Season"
+      ],
+      "answer": 3
+    }
+  }
+]

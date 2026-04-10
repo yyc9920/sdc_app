@@ -1,0 +1,104 @@
+[
+  {
+    "setId": "L3_DLG_012_set1",
+    "parentSetId": "L3_DLG_012",
+    "theme": "Car Repair — Mechanic Visit",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hi, my car has been making a weird noise when I brake.",
+        "korean": "안녕하세요, 브레이크를 밟을 때 이상한 소리가 나요.",
+        "properNounIndices": [
+          10
+        ]
+      },
+      {
+        "id": 1,
+        "english": "What kind of noise?",
+        "korean": "어떤 소리요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Is it a squealing sound or more of a grinding?",
+        "korean": "끼익 하는 소리인가요 아니면 갈리는 소리인가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Definitely grinding, and it's getting louder.",
+        "korean": "확실히 갈리는 소리고 점점 커지고 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "That usually means your brake pads are worn down and need to be replaced.",
+        "korean": "보통 브레이크 패드가 닳아서 교체해야 한다는 뜻이에요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '공임/인건비' mean in English?",
+      "options": [
+        "worn out",
+        "grinding",
+        "labor",
+        "rotor"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L3_DLG_012_set2",
+    "parentSetId": "L3_DLG_012",
+    "theme": "Car Repair — Mechanic Visit",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Let me take a look.",
+        "korean": "한번 봐볼게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Yeah, the brake pads are completely worn out, and the rotors need resurfacing too.",
+        "korean": "네, 브레이크 패드가 완전히 닳았고 로터도 재연마가 필요해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "How much will that cost?",
+        "korean": "비용이 얼마나 들까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "For parts and labor, it'll be around three hundred and fifty dollars, and we can have it done by tomorrow afternoon.",
+        "korean": "부품과 공임 합쳐서 약 350달러 정도이고 내일 오후까지 끝낼 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Okay go ahead. Safety comes first.",
+        "korean": "네 진행해주세요. 안전이 최우선이니까요.",
+        "properNounIndices": [
+          3
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '공임/인건비' mean in English?",
+      "options": [
+        "brake pads",
+        "rotor",
+        "labor",
+        "grinding"
+      ],
+      "answer": 2
+    }
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "setId": "L4_EXT_020_set1",
+    "parentSetId": "L4_EXT_020",
+    "theme": "Sleep Deprivation and Productivity",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Sleep deprivation costs the global economy an estimated four hundred and eleven billion dollars annually through lost productivity.",
+        "korean": "110억 달러의 비용을 초래한다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "After just one night of poor sleep cognitive performance drops by roughly twenty-five percent.",
+        "korean": "수면이 부족한 밤 하루만 지나도 인지 능력이 약 25% 떨어진다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Some forward-thinking companies have responded by installing nap rooms and shifting to results-based performance metrics rather than measuring hours spent at a desk.",
+        "korean": "일부 선진적인 기업들은 낮잠 공간을 설치하고 책상에서 보낸 시간 대신 결과 기반 성과 지표로 전환함으로써 대응했다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '인지 능력' mean in English?",
+      "options": [
+        "cognitive performance",
+        "nap room",
+        "sleep deprivation",
+        "metrics"
+      ],
+      "answer": 0
+    }
+  }
+]

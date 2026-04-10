@@ -72,7 +72,13 @@ export const SpeakingHistory: React.FC<SpeakingHistoryProps> = ({ results, loadi
 
               <div>
                 <div className="font-medium text-gray-900 dark:text-white">
-                  {result.sentenceCount ? `${result.sentenceCount}문장 · ` : ''}{result.roundsCompleted ? `Round ${result.roundsCompleted}` : ''}
+                  {result.sentenceCount || result.roundsCompleted ? (
+                    <>
+                      {result.sentenceCount ? `${result.sentenceCount}문장` : ''}
+                      {result.sentenceCount && result.roundsCompleted ? ' · ' : ''}
+                      {result.roundsCompleted ? `Round ${result.roundsCompleted}` : ''}
+                    </>
+                  ) : '완료'}
                 </div>
                 <div className="text-xs text-gray-500 dark:text-gray-400 flex items-center gap-2">
                   <span>{formatDate(result.completedAt)}</span>

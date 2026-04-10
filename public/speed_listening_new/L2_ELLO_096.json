@@ -1,0 +1,60 @@
+[
+  {
+    "setId": "L2_ELLO_096_set1",
+    "parentSetId": "L2_ELLO_096",
+    "theme": "Mixer #49 — Waking Up Early",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I wake up at five every morning, even on weekends.",
+        "korean": "매일 아침 5시에 일어나요, 주말에도요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "The early morning is my most productive time.",
+        "korean": "이른 아침이 가장 생산적인 시간이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I set five alarms and still have trouble getting up.",
+        "korean": "알람을 다섯 개 맞추고도 일어나기 힘들어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I hit the snooze button at least three times.",
+        "korean": "스누즈 버튼을 적어도 세 번 눌러요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I started putting my phone across the room so I have to physically get up to turn off the alarm, and it actually works.",
+        "korean": "폰을 방 반대편에 두기 시작했어요. 물리적으로 일어나서 알람을 꺼야 하거든요. 정말 효과가 있어요.",
+        "properNounIndices": [
+          0,
+          9
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #122 — Big & Skip Meals",
+        "Mixer #14 — Hanging Out",
+        "Mixer #49 — Waking Up Early",
+        "Mixer #121 — Favorite Proverb"
+      ],
+      "answer": 2
+    }
+  }
+]

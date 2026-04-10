@@ -26,35 +26,32 @@
       },
       {
         "id": 2,
-        "english": "Second, our average deal cycle in the enterprise pipeline extended from ninety days to about one hundred and twenty days. We're closing deals, but they're taking longer.",
+        "english": "Second, our average deal cycle in the enterprise pipeline extended from ninety days to about one hundred and twenty days.",
         "korean": "둘째, 엔터프라이즈 파이프라인의 평균 거래 주기가 90일에서 약 120일로 늘어났습니다.",
-        "properNounIndices": [
-          20
-        ]
+        "properNounIndices": []
       },
       {
         "id": 3,
-        "english": "I want to add some context there. The extended deal cycles aren't necessarily a bad sign.",
-        "korean": "거기에 맥락을 더하고 싶어요. 늘어난 거래 주기가 반드시 나쁜 신호는 아닙니다.",
-        "properNounIndices": [
-          0,
-          7
-        ]
+        "english": "We're closing deals, but they're taking longer.",
+        "korean": "평균 거래 주기가 90일에서 약 120일로 늘어났어요",
+        "properNounIndices": []
       },
       {
         "id": 4,
-        "english": "We're seeing more stakeholders involved in the decision-making process, which slows things down, but it also tends to result in larger contract values.",
-        "korean": "더 많은 이해관계자가 의사결정 과정에 참여하면서 속도는 느려지지만, 계약 규모가 더 커지는 경향이 있어요.",
-        "properNounIndices": []
+        "english": "I want to add some context there.",
+        "korean": "거기에 맥락을 더하고 싶어요.",
+        "properNounIndices": [
+          0
+        ]
       }
     ],
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Describing a Movie",
+        "The Attention Residue Problem",
         "Business Meeting — Quarterly Review",
-        "Ordering Food Delivery",
-        "Psychology Lecture — The Bystander Effect"
+        "Tips for Better Sleep",
+        "A Busy Saturday"
       ],
       "answer": 1
     }
@@ -63,35 +60,80 @@
     "setId": "L4_EXT_006_set2",
     "parentSetId": "L4_EXT_006",
     "theme": "Business Meeting — Quarterly Review",
-    "level": 6,
+    "level": 5,
     "setNumber": 2,
     "sentences": [
       {
         "id": 5,
+        "english": "The extended deal cycles aren't necessarily a bad sign.",
+        "korean": "늘어난 거래 주기가 반드시 나쁜 신호는 아닙니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "We're seeing more stakeholders involved in the decision-making process, which slows things down, but it also tends to result in larger contract values.",
+        "korean": "더 많은 이해관계자가 의사결정 과정에 참여하면서 속도는 느려지지만, 계약 규모가 더 커지는 경향이 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
         "english": "Our average contract size is actually up fifteen percent.",
         "korean": "평균 계약 규모가 실제로 15% 증가했습니다.",
         "properNounIndices": []
       },
       {
-        "id": 6,
-        "english": "That's encouraging, but we still need to address the churn. What are we doing about integration complexity?",
-        "korean": "고무적이지만, 이탈 문제는 여전히 해결해야 합니다. 통합 복잡성에 대해 뭘 하고 있나요?",
-        "properNounIndices": [
-          10
-        ]
-      },
-      {
-        "id": 7,
-        "english": "We've been hearing this feedback consistently, so we've prioritized a new onboarding module that simplifies the initial setup process. It's scheduled for release in late May. Early beta testers have reported a forty percent reduction in setup time.",
-        "korean": "이 피드백을 일관되게 듣고 있어서, 초기 설정 과정을 간소화하는 새 온보딩 모듈을 우선 개발했습니다.",
-        "properNounIndices": [
-          19,
-          25,
-          26
-        ]
-      },
-      {
         "id": 8,
+        "english": "That's encouraging, but we still need to address the churn.",
+        "korean": "고무적이지만, 이탈 문제는 여전히 해결해야 합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "What are we doing about integration complexity?",
+        "korean": "통합 복잡성에 대해 뭘 하고 있나요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Buying a Gift",
+        "Helping a Lost Dog",
+        "TED-Style Talk — The Science of Habits",
+        "Business Meeting — Quarterly Review"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L4_EXT_006_set3",
+    "parentSetId": "L4_EXT_006",
+    "theme": "Business Meeting — Quarterly Review",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "We've been hearing this feedback consistently, so we've prioritized a new onboarding module that simplifies the initial setup process.",
+        "korean": "이 피드백을 일관되게 듣고 있어서, 초기 설정 과정을 간소화하는 새 온보딩 모듈을 우선 개발했습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "It's scheduled for release in late May.",
+        "korean": "초기 설정 과정을 간소화하는",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 12,
+        "english": "Early beta testers have reported a forty percent reduction in setup time.",
+        "korean": "새 온보딩 모듈을 우선 개발했어요",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
         "english": "Good. Laura, what's the pipeline looking like for Q2?",
         "korean": "좋아요. 로라, Q2 파이프라인은 어때요?",
         "properNounIndices": [
@@ -100,33 +142,63 @@
         ]
       },
       {
-        "id": 9,
+        "id": 14,
         "english": "Strong. We have seventy-eight million in qualified pipeline, which is the highest it's been in two years.",
         "korean": "강합니다. 검증된 파이프라인에 7800만 달러로, 2년 만에 최고입니다.",
         "properNounIndices": [
           1
         ]
-      },
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "My Favorite Singer",
+        "My Dream",
+        "Business Meeting — Quarterly Review",
+        "Weekend Plans"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L4_EXT_006_set4",
+    "parentSetId": "L4_EXT_006",
+    "theme": "Business Meeting — Quarterly Review",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
       {
-        "id": 10,
+        "id": 15,
         "english": "If we close at our historical conversion rate of around thirty-five percent, we should land between twenty-seven and twenty-eight million in new bookings.",
         "korean": "역대 전환율 약 35%로 마감하면, 2700만에서 2800만 달러의 신규 계약에 도달할 것입니다.",
         "properNounIndices": []
       },
       {
-        "id": 11,
-        "english": "Let's aim for the upper end. Raj, make sure that onboarding module launches on time — it could be the differentiator for some of these Q2 deals. James, I want a revised forecast on my desk by Friday.",
-        "korean": "상한을 목표로 합시다. 라즈, 온보딩 모듈이 제때 출시되도록 하세요.",
+        "id": 16,
+        "english": "Let's aim for the upper end.",
+        "korean": "상한을 목표로 합시다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "Raj, make sure that onboarding module launches on time — it could be the differentiator for some of these Q2 deals.",
+        "korean": "라즈, 온보딩 모듈이 제때 출시되도록 하세요.",
         "properNounIndices": [
-          6,
-          25,
-          27,
-          28,
-          37
+          19
         ]
       },
       {
-        "id": 12,
+        "id": 18,
+        "english": "James, I want a revised forecast on my desk by Friday.",
+        "korean": "라즈, 온보딩 모듈이 제때 출시되도록 해요",
+        "properNounIndices": [
+          1,
+          10
+        ]
+      },
+      {
+        "id": 19,
         "english": "You'll have it.",
         "korean": "드리겠습니다.",
         "properNounIndices": []
@@ -135,12 +207,12 @@
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Business Meeting — Quarterly Review",
-        "Real Estate Tour",
-        "Long-Form Journalism — The Ethics of Gene Editing",
-        "History Lecture — The Fall of the Berlin Wall"
+        "Urban Farming Revolution",
+        "History Lecture — The Fall of the Berlin Wall",
+        "The Mere Exposure Effect",
+        "Business Meeting — Quarterly Review"
       ],
-      "answer": 0
+      "answer": 3
     }
   }
 ]

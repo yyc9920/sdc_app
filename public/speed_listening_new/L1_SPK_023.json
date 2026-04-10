@@ -1,0 +1,71 @@
+[
+  {
+    "setId": "L1_SPK_023_set1",
+    "parentSetId": "L1_SPK_023",
+    "theme": "A Teacher Who Influenced You",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Describe a teacher who had a significant influence on your life.",
+        "korean": "당신의 삶에 중요한 영향을 준 선생님을 묘사하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain how this teacher affected you.",
+        "korean": "어떻게 영향을 미쳤는지 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The teacher who had the biggest influence on me was my middle school science teacher.",
+        "korean": "나에게 가장 큰 영향을 준 선생님은 중학교 과학 선생님이었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Instead of just lecturing from a textbook he made every class interactive by having us conduct real experiments.",
+        "korean": "교과서로 강의만 하는 대신 실제 실험을 하게 해서 모든 수업을 상호작용적으로 만들었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "He also stayed after school to help any student who was struggling.",
+        "korean": "어려움을 겪는 학생을 돕기 위해 방과 후에도 남아 계셨어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Because of him I developed a love for science that eventually led me to study biology in university.",
+        "korean": "덕분에 과학에 대한 사랑이 생겼고 결국 대학에서 생물학을 공부하게 됐어요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 6,
+        "english": "He taught me that a great teacher doesn't just transfer knowledge — they ignite curiosity.",
+        "korean": "그는 훌륭한 교사는 단지 지식을 전달하는 것이 아니라 호기심에 불을 붙이는 것이라고 가르쳐줬어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "ignite curiosity",
+        "korean": "호기심에 불을 붙이다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Longer Vacations vs. Shorter Frequent Breaks",
+        "A Teacher Who Influenced You",
+        "What Makes a Good Leader",
+        "Traveling Alone vs. with Friends"
+      ],
+      "answer": 1
+    }
+  }
+]

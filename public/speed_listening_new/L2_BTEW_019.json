@@ -1,0 +1,114 @@
+[
+  {
+    "setId": "L2_BTEW_019_set1",
+    "parentSetId": "L2_BTEW_019",
+    "theme": "Cut Corners",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I had some decorators paint the living room, but there are bits missing and they've not done a great job tidying up either.",
+        "korean": "인테리어 업자들이 거실을 칠했는데 빠진 부분도 있고 정리도 잘 안 했어.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "They really cut corners.",
+        "korean": "정말 대충 했어.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Let's imagine an athletics track — it's oval-shaped with multiple lanes.",
+        "korean": "육상 트랙을 상상해봐요 — 여러 레인이 있는 타원형이죠.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "If you're running in the outside lane, you run a longer distance, don't you?",
+        "korean": "바깥 레인에서 뛰면 더 긴 거리를 뛰잖아요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Cutting corners has quite negative connotations, like you're not doing something properly.",
+        "korean": "'cut corners'는 꽤 부정적인 뉘앙스가 있어요. 뭔가를 제대로 안 하는 것 같은 느낌이죠.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "An uphill task",
+        "Cut Corners",
+        "Shoehorn something in",
+        "Turn over a new leaf"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L2_BTEW_019_set2",
+    "parentSetId": "L2_BTEW_019",
+    "theme": "Cut Corners",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "So, cutting corners is about taking the easy, quick or cheap route, which means that sometimes the job is not done properly.",
+        "korean": "그러니까 'cut corners'는 쉽고 빠르고 싼 방법을 택하는 거라 때때로 일이 제대로 안 된다는 뜻이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Are there any phrases which mean the opposite?",
+        "korean": "반대 의미 표현이 있을까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Instead of cutting corners, you can 'go the extra mile' or 'go above and beyond'.",
+        "korean": "'cut corners' 대신 'go the extra mile'이나 'go above and beyond'를 쓸 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Both mean you do more than what's expected of you.",
+        "korean": "둘 다 기대 이상으로 한다는 뜻이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "cut corners",
+        "korean": "(관용구) 대충 하다, 가장 쉽고 싼 방법을 택하다",
+        "properNounIndices": []
+      },
+      {
+        "id": 10,
+        "english": "go the extra mile",
+        "korean": "(관용구) 기대 이상으로 노력하다",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "go above and beyond",
+        "korean": "(관용구) 기대 이상을 해내다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Kick the Can Down the Road",
+        "It's Not Rocket Science",
+        "Cut Corners",
+        "Bide someone's time"
+      ],
+      "answer": 2
+    }
+  }
+]

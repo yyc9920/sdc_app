@@ -1,0 +1,53 @@
+[
+  {
+    "setId": "L3_B6ME_060_set1",
+    "parentSetId": "L3_B6ME_060",
+    "theme": "Which Cooking Oil Is the Best?",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "We're talking about cooking oils and which products are best for our health.",
+        "korean": "요리용 기름과 건강에 가장 좋은 제품에 대해 이야기해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "What do you use to cook with?",
+        "korean": "뭘로 요리하세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Olive oil?",
+        "korean": "올리브유?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Butter? Maybe avocado oil?",
+        "korean": "버터? 아보카도유?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 4,
+        "english": "There are so many different oils we can use for our food, and some of them are very expensive and claim to have big health benefits.",
+        "korean": "음식에 사용할 수 있는 매우 다양한 기름이 있고, 일부는 매우 비싸면서 큰 건강상 이점이 있다고 주장해요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Do You Like Garlic?",
+        "What Is Degrowth?",
+        "Which Cooking Oil Is the Best?",
+        "The Power of Pepper"
+      ],
+      "answer": 2
+    }
+  }
+]

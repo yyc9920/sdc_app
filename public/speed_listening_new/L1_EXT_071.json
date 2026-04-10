@@ -1,0 +1,61 @@
+[
+  {
+    "setId": "L1_EXT_071_set1",
+    "parentSetId": "L1_EXT_071",
+    "theme": "My Umbrella",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I have a yellow umbrella.",
+        "korean": "노란 우산이 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I always keep it in my bag because the weather changes quickly.",
+        "korean": "날씨가 빨리 변하니까 항상 가방에 넣고 다녀요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Last week I lent it to my friend and she forgot to return it.",
+        "korean": "지난주에 친구에게 빌려줬는데 반환하는 걸 잊었어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Of course it rained the next day and I got completely wet.",
+        "korean": "당연히 다음 날 비가 왔고 완전히 젖었어요.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Now I always carry a spare one just in case.",
+        "korean": "이제 만약을 위해 여분을 항상 가지고 다녀요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '만약을 위해' mean in English?",
+      "options": [
+        "lent",
+        "spare",
+        "umbrella",
+        "just in case"
+      ],
+      "answer": 3
+    }
+  }
+]

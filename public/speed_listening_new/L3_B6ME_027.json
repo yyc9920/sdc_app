@@ -1,0 +1,65 @@
+[
+  {
+    "setId": "L3_B6ME_027_set1",
+    "parentSetId": "L3_B6ME_027",
+    "theme": "Is It OK to Disagree?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "We might like to believe that we're accepting and tolerant of others' beliefs, but for many people it can be difficult to communicate with people who have very different opinions to our own.",
+        "korean": "타인의 신념을 수용하고 관용적이라고 믿고 싶겠지만, 매우 다른 의견을 가진 사람들과 소통하기 어려울 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Algorithms tend to show us what we already like and agree with.",
+        "korean": "알고리즘은 우리가 이미 좋아하고 동의하는 것을 보여주는 경향이 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Some worry that it's becoming harder to be open-minded — willing to listen to and consider new ideas.",
+        "korean": "일부는 열린 마음 — 새로운 아이디어를 듣고 고려하려는 자세 — 을 갖기가 어려워지고 있다고 걱정해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Paul says it takes 15 minutes for the amygdala, the part of the brain that experiences emotions, to calm down when we're aroused — when we feel anger or strong disagreement.",
+        "korean": "폴은 흥분했을 때 — 분노나 강한 불일치를 느낄 때 — 감정을 경험하는 뇌 부분인 편도체가 진정되려면 15분이 걸린다고 말해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "People make better decisions and are more engaging and more open when they're happier, when heat is taken out of the environment.",
+        "korean": "사람들은 더 행복할 때, 환경에서 열기가 빠졌을 때 더 나은 결정을 내리고 더 개방적이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "What percentage of the British population believes society is divided?",
+        "korean": "영국 인구의 몇 퍼센트가 사회가 분열되었다고 믿을까요?",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 6,
+        "english": "It is in fact 80%.",
+        "korean": "사실 80%예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '열린 마음의, 새로운 아이디어를 수용하려는' mean in English?",
+      "options": [
+        "open-minded",
+        "heat",
+        "aroused",
+        "motivational"
+      ],
+      "answer": 0
+    }
+  }
+]

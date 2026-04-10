@@ -1,0 +1,98 @@
+[
+  {
+    "setId": "L2_DLG_041_set1",
+    "parentSetId": "L2_DLG_041",
+    "theme": "Joining a Book Club",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I heard you're starting a book club.",
+        "korean": "북클럽을 시작한다고 들었어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Yes we meet every other Wednesday evening.",
+        "korean": "네 격주 수요일 저녁에 만나요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 2,
+        "english": "What kind of books do you read?",
+        "korean": "어떤 종류의 책을 읽어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Mostly fiction — one month it's a mystery and the next month it could be literary fiction.",
+        "korean": "주로 소설이에요 — 한 달은 미스터리 다음 달은 문학 소설일 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "How many members do you have so far?",
+        "korean": "현재 회원이 몇 명이에요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Sharing an Umbrella",
+        "Joining a Book Club",
+        "Annual Budget Meeting",
+        "Doctor Visit — Persistent Headache"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L2_DLG_041_set2",
+    "parentSetId": "L2_DLG_041",
+    "theme": "Joining a Book Club",
+    "level": 3,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Six people but we're hoping to get up to ten.",
+        "korean": "6명인데 10명까지 늘리려고 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Count me in!",
+        "korean": "나도 끼워줘요!",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "I'll add you to our group chat.",
+        "korean": "그룹 채팅에 추가해줄게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "count me in",
+        "korean": "나도 끼워줘",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "At the Hair Salon",
+        "Parent-Teacher Conference",
+        "Complaining About Internet Speed",
+        "Joining a Book Club"
+      ],
+      "answer": 3
+    }
+  }
+]

@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L2_BTEW_026_set1",
+    "parentSetId": "L2_BTEW_026",
+    "theme": "Shoot Off",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I need to shoot off right after the recording.",
+        "korean": "녹음 끝나고 바로 가야 해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I have a dentist appointment, and I can't be late again.",
+        "korean": "치과 예약이 있어서 또 늦으면 안 돼요.",
+        "properNounIndices": [
+          0,
+          6
+        ]
+      },
+      {
+        "id": 2,
+        "english": "'Shoot off' means to leave quickly because you're in a hurry or there's somewhere you need to be.",
+        "korean": "'shoot off'는 급하거나 가야 할 곳이 있어서 빨리 떠나는 뜻이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "If you need to leave early, you might say, 'Sorry, but I have to shoot off after this.'",
+        "korean": "일찍 떠나야 하면 '미안, 이거 끝나고 가야 해'라고 할 수 있어요.",
+        "properNounIndices": [
+          9,
+          11
+        ]
+      },
+      {
+        "id": 4,
+        "english": "shoot off",
+        "korean": "(구어) 급히 떠나다, 서둘러 가다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Turn over a new leaf",
+        "Hot on the Heels",
+        "Shoot Off",
+        "Flow State"
+      ],
+      "answer": 2
+    }
+  }
+]

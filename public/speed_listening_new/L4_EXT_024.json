@@ -1,0 +1,44 @@
+[
+  {
+    "setId": "L4_EXT_024_set1",
+    "parentSetId": "L4_EXT_024",
+    "theme": "The Attention Residue Problem",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Every time you switch between tasks your brain doesn't instantly reset — a portion of your attention remains stuck on the previous task a phenomenon that researcher Sophie Leroy calls attention residue.",
+        "korean": "작업 간 전환할 때마다 뇌가 즉시 리셋되지 않는다. 주의의 일부가 이전 작업에 남아 있다. 연구자 소피 리로이가 주의 잔여라 부르는 현상이다.",
+        "properNounIndices": [
+          27,
+          28
+        ]
+      },
+      {
+        "id": 1,
+        "english": "This means that the modern habit of constantly switching between email Slack meetings and actual work is far more cognitively expensive than most people realize.",
+        "korean": "이는 이메일 슬랙 회의 실제 업무 사이를 끊임없이 전환하는 현대적 습관이 대부분의 사람이 생각하는 것보다 인지적으로 훨씬 더 비싸다는 것을 의미한다.",
+        "properNounIndices": [
+          11
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Studies show that it takes an average of twenty-three minutes to fully refocus after an interruption which means a single unnecessary notification can cost nearly half an hour of productive work.",
+        "korean": "연구에 따르면 중단 후 완전히 재집중하는 데 평균 23분이 걸린다. 이는 불필요한 알림 하나가 거의 30분의 생산적 작업을 날릴 수 있다는 뜻이다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '주의 잔여' mean in English?",
+      "options": [
+        "notification",
+        "cognitively expensive",
+        "attention residue",
+        "refocus"
+      ],
+      "answer": 2
+    }
+  }
+]

@@ -1,0 +1,209 @@
+[
+  {
+    "setId": "L4_DLG_002_set1",
+    "parentSetId": "L4_DLG_002",
+    "theme": "Business Negotiation — Pricing",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Thank you for the proposal.",
+        "korean": "제안서 감사합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "We're very interested in your services.",
+        "korean": "서비스에 매우 관심이 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "However, we have some concerns about the pricing structure.",
+        "korean": "하지만 가격 구조에 대해 우려 사항이 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I appreciate that. What specific concerns do you have?",
+        "korean": "감사합니다. 구체적으로 어떤 우려가 있으신가요?",
+        "properNounIndices": [
+          0,
+          3
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Your initial quote is about 20% higher than what we budgeted.",
+        "korean": "초기 견적이 우리 예산보다 약 20% 높아요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '범위' mean in English?",
+      "options": [
+        "budget constraints",
+        "revised proposal",
+        "pricing structure",
+        "scope"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L4_DLG_002_set2",
+    "parentSetId": "L4_DLG_002",
+    "theme": "Business Negotiation — Pricing",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Can you provide any flexibility?",
+        "korean": "유연하게 조정할 수 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "I understand budget constraints are important.",
+        "korean": "예산 제약이 중요하다는 걸 이해합니다.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Let me ask — what aspects are most critical for your project?",
+        "korean": "여쭤볼게요 — 프로젝트에서 어떤 측면이 가장 중요한가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "We prioritize quality and delivery timeline.",
+        "korean": "품질과 납기를 우선시합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "The budget is secondary if we can ensure those two factors.",
+        "korean": "이 두 가지를 보장할 수 있다면 예산은 부차적이에요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '예산 제약' mean in English?",
+      "options": [
+        "budget constraints",
+        "revised proposal",
+        "pricing structure",
+        "scope"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L4_DLG_002_set3",
+    "parentSetId": "L4_DLG_002",
+    "theme": "Business Negotiation — Pricing",
+    "level": 5,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "That's helpful to know.",
+        "korean": "알려주셔서 도움이 돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "If quality and timeline are the priorities, I might suggest a different package structure.",
+        "korean": "품질과 납기가 우선이라면 다른 패키지 구조를 제안합니다.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 12,
+        "english": "What if we reduce the initial scope by 15% and scale up in Phase 2?",
+        "korean": "초기 범위를 15% 줄이고 2단계에서 확장하면 어떨까요?",
+        "properNounIndices": [
+          13
+        ]
+      },
+      {
+        "id": 13,
+        "english": "How would that impact the timeline?",
+        "korean": "그러면 납기에 어떤 영향이 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "Phase 1 would still be on schedule.",
+        "korean": "1단계는 일정대로 진행됩니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '예산 제약' mean in English?",
+      "options": [
+        "scope",
+        "revised proposal",
+        "pricing structure",
+        "budget constraints"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L4_DLG_002_set4",
+    "parentSetId": "L4_DLG_002",
+    "theme": "Business Negotiation — Pricing",
+    "level": 4,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "Phase 2 would begin after a brief assessment period.",
+        "korean": "2단계는 짧은 평가 기간 후에 시작해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 16,
+        "english": "Overall, you'd save approximately 18% on the initial investment.",
+        "korean": "전체적으로 초기 투자의 약 18%를 절약하실 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "That's more in line with our budget.",
+        "korean": "그게 우리 예산에 더 맞아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
+        "english": "Can you put together a revised proposal with that structure?",
+        "korean": "그 구조로 수정된 제안서를 작성해주실 수 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 19,
+        "english": "Absolutely. I'll have it to you by end of week.",
+        "korean": "물론이죠. 이번 주말까지 보내드릴게요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '예산 제약' mean in English?",
+      "options": [
+        "scope",
+        "revised proposal",
+        "budget constraints",
+        "pricing structure"
+      ],
+      "answer": 2
+    }
+  }
+]

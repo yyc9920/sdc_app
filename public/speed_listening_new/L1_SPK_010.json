@@ -1,0 +1,105 @@
+[
+  {
+    "setId": "L1_SPK_010_set1",
+    "parentSetId": "L1_SPK_010",
+    "theme": "An Important Childhood Memory",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Describe an important memory from your childhood.",
+        "korean": "어린 시절의 중요한 기억을 묘사하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain why it is important to you.",
+        "korean": "왜 중요한지 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "One of my most important childhood memories is winning first place in a school drawing contest when I was nine.",
+        "korean": "가장 중요한 어린 시절 기억 중 하나는 9살 때 학교 그리기 대회에서 1등을 한 거예요.",
+        "properNounIndices": [
+          17
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I remember being very nervous because there were over a hundred students competing.",
+        "korean": "100명 넘는 학생이 참가해서 매우 긴장했던 걸 기억해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "When the teacher called my name as the winner I couldn't believe it.",
+        "korean": "선생님이 우승자로 내 이름을 불렀을 때 믿을 수가 없었어요.",
+        "properNounIndices": [
+          9
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Importance of Sleep",
+        "Giving Back to Your Community",
+        "Working from Home Pros and Cons",
+        "An Important Childhood Memory"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L1_SPK_010_set2",
+    "parentSetId": "L1_SPK_010",
+    "theme": "An Important Childhood Memory",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "This memory is important because it taught me that hard work pays off.",
+        "korean": "이 기억이 중요한 이유는 노력은 보상을 받는다는 것을 가르쳐줬기 때문이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "I had practiced drawing every day for months before the contest.",
+        "korean": "대회 전 몇 달간 매일 그림 연습을 했었어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 7,
+        "english": "That experience gave me confidence that I could achieve things if I put in the effort.",
+        "korean": "그 경험이 노력하면 무언가를 이룰 수 있다는 자신감을 줬어요.",
+        "properNounIndices": [
+          6,
+          11
+        ]
+      },
+      {
+        "id": 8,
+        "english": "hard work pays off",
+        "korean": "노력은 보상을 받는다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "An Important Childhood Memory",
+        "Technology in Education",
+        "Physical Stores vs. Online Shopping",
+        "Important Quality in a Friend"
+      ],
+      "answer": 0
+    }
+  }
+]

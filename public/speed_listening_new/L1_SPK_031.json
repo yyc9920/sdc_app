@@ -1,0 +1,71 @@
+[
+  {
+    "setId": "L1_SPK_031_set1",
+    "parentSetId": "L1_SPK_031",
+    "theme": "Big City vs. Small Town University",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Would you prefer attending a university in a big city or a small town?",
+        "korean": "대도시와 소도시 중 어디에 있는 대학에 다니겠습니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your choice.",
+        "korean": "선택을 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I would prefer attending a university in a big city.",
+        "korean": "대도시에 있는 대학에 다니는 것을 선호하겠어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "First big cities offer far more internship and networking opportunities.",
+        "korean": "첫째 대도시는 인턴십과 네트워킹 기회를 훨씬 더 많이 제공해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Many major companies are headquartered in cities so students can build professional connections while still in school.",
+        "korean": "많은 주요 기업이 도시에 본사를 두고 있어 재학 중에도 전문적 인맥을 쌓을 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Second the cultural diversity in a big city broadens your worldview in ways that a small town simply cannot.",
+        "korean": "둘째 대도시의 문화적 다양성은 소도시에서는 불가능한 방식으로 세계관을 넓혀줘요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "You meet people from all over the world and learn to see things from different perspectives.",
+        "korean": "전 세계 사람들을 만나고 다른 관점에서 보는 법을 배워요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "broaden your worldview",
+        "korean": "세계관을 넓히다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "The Importance of Reading",
+        "Early Bird vs. Procrastinator",
+        "The Value of Travel",
+        "Big City vs. Small Town University"
+      ],
+      "answer": 3
+    }
+  }
+]

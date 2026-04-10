@@ -1,0 +1,53 @@
+[
+  {
+    "setId": "L1_EXT_011_set1",
+    "parentSetId": "L1_EXT_011",
+    "theme": "My Best Friend",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My best friend's name is Sarah.",
+        "korean": "내 가장 친한 친구 이름은 세라예요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 1,
+        "english": "We met in elementary school when we were seven years old.",
+        "korean": "초등학교에서 7살 때 만났어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "She is kind and always makes me laugh.",
+        "korean": "그녀는 친절하고 항상 나를 웃게 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "We like to go shopping together on weekends.",
+        "korean": "주말에 같이 쇼핑 가는 걸 좋아해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Even when we disagree about something we always work it out.",
+        "korean": "뭔가에 대해 의견이 달라도 항상 해결해요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '해결하다' mean in English?",
+      "options": [
+        "disagree",
+        "work it out",
+        "elementary school",
+        "best friend"
+      ],
+      "answer": 1
+    }
+  }
+]

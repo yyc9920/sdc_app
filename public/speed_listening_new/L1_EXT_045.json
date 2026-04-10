@@ -1,0 +1,60 @@
+[
+  {
+    "setId": "L1_EXT_045_set1",
+    "parentSetId": "L1_EXT_045",
+    "theme": "Learning to Ride a Bike",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I learned to ride a bike when I was six years old.",
+        "korean": "6살 때 자전거 타는 법을 배웠어요.",
+        "properNounIndices": [
+          0,
+          7
+        ]
+      },
+      {
+        "id": 1,
+        "english": "My dad held the back of the seat and ran with me.",
+        "korean": "아빠가 안장 뒤를 잡고 함께 뛰어줬어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I fell down many times and hurt my knees.",
+        "korean": "많이 넘어지고 무릎을 다쳤어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "But I didn't give up.",
+        "korean": "하지만 포기하지 않았어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 4,
+        "english": "After three days I could finally ride by myself.",
+        "korean": "3일 후에 드디어 혼자 탈 수 있었어요.",
+        "properNounIndices": [
+          3
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '넘어졌다' mean in English?",
+      "options": [
+        "give up",
+        "fell down",
+        "ride a bike",
+        "by myself"
+      ],
+      "answer": 1
+    }
+  }
+]

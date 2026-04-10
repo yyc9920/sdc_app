@@ -3,7 +3,7 @@
     "setId": "L3_CONV_003_set1",
     "parentSetId": "L3_CONV_003",
     "theme": "Late Drop Policy",
-    "level": 6,
+    "level": 5,
     "setNumber": 1,
     "sentences": [
       {
@@ -27,31 +27,27 @@
       },
       {
         "id": 2,
-        "english": "Yes, come on in, Sarah. Have a seat. What can I help you with today?",
-        "korean": "네, 들어와 사라. 앉아. 오늘 뭘 도와줄 수 있을까?",
+        "english": "Yes, come on in, Sarah.",
+        "korean": "네, 들어와 사라.",
         "properNounIndices": [
-          4,
-          5,
-          8,
-          10
+          4
         ]
       },
       {
         "id": 3,
-        "english": "I'm in a really tough spot with my Statistics course. We're halfway through the semester and I'm really struggling.",
-        "korean": "통계학 과목 때문에 정말 힘든 상황이에요. 학기 반이 지났는데 정말 힘들어요.",
+        "english": "Have a seat. What can I help you with today?",
+        "korean": "앉아. 오늘 뭘 도와줄 수 있을까?",
         "properNounIndices": [
-          8,
-          10,
-          16
+          3,
+          5
         ]
       },
       {
         "id": 4,
-        "english": "I was wondering about the possibility of dropping it.",
-        "korean": "수강 취소할 수 있는지 궁금했어요.",
+        "english": "I'm in a really tough spot with my Statistics course.",
+        "korean": "통계학 과목 때문에 정말 힘든 상황이에요.",
         "properNounIndices": [
-          0
+          8
         ]
       }
     ],
@@ -60,8 +56,8 @@
       "options": [
         "Late Drop Policy",
         "Grade Appeal Process",
-        "Student Visits Professor About Research Paper",
-        "Internship Credit"
+        "Internship Credit",
+        "Student Visits Professor About Research Paper"
       ],
       "answer": 0
     }
@@ -70,49 +66,44 @@
     "setId": "L3_CONV_003_set2",
     "parentSetId": "L3_CONV_003",
     "theme": "Late Drop Policy",
-    "level": 6,
+    "level": 5,
     "setNumber": 2,
     "sentences": [
       {
         "id": 5,
-        "english": "Okay. Let's look at the timeline first. The standard drop deadline passed about three weeks ago, so we'd be talking about a late withdrawal.",
-        "korean": "좋아. 먼저 일정을 보자. 표준 수강 취소 마감이 약 3주 전에 지나서, 늦은 철회에 해당해.",
+        "english": "We're halfway through the semester and I'm really struggling.",
+        "korean": "학기 반이 지났는데 정말 힘들어요.",
         "properNounIndices": [
-          1,
-          7
+          6
         ]
       },
       {
         "id": 6,
-        "english": "Do you know what the difference is?",
-        "korean": "차이가 뭔지 알고 있어?",
-        "properNounIndices": []
+        "english": "I was wondering about the possibility of dropping it.",
+        "korean": "수강 취소할 수 있는지 궁금했어요.",
+        "properNounIndices": [
+          0
+        ]
       },
       {
         "id": 7,
-        "english": "Not exactly. I know a regular drop doesn't show on your transcript, but a late withdrawal does?",
-        "korean": "정확히는 몰라요. 일반 취소는 성적표에 안 나타나지만, 늦은 철회는 나타나나요?",
+        "english": "Okay. Let's look at the timeline first.",
+        "korean": "좋아. 먼저 일정을 보자.",
         "properNounIndices": [
-          2
+          1
         ]
       },
       {
         "id": 8,
-        "english": "That's right. A late withdrawal appears on your transcript as a W — it doesn't affect your GPA, but it is visible.",
-        "korean": "맞아. 늦은 철회는 성적표에 W로 나타나 — GPA에는 영향이 없지만 보이긴 해.",
-        "properNounIndices": [
-          2,
-          11,
-          17
-        ]
+        "english": "The standard drop deadline passed about three weeks ago, so we'd be talking about a late withdrawal.",
+        "korean": "표준 수강 취소 마감이 약 3주 전에 지나서, 늦은 철회에 해당해.",
+        "properNounIndices": []
       },
       {
         "id": 9,
-        "english": "Would one W be a problem?",
-        "korean": "W 하나가 문제가 될까요?",
-        "properNounIndices": [
-          2
-        ]
+        "english": "Do you know what the difference is?",
+        "korean": "차이가 뭔지 알고 있어?",
+        "properNounIndices": []
       }
     ],
     "quiz": {
@@ -120,10 +111,10 @@
       "options": [
         "Internship Credit",
         "Student Visits Professor About Research Paper",
-        "Late Drop Policy",
-        "Grade Appeal Process"
+        "Grade Appeal Process",
+        "Late Drop Policy"
       ],
-      "answer": 2
+      "answer": 3
     }
   },
   {
@@ -135,80 +126,167 @@
     "sentences": [
       {
         "id": 10,
-        "english": "Generally, one W is unlikely to raise red flags. It becomes more concerning if there's a pattern.",
-        "korean": "일반적으로 W 하나는 문제가 되지 않아. 패턴이 있으면 더 우려되지.",
+        "english": "Not exactly. I know a regular drop doesn't show on your transcript, but a late withdrawal does?",
+        "korean": "정확히는 몰라요. 일반 취소는 성적표에 안 나타나지만, 늦은 철회는 나타나나요?",
         "properNounIndices": [
-          2,
-          9
+          2
         ]
       },
       {
         "id": 11,
-        "english": "Tell me more about why you're struggling. Is it the material, the workload, or something else?",
-        "korean": "왜 힘들어하는지 더 말해줘. 내용인지, 학습량인지, 다른 건지?",
+        "english": "That's right. A late withdrawal appears on your transcript as a W — it doesn't affect your GPA, but it is visible.",
+        "korean": "맞아. 늦은 철회는 성적표에 W로 나타나 — GPA에는 영향이 없지만 보이긴 해.",
         "properNounIndices": [
-          7
+          2,
+          11,
+          17
         ]
       },
       {
         "id": 12,
-        "english": "Honestly, it's the professor's teaching style. I can't follow his lectures at all, and the textbook isn't much better.",
-        "korean": "솔직히 교수님 강의 스타일 때문이에요. 강의를 전혀 따라갈 수 없고, 교과서도 별로예요.",
+        "english": "Would one W be a problem?",
+        "korean": "W 하나가 문제가 될까요?",
         "properNounIndices": [
-          6
+          2
         ]
       },
       {
         "id": 13,
-        "english": "Are you currently passing?",
-        "korean": "현재 패스하고 있어?",
-        "properNounIndices": []
+        "english": "Generally, one W is unlikely to raise red flags.",
+        "korean": "일반적으로 W 하나는 문제가 되지 않아.",
+        "properNounIndices": [
+          2
+        ]
       },
       {
         "id": 14,
-        "english": "Barely. I have a 63 going into the second half.",
-        "korean": "간신히요. 후반부에 들어가면서 63점이에요.",
-        "properNounIndices": [
-          1
-        ]
+        "english": "It becomes more concerning if there's a pattern.",
+        "korean": "패턴이 있으면 더 우려되지.",
+        "properNounIndices": []
       }
     ],
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Internship Credit",
         "Late Drop Policy",
+        "Internship Credit",
         "Student Visits Professor About Research Paper",
         "Grade Appeal Process"
       ],
-      "answer": 1
+      "answer": 0
     }
   },
   {
     "setId": "L3_CONV_003_set4",
     "parentSetId": "L3_CONV_003",
     "theme": "Late Drop Policy",
-    "level": 6,
+    "level": 4,
     "setNumber": 4,
     "sentences": [
       {
         "id": 15,
-        "english": "Here's my honest assessment. If you're putting in the effort and still at 63 halfway through, there's a real risk your grade could drop further.",
-        "korean": "솔직한 평가를 하자면, 노력하고 있는데도 중간에 63점이면 성적이 더 떨어질 실제 위험이 있어.",
-        "properNounIndices": [
-          4
-        ]
+        "english": "Tell me more about why you're struggling.",
+        "korean": "왜 힘들어하는지 더 말해줘.",
+        "properNounIndices": []
       },
       {
         "id": 16,
-        "english": "Statistics builds on itself. If the foundation is shaky, the later material gets exponentially harder.",
-        "korean": "통계학은 기초 위에 쌓이는 과목이야. 기초가 흔들리면 나중 내용이 기하급수적으로 어려워져.",
-        "properNounIndices": [
-          4
-        ]
+        "english": "Is it the material, the workload, or something else?",
+        "korean": "내용인지, 학습량인지, 다른 건지?",
+        "properNounIndices": []
       },
       {
         "id": 17,
+        "english": "Honestly, it's the professor's teaching style.",
+        "korean": "솔직히 교수님 강의 스타일 때문이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
+        "english": "I can't follow his lectures at all, and the textbook isn't much better.",
+        "korean": "강의를 전혀 따라갈 수 없고, 교과서도 별로예요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 19,
+        "english": "Are you currently passing?",
+        "korean": "현재 패스하고 있어?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Student Visits Professor About Research Paper",
+        "Internship Credit",
+        "Late Drop Policy",
+        "Grade Appeal Process"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L3_CONV_003_set5",
+    "parentSetId": "L3_CONV_003",
+    "theme": "Late Drop Policy",
+    "level": 5,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "Barely. I have a 63 going into the second half.",
+        "korean": "간신히요. 후반부에 들어가면서 63점이에요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 21,
+        "english": "Here's my honest assessment.",
+        "korean": "솔직한 평가를 하자면, 노력하고 있는데도 중간에 63점이면 성적이 더 떨어질 실제 위험이 있어.",
+        "properNounIndices": []
+      },
+      {
+        "id": 22,
+        "english": "If you're putting in the effort and still at 63 halfway through, there's a real risk your grade could drop further.",
+        "korean": "중간에 63점이면 실제 위험이 있어 성적이 더 떨어질",
+        "properNounIndices": []
+      },
+      {
+        "id": 23,
+        "english": "Statistics builds on itself.",
+        "korean": "통계학은 기초 위에 쌓이는 과목이야.",
+        "properNounIndices": []
+      },
+      {
+        "id": 24,
+        "english": "If the foundation is shaky, the later material gets exponentially harder.",
+        "korean": "기초가 흔들리면 나중 내용이 기하급수적으로 어려워져.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Student Visits Professor About Research Paper",
+        "Internship Credit",
+        "Grade Appeal Process",
+        "Late Drop Policy"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L3_CONV_003_set6",
+    "parentSetId": "L3_CONV_003",
+    "theme": "Late Drop Policy",
+    "level": 6,
+    "setNumber": 6,
+    "sentences": [
+      {
+        "id": 25,
         "english": "In that case, a W might be the strategic choice.",
         "korean": "그 경우, W가 전략적 선택일 수 있어.",
         "properNounIndices": [
@@ -216,18 +294,24 @@
         ]
       },
       {
-        "id": 18,
-        "english": "But I need this course for my major. If I withdraw, I still have to take it again.",
-        "korean": "하지만 전공에 이 과목이 필요해요. 철회하면 다시 들어야 하잖아요.",
+        "id": 26,
+        "english": "But I need this course for my major.",
+        "korean": "하지만 전공에 이 과목이 필요해요.",
         "properNounIndices": [
-          1,
-          8,
-          9,
-          11
+          1
         ]
       },
       {
-        "id": 19,
+        "id": 27,
+        "english": "If I withdraw, I still have to take it again.",
+        "korean": "철회하면 다시 들어야 하잖아요.",
+        "properNounIndices": [
+          1,
+          3
+        ]
+      },
+      {
+        "id": 28,
         "english": "Yes. But here's the thing — if you take it with a different professor next semester, you might do significantly better.",
         "korean": "맞아. 하지만 핵심은 — 다음 학기에 다른 교수님과 들으면 훨씬 잘 할 수 있다는 거야.",
         "properNounIndices": [
@@ -235,7 +319,7 @@
         ]
       },
       {
-        "id": 20,
+        "id": 29,
         "english": "And a B or above in the retake looks much better than, say, a D this semester.",
         "korean": "재수강에서 B 이상은 이번 학기 D보다 훨씬 좋아 보여.",
         "properNounIndices": [
@@ -244,7 +328,7 @@
         ]
       },
       {
-        "id": 21,
+        "id": 30,
         "english": "I think I need to think about this over the weekend.",
         "korean": "주말 동안 생각해봐야 할 것 같아요.",
         "properNounIndices": [
@@ -253,7 +337,7 @@
         ]
       },
       {
-        "id": 22,
+        "id": 31,
         "english": "That's wise. Take the weekend, and if you decide to withdraw, come back Monday and I'll help you file the paperwork.",
         "korean": "현명해. 주말 동안 생각하고, 철회하기로 하면 월요일에 와. 서류 처리를 도와줄게.",
         "properNounIndices": [
@@ -266,12 +350,12 @@
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Student Visits Professor About Research Paper",
         "Internship Credit",
-        "Late Drop Policy",
-        "Grade Appeal Process"
+        "Student Visits Professor About Research Paper",
+        "Grade Appeal Process",
+        "Late Drop Policy"
       ],
-      "answer": 2
+      "answer": 3
     }
   }
 ]

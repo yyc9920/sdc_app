@@ -1,0 +1,119 @@
+[
+  {
+    "setId": "L3_B6ME_020_set1",
+    "parentSetId": "L3_B6ME_020",
+    "theme": "The Power of Pepper",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "In this episode, we're discussing a food seasoning that's so popular we eat around three quarters of a million tonnes of it a year.",
+        "korean": "이번 에피소드에서는 연간 약 75만 톤을 먹을 정도로 인기 있는 식품 양념을 다뤄요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "We're talking about pepper.",
+        "korean": "바로 후추예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Did you know that peppers are the fruit of vines often growing over ten metres high?",
+        "korean": "후추가 종종 10미터 이상 자라는 덩굴의 열매라는 걸 알고 있었나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "From ancient Greece onwards, pepper was prized as the black gold of ingredients, and explorers crossed oceans in search of it, discovering new continents along the way.",
+        "korean": "고대 그리스 이래로 후추는 재료의 검은 금으로 귀히 여겨졌고, 탐험가들은 후추를 찾아 바다를 건너며 새로운 대륙을 발견했어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Pepper gives a kick.",
+        "korean": "후추는 활력을 줘요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '활력을 주다, 자극을 더하다' mean in English?",
+      "options": [
+        "catalyst",
+        "give something a kick",
+        "exclamation mark",
+        "grind"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L3_B6ME_020_set2",
+    "parentSetId": "L3_B6ME_020",
+    "theme": "The Power of Pepper",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "You still have the savour of the different ingredients.",
+        "korean": "다른 재료의 맛을 여전히 느낄 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "It will not disguise the other ingredients, but it will push them — it's a flavour catalyst.",
+        "korean": "다른 재료를 가리지 않고 밀어주는 맛의 촉매제예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Like it's an exclamation mark.",
+        "korean": "감탄부호 같죠.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "The colour of pepper is not determined by the variety, but by its maturity.",
+        "korean": "후추의 색은 품종이 아니라 성숙도에 의해 결정돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "A food's maturity describes the stage when it is fully grown and ready to harvest.",
+        "korean": "식품의 성숙도는 완전히 자라서 수확할 준비가 된 단계를 말해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 10,
+        "english": "I asked you what's unusual about Phu Quoc, a white pepper from Vietnam.",
+        "korean": "베트남산 백후추 푸꾸옥의 특이한 점을 물었죠.",
+        "properNounIndices": [
+          0,
+          6,
+          7,
+          12
+        ]
+      },
+      {
+        "id": 11,
+        "english": "The answer is b) it tastes like parmesan cheese.",
+        "korean": "정답은 b) 파마산 치즈 맛이 나요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '갈다 — 두 단단한 면 사이에서 눌러 가루로 만들다' mean in English?",
+      "options": [
+        "catalyst",
+        "maturity",
+        "keen on",
+        "grind"
+      ],
+      "answer": 3
+    }
+  }
+]

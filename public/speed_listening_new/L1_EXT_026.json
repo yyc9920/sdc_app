@@ -1,0 +1,53 @@
+[
+  {
+    "setId": "L1_EXT_026_set1",
+    "parentSetId": "L1_EXT_026",
+    "theme": "A Birthday Party",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Last week was my friend's birthday.",
+        "korean": "지난주가 친구 생일이었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "We had a party at her house.",
+        "korean": "친구 집에서 파티를 했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I gave her a book because she loves reading.",
+        "korean": "읽는 걸 좋아해서 책을 선물했어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "We ate cake and played games together.",
+        "korean": "같이 케이크를 먹고 게임을 했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Everyone had a great time.",
+        "korean": "모두 즐거운 시간을 보냈어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Emergency Broadcast",
+        "Economic Analysis — The Paradox of Thrift",
+        "A Birthday Party",
+        "First Day at a New Job"
+      ],
+      "answer": 2
+    }
+  }
+]

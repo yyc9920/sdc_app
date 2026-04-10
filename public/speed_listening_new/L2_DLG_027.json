@@ -1,0 +1,104 @@
+[
+  {
+    "setId": "L2_DLG_027_set1",
+    "parentSetId": "L2_DLG_027",
+    "theme": "Checking Out at a Supermarket",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "That'll be forty-two thirty-five.",
+        "korean": "42달러 35센트입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Can I use this coupon?",
+        "korean": "이 쿠폰 사용할 수 있나요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Let me scan it.",
+        "korean": "스캔해볼게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "That takes five dollars off your total.",
+        "korean": "총액에서 5달러 할인됩니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Do you have a rewards card with us?",
+        "korean": "저희 포인트 카드 있으세요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Crisis Communication Meeting",
+        "Ordering Delivery Food",
+        "Checking Out at a Supermarket",
+        "Dentist — Toothache"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_DLG_027_set2",
+    "parentSetId": "L2_DLG_027",
+    "theme": "Checking Out at a Supermarket",
+    "level": 3,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Yes here it is.",
+        "korean": "네 여기요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Your new total is thirty-seven thirty-five.",
+        "korean": "새 총액은 37달러 35센트입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "I'll pay with my card.",
+        "korean": "카드로 결제할게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Would you like a bag?",
+        "korean": "봉투 필요하세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "No thanks I brought my own.",
+        "korean": "아니요 가져왔어요.",
+        "properNounIndices": [
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Booking a Hotel Room",
+        "Doctor's Office — Annual Checkup",
+        "Checking Out at a Supermarket",
+        "Cross-Team Collaboration Meeting"
+      ],
+      "answer": 2
+    }
+  }
+]

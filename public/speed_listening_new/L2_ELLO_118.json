@@ -1,0 +1,48 @@
+[
+  {
+    "setId": "L2_ELLO_118_set1",
+    "parentSetId": "L2_ELLO_118",
+    "theme": "Mixer #27 — Grocery Shopping",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I always make a list before going to the supermarket, otherwise I buy random things.",
+        "korean": "슈퍼마켓 가기 전에 항상 목록을 만들어요. 아니면 이것저것 사게 돼요.",
+        "properNounIndices": [
+          0,
+          11
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I hate grocery shopping, so I order everything online and have it delivered.",
+        "korean": "장보기가 싫어서 다 온라인으로 주문하고 배달시켜요.",
+        "properNounIndices": [
+          0,
+          5
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I go to the market early on Sunday mornings for fresh produce, and the quality is so much better than the supermarket.",
+        "korean": "일요일 아침 일찍 시장에 신선한 농산물을 사러 가요. 품질이 슈퍼마켓보다 훨씬 좋아요.",
+        "properNounIndices": [
+          0,
+          7
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #19 — Travel Wish List",
+        "Mixer #19 — Language Barriers",
+        "Mixer #12 — Binge Watching",
+        "Mixer #27 — Grocery Shopping"
+      ],
+      "answer": 3
+    }
+  }
+]

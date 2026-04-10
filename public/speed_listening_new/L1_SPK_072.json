@@ -1,0 +1,96 @@
+[
+  {
+    "setId": "L1_SPK_072_set1",
+    "parentSetId": "L1_SPK_072",
+    "theme": "Longer Vacations vs. Shorter Frequent Breaks",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Would you prefer one long vacation per year or several shorter breaks throughout the year?",
+        "korean": "연 1회 긴 휴가와 여러 번의 짧은 휴식 중 어느 것을 선호합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain.",
+        "korean": "설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I prefer taking several shorter breaks throughout the year rather than one long vacation.",
+        "korean": "한 번의 긴 휴가보다 일 년 내내 여러 번의 짧은 휴식을 선호해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "First frequent breaks prevent burnout by giving you something to look forward to every few weeks.",
+        "korean": "첫째 잦은 휴식은 몇 주마다 기대할 것을 줌으로써 번아웃을 방지해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "With one long vacation you might spend eleven months waiting and by the end you dread returning to work.",
+        "korean": "한 번의 긴 휴가로는 11개월을 기다릴 수 있고 끝에는 복귀가 두려워요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "A Movie That Inspired You",
+        "Longer Vacations vs. Shorter Frequent Breaks",
+        "A Skill You Want to Learn",
+        "How would you spend a day completely without techn"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L1_SPK_072_set2",
+    "parentSetId": "L1_SPK_072",
+    "theme": "Longer Vacations vs. Shorter Frequent Breaks",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Second shorter trips are easier to plan and less expensive which means you can visit more places over the course of a year.",
+        "korean": "둘째 짧은 여행은 계획하기 쉽고 비용이 덜 들어 1년간 더 많은 곳을 방문할 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "For me having regular mini-escapes keeps my energy and motivation consistently high throughout the year.",
+        "korean": "나에게 정기적인 소규모 탈출은 일 년 내내 에너지와 동기를 꾸준히 높게 유지해줘요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "look forward to",
+        "korean": "기대하다",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "over the course of",
+        "korean": "~에 걸쳐",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Longer Vacations vs. Shorter Frequent Breaks",
+        "Do you think a university degree is still necessar",
+        "Do you think competition is healthy or harmful for",
+        "An Important Childhood Memory"
+      ],
+      "answer": 0
+    }
+  }
+]

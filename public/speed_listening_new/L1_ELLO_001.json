@@ -8,84 +8,60 @@
     "sentences": [
       {
         "id": 0,
-        "english": "Hello, my name is Anita and I'm from Taiwan. Taiwan is a very small country and I'm not sure where Taiwan can be considered a country or not.",
-        "korean": "안녕하세요, 제 이름은 아니타이고 대만에서 왔어요. 대만은 아주 작은 나라라 어디서 유명한지 잘 모르겠어요.",
+        "english": "Hello, my name is Anita and I'm from Taiwan.",
+        "korean": "안녕하세요, 제 이름은 아니타이고 대만에서 왔어요.",
         "properNounIndices": [
           4,
           6,
-          8,
-          9,
-          16,
-          20
+          8
         ]
       },
       {
         "id": 1,
-        "english": "I like Taiwan very well because we have nice food, nice weather — the winter is warm — and people are friendly. I like to stay in Taiwan very much.",
-        "korean": "대만을 아주 좋아해요. 맛있는 음식, 좋은 날씨 — 겨울이 따뜻하고 — 사람들이 친절하거든요.",
+        "english": "Taiwan is a very small country and I'm not sure where Taiwan can be considered a country or not.",
+        "korean": "대만은 아주 작은 나라라 어디서 유명한지 잘 모르겠어요.",
         "properNounIndices": [
-          0,
-          2,
-          22,
-          27
+          7,
+          11
         ]
       },
       {
         "id": 2,
-        "english": "My name is Jeyong Kim. I am from Korea and I'm 19 years old. Koreans like kimchi, yes, and most of the Koreans like spicy food, but I for example cannot eat spicy food very well because my tongue gets really hot.",
-        "korean": "제 이름은 김제영이고 한국에서 왔어요. 19살이에요. 한국인들은 김치를 좋아하고, 대부분 매운 음식을 좋아해요.",
+        "english": "I like Taiwan very well because we have nice food, nice weather — the winter is warm — and people are friendly.",
+        "korean": "대만을 아주 좋아해요.",
         "properNounIndices": [
-          3,
-          4,
-          5,
-          8,
-          10,
-          14,
-          22,
-          27
+          0,
+          2
         ]
       },
       {
         "id": 3,
-        "english": "Hi, my name is Martin. I'm from Seattle, Washington in the United States. Seattle, if you haven't heard of it, is in the northwest corner of the U.S. It's very famous for salmon and the Space Needle.",
-        "korean": "안녕, 제 이름은 마틴이고 미국 워싱턴주 시애틀에서 왔어요. 시애틀은 미국 북서쪽 모서리에 있어요.",
+        "english": "I like to stay in Taiwan very much.",
+        "korean": "맛있는 음식, 좋은 날씨 — 겨울이 따뜻하고 — 사람들이 친절하거든요.",
         "properNounIndices": [
-          4,
-          5,
-          7,
-          8,
-          11,
-          12,
-          13,
-          27,
-          28,
-          35,
-          36
+          0,
+          5
         ]
       },
       {
         "id": 4,
-        "english": "I went to school there, at the University of Washington. It's a very beautiful campus. Very large campus — there's 30,000 people there, on the campus. People from all over the world.",
-        "korean": "거기서 워싱턴 대학교를 다녔어요. 아주 아름다운 캠퍼스이고 매우 커요 — 학생이 3만 명이에요.",
+        "english": "My name is Jeyong Kim.",
+        "korean": "제 이름은 김제영이고 한국에서 왔어요.",
         "properNounIndices": [
-          0,
-          7,
-          9,
-          10,
-          15,
-          26
+          3,
+          4
         ]
       }
     ],
     "quiz": {
       "question": "What does '파운드(무게 단위, 약 0.45kg)' mean in English?",
       "options": [
+        "a pound",
         "campus",
         "as you can tell",
-        "take some exercise",
-        "a pound"
+        "take some exercise"
       ],
-      "answer": 3
+      "answer": 0
     }
   },
   {
@@ -97,22 +73,154 @@
     "sentences": [
       {
         "id": 5,
-        "english": "Hello, my name is Naomi. I'm from Australia. In Australia I live on the Sunshine Coast, which, as you can tell from the name, is a very sunny place. We have very beautiful beaches.",
-        "korean": "안녕, 제 이름은 나오미이고 호주에서 왔어요. 호주에서 선샤인 코스트에 사는데, 이름에서 알 수 있듯이 호주에서 아주 화창한 지역이에요.",
+        "english": "I am from Korea and I'm 19 years old.",
+        "korean": "19살이에요.",
         "properNounIndices": [
-          4,
-          5,
-          7,
-          8,
-          9,
-          10,
-          14,
-          15,
-          29
+          0,
+          3,
+          5
         ]
       },
       {
         "id": 6,
+        "english": "Koreans like kimchi, yes, and most of the Koreans like spicy food, but I for example cannot eat spicy food very well because my tongue gets really hot.",
+        "korean": "한국인들은 김치를 좋아하고, 대부분 매운 음식을 좋아해요.",
+        "properNounIndices": [
+          8,
+          13
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Hi, my name is Martin.",
+        "korean": "안녕, 제 이름은 마틴이고 미국 워싱턴주 시애틀에서 왔어요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 8,
+        "english": "I'm from Seattle, Washington in the United States.",
+        "korean": "시애틀은 미국 북서쪽 모서리에 있어요.",
+        "properNounIndices": [
+          2,
+          3,
+          6,
+          7
+        ]
+      },
+      {
+        "id": 9,
+        "english": "Seattle, if you haven't heard of it, is in the northwest corner of the U.S.",
+        "korean": "시애틀은",
+        "properNounIndices": [
+          14
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '보다시피' mean in English?",
+      "options": [
+        "as you can tell",
+        "a pound",
+        "campus",
+        "take some exercise"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L1_ELLO_001_set3",
+    "parentSetId": "L1_ELLO_001",
+    "theme": "Mixer #17 — Introductions",
+    "level": 4,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "It's very famous for salmon and the Space Needle.",
+        "korean": "혹시 모르시면 미국 북서쪽 모서리에 있어요",
+        "properNounIndices": [
+          7,
+          8
+        ]
+      },
+      {
+        "id": 11,
+        "english": "I went to school there, at the University of Washington.",
+        "korean": "거기서 워싱턴 대학교를 다녔어요.",
+        "properNounIndices": [
+          0,
+          7,
+          9
+        ]
+      },
+      {
+        "id": 12,
+        "english": "It's a very beautiful campus.",
+        "korean": "아주 아름다운 캠퍼스이고 매우 커요 — 학생이 3만 명이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
+        "english": "Very large campus — there's 30,000 people there, on the campus.",
+        "korean": "아주 아름다운 캠퍼스예요",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "People from all over the world.",
+        "korean": "매우 큰 캠퍼스 3만 명의 학생이 있어요",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '운동을 하다' mean in English?",
+      "options": [
+        "campus",
+        "as you can tell",
+        "take some exercise",
+        "a pound"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L1_ELLO_001_set4",
+    "parentSetId": "L1_ELLO_001",
+    "theme": "Mixer #17 — Introductions",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "Hello, my name is Naomi.",
+        "korean": "안녕, 제 이름은 나오미이고 호주에서 왔어요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 16,
+        "english": "I'm from Australia. In Australia I live on the Sunshine Coast, which, as you can tell from the name, is a very sunny place.",
+        "korean": "호주에서 선샤인 코스트에 사는데, 이름에서 알 수 있듯이 호주에서 아주 화창한 지역이에요.",
+        "properNounIndices": [
+          2,
+          3,
+          4,
+          5,
+          9,
+          10
+        ]
+      },
+      {
+        "id": 17,
+        "english": "We have very beautiful beaches.",
+        "korean": "이름에서 알 수 있듯이 호주에서 매우 화창한 지역이에요",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
         "english": "I will go to the beach with my dog and my family and we have a very outdoor lifestyle there.",
         "korean": "강아지와 가족과 해변에 가고, 거기서 아주 야외 활동적인 생활을 해요.",
         "properNounIndices": [
@@ -120,20 +228,45 @@
         ]
       },
       {
-        "id": 7,
-        "english": "Hello, my name is Marion and I'm from Ireland. One thing I love about Ireland is the green that's everywhere.",
-        "korean": "안녕, 제 이름은 매리언이고 아일랜드에서 왔어요. 아일랜드에서 좋아하는 한 가지는 어디에나 있는 초록빛이에요.",
+        "id": 19,
+        "english": "Hello, my name is Marion and I'm from Ireland.",
+        "korean": "안녕, 제 이름은 매리언이고 아일랜드에서 왔어요.",
         "properNounIndices": [
           4,
           6,
-          8,
-          9,
-          11,
-          14
+          8
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '운동을 하다' mean in English?",
+      "options": [
+        "campus",
+        "a pound",
+        "as you can tell",
+        "take some exercise"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L1_ELLO_001_set5",
+    "parentSetId": "L1_ELLO_001",
+    "theme": "Mixer #17 — Introductions",
+    "level": 6,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "One thing I love about Ireland is the green that's everywhere.",
+        "korean": "아일랜드에서 좋아하는 한 가지는 어디에나 있는 초록빛이에요.",
+        "properNounIndices": [
+          2,
+          5
         ]
       },
       {
-        "id": 8,
+        "id": 21,
         "english": "We have lots of space in Ireland and lots of nature — lots of green fields and mountains — and it's great to be able to go and walk along the hills and the mountains when you feel like taking some exercise.",
         "korean": "아일랜드에는 넓은 공간과 자연이 많아요 — 초록 들판과 산이 많고 — 그걸 즐길 수 있어서 정말 좋아요.",
         "properNounIndices": [
@@ -141,22 +274,28 @@
         ]
       },
       {
-        "id": 9,
-        "english": "My name is Akane and I'm from Toronto, Canada. One thing that I like about my country is that in Canada there are lots of different kinds of apples and I really like apples.",
-        "korean": "제 이름은 아카네이고 캐나다 토론토에서 왔어요. 우리나라에서 좋아하는 한 가지는 캐나다에 맛있는 사과가 정말 많다는 거예요.",
+        "id": 22,
+        "english": "My name is Akane and I'm from Toronto, Canada.",
+        "korean": "제 이름은 아카네이고 캐나다 토론토에서 왔어요.",
         "properNounIndices": [
           3,
           5,
           7,
-          8,
-          9,
-          12,
-          20,
-          30
+          8
         ]
       },
       {
-        "id": 10,
+        "id": 23,
+        "english": "One thing that I like about my country is that in Canada there are lots of different kinds of apples and I really like apples.",
+        "korean": "우리나라에서 좋아하는 한 가지는 캐나다에 맛있는 사과가 정말 많다는 거예요.",
+        "properNounIndices": [
+          3,
+          11,
+          21
+        ]
+      },
+      {
+        "id": 24,
         "english": "Usually you can get them for about 99 cents a pound and there are many varieties such as Granny Smith and Macintosh, which were invented in Ontario, and Red Delicious, Golden Delicious.",
         "korean": "보통 파운드당 99센트 정도에 살 수 있고, 그래니 스미스나 매킨토시 같은 다양한 품종이 있는데 제가 가장 좋아하는 두 가지예요.",
         "properNounIndices": [
@@ -171,7 +310,7 @@
         ]
       },
       {
-        "id": 11,
+        "id": 25,
         "english": "My favorite is Royal Gala.",
         "korean": "제가 가장 좋아하는 건 로열 갈라예요.",
         "properNounIndices": [
@@ -181,14 +320,14 @@
       }
     ],
     "quiz": {
-      "question": "What does '파운드(무게 단위, 약 0.45kg)' mean in English?",
+      "question": "What does '보다시피' mean in English?",
       "options": [
         "take some exercise",
-        "campus",
         "as you can tell",
-        "a pound"
+        "a pound",
+        "campus"
       ],
-      "answer": 3
+      "answer": 1
     }
   }
 ]

@@ -1,0 +1,41 @@
+[
+  {
+    "setId": "L5_EXT_032_set1",
+    "parentSetId": "L5_EXT_032",
+    "theme": "The Is-Ought Problem",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "David Hume identified one of philosophy's most enduring problems — the logical impossibility of deriving moral conclusions from purely factual observations, known as the is-ought problem.",
+        "korean": "데이비드 흄은 철학에서 가장 지속적인 문제 중 하나를 발견했다. 순수한 사실적 관찰에서 도덕적 결론을 도출하는 것의 논리적 불가능성이며 존재-당위 문제로 알려져 있다.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Just because something is a certain way in nature doesn't mean it should be that way — the fact that humans have always waged wars doesn't make war morally acceptable, and the fact that some animals eat their young doesn't justify similar behavior in humans.",
+        "korean": "자연에서 무언가가 특정 방식으로 존재한다고 그렇게 되어야 한다는 뜻은 아니다. 인간이 항상 전쟁을 했다는 사실이 전쟁을 도덕적으로 수용 가능하게 만들지 않는다. 일부 동물이 새끼를 먹는다는 사실이 인간의 유사한 행동을 정당화하지 않는다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "This distinction is particularly relevant today as advances in technology constantly present us with situations where what we can do and what we should do are entirely different questions.",
+        "korean": "이 구분은 오늘날 특히 관련이 있다. 기술 발전이 끊임없이 할 수 있는 것과 해야 하는 것이 전혀 다른 질문인 상황을 우리에게 제시하기 때문이다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '도출하다' mean in English?",
+      "options": [
+        "is-ought problem",
+        "distinction",
+        "derive",
+        "morally acceptable"
+      ],
+      "answer": 2
+    }
+  }
+]

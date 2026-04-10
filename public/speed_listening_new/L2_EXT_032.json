@@ -1,0 +1,54 @@
+[
+  {
+    "setId": "L2_EXT_032_set1",
+    "parentSetId": "L2_EXT_032",
+    "theme": "Korean Street Food",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Korean street food is famous all around the world.",
+        "korean": "한국 길거리 음식은 전 세계적으로 유명해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Tteokbokki is the most popular snack and you can find it at almost every food stall.",
+        "korean": "떡볶이가 가장 인기 있는 간식이고 거의 모든 가판대에서 찾을 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Hotteok is a sweet pancake filled with brown sugar and cinnamon that is perfect for cold winter days.",
+        "korean": "호떡은 흑설탕과 시나몬이 들어간 달콤한 전병으로 추운 겨울날에 딱이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Foreign tourists often say that Korean street food is one of the highlights of visiting Korea.",
+        "korean": "외국인 관광객들은 종종 한국 길거리 음식이 한국 방문의 하이라이트 중 하나라고 말해요.",
+        "properNounIndices": [
+          5,
+          15
+        ]
+      },
+      {
+        "id": 4,
+        "english": "The best part is that most items cost less than five thousand won.",
+        "korean": "000원 미만이라는 것이다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '가판대/포장마차' mean in English?",
+      "options": [
+        "street food",
+        "food stall",
+        "tourist",
+        "highlight"
+      ],
+      "answer": 1
+    }
+  }
+]

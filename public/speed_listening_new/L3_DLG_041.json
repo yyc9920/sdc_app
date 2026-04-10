@@ -1,0 +1,69 @@
+[
+  {
+    "setId": "L3_DLG_041_set1",
+    "parentSetId": "L3_DLG_041",
+    "theme": "At the Car Wash",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'd like a full car wash please.",
+        "korean": "전체 세차 부탁해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "We have three packages — basic premium and deluxe.",
+        "korean": "세 가지 패키지가 있어요 — 기본 프리미엄 디럭스.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "What does the premium include?",
+        "korean": "프리미엄에 뭐가 포함돼요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Exterior wash interior vacuum and tire cleaning.",
+        "korean": "외부 세차 내부 청소기 타이어 세척이요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "How much is that?",
+        "korean": "얼마예요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Twenty-five dollars.",
+        "korean": "25달러예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "I'll go with premium.",
+        "korean": "프리미엄으로 할게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "It'll be ready in about thirty minutes.",
+        "korean": "약 30분 후에 준비됩니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '청소기를 돌리다' mean in English?",
+      "options": [
+        "exterior",
+        "vacuum",
+        "interior",
+        "car wash"
+      ],
+      "answer": 1
+    }
+  }
+]

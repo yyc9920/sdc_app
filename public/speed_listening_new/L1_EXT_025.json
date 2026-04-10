@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L1_EXT_025_set1",
+    "parentSetId": "L1_EXT_025",
+    "theme": "Shopping for Clothes",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I went shopping for new clothes yesterday.",
+        "korean": "어제 새 옷을 사러 갔어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I needed a new jacket for winter.",
+        "korean": "겨울용 새 재킷이 필요했어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I tried on three different jackets.",
+        "korean": "세 가지 다른 재킷을 입어봤어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "The blue one was too big and the black one was too expensive.",
+        "korean": "파란 건 너무 크고 검은 건 너무 비쌌어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I bought the gray one because it fit perfectly and was on sale.",
+        "korean": "회색 것을 샀어요. 딱 맞고 세일 중이었거든요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Introducing Your Family",
+        "Shopping for Clothes",
+        "Cleaning My Room",
+        "The Multiverse Hypothesis"
+      ],
+      "answer": 1
+    }
+  }
+]

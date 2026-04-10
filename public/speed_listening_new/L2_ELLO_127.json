@@ -1,0 +1,57 @@
+[
+  {
+    "setId": "L2_ELLO_127_set1",
+    "parentSetId": "L2_ELLO_127",
+    "theme": "Mixer #18 — Overthinking",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I overthink everything, especially at night.",
+        "korean": "모든 걸 과하게 생각해요, 특히 밤에요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "My brain just won't turn off.",
+        "korean": "뇌가 꺼지지 않아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I used to overthink a lot, but meditation really helped me stop.",
+        "korean": "예전에 많이 과하게 생각했지만 명상이 정말 도움이 됐어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Even ten minutes a day makes a difference.",
+        "korean": "하루 10분도 변화를 만들어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Writing my thoughts in a journal before bed helps me clear my mind, so I can actually fall asleep.",
+        "korean": "자기 전에 일기장에 생각을 쓰면 머리가 맑아져서 실제로 잠들 수 있어요.",
+        "properNounIndices": [
+          14
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #18 — Overthinking",
+        "Mixer #148 — Favorite Season",
+        "Mixer #118 — Homesick",
+        "Mixer #19 — Travel Wish List"
+      ],
+      "answer": 0
+    }
+  }
+]

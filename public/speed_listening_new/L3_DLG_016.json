@@ -1,0 +1,150 @@
+[
+  {
+    "setId": "L3_DLG_016_set1",
+    "parentSetId": "L3_DLG_016",
+    "theme": "Parent-Teacher Conference",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Thank you for coming in, Mr.",
+        "korean": "와주셔서 감사합니다, 김 선생님.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Kim.",
+        "korean": "이번 학기 민준이의 진도에 대해 이야기하고 싶었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I wanted to discuss Minjun's progress this semester.",
+        "korean": "이번 학기 민준이의 진도에 대해 이야기하고 싶었어요.",
+        "properNounIndices": [
+          0,
+          4
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Of course, how is he doing?",
+        "korean": "물론이죠, 어떻게 하고 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Academically, he's doing very well.",
+        "korean": "학업적으로 매우 잘하고 있어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '진도/발전' mean in English?",
+      "options": [
+        "progress",
+        "participation",
+        "speak up",
+        "material"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L3_DLG_016_set2",
+    "parentSetId": "L3_DLG_016",
+    "theme": "Parent-Teacher Conference",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "His math scores have improved significantly, and his essays show real creativity.",
+        "korean": "수학 점수가 크게 향상됐고 에세이에서 진정한 창의성이 보여요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "That's great to hear.",
+        "korean": "듣기 좋네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Is there anything we should be concerned about?",
+        "korean": "걱정해야 할 것이 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "The one area I'd like to address is class participation.",
+        "korean": "한 가지 언급하고 싶은 부분은 수업 참여예요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 9,
+        "english": "Minjun tends to be quiet during discussions, even though his written answers show he clearly understands the material.",
+        "korean": "민준이는 토론 중에 조용한 편인데 글로 쓴 답변을 보면 내용을 확실히 이해하고 있거든요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '(문제를) 다루다/언급하다' mean in English?",
+      "options": [
+        "address",
+        "participation",
+        "speak up",
+        "progress"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L3_DLG_016_set3",
+    "parentSetId": "L3_DLG_016",
+    "theme": "Parent-Teacher Conference",
+    "level": 4,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "He's always been a bit shy.",
+        "korean": "항상 좀 수줍었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "We'll encourage him to speak up more at home too.",
+        "korean": "집에서도 더 말하도록 격려할게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "That would help a lot.",
+        "korean": "그러면 많은 도움이 될 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
+        "english": "Overall, you should be very proud — he's a wonderful student.",
+        "korean": "전반적으로 정말 자랑스러워하셔도 돼요 — 훌륭한 학생이에요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '자료/학습 내용' mean in English?",
+      "options": [
+        "address",
+        "material",
+        "speak up",
+        "progress"
+      ],
+      "answer": 1
+    }
+  }
+]

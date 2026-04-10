@@ -1,0 +1,73 @@
+[
+  {
+    "setId": "L1_SPK_093_set1",
+    "parentSetId": "L1_SPK_093",
+    "theme": "Multitasking — Effective or Not",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think multitasking is an effective way to work?",
+        "korean": "멀티태스킹이 효과적인 작업 방식이라고 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your reasoning.",
+        "korean": "근거를 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Despite being a popular workplace skill I believe multitasking is actually counterproductive.",
+        "korean": "인기 있는 직장 기술이긴 하지만 멀티태스킹이 실제로 역효과라고 생각해요.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Neuroscience research shows that the human brain cannot truly do two cognitive tasks simultaneously — it simply switches between them very quickly.",
+        "korean": "신경과학 연구에 따르면 인간의 뇌는 진정으로 두 가지 인지 작업을 동시에 할 수 없어요. 매우 빠르게 전환할 뿐이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Each switch costs time and mental energy which means multitaskers actually complete tasks more slowly and with more errors than people who focus on one thing at a time.",
+        "korean": "전환마다 시간과 정신적 에너지가 들어 멀티태스커는 한 번에 하나에 집중하는 사람보다 실제로 더 느리고 오류가 많아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "The most productive people I know aren't multitaskers — they're deep focusers who give one hundred percent attention to one task before moving to the next.",
+        "korean": "내가 아는 가장 생산적인 사람들은 멀티태스커가 아니에요 — 다음으로 넘어가기 전에 한 작업에 100% 주의를 기울이는 깊은 집중가들이에요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 6,
+        "english": "deep focus",
+        "korean": "깊은 집중",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "one thing at a time",
+        "korean": "한 번에 하나씩",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Multitasking — Effective or Not",
+        "At what age do you think people should get married",
+        "Daily Routines — Helpful or Boring",
+        "The Best Way to Relieve Stress"
+      ],
+      "answer": 0
+    }
+  }
+]

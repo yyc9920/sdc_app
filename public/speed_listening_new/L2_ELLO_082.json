@@ -1,0 +1,57 @@
+[
+  {
+    "setId": "L2_ELLO_082_set1",
+    "parentSetId": "L2_ELLO_082",
+    "theme": "Mixer #64 — Noise at Night",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My neighborhood is so noisy at night.",
+        "korean": "우리 동네는 밤에 너무 시끄러워요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Cars honking, people shouting — it never stops.",
+        "korean": "경적 소리 소리 지르는 사람들 — 멈추지 않아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I sleep with earplugs because my neighbor's dog barks all night.",
+        "korean": "이웃 개가 밤새 짖어서 귀마개를 끼고 자요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "It's the only way I can get any sleep.",
+        "korean": "그래야만 잠을 잘 수 있어요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I moved to the countryside specifically for the quiet, and it was the best decision ever.",
+        "korean": "조용함을 위해 특별히 시골로 이사했고 최고의 결정이었어요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '경적 울리기' mean in English?",
+      "options": [
+        "honking",
+        "earplugs",
+        "bark",
+        "countryside"
+      ],
+      "answer": 0
+    }
+  }
+]

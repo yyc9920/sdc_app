@@ -1,0 +1,96 @@
+[
+  {
+    "setId": "L1_SPK_099_set1",
+    "parentSetId": "L1_SPK_099",
+    "theme": "Giving Back to Your Community",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "What is the best way to give back to your local community?",
+        "korean": "지역 사회에 보답하는 가장 좋은 방법은 무엇입니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain with examples.",
+        "korean": "예시와 함께 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I believe the best way to give back to your community is by sharing your skills and time rather than just donating money.",
+        "korean": "돈만 기부하기보다 기술과 시간을 나누는 것이 지역사회에 보답하는 가장 좋은 방법이라 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "If you're good at math you could tutor students who are struggling.",
+        "korean": "수학을 잘한다면 어려움을 겪는 학생을 과외할 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "If you know how to cook you could volunteer at a community kitchen.",
+        "korean": "요리할 줄 안다면 공동체 주방에서 봉사할 수 있어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Giving Back to Your Community",
+        "Multitasking — Effective or Not",
+        "Eating at Home vs. Eating Out",
+        "Children and Mobile Phones"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L1_SPK_099_set2",
+    "parentSetId": "L1_SPK_099",
+    "theme": "Giving Back to Your Community",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "These kinds of contributions create direct personal connections between helpers and those being helped which strengthens the entire community.",
+        "korean": "이런 종류의 기여는 돕는 사람과 도움받는 사람 사이에 직접적 개인적 연결을 만들어 전체 공동체를 강화해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Everyone has something valuable to offer — you don't need to be rich to make a meaningful difference.",
+        "korean": "모든 사람은 제공할 가치 있는 것이 있어요 — 의미 있는 차이를 만들기 위해 부자일 필요는 없어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "community kitchen",
+        "korean": "공동체 주방",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "meaningful difference",
+        "korean": "의미 있는 차이",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "First Impressions — Reliable or Not",
+        "Advantages of Being Bilingual",
+        "Giving Back to Your Community",
+        "Your Role Model"
+      ],
+      "answer": 2
+    }
+  }
+]

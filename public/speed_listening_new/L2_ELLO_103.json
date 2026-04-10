@@ -1,0 +1,53 @@
+[
+  {
+    "setId": "L2_ELLO_103_set1",
+    "parentSetId": "L2_ELLO_103",
+    "theme": "Mixer #42 — Procrastination",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'm the king of procrastination.",
+        "korean": "미루기의 왕이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I always wait until the last minute to do everything.",
+        "korean": "항상 모든 것을 마지막 순간까지 미뤄요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I use to-do lists to avoid procrastinating, and it works most of the time.",
+        "korean": "미루지 않기 위해 할 일 목록을 써요. 대부분 효과가 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "The problem is, the more I procrastinate the more stressed I get, but I still do it anyway.",
+        "korean": "문제는 미룰수록 스트레스를 더 받는데 그래도 계속 미룬다는 거예요.",
+        "properNounIndices": [
+          5,
+          10,
+          13
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #10 — Favorite Country",
+        "Mixer #124 — Public Transport",
+        "Mixer #42 — Procrastination",
+        "Mixer #10 — Giving Directions"
+      ],
+      "answer": 2
+    }
+  }
+]

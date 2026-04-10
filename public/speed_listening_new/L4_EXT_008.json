@@ -18,56 +18,43 @@
       },
       {
         "id": 1,
-        "english": "But what's often misunderstood is that the Wall didn't fall because of some grand, carefully orchestrated plan. It fell, in large part, because of a bureaucratic miscommunication.",
+        "english": "But what's often misunderstood is that the Wall didn't fall because of some grand, carefully orchestrated plan.",
         "korean": "자주 오해받는 건 장벽이 거창하고 치밀한 계획 때문이 아니라, 대체로 관료적 소통 오류 때문에 무너졌다는 것입니다.",
         "properNounIndices": [
-          7,
-          17
+          7
         ]
       },
       {
         "id": 2,
-        "english": "To understand what happened, we need some context. By 1989, the Soviet Union was in serious trouble.",
-        "korean": "무슨 일이 있었는지 이해하려면 맥락이 필요합니다. 1989년까지 소련은 심각한 위기에 처해 있었어요.",
-        "properNounIndices": [
-          8,
-          11,
-          12
-        ]
+        "english": "It fell, in large part, because of a bureaucratic miscommunication.",
+        "korean": "거창하고 치밀한 계획 때문이 아니라 대체로 관료적 소통 오류 때문이었다는 거예요",
+        "properNounIndices": []
       },
       {
         "id": 3,
-        "english": "Mikhail Gorbachev's policies of glasnost and perestroika — openness and restructuring — had unleashed forces that the Communist system couldn't contain.",
-        "korean": "미하일 고르바초프의 글라스노스트(개방)와 페레스트로이카(개혁) 정책은 공산 체제가 억제할 수 없는 세력을 풀어놓았습니다.",
-        "properNounIndices": [
-          1,
-          17
-        ]
+        "english": "To understand what happened, we need some context.",
+        "korean": "무슨 일이 있었는지 이해하려면 맥락이 필요합니다.",
+        "properNounIndices": []
       },
       {
         "id": 4,
-        "english": "Across Eastern Europe, reform movements were gaining momentum. Hungary had opened its border with Austria, allowing thousands of East Germans to flee to the West.",
-        "korean": "동유럽 전역에서 개혁 운동이 힘을 얻고 있었습니다. 헝가리는 오스트리아와의 국경을 열었어요.",
+        "english": "By 1989, the Soviet Union was in serious trouble.",
+        "korean": "1989년까지 소련은 심각한 위기에 처해 있었어요.",
         "properNounIndices": [
-          1,
-          2,
-          8,
-          14,
-          18,
-          19,
-          24
+          3,
+          4
         ]
       }
     ],
     "quiz": {
-      "question": "What does '개혁 운동' mean in English?",
+      "question": "What does '관료적 오류/소통 실수' mean in English?",
       "options": [
+        "geopolitical order",
         "dissident movements",
-        "ideological legitimacy",
-        "was briefed on",
-        "reform movements"
+        "bureaucratic miscommunication",
+        "mounting pressure"
       ],
-      "answer": 3
+      "answer": 2
     }
   },
   {
@@ -79,19 +66,73 @@
     "sentences": [
       {
         "id": 5,
-        "english": "Mass protests were erupting in cities like Leipzig and East Berlin. Under mounting pressure, the East German government decided to ease travel restrictions.",
-        "korean": "라이프치히와 동베를린 같은 도시에서 대규모 시위가 터지고 있었습니다. 거세지는 압력 속에 동독 정부는 여행 제한을 완화하기로 했어요.",
+        "english": "Mikhail Gorbachev's policies of glasnost and perestroika — openness and restructuring — had unleashed forces that the Communist system couldn't contain.",
+        "korean": "미하일 고르바초프의 글라스노스트(개방)와 페레스트로이카(개혁) 정책은 공산 체제가 억제할 수 없는 세력을 풀어놓았습니다.",
         "properNounIndices": [
-          7,
-          9,
-          10,
-          11,
-          15,
-          16
+          1,
+          17
         ]
       },
       {
         "id": 6,
+        "english": "Across Eastern Europe, reform movements were gaining momentum.",
+        "korean": "동유럽 전역에서 개혁 운동이 힘을 얻고 있었습니다.",
+        "properNounIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Hungary had opened its border with Austria, allowing thousands of East Germans to flee to the West.",
+        "korean": "헝가리는 오스트리아와의 국경을 열었어요.",
+        "properNounIndices": [
+          6,
+          10,
+          11,
+          16
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Mass protests were erupting in cities like Leipzig and East Berlin.",
+        "korean": "라이프치히와 동베를린 같은 도시에서 대규모 시위가 터지고 있었습니다.",
+        "properNounIndices": [
+          7,
+          9,
+          10
+        ]
+      },
+      {
+        "id": 9,
+        "english": "Under mounting pressure, the East German government decided to ease travel restrictions.",
+        "korean": "거세지는 압력 속에 동독 정부는 여행 제한을 완화하기로 했어요.",
+        "properNounIndices": [
+          4,
+          5
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '반체제 운동' mean in English?",
+      "options": [
+        "press conference",
+        "dissident movements",
+        "geopolitical order",
+        "glasnost / perestroika"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L4_EXT_008_set3",
+    "parentSetId": "L4_EXT_008",
+    "theme": "History Lecture — The Fall of the Berlin Wall",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
         "english": "On the evening of November 9th, a spokesman named Günter Schabowski was handed a press release about the new regulations just minutes before a live press conference.",
         "korean": "11월 9일 저녁, 귄터 샤보프스키라는 대변인이 생방송 기자회견 불과 몇 분 전에 새 규정에 대한 보도자료를 건네받았습니다.",
         "properNounIndices": [
@@ -101,13 +142,13 @@
         ]
       },
       {
-        "id": 7,
+        "id": 11,
         "english": "He hadn't been briefed on the details.",
         "korean": "그는 세부사항에 대해 브리핑을 받지 못했습니다.",
         "properNounIndices": []
       },
       {
-        "id": 8,
+        "id": 12,
         "english": "When a journalist asked when the new travel rules would take effect, Schabowski shuffled through his notes, looked confused, and said — and I'm paraphrasing here — \"Immediately, as far as I know.\" Within hours, thousands of East Berliners flooded the Wall's checkpoints.",
         "korean": "기자가 새 여행 규정이 언제 발효되는지 물었을 때, 샤보프스키는 메모를 뒤적이며 당황한 표정으로 말했습니다 — '내가 아는 한, 즉시.'",
         "properNounIndices": [
@@ -122,53 +163,91 @@
         ]
       },
       {
-        "id": 9,
-        "english": "The border guards, who had received no instructions about what to do, were overwhelmed. Rather than risk a violent confrontation, they opened the gates. People streamed across the border.",
-        "korean": "아무 지시도 받지 못한 국경 경비원들은 압도당했습니다. 폭력적 대치를 감수하기보다 문을 열었어요.",
-        "properNounIndices": [
-          14,
-          24
-        ]
+        "id": 13,
+        "english": "The border guards, who had received no instructions about what to do, were overwhelmed.",
+        "korean": "아무 지시도 받지 못한 국경 경비원들은 압도당했습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "Rather than risk a violent confrontation, they opened the gates.",
+        "korean": "폭력적 대치를 감수하기보다 문을 열었어요.",
+        "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '~에 대해 보고/설명을 받다' mean in English?",
+      "question": "What does '기자 회견' mean in English?",
       "options": [
         "was briefed on",
-        "glasnost / perestroika",
         "press conference",
-        "mounting pressure"
+        "glasnost / perestroika",
+        "bureaucratic miscommunication"
       ],
-      "answer": 0
+      "answer": 1
     }
   },
   {
-    "setId": "L4_EXT_008_set3",
+    "setId": "L4_EXT_008_set4",
+    "parentSetId": "L4_EXT_008",
+    "theme": "History Lecture — The Fall of the Berlin Wall",
+    "level": 5,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "People streamed across the border.",
+        "korean": "폭력적 대치를 감수하기보다 문을 열었어요",
+        "properNounIndices": []
+      },
+      {
+        "id": 16,
+        "english": "Strangers embraced. Families separated for decades were reunited on the spot.",
+        "korean": "낯선 사람들이 포옹했습니다. 수십 년간 이별했던 가족이 그 자리에서 재회했어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 17,
+        "english": "And people began physically tearing down the Wall with hammers and picks.",
+        "korean": "사람들은 망치와 곡괭이로 장벽을 직접 허물기 시작했습니다.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 18,
+        "english": "Now, it's tempting to view this as a spontaneous explosion of freedom.",
+        "korean": "이것을 자유의 자발적 폭발로 보고 싶은 유혹이 있고, 어떤 면에서 그렇기도 했습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 19,
+        "english": "And in some ways it was.",
+        "korean": "보고 싶은 유혹이 있어요 어떤 면에서 그렇기도 했고",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '지정학적 질서' mean in English?",
+      "options": [
+        "ideological legitimacy",
+        "flooded the checkpoints",
+        "geopolitical order",
+        "bureaucratic miscommunication"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L4_EXT_008_set5",
     "parentSetId": "L4_EXT_008",
     "theme": "History Lecture — The Fall of the Berlin Wall",
     "level": 6,
-    "setNumber": 3,
+    "setNumber": 5,
     "sentences": [
       {
-        "id": 10,
-        "english": "Strangers embraced. Families separated for decades were reunited on the spot. And people began physically tearing down the Wall with hammers and picks.",
-        "korean": "낯선 사람들이 포옹했습니다. 수십 년간 이별했던 가족이 그 자리에서 재회했어요. 사람들은 망치와 곡괭이로 장벽을 직접 허물기 시작했습니다.",
-        "properNounIndices": [
-          2,
-          11,
-          18
-        ]
-      },
-      {
-        "id": 11,
-        "english": "Now, it's tempting to view this as a spontaneous explosion of freedom. And in some ways it was.",
-        "korean": "이것을 자유의 자발적 폭발로 보고 싶은 유혹이 있고, 어떤 면에서 그렇기도 했습니다.",
-        "properNounIndices": [
-          12
-        ]
-      },
-      {
-        "id": 12,
+        "id": 20,
         "english": "But historians emphasize that the fall of the Wall was the culmination of decades of resistance — dissident movements, economic stagnation, and the slow erosion of ideological legitimacy.",
         "korean": "하지만 역사학자들은 장벽의 붕괴가 수십 년간의 저항 — 반체제 운동, 경제 침체 — 의 결정체였다고 강조합니다.",
         "properNounIndices": [
@@ -176,21 +255,27 @@
         ]
       },
       {
-        "id": 13,
-        "english": "The Wall's collapse didn't just change Germany. It accelerated the end of the Cold War, led to German reunification within a year, and reshaped the entire geopolitical order of Europe.",
-        "korean": "장벽의 붕괴는 독일만 바꾼 게 아닙니다. 냉전 종식을 앞당기고 독일 통일로 이어졌습니다.",
+        "id": 21,
+        "english": "The Wall's collapse didn't just change Germany.",
+        "korean": "장벽의 붕괴는 독일만 바꾼 게 아닙니다.",
         "properNounIndices": [
           1,
-          6,
-          7,
-          13,
-          14,
-          17,
-          29
+          6
         ]
       },
       {
-        "id": 14,
+        "id": 22,
+        "english": "It accelerated the end of the Cold War, led to German reunification within a year, and reshaped the entire geopolitical order of Europe.",
+        "korean": "냉전 종식을 앞당기고 독일 통일로 이어졌습니다.",
+        "properNounIndices": [
+          6,
+          7,
+          10,
+          22
+        ]
+      },
+      {
+        "id": 23,
         "english": "For better or worse, the world we live in today was born on that November night.",
         "korean": "좋든 나쁘든, 오늘 우리가 사는 세상은 그 11월 밤에 탄생했습니다.",
         "properNounIndices": [
@@ -199,12 +284,12 @@
       }
     ],
     "quiz": {
-      "question": "What does '지정학적 질서' mean in English?",
+      "question": "What does '~에 대해 보고/설명을 받다' mean in English?",
       "options": [
+        "mounting pressure",
         "ideological legitimacy",
-        "glasnost / perestroika",
-        "press conference",
-        "geopolitical order"
+        "bureaucratic miscommunication",
+        "was briefed on"
       ],
       "answer": 3
     }

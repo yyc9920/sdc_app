@@ -1,0 +1,69 @@
+[
+  {
+    "setId": "L4_DLG_017_set1",
+    "parentSetId": "L4_DLG_017",
+    "theme": "Presenting a New Strategy",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'd like to present our proposed go-to-market strategy for Q3, which focuses on three key pillars.",
+        "korean": "3분기 시장 진출 전략을 발표하겠습니다. 세 가지 핵심 축에 집중합니다.",
+        "properNounIndices": [
+          9
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Go ahead.",
+        "korean": "진행하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "First we want to expand our influencer partnerships from twenty to fifty creators.",
+        "korean": "첫째 인플루언서 파트너십을 20명에서 50명으로 확대합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Second we're launching a referral program that rewards existing users for bringing in new customers.",
+        "korean": "둘째 기존 사용자가 신규 고객을 데려오면 보상하는 추천 프로그램을 시작합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Third we'll invest in SEO content to drive organic traffic.",
+        "korean": "셋째 유기적 트래픽을 유도하기 위해 SEO 콘텐츠에 투자합니다.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 5,
+        "english": "What's the expected ROI on the influencer expansion?",
+        "korean": "인플루언서 확대의 예상 투자 수익률은요?",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Based on our current data we expect a three to one return within six months.",
+        "korean": "현재 데이터를 기반으로 6개월 내 3대 1 수익을 예상합니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '투자 수익률' mean in English?",
+      "options": [
+        "SEO",
+        "referral program",
+        "ROI",
+        "organic traffic"
+      ],
+      "answer": 2
+    }
+  }
+]

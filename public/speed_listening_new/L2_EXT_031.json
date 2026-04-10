@@ -1,0 +1,51 @@
+[
+  {
+    "setId": "L2_EXT_031_set1",
+    "parentSetId": "L2_EXT_031",
+    "theme": "Benefits of Reading",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Reading is one of the best habits you can develop.",
+        "korean": "독서는 기를 수 있는 최고의 습관 중 하나예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "It improves your vocabulary and helps you write better.",
+        "korean": "어휘력이 향상되고 글쓰기를 잘하게 해줘요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Reading before bed can also help you fall asleep faster.",
+        "korean": "잠자기 전 독서는 더 빨리 잠들게도 해줘요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Experts recommend reading at least twenty minutes a day for these benefits.",
+        "korean": "전문가들은 이러한 이점을 위해 하루 최소 20분 독서를 권해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "It doesn't matter whether you read novels comics or news articles — the important thing is to read consistently.",
+        "korean": "소설 만화 뉴스 기사 중 뭘 읽든 상관없어요 — 중요한 건 꾸준히 읽는 거예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Eating Lunch at School",
+        "Korean Convenience Store Culture",
+        "Benefits of Reading",
+        "Cleaning My Room"
+      ],
+      "answer": 2
+    }
+  }
+]

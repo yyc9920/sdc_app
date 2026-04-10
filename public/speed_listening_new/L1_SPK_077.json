@@ -1,0 +1,102 @@
+[
+  {
+    "setId": "L1_SPK_077_set1",
+    "parentSetId": "L1_SPK_077",
+    "theme": "A Festival or Event You Attended",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Describe a festival or cultural event you attended.",
+        "korean": "참석한 축제나 문화 행사를 묘사하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain what made it memorable.",
+        "korean": "무엇이 기억에 남게 했는지 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The most memorable event I've attended was the Boryeong Mud Festival on the west coast of Korea.",
+        "korean": "참석한 가장 기억에 남는 행사는 한국 서해안의 보령 머드 축제였어요.",
+        "properNounIndices": [
+          4,
+          8,
+          9,
+          10,
+          16
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Thousands of people covered in mud were wrestling sliding and throwing mud at each other while laughing uncontrollably.",
+        "korean": "진흙으로 뒤덮인 수천 명이 제어할 수 없이 웃으며 레슬링 슬라이딩 진흙 던지기를 하고 있었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "What made it so special was how it broke down all social barriers.",
+        "korean": "특별하게 만든 것은 모든 사회적 장벽을 허물었다는 점이에요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Paper Books vs. Audiobooks",
+        "A Festival or Event You Attended",
+        "Why is empathy important in today's society?",
+        "Pets and Responsibility"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L1_SPK_077_set2",
+    "parentSetId": "L1_SPK_077",
+    "theme": "A Festival or Event You Attended",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "When everyone is covered in mud age nationality and social status simply disappear.",
+        "korean": "모두가 진흙으로 뒤덮이면 나이 국적 사회적 지위가 그냥 사라져요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "I made friends with people from six different countries that day and it reminded me how powerful shared experiences can be.",
+        "korean": "그날 6개국 사람들과 친구가 됐고 공유된 경험이 얼마나 강력한지 상기시켜줬어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 7,
+        "english": "break down barriers",
+        "korean": "장벽을 허물다",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "shared experience",
+        "korean": "공유된 경험",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Homework — Necessary or Not",
+        "A Festival or Event You Attended",
+        "At what age do you think people should get married",
+        "Famous People as Role Models"
+      ],
+      "answer": 1
+    }
+  }
+]

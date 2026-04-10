@@ -1,0 +1,100 @@
+[
+  {
+    "setId": "L3_DLG_060_set1",
+    "parentSetId": "L3_DLG_060",
+    "theme": "Discussing a Company Retreat",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I've been tasked with organizing this year's company retreat.",
+        "korean": "올해 회사 워크숍을 준비하라는 업무를 받았어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "When is it supposed to happen?",
+        "korean": "언제 하기로 된 건가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Sometime in October before the Q4 crunch.",
+        "korean": "4분기 바쁜 시기 전에 10월 중으로요.",
+        "properNounIndices": [
+          2,
+          5
+        ]
+      },
+      {
+        "id": 3,
+        "english": "What's the budget?",
+        "korean": "예산이 얼마나 되나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Fifteen thousand dollars for fifty employees.",
+        "korean": "000달러예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '바쁜 시기/위기' mean in English?",
+      "options": [
+        "crunch",
+        "retreat",
+        "team-building",
+        "quote"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L3_DLG_060_set2",
+    "parentSetId": "L3_DLG_060",
+    "theme": "Discussing a Company Retreat",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "That's three hundred per person which is workable if we choose a location outside the city.",
+        "korean": "1인당 300달러니까 도시 밖 장소를 선택하면 가능하겠네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "I was thinking of a resort in Gangwon-do with team-building activities and a barbecue dinner.",
+        "korean": "강원도 리조트에서 팀빌딩 활동과 바비큐 만찬을 생각하고 있었어요.",
+        "properNounIndices": [
+          0,
+          7
+        ]
+      },
+      {
+        "id": 7,
+        "english": "That sounds like a great plan.",
+        "korean": "좋은 계획인 것 같아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Get some quotes and we'll review them next week.",
+        "korean": "견적을 받아서 다음 주에 검토합시다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '바쁜 시기/위기' mean in English?",
+      "options": [
+        "crunch",
+        "retreat",
+        "team-building",
+        "quote"
+      ],
+      "answer": 0
+    }
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "setId": "L3_B6ME_038_set1",
+    "parentSetId": "L3_B6ME_038",
+    "theme": "Are We Too Fixated on Protein?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Of all the main food groups, such as carbohydrate, fat and fibre, it's protein that seems to be most in the news.",
+        "korean": "탄수화물, 지방, 섬유질 같은 주요 영양소 중 뉴스에 가장 많이 나오는 건 단백질이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "You'll find all kinds of high-protein foods being advertised.",
+        "korean": "온갖 고단백 식품이 광고되고 있죠.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Cast your eye over most aisles in the supermarket and you'll notice a lot of the big brands advertising protein on their packaging.",
+        "korean": "슈퍼마켓 대부분의 통로를 훑어보면 많은 대형 브랜드가 포장에 단백질을 광고하는 걸 알아차릴 거예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '~이 부족한' mean in English?",
+      "options": [
+        "cast your eye over",
+        "deficient in",
+        "whole foods",
+        "fixated on"
+      ],
+      "answer": 1
+    }
+  }
+]

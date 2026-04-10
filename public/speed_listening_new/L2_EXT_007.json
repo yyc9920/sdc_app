@@ -3,20 +3,25 @@
     "setId": "L2_EXT_007_set1",
     "parentSetId": "L2_EXT_007",
     "theme": "Planning a Trip",
-    "level": 6,
+    "level": 4,
     "setNumber": 1,
     "sentences": [
       {
         "id": 0,
-        "english": "So I was thinking — we should plan our summer trip soon. Flights get expensive if we wait too long.",
-        "korean": "생각했는데 — 여름 여행 계획을 곧 세워야 해. 너무 늦으면 항공권이 비싸지거든.",
+        "english": "So I was thinking — we should plan our summer trip soon.",
+        "korean": "생각했는데 — 여름 여행 계획을 곧 세워야 해.",
         "properNounIndices": [
-          1,
-          12
+          1
         ]
       },
       {
         "id": 1,
+        "english": "Flights get expensive if we wait too long.",
+        "korean": "너무 늦으면 항공권이 비싸지거든.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
         "english": "Good idea. Where did you have in mind?",
         "korean": "좋은 생각이야. 어디를 생각하고 있었어?",
         "properNounIndices": [
@@ -24,16 +29,40 @@
         ]
       },
       {
-        "id": 2,
-        "english": "I've always wanted to go to Barcelona. Great food, beautiful architecture, and the beach is right there.",
-        "korean": "항상 바르셀로나에 가고 싶었어. 맛있는 음식, 아름다운 건축, 해변도 바로 있잖아.",
+        "id": 3,
+        "english": "I've always wanted to go to Barcelona.",
+        "korean": "항상 바르셀로나에 가고 싶었어.",
         "properNounIndices": [
-          6,
-          7
+          6
         ]
       },
       {
-        "id": 3,
+        "id": 4,
+        "english": "Great food, beautiful architecture, and the beach is right there.",
+        "korean": "맛있는 음식, 아름다운 건축, 해변도 바로 있잖아.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Dealing with Jet Lag",
+        "Science Documentary — Neuroplasticity",
+        "My Lunchbox",
+        "Planning a Trip"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L2_EXT_007_set2",
+    "parentSetId": "L2_EXT_007",
+    "theme": "Planning a Trip",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
         "english": "Barcelona sounds amazing, but isn't August super crowded there?",
         "korean": "바르셀로나 좋겠다. 근데 8월에 엄청 붐비지 않아?",
         "properNounIndices": [
@@ -41,52 +70,65 @@
         ]
       },
       {
-        "id": 4,
-        "english": "It can be. We could go in early July instead. The weather's still great and it's a little less packed.",
+        "id": 6,
+        "english": "It can be. We could go in early July instead.",
         "korean": "그럴 수 있어. 대신 7월 초에 가면 날씨도 좋고 좀 덜 붐비거든.",
         "properNounIndices": [
           3,
-          8,
-          10
+          8
         ]
+      },
+      {
+        "id": 7,
+        "english": "The weather's still great and it's a little less packed.",
+        "korean": "날씨도 여전히 좋고 좀 덜 붐비고",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "That works for me.",
+        "korean": "나한테 괜찮아.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "How many days were you thinking?",
+        "korean": "며칠 생각하고 있었어?",
+        "properNounIndices": []
       }
     ],
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
         "Planning a Trip",
-        "Returning a Product",
-        "Tech Support Call",
-        "Describing a Movie"
+        "Calling in Sick",
+        "TED-Style Talk — The Science of Habits",
+        "The Trolley Problem and Moral Intuition"
       ],
       "answer": 0
     }
   },
   {
-    "setId": "L2_EXT_007_set2",
+    "setId": "L2_EXT_007_set3",
     "parentSetId": "L2_EXT_007",
     "theme": "Planning a Trip",
-    "level": 6,
-    "setNumber": 2,
+    "level": 4,
+    "setNumber": 3,
     "sentences": [
       {
-        "id": 5,
-        "english": "That works for me. How many days were you thinking?",
-        "korean": "나한테 괜찮아. 며칠 생각하고 있었어?",
-        "properNounIndices": [
-          4
-        ]
+        "id": 10,
+        "english": "Five or six days?",
+        "korean": "5~6일?",
+        "properNounIndices": []
       },
       {
-        "id": 6,
-        "english": "Five or six days? That gives us enough time to explore without rushing.",
-        "korean": "5~6일? 서두르지 않고 둘러보기에 충분한 시간이야.",
-        "properNounIndices": [
-          4
-        ]
+        "id": 11,
+        "english": "That gives us enough time to explore without rushing.",
+        "korean": "서두르지 않고 둘러보기에 충분한 시간이야.",
+        "properNounIndices": []
       },
       {
-        "id": 7,
+        "id": 12,
         "english": "And for accommodation — hotel or Airbnb?",
         "korean": "숙소는 — 호텔이야, 에어비앤비야?",
         "properNounIndices": [
@@ -94,32 +136,68 @@
         ]
       },
       {
-        "id": 8,
-        "english": "I'd prefer an Airbnb. It's usually cheaper and you get a kitchen, which means we don't have to eat out for every meal.",
-        "korean": "에어비앤비가 좋겠어. 보통 더 싸고 주방이 있으니까 매 끼니 외식 안 해도 되거든.",
+        "id": 13,
+        "english": "I'd prefer an Airbnb.",
+        "korean": "에어비앤비가 좋겠어.",
         "properNounIndices": [
-          3,
-          4
+          3
         ]
       },
       {
-        "id": 9,
-        "english": "True. Plus it feels more like living there than visiting. What about the budget? I don't want to go crazy.",
-        "korean": "맞아. 게다가 방문하는 것보다 사는 느낌이 들지. 예산은 어때? 너무 많이 쓰고 싶진 않은데.",
+        "id": 14,
+        "english": "It's usually cheaper and you get a kitchen, which means we don't have to eat out for every meal.",
+        "korean": "보통 더 싸고 주방이 있으니까 매 끼니 외식 안 해도 되거든.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Museum Audio Guide",
+        "Weekend Plans",
+        "Planning a Trip",
+        "Cultural Commentary — Tipping Culture"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_EXT_007_set4",
+    "parentSetId": "L2_EXT_007",
+    "theme": "Planning a Trip",
+    "level": 5,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "True. Plus it feels more like living there than visiting.",
+        "korean": "맞아. 게다가 방문하는 것보다 사는 느낌이 들지.",
         "properNounIndices": [
-          1,
-          10,
-          14
+          1
         ]
       },
       {
-        "id": 10,
+        "id": 16,
+        "english": "What about the budget?",
+        "korean": "예산은 어때?",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "I don't want to go crazy.",
+        "korean": "너무 많이 쓰고 싶진 않은데.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 18,
         "english": "Let's say around a thousand dollars each for flights and accommodation, and then maybe five hundred for food, activities, and transportation?",
         "korean": "항공과 숙소에 각자 약 1000달러, 음식이랑 활동에 500달러 정도면 어떨까?",
         "properNounIndices": []
       },
       {
-        "id": 11,
+        "id": 19,
         "english": "Fifteen hundred total. That's doable. Should we start looking at flights tonight?",
         "korean": "총 1500달러. 할 만하네. 오늘 밤에 항공편 찾아볼까?",
         "properNounIndices": [
@@ -128,7 +206,7 @@
         ]
       },
       {
-        "id": 12,
+        "id": 20,
         "english": "Let's do it. I'll bring my laptop and we can compare prices.",
         "korean": "그러자. 노트북 가져올게, 가격 비교하자.",
         "properNounIndices": [
@@ -139,9 +217,9 @@
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Radio Interview — Small Business Owner",
-        "Podcast — Learning a Second Language",
-        "Medical Consultation",
+        "Benefits of Reading",
+        "Tips for Saving Money",
+        "Benefits of Reading Before Bed",
         "Planning a Trip"
       ],
       "answer": 3

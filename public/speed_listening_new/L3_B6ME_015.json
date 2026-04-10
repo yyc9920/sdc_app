@@ -1,0 +1,321 @@
+[
+  {
+    "setId": "L3_B6ME_015_set1",
+    "parentSetId": "L3_B6ME_015",
+    "theme": "Should We Pay More for Chocolate?",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Today we're asking: should we pay more for chocolate?",
+        "korean": "오늘 질문은: 초콜릿에 더 많이 지불해야 할까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I do love a bit of dark chocolate.",
+        "korean": "나는 다크 초콜릿을 정말 좋아해.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Do you know, I really like the one that's got some chilli in it.",
+        "korean": "있잖아, 칠리가 들어간 걸 정말 좋아해.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 3,
+        "english": "What's your favourite, Becca?",
+        "korean": "네가 가장 좋아하는 건 뭐야, 베카?",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Oh, I also love dark chocolate, but chilli is a bit spicy for me.",
+        "korean": "오, 나도 다크 초콜릿을 좋아하는데, 칠리는 나한테 좀 매워.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '사회적 기업 — 지역사회를 돕기 위한 사업체' mean in English?",
+      "options": [
+        "co-op",
+        "geolocation",
+        "to trace something back to something",
+        "social enterprise"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L3_B6ME_015_set2",
+    "parentSetId": "L3_B6ME_015",
+    "theme": "Should We Pay More for Chocolate?",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I like it with sea salt.",
+        "korean": "바다 소금이 든 게 좋아.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 6,
+        "english": "But now to the stuff that makes chocolate possible — cocoa — a key ingredient and it's become more expensive in recent years.",
+        "korean": "이제 초콜릿을 만드는 재료 — 코코아 — 에 대해 이야기해보죠. 핵심 재료인데 최근 몇 년간 더 비싸졌어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Now, a new EU law could make chocolate even more expensive.",
+        "korean": "새로운 EU 법이 초콜릿을 더욱 비싸게 만들 수 있어요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Today, we'll talk about how this law could change things for farmers, companies and chocolate lovers.",
+        "korean": "오늘은 이 법이 농부, 기업, 초콜릿 애호가들에게 어떤 변화를 가져올 수 있는지 이야기할 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Europeans are big fans of chocolate, just like us!",
+        "korean": "유럽인들은 우리처럼 초콜릿의 열렬한 팬이에요!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '위치 정보 — 사람이나 물건의 정확한 위치를 보여주는 데이터' mean in English?",
+      "options": [
+        "to trace something back to something",
+        "social enterprise",
+        "deforestation",
+        "geolocation"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L3_B6ME_015_set3",
+    "parentSetId": "L3_B6ME_015",
+    "theme": "Should We Pay More for Chocolate?",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "Around how many tonnes of cocoa beans were imported to Europe in 2023?",
+        "korean": "2023년에 약 몇 톤의 코코아 콩이 유럽에 수입되었을까요?",
+        "properNounIndices": [
+          10
+        ]
+      },
+      {
+        "id": 11,
+        "english": "Well, I have no idea, but I'm just going to guess and say 500,000 tonnes.",
+        "korean": "글쎄, 전혀 모르겠는데, 그냥 추측해서 50만 톤이라고 할게.",
+        "properNounIndices": [
+          1,
+          6
+        ]
+      },
+      {
+        "id": 12,
+        "english": "Now, that new EU law would stop companies buying cocoa from land where any trees were cut down in the last six years.",
+        "korean": "새 EU 법은 지난 6년간 나무가 베어진 토지에서 코코아를 사는 것을 기업들에게 금지할 거예요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 13,
+        "english": "The process of cutting down trees is called deforestation.",
+        "korean": "나무를 베는 과정을 산림 벌채라고 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "Albert Smith, who owns a small chocolate business, believes that the new law wouldn't change too much for his company.",
+        "korean": "소규모 초콜릿 사업을 운영하는 앨버트 스미스는 새 법이 자기 회사에 크게 영향을 주지 않을 거라고 믿어요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '외딴 — 사람들이 사는 곳에서 먼' mean in English?",
+      "options": [
+        "remote",
+        "deforestation",
+        "social enterprise",
+        "co-op"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L3_B6ME_015_set4",
+    "parentSetId": "L3_B6ME_015",
+    "theme": "Should We Pay More for Chocolate?",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "We have all the information on farm level already because the producers that we work with are small plantations that either work through a co-op or social enterprise and all of our cocoa is already traced back to the plantation.",
+        "korean": "우리는 농장 수준의 모든 정보를 이미 가지고 있어요. 함께 일하는 생산자들이 협동조합이나 사회적 기업을 통해 운영하는 소규모 농장이고, 우리의 모든 코코아는 이미 농장까지 추적 가능하거든요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 16,
+        "english": "Albert adds that they already know where the cocoa beans come from, as they work with farmers from co-ops or social enterprises.",
+        "korean": "앨버트는 협동조합이나 사회적 기업 농부들과 함께 일하기 때문에 코코아 콩이 어디서 오는지 이미 안다고 덧붙여요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "Mapping means that farmers have to actually provide the geolocations of their plantation.",
+        "korean": "매핑이란 농부들이 농장의 위치 정보를 실제로 제공해야 한다는 뜻이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
+        "english": "And you know, for some farmers that are very remote, they might not have access to the internet or the technology.",
+        "korean": "매우 외딴 곳에 있는 일부 농부들은 인터넷이나 기술에 접근할 수 없을 수도 있거든요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 19,
+        "english": "Absolutely I would do that because I think the normal chocolates are way too cheap.",
+        "korean": "당연히 그렇게 할 거예요.",
+        "properNounIndices": [
+          1,
+          6
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '협동조합 — 노동자가 소유하는 농장/사업체' mean in English?",
+      "options": [
+        "remote",
+        "geolocation",
+        "to trace something back to something",
+        "co-op"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L3_B6ME_015_set5",
+    "parentSetId": "L3_B6ME_015",
+    "theme": "Should We Pay More for Chocolate?",
+    "level": 5,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "Definitely we will pay, we have to pay more because the money will go to the local people, to give them a better life, also to tackle deforestation.",
+        "korean": "일반 초콜릿이 너무 싸다고 생각하거든요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 21,
+        "english": "For me, personally, absolutely not!",
+        "korean": "저한테는 개인적으로 절대 아니에요!",
+        "properNounIndices": []
+      },
+      {
+        "id": 22,
+        "english": "Out of principle, because I want them to be produced most efficiently as possible.",
+        "korean": "원칙적으로 가능한 한 효율적으로 생산되기를 원해요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 23,
+        "english": "The cost is completely irrelevant.",
+        "korean": "비용은 완전히 관계없어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 24,
+        "english": "Mixed opinions, it seems!",
+        "korean": "의견이 엇갈리네요!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '~의 출처를 추적하다' mean in English?",
+      "options": [
+        "remote",
+        "co-op",
+        "to trace something back to something",
+        "geolocation"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L3_B6ME_015_set6",
+    "parentSetId": "L3_B6ME_015",
+    "theme": "Should We Pay More for Chocolate?",
+    "level": 6,
+    "setNumber": 6,
+    "sentences": [
+      {
+        "id": 25,
+        "english": "Whilst one chocolate lover would pay more to support farmers, the other says the production process should be as efficient as possible.",
+        "korean": "한 초콜릿 애호가는 농부를 지원하기 위해 더 내겠다고 하고, 다른 사람은 생산 과정이 가능한 한 효율적이어야 한다고 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 26,
+        "english": "OK, time to answer our quiz question.",
+        "korean": "퀴즈 답을 말할 시간이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 27,
+        "english": "I asked you how many tonnes of cocoa were imported to Europe in 2023 and you said 500,000 tonnes.",
+        "korean": "2023년에 유럽에 수입된 코코아가 얼마나 되냐고 물었고 50만 톤이라고 했죠.",
+        "properNounIndices": [
+          0,
+          11
+        ]
+      },
+      {
+        "id": 28,
+        "english": "Well, Neil, it is 2 million tonnes!",
+        "korean": "닐, 200만 톤이에요!",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '산림 벌채 — 나무를 베는 과정' mean in English?",
+      "options": [
+        "to trace something back to something",
+        "geolocation",
+        "remote",
+        "deforestation"
+      ],
+      "answer": 3
+    }
+  }
+]

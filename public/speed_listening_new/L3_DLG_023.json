@@ -1,0 +1,116 @@
+[
+  {
+    "setId": "L3_DLG_023_set1",
+    "parentSetId": "L3_DLG_023",
+    "theme": "Post Office — Sending a Package",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'd like to send this package to Japan.",
+        "korean": "이 소포를 일본으로 보내고 싶어요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Let me weigh it first.",
+        "korean": "먼저 무게를 재볼게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "It's two point three kilograms.",
+        "korean": "2.3킬로그램이네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Would you like standard or express shipping?",
+        "korean": "일반 배송과 특급 배송 중 어떤 걸 원하세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "How long does each take?",
+        "korean": "각각 얼마나 걸리나요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '무게를 재다' mean in English?",
+      "options": [
+        "weigh",
+        "insurance",
+        "tracking",
+        "express shipping"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L3_DLG_023_set2",
+    "parentSetId": "L3_DLG_023",
+    "theme": "Post Office — Sending a Package",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Standard takes about seven to ten business days and costs eighteen dollars.",
+        "korean": "일반은 영업일 기준 7~10일이고 18달러예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Express takes three to four days and costs forty-two dollars.",
+        "korean": "특급은 3~4일이고 42달러예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "I'll go with express since it's a birthday gift and I need it there by next week.",
+        "korean": "생일 선물이라 다음 주까지 도착해야 해서 특급으로 할게요.",
+        "properNounIndices": [
+          10
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Would you like to add tracking and insurance?",
+        "korean": "추적과 보험을 추가하시겠어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Yes please.",
+        "korean": "네 부탁해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 10,
+        "english": "How much extra is that?",
+        "korean": "추가 비용이 얼마예요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "It's an additional five dollars for both.",
+        "korean": "둘 다 합쳐서 추가 5달러예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '추적' mean in English?",
+      "options": [
+        "express shipping",
+        "tracking",
+        "weigh",
+        "insurance"
+      ],
+      "answer": 1
+    }
+  }
+]

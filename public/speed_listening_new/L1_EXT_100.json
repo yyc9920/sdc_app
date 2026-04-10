@@ -1,0 +1,55 @@
+[
+  {
+    "setId": "L1_EXT_100_set1",
+    "parentSetId": "L1_EXT_100",
+    "theme": "Helping a Classmate",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "A new student joined our class today.",
+        "korean": "오늘 새 학생이 반에 왔어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "She looked nervous and didn't know where to sit.",
+        "korean": "긴장한 표정이었고 어디 앉아야 할지 몰랐어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I waved to her and said she could sit next to me.",
+        "korean": "손을 흔들며 내 옆에 앉아도 된다고 했어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "During lunch I introduced her to my friends.",
+        "korean": "점심시간에 내 친구들에게 소개해줬어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 4,
+        "english": "She smiled and said thank you for being so kind.",
+        "korean": "웃으면서 이렇게 친절해줘서 고맙다고 했어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Going to the Beach",
+        "Helping a Classmate",
+        "Doing Homework",
+        "The Loneliness Epidemic"
+      ],
+      "answer": 1
+    }
+  }
+]

@@ -1,0 +1,76 @@
+[
+  {
+    "setId": "L3_DLG_056_set1",
+    "parentSetId": "L3_DLG_056",
+    "theme": "Discussing a Work Schedule Change",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I wanted to ask about changing my work schedule.",
+        "korean": "근무 일정 변경에 대해 여쭤보고 싶었어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "What kind of change are you looking for?",
+        "korean": "어떤 변경을 원하세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I'd like to start at eight instead of nine and leave at five instead of six.",
+        "korean": "9시 대신 8시에 시작해서 6시 대신 5시에 퇴근하고 싶어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Is there a particular reason?",
+        "korean": "특별한 이유가 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I enrolled in an evening class that starts at six thirty.",
+        "korean": "6시 30분에 시작하는 야간 수업에 등록했어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "english": "That shouldn't be a problem.",
+        "korean": "문제없을 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Just make sure you coordinate with your team so morning meetings still work.",
+        "korean": "팀과 조율해서 아침 회의가 여전히 가능하도록만 하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "I will. Thank you for being flexible.",
+        "korean": "그러겠습니다. 유연하게 해주셔서 감사합니다.",
+        "properNounIndices": [
+          0,
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '등록한' mean in English?",
+      "options": [
+        "coordinate",
+        "flexible",
+        "schedule",
+        "enrolled"
+      ],
+      "answer": 3
+    }
+  }
+]

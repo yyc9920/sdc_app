@@ -1,0 +1,71 @@
+[
+  {
+    "setId": "L2_ELLO_031_set1",
+    "parentSetId": "L2_ELLO_031",
+    "theme": "Mixer #115 — Cooking Skills",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'm a pretty good cook, actually.",
+        "korean": "사실 요리를 꽤 잘해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I learned from my mother, who is an amazing chef.",
+        "korean": "놀라운 요리사이신 어머니에게 배웠어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I can barely boil an egg.",
+        "korean": "달걀도 겨우 삶아요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I always burn everything.",
+        "korean": "항상 다 태워요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "My roommate does most of the cooking.",
+        "korean": "룸메이트가 요리를 대부분 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "I love baking, especially cakes and cookies.",
+        "korean": "베이킹을 좋아해요, 특히 케이크와 쿠키요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 6,
+        "english": "It's so relaxing for me after a long day at work.",
+        "korean": "긴 하루 일과 후에 너무 편안해요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #25 — Favorite Number",
+        "Mixer #115 — Cooking Skills",
+        "Mixer #45 — Learning to Cook",
+        "Mixer #44 — Best City"
+      ],
+      "answer": 1
+    }
+  }
+]

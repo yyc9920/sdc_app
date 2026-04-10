@@ -1,0 +1,69 @@
+[
+  {
+    "setId": "L4_DLG_020_set1",
+    "parentSetId": "L4_DLG_020",
+    "theme": "Feedback on a Presentation",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "How do you think my presentation went?",
+        "korean": "내 발표 어땠어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Overall it was strong.",
+        "korean": "전반적으로 좋았어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Your data was convincing and the structure was clear.",
+        "korean": "데이터가 설득력 있었고 구조가 명확했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "But?",
+        "korean": "하지만요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "You spoke a little too fast during the key findings section.",
+        "korean": "핵심 결과 섹션에서 좀 너무 빨리 말했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Those are the numbers the executives care about most so you want to slow down and let them absorb the information.",
+        "korean": "그 수치가 임원들이 가장 관심 갖는 부분이라 천천히 해서 정보를 흡수하게 해야 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Good point.",
+        "korean": "좋은 지적이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "I'll practice that section more before the board meeting.",
+        "korean": "이사회 미팅 전에 그 섹션을 더 연습할게요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '설득력 있는' mean in English?",
+      "options": [
+        "absorb",
+        "board meeting",
+        "key findings",
+        "convincing"
+      ],
+      "answer": 3
+    }
+  }
+]

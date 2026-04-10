@@ -1,0 +1,77 @@
+[
+  {
+    "setId": "L2_DLG_021_set1",
+    "parentSetId": "L2_DLG_021",
+    "theme": "Canceling a Gym Class",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I need to cancel my yoga class for tonight.",
+        "korean": "오늘 밤 요가 수업을 취소해야 해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "The class starts in two hours.",
+        "korean": "수업 시작이 2시간 남았네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Our cancellation policy requires at least four hours' notice.",
+        "korean": "취소 정책은 최소 4시간 전에 알려주셔야 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Does that mean I'll be charged?",
+        "korean": "그러면 비용이 부과되나요?",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Unfortunately yes.",
+        "korean": "안타깝게도 그래요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "But since this is your first late cancellation I can waive the fee this time.",
+        "korean": "하지만 처음 늦은 취소이니까 이번에는 수수료를 면제해드릴 수 있어요.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Thank you so much.",
+        "korean": "정말 감사합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "I really appreciate it.",
+        "korean": "정말 감사드려요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '감사하다' mean in English?",
+      "options": [
+        "cancel",
+        "appreciate",
+        "charged",
+        "waive"
+      ],
+      "answer": 1
+    }
+  }
+]

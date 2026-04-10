@@ -1,0 +1,71 @@
+[
+  {
+    "setId": "L3_B6ME_031_set1",
+    "parentSetId": "L3_B6ME_031",
+    "theme": "What's Your Favourite Flavour of Crisp?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "In Britain we call them crisps and you might know them as potato chips, but whatever you call them, these fried potato slices are probably the world's favourite snack.",
+        "korean": "영국에서는 크리스프, 여러분은 포테이토 칩이라고 알 수도 있는데, 뭐라 부르든 이 튀긴 감자 조각은 아마 세계에서 가장 인기 있는 간식이에요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Crisps might be popular but with lots of oil and salt they're not the healthiest food.",
+        "korean": "감자칩은 인기 있지만 기름과 소금이 많아 가장 건강한 음식은 아니에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "So, why do we love them so much?",
+        "korean": "그런데 왜 이렇게 좋아할까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "When you bite into a crisp, you get that auditory crunch, and it's so satisfying.",
+        "korean": "감자칩을 베어 물면 청각적 바삭함이 매우 만족스러워요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "People hear that and they want more.",
+        "korean": "사람들은 더 원하게 되죠.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "A snowball effect happens, one chip becomes two, two becomes ten, and before you know it, the bag's gone.",
+        "korean": "눈덩이 효과로 한 개가 두 개, 두 개가 열 개가 되고 어느새 봉지가 비었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Definitely the tortilla chip.",
+        "korean": "확실히 토르티야 칩이요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Because you could do so many things — dip it in almost everything, adding some guacamole, spicy salsa or just sour cream.",
+        "korean": "거의 모든 것에 찍을 수 있고, 과카몰리나 매운 살사, 사워크림을 곁들일 수 있으니까요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '개인적 취향, 개인적 선호' mean in English?",
+      "options": [
+        "snowball effect",
+        "personal preference",
+        "you can't beat that",
+        "part and parcel"
+      ],
+      "answer": 1
+    }
+  }
+]

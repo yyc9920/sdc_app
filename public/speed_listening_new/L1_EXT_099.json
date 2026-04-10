@@ -1,0 +1,60 @@
+[
+  {
+    "setId": "L1_EXT_099_set1",
+    "parentSetId": "L1_EXT_099",
+    "theme": "My Neighbor's Dog",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My neighbor has a big brown dog named Charlie.",
+        "korean": "이웃에 찰리라는 큰 갈색 개가 있어요.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Every morning Charlie barks when I walk past their house.",
+        "korean": "매일 아침 그 집 앞을 지나가면 찰리가 짖어요.",
+        "properNounIndices": [
+          2,
+          5
+        ]
+      },
+      {
+        "id": 2,
+        "english": "At first I was scared of him.",
+        "korean": "처음에는 무서웠어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 3,
+        "english": "But one day the owner let me pet him and he licked my hand.",
+        "korean": "하지만 어느 날 주인이 쓰다듬게 해줬는데 내 손을 핥았어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Now we are good friends and I give him a treat every day.",
+        "korean": "이제 우리는 좋은 친구이고 매일 간식을 줘요.",
+        "properNounIndices": [
+          6
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "History Lecture — The Fall of the Berlin Wall",
+        "My Neighbor's Dog",
+        "Waiting for the Bus",
+        "A Fun Field Day"
+      ],
+      "answer": 1
+    }
+  }
+]

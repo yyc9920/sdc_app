@@ -1,0 +1,60 @@
+[
+  {
+    "setId": "L1_EXT_103_set1",
+    "parentSetId": "L1_EXT_103",
+    "theme": "My First Part-Time Job",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I got my first part-time job at a convenience store last month.",
+        "korean": "지난달에 편의점에서 첫 아르바이트를 시작했어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I work every Saturday from ten to five.",
+        "korean": "매주 토요일 10시부터 5시까지 일해요.",
+        "properNounIndices": [
+          0,
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "english": "My main job is stocking shelves and working the cash register.",
+        "korean": "주요 업무는 물건 진열과 계산대 업무예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "It was hard at first but now I enjoy talking to customers.",
+        "korean": "처음에는 힘들었지만 이제 손님들과 대화하는 게 즐거워요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I'm saving the money I earn to buy a new laptop for college.",
+        "korean": "버는 돈을 모아서 대학용 새 노트북을 살 거예요.",
+        "properNounIndices": [
+          4
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "My Umbrella",
+        "My Favorite Food",
+        "My First Part-Time Job",
+        "A School Trip"
+      ],
+      "answer": 2
+    }
+  }
+]

@@ -1,0 +1,120 @@
+[
+  {
+    "setId": "L4_DLG_007_set1",
+    "parentSetId": "L4_DLG_007",
+    "theme": "Performance Review",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Thanks for sitting down with me, Tom.",
+        "korean": "같이 앉아줘서 감사해요 탐.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Let's go over your performance for this quarter.",
+        "korean": "이번 분기 성과를 살펴보죠.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I've been looking forward to getting some feedback.",
+        "korean": "피드백 받기를 기대하고 있었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Overall, your performance has been strong.",
+        "korean": "전반적으로 성과가 좋았어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "The client satisfaction scores on your projects are consistently above average.",
+        "korean": "프로젝트의 고객 만족도 점수가 꾸준히 평균 이상이에요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '인사 평가' mean in English?",
+      "options": [
+        "performance review",
+        "client satisfaction",
+        "overtime",
+        "delegation"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L4_DLG_007_set2",
+    "parentSetId": "L4_DLG_007",
+    "theme": "Performance Review",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "That's great to hear.",
+        "korean": "듣기 좋네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Is there anything I should work on?",
+        "korean": "제가 개선해야 할 점이 있나요?",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 7,
+        "english": "One area for improvement is delegation.",
+        "korean": "개선할 한 가지 영역은 위임이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "You tend to take on too much yourself, which leads to working overtime and sometimes missing smaller deadlines.",
+        "korean": "/ 그래서 야근하게 되고 / 가끔 작은 마감을 놓치게 돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "That's a fair point.",
+        "korean": "타당한 지적이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 10,
+        "english": "I've been trying to delegate more, but I sometimes feel like it's faster to just do it myself.",
+        "korean": "더 위임하려고 노력하고 있는데 가끔 직접 하는 게 더 빠른 것 같아서요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 11,
+        "english": "I understand, but investing time in training your team now will save you much more time in the long run.",
+        "korean": "이해해요. 하지만 지금 팀 교육에 시간을 투자하면 장기적으로 훨씬 더 많은 시간을 절약할 거예요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '위임' mean in English?",
+      "options": [
+        "delegation",
+        "performance review",
+        "overtime",
+        "in the long run"
+      ],
+      "answer": 0
+    }
+  }
+]

@@ -3,26 +3,32 @@
     "setId": "L2_B6ME_003_set1",
     "parentSetId": "L2_B6ME_003",
     "theme": "Making 'mum friends'",
-    "level": 6,
+    "level": 5,
     "setNumber": 1,
     "sentences": [
       {
         "id": 0,
-        "english": "Hello. This is 6 Minute English from BBC Learning English. I'm Neil.",
-        "korean": "안녕하세요. BBC Learning English의 6 Minute English입니다. 저는 닐이에요.",
+        "english": "Hello. This is 6 Minute English from BBC Learning English.",
+        "korean": "안녕하세요. BBC Learning English의 6 Minute English입니다.",
         "properNounIndices": [
           1,
           4,
           5,
           7,
           8,
-          9,
-          10,
-          11
+          9
         ]
       },
       {
         "id": 1,
+        "english": "I'm Neil.",
+        "korean": "저는 닐이에요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
         "english": "And I'm Beth. Do you remember your first day at school, Neil?",
         "korean": "저는 베스예요. 닐, 학교 첫날 기억나요?",
         "properNounIndices": [
@@ -33,48 +39,33 @@
         ]
       },
       {
-        "id": 2,
-        "english": "Um, yes I do. I changed schools quite a lot when I was a kid, so I had lots of first days and they were never easy. How about you, Beth?",
-        "korean": "음, 네 기억나요. 어릴 때 학교를 꽤 많이 옮겨서 첫날이 많았는데 절대 쉽지 않았어요.",
-        "properNounIndices": [
-          2,
-          4,
-          11,
-          16,
-          27,
-          30
-        ]
-      },
-      {
         "id": 3,
-        "english": "Well, my mum always tells this story about how I was crying a lot on my first day. But apparently as soon as she left, I was quite happy. So my mum spent the day being a bit sad and I was completely fine.",
-        "korean": "엄마가 항상 이야기하는데, 첫날에 많이 울었대요. 하지만 엄마가 가시자마자 괜찮았다고요.",
+        "english": "Um, yes I do.",
+        "korean": "음, 네 기억나요.",
         "properNounIndices": [
-          9,
-          18,
-          25,
-          29,
-          40
+          2
         ]
       },
       {
         "id": 4,
-        "english": "Well, yeah, starting school and making new friends is difficult for many children. But it's not just the kids who find it challenging.",
-        "korean": "입학하고 새 친구를 사귀는 건 많은 아이에게 어려워요. 하지만 아이들만 힘든 게 아니에요.",
+        "english": "I changed schools quite a lot when I was a kid, so I had lots of first days and they were never easy.",
+        "korean": "어릴 때 학교를 꽤 많이 옮겨서 첫날이 많았는데 절대 쉽지 않았어요.",
         "properNounIndices": [
-          13
+          0,
+          7,
+          12
         ]
       }
     ],
     "quiz": {
-      "question": "What does '놀이터' mean in English?",
+      "question": "What does '금방 친해지다' mean in English?",
       "options": [
+        "play date",
         "mum friends",
-        "playground",
-        "pram days",
-        "click with"
+        "click with",
+        "playground"
       ],
-      "answer": 1
+      "answer": 2
     }
   },
   {
@@ -86,55 +77,50 @@
     "sentences": [
       {
         "id": 5,
-        "english": "For mums and dads who drop their kids off at the school gates in the morning and pick them up again at the end of the school day, making friends with other mums can be just as hard.",
-        "korean": "아침에 학교 앞에서 아이를 내려주고 방과 후에 다시 데려오는 엄마 아빠에게도 그래요.",
-        "properNounIndices": []
+        "english": "How about you, Beth?",
+        "korean": "첫날이 많았는데 절대 쉽지 않았어요",
+        "properNounIndices": [
+          3
+        ]
       },
       {
         "id": 6,
-        "english": "Here, BBC presenter, Nuala McGovern, discusses this problem using the term, 'mum friends'.",
-        "korean": "BBC 진행자 누알라 맥거번이 이 문제를 '맘 프렌즈'라는 용어로 이야기합니다.",
+        "english": "Well, my mum always tells this story about how I was crying a lot on my first day.",
+        "korean": "엄마가 항상 이야기하는데, 첫날에 많이 울었대요.",
         "properNounIndices": [
-          1,
-          3,
-          4
+          9
         ]
       },
       {
         "id": 7,
-        "english": "So if you have kids, you know, you go to the playground. And do we really know them? And how did we make those friends? And especially during or after the pandemic, how did we make those mum friends?",
-        "korean": "아이가 있으면 놀이터에 가잖아요. 그런데 그 사람들을 정말 알까요?",
+        "english": "But apparently as soon as she left, I was quite happy.",
+        "korean": "하지만 엄마가 가시자마자 괜찮았다고요.",
         "properNounIndices": [
-          12,
-          18,
-          25
-        ]
-      },
-      {
-        "id": 8,
-        "english": "Yeah, I found it really, really difficult. When you're in the pram days, do you know, do they become your real friends or not?",
-        "korean": "네, 정말정말 어려웠어요. 유모차 시절에요.",
-        "properNounIndices": [
-          1,
           7
         ]
       },
       {
-        "id": 9,
-        "english": "Nuala describes mum friends as people you meet through your children, for example at the playground. But she wonders whether these friendships are real.",
-        "korean": "누알라는 맘 프렌즈를 아이를 통해 만나는 사람들, 예를 들어 놀이터에서 만나는 사람으로 묘사합니다.",
+        "id": 8,
+        "english": "So my mum spent the day being a bit sad and I was completely fine.",
+        "korean": "하지만 엄마가 가시자마자 괜찮았다고요",
         "properNounIndices": [
-          16
+          11
         ]
+      },
+      {
+        "id": 9,
+        "english": "Well, yeah, starting school and making new friends is difficult for many children.",
+        "korean": "입학하고 새 친구를 사귀는 건 많은 아이에게 어려워요.",
+        "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '운에 달린' mean in English?",
+      "question": "What does '아이들의 놀이 약속' mean in English?",
       "options": [
-        "bond with",
+        "click with",
+        "mum friends",
         "play date",
-        "down to luck",
-        "mum friends"
+        "playground"
       ],
       "answer": 2
     }
@@ -148,14 +134,128 @@
     "sentences": [
       {
         "id": 10,
-        "english": "The pandemic made things even harder. During lockdown, the usual ways to meet other mums, at baby groups and in the playground, were impossible.",
-        "korean": "팬데믹이 상황을 더 어렵게 만들었어요. 봉쇄 기간에 다른 엄마들을 만나는 일반적인 방법이 차단됐거든요.",
-        "properNounIndices": [
-          6
-        ]
+        "english": "But it's not just the kids who find it challenging.",
+        "korean": "하지만 아이들만 힘든 게 아니에요.",
+        "properNounIndices": []
       },
       {
         "id": 11,
+        "english": "For mums and dads who drop their kids off at the school gates in the morning and pick them up again at the end of the school day, making friends with other mums can be just as hard.",
+        "korean": "아침에 학교 앞에서 아이를 내려주고 방과 후에 다시 데려오는 엄마 아빠에게도 그래요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "Here, BBC presenter, Nuala McGovern, discusses this problem using the term, 'mum friends'.",
+        "korean": "BBC 진행자 누알라 맥거번이 이 문제를 '맘 프렌즈'라는 용어로 이야기합니다.",
+        "properNounIndices": [
+          1,
+          3,
+          4
+        ]
+      },
+      {
+        "id": 13,
+        "english": "So if you have kids, you know, you go to the playground.",
+        "korean": "아이가 있으면 놀이터에 가잖아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "And do we really know them?",
+        "korean": "그런데 그 사람들을 정말 알까요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '유모차를 끌던 시절' mean in English?",
+      "options": [
+        "pram days",
+        "bond with",
+        "playground",
+        "down to luck"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_B6ME_003_set4",
+    "parentSetId": "L2_B6ME_003",
+    "theme": "Making 'mum friends'",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "And how did we make those friends?",
+        "korean": "놀이터에 가잖아요",
+        "properNounIndices": []
+      },
+      {
+        "id": 16,
+        "english": "And especially during or after the pandemic, how did we make those mum friends?",
+        "korean": "그런데 그 사람들을 정말 알까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "Yeah, I found it really, really difficult.",
+        "korean": "네, 정말정말 어려웠어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 18,
+        "english": "When you're in the pram days, do you know, do they become your real friends or not?",
+        "korean": "유모차 시절에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 19,
+        "english": "Nuala describes mum friends as people you meet through your children, for example at the playground.",
+        "korean": "누알라는 맘 프렌즈를 아이를 통해 만나는 사람들, 예를 들어 놀이터에서 만나는 사람으로 묘사합니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '운에 달린' mean in English?",
+      "options": [
+        "mum friends",
+        "down to luck",
+        "pram days",
+        "playground"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L2_B6ME_003_set5",
+    "parentSetId": "L2_B6ME_003",
+    "theme": "Making 'mum friends'",
+    "level": 6,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "But she wonders whether these friendships are real.",
+        "korean": "아이를 통해 만나는 사람들로 묘사해요 예를 들어 놀이터에서",
+        "properNounIndices": []
+      },
+      {
+        "id": 21,
+        "english": "The pandemic made things even harder.",
+        "korean": "팬데믹이 상황을 더 어렵게 만들었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 22,
+        "english": "During lockdown, the usual ways to meet other mums, at baby groups and in the playground, were impossible.",
+        "korean": "봉쇄 기간에 다른 엄마들을 만나는 일반적인 방법이 차단됐거든요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 23,
         "english": "Here's Jayne Cherrington-Cook, a mum from the UK, describing the difficulties she faced:",
         "korean": "영국 엄마 제인 체링턴쿡이 겪었던 어려움을 설명합니다.",
         "properNounIndices": [
@@ -165,7 +265,7 @@
         ]
       },
       {
-        "id": 12,
+        "id": 24,
         "english": "I think I'd had some really bad experiences at baby groups where you're trying to make your child do yoga or paint when they're four months old, and trying to bond with these other women and I just thought, 'This is ridiculous!' And I pretty much straight away realised it was gonna be just down to luck if I met somebody that I clicked with.",
         "korean": "아기 모임에서 정말 안 좋은 경험을 했던 것 같아요. 아기한테 요가나 그림을 시키려 하는데요.",
         "properNounIndices": [
@@ -178,42 +278,46 @@
           58,
           62
         ]
-      },
-      {
-        "id": 13,
-        "english": "Jayne says it's down to luck if she makes mum friends. If you say something is down to luck, you mean it depends on chance rather than any skill or effort you make.",
-        "korean": "제인은 맘 프렌즈를 사귀는 건 운에 달렸다고 해요. 운에 달렸다는 건 기회에 달려 있다는 뜻입니다.",
-        "properNounIndices": [
-          11
-        ]
-      },
-      {
-        "id": 14,
-        "english": "But there's always the possibility you'll meet someone and click with them, become friends as soon as you start talking.",
-        "korean": "하지만 항상 누군가를 만나서 통하고, 대화를 시작하자마자 친구가 될 가능성이 있어요.",
-        "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '유모차를 끌던 시절' mean in English?",
+      "question": "What does '운에 달린' mean in English?",
       "options": [
-        "mum friends",
         "play date",
-        "bond with",
-        "pram days"
+        "click with",
+        "down to luck",
+        "mum friends"
       ],
-      "answer": 3
+      "answer": 2
     }
   },
   {
-    "setId": "L2_B6ME_003_set4",
+    "setId": "L2_B6ME_003_set6",
     "parentSetId": "L2_B6ME_003",
     "theme": "Making 'mum friends'",
     "level": 6,
-    "setNumber": 4,
+    "setNumber": 6,
     "sentences": [
       {
-        "id": 15,
+        "id": 25,
+        "english": "Jayne says it's down to luck if she makes mum friends.",
+        "korean": "제인은 맘 프렌즈를 사귀는 건 운에 달렸다고 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 26,
+        "english": "If you say something is down to luck, you mean it depends on chance rather than any skill or effort you make.",
+        "korean": "운에 달렸다는 건 기회에 달려 있다는 뜻입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 27,
+        "english": "But there's always the possibility you'll meet someone and click with them, become friends as soon as you start talking.",
+        "korean": "하지만 항상 누군가를 만나서 통하고, 대화를 시작하자마자 친구가 될 가능성이 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 28,
         "english": "Well, I know something that isn't down to luck, Neil – the answer to your question.",
         "korean": "운에 달리지 않은 게 하나 있죠, 닐 — 퀴즈 정답이요.",
         "properNounIndices": [
@@ -222,16 +326,40 @@
         ]
       },
       {
-        "id": 16,
-        "english": "Ah yes. I asked you about the origin of the term play date. Which country does it come from?",
-        "korean": "아 네. 'play date'라는 용어의 기원에 대해 물었었죠. 어느 나라에서 왔을까요?",
+        "id": 29,
+        "english": "Ah yes. I asked you about the origin of the term play date.",
+        "korean": "아 네. 'play date'라는 용어의 기원에 대해 물었었죠.",
         "properNounIndices": [
-          2,
-          13
+          2
         ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '유모차를 끌던 시절' mean in English?",
+      "options": [
+        "pram days",
+        "bond with",
+        "down to luck",
+        "play date"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_B6ME_003_set7",
+    "parentSetId": "L2_B6ME_003",
+    "theme": "Making 'mum friends'",
+    "level": 5,
+    "setNumber": 7,
+    "sentences": [
+      {
+        "id": 30,
+        "english": "Which country does it come from?",
+        "korean": "어느 나라에서 왔을까요?",
+        "properNounIndices": []
       },
       {
-        "id": 17,
+        "id": 31,
         "english": "I think it's the USA.",
         "korean": "미국인 것 같아요.",
         "properNounIndices": [
@@ -240,39 +368,29 @@
         ]
       },
       {
-        "id": 18,
-        "english": "Well Beth, you are right. According to the Oxford English Dictionary, 'play date' was first used in the United States in the 1970s. OK, let's recap the vocabulary we've learned, starting with mum friends – people you meet through your children.",
-        "korean": "베스, 맞아요. 옥스퍼드 영어사전에 따르면 'play date'는 미국에서 처음 사용됐습니다.",
+        "id": 32,
+        "english": "Well Beth, you are right.",
+        "korean": "베스, 맞아요.",
         "properNounIndices": [
-          1,
+          1
+        ]
+      },
+      {
+        "id": 33,
+        "english": "According to the Oxford English Dictionary, 'play date' was first used in the United States in the 1970s.",
+        "korean": "옥스퍼드 영어사전에 따르면 'play date'는 미국에서 처음 사용됐습니다.",
+        "properNounIndices": [
+          3,
+          4,
           5,
-          8,
-          9,
-          10,
-          18,
-          19,
-          23
+          13,
+          14
         ]
       },
       {
-        "id": 19,
-        "english": "If something is down to luck, it depends on chance.",
-        "korean": "뭔가가 운에 달렸다는 건 기회에 달려 있다는 뜻입니다.",
-        "properNounIndices": []
-      },
-      {
-        "id": 20,
-        "english": "And if you click with someone, you become friends straight away. Once again, we've run out of time. Bye for now!",
-        "korean": "누군가와 통하면 바로 친구가 됩니다. 오늘도 시간이 다 됐네요. 안녕!",
-        "properNounIndices": [
-          11,
-          18
-        ]
-      },
-      {
-        "id": 21,
-        "english": "Bye!",
-        "korean": "안녕!",
+        "id": 34,
+        "english": "OK, let's recap the vocabulary we've learned, starting with mum friends – people you meet through your children.",
+        "korean": "'play date'는 미국에서 처음 사용됐어요",
         "properNounIndices": []
       }
     ],
@@ -280,11 +398,60 @@
       "question": "What does '아이를 통해 사귄 엄마 친구' mean in English?",
       "options": [
         "bond with",
+        "mum friends",
+        "click with",
+        "down to luck"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L2_B6ME_003_set8",
+    "parentSetId": "L2_B6ME_003",
+    "theme": "Making 'mum friends'",
+    "level": 3,
+    "setNumber": 8,
+    "sentences": [
+      {
+        "id": 35,
+        "english": "If something is down to luck, it depends on chance.",
+        "korean": "뭔가가 운에 달렸다는 건 기회에 달려 있다는 뜻입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 36,
+        "english": "And if you click with someone, you become friends straight away.",
+        "korean": "누군가와 통하면 바로 친구가 됩니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 37,
+        "english": "Once again, we've run out of time.",
+        "korean": "오늘도 시간이 다 됐네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 38,
+        "english": "Bye for now!",
+        "korean": "안녕!",
+        "properNounIndices": []
+      },
+      {
+        "id": 39,
+        "english": "Bye!",
+        "korean": "안녕!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '운에 달린' mean in English?",
+      "options": [
+        "bond with",
+        "play date",
         "down to luck",
-        "playground",
         "mum friends"
       ],
-      "answer": 3
+      "answer": 2
     }
   }
 ]

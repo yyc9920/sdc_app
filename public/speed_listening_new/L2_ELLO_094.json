@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L2_ELLO_094_set1",
+    "parentSetId": "L2_ELLO_094",
+    "theme": "Mixer #51 — Cleaning Habits",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I clean my apartment every single day.",
+        "korean": "매일 아파트를 청소해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I can't relax in a messy space.",
+        "korean": "지저분한 공간에서는 쉴 수가 없어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I only do a big clean on the weekends, and during the week things pile up.",
+        "korean": "주말에만 대청소를 하고 주중에는 물건이 쌓여요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I'm honestly pretty messy, and my room is always a disaster.",
+        "korean": "솔직히 꽤 지저분하고 방은 항상 엉망이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I know where everything is though.",
+        "korean": "하지만 모든 게 어디 있는지는 알아요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #72 — Driving",
+        "Mixer #81 — Morning Person or Night Owl",
+        "Mixer #16 — Roommates",
+        "Mixer #51 — Cleaning Habits"
+      ],
+      "answer": 3
+    }
+  }
+]

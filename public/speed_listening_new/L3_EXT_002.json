@@ -3,57 +3,51 @@
     "setId": "L3_EXT_002_set1",
     "parentSetId": "L3_EXT_002",
     "theme": "University Office Hours",
-    "level": 6,
+    "level": 3,
     "setNumber": 1,
     "sentences": [
       {
         "id": 0,
-        "english": "Professor Lin, do you have a minute? I wanted to ask about the research paper that's due next week.",
-        "korean": "린 교수님, 잠깐 시간 되시나요? 다음 주 마감인 연구 논문에 대해 여쭤보려고요.",
+        "english": "Professor Lin, do you have a minute?",
+        "korean": "린 교수님, 잠깐 시간 되시나요?",
         "properNounIndices": [
-          1,
-          7
+          1
         ]
       },
       {
         "id": 1,
-        "english": "Of course, come in. What's on your mind?",
-        "korean": "물론이지, 들어와. 무슨 일이야?",
+        "english": "I wanted to ask about the research paper that's due next week.",
+        "korean": "다음 주 마감인 연구 논문에 대해 여쭤보려고요.",
         "properNounIndices": [
-          4
+          0
         ]
       },
       {
         "id": 2,
-        "english": "I'm having trouble narrowing down my topic. I started with \"the effects of social media on mental health,\" but it feels way too broad.",
-        "korean": "주제를 좁히는 데 어려움을 겪고 있어요. '소셜 미디어가 정신건강에 미치는 영향'으로 시작했는데 너무 광범위한 것 같아요.",
-        "properNounIndices": [
-          7
-        ]
+        "english": "Of course, come in.",
+        "korean": "물론이지, 들어와.",
+        "properNounIndices": []
       },
       {
         "id": 3,
-        "english": "That's a common issue, and you're right — it is too broad for a ten-page paper. The key is to find a specific angle. For example, instead of social media in general, you could focus on one platform.",
-        "korean": "흔한 문제야, 맞아 — 10페이지 논문에는 너무 넓어. 핵심은 구체적인 관점을 찾는 거야.",
-        "properNounIndices": [
-          16,
-          24
-        ]
+        "english": "What's on your mind?",
+        "korean": "무슨 일이야?",
+        "properNounIndices": []
       },
       {
         "id": 4,
-        "english": "Or instead of mental health broadly, you could look at one aspect, like self-esteem or sleep quality.",
-        "korean": "또는 정신건강 전체가 아니라, 자존감이나 수면 질 같은 하나의 측면을 볼 수도 있어.",
+        "english": "I'm having trouble narrowing down my topic.",
+        "korean": "주제를 좁히는 데 어려움을 겪고 있어요.",
         "properNounIndices": []
       }
     ],
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "TED-Style Talk — The Science of Habits",
+        "Emergency Broadcast",
         "University Office Hours",
-        "Cultural Commentary — Tipping Culture",
-        "Returning a Product"
+        "At the Convenience Store",
+        "First Day at a New Job"
       ],
       "answer": 1
     }
@@ -67,6 +61,57 @@
     "sentences": [
       {
         "id": 5,
+        "english": "I started with \"the effects of social media on mental health,\" but it feels way too broad.",
+        "korean": "'소셜 미디어가 정신건강에 미치는 영향'으로 시작했는데 너무 광범위한 것 같아요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 6,
+        "english": "That's a common issue, and you're right — it is too broad for a ten-page paper.",
+        "korean": "흔한 문제야, 맞아 — 10페이지 논문에는 너무 넓어.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "The key is to find a specific angle.",
+        "korean": "핵심은 구체적인 관점을 찾는 거야.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "For example, instead of social media in general, you could focus on one platform.",
+        "korean": "핵심은 구체적인 관점을 찾는 거야",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Or instead of mental health broadly, you could look at one aspect, like self-esteem or sleep quality.",
+        "korean": "또는 정신건강 전체가 아니라, 자존감이나 수면 질 같은 하나의 측면을 볼 수도 있어.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Sapir-Whorf Hypothesis — Does Language Shape Thought?",
+        "University Office Hours",
+        "Public Speaking Fear",
+        "My Teacher"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L3_EXT_002_set3",
+    "parentSetId": "L3_EXT_002",
+    "theme": "University Office Hours",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
         "english": "Hmm, what about something like \"the relationship between Instagram use and body image among college students\"?",
         "korean": "음, '대학생의 인스타그램 사용과 신체 이미지 간의 관계' 같은 건 어떨까요?",
         "properNounIndices": [
@@ -74,15 +119,19 @@
         ]
       },
       {
-        "id": 6,
-        "english": "Now that's much more focused. And there's actually a good amount of recent research on that exact topic, so you'll have plenty of sources to work with.",
-        "korean": "그건 훨씬 초점이 맞아. 그 정확한 주제에 대한 최근 연구도 꽤 많아서 참고할 자료가 충분할 거야.",
-        "properNounIndices": [
-          5
-        ]
+        "id": 11,
+        "english": "Now that's much more focused.",
+        "korean": "그건 훨씬 초점이 맞아.",
+        "properNounIndices": []
       },
       {
-        "id": 7,
+        "id": 12,
+        "english": "And there's actually a good amount of recent research on that exact topic, so you'll have plenty of sources to work with.",
+        "korean": "그 정확한 주제에 대한 최근 연구도 꽤 많아서 참고할 자료가 충분할 거야.",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
         "english": "Great. I was also wondering — do we need to include primary research, or is a literature review enough?",
         "korean": "좋아요. 궁금한 게 또 있는데 — 1차 연구를 포함해야 하나요, 문헌 검토만으로 충분한가요?",
         "properNounIndices": [
@@ -90,24 +139,54 @@
         ]
       },
       {
-        "id": 8,
-        "english": "For this assignment, a literature review is perfectly fine. I want you to analyze and synthesize existing studies rather than collect your own data.",
-        "korean": "이 과제에서는 문헌 검토만으로 충분해. 직접 데이터를 수집하기보다 기존 연구를 분석하고 종합하길 원해.",
+        "id": 14,
+        "english": "For this assignment, a literature review is perfectly fine.",
+        "korean": "이 과제에서는 문헌 검토만으로 충분해.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "University Office Hours",
+        "At the Zoo",
+        "My Hobby",
+        "A Picnic in the Park"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L3_EXT_002_set4",
+    "parentSetId": "L3_EXT_002",
+    "theme": "University Office Hours",
+    "level": 5,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "I want you to analyze and synthesize existing studies rather than collect your own data.",
+        "korean": "직접 데이터를 수집하기보다 기존 연구를 분석하고 종합하길 원해.",
         "properNounIndices": [
-          9
+          0
         ]
       },
       {
-        "id": 9,
-        "english": "Make sure you're not just summarizing — I want to see critical evaluation. Ask yourself: what are the strengths and limitations of each study?",
-        "korean": "단순 요약만 하지 않도록 해 — 비판적 평가를 보고 싶어. 각 연구의 강점과 한계가 뭔지 스스로에게 물어봐.",
+        "id": 16,
+        "english": "Make sure you're not just summarizing — I want to see critical evaluation.",
+        "korean": "단순 요약만 하지 않도록 해 — 비판적 평가를 보고 싶어.",
         "properNounIndices": [
-          7,
-          13
+          7
         ]
       },
       {
-        "id": 10,
+        "id": 17,
+        "english": "Ask yourself: what are the strengths and limitations of each study?",
+        "korean": "각 연구의 강점과 한계가 뭔지 스스로에게 물어봐.",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
         "english": "That makes sense. One last question — is APA format required?",
         "korean": "이해가 돼요. 마지막 질문인데 — APA 형식이 필수인가요?",
         "properNounIndices": [
@@ -116,16 +195,21 @@
         ]
       },
       {
-        "id": 11,
-        "english": "Yes, APA 7th edition. And please use at least eight peer-reviewed sources.",
-        "korean": "네, APA 7판이야. 그리고 최소 8개의 동료 심사 논문을 사용해줘.",
+        "id": 19,
+        "english": "Yes, APA 7th edition.",
+        "korean": "네, APA 7판이야.",
         "properNounIndices": [
-          1,
-          4
+          1
         ]
       },
       {
-        "id": 12,
+        "id": 20,
+        "english": "And please use at least eight peer-reviewed sources.",
+        "korean": "그리고 최소 8개의 동료 심사 논문을 사용해줘.",
+        "properNounIndices": []
+      },
+      {
+        "id": 21,
         "english": "Got it. Thank you, Professor.",
         "korean": "알겠습니다. 감사합니다, 교수님.",
         "properNounIndices": [
@@ -137,12 +221,12 @@
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Tech Support Call",
-        "Weather Forecast",
         "University Office Hours",
-        "Checking Into a Hotel"
+        "The Psychology of Habit Formation",
+        "My Favorite Singer",
+        "The Growth Mindset"
       ],
-      "answer": 2
+      "answer": 0
     }
   }
 ]

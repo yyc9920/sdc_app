@@ -1,0 +1,47 @@
+[
+  {
+    "setId": "L3_B6ME_042_set1",
+    "parentSetId": "L3_B6ME_042",
+    "theme": "Would You Like a Robot Companion?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "One area of technology which has been in the news a lot recently is robotics.",
+        "korean": "최근 뉴스에 많이 나오는 기술 분야 중 하나는 로보틱스예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Humanoid robots, meaning robots which appear and behave like humans, are being built to help us do everything from washing the dishes to babysitting the kids.",
+        "korean": "인간처럼 보이고 행동하는 휴머노이드 로봇이 설거지부터 아이 돌보기까지 모든 것을 돕기 위해 만들어지고 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "With advances in AI, robots are becoming smart enough to develop meaningful relationships with humans.",
+        "korean": "AI의 발전으로 로봇이 인간과 의미 있는 관계를 맺을 만큼 똑똑해지고 있어요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 3,
+        "english": "There are reports of people telling their secrets to robot therapists and even falling in love with their robot friend!",
+        "korean": "로봇 치료사에게 비밀을 말하거나 심지어 로봇 친구와 사랑에 빠지는 사례도 있어요!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '동반자, 친구' mean in English?",
+      "options": [
+        "uncanny valley",
+        "companion",
+        "anthropomorphise",
+        "humanoid"
+      ],
+      "answer": 1
+    }
+  }
+]

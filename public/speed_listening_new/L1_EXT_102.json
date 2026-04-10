@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L1_EXT_102_set1",
+    "parentSetId": "L1_EXT_102",
+    "theme": "My Grandma's House",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I visit my grandma's house every Sunday.",
+        "korean": "매주 일요일에 할머니 댁에 가요.",
+        "properNounIndices": [
+          0,
+          6
+        ]
+      },
+      {
+        "id": 1,
+        "english": "She always makes delicious food for me.",
+        "korean": "항상 맛있는 음식을 만들어주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "My favorite is her kimchi jjigae because it tastes different from the one my mom makes.",
+        "korean": "가장 좋아하는 건 할머니의 김치찌개인데 엄마가 만드는 것과 맛이 달라요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "After lunch we usually watch TV together on the sofa.",
+        "korean": "점심 후에 보통 소파에서 함께 TV를 봐요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I always feel happy and warm when I'm at her house.",
+        "korean": "할머니 집에 있으면 항상 행복하고 따뜻해요.",
+        "properNounIndices": [
+          0,
+          7
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "The Mere Exposure Effect",
+        "Airport Announcement",
+        "My Grandma's House",
+        "Lost My Wallet"
+      ],
+      "answer": 2
+    }
+  }
+]

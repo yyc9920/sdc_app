@@ -1,0 +1,49 @@
+[
+  {
+    "setId": "L3_B6ME_040_set1",
+    "parentSetId": "L3_B6ME_040",
+    "theme": "Have You Ever Seen a Whale?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Whale watching has become popular in many coastal parts of the world.",
+        "korean": "고래 관찰이 세계 여러 해안 지역에서 인기를 얻었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "But watching whales is very different from what humans used to do: hunt and kill them — an activity known as whaling.",
+        "korean": "하지만 고래를 보는 것은 인간이 하던 포경 — 고래를 사냥하고 죽이는 활동과는 매우 달라요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Last year marked the 40th anniversary of the International Whaling Commission's ban on commercial whaling.",
+        "korean": "작년은 국제포경위원회의 상업 포경 금지 40주년이었어요.",
+        "properNounIndices": [
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Since then, whale populations have slowly recovered.",
+        "korean": "그 이후 고래 개체수가 서서히 회복되었어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '매혹적인, 넋을 빼앗는' mean in English?",
+      "options": [
+        "mesmerising",
+        "in the wild",
+        "moratorium",
+        "conservation"
+      ],
+      "answer": 0
+    }
+  }
+]

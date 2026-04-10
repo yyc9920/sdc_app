@@ -1,0 +1,74 @@
+[
+  {
+    "setId": "L1_SPK_080_set1",
+    "parentSetId": "L1_SPK_080",
+    "theme": "Importance of Arts Education",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think art and music classes are as important as math and science?",
+        "korean": "미술 음악 수업이 수학 과학만큼 중요하다고 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain why or why not.",
+        "korean": "이유를 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I firmly believe that arts education is just as important as STEM subjects.",
+        "korean": "예술 교육이 STEM 과목만큼 중요하다고 확고히 믿어요.",
+        "properNounIndices": [
+          0,
+          11
+        ]
+      },
+      {
+        "id": 3,
+        "english": "First the arts develop creativity and innovative thinking which are skills that every industry needs.",
+        "korean": "첫째 예술은 모든 산업이 필요로 하는 창의성과 혁신적 사고를 발달시켜요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Steve Jobs famously said that technology alone is not enough — it must be combined with the liberal arts and humanities.",
+        "korean": "스티브 잡스는 유명하게 말했어요. 기술만으로는 충분하지 않고 인문학과 결합되어야 한다고요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Second music and art provide emotional outlets that help students manage stress and express themselves in healthy ways.",
+        "korean": "둘째 음악과 미술은 학생들이 스트레스를 관리하고 건강한 방식으로 자신을 표현하도록 돕는 감정적 배출구를 제공해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Cutting arts programs to save money is a short-sighted decision that harms students' overall development.",
+        "korean": "비용 절감을 위해 예술 프로그램을 축소하는 것은 학생의 전반적 발달에 해가 되는 근시안적 결정이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "emotional outlet",
+        "korean": "감정적 배출구",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Living in the Present vs. Planning Ahead",
+        "Longer Vacations vs. Shorter Frequent Breaks",
+        "Importance of Arts Education",
+        "The Best Invention in History"
+      ],
+      "answer": 2
+    }
+  }
+]

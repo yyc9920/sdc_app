@@ -1,0 +1,58 @@
+[
+  {
+    "setId": "L2_EXT_020_set1",
+    "parentSetId": "L2_EXT_020",
+    "theme": "Korean Food Around the World",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Korean food has become incredibly popular around the world in the last decade.",
+        "korean": "한국 음식이 지난 10년간 전 세계에서 엄청나게 인기를 얻었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Kimchi, bibimbap, and Korean fried chicken are now available in most major cities.",
+        "korean": "김치 비빔밥 한국식 프라이드 치킨은 이제 대부분의 주요 도시에서 먹을 수 있어요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "english": "K-dramas and K-pop have played a huge role in spreading interest in Korean culture, including food.",
+        "korean": "K-드라마와 K-pop이 음식을 포함한 한국 문화에 대한 관심을 퍼뜨리는 데 큰 역할을 했어요.",
+        "properNounIndices": [
+          2,
+          12
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Many foreigners say they were surprised by how spicy Korean food is, but they quickly became addicted to the flavor.",
+        "korean": "많은 외국인들이 한국 음식이 얼마나 매운지 놀랐다고 하지만 금방 맛에 중독됐다고 해요.",
+        "properNounIndices": [
+          9
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Korean barbecue restaurants are especially popular because people love the experience of grilling their own meat at the table.",
+        "korean": "한국식 바비큐 식당이 특히 인기인데 사람들이 테이블에서 직접 고기를 굽는 경험을 좋아하기 때문이에요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '굽다' mean in English?",
+      "options": [
+        "addicted",
+        "spread",
+        "incredibly",
+        "grill"
+      ],
+      "answer": 3
+    }
+  }
+]

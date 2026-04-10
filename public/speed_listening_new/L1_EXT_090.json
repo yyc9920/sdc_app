@@ -1,0 +1,53 @@
+[
+  {
+    "setId": "L1_EXT_090_set1",
+    "parentSetId": "L1_EXT_090",
+    "theme": "A Picnic in the Park",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My family had a picnic in the park last Sunday.",
+        "korean": "지난 일요일에 가족이 공원에서 소풍을 했어요.",
+        "properNounIndices": [
+          9
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Mom made sandwiches and fruit salad.",
+        "korean": "엄마가 샌드위치와 과일 샐러드를 만들었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "We sat on a blanket under a big tree.",
+        "korean": "큰 나무 아래 담요 위에 앉았어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "After eating we played badminton and flew a kite.",
+        "korean": "먹고 나서 배드민턴을 치고 연을 날렸어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "It was a perfect day.",
+        "korean": "완벽한 하루였어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Recycling at School",
+        "Why We Love Stories",
+        "Podcast — Learning a Second Language",
+        "A Picnic in the Park"
+      ],
+      "answer": 3
+    }
+  }
+]

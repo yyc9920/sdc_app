@@ -1,0 +1,53 @@
+[
+  {
+    "setId": "L3_B6ME_045_set1",
+    "parentSetId": "L3_B6ME_045",
+    "theme": "What's It Like to Be a Twin?",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Non-identical, or fraternal, twins come from two separate eggs and share half their genes.",
+        "korean": "이란성 쌍둥이는 두 개의 별도 난자에서 나와 유전자 절반을 공유해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "More uncommon are identical twins, who come from a single fertilised egg and share 100% of their genes.",
+        "korean": "더 드문 일란성 쌍둥이는 하나의 수정란에서 나와 유전자 100%를 공유해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Some common questions for twins include: 'Do you have psychic powers?",
+        "korean": "쌍둥이에게 흔한 질문에는 '초능력이 있어?'",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Have you ever swapped boyfriends?",
+        "korean": "남자친구를 바꾼 적 있어?'",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "And do you have the same dreams?'",
+        "korean": "같은 꿈을 꿔?'가 포함돼요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '일란성 쌍둥이' mean in English?",
+      "options": [
+        "individuality",
+        "bond",
+        "fraternal twins",
+        "identical twins"
+      ],
+      "answer": 3
+    }
+  }
+]

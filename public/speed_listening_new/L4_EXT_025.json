@@ -1,0 +1,45 @@
+[
+  {
+    "setId": "L4_EXT_025_set1",
+    "parentSetId": "L4_EXT_025",
+    "theme": "The Paradox of Productivity",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Despite having more productivity tools than ever before the average knowledge worker's output has barely increased over the past two decades.",
+        "korean": "그 어느 때보다 많은 생산성 도구가 있음에도 평균적 지식 근로자의 산출량은 지난 20년간 거의 증가하지 않았다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "The problem is that most of these tools optimize the wrong thing — they make us more efficient at managing work rather than actually doing it.",
+        "korean": "문제는 이 도구 대부분이 잘못된 것을 최적화한다는 것이다. 실제로 일을 하는 것이 아니라 일을 관리하는 데 더 효율적으로 만든다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "We spend hours organizing tasks in apps color-coding calendars and responding to messages about work instead of doing the work itself.",
+        "korean": "앱에서 작업을 정리하고 캘린더를 색상 코드하고 일에 대한 메시지에 응답하는 데 시간을 보낸다. 일 자체를 하는 대신.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "True productivity isn't about doing more things — it's about doing the right things with deep focus and eliminating everything else.",
+        "korean": "진정한 생산성은 더 많은 일을 하는 것이 아니다. 깊은 집중으로 올바른 일을 하고 나머지 모든 것을 제거하는 것이다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '지식 근로자' mean in English?",
+      "options": [
+        "deep focus",
+        "knowledge worker",
+        "optimize",
+        "eliminate"
+      ],
+      "answer": 1
+    }
+  }
+]

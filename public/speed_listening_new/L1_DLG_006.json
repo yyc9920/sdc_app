@@ -1,0 +1,105 @@
+[
+  {
+    "setId": "L1_DLG_006_set1",
+    "parentSetId": "L1_DLG_006",
+    "theme": "At the Pizza Shop",
+    "level": 2,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Welcome! What can I get you?",
+        "korean": "어서 오세요! 뭘 드릴까요?",
+        "properNounIndices": [
+          1,
+          3
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I'd like a cheese pizza please.",
+        "korean": "치즈 피자 주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "What size? Small medium or large?",
+        "korean": "사이즈요? 스몰 미디엄 라지?",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Medium please.",
+        "korean": "미디엄이요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Would you like any toppings?",
+        "korean": "토핑 추가하시겠어요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Handling a Client Complaint",
+        "At the Pizza Shop",
+        "Returning a Library Book",
+        "Booking a Hotel Room"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L1_DLG_006_set2",
+    "parentSetId": "L1_DLG_006",
+    "theme": "At the Pizza Shop",
+    "level": 2,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Can I add mushrooms?",
+        "korean": "버섯 추가할 수 있나요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Sure. That'll be twelve dollars.",
+        "korean": "네. 12달러입니다.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 7,
+        "english": "It'll be ready in fifteen minutes.",
+        "korean": "15분 후에 준비됩니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "I'll wait here. Thanks!",
+        "korean": "여기서 기다릴게요. 감사합니다!",
+        "properNounIndices": [
+          3
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "At the Pizza Shop",
+        "Handling a Client Complaint",
+        "At the Bus Stop",
+        "Coworker — Lunch Plans"
+      ],
+      "answer": 0
+    }
+  }
+]

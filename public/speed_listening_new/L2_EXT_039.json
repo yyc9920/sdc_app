@@ -1,0 +1,51 @@
+[
+  {
+    "setId": "L2_EXT_039_set1",
+    "parentSetId": "L2_EXT_039",
+    "theme": "Public Speaking Tips",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Most people rank public speaking as one of their biggest fears even above death.",
+        "korean": "대부분의 사람은 대중 연설을 죽음보다 더 큰 두려움으로 꼽아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "But the good news is that it's a skill that can be learned and improved with practice.",
+        "korean": "하지만 좋은 소식은 연습으로 배우고 향상시킬 수 있는 기술이라는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The most important tip is to know your material inside out so you don't depend on reading from notes.",
+        "korean": "가장 중요한 팁은 자료를 완벽히 알아서 메모를 읽는 데 의존하지 않는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Making eye contact with your audience and speaking slowly helps you appear confident even when you're nervous.",
+        "korean": "청중과 눈을 맞추고 천천히 말하면 긴장하고 있어도 자신감 있어 보이는 데 도움이 돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Remember that the audience wants you to succeed — they are on your side not against you.",
+        "korean": "청중은 당신이 성공하기를 원한다는 걸 기억하세요 — 당신 편이지 적이 아니에요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '대중 연설' mean in English?",
+      "options": [
+        "confident",
+        "eye contact",
+        "audience",
+        "public speaking"
+      ],
+      "answer": 3
+    }
+  }
+]

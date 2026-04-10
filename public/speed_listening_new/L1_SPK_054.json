@@ -1,0 +1,74 @@
+[
+  {
+    "setId": "L1_SPK_054_set1",
+    "parentSetId": "L1_SPK_054",
+    "theme": "Should Universities Be Free",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think university education should be free for all students?",
+        "korean": "대학 교육이 모든 학생에게 무료여야 한다고 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your position.",
+        "korean": "입장을 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I believe university education should be free or at least much more affordable than it currently is.",
+        "korean": "대학 교육이 무료이거나 최소한 현재보다 훨씬 저렴해야 한다고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "First many talented students can't afford tuition which means society loses out on their potential contributions.",
+        "korean": "첫째 많은 재능 있는 학생이 등록금을 감당할 수 없어 사회는 그들의 잠재적 기여를 잃어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "A future doctor or engineer might never get the chance to develop their skills simply because of their family's financial situation.",
+        "korean": "미래의 의사나 엔지니어가 단지 가정의 경제적 상황 때문에 기술을 발전시킬 기회를 얻지 못할 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Second student loan debt has become a serious economic problem that delays young people from buying homes starting families and contributing to the economy.",
+        "korean": "둘째 학자금 대출 부채가 젊은이들의 주택 구매 가정 형성 경제 기여를 지연시키는 심각한 경제적 문제가 됐어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Countries like Germany and Norway have proven that free university education is financially sustainable and produces excellent outcomes.",
+        "korean": "독일과 노르웨이 같은 나라들은 무상 대학 교육이 재정적으로 지속 가능하고 우수한 성과를 낸다는 것을 증명했어요.",
+        "properNounIndices": [
+          2,
+          4
+        ]
+      },
+      {
+        "id": 7,
+        "english": "lose out on",
+        "korean": "~을 잃다/놓치다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Your Dream Job",
+        "Children and Mobile Phones",
+        "Should Universities Be Free",
+        "A Festival or Event You Attended"
+      ],
+      "answer": 2
+    }
+  }
+]

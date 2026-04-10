@@ -1,0 +1,67 @@
+[
+  {
+    "setId": "L2_ELLO_063_set1",
+    "parentSetId": "L2_ELLO_063",
+    "theme": "Mixer #83 — Advice to Younger Self",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "If I could talk to my younger self, I'd say 'Don't worry so much.'",
+        "korean": "어린 나에게 말할 수 있다면 '너무 걱정하지 마'라고 할 거예요. 걱정했던 것들 대부분은 일어나지 않았어요.",
+        "properNounIndices": [
+          1,
+          8,
+          10
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Most of the things I worried about never happened.",
+        "korean": "내가 걱정했던 것들 대부분은 일어나지 않았어.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I'd tell myself to travel more in my twenties, when I had fewer responsibilities.",
+        "korean": "20대에 더 여행하라고 나에게 말할 거예요.",
+        "properNounIndices": [
+          10
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Now it's harder to find the time.",
+        "korean": "책임이 적을 때요. 지금은 시간 내기가 더 어려워요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I'd say 'Be yourself and stop trying to impress everyone.'",
+        "korean": "'너 자신이 되고 모두에게 잘 보이려 하지 마'라고 말할 거예요. 그 교훈을 배우는 데 수년이 걸렸어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 5,
+        "english": "It took me years to learn that lesson.",
+        "korean": "그 교훈을 배우는 데 수년이 걸렸어.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #83 — Advice to Younger Self",
+        "Mixer #64 — Noise at Night",
+        "Mixer #6 — Getting Lost",
+        "Mixer #12 — Sleep Routine"
+      ],
+      "answer": 0
+    }
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "setId": "L1_SPK_022_set1",
+    "parentSetId": "L1_SPK_022",
+    "theme": "Traveling Alone vs. with Friends",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you prefer traveling alone or with friends?",
+        "korean": "혼자 여행하는 것과 친구와 여행하는 것 중 어느 쪽을 선호합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your preference.",
+        "korean": "선호를 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I prefer traveling with friends because it makes the entire experience more enjoyable.",
+        "korean": "전체 경험이 더 즐거워지기 때문에 친구와 여행하는 것을 선호해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "First sharing moments with someone makes memories much stronger.",
+        "korean": "첫째 누군가와 순간을 공유하면 추억이 훨씬 강해져요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "When I think about my best trips they all involve laughing and exploring with friends.",
+        "korean": "최고의 여행을 생각하면 모두 친구들과 웃고 탐험하는 거예요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Competitive Sports for Children",
+        "A Skill You Want to Learn",
+        "Traveling Alone vs. with Friends",
+        "A Movie That Inspired You"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L1_SPK_022_set2",
+    "parentSetId": "L1_SPK_022",
+    "theme": "Traveling Alone vs. with Friends",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Second traveling with others is safer especially in unfamiliar places.",
+        "korean": "둘째 다른 사람과 여행하는 것이 특히 낯선 곳에서 더 안전해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Also splitting costs for accommodation and transportation saves a lot of money.",
+        "korean": "또한 숙박과 교통비를 나누면 돈을 많이 절약할 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "For all these reasons group travel is my preferred way to explore the world.",
+        "korean": "이 모든 이유로 단체 여행이 세계를 탐험하는 내가 선호하는 방법이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "split costs",
+        "korean": "비용을 나누다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "A Skill You Taught Yourself",
+        "Traveling Alone vs. with Friends",
+        "Eating Alone vs. with Others",
+        "Daily Routines — Helpful or Boring"
+      ],
+      "answer": 1
+    }
+  }
+]

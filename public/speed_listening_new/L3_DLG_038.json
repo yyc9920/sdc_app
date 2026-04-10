@@ -1,0 +1,96 @@
+[
+  {
+    "setId": "L3_DLG_038_set1",
+    "parentSetId": "L3_DLG_038",
+    "theme": "Returning a Rental Car",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'm returning this rental car.",
+        "korean": "이 렌터카를 반납하려고요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Let me check the mileage and the fuel level.",
+        "korean": "주행 거리와 연료 수준을 확인해볼게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "It looks like the tank is about half full.",
+        "korean": "연료 탱크가 약 반 정도 차 있는 것 같네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "The policy requires you to return it with a full tank.",
+        "korean": "정책상 가득 채워서 반납하셔야 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I completely forgot about that.",
+        "korean": "완전히 깜빡했어요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '연료' mean in English?",
+      "options": [
+        "full tank",
+        "fuel",
+        "rental car",
+        "fill up"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L3_DLG_038_set2",
+    "parentSetId": "L3_DLG_038",
+    "theme": "Returning a Rental Car",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Is there a gas station nearby?",
+        "korean": "근처에 주유소가 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "There's one about five minutes down the road.",
+        "korean": "도로를 따라 5분 거리에 하나 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Or we can charge you for the fuel at our rate which is slightly higher than the gas station price.",
+        "korean": "아니면 저희 요금으로 연료비를 청구할 수 있는데 주유소 가격보다 약간 비싸요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "I'll just go fill it up quickly.",
+        "korean": "빨리 가서 채우고 올게요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '렌터카' mean in English?",
+      "options": [
+        "full tank",
+        "rental car",
+        "mileage",
+        "fill up"
+      ],
+      "answer": 1
+    }
+  }
+]

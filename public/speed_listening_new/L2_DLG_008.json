@@ -1,0 +1,112 @@
+[
+  {
+    "setId": "L2_DLG_008_set1",
+    "parentSetId": "L2_DLG_008",
+    "theme": "Returning a Library Book Late",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hi, I'm returning these books.",
+        "korean": "안녕하세요 이 책들 반납할게요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I know they're a few days late.",
+        "korean": "며칠 늦은 거 알아요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Let me check.",
+        "korean": "확인해볼게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "These are five days overdue.",
+        "korean": "5일 연체되었네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "The late fee is fifty cents per day per book.",
+        "korean": "연체료는 책 한 권당 하루 50센트예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Roommate Discussion — Chores",
+        "Job Interview — Entry Level",
+        "Project Meeting Update",
+        "Returning a Library Book Late"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L2_DLG_008_set2",
+    "parentSetId": "L2_DLG_008",
+    "theme": "Returning a Library Book Late",
+    "level": 3,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "So that's five dollars total for two books?",
+        "korean": "그러면 두 권 합쳐서 총 5달러인가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "That's right.",
+        "korean": "맞아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Can I pay with cash?",
+        "korean": "현금으로 낼 수 있나요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Yes cash or card is both fine.",
+        "korean": "네 현금이나 카드 모두 괜찮아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Here's five dollars.",
+        "korean": "여기 5달러요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 10,
+        "english": "I'll try to return them on time next time.",
+        "korean": "다음에는 제때 반납하도록 할게요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Ordering at a Fast Food Restaurant",
+        "Asking for a Recommendation",
+        "Mentoring Session — Career Advice",
+        "Returning a Library Book Late"
+      ],
+      "answer": 3
+    }
+  }
+]

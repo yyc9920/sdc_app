@@ -1,0 +1,41 @@
+[
+  {
+    "setId": "L5_EXT_030_set1",
+    "parentSetId": "L5_EXT_030",
+    "theme": "Sapir-Whorf Revisited",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The relationship between language and thought remains one of the most debated topics in cognitive science — does the language we speak merely reflect our thoughts, or does it actively shape how we perceive reality?",
+        "korean": "언어와 사고 사이의 관계는 인지 과학에서 가장 논쟁이 많은 주제 중 하나다. 우리가 쓰는 언어가 단지 생각을 반영하는가? 아니면 현실을 인식하는 방식을 능동적으로 형성하는가?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Russian speakers who have separate words for light blue and dark blue can distinguish between these shades faster than English speakers who use a single word for both.",
+        "korean": "밝은 파랑과 어두운 파랑에 대한 별도의 단어가 있는 러시아어 화자는 둘 다에 하나의 단어를 쓰는 영어 화자보다 이 색조를 더 빨리 구분한다.",
+        "properNounIndices": [
+          19
+        ]
+      },
+      {
+        "id": 2,
+        "english": "This suggests that linguistic categories don't just label pre-existing perceptions — they actually create new perceptual boundaries that influence how quickly and accurately we process sensory information.",
+        "korean": "이는 언어적 범주가 기존의 지각에 단지 이름을 붙이는 것이 아님을 시사한다. 실제로 감각 정보를 얼마나 빠르고 정확하게 처리하는지에 영향을 미치는 새로운 지각적 경계를 만든다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '언어적인' mean in English?",
+      "options": [
+        "sensory",
+        "cognitive science",
+        "linguistic",
+        "perceptual"
+      ],
+      "answer": 2
+    }
+  }
+]

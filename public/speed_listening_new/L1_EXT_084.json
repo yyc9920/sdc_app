@@ -1,0 +1,57 @@
+[
+  {
+    "setId": "L1_EXT_084_set1",
+    "parentSetId": "L1_EXT_084",
+    "theme": "Going Grocery Shopping",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I went to the supermarket with my mom after school.",
+        "korean": "방과 후에 엄마와 슈퍼마켓에 갔어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "We bought milk eggs bread and some fruit.",
+        "korean": "우유 달걀 빵 그리고 과일을 좀 샀어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I helped carry the heavy bags to the car.",
+        "korean": "무거운 봉지를 차까지 나르는 것을 도왔어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Mom let me choose one snack as a reward.",
+        "korean": "엄마가 보상으로 간식 하나를 고르게 해줬어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I picked chocolate chip cookies.",
+        "korean": "초콜릿 칩 쿠키를 골랐어요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "The Effective Altruism Debate",
+        "Going Grocery Shopping",
+        "Doing Homework",
+        "Radio Interview — Small Business Owner"
+      ],
+      "answer": 1
+    }
+  }
+]

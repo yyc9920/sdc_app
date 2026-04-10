@@ -1,0 +1,66 @@
+[
+  {
+    "setId": "L2_ELLO_065_set1",
+    "parentSetId": "L2_ELLO_065",
+    "theme": "Mixer #81 — Morning Person or Night Owl",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'm definitely a morning person.",
+        "korean": "확실히 아침형 인간이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I do my best work before ten AM.",
+        "korean": "오전 10시 전에 최고의 작업을 해요.",
+        "properNounIndices": [
+          0,
+          7
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I'm a total night owl.",
+        "korean": "완전 올빼미형이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I can't think clearly before noon, but at midnight I'm full of energy.",
+        "korean": "정오 전에는 생각이 잘 안 되지만 자정에는 에너지가 넘쳐요.",
+        "properNounIndices": [
+          0,
+          9
+        ]
+      },
+      {
+        "id": 4,
+        "english": "It depends on the day for me.",
+        "korean": "나는 날에 따라 달라요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Sometimes I wake up early feeling great, and other days I can barely get out of bed.",
+        "korean": "일찍 일어나 기분이 좋을 때도 있고 침대에서 겨우 나올 때도 있어요.",
+        "properNounIndices": [
+          1,
+          10
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #113 — Learning a Language",
+        "Mixer #43 — Cold Remedy",
+        "Mixer #81 — Morning Person or Night Owl",
+        "Mixer #83 — Advice to Younger Self"
+      ],
+      "answer": 2
+    }
+  }
+]

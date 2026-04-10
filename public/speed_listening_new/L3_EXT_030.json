@@ -1,0 +1,45 @@
+[
+  {
+    "setId": "L3_EXT_030_set1",
+    "parentSetId": "L3_EXT_030",
+    "theme": "How Sleep Affects Learning",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Sleep plays a critical role in the learning process because it is during sleep that the brain consolidates new information and moves it from short-term to long-term memory.",
+        "korean": "수면은 학습 과정에서 중요한 역할을 한다. 수면 중에 뇌가 새 정보를 강화하고 단기 기억에서 장기 기억으로 옮기기 때문이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Students who pull all-nighters before exams often perform worse than those who study less but sleep well.",
+        "korean": "시험 전에 밤을 새는 학생들은 적게 공부하지만 잘 자는 학생보다 종종 더 못한다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "This is because sleep-deprived brains struggle with attention problem-solving and creative thinking — the very skills most exams test.",
+        "korean": "이는 수면 부족 뇌가 주의력 문제 해결 창의적 사고에 어려움을 겪기 때문이다. 대부분의 시험이 평가하는 바로 그 기술들이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Experts recommend that students study in shorter focused sessions over several days and get a full night's sleep before any major test.",
+        "korean": "전문가들은 학생들이 며칠에 걸쳐 짧고 집중된 세션으로 공부하고 중요한 시험 전에 충분히 자라고 권장한다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '수면이 부족한' mean in English?",
+      "options": [
+        "focused session",
+        "sleep-deprived",
+        "consolidate",
+        "all-nighter"
+      ],
+      "answer": 1
+    }
+  }
+]

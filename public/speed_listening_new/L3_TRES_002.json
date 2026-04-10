@@ -3,7 +3,7 @@
     "setId": "L3_TRES_002_set1",
     "parentSetId": "L3_TRES_002",
     "theme": "Daily Life Conversation",
-    "level": 5,
+    "level": 4,
     "setNumber": 1,
     "sentences": [
       {
@@ -28,15 +28,20 @@
       },
       {
         "id": 3,
-        "english": "The shop lent me one of theirs, so I can keep working. They'll text me when mine's ready.",
-        "korean": "수리점에서 하나 빌려줬어, 그래서 계속 일할 수 있어. 내 거 준비되면 문자 준대.",
+        "english": "The shop lent me one of theirs, so I can keep working.",
+        "korean": "수리점에서 하나 빌려줬어, 그래서 계속 일할 수 있어.",
         "properNounIndices": [
-          8,
-          12
+          8
         ]
       },
       {
         "id": 4,
+        "english": "They'll text me when mine's ready.",
+        "korean": "내 거 준비되면 문자 준대.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
         "english": "That sounds really convenient.",
         "korean": "정말 편리하겠다.",
         "properNounIndices": []
@@ -45,12 +50,12 @@
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
+        "Science and Research",
         "Campus Announcement",
-        "Academic Talk — Pluralistic Ignorance",
-        "Choose a Response",
-        "Daily Life Conversation"
+        "Daily Life Conversation",
+        "Academic Talk — Pluralistic Ignorance"
       ],
-      "answer": 3
+      "answer": 2
     }
   }
 ]

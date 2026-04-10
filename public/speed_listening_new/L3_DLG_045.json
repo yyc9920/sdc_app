@@ -1,0 +1,66 @@
+[
+  {
+    "setId": "L3_DLG_045_set1",
+    "parentSetId": "L3_DLG_045",
+    "theme": "Booking a Campsite",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'd like to reserve a campsite for this weekend.",
+        "korean": "이번 주말에 캠핑장을 예약하고 싶어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "How many nights?",
+        "korean": "몇 박이요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Two nights from Friday to Sunday.",
+        "korean": "금요일부터 일요일까지 2박이요.",
+        "properNounIndices": [
+          3,
+          5
+        ]
+      },
+      {
+        "id": 3,
+        "english": "We have spots near the lake and spots in the forest area.",
+        "korean": "호수 근처 자리와 숲 지역 자리가 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "The lake sounds nice.",
+        "korean": "호수 쪽이 좋겠네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Lake sites are thirty dollars per night and include access to showers and restrooms.",
+        "korean": "호수 자리는 1박 30달러이고 샤워장과 화장실 이용이 포함돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "I'll take one lake site please.",
+        "korean": "호수 자리 하나 주세요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Discussing Investment Strategy",
+        "Fixing a Schedule Conflict",
+        "Gym Membership Cancellation",
+        "Booking a Campsite"
+      ],
+      "answer": 3
+    }
+  }
+]

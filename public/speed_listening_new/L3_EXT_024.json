@@ -1,0 +1,45 @@
+[
+  {
+    "setId": "L3_EXT_024_set1",
+    "parentSetId": "L3_EXT_024",
+    "theme": "The Rise of Online Shopping",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Online shopping has completely transformed the retail industry with global e-commerce sales now exceeding six trillion dollars annually.",
+        "korean": "온라인 쇼핑이 소매 산업을 완전히 변화시켰다. 전 세계 전자상거래 매출이 이제 연간 6조 달러를 넘는다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "The convenience of comparing prices reading reviews and receiving products at your door has made it the preferred shopping method for most consumers.",
+        "korean": "가격 비교 리뷰 읽기 문 앞까지 상품 수령의 편리함이 대부분의 소비자에게 선호하는 쇼핑 방법으로 만들었다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "However this shift has come at a cost with small local businesses struggling to compete against tech giants.",
+        "korean": "하지만 이 전환에는 대가가 따른다. 작은 지역 사업체들이 기술 대기업과 경쟁하기 어려워하고 있다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "The environmental impact is also significant with billions of cardboard boxes and plastic packaging materials ending up in landfills each year.",
+        "korean": "환경적 영향도 상당하다. 매년 수십억 개의 골판지 상자와 플라스틱 포장재가 매립지에 버려진다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '선호하는' mean in English?",
+      "options": [
+        "e-commerce",
+        "preferred",
+        "landfill",
+        "retail"
+      ],
+      "answer": 1
+    }
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "setId": "L1_EXT_034_set1",
+    "parentSetId": "L1_EXT_034",
+    "theme": "A School Trip",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Last month our class went on a school trip.",
+        "korean": "지난달 우리 반이 수학여행을 갔어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "We visited a history museum in the city center.",
+        "korean": "도심의 역사 박물관을 방문했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The guide explained many interesting things about Korean history.",
+        "korean": "가이드가 한국 역사에 대해 흥미로운 것들을 많이 설명해줬어요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 3,
+        "english": "After the museum we had lunch at a nearby restaurant.",
+        "korean": "박물관 후에 근처 식당에서 점심을 먹었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "It was one of the best days of the school year.",
+        "korean": "학년 중 가장 좋았던 날 중 하나였어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "My Favorite Snack",
+        "Helping a Lost Dog",
+        "Podcast — Learning a Second Language",
+        "A School Trip"
+      ],
+      "answer": 3
+    }
+  }
+]

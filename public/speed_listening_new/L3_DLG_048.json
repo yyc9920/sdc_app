@@ -1,0 +1,74 @@
+[
+  {
+    "setId": "L3_DLG_048_set1",
+    "parentSetId": "L3_DLG_048",
+    "theme": "Registering for a Conference",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'd like to register for the digital marketing conference in May.",
+        "korean": "5월 디지털 마케팅 컨퍼런스에 등록하고 싶어요.",
+        "properNounIndices": [
+          10
+        ]
+      },
+      {
+        "id": 1,
+        "english": "We have two registration options — standard and VIP.",
+        "korean": "등록 옵션이 두 가지 있어요 — 일반과 VIP.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 2,
+        "english": "What's included in VIP?",
+        "korean": "VIP에 뭐가 포함되나요?",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 3,
+        "english": "VIP includes front-row seating a private networking dinner and access to all workshop sessions.",
+        "korean": "VIP에는 앞줄 좌석 비공개 네트워킹 디너 모든 워크숍 세션 참가가 포함돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "How much is each option?",
+        "korean": "각각 얼마예요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Standard is two hundred and VIP is four hundred and fifty.",
+        "korean": "일반은 200달러이고 VIP는 450달러예요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 6,
+        "english": "I'll go with VIP since I really want to attend the workshops.",
+        "korean": "워크숍에 꼭 참석하고 싶으니까 VIP로 할게요.",
+        "properNounIndices": [
+          3,
+          5
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '등록하다' mean in English?",
+      "options": [
+        "workshop",
+        "register",
+        "networking",
+        "conference"
+      ],
+      "answer": 1
+    }
+  }
+]

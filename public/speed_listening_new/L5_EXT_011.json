@@ -1,0 +1,54 @@
+[
+  {
+    "setId": "L5_EXT_011_set1",
+    "parentSetId": "L5_EXT_011",
+    "theme": "The Paradox of Choice",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "In his influential book, psychologist Barry Schwartz argues that having more options does not necessarily lead to greater satisfaction — in fact, it often leads to the opposite.",
+        "korean": "영향력 있는 저서에서 심리학자 배리 슈워츠는 더 많은 선택지가 반드시 더 큰 만족으로 이어지지 않으며 사실 종종 반대 결과를 낳는다고 주장한다.",
+        "properNounIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "id": 1,
+        "english": "When faced with an overwhelming number of choices, people experience what he calls 'analysis paralysis' — the inability to make any decision at all because they fear making the wrong one.",
+        "korean": "압도적인 수의 선택지에 직면하면 사람들은 '분석 마비'를 경험한다 — 잘못된 선택을 할까 두려워 어떤 결정도 내리지 못하는 것이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Moreover, even when a decision is made, the awareness of all the unchosen alternatives generates regret and diminishes enjoyment of the chosen option.",
+        "korean": "게다가 결정을 내리더라도 선택하지 않은 모든 대안에 대한 인식이 후회를 만들고 선택한 옵션의 즐거움을 감소시킨다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Schwartz distinguishes between 'maximizers' — those who exhaustively search for the absolute best option — and 'satisficers' — those who settle for an option that meets their minimum criteria.",
+        "korean": "슈워츠는 '극대화자' — 절대 최선의 옵션을 철저히 찾는 사람 — 과 '만족자' — 최소 기준을 충족하는 옵션에 만족하는 사람을 구분한다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "His research consistently shows that satisficers tend to be happier, less stressed, and more content with their decisions than maximizers.",
+        "korean": "그의 연구는 일관되게 만족자가 극대화자보다 더 행복하고 스트레스가 적고 결정에 더 만족한다는 것을 보여준다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '기준' mean in English?",
+      "options": [
+        "satisficer",
+        "maximizer",
+        "criteria",
+        "diminish"
+      ],
+      "answer": 2
+    }
+  }
+]

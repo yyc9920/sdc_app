@@ -1,0 +1,79 @@
+[
+  {
+    "setId": "L1_SPK_041_set1",
+    "parentSetId": "L1_SPK_041",
+    "theme": "Cash vs. Digital Payment",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you prefer using cash or digital payment methods?",
+        "korean": "현금과 디지털 결제 중 어느 것을 선호합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your preference.",
+        "korean": "선호를 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I strongly prefer digital payment methods like mobile pay and credit cards.",
+        "korean": "모바일 페이와 신용카드 같은 디지털 결제 방식을 강하게 선호해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "First it's incredibly convenient — I just tap my phone and the payment is done in a second.",
+        "korean": "첫째 엄청나게 편리해요 — 폰을 터치하면 1초 만에 결제가 끝나요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I don't have to worry about carrying bills or coins or getting change back.",
+        "korean": "지폐나 동전을 가지고 다니거나 거스름돈을 받을 걱정을 할 필요가 없어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Second digital payments automatically track my spending so I can easily see where my money goes each month.",
+        "korean": "둘째 디지털 결제는 지출을 자동으로 추적해서 매달 돈이 어디로 가는지 쉽게 볼 수 있어요.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 6,
+        "english": "This has actually helped me save money because I'm more aware of my spending habits.",
+        "korean": "이것은 실제로 돈을 아끼는 데 도움이 됐어요. 소비 습관을 더 의식하게 되니까요.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 7,
+        "english": "spending habits",
+        "korean": "소비 습관",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "A Movie That Inspired You",
+        "A Person Who Has Influenced You",
+        "News from Social Media vs. Traditional Media",
+        "Cash vs. Digital Payment"
+      ],
+      "answer": 3
+    }
+  }
+]

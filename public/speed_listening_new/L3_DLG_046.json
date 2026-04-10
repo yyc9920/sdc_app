@@ -1,0 +1,75 @@
+[
+  {
+    "setId": "L3_DLG_046_set1",
+    "parentSetId": "L3_DLG_046",
+    "theme": "Returning from Vacation — Catching Up with Coworker",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Welcome back! How was your vacation?",
+        "korean": "돌아온 걸 환영해요! 휴가 어땠어요?",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 1,
+        "english": "It was amazing.",
+        "korean": "엄청 좋았어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "We went to Jeju and the weather was perfect the whole time.",
+        "korean": "제주에 갔는데 내내 날씨가 완벽했어요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I'm so jealous.",
+        "korean": "너무 부러워요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Did I miss anything important at work?",
+        "korean": "내가 없는 동안 중요한 거 있었어요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 5,
+        "english": "There's a new project starting next week.",
+        "korean": "다음 주에 새 프로젝트가 시작해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "The manager wants to meet with everyone tomorrow to go over the details.",
+        "korean": "매니저가 내일 전원과 만나서 세부 사항을 검토하고 싶대요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Good timing then.",
+        "korean": "그럼 타이밍이 좋네요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Reporting a Lost Item at a Hotel",
+        "At the Pharmacy",
+        "Buying a Train Ticket",
+        "Returning from Vacation — Catching Up with Coworker"
+      ],
+      "answer": 3
+    }
+  }
+]

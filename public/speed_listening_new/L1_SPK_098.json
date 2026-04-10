@@ -1,0 +1,98 @@
+[
+  {
+    "setId": "L1_SPK_098_set1",
+    "parentSetId": "L1_SPK_098",
+    "theme": "Importance of Sleep",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Why is getting enough sleep important?",
+        "korean": "충분한 수면이 왜 중요합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Give specific reasons and examples.",
+        "korean": "구체적인 이유와 예시를 제시하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Getting enough sleep is absolutely critical for both physical and mental performance.",
+        "korean": "충분한 수면은 신체적 정신적 수행 능력 모두에 절대적으로 중요해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "First sleep is when your brain consolidates memories and processes everything you learned during the day.",
+        "korean": "첫째 수면은 뇌가 기억을 강화하고 하루 동안 배운 모든 것을 처리하는 때예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Students who sleep well before exams consistently score higher than those who stay up studying all night.",
+        "korean": "시험 전에 잘 자는 학생은 밤새 공부하는 학생보다 꾸준히 더 높은 점수를 받아요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Advantages of Smartphones",
+        "Importance of Sleep",
+        "Renting vs. Owning a Home",
+        "Do you think competition is healthy or harmful for"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L1_SPK_098_set2",
+    "parentSetId": "L1_SPK_098",
+    "theme": "Importance of Sleep",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Second lack of sleep weakens your immune system making you more likely to get sick.",
+        "korean": "둘째 수면 부족은 면역 체계를 약화시켜 병에 걸릴 가능성이 높아져요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "I personally aim for seven to eight hours every night and I notice a dramatic difference in my mood and productivity on days when I don't get enough.",
+        "korean": "개인적으로 매일 밤 7~8시간을 목표로 하고 충분히 못 잔 날은 기분과 생산성에 극적인 차이를 느껴요.",
+        "properNounIndices": [
+          0,
+          11,
+          24
+        ]
+      },
+      {
+        "id": 7,
+        "english": "stay up",
+        "korean": "밤새다",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "aim for",
+        "korean": "~을 목표로 하다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Weekday vs. Weekend Weddings",
+        "Importance of Arts Education",
+        "The Best Way to Relieve Stress",
+        "Importance of Sleep"
+      ],
+      "answer": 3
+    }
+  }
+]

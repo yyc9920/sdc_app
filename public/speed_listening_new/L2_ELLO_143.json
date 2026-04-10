@@ -1,0 +1,44 @@
+[
+  {
+    "setId": "L2_ELLO_143_set1",
+    "parentSetId": "L2_ELLO_143",
+    "theme": "Mixer #2 — Life Lessons",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The most important lesson I've learned is that nobody has it all figured out, even if they look like they do.",
+        "korean": "배운 가장 중요한 교훈은 아무도 다 알아낸 게 아니라는 거예요. 그래 보여도요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Be kind to yourself, because you can't take care of others if you're burned out.",
+        "korean": "자신에게 친절하세요. 번아웃 상태면 다른 사람을 돌볼 수 없으니까요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Done is better than perfect, which is something I wish I learned earlier in life.",
+        "korean": "완벽하기보다 끝내는 게 나아요. 인생에서 더 일찍 배웠으면 좋았을 텐데요.",
+        "properNounIndices": [
+          8,
+          10
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #2 — Life Lessons",
+        "Mixer #68 — Cooking Disasters",
+        "Mixer #147 — Gadgets",
+        "Mixer #5 — Saying Goodbye"
+      ],
+      "answer": 0
+    }
+  }
+]

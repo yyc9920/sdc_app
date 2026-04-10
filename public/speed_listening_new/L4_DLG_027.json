@@ -1,0 +1,71 @@
+[
+  {
+    "setId": "L4_DLG_027_set1",
+    "parentSetId": "L4_DLG_027",
+    "theme": "Handling a Client Complaint",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I received an email from one of our enterprise clients expressing serious dissatisfaction with our latest software update.",
+        "korean": "기업 고객 중 한 곳에서 최신 소프트웨어 업데이트에 대한 심각한 불만을 표하는 이메일을 받았습니다.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "What are their specific complaints?",
+        "korean": "구체적인 불만이 뭔가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The new interface is significantly slower and several features they rely on daily have been moved or removed entirely.",
+        "korean": "새 인터페이스가 상당히 느려졌고 매일 사용하는 기능 중 여러 개가 이동되거나 완전히 제거됐다고 합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "This is a high-priority issue.",
+        "korean": "이건 최우선 사안이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Schedule an emergency call with them for tomorrow morning and loop in the product team.",
+        "korean": "내일 아침 긴급 통화를 잡고 프로덕트 팀도 참여시키세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Should we offer any compensation to retain the account?",
+        "korean": "계정을 유지하기 위해 보상을 제안해야 할까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Let's first understand the full scope of the problem then decide on appropriate remedies.",
+        "korean": "먼저 문제의 전체 범위를 파악하고 적절한 해결책을 결정합시다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "loop in",
+        "korean": "참여시키다/포함시키다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '해결책/대책' mean in English?",
+      "options": [
+        "compensation",
+        "retain",
+        "dissatisfaction",
+        "remedy"
+      ],
+      "answer": 3
+    }
+  }
+]

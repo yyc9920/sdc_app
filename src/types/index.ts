@@ -5,7 +5,7 @@ export type LearningLevel = 0 | 1 | 2 | 3 | 4 | 5;
 export type CategoryCode =
   | 'LEGACY' | 'SPK' | 'INT' | 'CONV' | 'ACA'
   | 'LEC' | 'TED' | 'BTEW' | 'B6ME' | 'ELLO'
-  | 'TRES' | 'BEP' | 'TAL' | 'EXT';
+  | 'TRES' | 'BEP' | 'TAL' | 'EXT' | 'DLG';
 
 export interface DataSet {
   id: string;

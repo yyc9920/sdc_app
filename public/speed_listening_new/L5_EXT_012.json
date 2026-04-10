@@ -1,0 +1,45 @@
+[
+  {
+    "setId": "L5_EXT_012_set1",
+    "parentSetId": "L5_EXT_012",
+    "theme": "The Ethics of Gene Editing",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "CRISPR-Cas9 technology has given scientists the ability to edit the human genome with unprecedented precision, opening the door to potential cures for genetic diseases that have plagued humanity for millennia.",
+        "korean": "/ 수천 년간 인류를 괴롭혀 온 / 유전 질환의 잠재적 치료법의 문을 열면서.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Yet this remarkable power raises equally profound ethical questions — should we edit out disabilities or conditions that are integral to a person's identity, and who decides which traits are 'defects' worth eliminating?",
+        "korean": "/ 어떤 특성이 제거할 가치가 있는 '결함'인지 / 누가 결정하는가?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The most contentious debate centers on germline editing — modifications that would be inherited by future generations — which effectively means making permanent changes to the human species without the consent of those affected.",
+        "korean": "가장 논쟁적인 토론은 생식세포 편집에 집중된다 — 미래 세대에 유전되는 변형이다. 이는 사실상 영향받는 이들의 동의 없이 인류에 영구적 변화를 만드는 것을 의미한다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Furthermore, there is a legitimate fear that gene editing could widen social inequality if only the wealthy can afford genetic enhancements for their children.",
+        "korean": "더 나아가 유전자 편집이 사회적 불평등을 확대할 수 있다는 정당한 우려가 있다. 부유층만 자녀를 위한 유전적 향상을 감당할 수 있다면.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '크리스퍼 (유전자 편집 기술)' mean in English?",
+      "options": [
+        "consent",
+        "inequality",
+        "germline editing",
+        "CRISPR"
+      ],
+      "answer": 3
+    }
+  }
+]

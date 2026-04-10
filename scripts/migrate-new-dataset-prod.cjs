@@ -53,6 +53,7 @@ const CATEGORY_MAP = {
   BEP: 'Business English Pod',
   TAL: 'This American Life',
   EXT: '확장 콘텐츠',
+  DLG: '일상 대화',
 };
 
 function parseSetCode(setCode) {
@@ -99,6 +100,21 @@ async function migrateNewDataset() {
     const categoryLabel = CATEGORY_MAP[category] || category;
 
     const setRef = db.collection('learning_sets').doc(setCode);
+
+    // Clean up stale sentences if existing set has more sentences than new data
+    const existingDoc = await setRef.get();
+    if (existingDoc.exists) {
+      const oldCount = existingDoc.data().sentenceCount || 0;
+      if (oldCount > setRows.length) {
+        const staleBatch = db.batch();
+        for (let s = setRows.length; s < oldCount; s++) {
+          staleBatch.delete(setRef.collection('sentences').doc(String(s)));
+        }
+        await staleBatch.commit();
+        console.log(`  Cleaned up ${oldCount - setRows.length} stale sentences from ${setCode}`);
+      }
+    }
+
     await setRef.set({
       setId: setCode,
       title,
@@ -186,11 +202,48 @@ async function updateLegacySets() {
   }
 }
 
+async function deleteObsoleteSets() {
+  console.log('\n--- Deleting Obsolete Sets ---');
+
+  const obsoleteSets = [
+    'L2_TRES_001',
+    'L4_TAL_002',
+    'L4_TED_003',
+    'L4_TED_004',
+  ];
+
+  for (const setId of obsoleteSets) {
+    const setRef = db.collection('learning_sets').doc(setId);
+    const doc = await setRef.get();
+
+    if (!doc.exists) {
+      console.log(`  ${setId}: not found, skipping`);
+      continue;
+    }
+
+    // Delete sentences subcollection first
+    const sentences = await setRef.collection('sentences').listDocuments();
+    if (sentences.length > 0) {
+      const batch = db.batch();
+      for (const sentenceDoc of sentences) {
+        batch.delete(sentenceDoc);
+      }
+      await batch.commit();
+      console.log(`  Deleted ${sentences.length} sentences from ${setId}`);
+    }
+
+    // Delete set document
+    await setRef.delete();
+    console.log(`  Deleted set ${setId}`);
+  }
+}
+
 async function run() {
   console.log('Starting Production Migration');
   console.log('================================\n');
 
   await migrateNewDataset();
+  await deleteObsoleteSets();
   await updateLegacySets();
 
   console.log('\n================================');

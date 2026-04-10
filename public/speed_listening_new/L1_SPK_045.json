@@ -1,0 +1,71 @@
+[
+  {
+    "setId": "L1_SPK_045_set1",
+    "parentSetId": "L1_SPK_045",
+    "theme": "Studying Abroad — Worth It?",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think studying abroad is worth the cost?",
+        "korean": "유학이 비용 대비 가치가 있다고 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Give specific reasons.",
+        "korean": "구체적인 이유를 제시하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I believe studying abroad is absolutely worth the cost despite the financial burden.",
+        "korean": "경제적 부담에도 불구하고 유학은 확실히 비용 대비 가치가 있다고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "First the language skills you gain from living in another country are far superior to anything you can learn in a classroom.",
+        "korean": "첫째 다른 나라에 살면서 얻는 언어 능력은 교실에서 배울 수 있는 것보다 훨씬 우월해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Second the personal growth from navigating a foreign culture independently is invaluable.",
+        "korean": "둘째 외국 문화를 독립적으로 헤쳐 나가며 얻는 개인적 성장은 값을 매길 수 없어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "You learn to adapt solve problems and become comfortable with uncertainty.",
+        "korean": "적응하고 문제를 해결하고 불확실성에 편해지는 법을 배워요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Finally employers highly value international experience which gives you a competitive edge in the job market.",
+        "korean": "마지막으로 고용주들은 국제 경험을 높이 평가해서 취업 시장에서 경쟁 우위를 줘요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "competitive edge",
+        "korean": "경쟁 우위",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Do you think art and music education should be req",
+        "Studying Abroad — Worth It?",
+        "A Place You'd Like to Visit",
+        "Impact of AI on Jobs"
+      ],
+      "answer": 1
+    }
+  }
+]

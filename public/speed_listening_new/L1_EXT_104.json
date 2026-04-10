@@ -1,0 +1,57 @@
+[
+  {
+    "setId": "L1_EXT_104_set1",
+    "parentSetId": "L1_EXT_104",
+    "theme": "Walking My Dog",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I walk my dog every evening after dinner.",
+        "korean": "매일 저녁 식사 후에 개를 산책시켜요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Her name is Coco and she is a small white poodle.",
+        "korean": "이름은 코코이고 작은 흰색 푸들이에요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "english": "She gets very excited when she sees me pick up her leash.",
+        "korean": "내가 목줄을 드는 걸 보면 매우 흥분해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "We usually walk around the park near our apartment for about thirty minutes.",
+        "korean": "보통 아파트 근처 공원을 약 30분 동안 산책해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Walking Coco is the best part of my day because it relaxes me after studying.",
+        "korean": "코코를 산책시키는 건 하루 중 가장 좋은 시간이에요. 공부 후에 편안하게 해주니까요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Korean Culture Shock",
+        "The Loneliness Epidemic",
+        "My First Part-Time Job",
+        "Walking My Dog"
+      ],
+      "answer": 3
+    }
+  }
+]

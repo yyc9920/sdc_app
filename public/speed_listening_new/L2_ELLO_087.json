@@ -1,0 +1,53 @@
+[
+  {
+    "setId": "L2_ELLO_087_set1",
+    "parentSetId": "L2_ELLO_087",
+    "theme": "Mixer #58 — Worst Job",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The worst job I ever had was working at a call center.",
+        "korean": "지금까지 최악의 직업은 콜센터였어요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 1,
+        "english": "People would yell at me all day and the pay was terrible.",
+        "korean": "사람들이 하루 종일 소리 질렀고 급여도 형편없었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I worked as a dishwasher in a restaurant, and my hands were always cracked and sore.",
+        "korean": "식당에서 설거지를 했는데 손이 항상 갈라지고 아팠어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I delivered newspapers at five AM every morning when I was fifteen, even in the rain and snow.",
+        "korean": "15살 때 매일 아침 5시에 신문을 배달했어요. 비나 눈이 와도요.",
+        "properNounIndices": [
+          0,
+          5,
+          9
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '갈라진' mean in English?",
+      "options": [
+        "call center",
+        "deliver",
+        "yell",
+        "cracked"
+      ],
+      "answer": 3
+    }
+  }
+]

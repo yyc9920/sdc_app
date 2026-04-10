@@ -1,0 +1,39 @@
+[
+  {
+    "setId": "L4_EXT_019_set1",
+    "parentSetId": "L4_EXT_019",
+    "theme": "The Paradox of Social Media Connection",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Social media platforms were designed to bring people closer together yet mounting evidence suggests they may be doing the opposite.",
+        "korean": "소셜 미디어 플랫폼은 사람들을 더 가깝게 하려고 설계됐지만 증가하는 증거는 반대 효과를 내고 있음을 시사한다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "A landmark study found that people who spent more than two hours per day on social media were twice as likely to report feelings of social isolation compared to those who spent thirty minutes or less.",
+        "korean": "획기적인 연구에 따르면 하루 2시간 이상 소셜 미디어를 사용하는 사람은 30분 이하 사용자에 비해 사회적 고립감을 보고할 확률이 2배였다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The curated nature of social media feeds creates a constant stream of upward social comparison where everyone else's life appears more successful and fulfilling than our own.",
+        "korean": "소셜 미디어 피드의 큐레이션된 특성은 끊임없는 상향 사회 비교의 흐름을 만든다. 다른 모든 사람의 삶이 우리보다 더 성공적이고 만족스러워 보이게 한다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '상향 비교' mean in English?",
+      "options": [
+        "fulfilling",
+        "upward comparison",
+        "mounting evidence",
+        "isolation"
+      ],
+      "answer": 1
+    }
+  }
+]

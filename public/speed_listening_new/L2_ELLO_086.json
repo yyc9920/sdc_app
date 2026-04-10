@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L2_ELLO_086_set1",
+    "parentSetId": "L2_ELLO_086",
+    "theme": "Mixer #59 — Ideal Weekend",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My ideal weekend is doing absolutely nothing.",
+        "korean": "이상적인 주말은 아무것도 안 하는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "No plans, no alarms, just rest.",
+        "korean": "계획 없고 알람 없고 그냥 쉬기만요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I like to be active on weekends — hiking swimming or playing basketball.",
+        "korean": "주말에 활동적으로 보내는 게 좋아요 — 등산 수영 혹은 농구요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Sitting at home drives me crazy.",
+        "korean": "집에 앉아 있으면 미치겠어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "My perfect weekend is spending time at a café, reading and people-watching.",
+        "korean": "완벽한 주말은 카페에서 책 읽고 사람 구경하며 보내는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "It's my favorite way to recharge.",
+        "korean": "재충전하는 가장 좋은 방법이에요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #12 — Binge Watching",
+        "Mixer #145 — Field Trips",
+        "Mixer #59 — Ideal Weekend",
+        "Mixer #46 — Work-Life Balance"
+      ],
+      "answer": 2
+    }
+  }
+]

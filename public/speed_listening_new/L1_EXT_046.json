@@ -1,0 +1,53 @@
+[
+  {
+    "setId": "L1_EXT_046_set1",
+    "parentSetId": "L1_EXT_046",
+    "theme": "My Favorite Color",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My favorite color is sky blue.",
+        "korean": "좋아하는 색은 하늘색이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "It reminds me of the ocean and clear summer days.",
+        "korean": "바다와 맑은 여름날을 떠올리게 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Most of my clothes are blue or white.",
+        "korean": "대부분의 옷이 파란색이나 흰색이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "My room is also painted light blue.",
+        "korean": "방도 연한 파란색으로 칠해져 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I think blue is a calm and peaceful color.",
+        "korean": "파란색은 차분하고 평화로운 색이라고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "First Day at a New Job",
+        "Dealing with Stress",
+        "The Science of Habit Formation",
+        "My Favorite Color"
+      ],
+      "answer": 3
+    }
+  }
+]

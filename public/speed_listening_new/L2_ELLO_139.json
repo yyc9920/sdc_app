@@ -1,0 +1,53 @@
+[
+  {
+    "setId": "L2_ELLO_139_set1",
+    "parentSetId": "L2_ELLO_139",
+    "theme": "Mixer #6 — Getting Lost",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I got completely lost in Venice because all the streets look the same.",
+        "korean": "베니스에서 완전히 길을 잃었어요.",
+        "properNounIndices": [
+          0,
+          5
+        ]
+      },
+      {
+        "id": 1,
+        "english": "But it was actually kind of fun.",
+        "korean": "모든 거리가 같아 보여서요. 하지만 사실 나름 재미있었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I get lost even in my own city, because I have zero sense of direction.",
+        "korean": "내 도시에서도 길을 잃어요. 방향 감각이 전혀 없어서요.",
+        "properNounIndices": [
+          0,
+          9
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Getting lost is the best way to discover new places, because that's how I found my favorite restaurant.",
+        "korean": "길을 잃는 게 새 장소를 발견하는 최고의 방법이에요. 그렇게 좋아하는 식당을 찾았거든요.",
+        "properNounIndices": [
+          13
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #66 — Multitasking",
+        "Mixer #68 — Cooking Disasters",
+        "Mixer #7 — Jet Lag",
+        "Mixer #6 — Getting Lost"
+      ],
+      "answer": 3
+    }
+  }
+]

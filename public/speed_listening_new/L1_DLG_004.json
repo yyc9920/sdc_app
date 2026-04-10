@@ -1,0 +1,98 @@
+[
+  {
+    "setId": "L1_DLG_004_set1",
+    "parentSetId": "L1_DLG_004",
+    "theme": "Buying Movie Tickets",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Two tickets for the seven o'clock show, please.",
+        "korean": "7시 영화 표 두 장 주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Which movie?",
+        "korean": "어떤 영화요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The new action movie.",
+        "korean": "새로 나온 액션 영화요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "We have seats in the front and in the back.",
+        "korean": "앞쪽과 뒤쪽에 좌석이 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "The back please.",
+        "korean": "뒤쪽이요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Complaining About Internet Speed",
+        "Car Repair — Mechanic Visit",
+        "Buying Movie Tickets",
+        "At the Dry Cleaner"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L1_DLG_004_set2",
+    "parentSetId": "L1_DLG_004",
+    "theme": "Buying Movie Tickets",
+    "level": 3,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "That's twenty-four dollars for two tickets.",
+        "korean": "표 두 장에 24달러입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Can I pay with a card?",
+        "korean": "카드로 결제할 수 있나요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Of course. Here are your tickets.",
+        "korean": "물론이죠. 표 여기 있어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Enjoy the movie!",
+        "korean": "영화 즐기세요!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Negotiating a Deadline Extension",
+        "Buying Movie Tickets",
+        "At the Car Wash",
+        "Applying for a Library Card"
+      ],
+      "answer": 1
+    }
+  }
+]

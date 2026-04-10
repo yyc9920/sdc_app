@@ -1,0 +1,41 @@
+[
+  {
+    "setId": "L3_EXT_029_set1",
+    "parentSetId": "L3_EXT_029",
+    "theme": "Why We Love Stories",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "From ancient campfires to Netflix binges humans have an insatiable appetite for stories and scientists are beginning to understand why.",
+        "korean": "고대 모닥불에서 넷플릭스 몰아보기까지 인간은 이야기에 대한 끝없는 욕구가 있다. 과학자들이 그 이유를 이해하기 시작했다.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Stories activate mirror neurons in the brain causing us to literally feel what the characters feel — our heart races during a chase scene and we cry when a beloved character dies.",
+        "korean": "이야기는 뇌의 거울 뉴런을 활성화하여 캐릭터가 느끼는 것을 말 그대로 느끼게 한다. 추격 장면에서 심장이 빨라지고 사랑하는 캐릭터가 죽으면 운다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Evolutionary psychologists suggest that stories served as a survival tool — by simulating dangerous situations in a safe environment they helped our ancestors prepare for real-world threats without the actual risk.",
+        "korean": "진화 심리학자들은 이야기가 생존 도구 역할을 했다고 시사한다. 안전한 환경에서 위험한 상황을 시뮬레이션하여 실제 위험 없이 현실 세계의 위협에 대비하도록 도왔다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '거울 뉴런' mean in English?",
+      "options": [
+        "ancestor",
+        "insatiable",
+        "simulate",
+        "mirror neurons"
+      ],
+      "answer": 3
+    }
+  }
+]

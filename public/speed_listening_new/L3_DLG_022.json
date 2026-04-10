@@ -1,0 +1,102 @@
+[
+  {
+    "setId": "L3_DLG_022_set1",
+    "parentSetId": "L3_DLG_022",
+    "theme": "Dentist — Toothache",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I've had a really bad toothache for the past three days, and it's getting worse.",
+        "korean": "지난 3일간 치통이 심했는데 점점 심해지고 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Which tooth is bothering you?",
+        "korean": "어느 이가 아프세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The one in the back, on the lower right side.",
+        "korean": "뒤쪽 오른쪽 아래 이요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Let me take a look.",
+        "korean": "한번 볼게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I can see a cavity that's quite deep, and it's reached the nerve.",
+        "korean": "충치가 꽤 깊고 신경까지 도달한 게 보여요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '치통' mean in English?",
+      "options": [
+        "anesthesia",
+        "root canal",
+        "toothache",
+        "cavity"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L3_DLG_022_set2",
+    "parentSetId": "L3_DLG_022",
+    "theme": "Dentist — Toothache",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "You're going to need a root canal.",
+        "korean": "신경 치료가 필요할 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "How long does that take?",
+        "korean": "그게 얼마나 걸리나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "The procedure itself takes about an hour, and you'll need to come back for a crown fitting a week later.",
+        "korean": "시술 자체는 약 1시간이고 일주일 후 크라운 씌우러 다시 오셔야 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Will it hurt?",
+        "korean": "아프나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "We'll use local anesthesia, so you won't feel anything during the procedure.",
+        "korean": "국소 마취를 할 거라 시술 중에는 아무것도 못 느끼실 거예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '충치' mean in English?",
+      "options": [
+        "cavity",
+        "anesthesia",
+        "root canal",
+        "crown"
+      ],
+      "answer": 0
+    }
+  }
+]

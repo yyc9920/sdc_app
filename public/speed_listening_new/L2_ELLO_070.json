@@ -1,0 +1,64 @@
+[
+  {
+    "setId": "L2_ELLO_070_set1",
+    "parentSetId": "L2_ELLO_070",
+    "theme": "Mixer #76 — Gift Giving",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I love giving gifts more than receiving them.",
+        "korean": "선물 받는 것보다 주는 게 더 좋아요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Seeing someone's face light up is the best feeling.",
+        "korean": "누군가의 얼굴이 환해지는 걸 보는 건 최고의 기분이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I'm terrible at choosing gifts.",
+        "korean": "선물 고르는 걸 잘 못해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I usually just give money or gift cards because I never know what to buy.",
+        "korean": "뭘 사야 할지 몰라서 보통 돈이나 상품권을 줘요.",
+        "properNounIndices": [
+          0,
+          9
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I think handmade gifts are the most meaningful.",
+        "korean": "수제 선물이 가장 의미 있다고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Even a simple card with a personal message means a lot.",
+        "korean": "개인적인 메시지가 담긴 간단한 카드도 많은 의미가 있어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #85 — Street Food",
+        "Mixer #76 — Gift Giving",
+        "Mixer #101 — First Impression",
+        "Mixer #19 — Travel Wish List"
+      ],
+      "answer": 1
+    }
+  }
+]

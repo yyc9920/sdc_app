@@ -1,0 +1,43 @@
+[
+  {
+    "setId": "L3_B6ME_051_set1",
+    "parentSetId": "L3_B6ME_051",
+    "theme": "How Can We Help Wild Bees?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Thanks to modern farming methods, populations of many insects, including bees, are in decline.",
+        "korean": "현대 농업 방식 때문에 벌을 포함한 많은 곤충의 개체수가 감소하고 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Can honey help save bees?",
+        "korean": "꿀이 벌을 구하는 데 도움이 될까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I've been vegan for about nine years and I don't eat honey myself, but I still have a question mark around it because I know that our bee populations are declining.",
+        "korean": "약 9년간 비건이고 꿀을 안 먹지만, 벌 개체수가 감소하고 있어서 여전히 의문이 있어요.",
+        "properNounIndices": [
+          8,
+          14,
+          23
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "How Can We Help Wild Bees?",
+        "Finding and Eating Wild Food",
+        "Grown-ups Buying Kids' Toys",
+        "How Do You Say Sorry?"
+      ],
+      "answer": 0
+    }
+  }
+]

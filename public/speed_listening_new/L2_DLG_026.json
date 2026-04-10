@@ -1,0 +1,66 @@
+[
+  {
+    "setId": "L2_DLG_026_set1",
+    "parentSetId": "L2_DLG_026",
+    "theme": "At the Laundromat",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Is this washing machine available?",
+        "korean": "이 세탁기 쓸 수 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Yes it just finished.",
+        "korean": "네 방금 끝났어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "How much does one load cost?",
+        "korean": "한 번 돌리는 데 얼마예요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Three dollars for a regular wash.",
+        "korean": "일반 세탁 3달러예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Do I need coins or can I pay with a card?",
+        "korean": "동전이 필요한가요 아니면 카드로 낼 수 있나요?",
+        "properNounIndices": [
+          1,
+          6
+        ]
+      },
+      {
+        "id": 5,
+        "english": "You can use the app on your phone to pay.",
+        "korean": "폰의 앱으로 결제할 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Oh that's convenient.",
+        "korean": "아 그거 편리하네요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '세탁기' mean in English?",
+      "options": [
+        "convenient",
+        "washing machine",
+        "load",
+        "laundromat"
+      ],
+      "answer": 1
+    }
+  }
+]

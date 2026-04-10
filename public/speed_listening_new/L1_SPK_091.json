@@ -1,0 +1,71 @@
+[
+  {
+    "setId": "L1_SPK_091_set1",
+    "parentSetId": "L1_SPK_091",
+    "theme": "Privacy vs. Safety",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think people should give up some privacy for greater safety?",
+        "korean": "더 큰 안전을 위해 프라이버시를 일부 포기해야 한다고 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your position.",
+        "korean": "입장을 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "This is a difficult question because both privacy and safety are fundamental rights.",
+        "korean": "프라이버시와 안전 모두 기본권이기 때문에 어려운 질문이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I think limited surveillance in public spaces like airports and subway stations is acceptable because these are high-risk areas where security threats are real.",
+        "korean": "공항이나 지하철역 같은 공공장소에서의 제한적 감시는 수용 가능하다고 생각해요. 보안 위협이 실재하는 고위험 지역이니까요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "However mass surveillance of private communications goes too far.",
+        "korean": "하지만 사적 통신의 대량 감시는 너무 지나쳐요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "History shows that governments given unlimited surveillance power inevitably abuse it.",
+        "korean": "역사가 보여주듯 무제한 감시 권한을 가진 정부는 필연적으로 남용해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "The key is finding the right balance — enough monitoring to prevent serious threats without creating a society where every citizen feels watched.",
+        "korean": "핵심은 적절한 균형을 찾는 거예요 — 모든 시민이 감시당한다고 느끼는 사회를 만들지 않으면서 심각한 위협을 방지할 만큼의 모니터링이요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "go too far",
+        "korean": "너무 지나치다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "A Skill Everyone Should Learn",
+        "Privacy vs. Safety",
+        "The Impact of Music on Mood",
+        "Daily Routines — Helpful or Boring"
+      ],
+      "answer": 1
+    }
+  }
+]

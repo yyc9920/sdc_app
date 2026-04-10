@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L1_EXT_080_set1",
+    "parentSetId": "L1_EXT_080",
+    "theme": "My New Glasses",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I got new glasses last week.",
+        "korean": "지난주에 새 안경을 맞췄어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "At first everything looked strange and the world seemed bigger.",
+        "korean": "처음에는 모든 게 이상해 보이고 세상이 더 커 보였어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "But now I can see the board clearly from the back of the class.",
+        "korean": "하지만 이제 교실 뒤에서도 칠판이 잘 보여요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I chose a round black frame because it looks cool.",
+        "korean": "멋져 보여서 둥근 검정 프레임을 골랐어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "My friends say I look like a professor.",
+        "korean": "친구들은 교수님처럼 보인다고 해요.",
+        "properNounIndices": [
+          3
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Weather Forecast",
+        "My New Glasses",
+        "My Piggy Bank",
+        "Visiting the Dentist"
+      ],
+      "answer": 1
+    }
+  }
+]

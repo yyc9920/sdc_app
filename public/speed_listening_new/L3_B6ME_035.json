@@ -1,0 +1,60 @@
+[
+  {
+    "setId": "L3_B6ME_035_set1",
+    "parentSetId": "L3_B6ME_035",
+    "theme": "Do You Like Garlic?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "It smells delicious sizzling in oil and it's great for keeping vampires away, but don't eat it on a first date!",
+        "korean": "기름에 지글지글 맛있는 냄새가 나고 흡혈귀 쫓는 데도 좋지만, 첫 데이트에는 먹지 마세요!",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I'm talking about garlic.",
+        "korean": "마늘 이야기예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I love garlic because it's a versatile ingredient that can be used for cooking and offers various health benefits.",
+        "korean": "마늘은 요리에 사용할 수 있고 다양한 건강상 이점을 제공하는 다용도 재료라서 좋아해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Which variety of garlic grew in the former USSR?",
+        "korean": "구소련에서 자란 마늘 품종은?",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 4,
+        "english": "The answer is Fire — Georgian fire is a hot, white garlic from the Republic of Georgia.",
+        "korean": "정답은 파이어예요 — 조지안 파이어는 조지아 공화국의 매운 흰 마늘이에요.",
+        "properNounIndices": [
+          3,
+          5,
+          14,
+          16
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '상상할 수 없다 (너무 좋거나 나쁘기 때문)' mean in English?",
+      "options": [
+        "it's unimaginable",
+        "stimulate",
+        "abstain",
+        "ailment"
+      ],
+      "answer": 0
+    }
+  }
+]

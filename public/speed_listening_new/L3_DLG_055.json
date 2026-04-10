@@ -1,0 +1,77 @@
+[
+  {
+    "setId": "L3_DLG_055_set1",
+    "parentSetId": "L3_DLG_055",
+    "theme": "Requesting Time Off from Work",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'd like to request three days off next week.",
+        "korean": "다음 주에 3일 휴가를 신청하고 싶습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Which days specifically?",
+        "korean": "구체적으로 무슨 요일이요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Wednesday through Friday.",
+        "korean": "수요일부터 금요일까지요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Is there a specific reason?",
+        "korean": "특별한 이유가 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "My parents are visiting from overseas and I'd like to spend some time with them.",
+        "korean": "부모님이 해외에서 오셔서 함께 시간을 보내고 싶습니다.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 5,
+        "english": "That shouldn't be a problem as long as you finish the monthly report before you leave.",
+        "korean": "떠나기 전에 월간 보고서를 끝내시면 문제없을 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "I'll have it done by Tuesday evening.",
+        "korean": "화요일 저녁까지 끝내겠습니다.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Perfect. I'll approve the request.",
+        "korean": "좋아요. 요청을 승인하겠습니다.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '해외에서' mean in English?",
+      "options": [
+        "monthly report",
+        "request time off",
+        "overseas",
+        "approve"
+      ],
+      "answer": 2
+    }
+  }
+]

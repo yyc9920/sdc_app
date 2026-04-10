@@ -1,0 +1,98 @@
+[
+  {
+    "setId": "L1_SPK_050_set1",
+    "parentSetId": "L1_SPK_050",
+    "theme": "Weekday vs. Weekend Weddings",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Some couples choose to have their wedding on a weekday to save money.",
+        "korean": "돈을 아끼려고 평일에 결혼하는 커플이 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Do you think this is a good idea?",
+        "korean": "좋은 생각입니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Why or why not?",
+        "korean": "이유는 무엇입니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I think having a weekday wedding is a smart choice for budget-conscious couples.",
+        "korean": "예산을 의식하는 커플에게 평일 결혼식은 현명한 선택이라고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Wedding venues typically charge thirty to fifty percent less on weekdays compared to Saturdays.",
+        "korean": "결혼식장은 보통 토요일에 비해 평일에 30~50% 적게 청구해요.",
+        "properNounIndices": [
+          13
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Should Homework Be Abolished",
+        "What Makes a Good Leader",
+        "A Festival or Event You Attended",
+        "Weekday vs. Weekend Weddings"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L1_SPK_050_set2",
+    "parentSetId": "L1_SPK_050",
+    "theme": "Weekday vs. Weekend Weddings",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "That saved money could be used for the honeymoon or a down payment on a house.",
+        "korean": "절약한 돈은 신혼여행이나 집 계약금에 쓸 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "The main drawback is that some guests may not be able to attend because they have to work.",
+        "korean": "주요 단점은 일부 하객이 일 때문에 참석하지 못할 수 있다는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "But ultimately the wedding is about the couple and their budget not about maximizing the guest count.",
+        "korean": "하지만 궁극적으로 결혼식은 커플과 예산에 관한 것이지 하객 수를 최대화하는 것이 아니에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "ultimately",
+        "korean": "궁극적으로",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Impact of AI on Jobs",
+        "Traveling Alone vs. with Friends",
+        "Weekday vs. Weekend Weddings",
+        "Social Media Age Limit"
+      ],
+      "answer": 2
+    }
+  }
+]

@@ -3,44 +3,92 @@
     "setId": "L2_EXT_008_set1",
     "parentSetId": "L2_EXT_008",
     "theme": "Tech Support Call",
-    "level": 6,
+    "level": 3,
     "setNumber": 1,
     "sentences": [
       {
         "id": 0,
-        "english": "Thank you for calling QuickNet support. My name is Daniel. How can I help you today?",
-        "korean": "퀵넷 지원센터에 전화 주셔서 감사합니다. 저는 대니얼입니다. 어떻게 도와드릴까요?",
+        "english": "Thank you for calling QuickNet support.",
+        "korean": "퀵넷 지원센터에 전화 주셔서 감사합니다.",
         "properNounIndices": [
-          4,
-          6,
-          9,
-          10,
-          12
+          4
         ]
       },
       {
         "id": 1,
-        "english": "Hi Daniel. My internet has been down since this morning. I can't connect to Wi-Fi at all.",
-        "korean": "안녕 대니얼. 오늘 아침부터 인터넷이 안 돼요. 와이파이에 아예 연결이 안 됩니다.",
+        "english": "My name is Daniel.",
+        "korean": "저는 대니얼입니다.",
         "properNounIndices": [
-          1,
-          2,
-          10,
-          14
+          3
         ]
       },
       {
         "id": 2,
-        "english": "I'm sorry about that. Let me look into it for you. Can I have your account number?",
-        "korean": "죄송합니다. 확인해볼게요. 계정 번호를 알려주시겠어요?",
+        "english": "How can I help you today?",
+        "korean": "어떻게 도와드릴까요?",
         "properNounIndices": [
-          4,
-          11,
-          12
+          2
         ]
       },
       {
         "id": 3,
+        "english": "Hi Daniel. My internet has been down since this morning.",
+        "korean": "안녕 대니얼. 오늘 아침부터 인터넷이 안 돼요.",
+        "properNounIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I can't connect to Wi-Fi at all.",
+        "korean": "와이파이에 아예 연결이 안 됩니다.",
+        "properNounIndices": [
+          0,
+          4
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Tech Support Call",
+        "The Psychology of Decision Fatigue",
+        "Museum Audio Guide",
+        "Artificial Intelligence and Society"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_EXT_008_set2",
+    "parentSetId": "L2_EXT_008",
+    "theme": "Tech Support Call",
+    "level": 3,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I'm sorry about that.",
+        "korean": "죄송합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Let me look into it for you.",
+        "korean": "확인해볼게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Can I have your account number?",
+        "korean": "계정 번호를 알려주시겠어요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 8,
         "english": "It's QN-885421.",
         "korean": "QN-885421이에요.",
         "properNounIndices": [
@@ -48,74 +96,140 @@
         ]
       },
       {
-        "id": 4,
-        "english": "Thank you. I can see your account here. Let's try a few troubleshooting steps. First, can you check if the lights on your router are on?",
-        "korean": "감사합니다. 계정이 보이네요. 문제 해결 단계를 시도해봐요. 먼저 라우터의 불이 켜져 있는지 확인해주세요.",
+        "id": 9,
+        "english": "Thank you. I can see your account here.",
+        "korean": "감사합니다. 계정이 보이네요.",
         "properNounIndices": [
-          2,
-          8,
-          14
+          2
         ]
       }
     ],
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Supreme Court Oral Arguments",
-        "Tech Support Call",
-        "Job Interview — Small Talk",
-        "TED-Style Talk — The Science of Habits"
+        "A Busy Saturday",
+        "NPR-Style News Report",
+        "Museum Audio Guide",
+        "Tech Support Call"
       ],
-      "answer": 1
+      "answer": 3
     }
   },
   {
-    "setId": "L2_EXT_008_set2",
+    "setId": "L2_EXT_008_set3",
     "parentSetId": "L2_EXT_008",
     "theme": "Tech Support Call",
-    "level": 6,
-    "setNumber": 2,
+    "level": 4,
+    "setNumber": 3,
     "sentences": [
       {
-        "id": 5,
+        "id": 10,
+        "english": "Let's try a few troubleshooting steps.",
+        "korean": "문제 해결 단계를 시도해봐요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "First, can you check if the lights on your router are on?",
+        "korean": "먼저 라우터의 불이 켜져 있는지 확인해주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
         "english": "Yes, the power light is on, but the internet light is blinking orange.",
         "korean": "네, 전원등은 켜져 있는데 인터넷 등이 주황색으로 깜박이고 있어요.",
         "properNounIndices": []
       },
       {
-        "id": 6,
-        "english": "That usually means the router isn't receiving a signal. Let's try restarting it. Can you unplug the power cable, wait about thirty seconds, and plug it back in?",
-        "korean": "보통 라우터가 신호를 못 받고 있다는 뜻이에요. 재시작해봐요. 전원 케이블을 뽑고, 10초 정도 기다렸다가 다시 꽂아주세요.",
+        "id": 13,
+        "english": "That usually means the router isn't receiving a signal.",
+        "korean": "보통 라우터가 신호를 못 받고 있다는 뜻이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "Let's try restarting it.",
+        "korean": "재시작해봐요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Emergent Properties in Complex Systems",
+        "Tech Support Call",
+        "Language and Thought",
+        "First Day at a New Job"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L2_EXT_008_set4",
+    "parentSetId": "L2_EXT_008",
+    "theme": "Tech Support Call",
+    "level": 4,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "Can you unplug the power cable, wait about thirty seconds, and plug it back in?",
+        "korean": "전원 케이블을 뽑고, 10초 정도 기다렸다가 다시 꽂아주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 16,
+        "english": "Okay, hold on... done.",
+        "korean": "네, 잠시만요...",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "It's restarting now.",
+        "korean": "됐어요. 지금 재시작 중이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
+        "english": "Great. Give it about two minutes to fully boot up.",
+        "korean": "좋아요. 완전히 부팅될 때까지 약 2분 정도 기다려주세요.",
         "properNounIndices": [
-          9,
-          13
+          1
         ]
       },
       {
-        "id": 7,
-        "english": "Okay, hold on... done. It's restarting now.",
-        "korean": "네, 잠시만요... 됐어요. 지금 재시작 중이에요.",
-        "properNounIndices": [
-          4
-        ]
-      },
+        "id": 19,
+        "english": "Let me know when all the lights are stable.",
+        "korean": "모든 불이 안정되면 알려주세요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Making a Doctor's Appointment",
+        "Tech Support Call",
+        "My Dream",
+        "Walking My Dog"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L2_EXT_008_set5",
+    "parentSetId": "L2_EXT_008",
+    "theme": "Tech Support Call",
+    "level": 5,
+    "setNumber": 5,
+    "sentences": [
       {
-        "id": 8,
-        "english": "Great. Give it about two minutes to fully boot up. Let me know when all the lights are stable.",
-        "korean": "좋아요. 완전히 부팅될 때까지 약 2분 정도 기다려주세요. 모든 불이 안정되면 알려주세요.",
-        "properNounIndices": [
-          1,
-          10
-        ]
-      },
-      {
-        "id": 9,
+        "id": 20,
         "english": "Alright... the internet light just turned green!",
         "korean": "좋아요... 인터넷 등이 방금 초록색으로 바뀌었어요!",
         "properNounIndices": []
       },
       {
-        "id": 10,
+        "id": 21,
         "english": "Perfect. Try connecting to Wi-Fi now and see if it works.",
         "korean": "좋아요. 이제 와이파이에 연결해보시고 되는지 확인해보세요.",
         "properNounIndices": [
@@ -124,7 +238,7 @@
         ]
       },
       {
-        "id": 11,
+        "id": 22,
         "english": "Yes! It's working! That was easy. Thank you so much, Daniel.",
         "korean": "네! 돼요! 쉬웠네요. 정말 감사합니다, 대니얼.",
         "properNounIndices": [
@@ -135,7 +249,7 @@
         ]
       },
       {
-        "id": 12,
+        "id": 23,
         "english": "Happy to help. Is there anything else I can assist you with?",
         "korean": "도와드려서 기뻐요. 다른 도움이 필요하신 건 없나요?",
         "properNounIndices": [
@@ -147,10 +261,10 @@
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Asking for Directions",
+        "Why We Underestimate Time",
         "Tech Support Call",
-        "Weekend Plans",
-        "At the Post Office"
+        "Doing Homework",
+        "Asking for Directions"
       ],
       "answer": 1
     }

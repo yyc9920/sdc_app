@@ -1,0 +1,74 @@
+[
+  {
+    "setId": "L1_DLG_008_set1",
+    "parentSetId": "L1_DLG_008",
+    "theme": "Lost on the Street",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Excuse me, I'm lost.",
+        "korean": "실례합니다, 길을 잃었어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Can you help me?",
+        "korean": "도와주실 수 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Where are you trying to go?",
+        "korean": "어디에 가려고 하세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I'm looking for Seoul Station.",
+        "korean": "서울역을 찾고 있어요.",
+        "properNounIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "id": 4,
+        "english": "It's about a ten-minute walk from here.",
+        "korean": "여기서 걸어서 약 10분 거리예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Go straight and turn left at the big intersection.",
+        "korean": "쭉 가다가 큰 교차로에서 좌회전하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "You'll see it on your right.",
+        "korean": "오른쪽에 보일 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Thank you so much!",
+        "korean": "정말 감사합니다!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Lost on the Street",
+        "Ordering at a Restaurant",
+        "Discussing a Merger",
+        "Project Meeting Update"
+      ],
+      "answer": 0
+    }
+  }
+]

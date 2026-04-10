@@ -1,0 +1,96 @@
+[
+  {
+    "setId": "L3_DLG_057_set1",
+    "parentSetId": "L3_DLG_057",
+    "theme": "Registering for a Marathon",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'd like to register for the spring marathon.",
+        "korean": "봄 마라톤에 등록하고 싶어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Which distance are you interested in?",
+        "korean": "어떤 거리에 관심 있으세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "We have five-kilometer ten-kilometer and full marathon.",
+        "korean": "5킬로미터 10킬로미터 풀 마라톤이 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I'll do the ten-kilometer race.",
+        "korean": "10킬로미터로 할게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "The registration fee is forty dollars and includes a t-shirt and a finisher's medal.",
+        "korean": "등록비는 40달러이고 티셔츠와 완주 메달이 포함돼요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '출발선' mean in English?",
+      "options": [
+        "register",
+        "finisher's medal",
+        "starting line",
+        "distance"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L3_DLG_057_set2",
+    "parentSetId": "L3_DLG_057",
+    "theme": "Registering for a Marathon",
+    "level": 3,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "When is the race?",
+        "korean": "대회가 언제예요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "April twenty-sixth at eight AM.",
+        "korean": "4월 26일 오전 8시예요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Where does it start?",
+        "korean": "어디서 출발하나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "The starting line is at the riverside park.",
+        "korean": "출발선은 강변 공원이에요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '완주 메달' mean in English?",
+      "options": [
+        "register",
+        "distance",
+        "finisher's medal",
+        "starting line"
+      ],
+      "answer": 2
+    }
+  }
+]

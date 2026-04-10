@@ -1,0 +1,106 @@
+[
+  {
+    "setId": "L3_DLG_029_set1",
+    "parentSetId": "L3_DLG_029",
+    "theme": "Job Interview — Entry Level",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Tell me a little about yourself.",
+        "korean": "자기소개를 해주세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I recently graduated from Korea University with a degree in business administration.",
+        "korean": "최근 고려대학교에서 경영학 학위를 받고 졸업했습니다.",
+        "properNounIndices": [
+          0,
+          4,
+          5
+        ]
+      },
+      {
+        "id": 2,
+        "english": "During university I completed two internships in marketing.",
+        "korean": "대학 시절 마케팅 분야에서 인턴십을 두 번 했습니다.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Why are you interested in this position?",
+        "korean": "이 직무에 관심을 가진 이유는 무엇인가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I've always admired your company's brand strategy and I want to be part of a team that creates innovative campaigns.",
+        "korean": "항상 귀사의 브랜드 전략을 존경해왔고 혁신적인 캠페인을 만드는 팀의 일원이 되고 싶습니다.",
+        "properNounIndices": [
+          8
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '체계적인' mean in English?",
+      "options": [
+        "graduated",
+        "organized",
+        "strength",
+        "internship"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L3_DLG_029_set2",
+    "parentSetId": "L3_DLG_029",
+    "theme": "Job Interview — Entry Level",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "What would you say is your biggest strength?",
+        "korean": "가장 큰 강점이 뭐라고 생각하나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "I'm very organized and I work well under pressure.",
+        "korean": "매우 체계적이고 압박 속에서도 잘 일합니다.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 7,
+        "english": "During my second internship I managed a social media campaign while also handling three other projects simultaneously.",
+        "korean": "두 번째 인턴십에서 소셜 미디어 캠페인을 관리하면서 동시에 다른 프로젝트 세 개를 처리했습니다.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 8,
+        "english": "We'll be in touch within a week with our decision.",
+        "korean": "일주일 내에 결정을 알려드리겠습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '강점' mean in English?",
+      "options": [
+        "strength",
+        "organized",
+        "internship",
+        "graduated"
+      ],
+      "answer": 0
+    }
+  }
+]

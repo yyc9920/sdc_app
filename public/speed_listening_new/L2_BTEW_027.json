@@ -1,0 +1,45 @@
+[
+  {
+    "setId": "L2_BTEW_027_set1",
+    "parentSetId": "L2_BTEW_027",
+    "theme": "Hot on the Heels",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "There were cyber attacks on shops, and hot on the heels of that, there were cyber attacks on airlines.",
+        "korean": "상점에 사이버 공격이 있었고, 그에 이어 바로 항공사에도 사이버 공격이 있었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "'Hot on the heels' means something happens immediately after something else, often unexpectedly.",
+        "korean": "'hot on the heels'는 무언가가 다른 것 바로 뒤에, 종종 예상치 못하게 일어난다는 뜻이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Events happen one after the other with not much of a break.",
+        "korean": "사건들이 쉴 틈 없이 연이어 일어나요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "hot on the heels of",
+        "korean": "(관용구) ~에 바로 이어서, ~직후에",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Bide someone's time",
+        "Makes my skin crawl",
+        "Facepalm Moment",
+        "Hot on the Heels"
+      ],
+      "answer": 3
+    }
+  }
+]

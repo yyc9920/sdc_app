@@ -1,0 +1,73 @@
+[
+  {
+    "setId": "L1_SPK_076B_set1",
+    "parentSetId": "L1_SPK_076B",
+    "theme": "At what age do you think people should get married",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "At what age do you think people should get married?",
+        "korean": "사람들이 몇 살에 결혼해야 한다고 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your reasoning.",
+        "korean": "근거를 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I think there's no single ideal age for marriage because it depends entirely on the individual.",
+        "korean": "결혼에 하나의 이상적인 나이는 없다고 생각해요. 전적으로 개인에 달렸기 때문이에요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "However I believe people should first achieve financial independence and emotional maturity before committing to marriage.",
+        "korean": "하지만 결혼 전에 먼저 경제적 독립과 감정적 성숙을 달성해야 한다고 생각해요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Getting married too young before you know who you are often leads to growing apart as both partners change.",
+        "korean": "자신이 누구인지 알기 전에 너무 일찍 결혼하면 두 파트너가 변하면서 멀어지는 경우가 많아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "On the other hand waiting too long can also mean missing opportunities to build a life with someone.",
+        "korean": "반면 너무 오래 기다리면 누군가와 삶을 함께 쌓을 기회를 놓칠 수도 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "The right time is when you feel ready — not when society tells you it's time.",
+        "korean": "적절한 때는 준비됐다고 느낄 때예요 — 사회가 때가 됐다고 말할 때가 아니라요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "grow apart",
+        "korean": "멀어지다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "News from Social Media vs. Traditional Media",
+        "An Important Childhood Memory",
+        "Advantages of Being Bilingual",
+        "At what age do you think people should get married"
+      ],
+      "answer": 3
+    }
+  }
+]

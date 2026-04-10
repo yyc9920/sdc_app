@@ -1,0 +1,66 @@
+[
+  {
+    "setId": "L2_ELLO_059_set1",
+    "parentSetId": "L2_ELLO_059",
+    "theme": "Mixer #87 — Sharing Food",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I love sharing food at restaurants.",
+        "korean": "식당에서 음식 나눠 먹는 걸 좋아해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "You get to try so many different dishes that way.",
+        "korean": "그러면 다양한 요리를 많이 맛볼 수 있거든요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I don't like sharing my food, honestly.",
+        "korean": "솔직히 음식 나누는 걸 안 좋아해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I ordered it because I want to eat it all myself.",
+        "korean": "다 먹고 싶어서 주문한 거거든요.",
+        "properNounIndices": [
+          0,
+          4
+        ]
+      },
+      {
+        "id": 4,
+        "english": "In Korean culture, sharing food is very common.",
+        "korean": "한국 문화에서 음식 나누기는 매우 흔해요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 5,
+        "english": "We always order dishes for the table, not just for one person.",
+        "korean": "한 사람이 아니라 항상 테이블 전체용으로 주문해요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #87 — Sharing Food",
+        "Mixer #41 — Keeping Secrets",
+        "Mixer #101 — First Impression",
+        "Mixer #106 — Favorite Teacher"
+      ],
+      "answer": 0
+    }
+  }
+]

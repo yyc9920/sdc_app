@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L1_EXT_088_set1",
+    "parentSetId": "L1_EXT_088",
+    "theme": "My First Airplane Ride",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I took an airplane for the first time last summer.",
+        "korean": "지난 여름에 처음으로 비행기를 탔어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I was excited but also a little scared.",
+        "korean": "설렜지만 좀 무섭기도 했어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "When the plane took off my ears hurt a little.",
+        "korean": "비행기가 이륙했을 때 귀가 좀 아팠어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "But I loved looking out the window at the clouds below.",
+        "korean": "하지만 창밖으로 아래 구름을 보는 게 좋았어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I want to fly again soon.",
+        "korean": "곧 다시 비행기를 타고 싶어요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "My First Airplane Ride",
+        "Taking the Subway",
+        "Weekend Plans",
+        "Science Documentary — Neuroplasticity"
+      ],
+      "answer": 0
+    }
+  }
+]

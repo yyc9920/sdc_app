@@ -50,8 +50,8 @@
       "options": [
         "Library Hours Change",
         "Mandatory Advising Sessions",
-        "Student Parking Fee Increase",
-        "Campus Café Relocation"
+        "Campus Café Relocation",
+        "Student Parking Fee Increase"
       ],
       "answer": 0
     }
@@ -60,7 +60,7 @@
     "setId": "L2_INT_001_set2",
     "parentSetId": "L2_INT_001",
     "theme": "Library Hours Change",
-    "level": 5,
+    "level": 4,
     "setNumber": 2,
     "sentences": [
       {
@@ -77,26 +77,24 @@
       },
       {
         "id": 7,
-        "english": "Yeah, I just read it. Honestly, I'm pretty happy about it.",
-        "korean": "응, 방금 읽었어. 솔직히, 꽤 기뻐.",
+        "english": "Yeah, I just read it.",
+        "korean": "응, 방금 읽었어.",
         "properNounIndices": [
-          1,
-          5,
-          6
+          1
         ]
       },
       {
         "id": 8,
-        "english": "Really? Why?",
-        "korean": "정말? 왜?",
+        "english": "Honestly, I'm pretty happy about it.",
+        "korean": "솔직히, 꽤 기뻐.",
         "properNounIndices": [
           1
         ]
       },
       {
         "id": 9,
-        "english": "Well, I always study late, and the 10 o'clock closing time always felt too early.",
-        "korean": "음, 나는 항상 늦게까지 공부하는데, 10시 폐관은 항상 너무 이르게 느껴졌어.",
+        "english": "Really? Why?",
+        "korean": "정말? 왜?",
         "properNounIndices": [
           1
         ]
@@ -105,12 +103,12 @@
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Library Hours Change",
         "Mandatory Advising Sessions",
         "Campus Café Relocation",
+        "Library Hours Change",
         "Student Parking Fee Increase"
       ],
-      "answer": 0
+      "answer": 2
     }
   },
   {
@@ -122,52 +120,51 @@
     "sentences": [
       {
         "id": 10,
-        "english": "I'd just be getting into a good focus zone and then have to pack up.",
-        "korean": "막 집중이 잘 되려는데 짐을 싸야 했거든.",
-        "properNounIndices": []
-      },
-      {
-        "id": 11,
-        "english": "Two more hours is going to make a huge difference for me.",
-        "korean": "2시간 더 늘어나면 나한테는 엄청난 차이가 될 거야.",
-        "properNounIndices": []
-      },
-      {
-        "id": 12,
-        "english": "I guess that makes sense. I usually finish before 10, but I know a lot of people who struggle with that.",
-        "korean": "그게 맞는 말인 것 같아. 나는 보통 10시 전에 끝나지만, 그것 때문에 힘들어하는 사람들을 많이 알아.",
-        "properNounIndices": [
-          0,
-          5,
-          11
-        ]
-      },
-      {
-        "id": 13,
-        "english": "Exactly. And they're keeping the quiet rooms open the whole time, which is great.",
-        "korean": "맞아. 그리고 조용한 방도 내내 열어둔대, 그건 좋다.",
+        "english": "Well, I always study late, and the 10 o'clock closing time always felt too early.",
+        "korean": "음, 나는 항상 늦게까지 공부하는데, 10시 폐관은 항상 너무 이르게 느껴졌어.",
         "properNounIndices": [
           1
         ]
       },
       {
-        "id": 14,
-        "english": "The dorms get so noisy at night — there's no way I can concentrate there.",
-        "korean": "기숙사는 밤에 너무 시끄러워져서 — 거기서는 도저히 집중할 수가 없어.",
+        "id": 11,
+        "english": "I'd just be getting into a good focus zone and then have to pack up.",
+        "korean": "막 집중이 잘 되려는데 짐을 싸야 했거든.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "Two more hours is going to make a huge difference for me.",
+        "korean": "2시간 더 늘어나면 나한테는 엄청난 차이가 될 거야.",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
+        "english": "I guess that makes sense.",
+        "korean": "그게 맞는 말인 것 같아.",
         "properNounIndices": [
-          11
+          0
+        ]
+      },
+      {
+        "id": 14,
+        "english": "I usually finish before 10, but I know a lot of people who struggle with that.",
+        "korean": "나는 보통 10시 전에 끝나지만, 그것 때문에 힘들어하는 사람들을 많이 알아.",
+        "properNounIndices": [
+          0,
+          6
         ]
       }
     ],
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Student Parking Fee Increase",
         "Library Hours Change",
-        "Campus Café Relocation",
-        "Mandatory Advising Sessions"
+        "Mandatory Advising Sessions",
+        "Student Parking Fee Increase",
+        "Campus Café Relocation"
       ],
-      "answer": 1
+      "answer": 0
     }
   },
   {
@@ -179,48 +176,98 @@
     "sentences": [
       {
         "id": 15,
-        "english": "That's a good point. I live off campus, so the commute is my issue.",
-        "korean": "좋은 지적이야. 나는 캠퍼스 밖에 살아서, 통학이 문제야.",
+        "english": "Exactly. And they're keeping the quiet rooms open the whole time, which is great.",
+        "korean": "맞아. 그리고 조용한 방도 내내 열어둔대, 그건 좋다.",
         "properNounIndices": [
-          4
+          1
         ]
       },
       {
         "id": 16,
+        "english": "The dorms get so noisy at night — there's no way I can concentrate there.",
+        "korean": "기숙사는 밤에 너무 시끄러워져서 — 거기서는 도저히 집중할 수가 없어.",
+        "properNounIndices": [
+          11
+        ]
+      },
+      {
+        "id": 17,
+        "english": "That's a good point.",
+        "korean": "좋은 지적이야.",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
+        "english": "I live off campus, so the commute is my issue.",
+        "korean": "나는 캠퍼스 밖에 살아서, 통학이 문제야.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 19,
         "english": "But I guess if the library is open later, I might be able to stay after my night class instead of driving home and coming back.",
         "korean": "하지만 도서관이 더 늦게까지 열면, 집에 갔다 다시 오는 대신 야간 수업 후에 머무를 수 있을 것 같아.",
         "properNounIndices": [
           1,
           9
         ]
-      },
-      {
-        "id": 17,
-        "english": "See? It works for more people than you'd think. I'm glad the university actually listened to the feedback.",
-        "korean": "봐? 생각보다 더 많은 사람들에게 도움이 돼. 대학이 실제로 피드백을 들어줘서 기쁘다.",
-        "properNounIndices": [
-          1,
-          9
-        ]
-      },
-      {
-        "id": 18,
-        "english": "The man expresses his opinion about the change announced in the notice. State his opinion and explain the reasons he gives for holding that opinion.",
-        "korean": "남자가 공지에서 발표된 변경에 대한 의견을 표현합니다. 그의 의견을 진술하고 그 의견을 갖는 이유를 설명하세요.",
-        "properNounIndices": [
-          12
-        ]
       }
     ],
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
+        "Mandatory Advising Sessions",
         "Library Hours Change",
-        "Campus Café Relocation",
         "Student Parking Fee Increase",
-        "Mandatory Advising Sessions"
+        "Campus Café Relocation"
       ],
-      "answer": 0
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L2_INT_001_set5",
+    "parentSetId": "L2_INT_001",
+    "theme": "Library Hours Change",
+    "level": 5,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "See? It works for more people than you'd think.",
+        "korean": "봐? 생각보다 더 많은 사람들에게 도움이 돼.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 21,
+        "english": "I'm glad the university actually listened to the feedback.",
+        "korean": "대학이 실제로 피드백을 들어줘서 기쁘다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 22,
+        "english": "The man expresses his opinion about the change announced in the notice.",
+        "korean": "남자가 공지에서 발표된 변경에 대한 의견을 표현합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 23,
+        "english": "State his opinion and explain the reasons he gives for holding that opinion.",
+        "korean": "그의 의견을 진술하고 그 의견을 갖는 이유를 설명하세요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Campus Café Relocation",
+        "Library Hours Change",
+        "Mandatory Advising Sessions",
+        "Student Parking Fee Increase"
+      ],
+      "answer": 1
     }
   }
 ]

@@ -1,0 +1,77 @@
+[
+  {
+    "setId": "L2_DLG_028_set1",
+    "parentSetId": "L2_DLG_028",
+    "theme": "Calling to Make an Appointment",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'd like to make an appointment with Dr.",
+        "korean": "김 선생님 진료 예약을 하고 싶어요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Kim.",
+        "korean": "하고 싶어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Is this for a general checkup or a specific concern?",
+        "korean": "일반 검진인가요 아니면 특정 증상인가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "A general checkup.",
+        "korean": "일반 검진이요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "The earliest available slot is next Wednesday at ten AM.",
+        "korean": "가장 빠른 가능한 시간은 다음 주 수요일 오전 10시예요.",
+        "properNounIndices": [
+          6,
+          9
+        ]
+      },
+      {
+        "id": 5,
+        "english": "That works for me.",
+        "korean": "괜찮아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Please bring your insurance card.",
+        "korean": "보험증을 가져오세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "I will. Thank you.",
+        "korean": "그럴게요. 감사합니다.",
+        "properNounIndices": [
+          0,
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '예약/진료' mean in English?",
+      "options": [
+        "appointment",
+        "insurance card",
+        "slot",
+        "checkup"
+      ],
+      "answer": 0
+    }
+  }
+]

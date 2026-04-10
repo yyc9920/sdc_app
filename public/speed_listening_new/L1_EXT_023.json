@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L1_EXT_023_set1",
+    "parentSetId": "L1_EXT_023",
+    "theme": "At the Library",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I go to the library near my house every weekend.",
+        "korean": "매주 주말 집 근처 도서관에 가요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "It is a quiet and comfortable place to study.",
+        "korean": "공부하기에 조용하고 편안한 곳이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I can borrow up to five books at a time.",
+        "korean": "한 번에 최대 5권까지 빌릴 수 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I have to return them within two weeks.",
+        "korean": "2주 안에 반납해야 해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "The library also has free Wi-Fi and a reading room with big windows.",
+        "korean": "도서관에는 무료 와이파이와 큰 창문이 있는 열람실도 있어요.",
+        "properNounIndices": [
+          5
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "At the Library",
+        "The Ethics of Gene Editing",
+        "Sociology Seminar — Social Capital",
+        "Going Camping"
+      ],
+      "answer": 0
+    }
+  }
+]

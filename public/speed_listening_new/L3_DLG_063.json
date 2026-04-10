@@ -1,0 +1,67 @@
+[
+  {
+    "setId": "L3_DLG_063_set1",
+    "parentSetId": "L3_DLG_063",
+    "theme": "Apartment Move-Out Inspection",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'm moving out at the end of this month and I'd like to schedule the move-out inspection.",
+        "korean": "이달 말에 퇴거하는데 퇴거 점검 일정을 잡고 싶어요.",
+        "properNounIndices": [
+          10
+        ]
+      },
+      {
+        "id": 1,
+        "english": "We can do it on your last day.",
+        "korean": "마지막 날에 할 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "What condition is the apartment in?",
+        "korean": "아파트 상태가 어떤가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Everything is in good condition except for a small scratch on the kitchen counter.",
+        "korean": "부엌 조리대의 작은 흠집을 제외하면 모두 양호한 상태예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Minor scratches are considered normal wear and tear so that shouldn't affect your deposit.",
+        "korean": "경미한 흠집은 정상적인 마모로 간주되니 보증금에 영향 없을 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "When can I expect to get my deposit back?",
+        "korean": "보증금은 언제 돌려받을 수 있나요?",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Within thirty days of the inspection as stated in your lease agreement.",
+        "korean": "임대 계약서에 명시된 대로 점검 후 30일 이내입니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '정상적 마모' mean in English?",
+      "options": [
+        "deposit",
+        "lease agreement",
+        "wear and tear",
+        "move-out inspection"
+      ],
+      "answer": 2
+    }
+  }
+]

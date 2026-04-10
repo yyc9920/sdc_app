@@ -1,0 +1,96 @@
+[
+  {
+    "setId": "L1_SPK_079B_set1",
+    "parentSetId": "L1_SPK_079B",
+    "theme": "Would you prefer living in a large house with a lo",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Would you prefer living in a large house with a long commute or a small apartment close to work?",
+        "korean": "먼 거리 통근의 넓은 집과 직장 가까운 좁은 아파트 중 어느 것을 선호합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain.",
+        "korean": "설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I would choose the small apartment close to work without hesitation.",
+        "korean": "망설임 없이 직장 가까운 작은 아파트를 선택하겠어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Time is our most valuable resource and a long commute wastes hours of it every single day.",
+        "korean": "시간은 가장 귀중한 자원이고 긴 통근은 매일 몇 시간을 낭비해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Someone who commutes two hours each way spends twenty hours a week just traveling — that's like having a second part-time job.",
+        "korean": "편도 2시간 통근하는 사람은 주당 20시간을 이동에만 써요 — 두 번째 아르바이트를 하는 것과 같아요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "A Piece of Advice That Changed Your Life",
+        "Would you prefer living in a large house with a lo",
+        "Competitive Sports for Children",
+        "Living in the Present vs. Planning Ahead"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L1_SPK_079B_set2",
+    "parentSetId": "L1_SPK_079B",
+    "theme": "Would you prefer living in a large house with a lo",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Those hours could be spent exercising cooking healthy meals or spending quality time with family.",
+        "korean": "그 시간을 운동하거나 건강한 식사를 만들거나 가족과 좋은 시간을 보내는 데 쓸 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "A smaller living space is a minor inconvenience compared to getting back hours of your life every day.",
+        "korean": "매일 인생의 시간을 되찾는 것에 비하면 좁은 생활 공간은 사소한 불편이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "without hesitation",
+        "korean": "망설임 없이",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "quality time",
+        "korean": "좋은 시간",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "City Living vs. Rural Living",
+        "Would you prefer living in a large house with a lo",
+        "Gap Year — Good Idea or Not",
+        "An Important Childhood Memory"
+      ],
+      "answer": 1
+    }
+  }
+]

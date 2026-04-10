@@ -1,0 +1,44 @@
+[
+  {
+    "setId": "L3_B6ME_052_set1",
+    "parentSetId": "L3_B6ME_052",
+    "theme": "Do You Need to Declutter Your Home?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "If your room is filled with heaps of clothes and piles of books, you may have a problem with clutter — things in your home which take up space in an untidy, disorganised way.",
+        "korean": "방이 옷 더미와 책 더미로 가득하다면 잡동사니(clutter) 문제가 있을 수 있어요 — 지저분하고 정리 안 된 상태로 공간을 차지하는 물건들이요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Clutter was the topic of a recent episode of BBC Radio 4.",
+        "korean": "잡동사니가 BBC 라디오 4 최근 에피소드의 주제였어요.",
+        "properNounIndices": [
+          9,
+          10
+        ]
+      },
+      {
+        "id": 2,
+        "english": "One listener said: 'The clutter in my house is actually starting to affect my mental health.'",
+        "korean": "한 청취자는 '집의 잡동사니가 정신 건강에 영향을 미치기 시작했다'고 했어요.",
+        "properNounIndices": [
+          3
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Do You Need to Declutter Your Home?",
+        "Embarrassed to go to the doctor?",
+        "What's Your Favourite Snack?",
+        "Would You Like a Robot Companion?"
+      ],
+      "answer": 0
+    }
+  }
+]

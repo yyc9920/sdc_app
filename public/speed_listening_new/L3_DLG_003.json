@@ -1,0 +1,158 @@
+[
+  {
+    "setId": "L3_DLG_003_set1",
+    "parentSetId": "L3_DLG_003",
+    "theme": "Campus Housing — Dorm Problem",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Excuse me, I need to talk to someone about my dorm room.",
+        "korean": "실례합니다, 기숙사 방에 대해 누군가와 이야기해야 해요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Sure, what seems to be the problem?",
+        "korean": "네, 무슨 문제인가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The heating in my room hasn't been working for three days, and it's freezing.",
+        "korean": "방 난방이 3일째 안 되고 있어요. 얼어 죽겠어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I'm sorry to hear that.",
+        "korean": "유감이네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Did you submit a maintenance request online?",
+        "korean": "온라인으로 수리 요청을 제출하셨나요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '그동안/그 사이에' mean in English?",
+      "options": [
+        "in the meantime",
+        "pending",
+        "portable heater",
+        "maintenance"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L3_DLG_003_set2",
+    "parentSetId": "L3_DLG_003",
+    "theme": "Campus Housing — Dorm Problem",
+    "level": 3,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Yes, I did that on Monday but nobody came.",
+        "korean": "네, 월요일에 했는데 아무도 안 왔어요.",
+        "properNounIndices": [
+          1,
+          5
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Let me look into this right away.",
+        "korean": "바로 확인해볼게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "I can see your request here.",
+        "korean": "여기 요청이 보이네요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 8,
+        "english": "It says it's pending.",
+        "korean": "대기 중이라고 되어 있네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Is there any way to speed this up?",
+        "korean": "이걸 빨리 할 수 있는 방법이 있나요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '유지보수/수리' mean in English?",
+      "options": [
+        "maintenance",
+        "pending",
+        "in the meantime",
+        "portable heater"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L3_DLG_003_set3",
+    "parentSetId": "L3_DLG_003",
+    "theme": "Campus Housing — Dorm Problem",
+    "level": 4,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "I've been sleeping with three blankets, and I really can't take it anymore.",
+        "korean": "담요 세 장 덮고 자고 있는데 정말 더 이상 못 참겠어요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 11,
+        "english": "I'll mark it as urgent and ask the maintenance team to come today.",
+        "korean": "긴급으로 표시하고 오늘 수리팀에 요청할게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "In the meantime, we can lend you a portable heater.",
+        "korean": "그동안 이동식 히터를 빌려드릴 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
+        "english": "That would be great.",
+        "korean": "그러면 정말 좋겠어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "Thank you so much.",
+        "korean": "정말 감사합니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '긴급한' mean in English?",
+      "options": [
+        "pending",
+        "in the meantime",
+        "urgent",
+        "maintenance"
+      ],
+      "answer": 2
+    }
+  }
+]

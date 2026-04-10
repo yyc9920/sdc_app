@@ -1,0 +1,160 @@
+[
+  {
+    "setId": "L3_B6ME_019_set1",
+    "parentSetId": "L3_B6ME_019",
+    "theme": "How Do We Adapt to the Cold?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "6-Minute-English listeners are truly global, coming from all over the world, including some of the coldest countries on Earth — places like Finland, where winter temperatures drop to minus 20°C.",
+        "korean": "6 Minute English 청취자들은 전 세계에서 오는 정말 글로벌한 분들이에요. 겨울 기온이 영하 20도까지 떨어지는 핀란드 같은 가장 추운 나라도 포함해서요.",
+        "properNounIndices": [
+          18,
+          22
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Here in the UK, it never gets as cold as Finland, but it's not unusual to see some people dressed in T-shirts while others are wrapped up in warm clothes.",
+        "korean": "영국은 핀란드만큼 춥지 않지만, 어떤 사람은 티셔츠를 입고 다른 사람은 따뜻한 옷을 껴입는 걸 보는 건 드문 일이 아니에요.",
+        "properNounIndices": [
+          3,
+          10,
+          21
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Why do people feel the cold so differently?",
+        "korean": "왜 사람들은 추위를 이렇게 다르게 느낄까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "First and foremost, I would say that perhaps the gender differs.",
+        "korean": "무엇보다도 성별 차이가 있다고 할 수 있어요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Males often are more tolerant, perhaps, than females.",
+        "korean": "남성이 여성보다 종종 더 추위를 견뎌요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '견딜 수 있는, 내성이 있는' mean in English?",
+      "options": [
+        "tolerant",
+        "first and foremost",
+        "used to (something)",
+        "yes and no"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L3_B6ME_019_set2",
+    "parentSetId": "L3_B6ME_019",
+    "theme": "How Do We Adapt to the Cold?",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Then it's of course what you're used to.",
+        "korean": "그리고 물론 익숙한지 여부죠.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Are you used to dealing with the cold?",
+        "korean": "추위에 대처하는 데 익숙한가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Gunhild says that first and foremost, men and women feel the cold differently.",
+        "korean": "건힐드는 무엇보다도 남녀가 추위를 다르게 느낀다고 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "She uses the phrase 'first and foremost' to mean 'more than anything else'.",
+        "korean": "'first and foremost'는 '다른 무엇보다'라는 뜻으로 사용해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Being tolerant of something means being able to endure it without getting hurt.",
+        "korean": "무언가에 tolerant하다는 것은 다치지 않고 견딜 수 있다는 뜻이에요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '떨림 — 추위나 두려움으로 근육이 떨리는 것' mean in English?",
+      "options": [
+        "subjectively",
+        "used to (something)",
+        "first and foremost",
+        "shiver"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L3_B6ME_019_set3",
+    "parentSetId": "L3_B6ME_019",
+    "theme": "How Do We Adapt to the Cold?",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "The more data we collect within this area, the more confusing the picture gets.",
+        "korean": "이 분야에서 데이터를 수집할수록 그림이 더 혼란스러워져요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "I can say that subjectively, the reindeer herders, at least kind of mentally, handle the cold far better.",
+        "korean": "주관적으로 순록 목동들이 적어도 정신적으로는 추위를 훨씬 잘 다루고, 훨씬 덜 떤다고 말할 수 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 12,
+        "english": "They are far less likely to shiver.",
+        "korean": "/ 그들은 훨씬 덜 떤다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
+        "english": "The lowest temperature ever recorded on Earth was at the Vostok Research Station in Antarctica in 1983.",
+        "korean": "지구에서 기록된 가장 낮은 온도는 1983년 남극의 보스톡 연구 기지에서였어요.",
+        "properNounIndices": [
+          6,
+          10,
+          11,
+          12,
+          14
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '견딜 수 있는, 내성이 있는' mean in English?",
+      "options": [
+        "tolerant",
+        "shiver",
+        "first and foremost",
+        "subjectively"
+      ],
+      "answer": 0
+    }
+  }
+]

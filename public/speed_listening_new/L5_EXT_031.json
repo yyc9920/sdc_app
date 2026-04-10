@@ -1,0 +1,48 @@
+[
+  {
+    "setId": "L5_EXT_031_set1",
+    "parentSetId": "L5_EXT_031",
+    "theme": "The Fermi Paradox",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The Fermi Paradox asks a deceptively simple question — given the billions of stars in our galaxy, many of which are billions of years older than our sun, why haven't we found any evidence of extraterrestrial civilizations?",
+        "korean": "페르미 역설은 기만적으로 단순한 질문을 던진다. 우리 은하에 수십억 개의 별이 있고 많은 것이 태양보다 수십억 년 오래됐는데 왜 외계 문명의 증거를 전혀 찾지 못했는가?",
+        "properNounIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": 1,
+        "english": "One chilling explanation is the Great Filter hypothesis — the idea that there is some catastrophic barrier in the development of civilizations that almost none can survive, whether it's nuclear war climate collapse or some unknown existential risk.",
+        "korean": "소름 끼치는 설명 하나는 대여과기 가설이다. 문명 발전에 거의 아무도 생존할 수 없는 재앙적 장벽이 있다는 생각이다. 핵전쟁이든 기후 붕괴든 알 수 없는 실존적 위험이든.",
+        "properNounIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "id": 2,
+        "english": "The unsettling question is whether humanity has already passed through the Great Filter or whether our greatest challenge still lies ahead of us.",
+        "korean": "불안한 질문은 인류가 이미 대여과기를 통과했는지 아니면 가장 큰 도전이 아직 앞에 놓여 있는지이다.",
+        "properNounIndices": [
+          11,
+          12
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '외계의' mean in English?",
+      "options": [
+        "Fermi Paradox",
+        "catastrophic",
+        "unsettling",
+        "extraterrestrial"
+      ],
+      "answer": 3
+    }
+  }
+]

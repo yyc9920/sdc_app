@@ -1,0 +1,55 @@
+[
+  {
+    "setId": "L1_EXT_060_set1",
+    "parentSetId": "L1_EXT_060",
+    "theme": "Washing the Dishes",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "In my family we take turns washing the dishes.",
+        "korean": "우리 가족은 돌아가면서 설거지를 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Today is my turn.",
+        "korean": "오늘은 내 차례예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I wash the dishes with warm water and soap.",
+        "korean": "따뜻한 물과 세제로 설거지를 해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "It takes about fifteen minutes to clean everything.",
+        "korean": "다 씻는 데 약 15분 걸려요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I don't really enjoy it but it feels nice when the kitchen is clean.",
+        "korean": "별로 즐겁지는 않지만 부엌이 깨끗하면 기분이 좋아요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Artificial Intelligence and Society",
+        "The Seasons",
+        "Remote Work and Mental Health",
+        "Washing the Dishes"
+      ],
+      "answer": 3
+    }
+  }
+]

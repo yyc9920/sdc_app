@@ -26,31 +26,28 @@
       },
       {
         "id": 3,
-        "english": "Let me give you a simple example. Imagine a student who has three hours on a Saturday afternoon.",
-        "korean": "간단한 예를 들어보죠. 토요일 오후에 3시간이 있는 학생을 상상해보세요.",
-        "properNounIndices": [
-          7,
-          16
-        ]
+        "english": "Let me give you a simple example.",
+        "korean": "간단한 예를 들어보죠.",
+        "properNounIndices": []
       },
       {
         "id": 4,
-        "english": "She can either study for an exam, work a part-time job, or attend a friend's birthday party. She decides to study.",
-        "korean": "시험 공부를 하거나, 아르바이트를 하거나, 친구 생일파티에 갈 수 있어요. 그녀는 공부를 선택합니다.",
+        "english": "Imagine a student who has three hours on a Saturday afternoon.",
+        "korean": "토요일 오후에 3시간이 있는 학생을 상상해보세요.",
         "properNounIndices": [
-          17
+          9
         ]
       }
     ],
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Classical Conditioning",
         "Confirmation Bias",
-        "Opportunity Cost",
-        "Environment and Nature"
+        "Classical Conditioning",
+        "Food and Cooking",
+        "Opportunity Cost"
       ],
-      "answer": 2
+      "answer": 3
     }
   },
   {
@@ -62,30 +59,42 @@
     "sentences": [
       {
         "id": 5,
+        "english": "She can either study for an exam, work a part-time job, or attend a friend's birthday party.",
+        "korean": "시험 공부를 하거나, 아르바이트를 하거나, 친구 생일파티에 갈 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "She decides to study.",
+        "korean": "그녀는 공부를 선택합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
         "english": "The opportunity cost of studying isn't just the money she didn't earn at work — it's whichever of the other options she would have chosen next.",
         "korean": "공부의 기회비용은 일해서 벌지 못한 돈만이 아니라 — 나머지 선택지 중 그 다음으로 선택했을 것입니다.",
         "properNounIndices": []
       },
       {
-        "id": 6,
+        "id": 8,
         "english": "What makes this concept powerful is that it applies to all decisions, not just economic ones.",
         "korean": "이 개념이 강력한 이유는 경제적 결정뿐 아니라 모든 결정에 적용되기 때문입니다.",
         "properNounIndices": []
       },
       {
-        "id": 7,
+        "id": 9,
         "english": "A country that uses land to build a sports stadium gives up the opportunity to use that land for housing.",
         "korean": "나라가 스포츠 경기장을 짓기 위해 땅을 사용하면, 그 땅을 주택에 사용할 기회를 포기하는 겁니다.",
         "properNounIndices": []
       },
       {
-        "id": 8,
+        "id": 10,
         "english": "Thinking about opportunity costs helps decision-makers evaluate choices more completely by considering not just what they gain, but what they give up.",
         "korean": "기회비용을 생각하면 의사결정자들이 얻는 것뿐 아니라 포기하는 것도 고려하여 선택을 더 완전하게 평가할 수 있습니다.",
         "properNounIndices": []
       },
       {
-        "id": 9,
+        "id": 11,
         "english": "Using the professor's examples, explain the concept of opportunity cost.",
         "korean": "교수의 예를 사용하여 기회비용의 개념을 설명하세요.",
         "properNounIndices": []
@@ -94,12 +103,12 @@
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "Food and Cooking",
-        "Confirmation Bias",
+        "Classical Conditioning",
         "Opportunity Cost",
-        "Classical Conditioning"
+        "Confirmation Bias",
+        "Food and Cooking"
       ],
-      "answer": 2
+      "answer": 1
     }
   }
 ]

@@ -3,27 +3,33 @@
     "setId": "L1_BTEW_011_set1",
     "parentSetId": "L1_BTEW_011",
     "theme": "Throw one's toys out the pram",
-    "level": 6,
+    "level": 4,
     "setNumber": 1,
     "sentences": [
       {
         "id": 0,
-        "english": "Hello and welcome to The English We Speak, where we explain phrases used by fluent English speakers so that you can use them, too! I'm Feifei, and I'm joined by Georgie.",
-        "korean": "안녕하세요, 유창한 영어 화자들이 쓰는 표현을 설명하는 The English We Speak에 오신 것을 환영합니다! 저는 페이페이이고, 조지와 함께합니다.",
+        "english": "Hello and welcome to The English We Speak, where we explain phrases used by fluent English speakers so that you can use them, too!",
+        "korean": "안녕하세요, 유창한 영어 화자들이 쓰는 표현을 설명하는 The English We Speak에 오신 것을 환영합니다!",
         "properNounIndices": [
           4,
           5,
           6,
           7,
-          15,
-          24,
-          25,
-          27,
-          30
+          15
         ]
       },
       {
         "id": 1,
+        "english": "I'm Feifei, and I'm joined by Georgie.",
+        "korean": "저는 페이페이이고, 조지와 함께합니다.",
+        "properNounIndices": [
+          1,
+          3,
+          6
+        ]
+      },
+      {
+        "id": 2,
         "english": "Hi Feifei! How are things?",
         "korean": "안녕 페이페이! 어떻게 지내?",
         "properNounIndices": [
@@ -32,39 +38,27 @@
         ]
       },
       {
-        "id": 2,
-        "english": "Not too bad, thank you Georgie. How about you?",
-        "korean": "나쁘지 않아, 고마워 조지. 넌 어때?",
-        "properNounIndices": [
-          5,
-          6
-        ]
-      },
-      {
         "id": 3,
-        "english": "Yes, I'm very well thank you. So, in this programme, we're looking at an idiom that reminds me of babies, and that's 'throwing your toys out of the pram' or 'throwing your toys out the pram'.",
-        "korean": "아주 잘 지내, 고마워. 이번 프로그램에서는 아기를 떠올리게 하는 관용구를 다룰 건데, 'throwing your toys out of the pram'이야.",
+        "english": "Not too bad, thank you Georgie.",
+        "korean": "나쁘지 않아, 고마워 조지.",
         "properNounIndices": [
-          1,
-          6
+          5
         ]
       },
       {
         "id": 4,
-        "english": "Feifei, I thought it might be useful to explain the literal meaning of this first.",
-        "korean": "페이페이, 먼저 이 표현의 문자 그대로의 의미를 설명하면 좋을 것 같았어.",
-        "properNounIndices": [
-          1
-        ]
+        "english": "How about you?",
+        "korean": "넌 어때?",
+        "properNounIndices": []
       }
     ],
     "quiz": {
       "question": "What does '과민반응하다' mean in English?",
       "options": [
-        "storm off",
+        "throw your toys out the pram",
         "pram",
         "overreact",
-        "throw your toys out the pram"
+        "storm off"
       ],
       "answer": 2
     }
@@ -78,47 +72,50 @@
     "sentences": [
       {
         "id": 5,
-        "english": "Yes, I think that's a good idea. Well, a pram is something that you put a baby in, it has four wheels and you push it and it is also known as a pushchair.",
-        "korean": "그래, 좋은 생각이야. pram은 아기를 태우는 것으로, 바퀴가 네 개 있고 밀고 다니는 건데, 유모차라고도 불러.",
+        "english": "Yes, I'm very well thank you.",
+        "korean": "아주 잘 지내, 고마워.",
         "properNounIndices": [
-          1,
-          7
+          1
         ]
       },
       {
         "id": 6,
-        "english": "Now, imagine a baby is crying, he or she is really upset and they're throwing their toys out of the pram.",
-        "korean": "자, 아기가 울면서, 정말 화가 나서 유모차 밖으로 장난감을 던지고 있다고 상상해봐.",
+        "english": "So, in this programme, we're looking at an idiom that reminds me of babies, and that's 'throwing your toys out of the pram' or 'throwing your toys out the pram'.",
+        "korean": "이번 프로그램에서는 아기를 떠올리게 하는 관용구를 다룰 건데, 'throwing your toys out of the pram'이야.",
         "properNounIndices": []
       },
       {
         "id": 7,
-        "english": "OK, now if you use the idiom to describe an adult who is throwing their toys out of the pram, it means they are acting in a very childish or dramatic way, especially when they don't get what they want.",
-        "korean": "자, 이 관용구를 어른에 대해 쓰면, 원하는 것을 못 얻었을 때 매우 유치하거나 과장되게 행동한다는 뜻이야.",
-        "properNounIndices": []
+        "english": "Feifei, I thought it might be useful to explain the literal meaning of this first.",
+        "korean": "페이페이, 먼저 이 표현의 문자 그대로의 의미를 설명하면 좋을 것 같았어.",
+        "properNounIndices": [
+          1
+        ]
       },
       {
         "id": 8,
-        "english": "Yes, for example, yesterday we saw a child in the supermarket literally throwing his toys out of the pram, but when we use 'throwing your toys out of the pram' to describe an adult, we don't mean that they're literally throwing the toys out of their pram, we mean that they're acting in a very dramatic way.",
-        "korean": "맞아, 예를 들어 어제 슈퍼마켓에서 아이가 진짜로 유모차에서 장난감을 던지는 걸 봤지만, 어른에 대해 이 표현을 쓸 때는 진짜 장난감을 던진다는 게 아니라 매우 과장되게 행동한다는 뜻이야.",
-        "properNounIndices": []
+        "english": "Yes, I think that's a good idea.",
+        "korean": "그래, 좋은 생각이야.",
+        "properNounIndices": [
+          1
+        ]
       },
       {
         "id": 9,
-        "english": "Let's hear some more examples from our colleagues.",
-        "korean": "동료들의 예시를 더 들어보자.",
+        "english": "Well, a pram is something that you put a baby in, it has four wheels and you push it and it is also known as a pushchair.",
+        "korean": "pram은 아기를 태우는 것으로, 바퀴가 네 개 있고 밀고 다니는 건데, 유모차라고도 불러.",
         "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '화나서 나가버리다' mean in English?",
+      "question": "What does '유치한, 어린아이 같은' mean in English?",
       "options": [
-        "overreact",
         "judgmental",
+        "throw your toys out the pram",
         "storm off",
-        "throw your toys out the pram"
+        "childish"
       ],
-      "answer": 2
+      "answer": 3
     }
   },
   {
@@ -130,75 +127,173 @@
     "sentences": [
       {
         "id": 10,
-        "english": "I worked with an actor last week and during lunchtime we found out that there weren't any ham sandwiches. He threw his toys out the pram and refused to work with us anymore.",
-        "korean": "지난주에 배우와 일했는데 점심시간에 햄 샌드위치가 없다는 걸 알게 됐어. 그는 난리를 치더니 우리와 더 이상 일하기를 거부했어.",
-        "properNounIndices": [
-          0,
-          19
-        ]
+        "english": "Now, imagine a baby is crying, he or she is really upset and they're throwing their toys out of the pram.",
+        "korean": "자, 아기가 울면서, 정말 화가 나서 유모차 밖으로 장난감을 던지고 있다고 상상해봐.",
+        "properNounIndices": []
       },
       {
         "id": 11,
-        "english": "There are some mistakes in Sally's work again, but there's no way I'm telling her! Last time, she just threw her toys out the pram and stormed off and started shouting at everyone.",
-        "korean": "샐리 작업에 또 실수가 있는데, 절대 말 안 할 거야! 지난번에 난리를 치더니 뛰쳐나가서 모두에게 소리를 질렀거든.",
-        "properNounIndices": [
-          5,
-          12,
-          15
-        ]
+        "english": "OK, now if you use the idiom to describe an adult who is throwing their toys out of the pram, it means they are acting in a very childish or dramatic way, especially when they don't get what they want.",
+        "korean": "자, 이 관용구를 어른에 대해 쓰면, 원하는 것을 못 얻었을 때 매우 유치하거나 과장되게 행동한다는 뜻이야.",
+        "properNounIndices": []
       },
       {
         "id": 12,
-        "english": "Well, that's the last time I play him at tennis! He disagreed with the umpire and just totally threw his toys out of the pram - smashed his racket on the floor and just walked off!",
-        "korean": "그 사람이랑 테니스 치는 건 이번이 마지막이야! 심판에게 항의하더니 완전히 난리를 쳤어 — 라켓을 바닥에 내리치고 그냥 가버렸어!",
-        "properNounIndices": [
-          5,
-          10
-        ]
+        "english": "Yes, for example, yesterday we saw a child in the supermarket literally throwing his toys out of the pram, but when we use 'throwing your toys out of the pram' to describe an adult, we don't mean that they're literally throwing the toys out of their pram, we mean that they're acting in a very dramatic way.",
+        "korean": "맞아, 예를 들어 어제 슈퍼마켓에서 아이가 진짜로 유모차에서 장난감을 던지는 걸 봤지만, 어른에 대해 이 표현을 쓸 때는 진짜 장난감을 던진다는 게 아니라 매우 과장되게 행동한다는 뜻이야.",
+        "properNounIndices": []
       },
       {
         "id": 13,
-        "english": "The idiom is mostly used to describe someone else's behaviour. You wouldn't really use it to describe yourself. And it's negative. It's quite a judgmental thing to say, so be careful who you use it about!",
-        "korean": "이 관용구는 주로 다른 사람의 행동을 묘사할 때 써. 자기 자신에 대해서는 잘 안 써. 부정적이고 꽤 비판적인 말이니까 누구에 대해 쓰는지 조심해!",
-        "properNounIndices": [
-          10,
-          18,
-          21
-        ]
+        "english": "Let's hear some more examples from our colleagues.",
+        "korean": "동료들의 예시를 더 들어보자.",
+        "properNounIndices": []
       },
       {
         "id": 14,
-        "english": "Right! It's used when you think someone has overreacted about something. OK, let's recap. 'Throw your toys out the pram' means to react in a dramatic, childish way when you don't get what you want. Thanks for listening!",
-        "korean": "맞아! 누군가 과잉 반응했다고 생각할 때 써. 요약하면, 'throw your toys out the pram'은 원하는 것을 못 얻었을 때 과장되고 유치하게 반응한다는 뜻이야. 들어줘서 고마워!",
+        "english": "I worked with an actor last week and during lunchtime we found out that there weren't any ham sandwiches.",
+        "korean": "지난주에 배우와 일했는데 점심시간에 햄 샌드위치가 없다는 걸 알게 됐어.",
         "properNounIndices": [
-          1,
-          11,
-          14,
-          35
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '유치한, 어린아이 같은' mean in English?",
+      "options": [
+        "storm off",
+        "childish",
+        "throw your toys out the pram",
+        "overreact"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L1_BTEW_011_set4",
+    "parentSetId": "L1_BTEW_011",
+    "theme": "Throw one's toys out the pram",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "He threw his toys out the pram and refused to work with us anymore.",
+        "korean": "그는 난리를 치더니 우리와 더 이상 일하기를 거부했어.",
+        "properNounIndices": []
+      },
+      {
+        "id": 16,
+        "english": "There are some mistakes in Sally's work again, but there's no way I'm telling her!",
+        "korean": "샐리 작업에 또 실수가 있는데, 절대 말 안 할 거야!",
+        "properNounIndices": [
+          5,
+          12
         ]
       },
       {
-        "id": 15,
+        "id": 17,
+        "english": "Last time, she just threw her toys out the pram and stormed off and started shouting at everyone.",
+        "korean": "지난번에 난리를 치더니 뛰쳐나가서 모두에게 소리를 질렀거든.",
+        "properNounIndices": []
+      },
+      {
+        "id": 18,
+        "english": "Well, that's the last time I play him at tennis!",
+        "korean": "그 사람이랑 테니스 치는 건 이번이 마지막이야!",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 19,
+        "english": "He disagreed with the umpire and just totally threw his toys out of the pram - smashed his racket on the floor and just walked off!",
+        "korean": "심판에게 항의하더니 완전히 난리를 쳤어 — 라켓을 바닥에 내리치고 그냥 가버렸어!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '유치한, 어린아이 같은' mean in English?",
+      "options": [
+        "pram",
+        "childish",
+        "judgmental",
+        "storm off"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L1_BTEW_011_set5",
+    "parentSetId": "L1_BTEW_011",
+    "theme": "Throw one's toys out the pram",
+    "level": 5,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "The idiom is mostly used to describe someone else's behaviour.",
+        "korean": "이 관용구는 주로 다른 사람의 행동을 묘사할 때 써.",
+        "properNounIndices": []
+      },
+      {
+        "id": 21,
+        "english": "You wouldn't really use it to describe yourself.",
+        "korean": "자기 자신에 대해서는 잘 안 써.",
+        "properNounIndices": []
+      },
+      {
+        "id": 22,
+        "english": "And it's negative. It's quite a judgmental thing to say, so be careful who you use it about!",
+        "korean": "부정적이고 꽤 비판적인 말이니까 누구에 대해 쓰는지 조심해!",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 23,
+        "english": "Right! It's used when you think someone has overreacted about something.",
+        "korean": "맞아! 누군가 과잉 반응했다고 생각할 때 써.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 24,
+        "english": "OK, let's recap. 'Throw your toys out the pram' means to react in a dramatic, childish way when you don't get what you want.",
+        "korean": "요약하면, 'throw your toys out the pram'은 원하는 것을 못 얻었을 때 과장되고 유치하게 반응한다는 뜻이야.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 25,
+        "english": "Thanks for listening!",
+        "korean": "들어줘서 고마워!",
+        "properNounIndices": []
+      },
+      {
+        "id": 26,
         "english": "Bye!",
         "korean": "안녕!",
         "properNounIndices": []
       },
       {
-        "id": 16,
+        "id": 27,
         "english": "Bye!",
         "korean": "안녕!",
         "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '유치하게 화내다' mean in English?",
+      "question": "What does '비판적인, 판단하는' mean in English?",
       "options": [
-        "throw your toys out the pram",
+        "overreact",
         "childish",
         "pram",
-        "storm off"
+        "judgmental"
       ],
-      "answer": 0
+      "answer": 3
     }
   }
 ]

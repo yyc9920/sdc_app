@@ -1,0 +1,110 @@
+[
+  {
+    "setId": "L3_DLG_034_set1",
+    "parentSetId": "L3_DLG_034",
+    "theme": "Study Group — Exam Prep",
+    "level": 2,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "When is the midterm exam?",
+        "korean": "중간고사가 언제야?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Next Thursday.",
+        "korean": "다음 주 목요일이에요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Do you want to study together?",
+        "korean": "같이 공부할래요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "That would be great.",
+        "korean": "그러면 좋겠어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I'm struggling with chapter five and six.",
+        "korean": "5장이랑 6장이 어려워요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Coworker — Lunch Plans",
+        "Doctor's Office — Annual Checkup",
+        "Study Group — Exam Prep",
+        "Choosing a Movie to Watch"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L3_DLG_034_set2",
+    "parentSetId": "L3_DLG_034",
+    "theme": "Study Group — Exam Prep",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Really? Those are my strongest chapters.",
+        "korean": "진짜요? 그 부분은 나한테 가장 자신 있는 부분인데요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 6,
+        "english": "I can explain them to you if you help me with chapter eight.",
+        "korean": "내가 설명해줄게요. 대신 8장을 도와줘요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 7,
+        "english": "We can meet at the library after class.",
+        "korean": "수업 끝나고 도서관에서 만나요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Should we invite Min-ji too?",
+        "korean": "민지도 부를까요?",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 9,
+        "english": "Good idea. She's really good at making study guides.",
+        "korean": "좋은 생각이에요. 걔 요약 자료 만드는 걸 정말 잘해요.",
+        "properNounIndices": [
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Study Group — Exam Prep",
+        "Neighbor Complaint — Noise",
+        "Moving Company — Getting a Quote",
+        "Asking for Help at a Store"
+      ],
+      "answer": 0
+    }
+  }
+]

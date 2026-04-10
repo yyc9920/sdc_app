@@ -1,0 +1,67 @@
+[
+  {
+    "setId": "L2_DLG_042_set1",
+    "parentSetId": "L2_DLG_042",
+    "theme": "At the Hair Salon",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'd like to get a haircut please.",
+        "korean": "머리를 자르고 싶어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "How much would you like to take off?",
+        "korean": "얼마나 자르시겠어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "About three centimeters and I'd also like to add some layers.",
+        "korean": "약 3센티 정도요. 그리고 레이어도 좀 넣고 싶어요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Would you like to keep your bangs?",
+        "korean": "앞머리는 유지하시겠어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Yes but can you trim them a little?",
+        "korean": "네 그런데 살짝 다듬어주시겠어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Of course. Let me get started.",
+        "korean": "물론이죠. 시작하겠습니다.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Can you also recommend a good shampoo for dry hair?",
+        "korean": "건조한 머리에 좋은 샴푸도 추천해주시겠어요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '머리 자르기' mean in English?",
+      "options": [
+        "haircut",
+        "layers",
+        "trim",
+        "bangs"
+      ],
+      "answer": 0
+    }
+  }
+]

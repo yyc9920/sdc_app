@@ -3,26 +3,32 @@
     "setId": "L2_B6ME_006_set1",
     "parentSetId": "L2_B6ME_006",
     "theme": "The secrets to a healthy old age",
-    "level": 6,
+    "level": 5,
     "setNumber": 1,
     "sentences": [
       {
         "id": 0,
-        "english": "Hello. This is 6 Minute English from BBC Learning English. I'm Phil.",
-        "korean": "안녕하세요. BBC Learning English의 6 Minute English입니다. 저는 필이에요.",
+        "english": "Hello. This is 6 Minute English from BBC Learning English.",
+        "korean": "안녕하세요. BBC Learning English의 6 Minute English입니다.",
         "properNounIndices": [
           1,
           4,
           5,
           7,
           8,
-          9,
-          10,
-          11
+          9
         ]
       },
       {
         "id": 1,
+        "english": "I'm Phil.",
+        "korean": "저는 필이에요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
         "english": "And I'm Beth.",
         "korean": "저는 베스입니다.",
         "properNounIndices": [
@@ -31,35 +37,27 @@
         ]
       },
       {
-        "id": 2,
-        "english": "Grey hairs, wrinkles, and poor eyesight are common signs that our body is growing old. Much as we'd like to, we can't avoid ageing, so it's important to stay healthy as we get older.",
-        "korean": "흰 머리, 주름, 시력 저하는 우리 몸이 늙어가는 흔한 징후입니다.",
-        "properNounIndices": [
-          15
-        ]
-      },
-      {
         "id": 3,
-        "english": "In this programme, we'll be hearing about some new research offering fresh advice on how to stay young at heart, an idiom meaning to keep a youthful outlook on life, whatever your age.",
-        "korean": "이 프로그램에서 젊은 마음을 유지하는 방법에 대한 새로운 연구와 조언을 들어볼 거예요.",
+        "english": "Grey hairs, wrinkles, and poor eyesight are common signs that our body is growing old.",
+        "korean": "흰 머리, 주름, 시력 저하는 우리 몸이 늙어가는 흔한 징후입니다.",
         "properNounIndices": []
       },
       {
         "id": 4,
-        "english": "And, of course, we'll be learning some useful new vocabulary as well.",
-        "korean": "물론 유용한 새 어휘도 배울 거예요.",
+        "english": "Much as we'd like to, we can't avoid ageing, so it's important to stay healthy as we get older.",
+        "korean": "우리 몸이 늙어가는 흔한 징후예요",
         "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '다세대의' mean in English?",
+      "question": "What does '마음이 젊은' mean in English?",
       "options": [
         "young at heart",
         "twin studies",
-        "Mediterranean diet",
-        "multigenerational"
+        "multigenerational",
+        "communal meal"
       ],
-      "answer": 3
+      "answer": 0
     }
   },
   {
@@ -71,6 +69,18 @@
     "sentences": [
       {
         "id": 5,
+        "english": "In this programme, we'll be hearing about some new research offering fresh advice on how to stay young at heart, an idiom meaning to keep a youthful outlook on life, whatever your age.",
+        "korean": "이 프로그램에서 젊은 마음을 유지하는 방법에 대한 새로운 연구와 조언을 들어볼 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "And, of course, we'll be learning some useful new vocabulary as well.",
+        "korean": "물론 유용한 새 어휘도 배울 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
         "english": "But 6 Minute English isn't just about vocabulary – we improve your listening skills as well, so why not turn on the audio subtitles or download the script to read along as you listen?",
         "korean": "6 Minute English는 어휘만 다루는 게 아니에요 — 듣기 실력도 향상시켜줘요.",
         "properNounIndices": [
@@ -79,16 +89,44 @@
         ]
       },
       {
-        "id": 6,
-        "english": "It could also help you answer my question. The oldest recorded person ever to have lived was a woman who was born in 1875, and lived to the ripe old age of 122. But which country was she from?",
-        "korean": "제 질문에 답하는 데도 도움이 될 거예요. 기록상 가장 오래 산 사람은요.",
-        "properNounIndices": [
-          8,
-          33
-        ]
+        "id": 8,
+        "english": "It could also help you answer my question.",
+        "korean": "제 질문에 답하는 데도 도움이 될 거예요.",
+        "properNounIndices": []
       },
       {
-        "id": 7,
+        "id": 9,
+        "english": "The oldest recorded person ever to have lived was a woman who was born in 1875, and lived to the ripe old age of 122.",
+        "korean": "기록상 가장 오래 산 사람은요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '노인학, 노화 연구' mean in English?",
+      "options": [
+        "positive attitude",
+        "multigenerational",
+        "Mediterranean diet",
+        "gerontology"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L2_B6ME_006_set3",
+    "parentSetId": "L2_B6ME_006",
+    "theme": "The secrets to a healthy old age",
+    "level": 5,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "But which country was she from?",
+        "korean": "기록상 가장 오래 산 사람은",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
         "english": "Was it: a) Japan, b) France, or c) Italy?",
         "korean": "a) 일본, b) 프랑스, c) 이탈리아 중 어디일까요?",
         "properNounIndices": [
@@ -98,7 +136,7 @@
         ]
       },
       {
-        "id": 8,
+        "id": 12,
         "english": "I am going to say, Japan.",
         "korean": "일본이라고 할게요.",
         "properNounIndices": [
@@ -107,84 +145,33 @@
         ]
       },
       {
-        "id": 9,
-        "english": "OK, well, we'll find out at the end of the programme. Now, Professor Sarah Harper is an expert in gerontology, the scientific study of ageing, and she works at Oxford University. Here she talks about how our attitude to life affects how well we age:",
-        "korean": "네, 프로그램 끝에서 알아볼게요.",
-        "properNounIndices": [
-          11,
-          12,
-          13,
-          14,
-          29,
-          30,
-          31
-        ]
-      }
-    ],
-    "quiz": {
-      "question": "What does '지중해식 식단' mean in English?",
-      "options": [
-        "young at heart",
-        "positive attitude",
-        "Mediterranean diet",
-        "multigenerational"
-      ],
-      "answer": 2
-    }
-  },
-  {
-    "setId": "L2_B6ME_006_set3",
-    "parentSetId": "L2_B6ME_006",
-    "theme": "The secrets to a healthy old age",
-    "level": 6,
-    "setNumber": 3,
-    "sentences": [
-      {
-        "id": 10,
-        "english": "So there are some things that we can do. One is to remain positive. Having a positive attitude is absolutely key to ageing well.",
-        "korean": "우리가 할 수 있는 것들이 있어요. 하나는 긍정적으로 유지하는 것입니다.",
-        "properNounIndices": [
-          9,
-          14
-        ]
-      },
-      {
-        "id": 11,
-        "english": "So a positive attitude, and there's been some wonderful twin studies that have been done where you've had twins and they have been able to map them across their lives, and if you're positive, you actually have far greater health in later life than if you're negative.",
-        "korean": "긍정적 태도요, 그리고 훌륭한 쌍둥이 연구들이 있었습니다.",
-        "properNounIndices": []
-      },
-      {
-        "id": 12,
-        "english": "One important factor in ageing well is a positive attitude - feeling hopeful, confident, and focused on the good things in life.",
-        "korean": "건강하게 늙는 데 중요한 요소 중 하나는 긍정적 태도입니다.",
-        "properNounIndices": []
-      },
-      {
         "id": 13,
-        "english": "This conclusion was based on several twin studies, scientific research which uses twins to study the roles of genetics and environment in human development.",
-        "korean": "이 결론은 여러 쌍둥이 연구에 기반했습니다.",
+        "english": "OK, well, we'll find out at the end of the programme.",
+        "korean": "네, 프로그램 끝에서 알아볼게요.",
         "properNounIndices": []
       },
       {
         "id": 14,
-        "english": "In studies, Professor Harper found positive twins stayed healthier than negative twins as they aged.",
-        "korean": "연구에서 하퍼 교수는 긍정적인 쌍둥이가 더 건강했다는 걸 발견했습니다.",
+        "english": "Now, Professor Sarah Harper is an expert in gerontology, the scientific study of ageing, and she works at Oxford University.",
+        "korean": "자, 세라 하퍼 교수는 노화의 과학적 연구인 노인학 전문가예요.",
         "properNounIndices": [
+          1,
           2,
-          3
+          3,
+          18,
+          19
         ]
       }
     ],
     "quiz": {
-      "question": "What does '마음이 젊은' mean in English?",
+      "question": "What does '긍정적인 태도' mean in English?",
       "options": [
+        "positive attitude",
         "gerontology",
-        "communal meal",
-        "multigenerational",
-        "young at heart"
+        "young at heart",
+        "multigenerational"
       ],
-      "answer": 3
+      "answer": 0
     }
   },
   {
@@ -196,56 +183,42 @@
     "sentences": [
       {
         "id": 15,
-        "english": "Loneliness can be another problem as we get older. Here, Professor Sarah Harper explains how in countries like Spain, Italy and Greece, regular social interaction helps people age well:",
-        "korean": "외로움은 나이가 들면서 또 다른 문제가 될 수 있습니다.",
-        "properNounIndices": [
-          9,
-          10,
-          11,
-          12,
-          18,
-          19,
-          21
-        ]
+        "english": "Here she talks about how our attitude to life affects how well we age:",
+        "korean": "네 프로그램 끝에서 알아볼게요",
+        "properNounIndices": []
       },
       {
         "id": 16,
-        "english": "Loneliness can have the same impact as smoking in the statistics. And when we talked about the Mediterranean diet, it's also got a lot to do with the way people gather over meals.",
-        "korean": "외로움은 통계적으로 흡연과 같은 영향을 미칠 수 있습니다.",
-        "properNounIndices": [
-          11,
-          17
-        ]
+        "english": "So there are some things that we can do.",
+        "korean": "우리가 할 수 있는 것들이 있어요.",
+        "properNounIndices": []
       },
       {
         "id": 17,
-        "english": "They gather as a communal meal, they gather multigenerationally, old people and young people together, and they have this wonderful social interaction.",
-        "korean": "공동 식사로 모이는데, 다세대가 함께 모입니다.",
+        "english": "One is to remain positive.",
+        "korean": "하나는 긍정적으로 유지하는 것입니다.",
         "properNounIndices": []
       },
       {
         "id": 18,
-        "english": "In some Mediterranean countries, people follow a Mediterranean diet eating fresh vegetables, olive oil and fish.",
-        "korean": "일부 지중해 국가에서는 지중해식 식단을 따릅니다.",
-        "properNounIndices": [
-          2,
-          7
-        ]
+        "english": "Having a positive attitude is absolutely key to ageing well.",
+        "korean": "하나는 긍정적으로 유지하는 거예요",
+        "properNounIndices": []
       },
       {
         "id": 19,
-        "english": "But what's equally important is the social aspect – gathering for communal meals where multiple generations sit down together to talk and share food.",
-        "korean": "동등하게 중요한 건 사회적 측면입니다.",
+        "english": "So a positive attitude, and there's been some wonderful twin studies that have been done where you've had twins and they have been able to map them across their lives, and if you're positive, you actually have far greater health in later life than if you're negative.",
+        "korean": "긍정적 태도요, 그리고 훌륭한 쌍둥이 연구들이 있었습니다.",
         "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '긍정적인 태도' mean in English?",
+      "question": "What does '지중해식 식단' mean in English?",
       "options": [
-        "Mediterranean diet",
-        "gerontology",
+        "communal meal",
+        "positive attitude",
         "multigenerational",
-        "positive attitude"
+        "Mediterranean diet"
       ],
       "answer": 3
     }
@@ -259,55 +232,52 @@
     "sentences": [
       {
         "id": 20,
-        "english": "Professor Harper said that loneliness can be as harmful as smoking, which is why these communal, multigenerational households – homes where people from two or more generations of the same family live together – are so beneficial for health.",
-        "korean": "하퍼 교수는 외로움이 흡연만큼 해로울 수 있다고 했습니다.",
-        "properNounIndices": [
-          1
-        ]
+        "english": "One important factor in ageing well is a positive attitude - feeling hopeful, confident, and focused on the good things in life.",
+        "korean": "건강하게 늙는 데 중요한 요소 중 하나는 긍정적 태도입니다.",
+        "properNounIndices": []
       },
       {
         "id": 21,
-        "english": "Speaking of which, what was the answer to your question, Phil? OK, well, I asked you about the oldest living person ever recorded. I asked what country they came from, and you said Japan.",
-        "korean": "그 얘기가 나왔으니, 답이 뭐였죠?",
-        "properNounIndices": [
-          10,
-          11,
-          13,
-          23,
-          33
-        ]
+        "english": "This conclusion was based on several twin studies, scientific research which uses twins to study the roles of genetics and environment in human development.",
+        "korean": "이 결론은 여러 쌍둥이 연구에 기반했습니다.",
+        "properNounIndices": []
       },
       {
         "id": 22,
-        "english": "Well, I can reveal the answer is actually France. A lady in France lived for 122 years and 164 days.",
-        "korean": "답은 사실 프랑스입니다. 프랑스의 한 여성이 122년 164일을 살았어요.",
+        "english": "In studies, Professor Harper found positive twins stayed healthier than negative twins as they aged.",
+        "korean": "연구에서 하퍼 교수는 긍정적인 쌍둥이가 더 건강했다는 걸 발견했습니다.",
         "properNounIndices": [
-          1,
-          8,
-          9,
-          12
+          2,
+          3
         ]
       },
       {
         "id": 23,
-        "english": "OK, let's recap the new vocabulary we've learned about staying young at heart, an idiom which means to think and behave in a youthful way, in spite of growing older.",
-        "korean": "좋아요, 새 어휘를 정리해볼게요.",
+        "english": "Loneliness can be another problem as we get older.",
+        "korean": "외로움은 나이가 들면서 또 다른 문제가 될 수 있습니다.",
         "properNounIndices": []
       },
       {
         "id": 24,
-        "english": "People with a positive attitude feel hopeful, confident, and focused on the good things in life.",
-        "korean": "긍정적 태도를 가진 사람들은 희망적이고 자신감 있습니다.",
-        "properNounIndices": []
+        "english": "Here, Professor Sarah Harper explains how in countries like Spain, Italy and Greece, regular social interaction helps people age well:",
+        "korean": "외로움은 나이가 들면서 또 다른 문제가 될 수 있어요",
+        "properNounIndices": [
+          1,
+          2,
+          3,
+          9,
+          10,
+          12
+        ]
       }
     ],
     "quiz": {
-      "question": "What does '긍정적인 태도' mean in English?",
+      "question": "What does '지중해식 식단' mean in English?",
       "options": [
-        "multigenerational",
-        "Mediterranean diet",
+        "young at heart",
+        "gerontology",
         "twin studies",
-        "positive attitude"
+        "Mediterranean diet"
       ],
       "answer": 3
     }
@@ -321,12 +291,147 @@
     "sentences": [
       {
         "id": 25,
+        "english": "Loneliness can have the same impact as smoking in the statistics.",
+        "korean": "외로움은 통계적으로 흡연과 같은 영향을 미칠 수 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 26,
+        "english": "And when we talked about the Mediterranean diet, it's also got a lot to do with the way people gather over meals.",
+        "korean": "외로움은 통계적으로 흡연과 같은 영향을 미칠 수 있어요",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 27,
+        "english": "They gather as a communal meal, they gather multigenerationally, old people and young people together, and they have this wonderful social interaction.",
+        "korean": "공동 식사로 모이는데, 다세대가 함께 모입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 28,
+        "english": "In some Mediterranean countries, people follow a Mediterranean diet eating fresh vegetables, olive oil and fish.",
+        "korean": "일부 지중해 국가에서는 지중해식 식단을 따릅니다.",
+        "properNounIndices": [
+          2,
+          7
+        ]
+      },
+      {
+        "id": 29,
+        "english": "But what's equally important is the social aspect – gathering for communal meals where multiple generations sit down together to talk and share food.",
+        "korean": "동등하게 중요한 건 사회적 측면입니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '마음이 젊은' mean in English?",
+      "options": [
+        "Mediterranean diet",
+        "positive attitude",
+        "young at heart",
+        "multigenerational"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_B6ME_006_set7",
+    "parentSetId": "L2_B6ME_006",
+    "theme": "The secrets to a healthy old age",
+    "level": 6,
+    "setNumber": 7,
+    "sentences": [
+      {
+        "id": 30,
+        "english": "Professor Harper said that loneliness can be as harmful as smoking, which is why these communal, multigenerational households – homes where people from two or more generations of the same family live together – are so beneficial for health.",
+        "korean": "하퍼 교수는 외로움이 흡연만큼 해로울 수 있다고 했습니다.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 31,
+        "english": "Speaking of which, what was the answer to your question, Phil?",
+        "korean": "그 얘기가 나왔으니, 답이 뭐였죠?",
+        "properNounIndices": [
+          10
+        ]
+      },
+      {
+        "id": 32,
+        "english": "OK, well, I asked you about the oldest living person ever recorded.",
+        "korean": "자, 기록된 가장 오래 산 사람에 대해 물어봤었죠.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 33,
+        "english": "I asked what country they came from, and you said Japan.",
+        "korean": "그 얘기가 나왔으니 답이 뭐였죠?",
+        "properNounIndices": [
+          0,
+          10
+        ]
+      },
+      {
+        "id": 34,
+        "english": "Well, I can reveal the answer is actually France.",
+        "korean": "답은 사실 프랑스입니다.",
+        "properNounIndices": [
+          1,
+          8
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '쌍둥이 연구' mean in English?",
+      "options": [
+        "Mediterranean diet",
+        "communal meal",
+        "twin studies",
+        "positive attitude"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_B6ME_006_set8",
+    "parentSetId": "L2_B6ME_006",
+    "theme": "The secrets to a healthy old age",
+    "level": 6,
+    "setNumber": 8,
+    "sentences": [
+      {
+        "id": 35,
+        "english": "A lady in France lived for 122 years and 164 days.",
+        "korean": "프랑스의 한 여성이 122년 164일을 살았어요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 36,
+        "english": "OK, let's recap the new vocabulary we've learned about staying young at heart, an idiom which means to think and behave in a youthful way, in spite of growing older.",
+        "korean": "좋아요, 새 어휘를 정리해볼게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 37,
+        "english": "People with a positive attitude feel hopeful, confident, and focused on the good things in life.",
+        "korean": "긍정적 태도를 가진 사람들은 희망적이고 자신감 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 38,
         "english": "Twin studies use twins to investigate the roles of genetics and environment in human development.",
         "korean": "쌍둥이 연구는 쌍둥이를 활용하여 유전과 환경의 역할을 조사합니다.",
         "properNounIndices": []
       },
       {
-        "id": 26,
+        "id": 39,
         "english": "A Mediterranean diet describes the foods typically eaten by people living in countries around the Mediterranean Sea, including fresh vegetables, olive oil and fish.",
         "korean": "지중해식 식단은 지중해 연안 국가 사람들이 전형적으로 먹는 음식을 말합니다.",
         "properNounIndices": [
@@ -334,21 +439,40 @@
           15,
           16
         ]
-      },
+      }
+    ],
+    "quiz": {
+      "question": "What does '지중해식 식단' mean in English?",
+      "options": [
+        "twin studies",
+        "communal meal",
+        "Mediterranean diet",
+        "young at heart"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_B6ME_006_set9",
+    "parentSetId": "L2_B6ME_006",
+    "theme": "The secrets to a healthy old age",
+    "level": 6,
+    "setNumber": 9,
+    "sentences": [
       {
-        "id": 27,
+        "id": 40,
         "english": "At a communal meal, people sit down together to talk and share food.",
         "korean": "공동 식사에서는 사람들이 함께 앉아 대화하고 음식을 나눕니다.",
         "properNounIndices": []
       },
       {
-        "id": 28,
+        "id": 41,
         "english": "And finally, a multigenerational household is when people from two or more generations of the same family live together.",
         "korean": "마지막으로, 다세대 가구는 같은 가족의 2세대 이상이 함께 사는 것입니다.",
         "properNounIndices": []
       },
       {
-        "id": 29,
+        "id": 42,
         "english": "Once again, our six minutes are up, but if you enjoyed this discussion then head over to the BBC Learning English website to find the accompanying worksheet and quiz, along with loads of other programmes and resources to help learn English.",
         "korean": "또다시 6분이 끝났네요.",
         "properNounIndices": [
@@ -359,27 +483,27 @@
         ]
       },
       {
-        "id": 30,
+        "id": 43,
         "english": "See you there!",
         "korean": "거기서 봐요!",
         "properNounIndices": []
       },
       {
-        "id": 31,
+        "id": 44,
         "english": "Bye!",
         "korean": "안녕!",
         "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '노인학, 노화 연구' mean in English?",
+      "question": "What does '다세대의' mean in English?",
       "options": [
-        "gerontology",
+        "Mediterranean diet",
         "multigenerational",
         "positive attitude",
-        "young at heart"
+        "twin studies"
       ],
-      "answer": 0
+      "answer": 1
     }
   }
 ]

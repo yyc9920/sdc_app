@@ -3,26 +3,32 @@
     "setId": "L2_B6ME_011_set1",
     "parentSetId": "L2_B6ME_011",
     "theme": "Tech that refuses to die",
-    "level": 6,
+    "level": 4,
     "setNumber": 1,
     "sentences": [
       {
         "id": 0,
-        "english": "Hello. This is 6 Minute English from BBC Learning English. I'm Phil.",
-        "korean": "안녕하세요. 6 Minute English입니다. 저는 필이에요.",
+        "english": "Hello. This is 6 Minute English from BBC Learning English.",
+        "korean": "안녕하세요. 6 Minute English입니다.",
         "properNounIndices": [
           1,
           4,
           5,
           7,
           8,
-          9,
-          10,
-          11
+          9
         ]
       },
       {
         "id": 1,
+        "english": "I'm Phil.",
+        "korean": "저는 필이에요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 2,
         "english": "And I'm Georgie.",
         "korean": "저는 조지입니다.",
         "properNounIndices": [
@@ -31,44 +37,30 @@
         ]
       },
       {
-        "id": 2,
-        "english": "The exciting thing about technology is that it's always changing. Can you remember when computer floppy disks, hand-held Game Boys, and fax machines were in fashion? Do you still have a Walkman cassette player from the 1980s?",
-        "korean": "기술의 흥미로운 점은 항상 변한다는 거예요.",
-        "properNounIndices": [
-          10,
-          18,
-          19,
-          26,
-          31
-        ]
-      },
-      {
         "id": 3,
-        "english": "Today technology progresses so quickly that old tech soon becomes obsolete, no longer in use having been replaced by something better or more fashionable.",
-        "korean": "오늘날 기술이 너무 빨리 발전해서 오래된 기술은 금방 쓸모없어집니다.",
+        "english": "The exciting thing about technology is that it's always changing.",
+        "korean": "기술의 흥미로운 점은 항상 변한다는 거예요.",
         "properNounIndices": []
       },
       {
         "id": 4,
-        "english": "So, you might be surprised to hear that until recently the government of Japan still used three and-a-half inch floppy disks to store official documents; that around the world, music cassettes and Walkmans are making a comeback; and that even the world-famous Swiss CERN physics laboratory uses old-fashioned magnetic tape reels to record its data.",
-        "korean": "최근까지 일본 정부가 3.5인치 플로피 디스크를 사용했다고 하면 놀라실 수도 있어요.",
+        "english": "Can you remember when computer floppy disks, hand-held Game Boys, and fax machines were in fashion?",
+        "korean": "기술의 흥미로운 점은",
         "properNounIndices": [
-          13,
-          32,
-          42,
-          43
+          8,
+          9
         ]
       }
     ],
     "quiz": {
-      "question": "What does '~을 계속 사용하다' mean in English?",
+      "question": "What does '구식의, 더 이상 쓰이지 않는' mean in English?",
       "options": [
-        "stick with",
         "comeback",
-        "QWERTY",
-        "if it ain't broke, don't fix it"
+        "stick with",
+        "obsolete",
+        "inhospitable"
       ],
-      "answer": 0
+      "answer": 2
     }
   },
   {
@@ -80,6 +72,31 @@
     "sentences": [
       {
         "id": 5,
+        "english": "Do you still have a Walkman cassette player from the 1980s?",
+        "korean": "항상 변한다는 거예요",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Today technology progresses so quickly that old tech soon becomes obsolete, no longer in use having been replaced by something better or more fashionable.",
+        "korean": "오늘날 기술이 너무 빨리 발전해서 오래된 기술은 금방 쓸모없어집니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "So, you might be surprised to hear that until recently the government of Japan still used three and-a-half inch floppy disks to store official documents; that around the world, music cassettes and Walkmans are making a comeback; and that even the world-famous Swiss CERN physics laboratory uses old-fashioned magnetic tape reels to record its data.",
+        "korean": "최근까지 일본 정부가 3.5인치 플로피 디스크를 사용했다고 하면 놀라실 수도 있어요.",
+        "properNounIndices": [
+          13,
+          32,
+          42,
+          43
+        ]
+      },
+      {
+        "id": 8,
         "english": "Yes, it seems that some old technology just refuses to die - maybe because people still love it, or maybe because of the old English idiom, 'if it ain't broke, don't fix it', meaning that if something works, there's no reason to change it.",
         "korean": "일부 오래된 기술은 그냥 사라지지 않는 것 같습니다.",
         "properNounIndices": [
@@ -87,33 +104,92 @@
         ]
       },
       {
-        "id": 6,
-        "english": "That's what we'll be discussing in this programme - whether old technology still has a place in the modern world. And, as usual, we'll be learning some useful new vocabulary.",
+        "id": 9,
+        "english": "That's what we'll be discussing in this programme - whether old technology still has a place in the modern world.",
         "korean": "이 프로그램에서 논의할 내용입니다.",
-        "properNounIndices": [
-          20
-        ]
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '쿼티 (키보드 배열)' mean in English?",
+      "options": [
+        "stick with",
+        "comeback",
+        "clockwork",
+        "QWERTY"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L2_B6ME_011_set3",
+    "parentSetId": "L2_B6ME_011",
+    "theme": "Tech that refuses to die",
+    "level": 5,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "And, as usual, we'll be learning some useful new vocabulary.",
+        "korean": "이 프로그램에서 논의할 내용이에요",
+        "properNounIndices": []
       },
       {
-        "id": 7,
-        "english": "But first, I have a question for you, Georgie. The first home computer was released in the UK in 1980. What was it called? Was it: a) the Amstrad CPC? b) the Commodore 64? or c) the Sinclair ZX80?",
-        "korean": "먼저 질문이 있어요, 조지. 최초의 가정용 컴퓨터가 1980년에 영국에서 출시됐는데요.",
+        "id": 11,
+        "english": "But first, I have a question for you, Georgie.",
+        "korean": "먼저 질문이 있어요, 조지.",
         "properNounIndices": [
           2,
-          8,
-          9,
-          17,
-          20,
-          24,
-          28,
-          29,
-          32,
-          37,
-          38
+          8
         ]
       },
       {
-        "id": 8,
+        "id": 12,
+        "english": "The first home computer was released in the UK in 1980.",
+        "korean": "최초의 가정용 컴퓨터가 1980년에 영국에서 출시됐는데요.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 13,
+        "english": "What was it called?",
+        "korean": "최초의 가정용 컴퓨터가",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "Was it: a) the Amstrad CPC? b) the Commodore 64? or c) the Sinclair ZX80?",
+        "korean": "1980년에 영국에서 출시됐어요",
+        "properNounIndices": [
+          4,
+          5,
+          8,
+          13,
+          14
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '복귀, 재유행' mean in English?",
+      "options": [
+        "clockwork",
+        "obsolete",
+        "if it ain't broke, don't fix it",
+        "comeback"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L2_B6ME_011_set4",
+    "parentSetId": "L2_B6ME_011",
+    "theme": "Tech that refuses to die",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
         "english": "I'm going to guess the Commodore 64.",
         "korean": "코모도어 64로 추측할게요.",
         "properNounIndices": [
@@ -121,32 +197,13 @@
         ]
       },
       {
-        "id": 9,
+        "id": 16,
         "english": "OK, we'll find out the answer later.",
         "korean": "나중에 답을 알아볼게요.",
         "properNounIndices": []
-      }
-    ],
-    "quiz": {
-      "question": "What does '태엽장치의, 태엽으로 움직이는' mean in English?",
-      "options": [
-        "inhospitable",
-        "obsolete",
-        "clockwork",
-        "if it ain't broke, don't fix it"
-      ],
-      "answer": 2
-    }
-  },
-  {
-    "setId": "L2_B6ME_011_set3",
-    "parentSetId": "L2_B6ME_011",
-    "theme": "Tech that refuses to die",
-    "level": 6,
-    "setNumber": 3,
-    "sentences": [
+      },
       {
-        "id": 10,
+        "id": 17,
         "english": "Now, when it comes to old technology refusing to die, it doesn't get much older than NASA's clockwork rover for exploring Venus, a planet with such extreme conditions that ordinary electronics cannot survive there.",
         "korean": "사라지지 않는 오래된 기술이라면, NASA의 태엽식 탐사차보다 오래된 건 별로 없습니다.",
         "properNounIndices": [
@@ -155,7 +212,7 @@
         ]
       },
       {
-        "id": 11,
+        "id": 18,
         "english": "Here, Jonathan Sauder, a mechanical engineer from NASA's Jet Propulsion Lab, explains:",
         "korean": "NASA 제트추진연구소의 기계공학자 조나선 사우더가 설명합니다.",
         "properNounIndices": [
@@ -168,22 +225,46 @@
         ]
       },
       {
-        "id": 12,
-        "english": "Venus is incredibly inhospitable to modern electronics. It's about 460 degrees Celsius at its surface.",
-        "korean": "금성은 현대 전자기기에 믿을 수 없이 열악합니다. 표면이 약 460도예요.",
+        "id": 19,
+        "english": "Venus is incredibly inhospitable to modern electronics.",
+        "korean": "금성은 현대 전자기기에 믿을 수 없이 열악합니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '태엽장치의, 태엽으로 움직이는' mean in English?",
+      "options": [
+        "QWERTY",
+        "if it ain't broke, don't fix it",
+        "inhospitable",
+        "clockwork"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L2_B6ME_011_set5",
+    "parentSetId": "L2_B6ME_011",
+    "theme": "Tech that refuses to die",
+    "level": 6,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "It's about 460 degrees Celsius at its surface.",
+        "korean": "표면이 약 460도예요.",
         "properNounIndices": [
-          7,
-          11
+          4
         ]
       },
       {
-        "id": 13,
+        "id": 21,
         "english": "You have about 90 atmospheres of pressure, and on top of that, it's actually about 60 days long that you're in total darkness.",
         "korean": "약 90기압의 압력이 있고, 게다가 약 60일 동안 완전한 어둠 속입니다.",
         "properNounIndices": []
       },
       {
-        "id": 14,
+        "id": 22,
         "english": "So that's where we came up with the concept for HAR-V: a mechanical clockwork rover that could be powered by Venus's winds in order to allow it to survive Venus's long hot nights.",
         "korean": "그래서 기계식 태엽 탐사차인 HAR-V 개념을 생각해냈습니다.",
         "properNounIndices": [
@@ -191,38 +272,44 @@
           20,
           29
         ]
-      }
-    ],
-    "quiz": {
-      "question": "What does '~을 계속 사용하다' mean in English?",
-      "options": [
-        "inhospitable",
-        "if it ain't broke, don't fix it",
-        "stick with",
-        "obsolete"
-      ],
-      "answer": 2
-    }
-  },
-  {
-    "setId": "L2_B6ME_011_set4",
-    "parentSetId": "L2_B6ME_011",
-    "theme": "Tech that refuses to die",
-    "level": 6,
-    "setNumber": 4,
-    "sentences": [
+      },
       {
-        "id": 15,
-        "english": "Conditions on Venus mean that ordinary electronics simply won't work. That's why Jonathan built a clockwork rover, a machine with springs and wheels inside which works when it's wound up with a key.",
+        "id": 23,
+        "english": "Conditions on Venus mean that ordinary electronics simply won't work.",
         "korean": "금성의 환경은 일반 전자기기가 작동하지 않는다는 뜻입니다.",
         "properNounIndices": [
-          2,
-          10,
-          12
+          2
         ]
       },
       {
-        "id": 16,
+        "id": 24,
+        "english": "That's why Jonathan built a clockwork rover, a machine with springs and wheels inside which works when it's wound up with a key.",
+        "korean": "일반 전자기기가 작동하지 않는다는 뜻이에요",
+        "properNounIndices": [
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '쿼티 (키보드 배열)' mean in English?",
+      "options": [
+        "clockwork",
+        "if it ain't broke, don't fix it",
+        "stick with",
+        "QWERTY"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L2_B6ME_011_set6",
+    "parentSetId": "L2_B6ME_011",
+    "theme": "Tech that refuses to die",
+    "level": 6,
+    "setNumber": 6,
+    "sentences": [
+      {
+        "id": 25,
         "english": "Clockwork technology from the 1st century being used in 2024 by NASA!",
         "korean": "1세기의 태엽 기술이 2024년에 NASA에서 사용되다니!",
         "properNounIndices": [
@@ -230,19 +317,19 @@
         ]
       },
       {
-        "id": 17,
+        "id": 26,
         "english": "Other tech which refuses to die is just too much trouble to change.",
         "korean": "사라지지 않는 다른 기술은 바꾸기에 너무 번거로운 것들입니다.",
         "properNounIndices": []
       },
       {
-        "id": 18,
+        "id": 27,
         "english": "For example, countries around the world use different electrical plugs which would be better to standardise – but imagine the work involved!",
         "korean": "예를 들어, 전 세계 나라마다 다른 전기 플러그를 사용합니다.",
         "properNounIndices": []
       },
       {
-        "id": 19,
+        "id": 28,
         "english": "Here, Chris Vallance, presenter of BBC World Service's, Tech Life, discusses a similar example with Dr Tacye Phillipson, science curator at the National Museum of Scotland:",
         "korean": "BBC 월드 서비스의 크리스 발랜스가 말합니다.",
         "properNounIndices": [
@@ -260,37 +347,42 @@
           23,
           25
         ]
+      },
+      {
+        "id": 29,
+        "english": "Another piece of tech that people say has sort of refused to die is the QWERTY keyboard, which we all use almost every day.",
+        "korean": "사라지지 않는 또 다른 기술은 QWERTY 키보드라고 합니다.",
+        "properNounIndices": [
+          15
+        ]
       }
     ],
     "quiz": {
-      "question": "What does '~을 계속 사용하다' mean in English?",
+      "question": "What does '복귀, 재유행' mean in English?",
       "options": [
-        "stick with",
+        "if it ain't broke, don't fix it",
+        "obsolete",
         "comeback",
-        "QWERTY",
-        "inhospitable"
+        "QWERTY"
       ],
-      "answer": 0
+      "answer": 2
     }
   },
   {
-    "setId": "L2_B6ME_011_set5",
+    "setId": "L2_B6ME_011_set7",
     "parentSetId": "L2_B6ME_011",
     "theme": "Tech that refuses to die",
-    "level": 6,
-    "setNumber": 5,
+    "level": 5,
+    "setNumber": 7,
     "sentences": [
       {
-        "id": 20,
-        "english": "Another piece of tech that people say has sort of refused to die is the QWERTY keyboard, which we all use almost every day. That's also survived hasn't it?",
-        "korean": "사라지지 않는 또 다른 기술은 QWERTY 키보드라고 합니다.",
-        "properNounIndices": [
-          15,
-          24
-        ]
+        "id": 30,
+        "english": "That's also survived hasn't it?",
+        "korean": "QWERTY 키보드라고 해요",
+        "properNounIndices": []
       },
       {
-        "id": 21,
+        "id": 31,
         "english": "Yeah, absolutely – well, I'll stick with QWERTY!",
         "korean": "네 물론이죠 — 저는 QWERTY를 고수할래요!",
         "properNounIndices": [
@@ -299,27 +391,52 @@
         ]
       },
       {
-        "id": 22,
-        "english": "The QWERTY keyboard was designed in the 1870s for typewriters and has been used ever since. Dr Phillipson will stick with QWERTY, she'll continue using it and not change to something else.",
+        "id": 32,
+        "english": "The QWERTY keyboard was designed in the 1870s for typewriters and has been used ever since.",
         "korean": "QWERTY 키보드는 1870년대에 타자기용으로 설계되어 그 이후로 계속 사용되고 있습니다.",
         "properNounIndices": [
-          1,
-          16,
-          17,
-          21
+          1
         ]
       },
       {
-        "id": 23,
+        "id": 33,
+        "english": "Dr Phillipson will stick with QWERTY, she'll continue using it and not change to something else.",
+        "korean": "1870년대에 타자기용으로 설계되어 그 이후로 계속 사용되고 있어요",
+        "properNounIndices": [
+          1,
+          5
+        ]
+      },
+      {
+        "id": 34,
         "english": "And speaking of QWERTY keyboards has reminded me of my question, Georgie.",
         "korean": "QWERTY 키보드 얘기가 제 질문이 생각나게 하네요, 조지.",
         "properNounIndices": [
           3,
           11
         ]
-      },
+      }
+    ],
+    "quiz": {
+      "question": "What does '복귀, 재유행' mean in English?",
+      "options": [
+        "inhospitable",
+        "comeback",
+        "if it ain't broke, don't fix it",
+        "stick with"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L2_B6ME_011_set8",
+    "parentSetId": "L2_B6ME_011",
+    "theme": "Tech that refuses to die",
+    "level": 6,
+    "setNumber": 8,
+    "sentences": [
       {
-        "id": 24,
+        "id": 35,
         "english": "Yes, you asked me the name of the first home computer released in the UK, and I guessed it was the Commodore 64…",
         "korean": "네, 최초의 가정용 컴퓨터 이름을 물었었고, 코모도어 64로 추측했었죠.",
         "properNounIndices": [
@@ -327,58 +444,64 @@
           16,
           21
         ]
-      }
-    ],
-    "quiz": {
-      "question": "What does '쿼티 (키보드 배열)' mean in English?",
-      "options": [
-        "clockwork",
-        "if it ain't broke, don't fix it",
-        "QWERTY",
-        "stick with"
-      ],
-      "answer": 2
-    }
-  },
-  {
-    "setId": "L2_B6ME_011_set6",
-    "parentSetId": "L2_B6ME_011",
-    "theme": "Tech that refuses to die",
-    "level": 6,
-    "setNumber": 6,
-    "sentences": [
+      },
       {
-        "id": 25,
-        "english": "Which was… the wrong answer, I'm afraid. In fact, the UK's first home computer was the Sinclair ZX80 which was released in 1980 and used a whopping 4 kilobyte memory, that's about half an email!",
-        "korean": "틀린 답이에요, 유감이지만. 사실 영국 최초의 가정용 컴퓨터는 싱클레어 ZX80이었습니다.",
+        "id": 36,
+        "english": "Which was… the wrong answer, I'm afraid.",
+        "korean": "틀린 답이에요, 유감이지만.",
         "properNounIndices": [
-          5,
-          7,
-          10,
-          16,
-          17
+          5
         ]
       },
       {
-        "id": 26,
+        "id": 37,
+        "english": "In fact, the UK's first home computer was the Sinclair ZX80 which was released in 1980 and used a whopping 4 kilobyte memory, that's about half an email!",
+        "korean": "사실 영국 최초의 가정용 컴퓨터는 싱클레어 ZX80이었습니다.",
+        "properNounIndices": [
+          3,
+          9,
+          10
+        ]
+      },
+      {
+        "id": 38,
         "english": "OK, it's time to recap the vocabulary we've learned in this programme starting with obsolete, meaning no longer in use, having been replaced by something newer or better.",
         "korean": "어휘를 정리할 시간입니다.",
         "properNounIndices": []
       },
       {
-        "id": 27,
+        "id": 39,
         "english": "The idiom, if it ain't (or isn't) broke, don't fix it, is used to say that if something is working, there is no reason to try to change it.",
         "korean": "관용구 'if it ain't broke, don't fix it'은 작동하고 있으면 고치지 말라는 뜻입니다.",
         "properNounIndices": []
-      },
+      }
+    ],
+    "quiz": {
+      "question": "What does '쿼티 (키보드 배열)' mean in English?",
+      "options": [
+        "obsolete",
+        "if it ain't broke, don't fix it",
+        "QWERTY",
+        "clockwork"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_B6ME_011_set9",
+    "parentSetId": "L2_B6ME_011",
+    "theme": "Tech that refuses to die",
+    "level": 5,
+    "setNumber": 9,
+    "sentences": [
       {
-        "id": 28,
+        "id": 40,
         "english": "Clockwork machinery uses metal springs and wheels which move when they are wound up with a key.",
         "korean": "태엽 기계는 금속 스프링과 톱니바퀴를 사용하며 열쇠로 감으면 움직입니다.",
         "properNounIndices": []
       },
       {
-        "id": 29,
+        "id": 41,
         "english": "QWERTY refers to the traditional typewriter arrangement of keys in which the top line begins with Q-W-E-R-T-Y.",
         "korean": "QWERTY는 전통적인 타자기 키 배열을 가리킵니다.",
         "properNounIndices": [
@@ -386,30 +509,39 @@
         ]
       },
       {
-        "id": 30,
-        "english": "And finally, if you stick with something, you continue to use it and don't change to something else. Once again, our six minutes are up. Bye for now!",
+        "id": 42,
+        "english": "And finally, if you stick with something, you continue to use it and don't change to something else.",
         "korean": "마지막으로, 'stick with'은 계속 사용하고 다른 걸로 바꾸지 않는 것입니다.",
-        "properNounIndices": [
-          18,
-          25
-        ]
+        "properNounIndices": []
       },
       {
-        "id": 31,
+        "id": 43,
+        "english": "Once again, our six minutes are up.",
+        "korean": "'stick with'은.",
+        "properNounIndices": []
+      },
+      {
+        "id": 44,
+        "english": "Bye for now!",
+        "korean": "계속 사용하고 다른 걸로 바꾸지 않는 거예요",
+        "properNounIndices": []
+      },
+      {
+        "id": 45,
         "english": "Bye!",
         "korean": "안녕!",
         "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '쿼티 (키보드 배열)' mean in English?",
+      "question": "What does '~을 계속 사용하다' mean in English?",
       "options": [
         "stick with",
-        "QWERTY",
-        "comeback",
-        "clockwork"
+        "obsolete",
+        "inhospitable",
+        "QWERTY"
       ],
-      "answer": 1
+      "answer": 0
     }
   }
 ]

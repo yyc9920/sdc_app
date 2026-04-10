@@ -1,0 +1,60 @@
+[
+  {
+    "setId": "L1_EXT_041_set1",
+    "parentSetId": "L1_EXT_041",
+    "theme": "My Favorite Singer",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My favorite singer is a K-pop idol.",
+        "korean": "가장 좋아하는 가수는 K-pop 아이돌이에요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I listen to her songs every day on my way to school.",
+        "korean": "매일 학교 가는 길에 그녀의 노래를 들어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "She has a beautiful voice and dances very well.",
+        "korean": "아름다운 목소리를 가지고 있고 춤도 매우 잘 춰요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I went to her concert last year and it was the best night of my life.",
+        "korean": "작년에 콘서트에 갔는데 인생 최고의 밤이었어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I hope I can see her perform again soon.",
+        "korean": "곧 다시 공연을 볼 수 있기를 바라요.",
+        "properNounIndices": [
+          0,
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Supreme Court Oral Arguments",
+        "Washing the Dishes",
+        "My Favorite Singer",
+        "My Favorite Food"
+      ],
+      "answer": 2
+    }
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "setId": "L4_EXT_021_set1",
+    "parentSetId": "L4_EXT_021",
+    "theme": "Decision Fatigue",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Decision fatigue is the deterioration of decision quality after making a long series of choices.",
+        "korean": "결정 피로는 긴 일련의 선택을 한 후 결정 품질이 저하되는 것이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Research shows that judges grant parole more frequently in the morning than in the afternoon simply because their decision-making capacity depletes throughout the day.",
+        "korean": "연구에 따르면 판사들은 오후보다 오전에 더 자주 가석방을 허가한다. 하루 동안 의사결정 능력이 소진되기 때문이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "This is why many successful leaders famously simplify routine decisions — wearing the same outfit daily or eating the same breakfast — to preserve their mental energy for the choices that truly matter.",
+        "korean": "이것이 많은 성공한 리더들이 유명하게 일상적 결정을 단순화하는 이유다. 매일 같은 옷을 입거나 같은 아침을 먹으면서 진정으로 중요한 선택을 위해 정신적 에너지를 보존한다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '저하/악화' mean in English?",
+      "options": [
+        "parole",
+        "deterioration",
+        "deplete",
+        "preserve"
+      ],
+      "answer": 1
+    }
+  }
+]

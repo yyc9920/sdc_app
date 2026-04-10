@@ -1,0 +1,39 @@
+[
+  {
+    "setId": "L2_ELLO_121_set1",
+    "parentSetId": "L2_ELLO_121",
+    "theme": "Mixer #24 — Manners",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Good manners are so important to me, especially saying please and thank you.",
+        "korean": "좋은 매너가 정말 중요해요. 특히 '부탁합니다'와 '감사합니다' 말하기요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "What's considered polite in one country can be rude in another, so traveling teaches you a lot.",
+        "korean": "한 나라에서 예의 바른 것이 다른 나라에서는 무례할 수 있어요. 그래서 여행이 많은 걸 가르쳐줘요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The thing that bothers me most is when people don't hold the door open for the person behind them, it takes zero effort.",
+        "korean": "가장 신경 쓰이는 건 뒤에 오는 사람을 위해 문을 안 잡아주는 거예요. 전혀 힘이 안 드는데요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '예의/매너' mean in English?",
+      "options": [
+        "effort",
+        "manners",
+        "polite",
+        "rude"
+      ],
+      "answer": 1
+    }
+  }
+]

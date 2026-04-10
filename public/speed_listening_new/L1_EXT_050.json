@@ -1,0 +1,55 @@
+[
+  {
+    "setId": "L1_EXT_050_set1",
+    "parentSetId": "L1_EXT_050",
+    "theme": "Making a New Friend",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I met a new friend at the library last week.",
+        "korean": "지난주 도서관에서 새 친구를 만났어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "She was sitting next to me and reading a comic book.",
+        "korean": "내 옆에 앉아서 만화책을 읽고 있었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I noticed we were reading the same series.",
+        "korean": "같은 시리즈를 읽고 있는 걸 알아챘어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "We started talking about our favorite characters.",
+        "korean": "좋아하는 캐릭터에 대해 이야기하기 시작했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "We exchanged phone numbers and now we text every day.",
+        "korean": "전화번호를 교환했고 이제 매일 문자해요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Sociology Seminar — Social Capital",
+        "Making a New Friend",
+        "At the Coffee Shop",
+        "Taking the Subway"
+      ],
+      "answer": 1
+    }
+  }
+]

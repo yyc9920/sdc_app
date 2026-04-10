@@ -1,0 +1,101 @@
+[
+  {
+    "setId": "L1_SPK_039_set1",
+    "parentSetId": "L1_SPK_039",
+    "theme": "The Value of Travel",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Why do you think traveling is valuable?",
+        "korean": "여행이 왜 가치 있다고 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Give specific reasons and examples.",
+        "korean": "구체적인 이유와 예시를 제시하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I believe traveling is one of the most valuable experiences a person can have.",
+        "korean": "여행은 사람이 할 수 있는 가장 가치 있는 경험 중 하나라고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "First it opens your mind to different cultures and ways of life.",
+        "korean": "첫째 다른 문화와 삶의 방식에 마음을 열어줘요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "When I visited Vietnam I realized how much I had taken simple things like clean water for granted.",
+        "korean": "베트남을 방문했을 때 깨끗한 물 같은 간단한 것을 얼마나 당연시 여겼는지 깨달았어요.",
+        "properNounIndices": [
+          1,
+          3,
+          4,
+          8
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "The Value of Travel",
+        "Importance of Sleep",
+        "A Historical Figure You Admire",
+        "An Important Childhood Memory"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L1_SPK_039_set2",
+    "parentSetId": "L1_SPK_039",
+    "theme": "The Value of Travel",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Second travel forces you to step out of your comfort zone.",
+        "korean": "둘째 여행은 안락 지대에서 벗어나게 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Navigating a foreign city where you don't speak the language builds problem-solving skills and self-reliance.",
+        "korean": "언어를 모르는 외국 도시를 헤쳐 나가는 것은 문제 해결 능력과 자립심을 길러줘요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "The memories and lessons from travel stay with you for a lifetime.",
+        "korean": "여행의 추억과 교훈은 평생 함께해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "take for granted",
+        "korean": "당연시하다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "A Hobby You Want to Start",
+        "Privacy vs. Safety",
+        "The Value of Travel",
+        "A Movie That Inspired You"
+      ],
+      "answer": 2
+    }
+  }
+]

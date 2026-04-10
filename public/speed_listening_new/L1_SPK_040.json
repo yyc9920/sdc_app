@@ -1,0 +1,71 @@
+[
+  {
+    "setId": "L1_SPK_040_set1",
+    "parentSetId": "L1_SPK_040",
+    "theme": "Pets and Responsibility",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think having a pet teaches children responsibility?",
+        "korean": "반려동물 키우기가 아이에게 책임감을 가르친다고 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your opinion.",
+        "korean": "의견을 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I absolutely believe that having a pet teaches children valuable lessons about responsibility.",
+        "korean": "반려동물이 아이들에게 책임감에 대한 소중한 교훈을 가르친다고 확실히 믿어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "When a child has to feed walk and care for an animal every day they learn that another living being depends on them.",
+        "korean": "아이가 매일 동물에게 밥을 주고 산책하고 돌봐야 할 때 다른 생명체가 자신에게 의존한다는 걸 배워요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "This is very different from cleaning your room because the consequences of neglect are immediate and visible.",
+        "korean": "방 청소와는 매우 다른데 방치의 결과가 즉각적이고 눈에 보이기 때문이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Also pets teach empathy — children learn to read an animal's emotions and respond to its needs.",
+        "korean": "또한 반려동물은 공감을 가르쳐요 — 아이들이 동물의 감정을 읽고 필요에 응하는 법을 배워요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "These are skills that will serve them well throughout their entire lives.",
+        "korean": "이것은 평생 동안 도움이 될 기술이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "depend on",
+        "korean": "~에 의존하다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "The Best Way to Relieve Stress",
+        "A Historical Figure You Admire",
+        "The Role of Luck in Success",
+        "Pets and Responsibility"
+      ],
+      "answer": 3
+    }
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "setId": "L2_ELLO_106_set1",
+    "parentSetId": "L2_ELLO_106",
+    "theme": "Mixer #39 — Sibling Rivalry",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My older brother and I fought all the time growing up.",
+        "korean": "자라면서 형과 항상 싸웠어요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Now we are really close though.",
+        "korean": "지금은 정말 친하지만요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I'm the middle child, and I always felt invisible between my older and younger sister.",
+        "korean": "셋째인데 언니와 여동생 사이에서 항상 존재감이 없었어요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I'm an only child, so I never experienced sibling rivalry, but I always wished I had a brother or sister.",
+        "korean": "외동이라 형제 경쟁을 경험하지 못했지만 항상 형제자매가 있으면 좋겠다고 생각했어요.",
+        "properNounIndices": [
+          5,
+          11,
+          14
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '외동' mean in English?",
+      "options": [
+        "rivalry",
+        "only child",
+        "middle child",
+        "sibling"
+      ],
+      "answer": 1
+    }
+  }
+]

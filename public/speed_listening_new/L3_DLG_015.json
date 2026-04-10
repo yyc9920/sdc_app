@@ -1,0 +1,113 @@
+[
+  {
+    "setId": "L3_DLG_015_set1",
+    "parentSetId": "L3_DLG_015",
+    "theme": "Insurance — Filing a Claim",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hello, I need to file a claim for a car accident that happened yesterday.",
+        "korean": "안녕하세요, 어제 발생한 교통사고에 대해 보험금 청구를 해야 해요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I'm sorry to hear that.",
+        "korean": "유감이네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Are you okay?",
+        "korean": "괜찮으세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Was anyone injured?",
+        "korean": "다친 사람이 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "No injuries, thankfully, but the front bumper and headlight are damaged.",
+        "korean": "다행히 부상은 없지만 앞 범퍼와 헤드라이트가 손상됐어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '보험 조정관' mean in English?",
+      "options": [
+        "deductible",
+        "out of pocket",
+        "adjuster",
+        "claim"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L3_DLG_015_set2",
+    "parentSetId": "L3_DLG_015",
+    "theme": "Insurance — Filing a Claim",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Did you get a police report?",
+        "korean": "경찰 보고서를 받으셨나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Yes, I have the report number and I also took photos of the damage and the other driver's insurance information.",
+        "korean": "네, 보고서 번호가 있고 손상 사진과 상대 운전자의 보험 정보도 찍었어요.",
+        "properNounIndices": [
+          1,
+          7
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Perfect, that's exactly what we need.",
+        "korean": "완벽해요, 그게 딱 필요한 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "I'll open a claim for you now, and an adjuster will contact you within forty-eight hours to assess the damage.",
+        "korean": "지금 청구를 접수할게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Will I need to pay anything out of pocket?",
+        "korean": "제가 자비로 내야 할 것이 있나요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 10,
+        "english": "Your deductible is five hundred dollars, but since the other driver was at fault their insurance should cover everything.",
+        "korean": "공제액이 500달러인데 상대 운전자 과실이라 그쪽 보험에서 전부 처리될 거예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '공제액/자기부담금' mean in English?",
+      "options": [
+        "at fault",
+        "out of pocket",
+        "deductible",
+        "adjuster"
+      ],
+      "answer": 2
+    }
+  }
+]

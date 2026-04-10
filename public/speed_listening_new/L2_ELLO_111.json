@@ -1,0 +1,44 @@
+[
+  {
+    "setId": "L2_ELLO_111_set1",
+    "parentSetId": "L2_ELLO_111",
+    "theme": "Mixer #34 — Bad Weather",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I hate winter because it gets dark at four PM and it's depressing.",
+        "korean": "겨울이 싫어요. 오후 4시에 어두워지고 우울해서요.",
+        "properNounIndices": [
+          0,
+          9
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Typhoon season in my country is scary, and we had a really bad one last year that flooded the streets.",
+        "korean": "우리나라의 태풍 시즌은 무서워요. 작년에 정말 심한 게 있었고 거리가 침수됐어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I actually love storms, watching lightning from my window is one of my favorite things.",
+        "korean": "사실 폭풍을 좋아해요. 창문에서 번개를 보는 건 가장 좋아하는 것 중 하나예요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '침수하다/홍수' mean in English?",
+      "options": [
+        "flood",
+        "depressing",
+        "lightning",
+        "typhoon"
+      ],
+      "answer": 0
+    }
+  }
+]

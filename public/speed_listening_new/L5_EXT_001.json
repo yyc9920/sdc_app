@@ -16,47 +16,41 @@
       },
       {
         "id": 1,
-        "english": "Let's start with Gottlob Frege, who in 1892 drew a distinction that became foundational. Frege argued that every expression has two components: its sense and its reference.",
+        "english": "Let's start with Gottlob Frege, who in 1892 drew a distinction that became foundational.",
         "korean": "1892년에 근본적 구분을 이끌어낸 고틀로프 프레게부터 시작합시다.",
         "properNounIndices": [
           3,
-          4,
-          14
+          4
         ]
       },
       {
         "id": 2,
-        "english": "The reference is the object in the world that the expression picks out. The sense is the mode of presentation — the way in which the reference is given to us.",
-        "korean": "지시는 표현이 지목하는 세계의 대상이고, 뜻은 그 대상이 제시되는 방식입니다.",
-        "properNounIndices": [
-          13
-        ]
+        "english": "Frege argued that every expression has two components: its sense and its reference.",
+        "korean": "근본적이 된 구분을 이끌어낸 고틀로프 프레게부터 시작합시다",
+        "properNounIndices": []
       },
       {
         "id": 3,
-        "english": "His famous example involves the morning star and the evening star. Both expressions refer to the same object — the planet Venus.",
-        "korean": "유명한 예시는 샛별과 저녁별입니다. 두 표현 모두 같은 대상인 금성을 가리킵니다.",
-        "properNounIndices": [
-          11,
-          21
-        ]
+        "english": "The reference is the object in the world that the expression picks out.",
+        "korean": "지시는 표현이 지목하는 세계의 대상이고, 뜻은 그 대상이 제시되는 방식입니다.",
+        "properNounIndices": []
       },
       {
         "id": 4,
-        "english": "But they clearly don't mean the same thing, because someone could know that the morning star is visible at dawn without knowing that it's the same object as the evening star.",
-        "korean": "하지만 같은 뜻은 분명 아닙니다. 샛별이 새벽에 보인다는 걸 알면서도 그것이 저녁별이기도 하다는 걸 모를 수 있으니까요.",
+        "english": "The sense is the mode of presentation — the way in which the reference is given to us.",
+        "korean": "세계의 대상이에요 뜻은 제시 방식이에요",
         "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '기술주의' mean in English?",
+      "question": "What does '제시 방식' mean in English?",
       "options": [
-        "rigid designator",
         "descriptivism",
-        "thought experiment",
+        "sense vs. reference (Sinn und Bedeutung)",
+        "baptism",
         "mode of presentation"
       ],
-      "answer": 1
+      "answer": 3
     }
   },
   {
@@ -68,75 +62,168 @@
     "sentences": [
       {
         "id": 5,
-        "english": "The sense of each expression is different, even though the reference is identical. Now, this distinction seems intuitive enough. But it leads to some deeply puzzling questions. Consider proper names.",
-        "korean": "각 표현의 뜻은 지시 대상이 동일한데도 다릅니다.",
-        "properNounIndices": [
-          13,
-          19,
-          27
-        ]
+        "english": "His famous example involves the morning star and the evening star.",
+        "korean": "유명한 예시는 샛별과 저녁별입니다.",
+        "properNounIndices": []
       },
       {
         "id": 6,
-        "english": "When I say \"Albert Einstein,\" what is the sense of that name? Is it something like \"the physicist who developed the theory of relativity\"?",
-        "korean": "'앨버트 아인슈타인'이라고 말할 때, 그 이름의 뜻은 뭘까요?",
+        "english": "Both expressions refer to the same object — the planet Venus.",
+        "korean": "두 표현 모두 같은 대상인 금성을 가리킵니다.",
         "properNounIndices": [
-          1,
-          3,
-          4,
-          12
+          10
         ]
       },
       {
         "id": 7,
-        "english": "Frege would say yes — a name carries a descriptive sense that determines its reference. But Saul Kripke, in his 1980 work *Naming and Necessity*, challenged this view forcefully.",
-        "korean": "프레게는 이름이 지시를 결정하는 기술적 뜻을 담고 있다고 했지만, 사울 크립키가 이에 강하게 반박했습니다.",
-        "properNounIndices": [
-          15,
-          16,
-          17,
-          22,
-          24
-        ]
+        "english": "But they clearly don't mean the same thing, because someone could know that the morning star is visible at dawn without knowing that it's the same object as the evening star.",
+        "korean": "하지만 같은 뜻은 분명 아닙니다. 샛별이 새벽에 보인다는 걸 알면서도 그것이 저녁별이기도 하다는 걸 모를 수 있으니까요.",
+        "properNounIndices": []
       },
       {
         "id": 8,
-        "english": "Kripke argued that names are what he called \"rigid designators\" — they refer to the same individual in every possible world, regardless of what descriptions we associate with them.",
-        "korean": "크립키는 이름이 '고정 지시어'라고 주장했습니다 — 모든 가능 세계에서 같은 개인을 지시한다고요.",
+        "english": "The sense of each expression is different, even though the reference is identical.",
+        "korean": "각 표현의 뜻은 지시 대상이 동일한데도 다릅니다.",
         "properNounIndices": []
       },
       {
         "id": 9,
-        "english": "Einstein would still be Einstein even if he had never gone into physics. The descriptions we attach to a name are not what fix its reference. Instead, Kripke proposed a causal theory of reference.",
-        "korean": "아인슈타인은 물리학을 하지 않았더라도 여전히 아인슈타인이었을 겁니다.",
-        "properNounIndices": [
-          4,
-          13,
-          26,
-          27
-        ]
+        "english": "Now, this distinction seems intuitive enough.",
+        "korean": "각 표현의 뜻은 달라요",
+        "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '제시 방식' mean in English?",
+      "question": "What does '(철학) 최초의 명명 행위' mean in English?",
       "options": [
-        "sense vs. reference (Sinn und Bedeutung)",
-        "mode of presentation",
+        "baptism",
         "causal theory of reference",
+        "mode of presentation",
         "thought experiment"
       ],
-      "answer": 1
+      "answer": 0
     }
   },
   {
     "setId": "L5_EXT_001_set3",
     "parentSetId": "L5_EXT_001",
     "theme": "Academic Lecture — The Philosophy of Language",
-    "level": 6,
+    "level": 5,
     "setNumber": 3,
     "sentences": [
       {
         "id": 10,
+        "english": "But it leads to some deeply puzzling questions.",
+        "korean": "하지만 매우 당혹스러운 질문들로 이어져요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "Consider proper names.",
+        "korean": "지시 대상이 동일한데도",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "When I say \"Albert Einstein,\" what is the sense of that name?",
+        "korean": "'앨버트 아인슈타인'이라고 말할 때, 그 이름의 뜻은 뭘까요?",
+        "properNounIndices": [
+          1,
+          3,
+          4
+        ]
+      },
+      {
+        "id": 13,
+        "english": "Is it something like \"the physicist who developed the theory of relativity\"?",
+        "korean": "그 이름의 뜻은 뭘까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "Frege would say yes — a name carries a descriptive sense that determines its reference.",
+        "korean": "프레게는 이름이 지시를 결정하는 기술적 뜻을 담고 있다고 했지만, 사울 크립키가 이에 강하게 반박했습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '(철학) 최초의 명명 행위' mean in English?",
+      "options": [
+        "sense vs. reference (Sinn und Bedeutung)",
+        "baptism",
+        "descriptivism",
+        "thought experiment"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L5_EXT_001_set4",
+    "parentSetId": "L5_EXT_001",
+    "theme": "Academic Lecture — The Philosophy of Language",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "But Saul Kripke, in his 1980 work *Naming and Necessity*, challenged this view forcefully.",
+        "korean": "이름이 기술적 뜻을 담고 있다고 하지만 사울 크립키가 이에 강하게 반박했어요",
+        "properNounIndices": [
+          1,
+          2,
+          7,
+          9
+        ]
+      },
+      {
+        "id": 16,
+        "english": "Kripke argued that names are what he called \"rigid designators\" — they refer to the same individual in every possible world, regardless of what descriptions we associate with them.",
+        "korean": "크립키는 이름이 '고정 지시어'라고 주장했습니다 — 모든 가능 세계에서 같은 개인을 지시한다고요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 17,
+        "english": "Einstein would still be Einstein even if he had never gone into physics.",
+        "korean": "아인슈타인은 물리학을 하지 않았더라도 여전히 아인슈타인이었을 겁니다.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 18,
+        "english": "The descriptions we attach to a name are not what fix its reference.",
+        "korean": "아인슈타인은 여전히 아인슈타인이에요",
+        "properNounIndices": []
+      },
+      {
+        "id": 19,
+        "english": "Instead, Kripke proposed a causal theory of reference.",
+        "korean": "물리학을 하지 않았더라도",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '(철학) 최초의 명명 행위' mean in English?",
+      "options": [
+        "causal theory of reference",
+        "descriptivism",
+        "mode of presentation",
+        "baptism"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L5_EXT_001_set5",
+    "parentSetId": "L5_EXT_001",
+    "theme": "Academic Lecture — The Philosophy of Language",
+    "level": 6,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
         "english": "A name gets its reference through an initial \"baptism\" — someone points at an individual and says, \"This is Albert.\" That reference is then passed along through a chain of communication from speaker to speaker.",
         "korean": "이름은 최초의 '명명식'을 통해 지시를 얻습니다 — 누군가 개인을 가리키며 '이 사람이 앨버트야'라고 말하면서요.",
         "properNounIndices": [
@@ -146,7 +233,7 @@
         ]
       },
       {
-        "id": 11,
+        "id": 21,
         "english": "You don't need to know anything descriptive about Einstein to successfully refer to him; you just need to be connected to the right causal chain.",
         "korean": "아인슈타인에 대해 기술적으로 아무것도 몰라도 성공적으로 그를 지시할 수 있습니다.",
         "properNounIndices": [
@@ -154,23 +241,31 @@
         ]
       },
       {
-        "id": 12,
-        "english": "This debate between descriptivism and the causal theory remains unresolved, and it touches on fundamental questions about how language connects to reality. What gives our words their meaning?",
+        "id": 22,
+        "english": "This debate between descriptivism and the causal theory remains unresolved, and it touches on fundamental questions about how language connects to reality.",
         "korean": "기술주의와 인과 이론 사이의 이 논쟁은 아직 해결되지 않았습니다.",
-        "properNounIndices": [
-          22
-        ]
+        "properNounIndices": []
       },
       {
-        "id": 13,
-        "english": "Is it something in our heads — our concepts, our descriptions? Or is it something out in the world — the causal history that links our utterances to objects?",
-        "korean": "의미는 우리 머릿속에 있는 건가요 — 우리의 개념, 기술? 아니면 세계에 있는 건가요?",
-        "properNounIndices": [
-          11
-        ]
+        "id": 23,
+        "english": "What gives our words their meaning?",
+        "korean": "이 논쟁은 아직 해결되지 않았어요",
+        "properNounIndices": []
       },
       {
-        "id": 14,
+        "id": 24,
+        "english": "Is it something in our heads — our concepts, our descriptions?",
+        "korean": "의미는 우리 머릿속에 있는 건가요 — 우리의 개념, 기술?",
+        "properNounIndices": []
+      },
+      {
+        "id": 25,
+        "english": "Or is it something out in the world — the causal history that links our utterances to objects?",
+        "korean": "아니면 세계에 있는 건가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 26,
         "english": "We'll continue this thread on Thursday by looking at Hilary Putnam's Twin Earth thought experiment, which raises even more radical questions about whether meaning is in the head at all.",
         "korean": "이 논의를 목요일에 힐러리 퍼트남의 쌍둥이 지구 사고 실험을 살펴보며 이어가겠습니다.",
         "properNounIndices": [
@@ -185,12 +280,12 @@
     "quiz": {
       "question": "What does '사고 실험' mean in English?",
       "options": [
-        "baptism",
-        "mode of presentation",
+        "rigid designator",
         "thought experiment",
-        "causal theory of reference"
+        "baptism",
+        "mode of presentation"
       ],
-      "answer": 2
+      "answer": 1
     }
   }
 ]

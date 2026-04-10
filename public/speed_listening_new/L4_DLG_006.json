@@ -1,0 +1,103 @@
+[
+  {
+    "setId": "L4_DLG_006_set1",
+    "parentSetId": "L4_DLG_006",
+    "theme": "Startup — Investor Pitch",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Thank you for your time today.",
+        "korean": "오늘 시간 내주셔서 감사합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I'm here to present our company, FreshBox, which is disrupting the meal delivery industry.",
+        "korean": "식사 배달 산업을 혁신하고 있는 저희 회사 프레시박스를 소개하러 왔습니다.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 2,
+        "english": "What makes you different from existing meal delivery services?",
+        "korean": "기존 식사 배달 서비스와 무엇이 다른가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "We use AI to personalize meal plans based on dietary needs, fitness goals, and taste preferences, and our retention rate is three times the industry average.",
+        "korean": "AI를 사용해 식이 요구 운동 목표 맛 취향에 따라 식단을 개인화하고 유지율이 업계 평균의 3배입니다.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 4,
+        "english": "What's your current revenue, and what are you projecting for next year?",
+        "korean": "현재 매출은 얼마이고 내년 예상치는요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '반복 매출' mean in English?",
+      "options": [
+        "disrupting",
+        "market expansion",
+        "retention rate",
+        "recurring revenue"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L4_DLG_006_set2",
+    "parentSetId": "L4_DLG_006",
+    "theme": "Startup — Investor Pitch",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "We're currently at two million in annual recurring revenue, growing forty percent quarter over quarter, and we're projecting eight million for next year.",
+        "korean": "현재 연간 반복 매출이 200만 달러이고 분기 대비 40% 성장하고 있으며 내년에는 800만 달러를 예상합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Impressive growth. How much are you looking to raise, and how will you use the funds?",
+        "korean": "인상적인 성장이네요. 얼마를 모금하려 하고 자금을 어떻게 사용할 건가요?",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 7,
+        "english": "We're raising five million in Series A.",
+        "korean": "시리즈 A로 500만 달러를 모금합니다.",
+        "properNounIndices": [
+          5,
+          6
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Sixty percent will go toward technology development, and forty percent toward market expansion into three new cities.",
+        "korean": "60%는 기술 개발에 40%는 세 개 새 도시로의 시장 확장에 사용합니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '시리즈 A (투자 라운드)' mean in English?",
+      "options": [
+        "Series A",
+        "recurring revenue",
+        "projecting",
+        "disrupting"
+      ],
+      "answer": 0
+    }
+  }
+]

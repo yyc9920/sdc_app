@@ -1,0 +1,64 @@
+[
+  {
+    "setId": "L4_DLG_032_set1",
+    "parentSetId": "L4_DLG_032",
+    "theme": "Quarterly Business Review",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Let me walk you through the Q1 customer satisfaction results.",
+        "korean": "1분기 고객 만족도 결과를 설명해드리겠습니다.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 1,
+        "english": "How did we do compared to last quarter?",
+        "korean": "지난 분기 대비 어땠나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Our NPS score improved from forty-two to fifty-one which puts us in the excellent category for the first time.",
+        "korean": "NPS 점수가 42에서 51로 향상되어 처음으로 우수 등급에 진입했습니다.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 3,
+        "english": "What drove that improvement?",
+        "korean": "어떤 요인이 개선을 이끌었나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Two things — the new live chat support which reduced average response time from four hours to twelve minutes and the simplified return process.",
+        "korean": "두 가지입니다 — 평균 응답 시간을 4시간에서 12분으로 줄인 새 실시간 채팅 지원과 간소화된 반품 절차입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Excellent work. Let's set a target of sixty for Q2.",
+        "korean": "훌륭합니다. 2분기 목표를 60으로 잡읍시다.",
+        "properNounIndices": [
+          2,
+          9
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '간소화된' mean in English?",
+      "options": [
+        "response time",
+        "simplified",
+        "NPS score",
+        "target"
+      ],
+      "answer": 1
+    }
+  }
+]

@@ -1,0 +1,121 @@
+[
+  {
+    "setId": "L3_DLG_007_set1",
+    "parentSetId": "L3_DLG_007",
+    "theme": "Restaurant — Reservation Problem",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Good evening, I have a reservation for two under the name Kim.",
+        "korean": "좋은 저녁이에요. 킴 이름으로 2명 예약이 있어요.",
+        "properNounIndices": [
+          2,
+          11
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Let me check... I'm sorry, sir, but I don't see a reservation under that name.",
+        "korean": "확인해볼게요... 죄송한데요, 그 이름으로 예약이 안 보여요.",
+        "properNounIndices": [
+          3,
+          7
+        ]
+      },
+      {
+        "id": 2,
+        "english": "That can't be right.",
+        "korean": "그럴 리가 없어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I booked it online three days ago, and I even got a confirmation email.",
+        "korean": "3일 전에 온라인으로 예약했고 확인 이메일까지 받았어요.",
+        "properNounIndices": [
+          0,
+          8
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Could you show me the confirmation?",
+        "korean": "확인 이메일을 보여주실 수 있나요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '확인/확인서' mean in English?",
+      "options": [
+        "fit someone in",
+        "fully booked",
+        "accommodating",
+        "confirmation"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L3_DLG_007_set2",
+    "parentSetId": "L3_DLG_007",
+    "theme": "Restaurant — Reservation Problem",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Sure, here it is on my phone.",
+        "korean": "네, 여기 폰에 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Oh, I see the issue.",
+        "korean": "아, 문제를 알겠어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 7,
+        "english": "The reservation was made for tomorrow night, not tonight.",
+        "korean": "예약이 오늘이 아니라 내일 저녁으로 되어 있네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Oh no. Is there any chance you could fit us in tonight?",
+        "korean": "이런. 오늘 밤에 자리를 내줄 수 있나요?",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 9,
+        "english": "We're fully booked right now, but if you don't mind waiting about thirty minutes there might be a table available.",
+        "korean": "지금 만석인데요. 30분 정도 기다리셔도 괜찮으시면 테이블이 생길 수도 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 10,
+        "english": "We'll wait. Thank you for being so accommodating.",
+        "korean": "기다릴게요. 잘 배려해주셔서 감사합니다.",
+        "properNounIndices": [
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '잘 배려하는/수용적인' mean in English?",
+      "options": [
+        "accommodating",
+        "fully booked",
+        "confirmation",
+        "fit someone in"
+      ],
+      "answer": 0
+    }
+  }
+]

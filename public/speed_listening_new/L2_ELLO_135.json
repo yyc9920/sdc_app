@@ -1,0 +1,54 @@
+[
+  {
+    "setId": "L2_ELLO_135_set1",
+    "parentSetId": "L2_ELLO_135",
+    "theme": "Mixer #10 — Giving Directions",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'm terrible at giving directions, and I always say left when I mean right.",
+        "korean": "길 안내를 잘 못해요. 오른쪽을 말하면서 항상 왼쪽이라고 해요.",
+        "properNounIndices": [
+          6,
+          11
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I give directions using landmarks instead of street names.",
+        "korean": "거리 이름 대신 랜드마크를 사용해서 안내해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "'Turn right at the big tree.' It works every time.",
+        "korean": "'큰 나무에서 우회전' 같이요. 매번 효과가 있어요.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Nobody asks for directions anymore because everyone has GPS, which is actually kind of sad.",
+        "korean": "더 이상 아무도 길을 묻지 않아요. 모두 GPS가 있으니까요. 사실 좀 슬퍼요.",
+        "properNounIndices": [
+          8
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #31 — Classroom Memories",
+        "Mixer #95 — Bucket List",
+        "Mixer #10 — Giving Directions",
+        "Mixer #41 — Keeping Secrets"
+      ],
+      "answer": 2
+    }
+  }
+]

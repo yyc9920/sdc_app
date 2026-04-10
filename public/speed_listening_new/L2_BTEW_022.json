@@ -1,0 +1,63 @@
+[
+  {
+    "setId": "L2_BTEW_022_set1",
+    "parentSetId": "L2_BTEW_022",
+    "theme": "Learn the Hard Way",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The weather seemed fine when I left home, but then it started raining really heavily.",
+        "korean": "집을 나설 때 날씨가 괜찮아 보였는데 비가 아주 세게 내렸어요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I guess I learnt the hard way that you need to have an umbrella if you live in London!",
+        "korean": "런던에 살면 우산이 필요하다는 걸 힘들게 배웠어요!",
+        "properNounIndices": [
+          0,
+          2,
+          18
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Learning something the hard way is a bit like learning from your mistakes.",
+        "korean": "'learn the hard way'는 실수로 배우는 것과 비슷해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "It means something difficult or unpleasant happened to you, so you learn to do something differently.",
+        "korean": "어렵거나 불쾌한 일이 일어나서 다르게 하는 법을 배운다는 뜻이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "learn the hard way",
+        "korean": "(관용구) 힘든 경험을 통해 배우다",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "learn from your mistakes",
+        "korean": "실수에서 배우다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Kick the Can Down the Road",
+        "Learn the Hard Way",
+        "Off the scale",
+        "Give it some welly!"
+      ],
+      "answer": 1
+    }
+  }
+]

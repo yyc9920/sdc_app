@@ -1,0 +1,66 @@
+[
+  {
+    "setId": "L2_ELLO_058_set1",
+    "parentSetId": "L2_ELLO_058",
+    "theme": "Mixer #88 — Patience",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'm not a very patient person.",
+        "korean": "인내심이 많지 않아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I get frustrated easily, especially in traffic.",
+        "korean": "쉽게 짜증이 나요",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I'm pretty patient with people but not with technology.",
+        "korean": "사람에게는 꽤 인내심이 있지만 기술에는 아니에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "When my computer freezes, I want to throw it out the window.",
+        "korean": "컴퓨터가 멈추면 창밖으로 던지고 싶어요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I think I'm very patient, actually.",
+        "korean": "사실 매우 인내심이 있다고 생각해요.",
+        "properNounIndices": [
+          0,
+          2
+        ]
+      },
+      {
+        "id": 5,
+        "english": "I work with children, so you really have to be.",
+        "korean": "아이들과 일하니까 정말 그래야 하거든요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #95 — Bucket List",
+        "Mixer #51 — Cleaning Habits",
+        "Mixer #88 — Patience",
+        "Mixer #15 — Concerts"
+      ],
+      "answer": 2
+    }
+  }
+]

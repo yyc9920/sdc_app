@@ -1,0 +1,45 @@
+[
+  {
+    "setId": "L3_EXT_016_set1",
+    "parentSetId": "L3_EXT_016",
+    "theme": "The Benefits of Bilingualism",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Speaking two or more languages does much more than just help you communicate with a wider range of people — it physically changes the structure of your brain.",
+        "korean": "두 개 이상의 언어를 구사하는 것은 더 다양한 사람들과 소통하는 데 도움을 줄 뿐만 아니라 물리적으로 뇌의 구조를 바꾼다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Studies have found that bilingual individuals have denser gray matter in areas related to language processing, attention, and memory.",
+        "korean": "연구에 따르면 이중 언어 사용자는 언어 처리 주의력 기억과 관련된 영역의 회백질이 더 밀도 높다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Perhaps most remarkably, bilingualism has been shown to delay the onset of dementia by an average of four to five years compared to monolingual speakers.",
+        "korean": "아마 가장 놀랍게도 이중 언어 사용은 단일 언어 사용자에 비해 치매 발병을 평균 4~5년 지연시키는 것으로 나타났다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "The constant mental juggling required to switch between languages strengthens executive function — the set of cognitive skills responsible for planning, focus, and self-control.",
+        "korean": "언어 간 전환에 필요한 끊임없는 정신적 저글링이 실행 기능을 강화한다 — 계획 집중 자기 통제를 담당하는 인지 능력 세트이다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '실행 기능' mean in English?",
+      "options": [
+        "gray matter",
+        "bilingualism",
+        "executive function",
+        "onset"
+      ],
+      "answer": 2
+    }
+  }
+]

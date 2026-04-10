@@ -1,0 +1,69 @@
+[
+  {
+    "setId": "L1_SPK_087_set1",
+    "parentSetId": "L1_SPK_087",
+    "theme": "A Piece of Advice That Changed Your Life",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Describe a piece of advice that had a big impact on your life.",
+        "korean": "삶에 큰 영향을 준 조언을 묘사하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain how it changed you.",
+        "korean": "어떻게 바꿨는지 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The best advice I ever received was from my father who told me to focus on progress not perfection.",
+        "korean": "받은 최고의 조언은 아버지가 완벽이 아닌 발전에 집중하라고 말씀하신 거예요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Before hearing this I was a perfectionist who would abandon projects the moment they weren't perfect.",
+        "korean": "이걸 듣기 전에는 완벽하지 않으면 프로젝트를 바로 포기하는 완벽주의자였어요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 4,
+        "english": "This advice freed me to start things without the paralyzing fear of making mistakes.",
+        "korean": "이 조언이 실수에 대한 마비시키는 두려움 없이 일을 시작할 수 있도록 해방시켜줬어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Now I celebrate small improvements every day and that mindset has helped me achieve far more than perfectionism ever did.",
+        "korean": "이제 매일 작은 발전을 축하하고 그 사고방식이 완벽주의보다 훨씬 더 많은 것을 이루게 해줬어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 6,
+        "english": "progress not perfection",
+        "korean": "완벽이 아닌 발전",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Describe a place outside your actual home where yo",
+        "A Time You Helped Someone",
+        "A Celebration You Enjoyed",
+        "A Piece of Advice That Changed Your Life"
+      ],
+      "answer": 3
+    }
+  }
+]

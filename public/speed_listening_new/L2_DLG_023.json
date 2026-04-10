@@ -1,0 +1,77 @@
+[
+  {
+    "setId": "L2_DLG_023_set1",
+    "parentSetId": "L2_DLG_023",
+    "theme": "Getting a Package Delivered",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I have a delivery for apartment 302.",
+        "korean": "302호로 배달이 왔습니다.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "That's me.",
+        "korean": "저예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Can you sign here please?",
+        "korean": "여기 서명해주시겠어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Sure.",
+        "korean": "네.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Wait there are two boxes but I only ordered one item.",
+        "korean": "잠깐 상자가 두 개인데 저는 하나만 주문했어요.",
+        "properNounIndices": [
+          6
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Let me check the labels.",
+        "korean": "라벨을 확인해볼게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "You're right. This other one is for 304.",
+        "korean": "맞아요. 이 다른 건 304호예요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 7,
+        "english": "No problem. Thanks for checking.",
+        "korean": "괜찮아요. 확인해줘서 고마워요.",
+        "properNounIndices": [
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "At the Shoe Store",
+        "Getting a Package Delivered",
+        "Handling a Client Complaint",
+        "Landlord — Lease Renewal"
+      ],
+      "answer": 1
+    }
+  }
+]

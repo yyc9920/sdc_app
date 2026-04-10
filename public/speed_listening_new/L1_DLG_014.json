@@ -1,0 +1,106 @@
+[
+  {
+    "setId": "L1_DLG_014_set1",
+    "parentSetId": "L1_DLG_014",
+    "theme": "Returning a Book to a Friend",
+    "level": 2,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hey I brought your book back.",
+        "korean": "이봐요 책 가져왔어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Did you like it?",
+        "korean": "재미있었어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I loved it.",
+        "korean": "정말 좋았어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I couldn't stop reading it.",
+        "korean": "읽는 걸 멈출 수가 없었어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I knew you'd like it!",
+        "korean": "좋아할 줄 알았어요!",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Lending a Pencil",
+        "Returning a Book to a Friend",
+        "At the Swimming Pool",
+        "Discussing a Merger"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L1_DLG_014_set2",
+    "parentSetId": "L1_DLG_014",
+    "theme": "Returning a Book to a Friend",
+    "level": 3,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Do you have any other books by the same author?",
+        "korean": "같은 작가의 다른 책 있어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Yes I have two more.",
+        "korean": "네 두 권 더 있어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 7,
+        "english": "I'll bring one tomorrow.",
+        "korean": "내일 하나 가져올게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Thanks! You're the best.",
+        "korean": "고마워요! 최고예요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Asking About Allergies at a Restaurant",
+        "Returning a Library Book Late",
+        "Returning a Book to a Friend",
+        "Talking About a Test"
+      ],
+      "answer": 2
+    }
+  }
+]

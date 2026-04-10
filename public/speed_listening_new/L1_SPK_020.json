@@ -1,0 +1,75 @@
+[
+  {
+    "setId": "L1_SPK_020_set1",
+    "parentSetId": "L1_SPK_020",
+    "theme": "The Best Way to Learn a Language",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "What do you think is the best way to learn a new language?",
+        "korean": "새 언어를 배우는 가장 좋은 방법이 무엇이라 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Give specific reasons.",
+        "korean": "구체적인 이유를 제시하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I believe the most effective way to learn a new language is through immersion.",
+        "korean": "새 언어를 배우는 가장 효과적인 방법은 몰입이라고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "When you're surrounded by the language every day you're forced to use it in real situations.",
+        "korean": "매일 그 언어에 둘러싸여 있으면 실제 상황에서 사용할 수밖에 없어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "This is very different from studying grammar rules in a textbook.",
+        "korean": "이것은 교과서에서 문법 규칙을 공부하는 것과 매우 달라요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "For instance when I spent a summer in Australia my English improved more in three months than it had in three years of classroom study.",
+        "korean": "예를 들어 호주에서 여름을 보냈을 때 교실 수업 3년보다 3개월 만에 영어가 더 많이 향상됐어요.",
+        "properNounIndices": [
+          3,
+          8,
+          10
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Of course not everyone can travel abroad so watching movies and listening to podcasts in the target language is a great alternative.",
+        "korean": "물론 모두가 해외에 갈 수 있는 건 아니므로 목표 언어로 영화를 보고 팟캐스트를 듣는 것이 좋은 대안이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "target language",
+        "korean": "목표 언어",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "The Best Way to Learn a Language",
+        "Multitasking — Effective or Not",
+        "Do you think competition is healthy or harmful for",
+        "Attending a Large vs. Small School"
+      ],
+      "answer": 0
+    }
+  }
+]

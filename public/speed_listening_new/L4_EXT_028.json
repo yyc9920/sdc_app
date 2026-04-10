@@ -1,0 +1,45 @@
+[
+  {
+    "setId": "L4_EXT_028_set1",
+    "parentSetId": "L4_EXT_028",
+    "theme": "The Anchoring Effect",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The anchoring effect is a cognitive bias where the first piece of information we receive about a topic disproportionately influences all subsequent judgments.",
+        "korean": "앵커링 효과는 인지적 편향으로 어떤 주제에 대해 처음 받는 정보가 이후의 모든 판단에 불균형적으로 영향을 미치는 것이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "When a store displays a shirt with an original price tag of two hundred dollars crossed out and a sale price of eighty dollars you perceive the shirt as a bargain.",
+        "korean": "매장이 200달러 정가에 줄이 그어지고 80달러 할인가가 표시된 셔츠를 진열하면 그 셔츠를 할인품으로 인식한다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "But if the same shirt were simply priced at eighty dollars with no reference point you might consider it expensive.",
+        "korean": "하지만 같은 셔츠가 비교 기준 없이 단순히 80달러 가격이라면 비싸다고 생각할 수 있다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Skilled negotiators use anchoring strategically by making the first offer knowing it will frame the entire discussion that follows.",
+        "korean": "숙련된 협상가들은 전략적으로 앵커링을 활용한다. 첫 제안이 이후 전체 논의의 틀을 만든다는 것을 알기에.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '불균형적으로' mean in English?",
+      "options": [
+        "anchoring effect",
+        "reference point",
+        "frame",
+        "disproportionately"
+      ],
+      "answer": 3
+    }
+  }
+]

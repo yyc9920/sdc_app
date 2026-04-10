@@ -1,0 +1,101 @@
+[
+  {
+    "setId": "L1_SPK_094_set1",
+    "parentSetId": "L1_SPK_094",
+    "theme": "Eating Alone vs. with Others",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you prefer eating alone or with other people?",
+        "korean": "혼자 먹는 것과 다른 사람과 먹는 것 중 어느 것을 선호합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your preference.",
+        "korean": "선호를 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I actually enjoy both depending on the situation but if I had to choose I'd prefer eating with others.",
+        "korean": "상황에 따라 둘 다 좋지만 꼭 고르라면 다른 사람과 먹는 것을 선호해요.",
+        "properNounIndices": [
+          0,
+          10,
+          14
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Sharing a meal is one of the oldest ways humans bond with each other.",
+        "korean": "식사를 나누는 것은 인간이 서로 유대를 쌓는 가장 오래된 방법 중 하나예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Some of my best conversations with friends have happened naturally over a casual dinner.",
+        "korean": "친구들과의 최고의 대화 중 일부는 가벼운 저녁 식사 중에 자연스럽게 일어났어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Physical Stores vs. Online Shopping",
+        "A Person Who Has Influenced You",
+        "Eating Alone vs. with Others",
+        "Should Students Work Part-Time"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L1_SPK_094_set2",
+    "parentSetId": "L1_SPK_094",
+    "theme": "Eating Alone vs. with Others",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Also food just tastes better when you're enjoying it with people you care about.",
+        "korean": "또한 소중한 사람들과 함께 즐기면 음식이 그냥 더 맛있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "That said I do appreciate a quiet solo lunch once in a while when I need time to recharge and think.",
+        "korean": "그렇긴 해도 재충전하고 생각할 시간이 필요할 때 가끔 조용한 혼밥도 감사하게 여겨요.",
+        "properNounIndices": [
+          2,
+          14
+        ]
+      },
+      {
+        "id": 7,
+        "english": "once in a while",
+        "korean": "가끔",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "care about",
+        "korean": "소중히 여기다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Eating Alone vs. with Others",
+        "First Impressions — Reliable or Not",
+        "The Future of Education",
+        "Why is empathy important in today's society?"
+      ],
+      "answer": 0
+    }
+  }
+]

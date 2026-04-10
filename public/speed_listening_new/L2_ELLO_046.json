@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L2_ELLO_046_set1",
+    "parentSetId": "L2_ELLO_046",
+    "theme": "Mixer #100 — Pet Peeves",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My biggest pet peeve is when people chew with their mouth open.",
+        "korean": "가장 짜증나는 것은 입을 벌리고 씹는 사람이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "It drives me absolutely crazy.",
+        "korean": "정말 미치겠어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I can't stand it when people are late.",
+        "korean": "사람들이 늦는 게 참을 수 없어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "If we agree on a time, you should be there.",
+        "korean": "시간을 정했으면 거기 있어야 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "People who talk loudly on their phone in public, that really bothers me.",
+        "korean": "공공장소에서 전화를 크게 하는 사람, 정말 짜증나요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Nobody wants to hear your conversation.",
+        "korean": "아무도 당신의 대화를 듣고 싶어 하지 않아요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #40 — Money Habits",
+        "Mixer #91 — Being on Time",
+        "Mixer #16 — Roommates",
+        "Mixer #100 — Pet Peeves"
+      ],
+      "answer": 3
+    }
+  }
+]

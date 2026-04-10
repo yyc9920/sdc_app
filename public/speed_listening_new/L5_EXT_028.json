@@ -1,0 +1,39 @@
+[
+  {
+    "setId": "L5_EXT_028_set1",
+    "parentSetId": "L5_EXT_028",
+    "theme": "The Effective Altruism Debate",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Effective altruism is a philosophical and social movement that applies evidence and reason to determine the most effective ways to benefit others.",
+        "korean": "효과적 이타주의는 다른 사람에게 이익을 주는 가장 효과적인 방법을 결정하기 위해 증거와 이성을 적용하는 철학적 사회적 운동이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Its core argument is provocatively simple — if you can save a child's life by donating ten dollars to a malaria net you are morally obligated to do so.",
+        "korean": "핵심 주장은 도발적으로 간단하다. 말라리아 모기장에 10달러 기부로 아이의 생명을 구할 수 있다면 도덕적으로 그렇게 해야 할 의무가 있다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Critics argue that this purely utilitarian calculus ignores important moral considerations — it treats all suffering as interchangeable, overlooks systemic causes of poverty, and can justify morally troubling actions if they produce a net positive outcome.",
+        "korean": "비판자들은 순전히 공리주의적 계산이 중요한 도덕적 고려를 무시한다고 주장한다. 모든 고통을 교환 가능하게 취급하고 빈곤의 체계적 원인을 간과하며 순 긍정적 결과를 낸다면 도덕적으로 문제가 되는 행동도 정당화할 수 있다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '교환 가능한' mean in English?",
+      "options": [
+        "altruism",
+        "obligated",
+        "systemic",
+        "interchangeable"
+      ],
+      "answer": 3
+    }
+  }
+]

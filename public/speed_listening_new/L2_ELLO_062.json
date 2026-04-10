@@ -1,0 +1,63 @@
+[
+  {
+    "setId": "L2_ELLO_062_set1",
+    "parentSetId": "L2_ELLO_062",
+    "theme": "Mixer #84 — Saving vs Spending",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'm definitely a saver.",
+        "korean": "확실히 저축파예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I put money into my savings account every month without fail.",
+        "korean": "매달 빠짐없이 저축 계좌에 돈을 넣어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I'm a spender, sadly.",
+        "korean": "안타깝지만 쓰는 파예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "As soon as I get paid, the money is gone.",
+        "korean": "월급을 받자마자 돈이 사라져요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I try to find a balance between saving and spending.",
+        "korean": "저축과 소비 사이에 균형을 찾으려 해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "english": "Life is short so you should enjoy it, but also plan for the future.",
+        "korean": "인생은 짧으니 즐겨야 하지만 미래도 대비해야 해요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #2 — Life Lessons",
+        "Mixer #84 — Saving vs Spending",
+        "Mixer #71 — Living Alone",
+        "Mixer #74 — Recycling"
+      ],
+      "answer": 1
+    }
+  }
+]

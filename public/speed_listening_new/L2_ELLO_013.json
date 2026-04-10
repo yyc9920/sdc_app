@@ -1,0 +1,183 @@
+[
+  {
+    "setId": "L2_ELLO_013_set1",
+    "parentSetId": "L2_ELLO_013",
+    "theme": "Mixer #60 — Favorite Animal",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "What is my favorite animal?",
+        "korean": "제가 가장 좋아하는 동물이요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Definitely cats.",
+        "korean": "확실히 고양이예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I had a cat when I was a child.",
+        "korean": "어렸을 때 고양이가 있었어요.",
+        "properNounIndices": [
+          0,
+          5
+        ]
+      },
+      {
+        "id": 3,
+        "english": "He was mostly black with white paws.",
+        "korean": "주로 검은색이었고 발은 하얬어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "He lived to be seventeen years old which is quite old for a cat.",
+        "korean": "17살까지 살았는데 고양이치고는 꽤 오래 산 거예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '~을 돌보다, 보살피다' mean in English?",
+      "options": [
+        "appreciation",
+        "relate to",
+        "look after",
+        "acquire"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_ELLO_013_set2",
+    "parentSetId": "L2_ELLO_013",
+    "theme": "Mixer #60 — Favorite Animal",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "My favorite animal is definitely a dog.",
+        "korean": "제가 가장 좋아하는 동물은 확실히 개예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "I can relate to dogs because I share similar characteristics such as being friendly, lovable, loyal and cute.",
+        "korean": "개에게 공감할 수 있어요. 친절하고 사랑스럽고 충성스럽고 귀여운 비슷한 특성을 공유하거든요.",
+        "properNounIndices": [
+          0,
+          6
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Dogs can do so many things to help make a person feel good.",
+        "korean": "개는 사람을 기분 좋게 하기 위해 정말 많은 걸 할 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "They're such giving animals.",
+        "korean": "정말 베푸는 동물이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "My favorite animal is a cat.",
+        "korean": "제가 가장 좋아하는 동물은 고양이예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '얻다, 획득하다' mean in English?",
+      "options": [
+        "relate to",
+        "characteristics",
+        "acquire",
+        "appreciation"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_ELLO_013_set3",
+    "parentSetId": "L2_ELLO_013",
+    "theme": "Mixer #60 — Favorite Animal",
+    "level": 5,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "Two years ago I acquired a cat.",
+        "korean": "2년 전에 고양이를 데려왔어요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 11,
+        "english": "My favorite animal to live with is a cat.",
+        "korean": "함께 살기에 가장 좋아하는 동물은 고양이예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "They take good care of themselves and they're easy to look after.",
+        "korean": "스스로를 잘 돌보고 보살피기 쉬워요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 13,
+        "english": "I recently saw a movie called The March of the Penguins.",
+        "korean": "최근에 '펭귄의 행진'이라는 영화를 봤어요.",
+        "properNounIndices": [
+          0,
+          6,
+          7,
+          10
+        ]
+      },
+      {
+        "id": 14,
+        "english": "I suddenly have a very big appreciation for penguins.",
+        "korean": "갑자기 펭귄에 대한 큰 감사함이 생겼어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 15,
+        "english": "The animal that I think is most interesting is the wolf.",
+        "korean": "제가 생각하기에 가장 흥미로운 동물은 늑대예요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 16,
+        "english": "I grew up in Minnesota and Minnesota has the only native wolf population in the US.",
+        "korean": "미네소타에서 자랐는데, 미네소타에는 미국에서 유일한 야생 늑대 집단이 있어요.",
+        "properNounIndices": [
+          0,
+          4,
+          6,
+          15
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '~에 공감하다, 관련짓다' mean in English?",
+      "options": [
+        "acquire",
+        "relate to",
+        "look after",
+        "characteristics"
+      ],
+      "answer": 1
+    }
+  }
+]

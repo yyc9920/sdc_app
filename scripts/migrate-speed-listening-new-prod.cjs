@@ -35,6 +35,42 @@ const db = getFirestore();
 
 const INPUT_DIR = path.join(__dirname, '../public/speed_listening_new');
 
+const OBSOLETE_PARENT_SETS = [
+  'L2_TRES_001',
+  'L4_TAL_002',
+  'L4_TED_003',
+  'L4_TED_004',
+];
+
+async function deleteObsoleteSpeedListeningSets() {
+  console.log('--- Deleting Speed Listening sets for obsolete parents ---');
+
+  for (const parentSetId of OBSOLETE_PARENT_SETS) {
+    const snapshot = await db.collection('speed_listening_sets')
+      .where('parentSetId', '==', parentSetId)
+      .get();
+
+    if (snapshot.empty) {
+      console.log(`  ${parentSetId}: no speed listening sets found`);
+      continue;
+    }
+
+    for (const doc of snapshot.docs) {
+      const sentences = await doc.ref.collection('sentences').listDocuments();
+      if (sentences.length > 0) {
+        const batch = db.batch();
+        for (const sentenceDoc of sentences) {
+          batch.delete(sentenceDoc);
+        }
+        await batch.commit();
+      }
+      await doc.ref.delete();
+    }
+
+    console.log(`  Deleted ${snapshot.size} speed listening sets for ${parentSetId}`);
+  }
+}
+
 async function migrate() {
   console.log('=== PRODUCTION: New Speed Listening Migration ===');
   console.log('Target: sdc-app-1d02c (PRODUCTION)\n');
@@ -113,7 +149,12 @@ async function migrate() {
   console.log(`Total sentences: ${totalSentences}`);
 }
 
-migrate().catch(err => {
+async function run() {
+  await deleteObsoleteSpeedListeningSets();
+  await migrate();
+}
+
+run().catch(err => {
   console.error('Migration failed:', err);
   process.exit(1);
 });

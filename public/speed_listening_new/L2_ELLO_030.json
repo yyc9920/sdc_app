@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L2_ELLO_030_set1",
+    "parentSetId": "L2_ELLO_030",
+    "theme": "Mixer #116 — Childhood Memory",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My best childhood memory is going fishing with my grandfather every summer.",
+        "korean": "최고의 어린 시절 기억은 매 여름 할아버지와 낚시 간 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "We would sit by the lake for hours and just talk.",
+        "korean": "호수 옆에 몇 시간이고 앉아서 그냥 이야기했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I remember riding my bike around the neighborhood with my friends after school.",
+        "korean": "학교 끝나고 친구들과 동네를 자전거 타고 다닌 게 기억나요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "We felt so free.",
+        "korean": "너무 자유로웠어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "My favorite memory is building a tree house with my dad.",
+        "korean": "가장 좋아하는 기억은 아빠와 나무 위 오두막을 만든 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "It took us the whole summer, but it was worth it.",
+        "korean": "여름 내내 걸렸지만 그만한 가치가 있었어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #116 — Childhood Memory",
+        "Mixer #18 — Junk Food",
+        "Mixer #3 — Morning Coffee Ritual",
+        "Mixer #148 — Favorite Season"
+      ],
+      "answer": 0
+    }
+  }
+]

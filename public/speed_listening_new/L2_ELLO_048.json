@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L2_ELLO_048_set1",
+    "parentSetId": "L2_ELLO_048",
+    "theme": "Mixer #98 — Moving House",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I've moved five times in the last ten years.",
+        "korean": "지난 10년간 다섯 번 이사했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "I'm so tired of packing and unpacking boxes.",
+        "korean": "짐을 싸고 푸는 게 너무 지겨워요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The worst part about moving is changing your address everywhere.",
+        "korean": "이사에서 가장 안 좋은 부분은 모든 곳의 주소를 바꾸는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "The bank, the hospital, your driver's license — it never ends.",
+        "korean": "은행 병원 운전면허증 — 끝이 없어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I actually enjoy moving.",
+        "korean": "사실 이사를 즐겨요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "english": "It feels like a fresh start every time.",
+        "korean": "매번 새 출발처럼 느껴지거든요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #61 — Secret Talent",
+        "Mixer #82 — Apartment Living",
+        "Mixer #12 — Sleep Routine",
+        "Mixer #98 — Moving House"
+      ],
+      "answer": 3
+    }
+  }
+]

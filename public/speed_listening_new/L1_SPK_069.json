@@ -1,0 +1,96 @@
+[
+  {
+    "setId": "L1_SPK_069_set1",
+    "parentSetId": "L1_SPK_069",
+    "theme": "Learning from Older vs. Younger People",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think people can learn more from older people or from younger people?",
+        "korean": "나이 든 사람과 젊은 사람 중 누구에게 더 배울 수 있다고 생각합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your choice.",
+        "korean": "선택을 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I think we can learn valuable but different things from both older and younger people.",
+        "korean": "나이 든 사람과 젊은 사람 모두에게서 가치 있지만 다른 것을 배울 수 있다고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Older people offer wisdom that comes from decades of experience — they've made mistakes we haven't made yet and can help us avoid them.",
+        "korean": "나이 든 사람은 수십 년 경험에서 오는 지혜를 제공해요 — 우리가 아직 하지 않은 실수를 했고 피하도록 도울 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "On the other hand younger people often have fresh perspectives on technology culture and social change.",
+        "korean": "반면 젊은 사람들은 종종 기술 문화 사회 변화에 대한 신선한 관점을 가지고 있어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Saving Money vs. Enjoying Life Now",
+        "Learning from Failure",
+        "Important Quality in a Friend",
+        "Learning from Older vs. Younger People"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L1_SPK_069_set2",
+    "parentSetId": "L1_SPK_069",
+    "theme": "Learning from Older vs. Younger People",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "My grandmother taught me patience and my younger cousin taught me how to use editing software in ten minutes.",
+        "korean": "할머니는 나에게 인내심을 가르쳐줬고 어린 사촌은 10분 만에 편집 소프트웨어 사용법을 가르쳐줬어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "The key is to stay open to learning from everyone regardless of their age.",
+        "korean": "핵심은 나이에 관계없이 모두에게서 배우는 것에 열린 자세를 유지하는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "stay open to",
+        "korean": "~에 열린 자세를 유지하다",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "regardless of",
+        "korean": "~에 관계없이",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Learning from Older vs. Younger People",
+        "Should Students Work Part-Time",
+        "A Restaurant You Recommend",
+        "Daily Routines — Helpful or Boring"
+      ],
+      "answer": 0
+    }
+  }
+]

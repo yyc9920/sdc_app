@@ -1,0 +1,56 @@
+[
+  {
+    "setId": "L3_B6ME_034_set1",
+    "parentSetId": "L3_B6ME_034",
+    "theme": "How Important Is Play?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "In contrast to pre-made playgrounds, where swings and slides are fixed in place, adventure playgrounds provide pieces of building materials for kids to build things themselves.",
+        "korean": "그네와 미끄럼틀이 고정된 기성 놀이터와 달리, 모험 놀이터는 아이들이 직접 무언가를 만들 수 있도록 건축 자재를 제공해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "It's one hundred percent crucial for their development.",
+        "korean": "아이들의 발달에 100% 중요해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Kids build resiliency, confidence, coping strategies, regulation strategies.",
+        "korean": "회복력, 자신감, 대처 전략, 조절 전략을 쌓아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "So many of the skills that we know lead to healthy human development are developed in play.",
+        "korean": "건강한 인간 발달로 이끄는 많은 기술이 놀이에서 발달해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "The answer to my quiz question is that adventure playgrounds were invented by Danish architect Carl Theodor Sorensen.",
+        "korean": "퀴즈 답은 모험 놀이터가 덴마크 건축가 칼 테오도르 소렌센에 의해 발명되었다는 거예요.",
+        "properNounIndices": [
+          13,
+          15,
+          16,
+          17
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '100% — 완전히 (동의나 강조를 나타냄)' mean in English?",
+      "options": [
+        "coping strategies",
+        "by far",
+        "hidey-hole",
+        "one hundred percent"
+      ],
+      "answer": 3
+    }
+  }
+]

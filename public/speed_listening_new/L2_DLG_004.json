@@ -1,0 +1,105 @@
+[
+  {
+    "setId": "L2_DLG_004_set1",
+    "parentSetId": "L2_DLG_004",
+    "theme": "Checking Into a Gym",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'd like to sign up for a membership.",
+        "korean": "회원 등록을 하고 싶어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Sure, we have monthly and yearly plans.",
+        "korean": "네 월간과 연간 플랜이 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "What's the difference in price?",
+        "korean": "가격 차이가 어떻게 되나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "The monthly plan is fifty dollars per month and the yearly plan is four hundred and eighty dollars.",
+        "korean": "월간은 월 50달러이고 연간은 480달러예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "So I save money with the yearly plan.",
+        "korean": "연간 플랜이 더 절약되네요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '회원권' mean in English?",
+      "options": [
+        "membership",
+        "sign up",
+        "yearly",
+        "group fitness class"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_DLG_004_set2",
+    "parentSetId": "L2_DLG_004",
+    "theme": "Checking Into a Gym",
+    "level": 4,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "That's right.",
+        "korean": "맞아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "You also get free access to group fitness classes like yoga, spinning, and boxing.",
+        "korean": "그룹 피트니스 수업도 무료로 이용할 수 있어요. 요가 스피닝 복싱 같은 거요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "That sounds great.",
+        "korean": "좋네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "I'll go with the yearly plan then.",
+        "korean": "그럼 연간 플랜으로 할게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "I just need your ID and we can get you started right away.",
+        "korean": "신분증만 있으면 바로 시작할 수 있어요.",
+        "properNounIndices": [
+          0,
+          4
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '회원권' mean in English?",
+      "options": [
+        "sign up",
+        "membership",
+        "group fitness class",
+        "yearly"
+      ],
+      "answer": 1
+    }
+  }
+]

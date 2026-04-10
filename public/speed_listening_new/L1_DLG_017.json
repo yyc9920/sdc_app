@@ -1,0 +1,65 @@
+[
+  {
+    "setId": "L1_DLG_017_set1",
+    "parentSetId": "L1_DLG_017",
+    "theme": "At the Stationery Store",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I need a notebook for school.",
+        "korean": "학교용 노트가 필요해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "What kind do you need?",
+        "korean": "어떤 종류가 필요하세요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "A lined notebook with about a hundred pages.",
+        "korean": "줄이 있는 노트로 100페이지 정도요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "We have this one for two dollars and this bigger one for three fifty.",
+        "korean": "이건 2달러이고 이 큰 건 3달러 50센트예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I'll take the bigger one.",
+        "korean": "큰 걸로 할게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Do you also sell erasers?",
+        "korean": "지우개도 파나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Yes they're right over here.",
+        "korean": "네 바로 여기 있어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Booking a Hotel Room",
+        "Calling a Friend",
+        "At the Stationery Store",
+        "Pharmacy — Prescription Pickup"
+      ],
+      "answer": 2
+    }
+  }
+]

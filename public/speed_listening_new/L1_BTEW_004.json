@@ -3,27 +3,33 @@
     "setId": "L1_BTEW_004_set1",
     "parentSetId": "L1_BTEW_004",
     "theme": "In my travel era",
-    "level": 6,
+    "level": 5,
     "setNumber": 1,
     "sentences": [
       {
         "id": 0,
-        "english": "Hello and welcome to The English We Speak, where we explain phrases used by fluent English speakers so that you can use them as well. I'm Feifei, and I'm joined by Beth.",
+        "english": "Hello and welcome to The English We Speak, where we explain phrases used by fluent English speakers so that you can use them as well.",
         "korean": "안녕하세요.",
         "properNounIndices": [
           4,
           5,
           6,
           7,
-          15,
-          25,
-          26,
-          28,
-          31
+          15
         ]
       },
       {
         "id": 1,
+        "english": "I'm Feifei, and I'm joined by Beth.",
+        "korean": "저는 페이페이이고 베스와 함께합니다.",
+        "properNounIndices": [
+          1,
+          3,
+          6
+        ]
+      },
+      {
+        "id": 2,
         "english": "Hi Feifei, how are you?",
         "korean": "안녕하세요.",
         "properNounIndices": [
@@ -31,39 +37,29 @@
         ]
       },
       {
-        "id": 2,
-        "english": "I'm very well, thank you, Beth. So, I saw an interesting expression online the other day. It's 'in my travel era'. It's a very creative expression, isn't it?",
-        "korean": "온라인에서 흥미로운 표현을 봤습니다.",
-        "properNounIndices": [
-          5,
-          6,
-          7,
-          16,
-          21
-        ]
-      },
-      {
         "id": 3,
-        "english": "I've also seen 'in my gothic literature era', 'in my sporty era', things like that. Beth, what does it mean?",
+        "english": "I'm very well, thank you, Beth.",
         "korean": "온라인에서 흥미로운 표현을 봤습니다.",
         "properNounIndices": [
-          15
+          5
         ]
       },
       {
         "id": 4,
-        "english": "Well, people use it to describe the main thing that they are focussed on at the moment.",
-        "korean": "현재 초점을 맞추고 있는 주요 것을 설명합니다.",
-        "properNounIndices": []
+        "english": "So, I saw an interesting expression online the other day.",
+        "korean": "그래서 저는 요즘 온라인에서 흥미로운 표현을 봤습니다.",
+        "properNounIndices": [
+          1
+        ]
       }
     ],
     "quiz": {
-      "question": "What does '사진이나 비디오에 곁에 붙이는 짧은 텍스트' mean in English?",
+      "question": "What does '새로운 아이디어를 만들어내는' mean in English?",
       "options": [
-        "social media",
+        "be into something",
+        "creative",
         "caption",
-        "in my … era",
-        "upload"
+        "social media"
       ],
       "answer": 1
     }
@@ -72,11 +68,60 @@
     "setId": "L1_BTEW_004_set2",
     "parentSetId": "L1_BTEW_004",
     "theme": "In my travel era",
-    "level": 6,
+    "level": 5,
     "setNumber": 2,
     "sentences": [
       {
         "id": 5,
+        "english": "It's 'in my travel era'.",
+        "korean": "'여행 시대'라는 표현입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "It's a very creative expression, isn't it?",
+        "korean": "아주 창의적인 표현이지 않나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "I've also seen 'in my gothic literature era', 'in my sporty era', things like that.",
+        "korean": "온라인에서 흥미로운 표현을 봤습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "Beth, what does it mean?",
+        "korean": "베스, 그게 무슨 뜻인가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Well, people use it to describe the main thing that they are focussed on at the moment.",
+        "korean": "현재 초점을 맞추고 있는 주요 것을 설명합니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '새로운 아이디어를 만들어내는' mean in English?",
+      "options": [
+        "creative",
+        "social media",
+        "be into something",
+        "in my … era"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L1_BTEW_004_set3",
+    "parentSetId": "L1_BTEW_004",
+    "theme": "In my travel era",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
         "english": "So, for example, if you saw 'in my travel era', well, if you're travelling for a few months and upload pictures as you travel, then you might write this caption – 'I'm in my travel era'.",
         "korean": "현재 초점을 맞추고 있는 주요 것을 설명합니다.",
         "properNounIndices": [
@@ -84,22 +129,50 @@
         ]
       },
       {
-        "id": 6,
+        "id": 11,
         "english": "It's really common to see it online, but people do say it as well.",
         "korean": "현재 초점을 맞추고 있는 주요 것을 설명합니다.",
         "properNounIndices": []
       },
       {
-        "id": 7,
-        "english": "So it's a fun and creative way of saying you're really into something in a particular period of life. It could be for a short time, or a longer time. Let's hear some examples.",
+        "id": 12,
+        "english": "So it's a fun and creative way of saying you're really into something in a particular period of life.",
         "korean": "재미있고 창의적인 표현입니다.",
-        "properNounIndices": [
-          19,
-          30
-        ]
+        "properNounIndices": []
       },
       {
-        "id": 8,
+        "id": 13,
+        "english": "It could be for a short time, or a longer time.",
+        "korean": "짧은 시간이나 더 긴 시간이 될 수 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "Let's hear some examples.",
+        "korean": "몇 가지 예를 들어봅시다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '사진이나 비디오에 곁에 붙이는 짧은 텍스트' mean in English?",
+      "options": [
+        "social media",
+        "be into something",
+        "upload",
+        "caption"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L1_BTEW_004_set4",
+    "parentSetId": "L1_BTEW_004",
+    "theme": "In my travel era",
+    "level": 6,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
         "english": "So, it's a way of saying, 'This is what I'm really into right now.' It's become very popular, especially on social media.",
         "korean": "소셜 미디어에서 매우 인기입니다.",
         "properNounIndices": [
@@ -109,20 +182,26 @@
         ]
       },
       {
-        "id": 9,
-        "english": "It's one of those expressions that started online and has now become part of everyday English. And, Beth, I think I'm in my podcast era — I've been listening to so many recently!",
+        "id": 16,
+        "english": "It's one of those expressions that started online and has now become part of everyday English.",
         "korean": "팟캐스트 시대에 있습니다.",
         "properNounIndices": [
-          15,
-          16,
-          17,
-          18,
-          20,
-          26
+          15
         ]
       },
       {
-        "id": 10,
+        "id": 17,
+        "english": "And, Beth, I think I'm in my podcast era — I've been listening to so many recently!",
+        "korean": "그리고 베스, 저는 팟캐스트 시대에 있다고 생각합니다 — 최근에 많이 들었습니다!",
+        "properNounIndices": [
+          1,
+          2,
+          4,
+          10
+        ]
+      },
+      {
+        "id": 18,
         "english": "That's great! Well, bye everyone!",
         "korean": "안녕하세요!",
         "properNounIndices": [
@@ -130,21 +209,21 @@
         ]
       },
       {
-        "id": 11,
+        "id": 19,
         "english": "Bye!",
         "korean": "안녕!",
         "properNounIndices": []
       }
     ],
     "quiz": {
-      "question": "What does '무언가에 깊은 관심을 가지다' mean in English?",
+      "question": "What does '인터넷에 파일이나 정보를 올리다' mean in English?",
       "options": [
-        "in my … era",
         "be into something",
-        "upload",
-        "caption"
+        "social media",
+        "in my … era",
+        "upload"
       ],
-      "answer": 1
+      "answer": 3
     }
   }
 ]

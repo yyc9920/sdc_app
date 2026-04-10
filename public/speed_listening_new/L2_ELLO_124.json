@@ -1,0 +1,49 @@
+[
+  {
+    "setId": "L2_ELLO_124_set1",
+    "parentSetId": "L2_ELLO_124",
+    "theme": "Mixer #21 — Handshake vs Bow",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "In Japan, we bow instead of shaking hands.",
+        "korean": "일본에서는 악수 대신 인사를 해요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "The deeper the bow, the more respect you are showing.",
+        "korean": "더 깊이 숙일수록 더 많은 존경을 보이는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "In my country, we greet with a kiss on each cheek, even people we just met.",
+        "korean": "우리나라에서는 양 볼에 키스로 인사해요. 처음 만난 사람에게도요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "A firm handshake is really important in business in the West, because a weak handshake gives a bad impression.",
+        "korean": "서양 비즈니스에서 단단한 악수가 정말 중요해요. 약한 악수는 나쁜 인상을 주거든요.",
+        "properNounIndices": [
+          10
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '악수' mean in English?",
+      "options": [
+        "handshake",
+        "greet",
+        "bow",
+        "firm"
+      ],
+      "answer": 0
+    }
+  }
+]

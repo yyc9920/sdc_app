@@ -1,0 +1,113 @@
+[
+  {
+    "setId": "L2_ELLO_020_set1",
+    "parentSetId": "L2_ELLO_020",
+    "theme": "Mixer #146 — Cheating on Tests",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Oh, no. I never tried.",
+        "korean": "아니요, 시도한 적 없어요. 컨닝하느니 차라리 시험에 떨어지겠어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I'd rather fail the test than try to cheat.",
+        "korean": "편하지 않을 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I wouldn't feel comfortable.",
+        "korean": "/ 편하지 않을 거예요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I would never cheat on a test.",
+        "korean": "시험에서 절대 컨닝 안 해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "If you put a little bit of effort into it, it's not that difficult.",
+        "korean": "조금만 노력하면 그렇게 어렵지 않거든요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #102 — Superstitions",
+        "Mixer #146 — Cheating on Tests",
+        "Mixer #74 — Recycling",
+        "Mixer #26 — Weekend Cooking"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L2_ELLO_020_set2",
+    "parentSetId": "L2_ELLO_020",
+    "theme": "Mixer #146 — Cheating on Tests",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "I have tried to cheat.",
+        "korean": "컨닝을 시도한 적 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 6,
+        "english": "I collaborated with a friend and we decided to write the vocabulary words on the palm of our hands.",
+        "korean": "친구와 협력해서 손바닥에 단어를 적기로 했는데, 곧 선생님에게 발각돼서 벌을 받았어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 7,
+        "english": "We were soon found out by the teacher and punished accordingly.",
+        "korean": "/ 곧 선생님에게 발각돼 그에 따라 벌을 받았다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "I've never tried to cheat on a test.",
+        "korean": "시험에서 컨닝을 시도한 적 없어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "I have dreamt about doing it a lot, but I'm always just a little bit too afraid of getting caught.",
+        "korean": "많이 꿈꿔봤지만 항상 들킬까 봐 좀 무서워요.",
+        "properNounIndices": [
+          0,
+          9
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #65 — Dieting",
+        "Mixer #146 — Cheating on Tests",
+        "Mixer #88 — Patience",
+        "Mixer #60 — Favorite Animal"
+      ],
+      "answer": 1
+    }
+  }
+]

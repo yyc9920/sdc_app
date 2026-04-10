@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L2_ELLO_131_set1",
+    "parentSetId": "L2_ELLO_131",
+    "theme": "Mixer #14 — Side Hustle",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I sell handmade jewelry online as a side hustle.",
+        "korean": "부업으로 온라인에서 수제 보석을 팔아요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "It doesn't make much but it's fun.",
+        "korean": "많이 벌진 못하지만 재미있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I tutor kids in math on weekends for extra money.",
+        "korean": "주말에 추가 수입을 위해 아이들에게 수학을 가르쳐요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "It's rewarding and I earn enough to cover my rent.",
+        "korean": "보람차고 집세를 충당할 만큼 벌어요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I drive for a ride-sharing app after work, but it's exhausting doing two jobs.",
+        "korean": "퇴근 후 차량 공유 앱 운전을 해요. 하지만 두 개의 일을 하는 건 지치는 일이에요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #19 — Language Barriers",
+        "Mixer #14 — Side Hustle",
+        "Mixer #7 — Jet Lag",
+        "Mixer #63 — Technology Problems"
+      ],
+      "answer": 1
+    }
+  }
+]

@@ -1,0 +1,75 @@
+[
+  {
+    "setId": "L2_ELLO_054_set1",
+    "parentSetId": "L2_ELLO_054",
+    "theme": "Mixer #92 — Collecting Things",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I collect vinyl records from the sixties and seventies.",
+        "korean": "60~70년대 LP판을 수집해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I have over three hundred albums now.",
+        "korean": "지금 300장 넘게 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I collect stamps, which I know sounds old-fashioned.",
+        "korean": "우표를 수집해요.",
+        "properNounIndices": [
+          0,
+          4
+        ]
+      },
+      {
+        "id": 3,
+        "english": "But every stamp tells a story about a place or event.",
+        "korean": "구식으로 들리는 건 알지만 모든 우표에는 장소나 사건에 대한 이야기가 있거든요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I collect sneakers.",
+        "korean": "운동화를 수집해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "english": "I have about forty pairs and I almost never wear them.",
+        "korean": "약 40켤레 있고 거의 신지 않아요.",
+        "properNounIndices": [
+          0,
+          6
+        ]
+      },
+      {
+        "id": 6,
+        "english": "They just sit in boxes.",
+        "korean": "그냥 상자에 있어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #92 — Collecting Things",
+        "Mixer #9 — Compliments",
+        "Mixer #77 — Traffic Problems",
+        "Mixer #48 — Hometown Changes"
+      ],
+      "answer": 0
+    }
+  }
+]

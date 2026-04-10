@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L2_ELLO_038_set1",
+    "parentSetId": "L2_ELLO_038",
+    "theme": "Mixer #108 — Neighbors",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'm lucky because my neighbors are really quiet and friendly.",
+        "korean": "운이 좋게도 이웃이 정말 조용하고 친절해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "We sometimes share food and help each other out.",
+        "korean": "가끔 음식을 나누고 서로 도와요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "My upstairs neighbor is so noisy.",
+        "korean": "위층 이웃이 너무 시끄러워요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "He plays loud music at night and it drives me crazy.",
+        "korean": "밤에 큰 음악을 틀어서 미칠 것 같아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I don't really know my neighbors, to be honest.",
+        "korean": "솔직히 이웃을 잘 몰라요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "english": "We just say hello in the hallway and that's about it.",
+        "korean": "복도에서 인사하는 게 전부예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #108 — Neighbors",
+        "Mixer #19 — Language Barriers",
+        "Mixer #36 — Comfort Food",
+        "Mixer #19 — Travel Wish List"
+      ],
+      "answer": 0
+    }
+  }
+]

@@ -1,0 +1,55 @@
+[
+  {
+    "setId": "L2_ELLO_119_set1",
+    "parentSetId": "L2_ELLO_119",
+    "theme": "Mixer #26 — Weekend Cooking",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I cook a big meal every Sunday for my family.",
+        "korean": "매주 일요일 가족을 위해 큰 식사를 만들어요.",
+        "properNounIndices": [
+          0,
+          6
+        ]
+      },
+      {
+        "id": 1,
+        "english": "It's our tradition and everyone comes over.",
+        "korean": "우리의 전통이고 모두 모여요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I meal prep on Sundays for the whole week, which saves me so much time during busy weekdays.",
+        "korean": "일요일에 일주일치 식사를 미리 준비해요. 바쁜 평일에 시간이 많이 절약돼요.",
+        "properNounIndices": [
+          0,
+          4
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I only cook on weekends because I'm too tired after work, and during the week I just eat takeout.",
+        "korean": "퇴근 후 너무 피곤해서 주말에만 요리하고 주중에는 포장 음식만 먹어요.",
+        "properNounIndices": [
+          0,
+          6,
+          15
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #26 — Weekend Cooking",
+        "Mixer #69 — Volunteering",
+        "Mixer #114 — Weekend Plans",
+        "Mixer #63 — Technology Problems"
+      ],
+      "answer": 0
+    }
+  }
+]

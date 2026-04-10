@@ -1,0 +1,57 @@
+[
+  {
+    "setId": "L1_EXT_087_set1",
+    "parentSetId": "L1_EXT_087",
+    "theme": "My Favorite TV Show",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My favorite TV show is a cartoon about animals.",
+        "korean": "가장 좋아하는 TV 프로는 동물에 관한 만화예요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 1,
+        "english": "It comes on every Saturday morning at nine.",
+        "korean": "매주 토요일 아침 9시에 방영해요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "english": "The main character is a rabbit who goes on adventures.",
+        "korean": "주인공은 모험을 떠나는 토끼예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Every episode teaches an important lesson about friendship or honesty.",
+        "korean": "매 에피소드마다 우정이나 정직에 대한 중요한 교훈을 알려줘요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I never miss it.",
+        "korean": "절대 빠뜨리지 않아요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "My Favorite TV Show",
+        "How to Make Friends in a New City",
+        "My Favorite Snack",
+        "Visiting a Night Market"
+      ],
+      "answer": 0
+    }
+  }
+]

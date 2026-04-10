@@ -1,0 +1,56 @@
+[
+  {
+    "setId": "L2_EXT_014_set1",
+    "parentSetId": "L2_EXT_014",
+    "theme": "Korean Culture Shock",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "When my American friend visited Korea, she was surprised by many things.",
+        "korean": "미국인 친구가 한국을 방문했을 때 많은 것에 놀랐어요.",
+        "properNounIndices": [
+          2,
+          5
+        ]
+      },
+      {
+        "id": 1,
+        "english": "First, she couldn't believe how fast the internet was.",
+        "korean": "먼저 인터넷이 얼마나 빠른지 믿을 수 없어 했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "She was also amazed that you can get food delivered at any time of day or night.",
+        "korean": "밤낮 상관없이 음식을 배달시킬 수 있다는 것에도 놀랐어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "The one thing she found difficult was taking off her shoes every time she entered someone's home.",
+        "korean": "어렵게 느꼈던 한 가지는 누군가의 집에 들어갈 때마다 신발을 벗는 거였어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "But overall, she said Korea was one of the most exciting places she'd ever visited.",
+        "korean": "하지만 전반적으로 한국이 지금까지 방문한 곳 중 가장 흥미진진한 곳 중 하나라고 했어요.",
+        "properNounIndices": [
+          4
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '전반적으로' mean in English?",
+      "options": [
+        "culture shock",
+        "overall",
+        "amazed",
+        "take off"
+      ],
+      "answer": 1
+    }
+  }
+]

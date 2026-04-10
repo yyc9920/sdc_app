@@ -1,0 +1,71 @@
+[
+  {
+    "setId": "L1_SPK_083B_set1",
+    "parentSetId": "L1_SPK_083B",
+    "theme": "Do you think competition is healthy or harmful for",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you think competition is healthy or harmful for society?",
+        "korean": "경쟁이 사회에 건강한가 해로운가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain your view.",
+        "korean": "견해를 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I believe healthy competition is essential for progress but excessive competition can be destructive.",
+        "korean": "건강한 경쟁은 발전에 필수적이지만 과도한 경쟁은 파괴적일 수 있다고 생각해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Competition drives innovation because companies and individuals push themselves to be better than their rivals.",
+        "korean": "경쟁은 혁신을 이끌어요. 기업과 개인이 경쟁자보다 더 나아지려고 노력하니까요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Without competition there would be little motivation to improve products services or personal skills.",
+        "korean": "경쟁 없이는 제품 서비스 개인 기술을 개선할 동기가 거의 없을 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "However when competition becomes too intense it can lead to burnout unethical behavior and a win-at-all-costs mentality that harms everyone.",
+        "korean": "하지만 경쟁이 너무 치열해지면 번아웃 비윤리적 행동 모두에게 해가 되는 무조건 승리 사고방식으로 이어질 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "The ideal is to compete against yourself — constantly trying to be better than you were yesterday.",
+        "korean": "이상적인 것은 자신과 경쟁하는 거예요 — 어제의 자신보다 더 나아지려고 끊임없이 노력하는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "drive innovation",
+        "korean": "혁신을 이끌다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Printed Books vs. E-books",
+        "Online Classes vs. In-Person Classes",
+        "Your Ideal Weekend",
+        "Do you think competition is healthy or harmful for"
+      ],
+      "answer": 3
+    }
+  }
+]

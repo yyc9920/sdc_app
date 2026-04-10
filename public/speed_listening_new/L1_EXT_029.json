@@ -1,0 +1,61 @@
+[
+  {
+    "setId": "L1_EXT_029_set1",
+    "parentSetId": "L1_EXT_029",
+    "theme": "My Daily Schedule",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I wake up at six thirty on weekdays.",
+        "korean": "평일에 6시 30분에 일어나요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "After breakfast I go to school by bus.",
+        "korean": "아침 식사 후 버스를 타고 학교에 가요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I have six classes every day from nine to three.",
+        "korean": "매일 9시부터 3시까지 수업이 여섯 개 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "After school I go to a math academy until six.",
+        "korean": "방과 후에 6시까지 수학 학원에 가요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I do my homework after dinner and go to bed at eleven.",
+        "korean": "저녁 먹고 숙제하고 11시에 잠자리에 들어요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "My Daily Schedule",
+        "My Pencil Case",
+        "My Lunchbox",
+        "At the Grocery Store"
+      ],
+      "answer": 0
+    }
+  }
+]

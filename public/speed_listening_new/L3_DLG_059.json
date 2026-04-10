@@ -1,0 +1,100 @@
+[
+  {
+    "setId": "L3_DLG_059_set1",
+    "parentSetId": "L3_DLG_059",
+    "theme": "IT Support — Computer Won't Start",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My computer won't turn on at all.",
+        "korean": "컴퓨터가 전혀 켜지지 않아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Is the power cable plugged in properly?",
+        "korean": "전원 케이블이 제대로 꽂혀 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Yes I checked that already.",
+        "korean": "네 이미 확인했어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Have you tried a different power outlet?",
+        "korean": "다른 전원 콘센트에 꽂아봤나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I just tried that and it's still not working.",
+        "korean": "방금 해봤는데 여전히 안 돼요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '전원 케이블' mean in English?",
+      "options": [
+        "loaner",
+        "power supply",
+        "power cable",
+        "outlet"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L3_DLG_059_set2",
+    "parentSetId": "L3_DLG_059",
+    "theme": "IT Support — Computer Won't Start",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "It could be a hardware issue with the power supply.",
+        "korean": "전원 공급 장치의 하드웨어 문제일 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "I'll send a technician to your desk within the hour.",
+        "korean": "한 시간 안에 기술자를 자리로 보내드리겠습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "In the meantime can I use a loaner laptop?",
+        "korean": "그동안 임시 노트북을 쓸 수 있나요?",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 8,
+        "english": "I'll have one sent to you right away.",
+        "korean": "바로 하나 보내드리겠습니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '임시 대여품' mean in English?",
+      "options": [
+        "loaner",
+        "power cable",
+        "outlet",
+        "power supply"
+      ],
+      "answer": 0
+    }
+  }
+]

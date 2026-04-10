@@ -1,0 +1,61 @@
+[
+  {
+    "setId": "L2_ELLO_090_set1",
+    "parentSetId": "L2_ELLO_090",
+    "theme": "Mixer #55 — Biggest Fear",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My biggest fear is public speaking.",
+        "korean": "가장 큰 두려움은 대중 앞에서 말하는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "My hands shake, my voice trembles, and I completely freeze.",
+        "korean": "손이 떨리고 목소리가 떨리고 완전히 얼어붙어요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I'm terrified of the ocean.",
+        "korean": "바다가 무서워요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "You don't know what's underneath you, and that scares me.",
+        "korean": "밑에 뭐가 있는지 모르고 그게 겁나요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "My biggest fear is losing my family, honestly.",
+        "korean": "가장 큰 두려움은 솔직히 가족을 잃는 거예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Everything else I can handle, but not that.",
+        "korean": "나머지는 다 감당할 수 있지만 그건 안 돼요.",
+        "properNounIndices": [
+          2
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #96 — Dream House",
+        "Mixer #106 — Favorite Teacher",
+        "Mixer #118 — Homesick",
+        "Mixer #55 — Biggest Fear"
+      ],
+      "answer": 3
+    }
+  }
+]

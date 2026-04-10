@@ -1,0 +1,76 @@
+[
+  {
+    "setId": "L1_SPK_024_set1",
+    "parentSetId": "L1_SPK_024",
+    "theme": "Physical Stores vs. Online Shopping",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Do you prefer shopping at physical stores or online?",
+        "korean": "오프라인 매장과 온라인 쇼핑 중 어느 것을 선호합니까?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Use specific reasons to support your answer.",
+        "korean": "구체적인 이유로 답을 뒷받침하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I prefer online shopping because of the convenience and variety it offers.",
+        "korean": "편리함과 다양성 때문에 온라인 쇼핑을 선호해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "First I can shop anytime I want even at midnight without leaving my house.",
+        "korean": "첫째 집을 나서지 않고도 자정에도 원할 때 언제든 쇼핑할 수 있어요.",
+        "properNounIndices": [
+          1,
+          5
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Second online stores have a much wider selection of products than any physical store.",
+        "korean": "둘째 온라인 매장은 어떤 오프라인 매장보다 훨씬 다양한 제품을 갖추고 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "I can also read customer reviews before making a purchase which helps me avoid buying low-quality items.",
+        "korean": "구매 전에 고객 리뷰도 읽을 수 있어 저품질 상품 구매를 피하는 데 도움이 돼요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 6,
+        "english": "The only downside is that you can't try things on but most stores now offer free returns so that's not a big problem.",
+        "korean": "유일한 단점은 입어볼 수 없다는 것이지만 대부분의 매장이 이제 무료 반품을 제공해서 큰 문제는 아니에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "free returns",
+        "korean": "무료 반품",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "A Festival or Event You Attended",
+        "Physical Stores vs. Online Shopping",
+        "What Makes a Good Leader",
+        "Learning from Failure"
+      ],
+      "answer": 1
+    }
+  }
+]

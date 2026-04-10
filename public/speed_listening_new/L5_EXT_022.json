@@ -1,0 +1,39 @@
+[
+  {
+    "setId": "L5_EXT_022_set1",
+    "parentSetId": "L5_EXT_022",
+    "theme": "Emergent Properties in Complex Systems",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "One of the most intriguing concepts in modern science is emergence — the phenomenon where complex systems exhibit properties that none of their individual components possess.",
+        "korean": "현대 과학에서 가장 흥미로운 개념 중 하나는 창발이다 — 복잡한 시스템이 개별 구성요소가 가지지 않는 속성을 나타내는 현상이다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "A single water molecule has no wetness yet billions of them together create the property we experience as wet.",
+        "korean": "물 분자 하나에는 젖음이라는 성질이 없지만 수십억 개가 모이면 우리가 젖은 것으로 경험하는 속성을 만든다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Consciousness itself may be the ultimate emergent property — arising from the interaction of billions of neurons none of which is individually conscious.",
+        "korean": "의식 자체가 궁극의 창발적 속성일 수 있다 — 개별적으로는 의식이 없는 수십억 개의 뉴런의 상호작용에서 발생하는.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '구성요소' mean in English?",
+      "options": [
+        "interaction",
+        "exhibit",
+        "component",
+        "emergence"
+      ],
+      "answer": 2
+    }
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "setId": "L2_DLG_007_set1",
+    "parentSetId": "L2_DLG_007",
+    "theme": "Making Plans with a Friend",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Hey are you free this Saturday?",
+        "korean": "이봐요. 이번 토요일에 시간 돼요?",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I think so.",
+        "korean": "될 것 같아요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Why?",
+        "korean": "왜요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I want to go to the new shopping mall downtown.",
+        "korean": "시내에 새로 생긴 쇼핑몰에 가고 싶어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Oh I heard about that place.",
+        "korean": "아 그곳에 대해 들었어요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Making Plans with a Friend",
+        "Discussing a Career Change",
+        "Buying Movie Tickets",
+        "Wedding Planning — Venue Visit"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_DLG_007_set2",
+    "parentSetId": "L2_DLG_007",
+    "theme": "Making Plans with a Friend",
+    "level": 3,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "They have a huge food court right?",
+        "korean": "푸드코트가 엄청 크다며요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Yes and a movie theater on the top floor.",
+        "korean": "네 그리고 꼭대기 층에 영화관도 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Sounds fun.",
+        "korean": "재밌겠어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "What time should we meet?",
+        "korean": "몇 시에 만날까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "How about eleven at the entrance?",
+        "korean": "11시에 입구에서 어때요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 10,
+        "english": "See you then!",
+        "korean": "그때 봐요!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Apartment Move-Out Inspection",
+        "Asking About Wi-Fi",
+        "Making Plans with a Friend",
+        "Parking Ticket Dispute"
+      ],
+      "answer": 2
+    }
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "setId": "L1_SPK_044_set1",
+    "parentSetId": "L1_SPK_044",
+    "theme": "A Movie That Inspired You",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Describe a movie that inspired or motivated you.",
+        "korean": "영감을 주거나 동기를 부여한 영화를 묘사하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Explain how it affected you.",
+        "korean": "어떤 영향을 미쳤는지 설명하세요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "A movie that truly inspired me is The Pursuit of Happyness.",
+        "korean": "진정으로 영감을 준 영화는 행복을 찾아서예요.",
+        "properNounIndices": [
+          7,
+          8,
+          10
+        ]
+      },
+      {
+        "id": 3,
+        "english": "It tells the true story of a man who went from being homeless to becoming a successful stockbroker through pure determination.",
+        "korean": "노숙자에서 순수한 결단력으로 성공한 주식 중개인이 된 한 남자의 실화를 다뤄요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "What moved me most was how he never gave up even when he was sleeping in a subway station bathroom with his young son.",
+        "korean": "가장 감동적이었던 것은 어린 아들과 지하철역 화장실에서 잘 때도 절대 포기하지 않았다는 거예요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Impact of AI on Jobs",
+        "The Role of Luck in Success",
+        "A Movie That Inspired You",
+        "Social Media — More Harm or Good"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L1_SPK_044_set2",
+    "parentSetId": "L1_SPK_044",
+    "theme": "A Movie That Inspired You",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "After watching it I promised myself that I would never complain about minor difficulties in my own life.",
+        "korean": "그것을 보고 나서 내 삶의 사소한 어려움에 대해 불평하지 않겠다고 다짐했어요.",
+        "properNounIndices": [
+          3,
+          7
+        ]
+      },
+      {
+        "id": 6,
+        "english": "It reminded me that circumstances don't define you — your response to them does.",
+        "korean": "환경이 당신을 정의하는 것이 아니라 그에 대한 반응이 정의한다는 것을 상기시켜줬어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "never give up",
+        "korean": "절대 포기하지 않다",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "define you",
+        "korean": "당신을 정의하다",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "A Movie That Inspired You",
+        "Technology in Education",
+        "The Value of Volunteering",
+        "A Difficult Decision You Made"
+      ],
+      "answer": 0
+    }
+  }
+]

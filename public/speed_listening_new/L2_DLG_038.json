@@ -1,0 +1,71 @@
+[
+  {
+    "setId": "L2_DLG_038_set1",
+    "parentSetId": "L2_DLG_038",
+    "theme": "Getting Lost While Driving",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I think we're going the wrong way.",
+        "korean": "길을 잘못 간 것 같아요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Let me check the navigation.",
+        "korean": "네비게이션을 확인해볼게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "You're right. We missed the exit two kilometers back.",
+        "korean": "맞아요. 2킬로미터 전에 출구를 놓쳤어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Should we make a U-turn?",
+        "korean": "유턴해야 할까요?",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 4,
+        "english": "The navigation says there's another route that adds about ten minutes.",
+        "korean": "네비에 다른 경로가 있는데 약 10분 더 걸린대요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "Let's take that route.",
+        "korean": "그 경로로 가요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "A U-turn here looks dangerous.",
+        "korean": "여기서 유턴은 위험해 보여요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '네비게이션' mean in English?",
+      "options": [
+        "route",
+        "navigation",
+        "U-turn",
+        "exit"
+      ],
+      "answer": 1
+    }
+  }
+]

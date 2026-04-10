@@ -1,0 +1,70 @@
+[
+  {
+    "setId": "L1_DLG_002_set1",
+    "parentSetId": "L1_DLG_002",
+    "theme": "At the Bus Stop",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Excuse me, does this bus go to City Hall?",
+        "korean": "실례합니다, 이 버스 시청에 가나요?",
+        "properNounIndices": [
+          7,
+          8
+        ]
+      },
+      {
+        "id": 1,
+        "english": "No, you need bus number seven.",
+        "korean": "아니요 7번 버스를 타셔야 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Where can I catch that bus?",
+        "korean": "그 버스를 어디서 탈 수 있나요?",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 3,
+        "english": "The stop is across the street next to the bank.",
+        "korean": "정류장은 길 건너편 은행 옆에 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "How often does it come?",
+        "korean": "얼마나 자주 오나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "About every fifteen minutes.",
+        "korean": "약 15분마다요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Great. Thank you so much!",
+        "korean": "좋아요. 정말 감사합니다!",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "At the Bus Stop",
+        "Discussing a Movie",
+        "Startup — Investor Pitch",
+        "IT Support — Computer Won't Start"
+      ],
+      "answer": 0
+    }
+  }
+]

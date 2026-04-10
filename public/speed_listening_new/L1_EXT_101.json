@@ -1,0 +1,62 @@
+[
+  {
+    "setId": "L1_EXT_101_set1",
+    "parentSetId": "L1_EXT_101",
+    "theme": "A Rainy Morning",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "When I woke up this morning rain was hitting the window.",
+        "korean": "오늘 아침에 일어났을 때 비가 창문을 때리고 있었어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I didn't want to get out of bed at all.",
+        "korean": "침대에서 전혀 나가고 싶지 않았어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "But I had a test at school so I got dressed quickly.",
+        "korean": "하지만 학교에 시험이 있어서 빨리 옷을 입었어요.",
+        "properNounIndices": [
+          1,
+          8
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I grabbed my umbrella and ran to the bus stop.",
+        "korean": "우산을 챙기고 버스 정류장으로 뛰었어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "Even though it was raining I made it to school on time.",
+        "korean": "비가 왔지만 학교에 제시간에 도착했어요.",
+        "properNounIndices": [
+          5
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "My Grandma's House",
+        "Moving to a New City",
+        "A Rainy Morning",
+        "The Economics of Attention"
+      ],
+      "answer": 2
+    }
+  }
+]

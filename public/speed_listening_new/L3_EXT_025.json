@@ -1,0 +1,39 @@
+[
+  {
+    "setId": "L3_EXT_025_set1",
+    "parentSetId": "L3_EXT_025",
+    "theme": "The Sharing Economy",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The sharing economy has fundamentally changed how people think about ownership.",
+        "korean": "공유 경제가 사람들의 소유에 대한 사고방식을 근본적으로 바꿨다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Why buy a car when you can use a ride-sharing app, and why own a vacation home when you can book someone else's through a platform?",
+        "korean": "차량 공유 앱을 쓸 수 있는데 왜 차를 사고 플랫폼으로 다른 사람의 집을 예약할 수 있는데 왜 별장을 소유하는가?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "This shift from ownership to access has created enormous economic value but has also raised concerns about worker protections and regulatory fairness.",
+        "korean": "소유에서 접근으로의 전환은 막대한 경제적 가치를 창출했지만 근로자 보호와 규제 공정성에 대한 우려도 제기했다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "The Power of Storytelling",
+        "The Sharing Economy",
+        "My Grandma's House",
+        "Public Speaking Tips"
+      ],
+      "answer": 1
+    }
+  }
+]

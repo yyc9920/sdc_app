@@ -1,0 +1,56 @@
+[
+  {
+    "setId": "L2_ELLO_081_set1",
+    "parentSetId": "L2_ELLO_081",
+    "theme": "Mixer #65 — Dieting",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I've tried every diet you can imagine.",
+        "korean": "상상할 수 있는 모든 다이어트를 해봤어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Keto, intermittent fasting, vegan — none of them worked long-term.",
+        "korean": "키토 간헐적 단식 비건 — 어느 것도 장기적으로 안 됐어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I don't believe in diets, just eating in moderation.",
+        "korean": "다이어트를 믿지 않아요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Eat everything but in smaller portions.",
+        "korean": "그냥 적당히 먹으면 돼요. 다 먹되 양을 줄이면 돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I gave up sugar for three months and lost five kilograms, but then I went back to my old habits.",
+        "korean": "설탕을 3개월 끊고 5킬로를 뺐지만 다시 옛 습관으로 돌아갔어요.",
+        "properNounIndices": [
+          0,
+          13
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '식이요법/다이어트' mean in English?",
+      "options": [
+        "give up",
+        "diet",
+        "portion",
+        "moderation"
+      ],
+      "answer": 1
+    }
+  }
+]

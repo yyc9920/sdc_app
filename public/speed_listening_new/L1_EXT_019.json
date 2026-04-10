@@ -1,0 +1,56 @@
+[
+  {
+    "setId": "L1_EXT_019_set1",
+    "parentSetId": "L1_EXT_019",
+    "theme": "My Pet",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I have a small white cat named Snow.",
+        "korean": "작고 하얀 고양이가 있어요. 이름은 스노우예요.",
+        "properNounIndices": [
+          0,
+          7
+        ]
+      },
+      {
+        "id": 1,
+        "english": "She likes to sleep on my bed all day.",
+        "korean": "하루 종일 내 침대에서 자는 걸 좋아해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "She also loves to play with a small red ball.",
+        "korean": "작은 빨간 공으로 노는 것도 좋아해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Every morning she wakes me up by sitting on my face.",
+        "korean": "매일 아침 내 얼굴 위에 앉아서 깨워요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I love her even though she is a little naughty sometimes.",
+        "korean": "가끔 약간 장난꾸러기지만 사랑해요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Emergent Properties in Complex Systems",
+        "At the Grocery Store",
+        "Introducing Your Family",
+        "My Pet"
+      ],
+      "answer": 3
+    }
+  }
+]

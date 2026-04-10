@@ -1,0 +1,59 @@
+[
+  {
+    "setId": "L1_EXT_037_set1",
+    "parentSetId": "L1_EXT_037",
+    "theme": "My Bag",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I always carry a backpack to school.",
+        "korean": "항상 학교에 백팩을 메고 가요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Inside my bag I have my textbooks, a pencil case, and a water bottle.",
+        "korean": "가방 안에 교과서 필통 물병이 있어요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I also keep some snacks in the front pocket.",
+        "korean": "앞 주머니에 간식도 넣어둬요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "My bag is blue and it has a dinosaur keychain on the zipper.",
+        "korean": "가방은 파란색이고 지퍼에 공룡 열쇠고리가 달려 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "My mom bought it for me when I started middle school.",
+        "korean": "중학교에 입학했을 때 엄마가 사줬어요.",
+        "properNounIndices": [
+          7
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "My Bag",
+        "Lost My Wallet",
+        "Playing Video Games",
+        "My Bike Ride"
+      ],
+      "answer": 0
+    }
+  }
+]

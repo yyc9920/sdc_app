@@ -1,0 +1,61 @@
+[
+  {
+    "setId": "L1_DLG_034_set1",
+    "parentSetId": "L1_DLG_034",
+    "theme": "Choosing a Movie to Watch",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "What should we watch tonight?",
+        "korean": "오늘 밤에 뭐 볼까요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "How about a comedy?",
+        "korean": "코미디 어때요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I'm not really in the mood for comedy.",
+        "korean": "코미디 기분은 아닌데요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Then how about an action movie?",
+        "korean": "그러면 액션 영화는요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "That sounds good. You pick one.",
+        "korean": "좋아요. 골라줘요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 5,
+        "english": "I'll check what's new on Netflix.",
+        "korean": "넷플릭스에 새로 나온 거 확인해볼게요.",
+        "properNounIndices": [
+          5
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Annual Budget Meeting",
+        "Lending a Pencil",
+        "Choosing a Movie to Watch",
+        "At the Dry Cleaner"
+      ],
+      "answer": 2
+    }
+  }
+]

@@ -1,0 +1,105 @@
+[
+  {
+    "setId": "L2_DLG_013_set1",
+    "parentSetId": "L2_DLG_013",
+    "theme": "Exchanging Money",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I'd like to exchange some US dollars to Korean won.",
+        "korean": "미국 달러를 한국 원으로 환전하고 싶어요.",
+        "properNounIndices": [
+          5,
+          8
+        ]
+      },
+      {
+        "id": 1,
+        "english": "How much would you like to exchange?",
+        "korean": "얼마를 환전하시겠어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Two hundred dollars.",
+        "korean": "200달러요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Today's exchange rate is one dollar to thirteen hundred won.",
+        "korean": "300원이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Is there a service fee?",
+        "korean": "수수료가 있나요?",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '환율' mean in English?",
+      "options": [
+        "processing fee",
+        "passport",
+        "exchange",
+        "exchange rate"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L2_DLG_013_set2",
+    "parentSetId": "L2_DLG_013",
+    "theme": "Exchanging Money",
+    "level": 2,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "There's a two-dollar processing fee.",
+        "korean": "2달러 처리 수수료가 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "That's fine.",
+        "korean": "괜찮아요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Can I see your passport please?",
+        "korean": "여권을 보여주시겠어요?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Here you go.",
+        "korean": "여기요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 9,
+        "english": "Here's two hundred and fifty-seven thousand four hundred won.",
+        "korean": "400원입니다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '환율' mean in English?",
+      "options": [
+        "exchange rate",
+        "exchange",
+        "processing fee",
+        "passport"
+      ],
+      "answer": 0
+    }
+  }
+]

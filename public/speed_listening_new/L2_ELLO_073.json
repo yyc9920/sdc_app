@@ -1,0 +1,79 @@
+[
+  {
+    "setId": "L2_ELLO_073_set1",
+    "parentSetId": "L2_ELLO_073",
+    "theme": "Mixer #73 — Reading Habits",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I read every night before bed.",
+        "korean": "매일 밤 자기 전에 읽어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "It's the only way I can fall asleep.",
+        "korean": "잠드는 유일한 방법이에요.",
+        "properNounIndices": [
+          4
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Usually fiction or mystery novels.",
+        "korean": "보통 소설이나 미스터리 소설이요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I wish I read more, but I always end up watching TV instead.",
+        "korean": "더 많이 읽고 싶지만 항상 TV를 보게 돼요.",
+        "properNounIndices": [
+          0,
+          2,
+          6,
+          11
+        ]
+      },
+      {
+        "id": 4,
+        "english": "I buy books but they just sit on my shelf.",
+        "korean": "책을 사지만 선반에 놓여만 있어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 5,
+        "english": "I switched to audiobooks and it changed everything.",
+        "korean": "오디오북으로 바꿨더니 모든 게 변했어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 6,
+        "english": "Now I listen during my commute and I finish about two books a month.",
+        "korean": "이제 출퇴근 때 듣고 한 달에 약 두 권 끝내요.",
+        "properNounIndices": [
+          1,
+          7
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #77 — Traffic Problems",
+        "Mixer #106 — Favorite Teacher",
+        "Mixer #20 — Aging",
+        "Mixer #73 — Reading Habits"
+      ],
+      "answer": 3
+    }
+  }
+]

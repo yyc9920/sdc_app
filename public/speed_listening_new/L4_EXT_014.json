@@ -1,0 +1,47 @@
+[
+  {
+    "setId": "L4_EXT_014_set1",
+    "parentSetId": "L4_EXT_014",
+    "theme": "Urban Farming Revolution",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Across major cities worldwide, a quiet revolution is taking place on rooftops, in abandoned warehouses, and even inside shipping containers — urban farming is transforming how cities feed themselves.",
+        "korean": "전 세계 주요 도시에서 옥상 버려진 창고 심지어 컨테이너 안에서 조용한 혁명이 일어나고 있다. 도시 농업이 도시의 식량 공급 방식을 변화시키고 있다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Vertical farms use LED lighting and hydroponic systems to grow produce year-round, using up to ninety-five percent less water than traditional agriculture.",
+        "korean": "수직 농장은 LED 조명과 수경 재배 시스템을 사용해 연중 농산물을 재배하며 전통 농업보다 최대 95% 적은 물을 사용한다.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Proponents argue that urban farming reduces transportation emissions, provides fresher produce, and creates green jobs in underserved communities.",
+        "korean": "지지자들은 도시 농업이 운송 배출량을 줄이고 더 신선한 농산물을 제공하며 소외된 커뮤니티에 녹색 일자리를 만든다고 주장한다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "However, skeptics question whether urban farms can ever produce enough food at competitive prices to truly replace conventional farming on a meaningful scale.",
+        "korean": "하지만 회의론자들은 도시 농장이 경쟁력 있는 가격에 충분한 식량을 생산하여 의미 있는 규모로 기존 농업을 진정으로 대체할 수 있는지 의문을 제기한다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '도시 농업' mean in English?",
+      "options": [
+        "vertical farm",
+        "hydroponic",
+        "underserved",
+        "urban farming"
+      ],
+      "answer": 3
+    }
+  }
+]

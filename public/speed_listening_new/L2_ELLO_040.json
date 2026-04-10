@@ -1,0 +1,72 @@
+[
+  {
+    "setId": "L2_ELLO_040_set1",
+    "parentSetId": "L2_ELLO_040",
+    "theme": "Mixer #106 — Favorite Teacher",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My favorite teacher was my high school English teacher, Mr.",
+        "korean": "가장 좋아하는 선생님은 고등학교 영어 선생님 박 선생님이었어요.",
+        "properNounIndices": [
+          7,
+          9
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Park.",
+        "korean": "독서를 재미있게 해주셨고 항상 비판적으로 생각하도록 격려하셨어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "He made reading fun and always encouraged us to think critically.",
+        "korean": "독서를 재미있게 해주셨고 항상 비판적으로 생각하도록 격려하셨어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "I loved my art teacher in middle school.",
+        "korean": "중학교 미술 선생님을 좋아했어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 4,
+        "english": "She never criticized our work and always said 'There's no wrong answer in art.'",
+        "korean": "우리 작품을 비판하지 않으셨고 항상 '미술에 틀린 답은 없다'고 말씀하셨어요.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 5,
+        "english": "My math teacher changed my life, actually.",
+        "korean": "수학 선생님이 사실 내 인생을 바꿨어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "I used to hate math, but he made it easy to understand.",
+        "korean": "수학을 싫어했었는데 이해하기 쉽게 만들어주셨어요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #15 — Concerts",
+        "Mixer #36 — Comfort Food",
+        "Mixer #48 — Hometown Changes",
+        "Mixer #106 — Favorite Teacher"
+      ],
+      "answer": 3
+    }
+  }
+]

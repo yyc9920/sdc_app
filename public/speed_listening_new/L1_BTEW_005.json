@@ -3,29 +3,41 @@
     "setId": "L1_BTEW_005_set1",
     "parentSetId": "L1_BTEW_005",
     "theme": "Give it some welly!",
-    "level": 6,
+    "level": 5,
     "setNumber": 1,
     "sentences": [
       {
         "id": 0,
-        "english": "Hello and welcome to The English We Speak, where we explain phrases used by fluent English speakers so that you can use them, too! I'm Feifei, and I'm joined by Georgie. Hi Georgie, how are you?",
+        "english": "Hello and welcome to The English We Speak, where we explain phrases used by fluent English speakers so that you can use them, too!",
         "korean": "안녕하세요.",
         "properNounIndices": [
           4,
           5,
           6,
           7,
-          15,
-          24,
-          25,
-          27,
-          30,
-          31,
-          32
+          15
         ]
       },
       {
         "id": 1,
+        "english": "I'm Feifei, and I'm joined by Georgie.",
+        "korean": "영어를 유창하게 사용하는 사람들이 사용하는 표현들을 설명하는 '영어를 말해봅시다'에 오신 것을 환영합니다.",
+        "properNounIndices": [
+          1,
+          3,
+          6
+        ]
+      },
+      {
+        "id": 2,
+        "english": "Hi Georgie, how are you?",
+        "korean": "안녕 조지, 어떻게 지내?",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 3,
         "english": "I'm OK, Feifei… I'm just really struggling to open this jar.",
         "korean": "항아리를 열기 어렵습니다.",
         "properNounIndices": [
@@ -35,30 +47,11 @@
         ]
       },
       {
-        "id": 2,
+        "id": 4,
         "english": "Come on Georgie, give it some welly!",
         "korean": "힘을 더 주세요!",
         "properNounIndices": [
           2
-        ]
-      },
-      {
-        "id": 3,
-        "english": "There we go! Now, Feifei you used a great expression there – give it some welly! And that's what we're learning in this programme.",
-        "korean": "힘을 더 주도록 격려하는 표현입니다.",
-        "properNounIndices": [
-          3,
-          4,
-          16
-        ]
-      },
-      {
-        "id": 4,
-        "english": "It's a British English expression used to encourage people to put more effort or force into an activity – usually something physical, like me opening this jar.",
-        "korean": "힘을 더 주도록 격려하는 표현입니다.",
-        "properNounIndices": [
-          2,
-          3
         ]
       }
     ],
@@ -66,9 +59,9 @@
       "question": "What does '어려움을 겪고 있는' mean in English?",
       "options": [
         "struggling",
-        "physical",
-        "give it some welly",
-        "recap"
+        "imperative",
+        "encourage",
+        "give it some welly"
       ],
       "answer": 0
     }
@@ -82,12 +75,36 @@
     "sentences": [
       {
         "id": 5,
+        "english": "There we go! Now, Feifei you used a great expression there – give it some welly!",
+        "korean": "힘을 더 주도록 격려하는 표현입니다.",
+        "properNounIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "id": 6,
+        "english": "And that's what we're learning in this programme.",
+        "korean": "그리고 그것이 우리가 이 프로그램에서 배우는 것입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "It's a British English expression used to encourage people to put more effort or force into an activity – usually something physical, like me opening this jar.",
+        "korean": "힘을 더 주도록 격려하는 표현입니다.",
+        "properNounIndices": [
+          2,
+          3
+        ]
+      },
+      {
+        "id": 8,
         "english": "Yes, it's an imperative but it's quite friendly and fun, so don't worry, you won't sound rude if you say it.",
         "korean": "친절한 표현입니다.",
         "properNounIndices": []
       },
       {
-        "id": 6,
+        "id": 9,
         "english": "It can be used in lots of contexts, like cycling up a hill - 'Give it some welly!' or hammering a nail into a very hard wall - 'Give it some welly!' Let's hear some more examples from our BBC Learning English colleagues.",
         "korean": "친절한 표현입니다.",
         "properNounIndices": [
@@ -98,27 +115,62 @@
           40,
           41
         ]
-      },
+      }
+    ],
+    "quiz": {
+      "question": "What does '어려움을 겪고 있는' mean in English?",
+      "options": [
+        "give it some welly",
+        "imperative",
+        "recap",
+        "struggling"
+      ],
+      "answer": 3
+    }
+  },
+  {
+    "setId": "L1_BTEW_005_set3",
+    "parentSetId": "L1_BTEW_005",
+    "theme": "Give it some welly!",
+    "level": 6,
+    "setNumber": 3,
+    "sentences": [
       {
-        "id": 7,
-        "english": "Now, its most common use is as an imperative, to encourage people to put some effort in. Although, you might also hear it used to describe someone putting in some effort. For example, did you hear Beth singing karaoke the other night?",
+        "id": 10,
+        "english": "Now, its most common use is as an imperative, to encourage people to put some effort in.",
         "korean": "가장 일반적인 사용은 격려입니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "Although, you might also hear it used to describe someone putting in some effort.",
+        "korean": "그러나 당신은 또한 누군가가 노력을 기울이는 것을 설명하는 데 사용되는 것을 들을 수도 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "For example, did you hear Beth singing karaoke the other night?",
+        "korean": "예를 들어, 지난밤에 베스가 노래방을 부르는 것을 들었나요?",
         "properNounIndices": [
-          17,
-          31,
-          36
+          5
         ]
       },
       {
-        "id": 8,
-        "english": "Yes, she really gave it some welly, didn't she? I watched my son the other day trying to push a chair across the room – he really gave it some welly!",
+        "id": 13,
+        "english": "Yes, she really gave it some welly, didn't she?",
         "korean": "그녀는 정말 힘을 주었습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "I watched my son the other day trying to push a chair across the room – he really gave it some welly!",
+        "korean": "저는 요즘 제 아들이 의자를 방 전체에 밀려고 하는 것을 봤습니다 - 그는 정말 힘을 주었습니다!",
         "properNounIndices": [
-          9
+          0
         ]
       },
       {
-        "id": 9,
+        "id": 15,
         "english": "That's so cute! OK, let's recap. We've learned 'give it some welly', which we use to encourage people to put some more effort or force into an activity.",
         "korean": "힘을 주도록 격려합니다.",
         "properNounIndices": [
@@ -127,16 +179,13 @@
         ]
       },
       {
-        "id": 10,
-        "english": "Remember to check out our website: bbclearningenglish.com for more resources to help you improve your English. Thanks for joining us.",
-        "korean": "웹사이트를 확인해주세요.",
-        "properNounIndices": [
-          15,
-          16
-        ]
+        "id": 16,
+        "english": "Thanks for joining us.",
+        "korean": "우리와 함께 해주셔서 감사합니다.",
+        "properNounIndices": []
       },
       {
-        "id": 11,
+        "id": 17,
         "english": "Bye!",
         "korean": "안녕!",
         "properNounIndices": []
@@ -145,12 +194,12 @@
     "quiz": {
       "question": "What does '누군가가 뭔가를 하도록 돕다' mean in English?",
       "options": [
-        "struggling",
-        "encourage",
+        "imperative",
         "physical",
-        "recap"
+        "struggling",
+        "encourage"
       ],
-      "answer": 1
+      "answer": 3
     }
   }
 ]

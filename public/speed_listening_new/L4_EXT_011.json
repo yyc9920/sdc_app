@@ -1,0 +1,45 @@
+[
+  {
+    "setId": "L4_EXT_011_set1",
+    "parentSetId": "L4_EXT_011",
+    "theme": "Minimalism as a Lifestyle",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Minimalism has evolved from an aesthetic movement to a full-blown lifestyle philosophy, attracting millions who feel overwhelmed by consumer culture.",
+        "korean": "미니멀리즘은 미학적 운동에서 본격적인 라이프스타일 철학으로 진화했다. 소비 문화에 압도당한 수백만 명을 끌어들이고 있다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "At its core, minimalism is about intentionality — owning fewer possessions but ensuring that each one adds genuine value to your life.",
+        "korean": "핵심적으로 미니멀리즘은 의도성에 관한 것이다 — 더 적은 소유물을 가지되 각각이 삶에 진정한 가치를 더하도록 하는 것.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Critics point out that minimalism is often a privilege of the wealthy — it's easy to own less when you can afford to replace anything at any time.",
+        "korean": "비판자들은 미니멀리즘이 종종 부유층의 특권이라고 지적한다 — 언제든 뭐든 다시 살 수 있으면 적게 소유하기는 쉽다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Nevertheless, the underlying principle of consuming less and living more deliberately resonates across income levels, particularly as environmental concerns push people to reconsider their relationship with material goods.",
+        "korean": "그럼에도 적게 소비하고 더 신중하게 사는 근본 원칙은 소득 수준을 넘어 공감을 얻고 있다. 특히 환경적 우려가 사람들로 하여금 물질적 재화와의 관계를 재고하게 하면서.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '의도성' mean in English?",
+      "options": [
+        "intentionality",
+        "minimalism",
+        "material goods",
+        "resonate"
+      ],
+      "answer": 0
+    }
+  }
+]

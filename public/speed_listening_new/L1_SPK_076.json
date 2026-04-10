@@ -1,0 +1,102 @@
+[
+  {
+    "setId": "L1_SPK_076_set1",
+    "parentSetId": "L1_SPK_076",
+    "theme": "Should Homework Be Abolished",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Some educators argue that homework should be abolished entirely.",
+        "korean": "일부 교육자들은 숙제를 완전히 폐지해야 한다고 주장합니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "Do you agree? Explain.",
+        "korean": "동의합니까? 설명하세요.",
+        "properNounIndices": [
+          3
+        ]
+      },
+      {
+        "id": 2,
+        "english": "I disagree that homework should be completely abolished but I do think it needs to be reformed.",
+        "korean": "숙제를 완전히 폐지하는 데는 반대하지만 개혁이 필요하다고 생각해요.",
+        "properNounIndices": [
+          0,
+          9
+        ]
+      },
+      {
+        "id": 3,
+        "english": "The problem isn't homework itself — it's the type and amount of homework being assigned.",
+        "korean": "문제는 숙제 자체가 아니라 내주는 숙제의 유형과 양이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Meaningful assignments that encourage independent thinking and real-world application are extremely valuable.",
+        "korean": "독립적 사고와 실생활 적용을 장려하는 의미 있는 과제는 매우 가치 있어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Physical Stores vs. Online Shopping",
+        "Cash vs. Digital Payment",
+        "Should Homework Be Abolished",
+        "Eating at Home vs. Eating Out"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L1_SPK_076_set2",
+    "parentSetId": "L1_SPK_076",
+    "theme": "Should Homework Be Abolished",
+    "level": 5,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "But repetitive worksheets that take hours without building real understanding should definitely be eliminated.",
+        "korean": "하지만 실질적 이해를 쌓지 못하면서 몇 시간이나 걸리는 반복적 학습지는 확실히 없애야 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "The focus should shift from quantity to quality so students can learn effectively without sacrificing their free time and mental health.",
+        "korean": "양에서 질로 초점이 바뀌어야 학생들이 여가와 정신 건강을 희생하지 않고 효과적으로 배울 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "real-world application",
+        "korean": "실생활 적용",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "shift from A to B",
+        "korean": "A에서 B로 전환하다",
+        "properNounIndices": [
+          2,
+          4
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Should Homework Be Abolished",
+        "Importance of Sleep",
+        "A Book That Changed Your Thinking",
+        "Do you think art and music education should be req"
+      ],
+      "answer": 0
+    }
+  }
+]

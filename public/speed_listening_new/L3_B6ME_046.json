@@ -1,0 +1,50 @@
+[
+  {
+    "setId": "L3_B6ME_046_set1",
+    "parentSetId": "L3_B6ME_046",
+    "theme": "What's Your Favourite Snack?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "It seems people around the world are in love with snacks!",
+        "korean": "전 세계 사람들이 간식과 사랑에 빠진 것 같아요!",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "From old favourites like popcorn and crisps to new inventions like the chocolate sandwich, snacks are big business, with an estimated $1.5 trillion a year spent globally on snacking.",
+        "korean": "팝콘, 감자칩부터 초콜릿 샌드위치까지 간식은 큰 사업이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I like salted peanuts and I love a banana — preferably together, actually.",
+        "korean": "소금 땅콩과 바나나를 좋아해요 — 사실 함께 먹으면 더 좋아요.",
+        "properNounIndices": [
+          0,
+          5
+        ]
+      },
+      {
+        "id": 3,
+        "english": "I find that they hit the spot.",
+        "korean": "딱 원하는 맛이에요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '자꾸 손이 가는, 더 먹고 싶은' mean in English?",
+      "options": [
+        "moreish",
+        "snacking",
+        "hit the spot",
+        "savoury"
+      ],
+      "answer": 0
+    }
+  }
+]

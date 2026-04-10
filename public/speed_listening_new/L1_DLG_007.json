@@ -1,0 +1,103 @@
+[
+  {
+    "setId": "L1_DLG_007_set1",
+    "parentSetId": "L1_DLG_007",
+    "theme": "Asking a Teacher for Help",
+    "level": 3,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Excuse me, teacher. Can I ask you a question?",
+        "korean": "실례합니다 선생님. 질문해도 될까요?",
+        "properNounIndices": [
+          3,
+          4
+        ]
+      },
+      {
+        "id": 1,
+        "english": "Of course, what is it?",
+        "korean": "물론이죠, 뭔데?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I don't understand this math problem.",
+        "korean": "이 수학 문제를 모르겠어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Which one?",
+        "korean": "어떤 거?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Number five on page twenty.",
+        "korean": "20쪽의 5번이요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Asking a Teacher for Help",
+        "Getting a Passport Renewed",
+        "Returning a Book to a Friend",
+        "Complaining About a Meal"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L1_DLG_007_set2",
+    "parentSetId": "L1_DLG_007",
+    "theme": "Asking a Teacher for Help",
+    "level": 2,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "Let me explain it step by step.",
+        "korean": "단계별로 설명해줄게요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "First, you need to find X.",
+        "korean": "먼저 X를 구해야 해요.",
+        "properNounIndices": [
+          5
+        ]
+      },
+      {
+        "id": 7,
+        "english": "Oh now I understand.",
+        "korean": "아 이제 이해했어요.",
+        "properNounIndices": [
+          2
+        ]
+      },
+      {
+        "id": 8,
+        "english": "Thank you!",
+        "korean": "감사합니다!",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Calling to Reschedule a Meeting",
+        "Coworker — Lunch Plans",
+        "Asking a Teacher for Help",
+        "Study Group — Exam Prep"
+      ],
+      "answer": 2
+    }
+  }
+]

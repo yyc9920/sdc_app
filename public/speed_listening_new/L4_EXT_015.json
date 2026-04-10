@@ -1,0 +1,49 @@
+[
+  {
+    "setId": "L4_EXT_015_set1",
+    "parentSetId": "L4_EXT_015",
+    "theme": "The Attention Economy",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "The average person now checks their smartphone over ninety times a day spending nearly four hours on the device.",
+        "korean": "보통 사람은 이제 하루 90번 이상 스마트폰을 확인하며 기기에 거의 4시간을 쓴다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "This constant state of partial attention has measurable consequences including reduced creativity shorter memory retention and higher levels of anxiety.",
+        "korean": "이 끊임없는 부분적 주의 상태는 측정 가능한 결과를 가진다. 창의성 감소 기억 유지 단축 불안 수준 증가를 포함한다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Cal Newport argues in his book Deep Work that the ability to focus without distraction on cognitively demanding tasks is becoming both increasingly rare and increasingly valuable.",
+        "korean": "칼 뉴포트는 저서 딥 워크에서 인지적으로 까다로운 작업에 방해 없이 집중하는 능력이 점점 더 드물어지면서 동시에 가치 있어지고 있다고 주장한다.",
+        "properNounIndices": [
+          1,
+          6,
+          7
+        ]
+      },
+      {
+        "id": 3,
+        "english": "Those who can cultivate this skill will have a significant competitive advantage in nearly every professional field.",
+        "korean": "이 기술을 기를 수 있는 사람들은 거의 모든 전문 분야에서 상당한 경쟁 우위를 가질 것이다.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '부분적 주의' mean in English?",
+      "options": [
+        "retention",
+        "cultivate",
+        "partial attention",
+        "distraction"
+      ],
+      "answer": 2
+    }
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "setId": "L3_B6ME_048_set1",
+    "parentSetId": "L3_B6ME_048",
+    "theme": "Are You Flourishing?",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Have you ever heard of 'flourishing'?",
+        "korean": "'플러리싱'을 들어본 적 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "It's an idea which means not just about wellbeing — it's about your whole life being good.",
+        "korean": "단순한 웰빙이 아니라 삶 전체가 좋은 것에 대한 아이디어예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "'Flourishing' is a psychological buzzword — a word or phrase that has become fashionable and is being used a lot.",
+        "korean": "'플러리싱'은 유행하게 된 심리학적 용어예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "People who are flourishing feel good about all aspects of their life.",
+        "korean": "플러리싱하는 사람은 삶의 모든 측면에서 기분이 좋아요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What does '유행어 — 많이 사용되는 유행하는 단어' mean in English?",
+      "options": [
+        "flourishing",
+        "languishing",
+        "thrive",
+        "buzzword"
+      ],
+      "answer": 3
+    }
+  }
+]

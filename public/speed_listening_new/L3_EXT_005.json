@@ -3,68 +3,58 @@
     "setId": "L3_EXT_005_set1",
     "parentSetId": "L3_EXT_005",
     "theme": "Radio Interview — Small Business Owner",
-    "level": 6,
+    "level": 5,
     "setNumber": 1,
     "sentences": [
       {
         "id": 0,
-        "english": "Today we have Jenny Park with us, the owner of Olive & Grain, a bakery and café right here in downtown Portland. Jenny, thanks for joining us.",
-        "korean": "오늘 올리브 앤 그레인의 사장 제니 파크와 함께합니다. 포틀랜드 시내에 있는 베이커리 겸 카페예요.",
+        "english": "Today we have Jenny Park with us, the owner of Olive & Grain, a bakery and café right here in downtown Portland.",
+        "korean": "오늘 올리브 앤 그레인의 사장 제니 파크와 함께합니다.",
         "properNounIndices": [
           3,
           4,
           10,
           12,
-          21,
-          22
+          21
         ]
       },
       {
         "id": 1,
-        "english": "Thanks for having me. I'm excited to be here.",
-        "korean": "초대해주셔서 감사해요. 여기 오게 되어 기뻐요.",
-        "properNounIndices": [
-          4
-        ]
+        "english": "Jenny, thanks for joining us.",
+        "korean": "포틀랜드 시내에 있는 베이커리 겸 카페예요.",
+        "properNounIndices": []
       },
       {
         "id": 2,
-        "english": "So you opened Olive & Grain about three years ago. What made you take the leap into starting your own business?",
-        "korean": "올리브 앤 그레인을 약 3년 전에 오픈하셨죠. 자기 사업을 시작하게 된 계기가 뭔가요?",
-        "properNounIndices": [
-          3,
-          5,
-          10
-        ]
+        "english": "Thanks for having me.",
+        "korean": "초대해주셔서 감사해요.",
+        "properNounIndices": []
       },
       {
         "id": 3,
-        "english": "Honestly, it was a combination of passion and frustration. I'd been working as a pastry chef at a hotel for about eight years, and while I loved the craft, I didn't love the corporate environment.",
-        "korean": "솔직히 열정과 답답함이 합쳐진 거였어요. 호텔에서 페이스트리 셰프로 약 8년간 일했거든요.",
-        "properNounIndices": [
-          9,
-          25,
-          29
-        ]
+        "english": "I'm excited to be here.",
+        "korean": "여기 오게 되어 기뻐요.",
+        "properNounIndices": []
       },
       {
         "id": 4,
-        "english": "I wanted to create a space where everything — from the ingredients to the atmosphere — reflected my values.",
-        "korean": "재료부터 분위기까지 모든 것이 제 가치관을 반영하는 공간을 만들고 싶었어요.",
+        "english": "So you opened Olive & Grain about three years ago.",
+        "korean": "올리브 앤 그레인을 약 3년 전에 오픈하셨죠.",
         "properNounIndices": [
-          0
+          3,
+          5
         ]
       }
     ],
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
+        "Why We Underestimate Time",
         "Radio Interview — Small Business Owner",
-        "Tour Guide Speech",
-        "Emergency Broadcast",
-        "Economic Analysis — The Paradox of Thrift"
+        "My Hobby",
+        "My Favorite Snack"
       ],
-      "answer": 0
+      "answer": 1
     }
   },
   {
@@ -76,61 +66,181 @@
     "sentences": [
       {
         "id": 5,
-        "english": "I wanted to use local, organic ingredients and build a place where people felt like they were walking into someone's home.",
-        "korean": "지역 유기농 재료를 사용하고, 사람들이 누군가의 집에 들어온 것 같은 느낌의 공간을 만들고 싶었어요.",
+        "english": "What made you take the leap into starting your own business?",
+        "korean": "자기 사업을 시작하게 된 계기가 뭔가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Honestly, it was a combination of passion and frustration.",
+        "korean": "솔직히 열정과 답답함이 합쳐진 거였어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "I'd been working as a pastry chef at a hotel for about eight years, and while I loved the craft, I didn't love the corporate environment.",
+        "korean": "호텔에서 페이스트리 셰프로 약 8년간 일했거든요.",
+        "properNounIndices": [
+          16,
+          20
+        ]
+      },
+      {
+        "id": 8,
+        "english": "I wanted to create a space where everything — from the ingredients to the atmosphere — reflected my values.",
+        "korean": "재료부터 분위기까지 모든 것이 제 가치관을 반영하는 공간을 만들고 싶었어요.",
         "properNounIndices": [
           0
         ]
       },
       {
-        "id": 6,
-        "english": "And you've clearly succeeded. The reviews are incredible. But I imagine the first year was tough?",
-        "korean": "분명히 성공하셨네요. 리뷰가 정말 좋더라고요. 하지만 첫해는 힘들었을 것 같은데요?",
+        "id": 9,
+        "english": "I wanted to use local, organic ingredients and build a place where people felt like they were walking into someone's home.",
+        "korean": "지역 유기농 재료를 사용하고, 사람들이 누군가의 집에 들어온 것 같은 느낌의 공간을 만들고 싶었어요.",
         "properNounIndices": [
-          4,
-          8,
-          9
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Radio Interview — Small Business Owner",
+        "Why Introverts Succeed in Business",
+        "Economic Analysis — The Paradox of Thrift",
+        "Sleep Deprivation and Productivity"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L3_EXT_005_set3",
+    "parentSetId": "L3_EXT_005",
+    "theme": "Radio Interview — Small Business Owner",
+    "level": 4,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "And you've clearly succeeded.",
+        "korean": "분명히 성공하셨네요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "The reviews are incredible.",
+        "korean": "리뷰가 정말 좋더라고요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 12,
+        "english": "But I imagine the first year was tough?",
+        "korean": "하지만 첫해는 힘들었을 것 같은데요?",
+        "properNounIndices": [
+          1
         ]
       },
       {
-        "id": 7,
-        "english": "Brutal, honestly. I underestimated how much of running a bakery is not baking. It's managing finances, hiring, dealing with suppliers, marketing — all things I had zero experience in.",
-        "korean": "솔직히 잔인했어요. 빵집 운영의 대부분이 빵 굽는 게 아니라는 걸 과소평가했어요. 재무 관리, 채용, 공급업체 처리거든요.",
+        "id": 13,
+        "english": "Brutal, honestly. I underestimated how much of running a bakery is not baking.",
+        "korean": "솔직히 잔인했어요. 빵집 운영의 대부분이 빵 굽는 게 아니라는 걸 과소평가했어요.",
         "properNounIndices": [
-          2,
-          13,
-          24
+          2
         ]
       },
       {
-        "id": 8,
-        "english": "There were months where I barely broke even. I almost closed the doors after the first winter.",
+        "id": 14,
+        "english": "It's managing finances, hiring, dealing with suppliers, marketing — all things I had zero experience in.",
+        "korean": "재무 관리, 채용, 공급업체 처리거든요.",
+        "properNounIndices": [
+          11
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "The Future of Education",
+        "Radio Interview — Small Business Owner",
+        "The Power of Storytelling",
+        "Dealing with Stress"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L3_EXT_005_set4",
+    "parentSetId": "L3_EXT_005",
+    "theme": "Radio Interview — Small Business Owner",
+    "level": 5,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "There were months where I barely broke even.",
         "korean": "겨우 손익분기점을 맞추는 달도 있었고, 첫 겨울 후에 거의 문을 닫을 뻔했어요.",
         "properNounIndices": [
-          4,
-          8
+          4
         ]
       },
       {
-        "id": 9,
+        "id": 16,
+        "english": "I almost closed the doors after the first winter.",
+        "korean": "첫 겨울 후에 거의 문을 닫을 뻔했어요",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 17,
         "english": "What kept you going?",
         "korean": "뭐가 계속하게 했나요?",
         "properNounIndices": []
       },
       {
-        "id": 10,
-        "english": "My regulars. By that point, I had maybe twenty or thirty loyal customers who came in every single week. Some of them wrote me letters when they heard I was struggling. That community support was what kept me afloat.",
+        "id": 18,
+        "english": "My regulars. By that point, I had maybe twenty or thirty loyal customers who came in every single week.",
         "korean": "단골들이요. 그때쯤 매주 빠짐없이 오는 2~30명의 충성 고객이 있었어요.",
         "properNounIndices": [
           2,
-          5,
-          19,
-          28,
-          31
+          5
         ]
       },
       {
-        "id": 11,
+        "id": 19,
+        "english": "Some of them wrote me letters when they heard I was struggling.",
+        "korean": "매주 빠짐없이 오는",
+        "properNounIndices": [
+          9
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "My First Day of School",
+        "Radio Interview — Small Business Owner",
+        "My Favorite Day",
+        "My Bike Ride"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L3_EXT_005_set5",
+    "parentSetId": "L3_EXT_005",
+    "theme": "Radio Interview — Small Business Owner",
+    "level": 5,
+    "setNumber": 5,
+    "sentences": [
+      {
+        "id": 20,
+        "english": "That community support was what kept me afloat.",
+        "korean": "2~30명의 충성 고객이 있었어요",
+        "properNounIndices": []
+      },
+      {
+        "id": 21,
         "english": "That's beautiful. What's next for Olive & Grain?",
         "korean": "아름답네요. 올리브 앤 그레인의 다음 계획은 뭔가요?",
         "properNounIndices": [
@@ -140,22 +250,28 @@
         ]
       },
       {
-        "id": 12,
-        "english": "We're launching a weekend brunch menu next month, and I'm exploring the idea of a small cooking class series. Nothing too ambitious — I've learned that lesson.",
+        "id": 22,
+        "english": "We're launching a weekend brunch menu next month, and I'm exploring the idea of a small cooking class series.",
         "korean": "다음 달에 주말 브런치 메뉴를 출시하고, 소규모 요리 교실 시리즈도 구상 중이에요.",
         "properNounIndices": [
-          9,
-          19,
-          23
+          9
+        ]
+      },
+      {
+        "id": 23,
+        "english": "Nothing too ambitious — I've learned that lesson.",
+        "korean": "소규모 요리 교실 시리즈도 고려하고 있어요",
+        "properNounIndices": [
+          4
         ]
       }
     ],
     "quiz": {
       "question": "What is the main topic of this passage?",
       "options": [
-        "At the Post Office",
-        "Panel Discussion — AI and the Future of Work",
-        "Weather Forecast",
+        "TED-Style Talk — The Science of Habits",
+        "Eating Lunch at School",
+        "The Trolley Problem and Moral Intuition",
         "Radio Interview — Small Business Owner"
       ],
       "answer": 3

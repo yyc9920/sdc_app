@@ -1,0 +1,53 @@
+[
+  {
+    "setId": "L1_EXT_053_set1",
+    "parentSetId": "L1_EXT_053",
+    "theme": "At the Zoo",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My family went to the zoo last Sunday.",
+        "korean": "지난 일요일에 가족이 동물원에 갔어요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 1,
+        "english": "We saw lions elephants and penguins.",
+        "korean": "사자 코끼리 펭귄을 봤어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The monkeys were the funniest because they kept jumping around.",
+        "korean": "원숭이가 가장 재밌었어요. 계속 뛰어다녀서요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "My little brother was scared of the snakes.",
+        "korean": "남동생은 뱀을 무서워했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "We had a great time and took many photos.",
+        "korean": "즐거운 시간을 보냈고 사진을 많이 찍었어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "The Philosophy of Time",
+        "My Favorite Day",
+        "At the Zoo",
+        "My Umbrella"
+      ],
+      "answer": 2
+    }
+  }
+]

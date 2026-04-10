@@ -1,0 +1,65 @@
+[
+  {
+    "setId": "L2_ELLO_041_set1",
+    "parentSetId": "L2_ELLO_041",
+    "theme": "Mixer #105 — Rainy Days",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "I actually love rainy days.",
+        "korean": "사실 비 오는 날을 좋아해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 1,
+        "english": "It's the perfect excuse to stay inside and drink hot chocolate.",
+        "korean": "안에 있으면서 핫초코를 마시기에 완벽한 핑계예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I hate the rain.",
+        "korean": "비를 싫어해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "It makes everything wet and dirty.",
+        "korean": "모든 게 젖고 더러워져요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Plus my shoes always get soaked.",
+        "korean": "게다가 신발이 항상 흠뻑 젖어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "I don't mind the rain if I'm at home, but I hate getting caught in the rain without an umbrella.",
+        "korean": "집에 있으면 비는 괜찮지만 우산 없이 비를 맞는 건 싫어요.",
+        "properNounIndices": [
+          0,
+          6,
+          10
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Mixer #148 — Favorite Season",
+        "Mixer #1 — Small Talk",
+        "Mixer #105 — Rainy Days",
+        "Mixer #36 — Comfort Food"
+      ],
+      "answer": 2
+    }
+  }
+]

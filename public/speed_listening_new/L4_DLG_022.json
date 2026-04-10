@@ -1,0 +1,71 @@
+[
+  {
+    "setId": "L4_DLG_022_set1",
+    "parentSetId": "L4_DLG_022",
+    "theme": "Client Feedback Session",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "We've compiled the feedback from your team on the latest prototype.",
+        "korean": "최신 프로토타입에 대한 귀사 팀의 피드백을 정리했습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "What were the main takeaways?",
+        "korean": "주요 요점이 뭔가요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "The design team loved the interface but the engineering team had concerns about the backend performance.",
+        "korean": "디자인팀은 인터페이스를 좋아했지만 엔지니어링팀은 백엔드 성능에 우려가 있었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "Can you be more specific?",
+        "korean": "더 구체적으로 말씀해주시겠어요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "The page load time exceeded three seconds which is above our acceptable threshold.",
+        "korean": "페이지 로딩 시간이 3초를 넘었는데 허용 임계값을 초과했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "We can optimize the database queries which should bring it under two seconds.",
+        "korean": "데이터베이스 쿼리를 최적화하면 2초 이내로 줄일 수 있습니다.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "When can we see the updated version?",
+        "korean": "업데이트된 버전은 언제 볼 수 있나요?",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "We'll have a revised build ready for testing by next Wednesday.",
+        "korean": "다음 주 수요일까지 수정된 빌드를 테스트용으로 준비하겠습니다.",
+        "properNounIndices": [
+          10
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '임계값' mean in English?",
+      "options": [
+        "takeaway",
+        "prototype",
+        "optimize",
+        "threshold"
+      ],
+      "answer": 3
+    }
+  }
+]

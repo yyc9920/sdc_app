@@ -3,85 +3,214 @@
     "setId": "L2_ELLO_007_set1",
     "parentSetId": "L2_ELLO_007",
     "theme": "Mixer #14 — Hanging Out",
-    "level": 6,
+    "level": 5,
     "setNumber": 1,
     "sentences": [
       {
         "id": 0,
-        "english": "I hang out with my boyfriend. We usually go out for dinner or maybe see a movie. Sometimes we'll just stay in, watch TV, and have a relaxed evening at home. We like to keep it simple and just enjoy each other's company.",
-        "korean": "남자친구와 놀아요. 보통 저녁 먹으러 나가거나 영화를 봐요. 가끔은 그냥 집에서 TV 보면서 편안한 저녁을 보내요.",
+        "english": "I hang out with my boyfriend.",
+        "korean": "남자친구와 놀아요.",
         "properNounIndices": [
-          0,
-          6,
-          17,
-          23,
-          31
+          0
         ]
       },
       {
         "id": 1,
-        "english": "I usually hang out with my girlfriend. We go to movies, get coffee, things like that. We also like to explore the city — go to different neighborhoods, try new restaurants. Sometimes we invite friends over and have dinner parties at our place.",
-        "korean": "보통 여자친구와 놀아요. 영화 보고, 커피 마시고, 그런 것들이요. 도시를 탐험하는 것도 좋아해요.",
-        "properNounIndices": [
-          0,
-          7,
-          16,
-          31
-        ]
+        "english": "We usually go out for dinner or maybe see a movie.",
+        "korean": "보통 저녁 먹으러 나가거나 영화를 봐요.",
+        "properNounIndices": []
       },
       {
         "id": 2,
-        "english": "I used to go out to bars with friends, but now that I'm married with a son, that's changed. Now I mostly hang out with my family — my wife and my son.",
-        "korean": "예전에는 친구들과 바에 나갔지만, 결혼하고 아들이 생기면서 바뀌었어요. 이제는 주로 가족과 시간을 보내요.",
+        "english": "Sometimes we'll just stay in, watch TV, and have a relaxed evening at home.",
+        "korean": "가끔은 그냥 집에서 TV 보면서 편안한 저녁을 보내요.",
         "properNounIndices": [
-          0,
-          12,
-          19,
-          20
+          6
         ]
       },
       {
         "id": 3,
-        "english": "We go to parks, play games, watch movies together. It's a different kind of fun, but I really enjoy it.",
-        "korean": "공원에 가고, 게임하고, 같이 영화 봐요. 다른 종류의 재미지만 정말 즐겨요.",
-        "properNounIndices": [
-          9,
-          16
-        ]
+        "english": "We like to keep it simple and just enjoy each other's company.",
+        "korean": "가끔은 그냥 집에서 TV 보면서 편안한 저녁을 보내요",
+        "properNounIndices": []
       },
       {
         "id": 4,
-        "english": "I like to spend time with my best friend, and we often hang out with our parents too. We go shopping, have coffee, sometimes go to the cinema. It's nice to have quality time with the people I care about.",
-        "korean": "친한 친구와 시간 보내는 걸 좋아하고, 부모님과도 자주 같이 놀아요. 쇼핑하고, 커피 마시고, 가끔 영화관에 가요.",
+        "english": "I usually hang out with my girlfriend.",
+        "korean": "보통 여자친구와 놀아요.",
+        "properNounIndices": [
+          0
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '의미 있는 시간' mean in English?",
+      "options": [
+        "cinema",
+        "quality time",
+        "content",
+        "invite"
+      ],
+      "answer": 1
+    }
+  },
+  {
+    "setId": "L2_ELLO_007_set2",
+    "parentSetId": "L2_ELLO_007",
+    "theme": "Mixer #14 — Hanging Out",
+    "level": 6,
+    "setNumber": 2,
+    "sentences": [
+      {
+        "id": 5,
+        "english": "We go to movies, get coffee, things like that.",
+        "korean": "영화 보고, 커피 마시고, 그런 것들이요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "We also like to explore the city — go to different neighborhoods, try new restaurants.",
+        "korean": "도시를 탐험하는 것도 좋아해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 7,
+        "english": "Sometimes we invite friends over and have dinner parties at our place.",
+        "korean": "도시를 탐험하는 것도 좋아해요",
+        "properNounIndices": []
+      },
+      {
+        "id": 8,
+        "english": "I used to go out to bars with friends, but now that I'm married with a son, that's changed.",
+        "korean": "예전에는 친구들과 바에 나갔지만, 결혼하고 아들이 생기면서 바뀌었어요.",
         "properNounIndices": [
           0,
-          18,
-          28,
-          37
+          12
         ]
       },
       {
-        "id": 5,
-        "english": "I tend to stay home. I don't know many people in my area, so I don't really go out much. I watch movies, play video games, read books. I'm quite content staying home and doing my own thing.",
-        "korean": "집에 있는 편이에요. 동네에 아는 사람이 많지 않아서 별로 밖에 안 나가요. 영화 보고, 게임하고, 책 읽어요.",
+        "id": 9,
+        "english": "Now I mostly hang out with my family — my wife and my son.",
+        "korean": "이제는 주로 가족과 시간을 보내요.",
+        "properNounIndices": [
+          1
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '탐험하다' mean in English?",
+      "options": [
+        "explore",
+        "content",
+        "dinner party",
+        "cinema"
+      ],
+      "answer": 0
+    }
+  },
+  {
+    "setId": "L2_ELLO_007_set3",
+    "parentSetId": "L2_ELLO_007",
+    "theme": "Mixer #14 — Hanging Out",
+    "level": 5,
+    "setNumber": 3,
+    "sentences": [
+      {
+        "id": 10,
+        "english": "We go to parks, play games, watch movies together.",
+        "korean": "공원에 가고, 게임하고, 같이 영화 봐요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 11,
+        "english": "It's a different kind of fun, but I really enjoy it.",
+        "korean": "다른 종류의 재미지만 정말 즐겨요.",
+        "properNounIndices": [
+          7
+        ]
+      },
+      {
+        "id": 12,
+        "english": "I like to spend time with my best friend, and we often hang out with our parents too.",
+        "korean": "친한 친구와 시간 보내는 걸 좋아하고, 부모님과도 자주 같이 놀아요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 13,
+        "english": "We go shopping, have coffee, sometimes go to the cinema.",
+        "korean": "쇼핑하고, 커피 마시고, 가끔 영화관에 가요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 14,
+        "english": "It's nice to have quality time with the people I care about.",
+        "korean": "쇼핑하고 커피 마시고 가끔 영화관에 가요",
+        "properNounIndices": [
+          9
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '~하는 경향이 있다' mean in English?",
+      "options": [
+        "quality time",
+        "mostly",
+        "tend to",
+        "content"
+      ],
+      "answer": 2
+    }
+  },
+  {
+    "setId": "L2_ELLO_007_set4",
+    "parentSetId": "L2_ELLO_007",
+    "theme": "Mixer #14 — Hanging Out",
+    "level": 5,
+    "setNumber": 4,
+    "sentences": [
+      {
+        "id": 15,
+        "english": "I tend to stay home.",
+        "korean": "집에 있는 편이에요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 16,
+        "english": "I don't know many people in my area, so I don't really go out much.",
+        "korean": "동네에 아는 사람이 많지 않아서 별로 밖에 안 나가요.",
         "properNounIndices": [
           0,
-          5,
-          14,
-          20,
-          28
+          9
         ]
+      },
+      {
+        "id": 17,
+        "english": "I watch movies, play video games, read books.",
+        "korean": "영화 보고, 게임하고, 책 읽어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 18,
+        "english": "I'm quite content staying home and doing my own thing.",
+        "korean": "영화 보고, 게임하고, 책 읽어요",
+        "properNounIndices": []
       }
     ],
     "quiz": {
       "question": "What does '어울려 다니다, 시간을 보내다' mean in English?",
       "options": [
-        "invite",
-        "content",
         "dinner party",
-        "hang out"
+        "cinema",
+        "hang out",
+        "mostly"
       ],
-      "answer": 3
+      "answer": 2
     }
   }
 ]

@@ -1,0 +1,53 @@
+[
+  {
+    "setId": "L1_EXT_051_set1",
+    "parentSetId": "L1_EXT_051",
+    "theme": "A Snowy Day",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "It snowed a lot last night.",
+        "korean": "어젯밤에 눈이 많이 왔어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "This morning everything was white and beautiful.",
+        "korean": "오늘 아침 모든 게 하얗고 아름다웠어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "I made a snowman in front of my house with my brother.",
+        "korean": "남동생과 집 앞에서 눈사람을 만들었어요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 3,
+        "english": "We also had a snowball fight.",
+        "korean": "눈싸움도 했어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "After playing outside, we went inside and drank hot cocoa.",
+        "korean": "밖에서 놀고 나서 안에 들어가 핫코코아를 마셨어요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "Tips for Better Sleep",
+        "Korean Food Around the World",
+        "Describing a Movie",
+        "A Snowy Day"
+      ],
+      "answer": 3
+    }
+  }
+]

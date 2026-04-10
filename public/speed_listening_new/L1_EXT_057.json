@@ -1,0 +1,58 @@
+[
+  {
+    "setId": "L1_EXT_057_set1",
+    "parentSetId": "L1_EXT_057",
+    "theme": "My Favorite Game",
+    "level": 5,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "My favorite game is a card game called Uno.",
+        "korean": "가장 좋아하는 게임은 우노라는 카드 게임이에요.",
+        "properNounIndices": [
+          8
+        ]
+      },
+      {
+        "id": 1,
+        "english": "I play it with my family after dinner.",
+        "korean": "저녁 후에 가족과 해요.",
+        "properNounIndices": [
+          0
+        ]
+      },
+      {
+        "id": 2,
+        "english": "The rules are simple so anyone can play.",
+        "korean": "규칙이 간단해서 누구나 할 수 있어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "We always laugh a lot when someone gets a Draw Four card.",
+        "korean": "누군가 드로 포 카드를 받으면 항상 많이 웃어요.",
+        "properNounIndices": [
+          9,
+          10
+        ]
+      },
+      {
+        "id": 4,
+        "english": "My younger brother always wins because he is very lucky.",
+        "korean": "남동생이 항상 이겨요. 매우 운이 좋아서요.",
+        "properNounIndices": []
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "My Favorite Game",
+        "My Bike Ride",
+        "The Meaning of Consciousness",
+        "Supreme Court Oral Arguments"
+      ],
+      "answer": 0
+    }
+  }
+]

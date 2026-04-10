@@ -1,0 +1,73 @@
+[
+  {
+    "setId": "L3_B6ME_022_set1",
+    "parentSetId": "L3_B6ME_022",
+    "theme": "Artistic Swimming",
+    "level": 6,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "In artistic swimming, athletes dance underwater while holding their breath!",
+        "korean": "아티스틱 스위밍에서 선수들은 숨을 참으면서 물속에서 춤을 춰요!",
+        "properNounIndices": []
+      },
+      {
+        "id": 1,
+        "english": "It's an extremely demanding sport which requires discipline, stamina and years of training.",
+        "korean": "규율, 체력, 수년간의 훈련을 요하는 극도로 힘든 스포츠예요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "Artistic routines are done upside down, underwater, without oxygen.",
+        "korean": "아티스틱 루틴은 거꾸로, 물속에서, 산소 없이 수행돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "The swimmer's movements need to be as graceful as a ballet dancer, and above all, it has to look effortless.",
+        "korean": "움직임은 발레 댄서처럼 우아해야 하고 무엇보다 힘들어 보이면 안 돼요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "Silvia says she hides behind a smile.",
+        "korean": "실비아는 미소 뒤에 고통을 숨긴다고 해요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 5,
+        "english": "It's good on one side because you can practise more at home, but on the other hand, it's not sometimes good because you're training when you're supposed to be, like, chillin'.",
+        "korean": "한편으로는 집에서 더 연습할 수 있어서 좋지만, 반면에 쉬어야 할 때 훈련하게 되니까 때로 안 좋아요. 편하게 쉬어야 할 때 말이에요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 6,
+        "english": "Which country had won the most gold medals for artistic swimming since the beginning of the Olympic sport?",
+        "korean": "올림픽 종목 시작 이래 아티스틱 스위밍에서 가장 많은 금메달을 딴 나라는?",
+        "properNounIndices": [
+          16
+        ]
+      },
+      {
+        "id": 7,
+        "english": "The answer is Russia.",
+        "korean": "정답은 러시아예요.",
+        "properNounIndices": [
+          3
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What does '반면에, 다른 한편으로는' mean in English?",
+      "options": [
+        "hide behind a smile",
+        "solo",
+        "on the other hand",
+        "respite"
+      ],
+      "answer": 2
+    }
+  }
+]

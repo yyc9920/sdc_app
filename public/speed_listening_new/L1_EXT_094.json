@@ -1,0 +1,56 @@
+[
+  {
+    "setId": "L1_EXT_094_set1",
+    "parentSetId": "L1_EXT_094",
+    "theme": "My Lunch Today",
+    "level": 4,
+    "setNumber": 1,
+    "sentences": [
+      {
+        "id": 0,
+        "english": "Today I ate tteokbokki for lunch.",
+        "korean": "오늘 점심으로 떡볶이를 먹었어요.",
+        "properNounIndices": [
+          1
+        ]
+      },
+      {
+        "id": 1,
+        "english": "It was spicy but delicious.",
+        "korean": "매웠지만 맛있었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 2,
+        "english": "My friend couldn't eat it because it was too spicy for her.",
+        "korean": "친구는 너무 매워서 먹을 수 없었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 3,
+        "english": "She ate a sandwich instead.",
+        "korean": "대신 샌드위치를 먹었어요.",
+        "properNounIndices": []
+      },
+      {
+        "id": 4,
+        "english": "I love spicy food so I ate two servings.",
+        "korean": "매운 음식을 좋아해서 두 인분을 먹었어요.",
+        "properNounIndices": [
+          0,
+          5
+        ]
+      }
+    ],
+    "quiz": {
+      "question": "What is the main topic of this passage?",
+      "options": [
+        "My Lunchbox",
+        "Economic Analysis — The Paradox of Thrift",
+        "My Lunch Today",
+        "Visiting the Dentist"
+      ],
+      "answer": 2
+    }
+  }
+]
