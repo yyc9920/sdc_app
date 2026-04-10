@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { useSpeedListeningData } from '../../hooks/useSpeedListeningData';
 import { usePrefetchData } from '../../hooks/useData';
 import { useTTSPrefetch } from '../../hooks/useTTSPrefetch';
@@ -21,6 +21,7 @@ import type { DataSet, SpeedListeningSet, LearningLevel, CategoryCode, LearningS
 interface LearningPageProps {
   isNightMode: boolean;
   onToggleNight: () => void;
+  onFullScreen?: (isFullScreen: boolean) => void;
 }
 
 const formatSetTitle = (setId: string) => {
@@ -30,7 +31,7 @@ const formatSetTitle = (setId: string) => {
 
 type LearningMode = 'repetition' | 'speed_listening' | 'infinite_speaking' | 'role_play' | 'vocab' | 'free_response' | null;
 
-export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) => {
+export const LearningPage = ({ isNightMode, onToggleNight, onFullScreen }: LearningPageProps) => {
   const { user } = useAuth();
   const { prefetch } = usePrefetchData();
   const [mode, setMode] = useState<LearningMode>(null);
@@ -42,6 +43,16 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
   const [selectedLevel, setSelectedLevel] = useState<number | 'all'>('all');
 
   useTTSPrefetch(selectedDataSet?.id ?? null);
+
+  // Hide BottomNavigation only when in an active learning session
+  const isInLearningSession = !!(
+    (mode === 'speed_listening' && selectedDataSet && selectedSpeedListeningSet) ||
+    (mode && mode !== 'speed_listening' && selectedDataSet)
+  );
+  useEffect(() => {
+    onFullScreen?.(isInLearningSession);
+    return () => { onFullScreen?.(false); };
+  }, [isInLearningSession, onFullScreen]);
 
   // M1 fix: Reset navigation state when switching modes
   const selectMode = (newMode: LearningMode) => {
@@ -163,12 +174,26 @@ export const LearningPage = ({ isNightMode, onToggleNight }: LearningPageProps) 
     const currentIndex = speedListeningData.findIndex(s => s.setId === selectedSpeedListeningSet.setId);
     const nextSet = speedListeningData[currentIndex + 1];
     return (
-      <div className={`h-full ${isNightMode ? 'dark bg-gray-900' : 'bg-gray-50'} overflow-y-auto`}>
-        <SpeedListeningQuiz
-          set={selectedSpeedListeningSet}
-          onNext={nextSet ? () => setSelectedSpeedListeningSet(nextSet) : undefined}
-          onFinish={() => { setSelectedSpeedListeningSet(null); setSelectedDataSet(null); }}
-        />
+      <div className={`h-full ${isNightMode ? 'dark bg-gray-900' : 'bg-gray-50'} flex flex-col overflow-hidden`}>
+        <header className="shrink-0 flex items-center gap-2 px-3 py-2 bg-white/90 dark:bg-gray-900/90 backdrop-blur border-b border-gray-200 dark:border-gray-700 z-40">
+          <button
+            onClick={() => setSelectedSpeedListeningSet(null)}
+            aria-label="뒤로 가기"
+            className="p-2.5 -ml-1 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
+          >
+            <ChevronLeft className="w-6 h-6 text-gray-600 dark:text-gray-400" />
+          </button>
+          <h1 className="text-base font-bold text-gray-800 dark:text-white truncate">
+            속청 — {selectedDataSet.name}
+          </h1>
+        </header>
+        <div className="flex-1 overflow-y-auto">
+          <SpeedListeningQuiz
+            set={selectedSpeedListeningSet}
+            onNext={nextSet ? () => setSelectedSpeedListeningSet(nextSet) : undefined}
+            onFinish={() => { setSelectedSpeedListeningSet(null); setSelectedDataSet(null); }}
+          />
+        </div>
       </div>
     );
   }

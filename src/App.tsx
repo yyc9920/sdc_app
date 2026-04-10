@@ -23,7 +23,7 @@ type TabId = 'learning' | 'dashboard' | 'ranking' | 'admin' | 'teacher' | 'profi
 function App() {
   const [activeTab, setActiveTab] = useState<TabId>('learning');
   const [tabResetKey, setTabResetKey] = useState(0);
-  const isLearningFullScreen = activeTab === 'learning';
+  const [isLearningFullScreen, setIsLearningFullScreen] = useState(false);
 
   const handleTabChange = useCallback((tab: TabId) => {
     if (tab === activeTab) {
@@ -100,7 +100,7 @@ function App() {
         return <ProfilePage />;
       case 'learning':
       default:
-        return <LearningPage isNightMode={isNightMode} onToggleNight={toggleNight} />;
+        return <LearningPage isNightMode={isNightMode} onToggleNight={toggleNight} onFullScreen={setIsLearningFullScreen} />;
     }
   };
 
