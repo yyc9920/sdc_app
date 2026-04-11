@@ -66,6 +66,12 @@ export function useTrainingProgress(session: TrainingSession) {
         completedAt: serverTimestamp(),
       });
 
+      const userRef = doc(db, 'users', user.uid);
+      batch.update(userRef, {
+        [`stats.modeStats.${session.mode}.sessions`]: increment(1),
+        [`stats.modeStats.${session.mode}.totalTime`]: increment(session.elapsedSeconds),
+      });
+
       const dailyRef = doc(db, 'users', user.uid, 'daily_stats', today);
       const counterField = session.mode === 'speedListening'
         ? 'quizzesCompleted'

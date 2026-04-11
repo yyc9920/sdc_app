@@ -1,10 +1,17 @@
 import React from 'react';
-import { Mic2, Clock } from 'lucide-react';
+import { Mic2, Clock, type LucideIcon } from 'lucide-react';
 import type { SpeakingResult } from '../../hooks/useSpeakingHistory';
 
 interface SpeakingHistoryProps {
   results: SpeakingResult[];
   loading?: boolean;
+  modeLabel?: string;
+  modeColor?: string;
+  modeBgClass?: string;
+  modeIconClass?: string;
+  ModeIcon?: LucideIcon;
+  emptyMessage?: string;
+  embedded?: boolean;
 }
 
 const formatDate = (date: Date): string => {
@@ -28,11 +35,33 @@ const formatTime = (seconds: number): string => {
   return `${secs}초`;
 };
 
-export const SpeakingHistory: React.FC<SpeakingHistoryProps> = ({ results, loading }) => {
+const getScoreColor = (score: number): string => {
+  if (score >= 90) return 'text-green-600 dark:text-green-400';
+  if (score >= 70) return 'text-blue-600 dark:text-blue-400';
+  if (score >= 50) return 'text-amber-600 dark:text-amber-400';
+  return 'text-red-600 dark:text-red-400';
+};
+
+export const SpeakingHistory: React.FC<SpeakingHistoryProps> = ({
+  results,
+  loading,
+  modeLabel = '무한 스피킹',
+  modeBgClass = 'bg-purple-100 dark:bg-purple-900/30',
+  modeIconClass = 'text-purple-600 dark:text-purple-400',
+  ModeIcon = Mic2,
+  emptyMessage = '아직 스피킹 기록이 없습니다.',
+  embedded = false,
+}) => {
+  const title = `${modeLabel} 기록`;
+
+  const wrapperClass = embedded
+    ? ''
+    : 'bg-white dark:bg-gray-800 rounded-2xl p-4 sm:p-6 border border-gray-100 dark:border-gray-700';
+
   if (loading) {
     return (
-      <div className="bg-white dark:bg-gray-800 rounded-2xl p-4 sm:p-6 border border-gray-100 dark:border-gray-700">
-        <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">무한 스피킹 기록</h3>
+      <div className={wrapperClass}>
+        {!embedded && <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">{title}</h3>}
         <div className="animate-pulse space-y-3">
           {[1, 2, 3].map(i => (
             <div key={i} className="h-16 bg-gray-100 dark:bg-gray-700 rounded-xl" />
@@ -44,30 +73,28 @@ export const SpeakingHistory: React.FC<SpeakingHistoryProps> = ({ results, loadi
 
   if (results.length === 0) {
     return (
-      <div className="bg-white dark:bg-gray-800 rounded-2xl p-4 sm:p-6 border border-gray-100 dark:border-gray-700">
-        <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">무한 스피킹 기록</h3>
+      <div className={wrapperClass}>
+        {!embedded && <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">{title}</h3>}
         <div className="text-center py-8 text-gray-500 dark:text-gray-400">
-          아직 스피킹 기록이 없습니다.
-          <br />
-          <span className="text-sm">무한 스피킹에 도전해보세요!</span>
+          {emptyMessage}
         </div>
       </div>
     );
   }
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-2xl p-4 sm:p-6 border border-gray-100 dark:border-gray-700">
-      <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">무한 스피킹 기록</h3>
+    <div className={wrapperClass}>
+      {!embedded && <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">{title}</h3>}
 
       <div className="space-y-3">
-        {results.slice(0, 5).map((result) => (
+        {results.slice(0, 10).map((result) => (
           <div
             key={result.id}
             className="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700/50 rounded-xl"
           >
             <div className="flex items-center gap-3">
-              <div className="p-2 rounded-lg bg-purple-100 dark:bg-purple-900/30">
-                <Mic2 className="w-5 h-5 text-purple-600 dark:text-purple-400" />
+              <div className={`p-2 rounded-lg ${modeBgClass}`}>
+                <ModeIcon className={`w-5 h-5 ${modeIconClass}`} />
               </div>
 
               <div>
@@ -90,9 +117,15 @@ export const SpeakingHistory: React.FC<SpeakingHistoryProps> = ({ results, loadi
             </div>
 
             <div className="text-right">
-              <div className="text-lg font-bold text-purple-600 dark:text-purple-400">
-                {formatTime(result.timeSpentSeconds)}
-              </div>
+              {result.score != null ? (
+                <div className={`text-lg font-bold ${getScoreColor(result.score)}`}>
+                  {result.score}점
+                </div>
+              ) : (
+                <div className={`text-lg font-bold ${modeIconClass}`}>
+                  {formatTime(result.timeSpentSeconds)}
+                </div>
+              )}
             </div>
           </div>
         ))}

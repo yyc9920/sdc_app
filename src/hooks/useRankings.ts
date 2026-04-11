@@ -3,7 +3,18 @@ import { getFunctions, httpsCallable } from 'firebase/functions';
 import app from '../firebase';
 import { FIREBASE_REGION } from '../constants';
 
-export type RankingType = 'weekly_study_time' | 'total_study_time' | 'total_mastered' | 'current_streak' | 'longest_streak';
+export type RankingType =
+  | 'weekly_study_time'
+  | 'total_study_time'
+  | 'total_mastered'
+  | 'current_streak'
+  | 'longest_streak'
+  | 'mode_repetition_sessions'
+  | 'mode_speedListening_sessions'
+  | 'mode_infiniteSpeaking_sessions'
+  | 'mode_rolePlay_sessions'
+  | 'mode_vocab_sessions'
+  | 'mode_freeResponse_sessions';
 
 export interface RankingEntry {
   uid: string;
@@ -24,6 +35,18 @@ export const getRankingConfig = (type: RankingType): { field: string; label: str
       return { field: 'stats.currentStreak', label: '현재 연속 학습일', unit: '일' };
     case 'longest_streak':
       return { field: 'stats.longestStreak', label: '최장 연속 학습일', unit: '일' };
+    case 'mode_repetition_sessions':
+      return { field: 'stats.modeStats.repetition.sessions', label: '반복 학습', unit: '회' };
+    case 'mode_speedListening_sessions':
+      return { field: 'stats.modeStats.speedListening.sessions', label: '스피드 리스닝', unit: '회' };
+    case 'mode_infiniteSpeaking_sessions':
+      return { field: 'stats.modeStats.infiniteSpeaking.sessions', label: '무한 스피킹', unit: '회' };
+    case 'mode_rolePlay_sessions':
+      return { field: 'stats.modeStats.rolePlay.sessions', label: '대화 롤플레이', unit: '회' };
+    case 'mode_vocab_sessions':
+      return { field: 'stats.modeStats.vocab.sessions', label: '어휘 학습', unit: '회' };
+    case 'mode_freeResponse_sessions':
+      return { field: 'stats.modeStats.freeResponse.sessions', label: '자유 스피킹', unit: '회' };
   }
 };
 
@@ -45,7 +68,7 @@ export const useRankings = (type: RankingType, maxResults: number = 50) => {
           functions,
           'getRankings'
         );
-        
+
         const result = await getRankingsFn({ type, limit: maxResults });
         setRankings(result.data);
       } catch (err) {

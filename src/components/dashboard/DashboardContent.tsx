@@ -1,15 +1,12 @@
 import React from 'react';
 import { useUserProfile } from '../../hooks/useUserProfile';
 import { useDailyStats } from '../../hooks/useDailyStats';
-import { useQuizHistory } from '../../hooks/useQuizHistory';
-import { useSpeakingHistory } from '../../hooks/useSpeakingHistory';
 import { useSentenceProgress } from '../../hooks/useSentenceProgress';
 import { StatsOverview } from './StatsOverview';
 import { ProgressRing } from './ProgressRing';
 import { LearningHeatmap } from './LearningHeatmap';
-import { QuizHistory } from './QuizHistory';
-import { SpeakingHistory } from './SpeakingHistory';
 import { SentenceHistory } from './SentenceHistory';
+import { ModeHistoryTabs } from './ModeHistoryTabs';
 import { LoadingSpinner } from '../LoadingSpinner';
 
 const TOTAL_SENTENCES = 1180;
@@ -21,8 +18,6 @@ interface DashboardContentProps {
 export const DashboardContent: React.FC<DashboardContentProps> = ({ uid }) => {
   const { profile, loading: profileLoading } = useUserProfile(uid);
   const { stats: dailyStats, loading: statsLoading, getTodayStats } = useDailyStats(uid);
-  const { results: quizResults, loading: quizLoading } = useQuizHistory(uid);
-  const { results: speakingResults, loading: speakingLoading } = useSpeakingHistory(uid);
   const { progressData: sentenceProgress, loading: progressLoading } = useSentenceProgress(uid, 50);
 
   if (profileLoading || statsLoading) {
@@ -40,13 +35,13 @@ export const DashboardContent: React.FC<DashboardContentProps> = ({ uid }) => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 flex flex-col items-center justify-center">
-            <ProgressRing 
-              progress={progressPercent} 
+            <ProgressRing
+              progress={progressPercent}
               label="전체 진행률"
               sublabel={`${masteredCount}/${TOTAL_SENTENCES}`}
             />
           </div>
-          
+
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700">
             <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">학습 요약</h3>
             <div className="space-y-3 text-sm text-gray-600 dark:text-gray-400">
@@ -62,8 +57,7 @@ export const DashboardContent: React.FC<DashboardContentProps> = ({ uid }) => {
 
         <div className="grid grid-cols-1 gap-6">
           <SentenceHistory progressData={sentenceProgress} loading={progressLoading} />
-          <QuizHistory results={quizResults} loading={quizLoading} />
-          <SpeakingHistory results={speakingResults} loading={speakingLoading} />
+          <ModeHistoryTabs uid={uid} />
         </div>
       </div>
     </div>

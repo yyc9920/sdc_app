@@ -6,6 +6,7 @@ import { useSetTitles } from '../../hooks/useSetTitles';
 interface QuizHistoryProps {
   results: QuizResult[];
   loading?: boolean;
+  embedded?: boolean;
 }
 
 const formatDate = (date: Date): string => {
@@ -14,11 +15,11 @@ const formatDate = (date: Date): string => {
   const targetDate = new Date(date.getFullYear(), date.getMonth(), date.getDate());
   const diff = today.getTime() - targetDate.getTime();
   const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-  
+
   if (days === 0) return '오늘';
   if (days === 1) return '어제';
   if (days < 7) return `${days}일 전`;
-  
+
   return `${date.getMonth() + 1}월 ${date.getDate()}일`;
 };
 
@@ -35,16 +36,18 @@ const getScoreColor = (score: number): string => {
   return 'text-red-600 dark:text-red-400';
 };
 
-
-
-export const QuizHistory: React.FC<QuizHistoryProps> = ({ results, loading }) => {
+export const QuizHistory: React.FC<QuizHistoryProps> = ({ results, loading, embedded = false }) => {
   const setIds = useMemo(() => [...new Set(results.map(r => r.setId))], [results]);
   const { getTitle } = useSetTitles(setIds);
 
+  const wrapperClass = embedded
+    ? ''
+    : 'bg-white dark:bg-gray-800 rounded-2xl p-4 sm:p-6 border border-gray-100 dark:border-gray-700';
+
   if (loading) {
     return (
-      <div className="bg-white dark:bg-gray-800 rounded-2xl p-4 sm:p-6 border border-gray-100 dark:border-gray-700">
-        <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">스피드 리스닝 기록</h3>
+      <div className={wrapperClass}>
+        {!embedded && <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">스피드 리스닝 기록</h3>}
         <div className="animate-pulse space-y-3">
           {[1, 2, 3].map(i => (
             <div key={i} className="h-16 bg-gray-100 dark:bg-gray-700 rounded-xl" />
@@ -56,8 +59,8 @@ export const QuizHistory: React.FC<QuizHistoryProps> = ({ results, loading }) =>
 
   if (results.length === 0) {
     return (
-      <div className="bg-white dark:bg-gray-800 rounded-2xl p-4 sm:p-6 border border-gray-100 dark:border-gray-700">
-        <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">스피드 리스닝 기록</h3>
+      <div className={wrapperClass}>
+        {!embedded && <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">스피드 리스닝 기록</h3>}
         <div className="text-center py-8 text-gray-500 dark:text-gray-400">
           아직 퀴즈 기록이 없습니다.
           <br />
@@ -68,19 +71,19 @@ export const QuizHistory: React.FC<QuizHistoryProps> = ({ results, loading }) =>
   }
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-2xl p-4 sm:p-6 border border-gray-100 dark:border-gray-700">
-      <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">스피드 리스닝 기록</h3>
-      
+    <div className={wrapperClass}>
+      {!embedded && <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">스피드 리스닝 기록</h3>}
+
       <div className="space-y-3">
-        {results.slice(0, 5).map((result) => (
-          <div 
+        {results.slice(0, 10).map((result) => (
+          <div
             key={result.id}
             className="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700/50 rounded-xl"
           >
             <div className="flex items-center gap-3">
               <div className={`p-2 rounded-lg ${
-                result.score >= 70 
-                  ? 'bg-green-100 dark:bg-green-900/30' 
+                result.score >= 70
+                  ? 'bg-green-100 dark:bg-green-900/30'
                   : 'bg-amber-100 dark:bg-amber-900/30'
               }`}>
                 {result.score >= 70 ? (
@@ -89,7 +92,7 @@ export const QuizHistory: React.FC<QuizHistoryProps> = ({ results, loading }) =>
                   <XCircle className="w-5 h-5 text-amber-600 dark:text-amber-400" />
                 )}
               </div>
-              
+
               <div>
                 <div className="font-medium text-gray-900 dark:text-white">
                   {getTitle(result.setId)}
@@ -103,7 +106,7 @@ export const QuizHistory: React.FC<QuizHistoryProps> = ({ results, loading }) =>
                 </div>
               </div>
             </div>
-            
+
             <div className="text-right">
               <div className={`text-xl font-bold ${getScoreColor(result.score)}`}>
                 {result.score}%

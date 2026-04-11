@@ -315,6 +315,8 @@ export const useSaveQuizResult = () => {
         'stats.currentStreak': streakUpdates.stats.currentStreak,
         'stats.longestStreak': streakUpdates.stats.longestStreak,
         'stats.lastActiveDate': streakUpdates.stats.lastActiveDate,
+        'stats.modeStats.speedListening.sessions': increment(1),
+        'stats.modeStats.speedListening.totalTime': increment(timeSpentSeconds),
       });
 
       await batch.commit();
