@@ -193,7 +193,7 @@ export function ChatView({
               onPointerUp={handlePointerUp}
               onPointerLeave={handlePointerLeave}
               onContextMenu={e => e.preventDefault()}
-              className="relative overflow-hidden flex items-center justify-center w-12 h-12 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl transition-colors select-none touch-none"
+              className="no-callout relative overflow-hidden flex items-center justify-center w-36 h-12 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-xl transition-colors select-none touch-none"
               aria-label="건너뛰기 (길게 누르면 모두 건너뛰기)"
             >
               {/* Long-press gauge bar */}
